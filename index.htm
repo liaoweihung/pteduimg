@@ -6,80 +6,96 @@
     <link rel="manifest" href="manifest.json">
     <title>藥師衛教助手</title>
     <style>
-        /* 1. 終極排版重置：防止任何元素意外撐開 */
+        /* 1. 基礎重置 (最重要：防止任何元素意外撐開) */
         * { box-sizing: border-box; }
         :root { --primary: #2c3e50; --fav: #ff4757; --bg: #f4f7f6; }
-        
         html, body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
             margin: 0; padding: 0; 
             width: 100%; height: 100%; 
             background: var(--bg); 
-            user-select: none; 
+            font-family: -apple-system, sans-serif;
             overflow-x: hidden; 
+            user-select: none;
         }
 
-        header { background: var(--primary); color: white; padding: 18px; text-align: center; font-weight: bold; font-size: 1.1rem; }
-        
-        .section-title { padding: 15px 20px 5px; font-size: 0.95rem; color: #555; font-weight: bold; }
-        
-        /* 2. 強制兩欄網格 */
+        header { background: var(--primary); color: white; padding: 18px; text-align: center; font-weight: bold; font-size: 1.2rem; }
+
+        /* 2. 首頁選單佈局 */
+        .section-title { padding: 15px 20px 5px; font-size: 0.9rem; color: #7f8c8d; font-weight: bold; }
         .menu-grid { 
             display: grid; 
-            grid-template-columns: 1fr 1fr; /* 這裡控制兩欄 */
+            grid-template-columns: 1fr 1fr; /* 兩欄並排 */
             gap: 15px; 
-            padding: 10px 20px 20px; 
+            padding: 15px 20px 30px; 
         }
-        
         .menu-item { 
-            background: white; border-radius: 12px; padding: 20px 5px; text-align: center; 
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08); cursor: pointer; border: 1px solid #eaeaea;
+            background: white; border-radius: 12px; padding: 25px 10px; text-align: center; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); cursor: pointer; border: 1px solid #eee;
         }
-        .icon { font-size: 2.2rem; display: block; margin-bottom: 8px; }
+        .icon { font-size: 2.5rem; display: block; margin-bottom: 10px; }
         .fav-item { background: #fff5f6; border-color: #ffdae0; }
         .fav-label { font-size: 0.8rem; color: #e74c3c; margin-top: 5px; font-weight: bold; }
 
-        /* 3. 全螢幕視窗強制尺寸 */
+        /* 3. 視窗展示區 (終極鎖定法) */
         #viewer { 
-            display: none; position: fixed; top: 0; left: 0; 
-            width: 100vw; height: 100vh; /* 鎖死長寬等於螢幕 */
-            background: #000; z-index: 1000; 
-            flex-direction: column; 
+            display: none; /* 透過 JS 切換成 flex */
+            flex-direction: column;
+            position: fixed; 
+            top: 0; left: 0; 
+            width: 100vw; 
+            height: 100vh; 
+            height: 100dvh; /* 針對手機動態視窗高度最佳化 */
+            background: #000; 
+            z-index: 9999; 
         }
 
+        /* 頂部控制列 */
         .viewer-header { 
-            width: 100%; padding: 15px; color: white; 
-            display: flex; justify-content: space-between; align-items: center; 
-            background: rgba(0,0,0,0.9); flex-shrink: 0; /* 不允許縮小 */
+            flex: 0 0 auto; /* 高度固定，不參與縮放 */
+            padding: 15px 20px; 
+            color: white; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            background: rgba(0,0,0,0.9); 
         }
-        
-        #viewer-fav-btn { font-size: 1.8rem; color: #555; cursor: pointer; padding: 0 15px; transition: 0.2s; }
+        #viewer-fav-btn { font-size: 1.8rem; color: #555; cursor: pointer; padding-right: 20px; }
         #viewer-fav-btn.active { color: var(--fav); }
-        /* 核心修正：改用絕對定位，脫離 Flexbox 的干擾 */
-    .image-viewport { 
-        flex: 1;           
-        width: 100%;      
-        position: relative; /* 關鍵：為裡面的圖片設定一個參考框 */
-        background: #000;
-        overflow: hidden;
-    }
 
-    .main-img { 
-        position: absolute;  /* 關鍵：絕對定位，強制填滿參考框 */
-        top: 0;
-        left: 0;
-        width: 100%;         /* 嚴格限制為螢幕寬 */
-        height: 100%;        /* 嚴格限制為剩餘高度 */
-        object-fit: contain; /* 保證圖片完整縮放，絕不裁切 */
-        display: block;
-    }
-        
+        /* 圖片容器 (負責置中與限制邊界) */
+        .image-viewport { 
+            flex: 1 1 auto; /* 自動填滿上下剩餘空間 */
+            position: relative;
+            display: flex; 
+            align-items: center;    /* 垂直置中 */
+            justify-content: center; /* 水平置中 */
+            width: 100%; 
+            height: 100%;
+            overflow: hidden; 
+        }
+
+        /* 圖片本體 (乖乖縮小) */
+        .main-img { 
+            max-width: 100%; 
+            max-height: 100%; 
+            width: auto; 
+            height: auto; 
+            object-fit: contain; /* 保證圖片完整顯示不裁切 */
+            margin: auto;        /* 多加一層置中保險 */
+        }
+
+        /* 底部進度點 */
         .footer-minimal { 
-            width: 100%; padding: 15px; background: rgba(0,0,0,0.9); 
-            display: flex; justify-content: center; gap: 8px; flex-shrink: 0;
+            flex: 0 0 auto; /* 高度固定，不參與縮放 */
+            padding: 20px; 
+            background: rgba(0,0,0,0.9); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            gap: 10px; 
         }
         .dot { width: 8px; height: 8px; background: #555; border-radius: 50%; }
-        .dot.active { background: white; width: 18px; border-radius: 4px; transition: 0.3s; }
+        .dot.active { background: white; width: 20px; border-radius: 4px; transition: 0.3s; }
     </style>
 </head>
 <body>
@@ -96,14 +112,14 @@
 
 <div id="viewer">
     <div class="viewer-header">
-        <span id="v-title" style="font-size: 1.1rem;">標題</span>
+        <span id="v-title" style="font-size:1.2rem; font-weight:bold;">標題</span>
         <div style="display: flex; align-items: center;">
             <div id="viewer-fav-btn" onclick="toggleCurrentFav()">❤</div>
-            <div onclick="closeViewer()" style="font-size: 1.8rem; padding: 0 10px; cursor: pointer;">✕</div>
+            <div onclick="closeViewer()" style="font-size: 2rem; cursor: pointer; line-height: 1;">✕</div>
         </div>
     </div>
     <div class="image-viewport" id="touch-zone">
-        <img id="main-img" src="" alt="教學圖">
+        <img id="main-img" class="main-img" src="" alt="教學圖">
     </div>
     <div class="footer-minimal" id="v-steps"></div>
 </div>
@@ -137,7 +153,7 @@
             allGrid.innerHTML += `
                 <div class="menu-item" onclick="openViewer('${key}', 0)">
                     <span class="icon">${educationData[key].icon}</span>
-                    <div style="font-weight:bold;">${educationData[key].title}</div>
+                    <div style="font-weight:bold; font-size:1.1rem;">${educationData[key].title}</div>
                 </div>`;
         });
 
@@ -148,7 +164,7 @@
                 favGrid.innerHTML += `
                     <div class="menu-item fav-item" onclick="openViewer('${type}', ${idx})">
                         <span class="icon">${educationData[type].icon}</span>
-                        <div style="font-weight:bold;">${educationData[type].title}</div>
+                        <div style="font-weight:bold; font-size:1.1rem;">${educationData[type].title}</div>
                         <div class="fav-label">步驟 ${idx + 1}</div>
                     </div>`;
             }
@@ -157,7 +173,8 @@
     }
 
     function openViewer(type, startIndex = 0) {
-        currentType = type; currentIdx = startIndex;
+        currentType = type; 
+        currentIdx = startIndex;
         updateContent();
         document.getElementById('viewer').style.display = 'flex';
     }
@@ -169,10 +186,13 @@
 
     function updateContent() {
         const data = educationData[currentType];
-        document.getElementById('v-title').innerText = `${data.title} (${currentIdx + 1}/${data.steps.length})`;
+        const totalSteps = data.steps.length;
+        
+        document.getElementById('v-title').innerText = `${data.title} (${currentIdx + 1}/${totalSteps})`;
         document.getElementById('main-img').src = data.steps[currentIdx];
         
-        document.getElementById('v-steps').innerHTML = data.steps.map((_, i) => 
+        const dotContainer = document.getElementById('v-steps');
+        dotContainer.innerHTML = data.steps.map((_, i) => 
             `<div class="dot ${i === currentIdx ? 'active' : ''}"></div>`
         ).join('');
 
@@ -192,8 +212,8 @@
     }
 
     function changeStep(dir) {
-        const total = educationData[currentType].steps.length;
-        currentIdx = (currentIdx + dir + total) % total;
+        const totalSteps = educationData[currentType].steps.length;
+        currentIdx = (currentIdx + dir + totalSteps) % totalSteps;
         updateContent();
     }
 
@@ -217,10 +237,6 @@
             if (e.key === 'Escape') closeViewer();
         }
     });
-
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js');
-    }
 
     window.onload = renderHome;
 </script>
