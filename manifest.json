@@ -2,10 +2,22 @@
   "short_name": "衛教助手",
   "name": "藥師快速衛教示意圖",
   "icons": [
-    { "src": "icon.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
   ],
-  "start_url": ".",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#2c3e50",
-  "theme_color": "#2c3e50"
+  "theme_color": "#2c3e50",
+  "orientation": "portrait"
 }
