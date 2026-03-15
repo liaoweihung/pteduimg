@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>藥師衛教助手 4(動態步驟版)</title>
+    <style>
+        :root { --primary: #2c3e50; --fav: #ff4757; --bg: #f4f7f6; }
+        body { font-family: sans-serif; margin: 0; background: var(--bg); user-select: none; overflow-x: hidden; }
+        header { background: var(--primary); color: white; padding: 18px; text-align: center; font-weight: bold; }
+        
+        .section-title { padding: 15px 20px 5px; font-size: 0.9rem; color: #7f8c8d; font-weight: bold; }
+        .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 10px 20px 20px; }
+        
+        .menu-item { 
+            background: white; border-radius: 12px; padding: 22px 10px; text-align: center; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06); cursor: pointer; border: 1px solid #eee;
+        }
+        .icon { font-size: 2.2rem; display: block; margin-bottom: 8px; }
+        .fav-item { background: #fff5f6; border-color: #ffdae0; }
+        .fav-label { font-size: 0.8rem; color: #e74c3c; margin-top: 4px; font-weight: bold; }
+
+        #viewer { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; z-index: 1000; flex-direction: column; }
+        .viewer-header { padding: 12px 15px; color: white; display: flex; justify-content: space-between; align-items: center; background: rgba(0,0,0,0.85); }
+        
+        #viewer-fav-btn { font-size: 1.8rem; color: #555; cursor: pointer; padding: 0 15px; }
+        #viewer-fav-btn.active { color: var(--fav); }
+
+        .image-viewport { flex-grow: 1; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+        .main-img { max-width: 100%; max-height: 100%; object-fit: contain; }
+        
+        .footer-minimal { padding: 15px; background: rgba(0,0,0,0.85); display: flex; justify-content: center; gap: 8px; }
+        .dot { width: 8px; height: 8px; background: #555; border-radius: 50%; }
+        .dot.active { background: white; width: 18px; border-radius: 4px; transition: all 0.3s; }
+    </style>
+</head>
+<body>
+
+<header>快速衛教示意圖</header>
+
+<div id="fav-section" style="display:none;">
+    <div class="section-title">⭐ 常用圖卡</div>
+    <div class="menu-grid" id="fav-grid"></div>
+</div>
+
+<div class="section-title">📚 完整衛教步驟</div>
+<div class="menu-grid" id="all-grid"></div>
+
+<div id="viewer">
+    <div class="viewer-header">
+        <span id="v-title">標題</span>
+        <div style="display: flex; align-items: center;">
+            <div id="viewer-fav-btn" onclick="toggleCurrentFav()">❤</div>
+            <div onclick="closeViewer()" style="font-size: 1.8rem; padding: 0 10px; cursor: pointer;">✕</div>
+        </div>
+    </div>
+    <div class="image-viewport" id="touch-zone">
+        <img id="main-img" src="" alt="教學圖">
+    </div>
+    <div class="footer-minimal" id="v-steps"></div>
+</div>
+
+<script>
+    // 動態定義每個藥品的步驟圖片路徑
+    const educationData = {
+        'eye': { 
+            title: '眼藥膏', 
+            icon: '👁️', 
+            steps: ['img/eye_1.png', 'img/eye_2.png', 'img/eye_3.png', 'img/eye_4.png', 'img/eye_5.png', 'img/eye_6.png'] 
+        },
+        'rectal': { 
+            title: '肛門塞劑', 
+            icon: '🍑', 
+            steps: ['img/rec_1.png', 'img/rec_2.png', 'img/rec_3.png', 'img/rec_4.png'] 
+        },
+        'ear': { 
+            title: '耳滴劑', 
+            icon: '👂', 
+            steps: ['img/ear_1.png', 'img/ear_2.png', 'img/ear_3.png', 'img/ear_4.png', 'img/ear_5.png', 'img/ear_6.png'] 
+        }
+    };
+
+    let favoriteImages = JSON.parse(localStorage.getItem('favImages')) || [];
+    let currentType = '', currentIdx = 0;
+
+    function renderHome() {
+        const allGrid = document.getElementById('all-grid');
+        const favGrid = document.getElementById('fav-grid');
+        allGrid.innerHTML = '';
+        favGrid.innerHTML = '';
+
+        Object.keys(educationData).forEach(key => {
+            allGrid.innerHTML += `
+                <div class="menu-item" onclick="openViewer('${key}', 0)">
+                    <span class="icon">${educationData[key].icon}</span>
+                    <div style="font-weight:bold;">${educationData[key].title}</div>
+                </div>`;
+        });
+
+        favoriteImages.forEach(favKey => {
+            const [type, idxStr] = favKey.split('-');
+            const idx = parseInt(idxStr);
+            if(educationData[type] && educationData[type].steps[idx]) {
+                favGrid.innerHTML += `
+                    <div class="menu-item fav-item" onclick="openViewer('${type}', ${idx})">
+                        <span class="icon">${educationData[type].icon}</span>
+                        <div style="font-weight:bold;">${educationData[type].title}</div>
+                        <div class="fav-label">步驟 ${idx + 1}</div>
+                    </div>`;
+            }
+        });
+        document.getElementById('fav-section').style.display = favoriteImages.length > 0 ? 'block' : 'none';
+    }
+
+    function openViewer(type, startIndex = 0) {
+        currentType = type; 
+        currentIdx = startIndex;
+        updateContent();
+        document.getElementById('viewer').style.display = 'flex';
+    }
+
+    function closeViewer() { 
+        document.getElementById('viewer').style.display = 'none'; 
+        renderHome(); 
+    }
+
+    function updateContent() {
+        const data = educationData[currentType];
+        const totalSteps = data.steps.length;
+        
+        document.getElementById('v-title').innerText = `${data.title} (${currentIdx + 1}/${totalSteps})`;
+        document.getElementById('main-img').src = data.steps[currentIdx];
+        
+        const dotContainer = document.getElementById('v-steps');
+        dotContainer.innerHTML = data.steps.map((_, i) => 
+            `<div class="dot ${i === currentIdx ? 'active' : ''}"></div>`
+        ).join('');
+
+        const currentKey = `${currentType}-${currentIdx}`;
+        document.getElementById('viewer-fav-btn').className = favoriteImages.includes(currentKey) ? 'active' : '';
+    }
+
+    function toggleCurrentFav() {
+        const currentKey = `${currentType}-${currentIdx}`;
+        if (favoriteImages.includes(currentKey)) {
+            favoriteImages = favoriteImages.filter(k => k !== currentKey);
+        } else {
+            favoriteImages.push(currentKey);
+        }
+        localStorage.setItem('favImages', JSON.stringify(favoriteImages));
+        updateContent();
+    }
+
+    function changeStep(dir) {
+        const totalSteps = educationData[currentType].steps.length;
+        currentIdx = (currentIdx + dir + totalSteps) % totalSteps;
+        updateContent();
+    }
+
+    const touchZone = document.getElementById('touch-zone');
+    touchZone.addEventListener('click', (e) => {
+        if (e.clientX > window.innerWidth / 2) changeStep(1);
+        else changeStep(-1);
+    });
+
+    let touchStartX = 0;
+    touchZone.addEventListener('touchstart', e => touchStartX = e.changedTouches[0].screenX);
+    touchZone.addEventListener('touchend', e => {
+        let diff = touchStartX - e.changedTouches[0].screenX;
+        if (Math.abs(diff) > 50) changeStep(diff > 0 ? 1 : -1);
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (document.getElementById('viewer').style.display === 'flex') {
+            if (e.key === 'ArrowRight') changeStep(1);
+            if (e.key === 'ArrowLeft') changeStep(-1);
+            if (e.key === 'Escape') closeViewer();
+        }
+    });
+
+    window.onload = renderHome;
+</script>
+</body>
+</html>
