@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="./icon.png?v=1">
     <title>藥局衛教助手</title>
-   <script src="./qrious.min.js"></script>
+    <script src="./qrious.min.js"></script>
     <style>
-        /* 1. 基礎重置 (最重要：防止任何元素意外撐開) */
+        /* 1. 基礎重置 */
         * { box-sizing: border-box; }
         :root { --primary: #2c3e50; --fav: #ff4757; --bg: #f4f7f6; }
         html, body { 
@@ -19,30 +19,19 @@
             overflow-x: hidden; 
             user-select: none;
         }
-header { 
-            background: var(--primary); 
-            color: white; 
-            padding: 12px 15px; 
-            font-weight: bold; 
-            font-size: 1.3rem; 
-            display: flex;         /* 讓圖示和文字並排 */
-            align-items: center;   /* 垂直置中 */
-            justify-content: center; /* 水平置中 */
-            gap: 12px;             /* 圖示和文字的間距 */
+        
+        /* 標題列 */
+        header { 
+            background: var(--primary); color: white; padding: 12px 15px; 
+            font-weight: bold; font-size: 1.3rem; display: flex; 
+            align-items: center; justify-content: center; gap: 12px; 
         }
-        .header-icon {
-            height: 38px;          /* 控制上方圖示的大小 */
-            width: 38px;
-            object-fit: contain;
-        }
+        .header-icon { height: 38px; width: 38px; object-fit: contain; }
         
         /* 2. 首頁選單佈局 */
         .section-title { padding: 15px 20px 5px; font-size: 0.9rem; color: #7f8c8d; font-weight: bold; }
         .menu-grid { 
-            display: grid; 
-            grid-template-columns: 1fr 1fr; /* 兩欄並排 */
-            gap: 15px; 
-            padding: 15px 20px 30px; 
+            display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding: 15px 20px 30px; 
         }
         .menu-item { 
             background: white; border-radius: 12px; padding: 25px 10px; text-align: center; 
@@ -52,67 +41,35 @@ header {
         .fav-item { background: #fff5f6; border-color: #ffdae0; }
         .fav-label { font-size: 0.8rem; color: #e74c3c; margin-top: 5px; font-weight: bold; }
 
-        /* 3. 視窗展示區 (終極鎖定法) */
+        /* 3. 視窗展示區 */
         #viewer { 
-            display: none; /* 透過 JS 切換成 flex */
-            flex-direction: column;
-            position: fixed; 
-            top: 0; left: 0; 
-            width: 100vw; 
-            height: 100vh; 
-            height: 100dvh; /* 針對手機動態視窗高度最佳化 */
-            background: #000; 
-            z-index: 9999; 
+            display: none; flex-direction: column; position: fixed; 
+            top: 0; left: 0; width: 100vw; height: 100vh; height: 100dvh; 
+            background: #000; z-index: 9999; 
         }
-
-        /* 頂部控制列 */
         .viewer-header { 
-            flex: 0 0 auto; /* 高度固定，不參與縮放 */
-            padding: 15px 20px; 
-            color: white; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            background: rgba(0,0,0,0.9); 
+            flex: 0 0 auto; padding: 15px 20px; color: white; display: flex; 
+            justify-content: space-between; align-items: center; background: rgba(0,0,0,0.9); 
         }
         #viewer-fav-btn { font-size: 1.8rem; color: #555; cursor: pointer; padding-right: 20px; }
         #viewer-fav-btn.active { color: var(--fav); }
 
-        /* 圖片容器 (負責置中與限制邊界) */
         .image-viewport { 
-            flex: 1 1 auto; /* 自動填滿上下剩餘空間 */
-            position: relative;
-            display: flex; 
-            align-items: center;    /* 垂直置中 */
-            justify-content: center; /* 水平置中 */
-            width: 100%; 
-            height: 100%;
-            overflow: hidden; 
+            flex: 1 1 auto; position: relative; display: flex; 
+            align-items: center; justify-content: center; width: 100%; height: 100%; overflow: hidden; 
         }
-
-        /* 圖片本體 (乖乖縮小) */
         .main-img { 
-            max-width: 100%; 
-            max-height: 100%; 
-            width: auto; 
-            height: auto; 
-            object-fit: contain; /* 保證圖片完整顯示不裁切 */
-            margin: auto;        /* 多加一層置中保險 */
+            max-width: 100%; max-height: 100%; width: auto; height: auto; 
+            object-fit: contain; margin: auto; 
         }
-
-        /* 底部進度點 */
         .footer-minimal { 
-            flex: 0 0 auto; /* 高度固定，不參與縮放 */
-            padding: 20px; 
-            background: rgba(0,0,0,0.9); 
-            display: flex; 
-            justify-content: center; 
-            align-items: center;
-            gap: 10px; 
+            flex: 0 0 auto; padding: 20px; background: rgba(0,0,0,0.9); 
+            display: flex; justify-content: center; align-items: center; gap: 10px; 
         }
         .dot { width: 8px; height: 8px; background: #555; border-radius: 50%; }
         .dot.active { background: white; width: 20px; border-radius: 4px; transition: 0.3s; }
-   /* 👇 2. QR Code 彈出視窗的樣式 👇 */
+
+        /* 4. QR Code 彈出視窗樣式 */
         #qr-modal {
             display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
             background: rgba(0,0,0,0.95); z-index: 10000; flex-direction: column;
@@ -127,7 +84,6 @@ header {
             margin-top: 25px; padding: 12px 40px; background: #2c3e50; color: white;
             border: none; border-radius: 8px; font-size: 1.1rem; cursor: pointer; font-weight: bold;
         }
-    
     </style>
 </head>
 <body>
@@ -136,6 +92,7 @@ header {
     <img src="icon.png" alt="關公圖示" class="header-icon">
     <span>藥局衛教助手</span>
 </header>
+
 <div id="fav-section" style="display:none;">
     <div class="section-title">⭐ 常用圖卡</div>
     <div class="menu-grid" id="fav-grid"></div>
@@ -158,8 +115,8 @@ header {
         <span id="v-title" style="font-size:1.2rem; font-weight:bold;">標題</span>
         <div style="display: flex; align-items: center;">
             <div onclick="showQRCode()" style="font-size: 1.6rem; color: #fff; cursor: pointer; padding-right: 20px;">🔲</div>
-            <div id="viewer-fav-btn" onclick="toggleCurrentFav()" style="padding-right: 20px;">❤</div>
-            <div onclick="closeViewer()" style="font-size: 2rem; cursor: pointer; line-height: 1;">✕</div>
+            <div id="viewer-fav-btn" onclick="toggleCurrentFav()">❤</div>
+            <div onclick="closeViewer()" style="font-size: 2rem; cursor: pointer; line-height: 1; padding-left: 20px;">✕</div>
         </div>
     </div>
     <div class="image-viewport" id="touch-zone">
@@ -182,13 +139,10 @@ header {
             title: '耳滴劑', icon: '👂', 
             steps: ['img/ear_1.png', 'img/ear_2.png', 'img/ear_3.png', 'img/ear_4.png', 'img/ear_5.png', 'img/ear_6.png'] 
         },
-         // 👇 這裡新增鼻噴劑的資料 👇
         'nasal': { 
             title: '鼻噴劑', icon: '👃', 
             steps: ['img/nasal_1.png','img/nasal_2.png','img/nasal_3.png','img/nasal_4.png','img/nasal_5.png'] 
         }
-
-        
     };
 
     let favoriteImages = JSON.parse(localStorage.getItem('favImages')) || [];
@@ -215,109 +169,4 @@ header {
                 favGrid.innerHTML += `
                     <div class="menu-item fav-item" onclick="openViewer('${type}', ${idx})">
                         <span class="icon">${educationData[type].icon}</span>
-                        <div style="font-weight:bold; font-size:1.1rem;">${educationData[type].title}</div>
-                        <div class="fav-label">步驟 ${idx + 1}</div>
-                    </div>`;
-            }
-        });
-        document.getElementById('fav-section').style.display = favoriteImages.length > 0 ? 'block' : 'none';
-    }
-
-    function openViewer(type, startIndex = 0) {
-        currentType = type; 
-        currentIdx = startIndex;
-        updateContent();
-        document.getElementById('viewer').style.display = 'flex';
-    }
-
-    function closeViewer() { 
-        document.getElementById('viewer').style.display = 'none'; 
-        renderHome(); 
-    }
-
-    function updateContent() {
-        const data = educationData[currentType];
-        const totalSteps = data.steps.length;
-        
-        document.getElementById('v-title').innerText = `${data.title} (${currentIdx + 1}/${totalSteps})`;
-        document.getElementById('main-img').src = data.steps[currentIdx];
-        
-        const dotContainer = document.getElementById('v-steps');
-        dotContainer.innerHTML = data.steps.map((_, i) => 
-            `<div class="dot ${i === currentIdx ? 'active' : ''}"></div>`
-        ).join('');
-
-        const currentKey = `${currentType}-${currentIdx}`;
-        document.getElementById('viewer-fav-btn').className = favoriteImages.includes(currentKey) ? 'active' : '';
-    }
-
-    function toggleCurrentFav() {
-        const currentKey = `${currentType}-${currentIdx}`;
-        if (favoriteImages.includes(currentKey)) {
-            favoriteImages = favoriteImages.filter(k => k !== currentKey);
-        } else {
-            favoriteImages.push(currentKey);
-        }
-        localStorage.setItem('favImages', JSON.stringify(favoriteImages));
-        updateContent();
-    }
-
-    function changeStep(dir) {
-        const totalSteps = educationData[currentType].steps.length;
-        currentIdx = (currentIdx + dir + totalSteps) % totalSteps;
-        updateContent();
-    }
-
-    const touchZone = document.getElementById('touch-zone');
-    touchZone.addEventListener('click', (e) => {
-        if (e.clientX > window.innerWidth / 2) changeStep(1);
-        else changeStep(-1);
-    });
-
-    let touchStartX = 0;
-    touchZone.addEventListener('touchstart', e => touchStartX = e.changedTouches[0].screenX);
-    touchZone.addEventListener('touchend', e => {
-        let diff = touchStartX - e.changedTouches[0].screenX;
-        if (Math.abs(diff) > 50) changeStep(diff > 0 ? 1 : -1);
-    });
-
-    document.addEventListener('keydown', (e) => {
-        if (document.getElementById('viewer').style.display === 'flex') {
-            if (e.key === 'ArrowRight') changeStep(1);
-            if (e.key === 'ArrowLeft') changeStep(-1);
-            if (e.key === 'Escape') closeViewer();
-        }
-    });
-
-    window.onload = renderHome;
-// === 新增：產生並顯示 QR Code ===
-    function showQRCode() {
-        const data = educationData[currentType];
-        const currentImgPath = data.steps[currentIdx];
-
-        // 1. 自動抓取您在 GitHub Pages 上的真實網址路徑
-        let currentUrl = window.location.href.split('?')[0]; // 把尾巴的參數去掉
-        let basePath = currentUrl.substring(0, currentUrl.lastIndexOf('/') + 1);
-        let fullImgUrl = basePath + currentImgPath; // 組合出這張圖片的絕對網址
-
-        // 2. 呼叫 QRious 套件生成 QR Code
-        new QRious({
-            element: document.getElementById('qr-canvas'),
-            value: fullImgUrl,    // 掃描後會前往的網址
-            size: 220,            // QR Code 的大小
-            background: 'white',
-            foreground: 'black'
-        });
-
-        // 3. 顯示彈出視窗
-        document.getElementById('qr-modal').style.display = 'flex';
-    }
-
-    // === 新增：關閉 QR Code 視窗 ===
-    function closeQRModal() {
-        document.getElementById('qr-modal').style.display = 'none';
-    }
-
-</script>
-</body>
-</html>
+                        <div style="font-
