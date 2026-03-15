@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pharmacist-edu-202603151145';
+const CACHE_NAME = 'pharmacist-edu-202603160014';
 const ASSETS = [
   './',
   './index.html',
@@ -8,7 +8,7 @@ const ASSETS = [
   './img/eye_1.png', './img/eye_2.png', './img/eye_3.png', './img/eye_4.png', './img/eye_5.png', './img/eye_6.png',
   './img/rec_1.png', './img/rec_2.png', './img/rec_3.png', './img/rec_4.png',
   './img/ear_1.png', './img/ear_2.png', './img/ear_3.png', './img/ear_4.png', './img/ear_5.png', './img/ear_6.png',
-  './img/nasal_1.png'
+  '.img/nasal_1.png','./img/nasal_2.png','./img/nasal_3.png','./img/nasal_4.png','./img/nasal_5.png'
 ];
 
 self.addEventListener('install', (e) => {
