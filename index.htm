@@ -5,74 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>藥師衛教助手 4(動態步驟版)</title>
     <style>
-        /* 徹底修正：強制圖片乖乖待在螢幕內的 CSS */
-:root { --primary: #2c3e50; --fav: #ff4757; --bg: #f4f7f6; }
+        <style>
+    :root { --primary: #2c3e50; --fav: #ff4757; --bg: #f4f7f6; }
+    
+    /* 1. 基礎設定：防止網頁自動縮放與橫向捲動 */
+    html, body { 
+        margin: 0; 
+        padding: 0; 
+        width: 100%; 
+        height: 100%; 
+        overflow-x: hidden; 
+        background: var(--bg);
+        font-family: -apple-system, sans-serif;
+    }
 
-body { 
-    font-family: sans-serif; 
-    margin: 0; 
-    background: var(--bg); 
-    user-select: none; 
-    overflow-x: hidden; /* 禁止橫向捲動 */
-    width: 100vw;       /* 強制寬度等於視窗寬度 */
-}
+    header { background: var(--primary); color: white; padding: 18px; text-align: center; font-weight: bold; }
 
-/* 全螢幕展示層的強制約束 */
-#viewer { 
-    display: none; 
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100vw;      /* 強制滿寬 */
-    height: 100vh;     /* 強制滿高 */
-    background: #000; 
-    z-index: 1000; 
-    flex-direction: column;
-    overflow: hidden;  /* 內部溢出強制隱藏 */
-}
+    /* 2. 首頁佈局：恢復為兩欄，按鈕更適合點擊 */
+    .section-title { padding: 15px 20px 5px; font-size: 0.9rem; color: #7f8c8d; font-weight: bold; }
+    .menu-grid { 
+        display: grid; 
+        grid-template-columns: 1fr 1fr; /* 兩欄並排，如需三欄改為 1fr 1fr 1fr */
+        gap: 12px; 
+        padding: 10px 20px 20px; 
+        box-sizing: border-box;
+    }
+    
+    .menu-item { 
+        background: white; border-radius: 12px; padding: 22px 5px; text-align: center; 
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06); cursor: pointer; border: 1px solid #eee;
+        overflow: hidden; /* 防止內容撐開按鈕 */
+    }
+    .icon { font-size: 2rem; display: block; margin-bottom: 8px; }
 
-/* 圖片容器 */
-.image-viewport { 
-    flex: 1;           /* 自動填滿剩餘空間 */
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    overflow: hidden; 
-    width: 100%;       /* 限制寬度 */
-    position: relative;
-}
+    /* 3. 圖片檢視器：核心修正 */
+    #viewer { 
+        display: none; 
+        position: fixed; 
+        top: 0; left: 0; 
+        width: 100vw;      /* 強制視窗寬度 */
+        height: 100vh;     /* 強制視窗高度 */
+        background: #000; 
+        z-index: 1000; 
+        flex-direction: column;
+        margin: 0; padding: 0;
+    }
 
-/* 核心修正：圖片顯示邏輯 */
-.main-img { 
-    max-width: 100%;   /* 寬度最大只能跟容器一樣 */
-    max-height: 100%;  /* 高度最大只能跟容器一樣 */
-    width: auto;       /* 維持原圖比例 */
-    height: auto;      /* 維持原圖比例 */
-    object-fit: contain; /* 確保圖片縮放後完整顯示在容器內，不被裁剪 */
-    display: block;
-}
+    .viewer-header { 
+        width: 100%; 
+        height: 60px; /* 固定高度 */
+        padding: 0 15px; 
+        color: white; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        background: rgba(0,0,0,0.9);
+        box-sizing: border-box;
+    }
 
-.viewer-header { 
-    width: 100%;
-    box-sizing: border-box; /* 確保 Padding 不會增加寬度 */
-    padding: 12px 15px; 
-    color: white; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    background: rgba(0,0,0,0.85); 
-}
+    /* 4. 關鍵圖片縮放邏輯 */
+    .image-viewport { 
+        flex: 1;           /* 佔據剩餘高度 */
+        width: 100vw;      /* 寬度死守螢幕 */
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        overflow: hidden; 
+        position: relative;
+    }
 
-.footer-minimal { 
-    width: 100%;
-    box-sizing: border-box;
-    padding: 15px; 
-    background: rgba(0,0,0,0.85); 
-    display: flex; 
-    justify-content: center; 
-    gap: 8px; 
-}
-    </style>
+    .main-img { 
+        max-width: 100%;   /* 絕對不可超過螢幕寬 */
+        max-height: 100%;  /* 絕對不可超過剩餘高度 */
+        width: auto;       /* 保持原始比例縮放 */
+        height: auto;      /* 保持原始比例縮放 */
+        object-fit: contain; /* 包含模式：完整顯示整張圖 */
+        display: block;
+    }
+
+    .footer-minimal { 
+        width: 100%; 
+        height: 50px; /* 固定高度 */
+        background: rgba(0,0,0,0.9); 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        gap: 8px;
+    }
+    .dot { width: 8px; height: 8px; background: #555; border-radius: 50%; }
+    .dot.active { background: white; width: 18px; border-radius: 4px; }
+</style>
 </head>
 <body>
 
