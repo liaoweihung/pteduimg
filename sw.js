@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pharmacist-edu-v3';
+const CACHE_NAME = 'pharmacist-edu-202603152245';
 const ASSETS = [
   './',
   './index.html',
