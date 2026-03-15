@@ -115,15 +115,16 @@
         <span id="v-title" style="font-size:1.2rem; font-weight:bold;">標題</span>
         <div style="display: flex; align-items: center;">
             <div onclick="showQRCode()" style="font-size: 1.6rem; color: #fff; cursor: pointer; padding-right: 20px;">🔲</div>
-            <div id="viewer-fav-btn" onclick="toggleCurrentFav()">❤</div>
-            <div onclick="closeViewer()" style="font-size: 2rem; cursor: pointer; line-height: 1; padding-left: 20px;">✕</div>
+            <div id="viewer-fav-btn" onclick="toggleCurrentFav()" style="padding-right: 20px;">❤</div>
+            <div onclick="closeViewer()" style="font-size: 2rem; cursor: pointer; line-height: 1;">✕</div>
         </div>
-    </div>
-    <div class="image-viewport" id="touch-zone">
+    </div> <div class="image-viewport" id="touch-zone">
         <img id="main-img" class="main-img" src="" alt="教學圖">
     </div>
+
     <div class="footer-minimal" id="v-steps"></div>
-</div>
+</div> 
+
 
 <script>
     const educationData = {
