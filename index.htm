@@ -17,9 +17,23 @@
             overflow-x: hidden; 
             user-select: none;
         }
-
-        header { background: var(--primary); color: white; padding: 18px; text-align: center; font-weight: bold; font-size: 1.2rem; }
-
+header { 
+            background: var(--primary); 
+            color: white; 
+            padding: 12px 15px; 
+            font-weight: bold; 
+            font-size: 1.3rem; 
+            display: flex;         /* 讓圖示和文字並排 */
+            align-items: center;   /* 垂直置中 */
+            justify-content: center; /* 水平置中 */
+            gap: 12px;             /* 圖示和文字的間距 */
+        }
+        .header-icon {
+            height: 38px;          /* 控制上方圖示的大小 */
+            width: 38px;
+            object-fit: contain;
+        }
+        
         /* 2. 首頁選單佈局 */
         .section-title { padding: 15px 20px 5px; font-size: 0.9rem; color: #7f8c8d; font-weight: bold; }
         .menu-grid { 
