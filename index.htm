@@ -27,8 +27,23 @@
         #viewer-fav-btn.active { color: var(--fav); }
 
         .image-viewport { flex-grow: 1; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
-        .main-img { max-width: 100%; max-height: 100%; object-fit: contain; }
-        
+        /* 修正後的圖片樣式 */
+.main-img {
+    max-width: 100%;    /* 強制圖片寬度不可超過螢幕 */
+    max-height: 90vh;   /* 強制圖片高度不可超過螢幕高度的 90% (預留空間給標題) */
+    object-fit: contain; /* 保持比例，並將整張圖片完整顯示在區塊內 */
+    display: block;      /* 移除圖片下方的微小間隙 */
+}
+
+/* 確保圖片容器能夠正確延伸 */
+.image-viewport {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;    /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    overflow: hidden;        /* 隱藏任何溢出的部分 */
+    background: #000;        /* 黑色背景讓圖卡看起來更像 App */
+}       
         .footer-minimal { padding: 15px; background: rgba(0,0,0,0.85); display: flex; justify-content: center; gap: 8px; }
         .dot { width: 8px; height: 8px; background: #555; border-radius: 50%; }
         .dot.active { background: white; width: 18px; border-radius: 4px; transition: all 0.3s; }
