@@ -55,24 +55,24 @@
         
         #viewer-fav-btn { font-size: 1.8rem; color: #555; cursor: pointer; padding: 0 15px; transition: 0.2s; }
         #viewer-fav-btn.active { color: var(--fav); }
+        /* 核心修正：改用絕對定位，脫離 Flexbox 的干擾 */
+    .image-viewport { 
+        flex: 1;           
+        width: 100%;      
+        position: relative; /* 關鍵：為裡面的圖片設定一個參考框 */
+        background: #000;
+        overflow: hidden;
+    }
 
-        /* 4. 圖片容器與圖片本身的終極約束 */
-        .image-viewport { 
-            flex: 1; /* 填滿剩下的高度 */
-            width: 100%; 
-            min-height: 0; /* Flexbox 必備：防止被子元素(圖片)撐開 */
-            display: flex; align-items: center; justify-content: center; 
-            position: relative; overflow: hidden;
-        }
-
-        .main-img { 
-            max-width: 100%; 
-            max-height: 100%; 
-            width: auto; 
-            height: auto; 
-            object-fit: contain; /* 保證圖片完整顯示不被裁切 */
-            display: block;
-        }
+    .main-img { 
+        position: absolute;  /* 關鍵：絕對定位，強制填滿參考框 */
+        top: 0;
+        left: 0;
+        width: 100%;         /* 嚴格限制為螢幕寬 */
+        height: 100%;        /* 嚴格限制為剩餘高度 */
+        object-fit: contain; /* 保證圖片完整縮放，絕不裁切 */
+        display: block;
+    }
         
         .footer-minimal { 
             width: 100%; padding: 15px; background: rgba(0,0,0,0.9); 
