@@ -5,48 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>藥師衛教助手 4(動態步驟版)</title>
     <style>
-        :root { --primary: #2c3e50; --fav: #ff4757; --bg: #f4f7f6; }
-        body { font-family: sans-serif; margin: 0; background: var(--bg); user-select: none; overflow-x: hidden; }
-        header { background: var(--primary); color: white; padding: 18px; text-align: center; font-weight: bold; }
-        
-        .section-title { padding: 15px 20px 5px; font-size: 0.9rem; color: #7f8c8d; font-weight: bold; }
-        .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 10px 20px 20px; }
-        
-        .menu-item { 
-            background: white; border-radius: 12px; padding: 22px 10px; text-align: center; 
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06); cursor: pointer; border: 1px solid #eee;
-        }
-        .icon { font-size: 2.2rem; display: block; margin-bottom: 8px; }
-        .fav-item { background: #fff5f6; border-color: #ffdae0; }
-        .fav-label { font-size: 0.8rem; color: #e74c3c; margin-top: 4px; font-weight: bold; }
+        /* 徹底修正：強制圖片乖乖待在螢幕內的 CSS */
+:root { --primary: #2c3e50; --fav: #ff4757; --bg: #f4f7f6; }
 
-        #viewer { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; z-index: 1000; flex-direction: column; }
-        .viewer-header { padding: 12px 15px; color: white; display: flex; justify-content: space-between; align-items: center; background: rgba(0,0,0,0.85); }
-        
-        #viewer-fav-btn { font-size: 1.8rem; color: #555; cursor: pointer; padding: 0 15px; }
-        #viewer-fav-btn.active { color: var(--fav); }
-
-        .image-viewport { flex-grow: 1; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
-        /* 修正後的圖片樣式 */
-.main-img {
-    max-width: 100%;    /* 強制圖片寬度不可超過螢幕 */
-    max-height: 90vh;   /* 強制圖片高度不可超過螢幕高度的 90% (預留空間給標題) */
-    object-fit: contain; /* 保持比例，並將整張圖片完整顯示在區塊內 */
-    display: block;      /* 移除圖片下方的微小間隙 */
+body { 
+    font-family: sans-serif; 
+    margin: 0; 
+    background: var(--bg); 
+    user-select: none; 
+    overflow-x: hidden; /* 禁止橫向捲動 */
+    width: 100vw;       /* 強制寬度等於視窗寬度 */
 }
 
-/* 確保圖片容器能夠正確延伸 */
-.image-viewport {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;    /* 垂直居中 */
-    justify-content: center; /* 水平居中 */
-    overflow: hidden;        /* 隱藏任何溢出的部分 */
-    background: #000;        /* 黑色背景讓圖卡看起來更像 App */
-}       
-        .footer-minimal { padding: 15px; background: rgba(0,0,0,0.85); display: flex; justify-content: center; gap: 8px; }
-        .dot { width: 8px; height: 8px; background: #555; border-radius: 50%; }
-        .dot.active { background: white; width: 18px; border-radius: 4px; transition: all 0.3s; }
+/* 全螢幕展示層的強制約束 */
+#viewer { 
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100vw;      /* 強制滿寬 */
+    height: 100vh;     /* 強制滿高 */
+    background: #000; 
+    z-index: 1000; 
+    flex-direction: column;
+    overflow: hidden;  /* 內部溢出強制隱藏 */
+}
+
+/* 圖片容器 */
+.image-viewport { 
+    flex: 1;           /* 自動填滿剩餘空間 */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden; 
+    width: 100%;       /* 限制寬度 */
+    position: relative;
+}
+
+/* 核心修正：圖片顯示邏輯 */
+.main-img { 
+    max-width: 100%;   /* 寬度最大只能跟容器一樣 */
+    max-height: 100%;  /* 高度最大只能跟容器一樣 */
+    width: auto;       /* 維持原圖比例 */
+    height: auto;      /* 維持原圖比例 */
+    object-fit: contain; /* 確保圖片縮放後完整顯示在容器內，不被裁剪 */
+    display: block;
+}
+
+.viewer-header { 
+    width: 100%;
+    box-sizing: border-box; /* 確保 Padding 不會增加寬度 */
+    padding: 12px 15px; 
+    color: white; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background: rgba(0,0,0,0.85); 
+}
+
+.footer-minimal { 
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px; 
+    background: rgba(0,0,0,0.85); 
+    display: flex; 
+    justify-content: center; 
+    gap: 8px; 
+}
     </style>
 </head>
 <body>
