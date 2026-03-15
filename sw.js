@@ -1,13 +1,13 @@
-const CACHE_NAME = 'pharmacist-edu-v2';
+const CACHE_NAME = 'pharmacist-edu-v1';
 const ASSETS = [
   './',
   './index.html',
   './manifest.json',
-  // 請確保以下路徑與您的圖檔名稱一致
-  './img/eye_1.png', './img/eye_2.png', './img/eye_3.png',
-  './img/rec_1.png', './img/rec_2.png', './img/rec_3.png',
-  './img/ear_1.png', './img/ear_2.png', './img/ear_3.png',
-  './icon.png' 
+  './icon.png',
+  // 列出所有圖片路徑
+  './img/eye_1.png', './img/eye_2.png', './img/eye_3.png', './img/eye_4.png', './img/eye_5.png', './img/eye_6.png',
+  './img/rec_1.png', './img/rec_2.png', './img/rec_3.png', './img/rec_4.png',
+  './img/ear_1.png', './img/ear_2.png', './img/ear_3.png', './img/ear_4.png', './img/ear_5.png', './img/ear_6.png'
 ];
 
 self.addEventListener('install', (e) => {
