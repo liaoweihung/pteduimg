@@ -19,14 +19,26 @@ const ASSETS = [
   './img/nasal_1.png', './img/nasal_2.png', './img/nasal_3.png', './img/nasal_4.png'
 ];
 
+// ... 上面的 CACHE_NAME 和 ASSETS 清單維持您原本的寫法 ...
+
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
-      console.log('正在快取本地圖片...');
-      return cache.addAll(ASSETS);
+      console.log('開始逐一快取檔案...');
+      // 💡 防彈寫法：逐一快取檔案，即使某個檔案找不到，也不會中斷其他檔案的下載
+      return Promise.all(
+        ASSETS.map(url => {
+          return cache.add(url).catch(err => {
+            console.error('⚠️ 這支檔案找不到，請檢查 GitHub 檔名是否完全一致：', url);
+          });
+        })
+      );
     })
   );
 });
+
+// ... 下面的 fetch 和 activate 事件維持您原本的寫法 ...
+
 
 self.addEventListener('fetch', (e) => {
   e.respondWith(
