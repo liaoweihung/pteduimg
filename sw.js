@@ -1,7 +1,7 @@
 const CACHE_NAME = 'pharmacist-edu-202603151108';
 const ASSETS = [
   './',
-  './index.html',
+  './index.htm',
   './manifest.json',
   './icon.png',
   // 列出所有圖片路徑
