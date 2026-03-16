@@ -112,11 +112,16 @@
             <div onclick="closeViewer()" style="font-size: 2rem; cursor: pointer;">✕</div>
         </div>
     </div>
+
     <div class="image-viewport" id="touch-zone">
         <img id="main-img" class="main-img" src="" alt="教學圖">
+        
+        <div class="nav-btn left-btn" onclick="changeStep(-1)">❮</div>
+        <div class="nav-btn right-btn" onclick="changeStep(1)">❯</div>
     </div>
+
     <div class="footer-minimal" id="v-steps"></div>
-</div> 
+</div>
 
 <script>
     const educationData = {
