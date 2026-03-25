@@ -6,7 +6,6 @@ const ASSETS = [
   './index.html',
   './manifest.json',
   './icon.png',
- // 👇 把本地的 QR Code 產生器加入快取 👇
   './qrious.min.js',
   
   // 眼藥膏
@@ -29,17 +28,19 @@ const ASSETS = [
   './img/lan_1.png'
 ];
 
-// ... 上面的 CACHE_NAME 和 ASSETS 清單維持您原本的寫法 ...
-
+// === 安裝階段 ===
 self.addEventListener('install', (e) => {
+  // 👇 關鍵 1：跳過等待，強制成為最新版
+  self.skipWaiting(); 
+  
   e.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
       console.log('開始逐一快取檔案...');
-      // 💡 防彈寫法：逐一快取檔案，即使某個檔案找不到，也不會中斷其他檔案的下載
+      // 防彈寫法：即使某個檔案找不到，也不會中斷其他檔案的下載
       return Promise.all(
         ASSETS.map(url => {
           return cache.add(url).catch(err => {
-            console.error('⚠️ 這支檔案找不到，請檢查 GitHub 檔名是否完全一致：', url);
+            console.error('⚠️ 這支檔案找不到，請檢查 GitHub 檔名：', url);
           });
         })
       );
@@ -47,52 +48,32 @@ self.addEventListener('install', (e) => {
   );
 });
 
-// 安裝階段：加入強制更新指令
-self.addEventListener('install', (event) => {
-    // 👇 這行是關鍵：跳過等待，強制成為最新版 👇
-    self.skipWaiting(); 
-    
-    event.waitUntil(
-        caches.open(CACHE_NAME)
-            .then((cache) => cache.addAll(ASSETS))
-    );
-});
+// === 啟動階段 ===
+self.addEventListener('activate', (e) => {
+  // 👇 關鍵 2：立刻接管目前所有打開的頁面
+  e.waitUntil(clients.claim()); 
 
-// 啟動階段：接管所有的頁面控制權
-self.addEventListener('activate', (event) => {
-    // 👇 這行是關鍵：立刻接管目前所有打開的頁面 👇
-    event.waitUntil(clients.claim()); 
-
-    event.waitUntil(
-        caches.keys().then((cacheNames) => {
-            return Promise.all(
-                cacheNames.map((cacheName) => {
-                    if (cacheName !== CACHE_NAME) {
-                        return caches.delete(cacheName); // 刪除舊版本
-                    }
-                })
-            );
+  e.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.map(cacheName => {
+          // 如果快取名稱跟最新的不一樣，就刪除舊的
+          if (cacheName !== CACHE_NAME) {
+            console.log('🧹 刪除舊快取：', cacheName);
+            return caches.delete(cacheName);
+          }
         })
-    );
-});
-
-// ... 下面的 fetch 和 activate 事件維持您原本的寫法 ...
-self.addEventListener('fetch', (e) => {
-  e.respondWith(
-    caches.match(e.request).then(res => {
-      return res || fetch(e.request);
+      );
     })
   );
 });
 
-self.addEventListener('activate', (e) => {
-  e.waitUntil(
-    caches.keys().then(keyList => {
-      return Promise.all(keyList.map(key => {
-        if (key !== CACHE_NAME) {
-          return caches.delete(key);
-        }
-      }));
+// === 攔截請求階段 ===
+self.addEventListener('fetch', (e) => {
+  e.respondWith(
+    caches.match(e.request).then(res => {
+      // 如果快取裡有就給快取，沒有再去網路抓
+      return res || fetch(e.request);
     })
   );
 });
