@@ -15,6 +15,18 @@
 
   gtag('config', 'G-T5R33JYTC0');
 </script>
+<script>
+      function trackImageUsage(imageName) {
+          // 確保 GA4 有順利載入才執行
+          if (typeof gtag === 'function') {
+              gtag('event', 'view_instruction_card', {
+                  'card_name': imageName
+              });
+              console.log('📍 已傳送 GA4 追蹤記錄：', imageName);
+          }
+      }
+    </script>
+    
     <script src="./qrious.min.js"></script>
     <style>
         /* 基礎重置 */
