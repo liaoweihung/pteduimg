@@ -47,9 +47,36 @@ self.addEventListener('install', (e) => {
   );
 });
 
+// 安裝階段：加入強制更新指令
+self.addEventListener('install', (event) => {
+    // 👇 這行是關鍵：跳過等待，強制成為最新版 👇
+    self.skipWaiting(); 
+    
+    event.waitUntil(
+        caches.open(CACHE_NAME)
+            .then((cache) => cache.addAll(ASSETS))
+    );
+});
+
+// 啟動階段：接管所有的頁面控制權
+self.addEventListener('activate', (event) => {
+    // 👇 這行是關鍵：立刻接管目前所有打開的頁面 👇
+    event.waitUntil(clients.claim()); 
+
+    event.waitUntil(
+        caches.keys().then((cacheNames) => {
+            return Promise.all(
+                cacheNames.map((cacheName) => {
+                    if (cacheName !== CACHE_NAME) {
+                        return caches.delete(cacheName); // 刪除舊版本
+                    }
+                })
+            );
+        })
+    );
+});
+
 // ... 下面的 fetch 和 activate 事件維持您原本的寫法 ...
-
-
 self.addEventListener('fetch', (e) => {
   e.respondWith(
     caches.match(e.request).then(res => {
