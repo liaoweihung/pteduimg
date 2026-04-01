@@ -1,5 +1,5 @@
 // 更新時間戳記，強迫重新整理
-const CACHE_NAME = 'pharmacist-edu-20260401023'; 
+const CACHE_NAME = 'pharmacist-edu-2026042358'; 
 
 const ASSETS = [
   './',
@@ -24,6 +24,8 @@ const ASSETS = [
   './img/vag_oint_1.png', './img/vag_oint_2.png', './img/vag_oint_3.png', './img/vag_oint_4.png', './img/vag_oint_5.png', './img/vag_oint_6.png',
   // 痔瘡軟膏 內痔
   './img/hem_oint_1.png', './img/hem_oint_2.png', './img/hem_oint_3.png', './img/hem_oint_4.png', './img/hem_oint_5.png', './img/hem_oint_6.png',
+  //MDI 吸入器的圖
+  './img/MDI_1.png', './img/MDI_2.png', './img/MDI_3.png', './img/MDI_4.png', './img/MDI_5.png', './img/MDI_6.png', './img/MDI_7.png',
   // 多國語言圖
   './img/lan_1.png'
 ];
