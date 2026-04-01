@@ -346,6 +346,15 @@ function updateContent() {
         const fullUrl = window.location.origin + window.location.pathname.replace('index.html', '') + path;
         new QRious({ element: document.getElementById('qr-canvas'), value: fullUrl, size: 220 });
         document.getElementById('qr-modal').style.display = 'flex';
+
+        // 👇 新增的 GA4 追蹤雷達：記錄產生 QR Code 的動作 👇
+        if (typeof gtag === 'function') {
+            gtag('event', 'show_qr_code', {
+                'card_category': educationData[currentType].title, // 記錄是哪個主題 (例如: 眼藥膏)
+                'step_number': currentIdx + 1                      // 記錄是第幾個步驟的圖
+            });
+            console.log('📍 已傳送 GA4 記錄：產生 QR Code', educationData[currentType].title, '步驟', currentIdx + 1);
+        }
     }
 
     function closeQRModal() { document.getElementById('qr-modal').style.display = 'none'; }
