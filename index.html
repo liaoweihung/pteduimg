@@ -6,6 +6,22 @@
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="./icon.png?v=1">
     <title>藥局衛教助手</title>
+    <!-- 👇 新增的隱形斗篷開關 👇 -->
+<script>
+  // 1. 檢查網址有沒有帶秘密鑰匙 (?dev=1)
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('dev') === '1') {
+      localStorage.setItem('isDeveloper', 'true'); // 在手機瀏覽器刻上開發者印記
+      alert('已開啟開發者隱形模式！未來的瀏覽將不會被 GA4 記錄。');
+  }
+
+  // 2. 只要有開發者印記，就強行關閉 GA4
+  if (localStorage.getItem('isDeveloper') === 'true') {
+      window['ga-disable-G-T5R33JYTC0'] = true; 
+      console.log('🛡️ 開發者隱形模式運作中：GA4 已暫停');
+  }
+</script>
+<!-- 👆 隱形斗篷開關結束 👆 -->
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T5R33JYTC0"></script>
 <script>
