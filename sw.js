@@ -1,5 +1,5 @@
 // 更新時間戳記，強迫重新整理
-const CACHE_NAME = 'pharmacist-edu-202604022330'; 
+const CACHE_NAME = 'pharmacist-edu-v25'; 
 
 const ASSETS = [
   './',
@@ -27,7 +27,9 @@ const ASSETS = [
   //MDI 吸入器的圖
   './img/MDI_1.png', './img/MDI_2.png', './img/MDI_3.png', './img/MDI_4.png', './img/MDI_5.png', './img/MDI_6.png', './img/MDI_7.png',
   // 多國語言圖
-  './img/lan_1.png', './img/lan_2.png'
+  './img/lan_1.png', './img/lan_2.png',
+  // 貼片
+  './img/Lidopat_1.png', './img/Nicotine_1.png'
 ];
 
 // === 安裝階段 ===
