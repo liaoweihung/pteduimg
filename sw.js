@@ -29,7 +29,7 @@ const ASSETS = [
   // 多國語言圖
   './img/lan_1.png', './img/lan_2.png',
   // 貼片
-  './img/Lidopat_1.png', './img/Nicotine_1.png', 'img/Neupro.png' 
+  './img/Lidopat_1.png', './img/Nicotine_1.png', './img/Neupro.png' 
 ];
 
 // === 安裝階段 ===
