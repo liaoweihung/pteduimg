@@ -1,5 +1,5 @@
 // 更新時間戳記，強迫重新整理
-const CACHE_NAME = 'pwa-cache-v202604091802'; 
+const CACHE_NAME = 'pwa-cache-v202604091806'; 
 
 const ASSETS = [
   './',
