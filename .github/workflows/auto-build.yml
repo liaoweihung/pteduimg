@@ -1,0 +1,40 @@
+name: 自動更新 PWA 快取與版本號
+
+# 1. 什麼時候要喚醒管家？
+on:
+  push:
+    branches:
+      - main # 假設您的主分支叫 main (如果是 master 請改成 master)
+    # 為了避免管家自己存檔後又喚醒自己，我們設定「只有當圖片或首頁有變動時」才喚醒他
+    paths:
+      - 'index.html'
+      - 'img/**'
+
+# 2. 管家的工作清單
+jobs:
+  update-sw:
+    runs-on: ubuntu-latest # 給管家一台最新版的虛擬 Linux 電腦
+
+    steps:
+      - name: 📥 把您的程式碼下載到虛擬電腦裡
+        uses: actions/checkout@v4
+
+      - name: 🐍 安裝 Python 環境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: ⚙️ 執行您寫好的 Python 助理腳本
+        run: python build.py
+
+      - name: 💾 檢查是否有更新並自動存檔 (Commit & Push)
+        run: |
+          # 設定管家的名字
+          git config --global user.name "GitHub Actions 管家"
+          git config --global user.email "actions@github.com"
+          
+          # 把改好的 sw.js 加入存檔清單
+          git add sw.js
+          
+          # 檢查檔案有沒有變動，有的話就自動 commit 並推送到您的 GitHub
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 [自動化] 更新 sw.js 離線圖片清單與版本號" && git push)
