@@ -1,5 +1,5 @@
 // 更新時間戳記，強迫重新整理
-const CACHE_NAME = 'pharmacist-edu-v27 260404'; 
+const CACHE_NAME = 'pharmacist-edu-v27 260409'; 
 
 const ASSETS = [
   './',
@@ -30,6 +30,8 @@ const ASSETS = [
   './img/lan_1.png', './img/lan_2.png',
   // 貼片
   './img/Lidopat_1.png', './img/Nicotine_1.png', 
+  // 跌倒
+  './img/slipped_fall_wound.png'
 ];
 
 // === 安裝階段 ===
