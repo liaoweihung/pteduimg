@@ -202,7 +202,7 @@
 #update-light {
     display: none; /* 預設隱藏，有更新才出現 */
     position: fixed;
-    top: 15px;     /* 放在右上角，遠離底部的滑動區 */
+    bottom: 30px;     /* 放在底部，與底部的滑動區區隔 */
     right: 15px;
     background: rgba(255, 255, 255, 0.95);
     border: 1px solid #e0e0e0;
@@ -537,7 +537,8 @@ function updateContent() {
 </footer>
     <div id="update-light" onclick="window.location.reload()" title="點擊更新至最新版">
     <span class="pulse-dot"></span>
-    <span class="light-text">有新圖卡</span>
+    <span class="light-text">有新圖卡，按這裡更新</span>
+</div>
 </div>
 </body>
 </html>
