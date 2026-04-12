@@ -198,6 +198,48 @@
 .site-footer a:active {
     color: #2c3e50;
 }
+        /* --- 更新提示燈樣式 --- */
+#update-light {
+    display: none; /* 預設隱藏，有更新才出現 */
+    position: fixed;
+    top: 15px;     /* 放在右上角，遠離底部的滑動區 */
+    right: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #e0e0e0;
+    padding: 6px 12px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    z-index: 9999;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: transform 0.1s ease;
+}
+
+#update-light:active {
+    transform: scale(0.95); /* 點擊時會有按下去的微縮小回饋 */
+}
+
+/* 會呼吸的小紅點 */
+.pulse-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ff4757; /* 醒目的警戒紅 */
+    border-radius: 50%;
+    display: inline-block;
+    /* 製作呼吸擴散的動畫 */
+    box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7);
+    animation: pulse-animation 1.5s infinite;
+}
+
+@keyframes pulse-animation {
+    0% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7); }
+    70% { box-shadow: 0 0 0 8px rgba(255, 71, 87, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); }
+}
     </style>
 </head>
 <body>
@@ -467,17 +509,21 @@ function updateContent() {
     window.onload = renderHome;
 
 // 👇 請把這段喚醒大腦的程式碼貼在這裡 👇
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('./sw.js')
-                .then(registration => {
-                    console.log('離線大腦 (Service Worker) 註冊成功！', registration.scope);
-                })
-                .catch(error => {
-                    console.log('離線大腦註冊失敗：', error);
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').then(reg => {
+            reg.addEventListener('updatefound', () => {
+                const newWorker = reg.installing;
+                newWorker.addEventListener('statechange', () => {
+                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                        // 發現更新！點亮右上角的呼吸燈
+                        document.getElementById('update-light').style.display = 'flex';
+                    }
                 });
+            });
         });
-    }
+    });
+}
     // 👆 貼到這裡為止 👆
     
 </script>
@@ -489,5 +535,9 @@ function updateContent() {
    <a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" onclick="gtag('event', 'click_feedback', { 'source_app': 'pteduimg' });">💬 意見回饋</a>
   </p>
 </footer>
+    <div id="update-light" onclick="window.location.reload()" title="點擊更新至最新版">
+    <span class="pulse-dot"></span>
+    <span class="light-text">有新圖卡</span>
+</div>
 </body>
 </html>
