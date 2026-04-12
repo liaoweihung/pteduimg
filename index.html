@@ -364,19 +364,31 @@ function updateContent() {
         updateContent();
     }
 
-    function changeStep(dir) {
+   function changeStep(dir) {
         // 防止事件冒泡（避免點按鈕卻點到後面的東西）
         if (event) event.stopPropagation(); 
         
         const total = educationData[currentType].steps.length;
         currentIdx = (currentIdx + dir + total) % total;
-        resetZoom(); // 👈 新增：翻頁時將圖片重置回原始大小，才不會卡住
+        resetZoom(); // 👈 翻頁時將圖片重置回原始大小，才不會卡住
         updateContent();
 
         // 重要：切換圖片時，將視窗捲軸重置回中心，方便下一張縮放
         const viewport = document.getElementById('touch-zone');
         viewport.scrollLeft = 0;
         viewport.scrollTop = 0;
+
+        // 👇=== 新增：GA4 翻頁追蹤防彈裝甲 ===👇
+        // 確保有網路且 GA4 正常載入時，才執行追蹤，避免離線時當機
+        if (typeof gtag === 'function') {
+            gtag('event', 'view_instruction_step', {
+                'card_category': currentType,                     // 紀錄代號 (例如: 'fall_wound')
+                'card_title': educationData[currentType].title,   // 紀錄中文標題 (例如: '傷口照護')
+                'step_number': currentIdx + 1                     // 紀錄看了第幾張 (加 1 是因為陣列從 0 開始，這樣報表看 1, 2, 3 比較直覺)
+            });
+            console.log(`📊 GA4 追蹤：看了 [${educationData[currentType].title}] 的第 ${currentIdx + 1} 張圖`);
+        }
+        // 👆=== 新增結束 ===👆
     }
 
     function showQRCode() {
