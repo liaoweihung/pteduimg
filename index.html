@@ -378,6 +378,14 @@
         if (educationData[type]) {
             trackImageUsage(educationData[type].title);
     }
+        // 👇 從這裡開始新增：修復 GA4 第一步起跑線盲區 👇
+        if (typeof gtag === 'function') {
+            gtag('event', 'view_instruction_step', {
+                'card_title': educationData[type].title,
+                'step_number': (idx + 1) // 將程式的 0 轉換為人類理解的第 1 步
+            });
+        }
+        // 👆 新增結束 👆
     }
     function closeViewer() { 
         document.getElementById('viewer').style.display = 'none'; 
