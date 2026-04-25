@@ -1,0 +1,200 @@
+/* 基礎重置 */
+        * { box-sizing: border-box; }
+        :root { --primary: #2c3e50; --fav: #ff4757; --bg: #f4f7f6; }
+        html, body { 
+            margin: 0; padding: 0; 
+            width: 100%; height: 100vh; 
+            background: var(--bg); 
+            font-family: -apple-system, sans-serif;
+            overflow-x: hidden; 
+            user-select: none;
+        }
+        header { 
+            background: var(--primary); color: white; padding: 12px 15px; 
+            font-weight: bold; font-size: 1.3rem; display: flex; 
+            align-items: center; justify-content: center; gap: 12px; 
+        }
+        .header-icon { height: 38px; width: 38px; object-fit: contain; }
+        .section-title { padding: 15px 20px 5px; font-size: 0.9rem; color: #7f8c8d; font-weight: bold; }
+        .menu-grid { 
+            display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding: 15px 20px 30px; 
+        }
+        .menu-item { 
+            background: white; border-radius: 12px; padding: 25px 10px; text-align: center; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); cursor: pointer; border: 1px solid #eee;
+        }
+        .icon { font-size: 2.5rem; display: block; margin-bottom: 10px; }
+        .fav-item { background: #fff5f6; border-color: #ffdae0; }
+        .fav-label { font-size: 0.8rem; color: #e74c3c; margin-top: 5px; font-weight: bold; }
+
+        #viewer { 
+            display: none; flex-direction: column; position: fixed; 
+            top: 0; left: 0; width: 100vw; height: 100vh; height: 100dvh; 
+            background: #000; z-index: 9999; 
+        }
+        .viewer-header { 
+            flex: 0 0 auto; padding: 15px 20px; color: white; display: flex; 
+            justify-content: space-between; align-items: center; background: rgba(0,0,0,0.9); 
+        }
+        #viewer-fav-btn { font-size: 1.8rem; color: #555; cursor: pointer; }
+        #viewer-fav-btn.active { color: var(--fav); }
+
+        .image-viewport { 
+            flex: 1 1 auto; position: relative; display: flex; 
+            align-items: center; justify-content: center; width: 100%; height: 100%; overflow: hidden; 
+        }
+        .main-img { 
+            max-width: 100%; max-height: 100%; width: auto; height: auto; 
+            object-fit: contain; margin: auto; 
+        }
+        .footer-minimal { 
+            flex: 0 0 auto; padding: 20px; background: rgba(0,0,0,0.9); 
+            display: flex; justify-content: center; align-items: center; gap: 10px; 
+        }
+        .dot { width: 8px; height: 8px; background: #555; border-radius: 50%; }
+        .dot.active { background: white; width: 20px; border-radius: 4px; transition: 0.3s; }
+
+        #qr-modal {
+            display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(0,0,0,0.95); z-index: 10000; flex-direction: column;
+            align-items: center; justify-content: center;
+        }
+        .qr-box {
+            background: white; padding: 30px; border-radius: 16px; text-align: center;
+        }
+        .qr-title { margin-top: 0; margin-bottom: 20px; color: #2c3e50; font-size: 1.2rem; }
+        .qr-close {
+            margin-top: 25px; padding: 12px 40px; background: #2c3e50; color: white;
+            border: none; border-radius: 8px; font-size: 1.1rem; cursor: pointer; font-weight: bold;
+        }
+
+     /* 翻頁按鈕樣式 */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.left-btn { left: 0; border-radius: 0 10px 10px 0; }
+.right-btn { right: 0; border-radius: 10px 0 0 10px; }
+
+/* 讓圖片支援原生縮放 */
+.main-img {
+    max-width: 100%;
+    max-height: 100%;
+    touch-action: pinch-zoom; /* 僅允許縮放，手勢翻頁由按鈕處理 */
+}
+
+        /* 5. 底部說明與提示文字區域 (非浮動) */
+        .step-desc {
+            flex: 0 0 auto;
+            background: rgba(0,0,0,0.9); /* 與進度點相同的底色 */
+            color: #e0e0e0;              /* 柔和的淺灰色字體，閱讀舒適 */
+            padding: 0 20px 20px 20px;   /* 調整間距讓它緊貼進度點下方 */
+            text-align: center;
+            font-size: 1.05rem;
+            line-height: 1.4;
+            letter-spacing: 0.5px;
+        }
+        
+        /* 微調原本的進度點底部間距，讓它跟文字更緊密 */
+        .footer-minimal { 
+            flex: 0 0 auto; padding: 15px 20px 10px 20px; background: rgba(0,0,0,0.9); 
+            display: flex; justify-content: center; align-items: center; gap: 10px; 
+        }
+        /* === 開發者專屬頁尾樣式 (極簡連結版) === */
+        .creator-footer {
+            text-align: center;
+            padding: 25px 0 20px 0;
+            width: 100%;
+        }
+        
+        .creator-footer a {
+            color: #888888; /* 平常是低調的灰色 */
+            text-decoration: none; /* 拿掉醜醜的底線 */
+            font-size: 13px;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+        
+        .creator-footer a:active {
+            color: #66b3ff; /* 手指點按時會發出微光，給予點擊回饋 */
+        }
+        /* 首頁專屬頁尾：極簡淺色風格 */
+.site-footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #7f8c8d; /* 跟您的 Section Title 使用一樣的高級灰 */
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* 消除連結的藍色底線，維持灰色質感 */
+.site-footer a {
+    color: #7f8c8d;
+    text-decoration: none;
+}
+
+/* 點擊時變成深藍色，給予回饋 */
+.site-footer a:active {
+    color: #2c3e50;
+}
+        /* --- 更新提示燈樣式 --- */
+#update-light {
+    display: none; /* 預設隱藏，有更新才出現 */
+    position: fixed;
+    bottom: 30px;     /* 放在底部，與底部的滑動區區隔 */
+    right: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #e0e0e0;
+    padding: 6px 12px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    z-index: 9999;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: transform 0.1s ease;
+}
+
+#update-light:active {
+    transform: scale(0.95); /* 點擊時會有按下去的微縮小回饋 */
+}
+
+/* 會呼吸的小紅點 */
+.pulse-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ff4757; /* 醒目的警戒紅 */
+    border-radius: 50%;
+    display: inline-block;
+    /* 製作呼吸擴散的動畫 */
+    box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7);
+    animation: pulse-animation 1.5s infinite;
+}
+
+@keyframes pulse-animation {
+    0% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7); }
+    70% { box-shadow: 0 0 0 8px rgba(255, 71, 87, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); }
+}
+
+        .top-nav { display:flex; gap:10px; padding:12px 20px 0; align-items:center; justify-content:center; flex-wrap:wrap; }
+        .top-nav a { display:inline-block; padding:9px 14px; border-radius:999px; background:white; color:#2c3e50; text-decoration:none; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,0.06); border:1px solid #e5e8e8; font-size:0.95rem; }
+        .top-nav a.active { background:#2c3e50; color:white; }
+        .page-note { margin:10px 20px 0; padding:10px 12px; border-radius:12px; background:#ffffff; color:#5d6d7e; font-size:0.9rem; line-height:1.4; border:1px solid #e5e8e8; }

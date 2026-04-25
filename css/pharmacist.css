@@ -1,0 +1,14 @@
+/* 藥師頁專屬樣式：只調整頁面識別色，不改內容區底色 */
+body.pharmacist-page header {
+    background: #2c3e50;
+    color: #ffffff;
+}
+
+body.pharmacist-page header span {
+    color: #ffffff;
+}
+
+body.pharmacist-page .top-nav a.active {
+    background: #2c3e50;
+    color: #ffffff;
+}

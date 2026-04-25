@@ -1,0 +1,15 @@
+/* 民眾疾病衛教頁專屬樣式：保留白底，只讓上方識別色變淡 */
+body.public-page header {
+    background: #e0f2fe;
+    color: #1e3a8a;
+}
+
+body.public-page header span {
+    color: #1e3a8a;
+}
+
+body.public-page .top-nav a.active {
+    background: #dbeafe;
+    color: #1e3a8a;
+    border-color: #bfdbfe;
+}
