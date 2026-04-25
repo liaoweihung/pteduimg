@@ -178,6 +178,7 @@
         const categories = {};
         Object.keys(educationData).forEach(key => {
             const item = educationData[key];
+            if (item.hidden) return;   // 👈 加這一行（關鍵！）
             if (!isVisibleOnPage(item)) return;
             const cat = item.category || 'uncategorized';
             if (!categories[cat]) categories[cat] = [];
