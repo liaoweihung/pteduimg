@@ -10,7 +10,7 @@ def update_service_worker():
     image_files = [f for f in os.listdir(img_folder) if f.endswith(('.png', '.jpg', '.jpeg'))]
     
     # 建立 PWA 需要的快取清單 (包含首頁和所有圖片)
-    cache_list = ["'./'", "'./index.html'"]
+    cache_list = ["'./'", "'./index.html'", "'./public.html'"]
     for img in image_files:
         cache_list.append(f"'./img/{img}'")
     
