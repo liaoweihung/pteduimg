@@ -241,6 +241,19 @@
       "img/Wet_Wrap.png"
     ]
   },
+  "over_one_oint": {
+  "title": "藥膏一起擦",
+  "category": "public_education",
+  "order": 40,
+  "hidden": false,
+  "icon": "🧴",
+  "texts": ["","",""],
+  "steps": [
+    "img/over_one_oint_01.png",
+    "img/over_one_oint_02.png",
+    "img/over_one_oint_03.png"
+  ]
+},
   "ZithromaxPOS": {
     "category": "pharmacist_product",
     "title": "日舒泡製",
