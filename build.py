@@ -55,14 +55,20 @@ print("開始更新 sitemap.xml...")
 # 1. 取得今天的日期 (格式：YYYY-MM-DD)
 today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
 
-# 2. 準備 sitemap 的內容 (⚠️ 請記得把下面的網址換成您真實的網址！)
-sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+# 2. 準備 sitemap 的內容 (新增了 public.html)
+    sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://liaoweihung.github.io/pteduimg/</loc>
     <lastmod>{today_str}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/public.html</loc>
+    <lastmod>{today_str}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>"""
 
