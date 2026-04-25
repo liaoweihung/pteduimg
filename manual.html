@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>圖卡後台維護說明</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background: #f8f9fa;
+}
+h1, h2 {
+    color: #2c3e50;
+}
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+code {
+    background: #eee;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+.good { color: green; }
+.bad { color: red; }
+</style>
+</head>
+
+<body>
+
+<h1>📘 圖卡後台維護說明</h1>
+
+<div class="card">
+<h2>🎯 基本概念</h2>
+<p>你只需要會用 <b>cards.json</b> 就可以管理全部圖卡。</p>
+
+<p>其他檔案：</p>
+<ul>
+<li class="bad">build.py → 不用碰</li>
+<li class="bad">cards.manual.json → 不用碰</li>
+<li class="bad">js / sw.js → 不用碰</li>
+</ul>
+</div>
+
+---
+
+<div class="card">
+<h2>👁️ 隱藏圖卡</h2>
+
+<p>在 <code>cards.json</code> 找到圖卡：</p>
+
+<pre>
+"Neupro": {
+  "title": "Neupro 貼片",
+  "hidden": true
+}
+</pre>
+
+<p class="good">✔ hidden: true → 不顯示</p>
+<p class="bad">❌ hidden: false 或沒寫 → 會顯示</p>
+</div>
+
+---
+
+<div class="card">
+<h2>📊 排序圖卡</h2>
+
+<pre>
+"Neupro": {
+  "order": 40
+}
+</pre>
+
+<p>數字越小 → 越前面</p>
+
+<ul>
+<li>10 → 很前面</li>
+<li>100 → 很後面</li>
+</ul>
+</div>
+
+---
+
+<div class="card">
+<h2>➕ 新增圖卡</h2>
+
+<p>直接複製一個：</p>
+
+<pre>
+"new_card": {
+  "title": "新圖卡",
+  "category": "pharmacist_product",
+  "order": 50,
+  "icon": "💊"
+}
+</pre>
+
+</div>
+
+---
+
+<div class="card">
+<h2>📂 分類說明</h2>
+
+<ul>
+<li>pharmacist_general → 通用藥品</li>
+<li>pharmacist_product → 特定產品</li>
+<li>public_education → 民眾衛教</li>
+</ul>
+</div>
+
+---
+
+<div class="card">
+<h2>⚠️ 常見錯誤</h2>
+
+<p>改了沒變？</p>
+
+<ul>
+<li>👉 按 Ctrl + Shift + R</li>
+<li>👉 用無痕模式</li>
+<li>👉 等 30 秒（GitHub Pages 延遲）</li>
+</ul>
+
+</div>
+
+---
+
+<div class="card">
+<h2>🚑 緊急還原</h2>
+
+<p>如果壞掉：</p>
+
+<pre>
+GitHub → commits → 回到上一版
+</pre>
+
+</div>
+
+---
+
+<div class="card">
+<h2>💡 最重要原則</h2>
+
+<ul>
+<li>只改 cards.json</li>
+<li>不要動其他檔案</li>
+<li>出問題先刷新</li>
+</ul>
+
+</div>
+
+</body>
+</html>
