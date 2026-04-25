@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>圖卡管理面板</title>
+<style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f4f7f6; color: #2c3e50; }
+    header { background: #2c3e50; color: #fff; padding: 14px 18px; font-weight: 700; font-size: 1.2rem; display: flex; justify-content: space-between; align-items: center; }
+    main { max-width: 920px; margin: 0 auto; padding: 18px; }
+    .panel { background: #fff; border: 1px solid #e5e8e8; border-radius: 14px; padding: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 16px; }
+    input, select, textarea, button { font: inherit; }
+    input, select, textarea { width: 100%; padding: 10px 12px; border: 1px solid #ccd6dd; border-radius: 10px; background: #fff; }
+    button { border: 0; border-radius: 10px; padding: 10px 14px; cursor: pointer; font-weight: 700; background: #2c3e50; color: #fff; }
+    button.secondary { background: #ecf0f1; color: #2c3e50; }
+    .toolbar { display: grid; grid-template-columns: 1fr 180px 150px; gap: 10px; align-items: center; }
+    .hint { color: #7f8c8d; font-size: 0.9rem; line-height: 1.5; }
+    .list { display: flex; flex-direction: column; gap: 10px; }
+    .card-row { background: #fff; border: 1px solid #e5e8e8; border-radius: 12px; padding: 12px; display: grid; grid-template-columns: 38px 1fr 145px 100px 88px; gap: 10px; align-items: center; box-shadow: 0 2px 7px rgba(0,0,0,0.04); }
+    .card-row.dragging { opacity: 0.45; border-style: dashed; }
+    .drag-handle { cursor: grab; font-size: 1.3rem; color: #7f8c8d; text-align: center; user-select: none; }
+    .title { font-weight: 700; line-height: 1.35; }
+    .sub { color: #95a5a6; font-size: 0.8rem; word-break: break-all; margin-top: 3px; }
+    .visible-toggle { display: flex; gap: 6px; align-items: center; justify-content: center; font-size: 0.9rem; white-space: nowrap; }
+    .visible-toggle input { width: auto; }
+    .order-input { text-align: center; }
+    .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .login-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+    .login-box { width: min(420px, 100%); background: #fff; border-radius: 16px; padding: 22px; box-shadow: 0 10px 28px rgba(0,0,0,0.1); }
+    #app { display: none; }
+    #output { min-height: 280px; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.9rem; white-space: pre; }
+    .status { margin-top: 8px; font-size: 0.9rem; color: #27ae60; min-height: 1.2em; }
+    @media (max-width: 760px) {
+        .toolbar { grid-template-columns: 1fr; }
+        .card-row { grid-template-columns: 32px 1fr; }
+        .card-row select, .visible-toggle, .order-input { grid-column: 2 / 3; }
+    }
+</style>
+</head>
+<body>
+<div id="login" class="login-wrap">
+    <div class="login-box">
+        <h1 style="margin-top:0;">圖卡管理面板</h1>
+        <p class="hint">這是簡易前端密碼，用來避免一般使用者誤入；不是正式資安保護。真正安全的管理需要後端或 GitHub 權限控管。</p>
+        <label>管理密碼</label>
+        <input id="password" type="password" placeholder="請輸入管理密碼" autocomplete="current-password">
+        <div style="height:12px;"></div>
+        <button onclick="login()">進入管理面板</button>
+        <p id="login-error" style="color:#c0392b;"></p>
+    </div>
+</div>
+<div id="app">
+<header>
+    <span>圖卡管理面板</span>
+    <button class="secondary" onclick="logout()">登出</button>
+</header>
+<main>
+    <section class="panel">
+        <div class="toolbar">
+            <input id="search" placeholder="搜尋圖卡標題或代號…">
+            <select id="categoryFilter">
+                <option value="">全部分類</option>
+                <option value="pharmacist_general">通用藥品使用說明</option>
+                <option value="pharmacist_product">特定產品衛教</option>
+                <option value="public_education">民眾疾病衛教圖卡</option>
+                <option value="uncategorized">其他圖卡</option>
+            </select>
+            <button onclick="exportJSON()">產生設定檔</button>
+        </div>
+        <p class="hint">拖曳左側 ≡ 可調整目前篩選清單中的順序。排序會自動改成 10、20、30…，方便未來插入新圖卡。</p>
+    </section>
+    <section class="panel">
+        <div class="actions">
+            <button class="secondary" onclick="showAll()">全部顯示</button>
+            <button class="secondary" onclick="hideSelectedFiltered()">隱藏目前篩選結果</button>
+            <button class="secondary" onclick="renumberVisible()">依目前順序重新編號</button>
+        </div>
+        <p class="hint" id="countInfo"></p>
+    </section>
+    <section class="list" id="list"></section>
+    <section class="panel">
+        <h2>輸出 cards.manual.json</h2>
+        <p class="hint">按「產生設定檔」後，複製下方內容，貼到 GitHub 的 <b>cards.manual.json</b>，commit 後再讓 build.py / GitHub Actions 更新 cards.json。</p>
+        <div class="actions">
+            <button onclick="exportJSON()">產生設定檔</button>
+            <button class="secondary" onclick="copyOutput()">複製輸出</button>
+        </div>
+        <div class="status" id="copyStatus"></div>
+        <textarea id="output" spellcheck="false"></textarea>
+    </section>
+</main>
+</div>
+<script>
+const ADMIN_PASSWORD = '1234';
+let data = {};
+let orderedKeys = [];
+let dragKey = null;
+const categoryNames = {
+    pharmacist_general: '通用藥品',
+    pharmacist_product: '特定產品',
+    public_education: '民眾衛教',
+    uncategorized: '其他'
+};
+function login() {
+    const pw = document.getElementById('password').value;
+    if (pw === ADMIN_PASSWORD) {
+        sessionStorage.setItem('pteduimg_admin_ok', '1');
+        showApp();
+    } else {
+        document.getElementById('login-error').innerText = '密碼錯誤';
+    }
+}
+function logout() {
+    sessionStorage.removeItem('pteduimg_admin_ok');
+    location.reload();
+}
+function showApp() {
+    document.getElementById('login').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+    load();
+}
+async function load() {
+    try {
+        const res = await fetch('./cards.json?v=' + Date.now(), { cache: 'no-store' });
+        data = await res.json();
+        orderedKeys = Object.keys(data).sort((a, b) => {
+            const orderA = Number(data[a].order || 9999);
+            const orderB = Number(data[b].order || 9999);
+            if (orderA !== orderB) return orderA - orderB;
+            return (data[a].title || '').localeCompare(data[b].title || '', 'zh-Hant');
+        });
+        render();
+    } catch (err) {
+        document.getElementById('list').innerHTML = '<div class="panel" style="color:#c0392b;">讀取 cards.json 失敗，請確認檔案存在。</div>';
+        console.error(err);
+    }
+}
+function getFilteredKeys() {
+    const keyword = document.getElementById('search').value.trim().toLowerCase();
+    const cat = document.getElementById('categoryFilter').value;
+    return orderedKeys.filter(key => {
+        const item = data[key] || {};
+        const title = (item.title || '').toLowerCase();
+        const matchKeyword = !keyword || title.includes(keyword) || key.toLowerCase().includes(keyword);
+        const matchCategory = !cat || (item.category || 'uncategorized') === cat;
+        return matchKeyword && matchCategory;
+    });
+}
+function render() {
+    const list = document.getElementById('list');
+    const keys = getFilteredKeys();
+    list.innerHTML = '';
+    document.getElementById('countInfo').innerText = `目前顯示 ${keys.length} 張；全部 ${orderedKeys.length} 張。`;
+    keys.forEach(key => {
+        const item = data[key];
+        const row = document.createElement('div');
+        row.className = 'card-row';
+        row.draggable = true;
+        row.dataset.key = key;
+        row.innerHTML = `
+            <div class="drag-handle" title="拖曳排序">≡</div>
+            <div>
+                <div class="title">${escapeHTML(item.title || key)}</div>
+                <div class="sub">${escapeHTML(key)}</div>
+            </div>
+            <select onchange="updateCategory('${key}', this.value)">
+                ${categoryOption('pharmacist_general', item.category)}
+                ${categoryOption('pharmacist_product', item.category)}
+                ${categoryOption('public_education', item.category)}
+                ${categoryOption('uncategorized', item.category || 'uncategorized')}
+            </select>
+            <input class="order-input" type="number" value="${Number(item.order || 0)}" onchange="updateOrder('${key}', this.value)">
+            <label class="visible-toggle">
+                <input type="checkbox" ${item.hidden ? '' : 'checked'} onchange="toggleHidden('${key}', this.checked)">
+                顯示
+            </label>
+        `;
+        row.addEventListener('dragstart', onDragStart);
+        row.addEventListener('dragover', onDragOver);
+        row.addEventListener('drop', onDrop);
+        row.addEventListener('dragend', onDragEnd);
+        list.appendChild(row);
+    });
+}
+function categoryOption(value, current) {
+    const selected = (current || 'uncategorized') === value ? 'selected' : '';
+    return `<option value="${value}" ${selected}>${categoryNames[value]}</option>`;
+}
+function updateCategory(key, value) { data[key].category = value; }
+function updateOrder(key, value) {
+    data[key].order = Number(value);
+    orderedKeys.sort((a, b) => Number(data[a].order || 9999) - Number(data[b].order || 9999));
+    render();
+}
+function toggleHidden(key, visible) { data[key].hidden = !visible; }
+function showAll() {
+    getFilteredKeys().forEach(key => data[key].hidden = false);
+    render();
+}
+function hideSelectedFiltered() {
+    getFilteredKeys().forEach(key => data[key].hidden = true);
+    render();
+}
+function renumberVisible() {
+    const keys = getFilteredKeys();
+    keys.forEach((key, index) => { data[key].order = (index + 1) * 10; });
+    render();
+}
+function onDragStart(e) {
+    dragKey = this.dataset.key;
+    this.classList.add('dragging');
+    e.dataTransfer.effectAllowed = 'move';
+}
+function onDragOver(e) {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+}
+function onDrop(e) {
+    e.preventDefault();
+    const targetKey = this.dataset.key;
+    if (!dragKey || dragKey === targetKey) return;
+    const filtered = getFilteredKeys();
+    const from = filtered.indexOf(dragKey);
+    const to = filtered.indexOf(targetKey);
+    if (from === -1 || to === -1) return;
+    filtered.splice(from, 1);
+    filtered.splice(to, 0, dragKey);
+    filtered.forEach((key, index) => { data[key].order = (index + 1) * 10; });
+    orderedKeys.sort((a, b) => {
+        const orderA = Number(data[a].order || 9999);
+        const orderB = Number(data[b].order || 9999);
+        if (orderA !== orderB) return orderA - orderB;
+        return (data[a].title || '').localeCompare(data[b].title || '', 'zh-Hant');
+    });
+    render();
+}
+function onDragEnd() {
+    dragKey = null;
+    document.querySelectorAll('.card-row').forEach(row => row.classList.remove('dragging'));
+}
+function exportJSON() {
+    const output = {};
+    orderedKeys.forEach(key => {
+        const item = data[key];
+        output[key] = {
+            title: item.title || '',
+            category: item.category || 'uncategorized',
+            order: Number(item.order || 0),
+            hidden: Boolean(item.hidden)
+        };
+        if (item.icon) output[key].icon = item.icon;
+        if (item.texts) output[key].texts = item.texts;
+    });
+    document.getElementById('output').value = JSON.stringify(output, null, 2);
+}
+async function copyOutput() {
+    if (!document.getElementById('output').value) exportJSON();
+    try {
+        await navigator.clipboard.writeText(document.getElementById('output').value);
+        document.getElementById('copyStatus').innerText = '已複製';
+    } catch {
+        document.getElementById('copyStatus').innerText = '無法自動複製，請手動全選複製。';
+    }
+}
+function escapeHTML(str) {
+    return String(str).replace(/[&<>"']/g, s => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[s]));
+}
+document.getElementById('search').addEventListener('input', render);
+document.getElementById('categoryFilter').addEventListener('change', render);
+document.getElementById('password').addEventListener('keydown', e => { if (e.key === 'Enter') login(); });
+if (sessionStorage.getItem('pteduimg_admin_ok') === '1') showApp();
+</script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+{
+  "eye": {
+    "category": "pharmacist_general",
+    "title": "眼藥膏",
+    "icon": "👁️",
+    "order": 10
+  },
+  "multi_lang": {
+    "category": "pharmacist_general",
+    "title": "多語服藥時間",
+    "icon": "🌍",
+    "order": 20,
+    "patterns": [
+      "lan_*.png"
+    ],
+    "texts": [
+      "外籍看護服藥時間對照表（英、泰、印、越）第一頁",
+      "外籍看護服藥時間對照表第二頁"
+    ]
+  },
+  "ear": {
+    "category": "pharmacist_general",
+    "title": "耳滴劑",
+    "icon": "👂",
+    "order": 30
+  },
+  "nasal": {
+    "category": "pharmacist_general",
+    "title": "鼻噴劑",
+    "icon": "👃",
+    "order": 40
+  },
+  "NTG": {
+    "category": "pharmacist_general",
+    "title": "NTG 舌下錠",
+    "icon": "💊",
+    "order": 50
+  },
+  "MDI": {
+    "category": "pharmacist_general",
+    "title": "MDI 吸入器",
+    "icon": "🌬️",
+    "order": 60
+  },
+  "hem_oint": {
+    "category": "pharmacist_general",
+    "title": "痔瘡軟膏(內)",
+    "icon": "🧻",
+    "order": 70
+  },
+  "rectal": {
+    "category": "pharmacist_general",
+    "title": "肛門塞劑",
+    "icon": "🍑",
+    "order": 80,
+    "patterns": [
+      "rec_*.png"
+    ]
+  },
+  "vaginal": {
+    "category": "pharmacist_general",
+    "title": "陰道塞劑",
+    "icon": "🧴",
+    "order": 90,
+    "patterns": [
+      "vag_[0-9]*.png"
+    ]
+  },
+  "vag_oint": {
+    "category": "pharmacist_general",
+    "title": "陰道軟膏",
+    "icon": "🌸",
+    "order": 100
+  },
+  "Ped_abx_susp": {
+    "category": "pharmacist_general",
+    "title": "兒科抗生素藥水泡製",
+    "icon": "🍼",
+    "order": 110,
+    "texts": [
+      "小兒抗生素水劑一般泡製方式",
+      "用冷開水，不能用熱水",
+      "搖晃均勻方法",
+      "再加水到刻度線",
+      "再次搖勻",
+      "使用前要搖一搖",
+      "不可冷凍。過期就丟棄，顏色稍微變深是正常的",
+      "整合全部的步驟"
+    ]
+  },
+  "Ped_susp": {
+    "category": "pharmacist_product",
+    "title": "安滅菌糖漿泡製",
+    "icon": "👶",
+    "order": 10,
+    "patterns": [
+      "AugmentinSyrup.png"
+    ]
+  },
+  "ZithromaxPOS": {
+    "category": "pharmacist_product",
+    "title": "日舒泡製",
+    "hidden": true,
+    "icon": "🍼",
+    "order": 20,
+    "patterns": [
+      "ZithromaxPOS.png"
+    ]
+  },
+  "fall_wound": {
+    "category": "public_education",
+    "title": "傷口與疤痕",
+    "icon": "🤕",
+    "order": 10,
+    "patterns": [
+      "slipped_fall_wound.png",
+      "wound_oint.png",
+      "oint_choose.png",
+      "prevent_scar.png",
+      "artficial_vs_paraffin.png"
+    ]
+  },
+  "Wet_Wrap": {
+    "category": "public_education",
+    "title": "濕敷療法",
+    "icon": "💦",
+    "order": 20
+  },
+  "DM_damage": {
+    "category": "public_education",
+    "title": "長期高血糖的危害",
+    "icon": "🍭",
+    "order": 30
+  },
+  "hair_wash": {
+    "category": "public_education",
+    "title": "洗去頭皮油膏",
+    "icon": "💆",
+    "order": 40,
+    "patterns": [
+      "Ps_hair_wash.png"
+    ]
+  },
+  "Neupro": {
+    "category": "pharmacist_product",
+    "title": "Neupro 貼片",
+    "hidden": true,
+    "icon": "🩹",
+    "order": 40
+  },
+  "Lidopat": {
+    "category": "pharmacist_product",
+    "title": "Lidopat 貼片",
+    "hidden": true,
+    "icon": "🩹",
+    "order": 50,
+    "patterns": [
+      "Lidopat_*.png"
+    ]
+  },
+  "Nicotine": {
+    "category": "pharmacist_product",
+    "title": "尼古丁貼片",
+    "hidden": true,
+    "icon": "🚭",
+    "order": 30,
+    "patterns": [
+      "Nicotine_*.png"
+    ]
+  }
+}

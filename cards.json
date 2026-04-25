@@ -1,0 +1,250 @@
+{
+  "DM_damage": {
+    "category": "public_education",
+    "title": "長期高血糖的危害",
+    "icon": "🍭",
+    "order": 30,
+    "steps": [
+      "img/DM_damage.png"
+    ]
+  },
+  "ear": {
+    "category": "pharmacist_general",
+    "title": "耳滴劑",
+    "icon": "👂",
+    "order": 30,
+    "steps": [
+      "img/ear_1.png",
+      "img/ear_2.png",
+      "img/ear_3.png",
+      "img/ear_4.png",
+      "img/ear_5.png",
+      "img/ear_6.png"
+    ]
+  },
+  "eye": {
+    "category": "pharmacist_general",
+    "title": "眼藥膏",
+    "icon": "👁️",
+    "order": 10,
+    "steps": [
+      "img/eye_1.png",
+      "img/eye_2.png",
+      "img/eye_3.png",
+      "img/eye_4.png",
+      "img/eye_5.png",
+      "img/eye_6.png"
+    ]
+  },
+  "fall_wound": {
+    "category": "public_education",
+    "title": "傷口與疤痕",
+    "icon": "🤕",
+    "order": 10,
+    "steps": [
+      "img/artficial_vs_paraffin.png",
+      "img/oint_choose.png",
+      "img/prevent_scar.png",
+      "img/slipped_fall_wound.png",
+      "img/wound_oint.png"
+    ]
+  },
+  "hair_wash": {
+    "category": "public_education",
+    "title": "洗去頭皮油膏",
+    "icon": "💆",
+    "order": 40,
+    "steps": [
+      "img/Ps_hair_wash.png"
+    ]
+  },
+  "hem_oint": {
+    "category": "pharmacist_general",
+    "title": "痔瘡軟膏(內)",
+    "icon": "🧻",
+    "order": 70,
+    "steps": [
+      "img/hem_oint_1.png",
+      "img/hem_oint_2.png",
+      "img/hem_oint_3.png",
+      "img/hem_oint_4.png",
+      "img/hem_oint_5.png",
+      "img/hem_oint_6.png"
+    ]
+  },
+  "Lidopat": {
+    "category": "pharmacist_product",
+    "title": "Lidopat 貼片",
+    "icon": "🩹",
+    "order": 50,
+    "steps": [
+      "img/Lidopat_1.png"
+    ]
+  },
+  "MDI": {
+    "category": "pharmacist_general",
+    "title": "MDI 吸入器",
+    "icon": "🌬️",
+    "order": 60,
+    "steps": [
+      "img/MDI_1.png",
+      "img/MDI_2.png",
+      "img/MDI_3.png",
+      "img/MDI_4.png",
+      "img/MDI_5.png",
+      "img/MDI_6.png",
+      "img/MDI_7.png"
+    ]
+  },
+  "multi_lang": {
+    "category": "pharmacist_general",
+    "title": "多語服藥時間",
+    "icon": "🌍",
+    "order": 20,
+    "texts": [
+      "外籍看護服藥時間對照表（英、泰、印、越）第一頁",
+      "外籍看護服藥時間對照表第二頁"
+    ],
+    "steps": [
+      "img/lan_1.png",
+      "img/lan_2.png"
+    ]
+  },
+  "nasal": {
+    "category": "pharmacist_general",
+    "title": "鼻噴劑",
+    "icon": "👃",
+    "order": 40,
+    "steps": [
+      "img/nasal_1.png",
+      "img/nasal_2.png",
+      "img/nasal_3.png",
+      "img/nasal_4.png",
+      "img/nasal_5.png"
+    ]
+  },
+  "Neupro": {
+    "category": "pharmacist_product",
+    "title": "Neupro 貼片",
+    "icon": "🩹",
+    "order": 40,
+    "steps": [
+      "img/Neupro.png"
+    ]
+  },
+  "Nicotine": {
+    "category": "pharmacist_product",
+    "title": "尼古丁貼片",
+    "icon": "🚭",
+    "order": 30,
+    "steps": [
+      "img/Nicotine_1.png"
+    ]
+  },
+  "NTG": {
+    "category": "pharmacist_general",
+    "title": "NTG 舌下錠",
+    "icon": "💊",
+    "order": 50,
+    "steps": [
+      "img/NTG_1.png",
+      "img/NTG_2.png",
+      "img/NTG_3.png"
+    ]
+  },
+  "Ped_abx_susp": {
+    "category": "pharmacist_general",
+    "title": "兒科抗生素藥水泡製",
+    "icon": "🍼",
+    "order": 110,
+    "texts": [
+      "小兒抗生素水劑一般泡製方式",
+      "用冷開水，不能用熱水",
+      "搖晃均勻方法",
+      "再加水到刻度線",
+      "再次搖勻",
+      "使用前要搖一搖",
+      "不可冷凍。過期就丟棄，顏色稍微變深是正常的",
+      "整合全部的步驟"
+    ],
+    "steps": [
+      "img/Ped_abx_susp_1.png",
+      "img/Ped_abx_susp_2.png",
+      "img/Ped_abx_susp_3.png",
+      "img/Ped_abx_susp_4.png",
+      "img/Ped_abx_susp_5.png",
+      "img/Ped_abx_susp_6.png",
+      "img/Ped_abx_susp_7.png",
+      "img/Ped_abx_susp_8.png"
+    ]
+  },
+  "Ped_susp": {
+    "category": "pharmacist_product",
+    "title": "安滅菌糖漿泡製",
+    "icon": "👶",
+    "order": 10,
+    "steps": [
+      "img/AugmentinSyrup.png"
+    ]
+  },
+  "rectal": {
+    "category": "pharmacist_general",
+    "title": "肛門塞劑",
+    "icon": "🍑",
+    "order": 80,
+    "steps": [
+      "img/rec_1.png",
+      "img/rec_2.png",
+      "img/rec_3.png",
+      "img/rec_4.png",
+      "img/rec_5.png",
+      "img/rec_6.png",
+      "img/rec_7.png",
+      "img/rec_8.png"
+    ]
+  },
+  "vag_oint": {
+    "category": "pharmacist_general",
+    "title": "陰道軟膏",
+    "icon": "🌸",
+    "order": 100,
+    "steps": [
+      "img/vag_oint_1.png",
+      "img/vag_oint_2.png",
+      "img/vag_oint_3.png",
+      "img/vag_oint_4.png",
+      "img/vag_oint_5.png",
+      "img/vag_oint_6.png"
+    ]
+  },
+  "vaginal": {
+    "category": "pharmacist_general",
+    "title": "陰道塞劑",
+    "icon": "🧴",
+    "order": 90,
+    "steps": [
+      "img/vag_1.png",
+      "img/vag_2.png",
+      "img/vag_3.png",
+      "img/vag_4.png"
+    ]
+  },
+  "Wet_Wrap": {
+    "category": "public_education",
+    "title": "濕敷療法",
+    "icon": "💦",
+    "order": 20,
+    "steps": [
+      "img/Wet_Wrap.png"
+    ]
+  },
+  "ZithromaxPOS": {
+    "category": "pharmacist_product",
+    "title": "日舒泡製",
+    "icon": "🍼",
+    "order": 20,
+    "steps": [
+      "img/ZithromaxPOS.png"
+    ]
+  }
+}
