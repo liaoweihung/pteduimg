@@ -247,11 +247,12 @@
   "order": 40,
   "hidden": false,
   "icon": "🧴",
-  "texts": ["","",""],
+  "texts": ["","","","整合內容"],
   "steps": [
     "img/over_one_oint_01.png",
     "img/over_one_oint_02.png",
-    "img/over_one_oint_03.png"
+    "img/over_one_oint_03.png",
+    "img/over_one_oint_04.png",
   ]
 },
   "ZithromaxPOS": {
