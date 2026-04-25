@@ -178,7 +178,6 @@
         const categories = {};
         Object.keys(educationData).forEach(key => {
             const item = educationData[key];
-            if (item.hidden) return;   // 👈 加這一行（關鍵！）
             if (!isVisibleOnPage(item)) return;
             const cat = item.category || 'uncategorized';
             if (!categories[cat]) categories[cat] = [];
@@ -208,7 +207,6 @@
         favoriteImages.forEach(favKey => {
             const [type, idxStr] = favKey.split('-');
             const idx = parseInt(idxStr);
-            if (educationData[type]?.hidden) return; // 👈 加這行
             if(educationData[type] && educationData[type].steps[idx] && isVisibleOnPage(educationData[type])) {
                 visibleFavCount++;
                 favGrid.innerHTML += `
