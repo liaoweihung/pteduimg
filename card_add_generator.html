@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>新增圖卡產生器</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f4f7f6;color:#2c3e50}header{background:#2c3e50;color:white;padding:14px 18px;font-size:1.2rem;font-weight:700}main{max-width:900px;margin:0 auto;padding:18px}.panel{background:white;border-radius:14px;padding:16px;margin-bottom:16px;border:1px solid #e5e8e8;box-shadow:0 3px 10px rgba(0,0,0,.05)}label{display:block;font-weight:700;margin:12px 0 6px}input,select,textarea,button{width:100%;font:inherit}input,select,textarea{padding:10px 12px;border:1px solid #ccd6dd;border-radius:10px;background:white}textarea{min-height:180px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.9rem}button{border:0;border-radius:10px;padding:11px 14px;background:#2c3e50;color:white;font-weight:700;cursor:pointer;margin-top:12px}button.secondary{background:#ecf0f1;color:#2c3e50}.hint{color:#7f8c8d;font-size:.9rem;line-height:1.5}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.file-list{margin:10px 0 0;padding:0;list-style:none}.file-list li{background:#f8fafb;border:1px solid #e5e8e8;padding:8px 10px;border-radius:8px;margin-bottom:6px;word-break:break-all}.preview{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin-top:10px}.preview img{width:100%;border-radius:10px;border:1px solid #e5e8e8;background:#fff}.status{color:#27ae60;min-height:1.2em;font-size:.9rem;margin-top:8px}.warn{background:#fff8e1;border-left:5px solid #f39c12;padding:10px 12px;border-radius:8px;line-height:1.5}@media(max-width:700px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>新增圖卡產生器</header>
+<main>
+<section class="panel"><div class="warn">這個工具不會直接上傳到 GitHub。它會幫你產生「要放到 cards.json 的片段」和建議檔名。你仍需要把圖片上傳到 <b>img/</b>，再把 JSON 貼進 <b>cards.json</b>。</div></section>
+<section class="panel">
+<h2>1. 填圖卡資料</h2>
+<div class="grid"><div><label>圖卡代號 id（英文/數字/底線）</label><input id="cardId" placeholder="例如 augmentin_powder"><p class="hint">這會成為 cards.json 裡的 key，不要用中文或空白。</p></div><div><label>顯示名稱 title</label><input id="title" placeholder="例如 安滅菌藥水泡製"></div></div>
+<div class="grid"><div><label>分類 category</label><select id="category"><option value="pharmacist_general">通用藥品使用說明</option><option value="pharmacist_product">特定產品衛教</option><option value="public_education">民眾疾病衛教圖卡</option><option value="uncategorized">其他圖卡</option></select></div><div><label>排序 order</label><input id="order" type="number" value="100"></div></div>
+<div class="grid"><div><label>圖示 icon</label><input id="icon" value="💊"></div><div><label>是否先隱藏</label><select id="hidden"><option value="false">顯示</option><option value="true">先隱藏</option></select></div></div>
+</section>
+<section class="panel"><h2>2. 選擇圖片</h2><input id="files" type="file" accept="image/*" multiple><p class="hint">建議一次選同一張圖卡的所有步驟圖片。工具會依檔名排序。</p><ul id="fileList" class="file-list"></ul><div id="preview" class="preview"></div></section>
+<section class="panel"><h2>3. 產生結果</h2><button onclick="generate()">產生 cards.json 片段</button><button class="secondary" onclick="copyOutput()">複製 JSON</button><div class="status" id="status"></div><label>建議圖片上傳路徑</label><textarea id="paths" readonly></textarea><label>貼到 cards.json 的內容</label><textarea id="output" readonly></textarea></section>
+<section class="panel"><h2>4. 實際上架步驟</h2><ol><li>到 GitHub 的 <b>img/</b> 資料夾，上傳上方列出的圖片檔案。</li><li>打開 <b>cards.json</b>，把產生的 JSON 片段貼進最外層大括號內。</li><li>注意前一筆資料後面要有逗號。</li><li>Commit changes。</li><li>打開網站，用 Ctrl + Shift + R 強制刷新。</li></ol></section>
+</main>
+<script>
+const fileInput=document.getElementById('files');let selectedFiles=[];fileInput.addEventListener('change',()=>{selectedFiles=Array.from(fileInput.files).sort((a,b)=>a.name.localeCompare(b.name,undefined,{numeric:true}));renderFiles();});document.getElementById('title').addEventListener('input',()=>{const id=document.getElementById('cardId');if(!id.value.trim())id.value=slugify(document.getElementById('title').value);});document.getElementById('cardId').addEventListener('input',renderFiles);
+function slugify(text){const map={'安滅菌':'augmentin','日舒':'zithromax','尼古丁':'nicotine','貼片':'patch','傷口':'wound','血糖':'blood_sugar'};let result=text.trim();Object.keys(map).forEach(k=>result=result.replaceAll(k,'_'+map[k]+'_'));result=result.toLowerCase().replace(/[^\w]+/g,'_').replace(/^_+|_+$/g,'').replace(/_+/g,'_');return result||'new_card'}
+function cleanId(id){return(id||'').trim().toLowerCase().replace(/[^\w]+/g,'_').replace(/^_+|_+$/g,'').replace(/_+/g,'_')||'new_card'}function extension(filename){const idx=filename.lastIndexOf('.');return idx>=0?filename.slice(idx).toLowerCase():'.png'}
+function buildSuggestedNames(){const id=cleanId(document.getElementById('cardId').value);return selectedFiles.map((file,index)=>`img/${id}_${String(index+1).padStart(2,'0')}${extension(file.name)}`)}
+function renderFiles(){const fileList=document.getElementById('fileList');const preview=document.getElementById('preview');fileList.innerHTML='';preview.innerHTML='';const paths=buildSuggestedNames();selectedFiles.forEach((file,idx)=>{const li=document.createElement('li');li.textContent=`${file.name} → ${paths[idx]}`;fileList.appendChild(li);const img=document.createElement('img');img.src=URL.createObjectURL(file);preview.appendChild(img);});}
+function generate(){const id=cleanId(document.getElementById('cardId').value);const title=document.getElementById('title').value.trim()||id;const category=document.getElementById('category').value;const order=Number(document.getElementById('order').value||100);const icon=document.getElementById('icon').value.trim()||'📌';const hidden=document.getElementById('hidden').value==='true';const steps=buildSuggestedNames();if(!steps.length){document.getElementById('status').innerText='請先選擇圖片。';return}const card={title,category,order,hidden,icon,steps};document.getElementById('paths').value=steps.join('\n');document.getElementById('output').value=`"${id}": ${JSON.stringify(card,null,2)}`;document.getElementById('status').innerText='已產生。';}
+async function copyOutput(){if(!document.getElementById('output').value)generate();try{await navigator.clipboard.writeText(document.getElementById('output').value);document.getElementById('status').innerText='JSON 已複製。';}catch{document.getElementById('status').innerText='無法自動複製，請手動全選複製。';}}
+</script>
+</body>
+</html>
