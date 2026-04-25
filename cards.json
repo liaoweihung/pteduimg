@@ -76,6 +76,7 @@
     "category": "pharmacist_product",
     "title": "Lidopat 貼片",
     "icon": "🩹",
+     "hidden": true,
     "order": 50,
     "steps": [
       "img/Lidopat_1.png"
@@ -127,6 +128,7 @@
     "category": "pharmacist_product",
     "title": "Neupro 貼片",
     "icon": "🩹",
+     "hidden": true,
     "order": 40,
     "steps": [
       "img/Neupro.png"
@@ -136,6 +138,7 @@
     "category": "pharmacist_product",
     "title": "尼古丁貼片",
     "icon": "🚭",
+     "hidden": true,
     "order": 30,
     "steps": [
       "img/Nicotine_1.png"
@@ -242,6 +245,7 @@
     "category": "pharmacist_product",
     "title": "日舒泡製",
     "icon": "🍼",
+     "hidden": true,
     "order": 20,
     "steps": [
       "img/ZithromaxPOS.png"
