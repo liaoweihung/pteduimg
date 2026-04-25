@@ -1,5 +1,5 @@
 // 更新時間戳記，強迫重新整理
-const CACHE_NAME = 'pwa-cache-v202604251626'; 
+const CACHE_NAME = 'pwa-cache-v202604251633'; 
 
 // 👇 這裡從 ASSETS 改成了 urlsToCache，這樣 Python 管家才找得到！
 const urlsToCache = [
@@ -20,6 +20,7 @@ const urlsToCache = [
   './img/Wet_Wrap.png',
   './img/rec_3.png',
   './img/nasal_5.png',
+  './img/over_one_oint_04.png',
   './img/MDI_4.png',
   './img/vag_oint_3.png',
   './img/eye_6.png',
@@ -42,6 +43,7 @@ const urlsToCache = [
   './img/Ped_abx_susp_7.png',
   './img/vag_4.png',
   './img/prevent_scar.png',
+  './img/over_one_onit_02.png',
   './img/ear_3.png',
   './img/NTG_3.png',
   './img/slipped_fall_wound.png',
@@ -78,6 +80,7 @@ const urlsToCache = [
   './img/ear_2.png',
   './img/over_one_oint_03.png',
   './img/rec_7.png',
+  './img/over_one_onit_03.png',
   './img/vag_oint_4.png',
   './img/nasal_3.png',
   './img/Lidopat_1.png',
