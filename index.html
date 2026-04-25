@@ -208,6 +208,7 @@
         favoriteImages.forEach(favKey => {
             const [type, idxStr] = favKey.split('-');
             const idx = parseInt(idxStr);
+            if (educationData[type]?.hidden) return; // 👈 加這行
             if(educationData[type] && educationData[type].steps[idx] && isVisibleOnPage(educationData[type])) {
                 visibleFavCount++;
                 favGrid.innerHTML += `
