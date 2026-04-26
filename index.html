@@ -167,6 +167,9 @@
     }
 
     let favoriteImages = JSON.parse(localStorage.getItem('favImages')) || [];
+    function saveFavorites() {
+    localStorage.setItem('favImages', JSON.stringify(favoriteImages));
+    }
     let currentType = '', currentIdx = 0;
 
     function renderHome() {
@@ -184,6 +187,36 @@
             if (!categories[cat]) categories[cat] = [];
             categories[cat].push({ key, item });
         });
+
+        let draggedFavKey = null;
+
+function dragFavStart(event) {
+    draggedFavKey = event.currentTarget.dataset.favKey;
+}
+
+function dragFavOver(event) {
+    event.preventDefault();
+}
+
+function dropFav(event) {
+    event.preventDefault();
+
+    const targetKey = event.currentTarget.dataset.favKey;
+    if (!draggedFavKey || draggedFavKey === targetKey) return;
+
+    const fromIndex = favoriteImages.indexOf(draggedFavKey);
+    const toIndex = favoriteImages.indexOf(targetKey);
+
+    if (fromIndex === -1 || toIndex === -1) return;
+
+    favoriteImages.splice(fromIndex, 1);
+    favoriteImages.splice(toIndex, 0, draggedFavKey);
+
+    saveFavorites();
+    renderHome();
+
+    draggedFavKey = null;
+}
 
         Object.keys(categories)
             .sort((a, b) => (categoryMeta[a]?.order || 99) - (categoryMeta[b]?.order || 99))
@@ -272,8 +305,7 @@ function updateContent() {
         const currentKey = `${currentType}-${currentIdx}`;
         if (favoriteImages.includes(currentKey)) favoriteImages = favoriteImages.filter(k => k !== currentKey);
         else favoriteImages.push(currentKey);
-        localStorage.setItem('favImages', JSON.stringify(favoriteImages));
-        updateContent();
+        saveFavorites();
     }
 
    function changeStep(dir) {
