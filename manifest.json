@@ -2,11 +2,11 @@
   "short_name": "衛教助手",
   "name": "藥師快速衛教示意圖",
   "icons": [
-    { 
-      "src": "icon.png", 
-      "sizes": "512x512", 
+    {
+      "src": "icon.png?v=3",
+      "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable" 
+      "purpose": "any maskable"
     }
   ],
   "start_url": "./index.html",

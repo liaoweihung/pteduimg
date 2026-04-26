@@ -14,7 +14,7 @@
             font-weight: bold; font-size: 1.3rem; display: flex;
             align-items: center; justify-content: center; gap: 12px;
         }
-        .header-icon { height: 38px; width: 38px; object-fit: contain; }
+        .header-icon { height: 38px; width: 38px; object-fit: cover; border-radius: 50%; overflow: hidden; display: block; }
         .section-title { padding: 15px 20px 5px; font-size: 0.9rem; color: #7f8c8d; font-weight: bold; }
         .menu-grid {
             display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 14px 24px 34px;
