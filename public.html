@@ -53,6 +53,55 @@
     <script src="./qrious.min.js"></script>
     <link rel="stylesheet" href="./css/base.css?v=1">
     <link rel="stylesheet" href="./css/public.css?v=1">
+
+<style>
+/* === 我的最愛：長按拖曳排序 === */
+.fav-item.sortable-fav {
+    position: relative;
+    touch-action: none;
+    /* 👇 封印手機原生行為，防止長按跳出選單或文字反白干擾 👇 */
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    user-select: none;
+}
+
+.drag-grip {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #c0392b;
+    font-size: 0.95rem;
+    opacity: 0.75;
+    user-select: none;
+}
+
+.fav-dragging {
+    user-select: none;
+}
+
+/* 👇 補強殘影的獨立樣式 👇 */
+.fav-drag-ghost {
+    position: fixed;
+    z-index: 20000;
+    width: 42vw;
+    max-width: 210px;
+    
+    /* 核心修正：加上背景色與基礎排版。
+       因為元素被拉到 <body> 底下，會失去原本 .menu-grid 的繼承樣式，
+       如果不加背景色，它就會變成透明的，導致您看不見它。 */
+    background-color: #ffffff; 
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #3498db; /* 加一個藍色邊框，讓殘影在拖曳時超級明顯 */
+    
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 0.95;
+    pointer-events: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3); /* 加深陰影 */
+}
+</style>
+
 </head>
 <body>
 
@@ -167,7 +216,131 @@
     }
 
     let favoriteImages = JSON.parse(localStorage.getItem('favImages')) || [];
+
+    function saveFavorites() {
+        localStorage.setItem('favImages', JSON.stringify(favoriteImages));
+    }
+
     let currentType = '', currentIdx = 0;
+
+    // === 我的最愛：長按拖曳排序 ===
+    let favPressTimer = null;
+    let draggedFavKey = null;
+    let dragGhost = null;
+    let dragActive = false;
+    let dragStarted = false;
+
+    function initFavoriteSorting() {
+        document.querySelectorAll('.sortable-fav').forEach(el => {
+            el.addEventListener('click', handleFavClick);
+            el.addEventListener('pointerdown', favPointerDown);
+        });
+    }
+
+    function handleFavClick(event) {
+        if (dragStarted) {
+            event.preventDefault();
+            event.stopPropagation();
+            return;
+        }
+
+        const el = event.currentTarget;
+        openViewer(el.dataset.type, parseInt(el.dataset.idx));
+    }
+
+    function favPointerDown(event) {
+        const el = event.currentTarget;
+        if (event.pointerType === 'mouse' && event.button !== 0) return;
+
+        clearTimeout(favPressTimer);
+        dragStarted = false;
+
+        favPressTimer = setTimeout(() => {
+            startFavDrag(el, event.clientX, event.clientY);
+        }, 420);
+
+        document.addEventListener('pointermove', favPointerMove, { passive: false });
+        document.addEventListener('pointerup', favPointerUp, { once: true });
+        document.addEventListener('pointercancel', favPointerUp, { once: true });
+    }
+
+    function favPointerMove(event) {
+        if (!dragActive || !dragGhost) return;
+
+        event.preventDefault();
+
+        dragGhost.style.left = `${event.clientX}px`;
+        dragGhost.style.top = `${event.clientY}px`;
+
+        const target = document.elementFromPoint(event.clientX, event.clientY)?.closest('.sortable-fav');
+        if (target && target.dataset.favKey && target.dataset.favKey !== draggedFavKey) {
+            moveFavoriteBefore(draggedFavKey, target.dataset.favKey);
+            saveFavorites();
+            renderHome();
+
+            // renderHome 會重畫畫面，所以 ghost 要重新放回 body，避免消失
+            if (dragGhost && !document.body.contains(dragGhost)) {
+                document.body.appendChild(dragGhost);
+            }
+        }
+    }
+
+    function favPointerUp() {
+        clearTimeout(favPressTimer);
+        favPressTimer = null;
+
+        document.removeEventListener('pointermove', favPointerMove);
+
+        if (dragGhost) {
+            dragGhost.remove();
+            dragGhost = null;
+        }
+
+        if (dragActive) {
+            saveFavorites();
+        }
+
+        dragActive = false;
+        draggedFavKey = null;
+        document.body.classList.remove('fav-dragging');
+        document.querySelectorAll('.drag-source').forEach(el => el.classList.remove('drag-source'));
+
+        setTimeout(() => {
+            dragStarted = false;
+        }, 120);
+    }
+
+    function startFavDrag(el, x, y) {
+        draggedFavKey = el.dataset.favKey;
+        dragActive = true;
+        dragStarted = true;
+        document.body.classList.add('fav-dragging');
+        el.classList.add('drag-source');
+
+        dragGhost = el.cloneNode(true);
+        dragGhost.classList.add('fav-drag-ghost');
+        dragGhost.style.left = `${x}px`;
+        dragGhost.style.top = `${y}px`;
+        document.body.appendChild(dragGhost);
+    }
+
+   function moveFavoriteBefore(fromKey, toKey) {
+    const fromIndex = favoriteImages.indexOf(fromKey);
+    const toIndex = favoriteImages.indexOf(toKey);
+
+    if (fromIndex === -1 || toIndex === -1 || fromIndex === toIndex) return;
+
+    const moved = favoriteImages.splice(fromIndex, 1)[0];
+
+    let insertIndex = favoriteImages.indexOf(toKey);
+
+    // 往後拖時，要插到目標後面
+    if (fromIndex < toIndex) {
+        insertIndex += 1;
+    }
+
+    favoriteImages.splice(insertIndex, 0, moved);
+}
 
     function renderHome() {
         const sectionRoot = document.getElementById('category-sections');
@@ -178,7 +351,7 @@
         const categories = {};
         Object.keys(educationData).forEach(key => {
             const item = educationData[key];
-            if (item.hidden) return;   // 👈 一定要有
+            if (item.hidden) return;   // 👈 加這一行（關鍵！）
             if (!isVisibleOnPage(item)) return;
             const cat = item.category || 'uncategorized';
             if (!categories[cat]) categories[cat] = [];
@@ -208,10 +381,15 @@
         favoriteImages.forEach(favKey => {
             const [type, idxStr] = favKey.split('-');
             const idx = parseInt(idxStr);
+            if (educationData[type] && educationData[type].hidden) return;
             if(educationData[type] && educationData[type].steps[idx] && isVisibleOnPage(educationData[type])) {
                 visibleFavCount++;
                 favGrid.innerHTML += `
-                    <div class="menu-item fav-item" onclick="openViewer('${type}', ${idx})">
+                    <div class="menu-item fav-item sortable-fav"
+                         data-fav-key="${favKey}"
+                         data-type="${type}"
+                         data-idx="${idx}">
+                        <span class="drag-grip">☰</span>
                         <span class="icon">${educationData[type].icon}</span>
                         <div style="font-weight:bold; font-size:1.1rem;">${educationData[type].title}</div>
                         <div class="fav-label">步驟 ${idx + 1}</div>
@@ -219,6 +397,7 @@
             }
         });
         document.getElementById('fav-section').style.display = visibleFavCount > 0 ? 'block' : 'none';
+        initFavoriteSorting();
     }
 
     function openViewer(type, startIndex = 0) {
@@ -272,7 +451,7 @@ function updateContent() {
         const currentKey = `${currentType}-${currentIdx}`;
         if (favoriteImages.includes(currentKey)) favoriteImages = favoriteImages.filter(k => k !== currentKey);
         else favoriteImages.push(currentKey);
-        localStorage.setItem('favImages', JSON.stringify(favoriteImages));
+        saveFavorites();
         updateContent();
     }
 
