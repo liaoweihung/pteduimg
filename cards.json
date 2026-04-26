@@ -273,11 +273,11 @@
   "acne": {
   "title": "青春痘嚴重度與照護",
   "category": "public_education",
-  "order": 30,
+  "order": 21,
   "hidden": false,
   "icon": "😊",
   "steps": [
-    "img/acne_01.png"
+    "img/acne.png"
   ]
  },
   "ZithromaxPOS": {
