@@ -51,7 +51,7 @@
     </script>
     
     <script src="./qrious.min.js"></script>
-    <link rel="stylesheet" href="./css/base.css?v=1">
+    <link rel="stylesheet" href="./css/base.css?v=2">
     <link rel="stylesheet" href="./css/public.css?v=1">
 
 <style>
@@ -133,13 +133,29 @@
     </div>
 </div>
 
+<div id="share-modal">
+    <div class="share-box">
+        <h3 class="share-title">&#20998;&#20139;&#36889;&#24373;&#22294;&#21345;</h3>
+        <p class="share-subtitle" id="share-card-title"></p>
+        <input id="share-url-input" class="share-url-input" type="text" readonly>
+        <div class="share-actions">
+            <button class="share-btn line" onclick="shareToLine()">LINE</button>
+            <button class="share-btn facebook" onclick="shareToFacebook()">Facebook</button>
+            <button class="share-btn instagram" onclick="shareToInstagram()">Instagram</button>
+            <button class="share-btn copy" onclick="copyShareUrl()">&#35079;&#35069;&#36899;&#32080;</button>
+        </div>
+        <button class="share-close" onclick="closeShareModal()">&#23436;&#25104;</button>
+    </div>
+</div>
+
 <div id="viewer">
     <div class="viewer-header">
-        <span id="v-title" style="font-size:1.2rem; font-weight:bold;">標題</span>
-        <div style="display: flex; align-items: center; gap: 20px;">
-            <div onclick="showQRCode()" style="font-size: 1.6rem; color: #fff; cursor: pointer;">🔲</div>
-            <div id="viewer-fav-btn" onclick="toggleCurrentFav()">❤</div>
-            <div onclick="closeViewer()" style="font-size: 2rem; cursor: pointer;">✕</div>
+        <span id="v-title" style="font-size:1.2rem; font-weight:bold;">&#27161;&#38988;</span>
+        <div class="viewer-actions">
+            <button class="viewer-icon-btn" onclick="showQRCode()" title="QR Code">&#128306;</button>
+            <button class="viewer-icon-btn" onclick="shareCurrentCard()" title="Share">&#8599;</button>
+            <button id="viewer-fav-btn" class="viewer-icon-btn" onclick="toggleCurrentFav()" title="Favorite">&#10084;</button>
+            <button class="viewer-icon-btn close-viewer-btn" onclick="closeViewer()" title="Close">&#10005;</button>
         </div>
     </div>
 
@@ -432,7 +448,7 @@ function updateContent() {
         document.getElementById('main-img').src = data.steps[currentIdx];
         document.getElementById('v-steps').innerHTML = data.steps.map((_, i) => `<div class="dot ${i === currentIdx ? 'active' : ''}"></div>`).join('');
         const currentKey = `${currentType}-${currentIdx}`;
-        document.getElementById('viewer-fav-btn').className = favoriteImages.includes(currentKey) ? 'active' : '';
+        document.getElementById('viewer-fav-btn').className = favoriteImages.includes(currentKey) ? 'viewer-icon-btn active' : 'viewer-icon-btn';
 
         // 👇 新增：更新底部文字區塊的邏輯 👇
         const descElement = document.getElementById('v-desc');
@@ -501,6 +517,96 @@ function updateContent() {
     }
 
     function closeQRModal() { document.getElementById('qr-modal').style.display = 'none'; }
+
+    function getCurrentShareUrl() {
+        const path = educationData[currentType].steps[currentIdx];
+        return new URL(path, window.location.href).href;
+    }
+
+    function getCurrentShareTitle() {
+        const data = educationData[currentType];
+        return `${data.title} \u7b2c ${currentIdx + 1} \u5f35\u5716\u5361`;
+    }
+
+    async function shareCurrentCard() {
+        const shareUrl = getCurrentShareUrl();
+        const shareTitle = getCurrentShareTitle();
+        const shareText = `\u85e5\u5c40\u885b\u6559\u52a9\u624b\uff1a${shareTitle}`;
+
+        if (navigator.share) {
+            try {
+                await navigator.share({
+                    title: shareTitle,
+                    text: shareText,
+                    url: shareUrl
+                });
+                trackShareEvent('native');
+                return;
+            } catch (err) {
+                if (err.name === 'AbortError') return;
+                console.warn('\u539f\u751f\u5206\u4eab\u5931\u6557\uff0c\u6539\u7528\u5206\u4eab\u9762\u677f\uff1a', err);
+            }
+        }
+
+        openShareModal(shareUrl, shareTitle);
+    }
+
+    function openShareModal(shareUrl, shareTitle) {
+        document.getElementById('share-card-title').innerText = shareTitle;
+        document.getElementById('share-url-input').value = shareUrl;
+        document.getElementById('share-modal').style.display = 'flex';
+    }
+
+    function closeShareModal() {
+        document.getElementById('share-modal').style.display = 'none';
+    }
+
+    function getShareModalUrl() {
+        return document.getElementById('share-url-input').value || getCurrentShareUrl();
+    }
+
+    function shareToLine() {
+        const shareUrl = encodeURIComponent(getShareModalUrl());
+        trackShareEvent('line');
+        window.open(`https://social-plugins.line.me/lineit/share?url=${shareUrl}`, '_blank', 'noopener');
+    }
+
+    function shareToFacebook() {
+        const shareUrl = encodeURIComponent(getShareModalUrl());
+        trackShareEvent('facebook');
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'noopener');
+    }
+
+    async function shareToInstagram() {
+        await copyShareUrl('instagram');
+        window.open('https://www.instagram.com/', '_blank', 'noopener');
+        alert('\u5df2\u8907\u88fd\u5716\u5361\u9023\u7d50\uff0c\u53ef\u8cbc\u5230 Instagram \u8a0a\u606f\u3001\u9650\u6642\u52d5\u614b\u6216\u8cbc\u6587\u3002');
+    }
+
+    async function copyShareUrl(source = 'copy') {
+        const shareUrl = getShareModalUrl();
+        try {
+            await navigator.clipboard.writeText(shareUrl);
+        } catch (err) {
+            const input = document.getElementById('share-url-input');
+            input.focus();
+            input.select();
+            document.execCommand('copy');
+        }
+        trackShareEvent(source);
+        if (source === 'copy') alert('\u5df2\u8907\u88fd\u5716\u5361\u9023\u7d50');
+    }
+
+    function trackShareEvent(method) {
+        if (typeof gtag === 'function') {
+            gtag('event', 'share_instruction_card', {
+                'method': method,
+                'card_title': educationData[currentType].title,
+                'step_number': currentIdx + 1
+            });
+        }
+    }
+
 // === 圖片專屬縮放與移動引擎 (完美相容 iOS/Android) ===
     let scale = 1;
     let pointX = 0, pointY = 0;

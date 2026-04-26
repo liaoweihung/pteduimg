@@ -1,5 +1,5 @@
 // 更新時間戳記，強迫重新整理
-const CACHE_NAME = 'pwa-cache-v202604251708'; 
+const CACHE_NAME = 'pwa-cache-v202604261830-share';
 
 // 👇 這裡從 ASSETS 改成了 urlsToCache，這樣 Python 管家才找得到！
 const urlsToCache = [
@@ -131,10 +131,22 @@ self.addEventListener('activate', (e) => {
 
 // === 攔截請求階段 ===
 self.addEventListener('fetch', (e) => {
+  const request = e.request;
+  const url = new URL(request.url);
+  const isFreshAsset = request.mode === 'navigate' || /\.(html|css|js|json)$/i.test(url.pathname);
+
+  if (isFreshAsset) {
+    e.respondWith(
+      fetch(request).then(response => {
+        const copy = response.clone();
+        caches.open(CACHE_NAME).then(cache => cache.put(request, copy));
+        return response;
+      }).catch(() => caches.match(request))
+    );
+    return;
+  }
+
   e.respondWith(
-    caches.match(e.request).then(res => {
-      // 如果快取裡有就給快取，沒有再去網路抓
-      return res || fetch(e.request);
-    })
+    caches.match(request).then(res => res || fetch(request))
   );
 });

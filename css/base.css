@@ -20,6 +20,7 @@
             display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding: 15px 20px 30px; 
         }
         .menu-item { 
+            position: relative;
             background: white; border-radius: 12px; padding: 25px 10px; text-align: center; 
             box-shadow: 0 4px 10px rgba(0,0,0,0.05); cursor: pointer; border: 1px solid #eee;
         }
@@ -35,7 +36,31 @@
         .viewer-header { 
             flex: 0 0 auto; padding: 15px 20px; color: white; display: flex; 
             justify-content: space-between; align-items: center; background: rgba(0,0,0,0.9); 
+            gap: 12px;
         }
+        .viewer-actions {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex: 0 0 auto;
+        }
+        .viewer-icon-btn {
+            width: 36px;
+            height: 36px;
+            padding: 0;
+            border: none;
+            border-radius: 50%;
+            background: transparent;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.45rem;
+            line-height: 1;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .close-viewer-btn { font-size: 1.9rem; }
         #viewer-fav-btn { font-size: 1.8rem; color: #555; cursor: pointer; }
         #viewer-fav-btn.active { color: var(--fav); }
 
@@ -69,6 +94,55 @@
         }
 
      /* 翻頁按鈕樣式 */
+        #share-modal {
+            display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(0,0,0,0.95); z-index: 10000; flex-direction: column;
+            align-items: center; justify-content: center; padding: 20px;
+        }
+        .share-box {
+            width: min(92vw, 420px);
+            background: white;
+            padding: 24px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+        }
+        .share-title { margin: 0 0 8px; color: #2c3e50; font-size: 1.2rem; }
+        .share-subtitle { margin: 0 0 14px; color: #5d6d7e; line-height: 1.4; }
+        .share-url-input {
+            width: 100%;
+            border: 1px solid #dfe6e9;
+            border-radius: 10px;
+            padding: 11px 12px;
+            color: #2c3e50;
+            background: #f8fafc;
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+        }
+        .share-actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .share-btn, .share-close {
+            border: none;
+            border-radius: 10px;
+            padding: 12px 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .share-btn.line { background: #06c755; }
+        .share-btn.facebook { background: #1877f2; }
+        .share-btn.instagram { background: #c13584; }
+        .share-btn.copy { background: #34495e; }
+        .share-close {
+            width: 100%;
+            margin-top: 14px;
+            background: #2c3e50;
+        }
+
 .nav-btn {
     position: absolute;
     top: 50%;
