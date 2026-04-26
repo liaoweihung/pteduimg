@@ -12,3 +12,33 @@ body.pharmacist-page .top-nav a.active {
     background: #2c3e50;
     color: #ffffff;
 }
+/* === 我的最愛拖曳排序 === */
+
+.sortable-fav {
+    position: relative;
+    touch-action: none;
+}
+
+.drag-grip {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #c0392b;
+    font-size: 0.95rem;
+    opacity: 0.7;
+}
+
+.fav-dragging {
+    user-select: none;
+}
+
+.fav-drag-ghost {
+    position: fixed;
+    z-index: 9999;
+    width: 45vw;
+    max-width: 200px;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+    pointer-events: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
