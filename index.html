@@ -51,7 +51,7 @@
     </script>
     
     <script src="./qrious.min.js"></script>
-    <link rel="stylesheet" href="./css/base.css?v=5">
+    <link rel="stylesheet" href="./css/base.css?v=6">
     <link rel="stylesheet" href="./css/pharmacist.css?v=1">
 
 <style>
@@ -275,7 +275,13 @@
 
     function initMainSorting() {
         document.querySelectorAll('.sortable-main').forEach(el => {
-            el.addEventListener('pointerdown', mainPointerDown);
+            const grip = el.querySelector('.main-drag-grip');
+            if (!grip) return;
+            grip.addEventListener('pointerdown', mainPointerDown);
+            grip.addEventListener('click', event => {
+                event.preventDefault();
+                event.stopPropagation();
+            });
         });
     }
 
@@ -310,7 +316,8 @@
     }
 
     function mainPointerDown(event) {
-        const el = event.currentTarget;
+        const el = event.currentTarget.closest('.sortable-main');
+        if (!el) return;
         if (event.pointerType === 'mouse' && event.button !== 0) return;
 
         clearTimeout(mainPressTimer);
