@@ -15,96 +15,6 @@
 <meta property="og:image" content="https://liaoweihung.github.io/pteduimg/icon.png">
     <!-- 👇 新增的隱形斗篷開關 👇 -->
 <script>
-  // 1. 檢查網址有沒有帶秘密鑰匙 (?dev=1)
-  const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.get('dev') === '1') {
-      localStorage.setItem('isDeveloper', 'true'); // 在手機瀏覽器刻上開發者印記
-      alert('已開啟開發者隱形模式！未來的瀏覽將不會被 GA4 記錄。');
-  }
-
-  // 2. 只要有開發者印記，就強行關閉 GA4
-  if (localStorage.getItem('isDeveloper') === 'true') {
-      window['ga-disable-G-T5R33JYTC0'] = true; 
-      console.log('🛡️ 開發者隱形模式運作中：GA4 已暫停');
-  }
-</script>
-<!-- 👆 隱形斗篷開關結束 👆 -->
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5R33JYTC0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-T5R33JYTC0');
-</script>
-<script>
-      function trackImageUsage(imageName) {
-          // 確保 GA4 有順利載入才執行
-          if (typeof gtag === 'function') {
-              gtag('event', 'view_instruction_card', {
-                  'card_name': imageName
-              });
-              console.log('📍 已傳送 GA4 追蹤記錄：', imageName);
-          }
-      }
-    </script>
-    
-    <script src="./qrious.min.js"></script>
-    <link rel="stylesheet" href="./css/base.css?v=1">
-    <link rel="stylesheet" href="./css/pharmacist.css?v=1">
-</head>
-<body>
-
-<header>
-    <img src="icon.png" alt="圖示" class="header-icon">
-    <span>藥局衛教助手</span>
-</header>
-
-<nav class="top-nav">
-    <a href="./index.html" id="nav-pharmacist">藥師衛教</a>
-    <a href="./public.html" id="nav-public">民眾疾病衛教</a>
-</nav>
-<div class="page-note" id="page-note"></div>
-
-<div id="fav-section" style="display:none;">
-    <div class="section-title">⭐ 常用圖卡</div>
-    <div class="menu-grid" id="fav-grid"></div>
-</div>
-
-<!-- 分類區塊會由 cards.json 自動產生，不用再手動修改 index.html -->
-<div id="category-sections"></div>
-
-<div id="qr-modal">
-    <div class="qr-box">
-        <h3 class="qr-title">請患者掃描下載</h3>
-        <canvas id="qr-canvas"></canvas> 
-        <br>
-        <button class="qr-close" onclick="closeQRModal()">完成</button>
-    </div>
-</div>
-
-<div id="viewer">
-    <div class="viewer-header">
-        <span id="v-title" style="font-size:1.2rem; font-weight:bold;">標題</span>
-        <div style="display: flex; align-items: center; gap: 20px;">
-            <div onclick="showQRCode()" style="font-size: 1.6rem; color: #fff; cursor: pointer;">🔲</div>
-            <div id="viewer-fav-btn" onclick="toggleCurrentFav()">❤</div>
-            <div onclick="closeViewer()" style="font-size: 2rem; cursor: pointer;">✕</div>
-        </div>
-    </div>
-
-    <div class="image-viewport" id="touch-zone">
-        <img id="main-img" class="main-img" src="" alt="教學圖">
-        
-        <div class="nav-btn left-btn" onclick="changeStep(-1)">❮</div>
-        <div class="nav-btn right-btn" onclick="changeStep(1)">❯</div>
-    </div>
-    <div class="footer-minimal" id="v-steps"></div>
-    <div id="v-desc" class="step-desc"></div>
-</div>
-
-<script>
     // 教育圖卡資料改由 build.py 產生 cards.json，新增圖片時不再手動改 index.html
     let educationData = {};
 
@@ -122,10 +32,10 @@
     };
 
     const categoryMeta = {
-        pharmacist_general: { title: '🧴 通用藥品使用說明', order: 10, page: 'pharmacist' },
-        pharmacist_product: { title: '💊 特定產品衛教', order: 20, page: 'pharmacist' },
-        public_education: { title: '🩹 民眾疾病衛教圖卡', order: 10, page: 'public' },
-        uncategorized: { title: '📦 其他圖卡', order: 99, page: 'pharmacist' }
+        pharmacist_general: { title: '通用藥品使用說明', order: 10, page: 'pharmacist' },
+        pharmacist_product: { title: '特定產品衛教', order: 20, page: 'pharmacist' },
+        public_education: { title: '民眾疾病衛教圖卡', order: 10, page: 'public' },
+        uncategorized: { title: '其他圖卡', order: 99, page: 'pharmacist' }
     };
 
     function isVisibleOnPage(item) {
@@ -167,10 +77,97 @@
     }
 
     let favoriteImages = JSON.parse(localStorage.getItem('favImages')) || [];
-    function saveFavorites() {
-    localStorage.setItem('favImages', JSON.stringify(favoriteImages));
-    }
     let currentType = '', currentIdx = 0;
+
+    // === 我的最愛：長按拖曳排序 ===
+    let favPressTimer = null;
+    let draggedFavKey = null;
+    let dragGhost = null;
+    let dragActive = false;
+
+    function initFavoriteSorting() {
+        document.querySelectorAll('.sortable-fav').forEach(el => {
+            el.addEventListener('click', handleFavClick);
+            el.addEventListener('pointerdown', favPointerDown);
+            el.addEventListener('pointermove', favPointerMove);
+            el.addEventListener('pointerup', favPointerUp);
+            el.addEventListener('pointercancel', favPointerUp);
+        });
+    }
+
+    function handleFavClick(event) {
+        if (dragActive) {
+            event.preventDefault();
+            event.stopPropagation();
+            return;
+        }
+        const el = event.currentTarget;
+        openViewer(el.dataset.type, parseInt(el.dataset.idx));
+    }
+
+    function favPointerDown(event) {
+        const el = event.currentTarget;
+        if (event.pointerType === 'mouse' && event.button !== 0) return;
+
+        favPressTimer = setTimeout(() => {
+            startFavDrag(el, event.clientX, event.clientY);
+        }, 420);
+    }
+
+    function favPointerMove(event) {
+        if (!dragActive || !dragGhost) return;
+
+        event.preventDefault();
+        dragGhost.style.left = `${event.clientX}px`;
+        dragGhost.style.top = `${event.clientY}px`;
+
+        const target = document.elementFromPoint(event.clientX, event.clientY)?.closest('.sortable-fav');
+        if (target && target.dataset.favKey && target.dataset.favKey !== draggedFavKey) {
+            moveFavoriteBefore(draggedFavKey, target.dataset.favKey);
+            renderHome();
+        }
+    }
+
+    function favPointerUp() {
+        clearTimeout(favPressTimer);
+        favPressTimer = null;
+
+        if (dragGhost) {
+            dragGhost.remove();
+            dragGhost = null;
+        }
+
+        if (dragActive) {
+            saveFavorites();
+            setTimeout(() => { dragActive = false; }, 80);
+        }
+
+        draggedFavKey = null;
+        document.body.classList.remove('fav-dragging');
+    }
+
+    function startFavDrag(el, x, y) {
+        draggedFavKey = el.dataset.favKey;
+        dragActive = true;
+        document.body.classList.add('fav-dragging');
+
+        dragGhost = el.cloneNode(true);
+        dragGhost.classList.add('fav-drag-ghost');
+        dragGhost.style.left = `${x}px`;
+        dragGhost.style.top = `${y}px`;
+        document.body.appendChild(dragGhost);
+    }
+
+    function moveFavoriteBefore(fromKey, toKey) {
+        const fromIndex = favoriteImages.indexOf(fromKey);
+        const toIndex = favoriteImages.indexOf(toKey);
+
+        if (fromIndex === -1 || toIndex === -1 || fromIndex === toIndex) return;
+
+        const moved = favoriteImages.splice(fromIndex, 1)[0];
+        const newToIndex = favoriteImages.indexOf(toKey);
+        favoriteImages.splice(newToIndex, 0, moved);
+    }
 
     function renderHome() {
         const sectionRoot = document.getElementById('category-sections');
@@ -181,42 +178,11 @@
         const categories = {};
         Object.keys(educationData).forEach(key => {
             const item = educationData[key];
-            if (item.hidden) return;   // 👈 加這一行（關鍵！）
             if (!isVisibleOnPage(item)) return;
             const cat = item.category || 'uncategorized';
             if (!categories[cat]) categories[cat] = [];
             categories[cat].push({ key, item });
         });
-
-        let draggedFavKey = null;
-
-function dragFavStart(event) {
-    draggedFavKey = event.currentTarget.dataset.favKey;
-}
-
-function dragFavOver(event) {
-    event.preventDefault();
-}
-
-function dropFav(event) {
-    event.preventDefault();
-
-    const targetKey = event.currentTarget.dataset.favKey;
-    if (!draggedFavKey || draggedFavKey === targetKey) return;
-
-    const fromIndex = favoriteImages.indexOf(draggedFavKey);
-    const toIndex = favoriteImages.indexOf(targetKey);
-
-    if (fromIndex === -1 || toIndex === -1) return;
-
-    favoriteImages.splice(fromIndex, 1);
-    favoriteImages.splice(toIndex, 0, draggedFavKey);
-
-    saveFavorites();
-    renderHome();
-
-    draggedFavKey = null;
-}
 
         Object.keys(categories)
             .sort((a, b) => (categoryMeta[a]?.order || 99) - (categoryMeta[b]?.order || 99))
@@ -241,10 +207,15 @@ function dropFav(event) {
         favoriteImages.forEach(favKey => {
             const [type, idxStr] = favKey.split('-');
             const idx = parseInt(idxStr);
+            if (educationData[type]?.hidden) return;
             if(educationData[type] && educationData[type].steps[idx] && isVisibleOnPage(educationData[type])) {
                 visibleFavCount++;
                 favGrid.innerHTML += `
-                    <div class="menu-item fav-item" onclick="openViewer('${type}', ${idx})">
+                    <div class="menu-item fav-item sortable-fav"
+                         data-fav-key="${favKey}"
+                         data-type="${type}"
+                         data-idx="${idx}">
+                        <span class="drag-grip">☰</span>
                         <span class="icon">${educationData[type].icon}</span>
                         <div style="font-weight:bold; font-size:1.1rem;">${educationData[type].title}</div>
                         <div class="fav-label">步驟 ${idx + 1}</div>
@@ -252,6 +223,7 @@ function dropFav(event) {
             }
         });
         document.getElementById('fav-section').style.display = visibleFavCount > 0 ? 'block' : 'none';
+        initFavoriteSorting();
     }
 
     function openViewer(type, startIndex = 0) {
@@ -305,7 +277,8 @@ function updateContent() {
         const currentKey = `${currentType}-${currentIdx}`;
         if (favoriteImages.includes(currentKey)) favoriteImages = favoriteImages.filter(k => k !== currentKey);
         else favoriteImages.push(currentKey);
-        saveFavorites();
+        localStorage.setItem('favImages', JSON.stringify(favoriteImages));
+        updateContent();
     }
 
    function changeStep(dir) {
