@@ -53,6 +53,40 @@
     <script src="./qrious.min.js"></script>
     <link rel="stylesheet" href="./css/base.css?v=1">
     <link rel="stylesheet" href="./css/pharmacist.css?v=1">
+
+<style>
+/* === 我的最愛：長按拖曳排序 === */
+.fav-item.sortable-fav {
+    position: relative;
+    touch-action: none;
+}
+
+.drag-grip {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #c0392b;
+    font-size: 0.95rem;
+    opacity: 0.75;
+    user-select: none;
+}
+
+.fav-dragging {
+    user-select: none;
+}
+
+.fav-drag-ghost {
+    position: fixed;
+    z-index: 20000;
+    width: 42vw;
+    max-width: 210px;
+    transform: translate(-50%, -50%) scale(1.03);
+    opacity: 0.92;
+    pointer-events: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+</style>
+
 </head>
 <body>
 
@@ -167,7 +201,103 @@
     }
 
     let favoriteImages = JSON.parse(localStorage.getItem('favImages')) || [];
+
+    function saveFavorites() {
+        localStorage.setItem('favImages', JSON.stringify(favoriteImages));
+    }
+
     let currentType = '', currentIdx = 0;
+
+    // === 我的最愛：長按拖曳排序 ===
+    let favPressTimer = null;
+    let draggedFavKey = null;
+    let dragGhost = null;
+    let dragActive = false;
+
+    function initFavoriteSorting() {
+        document.querySelectorAll('.sortable-fav').forEach(el => {
+            el.addEventListener('click', handleFavClick);
+            el.addEventListener('pointerdown', favPointerDown);
+            el.addEventListener('pointermove', favPointerMove);
+            el.addEventListener('pointerup', favPointerUp);
+            el.addEventListener('pointercancel', favPointerUp);
+        });
+    }
+
+    function handleFavClick(event) {
+        if (dragActive) {
+            event.preventDefault();
+            event.stopPropagation();
+            return;
+        }
+
+        const el = event.currentTarget;
+        openViewer(el.dataset.type, parseInt(el.dataset.idx));
+    }
+
+    function favPointerDown(event) {
+        const el = event.currentTarget;
+        if (event.pointerType === 'mouse' && event.button !== 0) return;
+
+        favPressTimer = setTimeout(() => {
+            startFavDrag(el, event.clientX, event.clientY);
+        }, 420);
+    }
+
+    function favPointerMove(event) {
+        if (!dragActive || !dragGhost) return;
+
+        event.preventDefault();
+        dragGhost.style.left = `${event.clientX}px`;
+        dragGhost.style.top = `${event.clientY}px`;
+
+        const target = document.elementFromPoint(event.clientX, event.clientY)?.closest('.sortable-fav');
+        if (target && target.dataset.favKey && target.dataset.favKey !== draggedFavKey) {
+            moveFavoriteBefore(draggedFavKey, target.dataset.favKey);
+            renderHome();
+        }
+    }
+
+    function favPointerUp() {
+        clearTimeout(favPressTimer);
+        favPressTimer = null;
+
+        if (dragGhost) {
+            dragGhost.remove();
+            dragGhost = null;
+        }
+
+        if (dragActive) {
+            saveFavorites();
+            setTimeout(() => { dragActive = false; }, 80);
+        }
+
+        draggedFavKey = null;
+        document.body.classList.remove('fav-dragging');
+    }
+
+    function startFavDrag(el, x, y) {
+        draggedFavKey = el.dataset.favKey;
+        dragActive = true;
+        document.body.classList.add('fav-dragging');
+
+        dragGhost = el.cloneNode(true);
+        dragGhost.classList.add('fav-drag-ghost');
+        dragGhost.style.left = `${x}px`;
+        dragGhost.style.top = `${y}px`;
+        document.body.appendChild(dragGhost);
+    }
+
+    function moveFavoriteBefore(fromKey, toKey) {
+        const fromIndex = favoriteImages.indexOf(fromKey);
+        const toIndex = favoriteImages.indexOf(toKey);
+
+        if (fromIndex === -1 || toIndex === -1 || fromIndex === toIndex) return;
+
+        const moved = favoriteImages.splice(fromIndex, 1)[0];
+        const newToIndex = favoriteImages.indexOf(toKey);
+        favoriteImages.splice(newToIndex, 0, moved);
+    }
 
     function renderHome() {
         const sectionRoot = document.getElementById('category-sections');
@@ -208,10 +338,15 @@
         favoriteImages.forEach(favKey => {
             const [type, idxStr] = favKey.split('-');
             const idx = parseInt(idxStr);
+            if (educationData[type] && educationData[type].hidden) return;
             if(educationData[type] && educationData[type].steps[idx] && isVisibleOnPage(educationData[type])) {
                 visibleFavCount++;
                 favGrid.innerHTML += `
-                    <div class="menu-item fav-item" onclick="openViewer('${type}', ${idx})">
+                    <div class="menu-item fav-item sortable-fav"
+                         data-fav-key="${favKey}"
+                         data-type="${type}"
+                         data-idx="${idx}">
+                        <span class="drag-grip">☰</span>
                         <span class="icon">${educationData[type].icon}</span>
                         <div style="font-weight:bold; font-size:1.1rem;">${educationData[type].title}</div>
                         <div class="fav-label">步驟 ${idx + 1}</div>
@@ -219,6 +354,7 @@
             }
         });
         document.getElementById('fav-section').style.display = visibleFavCount > 0 ? 'block' : 'none';
+        initFavoriteSorting();
     }
 
     function openViewer(type, startIndex = 0) {
@@ -272,7 +408,7 @@ function updateContent() {
         const currentKey = `${currentType}-${currentIdx}`;
         if (favoriteImages.includes(currentKey)) favoriteImages = favoriteImages.filter(k => k !== currentKey);
         else favoriteImages.push(currentKey);
-        localStorage.setItem('favImages', JSON.stringify(favoriteImages));
+        saveFavorites();
         updateContent();
     }
 
