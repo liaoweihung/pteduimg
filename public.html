@@ -51,7 +51,7 @@
     </script>
     
     <script src="./qrious.min.js"></script>
-    <link rel="stylesheet" href="./css/base.css?v=2">
+    <link rel="stylesheet" href="./css/base.css?v=3">
     <link rel="stylesheet" href="./css/public.css?v=1">
 
 <style>
@@ -175,6 +175,8 @@
 
     const PAGE_TYPE = 'public';
 
+    const MAIN_ORDER_STORAGE_KEY = `mainCardOrder:${PAGE_TYPE}`;
+
     const pageMeta = {
         pharmacist: {
             title: '藥師藥品衛教助手',
@@ -232,9 +234,14 @@
     }
 
     let favoriteImages = JSON.parse(localStorage.getItem('favImages')) || [];
+    let mainCardOrder = JSON.parse(localStorage.getItem(MAIN_ORDER_STORAGE_KEY)) || {};
 
     function saveFavorites() {
         localStorage.setItem('favImages', JSON.stringify(favoriteImages));
+    }
+
+    function saveMainCardOrder() {
+        localStorage.setItem(MAIN_ORDER_STORAGE_KEY, JSON.stringify(mainCardOrder));
     }
 
     let currentType = '', currentIdx = 0;
@@ -245,12 +252,150 @@
     let dragGhost = null;
     let dragActive = false;
     let dragStarted = false;
+    let mainPressTimer = null;
+    let draggedMainKey = null;
+    let draggedMainCategory = null;
+    let mainDragGhost = null;
+    let mainDragActive = false;
+    let mainDragStarted = false;
 
     function initFavoriteSorting() {
         document.querySelectorAll('.sortable-fav').forEach(el => {
             el.addEventListener('click', handleFavClick);
             el.addEventListener('pointerdown', favPointerDown);
         });
+    }
+
+
+    function initMainSorting() {
+        document.querySelectorAll('.sortable-main').forEach(el => {
+            el.addEventListener('pointerdown', mainPointerDown);
+        });
+    }
+
+    function handleMainCardClick(event, key) {
+        if (mainDragStarted) {
+            event.preventDefault();
+            event.stopPropagation();
+            return;
+        }
+
+        openViewer(key, 0);
+    }
+
+    function getDefaultSortedItems(items) {
+        return [...items].sort((a, b) => (a.item.order || 999) - (b.item.order || 999) || a.item.title.localeCompare(b.item.title, 'zh-Hant'));
+    }
+
+    function getOrderedCategoryItems(cat, items) {
+        const defaultItems = getDefaultSortedItems(items);
+        const savedKeys = Array.isArray(mainCardOrder[cat]) ? mainCardOrder[cat] : [];
+        const byKey = new Map(defaultItems.map(entry => [entry.key, entry]));
+        const ordered = [];
+
+        savedKeys.forEach(key => {
+            if (byKey.has(key)) {
+                ordered.push(byKey.get(key));
+                byKey.delete(key);
+            }
+        });
+
+        return ordered.concat([...byKey.values()]);
+    }
+
+    function mainPointerDown(event) {
+        const el = event.currentTarget;
+        if (event.pointerType === 'mouse' && event.button !== 0) return;
+
+        clearTimeout(mainPressTimer);
+        mainDragStarted = false;
+
+        mainPressTimer = setTimeout(() => {
+            startMainDrag(el, event.clientX, event.clientY);
+        }, 420);
+
+        document.addEventListener('pointermove', mainPointerMove, { passive: false });
+        document.addEventListener('pointerup', mainPointerUp, { once: true });
+        document.addEventListener('pointercancel', mainPointerUp, { once: true });
+    }
+
+    function mainPointerMove(event) {
+        if (!mainDragActive || !mainDragGhost) return;
+
+        event.preventDefault();
+
+        mainDragGhost.style.left = `${event.clientX}px`;
+        mainDragGhost.style.top = `${event.clientY}px`;
+
+        const target = document.elementFromPoint(event.clientX, event.clientY)?.closest('.sortable-main');
+        if (target && target.dataset.cardKey && target.dataset.category === draggedMainCategory && target.dataset.cardKey !== draggedMainKey) {
+            moveMainCardBefore(draggedMainKey, target.dataset.cardKey, target.dataset.category);
+            saveMainCardOrder();
+            renderHome();
+
+            if (mainDragGhost && !document.body.contains(mainDragGhost)) {
+                document.body.appendChild(mainDragGhost);
+            }
+        }
+    }
+
+    function mainPointerUp() {
+        clearTimeout(mainPressTimer);
+        mainPressTimer = null;
+
+        document.removeEventListener('pointermove', mainPointerMove);
+
+        if (mainDragGhost) {
+            mainDragGhost.remove();
+            mainDragGhost = null;
+        }
+
+        if (mainDragActive) {
+            saveMainCardOrder();
+        }
+
+        mainDragActive = false;
+        draggedMainKey = null;
+        draggedMainCategory = null;
+        document.body.classList.remove('main-dragging');
+        document.querySelectorAll('.main-drag-source').forEach(el => el.classList.remove('main-drag-source'));
+
+        setTimeout(() => {
+            mainDragStarted = false;
+        }, 120);
+    }
+
+    function startMainDrag(el, x, y) {
+        draggedMainKey = el.dataset.cardKey;
+        draggedMainCategory = el.dataset.category;
+        mainDragActive = true;
+        mainDragStarted = true;
+        document.body.classList.add('main-dragging');
+        el.classList.add('main-drag-source');
+
+        mainDragGhost = el.cloneNode(true);
+        mainDragGhost.classList.add('main-drag-ghost');
+        mainDragGhost.style.left = `${x}px`;
+        mainDragGhost.style.top = `${y}px`;
+        document.body.appendChild(mainDragGhost);
+    }
+
+    function moveMainCardBefore(fromKey, toKey, cat) {
+        if (!cat) return;
+
+        const currentItems = Array.from(document.querySelectorAll(`.sortable-main[data-category="${cat}"]`)).map(el => el.dataset.cardKey);
+        let keys = currentItems.length ? currentItems : (mainCardOrder[cat] || []);
+        const fromIndex = keys.indexOf(fromKey);
+        const toIndex = keys.indexOf(toKey);
+
+        if (fromIndex === -1 || toIndex === -1 || fromIndex === toIndex) return;
+
+        const moved = keys.splice(fromIndex, 1)[0];
+        let insertIndex = keys.indexOf(toKey);
+        if (fromIndex < toIndex) insertIndex += 1;
+        keys.splice(insertIndex, 0, moved);
+
+        mainCardOrder[cat] = keys;
     }
 
     function handleFavClick(event) {
@@ -384,11 +529,14 @@
                 sectionRoot.innerHTML += `<div class="section-title">${title}</div><div class="menu-grid" id="${gridId}"></div>`;
                 const grid = document.getElementById(gridId);
 
-                categories[cat]
-                    .sort((a, b) => (a.item.order || 999) - (b.item.order || 999) || a.item.title.localeCompare(b.item.title, 'zh-Hant'))
+                getOrderedCategoryItems(cat, categories[cat])
                     .forEach(({ key, item }) => {
                         grid.innerHTML += `
-                            <div class="menu-item" onclick="openViewer('${key}', 0)">
+                            <div class="menu-item sortable-main"
+                                 data-card-key="${key}"
+                                 data-category="${cat}"
+                                 onclick="handleMainCardClick(event, '${key}')">
+                                <span class="drag-grip main-drag-grip">☰</span>
                                 <span class="icon">${item.icon || '📌'}</span>
                                 <div style="font-weight:bold; font-size:1.1rem;">${item.title}</div>
                             </div>`;
@@ -415,6 +563,7 @@
             }
         });
         document.getElementById('fav-section').style.display = visibleFavCount > 0 ? 'block' : 'none';
+        initMainSorting();
         initFavoriteSorting();
     }
 

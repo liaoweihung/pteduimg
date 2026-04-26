@@ -272,3 +272,41 @@
         .top-nav a { display:inline-block; padding:9px 14px; border-radius:999px; background:white; color:#2c3e50; text-decoration:none; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,0.06); border:1px solid #e5e8e8; font-size:0.95rem; }
         .top-nav a.active { background:#2c3e50; color:white; }
         .page-note { margin:10px 20px 0; padding:10px 12px; border-radius:12px; background:#ffffff; color:#5d6d7e; font-size:0.9rem; line-height:1.4; border:1px solid #e5e8e8; }
+
+
+.sortable-main {
+    position: relative;
+    touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.main-drag-grip {
+    color: #5d6d7e;
+}
+
+.main-dragging {
+    user-select: none;
+}
+
+.main-drag-source {
+    opacity: 0.35;
+    outline: 2px dashed #3498db;
+}
+
+.main-drag-ghost {
+    position: fixed;
+    z-index: 20000;
+    width: 42vw;
+    max-width: 210px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px 10px;
+    text-align: center;
+    border: 2px solid #3498db;
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 0.95;
+    pointer-events: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
