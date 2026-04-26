@@ -274,6 +274,8 @@
 
         draggedFavKey = null;
         document.body.classList.remove('fav-dragging');
+
+        document.querySelectorAll('.drag-source').forEach(el => el.classList.remove('drag-source'));
     }
 
     function startFavDrag(el, x, y) {
