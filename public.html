@@ -51,7 +51,7 @@
     </script>
     
     <script src="./qrious.min.js"></script>
-    <link rel="stylesheet" href="./css/base.css?v=4">
+    <link rel="stylesheet" href="./css/base.css?v=5">
     <link rel="stylesheet" href="./css/public.css?v=1">
 
 <style>
@@ -319,25 +319,24 @@
             startMainDrag(el, event.clientX, event.clientY);
         }, 520);
 
-        document.addEventListener('pointermove', mainPointerMove, { passive: false });
+        document.addEventListener('pointermove', mainPendingPointerMove, { passive: true });
         document.addEventListener('pointerup', mainPointerUp, { once: true });
         document.addEventListener('pointercancel', mainPointerUp, { once: true });
     }
 
-    function mainPointerMove(event) {
-        if (!mainDragActive) {
-            const movedX = Math.abs(event.clientX - mainPressStartX);
-            const movedY = Math.abs(event.clientY - mainPressStartY);
-            if (movedX > MAIN_DRAG_MOVE_TOLERANCE || movedY > MAIN_DRAG_MOVE_TOLERANCE) {
-                clearTimeout(mainPressTimer);
-                mainPressTimer = null;
-            }
-            return;
+    function mainPendingPointerMove(event) {
+        const movedX = Math.abs(event.clientX - mainPressStartX);
+        const movedY = Math.abs(event.clientY - mainPressStartY);
+        if (movedX > MAIN_DRAG_MOVE_TOLERANCE || movedY > MAIN_DRAG_MOVE_TOLERANCE) {
+            clearTimeout(mainPressTimer);
+            mainPressTimer = null;
         }
+    }
 
-        if (!mainDragGhost) return;
+    function mainPointerMove(event) {
+        if (!mainDragActive || !mainDragGhost) return;
 
-        event.preventDefault();
+        if (event.cancelable) event.preventDefault();
 
         mainDragGhost.style.left = `${event.clientX}px`;
         mainDragGhost.style.top = `${event.clientY}px`;
@@ -358,6 +357,7 @@
         clearTimeout(mainPressTimer);
         mainPressTimer = null;
 
+        document.removeEventListener('pointermove', mainPendingPointerMove);
         document.removeEventListener('pointermove', mainPointerMove);
 
         if (mainDragGhost) {
@@ -381,6 +381,9 @@
     }
 
     function startMainDrag(el, x, y) {
+        document.removeEventListener('pointermove', mainPendingPointerMove);
+        document.addEventListener('pointermove', mainPointerMove, { passive: false });
+
         draggedMainKey = el.dataset.cardKey;
         draggedMainCategory = el.dataset.category;
         mainDragActive = true;
