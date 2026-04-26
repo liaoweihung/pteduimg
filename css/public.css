@@ -46,7 +46,12 @@ body.public-page .top-nav a.active {
     background: #fff5f6;
 }
 
-.sortable-fav.drag-source {
-    opacity: 0.35;
-    outline: 2px dashed #ff6b81;
+.sortable-fav {
+    position: relative;
+    touch-action: none;
+    /* 👇 必須補上這三行，徹底封印手機的原生選取行為 👇 */
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    user-select: none;
 }
+
