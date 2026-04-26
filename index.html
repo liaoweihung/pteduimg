@@ -280,6 +280,7 @@
         draggedFavKey = el.dataset.favKey;
         dragActive = true;
         document.body.classList.add('fav-dragging');
+        el.classList.add('drag-source');
 
         dragGhost = el.cloneNode(true);
         dragGhost.classList.add('fav-drag-ghost');
