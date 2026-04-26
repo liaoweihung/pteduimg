@@ -316,16 +316,23 @@
         document.body.appendChild(dragGhost);
     }
 
-    function moveFavoriteBefore(fromKey, toKey) {
-        const fromIndex = favoriteImages.indexOf(fromKey);
-        const toIndex = favoriteImages.indexOf(toKey);
+   function moveFavoriteBefore(fromKey, toKey) {
+    const fromIndex = favoriteImages.indexOf(fromKey);
+    const toIndex = favoriteImages.indexOf(toKey);
 
-        if (fromIndex === -1 || toIndex === -1 || fromIndex === toIndex) return;
+    if (fromIndex === -1 || toIndex === -1 || fromIndex === toIndex) return;
 
-        const moved = favoriteImages.splice(fromIndex, 1)[0];
-        const newToIndex = favoriteImages.indexOf(toKey);
-        favoriteImages.splice(newToIndex, 0, moved);
+    const moved = favoriteImages.splice(fromIndex, 1)[0];
+
+    let insertIndex = favoriteImages.indexOf(toKey);
+
+    // 往後拖時，要插到目標後面
+    if (fromIndex < toIndex) {
+        insertIndex += 1;
     }
+
+    favoriteImages.splice(insertIndex, 0, moved);
+}
 
     function renderHome() {
         const sectionRoot = document.getElementById('category-sections');
