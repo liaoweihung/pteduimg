@@ -81,12 +81,12 @@
     width: 42vw;
     max-width: 210px;
     transform: translate(-50%, -50%) scale(1.08);
-    opacity: 0.96;
+    opacity: 0.98;
     pointer-events: none;
     box-shadow: 0 18px 36px rgba(0,0,0,0.35);
-    border: 2px solid #ff6b81;
-    background: #fff5f
-    }
+    border: 3px solid #ff6b81;
+    background: #fff5f6;
+}
 .sortable-fav.drag-source {
     opacity: 0.35;
     outline: 2px dashed #ff6b81;
@@ -220,19 +220,17 @@
     let draggedFavKey = null;
     let dragGhost = null;
     let dragActive = false;
+    let dragStarted = false;
 
     function initFavoriteSorting() {
         document.querySelectorAll('.sortable-fav').forEach(el => {
             el.addEventListener('click', handleFavClick);
             el.addEventListener('pointerdown', favPointerDown);
-            el.addEventListener('pointermove', favPointerMove);
-            el.addEventListener('pointerup', favPointerUp);
-            el.addEventListener('pointercancel', favPointerUp);
         });
     }
 
     function handleFavClick(event) {
-        if (dragActive) {
+        if (dragStarted) {
             event.preventDefault();
             event.stopPropagation();
             return;
@@ -246,28 +244,44 @@
         const el = event.currentTarget;
         if (event.pointerType === 'mouse' && event.button !== 0) return;
 
+        clearTimeout(favPressTimer);
+        dragStarted = false;
+
         favPressTimer = setTimeout(() => {
-            startFavDrag(el, event);
+            startFavDrag(el, event.clientX, event.clientY);
         }, 420);
+
+        document.addEventListener('pointermove', favPointerMove, { passive: false });
+        document.addEventListener('pointerup', favPointerUp, { once: true });
+        document.addEventListener('pointercancel', favPointerUp, { once: true });
     }
 
     function favPointerMove(event) {
         if (!dragActive || !dragGhost) return;
 
         event.preventDefault();
+
         dragGhost.style.left = `${event.clientX}px`;
         dragGhost.style.top = `${event.clientY}px`;
 
         const target = document.elementFromPoint(event.clientX, event.clientY)?.closest('.sortable-fav');
         if (target && target.dataset.favKey && target.dataset.favKey !== draggedFavKey) {
             moveFavoriteBefore(draggedFavKey, target.dataset.favKey);
+            saveFavorites();
             renderHome();
+
+            // renderHome 會重畫畫面，所以 ghost 要重新放回 body，避免消失
+            if (dragGhost && !document.body.contains(dragGhost)) {
+                document.body.appendChild(dragGhost);
+            }
         }
     }
 
     function favPointerUp() {
         clearTimeout(favPressTimer);
         favPressTimer = null;
+
+        document.removeEventListener('pointermove', favPointerMove);
 
         if (dragGhost) {
             dragGhost.remove();
@@ -276,28 +290,32 @@
 
         if (dragActive) {
             saveFavorites();
-            setTimeout(() => { dragActive = false; }, 80);
         }
 
+        dragActive = false;
         draggedFavKey = null;
         document.body.classList.remove('fav-dragging');
-
         document.querySelectorAll('.drag-source').forEach(el => el.classList.remove('drag-source'));
+
+        setTimeout(() => {
+            dragStarted = false;
+        }, 120);
     }
 
-    function startFavDrag(el, event) {
-    draggedFavKey = el.dataset.favKey;
-    dragActive = true;
-    document.body.classList.add('fav-dragging');
+    function startFavDrag(el, x, y) {
+        draggedFavKey = el.dataset.favKey;
+        dragActive = true;
+        dragStarted = true;
+        document.body.classList.add('fav-dragging');
+        el.classList.add('drag-source');
 
-    el.setPointerCapture(event.pointerId);
+        dragGhost = el.cloneNode(true);
+        dragGhost.classList.add('fav-drag-ghost');
+        dragGhost.style.left = `${x}px`;
+        dragGhost.style.top = `${y}px`;
+        document.body.appendChild(dragGhost);
+    }
 
-    dragGhost = el.cloneNode(true);
-    dragGhost.classList.add('fav-drag-ghost');
-    dragGhost.style.left = `${event.clientX}px`;
-    dragGhost.style.top = `${event.clientY}px`;
-    document.body.appendChild(dragGhost);
-}
     function moveFavoriteBefore(fromKey, toKey) {
         const fromIndex = favoriteImages.indexOf(fromKey);
         const toIndex = favoriteImages.indexOf(toKey);
