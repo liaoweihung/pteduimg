@@ -254,6 +254,8 @@
 
         clearTimeout(favPressTimer);
         dragStarted = false;
+        const startX = event.clientX;
+        const startY = event.clientY;
 
         favPressTimer = setTimeout(() => {
             startFavDrag(el, event.clientX, event.clientY);
