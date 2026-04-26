@@ -51,7 +51,7 @@
     </script>
     
     <script src="./qrious.min.js"></script>
-    <link rel="stylesheet" href="./css/base.css?v=3">
+    <link rel="stylesheet" href="./css/base.css?v=4">
     <link rel="stylesheet" href="./css/pharmacist.css?v=1">
 
 <style>
@@ -256,11 +256,14 @@
     let dragActive = false;
     let dragStarted = false;
     let mainPressTimer = null;
+    let mainPressStartX = 0;
+    let mainPressStartY = 0;
     let draggedMainKey = null;
     let draggedMainCategory = null;
     let mainDragGhost = null;
     let mainDragActive = false;
     let mainDragStarted = false;
+    const MAIN_DRAG_MOVE_TOLERANCE = 10;
 
     function initFavoriteSorting() {
         document.querySelectorAll('.sortable-fav').forEach(el => {
@@ -312,10 +315,12 @@
 
         clearTimeout(mainPressTimer);
         mainDragStarted = false;
+        mainPressStartX = event.clientX;
+        mainPressStartY = event.clientY;
 
         mainPressTimer = setTimeout(() => {
             startMainDrag(el, event.clientX, event.clientY);
-        }, 420);
+        }, 520);
 
         document.addEventListener('pointermove', mainPointerMove, { passive: false });
         document.addEventListener('pointerup', mainPointerUp, { once: true });
@@ -323,7 +328,17 @@
     }
 
     function mainPointerMove(event) {
-        if (!mainDragActive || !mainDragGhost) return;
+        if (!mainDragActive) {
+            const movedX = Math.abs(event.clientX - mainPressStartX);
+            const movedY = Math.abs(event.clientY - mainPressStartY);
+            if (movedX > MAIN_DRAG_MOVE_TOLERANCE || movedY > MAIN_DRAG_MOVE_TOLERANCE) {
+                clearTimeout(mainPressTimer);
+                mainPressTimer = null;
+            }
+            return;
+        }
+
+        if (!mainDragGhost) return;
 
         event.preventDefault();
 
