@@ -15,33 +15,50 @@
 <meta property="og:image" content="https://liaoweihung.github.io/pteduimg/icon.png?v=3">
     <!-- 👇 新增的隱形斗篷開關 👇 -->
 <script>
-  // 1. 檢查網址有沒有帶秘密鑰匙 (?dev=1)
+  const GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
   const urlParams = new URLSearchParams(window.location.search);
+  const isLocalPreview = ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname) || window.location.protocol === 'file:';
+
   if (urlParams.get('dev') === '1') {
-      localStorage.setItem('isDeveloper', 'true'); // 在手機瀏覽器刻上開發者印記
+      localStorage.setItem('isDeveloper', 'true');
       alert('已開啟開發者隱形模式！未來的瀏覽將不會被 GA4 記錄。');
   }
 
-  // 2. 只要有開發者印記，就強行關閉 GA4
-  if (localStorage.getItem('isDeveloper') === 'true') {
-      window['ga-disable-G-T5R33JYTC0'] = true; 
-      console.log('🛡️ 開發者隱形模式運作中：GA4 已暫停');
+  if (urlParams.get('dev') === '0') {
+      localStorage.removeItem('isDeveloper');
+      alert('已關閉開發者隱形模式。');
+  }
+
+  window.isAnalyticsDisabled = isLocalPreview || localStorage.getItem('isDeveloper') === 'true';
+  window[`ga-disable-${GA_MEASUREMENT_ID}`] = window.isAnalyticsDisabled;
+
+  function shouldTrackAnalytics() {
+      return !window.isAnalyticsDisabled && typeof gtag === 'function';
+  }
+
+  if (window.isAnalyticsDisabled) {
+      console.log('🛡️ GA4 已暫停：本機預覽或開發者隱形模式');
   }
 </script>
 <!-- 👆 隱形斗篷開關結束 👆 -->
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5R33JYTC0"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  window.gtag = function(){ dataLayer.push(arguments); };
 
-  gtag('config', 'G-T5R33JYTC0');
+  if (!window.isAnalyticsDisabled) {
+      const gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+      document.head.appendChild(gaScript);
+      gtag('js', new Date());
+      gtag('config', GA_MEASUREMENT_ID);
+  }
 </script>
 <script>
       function trackImageUsage(imageName) {
           // 確保 GA4 有順利載入才執行
-          if (typeof gtag === 'function') {
+          if (shouldTrackAnalytics()) {
               gtag('event', 'view_instruction_card', {
                   'card_name': imageName
               });
@@ -604,7 +621,7 @@
             trackImageUsage(educationData[type].title);
     }
         // 👇 從這裡開始新增：修復 GA4 第一步起跑線盲區 👇
-        if (typeof gtag === 'function') {
+        if (shouldTrackAnalytics()) {
             gtag('event', 'view_instruction_step', {
                 'card_title': educationData[type].title,
                 'step_number': (currentIdx + 1) // 將程式的 0 轉換為人類理解的第 1 步
@@ -664,7 +681,7 @@ function updateContent() {
 
         // 👇=== 新增：GA4 翻頁追蹤防彈裝甲 ===👇
         // 確保有網路且 GA4 正常載入時，才執行追蹤，避免離線時當機
-        if (typeof gtag === 'function') {
+        if (shouldTrackAnalytics()) {
             gtag('event', 'view_instruction_step', {
                 'card_category': currentType,                     // 紀錄代號 (例如: 'fall_wound')
                 'card_title': educationData[currentType].title,   // 紀錄中文標題 (例如: '傷口照護')
@@ -682,7 +699,7 @@ function updateContent() {
         document.getElementById('qr-modal').style.display = 'flex';
 
         // 👇 新增的 GA4 追蹤雷達：記錄產生 QR Code 的動作 👇
-        if (typeof gtag === 'function') {
+        if (shouldTrackAnalytics()) {
             gtag('event', 'show_qr_code', {
                 'card_category': educationData[currentType].title, // 記錄是哪個主題 (例如: 眼藥膏)
                 'step_number': currentIdx + 1                      // 記錄是第幾個步驟的圖
@@ -773,7 +790,7 @@ function updateContent() {
     }
 
     function trackShareEvent(method) {
-        if (typeof gtag === 'function') {
+        if (shouldTrackAnalytics()) {
             gtag('event', 'share_instruction_card', {
                 'method': method,
                 'card_title': educationData[currentType].title,
@@ -782,6 +799,12 @@ function updateContent() {
         }
     }
 
+
+    function trackFeedbackClick() {
+        if (shouldTrackAnalytics()) {
+            gtag('event', 'click_feedback', { 'source_app': 'pteduimg' });
+        }
+    }
 // === 圖片專屬縮放與移動引擎 (完美相容 iOS/Android) ===
     let scale = 1;
     let pointX = 0, pointY = 0;
@@ -866,7 +889,7 @@ function updateContent() {
   <p style="margin: 0;">
     <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a> 
     &nbsp;|&nbsp; 
-   <a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" onclick="gtag('event', 'click_feedback', { 'source_app': 'pteduimg' });">💬 意見回饋</a>
+   <a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" onclick="trackFeedbackClick()">💬 意見回饋</a>
   </p>
 </footer>
     <div id="update-light" onclick="window.location.reload()" title="點擊更新至最新版">
