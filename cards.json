@@ -58,6 +58,16 @@
       "img/Ps_hair_wash.png"
     ]
   },
+  "hem_sitz_bath": {
+    "category": "public_education",
+    "title": "痔瘡坐浴",
+    "icon": "🛁",
+    "order": 50,
+    "hidden": false,
+    "steps": [
+      "img/hem_sitz_bath.webp"
+    ]
+  },
   "hem_oint": {
     "category": "pharmacist_general",
     "title": "痔瘡軟膏(內)",

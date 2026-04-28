@@ -1,16 +1,25 @@
 import os
 import re
 import datetime
+import json
 
 def update_service_worker():
     print("啟動自動化打包助理...")
 
     # 1. 自動掃描 img 資料夾底下的所有圖片
     img_folder = 'img'
-    image_files = [f for f in os.listdir(img_folder) if f.endswith(('.png', '.jpg', '.jpeg'))]
+    with open('cards.json', 'r', encoding='utf-8') as file:
+        cards = json.load(file)
+
+    image_files = sorted({
+        os.path.basename(step)
+        for card in cards.values()
+        for step in card.get('steps', [])
+        if step.startswith(f'{img_folder}/')
+    })
     
     # 建立 PWA 需要的快取清單 (包含首頁和所有圖片)
-    cache_list = ["'./'", "'./index.html'", "'./public.html'"]
+    cache_list = ["'./'", "'./index.html'", "'./public.html'", "'./icon.png'"]
     for img in image_files:
         cache_list.append(f"'./img/{img}'")
     
@@ -53,10 +62,10 @@ if __name__ == '__main__':
 print("開始更新 sitemap.xml...")
 
 # 1. 取得今天的日期 (格式：YYYY-MM-DD)
-today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+today_str = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d")
 
 # 2. 準備 sitemap 的內容 (新增了 public.html)
-    sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://liaoweihung.github.io/pteduimg/</loc>
