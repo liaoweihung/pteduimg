@@ -692,9 +692,15 @@ function updateContent() {
         // 👆=== 新增結束 ===👆
     }
 
+    function getPublicAssetUrl(path) {
+        const isLocalPreview = ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname) || window.location.protocol === 'file:';
+        const baseUrl = isLocalPreview ? 'https://liaoweihung.github.io/pteduimg/' : new URL('./', window.location.href).href;
+        return new URL(path, baseUrl).href;
+    }
+
     function showQRCode() {
         const path = educationData[currentType].steps[currentIdx];
-        const fullUrl = window.location.origin + window.location.pathname.replace('index.html', '') + path;
+        const fullUrl = getPublicAssetUrl(path);
         new QRious({ element: document.getElementById('qr-canvas'), value: fullUrl, size: 220 });
         document.getElementById('qr-modal').style.display = 'flex';
 
@@ -712,7 +718,7 @@ function updateContent() {
 
     function getCurrentShareUrl() {
         const path = educationData[currentType].steps[currentIdx];
-        return new URL(path, window.location.href).href;
+        return getPublicAssetUrl(path);
     }
 
     function getCurrentShareTitle() {
