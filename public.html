@@ -60,7 +60,7 @@
           // 確保 GA4 有順利載入才執行
           if (shouldTrackAnalytics()) {
               gtag('event', 'view_instruction_card', {
-                  'card_name': imageName
+                  'card_title': imageName
               });
               console.log('📍 已傳送 GA4 追蹤記錄：', imageName);
           }
