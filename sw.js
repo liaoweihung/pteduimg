@@ -1,7 +1,7 @@
-// 更新時間戳記，強迫重新整理
+﻿// ?湔???唾?嚗撥餈恍??唳??
 const CACHE_NAME = 'pwa-cache-v202605010001';
 
-// 👇 這裡從 ASSETS 改成了 urlsToCache，這樣 Python 管家才找得到！
+// ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
 const urlsToCache = [
   './',
   './index.html',
@@ -94,19 +94,19 @@ const urlsToCache = [
   './img/wound_oint.webp'
 ];
 
-// === 安裝階段 ===
+// === 摰??挾 ===
 self.addEventListener('install', (e) => {
-  // 關鍵 1：跳過等待，強制成為最新版
+  // ? 1嚗歲??敺?撘瑕???啁?
   self.skipWaiting(); 
   
   e.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
-      console.log('開始逐一快取檔案...');
-      // 防彈寫法：即使某個檔案找不到，也不會中斷其他檔案的下載
+      console.log('????敹怠?瑼?...');
+      // ?脣?撖急?嚗雿踵???獢銝嚗?銝?銝剜?嗡?瑼???頛?
       return Promise.all(
-        urlsToCache.map(url => { // 👈 這裡也對應改成了 urlsToCache
+        urlsToCache.map(url => { // ?? ?ㄐ銋???? urlsToCache
           return cache.add(url).catch(err => {
-            console.error('⚠️ 這支檔案找不到，請檢查 GitHub 檔名：', url);
+            console.error('?? ?瑼??曆??堆?隢炎??GitHub 瑼?嚗?, url);
           });
         })
       );
@@ -114,18 +114,18 @@ self.addEventListener('install', (e) => {
   );
 });
 
-// === 啟動階段 ===
+// === ???挾 ===
 self.addEventListener('activate', (e) => {
-  // 關鍵 2：立刻接管目前所有打開的頁面
+  // ? 2嚗??餅蝞∠???????
   e.waitUntil(clients.claim()); 
 
   e.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
-          // 如果快取名稱跟最新的不一樣，就刪除舊的
+          // 憒?敹怠??迂頝??啁?銝?璅??撠勗?方???
           if (cacheName !== CACHE_NAME) {
-            console.log('🧹 刪除舊快取：', cacheName);
+            console.log('?完 ?芷?翰??', cacheName);
             return caches.delete(cacheName);
           }
         })
@@ -134,7 +134,7 @@ self.addEventListener('activate', (e) => {
   );
 });
 
-// === 攔截請求階段 ===
+// === ?隢??挾 ===
 self.addEventListener('fetch', (e) => {
   const request = e.request;
   const url = new URL(request.url);
