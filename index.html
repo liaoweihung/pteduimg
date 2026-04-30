@@ -118,6 +118,32 @@
     pointer-events: none;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3); /* 加深陰影 */
 }
+
+.reset-main-order-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 22px 0 14px;
+}
+
+.reset-main-order-btn {
+    width: 42vw;
+    max-width: 210px;
+    min-height: 76px;
+    border: 2px solid #3498db;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #2c3e50;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.35;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.reset-main-order-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.16);
+}
 </style>
 
 </style>
@@ -262,6 +288,12 @@
 
     function saveMainCardOrder() {
         localStorage.setItem(MAIN_ORDER_STORAGE_KEY, JSON.stringify(mainCardOrder));
+    }
+
+    function resetMainCardOrder() {
+        mainCardOrder = {};
+        localStorage.removeItem(MAIN_ORDER_STORAGE_KEY);
+        renderHome();
     }
 
     let currentType = '', currentIdx = 0;
@@ -891,6 +923,9 @@ function updateContent() {
     
 </script>
 <footer class="site-footer">
+  <div class="reset-main-order-wrap">
+    <button type="button" class="reset-main-order-btn" onclick="resetMainCardOrder()">↻<br>恢復圖卡預設排列</button>
+  </div>
   <p style="margin: 0 0 8px 0;">本工具圖文僅供藥師衛教參考，非專業人士務必諮詢藥師建議。</p>
   <p style="margin: 0;">
     <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a> 
