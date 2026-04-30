@@ -132,6 +132,9 @@
     <a href="./public.html" id="nav-public">民眾疾病衛教</a>
 </nav>
 <div class="page-note" id="page-note"></div>
+<div class="reset-order-actions">
+    <button type="button" class="reset-order-btn" onclick="requestResetMainCardOrder()">恢復圖卡預設排列</button>
+</div>
 
 <div id="fav-section" style="display:none;">
     <div class="section-title">⭐ 常用圖卡</div>
@@ -162,6 +165,17 @@
             <button class="share-btn copy" onclick="copyShareUrl()">&#35079;&#35069;&#36899;&#32080;</button>
         </div>
         <button class="share-close" onclick="closeShareModal()">&#23436;&#25104;</button>
+    </div>
+</div>
+
+<div id="reset-order-modal">
+    <div class="reset-order-box">
+        <h3 class="reset-order-title">恢復圖卡預設排列</h3>
+        <p class="reset-order-message">確定要恢復圖卡預設排列嗎？目前手動調整的圖卡順序會被清除。</p>
+        <div class="reset-order-modal-actions">
+            <button type="button" class="reset-confirm-btn" onclick="confirmResetMainCardOrder()">確定恢復預設排列</button>
+            <button type="button" class="reset-cancel-btn" onclick="closeResetMainCardOrder()">取消</button>
+        </div>
     </div>
 </div>
 
@@ -259,6 +273,21 @@
 
     function saveMainCardOrder() {
         localStorage.setItem(MAIN_ORDER_STORAGE_KEY, JSON.stringify(mainCardOrder));
+    }
+
+    function requestResetMainCardOrder() {
+        document.getElementById('reset-order-modal').style.display = 'flex';
+    }
+
+    function closeResetMainCardOrder() {
+        document.getElementById('reset-order-modal').style.display = 'none';
+    }
+
+    function confirmResetMainCardOrder() {
+        mainCardOrder = {};
+        localStorage.removeItem(MAIN_ORDER_STORAGE_KEY);
+        closeResetMainCardOrder();
+        renderHome();
     }
 
     let currentType = '', currentIdx = 0;

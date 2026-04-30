@@ -272,6 +272,49 @@
         .top-nav a { display:inline-block; padding:9px 14px; border-radius:999px; background:white; color:#2c3e50; text-decoration:none; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,0.06); border:1px solid #e5e8e8; font-size:0.95rem; }
         .top-nav a.active { background:#2c3e50; color:white; }
         .page-note { margin:10px 20px 0; padding:10px 12px; border-radius:12px; background:#ffffff; color:#5d6d7e; font-size:0.9rem; line-height:1.4; border:1px solid #e5e8e8; }
+        .reset-order-actions { display:flex; justify-content:center; padding:10px 20px 0; }
+        .reset-order-btn {
+            border:1px solid #d8dee6;
+            border-radius:10px;
+            background:#fff;
+            color:#2c3e50;
+            font-weight:700;
+            padding:10px 14px;
+            cursor:pointer;
+            box-shadow:0 2px 8px rgba(0,0,0,0.06);
+        }
+        #reset-order-modal {
+            display:none;
+            position:fixed;
+            inset:0;
+            z-index:10001;
+            align-items:center;
+            justify-content:center;
+            padding:20px;
+            background:rgba(0,0,0,0.72);
+        }
+        .reset-order-box {
+            width:min(92vw, 420px);
+            background:#fff;
+            border-radius:14px;
+            padding:22px;
+            text-align:center;
+            box-shadow:0 14px 32px rgba(0,0,0,0.28);
+        }
+        .reset-order-title { margin:0 0 10px; color:#2c3e50; font-size:1.2rem; }
+        .reset-order-message { margin:0 0 18px; color:#5d6d7e; line-height:1.5; }
+        .reset-order-modal-actions { display:grid; gap:10px; }
+        .reset-confirm-btn,
+        .reset-cancel-btn {
+            border:0;
+            border-radius:10px;
+            padding:12px 10px;
+            font-weight:700;
+            font-size:1rem;
+            cursor:pointer;
+        }
+        .reset-confirm-btn { background:#2c3e50; color:#fff; }
+        .reset-cancel-btn { background:#ecf0f1; color:#2c3e50; }
 
 
 .sortable-main {
