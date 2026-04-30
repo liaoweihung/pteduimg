@@ -5,7 +5,7 @@
     "icon": "🍭",
     "order": 30,
     "steps": [
-      "img/DM_damage.png"
+      "img/DM_damage.webp"
     ]
   },
   "ear": {
@@ -42,11 +42,11 @@
     "icon": "🤕",
     "order": 10,
     "steps": [
-      "img/artficial_vs_paraffin.png",
-      "img/oint_choose.png",
-      "img/prevent_scar.png",
-      "img/slipped_fall_wound.png",
-      "img/wound_oint.png"
+      "img/artficial_vs_paraffin.webp",
+      "img/oint_choose.webp",
+      "img/prevent_scar.webp",
+      "img/slipped_fall_wound.webp",
+      "img/wound_oint.webp"
     ]
   },
   "hair_wash": {
@@ -55,7 +55,7 @@
     "icon": "💆",
     "order": 40,
     "steps": [
-      "img/Ps_hair_wash.png"
+      "img/Ps_hair_wash.webp"
     ]
   },
   
@@ -80,7 +80,7 @@
      "hidden": true,
     "order": 50,
     "steps": [
-      "img/Lidopat_1.png"
+      "img/Lidopat_1.webp"
     ]
   },
   "MDI": {
@@ -108,8 +108,8 @@
       "外籍看護服藥時間對照表第二頁"
     ],
     "steps": [
-      "img/lan_1.png",
-      "img/lan_2.png"
+      "img/lan_1.webp",
+      "img/lan_2.webp"
     ]
   },
   "nasal": {
@@ -132,7 +132,7 @@
      "hidden": true,
     "order": 40,
     "steps": [
-      "img/Neupro.png"
+      "img/Neupro.webp"
     ]
   },
   "Nicotine": {
@@ -142,7 +142,7 @@
      "hidden": true,
     "order": 30,
     "steps": [
-      "img/Nicotine_1.png"
+      "img/Nicotine_1.webp"
     ]
   },
   "NTG": {
@@ -153,7 +153,7 @@
     "steps": [
       "img/NTG_1.png",
       "img/NTG_2.png",
-      "img/NTG_3.png"
+      "img/NTG_3.webp"
     ]
   },
   "Ped_abx_susp": {
@@ -239,7 +239,7 @@
     "icon": "💦",
     "order": 20,
     "steps": [
-      "img/Wet_Wrap.png"
+      "img/Wet_Wrap.webp"
     ]
   },
   "over_one_oint": {
@@ -250,10 +250,10 @@
   "icon": "🧴",
   "texts": ["","","","整合內容"],
   "steps": [
-    "img/over_one_oint_01.png",
-    "img/over_one_oint_02.png",
-    "img/over_one_oint_03.png",
-    "img/over_one_oint_04.png"
+    "img/over_one_oint_01.webp",
+    "img/over_one_oint_02.webp",
+    "img/over_one_oint_03.webp",
+    "img/over_one_oint_04.webp"
   ]
 },
   "onitment_general": {
@@ -263,12 +263,12 @@
   "hidden": false,
   "icon": "🧴",
   "steps": [
-    "img/oneFTU.png",
-    "img/thin_skin_part.png",
-    "img/over_one_oint_01.png",
-    "img/over_one_oint_02.png",
-    "img/over_one_oint_03.png",
-    "img/over_one_oint_04.png"
+    "img/oneFTU.webp",
+    "img/thin_skin_part.webp",
+    "img/over_one_oint_01.webp",
+    "img/over_one_oint_02.webp",
+    "img/over_one_oint_03.webp",
+    "img/over_one_oint_04.webp"
   ]
 },
   "acne": {
@@ -299,7 +299,7 @@
      "hidden": true,
     "order": 20,
     "steps": [
-      "img/ZithromaxPOS.png"
+      "img/ZithromaxPOS.webp"
     ]
   },
   "site_instruction": {
