@@ -15,7 +15,7 @@
 <section class="panel">
 <h2>1. 填圖卡資料</h2>
 <div class="grid"><div><label>圖卡代號 id（英文/數字/底線）</label><input id="cardId" placeholder="例如 augmentin_powder"><p class="hint">這會成為 cards.json 裡的 key，不要用中文或空白。</p></div><div><label>顯示名稱 title</label><input id="title" placeholder="例如 安滅菌藥水泡製"></div></div>
-<div class="grid"><div><label>分類 category</label><select id="category"><option value="pharmacist_general">通用藥品使用說明</option><option value="pharmacist_product">特定產品衛教</option><option value="public_education">民眾疾病衛教圖卡</option><option value="uncategorized">其他圖卡</option></select></div><div><label>排序 order</label><input id="order" type="number" value="100"></div></div>
+<div class="grid"><div><label>分類 category</label><select id="category"><option value="pharmacist_general">通用藥品使用說明</option><option value="pharmacist_product">特定產品衛教</option><option value="public_education">民眾疾病衛教圖卡</option><option value="site_guide">網站使用說明</option><option value="uncategorized">其他圖卡</option></select></div><div><label>排序 order</label><input id="order" type="number" value="100"></div></div>
 <div class="grid"><div><label>圖示 icon</label><input id="icon" value="💊"></div><div><label>是否先隱藏</label><select id="hidden"><option value="false">顯示</option><option value="true">先隱藏</option></select></div></div>
 </section>
 <section class="panel"><h2>2. 選擇圖片</h2><input id="files" type="file" accept="image/*" multiple><p class="hint">建議一次選同一張圖卡的所有步驟圖片。工具會依檔名排序。</p><ul id="fileList" class="file-list"></ul><div id="preview" class="preview"></div></section>

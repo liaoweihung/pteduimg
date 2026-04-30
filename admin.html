@@ -64,6 +64,7 @@
                 <option value="pharmacist_general">通用藥品使用說明</option>
                 <option value="pharmacist_product">特定產品衛教</option>
                 <option value="public_education">民眾疾病衛教圖卡</option>
+                <option value="site_guide">網站使用說明</option>
                 <option value="uncategorized">其他圖卡</option>
             </select>
             <button onclick="exportJSON()">產生設定檔</button>
@@ -100,6 +101,7 @@ const categoryNames = {
     pharmacist_general: '通用藥品',
     pharmacist_product: '特定產品',
     public_education: '民眾衛教',
+    site_guide: '網站使用說明',
     uncategorized: '其他'
 };
 function login() {
@@ -168,6 +170,7 @@ function render() {
                 ${categoryOption('pharmacist_general', item.category)}
                 ${categoryOption('pharmacist_product', item.category)}
                 ${categoryOption('public_education', item.category)}
+                ${categoryOption('site_guide', item.category)}
                 ${categoryOption('uncategorized', item.category || 'uncategorized')}
             </select>
             <input class="order-input" type="number" value="${Number(item.order || 0)}" onchange="updateOrder('${key}', this.value)">

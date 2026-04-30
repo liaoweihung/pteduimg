@@ -246,12 +246,14 @@
         pharmacist_general: { title: '🧴 通用藥品使用說明', order: 10, page: 'pharmacist' },
         pharmacist_product: { title: '💊 特定產品衛教', order: 20, page: 'pharmacist' },
         public_education: { title: '🩹 民眾疾病衛教圖卡', order: 10, page: 'public' },
-        uncategorized: { title: '📦 其他圖卡', order: 99, page: 'pharmacist' }
+        uncategorized: { title: '📦 其他圖卡', order: 99, page: 'pharmacist' },
+        site_guide: { title: '🧭 網站使用說明', order: 999, page: 'all' }
     };
 
     function isVisibleOnPage(item) {
         const cat = item.category || 'uncategorized';
-        return (categoryMeta[cat]?.page || 'pharmacist') === PAGE_TYPE;
+        const categoryPage = categoryMeta[cat]?.page || 'pharmacist';
+        return categoryPage === 'all' || categoryPage === PAGE_TYPE;
     }
 
    function setupPageHeader() {
