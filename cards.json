@@ -316,5 +316,16 @@
       "img/site_instruction_01.webp",
       "img/site_instruction_02.webp"
     ]
+  },
+  "add_to_desktop": {
+    "title": "把衛教助手新增到手機桌面",
+    "category": "site_guide",
+    "order": 20,
+    "hidden": false,
+    "icon": "📱",
+    "steps": [
+      "img/add_to_desktop_ios.webp",
+      "img/add_to_desktop_android.webp"
+    ]
   }
 }
