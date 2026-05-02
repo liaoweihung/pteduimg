@@ -1,4 +1,14 @@
 {
+  "Prevent_Enterovirus": {
+    "title": "預防腸病毒",
+    "category": "public_education",
+    "order": 0,
+    "hidden": false,
+    "icon": "🧼",
+    "steps": [
+      "img/Prevent_Enterovirus.webp"
+    ]
+  },
   "fall_wound": {
     "title": "傷口與疤痕",
     "category": "public_education",
