@@ -61,16 +61,21 @@ def load_manual_cards():
 
 def build_prompt(topic):
     return f"""
-請生成一張 1:1 正方形醫療衛教圖卡，主題是「{topic}」。
+請生成一張直式 9:16 醫療衛教圖卡，主題是「{topic}」。
 
-風格需求：
-- 台灣民眾容易理解的衛教資訊圖卡
-- 乾淨、可信任、現代、溫暖
-- 適合藥局或診所社群貼文
-- 圖像以清楚步驟、重點提示、簡單醫療情境為主
-- 不要使用恐嚇式畫面，不要血腥，不要品牌藥名
-- 若需要文字，請使用繁體中文，字數少、清楚、易讀
-- 避免提供診斷結論；可提醒有疑問請諮詢醫師或藥師
+固定版型：
+- 直式 9:16，白底乾淨，留足邊距
+- 上方放大標題，使用繁體中文，字少清楚
+- 中間放一個清楚、可愛、溫暖的醫療插畫
+- 下方放 2-3 行重點提醒，每行短句，不要塞太多字
+- 整體像藥局或診所可以發布的衛教圖卡
+
+風格限制：
+- 可愛醫療插畫，不要寫實病灶
+- 避免恐怖、血腥、傷口特寫、誇張痛苦表情
+- 不要品牌藥名，不要診斷結論，不要療效保證
+- 資訊要保守、易懂、適合台灣民眾
+- 如需提醒，可用「有疑問請諮詢醫師或藥師」
 """.strip()
 
 
@@ -80,9 +85,11 @@ def generate_image(prompt):
         fail("找不到 OPENAI_API_KEY。請先在本機環境變數或 GitHub Actions Secrets 設定。")
 
     payload = {
-        "model": os.environ.get("OPENAI_IMAGE_MODEL", "gpt-image-1"),
+        "model": os.environ.get("OPENAI_IMAGE_MODEL", "gpt-image-2"),
         "prompt": prompt,
-        "size": os.environ.get("OPENAI_IMAGE_SIZE", "1024x1024"),
+        "quality": os.environ.get("OPENAI_IMAGE_QUALITY", "high"),
+        "size": os.environ.get("OPENAI_IMAGE_SIZE", "1024x1536"),
+        "output_format": os.environ.get("OPENAI_IMAGE_OUTPUT_FORMAT", "png"),
     }
 
     request = urllib.request.Request(
@@ -100,11 +107,15 @@ def generate_image(prompt):
             result = json.loads(response.read().decode("utf-8"))
     except urllib.error.HTTPError as exc:
         detail = exc.read().decode("utf-8", errors="replace")
-        fail(f"OpenAI 圖片產生失敗：HTTP {exc.code}，{detail}")
+        fail(
+            "OpenAI 圖片產生失敗，完整錯誤訊息：\n"
+            f"HTTP {exc.code} {exc.reason}\n"
+            f"{detail}"
+        )
     except urllib.error.URLError as exc:
-        fail(f"OpenAI 圖片產生失敗：{exc.reason}")
+        fail(f"OpenAI 圖片產生失敗，完整錯誤訊息：\n{repr(exc)}")
     except TimeoutError:
-        fail("OpenAI 圖片產生逾時，請稍後再試。")
+        fail("OpenAI 圖片產生失敗，完整錯誤訊息：\nTimeoutError: request timed out")
 
     image = (result.get("data") or [{}])[0]
     if image.get("b64_json"):
@@ -116,7 +127,10 @@ def generate_image(prompt):
         except urllib.error.URLError as exc:
             fail(f"圖片網址下載失敗：{exc.reason}")
 
-    fail(f"OpenAI 回傳格式中沒有圖片資料：{json.dumps(result, ensure_ascii=False)[:500]}")
+    fail(
+        "OpenAI 圖片產生失敗，完整錯誤訊息：\n"
+        f"回傳格式中沒有圖片資料：{json.dumps(result, ensure_ascii=False)}"
+    )
 
 
 def simple_tags(topic):
