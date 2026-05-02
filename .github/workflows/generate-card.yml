@@ -1,0 +1,45 @@
+name: Generate Draft Education Card
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "醫療衛教圖卡主題"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  generate-card:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate draft card
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TOPIC: ${{ inputs.topic }}
+        run: python scripts/generate_card.py "$TOPIC"
+
+      - name: Commit generated files
+        env:
+          TOPIC: ${{ inputs.topic }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/pending cards.manual.json cards.json sw.js sitemap.xml
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "Generate draft education card: $TOPIC"
+            git push
+          fi
