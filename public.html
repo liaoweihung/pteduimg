@@ -636,12 +636,28 @@
         carousel.innerHTML = featuredCards.map(({ key, item, step, index }) => `
             <button type="button"
                     class="featured-card"
-                    onclick="openViewer('${key}', ${index})"
+                    onclick="openFeaturedTopic('${key}', ${index})"
                     aria-label="開啟${item.title}第 ${index + 1} 張">
                 <img class="featured-card-img" src="${step}" alt="${item.title}第 ${index + 1} 張">
                 <div class="featured-card-title">${item.title}</div>
             </button>
         `).join('');
+    }
+
+    function openFeaturedTopic(cardId, stepIndex) {
+        const item = educationData[cardId];
+        if (!item || item.hidden || !item.steps || !item.steps[stepIndex]) return;
+
+        if (shouldTrackAnalytics()) {
+            gtag('event', 'click_featured_topic', {
+                card_id: cardId,
+                card_title: item.title,
+                step_number: stepIndex + 1,
+                source: 'featured_topics'
+            });
+        }
+
+        openViewer(cardId, stepIndex);
     }
 
     function renderHome() {
