@@ -10,6 +10,19 @@
       "img/Prevent_Enterovirus.webp"
     ]
   },
+  "Hpylori_exam": {
+    "title": "胃幽門螺旋桿菌檢查",
+    "category": "public_education",
+    "order": 5,
+    "hidden": false,
+    "icon": "🫃",
+    "steps": [
+      "img/Exame_Hpylore.webp",
+      "img/5_ways_stomatch.webp",
+      "img/methodology_of_exam_Hp.webp",
+      "img/treatment_of_Hpylore.webp"
+    ]
+  },
   "Ped_susp": {
     "title": "安滅菌糖漿泡製",
     "category": "pharmacist_product",

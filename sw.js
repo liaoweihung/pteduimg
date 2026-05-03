@@ -1,5 +1,5 @@
 ﻿// ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202605031427';
+const CACHE_NAME = 'pwa-cache-v202605031504';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
 const urlsToCache = [
@@ -8,8 +8,10 @@ const urlsToCache = [
   './public.html',
   './icon.png',
   './images/pending/card-bbe36dfb4e.png',
+  './img/5_ways_stomatch.webp',
   './img/AugmentinSyrup.png',
   './img/DM_damage.webp',
+  './img/Exame_Hpylore.webp',
   './img/Lidopat_1.webp',
   './img/MDI_1.png',
   './img/MDI_2.png',
@@ -62,6 +64,7 @@ const urlsToCache = [
   './img/hemorr_sitbath_2.png',
   './img/lan_1.webp',
   './img/lan_2.webp',
+  './img/methodology_of_exam_Hp.webp',
   './img/nasal_1.png',
   './img/nasal_2.png',
   './img/nasal_3.png',
@@ -86,6 +89,7 @@ const urlsToCache = [
   './img/site_instruction_02.webp',
   './img/slipped_fall_wound.webp',
   './img/thin_skin_part.webp',
+  './img/treatment_of_Hpylore.webp',
   './img/vag_1.png',
   './img/vag_2.png',
   './img/vag_3.png',
