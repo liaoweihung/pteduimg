@@ -7,7 +7,6 @@ const urlsToCache = [
   './index.html',
   './public.html',
   './icon.png',
-  './images/pending/card-bbe36dfb4e.png',
   './img/5_ways_stomatch.webp',
   './img/AugmentinSyrup.png',
   './img/DM_damage.webp',

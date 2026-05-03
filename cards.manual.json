@@ -176,21 +176,5 @@
       "不可冷凍。過期就丟棄，顏色稍微變深是正常的",
       "整合全部的步驟"
     ]
-  },
-  "card_bbe36dfb4e": {
-    "title": "眼藥水的使用",
-    "category": "public_education",
-    "order": 120,
-    "hidden": true,
-    "icon": "🩺",
-    "tags": [
-      "眼藥水的使用",
-      "醫療衛教",
-      "public_education"
-    ],
-    "steps": [
-      "images/pending/card-bbe36dfb4e.png"
-    ],
-    "created_at": "2026-05-02"
   }
 }

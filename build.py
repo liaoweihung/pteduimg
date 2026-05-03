@@ -3,43 +3,6 @@ import re
 import datetime
 import json
 
-def build_cards_json():
-    print("開始產生 cards.json...")
-
-    with open("cards.manual.json", "r", encoding="utf-8") as file:
-        manual_cards = json.load(file)
-
-    existing_cards = {}
-    if os.path.exists("cards.json"):
-        with open("cards.json", "r", encoding="utf-8") as file:
-            existing_cards = json.load(file)
-
-    cards = dict(existing_cards)
-    for key, manual_item in manual_cards.items():
-        item = dict(manual_item)
-        if "steps" not in item and key in existing_cards:
-            item["steps"] = existing_cards[key].get("steps", [])
-        if "steps" not in item:
-            item["steps"] = []
-        cards[key] = item
-
-    ordered_cards = dict(
-        sorted(
-            cards.items(),
-            key=lambda kv: (
-                kv[1].get("order", 9999),
-                kv[1].get("title", kv[0]),
-                kv[0],
-            ),
-        )
-    )
-
-    with open("cards.json", "w", encoding="utf-8") as file:
-        json.dump(ordered_cards, file, ensure_ascii=False, indent=2)
-        file.write("\n")
-
-    print(f"✅ cards.json 已更新，共 {len(ordered_cards)} 筆圖卡。")
-
 def update_service_worker():
     print("啟動自動化打包助理...")
 
@@ -48,17 +11,17 @@ def update_service_worker():
     with open('cards.json', 'r', encoding='utf-8') as file:
         cards = json.load(file)
 
-    image_paths = sorted({
-        step
+    image_files = sorted({
+        os.path.basename(step)
         for card in cards.values()
         for step in card.get('steps', [])
-        if step.startswith(f'{img_folder}/') or step.startswith('images/')
+        if step.startswith(f'{img_folder}/')
     })
     
     # 建立 PWA 需要的快取清單 (包含首頁和所有圖片)
     cache_list = ["'./'", "'./index.html'", "'./public.html'", "'./icon.png'"]
-    for image_path in image_paths:
-        cache_list.append(f"'./{image_path}'")
+    for img in image_files:
+        cache_list.append(f"'./img/{img}'")
     
     cache_array_str = ",\n  ".join(cache_list)
 
@@ -90,10 +53,9 @@ def update_service_worker():
 
     print(f"✅ 大功告成！")
     print(f"🔄 sw.js 版本號已自動更新為: {new_version}")
-    print(f"📦 共自動收錄了 {len(image_paths)} 張圖卡至離線大腦中！")
+    print(f"📦 共自動收錄了 {len(image_files)} 張圖卡至離線大腦中！")
 
 if __name__ == '__main__':
-    build_cards_json()
     update_service_worker()
 
 # 👇 從這裡開始新增：自動化 Sitemap 更新模組 👇
