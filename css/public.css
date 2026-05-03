@@ -13,6 +13,76 @@ body.public-page .top-nav a.active {
     color: #1e3a8a;
     border-color: #bfdbfe;
 }
+
+.featured-section {
+    margin: 16px 0 22px;
+}
+
+.featured-carousel {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 2px 20px 16px;
+    scrollbar-width: none;
+}
+
+.featured-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.featured-card {
+    flex: 0 0 auto;
+    width: min(36vw, 150px);
+    scroll-snap-align: start;
+    border: 0;
+    border-radius: 12px;
+    background: #ffffff;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    color: #1f2937;
+    cursor: pointer;
+    box-shadow: 0 5px 16px rgba(15, 23, 42, 0.14);
+}
+
+.featured-card-img {
+    display: block;
+    width: 100%;
+    height: 25vh;
+    object-fit: contain;
+    object-position: top center;
+    background: #f8fafc;
+}
+
+.featured-card-title {
+    padding: 10px 12px 12px;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+.featured-empty {
+    flex: 0 0 calc(100% - 40px);
+    border-radius: 12px;
+    background: #ffffff;
+    padding: 18px 16px;
+    color: #64748b;
+    box-shadow: 0 5px 16px rgba(15, 23, 42, 0.1);
+}
+
+@media (min-width: 720px) {
+    .featured-carousel {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .featured-card {
+        width: min(18vw, 180px);
+    }
+}
 /* === 我的最愛拖曳排序 === */
 
 

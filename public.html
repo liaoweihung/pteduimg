@@ -69,7 +69,7 @@
     
     <script src="./qrious.min.js"></script>
     <link rel="stylesheet" href="./css/base.css?v=6">
-    <link rel="stylesheet" href="./css/public.css?v=1">
+    <link rel="stylesheet" href="./css/public.css?v=2">
 
 <style>
 /* === 我的最愛：長按拖曳排序 === */
@@ -159,6 +159,11 @@
 </nav>
 <div class="page-note" id="page-note"></div>
 
+<section class="featured-section" aria-labelledby="featured-title">
+    <div class="section-title" id="featured-title">近日熱門議題</div>
+    <div class="featured-carousel" id="featured-carousel"></div>
+</section>
+
 <div id="fav-section" style="display:none;">
     <div class="section-title">⭐ 常用圖卡</div>
     <div class="menu-grid" id="fav-grid"></div>
@@ -230,6 +235,11 @@
     const PAGE_TYPE = 'public';
 
     const MAIN_ORDER_STORAGE_KEY = `mainCardOrder:${PAGE_TYPE}`;
+
+    const featuredCardIds = [
+        "Hpylori_exam",
+        "Prevent_Enterovirus"
+    ];
 
     const pageMeta = {
         pharmacist: {
@@ -587,7 +597,7 @@
         document.body.appendChild(dragGhost);
     }
 
-   function moveFavoriteBefore(fromKey, toKey) {
+    function moveFavoriteBefore(fromKey, toKey) {
     const fromIndex = favoriteImages.indexOf(fromKey);
     const toIndex = favoriteImages.indexOf(toKey);
 
@@ -605,11 +615,41 @@
     favoriteImages.splice(insertIndex, 0, moved);
 }
 
+    function renderFeaturedCards() {
+        const carousel = document.getElementById('featured-carousel');
+        if (!carousel) return;
+
+        const featuredCards = featuredCardIds.flatMap(key => {
+            const item = educationData[key];
+            if (!item || item.hidden || !isVisibleOnPage(item) || !Array.isArray(item.steps)) return [];
+
+            return item.steps
+                .map((step, index) => ({ key, item, step, index }))
+                .filter(({ step }) => step);
+        });
+
+        if (!featuredCards.length) {
+            carousel.innerHTML = '<div class="featured-empty">目前尚無熱門議題</div>';
+            return;
+        }
+
+        carousel.innerHTML = featuredCards.map(({ key, item, step, index }) => `
+            <button type="button"
+                    class="featured-card"
+                    onclick="openViewer('${key}', ${index})"
+                    aria-label="開啟${item.title}第 ${index + 1} 張">
+                <img class="featured-card-img" src="${step}" alt="${item.title}第 ${index + 1} 張">
+                <div class="featured-card-title">${item.title}</div>
+            </button>
+        `).join('');
+    }
+
     function renderHome() {
         const sectionRoot = document.getElementById('category-sections');
         const favGrid = document.getElementById('fav-grid');
         sectionRoot.innerHTML = '';
         favGrid.innerHTML = '';
+        renderFeaturedCards();
 
         const categories = {};
         Object.keys(educationData).forEach(key => {
