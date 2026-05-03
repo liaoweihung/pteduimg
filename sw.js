@@ -1,5 +1,5 @@
 ﻿// ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202605030709';
+const CACHE_NAME = 'pwa-cache-v202605032104';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
 const urlsToCache = [
@@ -9,6 +9,7 @@ const urlsToCache = [
   './icon.png',
   './img/5_ways_stomatch.webp',
   './img/AugmentinSyrup.png',
+  './img/Champix.webp',
   './img/DM_damage.webp',
   './img/Exame_Hpylore.webp',
   './img/Lidopat_1.webp',

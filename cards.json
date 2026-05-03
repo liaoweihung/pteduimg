@@ -47,6 +47,16 @@
       "img/AugmentinSyrup.png"
     ]
   },
+  "Champix": {
+    "title": "戒必適Champix",
+    "category": "pharmacist_product",
+    "order": 15,
+    "hidden": false,
+    "icon": "🚭",
+    "steps": [
+      "img/Champix.webp"
+    ]
+  },
   "eye": {
     "title": "眼藥膏",
     "category": "pharmacist_general",
