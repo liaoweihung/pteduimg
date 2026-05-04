@@ -23,6 +23,17 @@
       "img/treatment_of_Hpylore.webp"
     ]
   },
+  "Hantaviridae": {
+    "title": "漢他病毒",
+    "category": "public_education",
+    "order": 6,
+    "hidden": false,
+    "icon": "🦠",
+    "steps": [
+      "img/Hantaviridae_01.webp",
+      "img/Hantaviridae_02.webp"
+    ]
+  },
   "fall_wound": {
     "title": "傷口與疤痕",
     "category": "public_education",
