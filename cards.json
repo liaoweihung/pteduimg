@@ -68,6 +68,24 @@
       "img/Champix.webp"
     ]
   },
+  "Osteo_tooth": {
+    "title": "骨鬆藥與拔牙",
+    "category": "pharmacist_general",
+    "order": 120,
+    "hidden": false,
+    "icon": "🦷",
+    "tags": [
+      "骨質疏鬆",
+      "拔牙",
+      "牙科",
+      "藥品安全"
+    ],
+    "steps": [
+      "img/Osteo_tooth_01.webp",
+      "img/Osteo_tooth_03.webp",
+      "img/Osteo_tooth_04.webp"
+    ]
+  },
   "eye": {
     "title": "眼藥膏",
     "category": "pharmacist_general",
