@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="./icon.png?v=3">
+    <title>台灣小朋友生長狀況百分位計算器</title>
+    <meta name="description" content="輸入兒童性別、生日、身高或體重，查表判斷身高、體重與 BMI 區間。">
+    <link rel="stylesheet" href="./css/base.css?v=6">
+    <link rel="stylesheet" href="./css/growth-calculator.css?v=1">
+</head>
+<body class="growth-page">
+    <header>
+        <img src="icon.png?v=3" alt="網站圖示" class="header-icon">
+        <span>台灣小朋友生長狀況百分位計算器</span>
+    </header>
+
+    <main class="growth-shell">
+        <section class="intro-card" aria-labelledby="growth-title">
+            <div class="intro-icon" aria-hidden="true">😊</div>
+            <div>
+                <h1 id="growth-title">台灣小朋友生長狀況百分位計算器</h1>
+                <p>輸入性別與生日可查看目前年齡的身高區間；若填寫身高或體重，會再標示所在區間。</p>
+            </div>
+        </section>
+
+        <section class="form-card" aria-labelledby="form-title">
+            <h2 id="form-title">基本資料</h2>
+            <form id="growth-form" novalidate>
+                <div class="field-group">
+                    <label>性別</label>
+                    <div class="segmented-control" role="radiogroup" aria-label="性別">
+                        <label class="sex-option">
+                            <input type="radio" name="sex" value="boys" checked>
+                            <span>男生</span>
+                        </label>
+                        <label class="sex-option">
+                            <input type="radio" name="sex" value="girls">
+                            <span>女生</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field-grid">
+                    <label class="field">
+                        <span>出生年月日</span>
+                        <input id="birth-date" type="date" required>
+                    </label>
+                    <label class="field">
+                        <span>身高 cm（選填）</span>
+                        <input id="height-cm" type="number" inputmode="decimal" min="30" max="230" step="0.1" placeholder="例如 112.5">
+                    </label>
+                    <label class="field">
+                        <span>體重 kg（選填）</span>
+                        <input id="weight-kg" type="number" inputmode="decimal" min="1" max="180" step="0.1" placeholder="例如 20.3">
+                    </label>
+                </div>
+
+                <p class="form-message" id="form-message" role="alert"></p>
+                <button class="primary-action" type="submit">計算成長區間</button>
+            </form>
+        </section>
+
+        <section class="result-card" id="result-card" aria-live="polite" hidden>
+            <div class="result-summary">
+                <div>
+                    <span class="summary-label">實際年齡</span>
+                    <strong id="age-result">--</strong>
+                </div>
+                <div id="bmi-summary">
+                    <span class="summary-label">BMI</span>
+                    <strong id="bmi-result">--</strong>
+                </div>
+            </div>
+
+            <div class="notice-card">
+                <strong>查表方式</strong>
+                <span id="age-note">--</span>
+            </div>
+
+            <div class="metric-stack">
+                <article class="metric-card" id="height-guide-card">
+                    <div class="metric-heading">
+                        <h2>目前年齡的身高區間</h2>
+                        <span id="height-guide-age">--</span>
+                    </div>
+                    <div class="range-list" id="height-range-list"></div>
+                </article>
+
+                <article class="metric-card" id="height-card">
+                    <div class="metric-heading">
+                        <h2>身高區間</h2>
+                        <span id="height-value">--</span>
+                    </div>
+                    <div id="height-bar" class="segment-bar" aria-hidden="true"></div>
+                    <div class="metric-result" id="height-result">--</div>
+                </article>
+
+                <article class="metric-card" id="weight-card">
+                    <div class="metric-heading">
+                        <h2>體重區間</h2>
+                        <span id="weight-value">--</span>
+                    </div>
+                    <div id="weight-bar" class="segment-bar" aria-hidden="true"></div>
+                    <div class="metric-result" id="weight-result">--</div>
+                </article>
+
+                <article class="metric-card" id="bmi-card">
+                    <div class="metric-heading">
+                        <h2>BMI 區間</h2>
+                        <span id="bmi-value">--</span>
+                    </div>
+                    <div id="bmi-bar" class="segment-bar bmi-bar" aria-hidden="true"></div>
+                    <div class="metric-result" id="bmi-interval-result">--</div>
+                </article>
+            </div>
+
+            <div class="result-footnote">
+                <p>數據判斷來源：Pediatr Neonatol 2010;51(2):69-79</p>
+                <p>本工具為衛教與初步篩檢用途，結果不等同診斷；若成長狀況有疑慮，請諮詢小兒科或成長門診。</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const DATA_URL = './taiwan_child_growth_data.json';
+        const percentileSegments = [
+            { id: 'below_p3', label: '≤3%', result: '≤3%', tone: 'red' },
+            { id: 'p3_to_p15', label: '3%~15%', result: '3%~15%', tone: 'yellow' },
+            { id: 'p15_to_p25', label: '15%~25%', result: '15%~25%', tone: 'green' },
+            { id: 'p25_to_p50', label: '25%~50%', result: '25%~50%', tone: 'green' },
+            { id: 'p50_to_p75', label: '50%~75%', result: '50%~75%', tone: 'green' },
+            { id: 'p75_to_p85', label: '75%~85%', result: '75%~85%', tone: 'green' },
+            { id: 'p85_to_p97', label: '85%~97%', result: '85%~97%', tone: 'yellow' },
+            { id: 'above_p97', label: '≥97%', result: '≥97%', tone: 'red' }
+        ];
+
+        const bmiSegments = [
+            { id: 'underweight', label: '過輕', result: '過輕', tone: 'yellow' },
+            { id: 'normal', label: '正常', result: '正常', tone: 'green' },
+            { id: 'overweight', label: '過重', result: '過重', tone: 'yellow' },
+            { id: 'obese', label: '肥胖', result: '肥胖', tone: 'red' }
+        ];
+
+        let growthData = null;
+
+        const form = document.getElementById('growth-form');
+        const message = document.getElementById('form-message');
+        const resultCard = document.getElementById('result-card');
+
+        function formatDateInput(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
+
+        function setDefaultBirthDate() {
+            const date = new Date();
+            date.setFullYear(date.getFullYear() - 6);
+            document.getElementById('birth-date').value = formatDateInput(date);
+        }
+
+        async function loadGrowthData() {
+            try {
+                const response = await fetch(DATA_URL, { cache: 'no-store' });
+                if (!response.ok) throw new Error('growth data not found');
+                growthData = await response.json();
+            } catch (error) {
+                message.textContent = '無法讀取成長資料，請確認 taiwan_child_growth_data.json 位於網站根目錄。';
+                form.querySelector('button').disabled = true;
+            }
+        }
+
+        function getSelectedSex() {
+            return form.elements.sex.value;
+        }
+
+        function updateSexTheme() {
+            document.body.dataset.sex = getSelectedSex();
+        }
+
+        function calculateAge(birthDate, today = new Date()) {
+            let years = today.getFullYear() - birthDate.getFullYear();
+            let months = today.getMonth() - birthDate.getMonth();
+            let days = today.getDate() - birthDate.getDate();
+
+            if (days < 0) {
+                months -= 1;
+                const previousMonth = new Date(today.getFullYear(), today.getMonth(), 0);
+                days += previousMonth.getDate();
+            }
+
+            if (months < 0) {
+                years -= 1;
+                months += 12;
+            }
+
+            return {
+                years,
+                months,
+                days,
+                completedMonths: years * 12 + months
+            };
+        }
+
+        function findNearestAgeRow(rows, completedMonths) {
+            return rows.reduce((nearest, row) => {
+                const currentDistance = Math.abs(row.age_months - completedMonths);
+                const nearestDistance = Math.abs(nearest.age_months - completedMonths);
+                if (currentDistance < nearestDistance) return row;
+                if (currentDistance === nearestDistance && row.age_months <= completedMonths) return row;
+                return nearest;
+            }, rows[0]);
+        }
+
+        function classifyPercentile(value, percentiles) {
+            if (value <= percentiles.p3) return percentileSegments[0];
+            if (value <= percentiles.p15) return percentileSegments[1];
+            if (value <= percentiles.p25) return percentileSegments[2];
+            if (value <= percentiles.p50) return percentileSegments[3];
+            if (value <= percentiles.p75) return percentileSegments[4];
+            if (value <= percentiles.p85) return percentileSegments[5];
+            if (value <= percentiles.p97) return percentileSegments[6];
+            return percentileSegments[7];
+        }
+
+        function classifyBmi(value, thresholds) {
+            if (value < thresholds.underweight_lt) return bmiSegments[0];
+            if (value < thresholds.normal_lt) return bmiSegments[1];
+            if (value < thresholds.overweight_lt) return bmiSegments[2];
+            return bmiSegments[3];
+        }
+
+        function formatAge(age) {
+            return `${age.years}歲${age.months}個月`;
+        }
+
+        function formatAgePoint(row) {
+            if (row.age_months === 0) return '出生';
+            const years = Math.floor(row.age_months / 12);
+            const months = row.age_months % 12;
+            return months ? `${years}歲${months}個月` : `${years}歲`;
+        }
+
+        function renderSegmentBar(target, segments, activeId) {
+            target.innerHTML = segments.map((segment) => `
+                <div class="segment segment-${segment.tone} ${segment.id === activeId ? 'active' : ''}">
+                    <span>${segment.label}</span>
+                </div>
+            `).join('');
+        }
+
+        function renderHeightRangeList(target, percentiles) {
+            const rows = [
+                ['≤3%', `≤ ${percentiles.p3} cm`, 'red'],
+                ['3%~15%', `${percentiles.p3} - ${percentiles.p15} cm`, 'yellow'],
+                ['15%~25%', `${percentiles.p15} - ${percentiles.p25} cm`, 'green'],
+                ['25%~50%', `${percentiles.p25} - ${percentiles.p50} cm`, 'green'],
+                ['50%~75%', `${percentiles.p50} - ${percentiles.p75} cm`, 'green'],
+                ['75%~85%', `${percentiles.p75} - ${percentiles.p85} cm`, 'green'],
+                ['85%~97%', `${percentiles.p85} - ${percentiles.p97} cm`, 'yellow'],
+                ['≥97%', `≥ ${percentiles.p97} cm`, 'red']
+            ];
+
+            target.innerHTML = rows.map(([label, range, tone]) => `
+                <div class="range-item range-${tone}">
+                    <span>${label}</span>
+                    <strong>${range}</strong>
+                </div>
+            `).join('');
+        }
+
+        function getOptionalNumber(inputId) {
+            const rawValue = document.getElementById(inputId).value.trim();
+            return rawValue === '' ? null : Number(rawValue);
+        }
+
+        function validateInputs(birthDate, height, weight) {
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            if (!(birthDate instanceof Date) || Number.isNaN(birthDate.getTime())) {
+                return '請選擇出生年月日。';
+            }
+            if (birthDate > today) return '出生年月日不可晚於今天。';
+            if (height !== null && (!Number.isFinite(height) || height <= 0)) return '請輸入有效的身高。';
+            if (weight !== null && (!Number.isFinite(weight) || weight <= 0)) return '請輸入有效的體重。';
+            return '';
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            if (!growthData) return;
+
+            const sex = getSelectedSex();
+            const birthDate = new Date(`${document.getElementById('birth-date').value}T00:00:00`);
+            const height = getOptionalNumber('height-cm');
+            const weight = getOptionalNumber('weight-kg');
+            const error = validateInputs(birthDate, height, weight);
+
+            if (error) {
+                message.textContent = error;
+                resultCard.hidden = true;
+                return;
+            }
+
+            const age = calculateAge(birthDate);
+            const dataSet = growthData.data[sex];
+            const heightRow = findNearestAgeRow(dataSet.height, age.completedMonths);
+            const weightRow = findNearestAgeRow(dataSet.weight, age.completedMonths);
+            const hasHeight = height !== null;
+            const hasWeight = weight !== null;
+            const hasBmi = hasHeight && hasWeight;
+            const showHeight = hasHeight;
+            const showWeight = hasWeight && !hasBmi;
+            const showHeightGuide = !hasWeight || hasHeight;
+
+            message.textContent = '';
+            resultCard.hidden = false;
+            document.getElementById('age-result').textContent = formatAge(age);
+            document.getElementById('height-card').hidden = !showHeight;
+            document.getElementById('weight-card').hidden = !showWeight;
+            document.getElementById('height-guide-card').hidden = !showHeightGuide;
+            document.getElementById('bmi-card').hidden = !hasBmi;
+            document.getElementById('bmi-summary').hidden = !hasBmi;
+            document.getElementById('height-card').style.order = '1';
+            document.getElementById('weight-card').style.order = '1';
+            document.getElementById('height-guide-card').style.order = hasBmi ? '3' : (showHeight || showWeight ? '2' : '1');
+            document.getElementById('bmi-card').style.order = '2';
+            document.getElementById('height-guide-age').textContent = formatAgePoint(heightRow);
+            document.getElementById('age-note').textContent =
+                `採用最接近的資料年齡點：${formatAgePoint(heightRow)}；不使用內插推估。`;
+            renderHeightRangeList(document.getElementById('height-range-list'), heightRow.percentiles);
+
+            if (hasHeight) {
+                const heightClass = classifyPercentile(height, heightRow.percentiles);
+                document.getElementById('height-value').textContent = `${height.toFixed(1)} cm`;
+                document.getElementById('height-result').textContent = heightClass.result;
+                renderSegmentBar(document.getElementById('height-bar'), percentileSegments, heightClass.id);
+            }
+
+            if (showWeight) {
+                const weightClass = classifyPercentile(weight, weightRow.percentiles);
+                document.getElementById('weight-value').textContent = `${weight.toFixed(1)} kg`;
+                document.getElementById('weight-result').textContent = weightClass.result;
+                renderSegmentBar(document.getElementById('weight-bar'), percentileSegments, weightClass.id);
+            }
+
+            if (hasBmi) {
+                const bmi = weight / Math.pow(height / 100, 2);
+                const bmiRow = age.completedMonths < dataSet.bmi[0].age_months
+                    ? null
+                    : findNearestAgeRow(dataSet.bmi, age.completedMonths);
+
+                document.getElementById('bmi-result').textContent = bmi.toFixed(1);
+                document.getElementById('bmi-value').textContent = bmi.toFixed(1);
+
+                if (bmiRow) {
+                    const bmiClass = classifyBmi(bmi, bmiRow.thresholds);
+                    document.getElementById('bmi-interval-result').textContent = bmiClass.result;
+                    renderSegmentBar(document.getElementById('bmi-bar'), bmiSegments, bmiClass.id);
+                } else {
+                    document.getElementById('bmi-interval-result').textContent = '未滿2歲，資料表未提供 BMI 區間判讀';
+                    renderSegmentBar(document.getElementById('bmi-bar'), bmiSegments, '');
+                }
+            }
+        }
+
+        setDefaultBirthDate();
+        loadGrowthData();
+        updateSexTheme();
+        form.elements.sex.forEach((input) => input.addEventListener('change', updateSexTheme));
+        form.addEventListener('submit', handleSubmit);
+    </script>
+</body>
+</html>
