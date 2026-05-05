@@ -1556,5 +1556,1051 @@
       "clicks": 7,
       "previous_clicks": 10
     }
-  ]
+  ],
+  "step_popularity": {
+    "by_card": [
+      {
+        "title": "小孩身高體重",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/height_prediction.webp",
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/boy_height2.webp",
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
+          },
+          {
+            "step_number": 3,
+            "path": "img/girl_height2.webp",
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
+          },
+          {
+            "step_number": 4,
+            "path": "img/boyBMI.webp",
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
+          },
+          {
+            "step_number": 5,
+            "path": "img/girlBMI.webp",
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
+          },
+          {
+            "step_number": 6,
+            "path": "img/height_tips.webp",
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
+          }
+        ]
+      },
+      {
+        "title": "預防腸病毒",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/Wash_hands_five_steps.webp",
+            "views_120h": 26,
+            "ratio_120h": "3.2%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/Prevent_Enterovirus.webp",
+            "views_120h": 25,
+            "ratio_120h": "3.0%"
+          }
+        ]
+      },
+      {
+        "title": "胃幽門螺旋桿菌檢查",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/Exame_Hpylore.webp",
+            "views_120h": 25,
+            "ratio_120h": "3.0%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/5_ways_stomatch.webp",
+            "views_120h": 21,
+            "ratio_120h": "2.5%"
+          },
+          {
+            "step_number": 3,
+            "path": "img/methodology_of_exam_Hp.webp",
+            "views_120h": 20,
+            "ratio_120h": "2.4%"
+          },
+          {
+            "step_number": 4,
+            "path": "img/treatment_of_Hpylore.webp",
+            "views_120h": 19,
+            "ratio_120h": "2.3%"
+          }
+        ]
+      },
+      {
+        "title": "漢他病毒",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/Hantaviridae_01.webp",
+            "views_120h": 2,
+            "ratio_120h": "0.2%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/Hantaviridae_02.webp",
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
+          }
+        ]
+      },
+      {
+        "title": "傷口與疤痕",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/artficial_vs_paraffin.webp",
+            "views_120h": 33,
+            "ratio_120h": "4.0%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/oint_choose.webp",
+            "views_120h": 26,
+            "ratio_120h": "3.2%"
+          },
+          {
+            "step_number": 3,
+            "path": "img/prevent_scar.webp",
+            "views_120h": 24,
+            "ratio_120h": "2.9%"
+          },
+          {
+            "step_number": 4,
+            "path": "img/slipped_fall_wound.webp",
+            "views_120h": 23,
+            "ratio_120h": "2.8%"
+          },
+          {
+            "step_number": 5,
+            "path": "img/wound_oint.webp",
+            "views_120h": 17,
+            "ratio_120h": "2.1%"
+          }
+        ]
+      },
+      {
+        "title": "安滅菌糖漿泡製",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/AugmentinSyrup.png",
+            "views_120h": 40,
+            "ratio_120h": "4.9%"
+          }
+        ]
+      },
+      {
+        "title": "眼藥膏",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/eye_1.png",
+            "views_120h": 139,
+            "ratio_120h": "16.9%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/eye_2.png",
+            "views_120h": 105,
+            "ratio_120h": "12.7%"
+          },
+          {
+            "step_number": 3,
+            "path": "img/eye_3.png",
+            "views_120h": 100,
+            "ratio_120h": "12.1%"
+          },
+          {
+            "step_number": 4,
+            "path": "img/eye_4.png",
+            "views_120h": 88,
+            "ratio_120h": "10.7%"
+          },
+          {
+            "step_number": 5,
+            "path": "img/eye_5.png",
+            "views_120h": 75,
+            "ratio_120h": "9.1%"
+          },
+          {
+            "step_number": 6,
+            "path": "img/eye_6.png",
+            "views_120h": 65,
+            "ratio_120h": "7.9%"
+          }
+        ]
+      },
+      {
+        "title": "網站使用說明",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/site_instruction_01.webp",
+            "views_120h": 15,
+            "ratio_120h": "1.8%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/site_instruction_02.webp",
+            "views_120h": 6,
+            "ratio_120h": "0.7%"
+          }
+        ]
+      },
+      {
+        "title": "戒必適Champix",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/Champix.webp",
+            "views_120h": 1,
+            "ratio_120h": "0.1%"
+          }
+        ]
+      },
+      {
+        "title": "多語服藥時間",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/lan_1.webp",
+            "views_120h": 145,
+            "ratio_120h": "17.6%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/lan_2.webp",
+            "views_120h": 106,
+            "ratio_120h": "12.9%"
+          }
+        ]
+      },
+      {
+        "title": "把衛教助手新增到手機桌面",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/add_to_desktop_ios.webp",
+            "views_120h": 30,
+            "ratio_120h": "3.6%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/add_to_desktop_android.webp",
+            "views_120h": 16,
+            "ratio_120h": "1.9%"
+          }
+        ]
+      },
+      {
+        "title": "濕敷療法",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/Wet_Wrap.webp",
+            "views_120h": 23,
+            "ratio_120h": "2.8%"
+          }
+        ]
+      },
+      {
+        "title": "青春痘嚴重度與照護",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/acne.png",
+            "views_120h": 36,
+            "ratio_120h": "4.4%"
+          }
+        ]
+      },
+      {
+        "title": "藥膏的使用",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/oneFTU.webp",
+            "views_120h": 57,
+            "ratio_120h": "6.9%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/thin_skin_part.webp",
+            "views_120h": 48,
+            "ratio_120h": "5.8%"
+          },
+          {
+            "step_number": 3,
+            "path": "img/over_one_oint_01.webp",
+            "views_120h": 41,
+            "ratio_120h": "5.0%"
+          },
+          {
+            "step_number": 4,
+            "path": "img/over_one_oint_02.webp",
+            "views_120h": 34,
+            "ratio_120h": "4.1%"
+          },
+          {
+            "step_number": 5,
+            "path": "img/over_one_oint_03.webp",
+            "views_120h": 34,
+            "ratio_120h": "4.1%"
+          },
+          {
+            "step_number": 6,
+            "path": "img/over_one_oint_04.webp",
+            "views_120h": 29,
+            "ratio_120h": "3.5%"
+          }
+        ]
+      },
+      {
+        "title": "耳滴劑",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/ear_1.png",
+            "views_120h": 50,
+            "ratio_120h": "6.1%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/ear_2.png",
+            "views_120h": 39,
+            "ratio_120h": "4.7%"
+          },
+          {
+            "step_number": 3,
+            "path": "img/ear_3.png",
+            "views_120h": 38,
+            "ratio_120h": "4.6%"
+          },
+          {
+            "step_number": 4,
+            "path": "img/ear_4.png",
+            "views_120h": 32,
+            "ratio_120h": "3.9%"
+          },
+          {
+            "step_number": 5,
+            "path": "img/ear_5.png",
+            "views_120h": 30,
+            "ratio_120h": "3.6%"
+          },
+          {
+            "step_number": 6,
+            "path": "img/ear_6.png",
+            "views_120h": 30,
+            "ratio_120h": "3.6%"
+          }
+        ]
+      },
+      {
+        "title": "長期高血糖的危害",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/DM_damage.webp",
+            "views_120h": 28,
+            "ratio_120h": "3.4%"
+          }
+        ]
+      },
+      {
+        "title": "洗去頭皮油膏",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/Ps_hair_wash.webp",
+            "views_120h": 13,
+            "ratio_120h": "1.6%"
+          }
+        ]
+      },
+      {
+        "title": "藥膏一起擦",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/over_one_oint_01.webp",
+            "views_120h": 15,
+            "ratio_120h": "1.8%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/over_one_oint_02.webp",
+            "views_120h": 10,
+            "ratio_120h": "1.2%"
+          },
+          {
+            "step_number": 3,
+            "path": "img/over_one_oint_03.webp",
+            "views_120h": 8,
+            "ratio_120h": "1.0%"
+          },
+          {
+            "step_number": 4,
+            "path": "img/over_one_oint_04.webp",
+            "views_120h": 6,
+            "ratio_120h": "0.7%"
+          }
+        ]
+      },
+      {
+        "title": "鼻噴劑",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/nasal_1.png",
+            "views_120h": 45,
+            "ratio_120h": "5.5%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/nasal_2.png",
+            "views_120h": 34,
+            "ratio_120h": "4.1%"
+          },
+          {
+            "step_number": 3,
+            "path": "img/nasal_3.png",
+            "views_120h": 30,
+            "ratio_120h": "3.6%"
+          },
+          {
+            "step_number": 4,
+            "path": "img/nasal_4.png",
+            "views_120h": 30,
+            "ratio_120h": "3.6%"
+          },
+          {
+            "step_number": 5,
+            "path": "img/nasal_5.png",
+            "views_120h": 29,
+            "ratio_120h": "3.5%"
+          }
+        ]
+      },
+      {
+        "title": "NTG 舌下錠",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/NTG_1.png",
+            "views_120h": 57,
+            "ratio_120h": "6.9%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/NTG_2.png",
+            "views_120h": 37,
+            "ratio_120h": "4.5%"
+          },
+          {
+            "step_number": 3,
+            "path": "img/NTG_3.webp",
+            "views_120h": 30,
+            "ratio_120h": "3.6%"
+          }
+        ]
+      },
+      {
+        "title": "MDI 吸入器",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/MDI_1.png",
+            "views_120h": 45,
+            "ratio_120h": "5.5%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/MDI_2.png",
+            "views_120h": 35,
+            "ratio_120h": "4.2%"
+          },
+          {
+            "step_number": 3,
+            "path": "img/MDI_3.png",
+            "views_120h": 31,
+            "ratio_120h": "3.8%"
+          },
+          {
+            "step_number": 4,
+            "path": "img/MDI_4.png",
+            "views_120h": 31,
+            "ratio_120h": "3.8%"
+          },
+          {
+            "step_number": 5,
+            "path": "img/MDI_5.png",
+            "views_120h": 27,
+            "ratio_120h": "3.3%"
+          },
+          {
+            "step_number": 6,
+            "path": "img/MDI_6.png",
+            "views_120h": 24,
+            "ratio_120h": "2.9%"
+          },
+          {
+            "step_number": 7,
+            "path": "img/MDI_7.png",
+            "views_120h": 20,
+            "ratio_120h": "2.4%"
+          }
+        ]
+      },
+      {
+        "title": "痔瘡坐浴",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/hemorr_sitbath_1.png",
+            "views_120h": 14,
+            "ratio_120h": "1.7%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/hemorr_sitbath_2.png",
+            "views_120h": 9,
+            "ratio_120h": "1.1%"
+          }
+        ]
+      },
+      {
+        "title": "痔瘡軟膏(內)",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/hem_oint_1.png",
+            "views_120h": 32,
+            "ratio_120h": "3.9%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/hem_oint_2.png",
+            "views_120h": 30,
+            "ratio_120h": "3.6%"
+          },
+          {
+            "step_number": 3,
+            "path": "img/hem_oint_3.png",
+            "views_120h": 26,
+            "ratio_120h": "3.2%"
+          },
+          {
+            "step_number": 4,
+            "path": "img/hem_oint_4.png",
+            "views_120h": 22,
+            "ratio_120h": "2.7%"
+          },
+          {
+            "step_number": 5,
+            "path": "img/hem_oint_5.png",
+            "views_120h": 20,
+            "ratio_120h": "2.4%"
+          },
+          {
+            "step_number": 6,
+            "path": "img/hem_oint_6.png",
+            "views_120h": 16,
+            "ratio_120h": "1.9%"
+          }
+        ]
+      },
+      {
+        "title": "肛門塞劑",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/rec_1.png",
+            "views_120h": 24,
+            "ratio_120h": "2.9%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/rec_2.png",
+            "views_120h": 16,
+            "ratio_120h": "1.9%"
+          },
+          {
+            "step_number": 3,
+            "path": "img/rec_3.png",
+            "views_120h": 15,
+            "ratio_120h": "1.8%"
+          },
+          {
+            "step_number": 4,
+            "path": "img/rec_4.png",
+            "views_120h": 15,
+            "ratio_120h": "1.8%"
+          },
+          {
+            "step_number": 5,
+            "path": "img/rec_5.png",
+            "views_120h": 15,
+            "ratio_120h": "1.8%"
+          },
+          {
+            "step_number": 6,
+            "path": "img/rec_6.png",
+            "views_120h": 14,
+            "ratio_120h": "1.7%"
+          },
+          {
+            "step_number": 7,
+            "path": "img/rec_7.png",
+            "views_120h": 13,
+            "ratio_120h": "1.6%"
+          },
+          {
+            "step_number": 8,
+            "path": "img/rec_8.png",
+            "views_120h": 9,
+            "ratio_120h": "1.1%"
+          }
+        ]
+      },
+      {
+        "title": "陰道塞劑",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/vag_1.png",
+            "views_120h": 36,
+            "ratio_120h": "4.4%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/vag_2.png",
+            "views_120h": 28,
+            "ratio_120h": "3.4%"
+          },
+          {
+            "step_number": 3,
+            "path": "img/vag_3.png",
+            "views_120h": 18,
+            "ratio_120h": "2.2%"
+          },
+          {
+            "step_number": 4,
+            "path": "img/vag_4.png",
+            "views_120h": 14,
+            "ratio_120h": "1.7%"
+          }
+        ]
+      },
+      {
+        "title": "陰道軟膏",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/vag_oint_1.png",
+            "views_120h": 26,
+            "ratio_120h": "3.2%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/vag_oint_2.png",
+            "views_120h": 19,
+            "ratio_120h": "2.3%"
+          },
+          {
+            "step_number": 3,
+            "path": "img/vag_oint_3.png",
+            "views_120h": 22,
+            "ratio_120h": "2.7%"
+          },
+          {
+            "step_number": 4,
+            "path": "img/vag_oint_4.png",
+            "views_120h": 19,
+            "ratio_120h": "2.3%"
+          },
+          {
+            "step_number": 5,
+            "path": "img/vag_oint_5.png",
+            "views_120h": 16,
+            "ratio_120h": "1.9%"
+          },
+          {
+            "step_number": 6,
+            "path": "img/vag_oint_6.png",
+            "views_120h": 11,
+            "ratio_120h": "1.3%"
+          }
+        ]
+      },
+      {
+        "title": "兒科抗生素藥水泡製",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/Ped_abx_susp_1.png",
+            "views_120h": 24,
+            "ratio_120h": "2.9%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/Ped_abx_susp_2.png",
+            "views_120h": 16,
+            "ratio_120h": "1.9%"
+          },
+          {
+            "step_number": 3,
+            "path": "img/Ped_abx_susp_3.png",
+            "views_120h": 15,
+            "ratio_120h": "1.8%"
+          },
+          {
+            "step_number": 4,
+            "path": "img/Ped_abx_susp_4.png",
+            "views_120h": 14,
+            "ratio_120h": "1.7%"
+          },
+          {
+            "step_number": 5,
+            "path": "img/Ped_abx_susp_5.png",
+            "views_120h": 13,
+            "ratio_120h": "1.6%"
+          },
+          {
+            "step_number": 6,
+            "path": "img/Ped_abx_susp_6.png",
+            "views_120h": 13,
+            "ratio_120h": "1.6%"
+          },
+          {
+            "step_number": 7,
+            "path": "img/Ped_abx_susp_7.png",
+            "views_120h": 11,
+            "ratio_120h": "1.3%"
+          },
+          {
+            "step_number": 8,
+            "path": "img/Ped_abx_susp_8.png",
+            "views_120h": 7,
+            "ratio_120h": "0.8%"
+          }
+        ]
+      },
+      {
+        "title": "骨鬆藥與拔牙",
+        "steps": [
+          {
+            "step_number": 1,
+            "path": "img/Osteo_tooth_01.webp",
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
+          },
+          {
+            "step_number": 2,
+            "path": "img/Osteo_tooth_03.webp",
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
+          },
+          {
+            "step_number": 3,
+            "path": "img/Osteo_tooth_04.webp",
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
+          }
+        ]
+      }
+    ],
+    "top_steps_120h": [
+      {
+        "rank": 1,
+        "title": "多語服藥時間",
+        "step_number": 1,
+        "path": "img/lan_1.webp",
+        "views_120h": 145,
+        "ratio_120h": "17.6%",
+        "score": 257.70142180094786
+      },
+      {
+        "rank": 2,
+        "title": "眼藥膏",
+        "step_number": 1,
+        "path": "img/eye_1.png",
+        "views_120h": 139,
+        "ratio_120h": "16.9%",
+        "score": 247.03791469194312
+      },
+      {
+        "rank": 3,
+        "title": "多語服藥時間",
+        "step_number": 2,
+        "path": "img/lan_2.webp",
+        "views_120h": 106,
+        "ratio_120h": "12.9%",
+        "score": 188.38862559241707
+      },
+      {
+        "rank": 4,
+        "title": "眼藥膏",
+        "step_number": 2,
+        "path": "img/eye_2.png",
+        "views_120h": 105,
+        "ratio_120h": "12.7%",
+        "score": 186.61137440758293
+      },
+      {
+        "rank": 5,
+        "title": "眼藥膏",
+        "step_number": 3,
+        "path": "img/eye_3.png",
+        "views_120h": 100,
+        "ratio_120h": "12.1%",
+        "score": 177.72511848341233
+      },
+      {
+        "rank": 6,
+        "title": "眼藥膏",
+        "step_number": 4,
+        "path": "img/eye_4.png",
+        "views_120h": 88,
+        "ratio_120h": "10.7%",
+        "score": 156.39810426540285
+      },
+      {
+        "rank": 7,
+        "title": "眼藥膏",
+        "step_number": 5,
+        "path": "img/eye_5.png",
+        "views_120h": 75,
+        "ratio_120h": "9.1%",
+        "score": 133.29383886255923
+      },
+      {
+        "rank": 8,
+        "title": "眼藥膏",
+        "step_number": 6,
+        "path": "img/eye_6.png",
+        "views_120h": 65,
+        "ratio_120h": "7.9%",
+        "score": 115.521327014218
+      },
+      {
+        "rank": 9,
+        "title": "NTG 舌下錠",
+        "step_number": 1,
+        "path": "img/NTG_1.png",
+        "views_120h": 57,
+        "ratio_120h": "6.9%",
+        "score": 101.30331753554502
+      },
+      {
+        "rank": 10,
+        "title": "藥膏的使用",
+        "step_number": 1,
+        "path": "img/oneFTU.webp",
+        "views_120h": 57,
+        "ratio_120h": "6.9%",
+        "score": 101.30331753554502
+      },
+      {
+        "rank": 11,
+        "title": "耳滴劑",
+        "step_number": 1,
+        "path": "img/ear_1.png",
+        "views_120h": 50,
+        "ratio_120h": "6.1%",
+        "score": 88.86255924170617
+      },
+      {
+        "rank": 12,
+        "title": "藥膏的使用",
+        "step_number": 2,
+        "path": "img/thin_skin_part.webp",
+        "views_120h": 48,
+        "ratio_120h": "5.8%",
+        "score": 85.30805687203792
+      },
+      {
+        "rank": 13,
+        "title": "MDI 吸入器",
+        "step_number": 1,
+        "path": "img/MDI_1.png",
+        "views_120h": 45,
+        "ratio_120h": "5.5%",
+        "score": 79.97630331753555
+      },
+      {
+        "rank": 14,
+        "title": "鼻噴劑",
+        "step_number": 1,
+        "path": "img/nasal_1.png",
+        "views_120h": 45,
+        "ratio_120h": "5.5%",
+        "score": 79.97630331753555
+      },
+      {
+        "rank": 15,
+        "title": "藥膏的使用",
+        "step_number": 3,
+        "path": "img/over_one_oint_01.webp",
+        "views_120h": 41,
+        "ratio_120h": "5.0%",
+        "score": 72.86729857819905
+      },
+      {
+        "rank": 16,
+        "title": "安滅菌糖漿泡製",
+        "step_number": 1,
+        "path": "img/AugmentinSyrup.png",
+        "views_120h": 40,
+        "ratio_120h": "4.9%",
+        "score": 71.09004739336493
+      },
+      {
+        "rank": 17,
+        "title": "耳滴劑",
+        "step_number": 2,
+        "path": "img/ear_2.png",
+        "views_120h": 39,
+        "ratio_120h": "4.7%",
+        "score": 69.3127962085308
+      },
+      {
+        "rank": 18,
+        "title": "耳滴劑",
+        "step_number": 3,
+        "path": "img/ear_3.png",
+        "views_120h": 38,
+        "ratio_120h": "4.6%",
+        "score": 67.53554502369668
+      },
+      {
+        "rank": 19,
+        "title": "NTG 舌下錠",
+        "step_number": 2,
+        "path": "img/NTG_2.png",
+        "views_120h": 37,
+        "ratio_120h": "4.5%",
+        "score": 65.75829383886256
+      },
+      {
+        "rank": 20,
+        "title": "青春痘嚴重度與照護",
+        "step_number": 1,
+        "path": "img/acne.png",
+        "views_120h": 36,
+        "ratio_120h": "4.4%",
+        "score": 63.98104265402844
+      },
+      {
+        "rank": 21,
+        "title": "陰道塞劑",
+        "step_number": 1,
+        "path": "img/vag_1.png",
+        "views_120h": 36,
+        "ratio_120h": "4.4%",
+        "score": 63.98104265402844
+      },
+      {
+        "rank": 22,
+        "title": "MDI 吸入器",
+        "step_number": 2,
+        "path": "img/MDI_2.png",
+        "views_120h": 35,
+        "ratio_120h": "4.2%",
+        "score": 62.203791469194314
+      },
+      {
+        "rank": 23,
+        "title": "藥膏的使用",
+        "step_number": 5,
+        "path": "img/over_one_oint_03.webp",
+        "views_120h": 34,
+        "ratio_120h": "4.1%",
+        "score": 60.426540284360186
+      },
+      {
+        "rank": 24,
+        "title": "藥膏的使用",
+        "step_number": 4,
+        "path": "img/over_one_oint_02.webp",
+        "views_120h": 34,
+        "ratio_120h": "4.1%",
+        "score": 60.426540284360186
+      },
+      {
+        "rank": 25,
+        "title": "鼻噴劑",
+        "step_number": 2,
+        "path": "img/nasal_2.png",
+        "views_120h": 34,
+        "ratio_120h": "4.1%",
+        "score": 60.426540284360186
+      },
+      {
+        "rank": 26,
+        "title": "傷口與疤痕",
+        "step_number": 1,
+        "path": "img/artficial_vs_paraffin.webp",
+        "views_120h": 33,
+        "ratio_120h": "4.0%",
+        "score": 58.64928909952607
+      },
+      {
+        "rank": 27,
+        "title": "痔瘡軟膏(內)",
+        "step_number": 1,
+        "path": "img/hem_oint_1.png",
+        "views_120h": 32,
+        "ratio_120h": "3.9%",
+        "score": 56.872037914691944
+      },
+      {
+        "rank": 28,
+        "title": "耳滴劑",
+        "step_number": 4,
+        "path": "img/ear_4.png",
+        "views_120h": 32,
+        "ratio_120h": "3.9%",
+        "score": 56.872037914691944
+      },
+      {
+        "rank": 29,
+        "title": "MDI 吸入器",
+        "step_number": 3,
+        "path": "img/MDI_3.png",
+        "views_120h": 31,
+        "ratio_120h": "3.8%",
+        "score": 55.09478672985782
+      },
+      {
+        "rank": 30,
+        "title": "MDI 吸入器",
+        "step_number": 4,
+        "path": "img/MDI_4.png",
+        "views_120h": 31,
+        "ratio_120h": "3.8%",
+        "score": 55.09478672985782
+      }
+    ]
+  }
 }

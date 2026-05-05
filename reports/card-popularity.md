@@ -175,3 +175,286 @@
 | 青春痘嚴重度與照護 | 19 | 17 | 2 | 7 | 7 |
 | MDI 吸入器 | 8 | 7 | 1 | 19 | 11 |
 | 肛門塞劑 | 16 | 15 | 1 | 10 | 7 |
+
+## 5. 最近 120 小時全站單張圖片前 30 名
+
+| 排名 | 圖卡 | 第幾張 | 120h觀看 | 觀看/瀏覽 | 相對分數 | 圖片路徑 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | 多語服藥時間 | 1 | 145 | 17.6% | 257.7 | img/lan_1.webp |
+| 2 | 眼藥膏 | 1 | 139 | 16.9% | 247.0 | img/eye_1.png |
+| 3 | 多語服藥時間 | 2 | 106 | 12.9% | 188.4 | img/lan_2.webp |
+| 4 | 眼藥膏 | 2 | 105 | 12.7% | 186.6 | img/eye_2.png |
+| 5 | 眼藥膏 | 3 | 100 | 12.1% | 177.7 | img/eye_3.png |
+| 6 | 眼藥膏 | 4 | 88 | 10.7% | 156.4 | img/eye_4.png |
+| 7 | 眼藥膏 | 5 | 75 | 9.1% | 133.3 | img/eye_5.png |
+| 8 | 眼藥膏 | 6 | 65 | 7.9% | 115.5 | img/eye_6.png |
+| 9 | NTG 舌下錠 | 1 | 57 | 6.9% | 101.3 | img/NTG_1.png |
+| 10 | 藥膏的使用 | 1 | 57 | 6.9% | 101.3 | img/oneFTU.webp |
+| 11 | 耳滴劑 | 1 | 50 | 6.1% | 88.9 | img/ear_1.png |
+| 12 | 藥膏的使用 | 2 | 48 | 5.8% | 85.3 | img/thin_skin_part.webp |
+| 13 | MDI 吸入器 | 1 | 45 | 5.5% | 80.0 | img/MDI_1.png |
+| 14 | 鼻噴劑 | 1 | 45 | 5.5% | 80.0 | img/nasal_1.png |
+| 15 | 藥膏的使用 | 3 | 41 | 5.0% | 72.9 | img/over_one_oint_01.webp |
+| 16 | 安滅菌糖漿泡製 | 1 | 40 | 4.9% | 71.1 | img/AugmentinSyrup.png |
+| 17 | 耳滴劑 | 2 | 39 | 4.7% | 69.3 | img/ear_2.png |
+| 18 | 耳滴劑 | 3 | 38 | 4.6% | 67.5 | img/ear_3.png |
+| 19 | NTG 舌下錠 | 2 | 37 | 4.5% | 65.8 | img/NTG_2.png |
+| 20 | 青春痘嚴重度與照護 | 1 | 36 | 4.4% | 64.0 | img/acne.png |
+| 21 | 陰道塞劑 | 1 | 36 | 4.4% | 64.0 | img/vag_1.png |
+| 22 | MDI 吸入器 | 2 | 35 | 4.2% | 62.2 | img/MDI_2.png |
+| 23 | 藥膏的使用 | 5 | 34 | 4.1% | 60.4 | img/over_one_oint_03.webp |
+| 24 | 藥膏的使用 | 4 | 34 | 4.1% | 60.4 | img/over_one_oint_02.webp |
+| 25 | 鼻噴劑 | 2 | 34 | 4.1% | 60.4 | img/nasal_2.png |
+| 26 | 傷口與疤痕 | 1 | 33 | 4.0% | 58.6 | img/artficial_vs_paraffin.webp |
+| 27 | 痔瘡軟膏(內) | 1 | 32 | 3.9% | 56.9 | img/hem_oint_1.png |
+| 28 | 耳滴劑 | 4 | 32 | 3.9% | 56.9 | img/ear_4.png |
+| 29 | MDI 吸入器 | 3 | 31 | 3.8% | 55.1 | img/MDI_3.png |
+| 30 | MDI 吸入器 | 4 | 31 | 3.8% | 55.1 | img/MDI_4.png |
+
+## 6. 各圖卡每張圖片明細（最近 120 小時）
+
+### 小孩身高體重
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 0 | 0.0% | img/height_prediction.webp |
+| 2 | 0 | 0.0% | img/boy_height2.webp |
+| 3 | 0 | 0.0% | img/girl_height2.webp |
+| 4 | 0 | 0.0% | img/boyBMI.webp |
+| 5 | 0 | 0.0% | img/girlBMI.webp |
+| 6 | 0 | 0.0% | img/height_tips.webp |
+
+### 預防腸病毒
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 26 | 3.2% | img/Wash_hands_five_steps.webp |
+| 2 | 25 | 3.0% | img/Prevent_Enterovirus.webp |
+
+### 胃幽門螺旋桿菌檢查
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 25 | 3.0% | img/Exame_Hpylore.webp |
+| 2 | 21 | 2.5% | img/5_ways_stomatch.webp |
+| 3 | 20 | 2.4% | img/methodology_of_exam_Hp.webp |
+| 4 | 19 | 2.3% | img/treatment_of_Hpylore.webp |
+
+### 漢他病毒
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 2 | 0.2% | img/Hantaviridae_01.webp |
+| 2 | 0 | 0.0% | img/Hantaviridae_02.webp |
+
+### 傷口與疤痕
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 33 | 4.0% | img/artficial_vs_paraffin.webp |
+| 2 | 26 | 3.2% | img/oint_choose.webp |
+| 3 | 24 | 2.9% | img/prevent_scar.webp |
+| 4 | 23 | 2.8% | img/slipped_fall_wound.webp |
+| 5 | 17 | 2.1% | img/wound_oint.webp |
+
+### 安滅菌糖漿泡製
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 40 | 4.9% | img/AugmentinSyrup.png |
+
+### 眼藥膏
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 139 | 16.9% | img/eye_1.png |
+| 2 | 105 | 12.7% | img/eye_2.png |
+| 3 | 100 | 12.1% | img/eye_3.png |
+| 4 | 88 | 10.7% | img/eye_4.png |
+| 5 | 75 | 9.1% | img/eye_5.png |
+| 6 | 65 | 7.9% | img/eye_6.png |
+
+### 網站使用說明
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 15 | 1.8% | img/site_instruction_01.webp |
+| 2 | 6 | 0.7% | img/site_instruction_02.webp |
+
+### 戒必適Champix
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 1 | 0.1% | img/Champix.webp |
+
+### 多語服藥時間
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 145 | 17.6% | img/lan_1.webp |
+| 2 | 106 | 12.9% | img/lan_2.webp |
+
+### 把衛教助手新增到手機桌面
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 30 | 3.6% | img/add_to_desktop_ios.webp |
+| 2 | 16 | 1.9% | img/add_to_desktop_android.webp |
+
+### 濕敷療法
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 23 | 2.8% | img/Wet_Wrap.webp |
+
+### 青春痘嚴重度與照護
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 36 | 4.4% | img/acne.png |
+
+### 藥膏的使用
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 57 | 6.9% | img/oneFTU.webp |
+| 2 | 48 | 5.8% | img/thin_skin_part.webp |
+| 3 | 41 | 5.0% | img/over_one_oint_01.webp |
+| 4 | 34 | 4.1% | img/over_one_oint_02.webp |
+| 5 | 34 | 4.1% | img/over_one_oint_03.webp |
+| 6 | 29 | 3.5% | img/over_one_oint_04.webp |
+
+### 耳滴劑
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 50 | 6.1% | img/ear_1.png |
+| 2 | 39 | 4.7% | img/ear_2.png |
+| 3 | 38 | 4.6% | img/ear_3.png |
+| 4 | 32 | 3.9% | img/ear_4.png |
+| 5 | 30 | 3.6% | img/ear_5.png |
+| 6 | 30 | 3.6% | img/ear_6.png |
+
+### 長期高血糖的危害
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 28 | 3.4% | img/DM_damage.webp |
+
+### 洗去頭皮油膏
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 13 | 1.6% | img/Ps_hair_wash.webp |
+
+### 藥膏一起擦
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 15 | 1.8% | img/over_one_oint_01.webp |
+| 2 | 10 | 1.2% | img/over_one_oint_02.webp |
+| 3 | 8 | 1.0% | img/over_one_oint_03.webp |
+| 4 | 6 | 0.7% | img/over_one_oint_04.webp |
+
+### 鼻噴劑
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 45 | 5.5% | img/nasal_1.png |
+| 2 | 34 | 4.1% | img/nasal_2.png |
+| 3 | 30 | 3.6% | img/nasal_3.png |
+| 4 | 30 | 3.6% | img/nasal_4.png |
+| 5 | 29 | 3.5% | img/nasal_5.png |
+
+### NTG 舌下錠
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 57 | 6.9% | img/NTG_1.png |
+| 2 | 37 | 4.5% | img/NTG_2.png |
+| 3 | 30 | 3.6% | img/NTG_3.webp |
+
+### MDI 吸入器
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 45 | 5.5% | img/MDI_1.png |
+| 2 | 35 | 4.2% | img/MDI_2.png |
+| 3 | 31 | 3.8% | img/MDI_3.png |
+| 4 | 31 | 3.8% | img/MDI_4.png |
+| 5 | 27 | 3.3% | img/MDI_5.png |
+| 6 | 24 | 2.9% | img/MDI_6.png |
+| 7 | 20 | 2.4% | img/MDI_7.png |
+
+### 痔瘡坐浴
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 14 | 1.7% | img/hemorr_sitbath_1.png |
+| 2 | 9 | 1.1% | img/hemorr_sitbath_2.png |
+
+### 痔瘡軟膏(內)
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 32 | 3.9% | img/hem_oint_1.png |
+| 2 | 30 | 3.6% | img/hem_oint_2.png |
+| 3 | 26 | 3.2% | img/hem_oint_3.png |
+| 4 | 22 | 2.7% | img/hem_oint_4.png |
+| 5 | 20 | 2.4% | img/hem_oint_5.png |
+| 6 | 16 | 1.9% | img/hem_oint_6.png |
+
+### 肛門塞劑
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 24 | 2.9% | img/rec_1.png |
+| 2 | 16 | 1.9% | img/rec_2.png |
+| 3 | 15 | 1.8% | img/rec_3.png |
+| 4 | 15 | 1.8% | img/rec_4.png |
+| 5 | 15 | 1.8% | img/rec_5.png |
+| 6 | 14 | 1.7% | img/rec_6.png |
+| 7 | 13 | 1.6% | img/rec_7.png |
+| 8 | 9 | 1.1% | img/rec_8.png |
+
+### 陰道塞劑
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 36 | 4.4% | img/vag_1.png |
+| 2 | 28 | 3.4% | img/vag_2.png |
+| 3 | 18 | 2.2% | img/vag_3.png |
+| 4 | 14 | 1.7% | img/vag_4.png |
+
+### 陰道軟膏
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 26 | 3.2% | img/vag_oint_1.png |
+| 2 | 19 | 2.3% | img/vag_oint_2.png |
+| 3 | 22 | 2.7% | img/vag_oint_3.png |
+| 4 | 19 | 2.3% | img/vag_oint_4.png |
+| 5 | 16 | 1.9% | img/vag_oint_5.png |
+| 6 | 11 | 1.3% | img/vag_oint_6.png |
+
+### 兒科抗生素藥水泡製
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 24 | 2.9% | img/Ped_abx_susp_1.png |
+| 2 | 16 | 1.9% | img/Ped_abx_susp_2.png |
+| 3 | 15 | 1.8% | img/Ped_abx_susp_3.png |
+| 4 | 14 | 1.7% | img/Ped_abx_susp_4.png |
+| 5 | 13 | 1.6% | img/Ped_abx_susp_5.png |
+| 6 | 13 | 1.6% | img/Ped_abx_susp_6.png |
+| 7 | 11 | 1.3% | img/Ped_abx_susp_7.png |
+| 8 | 7 | 0.8% | img/Ped_abx_susp_8.png |
+
+### 骨鬆藥與拔牙
+
+| 第幾張 | 120h觀看 | 觀看/瀏覽 | 圖片路徑 |
+| --- | --- | --- | --- |
+| 1 | 0 | 0.0% | img/Osteo_tooth_01.webp |
+| 2 | 0 | 0.0% | img/Osteo_tooth_03.webp |
+| 3 | 0 | 0.0% | img/Osteo_tooth_04.webp |
+
