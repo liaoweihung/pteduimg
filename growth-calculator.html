@@ -120,6 +120,8 @@
                 <p>數據判斷來源：Pediatr Neonatol 2010;51(2):69-79</p>
                 <p>本工具為衛教與初步篩檢用途，結果不等同診斷；若成長狀況有疑慮，請諮詢小兒科或成長門診。</p>
             </div>
+
+            <button class="secondary-action" id="reset-calculator" type="button">清除資料，重新計算</button>
         </section>
     </main>
 
@@ -215,6 +217,15 @@
             }, rows[0]);
         }
 
+        function getAgeRange(dataSet) {
+            const allRows = [...dataSet.height, ...dataSet.weight];
+            const ageMonths = allRows.map((row) => row.age_months);
+            return {
+                min: Math.min(...ageMonths),
+                max: Math.max(...ageMonths)
+            };
+        }
+
         function classifyPercentile(value, percentiles) {
             if (value <= percentiles.p3) return percentileSegments[0];
             if (value <= percentiles.p15) return percentileSegments[1];
@@ -290,6 +301,14 @@
             return '';
         }
 
+        function resetCalculator() {
+            document.getElementById('height-cm').value = '';
+            document.getElementById('weight-kg').value = '';
+            message.textContent = '';
+            resultCard.hidden = true;
+            document.getElementById('birth-date').focus();
+        }
+
         function handleSubmit(event) {
             event.preventDefault();
             if (!growthData) return;
@@ -308,6 +327,14 @@
 
             const age = calculateAge(birthDate);
             const dataSet = growthData.data[sex];
+            const ageRange = getAgeRange(dataSet);
+
+            if (age.completedMonths < ageRange.min || age.completedMonths > ageRange.max) {
+                message.textContent = '超過資料庫的數據，無法提供資料。';
+                resultCard.hidden = true;
+                return;
+            }
+
             const heightRow = findNearestAgeRow(dataSet.height, age.completedMonths);
             const weightRow = findNearestAgeRow(dataSet.weight, age.completedMonths);
             const hasHeight = height !== null;
@@ -371,6 +398,7 @@
         setDefaultBirthDate();
         loadGrowthData();
         updateSexTheme();
+        document.getElementById('reset-calculator').addEventListener('click', resetCalculator);
         form.elements.sex.forEach((input) => input.addEventListener('change', updateSexTheme));
         form.addEventListener('submit', handleSubmit);
     </script>

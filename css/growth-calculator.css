@@ -213,6 +213,23 @@ body.growth-page[data-sex="girls"] .sex-option input:checked + span {
     cursor: not-allowed;
 }
 
+.secondary-action {
+    width: 100%;
+    min-height: 44px;
+    margin-top: 16px;
+    border: 1px solid #cfe3da;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #1f5b49;
+    font-size: 0.98rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.secondary-action:active {
+    transform: translateY(1px);
+}
+
 .result-summary {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
