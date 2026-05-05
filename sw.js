@@ -1,5 +1,5 @@
 ﻿// ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202605050008';
+const CACHE_NAME = 'pwa-cache-v202605051117';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
 const urlsToCache = [
@@ -47,6 +47,8 @@ const urlsToCache = [
   './img/add_to_desktop_android.webp',
   './img/add_to_desktop_ios.webp',
   './img/artficial_vs_paraffin.webp',
+  './img/boyBMI.webp',
+  './img/boy_height.webp',
   './img/ear_1.png',
   './img/ear_2.png',
   './img/ear_3.png',
@@ -59,6 +61,10 @@ const urlsToCache = [
   './img/eye_4.png',
   './img/eye_5.png',
   './img/eye_6.png',
+  './img/girlBMI.webp',
+  './img/girl_height.webp',
+  './img/height_prediction.webp',
+  './img/height_tips.webp',
   './img/hem_oint_1.png',
   './img/hem_oint_2.png',
   './img/hem_oint_3.png',

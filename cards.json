@@ -1,4 +1,19 @@
 {
+  "child_height_weight": {
+    "title": "小孩身高體重",
+    "category": "public_education",
+    "order": -10,
+    "hidden": false,
+    "icon": "📏",
+    "steps": [
+      "img/height_prediction.webp",
+      "img/boy_height.webp",
+      "img/girl_height.webp",
+      "img/boyBMI.webp",
+      "img/girlBMI.webp",
+      "img/height_tips.webp"
+    ]
+  },
   "Prevent_Enterovirus": {
     "title": "預防腸病毒",
     "category": "public_education",
