@@ -1,0 +1,123 @@
+body.calc-page {
+    min-height: 100vh;
+    height: auto;
+    background: #f7fbfa;
+    color: #22313f;
+    user-select: auto;
+}
+
+body.calc-page header {
+    background: #e8f7f1;
+    color: #1f5b49;
+}
+
+.calc-shell {
+    width: min(100%, 840px);
+    margin: 0 auto;
+    padding: 16px 16px 20px;
+}
+
+.tool-card {
+    background: #ffffff;
+    border: 1px solid #e3efea;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(32, 88, 71, 0.08);
+}
+
+.tool-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #def7ec;
+    font-size: 1.55rem;
+    flex: 0 0 auto;
+}
+
+.tool-section h2,
+.tool-card h3 {
+    margin: 0;
+    letter-spacing: 0;
+}
+
+.tool-section {
+    margin-top: 14px;
+}
+
+.back-button {
+    min-height: 40px;
+    border: 1px solid #d8e8e1;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #1f5b49;
+    padding: 8px 15px;
+    font: inherit;
+    font-size: 0.95rem;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(32, 88, 71, 0.08);
+}
+
+.back-button:active {
+    transform: translateY(1px);
+}
+
+.tool-section h2 {
+    margin: 0 0 10px;
+    color: #4b635b;
+    font-size: 0.95rem;
+    font-weight: 900;
+}
+
+.tool-card {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 16px;
+    color: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.tool-card:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(32, 88, 71, 0.12);
+}
+
+.tool-content {
+    min-width: 0;
+    flex: 1 1 auto;
+}
+
+.tool-card h3 {
+    color: #164937;
+    font-size: 1.05rem;
+    line-height: 1.35;
+}
+
+.tool-card p {
+    margin: 6px 0 0;
+    color: #5d6d7e;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.tool-arrow {
+    color: #1f8f6b;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    flex: 0 0 auto;
+}
+
+@media (min-width: 720px) {
+    .calc-shell {
+        padding-top: 24px;
+    }
+
+    .tool-card {
+        padding: 22px;
+    }
+}

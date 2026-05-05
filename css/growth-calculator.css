@@ -26,6 +26,24 @@ body.growth-page header {
     padding: 16px 16px 34px;
 }
 
+.back-button {
+    min-height: 40px;
+    border: 1px solid #d8e8e1;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #1f5b49;
+    padding: 8px 15px;
+    font: inherit;
+    font-size: 0.95rem;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(32, 88, 71, 0.08);
+}
+
+.back-button:active {
+    transform: translateY(1px);
+}
+
 .intro-card,
 .form-card,
 .result-card,
@@ -59,6 +77,7 @@ body.growth-page[data-sex="girls"] .notice-card {
     display: flex;
     gap: 14px;
     align-items: flex-start;
+    margin-top: 14px;
     padding: 18px;
 }
 

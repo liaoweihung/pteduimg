@@ -121,10 +121,15 @@
 .reset-main-order-wrap {
     display: flex;
     justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
     margin: 22px 0 14px;
 }
 
 .reset-main-order-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 42vw;
     max-width: 210px;
     min-height: 76px;
@@ -137,6 +142,11 @@
     line-height: 1.35;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    text-decoration: none;
+}
+
+.site-footer .reset-main-order-btn {
+    color: #2c3e50;
 }
 
 .reset-main-order-btn:active {
@@ -1005,6 +1015,7 @@ function updateContent() {
 <footer class="site-footer">
   <div class="reset-main-order-wrap">
     <button type="button" class="reset-main-order-btn" onclick="resetMainCardOrder()">↻<br>恢復圖卡預設排列</button>
+    <a class="reset-main-order-btn" href="./calc.html">🧮<br>醫藥計算器</a>
   </div>
   <p style="margin: 0 0 8px 0;">本工具圖文僅供藥師衛教參考，非專業人士務必諮詢藥師建議。</p>
   <p style="margin: 0;">

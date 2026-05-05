@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="./icon.png?v=3">
+    <title>醫藥計算器</title>
+    <meta name="description" content="實用衛教計算機，幫助判斷現有文獻對各類健康數據的綜合影響。">
+    <script>
+      const GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
+      const urlParams = new URLSearchParams(window.location.search);
+      const isLocalPreview = ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname) || window.location.protocol === 'file:';
+
+      if (urlParams.get('dev') === '1') {
+          localStorage.setItem('isDeveloper', 'true');
+          alert('已開啟開發者隱形模式！未來的瀏覽將不會被 GA4 記錄。');
+      }
+
+      if (urlParams.get('dev') === '0') {
+          localStorage.removeItem('isDeveloper');
+          alert('已關閉開發者隱形模式。');
+      }
+
+      window.isAnalyticsDisabled = isLocalPreview || localStorage.getItem('isDeveloper') === 'true';
+      window[`ga-disable-${GA_MEASUREMENT_ID}`] = window.isAnalyticsDisabled;
+
+      function shouldTrackAnalytics() {
+          return !window.isAnalyticsDisabled && typeof gtag === 'function';
+      }
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ dataLayer.push(arguments); };
+
+      if (!window.isAnalyticsDisabled) {
+          const gaScript = document.createElement('script');
+          gaScript.async = true;
+          gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+          document.head.appendChild(gaScript);
+          gtag('js', new Date());
+          gtag('config', GA_MEASUREMENT_ID);
+      }
+    </script>
+    <link rel="stylesheet" href="./css/base.css?v=6">
+    <link rel="stylesheet" href="./css/calc.css?v=1">
+</head>
+<body class="calc-page">
+    <header>
+        <img src="icon.png?v=3" alt="網站圖示" class="header-icon">
+        <span>醫藥計算器</span>
+    </header>
+
+    <main class="calc-shell">
+        <button class="back-button" type="button" onclick="goBackToSource()">‹ 回前頁</button>
+
+        <section class="tool-section" aria-labelledby="tool-section-title">
+            <h2 id="tool-section-title">可用工具</h2>
+            <a class="tool-card" href="./growth-calculator.html" aria-label="開啟台灣小朋友生長狀況百分位計算器">
+                <div class="tool-icon" aria-hidden="true">😊</div>
+                <div class="tool-content">
+                    <h3>台灣小朋友生長狀況百分位計算器</h3>
+                    <p>輸入性別、生日、身高與體重，依文獻判斷身高、體重與 BMI 區間。</p>
+                </div>
+                <span class="tool-arrow" aria-hidden="true">›</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p style="margin: 0 0 8px 0;">本工具圖文僅供藥師衛教參考，非專業人士務必諮詢藥師建議。</p>
+        <p style="margin: 0;">
+            <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a>
+            &nbsp;|&nbsp;
+            <a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" onclick="trackFeedbackClick()">💬 意見回饋</a>
+        </p>
+    </footer>
+
+    <script>
+        function goBackToSource() {
+            const referrer = document.referrer;
+            let canReturnToMainPage = false;
+
+            if (referrer) {
+                const referrerUrl = new URL(referrer);
+                const referrerPage = referrerUrl.pathname.split('/').pop() || 'index.html';
+                canReturnToMainPage = referrerUrl.origin === window.location.origin &&
+                    (referrerPage === 'index.html' || referrerPage === 'public.html');
+            }
+
+            if (canReturnToMainPage && window.history.length > 1) {
+                window.history.back();
+                return;
+            }
+
+            window.location.href = './index.html';
+        }
+
+        function trackFeedbackClick() {
+            if (typeof shouldTrackAnalytics === 'function' && shouldTrackAnalytics() && typeof gtag === 'function') {
+                gtag('event', 'click_feedback', { 'source_app': 'pteduimg' });
+            }
+        }
+    </script>
+</body>
+</html>

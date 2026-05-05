@@ -7,8 +7,43 @@
     <link rel="icon" type="image/png" href="./icon.png?v=3">
     <title>台灣小朋友生長狀況百分位計算器</title>
     <meta name="description" content="輸入兒童性別、生日、身高或體重，查表判斷身高、體重與 BMI 區間。">
+    <script>
+      const GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
+      const urlParams = new URLSearchParams(window.location.search);
+      const isLocalPreview = ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname) || window.location.protocol === 'file:';
+
+      if (urlParams.get('dev') === '1') {
+          localStorage.setItem('isDeveloper', 'true');
+          alert('已開啟開發者隱形模式！未來的瀏覽將不會被 GA4 記錄。');
+      }
+
+      if (urlParams.get('dev') === '0') {
+          localStorage.removeItem('isDeveloper');
+          alert('已關閉開發者隱形模式。');
+      }
+
+      window.isAnalyticsDisabled = isLocalPreview || localStorage.getItem('isDeveloper') === 'true';
+      window[`ga-disable-${GA_MEASUREMENT_ID}`] = window.isAnalyticsDisabled;
+
+      function shouldTrackAnalytics() {
+          return !window.isAnalyticsDisabled && typeof gtag === 'function';
+      }
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ dataLayer.push(arguments); };
+
+      if (!window.isAnalyticsDisabled) {
+          const gaScript = document.createElement('script');
+          gaScript.async = true;
+          gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+          document.head.appendChild(gaScript);
+          gtag('js', new Date());
+          gtag('config', GA_MEASUREMENT_ID);
+      }
+    </script>
     <link rel="stylesheet" href="./css/base.css?v=6">
-    <link rel="stylesheet" href="./css/growth-calculator.css?v=1">
+    <link rel="stylesheet" href="./css/growth-calculator.css?v=2">
 </head>
 <body class="growth-page">
     <header>
@@ -17,6 +52,8 @@
     </header>
 
     <main class="growth-shell">
+        <button class="back-button" type="button" onclick="window.location.href='./calc.html'">‹ 回前頁</button>
+
         <section class="intro-card" aria-labelledby="growth-title">
             <div class="intro-icon" aria-hidden="true">😊</div>
             <div>
