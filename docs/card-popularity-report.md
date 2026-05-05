@@ -37,18 +37,28 @@ Actions 執行頁面也會顯示同一份 Markdown 摘要。
 新增：
 
 - `GA4_PROPERTY_ID`
-- `GA4_SERVICE_ACCOUNT_JSON`
+- `GA4_OAUTH_CLIENT_ID`
+- `GA4_OAUTH_CLIENT_SECRET`
+- `GA4_OAUTH_REFRESH_TOKEN`
 
-## GA4 權限
+## GA4 權限與 OAuth
 
-請在 GA4 property 裡，把 service account 的 email 加成可以讀取資料的使用者。
+這版改用你的 Google 帳號 OAuth 授權，不需要把 service account 加進 GA4 使用者。
 
-需要可讀取：
+授權的 Google 帳號需要能讀取這個 GA4 property，並且 GA4 已有這些資料：
 
 - `page_view`
 - `view_instruction_card`
 - 自訂維度 `card_title`
 - 自訂維度 `card_id`
+
+`GA4_OAUTH_CLIENT_ID` 和 `GA4_OAUTH_CLIENT_SECRET` 來自 Google Cloud 的 OAuth 用戶端。
+
+`GA4_OAUTH_REFRESH_TOKEN` 需要用同一組 OAuth 用戶端授權取得，scope 使用：
+
+```text
+https://www.googleapis.com/auth/analytics.readonly
+```
 
 ## 上架時間如何判斷
 

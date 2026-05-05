@@ -3,8 +3,7 @@ import json
 import os
 import subprocess
 import sys
-import tempfile
-from collections import Counter, defaultdict
+from collections import Counter
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -15,7 +14,7 @@ from google.analytics.data_v1beta.types import (
     Metric,
     RunReportRequest,
 )
-from google.oauth2 import service_account
+from google.oauth2.credentials import Credentials
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -103,19 +102,30 @@ def report_cutoff_now():
 
 def load_ga_client():
     property_id = os.environ.get("GA4_PROPERTY_ID", "").strip()
-    service_account_json = os.environ.get("GA4_SERVICE_ACCOUNT_JSON", "").strip()
+    client_id = os.environ.get("GA4_OAUTH_CLIENT_ID", "").strip()
+    client_secret = os.environ.get("GA4_OAUTH_CLIENT_SECRET", "").strip()
+    refresh_token = os.environ.get("GA4_OAUTH_REFRESH_TOKEN", "").strip()
+
     if not property_id:
         fail("找不到 GA4_PROPERTY_ID。請在 GitHub Secrets 設定 GA4_PROPERTY_ID。")
-    if not service_account_json:
-        fail("找不到 GA4_SERVICE_ACCOUNT_JSON。請在 GitHub Secrets 設定 GA4_SERVICE_ACCOUNT_JSON。")
+    missing = [
+        name
+        for name, value in {
+            "GA4_OAUTH_CLIENT_ID": client_id,
+            "GA4_OAUTH_CLIENT_SECRET": client_secret,
+            "GA4_OAUTH_REFRESH_TOKEN": refresh_token,
+        }.items()
+        if not value
+    ]
+    if missing:
+        fail(f"找不到 {', '.join(missing)}。請在 GitHub Secrets 設定 OAuth 認證。")
 
-    try:
-        service_account_info = json.loads(service_account_json)
-    except json.JSONDecodeError as exc:
-        fail(f"GA4_SERVICE_ACCOUNT_JSON 不是合法 JSON：第 {exc.lineno} 行第 {exc.colno} 欄。")
-
-    credentials = service_account.Credentials.from_service_account_info(
-        service_account_info,
+    credentials = Credentials(
+        token=None,
+        refresh_token=refresh_token,
+        token_uri="https://oauth2.googleapis.com/token",
+        client_id=client_id,
+        client_secret=client_secret,
         scopes=["https://www.googleapis.com/auth/analytics.readonly"],
     )
     return BetaAnalyticsDataClient(credentials=credentials), property_id
@@ -142,8 +152,8 @@ def fetch_ga_rows(client, property_id, end_time):
         response = client.run_report(request)
     except Exception as exc:
         fail(
-            "GA4 Data API 查詢失敗。請確認 GA4_PROPERTY_ID、service account 權限，"
-            "以及自訂維度 card_title / card_id 是否已建立。\n"
+            "GA4 Data API 查詢失敗。請確認 GA4_PROPERTY_ID、OAuth 認證，"
+            "OAuth refresh token，以及自訂維度 card_title / card_id 是否已建立。\n"
             f"完整錯誤：{repr(exc)}"
         )
 
