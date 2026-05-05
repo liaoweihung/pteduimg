@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="./icon.png?v=3">
+    <title>懷孕週數計算機</title>
+    <meta name="description" content="輸入最後一次月經日期，計算懷孕週數與預產期。">
+    <script>
+      const GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
+      const urlParams = new URLSearchParams(window.location.search);
+      const isLocalPreview = ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname) || window.location.protocol === 'file:';
+
+      if (urlParams.get('dev') === '1') {
+          localStorage.setItem('isDeveloper', 'true');
+          alert('已開啟開發者隱形模式！未來的瀏覽將不會被 GA4 記錄。');
+      }
+
+      if (urlParams.get('dev') === '0') {
+          localStorage.removeItem('isDeveloper');
+          alert('已關閉開發者隱形模式。');
+      }
+
+      window.isAnalyticsDisabled = isLocalPreview || localStorage.getItem('isDeveloper') === 'true';
+      window[`ga-disable-${GA_MEASUREMENT_ID}`] = window.isAnalyticsDisabled;
+
+      function shouldTrackAnalytics() {
+          return !window.isAnalyticsDisabled && typeof gtag === 'function';
+      }
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ dataLayer.push(arguments); };
+
+      if (!window.isAnalyticsDisabled) {
+          const gaScript = document.createElement('script');
+          gaScript.async = true;
+          gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+          document.head.appendChild(gaScript);
+          gtag('js', new Date());
+          gtag('config', GA_MEASUREMENT_ID);
+      }
+    </script>
+    <link rel="stylesheet" href="./css/base.css?v=6">
+    <link rel="stylesheet" href="./css/pregnancy-calculator.css?v=1">
+</head>
+<body class="pregnancy-page">
+    <header>
+        <img src="icon.png?v=3" alt="網站圖示" class="header-icon">
+        <span>懷孕週數計算機</span>
+    </header>
+
+    <main class="pregnancy-shell">
+        <button class="back-button" type="button" onclick="window.location.href='./calc.html'">‹ 回前頁</button>
+
+        <section class="intro-card" aria-labelledby="pregnancy-title">
+            <div class="intro-icon" aria-hidden="true">🤰</div>
+            <div>
+                <h1 id="pregnancy-title">懷孕週數計算機</h1>
+                <p>輸入最後一次月經日期，快速估算目前懷孕週數與預產期。</p>
+            </div>
+        </section>
+
+        <section class="form-card" aria-labelledby="form-title">
+            <h2 id="form-title">基本資料</h2>
+            <form id="pregnancy-form" novalidate>
+                <label class="field">
+                    <span>最後一次月經日期</span>
+                    <input id="last-period-date" type="date" required>
+                </label>
+                <p class="form-message" id="form-message" role="alert"></p>
+                <button class="primary-action" type="submit">計算懷孕週數</button>
+            </form>
+        </section>
+
+        <section class="result-card" id="result-card" aria-live="polite" hidden>
+            <div class="result-summary">
+                <div>
+                    <span class="summary-label">懷孕週數</span>
+                    <strong id="gestational-age">--</strong>
+                </div>
+                <div>
+                    <span class="summary-label">預產期</span>
+                    <strong id="due-date">--</strong>
+                </div>
+            </div>
+            <div class="pregnancy-progress" aria-label="懷孕週數進度">
+                <div class="progress-track">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="progress-labels">
+                    <span>0週</span>
+                    <strong id="progress-current">--</strong>
+                    <span>40週</span>
+                </div>
+                <div class="trimester-label" id="trimester-label">--</div>
+                <div class="trimester-guide">
+                    <span>&lt;13週：第一孕期</span>
+                    <span>13-27週：第二孕期</span>
+                    <span>≥28週：第三孕期</span>
+                </div>
+            </div>
+            <p class="result-note">本工具以最後一次月經日期加 280 天估算預產期，實際孕期評估請以婦產科醫師判斷為準。</p>
+            <button class="secondary-action" id="reset-calculator" type="button">清除資料，重新計算</button>
+        </section>
+    </main>
+
+    <script>
+        const form = document.getElementById('pregnancy-form');
+        const message = document.getElementById('form-message');
+        const resultCard = document.getElementById('result-card');
+        const dateInput = document.getElementById('last-period-date');
+
+        function formatDateInput(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
+
+        function formatTaiwanDate(date) {
+            return `${date.getFullYear()}/${String(date.getMonth() + 1).padStart(2, '0')}/${String(date.getDate()).padStart(2, '0')}`;
+        }
+
+        function addDays(date, days) {
+            const result = new Date(date);
+            result.setDate(result.getDate() + days);
+            return result;
+        }
+
+        function resetCalculator() {
+            dateInput.value = '';
+            message.textContent = '';
+            resultCard.hidden = true;
+            updateProgress(0, '0週0天');
+            dateInput.focus();
+        }
+
+        function getTrimesterLabel(weeks) {
+            if (weeks < 13) return '第一孕期';
+            if (weeks < 28) return '第二孕期';
+            return '第三孕期';
+        }
+
+        function updateProgress(pregnancyDays, currentLabel) {
+            const progress = Math.max(0, Math.min((pregnancyDays / 280) * 100, 100));
+            document.getElementById('progress-fill').style.width = `${progress}%`;
+            document.getElementById('progress-current').textContent = currentLabel;
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            const lastPeriodDate = new Date(`${dateInput.value}T00:00:00`);
+
+            if (Number.isNaN(lastPeriodDate.getTime())) {
+                message.textContent = '請選擇最後一次月經日期。';
+                resultCard.hidden = true;
+                return;
+            }
+
+            if (lastPeriodDate > today) {
+                message.textContent = '最後一次月經日期不可晚於今天。';
+                resultCard.hidden = true;
+                return;
+            }
+
+            const diffDays = Math.floor((today - lastPeriodDate) / 86400000);
+            const weeks = Math.floor(diffDays / 7);
+            const days = diffDays % 7;
+            const dueDate = addDays(lastPeriodDate, 280);
+            const currentLabel = `${weeks}週${days}天`;
+
+            message.textContent = '';
+            document.getElementById('gestational-age').textContent = currentLabel;
+            document.getElementById('due-date').textContent = formatTaiwanDate(dueDate);
+            document.getElementById('trimester-label').textContent = getTrimesterLabel(weeks);
+            resultCard.hidden = false;
+            requestAnimationFrame(() => updateProgress(diffDays, currentLabel));
+        }
+
+        dateInput.value = formatDateInput(addDays(new Date(), -84));
+        updateProgress(0, '0週0天');
+        form.addEventListener('submit', handleSubmit);
+        document.getElementById('reset-calculator').addEventListener('click', resetCalculator);
+    </script>
+</body>
+</html>
