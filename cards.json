@@ -3,7 +3,7 @@
     "title": "小孩身高體重",
     "category": "public_education",
     "order": -10,
-    "hidden": false,
+    "hidden": true,
     "icon": "📏",
     "steps": [
       "img/height_prediction.webp",
