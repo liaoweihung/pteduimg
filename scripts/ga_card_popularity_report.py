@@ -328,6 +328,12 @@ def write_markdown(report):
         output.extend("| " + " | ".join(str(cell) for cell in row) + " |" for row in rows)
         return "\n".join(output)
 
+    def window(item, hours):
+        return item["windows"].get(str(hours)) or item["windows"].get(hours) or {
+            "clicks": 0,
+            "ratio": "0.0%",
+        }
+
     lines = [
         "# 圖卡熱門度自動報表",
         "",
@@ -346,16 +352,16 @@ def write_markdown(report):
             [
                 item["title"],
                 item["first_seen"],
-                item["windows"]["24"]["clicks"],
-                item["windows"]["24"]["ratio"],
-                item["windows"]["48"]["clicks"],
-                item["windows"]["48"]["ratio"],
-                item["windows"]["72"]["clicks"],
-                item["windows"]["72"]["ratio"],
-                item["windows"]["96"]["clicks"],
-                item["windows"]["96"]["ratio"],
-                item["windows"]["120"]["clicks"],
-                item["windows"]["120"]["ratio"],
+                window(item, 24)["clicks"],
+                window(item, 24)["ratio"],
+                window(item, 48)["clicks"],
+                window(item, 48)["ratio"],
+                window(item, 72)["clicks"],
+                window(item, 72)["ratio"],
+                window(item, 96)["clicks"],
+                window(item, 96)["ratio"],
+                window(item, 120)["clicks"],
+                window(item, 120)["ratio"],
                 f"{item['score_120h']:.1f}",
             ]
         )
