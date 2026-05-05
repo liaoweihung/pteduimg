@@ -45,6 +45,7 @@ def load_cards():
             "title": title,
             "category": item.get("category", ""),
             "order": item.get("order", 9999),
+            "steps": item.get("steps", []),
         }
         title_to_id[title] = card_id
     return visible, title_to_id
@@ -142,6 +143,7 @@ def fetch_ga_rows(client, property_id, end_time):
             Dimension(name="eventName"),
             Dimension(name="customEvent:card_title"),
             Dimension(name="customEvent:card_id"),
+            Dimension(name="customEvent:step_number"),
         ],
         metrics=[Metric(name="eventCount")],
         date_ranges=[DateRange(start_date=start_date, end_date=end_date)],
@@ -172,6 +174,7 @@ def fetch_ga_rows(client, property_id, end_time):
                 "event": row.dimension_values[1].value,
                 "card_title": row.dimension_values[2].value,
                 "card_id": row.dimension_values[3].value,
+                "step_number": row.dimension_values[4].value,
                 "count": int(row.metric_values[0].value or 0),
             }
         )
@@ -204,6 +207,26 @@ def count_card_events(rows, event_name):
             continue
         title = row["card_title"] or row["card_id"] or "(未命名)"
         counter[title] += row["count"]
+    return counter
+
+
+def step_number_value(value):
+    try:
+        return int(float(value))
+    except (TypeError, ValueError):
+        return None
+
+
+def count_step_views(rows):
+    counter = Counter()
+    for row in rows:
+        if row["event"] != "view_instruction_step":
+            continue
+        title = row["card_title"] or row["card_id"] or "(未命名)"
+        step_number = step_number_value(row.get("step_number"))
+        if not step_number:
+            continue
+        counter[(title, step_number)] += row["count"]
     return counter
 
 
@@ -319,6 +342,56 @@ def rising_cards_72h(rows, end_time):
     return sorted(rising, key=lambda item: (-item["improvement"], item["rank"]))[:20]
 
 
+def build_step_lookup(cards):
+    lookup = {}
+    for item in cards.values():
+        title = item["title"]
+        for index, path in enumerate(item.get("steps", []) or [], start=1):
+            lookup[(title, index)] = path
+    return lookup
+
+
+def step_popularity_tables(cards, rows, end_time):
+    step_lookup = build_step_lookup(cards)
+    page_views_120 = count_page_views(rows_in_window(rows, end_time, 120))
+    step_views_120 = count_step_views(rows_in_window(rows, end_time, 120))
+
+    card_details = []
+    for item in sorted(cards.values(), key=lambda card: (card.get("order", 9999), card["title"])):
+        steps = item.get("steps", []) or []
+        if not steps:
+            continue
+        step_rows = []
+        for index, path in enumerate(steps, start=1):
+            views = step_views_120.get((item["title"], index), 0)
+            step_rows.append(
+                {
+                    "step_number": index,
+                    "path": path,
+                    "views_120h": views,
+                    "ratio_120h": pct(views, page_views_120),
+                }
+            )
+        card_details.append({"title": item["title"], "steps": step_rows})
+
+    top_steps = []
+    top = step_views_120.most_common(30)
+    average = sum(count for _, count in top) / max(len(top), 1)
+    for rank, ((title, step_number), views) in enumerate(top, start=1):
+        top_steps.append(
+            {
+                "rank": rank,
+                "title": title,
+                "step_number": step_number,
+                "path": step_lookup.get((title, step_number), ""),
+                "views_120h": views,
+                "ratio_120h": pct(views, page_views_120),
+                "score": score(views, average),
+            }
+        )
+    return {"by_card": card_details, "top_steps_120h": top_steps}
+
+
 def write_markdown(report):
     def md_table(headers, rows):
         output = [
@@ -398,6 +471,34 @@ def write_markdown(report):
     else:
         lines.append("- 無")
 
+    lines.extend(["", "## 5. 最近 120 小時全站單張圖片前 30 名", ""])
+    if report["step_popularity"]["top_steps_120h"]:
+        rows = [
+            [
+                item["rank"],
+                item["title"],
+                item["step_number"],
+                item["views_120h"],
+                item["ratio_120h"],
+                f"{item['score']:.1f}",
+                item["path"],
+            ]
+            for item in report["step_popularity"]["top_steps_120h"]
+        ]
+        lines.append(md_table(["排名", "圖卡", "第幾張", "120h觀看", "觀看/瀏覽", "相對分數", "圖片路徑"], rows))
+    else:
+        lines.append("- 無")
+
+    lines.extend(["", "## 6. 各圖卡每張圖片明細（最近 120 小時）", ""])
+    for card in report["step_popularity"]["by_card"]:
+        lines.extend([f"### {card['title']}", ""])
+        rows = [
+            [step["step_number"], step["views_120h"], step["ratio_120h"], step["path"]]
+            for step in card["steps"]
+        ]
+        lines.append(md_table(["第幾張", "120h觀看", "觀看/瀏覽", "圖片路徑"], rows))
+        lines.append("")
+
     REPORT_MD_PATH.parent.mkdir(parents=True, exist_ok=True)
     REPORT_MD_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -415,6 +516,7 @@ def main():
         "top_cards": {str(hours): table for hours, table in top_cards_tables(rows, end_time).items()},
         "daily_top20_all_14_days": daily_top20_streak(rows, end_time),
         "rising_72h": rising_cards_72h(rows, end_time),
+        "step_popularity": step_popularity_tables(cards, rows, end_time),
     }
 
     REPORT_JSON_PATH.parent.mkdir(parents=True, exist_ok=True)
