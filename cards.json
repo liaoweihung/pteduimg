@@ -3,12 +3,12 @@
     "title": "小孩身高體重",
     "category": "public_education",
     "order": -10,
-    "hidden": true,
+    "hidden": false,
     "icon": "📏",
     "steps": [
       "img/height_prediction.webp",
-      "img/boy_height.webp",
-      "img/girl_height.webp",
+      "img/boy_height2.webp",
+      "img/girl_height2.webp",
       "img/boyBMI.webp",
       "img/girlBMI.webp",
       "img/height_tips.webp"
