@@ -1,6 +1,6 @@
 ﻿// ?湔???唾?嚗撥餈恍??唳??
 <<<<<<< HEAD
-const CACHE_NAME = 'pwa-cache-v202605121132';
+const CACHE_NAME = 'pwa-cache-v202605121138';
 =======
 const CACHE_NAME = 'pwa-cache-v202605120242';
 >>>>>>> 42a8ce6c6b329baa2d9c4254926c2e30a87e07b8
@@ -19,10 +19,10 @@ const urlsToCache = [
   './img/Exame_Hpylore.webp',
   './img/Hantaviridae_01.webp',
   './img/Hantaviridae_02.webp',
-  './img/Res3_ABCovid_1.png',
-  './img/Res3_ABCovid_2.png',
-  './img/Res3_ABCovid_3.png',
-  './img/Res3_ABCovid_4.png',
+  './img/Res3_ABCovid_1.webp',
+  './img/Res3_ABCovid_2.webp',
+  './img/Res3_ABCovid_3.webp',
+  './img/Res3_ABCovid_4.webp',
   './img/Lidopat_1.webp',
   './img/MDI_1.png',
   './img/MDI_2.png',
