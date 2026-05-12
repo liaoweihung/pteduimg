@@ -1,5 +1,9 @@
 ﻿// ?湔???唾?嚗撥餈恍??唳??
+<<<<<<< HEAD
 const CACHE_NAME = 'pwa-cache-v202605121132';
+=======
+const CACHE_NAME = 'pwa-cache-v202605120242';
+>>>>>>> 42a8ce6c6b329baa2d9c4254926c2e30a87e07b8
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
 const urlsToCache = [
