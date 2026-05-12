@@ -50,6 +50,23 @@
       "img/Hantaviridae_02.webp"
     ]
   },
+  "oral_hygiene": {
+    "title": "口腔清潔",
+    "category": "public_education",
+    "order": 7,
+    "hidden": false,
+    "icon": "🪥",
+    "steps": [
+      "img/oral_hygiene_01.webp",
+      "img/oral_hygiene_02.webp",
+      "img/oral_hygiene_03.webp",
+      "img/oral_hygiene_04.webp",
+      "img/oral_hygiene_05.webp",
+      "img/oral_hygiene_06.webp",
+      "img/oral_hygiene_07.webp",
+      "img/oral_hygiene_08.webp"
+    ]
+  },
   "Ped_susp": {
     "title": "安滅菌糖漿泡製",
     "category": "pharmacist_product",

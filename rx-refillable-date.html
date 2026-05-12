@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="./icon.png?v=3">
+    <title>慢箋領藥計算器</title>
+    <meta name="description" content="輸入慢箋開立日期、領藥次數與給藥天數，估算健保慢箋合法過卡區間。">
+    <script>
+      const GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
+      const urlParams = new URLSearchParams(window.location.search);
+      const isLocalPreview = ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname) || window.location.protocol === 'file:';
+
+      if (urlParams.get('dev') === '1') {
+          localStorage.setItem('isDeveloper', 'true');
+          alert('已開啟開發者隱形模式！未來的瀏覽將不會被 GA4 記錄。');
+      }
+
+      if (urlParams.get('dev') === '0') {
+          localStorage.removeItem('isDeveloper');
+          alert('已關閉開發者隱形模式。');
+      }
+
+      window.isAnalyticsDisabled = isLocalPreview || localStorage.getItem('isDeveloper') === 'true';
+      window[`ga-disable-${GA_MEASUREMENT_ID}`] = window.isAnalyticsDisabled;
+
+      function shouldTrackAnalytics() {
+          return !window.isAnalyticsDisabled && typeof gtag === 'function';
+      }
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ dataLayer.push(arguments); };
+
+      if (!window.isAnalyticsDisabled) {
+          const gaScript = document.createElement('script');
+          gaScript.async = true;
+          gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+          document.head.appendChild(gaScript);
+          gtag('js', new Date());
+          gtag('config', GA_MEASUREMENT_ID);
+      }
+    </script>
+    <link rel="stylesheet" href="./css/base.css?v=6">
+    <link rel="stylesheet" href="./css/rx-refillable-date.css?v=5">
+</head>
+<body class="rx-page">
+    <header>
+        <img src="icon.png?v=3" alt="網站圖示" class="header-icon">
+        <span>慢箋領藥計算器</span>
+    </header>
+
+    <main class="rx-shell">
+        <button class="back-button" type="button" onclick="window.location.href='./calc.html'">‹ 回前頁</button>
+
+        <section class="intro-card" aria-labelledby="rx-title">
+            <div class="intro-icon" aria-hidden="true">💊</div>
+            <div>
+                <h1 id="rx-title">健保慢箋過卡防禦系統</h1>
+                <p>輸入處方箋開立日期、領藥次數與慢箋領藥天數，估算合法過卡區間與提醒訊息。</p>
+            </div>
+        </section>
+
+        <section class="form-card" aria-labelledby="form-title">
+            <h2 id="form-title">基本資料</h2>
+            <form id="rx-form" novalidate>
+                <div class="field-grid">
+                    <label class="field">
+                        <span>處方箋開立日期</span>
+                        <input type="date" id="issue-date" required>
+                    </label>
+
+                    <div class="field">
+                        <span>慢箋次數</span>
+                        <div class="button-group" role="group" aria-label="慢箋次數">
+                            <button class="choice-button" type="button" data-target="refill-count" data-value="2">兩次</button>
+                            <button class="choice-button is-selected" type="button" data-target="refill-count" data-value="3">三次</button>
+                        </div>
+                        <input type="hidden" id="refill-count" value="3">
+                    </div>
+
+                    <div class="field">
+                        <span>慢箋領藥天數</span>
+                        <div class="button-group" role="group" aria-label="慢箋領藥天數">
+                            <button class="choice-button" type="button" data-target="supply-days" data-value="28">28 天</button>
+                            <button class="choice-button" type="button" data-target="supply-days" data-value="29">29 天</button>
+                            <button class="choice-button is-selected" type="button" data-target="supply-days" data-value="30">30 天</button>
+                        </div>
+                        <input type="hidden" id="supply-days" value="30">
+                    </div>
+
+                    <div class="field">
+                        <span>這是第幾次領藥？</span>
+                        <div class="button-group" role="group" aria-label="這是第幾次領藥">
+                            <button class="choice-button is-selected" type="button" data-target="refill-time" data-value="1">第一次</button>
+                            <button class="choice-button" type="button" data-target="refill-time" data-value="2">第二次</button>
+                            <button class="choice-button" type="button" data-target="refill-time" data-value="3" id="third-refill-button">第三次</button>
+                        </div>
+                        <input type="hidden" id="refill-time" value="1">
+                    </div>
+
+                    <label class="field last-date-field" id="last-date-group" hidden>
+                        <span>上次實際過卡日期</span>
+                        <input type="date" id="last-date">
+                    </label>
+                </div>
+
+                <p class="form-message" id="form-message" role="alert"></p>
+                <button class="primary-action" type="submit">計算合法過卡區間</button>
+            </form>
+        </section>
+
+        <section class="result-card" id="result-card" aria-live="polite" hidden>
+            <div class="result-summary">
+                <div>
+                    <span class="summary-label">處方箋總效期至</span>
+                    <strong id="expire-date">--</strong>
+                </div>
+                <div>
+                    <span class="summary-label">合法過卡區間</span>
+                    <strong><span id="valid-window-start">--</span> ~ <span id="valid-window-end">--</span></strong>
+                </div>
+            </div>
+            <div class="warning-box" id="warning-box"></div>
+            <div class="next-window-card" id="next-window-card" hidden>
+                <h3>後續可領藥提醒</h3>
+                <div class="next-window-list" id="next-window-list"></div>
+            </div>
+            <p class="result-note">計算依《全民健康保險醫療辦法》第 24、25、26 條整理；國定假日順延與出國、離島、船員、罕病等提前領藥例外，仍請依健保署、醫療院所與藥局現場判定為準。</p>
+            <button class="secondary-action" id="reset-calculator" type="button">清除資料，重新計算</button>
+        </section>
+    </main>
+
+    <script>
+        const form = document.getElementById('rx-form');
+        const issueDateInput = document.getElementById('issue-date');
+        const refillCountInput = document.getElementById('refill-count');
+        const supplyDaysInput = document.getElementById('supply-days');
+        const refillTimeInput = document.getElementById('refill-time');
+        const thirdRefillButton = document.getElementById('third-refill-button');
+        const lastDateInput = document.getElementById('last-date');
+        const lastDateGroup = document.getElementById('last-date-group');
+        const message = document.getElementById('form-message');
+        const resultCard = document.getElementById('result-card');
+        const warningBox = document.getElementById('warning-box');
+        const nextWindowCard = document.getElementById('next-window-card');
+        const nextWindowList = document.getElementById('next-window-list');
+
+        function formatDateInput(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
+
+        function formatTaiwanDate(date) {
+            return `${date.getFullYear()}/${String(date.getMonth() + 1).padStart(2, '0')}/${String(date.getDate()).padStart(2, '0')}`;
+        }
+
+        function addDays(date, days) {
+            const result = new Date(date);
+            result.setDate(result.getDate() + days);
+            return result;
+        }
+
+        function getDateFromInput(value) {
+            if (!value) {
+                return null;
+            }
+
+            const date = new Date(`${value}T00:00:00`);
+            return Number.isNaN(date.getTime()) ? null : date;
+        }
+
+        function setSecondRefillDefaultDate() {
+            if (refillTimeInput.value !== '2') {
+                return;
+            }
+
+            const issueDate = getDateFromInput(issueDateInput.value);
+            if (issueDate) {
+                lastDateInput.value = formatDateInput(addDays(issueDate, 25));
+            }
+        }
+
+        function toggleLastDate() {
+            const needsLastDate = refillTimeInput.value !== '1';
+            lastDateGroup.hidden = !needsLastDate;
+
+            if (!needsLastDate) {
+                lastDateInput.value = '';
+                issueDateInput.value = formatDateInput(new Date());
+            } else {
+                setSecondRefillDefaultDate();
+            }
+        }
+
+        function updateChoiceButtons(targetId, value) {
+            document.querySelectorAll(`.choice-button[data-target="${targetId}"]`).forEach((button) => {
+                const isSelected = button.dataset.value === value;
+                button.classList.toggle('is-selected', isSelected);
+                button.setAttribute('aria-pressed', String(isSelected));
+            });
+        }
+
+        function syncRefillCountOptions() {
+            const isTwoRefills = refillCountInput.value === '2';
+            thirdRefillButton.hidden = isTwoRefills;
+
+            if (isTwoRefills && refillTimeInput.value === '3') {
+                refillTimeInput.value = '2';
+                updateChoiceButtons('refill-time', '2');
+                toggleLastDate();
+            }
+        }
+
+        function setChoice(targetId, value) {
+            const target = document.getElementById(targetId);
+            target.value = value;
+            updateChoiceButtons(targetId, value);
+
+            if (targetId === 'refill-count') {
+                syncRefillCountOptions();
+            }
+
+            if (targetId === 'refill-time') {
+                toggleLastDate();
+            }
+
+            runLogic();
+        }
+
+        function setWarning(type, text) {
+            warningBox.className = `warning-box ${type}`;
+            warningBox.textContent = text;
+        }
+
+        function addNextWindow(label, startDate, endDate) {
+            const item = document.createElement('div');
+            item.className = 'next-window-item';
+
+            if (startDate > endDate) {
+                item.classList.add('is-expired');
+                item.innerHTML = `
+                    <span>${label}</span>
+                    <strong>已超過總效期，無可領區間</strong>
+                `;
+            } else {
+                item.innerHTML = `
+                    <span>${label}</span>
+                    <strong>${formatTaiwanDate(startDate)} ~ ${formatTaiwanDate(endDate)}</strong>
+                `;
+            }
+
+            nextWindowList.appendChild(item);
+        }
+
+        function updateNextWindows(refillTime, refillCount, supplyDays, issueDate, expireDate, lastDateValue) {
+            nextWindowList.textContent = '';
+            nextWindowCard.hidden = true;
+
+            if (refillTime === 1) {
+                const secondStart = addDays(issueDate, supplyDays - 10);
+                addNextWindow('第二次最快可領藥區間', secondStart, expireDate);
+
+                if (refillCount >= 3) {
+                    const thirdStart = addDays(secondStart, supplyDays - 10);
+                    addNextWindow('第三次最快可領藥區間', thirdStart, expireDate);
+                }
+            }
+
+            if (refillTime === 2 && refillCount >= 3) {
+                const lastDate = getDateFromInput(lastDateValue);
+                if (lastDate) {
+                    const thirdStart = addDays(lastDate, supplyDays - 10);
+                    addNextWindow('第三次最快可領藥區間', thirdStart, expireDate);
+                }
+            }
+
+            nextWindowCard.hidden = nextWindowList.children.length === 0;
+        }
+
+        function runLogic() {
+            const issueDateValue = issueDateInput.value;
+            const refillCount = Number(refillCountInput.value);
+            const supplyDays = Number(supplyDaysInput.value);
+            const refillTime = Number(refillTimeInput.value);
+            const lastDateValue = lastDateInput.value;
+
+            if (!issueDateValue) {
+                message.textContent = '請選擇處方箋開立日期。';
+                resultCard.hidden = true;
+                return;
+            }
+
+            if (refillTime > 1 && !lastDateValue) {
+                message.textContent = '第 2 次之後領藥請填寫上次實際過卡日期。';
+                resultCard.hidden = true;
+                return;
+            }
+
+            const issueDate = new Date(`${issueDateValue}T00:00:00`);
+
+            if (Number.isNaN(issueDate.getTime())) {
+                message.textContent = '請選擇有效的處方箋開立日期。';
+                resultCard.hidden = true;
+                return;
+            }
+
+            if (!Number.isFinite(supplyDays) || supplyDays <= 0) {
+                message.textContent = '請選擇有效的給藥天數。';
+                resultCard.hidden = true;
+                return;
+            }
+
+            const totalSupplyDays = Math.min(supplyDays * refillCount, 90);
+            const expireDate = addDays(issueDate, totalSupplyDays);
+            let windowStart = new Date(issueDate);
+            let windowEnd = new Date(expireDate);
+
+            if (refillTime === 1) {
+                windowEnd = addDays(issueDate, 2);
+                setWarning(
+                    'warning',
+                    '健保規定：第 1 次調劑必須在開立日起 3 日內完成（遇國定假日可順延）。超過此區間可能無法過卡。'
+                );
+            } else {
+                const lastDate = new Date(`${lastDateValue}T00:00:00`);
+
+                if (Number.isNaN(lastDate.getTime())) {
+                    message.textContent = '請選擇有效的上次實際過卡日期。';
+                    resultCard.hidden = true;
+                    return;
+                }
+
+                windowStart = addDays(lastDate, supplyDays - 10);
+
+                if (windowStart > expireDate) {
+                    setWarning(
+                        'danger',
+                        '已超過慢箋總效期：依上次實際領藥日動態推算後，最快可領藥日已晚於處方箋總效期，健保系統可能無法過卡，請病人回診重新開立。'
+                    );
+                } else {
+                    setWarning(
+                        'info',
+                        '提示：最快可在解禁日當天過卡，且不晚於總效期。'
+                    );
+                }
+            }
+
+            message.textContent = '';
+            document.getElementById('expire-date').textContent = formatTaiwanDate(expireDate);
+            document.getElementById('valid-window-start').textContent = formatTaiwanDate(windowStart);
+            document.getElementById('valid-window-end').textContent = formatTaiwanDate(windowEnd);
+            updateNextWindows(refillTime, refillCount, supplyDays, issueDate, expireDate, lastDateValue);
+            resultCard.hidden = false;
+        }
+
+        function resetCalculator() {
+            issueDateInput.value = '';
+            setChoice('refill-count', '3');
+            setChoice('supply-days', '30');
+            refillTimeInput.value = '1';
+            updateChoiceButtons('refill-time', '1');
+            lastDateInput.value = '';
+            toggleLastDate();
+            message.textContent = '';
+            nextWindowList.textContent = '';
+            nextWindowCard.hidden = true;
+            resultCard.hidden = true;
+            issueDateInput.focus();
+        }
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            runLogic();
+        });
+        issueDateInput.addEventListener('change', () => {
+            setSecondRefillDefaultDate();
+            runLogic();
+        });
+        document.querySelectorAll('.choice-button').forEach((button) => {
+            button.setAttribute('aria-pressed', button.classList.contains('is-selected') ? 'true' : 'false');
+            button.addEventListener('click', () => {
+                setChoice(button.dataset.target, button.dataset.value);
+            });
+        });
+        lastDateInput.addEventListener('change', runLogic);
+        document.getElementById('reset-calculator').addEventListener('click', resetCalculator);
+        issueDateInput.value = formatDateInput(new Date());
+        updateChoiceButtons('refill-count', refillCountInput.value);
+        updateChoiceButtons('supply-days', supplyDaysInput.value);
+        updateChoiceButtons('refill-time', refillTimeInput.value);
+        syncRefillCountOptions();
+        toggleLastDate();
+    </script>
+</body>
+</html>

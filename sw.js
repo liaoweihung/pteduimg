@@ -1,5 +1,5 @@
 ﻿// ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202605051631';
+const CACHE_NAME = 'pwa-cache-v202605121038';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
 const urlsToCache = [
@@ -84,6 +84,14 @@ const urlsToCache = [
   './img/nasal_5.png',
   './img/oint_choose.webp',
   './img/oneFTU.webp',
+  './img/oral_hygiene_01.webp',
+  './img/oral_hygiene_02.webp',
+  './img/oral_hygiene_03.webp',
+  './img/oral_hygiene_04.webp',
+  './img/oral_hygiene_05.webp',
+  './img/oral_hygiene_06.webp',
+  './img/oral_hygiene_07.webp',
+  './img/oral_hygiene_08.webp',
   './img/over_one_oint_01.webp',
   './img/over_one_oint_02.webp',
   './img/over_one_oint_03.webp',
