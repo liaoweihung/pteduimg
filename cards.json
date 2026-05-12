@@ -50,6 +50,19 @@
       "img/Hantaviridae_02.webp"
     ]
   },
+  "Res3_ABCovid": {
+    "title": "三合一快篩",
+    "category": "public_education",
+    "order": 7,
+    "hidden": false,
+    "icon": "🧪",
+    "steps": [
+      "img/Res3_ABCovid_1.png",
+      "img/Res3_ABCovid_2.png",
+      "img/Res3_ABCovid_3.png",
+      "img/Res3_ABCovid_4.png"
+    ]
+  },
   "oral_hygiene": {
     "title": "口腔清潔",
     "category": "public_education",
