@@ -1,5 +1,5 @@
 ﻿// ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202605121138';
+const CACHE_NAME = 'pwa-cache-v202605120450';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
 const urlsToCache = [
@@ -15,10 +15,6 @@ const urlsToCache = [
   './img/Exame_Hpylore.webp',
   './img/Hantaviridae_01.webp',
   './img/Hantaviridae_02.webp',
-  './img/Res3_ABCovid_1.webp',
-  './img/Res3_ABCovid_2.webp',
-  './img/Res3_ABCovid_3.webp',
-  './img/Res3_ABCovid_4.webp',
   './img/Lidopat_1.webp',
   './img/MDI_1.png',
   './img/MDI_2.png',
@@ -45,6 +41,10 @@ const urlsToCache = [
   './img/Ped_abx_susp_8.png',
   './img/Prevent_Enterovirus.webp',
   './img/Ps_hair_wash.webp',
+  './img/Res3_ABCovid_1.webp',
+  './img/Res3_ABCovid_2.webp',
+  './img/Res3_ABCovid_3.webp',
+  './img/Res3_ABCovid_4.webp',
   './img/Wash_hands_five_steps.webp',
   './img/Wet_Wrap.webp',
   './img/ZithromaxPOS.webp',
