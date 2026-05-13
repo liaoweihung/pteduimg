@@ -135,6 +135,7 @@
         }
         .share-btn.line { background: #06c755; }
         .share-btn.facebook { background: #1877f2; }
+        .share-btn.threads { background: #101010; }
         .share-btn.instagram { background: #c13584; }
         .share-btn.copy { background: #34495e; }
         .share-close {

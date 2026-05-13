@@ -199,6 +199,7 @@
         <div class="share-actions">
             <button class="share-btn line" onclick="shareToLine()">LINE</button>
             <button class="share-btn facebook" onclick="shareToFacebook()">Facebook</button>
+            <button class="share-btn threads" onclick="shareToThreads()">Threads</button>
             <button class="share-btn instagram" onclick="shareToInstagram()">Instagram</button>
             <button class="share-btn copy" onclick="copyShareUrl()">&#35079;&#35069;&#36899;&#32080;</button>
         </div>
@@ -384,7 +385,7 @@
             return;
         }
 
-        openViewer(key, 0);
+        navigateToCardPage(key, 0);
     }
 
     function getDefaultSortedItems(items) {
@@ -526,7 +527,7 @@
         }
 
         const el = event.currentTarget;
-        openViewer(el.dataset.type, parseInt(el.dataset.idx));
+        navigateToCardPage(el.dataset.type, parseInt(el.dataset.idx));
     }
 
     function favPointerDown(event) {
@@ -667,7 +668,7 @@
             });
         }
 
-        openViewer(cardId, stepIndex);
+        navigateToCardPage(cardId, stepIndex);
     }
 
     function renderHome() {
@@ -821,9 +822,26 @@ function updateContent() {
         return new URL(path, baseUrl).href;
     }
 
-    function showQRCode() {
+    function getCardPagePath(path) {
+        const fileName = path.split('/').pop() || '';
+        const cardId = fileName.replace(/\.[^.]+$/, '');
+        return `cards/${cardId}.html`;
+    }
+
+    function getCurrentCardPageUrl() {
         const path = educationData[currentType].steps[currentIdx];
-        const fullUrl = getPublicAssetUrl(path);
+        return getPublicAssetUrl(getCardPagePath(path));
+    }
+
+    function navigateToCardPage(type, index = 0) {
+        const item = educationData[type];
+        const step = item && item.steps && item.steps[index];
+        if (!step) return;
+        window.location.href = getCardPagePath(step);
+    }
+
+    function showQRCode() {
+        const fullUrl = getCurrentCardPageUrl();
         new QRious({ element: document.getElementById('qr-canvas'), value: fullUrl, size: 220 });
         document.getElementById('qr-modal').style.display = 'flex';
 
@@ -840,8 +858,7 @@ function updateContent() {
     function closeQRModal() { document.getElementById('qr-modal').style.display = 'none'; }
 
     function getCurrentShareUrl() {
-        const path = educationData[currentType].steps[currentIdx];
-        return getPublicAssetUrl(path);
+        return getCurrentCardPageUrl();
     }
 
     function getCurrentShareTitle() {
@@ -896,6 +913,13 @@ function updateContent() {
         const shareUrl = encodeURIComponent(getShareModalUrl());
         trackShareEvent('facebook');
         window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'noopener');
+    }
+
+    function shareToThreads() {
+        const shareUrl = encodeURIComponent(getShareModalUrl());
+        const shareText = encodeURIComponent(getCurrentShareTitle());
+        trackShareEvent('threads');
+        window.open(`https://www.threads.net/intent/post?text=${shareText}%20${shareUrl}`, '_blank', 'noopener');
     }
 
     async function shareToInstagram() {
