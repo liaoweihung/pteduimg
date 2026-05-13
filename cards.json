@@ -80,6 +80,18 @@
       "img/oral_hygiene_08.webp"
     ]
   },
+  "bugspray": {
+    "title": "防蚊液",
+    "category": "public_education",
+    "order": 8,
+    "hidden": false,
+    "icon": "🦟",
+    "steps": [
+      "img/bugspray_1.webp",
+      "img/bugspray_2.webp",
+      "img/bugspray_3.webp"
+    ]
+  },
   "fall_wound": {
     "title": "傷口與疤痕",
     "category": "public_education",

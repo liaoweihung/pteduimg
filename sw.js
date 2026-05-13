@@ -1,5 +1,5 @@
 ﻿// ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202605131037';
+const CACHE_NAME = 'pwa-cache-v202605131055';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
 const urlsToCache = [
@@ -55,6 +55,9 @@ const urlsToCache = [
   "./img/artficial_vs_paraffin.webp",
   "./img/boyBMI.webp",
   "./img/boy_height2.webp",
+  "./img/bugspray_1.webp",
+  "./img/bugspray_2.webp",
+  "./img/bugspray_3.webp",
   "./img/ear_1.png",
   "./img/ear_2.png",
   "./img/ear_3.png",
@@ -153,6 +156,9 @@ const urlsToCache = [
   "./cards/oral_hygiene_06.html",
   "./cards/oral_hygiene_07.html",
   "./cards/oral_hygiene_08.html",
+  "./cards/bugspray_1.html",
+  "./cards/bugspray_2.html",
+  "./cards/bugspray_3.html",
   "./cards/artficial_vs_paraffin.html",
   "./cards/oint_choose.html",
   "./cards/prevent_scar.html",
