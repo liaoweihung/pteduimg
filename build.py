@@ -11,6 +11,7 @@ BASE_URL = "https://liaoweihung.github.io/pteduimg/"
 GA_MEASUREMENT_ID = "G-T5R33JYTC0"
 ROOT = Path(__file__).resolve().parent
 CARDS_JSON = ROOT / "cards.json"
+SEO_JSON = ROOT / "seo.json"
 CARDS_DIR = ROOT / "cards"
 SITE_TITLE = "藥局衛教助手"
 
@@ -23,10 +24,20 @@ CATEGORY_LABELS = {
     "uncategorized": "其他衛教",
 }
 
+FORBIDDEN_SEO_WORDS = ("保證", "治癒")
+
 
 def read_cards():
     with CARDS_JSON.open("r", encoding="utf-8") as file:
         return json.load(file)
+
+
+def read_seo():
+    if not SEO_JSON.exists():
+        return {}
+    with SEO_JSON.open("r", encoding="utf-8") as file:
+        data = json.load(file)
+    return data if isinstance(data, dict) else {}
 
 
 def page_for_image(path):
@@ -41,8 +52,122 @@ def esc(value):
     return html.escape(str(value or ""), quote=True)
 
 
-def card_description(series_title, step_number, total, category_label):
-    return f"{SITE_TITLE}：{series_title} 第 {step_number} 張圖卡，共 {total} 張。分類：{category_label}。"
+def clean_seo_text(value):
+    text = re.sub(r"\s+", " ", str(value or "")).strip()
+    for word in FORBIDDEN_SEO_WORDS:
+        text = text.replace(word, "")
+    return text
+
+
+def step_topic(card_id, card, step, step_index):
+    series_title = clean_seo_text(card.get("title") or card_id)
+    texts = card.get("texts") or []
+    step_text = clean_seo_text(texts[step_index] if step_index < len(texts) else "")
+    image_name = Path(step).stem.replace("_", " ").replace("-", " ")
+
+    if step_text and 4 <= len(step_text) <= 24:
+        return step_text
+    if series_title:
+        return series_title
+    return clean_seo_text(image_name) or "衛教圖卡"
+
+
+def seo_description(topic, series_title, category_label):
+    topic = clean_seo_text(topic)
+    series_title = clean_seo_text(series_title)
+    category_label = clean_seo_text(category_label)
+
+    if category_label == "網站使用說明":
+        description = f"這張圖卡整理「{topic}」的操作重點，幫助民眾了解如何使用藥局衛教助手。"
+    elif topic != series_title:
+        description = f"這張圖卡整理「{topic}」重點，幫助民眾了解{series_title}相關衛教資訊。"
+    else:
+        description = f"這張圖卡整理「{topic}」重點，幫助民眾了解相關衛教資訊與注意事項。"
+
+    if len(description) < 40:
+        description = description.rstrip("。") + "，方便就醫或諮詢藥師時參考。"
+    if len(description) > 80:
+        description = description[:79].rstrip("，、；：。") + "。"
+    return clean_seo_text(description)
+
+
+def fallback_seo_for_card(card_id, card, step, step_index):
+    series_title = clean_seo_text(card.get("title") or card_id)
+    steps = card.get("steps") or []
+    total = len(steps)
+    step_number = step_index + 1
+    category = card.get("category") or "uncategorized"
+    category_label = CATEGORY_LABELS.get(category, category)
+    topic = step_topic(card_id, card, step, step_index)
+    page_path = page_for_image(step)
+    page_url = abs_url(page_path)
+    image_url = abs_url(step)
+
+    title_topic = series_title or topic or "衛教圖卡"
+    title = f"{title_topic}｜{SITE_TITLE}"
+    h1 = title_topic if total <= 1 else f"{title_topic}：第 {step_number} 張圖卡"
+    description = seo_description(topic, series_title, category_label)
+    alt = f"{title_topic}圖卡" if total <= 1 else f"{title_topic}第 {step_number} 張圖卡"
+
+    return {
+        "page_title": title,
+        "meta_description": description,
+        "h1": h1,
+        "image_alt": alt,
+        "og_title": title,
+        "og_description": description,
+        "og_image": image_url,
+        "og_url": page_url,
+        "canonical": page_url,
+        "twitter_card": "summary_large_image",
+    }
+
+
+def normalize_card_seo(raw_seo, fallback):
+    seo = dict(fallback)
+    if isinstance(raw_seo, dict):
+        for key, value in raw_seo.items():
+            if value:
+                seo[key] = clean_seo_text(value)
+
+    seo["page_title"] = seo.get("page_title") or fallback["page_title"]
+    seo["meta_description"] = seo.get("meta_description") or fallback["meta_description"]
+    seo["h1"] = seo.get("h1") or seo["page_title"].split("｜")[0]
+    seo["image_alt"] = seo.get("image_alt") or f"{seo['h1']}圖卡"
+    seo["og_title"] = seo.get("og_title") or seo["page_title"]
+    seo["og_description"] = seo.get("og_description") or seo["meta_description"]
+    seo["og_image"] = seo.get("og_image") or fallback["og_image"]
+    seo["og_url"] = seo.get("og_url") or fallback["og_url"]
+    seo["canonical"] = seo.get("canonical") or fallback["canonical"]
+    seo["twitter_card"] = seo.get("twitter_card") or "summary_large_image"
+    return seo
+
+
+def build_seo_index(cards):
+    existing_seo = read_seo()
+    seo_index = {}
+    used_ids = set()
+
+    for card_id, card in cards.items():
+        steps = card.get("steps") or []
+        for index, step in enumerate(steps):
+            if not step:
+                continue
+            image_id = Path(step).stem
+            if image_id in used_ids:
+                continue
+            used_ids.add(image_id)
+            page_path = page_for_image(step)
+            fallback = fallback_seo_for_card(card_id, card, step, index)
+            raw_seo = existing_seo.get(page_path) or existing_seo.get(image_id)
+            seo_index[page_path] = normalize_card_seo(raw_seo, fallback)
+
+    SEO_JSON.write_text(
+        json.dumps(seo_index, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
+    return seo_index
 
 
 def share_links(page_url, title):
@@ -70,20 +195,20 @@ def render_related_cards(series_steps, current_step):
     return "\n".join(items)
 
 
-def render_card_page(card_id, card, step, step_index):
-    series_title = card.get("title") or card_id
+def render_card_page(card_id, card, step, step_index, seo):
     steps = card.get("steps") or []
     total = len(steps)
     step_number = step_index + 1
-    image_id = Path(step).stem
     category = card.get("category") or "uncategorized"
     category_label = CATEGORY_LABELS.get(category, category)
     default_return_page = "../public.html" if category == "public_education" else "../index.html"
-    title = f"{series_title} 第 {step_number} 張圖卡｜{SITE_TITLE}"
-    description = card_description(series_title, step_number, total, category_label)
+    title = seo["page_title"]
+    description = seo["meta_description"]
+    h1 = seo["h1"]
+    image_alt = seo["image_alt"]
     page_path = page_for_image(step)
-    page_url = abs_url(page_path)
-    image_url = abs_url(step)
+    page_url = seo["canonical"]
+    image_url = seo["og_image"]
     links = share_links(page_url, title)
     related_cards = render_related_cards(steps, step)
     prev_step = steps[step_index - 1] if total > 1 else step
@@ -98,17 +223,17 @@ def render_card_page(card_id, card, step, step_index):
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(description)}">
-  <link rel="canonical" href="{esc(page_url)}">
+  <link rel="canonical" href="{esc(seo['canonical'])}">
   <link rel="icon" type="image/png" href="../icon.png?v=3">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="{esc(SITE_TITLE)}">
-  <meta property="og:title" content="{esc(title)}">
-  <meta property="og:description" content="{esc(description)}">
+  <meta property="og:title" content="{esc(seo['og_title'])}">
+  <meta property="og:description" content="{esc(seo['og_description'])}">
   <meta property="og:image" content="{esc(image_url)}">
-  <meta property="og:url" content="{esc(page_url)}">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{esc(title)}">
-  <meta name="twitter:description" content="{esc(description)}">
+  <meta property="og:url" content="{esc(seo['og_url'])}">
+  <meta name="twitter:card" content="{esc(seo['twitter_card'])}">
+  <meta name="twitter:title" content="{esc(seo['og_title'])}">
+  <meta name="twitter:description" content="{esc(seo['og_description'])}">
   <meta name="twitter:image" content="{esc(image_url)}">
   <script src="../qrious.min.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>
@@ -464,10 +589,10 @@ def render_card_page(card_id, card, step, step_index):
         <a class="page-arrow" href="{esc(prev_url)}" aria-label="上一張">‹</a>
         <a class="page-arrow" href="{esc(next_url)}" aria-label="下一張">›</a>
       </nav>
-      <img class="hero-img" src="../{esc(step)}" alt="{esc(title)}" decoding="async">
+      <img class="hero-img" src="../{esc(step)}" alt="{esc(image_alt)}" decoding="async">
     </section>
     <section class="info">
-      <h1>{esc(series_title)} 第 {step_number} 張</h1>
+      <h1>{esc(h1)}</h1>
       <p class="meta">{esc(category_label)} · {step_number}/{total}</p>
       <div class="section-title">同系列圖卡</div>
       <div class="related-grid">
@@ -527,7 +652,7 @@ def render_404_page():
 """
 
 
-def generate_card_pages(cards):
+def generate_card_pages(cards, seo_index):
     CARDS_DIR.mkdir(exist_ok=True)
     for old_page in CARDS_DIR.glob("*.html"):
         try:
@@ -550,8 +675,9 @@ def generate_card_pages(cards):
                 continue
             used_ids.add(image_id)
             page_path = page_for_image(step)
+            seo = seo_index.get(page_path) or fallback_seo_for_card(card_id, card, step, index)
             (ROOT / page_path).write_text(
-                render_card_page(card_id, card, step, index),
+                render_card_page(card_id, card, step, index, seo),
                 encoding="utf-8",
                 newline="\n",
             )
@@ -574,7 +700,7 @@ def update_service_worker(cards, generated_pages):
         if isinstance(step, str) and step.startswith("img/")
     })
 
-    cache_items = ["./", "./index.html", "./public.html", "./icon.png", "./404.html"]
+    cache_items = ["./", "./index.html", "./public.html", "./calc.html", "./icon.png", "./404.html", "./seo.json"]
     cache_items.extend(f"./img/{img}" for img in image_files)
     cache_items.extend(f"./{page}" for page in generated_pages)
     cache_items.append("./cards/404.html")
@@ -597,7 +723,9 @@ def update_sitemap(generated_pages):
     today = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d")
     static_pages = [
         ("", "weekly", "1.0"),
+        ("index.html", "weekly", "1.0"),
         ("public.html", "weekly", "0.8"),
+        ("calc.html", "monthly", "0.7"),
     ]
     urls = []
     for path, freq, priority in static_pages:
@@ -627,13 +755,24 @@ def update_sitemap(generated_pages):
     (ROOT / "sitemap.xml").write_text(sitemap, encoding="utf-8", newline="\n")
 
 
+def update_robots():
+    robots = f"""User-agent: *
+Allow: /
+
+Sitemap: {abs_url("sitemap.xml")}
+"""
+    (ROOT / "robots.txt").write_text(robots, encoding="utf-8", newline="\n")
+
+
 def main():
     cards = read_cards()
-    generated_pages = generate_card_pages(cards)
+    seo_index = build_seo_index(cards)
+    generated_pages = generate_card_pages(cards, seo_index)
     update_service_worker(cards, generated_pages)
     update_sitemap(generated_pages)
+    update_robots()
     print(f"Generated {len(generated_pages)} static card pages.")
-    print("Updated sitemap.xml and sw.js.")
+    print("Updated seo.json, sitemap.xml, robots.txt, and sw.js.")
 
 
 if __name__ == "__main__":
