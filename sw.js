@@ -327,11 +327,17 @@ self.addEventListener('fetch', (e) => {
 
   if (isFreshAsset) {
     e.respondWith(
-      fetch(request).then(response => {
-        const copy = response.clone();
-        caches.open(CACHE_NAME).then(cache => cache.put(request, copy));
-        return response;
-      }).catch(() => caches.match(request))
+      caches.match(request).then(cachedResponse => {
+        const networkUpdate = fetch(request).then(response => {
+          if (response && response.ok) {
+            const copy = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(request, copy));
+          }
+          return response;
+        }).catch(() => caches.match(request));
+
+        return cachedResponse || networkUpdate;
+      })
     );
     return;
   }
