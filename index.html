@@ -295,7 +295,7 @@
 
     async function loadEducationData() {
         try {
-            const response = await fetch('./cards.json?v=' + Date.now(), { cache: 'no-store' });
+            const response = await fetch('./cards.json');
             if (!response.ok) throw new Error('cards.json not found');
             educationData = await response.json();
         } catch (err) {

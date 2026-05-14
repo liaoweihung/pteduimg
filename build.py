@@ -727,7 +727,7 @@ def update_service_worker(cards, generated_pages):
         if isinstance(step, str) and step.startswith("img/")
     })
 
-    cache_items = ["./", "./index.html", "./public.html", "./calc.html", "./icon.png", "./404.html", "./seo.json"]
+    cache_items = ["./", "./index.html", "./public.html", "./calc.html", "./icon.png", "./404.html", "./cards.json", "./seo.json"]
     cache_items.extend(f"./img/{img}" for img in image_files)
     cache_items.extend(f"./{page}" for page in generated_pages)
     cache_items.append("./cards/404.html")

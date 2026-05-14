@@ -1,5 +1,5 @@
 ﻿// ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202605141646';
+const CACHE_NAME = 'pwa-cache-v202605141700';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
 const urlsToCache = [
@@ -9,6 +9,7 @@ const urlsToCache = [
   "./calc.html",
   "./icon.png",
   "./404.html",
+  "./cards.json",
   "./seo.json",
   "./img/5_ways_stomatch.webp",
   "./img/AugmentinSyrup.png",
@@ -279,6 +280,21 @@ const urlsToCache = [
   "./cards/404.html"
 ];
 
+const coreUrlsToCache = [
+  "./",
+  "./index.html",
+  "./public.html",
+  "./calc.html",
+  "./icon.png",
+  "./404.html",
+  "./cards.json",
+  "./seo.json",
+  "./qrious.min.js",
+  "./css/base.css?v=6",
+  "./css/pharmacist.css?v=1",
+  "./css/public.css?v=2"
+];
+
 // === 摰??挾 ===
 self.addEventListener('install', (e) => {
   // ? 1嚗歲??敺?撘瑕???啁?
@@ -289,7 +305,7 @@ self.addEventListener('install', (e) => {
       console.log('????敹怠?瑼?...');
       // ?脣?撖急?嚗雿踵???獢銝嚗?銝?銝剜?嗡?瑼???頛?
       return Promise.all(
-        urlsToCache.map(url => { // ?? ?ㄐ銋???? urlsToCache
+        coreUrlsToCache.map(url => { // ?? ?ㄐ銋???? urlsToCache
           return cache.add(url).catch(err => {
             console.error('?? ?瑼??曆??堆?隢炎??GitHub 瑼?嚗?, url);
           });
