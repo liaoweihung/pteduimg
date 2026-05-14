@@ -455,6 +455,18 @@
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/Champix.html",
     "twitter_card": "summary_large_image"
   },
+  "cards/yunnan_baiyao.html": {
+    "page_title": "雲南白藥｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「雲南白藥」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
+    "h1": "雲南白藥",
+    "image_alt": "雲南白藥圖卡",
+    "og_title": "雲南白藥｜藥局衛教助手",
+    "og_description": "這張圖卡整理「雲南白藥」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/yunnan_baiyao.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/yunnan_baiyao.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/yunnan_baiyao.html",
+    "twitter_card": "summary_large_image"
+  },
   "cards/Osteo_tooth_01.html": {
     "page_title": "骨鬆藥與拔牙｜藥局衛教助手",
     "meta_description": "這張圖卡整理「骨鬆藥與拔牙」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",

@@ -96,6 +96,16 @@
       "img/Champix.webp"
     ]
   },
+  "Yunnan_Baiyao": {
+    "title": "雲南白藥",
+    "category": "pharmacist_product",
+    "order": 16,
+    "hidden": false,
+    "icon": "💊",
+    "steps": [
+      "img/yunnan_baiyao.webp"
+    ]
+  },
   "Osteo_tooth": {
     "title": "骨鬆藥與拔牙",
     "category": "pharmacist_general",
