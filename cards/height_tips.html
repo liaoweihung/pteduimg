@@ -287,6 +287,41 @@
       color:var(--muted);
       font-size:.86rem;
     }
+    .info-header {
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      margin:0 0 10px;
+    }
+    .info-title {
+      min-width:0;
+    }
+    .info-header .meta {
+      margin:0;
+    }
+    .calculator-link {
+      flex:0 0 auto;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:34px;
+      border:1px solid var(--line);
+      border-radius:8px;
+      background:#fff;
+      color:var(--brand);
+      font-size:.9rem;
+      font-weight:700;
+      text-decoration:none;
+      padding:7px 12px;
+      box-shadow:0 1px 5px rgba(15,23,42,.06);
+      white-space:nowrap;
+    }
+    .calculator-link:hover,
+    .calculator-link:focus-visible {
+      border-color:rgba(0,123,131,.35);
+      background:rgba(0,123,131,.06);
+    }
     .share-row {
       display:flex;
       gap:8px;
@@ -425,8 +460,13 @@
       <a class="page-arrow" href="../cards/height_prediction.html" aria-label="下一張">›</a>
     </nav>
     <section class="info">
-      <h1>小孩身高體重</h1>
-      <p class="meta">民眾疾病衛教 · 6/6</p>
+      <div class="info-header">
+        <div class="info-title">
+          <h1>小孩身高體重</h1>
+          <p class="meta">民眾疾病衛教 · 6/6</p>
+        </div>
+        <a class="calculator-link" href="../growth-calculator.html">直接計算</a>
+      </div>
       <div class="section-title">同系列圖卡</div>
       <div class="related-grid">
         

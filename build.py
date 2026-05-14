@@ -216,6 +216,55 @@ def render_card_page(card_id, card, step, step_index, seo):
     next_step = steps[(step_index + 1) % total] if total > 1 else step
     prev_url = f"../{page_for_image(prev_step)}"
     next_url = f"../{page_for_image(next_step)}"
+    calculator_styles = ""
+    info_heading = (
+        f"      <h1>{esc(h1)}</h1>\n"
+        f"      <p class=\"meta\">{esc(category_label)} · {step_number}/{total}</p>"
+    )
+    if card_id == "child_height_weight":
+        calculator_styles = """    .info-header {
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      margin:0 0 10px;
+    }
+    .info-title {
+      min-width:0;
+    }
+    .info-header .meta {
+      margin:0;
+    }
+    .calculator-link {
+      flex:0 0 auto;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:34px;
+      border:1px solid var(--line);
+      border-radius:8px;
+      background:#fff;
+      color:var(--brand);
+      font-size:.9rem;
+      font-weight:700;
+      text-decoration:none;
+      padding:7px 12px;
+      box-shadow:0 1px 5px rgba(15,23,42,.06);
+      white-space:nowrap;
+    }
+    .calculator-link:hover,
+    .calculator-link:focus-visible {
+      border-color:rgba(0,123,131,.35);
+      background:rgba(0,123,131,.06);
+    }
+"""
+        info_heading = f"""      <div class="info-header">
+        <div class="info-title">
+          <h1>{esc(h1)}</h1>
+          <p class="meta">{esc(category_label)} · {step_number}/{total}</p>
+        </div>
+        <a class="calculator-link" href="../growth-calculator.html">直接計算</a>
+      </div>"""
 
     return f"""<!DOCTYPE html>
 <html lang="zh-TW">
@@ -506,7 +555,7 @@ def render_card_page(card_id, card, step, step_index, seo):
       color:var(--muted);
       font-size:.86rem;
     }}
-    .share-row {{
+{calculator_styles}    .share-row {{
       display:flex;
       gap:8px;
       overflow-x:auto;
@@ -644,8 +693,7 @@ def render_card_page(card_id, card, step, step_index, seo):
       <a class="page-arrow" href="{esc(next_url)}" aria-label="下一張">›</a>
     </nav>
     <section class="info">
-      <h1>{esc(h1)}</h1>
-      <p class="meta">{esc(category_label)} · {step_number}/{total}</p>
+{info_heading}
       <div class="section-title">同系列圖卡</div>
       <div class="related-grid">
         {related_cards}
