@@ -248,6 +248,7 @@
 
     const PAGE_TYPE = 'pharmacist';
 
+    const EDUCATION_DATA_CACHE_KEY = 'pteduimg:cardsData:v1';
     const MAIN_ORDER_STORAGE_KEY = `mainCardOrder:${PAGE_TYPE}`;
 
     const pageMeta = {
@@ -293,18 +294,32 @@
     document.getElementById(meta.navId)?.classList.add('active');
 }
 
+    function loadCachedEducationData() {
+        try {
+            const cached = JSON.parse(localStorage.getItem(EDUCATION_DATA_CACHE_KEY) || 'null');
+            if (cached && typeof cached === 'object') {
+                educationData = cached;
+                return true;
+            }
+        } catch (err) {}
+        return false;
+    }
+
     async function loadEducationData() {
         try {
             const response = await fetch('./cards.json');
             if (!response.ok) throw new Error('cards.json not found');
             educationData = await response.json();
+            localStorage.setItem(EDUCATION_DATA_CACHE_KEY, JSON.stringify(educationData));
         } catch (err) {
             console.error('無法讀取 cards.json：', err);
-            document.getElementById('category-sections').innerHTML = `
-                <div style="padding:20px; color:#c0392b; line-height:1.6;">
-                    找不到圖卡資料 cards.json。請先執行 <b>python build.py</b>，或確認 GitHub Actions 已完成自動建置。
-                </div>`;
-            educationData = {};
+            if (!Object.keys(educationData).length) {
+                document.getElementById('category-sections').innerHTML = `
+                    <div style="padding:20px; color:#c0392b; line-height:1.6;">
+                        找不到圖卡資料 cards.json。請先執行 <b>python build.py</b>，或確認 GitHub Actions 已完成自動建置。
+                    </div>`;
+                educationData = {};
+            }
         }
     }
 
@@ -965,7 +980,17 @@ function updateContent() {
         pointY = 0;
         applyTransform();
     }
-    window.onload = () => { setupPageHeader(); loadEducationData().then(renderHome); };
+    function initPage() {
+        setupPageHeader();
+        if (loadCachedEducationData()) renderHome();
+        loadEducationData().then(renderHome);
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initPage);
+    } else {
+        initPage();
+    }
 
 // 👇 請把這段喚醒大腦的程式碼貼在這裡 👇
   if ('serviceWorker' in navigator) {
