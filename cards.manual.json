@@ -96,26 +96,6 @@
       "img/Champix.webp"
     ]
   },
-  "Yunnan_Baiyao": {
-    "title": "雲南白藥",
-    "category": "pharmacist_product",
-    "order": 16,
-    "hidden": false,
-    "icon": "💊",
-    "steps": [
-      "img/yunnan_baiyao.webp"
-    ]
-  },
-  "Kwangdong_Mu_Yao_Fen": {
-    "title": "廣東苜藥粉",
-    "category": "pharmacist_product",
-    "order": 17,
-    "hidden": false,
-    "icon": "💊",
-    "steps": [
-      "img/kwangdong_mu_yao_fen.webp"
-    ]
-  },
   "Osteo_tooth": {
     "title": "骨鬆藥與拔牙",
     "category": "pharmacist_general",
@@ -147,6 +127,17 @@
     "order": 10,
     "hidden": false,
     "icon": "🤕"
+  },
+  "common_trauma_tcm": {
+    "title": "常用外傷用中成藥",
+    "category": "public_education",
+    "order": 11,
+    "hidden": false,
+    "icon": "🌿",
+    "steps": [
+      "img/kwangdong_mu_yao_fen.webp",
+      "img/yunnan_baiyao.webp"
+    ]
   },
   "ZithromaxPOS": {
     "title": "日舒泡製",

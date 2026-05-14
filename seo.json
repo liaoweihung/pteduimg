@@ -431,6 +431,30 @@
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/wound_4_soln.html",
     "twitter_card": "summary_large_image"
   },
+  "cards/kwangdong_mu_yao_fen.html": {
+    "page_title": "常用外傷用中成藥｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「常用外傷用中成藥」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
+    "h1": "常用外傷用中成藥：第 1 張圖卡",
+    "image_alt": "常用外傷用中成藥第 1 張圖卡",
+    "og_title": "常用外傷用中成藥｜藥局衛教助手",
+    "og_description": "這張圖卡整理「常用外傷用中成藥」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/kwangdong_mu_yao_fen.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/kwangdong_mu_yao_fen.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/kwangdong_mu_yao_fen.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/yunnan_baiyao.html": {
+    "page_title": "常用外傷用中成藥｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「常用外傷用中成藥」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
+    "h1": "常用外傷用中成藥：第 2 張圖卡",
+    "image_alt": "常用外傷用中成藥第 2 張圖卡",
+    "og_title": "常用外傷用中成藥｜藥局衛教助手",
+    "og_description": "這張圖卡整理「常用外傷用中成藥」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/yunnan_baiyao.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/yunnan_baiyao.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/yunnan_baiyao.html",
+    "twitter_card": "summary_large_image"
+  },
   "cards/AugmentinSyrup.html": {
     "page_title": "安滅菌糖漿泡製｜藥局衛教助手",
     "meta_description": "這張圖卡整理「安滅菌糖漿泡製」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
@@ -453,30 +477,6 @@
     "og_image": "https://liaoweihung.github.io/pteduimg/img/Champix.webp",
     "og_url": "https://liaoweihung.github.io/pteduimg/cards/Champix.html",
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/Champix.html",
-    "twitter_card": "summary_large_image"
-  },
-  "cards/yunnan_baiyao.html": {
-    "page_title": "雲南白藥｜藥局衛教助手",
-    "meta_description": "這張圖卡整理「雲南白藥」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
-    "h1": "雲南白藥",
-    "image_alt": "雲南白藥圖卡",
-    "og_title": "雲南白藥｜藥局衛教助手",
-    "og_description": "這張圖卡整理「雲南白藥」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
-    "og_image": "https://liaoweihung.github.io/pteduimg/img/yunnan_baiyao.webp",
-    "og_url": "https://liaoweihung.github.io/pteduimg/cards/yunnan_baiyao.html",
-    "canonical": "https://liaoweihung.github.io/pteduimg/cards/yunnan_baiyao.html",
-    "twitter_card": "summary_large_image"
-  },
-  "cards/kwangdong_mu_yao_fen.html": {
-    "page_title": "廣東苜藥粉｜藥局衛教助手",
-    "meta_description": "這張圖卡整理「廣東苜藥粉」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
-    "h1": "廣東苜藥粉",
-    "image_alt": "廣東苜藥粉圖卡",
-    "og_title": "廣東苜藥粉｜藥局衛教助手",
-    "og_description": "這張圖卡整理「廣東苜藥粉」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
-    "og_image": "https://liaoweihung.github.io/pteduimg/img/kwangdong_mu_yao_fen.webp",
-    "og_url": "https://liaoweihung.github.io/pteduimg/cards/kwangdong_mu_yao_fen.html",
-    "canonical": "https://liaoweihung.github.io/pteduimg/cards/kwangdong_mu_yao_fen.html",
     "twitter_card": "summary_large_image"
   },
   "cards/Osteo_tooth_01.html": {
