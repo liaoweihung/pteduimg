@@ -232,6 +232,35 @@ body.growth-page[data-sex="girls"] .sex-option input:checked + span {
     cursor: not-allowed;
 }
 
+.prediction-result {
+    margin-top: 14px;
+    border-radius: 12px;
+    background: #f1fbf7;
+    padding: 14px;
+}
+
+.prediction-result strong {
+    display: block;
+    color: #164937;
+    font-size: 1.25rem;
+    line-height: 1.35;
+}
+
+.prediction-result p {
+    margin: 8px 0 0;
+    color: #5d6d7e;
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+body.growth-page[data-sex="boys"] .prediction-result {
+    background: #eef7ff;
+}
+
+body.growth-page[data-sex="girls"] .prediction-result {
+    background: #fff0f6;
+}
+
 .secondary-action {
     width: 100%;
     min-height: 44px;
@@ -467,6 +496,10 @@ body.growth-page[data-sex="girls"] .sex-option input:checked + span {
 
     .field-grid {
         grid-template-columns: 1.25fr 1fr 1fr;
+    }
+
+    .parent-height-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
     .form-card,
