@@ -1,5 +1,6 @@
 ﻿// ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202605141827';
+const CACHE_NAME = 'pwa-cache-v202605141913';
+const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
 const urlsToCache = [
@@ -329,7 +330,7 @@ self.addEventListener('activate', (e) => {
       return Promise.all(
         cacheNames.map(cacheName => {
           // 憒?敹怠??迂頝??啁?銝?璅??撠勗?方???
-          if (cacheName !== CACHE_NAME) {
+          if (cacheName !== CACHE_NAME && cacheName !== RUNTIME_CACHE) {
             console.log('?完 ?芷?翰??', cacheName);
             return caches.delete(cacheName);
           }
@@ -342,6 +343,8 @@ self.addEventListener('activate', (e) => {
 // === ?隢??挾 ===
 self.addEventListener('fetch', (e) => {
   const request = e.request;
+  if (request.method !== 'GET') return;
+
   const url = new URL(request.url);
   const isFreshAsset = request.mode === 'navigate' || /\.(html|css|js|json)$/i.test(url.pathname);
 
@@ -351,7 +354,7 @@ self.addEventListener('fetch', (e) => {
         const networkUpdate = fetch(request).then(response => {
           if (response && response.ok) {
             const copy = response.clone();
-            caches.open(CACHE_NAME).then(cache => cache.put(request, copy));
+            caches.open(RUNTIME_CACHE).then(cache => cache.put(request, copy));
           }
           return response;
         }).catch(() => caches.match(request));
@@ -363,6 +366,16 @@ self.addEventListener('fetch', (e) => {
   }
 
   e.respondWith(
-    caches.match(request).then(res => res || fetch(request))
+    caches.match(request).then(cachedResponse => {
+      if (cachedResponse) return cachedResponse;
+
+      return fetch(request).then(response => {
+        if (response && response.ok) {
+          const copy = response.clone();
+          caches.open(RUNTIME_CACHE).then(cache => cache.put(request, copy));
+        }
+        return response;
+      }).catch(() => caches.match(request));
+    })
   );
 });

@@ -360,6 +360,11 @@ def render_card_page(card_id, card, step, step_index, seo):
       }}
     }}
     document.addEventListener('DOMContentLoaded', setFavoriteButtonState);
+    if ('serviceWorker' in navigator) {{
+      window.addEventListener('load', function() {{
+        navigator.serviceWorker.register('../sw.js').catch(function() {{}});
+      }});
+    }}
   </script>
   <style>
     :root {{ --ink:#263238; --muted:#64748b; --line:#e5e7eb; --brand:#007b83; }}
