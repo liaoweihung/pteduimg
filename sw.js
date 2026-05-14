@@ -1,5 +1,5 @@
 ﻿// ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202605141119';
+const CACHE_NAME = 'pwa-cache-v202605140321';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
 const urlsToCache = [
@@ -130,8 +130,8 @@ const urlsToCache = [
   "./img/vag_oint_4.png",
   "./img/vag_oint_5.png",
   "./img/vag_oint_6.png",
-  "./img/wound_oint.webp",
   "./img/wound_4_soln.webp",
+  "./img/wound_oint.webp",
   "./cards/height_prediction.html",
   "./cards/boy_height2.html",
   "./cards/girl_height2.html",
@@ -167,6 +167,7 @@ const urlsToCache = [
   "./cards/prevent_scar.html",
   "./cards/slipped_fall_wound.html",
   "./cards/wound_oint.html",
+  "./cards/wound_4_soln.html",
   "./cards/AugmentinSyrup.html",
   "./cards/Champix.html",
   "./cards/Osteo_tooth_01.html",
