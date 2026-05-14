@@ -65,7 +65,7 @@ def step_topic(card_id, card, step, step_index):
     step_text = clean_seo_text(texts[step_index] if step_index < len(texts) else "")
     image_name = Path(step).stem.replace("_", " ").replace("-", " ")
 
-    if step_text and 4 <= len(step_text) <= 24:
+    if step_text and 2 <= len(step_text) <= 24:
         return step_text
     if series_title:
         return series_title
@@ -103,7 +103,7 @@ def fallback_seo_for_card(card_id, card, step, step_index):
     page_url = abs_url(page_path)
     image_url = abs_url(step)
 
-    title_topic = series_title or topic or "衛教圖卡"
+    title_topic = topic or series_title or "衛教圖卡"
     title = f"{title_topic}｜{SITE_TITLE}"
     h1 = title_topic if total <= 1 else f"{title_topic}：第 {step_number} 張圖卡"
     description = seo_description(topic, series_title, category_label)
