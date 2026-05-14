@@ -203,6 +203,7 @@ def render_card_page(card_id, card, step, step_index, seo):
     category_label = CATEGORY_LABELS.get(category, category)
     default_return_page = "../public.html" if category == "public_education" else "../index.html"
     title = seo["page_title"]
+    tracking_title = seo.get("tracking_title") or title
     description = seo["meta_description"]
     h1 = seo["h1"]
     image_alt = seo["image_alt"]
@@ -242,7 +243,7 @@ def render_card_page(card_id, card, step, step_index, seo):
     function gtag(){{dataLayer.push(arguments);}}
     gtag('js', new Date());
     gtag('config', '{GA_MEASUREMENT_ID}', {{
-      page_title: {json.dumps(title, ensure_ascii=False)},
+      page_title: {json.dumps(tracking_title, ensure_ascii=False)},
       page_path: '/pteduimg/{page_path}'
     }});
     (function() {{

@@ -757,15 +757,16 @@
   },
   "cards/oneFTU.html": {
     "page_title": "藥膏的使用｜藥局衛教助手",
-    "meta_description": "這張圖卡整理「藥膏的使用」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
+    "meta_description": "這張圖卡整理「藥膏的使用」藥膏要塗多少 重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
     "h1": "藥膏的使用：第 1 張圖卡",
     "image_alt": "藥膏的使用第 1 張圖卡",
     "og_title": "藥膏的使用｜藥局衛教助手",
-    "og_description": "這張圖卡整理「藥膏的使用」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
+    "og_description": "這張圖卡整理「藥膏的使用」藥膏要塗多少 重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
     "og_image": "https://liaoweihung.github.io/pteduimg/img/oneFTU.webp",
     "og_url": "https://liaoweihung.github.io/pteduimg/cards/oneFTU.html",
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/oneFTU.html",
-    "twitter_card": "summary_large_image"
+    "twitter_card": "summary_large_image",
+    "tracking_title": "藥膏的使用 藥膏要塗多少｜藥局衛教助手"
   },
   "cards/thin_skin_part.html": {
     "page_title": "藥膏的使用｜藥局衛教助手",
