@@ -134,6 +134,27 @@ For card pages, verify:
 - Share uses the `/cards/xxx.html` URL.
 - Favorite uses the existing `favImages` localStorage format.
 
+## Regression Check
+
+After changing homepage behavior, card page layout, service worker caching,
+analytics, generated card pages, or `build.py`, run:
+
+```bash
+python scripts/check_site.py
+```
+
+This checks key site invariants, including:
+
+- `cards.json` and `cards.manual.json` are valid JSON.
+- Referenced images and generated `cards/*.html` pages exist.
+- Homepage viewer keeps both transparent side-tap navigation and visible bottom navigation buttons.
+- Homepage card data loading does not bypass cache.
+- Static card pages register the service worker.
+- Static card pages keep side navigation and bottom page navigation.
+- Static card page titles do not include redundant step-number suffixes.
+- Local/private-network previews do not load GA unconditionally.
+- `sw.js` keeps the stable runtime cache for previously viewed pages/images.
+
 ## Git / Publishing
 
 The user often publishes with GitHub Desktop.
