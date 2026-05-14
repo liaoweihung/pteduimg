@@ -100,32 +100,32 @@
     "icon": "🤕",
     "tags": [
       "傷口",
-      "疤痕",
-      "人工皮",
-      "凡士林紗布",
-      "傷口藥膏",
-      "跌倒擦傷",
-      "四色藥水",
+      "抗菌藥膏",
       "紅藥水",
-      "紫藥水",
+      "白藥水",
       "黃藥水",
-      "白藥水"
+      "紫藥水",
+      "紗布",
+      "OK繃",
+      "人工皮",
+      "石蠟紗布",
+      "疤痕"
     ],
     "texts": [
-      "人工皮與凡士林紗布",
-      "傷口敷料與藥膏選擇",
-      "預防疤痕",
-      "跌倒擦傷傷口照護",
-      "傷口外用藥膏",
-      "傳統四色藥水與傷口護理"
+      "跌倒傷口正確處理原則",
+      "傷口的藥膏怎麼選",
+      "認識傳統四色藥水(紅藥水、紫藥水、黃藥水、白藥水)",
+      "OK繃、紗布、開放傷口的差異",
+      "人工皮與石蠟紗布的不同",
+      "避免傷口留疤痕的原則"
     ],
     "steps": [
-      "img/artficial_vs_paraffin.webp",
-      "img/oint_choose.webp",
-      "img/prevent_scar.webp",
       "img/slipped_fall_wound.webp",
       "img/wound_oint.webp",
-      "img/wound_4_soln.webp"
+      "img/wound_4_soln.webp",
+      "img/oint_choose.webp",
+      "img/artficial_vs_paraffin.webp",
+      "img/prevent_scar.webp"
     ]
   },
   "common_trauma_tcm": {
