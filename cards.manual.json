@@ -186,6 +186,30 @@
       "img/qili_san.webp"
     ]
   },
+  "chinese_powder_prep": {
+    "title": "中藥散劑怎麼調",
+    "category": "public_education",
+    "order": 12,
+    "hidden": false,
+    "icon": "🥣",
+    "tags": [
+      "中藥散劑怎麼調",
+      "中藥散劑",
+      "散劑調配"
+    ],
+    "texts": [
+      "中藥散劑怎麼調",
+      "中藥散劑怎麼調",
+      "中藥散劑怎麼調",
+      "中藥散劑怎麼調"
+    ],
+    "steps": [
+      "img/paste_prep_1.webp",
+      "img/paste_prep_2.webp",
+      "img/paste_prep_3.webp",
+      "img/paste_prep_4.webp"
+    ]
+  },
   "ZithromaxPOS": {
     "title": "日舒泡製",
     "category": "pharmacist_product",
