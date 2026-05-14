@@ -113,9 +113,35 @@
     "order": 11,
     "hidden": false,
     "icon": "🌿",
+    "tags": [
+      "廣東苜藥粉",
+      "雲南白藥",
+      "紫雲膏",
+      "正骨水",
+      "金瘡膏",
+      "如意金黃散",
+      "金黃散",
+      "黃金散",
+      "七釐散",
+      "七厘散"
+    ],
+    "texts": [
+      "廣東苜藥粉",
+      "雲南白藥",
+      "紫雲膏",
+      "正骨水",
+      "金瘡膏",
+      "如意金黃散",
+      "七釐散"
+    ],
     "steps": [
       "img/kwangdong_mu_yao_fen.webp",
-      "img/yunnan_baiyao.webp"
+      "img/yunnan_baiyao.webp",
+      "img/zi_yun_gao.webp",
+      "img/zheng_gu_shui.webp",
+      "img/jinchuang_ointment.webp",
+      "img/jin_huang_san.webp",
+      "img/qili_san.webp"
     ]
   },
   "Ped_susp": {

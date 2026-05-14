@@ -1,5 +1,5 @@
 ﻿// ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202605141327';
+const CACHE_NAME = 'pwa-cache-v202605141449';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
 const urlsToCache = [
@@ -84,6 +84,8 @@ const urlsToCache = [
   "./img/hem_oint_6.png",
   "./img/hemorr_sitbath_1.png",
   "./img/hemorr_sitbath_2.png",
+  "./img/jin_huang_san.webp",
+  "./img/jinchuang_ointment.webp",
   "./img/kwangdong_mu_yao_fen.webp",
   "./img/lan_1.webp",
   "./img/lan_2.webp",
@@ -108,6 +110,7 @@ const urlsToCache = [
   "./img/over_one_oint_03.webp",
   "./img/over_one_oint_04.webp",
   "./img/prevent_scar.webp",
+  "./img/qili_san.webp",
   "./img/rec_1.png",
   "./img/rec_2.png",
   "./img/rec_3.png",
@@ -134,6 +137,8 @@ const urlsToCache = [
   "./img/wound_4_soln.webp",
   "./img/wound_oint.webp",
   "./img/yunnan_baiyao.webp",
+  "./img/zheng_gu_shui.webp",
+  "./img/zi_yun_gao.webp",
   "./cards/height_prediction.html",
   "./cards/boy_height2.html",
   "./cards/girl_height2.html",
@@ -172,6 +177,11 @@ const urlsToCache = [
   "./cards/wound_4_soln.html",
   "./cards/kwangdong_mu_yao_fen.html",
   "./cards/yunnan_baiyao.html",
+  "./cards/zi_yun_gao.html",
+  "./cards/zheng_gu_shui.html",
+  "./cards/jinchuang_ointment.html",
+  "./cards/jin_huang_san.html",
+  "./cards/qili_san.html",
   "./cards/AugmentinSyrup.html",
   "./cards/Champix.html",
   "./cards/Osteo_tooth_01.html",
