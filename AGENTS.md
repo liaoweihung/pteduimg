@@ -7,6 +7,7 @@ This repository is a static GitHub Pages site for pharmacy/public education imag
 - `cards.json` is the main runtime data source.
 - `cards.manual.json` is a human-maintained companion source. When adding a new card or changing card metadata, keep both files in sync unless the user explicitly says otherwise.
 - Card image paths live under each card's `steps` array.
+- Card series should include useful search keywords or tags when available. If the user asks to add a new card/card series and does not provide keywords or tags, ask what search keywords or labels they want to use before finalizing the metadata.
 - Public education cards use:
   - `category`: `public_education`
   - public page: `public.html`
