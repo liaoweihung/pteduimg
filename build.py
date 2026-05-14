@@ -105,7 +105,7 @@ def fallback_seo_for_card(card_id, card, step, step_index):
 
     title_topic = topic or series_title or "衛教圖卡"
     title = f"{title_topic}｜{SITE_TITLE}"
-    h1 = title_topic if total <= 1 else f"{title_topic}：第 {step_number} 張圖卡"
+    h1 = title_topic
     description = seo_description(topic, series_title, category_label)
     alt = f"{title_topic}圖卡" if total <= 1 else f"{title_topic}第 {step_number} 張圖卡"
 
@@ -205,7 +205,7 @@ def render_card_page(card_id, card, step, step_index, seo):
     title = seo["page_title"]
     tracking_title = seo.get("tracking_title") or title
     description = seo["meta_description"]
-    h1 = seo["h1"]
+    h1 = clean_seo_text(card.get("title") or seo["h1"])
     image_alt = seo["image_alt"]
     page_path = page_for_image(step)
     page_url = seo["canonical"]
@@ -372,7 +372,7 @@ def render_card_page(card_id, card, step, step_index, seo):
       line-height:1.45;
     }}
     .image-stage {{
-      min-height:calc(100svh - 48px);
+      min-height:calc(100svh - 104px);
       display:grid;
       place-items:center;
       padding:8px;
@@ -382,7 +382,7 @@ def render_card_page(card_id, card, step, step_index, seo):
     .hero-img {{
       display:block;
       max-width:100%;
-      max-height:calc(100svh - 64px);
+      max-height:calc(100svh - 120px);
       width:auto;
       height:auto;
       object-fit:contain;
@@ -443,29 +443,35 @@ def render_card_page(card_id, card, step, step_index, seo):
       line-height:1;
     }}
     .page-nav {{
-      position:absolute;
-      left:8px;
-      right:8px;
-      top:50%;
-      transform:translateY(-50%);
+      min-height:56px;
+      padding:8px 12px 12px;
       display:flex;
-      justify-content:space-between;
-      pointer-events:none;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      border-top:1px solid rgba(229,231,235,.7);
+      background:#fff;
     }}
     .page-arrow {{
-      pointer-events:auto;
       display:grid;
       place-items:center;
-      width:38px;
-      height:52px;
-      border:1px solid rgba(229,231,235,.9);
-      border-radius:8px;
-      background:rgba(255,255,255,.82);
+      width:44px;
+      height:44px;
+      border:1px solid var(--line);
+      border-radius:50%;
+      background:#fff;
       color:var(--ink);
       text-decoration:none;
-      font-size:1.75rem;
+      font-size:1.65rem;
       line-height:1;
-      backdrop-filter:blur(8px);
+      box-shadow:0 1px 5px rgba(15,23,42,.06);
+    }}
+    .page-count {{
+      color:var(--muted);
+      font-size:.9rem;
+      font-weight:700;
+      min-width:64px;
+      text-align:center;
     }}
     .info {{
       width:min(100%,880px);
@@ -592,10 +598,9 @@ def render_card_page(card_id, card, step, step_index, seo):
       color:var(--brand);
     }}
     @media (min-width:680px) {{
-      .image-stage {{ min-height:calc(100svh - 52px); padding:16px; }}
-      .hero-img {{ max-height:calc(100svh - 84px); }}
-      .page-nav {{ left:18px; right:18px; }}
-      .page-arrow {{ width:44px; height:58px; }}
+      .image-stage {{ min-height:calc(100svh - 112px); padding:16px; }}
+      .hero-img {{ max-height:calc(100svh - 136px); }}
+      .page-arrow {{ width:46px; height:46px; }}
       .info {{ padding:14px 16px 36px; }}
       .related-grid {{ grid-template-columns:repeat(8,minmax(0,1fr)); }}
     }}
@@ -612,12 +617,13 @@ def render_card_page(card_id, card, step, step_index, seo):
       </div>
     </div>
     <section class="image-stage" aria-label="{esc(title)}">
-      <nav class="page-nav" aria-label="同系列翻頁">
-        <a class="page-arrow" href="{esc(prev_url)}" aria-label="上一張">‹</a>
-        <a class="page-arrow" href="{esc(next_url)}" aria-label="下一張">›</a>
-      </nav>
       <img class="hero-img" src="../{esc(step)}" alt="{esc(image_alt)}" decoding="async">
     </section>
+    <nav class="page-nav" aria-label="同系列翻頁">
+      <a class="page-arrow" href="{esc(prev_url)}" aria-label="上一張">‹</a>
+      <span class="page-count">{step_number}/{total}</span>
+      <a class="page-arrow" href="{esc(next_url)}" aria-label="下一張">›</a>
+    </nav>
     <section class="info">
       <h1>{esc(h1)}</h1>
       <p class="meta">{esc(category_label)} · {step_number}/{total}</p>

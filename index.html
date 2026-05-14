@@ -234,11 +234,12 @@
 
     <div class="image-viewport" id="touch-zone">
         <img id="main-img" class="main-img" src="" alt="教學圖">
-        
-        <div class="nav-btn left-btn" onclick="changeStep(-1)">❮</div>
-        <div class="nav-btn right-btn" onclick="changeStep(1)">❯</div>
     </div>
-    <div class="footer-minimal" id="v-steps"></div>
+    <div class="footer-minimal">
+        <button class="nav-btn left-btn" type="button" onclick="changeStep(-1)" aria-label="上一張">❮</button>
+        <div class="step-dots" id="v-steps"></div>
+        <button class="nav-btn right-btn" type="button" onclick="changeStep(1)" aria-label="下一張">❯</button>
+    </div>
     <div id="v-desc" class="step-desc"></div>
 </div>
 
