@@ -18,15 +18,41 @@
   <meta name="twitter:description" content="這張圖卡整理「濕敷療法」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。">
   <meta name="twitter:image" content="https://liaoweihung.github.io/pteduimg/img/Wet_Wrap.webp">
   <script src="../qrious.min.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T5R33JYTC0"></script>
   <script>
+    var GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
+    var urlParams = new URLSearchParams(window.location.search);
+    var host = window.location.hostname;
+    var isPrivateNetworkHost = ['localhost', '127.0.0.1', '::1'].indexOf(host) !== -1
+      || /^192\.168\./.test(host)
+      || /^10\./.test(host)
+      || /^172\.(1[6-9]|2\d|3[0-1])\./.test(host);
+    var isLocalPreview = isPrivateNetworkHost || window.location.protocol === 'file:';
+
+    if (urlParams.get('dev') === '1') {
+      localStorage.setItem('isDeveloper', 'true');
+    }
+    if (urlParams.get('dev') === '0') {
+      localStorage.removeItem('isDeveloper');
+    }
+
+    window.isAnalyticsDisabled = isLocalPreview || localStorage.getItem('isDeveloper') === 'true';
+    window['ga-disable-' + GA_MEASUREMENT_ID] = window.isAnalyticsDisabled;
+    function shouldTrackAnalytics() {
+      return !window.isAnalyticsDisabled && typeof gtag === 'function';
+    }
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-T5R33JYTC0', {
-      page_title: "濕敷療法｜藥局衛教助手",
-      page_path: '/pteduimg/cards/Wet_Wrap.html'
-    });
+    if (!window.isAnalyticsDisabled) {
+      var gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
+      document.head.appendChild(gaScript);
+      gtag('js', new Date());
+      gtag('config', GA_MEASUREMENT_ID, {
+        page_title: "濕敷療法｜藥局衛教助手",
+        page_path: '/pteduimg/cards/Wet_Wrap.html'
+      });
+    }
     (function() {
       try {
         var defaultReturnPage = "../public.html";
@@ -70,7 +96,7 @@
       else favorites.splice(index, 1);
       localStorage.setItem('favImages', JSON.stringify(favorites));
       setFavoriteButtonState();
-      if (typeof gtag === 'function') {
+      if (shouldTrackAnalytics()) {
         gtag('event', index === -1 ? 'add_favorite_card' : 'remove_favorite_card', {
           card_title: cardTitle,
           step_number: 1
@@ -83,7 +109,7 @@
       if (!modal || !canvas || typeof QRious !== 'function') return;
       new QRious({ element: canvas, value: cardShareUrl, size: 220 });
       modal.hidden = false;
-      if (typeof gtag === 'function') {
+      if (shouldTrackAnalytics()) {
         gtag('event', 'show_qr_code', {
           card_title: cardTitle,
           step_number: 1
@@ -106,7 +132,7 @@
       navigator.clipboard.writeText(cardShareUrl).then(function() {
         alert('已複製圖卡連結');
       });
-      if (typeof gtag === 'function') {
+      if (shouldTrackAnalytics()) {
         gtag('event', 'share_instruction_card', {
           method: 'copy',
           card_title: cardTitle,

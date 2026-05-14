@@ -237,15 +237,41 @@ def render_card_page(card_id, card, step, step_index, seo):
   <meta name="twitter:description" content="{esc(seo['og_description'])}">
   <meta name="twitter:image" content="{esc(image_url)}">
   <script src="../qrious.min.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>
   <script>
+    var GA_MEASUREMENT_ID = '{GA_MEASUREMENT_ID}';
+    var urlParams = new URLSearchParams(window.location.search);
+    var host = window.location.hostname;
+    var isPrivateNetworkHost = ['localhost', '127.0.0.1', '::1'].indexOf(host) !== -1
+      || /^192\\.168\\./.test(host)
+      || /^10\\./.test(host)
+      || /^172\\.(1[6-9]|2\\d|3[0-1])\\./.test(host);
+    var isLocalPreview = isPrivateNetworkHost || window.location.protocol === 'file:';
+
+    if (urlParams.get('dev') === '1') {{
+      localStorage.setItem('isDeveloper', 'true');
+    }}
+    if (urlParams.get('dev') === '0') {{
+      localStorage.removeItem('isDeveloper');
+    }}
+
+    window.isAnalyticsDisabled = isLocalPreview || localStorage.getItem('isDeveloper') === 'true';
+    window['ga-disable-' + GA_MEASUREMENT_ID] = window.isAnalyticsDisabled;
+    function shouldTrackAnalytics() {{
+      return !window.isAnalyticsDisabled && typeof gtag === 'function';
+    }}
     window.dataLayer = window.dataLayer || [];
     function gtag(){{dataLayer.push(arguments);}}
-    gtag('js', new Date());
-    gtag('config', '{GA_MEASUREMENT_ID}', {{
-      page_title: {json.dumps(tracking_title, ensure_ascii=False)},
-      page_path: '/pteduimg/{page_path}'
-    }});
+    if (!window.isAnalyticsDisabled) {{
+      var gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
+      document.head.appendChild(gaScript);
+      gtag('js', new Date());
+      gtag('config', GA_MEASUREMENT_ID, {{
+        page_title: {json.dumps(tracking_title, ensure_ascii=False)},
+        page_path: '/pteduimg/{page_path}'
+      }});
+    }}
     (function() {{
       try {{
         var defaultReturnPage = {json.dumps(default_return_page)};
@@ -289,7 +315,7 @@ def render_card_page(card_id, card, step, step_index, seo):
       else favorites.splice(index, 1);
       localStorage.setItem('favImages', JSON.stringify(favorites));
       setFavoriteButtonState();
-      if (typeof gtag === 'function') {{
+      if (shouldTrackAnalytics()) {{
         gtag('event', index === -1 ? 'add_favorite_card' : 'remove_favorite_card', {{
           card_title: cardTitle,
           step_number: {step_number}
@@ -302,7 +328,7 @@ def render_card_page(card_id, card, step, step_index, seo):
       if (!modal || !canvas || typeof QRious !== 'function') return;
       new QRious({{ element: canvas, value: cardShareUrl, size: 220 }});
       modal.hidden = false;
-      if (typeof gtag === 'function') {{
+      if (shouldTrackAnalytics()) {{
         gtag('event', 'show_qr_code', {{
           card_title: cardTitle,
           step_number: {step_number}
@@ -325,7 +351,7 @@ def render_card_page(card_id, card, step, step_index, seo):
       navigator.clipboard.writeText(cardShareUrl).then(function() {{
         alert('已複製圖卡連結');
       }});
-      if (typeof gtag === 'function') {{
+      if (shouldTrackAnalytics()) {{
         gtag('event', 'share_instruction_card', {{
           method: 'copy',
           card_title: cardTitle,
