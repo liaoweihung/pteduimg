@@ -393,6 +393,18 @@ def render_card_page(card_id, card, step, step_index, seo):
       object-fit:contain;
       background:#fff;
     }}
+    .image-side-link {{
+      position:absolute;
+      top:0;
+      bottom:0;
+      width:min(22vw,140px);
+      background:transparent;
+      border:0;
+      z-index:2;
+      -webkit-tap-highlight-color:transparent;
+    }}
+    .image-side-link.prev {{ left:0; }}
+    .image-side-link.next {{ right:0; }}
     .top-actions {{
       position:sticky;
       top:0;
@@ -622,7 +634,9 @@ def render_card_page(card_id, card, step, step_index, seo):
       </div>
     </div>
     <section class="image-stage" aria-label="{esc(title)}">
+      <a class="image-side-link prev" href="{esc(prev_url)}" aria-label="上一張"></a>
       <img class="hero-img" src="../{esc(step)}" alt="{esc(image_alt)}" decoding="async">
+      <a class="image-side-link next" href="{esc(next_url)}" aria-label="下一張"></a>
     </section>
     <nav class="page-nav" aria-label="同系列翻頁">
       <a class="page-arrow" href="{esc(prev_url)}" aria-label="上一張">‹</a>
