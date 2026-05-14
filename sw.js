@@ -1,5 +1,5 @@
 ﻿// ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202605141706';
+const CACHE_NAME = 'pwa-cache-v202605141759';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
 const urlsToCache = [
@@ -140,6 +140,8 @@ const urlsToCache = [
   "./img/vag_oint_5.png",
   "./img/vag_oint_6.png",
   "./img/wound_4_soln.webp",
+  "./img/wound_care.webp",
+  "./img/wound_cover.webp",
   "./img/wound_oint.webp",
   "./img/yunnan_baiyao.webp",
   "./img/zheng_gu_shui.webp",
@@ -180,6 +182,8 @@ const urlsToCache = [
   "./cards/oint_choose.html",
   "./cards/artficial_vs_paraffin.html",
   "./cards/prevent_scar.html",
+  "./cards/wound_care.html",
+  "./cards/wound_cover.html",
   "./cards/kwangdong_mu_yao_fen.html",
   "./cards/yunnan_baiyao.html",
   "./cards/zi_yun_gao.html",

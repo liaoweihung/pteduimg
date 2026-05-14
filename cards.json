@@ -109,7 +109,9 @@
       "OK繃",
       "人工皮",
       "石蠟紗布",
-      "疤痕"
+      "疤痕",
+      "換藥",
+      "繃帶"
     ],
     "texts": [
       "跌倒傷口正確處理原則",
@@ -117,7 +119,9 @@
       "認識傳統四色藥水(紅藥水、紫藥水、黃藥水、白藥水)",
       "OK繃、紗布、開放傷口的差異",
       "人工皮與石蠟紗布的不同",
-      "避免傷口留疤痕的原則"
+      "避免傷口留疤痕的原則",
+      "定期換藥",
+      "傷口覆蓋與保護"
     ],
     "steps": [
       "img/slipped_fall_wound.webp",
@@ -125,7 +129,9 @@
       "img/wound_4_soln.webp",
       "img/oint_choose.webp",
       "img/artficial_vs_paraffin.webp",
-      "img/prevent_scar.webp"
+      "img/prevent_scar.webp",
+      "img/wound_care.webp",
+      "img/wound_cover.webp"
     ]
   },
   "common_trauma_tcm": {

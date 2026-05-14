@@ -431,6 +431,30 @@
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/prevent_scar.html",
     "twitter_card": "summary_large_image"
   },
+  "cards/wound_care.html": {
+    "page_title": "定期換藥｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「定期換藥」重點，幫助民眾了解傷口與疤痕相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "定期換藥：第 7 張圖卡",
+    "image_alt": "定期換藥第 7 張圖卡",
+    "og_title": "定期換藥｜藥局衛教助手",
+    "og_description": "這張圖卡整理「定期換藥」重點，幫助民眾了解傷口與疤痕相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/wound_care.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/wound_care.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/wound_care.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/wound_cover.html": {
+    "page_title": "傷口覆蓋與保護｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「傷口覆蓋與保護」重點，幫助民眾了解傷口與疤痕相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "傷口覆蓋與保護：第 8 張圖卡",
+    "image_alt": "傷口覆蓋與保護第 8 張圖卡",
+    "og_title": "傷口覆蓋與保護｜藥局衛教助手",
+    "og_description": "這張圖卡整理「傷口覆蓋與保護」重點，幫助民眾了解傷口與疤痕相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/wound_cover.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/wound_cover.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/wound_cover.html",
+    "twitter_card": "summary_large_image"
+  },
   "cards/kwangdong_mu_yao_fen.html": {
     "page_title": "廣東苜藥粉｜藥局衛教助手",
     "meta_description": "這張圖卡整理「廣東苜藥粉」重點，幫助民眾了解常用外傷用中成藥相關衛教資訊，方便就醫或諮詢藥師時參考。",
