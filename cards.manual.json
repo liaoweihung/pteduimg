@@ -106,6 +106,16 @@
       "img/yunnan_baiyao.webp"
     ]
   },
+  "Kwangdong_Mu_Yao_Fen": {
+    "title": "廣東苜藥粉",
+    "category": "pharmacist_product",
+    "order": 17,
+    "hidden": false,
+    "icon": "💊",
+    "steps": [
+      "img/kwangdong_mu_yao_fen.webp"
+    ]
+  },
   "Osteo_tooth": {
     "title": "骨鬆藥與拔牙",
     "category": "pharmacist_general",
