@@ -299,6 +299,32 @@
       "img/ZithromaxPOS.webp"
     ]
   },
+  "adult_diaper": {
+    "title": "成人紙尿布",
+    "category": "public_education",
+    "order": 13,
+    "hidden": false,
+    "icon": "🧻",
+    "tags": [
+      "成人紙尿布",
+      "活力褲",
+      "復健褲",
+      "濕紙巾",
+      "看護墊"
+    ],
+    "texts": [
+      "成人紙尿布的分類",
+      "成人紙尿布怎麼挑",
+      "成人紙尿布使用的小重點",
+      "照護的小幫手"
+    ],
+    "steps": [
+      "img/adult_diaper_1.webp",
+      "img/adult_diaper_2.webp",
+      "img/adult_diaper_3.webp",
+      "img/adult_diaper_4.webp"
+    ]
+  },
   "Wet_Wrap": {
     "title": "濕敷療法",
     "category": "public_education",

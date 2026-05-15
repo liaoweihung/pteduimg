@@ -1,5 +1,5 @@
 ﻿// ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202605142348';
+const CACHE_NAME = 'pwa-cache-v202605151320';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -60,6 +60,10 @@ const urlsToCache = [
   "./img/acne.png",
   "./img/add_to_desktop_android.webp",
   "./img/add_to_desktop_ios.webp",
+  "./img/adult_diaper_1.webp",
+  "./img/adult_diaper_2.webp",
+  "./img/adult_diaper_3.webp",
+  "./img/adult_diaper_4.webp",
   "./img/artficial_vs_paraffin.webp",
   "./img/boyBMI.webp",
   "./img/boy_height2.webp",
@@ -218,6 +222,10 @@ const urlsToCache = [
   "./cards/add_to_desktop_ios.html",
   "./cards/add_to_desktop_android.html",
   "./cards/ZithromaxPOS.html",
+  "./cards/adult_diaper_1.html",
+  "./cards/adult_diaper_2.html",
+  "./cards/adult_diaper_3.html",
+  "./cards/adult_diaper_4.html",
   "./cards/Wet_Wrap.html",
   "./cards/acne.html",
   "./cards/oneFTU.html",
