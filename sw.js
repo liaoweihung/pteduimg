@@ -1,5 +1,5 @@
 ﻿// ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202605172306';
+const CACHE_NAME = 'pwa-cache-v202605172330';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -308,8 +308,8 @@ const coreUrlsToCache = [
   "./seo.json",
   "./qrious.min.js",
   "./css/base.css?v=6",
-  "./css/pharmacist.css?v=1",
-  "./css/public.css?v=2"
+  "./css/pharmacist.css?v=2",
+  "./css/public.css?v=3"
 ];
 
 // === 摰??挾 ===

@@ -119,7 +119,7 @@ body.public-page .top-nav a.active {
 
 .sortable-fav {
     position: relative;
-    touch-action: none;
+    touch-action: pan-y;
     /* 👇 必須補上這三行，徹底封印手機的原生選取行為 👇 */
     -webkit-touch-callout: none; 
     -webkit-user-select: none;   

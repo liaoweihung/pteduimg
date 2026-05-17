@@ -16,7 +16,7 @@ body.pharmacist-page .top-nav a.active {
 
 .sortable-fav {
     position: relative;
-    touch-action: none;
+    touch-action: pan-y;
 }
 
 .drag-grip {

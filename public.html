@@ -74,13 +74,13 @@
     
     <script src="./qrious.min.js"></script>
     <link rel="stylesheet" href="./css/base.css?v=6">
-    <link rel="stylesheet" href="./css/public.css?v=2">
+    <link rel="stylesheet" href="./css/public.css?v=3">
 
 <style>
 /* === 我的最愛：長按拖曳排序 === */
 .fav-item.sortable-fav {
     position: relative;
-    touch-action: none;
+    touch-action: pan-y;
     /* 👇 封印手機原生行為，防止長按跳出選單或文字反白干擾 👇 */
     -webkit-touch-callout: none; 
     -webkit-user-select: none;   
@@ -371,6 +371,8 @@
     let dragGhost = null;
     let dragActive = false;
     let dragStarted = false;
+    let favPressStartX = 0;
+    let favPressStartY = 0;
     let mainPressTimer = null;
     let mainPressStartX = 0;
     let mainPressStartY = 0;
@@ -559,8 +561,8 @@
 
         clearTimeout(favPressTimer);
         dragStarted = false;
-        const startX = event.clientX;
-        const startY = event.clientY;
+        favPressStartX = event.clientX;
+        favPressStartY = event.clientY;
 
         favPressTimer = setTimeout(() => {
             startFavDrag(el, event.clientX, event.clientY);
@@ -572,6 +574,17 @@
     }
 
     function favPointerMove(event) {
+        if (!dragActive) {
+            const dx = Math.abs(event.clientX - favPressStartX);
+            const dy = Math.abs(event.clientY - favPressStartY);
+            if (dx > MAIN_DRAG_MOVE_TOLERANCE || dy > MAIN_DRAG_MOVE_TOLERANCE) {
+                clearTimeout(favPressTimer);
+                favPressTimer = null;
+                document.removeEventListener('pointermove', favPointerMove);
+            }
+            return;
+        }
+
         if (!dragActive || !dragGhost) return;
 
         event.preventDefault();
