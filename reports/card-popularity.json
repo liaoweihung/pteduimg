@@ -1,5 +1,5 @@
 {
-  "cutoff_taipei": "2026-05-18 04:00",
+  "cutoff_taipei": "2026-05-19 04:00",
   "recent_cards": [
     {
       "id": "adult_diaper",
@@ -8,27 +8,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 1424,
+          "site_views": 1236,
           "ratio": "0.0%"
         }
       },
@@ -41,27 +41,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 1424,
+          "site_views": 1236,
           "ratio": "0.0%"
         }
       },
@@ -74,27 +74,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 1424,
+          "site_views": 1236,
           "ratio": "0.0%"
         }
       },
@@ -107,27 +107,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 1424,
+          "site_views": 1236,
           "ratio": "0.0%"
         }
       },
@@ -140,31 +140,31 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
-          "clicks": 1,
-          "site_views": 1424,
-          "ratio": "0.1%"
+          "clicks": 0,
+          "site_views": 1236,
+          "ratio": "0.0%"
         }
       },
-      "score_120h": 500.0
+      "score_120h": 0.0
     },
     {
       "id": "oral_hygiene",
@@ -173,27 +173,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 1424,
+          "site_views": 1236,
           "ratio": "0.0%"
         }
       },
@@ -206,27 +206,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 1424,
+          "site_views": 1236,
           "ratio": "0.0%"
         }
       },
@@ -239,27 +239,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 1424,
+          "site_views": 1236,
           "ratio": "0.0%"
         }
       },
@@ -272,31 +272,31 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
-          "clicks": 1,
-          "site_views": 1424,
-          "ratio": "0.1%"
+          "clicks": 0,
+          "site_views": 1236,
+          "ratio": "0.0%"
         }
       },
-      "score_120h": 500.0
+      "score_120h": 0.0
     },
     {
       "id": "Champix",
@@ -305,31 +305,31 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
-          "clicks": 1,
-          "site_views": 1424,
-          "ratio": "0.1%"
+          "clicks": 0,
+          "site_views": 1236,
+          "ratio": "0.0%"
         }
       },
-      "score_120h": 500.0
+      "score_120h": 0.0
     },
     {
       "id": "Hpylori_exam",
@@ -338,27 +338,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 1424,
+          "site_views": 1236,
           "ratio": "0.0%"
         }
       },
@@ -371,27 +371,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 1424,
+          "site_views": 1236,
           "ratio": "0.0%"
         }
       },
@@ -404,27 +404,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 1424,
+          "site_views": 1236,
           "ratio": "0.0%"
         }
       },
@@ -437,27 +437,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 1424,
+          "site_views": 1236,
           "ratio": "0.0%"
         }
       },
@@ -470,27 +470,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 1424,
+          "site_views": 1236,
           "ratio": "0.0%"
         }
       },
@@ -503,27 +503,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 1424,
+          "site_views": 1236,
           "ratio": "0.0%"
         }
       },
@@ -536,31 +536,31 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
-          "clicks": 1,
-          "site_views": 1424,
-          "ratio": "0.1%"
+          "clicks": 0,
+          "site_views": 1236,
+          "ratio": "0.0%"
         }
       },
-      "score_120h": 500.0
+      "score_120h": 0.0
     },
     {
       "id": "over_one_oint",
@@ -569,27 +569,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 1424,
+          "site_views": 1236,
           "ratio": "0.0%"
         }
       },
@@ -602,27 +602,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 1424,
+          "site_views": 1236,
           "ratio": "0.0%"
         }
       },
@@ -635,27 +635,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 92,
+          "site_views": 152,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 325,
+          "site_views": 248,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 505,
+          "site_views": 486,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 1075,
+          "site_views": 666,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 1424,
+          "site_views": 1236,
           "ratio": "0.0%"
         }
       },
@@ -663,32 +663,23 @@
     }
   ],
   "top_cards": {
-    "24": [
-      {
-        "rank": 1,
-        "title": "(未命名)",
-        "clicks": 1,
-        "site_views": 92,
-        "ratio": "1.1%",
-        "score": 100.0
-      }
-    ],
+    "24": [],
     "48": [
       {
         "rank": 1,
-        "title": "(未命名)",
+        "title": "(not set)",
         "clicks": 1,
-        "site_views": 325,
-        "ratio": "0.3%",
+        "site_views": 248,
+        "ratio": "0.4%",
         "score": 100.0
       }
     ],
     "72": [
       {
         "rank": 1,
-        "title": "(未命名)",
+        "title": "(not set)",
         "clicks": 1,
-        "site_views": 505,
+        "site_views": 486,
         "ratio": "0.2%",
         "score": 100.0
       }
@@ -697,160 +688,32 @@
       {
         "rank": 1,
         "title": "(not set)",
-        "clicks": 2,
-        "site_views": 1075,
-        "ratio": "0.2%",
-        "score": 133.33333333333331
-      },
-      {
-        "rank": 2,
-        "title": "(未命名)",
         "clicks": 1,
-        "site_views": 1075,
-        "ratio": "0.1%",
-        "score": 66.66666666666666
+        "site_views": 666,
+        "ratio": "0.2%",
+        "score": 100.0
       }
     ],
     "120": [
       {
         "rank": 1,
-        "title": "多語服藥時間",
-        "clicks": 3,
-        "site_views": 1424,
-        "ratio": "0.2%",
-        "score": 218.18181818181816
-      },
-      {
-        "rank": 2,
-        "title": "NTG 舌下錠",
-        "clicks": 3,
-        "site_views": 1424,
-        "ratio": "0.2%",
-        "score": 218.18181818181816
-      },
-      {
-        "rank": 3,
         "title": "(not set)",
         "clicks": 3,
-        "site_views": 1424,
+        "site_views": 1236,
         "ratio": "0.2%",
-        "score": 218.18181818181816
-      },
-      {
-        "rank": 4,
-        "title": "三合一快篩",
-        "clicks": 1,
-        "site_views": 1424,
-        "ratio": "0.1%",
-        "score": 72.72727272727273
-      },
-      {
-        "rank": 5,
-        "title": "漢他病毒",
-        "clicks": 1,
-        "site_views": 1424,
-        "ratio": "0.1%",
-        "score": 72.72727272727273
-      },
-      {
-        "rank": 6,
-        "title": "濕敷療法",
-        "clicks": 1,
-        "site_views": 1424,
-        "ratio": "0.1%",
-        "score": 72.72727272727273
-      },
-      {
-        "rank": 7,
-        "title": "藥膏的使用",
-        "clicks": 1,
-        "site_views": 1424,
-        "ratio": "0.1%",
-        "score": 72.72727272727273
-      },
-      {
-        "rank": 8,
-        "title": "長期高血糖的危害",
-        "clicks": 1,
-        "site_views": 1424,
-        "ratio": "0.1%",
-        "score": 72.72727272727273
-      },
-      {
-        "rank": 9,
-        "title": "眼藥膏",
-        "clicks": 1,
-        "site_views": 1424,
-        "ratio": "0.1%",
-        "score": 72.72727272727273
-      },
-      {
-        "rank": 10,
-        "title": "MDI 吸入器",
-        "clicks": 1,
-        "site_views": 1424,
-        "ratio": "0.1%",
-        "score": 72.72727272727273
-      },
-      {
-        "rank": 11,
-        "title": "戒必適Champix",
-        "clicks": 1,
-        "site_views": 1424,
-        "ratio": "0.1%",
-        "score": 72.72727272727273
-      },
-      {
-        "rank": 12,
-        "title": "痔瘡軟膏(內)",
-        "clicks": 1,
-        "site_views": 1424,
-        "ratio": "0.1%",
-        "score": 72.72727272727273
-      },
-      {
-        "rank": 13,
-        "title": "兒科抗生素藥水泡製",
-        "clicks": 1,
-        "site_views": 1424,
-        "ratio": "0.1%",
-        "score": 72.72727272727273
-      },
-      {
-        "rank": 14,
-        "title": "耳滴劑",
-        "clicks": 1,
-        "site_views": 1424,
-        "ratio": "0.1%",
-        "score": 72.72727272727273
-      },
-      {
-        "rank": 15,
-        "title": "陰道軟膏",
-        "clicks": 1,
-        "site_views": 1424,
-        "ratio": "0.1%",
-        "score": 72.72727272727273
-      },
-      {
-        "rank": 16,
-        "title": "(未命名)",
-        "clicks": 1,
-        "site_views": 1424,
-        "ratio": "0.1%",
-        "score": 72.72727272727273
+        "score": 100.0
       }
     ]
   },
   "daily_top20_all_14_days": [],
   "rising_72h": [
     {
-      "title": "(未命名)",
+      "title": "(not set)",
       "rank": 1,
-      "previous_rank": "未進榜",
-      "improvement": 25,
+      "previous_rank": 3,
+      "improvement": 2,
       "clicks": 1,
-      "previous_clicks": 0
+      "previous_clicks": 3
     }
   ],
   "step_popularity": {
@@ -1030,8 +893,8 @@
           {
             "step_number": 1,
             "path": "img/Hantaviridae_01.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
@@ -1047,26 +910,26 @@
           {
             "step_number": 1,
             "path": "img/Res3_ABCovid_1.webp",
-            "views_120h": 3,
-            "ratio_120h": "0.2%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
             "path": "img/Res3_ABCovid_2.webp",
-            "views_120h": 2,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 3,
             "path": "img/Res3_ABCovid_3.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 4,
             "path": "img/Res3_ABCovid_4.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           }
         ]
       },
@@ -1216,14 +1079,14 @@
           {
             "step_number": 1,
             "path": "img/eye_1.png",
-            "views_120h": 2,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
             "path": "img/eye_2.png",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 3,
@@ -1303,8 +1166,8 @@
           {
             "step_number": 1,
             "path": "img/Champix.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           }
         ]
       },
@@ -1314,8 +1177,8 @@
           {
             "step_number": 1,
             "path": "img/lan_1.webp",
-            "views_120h": 3,
-            "ratio_120h": "0.2%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
@@ -1348,8 +1211,8 @@
           {
             "step_number": 1,
             "path": "img/Wet_Wrap.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           }
         ]
       },
@@ -1370,26 +1233,26 @@
           {
             "step_number": 1,
             "path": "img/oneFTU.webp",
-            "views_120h": 2,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
             "path": "img/thin_skin_part.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 3,
             "path": "img/over_one_oint_01.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 4,
             "path": "img/over_one_oint_02.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 5,
@@ -1411,8 +1274,8 @@
           {
             "step_number": 1,
             "path": "img/ear_1.png",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
@@ -1452,8 +1315,8 @@
           {
             "step_number": 1,
             "path": "img/DM_damage.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           }
         ]
       },
@@ -1538,20 +1401,20 @@
           {
             "step_number": 1,
             "path": "img/NTG_1.png",
-            "views_120h": 6,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
             "path": "img/NTG_2.png",
-            "views_120h": 4,
-            "ratio_120h": "0.3%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 3,
             "path": "img/NTG_3.webp",
-            "views_120h": 3,
-            "ratio_120h": "0.2%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           }
         ]
       },
@@ -1561,38 +1424,38 @@
           {
             "step_number": 1,
             "path": "img/MDI_1.png",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
             "path": "img/MDI_2.png",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 3,
             "path": "img/MDI_3.png",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 4,
             "path": "img/MDI_4.png",
-            "views_120h": 2,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 5,
             "path": "img/MDI_5.png",
-            "views_120h": 3,
-            "ratio_120h": "0.2%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 6,
             "path": "img/MDI_6.png",
-            "views_120h": 3,
-            "ratio_120h": "0.2%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 7,
@@ -1625,14 +1488,14 @@
           {
             "step_number": 1,
             "path": "img/hem_oint_1.png",
-            "views_120h": 3,
+            "views_120h": 2,
             "ratio_120h": "0.2%"
           },
           {
             "step_number": 2,
             "path": "img/hem_oint_2.png",
             "views_120h": 2,
-            "ratio_120h": "0.1%"
+            "ratio_120h": "0.2%"
           },
           {
             "step_number": 3,
@@ -1643,8 +1506,8 @@
           {
             "step_number": 4,
             "path": "img/hem_oint_4.png",
-            "views_120h": 0,
-            "ratio_120h": "0.0%"
+            "views_120h": 1,
+            "ratio_120h": "0.1%"
           },
           {
             "step_number": 5,
@@ -1748,38 +1611,38 @@
           {
             "step_number": 1,
             "path": "img/vag_oint_1.png",
-            "views_120h": 5,
-            "ratio_120h": "0.4%"
+            "views_120h": 4,
+            "ratio_120h": "0.3%"
           },
           {
             "step_number": 2,
             "path": "img/vag_oint_2.png",
-            "views_120h": 7,
+            "views_120h": 6,
             "ratio_120h": "0.5%"
           },
           {
             "step_number": 3,
             "path": "img/vag_oint_3.png",
-            "views_120h": 4,
-            "ratio_120h": "0.3%"
+            "views_120h": 3,
+            "ratio_120h": "0.2%"
           },
           {
             "step_number": 4,
             "path": "img/vag_oint_4.png",
-            "views_120h": 3,
+            "views_120h": 2,
             "ratio_120h": "0.2%"
           },
           {
             "step_number": 5,
             "path": "img/vag_oint_5.png",
-            "views_120h": 2,
+            "views_120h": 1,
             "ratio_120h": "0.1%"
           },
           {
             "step_number": 6,
             "path": "img/vag_oint_6.png",
             "views_120h": 2,
-            "ratio_120h": "0.1%"
+            "ratio_120h": "0.2%"
           }
         ]
       },
@@ -1789,50 +1652,50 @@
           {
             "step_number": 1,
             "path": "img/Ped_abx_susp_1.png",
-            "views_120h": 2,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
             "path": "img/Ped_abx_susp_2.png",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 3,
             "path": "img/Ped_abx_susp_3.png",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 4,
             "path": "img/Ped_abx_susp_4.png",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 5,
             "path": "img/Ped_abx_susp_5.png",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 6,
             "path": "img/Ped_abx_susp_6.png",
-            "views_120h": 1,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 7,
             "path": "img/Ped_abx_susp_7.png",
-            "views_120h": 2,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 8,
             "path": "img/Ped_abx_susp_8.png",
-            "views_120h": 2,
-            "ratio_120h": "0.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           }
         ]
       },
@@ -1866,270 +1729,108 @@
         "title": "陰道軟膏",
         "step_number": 2,
         "path": "img/vag_oint_2.png",
-        "views_120h": 7,
+        "views_120h": 6,
         "ratio_120h": "0.5%",
-        "score": 280.0
+        "score": 276.92307692307696
       },
       {
         "rank": 2,
-        "title": "NTG 舌下錠",
+        "title": "陰道軟膏",
         "step_number": 1,
-        "path": "img/NTG_1.png",
-        "views_120h": 6,
-        "ratio_120h": "0.4%",
-        "score": 240.0
+        "path": "img/vag_oint_1.png",
+        "views_120h": 4,
+        "ratio_120h": "0.3%",
+        "score": 184.6153846153846
       },
       {
         "rank": 3,
         "title": "陰道軟膏",
-        "step_number": 1,
-        "path": "img/vag_oint_1.png",
-        "views_120h": 5,
-        "ratio_120h": "0.4%",
-        "score": 200.0
+        "step_number": 3,
+        "path": "img/vag_oint_3.png",
+        "views_120h": 3,
+        "ratio_120h": "0.2%",
+        "score": 138.46153846153848
       },
       {
         "rank": 4,
-        "title": "NTG 舌下錠",
-        "step_number": 2,
-        "path": "img/NTG_2.png",
-        "views_120h": 4,
-        "ratio_120h": "0.3%",
-        "score": 160.0
-      },
-      {
-        "rank": 5,
-        "title": "陰道軟膏",
-        "step_number": 3,
-        "path": "img/vag_oint_3.png",
-        "views_120h": 4,
-        "ratio_120h": "0.3%",
-        "score": 160.0
-      },
-      {
-        "rank": 6,
-        "title": "多語服藥時間",
-        "step_number": 1,
-        "path": "img/lan_1.webp",
-        "views_120h": 3,
-        "ratio_120h": "0.2%",
-        "score": 120.0
-      },
-      {
-        "rank": 7,
-        "title": "三合一快篩",
-        "step_number": 1,
-        "path": "img/Res3_ABCovid_1.webp",
-        "views_120h": 3,
-        "ratio_120h": "0.2%",
-        "score": 120.0
-      },
-      {
-        "rank": 8,
-        "title": "MDI 吸入器",
-        "step_number": 5,
-        "path": "img/MDI_5.png",
-        "views_120h": 3,
-        "ratio_120h": "0.2%",
-        "score": 120.0
-      },
-      {
-        "rank": 9,
-        "title": "MDI 吸入器",
-        "step_number": 6,
-        "path": "img/MDI_6.png",
-        "views_120h": 3,
-        "ratio_120h": "0.2%",
-        "score": 120.0
-      },
-      {
-        "rank": 10,
         "title": "陰道軟膏",
         "step_number": 4,
         "path": "img/vag_oint_4.png",
-        "views_120h": 3,
+        "views_120h": 2,
         "ratio_120h": "0.2%",
-        "score": 120.0
+        "score": 92.3076923076923
       },
       {
-        "rank": 11,
+        "rank": 5,
         "title": "痔瘡軟膏(內)",
         "step_number": 1,
         "path": "img/hem_oint_1.png",
-        "views_120h": 3,
+        "views_120h": 2,
         "ratio_120h": "0.2%",
-        "score": 120.0
+        "score": 92.3076923076923
       },
       {
-        "rank": 12,
-        "title": "NTG 舌下錠",
-        "step_number": 3,
-        "path": "img/NTG_3.webp",
-        "views_120h": 3,
-        "ratio_120h": "0.2%",
-        "score": 120.0
-      },
-      {
-        "rank": 13,
-        "title": "眼藥膏",
-        "step_number": 1,
-        "path": "img/eye_1.png",
-        "views_120h": 2,
-        "ratio_120h": "0.1%",
-        "score": 80.0
-      },
-      {
-        "rank": 14,
-        "title": "三合一快篩",
-        "step_number": 2,
-        "path": "img/Res3_ABCovid_2.webp",
-        "views_120h": 2,
-        "ratio_120h": "0.1%",
-        "score": 80.0
-      },
-      {
-        "rank": 15,
-        "title": "兒科抗生素藥水泡製",
-        "step_number": 1,
-        "path": "img/Ped_abx_susp_1.png",
-        "views_120h": 2,
-        "ratio_120h": "0.1%",
-        "score": 80.0
-      },
-      {
-        "rank": 16,
-        "title": "兒科抗生素藥水泡製",
-        "step_number": 7,
-        "path": "img/Ped_abx_susp_7.png",
-        "views_120h": 2,
-        "ratio_120h": "0.1%",
-        "score": 80.0
-      },
-      {
-        "rank": 17,
-        "title": "兒科抗生素藥水泡製",
-        "step_number": 8,
-        "path": "img/Ped_abx_susp_8.png",
-        "views_120h": 2,
-        "ratio_120h": "0.1%",
-        "score": 80.0
-      },
-      {
-        "rank": 18,
+        "rank": 6,
         "title": "痔瘡軟膏(內)",
         "step_number": 2,
         "path": "img/hem_oint_2.png",
         "views_120h": 2,
-        "ratio_120h": "0.1%",
-        "score": 80.0
+        "ratio_120h": "0.2%",
+        "score": 92.3076923076923
       },
       {
-        "rank": 19,
-        "title": "藥膏的使用",
-        "step_number": 1,
-        "path": "img/oneFTU.webp",
-        "views_120h": 2,
-        "ratio_120h": "0.1%",
-        "score": 80.0
-      },
-      {
-        "rank": 20,
-        "title": "MDI 吸入器",
-        "step_number": 4,
-        "path": "img/MDI_4.png",
-        "views_120h": 2,
-        "ratio_120h": "0.1%",
-        "score": 80.0
-      },
-      {
-        "rank": 21,
-        "title": "陰道軟膏",
-        "step_number": 5,
-        "path": "img/vag_oint_5.png",
-        "views_120h": 2,
-        "ratio_120h": "0.1%",
-        "score": 80.0
-      },
-      {
-        "rank": 22,
+        "rank": 7,
         "title": "陰道軟膏",
         "step_number": 6,
         "path": "img/vag_oint_6.png",
         "views_120h": 2,
-        "ratio_120h": "0.1%",
-        "score": 80.0
+        "ratio_120h": "0.2%",
+        "score": 92.3076923076923
       },
       {
-        "rank": 23,
-        "title": "漢他病毒",
-        "step_number": 1,
-        "path": "img/Hantaviridae_01.webp",
+        "rank": 8,
+        "title": "陰道軟膏",
+        "step_number": 5,
+        "path": "img/vag_oint_5.png",
         "views_120h": 1,
         "ratio_120h": "0.1%",
-        "score": 40.0
+        "score": 46.15384615384615
       },
       {
-        "rank": 24,
-        "title": "濕敷療法",
-        "step_number": 1,
-        "path": "img/Wet_Wrap.webp",
-        "views_120h": 1,
-        "ratio_120h": "0.1%",
-        "score": 40.0
-      },
-      {
-        "rank": 25,
-        "title": "藥膏的使用",
-        "step_number": 2,
-        "path": "img/thin_skin_part.webp",
-        "views_120h": 1,
-        "ratio_120h": "0.1%",
-        "score": 40.0
-      },
-      {
-        "rank": 26,
-        "title": "藥膏的使用",
+        "rank": 9,
+        "title": "痔瘡軟膏(內)",
         "step_number": 3,
-        "path": "img/over_one_oint_01.webp",
+        "path": "img/hem_oint_3.png",
         "views_120h": 1,
         "ratio_120h": "0.1%",
-        "score": 40.0
+        "score": 46.15384615384615
       },
       {
-        "rank": 27,
-        "title": "藥膏的使用",
+        "rank": 10,
+        "title": "痔瘡軟膏(內)",
         "step_number": 4,
-        "path": "img/over_one_oint_02.webp",
+        "path": "img/hem_oint_4.png",
         "views_120h": 1,
         "ratio_120h": "0.1%",
-        "score": 40.0
+        "score": 46.15384615384615
       },
       {
-        "rank": 28,
-        "title": "長期高血糖的危害",
-        "step_number": 1,
-        "path": "img/DM_damage.webp",
+        "rank": 11,
+        "title": "痔瘡軟膏(內)",
+        "step_number": 5,
+        "path": "img/hem_oint_5.png",
         "views_120h": 1,
         "ratio_120h": "0.1%",
-        "score": 40.0
+        "score": 46.15384615384615
       },
       {
-        "rank": 29,
-        "title": "眼藥膏",
-        "step_number": 2,
-        "path": "img/eye_2.png",
+        "rank": 12,
+        "title": "痔瘡軟膏(內)",
+        "step_number": 6,
+        "path": "img/hem_oint_6.png",
         "views_120h": 1,
         "ratio_120h": "0.1%",
-        "score": 40.0
-      },
-      {
-        "rank": 30,
-        "title": "MDI 吸入器",
-        "step_number": 1,
-        "path": "img/MDI_1.png",
-        "views_120h": 1,
-        "ratio_120h": "0.1%",
-        "score": 40.0
+        "score": 46.15384615384615
       }
     ]
   }
