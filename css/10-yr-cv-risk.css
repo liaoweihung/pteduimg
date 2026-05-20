@@ -1,0 +1,282 @@
+body.cv-risk-page {
+    min-height: 100vh;
+    height: auto;
+    background: #f7fbfa;
+    color: #22313f;
+    user-select: auto;
+}
+
+body.cv-risk-page header {
+    background: #e8f7f1;
+    color: #1f5b49;
+}
+
+.cv-risk-shell {
+    width: min(100%, 840px);
+    margin: 0 auto;
+    padding: 16px 16px 34px;
+}
+
+.back-button {
+    min-height: 40px;
+    border: 1px solid #d8e8e1;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #1f5b49;
+    padding: 8px 15px;
+    font: inherit;
+    font-size: 0.95rem;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(32, 88, 71, 0.08);
+}
+
+.back-button:active,
+.primary-action:active,
+.secondary-action:active {
+    transform: translateY(1px);
+}
+
+.intro-card,
+.form-card,
+.result-card,
+.note-card {
+    background: #ffffff;
+    border: 1px solid #e3efea;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(32, 88, 71, 0.08);
+}
+
+.intro-card {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-top: 14px;
+    padding: 18px;
+}
+
+.intro-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #def7ec;
+    font-size: 1.55rem;
+    flex: 0 0 auto;
+}
+
+.intro-card h1,
+.form-card h2,
+.risk-percentage {
+    margin: 0;
+    letter-spacing: 0;
+}
+
+.intro-card h1 {
+    font-size: 1.45rem;
+    color: #164937;
+}
+
+.intro-card p,
+.note-card p {
+    margin: 8px 0 0;
+    color: #5d6d7e;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.form-card {
+    margin-top: 16px;
+    padding: 18px;
+}
+
+.form-card h2 {
+    font-size: 1.08rem;
+    color: #1f5b49;
+    margin-bottom: 14px;
+}
+
+.field-grid {
+    display: grid;
+    gap: 12px;
+}
+
+.field {
+    display: grid;
+    gap: 7px;
+}
+
+.field span,
+.check-group-title {
+    color: #4b635b;
+    font-weight: 800;
+    font-size: 0.92rem;
+}
+
+.field input,
+.field select {
+    width: 100%;
+    min-height: 46px;
+    border: 1px solid #d8e8e1;
+    border-radius: 10px;
+    padding: 10px 12px;
+    color: #22313f;
+    background: #ffffff;
+    font: inherit;
+    font-size: 1rem;
+}
+
+.field input:focus,
+.field select:focus {
+    outline: 3px solid rgba(112, 199, 163, 0.28);
+    border-color: #70c7a3;
+}
+
+.check-card {
+    display: grid;
+    gap: 10px;
+    margin-top: 14px;
+    border-radius: 12px;
+    background: #f8fcfb;
+    padding: 12px;
+}
+
+.check-card label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #2f3d4a;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.check-card input {
+    width: 18px;
+    height: 18px;
+    accent-color: #1f8f6b;
+    flex: 0 0 auto;
+}
+
+.form-message {
+    min-height: 22px;
+    margin: 12px 0 10px;
+    color: #c0392b;
+    font-weight: 800;
+    line-height: 1.45;
+}
+
+.primary-action,
+.secondary-action {
+    width: 100%;
+    min-height: 48px;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.primary-action {
+    border: 0;
+    background: #1f8f6b;
+    color: #ffffff;
+    box-shadow: 0 6px 14px rgba(31, 143, 107, 0.22);
+}
+
+.secondary-action {
+    margin-top: 12px;
+    border: 1px solid #cfe3da;
+    background: #ffffff;
+    color: #1f5b49;
+}
+
+.result-card {
+    margin-top: 16px;
+    padding: 18px;
+}
+
+.result-card[hidden] {
+    display: none;
+}
+
+.result-card.low {
+    background: #e8f7ee;
+    border-color: #bfe8cc;
+}
+
+.result-card.borderline {
+    background: #fff8df;
+    border-color: #f2dc94;
+}
+
+.result-card.intermediate {
+    background: #fff1cf;
+    border-color: #e9c36d;
+}
+
+.result-card.high {
+    background: #fde9e9;
+    border-color: #efb7b7;
+}
+
+.result-eyebrow {
+    margin: 0;
+    color: #5d6d7e;
+    font-size: 0.92rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.risk-percentage {
+    color: #164937;
+    font-size: clamp(2.4rem, 10vw, 4rem);
+    line-height: 1.05;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.risk-advice {
+    margin: 10px 0 0;
+    color: #22313f;
+    font-size: 1.08rem;
+    font-weight: 900;
+    line-height: 1.45;
+    text-align: center;
+}
+
+.action-plan {
+    margin-top: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.82);
+    padding: 13px;
+    color: #34495e;
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+.note-card {
+    margin-top: 16px;
+    padding: 16px 18px;
+}
+
+.note-card strong {
+    color: #1f5b49;
+}
+
+@media (min-width: 720px) {
+    .cv-risk-shell {
+        padding-top: 24px;
+    }
+
+    .intro-card,
+    .form-card,
+    .result-card,
+    .note-card {
+        padding: 22px;
+    }
+
+    .field-grid.two-columns {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

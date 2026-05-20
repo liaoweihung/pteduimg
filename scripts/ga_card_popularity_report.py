@@ -65,13 +65,19 @@ def run_git(args):
     return result.stdout
 
 
-def estimate_first_seen_times(card_ids):
+def estimate_step_first_seen_times(cards):
     first_seen = {}
     log = run_git(["log", "--reverse", "--format=%H%x09%aI", "--", "cards.json"])
     if not log:
         return first_seen
 
-    remaining = set(card_ids)
+    target_paths = {
+        step
+        for item in cards.values()
+        for step in item.get("steps", [])
+        if isinstance(step, str)
+    }
+    remaining = set(target_paths)
     for line in log.splitlines():
         if not remaining:
             break
@@ -83,12 +89,19 @@ def estimate_first_seen_times(card_ids):
             snapshot = json.loads(content)
         except json.JSONDecodeError:
             continue
-        seen_now = remaining.intersection(snapshot.keys())
-        for card_id in seen_now:
+
+        seen_paths = {
+            step
+            for item in snapshot.values()
+            for step in item.get("steps", [])
+            if isinstance(step, str)
+        }
+        seen_now = remaining.intersection(seen_paths)
+        for path in seen_now:
             try:
-                first_seen[card_id] = dt.datetime.fromisoformat(iso_time).astimezone(TAIPEI)
+                first_seen[path] = dt.datetime.fromisoformat(iso_time).astimezone(TAIPEI)
             except ValueError:
-                first_seen[card_id] = None
+                first_seen[path] = None
         remaining -= seen_now
     return first_seen
 
@@ -242,41 +255,64 @@ def pct(numerator, denominator):
     return f"{numerator / denominator * 100:.1f}%"
 
 
-def recent_cards_table(cards, first_seen, rows, end_time):
+def recent_cards_table(cards, step_first_seen, rows, end_time):
+    steps = []
+    for item in cards.values():
+        for index, path in enumerate(item.get("steps", []) or [], start=1):
+            steps.append(
+                {
+                    "id": item["id"],
+                    "title": item["title"],
+                    "order": item.get("order", 9999),
+                    "step_number": index,
+                    "path": path,
+                    "first_seen_at": step_first_seen.get(path),
+                }
+            )
+
     recent = sorted(
-        cards.values(),
+        steps,
         key=lambda item: (
-            first_seen.get(item["id"]) is not None,
-            first_seen.get(item["id"]) or dt.datetime.min.replace(tzinfo=TAIPEI),
+            item["first_seen_at"] is not None,
+            item["first_seen_at"] or dt.datetime.min.replace(tzinfo=TAIPEI),
             -item.get("order", 9999),
+            -item["step_number"],
         ),
         reverse=True,
     )[:20]
 
-    clicks_by_window = {}
+    step_views_by_window = {}
     page_views_by_window = {}
     for hours in WINDOW_HOURS:
         window_rows = rows_in_window(rows, end_time, hours)
-        clicks_by_window[hours] = count_card_clicks(window_rows)
+        step_views_by_window[hours] = count_step_views(window_rows)
         page_views_by_window[hours] = count_page_views(window_rows)
 
-    average_120 = sum(clicks_by_window[120].get(item["title"], 0) for item in recent) / max(len(recent), 1)
+    average_120 = (
+        sum(step_views_by_window[120].get((item["title"], item["step_number"]), 0) for item in recent)
+        / max(len(recent), 1)
+    )
     table = []
     for item in recent:
-        first = first_seen.get(item["id"])
+        first = item["first_seen_at"]
         row = {
             "id": item["id"],
             "title": item["title"],
+            "step_number": item["step_number"],
+            "path": item["path"],
             "first_seen": first.strftime("%Y-%m-%d %H:%M") if first else "未知",
             "windows": {},
-            "score_120h": score(clicks_by_window[120].get(item["title"], 0), average_120),
+            "score_120h": score(
+                step_views_by_window[120].get((item["title"], item["step_number"]), 0),
+                average_120,
+            ),
         }
         for hours in WINDOW_HOURS:
-            clicks = clicks_by_window[hours].get(item["title"], 0)
+            views = step_views_by_window[hours].get((item["title"], item["step_number"]), 0)
             row["windows"][hours] = {
-                "clicks": clicks,
+                "clicks": views,
                 "site_views": page_views_by_window[hours],
-                "ratio": pct(clicks, page_views_by_window[hours]),
+                "ratio": pct(views, page_views_by_window[hours]),
             }
         table.append(row)
     return table
@@ -413,6 +449,7 @@ def write_markdown(report):
         f"- 統計切點：{report['cutoff_taipei']}（台灣時間）",
         "- 網站瀏覽分母：GA4 `page_view`",
         "- 圖卡點擊分子：GA4 `view_instruction_card`",
+        "- 最近上架圖卡使用 GA4 `view_instruction_step`，可追蹤加到既有系列的新圖片",
         "- 相對分數：同表平均點擊數 = 100，兩倍平均 = 200，一半平均 = 50",
         "",
         "## 1. 最近上架 20 張圖卡",
@@ -424,6 +461,8 @@ def write_markdown(report):
         recent_rows.append(
             [
                 item["title"],
+                item["step_number"],
+                item["path"],
                 item["first_seen"],
                 window(item, 24)["clicks"],
                 window(item, 24)["ratio"],
@@ -440,7 +479,7 @@ def write_markdown(report):
         )
     lines.append(
         md_table(
-            ["圖卡", "推估上架", "24h", "24h比", "48h", "48h比", "72h", "72h比", "96h", "96h比", "120h", "120h比", "120h分數"],
+            ["系列", "張數", "圖片", "推估上架", "24h", "24h比", "48h", "48h比", "72h", "72h比", "96h", "96h比", "120h", "120h比", "120h分數"],
             recent_rows,
         )
     )
@@ -505,14 +544,14 @@ def write_markdown(report):
 
 def main():
     cards, _ = load_cards()
-    first_seen = estimate_first_seen_times(cards.keys())
+    step_first_seen = estimate_step_first_seen_times(cards)
     end_time = report_cutoff_now()
     client, property_id = load_ga_client()
     rows = fetch_ga_rows(client, property_id, end_time)
 
     report = {
         "cutoff_taipei": end_time.strftime("%Y-%m-%d %H:%M"),
-        "recent_cards": recent_cards_table(cards, first_seen, rows, end_time),
+        "recent_cards": recent_cards_table(cards, step_first_seen, rows, end_time),
         "top_cards": {str(hours): table for hours, table in top_cards_tables(rows, end_time).items()},
         "daily_top20_all_14_days": daily_top20_streak(rows, end_time),
         "rising_72h": rising_cards_72h(rows, end_time),
