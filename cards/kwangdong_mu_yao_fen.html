@@ -55,7 +55,7 @@
     }
     (function() {
       try {
-        var defaultReturnPage = "../public.html";
+        var defaultReturnPage = "../index.html";
         var referrerPath = document.referrer ? new URL(document.referrer).pathname : '';
         if (defaultReturnPage === '../public.html') {
           sessionStorage.setItem('pteduimgCardReturnPage', '../public.html');
@@ -67,7 +67,7 @@
       } catch (err) {}
     })();
     function returnToCardHome() {
-      location.href = sessionStorage.getItem('pteduimgCardReturnPage') || "../public.html";
+      location.href = sessionStorage.getItem('pteduimgCardReturnPage') || "../index.html";
     }
     var cardFavoriteKey = "common_trauma_tcm-0";
     var cardShareUrl = "https://liaoweihung.github.io/pteduimg/cards/kwangdong_mu_yao_fen.html";
@@ -426,7 +426,7 @@
     </nav>
     <section class="info">
       <h1>常用外傷用中成藥</h1>
-      <p class="meta">民眾疾病衛教 · 1/7</p>
+      <p class="meta">藥品衛教 · 1/7</p>
       <div class="section-title">同系列圖卡</div>
       <div class="related-grid">
         

@@ -155,7 +155,7 @@
   },
   "common_trauma_tcm": {
     "title": "常用外傷用中成藥",
-    "category": "public_education",
+    "category": "pharmacist_product",
     "order": 1,
     "hidden": false,
     "icon": "🌿",
@@ -205,7 +205,7 @@
   },
   "chinese_powder_prep": {
     "title": "中藥散劑怎麼調",
-    "category": "public_education",
+    "category": "pharmacist_general",
     "order": 2,
     "hidden": false,
     "icon": "🥣",
