@@ -1667,5 +1667,41 @@
     "og_url": "https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_8.html",
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_8.html",
     "twitter_card": "summary_large_image"
+  },
+  "cards/antiphen.html": {
+    "page_title": "安佳熱｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「安佳熱」重點，幫助民眾了解兒科退燒藥水相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "安佳熱",
+    "image_alt": "安佳熱第 1 張圖卡",
+    "og_title": "安佳熱｜藥局衛教助手",
+    "og_description": "這張圖卡整理「安佳熱」重點，幫助民眾了解兒科退燒藥水相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/antiphen.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/antiphen.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/antiphen.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/ibuprofen_sol.html": {
+    "page_title": "依普芬｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「依普芬」重點，幫助民眾了解兒科退燒藥水相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "依普芬",
+    "image_alt": "依普芬第 2 張圖卡",
+    "og_title": "依普芬｜藥局衛教助手",
+    "og_description": "這張圖卡整理「依普芬」重點，幫助民眾了解兒科退燒藥水相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/ibuprofen_sol.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/ibuprofen_sol.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/ibuprofen_sol.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/notice_ped_fever_reducer.html": {
+    "page_title": "小兒發燒注意事項｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「小兒發燒注意事項」重點，幫助民眾了解兒科退燒藥水相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "小兒發燒注意事項",
+    "image_alt": "小兒發燒注意事項第 3 張圖卡",
+    "og_title": "小兒發燒注意事項｜藥局衛教助手",
+    "og_description": "這張圖卡整理「小兒發燒注意事項」重點，幫助民眾了解兒科退燒藥水相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/notice_ped_fever_reducer.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/notice_ped_fever_reducer.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/notice_ped_fever_reducer.html",
+    "twitter_card": "summary_large_image"
   }
 }

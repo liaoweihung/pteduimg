@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>安佳熱｜藥局衛教助手</title>
+  <meta name="description" content="這張圖卡整理「安佳熱」重點，幫助民眾了解兒科退燒藥水相關衛教資訊，方便就醫或諮詢藥師時參考。">
+  <link rel="canonical" href="https://liaoweihung.github.io/pteduimg/cards/antiphen.html">
+  <link rel="icon" type="image/png" href="../icon.png?v=3">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="藥局衛教助手">
+  <meta property="og:title" content="安佳熱｜藥局衛教助手">
+  <meta property="og:description" content="這張圖卡整理「安佳熱」重點，幫助民眾了解兒科退燒藥水相關衛教資訊，方便就醫或諮詢藥師時參考。">
+  <meta property="og:image" content="https://liaoweihung.github.io/pteduimg/img/antiphen.webp">
+  <meta property="og:url" content="https://liaoweihung.github.io/pteduimg/cards/antiphen.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="安佳熱｜藥局衛教助手">
+  <meta name="twitter:description" content="這張圖卡整理「安佳熱」重點，幫助民眾了解兒科退燒藥水相關衛教資訊，方便就醫或諮詢藥師時參考。">
+  <meta name="twitter:image" content="https://liaoweihung.github.io/pteduimg/img/antiphen.webp">
+  <script src="../qrious.min.js"></script>
+  <script>
+    var GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
+    var urlParams = new URLSearchParams(window.location.search);
+    var host = window.location.hostname;
+    var isPrivateNetworkHost = ['localhost', '127.0.0.1', '::1'].indexOf(host) !== -1
+      || /^192\.168\./.test(host)
+      || /^10\./.test(host)
+      || /^172\.(1[6-9]|2\d|3[0-1])\./.test(host);
+    var isLocalPreview = isPrivateNetworkHost || window.location.protocol === 'file:';
+
+    if (urlParams.get('dev') === '1') {
+      localStorage.setItem('isDeveloper', 'true');
+    }
+    if (urlParams.get('dev') === '0') {
+      localStorage.removeItem('isDeveloper');
+    }
+
+    window.isAnalyticsDisabled = isLocalPreview || localStorage.getItem('isDeveloper') === 'true';
+    window['ga-disable-' + GA_MEASUREMENT_ID] = window.isAnalyticsDisabled;
+    function shouldTrackAnalytics() {
+      return !window.isAnalyticsDisabled && typeof gtag === 'function';
+    }
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    if (!window.isAnalyticsDisabled) {
+      var gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
+      document.head.appendChild(gaScript);
+      gtag('js', new Date());
+      gtag('config', GA_MEASUREMENT_ID, {
+        page_title: "安佳熱｜藥局衛教助手",
+        page_path: '/pteduimg/cards/antiphen.html'
+      });
+    }
+    (function() {
+      try {
+        var defaultReturnPage = "../index.html";
+        var referrerPath = document.referrer ? new URL(document.referrer).pathname : '';
+        if (defaultReturnPage === '../public.html') {
+          sessionStorage.setItem('pteduimgCardReturnPage', '../public.html');
+        } else if (referrerPath.endsWith('/public.html')) {
+          sessionStorage.setItem('pteduimgCardReturnPage', '../public.html');
+        } else if (referrerPath.endsWith('/index.html') || referrerPath.endsWith('/pteduimg/')) {
+          sessionStorage.setItem('pteduimgCardReturnPage', '../index.html');
+        }
+      } catch (err) {}
+    })();
+    function returnToCardHome() {
+      location.href = sessionStorage.getItem('pteduimgCardReturnPage') || "../index.html";
+    }
+    var cardFavoriteKey = "ped_fever_reducer-0";
+    var cardShareUrl = "https://liaoweihung.github.io/pteduimg/cards/antiphen.html";
+    var cardTitle = "安佳熱｜藥局衛教助手";
+    function getFavorites() {
+      try {
+        var saved = JSON.parse(localStorage.getItem('favImages') || '[]');
+        return Array.isArray(saved) ? saved : [];
+      } catch (err) {
+        return [];
+      }
+    }
+    function setFavoriteButtonState() {
+      var btn = document.getElementById('favorite-button');
+      if (!btn) return;
+      var isFavorite = getFavorites().indexOf(cardFavoriteKey) !== -1;
+      btn.classList.toggle('active', isFavorite);
+      btn.setAttribute('aria-pressed', isFavorite ? 'true' : 'false');
+      btn.textContent = isFavorite ? '★' : '☆';
+      btn.setAttribute('aria-label', isFavorite ? '取消收藏' : '加入收藏');
+    }
+    function toggleFavorite() {
+      var favorites = getFavorites();
+      var index = favorites.indexOf(cardFavoriteKey);
+      if (index === -1) favorites.push(cardFavoriteKey);
+      else favorites.splice(index, 1);
+      localStorage.setItem('favImages', JSON.stringify(favorites));
+      setFavoriteButtonState();
+      if (shouldTrackAnalytics()) {
+        gtag('event', index === -1 ? 'add_favorite_card' : 'remove_favorite_card', {
+          card_title: cardTitle,
+          step_number: 1
+        });
+      }
+    }
+    function showQRCode() {
+      var modal = document.getElementById('qr-modal');
+      var canvas = document.getElementById('qr-canvas');
+      if (!modal || !canvas || typeof QRious !== 'function') return;
+      new QRious({ element: canvas, value: cardShareUrl, size: 220 });
+      modal.hidden = false;
+      if (shouldTrackAnalytics()) {
+        gtag('event', 'show_qr_code', {
+          card_title: cardTitle,
+          step_number: 1
+        });
+      }
+    }
+    function closeQRCode() {
+      var modal = document.getElementById('qr-modal');
+      if (modal) modal.hidden = true;
+    }
+    function showSharePanel() {
+      var modal = document.getElementById('share-modal');
+      if (modal) modal.hidden = false;
+    }
+    function closeSharePanel() {
+      var modal = document.getElementById('share-modal');
+      if (modal) modal.hidden = true;
+    }
+    function copyCardShareUrl() {
+      navigator.clipboard.writeText(cardShareUrl).then(function() {
+        alert('已複製圖卡連結');
+      });
+      if (shouldTrackAnalytics()) {
+        gtag('event', 'share_instruction_card', {
+          method: 'copy',
+          card_title: cardTitle,
+          step_number: 1
+        });
+      }
+    }
+    document.addEventListener('DOMContentLoaded', setFavoriteButtonState);
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../sw.js').catch(function() {});
+      });
+    }
+  </script>
+  <style>
+    :root { --ink:#263238; --muted:#64748b; --line:#e5e7eb; --brand:#007b83; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      background:#fff;
+      color:var(--ink);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Microsoft JhengHei",sans-serif;
+      line-height:1.45;
+    }
+    .image-stage {
+      min-height:calc(100svh - 104px);
+      display:grid;
+      place-items:center;
+      padding:8px;
+      background:#fff;
+      position:relative;
+    }
+    .hero-img {
+      display:block;
+      max-width:100%;
+      max-height:calc(100svh - 120px);
+      width:auto;
+      height:auto;
+      object-fit:contain;
+      background:#fff;
+    }
+    .image-side-link {
+      position:absolute;
+      top:0;
+      bottom:0;
+      width:min(22vw,140px);
+      background:transparent;
+      border:0;
+      z-index:2;
+      -webkit-tap-highlight-color:transparent;
+    }
+    .image-side-link.prev { left:0; }
+    .image-side-link.next { right:0; }
+    .top-actions {
+      position:sticky;
+      top:0;
+      z-index:10;
+      display:flex;
+      min-height:48px;
+      justify-content:space-between;
+      align-items:center;
+      gap:8px;
+      padding:7px 8px;
+      background:rgba(255,255,255,.72);
+      border-bottom:1px solid rgba(229,231,235,.55);
+      backdrop-filter:blur(8px);
+    }
+    .action-cluster {
+      display:flex;
+      gap:6px;
+      overflow-x:auto;
+    }
+    .pill {
+      pointer-events:auto;
+      display:inline-flex;
+      align-items:center;
+      min-height:34px;
+      border:1px solid rgba(255,255,255,.42);
+      border-radius:8px;
+      background:rgba(255,255,255,.48);
+      color:rgba(38,50,56,.76);
+      text-decoration:none;
+      font-size:.9rem;
+      font-weight:700;
+      padding:6px 10px;
+      box-shadow:0 1px 5px rgba(15,23,42,.06);
+      cursor:pointer;
+      white-space:nowrap;
+    }
+    .pill:hover,
+    .pill:focus-visible {
+      background:rgba(255,255,255,.82);
+      color:var(--ink);
+    }
+    .pill.active {
+      background:rgba(0,123,131,.62);
+      border-color:rgba(0,123,131,.2);
+      color:#fff;
+    }
+    .icon-pill {
+      justify-content:center;
+      width:34px;
+      min-width:34px;
+      padding:0;
+      font-size:1.15rem;
+      line-height:1;
+    }
+    .page-nav {
+      min-height:56px;
+      padding:8px 12px 12px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      border-top:1px solid rgba(229,231,235,.7);
+      background:#fff;
+    }
+    .page-arrow {
+      display:grid;
+      place-items:center;
+      width:44px;
+      height:44px;
+      border:1px solid var(--line);
+      border-radius:50%;
+      background:#fff;
+      color:var(--ink);
+      text-decoration:none;
+      font-size:1.65rem;
+      line-height:1;
+      box-shadow:0 1px 5px rgba(15,23,42,.06);
+    }
+    .page-count {
+      color:var(--muted);
+      font-size:.9rem;
+      font-weight:700;
+      min-width:64px;
+      text-align:center;
+    }
+    .info {
+      width:min(100%,880px);
+      margin:0 auto;
+      padding:12px 12px 28px;
+    }
+    h1 {
+      margin:0 0 2px;
+      font-size:1rem;
+      line-height:1.3;
+      letter-spacing:0;
+    }
+    .meta {
+      margin:0 0 10px;
+      color:var(--muted);
+      font-size:.86rem;
+    }
+    .share-row {
+      display:flex;
+      gap:8px;
+      overflow-x:auto;
+      padding-bottom:2px;
+      margin:0 0 18px;
+    }
+    .share-button {
+      flex:0 0 auto;
+      border:1px solid var(--line);
+      border-radius:8px;
+      background:#fff;
+      color:var(--brand);
+      font-size:.9rem;
+      font-weight:700;
+      text-decoration:none;
+      padding:8px 10px;
+      cursor:pointer;
+    }
+    .section-title {
+      margin:0 0 8px;
+      color:var(--muted);
+      font-size:.88rem;
+      font-weight:700;
+    }
+    .related-grid {
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:8px;
+    }
+    .related-item {
+      display:block;
+      border:1px solid var(--line);
+      border-radius:6px;
+      overflow:hidden;
+      background:#fff;
+      color:var(--ink);
+      text-decoration:none;
+    }
+    .related-item.active { border-color:var(--brand); }
+    .related-item img {
+      display:block;
+      width:100%;
+      aspect-ratio:1;
+      object-fit:cover;
+      background:#fff;
+    }
+    .related-item span {
+      display:block;
+      padding:4px 5px;
+      font-size:.76rem;
+      text-align:center;
+      white-space:nowrap;
+    }
+    .qr-modal {
+      position:fixed;
+      inset:0;
+      z-index:20;
+      display:grid;
+      place-items:center;
+      padding:18px;
+      background:rgba(15,23,42,.34);
+    }
+    .qr-modal[hidden] { display:none; }
+    .qr-box,
+    .share-box {
+      width:min(100%,300px);
+      border-radius:10px;
+      background:#fff;
+      padding:18px;
+      text-align:center;
+      box-shadow:0 18px 44px rgba(15,23,42,.18);
+    }
+    .qr-box canvas {
+      display:block;
+      width:220px;
+      height:220px;
+      margin:0 auto 12px;
+    }
+    .qr-close {
+      width:100%;
+      border:0;
+      border-radius:8px;
+      background:var(--brand);
+      color:#fff;
+      font-weight:700;
+      padding:10px 12px;
+      cursor:pointer;
+    }
+    .share-box {
+      width:min(100%,340px);
+      text-align:left;
+    }
+    .share-title {
+      margin:0 0 12px;
+      font-size:1rem;
+      line-height:1.3;
+    }
+    .share-modal-actions {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:8px;
+      margin-bottom:10px;
+    }
+    .share-modal-actions .share-button {
+      text-align:center;
+      color:var(--brand);
+    }
+    @media (min-width:680px) {
+      .image-stage { min-height:calc(100svh - 112px); padding:16px; }
+      .hero-img { max-height:calc(100svh - 136px); }
+      .page-arrow { width:46px; height:46px; }
+      .info { padding:14px 16px 36px; }
+      .related-grid { grid-template-columns:repeat(8,minmax(0,1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="top-actions">
+      <button class="pill" type="button" onclick="returnToCardHome()">返回首頁</button>
+      <div class="action-cluster">
+        <button class="pill icon-pill" type="button" onclick="showQRCode()" aria-label="顯示 QR code">🔲</button>
+        <button class="pill icon-pill" id="favorite-button" type="button" onclick="toggleFavorite()" aria-pressed="false" aria-label="加入收藏">☆</button>
+        <button class="pill icon-pill" type="button" onclick="showSharePanel()" aria-label="分享圖卡">↗</button>
+      </div>
+    </div>
+    <section class="image-stage" aria-label="安佳熱｜藥局衛教助手">
+      <a class="image-side-link prev" href="../cards/notice_ped_fever_reducer.html" aria-label="上一張"></a>
+      <img class="hero-img" src="../img/antiphen.webp" alt="安佳熱第 1 張圖卡" decoding="async">
+      <a class="image-side-link next" href="../cards/ibuprofen_sol.html" aria-label="下一張"></a>
+    </section>
+    <nav class="page-nav" aria-label="同系列翻頁">
+      <a class="page-arrow" href="../cards/notice_ped_fever_reducer.html" aria-label="上一張">‹</a>
+      <span class="page-count">1/3</span>
+      <a class="page-arrow" href="../cards/ibuprofen_sol.html" aria-label="下一張">›</a>
+    </nav>
+    <section class="info">
+      <h1>兒科退燒藥水</h1>
+      <p class="meta">藥品衛教 · 1/3</p>
+      <div class="section-title">同系列圖卡</div>
+      <div class="related-grid">
+        
+            <a class="related-item active" href="../cards/antiphen.html">
+                <img src="../img/antiphen.webp" alt="同系列圖卡 1" loading="lazy">
+                <span>第 1 張</span>
+            </a>
+
+            <a class="related-item" href="../cards/ibuprofen_sol.html">
+                <img src="../img/ibuprofen_sol.webp" alt="同系列圖卡 2" loading="lazy">
+                <span>第 2 張</span>
+            </a>
+
+            <a class="related-item" href="../cards/notice_ped_fever_reducer.html">
+                <img src="../img/notice_ped_fever_reducer.webp" alt="同系列圖卡 3" loading="lazy">
+                <span>第 3 張</span>
+            </a>
+      </div>
+    </section>
+    <div class="qr-modal" id="qr-modal" hidden>
+      <div class="qr-box" role="dialog" aria-modal="true" aria-label="圖卡 QR code">
+        <canvas id="qr-canvas"></canvas>
+        <button class="qr-close" type="button" onclick="closeQRCode()">完成</button>
+      </div>
+    </div>
+    <div class="qr-modal" id="share-modal" hidden>
+      <div class="share-box" role="dialog" aria-modal="true" aria-label="分享圖卡">
+        <div class="share-title">分享這張圖卡</div>
+        <div class="share-modal-actions">
+          <a class="share-button" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Fcards%2Fantiphen.html" target="_blank" rel="noopener">LINE</a>
+          <a class="share-button" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Fcards%2Fantiphen.html" target="_blank" rel="noopener">Facebook</a>
+          <a class="share-button" href="https://www.threads.net/intent/post?text=%E5%AE%89%E4%BD%B3%E7%86%B1%EF%BD%9C%E8%97%A5%E5%B1%80%E8%A1%9B%E6%95%99%E5%8A%A9%E6%89%8B%20https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Fcards%2Fantiphen.html" target="_blank" rel="noopener">Threads</a>
+          <button class="share-button" type="button" onclick="copyCardShareUrl()">複製連結</button>
+        </div>
+        <button class="qr-close" type="button" onclick="closeSharePanel()">完成</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

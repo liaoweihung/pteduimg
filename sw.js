@@ -1,5 +1,5 @@
 ﻿// ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202605171732';
+const CACHE_NAME = 'pwa-cache-v202605211002';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -64,6 +64,7 @@ const urlsToCache = [
   "./img/adult_diaper_2.webp",
   "./img/adult_diaper_3.webp",
   "./img/adult_diaper_4.webp",
+  "./img/antiphen.webp",
   "./img/artficial_vs_paraffin.webp",
   "./img/boyBMI.webp",
   "./img/boy_height2.webp",
@@ -94,6 +95,7 @@ const urlsToCache = [
   "./img/hem_oint_6.png",
   "./img/hemorr_sitbath_1.png",
   "./img/hemorr_sitbath_2.png",
+  "./img/ibuprofen_sol.webp",
   "./img/jin_huang_san.webp",
   "./img/jinchuang_ointment.webp",
   "./img/kwangdong_mu_yao_fen.webp",
@@ -105,6 +107,7 @@ const urlsToCache = [
   "./img/nasal_3.png",
   "./img/nasal_4.png",
   "./img/nasal_5.png",
+  "./img/notice_ped_fever_reducer.webp",
   "./img/oint_choose.webp",
   "./img/oneFTU.webp",
   "./img/oral_hygiene_01.webp",
@@ -294,6 +297,9 @@ const urlsToCache = [
   "./cards/Ped_abx_susp_6.html",
   "./cards/Ped_abx_susp_7.html",
   "./cards/Ped_abx_susp_8.html",
+  "./cards/antiphen.html",
+  "./cards/ibuprofen_sol.html",
+  "./cards/notice_ped_fever_reducer.html",
   "./cards/404.html"
 ];
 

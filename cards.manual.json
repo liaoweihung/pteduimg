@@ -395,5 +395,31 @@
       "不可冷凍。過期就丟棄，顏色稍微變深是正常的",
       "整合全部的步驟"
     ]
+  },
+  "ped_fever_reducer": {
+    "title": "兒科退燒藥水",
+    "category": "pharmacist_product",
+    "order": 16,
+    "hidden": false,
+    "icon": "🌡️",
+    "tags": [
+      "退燒藥水",
+      "安佳熱",
+      "依普芬",
+      "發燒",
+      "退燒",
+      "小朋友",
+      "注意事項"
+    ],
+    "texts": [
+      "安佳熱",
+      "依普芬",
+      "小兒發燒注意事項"
+    ],
+    "steps": [
+      "img/antiphen.webp",
+      "img/ibuprofen_sol.webp",
+      "img/notice_ped_fever_reducer.webp"
+    ]
   }
 }
