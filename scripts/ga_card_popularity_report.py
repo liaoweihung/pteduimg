@@ -154,9 +154,7 @@ def fetch_ga_rows(client, property_id, end_time):
         dimensions=[
             Dimension(name="dateHour"),
             Dimension(name="eventName"),
-            Dimension(name="customEvent:card_title"),
-            Dimension(name="customEvent:card_id"),
-            Dimension(name="customEvent:step_number"),
+            Dimension(name="pagePath"),
         ],
         metrics=[Metric(name="eventCount")],
         date_ranges=[DateRange(start_date=start_date, end_date=end_date)],
@@ -168,7 +166,7 @@ def fetch_ga_rows(client, property_id, end_time):
     except Exception as exc:
         fail(
             "GA4 Data API 查詢失敗。請確認 GA4_PROPERTY_ID、OAuth 認證，"
-            "OAuth refresh token，以及自訂維度 card_title / card_id 是否已建立。\n"
+            "OAuth refresh token，以及 GA4 Data API 權限是否正常。\n"
             f"完整錯誤：{repr(exc)}"
         )
 
@@ -185,9 +183,7 @@ def fetch_ga_rows(client, property_id, end_time):
             {
                 "time": hour_time,
                 "event": row.dimension_values[1].value,
-                "card_title": row.dimension_values[2].value,
-                "card_id": row.dimension_values[3].value,
-                "step_number": row.dimension_values[4].value,
+                "page_path": row.dimension_values[2].value,
                 "count": int(row.metric_values[0].value or 0),
             }
         )
@@ -203,43 +199,55 @@ def count_page_views(rows):
     return sum(row["count"] for row in rows if row["event"] == "page_view")
 
 
-def count_card_clicks(rows):
+def card_page_for_image(path):
+    return f"cards/{Path(path).stem}.html"
+
+
+def normalize_page_path(path):
+    normalized = (path or "").split("?", 1)[0].split("#", 1)[0].lstrip("/")
+    if normalized.startswith("pteduimg/"):
+        normalized = normalized[len("pteduimg/") :]
+    return normalized
+
+
+def build_step_lookup(cards):
+    by_step = {}
+    by_page = {}
+    for item in cards.values():
+        title = item["title"]
+        for index, path in enumerate(item.get("steps", []) or [], start=1):
+            detail = {
+                "title": title,
+                "step_number": index,
+                "path": path,
+                "page_path": card_page_for_image(path),
+            }
+            by_step[(title, index)] = detail
+            by_page[detail["page_path"]] = detail
+    return by_step, by_page
+
+
+def count_card_page_views(rows, page_lookup):
     counter = Counter()
     for row in rows:
-        if row["event"] != "view_instruction_card":
+        if row["event"] != "page_view":
             continue
-        title = row["card_title"] or row["card_id"] or "(未命名)"
-        counter[title] += row["count"]
+        detail = page_lookup.get(normalize_page_path(row.get("page_path")))
+        if not detail:
+            continue
+        counter[detail["title"]] += row["count"]
     return counter
 
 
-def count_card_events(rows, event_name):
+def count_step_page_views(rows, page_lookup):
     counter = Counter()
     for row in rows:
-        if row["event"] != event_name:
+        if row["event"] != "page_view":
             continue
-        title = row["card_title"] or row["card_id"] or "(未命名)"
-        counter[title] += row["count"]
-    return counter
-
-
-def step_number_value(value):
-    try:
-        return int(float(value))
-    except (TypeError, ValueError):
-        return None
-
-
-def count_step_views(rows):
-    counter = Counter()
-    for row in rows:
-        if row["event"] != "view_instruction_step":
+        detail = page_lookup.get(normalize_page_path(row.get("page_path")))
+        if not detail:
             continue
-        title = row["card_title"] or row["card_id"] or "(未命名)"
-        step_number = step_number_value(row.get("step_number"))
-        if not step_number:
-            continue
-        counter[(title, step_number)] += row["count"]
+        counter[(detail["title"], detail["step_number"])] += row["count"]
     return counter
 
 
@@ -255,7 +263,7 @@ def pct(numerator, denominator):
     return f"{numerator / denominator * 100:.1f}%"
 
 
-def recent_cards_table(cards, step_first_seen, rows, end_time):
+def recent_cards_table(cards, step_first_seen, rows, end_time, page_lookup):
     steps = []
     for item in cards.values():
         for index, path in enumerate(item.get("steps", []) or [], start=1):
@@ -281,15 +289,15 @@ def recent_cards_table(cards, step_first_seen, rows, end_time):
         reverse=True,
     )[:20]
 
-    step_views_by_window = {}
+    card_page_views_by_window = {}
     page_views_by_window = {}
     for hours in WINDOW_HOURS:
         window_rows = rows_in_window(rows, end_time, hours)
-        step_views_by_window[hours] = count_step_views(window_rows)
+        card_page_views_by_window[hours] = count_step_page_views(window_rows, page_lookup)
         page_views_by_window[hours] = count_page_views(window_rows)
 
     average_120 = (
-        sum(step_views_by_window[120].get((item["title"], item["step_number"]), 0) for item in recent)
+        sum(card_page_views_by_window[120].get((item["title"], item["step_number"]), 0) for item in recent)
         / max(len(recent), 1)
     )
     table = []
@@ -303,12 +311,12 @@ def recent_cards_table(cards, step_first_seen, rows, end_time):
             "first_seen": first.strftime("%Y-%m-%d %H:%M") if first else "未知",
             "windows": {},
             "score_120h": score(
-                step_views_by_window[120].get((item["title"], item["step_number"]), 0),
+                card_page_views_by_window[120].get((item["title"], item["step_number"]), 0),
                 average_120,
             ),
         }
         for hours in WINDOW_HOURS:
-            views = step_views_by_window[hours].get((item["title"], item["step_number"]), 0)
+            views = card_page_views_by_window[hours].get((item["title"], item["step_number"]), 0)
             row["windows"][hours] = {
                 "clicks": views,
                 "site_views": page_views_by_window[hours],
@@ -318,11 +326,11 @@ def recent_cards_table(cards, step_first_seen, rows, end_time):
     return table
 
 
-def top_cards_tables(rows, end_time):
+def top_cards_tables(rows, end_time, page_lookup):
     tables = {}
     for hours in WINDOW_HOURS:
         window_rows = rows_in_window(rows, end_time, hours)
-        clicks = count_card_clicks(window_rows)
+        clicks = count_card_page_views(window_rows, page_lookup)
         site_views = count_page_views(window_rows)
         top = clicks.most_common(20)
         average = sum(count for _, count in top) / max(len(top), 1)
@@ -340,22 +348,22 @@ def top_cards_tables(rows, end_time):
     return tables
 
 
-def daily_top20_streak(rows, end_time, days=14):
+def daily_top20_streak(rows, end_time, page_lookup, days=14):
     daily_sets = []
     for offset in range(days, 0, -1):
         day_end = end_time - dt.timedelta(days=offset - 1)
         day_rows = rows_in_window(rows, day_end, 24)
-        top_titles = {title for title, _ in count_card_clicks(day_rows).most_common(20)}
+        top_titles = {title for title, _ in count_card_page_views(day_rows, page_lookup).most_common(20)}
         daily_sets.append(top_titles)
     if not daily_sets:
         return []
     return sorted(set.intersection(*daily_sets)) if all(daily_sets) else []
 
 
-def rising_cards_72h(rows, end_time):
-    current_clicks = count_card_clicks(rows_in_window(rows, end_time, 72))
+def rising_cards_72h(rows, end_time, page_lookup):
+    current_clicks = count_card_page_views(rows_in_window(rows, end_time, 72), page_lookup)
     previous_end = end_time - dt.timedelta(hours=72)
-    previous_clicks = count_card_clicks(rows_in_window(rows, previous_end, 72))
+    previous_clicks = count_card_page_views(rows_in_window(rows, previous_end, 72), page_lookup)
 
     current_rank = {title: index + 1 for index, (title, _) in enumerate(current_clicks.most_common())}
     previous_rank = {title: index + 1 for index, (title, _) in enumerate(previous_clicks.most_common())}
@@ -378,19 +386,9 @@ def rising_cards_72h(rows, end_time):
     return sorted(rising, key=lambda item: (-item["improvement"], item["rank"]))[:20]
 
 
-def build_step_lookup(cards):
-    lookup = {}
-    for item in cards.values():
-        title = item["title"]
-        for index, path in enumerate(item.get("steps", []) or [], start=1):
-            lookup[(title, index)] = path
-    return lookup
-
-
-def step_popularity_tables(cards, rows, end_time):
-    step_lookup = build_step_lookup(cards)
+def step_popularity_tables(cards, rows, end_time, step_lookup, page_lookup):
     page_views_120 = count_page_views(rows_in_window(rows, end_time, 120))
-    step_views_120 = count_step_views(rows_in_window(rows, end_time, 120))
+    step_views_120 = count_step_page_views(rows_in_window(rows, end_time, 120), page_lookup)
 
     card_details = []
     for item in sorted(cards.values(), key=lambda card: (card.get("order", 9999), card["title"])):
@@ -414,12 +412,13 @@ def step_popularity_tables(cards, rows, end_time):
     top = step_views_120.most_common(30)
     average = sum(count for _, count in top) / max(len(top), 1)
     for rank, ((title, step_number), views) in enumerate(top, start=1):
+        detail = step_lookup.get((title, step_number), {})
         top_steps.append(
             {
                 "rank": rank,
                 "title": title,
                 "step_number": step_number,
-                "path": step_lookup.get((title, step_number), ""),
+                "path": detail.get("path", ""),
                 "views_120h": views,
                 "ratio_120h": pct(views, page_views_120),
                 "score": score(views, average),
@@ -448,8 +447,8 @@ def write_markdown(report):
         "",
         f"- 統計切點：{report['cutoff_taipei']}（台灣時間）",
         "- 網站瀏覽分母：GA4 `page_view`",
-        "- 圖卡點擊分子：GA4 `view_instruction_card`",
-        "- 最近上架圖卡使用 GA4 `view_instruction_step`，可追蹤加到既有系列的新圖片",
+        "- 圖卡觀看分子：GA4 `page_view`，且網址符合 `/pteduimg/cards/*.html`",
+        "- 每張圖卡會依照 `cards.json` 的圖片路徑對應到自己的靜態網址",
         "- 相對分數：同表平均點擊數 = 100，兩倍平均 = 200，一半平均 = 50",
         "",
         "## 1. 最近上架 20 張圖卡",
@@ -491,7 +490,7 @@ def write_markdown(report):
             [item["rank"], item["title"], item["clicks"], item["ratio"], f"{item['score']:.1f}"]
             for item in report["top_cards"][str(hours)]
         ]
-        lines.append(md_table(["排名", "圖卡", "點擊", "點擊/瀏覽", "相對分數"], rows))
+        lines.append(md_table(["排名", "圖卡", "觀看", "觀看/瀏覽", "相對分數"], rows))
         lines.append("")
 
     lines.extend(["## 3. 過去 14 天每天都在前 20 的圖卡", ""])
@@ -506,7 +505,7 @@ def write_markdown(report):
             [item["title"], item["previous_rank"], item["rank"], item["improvement"], item["previous_clicks"], item["clicks"]]
             for item in report["rising_72h"]
         ]
-        lines.append(md_table(["圖卡", "前 72h 排名", "近 72h 排名", "進步名次", "前 72h 點擊", "近 72h 點擊"], rows))
+        lines.append(md_table(["圖卡", "前 72h 排名", "近 72h 排名", "進步名次", "前 72h 觀看", "近 72h 觀看"], rows))
     else:
         lines.append("- 無")
 
@@ -544,6 +543,7 @@ def write_markdown(report):
 
 def main():
     cards, _ = load_cards()
+    step_lookup, page_lookup = build_step_lookup(cards)
     step_first_seen = estimate_step_first_seen_times(cards)
     end_time = report_cutoff_now()
     client, property_id = load_ga_client()
@@ -551,11 +551,11 @@ def main():
 
     report = {
         "cutoff_taipei": end_time.strftime("%Y-%m-%d %H:%M"),
-        "recent_cards": recent_cards_table(cards, step_first_seen, rows, end_time),
-        "top_cards": {str(hours): table for hours, table in top_cards_tables(rows, end_time).items()},
-        "daily_top20_all_14_days": daily_top20_streak(rows, end_time),
-        "rising_72h": rising_cards_72h(rows, end_time),
-        "step_popularity": step_popularity_tables(cards, rows, end_time),
+        "recent_cards": recent_cards_table(cards, step_first_seen, rows, end_time, page_lookup),
+        "top_cards": {str(hours): table for hours, table in top_cards_tables(rows, end_time, page_lookup).items()},
+        "daily_top20_all_14_days": daily_top20_streak(rows, end_time, page_lookup),
+        "rising_72h": rising_cards_72h(rows, end_time, page_lookup),
+        "step_popularity": step_popularity_tables(cards, rows, end_time, step_lookup, page_lookup),
     }
 
     REPORT_JSON_PATH.parent.mkdir(parents=True, exist_ok=True)

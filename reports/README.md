@@ -12,15 +12,15 @@
 - `GA4_OAUTH_CLIENT_SECRET`
 - `GA4_OAUTH_REFRESH_TOKEN`
 
-報表使用 GA4 事件：
+報表使用 GA4 資料：
 
-- `view_instruction_card`
 - `page_view`
+- `pagePath` 符合 `/pteduimg/cards/*.html` 的頁面會被計為單張圖卡觀看
 
-並使用已建立的自訂維度：
+圖卡對應規則：
 
-- `card_title`
-- `card_id`
+- `cards.json` 的每個 `steps` 圖片路徑會對應到 `cards/{圖片檔名不含副檔名}.html`
+- 報表用這個靜態網址回推系列名稱與第幾張
 
 排程時間：
 
