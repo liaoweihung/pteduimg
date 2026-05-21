@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="./icon.png?v=3">
+    <title>10 年心血管風險評估</title>
+    <meta name="description" content="輸入年齡、性別、膽固醇、血壓與生活風險因子，估算未來 10 年心血管疾病風險。">
+    <script>
+      const GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
+      const urlParams = new URLSearchParams(window.location.search);
+      const host = window.location.hostname;
+      const isPrivateNetworkHost = ['localhost', '127.0.0.1', '::1'].includes(host)
+          || /^192\.168\./.test(host)
+          || /^10\./.test(host)
+          || /^172\.(1[6-9]|2\d|3[0-1])\./.test(host);
+      const isLocalPreview = isPrivateNetworkHost || window.location.protocol === 'file:';
+
+      if (urlParams.get('dev') === '1') {
+          localStorage.setItem('isDeveloper', 'true');
+          alert('已開啟開發者隱形模式！未來的瀏覽將不會被 GA4 記錄。');
+      }
+
+      if (urlParams.get('dev') === '0') {
+          localStorage.removeItem('isDeveloper');
+          alert('已關閉開發者隱形模式。');
+      }
+
+      window.isAnalyticsDisabled = isLocalPreview || localStorage.getItem('isDeveloper') === 'true';
+      window[`ga-disable-${GA_MEASUREMENT_ID}`] = window.isAnalyticsDisabled;
+
+      function shouldTrackAnalytics() {
+          return !window.isAnalyticsDisabled && typeof gtag === 'function';
+      }
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ dataLayer.push(arguments); };
+
+      if (!window.isAnalyticsDisabled) {
+          const gaScript = document.createElement('script');
+          gaScript.async = true;
+          gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+          document.head.appendChild(gaScript);
+          gtag('js', new Date());
+          gtag('config', GA_MEASUREMENT_ID);
+      }
+    </script>
+    <link rel="stylesheet" href="./css/base.css?v=6">
+    <link rel="stylesheet" href="./css/10-yr-cv-risk.css?v=1">
+</head>
+<body class="cv-risk-page">
+    <header>
+        <img src="icon.png?v=3" alt="網站圖示" class="header-icon">
+        <span>10 年心血管風險評估</span>
+    </header>
+
+    <main class="cv-risk-shell">
+        <button class="back-button" type="button" onclick="goBackToSource()">‹ 回前頁</button>
+
+        <section class="intro-card" aria-labelledby="cv-risk-title">
+            <div class="intro-icon" aria-hidden="true">❤️</div>
+            <div>
+                <h1 id="cv-risk-title">10 年心血管風險評估</h1>
+                <p>依 ACC/AHA 2013 Pooled Cohort Equations 估算 40 至 79 歲成人未來 10 年心血管疾病風險，結果可作為藥師衛教與就醫討論參考。</p>
+            </div>
+        </section>
+
+        <section class="form-card" aria-labelledby="form-title">
+            <h2 id="form-title">輸入評估資料</h2>
+            <form id="risk-form" novalidate>
+                <div class="field-grid two-columns">
+                    <label class="field">
+                        <span>年齡 (40-79)</span>
+                        <input type="number" id="age" value="50" min="40" max="79" inputmode="numeric" required>
+                    </label>
+                    <label class="field">
+                        <span>性別</span>
+                        <select id="gender">
+                            <option value="male">男性</option>
+                            <option value="female">女性</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="field-grid two-columns" style="margin-top: 12px;">
+                    <label class="field">
+                        <span>總膽固醇 (mg/dL)</span>
+                        <input type="number" id="tc" value="200" min="1" inputmode="decimal" required>
+                    </label>
+                    <label class="field">
+                        <span>高密度脂蛋白 HDL (mg/dL)</span>
+                        <input type="number" id="hdl" value="50" min="1" inputmode="decimal" required>
+                    </label>
+                </div>
+
+                <div class="field-grid" style="margin-top: 12px;">
+                    <label class="field">
+                        <span>收縮壓 (高的那個, mmHg)</span>
+                        <input type="number" id="sbp" value="120" min="1" inputmode="decimal" required>
+                    </label>
+                </div>
+
+                <div class="check-card" aria-labelledby="risk-factor-title">
+                    <div class="check-group-title" id="risk-factor-title">風險因子</div>
+                    <label>
+                        <input type="checkbox" id="bpMed">
+                        <span>正在服用高血壓藥物</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="diabetes">
+                        <span>患有糖尿病</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="smoker">
+                        <span>目前有抽菸習慣</span>
+                    </label>
+                </div>
+
+                <p class="form-message" id="form-message" role="alert"></p>
+                <button class="primary-action" type="submit">計算我的風險</button>
+                <button class="secondary-action" id="reset-form" type="button">恢復預設值</button>
+            </form>
+        </section>
+
+        <section class="result-card" id="riskResult" aria-live="polite" hidden>
+            <p class="result-eyebrow">未來 10 年心血管疾病發生機率</p>
+            <h2 class="risk-percentage" id="riskPercentage">--</h2>
+            <p class="risk-advice" id="riskAdvice">--</p>
+            <div class="action-plan" id="actionPlan"></div>
+        </section>
+
+        <section class="note-card">
+            <strong>提醒</strong>
+            <p>本計算器預設人種為「White/Other」。</p>
+            <p>此工具僅供衛教參考，不能取代醫師診斷、處方或個人化治療建議。若已有心血管疾病、腎臟病、家族性高膽固醇血症，或檢驗值明顯異常，請直接與醫師或藥師討論。</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p style="margin: 0 0 8px 0;">本工具圖文僅供藥師衛教參考，非專業人士務必諮詢藥師建議。</p>
+        <p style="margin: 0;">
+            <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a>
+            &nbsp;|&nbsp;
+            <a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" onclick="trackFeedbackClick()">💬 意見回饋</a>
+        </p>
+    </footer>
+
+    <script>
+        const defaultValues = {
+            age: '50',
+            gender: 'male',
+            tc: '200',
+            hdl: '50',
+            sbp: '120',
+            bpMed: false,
+            diabetes: false,
+            smoker: false
+        };
+
+        const riskForm = document.getElementById('risk-form');
+        const formMessage = document.getElementById('form-message');
+
+        function getNumberFromInput(inputId) {
+            const rawValue = document.getElementById(inputId).value.trim();
+            return rawValue === '' ? NaN : Number(rawValue);
+        }
+
+        function getValidationMessage(age, tc, hdl, sbp) {
+            if (!Number.isFinite(age) || age < 40 || age > 79) {
+                return '此預測模型適用於 40 至 79 歲之成年人。';
+            }
+            if (!Number.isFinite(tc) || tc <= 0) return '請輸入有效的總膽固醇數值。';
+            if (!Number.isFinite(hdl) || hdl <= 0) return '請輸入有效的 HDL 數值。';
+            if (!Number.isFinite(sbp) || sbp <= 0) return '請輸入有效的收縮壓數值。';
+            return '';
+        }
+
+        function calculateRisk() {
+            const age = getNumberFromInput('age');
+            const gender = document.getElementById('gender').value;
+            const tc = getNumberFromInput('tc');
+            const hdl = getNumberFromInput('hdl');
+            const sbp = getNumberFromInput('sbp');
+            const bpMed = document.getElementById('bpMed').checked;
+            const diabetes = document.getElementById('diabetes').checked;
+            const smoker = document.getElementById('smoker').checked;
+            const validationMessage = getValidationMessage(age, tc, hdl, sbp);
+
+            if (validationMessage) {
+                formMessage.textContent = validationMessage;
+                document.getElementById('riskResult').hidden = true;
+                return;
+            }
+
+            const lnAge = Math.log(age);
+            const lnTC = Math.log(tc);
+            const lnHdl = Math.log(hdl);
+            const lnSbp = Math.log(sbp);
+
+            let sum = 0;
+            let meanSum = 0;
+            let baselineSurvival = 0;
+
+            if (gender === 'female') {
+                sum = (-29.799 * lnAge) + (4.884 * Math.pow(lnAge, 2)) + (13.540 * lnTC) - (3.114 * lnAge * lnTC)
+                      - (13.578 * lnHdl) + (3.149 * lnAge * lnHdl);
+                sum += bpMed ? (2.019 * lnSbp) : (1.957 * lnSbp);
+                sum += smoker ? (7.574 - 1.665 * lnAge) : 0;
+                sum += diabetes ? 0.661 : 0;
+                meanSum = -29.18;
+                baselineSurvival = 0.9665;
+            } else {
+                sum = (12.344 * lnAge) + (11.853 * lnTC) - (2.664 * lnAge * lnTC) - (7.990 * lnHdl) + (1.769 * lnAge * lnHdl);
+                sum += bpMed ? (1.797 * lnSbp) : (1.764 * lnSbp);
+                sum += smoker ? (7.837 - 1.795 * lnAge) : 0;
+                sum += diabetes ? 0.658 : 0;
+                meanSum = 61.18;
+                baselineSurvival = 0.9144;
+            }
+
+            const risk = 1 - Math.pow(baselineSurvival, Math.exp(sum - meanSum));
+            const riskPercent = Number((risk * 100).toFixed(1));
+
+            renderRiskResult(riskPercent);
+        }
+
+        function renderRiskResult(riskPercent) {
+            const resultBox = document.getElementById('riskResult');
+            const percentText = document.getElementById('riskPercentage');
+            const adviceText = document.getElementById('riskAdvice');
+            const actionPlan = document.getElementById('actionPlan');
+            let adviceHtml = '';
+            let riskClass = '';
+
+            formMessage.textContent = '';
+            resultBox.hidden = false;
+            resultBox.className = 'result-card';
+            percentText.textContent = `${riskPercent.toFixed(1)} %`;
+
+            if (riskPercent < 5.0) {
+                riskClass = 'low';
+                adviceText.textContent = '🟢 低風險：請繼續保持良好的生活習慣！';
+                adviceHtml = '建議：維持均衡飲食與規律運動，定期追蹤體檢數據。';
+            } else if (riskPercent < 7.5) {
+                riskClass = 'borderline';
+                adviceText.textContent = '🟡 邊緣風險：需要開始注意囉！';
+                adviceHtml = '建議：可與藥師討論如何透過飲食、運動或保健食品介入，改善血脂與血壓。';
+            } else if (riskPercent < 20) {
+                riskClass = 'intermediate';
+                adviceText.textContent = '🟠 中等風險：建議積極介入';
+                adviceHtml = '臨床建議：此階段常需考慮使用 statin 類藥物。請攜帶體檢報告至櫃檯，由藥師為您進行詳細用藥評估。';
+            } else {
+                riskClass = 'high';
+                adviceText.textContent = '🔴 高風險：強烈建議醫療介入';
+                adviceHtml = '臨床建議：您的心血管風險顯著偏高，請務必按時服用處方藥物，切勿自行停藥。';
+            }
+
+            resultBox.classList.add(riskClass);
+            actionPlan.innerHTML = adviceHtml;
+            resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function resetForm() {
+            Object.entries(defaultValues).forEach(([key, value]) => {
+                const element = document.getElementById(key);
+                if (element.type === 'checkbox') {
+                    element.checked = value;
+                } else {
+                    element.value = value;
+                }
+            });
+            formMessage.textContent = '';
+            document.getElementById('riskResult').hidden = true;
+        }
+
+        function goBackToSource() {
+            const referrer = document.referrer;
+            let canReturnToMainPage = false;
+
+            if (referrer) {
+                const referrerUrl = new URL(referrer);
+                const referrerPage = referrerUrl.pathname.split('/').pop() || 'index.html';
+                canReturnToMainPage = referrerUrl.origin === window.location.origin &&
+                    (referrerPage === 'index.html' || referrerPage === 'public.html' || referrerPage === 'calc.html');
+            }
+
+            if (canReturnToMainPage && window.history.length > 1) {
+                window.history.back();
+                return;
+            }
+
+            window.location.href = './calc.html';
+        }
+
+        function trackFeedbackClick() {
+            if (typeof shouldTrackAnalytics === 'function' && shouldTrackAnalytics() && typeof gtag === 'function') {
+                gtag('event', 'click_feedback', { 'source_app': 'pteduimg' });
+            }
+        }
+
+        riskForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            calculateRisk();
+        });
+
+        document.getElementById('reset-form').addEventListener('click', resetForm);
+    </script>
+</body>
+</html>
