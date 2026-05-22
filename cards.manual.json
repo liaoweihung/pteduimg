@@ -230,7 +230,7 @@
   "chinese_powder_prep": {
     "title": "中藥散劑怎麼調",
     "category": "pharmacist_general",
-    "order": 2,
+    "order": 121,
     "hidden": false,
     "icon": "🥣",
     "tags": [
