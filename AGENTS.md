@@ -98,6 +98,42 @@ Add a new top-level key to `cards.json`, for example:
 
 Then mirror the appropriate metadata in `cards.manual.json`, run `python build.py`, and verify generated pages.
 
+## Scheduled Card Publishing
+
+Prepared card series can be committed before they are visible on the site.
+
+Use:
+
+```json
+"hidden": true,
+"publish_at": "2026-06-01T09:00:00+08:00"
+```
+
+Rules:
+
+- Add `publish_at` to both `cards.json` and `cards.manual.json`.
+- Keep `hidden: true` until publication time.
+- Use an ISO 8601 date-time with timezone. Prefer Taiwan time with `+08:00`.
+- The scheduled GitHub Actions workflow runs `scripts/publish_scheduled_cards.py` hourly.
+- While a card has both `hidden: true` and `publish_at`, `build.py` treats it as pending:
+  - it is not included in generated `cards/*.html`
+  - it is not included in `sitemap.xml`
+  - its images are not added to the service worker pre-cache
+- When `publish_at` has arrived, the workflow:
+  - changes `hidden` to `false` in both JSON files
+  - updates `CHANGELOG.md`
+  - runs `python build.py`
+  - runs JSON checks and `python scripts/check_site.py`
+  - commits the updated data and generated static files
+- If no scheduled cards are due, the workflow makes no commit.
+
+Manual local test:
+
+```bash
+python scripts/publish_scheduled_cards.py --dry-run
+python scripts/publish_scheduled_cards.py --now 2026-06-01T09:00:00+08:00 --dry-run
+```
+
 ## Image Conversion
 
 Use Pillow when available:

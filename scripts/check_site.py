@@ -26,6 +26,10 @@ def page_for_image(image_path: str) -> Path:
     return ROOT / "cards" / f"{Path(image_path).stem}.html"
 
 
+def is_scheduled_hidden(card: dict) -> bool:
+    return isinstance(card, dict) and card.get("hidden") is True and bool(card.get("publish_at"))
+
+
 def check(condition: bool, ok: str, fail: str, failures: list[str]) -> None:
     if condition:
         print(f"OK   {ok}")
@@ -53,15 +57,17 @@ def check_card_pages(cards: dict, failures: list[str]) -> list[Path]:
     missing_images: list[str] = []
 
     for card in cards.values():
+        skip_pages = is_scheduled_hidden(card)
         for step in card.get("steps", []):
             if not isinstance(step, str) or not step.startswith("img/"):
                 continue
             image_path = ROOT / step
             page_path = page_for_image(step)
-            pages.append(page_path)
+            if not skip_pages:
+                pages.append(page_path)
             if not image_path.exists():
                 missing_images.append(step)
-            if not page_path.exists():
+            if not skip_pages and not page_path.exists():
                 missing_pages.append(rel(page_path))
 
     check(not missing_images, "all referenced images exist", f"missing images: {missing_images[:5]}", failures)

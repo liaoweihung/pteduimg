@@ -40,6 +40,10 @@ def read_seo():
     return data if isinstance(data, dict) else {}
 
 
+def is_scheduled_hidden(card):
+    return isinstance(card, dict) and card.get("hidden") is True and bool(card.get("publish_at"))
+
+
 def page_for_image(path):
     return f"cards/{Path(path).stem}.html"
 
@@ -149,6 +153,8 @@ def build_seo_index(cards):
     used_ids = set()
 
     for card_id, card in cards.items():
+        if is_scheduled_hidden(card):
+            continue
         steps = card.get("steps") or []
         for index, step in enumerate(steps):
             if not step:
@@ -766,6 +772,8 @@ def generate_card_pages(cards, seo_index):
     used_ids = set()
 
     for card_id, card in cards.items():
+        if is_scheduled_hidden(card):
+            continue
         steps = card.get("steps") or []
         for index, step in enumerate(steps):
             if not step:
@@ -796,6 +804,7 @@ def update_service_worker(cards, generated_pages):
     image_files = sorted({
         os.path.basename(step)
         for card in cards.values()
+        if not is_scheduled_hidden(card)
         for step in card.get("steps", [])
         if isinstance(step, str) and step.startswith("img/")
     })

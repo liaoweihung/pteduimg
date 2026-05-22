@@ -1,0 +1,51 @@
+name: Scheduled card publish
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Every hour at minute 12. GitHub Actions uses UTC and may start a few minutes late.
+    - cron: "12 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Publish due scheduled cards
+        run: python scripts/publish_scheduled_cards.py
+
+      - name: Rebuild static site when cards changed
+        id: changes
+        run: |
+          if git diff --quiet -- cards.json cards.manual.json CHANGELOG.md; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No scheduled cards were published."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            python build.py
+            python -m json.tool cards.json > /dev/null
+            python -m json.tool cards.manual.json > /dev/null
+            python scripts/check_site.py
+          fi
+
+      - name: Commit scheduled publication
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cards.json cards.manual.json CHANGELOG.md cards/*.html 404.html cards/404.html sitemap.xml seo.json robots.txt sw.js
+          git commit -m "Publish scheduled cards"
+          git push
