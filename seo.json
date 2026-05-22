@@ -107,6 +107,42 @@
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/EnteroVirus_vaccine.html",
     "twitter_card": "summary_large_image"
   },
+  "cards/dry_eye_comp.html": {
+    "page_title": "眼睛乾不一定是單純乾眼症｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「眼睛乾不一定是單純乾眼症」重點，幫助民眾了解乾眼症相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "眼睛乾不一定是單純乾眼症",
+    "image_alt": "眼睛乾不一定是單純乾眼症第 1 張圖卡",
+    "og_title": "眼睛乾不一定是單純乾眼症｜藥局衛教助手",
+    "og_description": "這張圖卡整理「眼睛乾不一定是單純乾眼症」重點，幫助民眾了解乾眼症相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/dry_eye_comp.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/dry_eye_comp.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/dry_eye_comp.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/dry_eye_tx.html": {
+    "page_title": "乾眼症常見治療｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「乾眼症常見治療」重點，幫助民眾了解乾眼症相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "乾眼症常見治療",
+    "image_alt": "乾眼症常見治療第 2 張圖卡",
+    "og_title": "乾眼症常見治療｜藥局衛教助手",
+    "og_description": "這張圖卡整理「乾眼症常見治療」重點，幫助民眾了解乾眼症相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/dry_eye_tx.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/dry_eye_tx.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/dry_eye_tx.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/dry_eye_dailycare.html": {
+    "page_title": "乾眼症日常照護｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「乾眼症日常照護」重點，幫助民眾了解乾眼症相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "乾眼症日常照護",
+    "image_alt": "乾眼症日常照護第 3 張圖卡",
+    "og_title": "乾眼症日常照護｜藥局衛教助手",
+    "og_description": "這張圖卡整理「乾眼症日常照護」重點，幫助民眾了解乾眼症相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/dry_eye_dailycare.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/dry_eye_dailycare.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/dry_eye_dailycare.html",
+    "twitter_card": "summary_large_image"
+  },
   "cards/Exame_Hpylore.html": {
     "page_title": "胃幽門螺旋桿菌檢查｜藥局衛教助手",
     "meta_description": "這張圖卡整理「胃幽門螺旋桿菌檢查」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",

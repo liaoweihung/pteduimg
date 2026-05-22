@@ -26,6 +26,30 @@
       "img/EnteroVirus_vaccine.webp"
     ]
   },
+  "dry_eye": {
+    "title": "乾眼症",
+    "category": "public_education",
+    "order": 1,
+    "hidden": false,
+    "icon": "👁️",
+    "tags": [
+      "乾眼症",
+      "自體免疫",
+      "魚油",
+      "熱敷",
+      "人工淚液"
+    ],
+    "texts": [
+      "眼睛乾不一定是單純乾眼症",
+      "乾眼症常見治療",
+      "乾眼症日常照護"
+    ],
+    "steps": [
+      "img/dry_eye_comp.webp",
+      "img/dry_eye_tx.webp",
+      "img/dry_eye_dailycare.webp"
+    ]
+  },
   "Hpylori_exam": {
     "title": "胃幽門螺旋桿菌檢查",
     "category": "public_education",
