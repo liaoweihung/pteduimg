@@ -129,6 +129,7 @@
             <h2 class="risk-percentage" id="riskPercentage">--</h2>
             <p class="risk-advice" id="riskAdvice">--</p>
             <div class="action-plan" id="actionPlan"></div>
+            <div class="risk-comparison" id="riskComparison"></div>
         </section>
 
         <section class="note-card">
@@ -177,23 +178,7 @@
             return '';
         }
 
-        function calculateRisk() {
-            const age = getNumberFromInput('age');
-            const gender = document.getElementById('gender').value;
-            const tc = getNumberFromInput('tc');
-            const hdl = getNumberFromInput('hdl');
-            const sbp = getNumberFromInput('sbp');
-            const bpMed = document.getElementById('bpMed').checked;
-            const diabetes = document.getElementById('diabetes').checked;
-            const smoker = document.getElementById('smoker').checked;
-            const validationMessage = getValidationMessage(age, tc, hdl, sbp);
-
-            if (validationMessage) {
-                formMessage.textContent = validationMessage;
-                document.getElementById('riskResult').hidden = true;
-                return;
-            }
-
+        function calculatePceRisk({ age, gender, tc, hdl, sbp, bpMed, diabetes, smoker }) {
             const lnAge = Math.log(age);
             const lnTC = Math.log(tc);
             const lnHdl = Math.log(hdl);
@@ -220,13 +205,49 @@
                 baselineSurvival = 0.9144;
             }
 
-            const risk = 1 - Math.pow(baselineSurvival, Math.exp(sum - meanSum));
-            const riskPercent = Number((risk * 100).toFixed(1));
-
-            renderRiskResult(riskPercent);
+            return (1 - Math.pow(baselineSurvival, Math.exp(sum - meanSum))) * 100;
         }
 
-        function renderRiskResult(riskPercent) {
+        function calculateRisk() {
+            const age = getNumberFromInput('age');
+            const gender = document.getElementById('gender').value;
+            const tc = getNumberFromInput('tc');
+            const hdl = getNumberFromInput('hdl');
+            const sbp = getNumberFromInput('sbp');
+            const bpMed = document.getElementById('bpMed').checked;
+            const diabetes = document.getElementById('diabetes').checked;
+            const smoker = document.getElementById('smoker').checked;
+            const validationMessage = getValidationMessage(age, tc, hdl, sbp);
+
+            if (validationMessage) {
+                formMessage.textContent = validationMessage;
+                document.getElementById('riskResult').hidden = true;
+                return;
+            }
+
+            const riskInputs = { age, gender, tc, hdl, sbp, bpMed, diabetes, smoker };
+            const riskPercent = calculatePceRisk(riskInputs);
+            const comparison = {
+                noSmokingRisk: calculatePceRisk({ ...riskInputs, smoker: false })
+            };
+
+            renderRiskResult(riskPercent, comparison);
+        }
+
+        function formatRisk(value) {
+            return `${value.toFixed(1)} %`;
+        }
+
+        function renderRiskComparison(comparison) {
+            const comparisonBox = document.getElementById('riskComparison');
+
+            comparisonBox.innerHTML = `
+                <p class="comparison-title">如果不抽菸，您未來 10 年心血管疾病發生的機率為</p>
+                <strong>${formatRisk(comparison.noSmokingRisk)}</strong>
+            `;
+        }
+
+        function renderRiskResult(riskPercent, comparison) {
             const resultBox = document.getElementById('riskResult');
             const percentText = document.getElementById('riskPercentage');
             const adviceText = document.getElementById('riskAdvice');
@@ -237,7 +258,7 @@
             formMessage.textContent = '';
             resultBox.hidden = false;
             resultBox.className = 'result-card';
-            percentText.textContent = `${riskPercent.toFixed(1)} %`;
+            percentText.textContent = formatRisk(riskPercent);
 
             if (riskPercent < 5.0) {
                 riskClass = 'low';
@@ -259,6 +280,7 @@
 
             resultBox.classList.add(riskClass);
             actionPlan.innerHTML = adviceHtml;
+            renderRiskComparison(comparison);
             resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
 
