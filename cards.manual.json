@@ -450,7 +450,7 @@
     "title": "兒科感冒藥水",
     "category": "pharmacist_product",
     "order": 17,
-    "hidden": true,
+    "hidden": false,
     "publish_at": "2026-05-23T07:00:00+08:00",
     "icon": "🧒",
     "tags": [

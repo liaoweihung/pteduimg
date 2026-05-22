@@ -1739,5 +1739,41 @@
     "og_url": "https://liaoweihung.github.io/pteduimg/cards/notice_ped_fever_reducer.html",
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/notice_ped_fever_reducer.html",
     "twitter_card": "summary_large_image"
+  },
+  "cards/ped_cold_cypromin.html": {
+    "page_title": "希普利敏 #第一代抗組織胺｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「希普利敏 #第一代抗組織胺」重點，幫助民眾了解兒科感冒藥水相關衛教資訊。",
+    "h1": "希普利敏 #第一代抗組織胺",
+    "image_alt": "希普利敏 #第一代抗組織胺第 1 張圖卡",
+    "og_title": "希普利敏 #第一代抗組織胺｜藥局衛教助手",
+    "og_description": "這張圖卡整理「希普利敏 #第一代抗組織胺」重點，幫助民眾了解兒科感冒藥水相關衛教資訊。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/ped_cold_cypromin.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_cypromin.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_cypromin.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/ped_cold_cetirizine.html": {
+    "page_title": "盛克敏 #第二代抗組織胺｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「盛克敏 #第二代抗組織胺」重點，幫助民眾了解兒科感冒藥水相關衛教資訊。",
+    "h1": "盛克敏 #第二代抗組織胺",
+    "image_alt": "盛克敏 #第二代抗組織胺第 2 張圖卡",
+    "og_title": "盛克敏 #第二代抗組織胺｜藥局衛教助手",
+    "og_description": "這張圖卡整理「盛克敏 #第二代抗組織胺」重點，幫助民眾了解兒科感冒藥水相關衛教資訊。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/ped_cold_cetirizine.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_cetirizine.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_cetirizine.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/ped_cold_secorine.html": {
+    "page_title": "息咳寧 #綜合感冒藥水｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「息咳寧 #綜合感冒藥水」重點，幫助民眾了解兒科感冒藥水相關衛教資訊。",
+    "h1": "息咳寧 #綜合感冒藥水",
+    "image_alt": "息咳寧 #綜合感冒藥水第 3 張圖卡",
+    "og_title": "息咳寧 #綜合感冒藥水｜藥局衛教助手",
+    "og_description": "這張圖卡整理「息咳寧 #綜合感冒藥水」重點，幫助民眾了解兒科感冒藥水相關衛教資訊。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/ped_cold_secorine.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html",
+    "twitter_card": "summary_large_image"
   }
 }
