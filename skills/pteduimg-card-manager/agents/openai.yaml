@@ -1,0 +1,7 @@
+interface:
+  display_name: "pteduimg Card Manager"
+  short_description: "Add, schedule, and verify pteduimg image cards."
+  default_prompt: "Use $pteduimg-card-manager to add or schedule a pharmacy/public education image card and verify generated outputs."
+
+policy:
+  allow_implicit_invocation: true

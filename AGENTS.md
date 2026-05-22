@@ -2,6 +2,8 @@
 
 This repository is a static GitHub Pages site for pharmacy/public education image cards.
 
+Project skill: for card additions, scheduled card releases, image conversion, and generated-page verification, also consult `skills/pteduimg-card-manager/SKILL.md`.
+
 ## Card Data Model
 
 - `cards.json` is the main runtime data source.
