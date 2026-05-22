@@ -656,5 +656,33 @@
       "img/ibuprofen_sol.webp",
       "img/notice_ped_fever_reducer.webp"
     ]
+  },
+  "pediatric_cold_syrup": {
+    "title": "兒科感冒藥水",
+    "category": "pharmacist_product",
+    "order": 17,
+    "hidden": true,
+    "publish_at": "2026-05-23T07:00:00+08:00",
+    "icon": "🧒",
+    "tags": [
+      "過敏",
+      "小孩",
+      "幼童",
+      "希普利敏",
+      "盛克敏",
+      "息咳寧",
+      "抗組織胺",
+      "綜合感冒藥水"
+    ],
+    "texts": [
+      "希普利敏 #第一代抗組織胺",
+      "盛克敏 #第二代抗組織胺",
+      "息咳寧 #綜合感冒藥水"
+    ],
+    "steps": [
+      "img/ped_cold_cypromin.webp",
+      "img/ped_cold_cetirizine.webp",
+      "img/ped_cold_secorine.webp"
+    ]
   }
 }
