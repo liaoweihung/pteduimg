@@ -112,12 +112,15 @@ def fallback_seo_for_card(card_id, card, step, step_index):
     h1 = title_topic
     description = seo_description(topic, series_title, category_label)
     alt = f"{title_topic}圖卡" if total <= 1 else f"{title_topic}第 {step_number} 張圖卡"
+    tags = card.get("tags") or []
+    keywords = "、".join(clean_seo_text(tag) for tag in tags if clean_seo_text(tag))
 
     return {
         "page_title": title,
         "meta_description": description,
         "h1": h1,
         "image_alt": alt,
+        "keywords": keywords,
         "og_title": title,
         "og_description": description,
         "og_image": image_url,
@@ -138,6 +141,7 @@ def normalize_card_seo(raw_seo, fallback):
     seo["meta_description"] = seo.get("meta_description") or fallback["meta_description"]
     seo["h1"] = seo.get("h1") or seo["page_title"].split("｜")[0]
     seo["image_alt"] = seo.get("image_alt") or f"{seo['h1']}圖卡"
+    seo["keywords"] = seo.get("keywords") or fallback.get("keywords", "")
     seo["og_title"] = seo.get("og_title") or seo["page_title"]
     seo["og_description"] = seo.get("og_description") or seo["meta_description"]
     seo["og_image"] = seo.get("og_image") or fallback["og_image"]
@@ -211,6 +215,7 @@ def render_card_page(card_id, card, step, step_index, seo):
     title = seo["page_title"]
     tracking_title = seo.get("tracking_title") or title
     description = seo["meta_description"]
+    keywords = clean_seo_text(seo.get("keywords") or "")
     h1 = clean_seo_text(card.get("title") or seo["h1"])
     image_alt = seo["image_alt"]
     page_path = page_for_image(step)
@@ -279,6 +284,7 @@ def render_card_page(card_id, card, step, step_index, seo):
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(description)}">
+  {f'<meta name="keywords" content="{esc(keywords)}">' if keywords else ''}
   <link rel="canonical" href="{esc(seo['canonical'])}">
   <link rel="icon" type="image/png" href="../icon.png?v=3">
   <meta property="og:type" content="article">

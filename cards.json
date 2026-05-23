@@ -12,6 +12,17 @@
       "img/boyBMI.webp",
       "img/girlBMI.webp",
       "img/height_tips.webp"
+    ],
+    "tags": [
+      "身高預測",
+      "身高預測公式",
+      "台灣男孩身高",
+      "長高",
+      "台灣女孩身高",
+      "孩童BMI",
+      "成長",
+      "發育",
+      "兒童身長發育"
     ]
   },
   "Prevent_Enterovirus": {
@@ -24,6 +35,12 @@
       "img/Wash_hands_five_steps.webp",
       "img/Prevent_Enterovirus.webp",
       "img/EnteroVirus_vaccine.webp"
+    ],
+    "tags": [
+      "腸病毒",
+      "洗手",
+      "預防腸病毒",
+      "A71型疫苗"
     ]
   },
   "dry_eye": {
@@ -61,6 +78,12 @@
       "img/5_ways_stomatch.webp",
       "img/methodology_of_exam_Hp.webp",
       "img/treatment_of_Hpylore.webp"
+    ],
+    "tags": [
+      "誰需要胃幽門螺旋桿菌檢查",
+      "胃幽門螺旋桿菌檢查原理",
+      "胃幽門螺旋桿菌",
+      "治療"
     ]
   },
   "Hantaviridae": {
@@ -72,6 +95,9 @@
     "steps": [
       "img/Hantaviridae_01.webp",
       "img/Hantaviridae_02.webp"
+    ],
+    "tags": [
+      "漢他病毒"
     ]
   },
   "Res3_ABCovid": {
@@ -85,6 +111,11 @@
       "img/Res3_ABCovid_2.webp",
       "img/Res3_ABCovid_3.webp",
       "img/Res3_ABCovid_4.webp"
+    ],
+    "tags": [
+      "三合一快篩",
+      "流感",
+      "新冠"
     ]
   },
   "oral_hygiene": {
@@ -114,6 +145,9 @@
       "img/bugspray_1.webp",
       "img/bugspray_2.webp",
       "img/bugspray_3.webp"
+    ],
+    "tags": [
+      "防蚊液"
     ]
   },
   "fall_wound": {
@@ -405,6 +439,10 @@
       "img/over_one_oint_02.webp",
       "img/over_one_oint_03.webp",
       "img/over_one_oint_04.webp"
+    ],
+    "tags": [
+      "one FTU",
+      "指尖單位"
     ]
   },
   "Nicotine": {
