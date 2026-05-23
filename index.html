@@ -251,10 +251,12 @@
 <script>
     // 教育圖卡資料改由 build.py 產生 cards.json，新增圖片時不再手動改 index.html
     let educationData = {};
+    let seoData = {};
 
     const PAGE_TYPE = 'pharmacist';
 
     const EDUCATION_DATA_CACHE_KEY = 'pteduimg:cardsData:v1';
+    const SEO_DATA_CACHE_KEY = 'pteduimg:seoData:v1';
     const MAIN_ORDER_STORAGE_KEY = `mainCardOrder:${PAGE_TYPE}`;
 
     const pageMeta = {
@@ -311,6 +313,17 @@
         return false;
     }
 
+    function loadCachedSeoData() {
+        try {
+            const cached = JSON.parse(localStorage.getItem(SEO_DATA_CACHE_KEY) || 'null');
+            if (cached && typeof cached === 'object') {
+                seoData = cached;
+                return true;
+            }
+        } catch (err) {}
+        return false;
+    }
+
     async function loadEducationData() {
         try {
             const response = await fetch('./cards.json');
@@ -326,6 +339,18 @@
                     </div>`;
                 educationData = {};
             }
+        }
+    }
+
+    async function loadSeoData() {
+        try {
+            const response = await fetch('./seo.json');
+            if (!response.ok) throw new Error('seo.json not found');
+            seoData = await response.json();
+            localStorage.setItem(SEO_DATA_CACHE_KEY, JSON.stringify(seoData));
+        } catch (err) {
+            console.error('無法讀取 seo.json：', err);
+            seoData = seoData || {};
         }
     }
 
@@ -658,10 +683,18 @@
     favoriteImages.splice(insertIndex, 0, moved);
 }
 
-    function getStepTitle(item, index) {
+    function getFallbackStepTitle(item, index) {
         const texts = Array.isArray(item.texts) ? item.texts : [];
         const title = typeof texts[index] === 'string' ? texts[index].trim() : '';
         return title || item.title || '';
+    }
+
+    function getStepTitle(item, index) {
+        const steps = Array.isArray(item.steps) ? item.steps : [];
+        const step = steps[index];
+        const pageTitle = step ? seoData[getCardPagePath(step)]?.page_title : '';
+        const title = typeof pageTitle === 'string' ? pageTitle.split(/[\uFF5C|]/)[0].trim() : '';
+        return title || getFallbackStepTitle(item, index);
     }
 
     function shouldShowStepTitles(item) {
@@ -1021,8 +1054,10 @@ function updateContent() {
     }
     function initPage() {
         setupPageHeader();
-        if (loadCachedEducationData()) renderHome();
-        loadEducationData().then(renderHome);
+        const hasCachedCards = loadCachedEducationData();
+        loadCachedSeoData();
+        if (hasCachedCards) renderHome();
+        Promise.all([loadEducationData(), loadSeoData()]).then(renderHome);
     }
 
     if (document.readyState === 'loading') {
