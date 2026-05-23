@@ -713,6 +713,23 @@
         navigateToCardPage(cardId, stepIndex);
     }
 
+    function getStepTitle(item, index) {
+        const texts = Array.isArray(item.texts) ? item.texts : [];
+        const title = typeof texts[index] === 'string' ? texts[index].trim() : '';
+        return title || item.title || '';
+    }
+
+    function shouldShowStepTitles(item) {
+        const steps = Array.isArray(item.steps) ? item.steps : [];
+        if (steps.length <= 1) return false;
+        const titles = steps.map((_, index) => getStepTitle(item, index));
+        return new Set(titles).size > 1;
+    }
+
+    function getFavoriteStepLabel(item, index) {
+        return shouldShowStepTitles(item) ? getStepTitle(item, index) : `步驟 ${index + 1}`;
+    }
+
     function renderHome() {
         const sectionRoot = document.getElementById('category-sections');
         const favGrid = document.getElementById('fav-grid');
@@ -759,6 +776,7 @@
             if (educationData[type] && educationData[type].hidden) return;
             if(educationData[type] && educationData[type].steps[idx] && isVisibleOnPage(educationData[type])) {
                 visibleFavCount++;
+                const favLabel = getFavoriteStepLabel(educationData[type], idx);
                 favGrid.innerHTML += `
                     <div class="menu-item fav-item sortable-fav"
                          data-fav-key="${favKey}"
@@ -767,7 +785,7 @@
                         <span class="drag-grip">☰</span>
                         <span class="icon">${educationData[type].icon}</span>
                         <div style="font-weight:bold; font-size:1.1rem;">${educationData[type].title}</div>
-                        <div class="fav-label">步驟 ${idx + 1}</div>
+                        <div class="fav-label">${favLabel}</div>
                     </div>`;
             }
         });
