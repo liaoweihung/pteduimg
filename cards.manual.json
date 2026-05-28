@@ -504,5 +504,49 @@
       "img/ped_cold_cetirizine.webp",
       "img/ped_cold_secorine.webp"
     ]
+  },
+  "enema_use": {
+    "title": "浣腸使用",
+    "category": "pharmacist_general",
+    "order": 81,
+    "hidden": false,
+    "icon": "🚽",
+    "tags": [
+      "浣腸",
+      "浣腸比較",
+      "浣腸使用步驟",
+      "便祕",
+      "便祕藥物",
+      "便祕藥物類型",
+      "使用時機",
+      "藥局常見浣腸類型比較",
+      "浣腸適用的時機"
+    ],
+    "texts": [
+      "浣腸使用步驟第 1 步",
+      "浣腸使用步驟第 2 步",
+      "浣腸使用步驟第 3 步",
+      "浣腸使用步驟第 4 步",
+      "浣腸使用步驟第 5 步",
+      "浣腸使用步驟第 6 步",
+      "浣腸使用步驟第 7 步",
+      "浣腸使用步驟總覽",
+      "藥局常見浣腸類型比較",
+      "浣腸適用的時機",
+      "常見便祕藥物的類類型與使用時機"
+    ],
+    "steps": [
+      "img/enema_step_1.webp",
+      "img/enema_step_2.webp",
+      "img/enema_step_3.webp",
+      "img/enema_step_4.webp",
+      "img/enema_step_5.webp",
+      "img/enema_step_6.webp",
+      "img/enema_step_7.webp",
+      "img/enema_steps.webp",
+      "img/enema_comp.webp",
+      "img/enema_clinical_cond.webp",
+      "img/constipation_cate.webp"
+    ]
   }
 }
