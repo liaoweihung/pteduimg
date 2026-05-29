@@ -788,5 +788,30 @@
       "img/heat_exhaustion.webp",
       "img/heat_exhaustion_water_vs_electrolytes.webp"
     ]
+  },
+  "artificial_tears": {
+    "title": "人工淚液",
+    "category": "public_education",
+    "order": 1.5,
+    "hidden": false,
+    "icon": "💧",
+    "tags": [
+      "人工淚液",
+      "防腐劑",
+      "玻尿酸",
+      "乾眼症"
+    ],
+    "texts": [
+      "為什麼眼睛會乾乾的",
+      "人工淚液的差別，怎麼選?",
+      "眼藥水的防腐劑",
+      "那一種人工淚液適合我?"
+    ],
+    "steps": [
+      "img/artificial_tears_1.webp",
+      "img/artificial_tears_2.webp",
+      "img/artificial_tears_3.webp",
+      "img/artificial_tears_4.webp"
+    ]
   }
 }
