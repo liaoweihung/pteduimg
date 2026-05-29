@@ -2213,5 +2213,31 @@
     "og_url": "https://liaoweihung.github.io/pteduimg/cards/constipation_cate.html",
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/constipation_cate.html",
     "twitter_card": "summary_large_image"
+  },
+  "cards/heat_exhaustion.html": {
+    "page_title": "熱衰竭(中暑前兆)是甚麼｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「熱衰竭(中暑前兆)是甚麼」重點，幫助民眾了解中暑相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "熱衰竭(中暑前兆)是甚麼",
+    "image_alt": "熱衰竭(中暑前兆)是甚麼第 1 張圖卡",
+    "keywords": "中暑、電解水、熱衰竭",
+    "og_title": "熱衰竭(中暑前兆)是甚麼｜藥局衛教助手",
+    "og_description": "這張圖卡整理「熱衰竭(中暑前兆)是甚麼」重點，幫助民眾了解中暑相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/heat_exhaustion.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/heat_exhaustion.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/heat_exhaustion.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/heat_exhaustion_water_vs_electrolytes.html": {
+    "page_title": "喝電解水還是一般的水?｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「喝電解水還是一般的水?」重點，幫助民眾了解中暑相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "喝電解水還是一般的水?",
+    "image_alt": "喝電解水還是一般的水?第 2 張圖卡",
+    "keywords": "中暑、電解水、熱衰竭",
+    "og_title": "喝電解水還是一般的水?｜藥局衛教助手",
+    "og_description": "這張圖卡整理「喝電解水還是一般的水?」重點，幫助民眾了解中暑相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/heat_exhaustion_water_vs_electrolytes.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/heat_exhaustion_water_vs_electrolytes.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/heat_exhaustion_water_vs_electrolytes.html",
+    "twitter_card": "summary_large_image"
   }
 }

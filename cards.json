@@ -768,5 +768,25 @@
       "img/enema_clinical_cond.webp",
       "img/constipation_cate.webp"
     ]
+  },
+  "heat_exhaustion": {
+    "title": "中暑",
+    "category": "public_education",
+    "order": 2,
+    "hidden": false,
+    "icon": "🌡️",
+    "tags": [
+      "中暑",
+      "電解水",
+      "熱衰竭"
+    ],
+    "texts": [
+      "熱衰竭(中暑前兆)是甚麼",
+      "喝電解水還是一般的水?"
+    ],
+    "steps": [
+      "img/heat_exhaustion.webp",
+      "img/heat_exhaustion_water_vs_electrolytes.webp"
+    ]
   }
 }
