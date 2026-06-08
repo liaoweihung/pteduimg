@@ -2291,5 +2291,57 @@
     "og_url": "https://liaoweihung.github.io/pteduimg/cards/artificial_tears_4.html",
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/artificial_tears_4.html",
     "twitter_card": "summary_large_image"
+  },
+  "cards/hk_foot.html": {
+    "page_title": "香港腳藥膏怎麼擦?｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「香港腳藥膏怎麼擦?」重點，幫助民眾了解香港腳與灰指甲相關衛教資訊。",
+    "h1": "香港腳藥膏怎麼擦?",
+    "image_alt": "香港腳藥膏怎麼擦?第 1 張圖卡",
+    "keywords": "香港腳、香港腳藥膏、黴菌藥膏、灰指甲、黴菌藥、amorolfine、療黴舒、terbinafine",
+    "og_title": "香港腳藥膏怎麼擦?｜藥局衛教助手",
+    "og_description": "這張圖卡整理「香港腳藥膏怎麼擦?」重點，幫助民眾了解香港腳與灰指甲相關衛教資訊。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/hk_foot.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/hk_foot.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/hk_foot.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/fungal_nail.html": {
+    "page_title": "灰指甲的治療方式｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「灰指甲的治療方式」重點，幫助民眾了解香港腳與灰指甲相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "灰指甲的治療方式",
+    "image_alt": "灰指甲的治療方式第 2 張圖卡",
+    "keywords": "香港腳、香港腳藥膏、黴菌藥膏、灰指甲、黴菌藥、amorolfine、療黴舒、terbinafine",
+    "og_title": "灰指甲的治療方式｜藥局衛教助手",
+    "og_description": "這張圖卡整理「灰指甲的治療方式」重點，幫助民眾了解香港腳與灰指甲相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/fungal_nail.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/fungal_nail.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/fungal_nail.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/amorolfine.html": {
+    "page_title": "Amorolfine使用方式｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「Amorolfine使用方式」重點，幫助民眾了解香港腳與灰指甲相關衛教資訊。",
+    "h1": "Amorolfine使用方式",
+    "image_alt": "Amorolfine使用方式第 3 張圖卡",
+    "keywords": "香港腳、香港腳藥膏、黴菌藥膏、灰指甲、黴菌藥、amorolfine、療黴舒、terbinafine",
+    "og_title": "Amorolfine使用方式｜藥局衛教助手",
+    "og_description": "這張圖卡整理「Amorolfine使用方式」重點，幫助民眾了解香港腳與灰指甲相關衛教資訊。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/amorolfine.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/amorolfine.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/amorolfine.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/terbinafine_7_days.html": {
+    "page_title": "Terbinifine的七天療程｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「Terbinifine的七天療程」重點，幫助民眾了解香港腳與灰指甲相關衛教資訊。",
+    "h1": "Terbinifine的七天療程",
+    "image_alt": "Terbinifine的七天療程第 4 張圖卡",
+    "keywords": "香港腳、香港腳藥膏、黴菌藥膏、灰指甲、黴菌藥、amorolfine、療黴舒、terbinafine",
+    "og_title": "Terbinifine的七天療程｜藥局衛教助手",
+    "og_description": "這張圖卡整理「Terbinifine的七天療程」重點，幫助民眾了解香港腳與灰指甲相關衛教資訊。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/terbinafine_7_days.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/terbinafine_7_days.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/terbinafine_7_days.html",
+    "twitter_card": "summary_large_image"
   }
 }

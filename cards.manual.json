@@ -593,5 +593,34 @@
       "img/artificial_tears_3.webp",
       "img/artificial_tears_4.webp"
     ]
+  },
+  "fungal_foot_nail": {
+    "title": "香港腳與灰指甲",
+    "category": "public_education",
+    "order": 9,
+    "hidden": false,
+    "icon": "🦶",
+    "tags": [
+      "香港腳",
+      "香港腳藥膏",
+      "黴菌藥膏",
+      "灰指甲",
+      "黴菌藥",
+      "amorolfine",
+      "療黴舒",
+      "terbinafine"
+    ],
+    "texts": [
+      "香港腳藥膏怎麼擦?",
+      "灰指甲的治療方式",
+      "Amorolfine使用方式",
+      "Terbinifine的七天療程"
+    ],
+    "steps": [
+      "img/hk_foot.webp",
+      "img/fungal_nail.webp",
+      "img/amorolfine.webp",
+      "img/terbinafine_7_days.webp"
+    ]
   }
 }

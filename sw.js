@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202605290302';
+const CACHE_NAME = 'pwa-cache-v202606082100';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -64,6 +64,7 @@ const urlsToCache = [
   "./img/adult_diaper_2.webp",
   "./img/adult_diaper_3.webp",
   "./img/adult_diaper_4.webp",
+  "./img/amorolfine.webp",
   "./img/antiphen.webp",
   "./img/artficial_vs_paraffin.webp",
   "./img/artificial_tears_1.webp",
@@ -101,6 +102,7 @@ const urlsToCache = [
   "./img/eye_4.png",
   "./img/eye_5.png",
   "./img/eye_6.png",
+  "./img/fungal_nail.webp",
   "./img/girlBMI.webp",
   "./img/girl_height2.webp",
   "./img/heat_exhaustion.webp",
@@ -115,6 +117,7 @@ const urlsToCache = [
   "./img/hem_oint_6.png",
   "./img/hemorr_sitbath_1.png",
   "./img/hemorr_sitbath_2.png",
+  "./img/hk_foot.webp",
   "./img/ibuprofen_sol.webp",
   "./img/jin_huang_san.webp",
   "./img/jinchuang_ointment.webp",
@@ -162,6 +165,7 @@ const urlsToCache = [
   "./img/site_instruction_01.webp",
   "./img/site_instruction_02.webp",
   "./img/slipped_fall_wound.webp",
+  "./img/terbinafine_7_days.webp",
   "./img/thin_skin_part.webp",
   "./img/treatment_of_Hpylore.webp",
   "./img/vag_1.png",
@@ -346,6 +350,10 @@ const urlsToCache = [
   "./cards/artificial_tears_2.html",
   "./cards/artificial_tears_3.html",
   "./cards/artificial_tears_4.html",
+  "./cards/hk_foot.html",
+  "./cards/fungal_nail.html",
+  "./cards/amorolfine.html",
+  "./cards/terbinafine_7_days.html",
   "./cards/404.html"
 ];
 
