@@ -67,6 +67,27 @@
       "img/dry_eye_dailycare.webp"
     ]
   },
+  "atopic_dermatitis": {
+    "title": "異位性皮膚炎",
+    "category": "public_education",
+    "order": 1.2,
+    "hidden": false,
+    "icon": "🧴",
+    "tags": [
+      "異位性皮膚炎",
+      "藥膏",
+      "類固醇藥膏",
+      "保濕",
+      "濕疹",
+      "皮膚照護"
+    ],
+    "texts": [
+      "異位性皮膚炎藥膏怎麼用"
+    ],
+    "steps": [
+      "img/atopic_dermatitis_care.webp"
+    ]
+  },
   "Hpylori_exam": {
     "title": "胃幽門螺旋桿菌檢查",
     "category": "public_education",

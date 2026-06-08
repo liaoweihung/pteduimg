@@ -167,6 +167,19 @@
     "twitter_card": "summary_large_image",
     "tracking_title": "乾眼症日常照護｜藥局衛教助手"
   },
+  "cards/atopic_dermatitis_care.html": {
+    "page_title": "異位性皮膚炎藥膏怎麼用｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「異位性皮膚炎藥膏怎麼用」重點，幫助民眾了解異位性皮膚炎相關衛教資訊。",
+    "h1": "異位性皮膚炎藥膏怎麼用",
+    "image_alt": "異位性皮膚炎藥膏怎麼用圖卡",
+    "keywords": "異位性皮膚炎、藥膏、類固醇藥膏、保濕、濕疹、皮膚照護",
+    "og_title": "異位性皮膚炎藥膏怎麼用｜藥局衛教助手",
+    "og_description": "這張圖卡整理「異位性皮膚炎藥膏怎麼用」重點，幫助民眾了解異位性皮膚炎相關衛教資訊。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/atopic_dermatitis_care.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_care.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_care.html",
+    "twitter_card": "summary_large_image"
+  },
   "cards/Exame_Hpylore.html": {
     "page_title": "誰需要胃幽門螺旋桿菌檢查｜藥局衛教助手",
     "meta_description": "這張圖卡整理「誰需要胃幽門螺旋桿菌檢查」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
