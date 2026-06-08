@@ -167,19 +167,6 @@
     "twitter_card": "summary_large_image",
     "tracking_title": "乾眼症日常照護｜藥局衛教助手"
   },
-  "cards/atopic_dermatitis_care.html": {
-    "page_title": "異位性皮膚炎藥膏怎麼用｜藥局衛教助手",
-    "meta_description": "這張圖卡整理「異位性皮膚炎藥膏怎麼用」重點，幫助民眾了解異位性皮膚炎相關衛教資訊。",
-    "h1": "異位性皮膚炎藥膏怎麼用",
-    "image_alt": "異位性皮膚炎藥膏怎麼用圖卡",
-    "keywords": "異位性皮膚炎、藥膏、類固醇藥膏、保濕、濕疹、皮膚照護",
-    "og_title": "異位性皮膚炎藥膏怎麼用｜藥局衛教助手",
-    "og_description": "這張圖卡整理「異位性皮膚炎藥膏怎麼用」重點，幫助民眾了解異位性皮膚炎相關衛教資訊。",
-    "og_image": "https://liaoweihung.github.io/pteduimg/img/atopic_dermatitis_care.webp",
-    "og_url": "https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_care.html",
-    "canonical": "https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_care.html",
-    "twitter_card": "summary_large_image"
-  },
   "cards/Exame_Hpylore.html": {
     "page_title": "誰需要胃幽門螺旋桿菌檢查｜藥局衛教助手",
     "meta_description": "這張圖卡整理「誰需要胃幽門螺旋桿菌檢查」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
@@ -2355,6 +2342,58 @@
     "og_image": "https://liaoweihung.github.io/pteduimg/img/terbinafine_7_days.webp",
     "og_url": "https://liaoweihung.github.io/pteduimg/cards/terbinafine_7_days.html",
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/terbinafine_7_days.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/atopic_dermatitis_care.html": {
+    "page_title": "異位性皮膚炎藥膏怎麼用｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「異位性皮膚炎藥膏怎麼用」重點，幫助民眾了解常見皮膚狀況相關衛教資訊。",
+    "h1": "異位性皮膚炎藥膏怎麼用",
+    "image_alt": "異位性皮膚炎藥膏怎麼用第 1 張圖卡",
+    "keywords": "異位性皮膚炎、類固醇、類固醇藥膏、保濕、濕疹、病毒疣、HPV、鴡眼、厚蘭、蛊蟲叮咬、蚊蟲叮咬、止癢藥膏、口內膏、嘴破、口腔潰瘍",
+    "og_title": "異位性皮膚炎藥膏怎麼用｜藥局衛教助手",
+    "og_description": "這張圖卡整理「異位性皮膚炎藥膏怎麼用」重點，幫助民眾了解常見皮膚狀況相關衛教資訊。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/atopic_dermatitis_care.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_care.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_care.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/wart.html": {
+    "page_title": "認識病毒疣｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「認識病毒疣」重點，幫助民眾了解常見皮膚狀況相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "認識病毒疣",
+    "image_alt": "認識病毒疣第 2 張圖卡",
+    "keywords": "異位性皮膚炎、類固醇、類固醇藥膏、保濕、濕疹、病毒疣、HPV、雞眼、厚繭、蚊蟲叮咬、止癢藥膏、口內膏、嘴破、口腔潰瘍",
+    "og_title": "認識病毒疣｜藥局衛教助手",
+    "og_description": "這張圖卡整理「認識病毒疣」重點，幫助民眾了解常見皮膚狀況相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/wart.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/wart.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/wart.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/bug_bite.html": {
+    "page_title": "蚊蟲叮咬怎麼擦藥?｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「蚊蟲叮咬怎麼擦藥?」重點，幫助民眾了解常見皮膚狀況相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "蚊蟲叮咬怎麼擦藥?",
+    "image_alt": "蚊蟲叮咬怎麼擦藥?第 3 張圖卡",
+    "keywords": "異位性皮膚炎、類固醇、類固醇藥膏、保濕、濕疹、病毒疣、HPV、雞眼、厚繭、蚊蟲叮咬、止癢藥膏、口內膏、嘴破、口腔潰瘍",
+    "og_title": "蚊蟲叮咬怎麼擦藥?｜藥局衛教助手",
+    "og_description": "這張圖卡整理「蚊蟲叮咬怎麼擦藥?」重點，幫助民眾了解常見皮膚狀況相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/bug_bite.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/bug_bite.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/bug_bite.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/orabase.html": {
+    "page_title": "口內膏正確使用方式｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「口內膏正確使用方式」重點，幫助民眾了解常見皮膚狀況相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "口內膏正確使用方式",
+    "image_alt": "口內膏正確使用方式第 4 張圖卡",
+    "keywords": "異位性皮膚炎、類固醇、類固醇藥膏、保濕、濕疹、病毒疣、HPV、鴡眼、厚蘭、蛊蟲叮咬、蚊蟲叮咬、止癢藥膏、口內膏、嘴破、口腔潰瘍",
+    "og_title": "口內膏正確使用方式｜藥局衛教助手",
+    "og_description": "這張圖卡整理「口內膏正確使用方式」重點，幫助民眾了解常見皮膚狀況相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/orabase.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/orabase.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/orabase.html",
     "twitter_card": "summary_large_image"
   }
 }

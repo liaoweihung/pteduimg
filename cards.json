@@ -67,27 +67,6 @@
       "img/dry_eye_dailycare.webp"
     ]
   },
-  "atopic_dermatitis": {
-    "title": "異位性皮膚炎",
-    "category": "public_education",
-    "order": 1.2,
-    "hidden": false,
-    "icon": "🧴",
-    "tags": [
-      "異位性皮膚炎",
-      "藥膏",
-      "類固醇藥膏",
-      "保濕",
-      "濕疹",
-      "皮膚照護"
-    ],
-    "texts": [
-      "異位性皮膚炎藥膏怎麼用"
-    ],
-    "steps": [
-      "img/atopic_dermatitis_care.webp"
-    ]
-  },
   "Hpylori_exam": {
     "title": "胃幽門螺旋桿菌檢查",
     "category": "public_education",
@@ -862,6 +841,41 @@
       "img/fungal_nail.webp",
       "img/amorolfine.webp",
       "img/terbinafine_7_days.webp"
+    ]
+  },
+  "common_skin_conditions": {
+    "title": "常見皮膚狀況",
+    "category": "public_education",
+    "order": 1.2,
+    "hidden": false,
+    "icon": "🧴",
+    "tags": [
+      "異位性皮膚炎",
+      "類固醇",
+      "類固醇藥膏",
+      "保濕",
+      "濕疹",
+      "病毒疣",
+      "HPV",
+      "雞眼",
+      "厚繭",
+      "蚊蟲叮咬",
+      "止癢藥膏",
+      "口內膏",
+      "嘴破",
+      "口腔潰瘍"
+    ],
+    "texts": [
+      "異位性皮膚炎藥膏怎麼用",
+      "認識病毒疣",
+      "蚊蟲叮咬怎麼擦藥?",
+      "口內膏正確使用方式"
+    ],
+    "steps": [
+      "img/atopic_dermatitis_care.webp",
+      "img/wart.webp",
+      "img/bug_bite.webp",
+      "img/orabase.webp"
     ]
   }
 }

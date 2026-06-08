@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202606081451';
+const CACHE_NAME = 'pwa-cache-v202606090130';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -74,6 +74,7 @@ const urlsToCache = [
   "./img/atopic_dermatitis_care.webp",
   "./img/boyBMI.webp",
   "./img/boy_height2.webp",
+  "./img/bug_bite.webp",
   "./img/bugspray_1.webp",
   "./img/bugspray_2.webp",
   "./img/bugspray_3.webp",
@@ -134,6 +135,7 @@ const urlsToCache = [
   "./img/notice_ped_fever_reducer.webp",
   "./img/oint_choose.webp",
   "./img/oneFTU.webp",
+  "./img/orabase.webp",
   "./img/oral_hygiene_01.webp",
   "./img/oral_hygiene_02.webp",
   "./img/oral_hygiene_03.webp",
@@ -179,6 +181,7 @@ const urlsToCache = [
   "./img/vag_oint_4.png",
   "./img/vag_oint_5.png",
   "./img/vag_oint_6.png",
+  "./img/wart.webp",
   "./img/wound_4_soln.webp",
   "./img/wound_care.webp",
   "./img/wound_cover.webp",
@@ -198,7 +201,6 @@ const urlsToCache = [
   "./cards/dry_eye_comp.html",
   "./cards/dry_eye_tx.html",
   "./cards/dry_eye_dailycare.html",
-  "./cards/atopic_dermatitis_care.html",
   "./cards/Exame_Hpylore.html",
   "./cards/5_ways_stomatch.html",
   "./cards/methodology_of_exam_Hp.html",
@@ -356,6 +358,10 @@ const urlsToCache = [
   "./cards/fungal_nail.html",
   "./cards/amorolfine.html",
   "./cards/terbinafine_7_days.html",
+  "./cards/atopic_dermatitis_care.html",
+  "./cards/wart.html",
+  "./cards/bug_bite.html",
+  "./cards/orabase.html",
   "./cards/404.html"
 ];
 
