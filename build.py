@@ -881,13 +881,14 @@ def update_sitemap(generated_pages):
 </urlset>
 """
     (ROOT / "sitemap.xml").write_text(sitemap, encoding="utf-8", newline="\n")
+    (ROOT / "sitemap-main.xml").write_text(sitemap, encoding="utf-8", newline="\n")
 
 
 def update_robots():
     robots = f"""User-agent: *
 Allow: /
 
-Sitemap: {abs_url("sitemap.xml")}
+Sitemap: {abs_url("sitemap-main.xml")}
 """
     (ROOT / "robots.txt").write_text(robots, encoding="utf-8", newline="\n")
 
@@ -900,7 +901,7 @@ def main():
     update_sitemap(generated_pages)
     update_robots()
     print(f"Generated {len(generated_pages)} static card pages.")
-    print("Updated seo.json, sitemap.xml, robots.txt, and sw.js.")
+    print("Updated seo.json, sitemap.xml, sitemap-main.xml, robots.txt, and sw.js.")
 
 
 if __name__ == "__main__":
