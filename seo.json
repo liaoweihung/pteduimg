@@ -2396,7 +2396,7 @@
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/orabase.html",
     "twitter_card": "summary_large_image"
   },
-  "cards/insomnia_bzd_z.html": {
+  "cards/bzd_z_sleep_aids.html": {
     "page_title": "常見助眠藥物分類一目了然｜藥局衛教助手",
     "meta_description": "這張圖卡整理「常見助眠藥物分類一目了然」重點，幫助民眾了解常見助眠藥物分類相關衛教資訊。",
     "h1": "常見助眠藥物分類一目了然",
@@ -2404,9 +2404,9 @@
     "keywords": "失眠、助眠藥、安眠藥、BZD、Z-drug、Zolpidem、Zopiclone、Melatonin、睡眠品質、生活作息",
     "og_title": "常見助眠藥物分類一目了然｜藥局衛教助手",
     "og_description": "這張圖卡整理「常見助眠藥物分類一目了然」重點，幫助民眾了解常見助眠藥物分類相關衛教資訊。",
-    "og_image": "https://liaoweihung.github.io/pteduimg/img/insomnia_bzd_z.webp",
-    "og_url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_bzd_z.html",
-    "canonical": "https://liaoweihung.github.io/pteduimg/cards/insomnia_bzd_z.html",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/bzd_z_sleep_aids.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/bzd_z_sleep_aids.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/bzd_z_sleep_aids.html",
     "twitter_card": "summary_large_image"
   }
 }
