@@ -877,5 +877,30 @@
       "img/bug_bite.webp",
       "img/orabase.webp"
     ]
+  },
+  "insomnia_sleep_aids": {
+    "title": "常見助眠藥物分類",
+    "category": "public_education",
+    "order": 3,
+    "hidden": false,
+    "icon": "🌙",
+    "tags": [
+      "失眠",
+      "助眠藥",
+      "安眠藥",
+      "BZD",
+      "Z-drug",
+      "Zolpidem",
+      "Zopiclone",
+      "Melatonin",
+      "睡眠品質",
+      "生活作息"
+    ],
+    "texts": [
+      "常見助眠藥物分類一目了然"
+    ],
+    "steps": [
+      "img/insomnia_bzd_z.webp"
+    ]
   }
 }
