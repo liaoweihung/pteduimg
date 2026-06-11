@@ -684,35 +684,67 @@
     ]
   },
   "angular_cheilitis": {
-    "title": "???",
+    "title": "口角炎",
     "category": "public_education",
     "order": 1.3,
     "hidden": false,
-    "icon": "??",
+    "icon": "👄",
     "tags": [
-      "???",
-      "???",
-      "???",
-      "????",
-      "????",
-      "???",
+      "口角炎",
+      "嘴角破",
+      "嘴角裂",
+      "嘴角發紅",
+      "單純皰疹",
+      "唇皰疹",
       "HSV",
-      "????",
-      "???",
-      "???",
-      "?????",
-      "????",
-      "?????"
+      "嘴唇水泡",
+      "凡士林",
+      "氧化鋅",
+      "抗病毒藥膏",
+      "口水刺激",
+      "維生素缺乏"
     ],
     "texts": [
-      "???????? vs ????",
-      "????????",
-      "???????"
+      "嘴角破了？口角炎 vs 單純皰疹",
+      "單純皰疹怎麼辦？",
+      "口角炎怎麼辦？"
     ],
     "steps": [
       "img/angular_cheilitis_01.webp",
       "img/angular_cheilitis_02.webp",
       "img/angular_cheilitis_03.webp"
+    ]
+  },
+  "common_skin_redness_causes": {
+    "title": "常見五種皮膚紅腫的原因",
+    "category": "public_education",
+    "order": 1.25,
+    "hidden": false,
+    "icon": "🔍",
+    "tags": [
+      "皮膚紅腫",
+      "紅疹",
+      "濕疹",
+      "皮膚發炎",
+      "癬",
+      "黴菌感染",
+      "體癬",
+      "腳癬",
+      "股癬",
+      "膿",
+      "細菌感染",
+      "蕁麻疹",
+      "乾癬",
+      "銀屑病",
+      "皮膚搔癢",
+      "抗黴菌藥",
+      "抗生素"
+    ],
+    "texts": [
+      "常見五種皮膚紅腫的原因"
+    ],
+    "steps": [
+      "img/common_skin_redness_causes.webp"
     ]
   }
 }
