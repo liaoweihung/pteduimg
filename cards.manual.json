@@ -683,18 +683,30 @@
       "黴菌藥",
       "amorolfine",
       "療黴舒",
-      "terbinafine"
+      "terbinafine",
+      "恢甲清",
+      "Excilor",
+      "灰指甲護理",
+      "灰指甲用法",
+      "指甲黴菌",
+      "足甲黴菌",
+      "酸鹼值",
+      "pH",
+      "指甲保養",
+      "不用銼甲"
     ],
     "texts": [
       "香港腳藥膏怎麼擦?",
       "灰指甲的治療方式",
       "Amorolfine使用方式",
-      "Terbinifine的七天療程"
+      "恢甲清如何使用",
+      "Terbinafine的七天療程"
     ],
     "steps": [
       "img/hk_foot.webp",
       "img/fungal_nail.webp",
       "img/amorolfine.webp",
+      "img/excilor.webp",
       "img/terbinafine_7_days.webp"
     ]
   },
