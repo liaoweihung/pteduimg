@@ -889,7 +889,7 @@
     ]
   },
   "artificial_tears": {
-    "title": "人工淚液",
+    "title": "人工淚液與常見眼藥水",
     "category": "public_education",
     "order": 1.5,
     "hidden": false,
@@ -898,19 +898,45 @@
       "人工淚液",
       "防腐劑",
       "玻尿酸",
-      "乾眼症"
+      "乾眼症",
+      "眼藥水",
+      "OTC眼藥水",
+      "止癢眼藥水",
+      "抗過敏眼藥水",
+      "退紅眼藥水",
+      "血管收縮劑",
+      "抗菌眼藥水",
+      "疲勞眼藥水",
+      "涼感眼藥水",
+      "洗眼液",
+      "眼睛痠",
+      "眼睛紅",
+      "眼睛疲勞",
+      "眼睛分泌物",
+      "Ketotifen",
+      "Antazoline",
+      "Tetrahydrozoline",
+      "Naphazoline",
+      "Sulfamethoxazole",
+      "Chloramphenicol",
+      "Vitamin B6",
+      "Vitamin B12",
+      "Menthol",
+      "Camphor"
     ],
     "texts": [
       "為什麼眼睛會乾乾的",
       "人工淚液的差別，怎麼選?",
       "眼藥水的防腐劑",
-      "那一種人工淚液適合我?"
+      "那一種人工淚液適合我?",
+      "常見OTC眼藥水"
     ],
     "steps": [
       "img/artificial_tears_1.webp",
       "img/artificial_tears_2.webp",
       "img/artificial_tears_3.webp",
-      "img/artificial_tears_4.webp"
+      "img/artificial_tears_4.webp",
+      "img/otc_eye_drops.webp"
     ]
   },
   "fungal_foot_nail": {
