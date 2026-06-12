@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202606122234';
+const CACHE_NAME = 'pwa-cache-v202606130010';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -8,10 +8,17 @@ const urlsToCache = [
   "./index.html",
   "./public.html",
   "./calc.html",
+  "./health-check-calculator.html",
   "./growth-calculator.html",
+  "./pregnancy-calculator.html",
+  "./10-yr-cv-risk.html",
+  "./rx-refillable-date.html",
   "./taiwan_child_growth_data.json",
   "./taiwan_child_growth_data.js",
+  "./css/health-tools.css",
   "./css/growth-calculator.css",
+  "./css/pregnancy-calculator.css",
+  "./css/rx-refillable-date.css",
   "./icon.png",
   "./404.html",
   "./cards.json",
@@ -412,12 +419,16 @@ const coreUrlsToCache = [
   "./index.html",
   "./public.html",
   "./calc.html",
+  "./health-check-calculator.html",
+  "./rx-refillable-date.html",
   "./icon.png",
   "./404.html",
   "./cards.json",
   "./seo.json",
   "./qrious.min.js",
   "./css/base.css?v=6",
+  "./css/health-tools.css?v=1",
+  "./css/rx-refillable-date.css?v=5",
   "./css/pharmacist.css?v=2",
   "./css/public.css?v=3"
 ];

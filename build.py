@@ -871,10 +871,17 @@ def update_service_worker(cards, generated_pages):
         "./index.html",
         "./public.html",
         "./calc.html",
+        "./health-check-calculator.html",
         "./growth-calculator.html",
+        "./pregnancy-calculator.html",
+        "./10-yr-cv-risk.html",
+        "./rx-refillable-date.html",
         "./taiwan_child_growth_data.json",
         "./taiwan_child_growth_data.js",
+        "./css/health-tools.css",
         "./css/growth-calculator.css",
+        "./css/pregnancy-calculator.css",
+        "./css/rx-refillable-date.css",
         "./icon.png",
         "./404.html",
         "./cards.json",
@@ -884,6 +891,25 @@ def update_service_worker(cards, generated_pages):
     cache_items.extend(f"./{page}" for page in generated_pages)
     cache_items.append("./cards/404.html")
     cache_array = ",\n  ".join(json.dumps(item, ensure_ascii=False) for item in cache_items)
+    core_cache_items = [
+        "./",
+        "./index.html",
+        "./public.html",
+        "./calc.html",
+        "./health-check-calculator.html",
+        "./rx-refillable-date.html",
+        "./icon.png",
+        "./404.html",
+        "./cards.json",
+        "./seo.json",
+        "./qrious.min.js",
+        "./css/base.css?v=6",
+        "./css/health-tools.css?v=1",
+        "./css/rx-refillable-date.css?v=5",
+        "./css/pharmacist.css?v=2",
+        "./css/public.css?v=3",
+    ]
+    core_cache_array = ",\n  ".join(json.dumps(item, ensure_ascii=False) for item in core_cache_items)
 
     now = datetime.datetime.now()
     new_version = f"pwa-cache-v{now.strftime('%Y%m%d%H%M')}"
@@ -892,6 +918,12 @@ def update_service_worker(cards, generated_pages):
     sw_content = re.sub(
         r"const urlsToCache = \[.*?\];",
         f"const urlsToCache = [\n  {cache_array}\n];",
+        sw_content,
+        flags=re.DOTALL,
+    )
+    sw_content = re.sub(
+        r"const coreUrlsToCache = \[.*?\];",
+        f"const coreUrlsToCache = [\n  {core_cache_array}\n];",
         sw_content,
         flags=re.DOTALL,
     )
@@ -905,6 +937,11 @@ def update_sitemap(generated_pages):
         ("index.html", "weekly", "1.0"),
         ("public.html", "weekly", "0.8"),
         ("calc.html", "monthly", "0.7"),
+        ("health-check-calculator.html", "monthly", "0.6"),
+        ("growth-calculator.html", "monthly", "0.6"),
+        ("pregnancy-calculator.html", "monthly", "0.6"),
+        ("10-yr-cv-risk.html", "monthly", "0.6"),
+        ("rx-refillable-date.html", "monthly", "0.6"),
     ]
     urls = []
     for path, freq, priority in static_pages:

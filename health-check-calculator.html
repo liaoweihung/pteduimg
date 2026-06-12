@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="./icon.png?v=3">
+    <title>健檢數值解讀助手</title>
+    <meta name="description" content="依分類輸入膽固醇、血糖、血壓、腎功能、尿酸與肝功能等健檢數值，整理風險與可和藥師討論的方向。">
+    <script>
+      const GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
+      const urlParams = new URLSearchParams(window.location.search);
+      const host = window.location.hostname;
+      const isPrivateNetworkHost = ['localhost', '127.0.0.1', '::1'].includes(host)
+          || /^192\.168\./.test(host)
+          || /^10\./.test(host)
+          || /^172\.(1[6-9]|2\d|3[0-1])\./.test(host);
+      const isLocalPreview = isPrivateNetworkHost || window.location.protocol === 'file:';
+
+      if (urlParams.get('dev') === '1') {
+          localStorage.setItem('isDeveloper', 'true');
+          alert('已開啟開發者隱形模式！未來的瀏覽將不會被 GA4 記錄。');
+      }
+
+      if (urlParams.get('dev') === '0') {
+          localStorage.removeItem('isDeveloper');
+          alert('已關閉開發者隱形模式。');
+      }
+
+      window.isAnalyticsDisabled = isLocalPreview || localStorage.getItem('isDeveloper') === 'true';
+      window[`ga-disable-${GA_MEASUREMENT_ID}`] = window.isAnalyticsDisabled;
+
+      function shouldTrackAnalytics() {
+          return !window.isAnalyticsDisabled && typeof gtag === 'function';
+      }
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ dataLayer.push(arguments); };
+
+      if (!window.isAnalyticsDisabled) {
+          const gaScript = document.createElement('script');
+          gaScript.async = true;
+          gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+          document.head.appendChild(gaScript);
+          gtag('js', new Date());
+          gtag('config', GA_MEASUREMENT_ID);
+      }
+    </script>
+    <link rel="stylesheet" href="./css/base.css?v=6">
+    <link rel="stylesheet" href="./css/health-tools.css?v=1">
+    <script src="./qrious.min.js"></script>
+</head>
+<body class="health-tool-page">
+    <header>
+        <img src="icon.png?v=3" alt="網站圖示" class="header-icon">
+        <span>健檢數值解讀助手</span>
+    </header>
+
+    <main class="health-shell">
+        <button class="back-button" type="button" onclick="goBackToSource()">‹ 回工具列表</button>
+
+        <section class="intro-card" aria-labelledby="health-title">
+            <div class="intro-icon" aria-hidden="true">🧾</div>
+            <div>
+                <h1 id="health-title">健檢數值解讀助手</h1>
+                <p>依健檢報告分類輸入數值，整理偏高、偏低，以及可和藥師討論的營養品或 OTC 方向。</p>
+            </div>
+        </section>
+
+        <section class="form-card" aria-labelledby="form-title">
+            <h2 id="form-title">輸入健檢資料</h2>
+            <form id="health-form" novalidate>
+                <section class="input-group" aria-labelledby="basic-title">
+                    <h3 id="basic-title">基本資料</h3>
+                    <div class="field-grid two-columns">
+                        <label class="field">
+                            <span>性別</span>
+                            <select id="sex">
+                                <option value="male">男性</option>
+                                <option value="female">女性</option>
+                            </select>
+                        </label>
+                    </div>
+                </section>
+
+                <section class="input-group" aria-labelledby="cholesterol-title">
+                    <h3 id="cholesterol-title">膽固醇 / 血脂</h3>
+                    <div class="field-grid two-columns">
+                        <label class="field">
+                            <span>總膽固醇 TC (mg/dL)</span>
+                            <input type="number" id="tc" inputmode="decimal" placeholder="例：205">
+                        </label>
+                        <label class="field">
+                            <span>LDL 壞膽固醇 (mg/dL)</span>
+                            <input type="number" id="ldl" inputmode="decimal" placeholder="例：132">
+                        </label>
+                        <label class="field">
+                            <span>HDL 好膽固醇 (mg/dL)</span>
+                            <input type="number" id="hdl" inputmode="decimal" placeholder="例：42">
+                        </label>
+                        <label class="field">
+                            <span>三酸甘油脂 TG (mg/dL)</span>
+                            <input type="number" id="tg" inputmode="decimal" placeholder="例：180">
+                        </label>
+                    </div>
+                </section>
+
+                <section class="input-group" aria-labelledby="glucose-title">
+                    <h3 id="glucose-title">血糖</h3>
+                    <div class="field-grid two-columns">
+                        <label class="field">
+                            <span>空腹血糖 (mg/dL)</span>
+                            <input type="number" id="glucose" inputmode="decimal" placeholder="例：105">
+                        </label>
+                        <label class="field">
+                            <span>糖化血色素 HbA1c (%)</span>
+                            <input type="number" id="a1c" inputmode="decimal" step="0.1" placeholder="例：5.8">
+                        </label>
+                    </div>
+                </section>
+
+                <section class="input-group" aria-labelledby="bp-title">
+                    <h3 id="bp-title">血壓</h3>
+                    <div class="field-grid two-columns">
+                        <label class="field">
+                            <span>收縮壓 (mmHg)</span>
+                            <input type="number" id="sbp" inputmode="decimal" placeholder="例：135">
+                        </label>
+                        <label class="field">
+                            <span>舒張壓 (mmHg)</span>
+                            <input type="number" id="dbp" inputmode="decimal" placeholder="例：86">
+                        </label>
+                    </div>
+                </section>
+
+                <section class="input-group" aria-labelledby="kidney-title">
+                    <h3 id="kidney-title">腎功能</h3>
+                    <div class="field-grid two-columns">
+                        <label class="field">
+                            <span>eGFR</span>
+                            <input type="number" id="egfr" inputmode="decimal" placeholder="例：82">
+                        </label>
+                        <label class="field">
+                            <span>肌酸酐 Creatinine (mg/dL)</span>
+                            <input type="number" id="creatinine" inputmode="decimal" step="0.1" placeholder="例：1.1">
+                        </label>
+                    </div>
+                </section>
+
+                <section class="input-group" aria-labelledby="uric-title">
+                    <h3 id="uric-title">尿酸</h3>
+                    <div class="field-grid two-columns">
+                        <label class="field">
+                            <span>尿酸 (mg/dL)</span>
+                            <input type="number" id="uric" inputmode="decimal" step="0.1" placeholder="例：7.4">
+                        </label>
+                    </div>
+                </section>
+
+                <section class="input-group" aria-labelledby="liver-title">
+                    <h3 id="liver-title">肝功能</h3>
+                    <div class="field-grid two-columns">
+                        <label class="field">
+                            <span>ALT / GPT (U/L)</span>
+                            <input type="number" id="alt" inputmode="decimal" placeholder="例：48">
+                        </label>
+                        <label class="field">
+                            <span>AST / GOT (U/L)</span>
+                            <input type="number" id="ast" inputmode="decimal" placeholder="例：36">
+                        </label>
+                    </div>
+                </section>
+
+                <div class="check-card">
+                    <strong>已知狀況</strong>
+                    <label><input type="checkbox" id="bp-med"> 正在使用血壓藥</label>
+                    <label><input type="checkbox" id="glucose-med"> 已診斷糖尿病或正在使用血糖藥</label>
+                    <label><input type="checkbox" id="lipid-med"> 正在使用血脂藥</label>
+                </div>
+
+                <p class="form-message" id="form-message" role="alert"></p>
+                <button class="primary-action" type="submit">解讀我的數值</button>
+                <button class="secondary-action" id="reset-form" type="button">清除資料</button>
+                <div class="sample-row">
+                    <button class="sample-action" type="button" data-sample="lipid">套用範例：血脂與血糖偏高</button>
+                    <button class="sample-action" type="button" data-sample="kidney">套用範例：腎功能需追蹤</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="result-card" id="result-card" aria-live="polite" hidden>
+            <div class="result-summary">
+                <strong id="summary-title">--</strong>
+                <span id="summary-text">--</span>
+            </div>
+            <div class="result-actions">
+                <button class="secondary-action" id="copy-share-link" type="button">複製結果連結</button>
+            </div>
+            <section class="share-card" id="share-card" aria-labelledby="share-title" hidden>
+                <h3 id="share-title">結果網頁 QR code</h3>
+                <p>掃描後會開啟同一份健檢結果。此連結只把本次輸入數值放在網址中，網站不會另外儲存資料。</p>
+                <canvas id="share-qr" aria-label="健檢結果網頁 QR code"></canvas>
+                <label class="share-link-field">
+                    <span>結果連結</span>
+                    <input type="text" id="share-link" readonly>
+                </label>
+                <p class="copy-message" id="copy-message" role="status"></p>
+            </section>
+            <div class="finding-list" id="finding-list"></div>
+        </section>
+
+        <section class="note-card">
+            <h2>提醒</h2>
+            <p>各院所參考值可能略有差異，請以檢驗報告標示為主。本工具只做衛教整理，不能取代診斷、處方或個別治療建議。</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p style="margin: 0 0 8px 0;">本工具圖文僅供藥師衛教參考，非專業人士務必諮詢藥師建議。</p>
+        <p style="margin: 0;">
+            <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a>
+            &nbsp;|&nbsp;
+            <a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" onclick="trackFeedbackClick()">💬 意見回饋</a>
+        </p>
+    </footer>
+
+    <script>
+        const form = document.getElementById('health-form');
+        const formMessage = document.getElementById('form-message');
+        const resultCard = document.getElementById('result-card');
+        const findingList = document.getElementById('finding-list');
+        let latestShareUrl = '';
+
+        const metricTexts = {
+            sbp: {
+                label: '收縮壓',
+                group: '血壓',
+                tags: ['血壓計', '低鈉', '規律量測'],
+                normal: '收縮壓未達偏高門檻。若偶爾偏高，可持續居家量測。',
+                borderline: '收縮壓偏高，建議建立居家血壓紀錄，並檢視鹽分、睡眠與壓力。',
+                high: '收縮壓明顯偏高，若反覆出現或合併頭痛、胸悶、喘，請就醫評估。'
+            },
+            dbp: {
+                label: '舒張壓',
+                group: '血壓',
+                tags: ['血壓計', '低鈉', '規律量測'],
+                normal: '舒張壓未達偏高門檻。',
+                borderline: '舒張壓偏高，建議搭配收縮壓與居家紀錄一起判斷。',
+                high: '舒張壓明顯偏高，若持續偏高需就醫評估。'
+            },
+            tc: {
+                label: '總膽固醇',
+                group: '膽固醇 / 血脂',
+                tags: ['飲食纖維', '植物固醇', '規律運動'],
+                normal: '總膽固醇落在常見理想範圍。仍建議搭配 LDL、HDL 與三酸甘油脂一起看。',
+                borderline: '總膽固醇偏高，常和飲食油脂、體重、家族史或甲狀腺功能有關。可先討論可溶性纖維、植物固醇與飲食調整。',
+                high: '總膽固醇明顯偏高，後續影響主要是動脈硬化與心血管風險上升。建議帶完整報告與醫師或藥師討論。'
+            },
+            ldl: {
+                label: 'LDL 壞膽固醇',
+                group: '膽固醇 / 血脂',
+                tags: ['可溶性纖維', '植物固醇', '處方藥評估'],
+                normal: 'LDL 在常見理想範圍，是血脂風險中很重要的一項。',
+                borderline: 'LDL 偏高，可能增加血管斑塊累積。可討論飲食、體重控制、植物固醇與是否需進一步治療。',
+                high: 'LDL 明顯偏高，若合併糖尿病、高血壓、抽菸或家族史，建議優先就醫評估。'
+            },
+            hdl: {
+                label: 'HDL 好膽固醇',
+                group: '膽固醇 / 血脂',
+                tags: ['運動', '戒菸', '體重管理'],
+                normal: 'HDL 尚可。規律運動、戒菸與體重管理通常比單靠保健品更重要。',
+                low: 'HDL 偏低，常與缺乏運動、抽菸或三酸甘油脂偏高一起出現。'
+            },
+            tg: {
+                label: '三酸甘油脂',
+                group: '膽固醇 / 血脂',
+                tags: ['減糖', '魚油', '戒酒'],
+                normal: '三酸甘油脂在常見理想範圍。',
+                borderline: '三酸甘油脂偏高，常和含糖飲料、精緻澱粉、酒精、體重或血糖有關。可討論減糖與 omega-3 類產品。',
+                high: '三酸甘油脂明顯偏高，若接近或超過 500 mg/dL，胰臟炎風險會上升，建議盡快就醫。'
+            },
+            glucose: {
+                label: '空腹血糖',
+                group: '血糖',
+                tags: ['血糖機', '低糖飲食', '餐後追蹤'],
+                normal: '空腹血糖在常見正常範圍。',
+                borderline: '空腹血糖落在糖尿病前期常見區間，建議追蹤 HbA1c、餐後血糖與生活調整。',
+                high: '空腹血糖達糖尿病常見診斷切點，需由醫師複檢確認。建議帶報告就醫。'
+            },
+            a1c: {
+                label: 'HbA1c',
+                group: '血糖',
+                tags: ['血糖監測', '飲食紀錄', '藥物諮詢'],
+                normal: 'HbA1c 在常見正常範圍。',
+                borderline: 'HbA1c 落在糖尿病前期常見區間，代表近 2 至 3 個月平均血糖偏高。',
+                high: 'HbA1c 達糖尿病常見診斷切點，需由醫師確認與安排治療。'
+            },
+            egfr: {
+                label: 'eGFR',
+                group: '腎功能',
+                tags: ['避免 NSAID', '腎功能追蹤', '蛋白補充品評估'],
+                normal: 'eGFR 尚可，仍需搭配尿蛋白、年齡與慢性病一起判斷。',
+                low: 'eGFR 偏低，若持續低於 60 可能代表慢性腎臟病風險。避免自行長期使用止痛藥、胃藥或高蛋白補充品。'
+            },
+            creatinine: {
+                label: '肌酸酐',
+                group: '腎功能',
+                tags: ['腎功能追蹤', '藥物劑量', '避免亂補'],
+                normal: '肌酸酐未超過常見警示門檻，仍需搭配 eGFR 判斷腎功能。',
+                high: '肌酸酐偏高可能代表腎功能負擔或肌肉量、脫水等因素影響。請搭配 eGFR 與尿蛋白追蹤。'
+            },
+            uric: {
+                label: '尿酸',
+                group: '尿酸',
+                tags: ['多喝水', '減酒', '止痛藥諮詢'],
+                normal: '尿酸在常見參考範圍。',
+                high: '尿酸偏高，可能和痛風、腎功能、飲酒、含糖飲料或部分藥物有關。若關節紅腫痛，止痛藥選擇請先問藥師。'
+            },
+            alt: {
+                label: 'ALT / GPT',
+                group: '肝功能',
+                tags: ['減酒', '檢查藥物', '避免亂補'],
+                normal: 'ALT 在常見參考範圍。',
+                high: 'ALT 偏高可能和脂肪肝、酒精、病毒性肝炎、藥物或草藥保健品有關。請不要自行加強肝補品，先確認原因。'
+            },
+            ast: {
+                label: 'AST / GOT',
+                group: '肝功能',
+                tags: ['減酒', '檢查藥物', '回診追蹤'],
+                normal: 'AST 在常見參考範圍。',
+                high: 'AST 偏高可能和肝臟、肌肉、酒精或藥物有關。建議搭配 ALT 與症狀一起評估。'
+            }
+        };
+
+        const metricIds = ['sbp', 'dbp', 'tc', 'ldl', 'hdl', 'tg', 'glucose', 'a1c', 'egfr', 'creatinine', 'uric', 'alt', 'ast'];
+
+        function readNumber(id) {
+            const value = document.getElementById(id).value.trim();
+            return value === '' ? null : Number(value);
+        }
+
+        function isChecked(id) {
+            return document.getElementById(id).checked;
+        }
+
+        function classifyMetric(id, value, sex) {
+            if (value === null) return null;
+            if (!Number.isFinite(value) || value < 0) return { invalid: true, label: metricTexts[id].label };
+            if (id === 'sbp') return value < 130 ? 'normal' : value < 140 ? 'borderline' : 'high';
+            if (id === 'dbp') return value < 85 ? 'normal' : value < 90 ? 'borderline' : 'high';
+            if (id === 'tc') return value < 200 ? 'normal' : value < 240 ? 'borderline' : 'high';
+            if (id === 'ldl') return value < 130 ? 'normal' : value < 160 ? 'borderline' : 'high';
+            if (id === 'hdl') return value < (sex === 'male' ? 40 : 50) ? 'low' : 'normal';
+            if (id === 'tg') return value < 150 ? 'normal' : value < 200 ? 'borderline' : 'high';
+            if (id === 'glucose') return value < 100 ? 'normal' : value < 126 ? 'borderline' : 'high';
+            if (id === 'a1c') return value < 5.7 ? 'normal' : value < 6.5 ? 'borderline' : 'high';
+            if (id === 'egfr') return value >= 90 ? 'normal' : 'low';
+            if (id === 'creatinine') return value <= (sex === 'male' ? 1.3 : 1.1) ? 'normal' : 'high';
+            if (id === 'uric') return value <= (sex === 'male' ? 7 : 6) ? 'normal' : 'high';
+            if (id === 'alt' || id === 'ast') return value <= 40 ? 'normal' : 'high';
+            return 'normal';
+        }
+
+        function getStatusText(status) {
+            if (status === 'normal') return '常見範圍';
+            if (status === 'borderline') return '偏高邊緣';
+            if (status === 'low') return '偏低';
+            return '偏高';
+        }
+
+        function getSeverity(id, value, status) {
+            if (status === 'normal') return '';
+            if (status === 'high' && ['tc', 'ldl', 'tg', 'glucose', 'a1c', 'creatinine', 'uric', 'alt', 'ast', 'sbp', 'dbp'].includes(id)) return 'danger';
+            if (id === 'egfr' && value < 60) return 'danger';
+            return 'warning';
+        }
+
+        function getBucket(entry) {
+            if (entry.status === 'normal') return 'normal';
+            if (entry.status === 'borderline') return 'borderline';
+            return 'abnormal';
+        }
+
+        function getBucketTitle(bucket) {
+            if (bucket === 'abnormal') return '明確偏高或偏低';
+            if (bucket === 'borderline') return '危險邊緣';
+            return '正常或尚可';
+        }
+
+        function getBucketClass(bucket) {
+            if (bucket === 'abnormal') return 'danger';
+            if (bucket === 'borderline') return 'warning';
+            return '';
+        }
+
+        function groupEntries(entries) {
+            return entries.reduce((groups, entry) => {
+                const groupName = metricTexts[entry.id].group;
+                if (!groups[groupName]) groups[groupName] = [];
+                groups[groupName].push(entry);
+                return groups;
+            }, {});
+        }
+
+        function renderGroupedFinding(bucket, groupName, entries) {
+            const card = document.createElement('article');
+            card.className = `finding-card ${getBucketClass(bucket)}`;
+            const rows = entries.map((entry) => {
+                const copy = metricTexts[entry.id];
+                return `
+                    <li>
+                        <strong>${copy.label}: ${entry.value} (${getStatusText(entry.status)})</strong>
+                        <span>${copy[entry.status] || copy.normal}</span>
+                    </li>
+                `;
+            }).join('');
+            const tags = Array.from(new Set(entries.flatMap((entry) => metricTexts[entry.id].tags)));
+            card.innerHTML = `
+                <h3>${getBucketTitle(bucket)}｜${groupName}</h3>
+                <ul class="finding-items">${rows}</ul>
+                <div class="pill-row">${tags.map((tag) => `<span class="pill">${tag}</span>`).join('')}</div>
+            `;
+            findingList.appendChild(card);
+        }
+
+        function renderResult(entries) {
+            const buckets = ['abnormal', 'borderline', 'normal'];
+            const groupedByBucket = {
+                abnormal: entries.filter((entry) => getBucket(entry) === 'abnormal'),
+                borderline: entries.filter((entry) => getBucket(entry) === 'borderline'),
+                normal: entries.filter((entry) => getBucket(entry) === 'normal')
+            };
+
+            buckets.forEach((bucket) => {
+                const groups = groupEntries(groupedByBucket[bucket]);
+                Object.entries(groups).forEach(([groupName, groupEntries]) => {
+                    renderGroupedFinding(bucket, groupName, groupEntries);
+                });
+            });
+        }
+
+        function getSharePayload(values, sex) {
+            return {
+                v: 1,
+                created: new Date().toISOString(),
+                sex,
+                values,
+                meds: {
+                    bp: isChecked('bp-med'),
+                    glucose: isChecked('glucose-med'),
+                    lipid: isChecked('lipid-med')
+                }
+            };
+        }
+
+        function encodeSharePayload(payload) {
+            const json = JSON.stringify(payload);
+            return btoa(json).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '');
+        }
+
+        function decodeSharePayload(encoded) {
+            const base64 = encoded.replace(/-/g, '+').replace(/_/g, '/');
+            const padded = base64 + '='.repeat((4 - base64.length % 4) % 4);
+            return JSON.parse(atob(padded));
+        }
+
+        function getCleanPageUrl() {
+            return `${window.location.origin}${window.location.pathname}`;
+        }
+
+        function updateSharePanel(values, sex) {
+            const shareCard = document.getElementById('share-card');
+            const shareLink = document.getElementById('share-link');
+            const qrCanvas = document.getElementById('share-qr');
+            const payload = getSharePayload(values, sex);
+            latestShareUrl = `${getCleanPageUrl()}#report=${encodeSharePayload(payload)}`;
+
+            shareLink.value = latestShareUrl;
+            shareCard.hidden = false;
+
+            if (typeof QRious === 'function') {
+                new QRious({
+                    element: qrCanvas,
+                    value: latestShareUrl,
+                    size: 220,
+                    level: 'M'
+                });
+            }
+        }
+
+        function applySharePayload(payload) {
+            if (!payload || payload.v !== 1) return false;
+            document.getElementById('sex').value = payload.sex === 'female' ? 'female' : 'male';
+
+            metricIds.forEach((id) => {
+                const value = payload.values && payload.values[id];
+                document.getElementById(id).value = value === null || value === undefined ? '' : value;
+            });
+
+            document.getElementById('bp-med').checked = Boolean(payload.meds && payload.meds.bp);
+            document.getElementById('glucose-med').checked = Boolean(payload.meds && payload.meds.glucose);
+            document.getElementById('lipid-med').checked = Boolean(payload.meds && payload.meds.lipid);
+            calculate({ scroll: false });
+            document.getElementById('summary-text').textContent += ' 這是由 QR code 還原的結果頁。';
+            resultCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            return true;
+        }
+
+        function loadSharedReportFromHash() {
+            if (!window.location.hash.startsWith('#report=')) return;
+
+            try {
+                const payload = decodeSharePayload(window.location.hash.slice('#report='.length));
+                applySharePayload(payload);
+            } catch (error) {
+                formMessage.textContent = '結果連結無法讀取，請重新產生 QR code。';
+            }
+        }
+
+        function calculate(options = {}) {
+            const shouldScroll = options.scroll !== false;
+            const sex = document.getElementById('sex').value;
+            const values = Object.fromEntries(metricIds.map((id) => [id, readNumber(id)]));
+            const entries = metricIds.map((id) => ({ id, value: values[id], status: classifyMetric(id, values[id], sex) }));
+            const filled = entries.filter((entry) => entry.value !== null);
+            const hasKnownMedication = isChecked('bp-med') || isChecked('glucose-med') || isChecked('lipid-med');
+            const invalid = filled.find((entry) => entry.status && entry.status.invalid);
+
+            if (!filled.length && !hasKnownMedication) {
+                formMessage.textContent = '請至少輸入一項健檢數值，或勾選已知用藥狀況。';
+                resultCard.hidden = true;
+                return;
+            }
+
+            if (invalid) {
+                formMessage.textContent = `請確認「${invalid.status.label}」的數值是否正確。`;
+                resultCard.hidden = true;
+                return;
+            }
+
+            formMessage.textContent = '';
+            findingList.textContent = '';
+            document.getElementById('copy-message').textContent = '';
+            const attentionCount = filled.filter((entry) => entry.status !== 'normal').length;
+            const totalAttention = attentionCount;
+            const summaryTitle = totalAttention ? `有 ${totalAttention} 個重點值得追蹤` : '目前輸入項目多在常見範圍';
+            const summaryText = totalAttention
+                ? '可掃描下方 QR code 開啟同一份結果網頁，帶著健檢報告到藥局討論生活調整、營養品或 OTC 使用是否適合。'
+                : '仍建議搭配年齡、病史、用藥與家族史一起評估。';
+
+            document.getElementById('summary-title').textContent = totalAttention ? `有 ${totalAttention} 個重點值得追蹤` : '目前輸入項目多在常見範圍';
+            document.getElementById('summary-text').textContent = summaryText;
+            renderResult(filled);
+            updateSharePanel(values, sex);
+            resultCard.hidden = false;
+            if (shouldScroll) {
+                resultCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+
+        function applySample(type) {
+            const sample = type === 'kidney'
+                ? { sex: 'female', tc: 188, ldl: 118, hdl: 46, tg: 138, glucose: 96, a1c: 5.5, sbp: 124, dbp: 78, egfr: 54, creatinine: 1.3, uric: 6.8, alt: 32, ast: 28, bpMed: false, glucoseMed: false, lipidMed: false }
+                : { sex: 'male', tc: 238, ldl: 158, hdl: 37, tg: 246, glucose: 112, a1c: 5.9, sbp: 138, dbp: 88, egfr: 86, creatinine: 1.1, uric: 7.6, alt: 52, ast: 43, bpMed: false, glucoseMed: false, lipidMed: false };
+
+            Object.entries(sample).forEach(([id, value]) => {
+                if (id === 'bpMed') document.getElementById('bp-med').checked = value;
+                else if (id === 'glucoseMed') document.getElementById('glucose-med').checked = value;
+                else if (id === 'lipidMed') document.getElementById('lipid-med').checked = value;
+                else document.getElementById(id).value = value;
+            });
+            calculate();
+        }
+
+        function resetForm() {
+            form.reset();
+            findingList.textContent = '';
+            formMessage.textContent = '';
+            document.getElementById('copy-message').textContent = '';
+            document.getElementById('share-card').hidden = true;
+            document.getElementById('share-link').value = '';
+            latestShareUrl = '';
+            resultCard.hidden = true;
+        }
+
+        async function copyShareLink() {
+            if (!latestShareUrl) {
+                calculate();
+            }
+
+            if (!latestShareUrl) return;
+
+            const copyMessage = document.getElementById('copy-message');
+            const shareLink = document.getElementById('share-link');
+
+            try {
+                if (navigator.clipboard && window.isSecureContext) {
+                    await navigator.clipboard.writeText(latestShareUrl);
+                } else {
+                    shareLink.focus();
+                    shareLink.select();
+                    document.execCommand('copy');
+                }
+
+                copyMessage.textContent = '已複製結果連結。';
+            } catch (error) {
+                shareLink.focus();
+                shareLink.select();
+                copyMessage.textContent = '無法自動複製，請手動複製結果連結。';
+            }
+        }
+
+        function goBackToSource() {
+            window.location.href = './calc.html';
+        }
+
+        function trackFeedbackClick() {
+            if (typeof shouldTrackAnalytics === 'function' && shouldTrackAnalytics() && typeof gtag === 'function') {
+                gtag('event', 'click_feedback', { 'source_app': 'pteduimg' });
+            }
+        }
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            calculate();
+        });
+        document.querySelectorAll('.sample-action').forEach((button) => {
+            button.addEventListener('click', () => applySample(button.dataset.sample));
+        });
+        document.getElementById('reset-form').addEventListener('click', resetForm);
+        document.getElementById('copy-share-link').addEventListener('click', copyShareLink);
+        window.addEventListener('hashchange', loadSharedReportFromHash);
+        loadSharedReportFromHash();
+    </script>
+</body>
+</html>

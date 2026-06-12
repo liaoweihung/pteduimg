@@ -81,6 +81,31 @@ body.calc-page header {
     -webkit-tap-highlight-color: transparent;
 }
 
+.tool-section {
+    display: grid;
+    gap: 10px;
+}
+
+.internal-tools {
+    margin-top: 6px;
+}
+
+.internal-tools summary {
+    min-height: 46px;
+    border: 1px solid #d8e8e1;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #4b635b;
+    padding: 12px 14px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(32, 88, 71, 0.06);
+}
+
+.internal-tools .tool-card {
+    margin-top: 10px;
+}
+
 .tool-card:active {
     transform: translateY(1px);
     box-shadow: 0 3px 10px rgba(32, 88, 71, 0.12);
