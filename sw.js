@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202606121724';
+const CACHE_NAME = 'pwa-cache-v202606122020';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -59,6 +59,7 @@ const urlsToCache = [
   "./img/ZithromaxPOS.webp",
   "./img/acne.png",
   "./img/acne_dailycare.webp",
+  "./img/acne_dailycare_2.webp",
   "./img/acne_stage.webp",
   "./img/add_to_desktop_android.webp",
   "./img/add_to_desktop_ios.webp",
@@ -79,6 +80,7 @@ const urlsToCache = [
   "./img/atopic_dermatitis_care.webp",
   "./img/boyBMI.webp",
   "./img/boy_height2.webp",
+  "./img/bruise_be_gone.webp",
   "./img/bug_bite.webp",
   "./img/bugspray_1.webp",
   "./img/bugspray_2.webp",
@@ -174,9 +176,12 @@ const urlsToCache = [
   "./img/rec_6.png",
   "./img/rec_7.png",
   "./img/rec_8.png",
+  "./img/scar_remove.webp",
+  "./img/scar_remove_detail.webp",
   "./img/site_instruction_01.webp",
   "./img/site_instruction_02.webp",
   "./img/slipped_fall_wound.webp",
+  "./img/stretch_marks.webp",
   "./img/terbinafine_7_days.webp",
   "./img/thin_skin_part.webp",
   "./img/treatment_of_Hpylore.webp",
@@ -233,12 +238,16 @@ const urlsToCache = [
   "./cards/bugspray_3.html",
   "./cards/slipped_fall_wound.html",
   "./cards/wound_oint.html",
+  "./cards/scar_remove.html",
+  "./cards/scar_remove_detail.html",
   "./cards/wound_4_soln.html",
   "./cards/oint_choose.html",
   "./cards/artficial_vs_paraffin.html",
   "./cards/prevent_scar.html",
   "./cards/wound_care.html",
   "./cards/wound_cover.html",
+  "./cards/bruise_be_gone.html",
+  "./cards/stretch_marks.html",
   "./cards/kwangdong_mu_yao_fen.html",
   "./cards/yunnan_baiyao.html",
   "./cards/zi_yun_gao.html",
@@ -277,6 +286,7 @@ const urlsToCache = [
   "./cards/comedo.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare.html",
+  "./cards/acne_dailycare_2.html",
   "./cards/acne.html",
   "./cards/oneFTU.html",
   "./cards/thin_skin_part.html",

@@ -235,6 +235,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/scar_remove.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/scar_remove_detail.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://liaoweihung.github.io/pteduimg/cards/wound_4_soln.html</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -266,6 +278,18 @@
   </url>
   <url>
     <loc>https://liaoweihung.github.io/pteduimg/cards/wound_cover.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/bruise_be_gone.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/stretch_marks.html</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -494,6 +518,12 @@
   </url>
   <url>
     <loc>https://liaoweihung.github.io/pteduimg/cards/acne_dailycare.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/acne_dailycare_2.html</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
