@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202606122131';
+const CACHE_NAME = 'pwa-cache-v202606122234';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -99,6 +99,7 @@ const urlsToCache = [
   "./img/ear_4.png",
   "./img/ear_5.png",
   "./img/ear_6.png",
+  "./img/eczema_s.webp",
   "./img/enema_clinical_cond.webp",
   "./img/enema_comp.webp",
   "./img/enema_step_1.webp",
@@ -131,6 +132,7 @@ const urlsToCache = [
   "./img/hem_oint_6.png",
   "./img/hemorr_sitbath_1.png",
   "./img/hemorr_sitbath_2.png",
+  "./img/hives_s.webp",
   "./img/hk_foot.webp",
   "./img/ibuprofen_sol.webp",
   "./img/jin_huang_san.webp",
@@ -169,6 +171,8 @@ const urlsToCache = [
   "./img/ped_cold_cypromin.webp",
   "./img/ped_cold_secorine.webp",
   "./img/prevent_scar.webp",
+  "./img/psoriasis_s.webp",
+  "./img/pus_s.webp",
   "./img/qili_san.webp",
   "./img/rec_1.png",
   "./img/rec_2.png",
@@ -186,6 +190,7 @@ const urlsToCache = [
   "./img/stretch_marks.webp",
   "./img/terbinafine_7_days.webp",
   "./img/thin_skin_part.webp",
+  "./img/tinea_s.webp",
   "./img/treatment_of_Hpylore.webp",
   "./img/vag_1.png",
   "./img/vag_2.png",
@@ -394,6 +399,11 @@ const urlsToCache = [
   "./cards/angular_cheilitis_02.html",
   "./cards/angular_cheilitis_03.html",
   "./cards/common_skin_redness_causes.html",
+  "./cards/eczema_s.html",
+  "./cards/tinea_s.html",
+  "./cards/pus_s.html",
+  "./cards/hives_s.html",
+  "./cards/psoriasis_s.html",
   "./cards/404.html"
 ];
 

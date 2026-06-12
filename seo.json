@@ -2594,5 +2594,70 @@
     "og_url": "https://liaoweihung.github.io/pteduimg/cards/common_skin_redness_causes.html",
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/common_skin_redness_causes.html",
     "twitter_card": "summary_large_image"
+  },
+  "cards/eczema_s.html": {
+    "page_title": "濕疹（皮膚發炎）｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「濕疹（皮膚發炎）」重點，幫助民眾了解常見五種皮膚紅腫的原因相關衛教資訊。",
+    "h1": "濕疹（皮膚發炎）",
+    "image_alt": "濕疹（皮膚發炎）第 2 張圖卡",
+    "keywords": "皮膚紅腫、紅疹、濕疹、皮膚發炎、癬、黴菌感染、體癬、腳癬、股癬、膿、細菌感染、蕁麻疹、乾癬、銀屑病、皮膚搔癢、抗黴菌藥、抗生素、保濕、類固醇藥膏、止癢藥、抗組織胺、膿包、傷口感染、抗黴菌藥膏、乾癬治療、銀白色皮屑、皮膚照護",
+    "og_title": "濕疹（皮膚發炎）｜藥局衛教助手",
+    "og_description": "這張圖卡整理「濕疹（皮膚發炎）」重點，幫助民眾了解常見五種皮膚紅腫的原因相關衛教資訊。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/eczema_s.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/eczema_s.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/eczema_s.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/tinea_s.html": {
+    "page_title": "癬（黴菌感染）｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「癬（黴菌感染）」重點，幫助民眾了解常見五種皮膚紅腫的原因相關衛教資訊。",
+    "h1": "癬（黴菌感染）",
+    "image_alt": "癬（黴菌感染）第 3 張圖卡",
+    "keywords": "皮膚紅腫、紅疹、濕疹、皮膚發炎、癬、黴菌感染、體癬、腳癬、股癬、膿、細菌感染、蕁麻疹、乾癬、銀屑病、皮膚搔癢、抗黴菌藥、抗生素、保濕、類固醇藥膏、止癢藥、抗組織胺、膿包、傷口感染、抗黴菌藥膏、乾癬治療、銀白色皮屑、皮膚照護",
+    "og_title": "癬（黴菌感染）｜藥局衛教助手",
+    "og_description": "這張圖卡整理「癬（黴菌感染）」重點，幫助民眾了解常見五種皮膚紅腫的原因相關衛教資訊。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/tinea_s.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/tinea_s.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/tinea_s.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/pus_s.html": {
+    "page_title": "膿（細菌感染）｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「膿（細菌感染）」重點，幫助民眾了解常見五種皮膚紅腫的原因相關衛教資訊。",
+    "h1": "膿（細菌感染）",
+    "image_alt": "膿（細菌感染）第 4 張圖卡",
+    "keywords": "皮膚紅腫、紅疹、濕疹、皮膚發炎、癬、黴菌感染、體癬、腳癬、股癬、膿、細菌感染、蕁麻疹、乾癬、銀屑病、皮膚搔癢、抗黴菌藥、抗生素、保濕、類固醇藥膏、止癢藥、抗組織胺、膿包、傷口感染、抗黴菌藥膏、乾癬治療、銀白色皮屑、皮膚照護",
+    "og_title": "膿（細菌感染）｜藥局衛教助手",
+    "og_description": "這張圖卡整理「膿（細菌感染）」重點，幫助民眾了解常見五種皮膚紅腫的原因相關衛教資訊。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/pus_s.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/pus_s.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/pus_s.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/hives_s.html": {
+    "page_title": "蕑麻疹｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「蕑麻疹」重點，幫助民眾了解常見五種皮膚紅腫的原因相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "蕑麻疹",
+    "image_alt": "蕑麻疹第 5 張圖卡",
+    "keywords": "皮膚紅腫、紅疹、濕疹、皮膚發炎、癬、黴菌感染、體癬、腳癬、股癬、膿、細菌感染、蕁麻疹、乾癬、銀屑病、皮膚搔癢、抗黴菌藥、抗生素、保濕、類固醇藥膏、止癢藥、抗組織胺、膿包、傷口感染、抗黴菌藥膏、乾癬治療、銀白色皮屑、皮膚照護",
+    "og_title": "蕑麻疹｜藥局衛教助手",
+    "og_description": "這張圖卡整理「蕑麻疹」重點，幫助民眾了解常見五種皮膚紅腫的原因相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/hives_s.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/hives_s.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/hives_s.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/psoriasis_s.html": {
+    "page_title": "乾癬（自體免疫造成）｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「乾癬（自體免疫造成）」重點，幫助民眾了解常見五種皮膚紅腫的原因相關衛教資訊。",
+    "h1": "乾癬（自體免疫造成）",
+    "image_alt": "乾癬（自體免疫造成）第 6 張圖卡",
+    "keywords": "皮膚紅腫、紅疹、濕疹、皮膚發炎、癬、黴菌感染、體癬、腳癬、股癬、膿、細菌感染、蕁麻疹、乾癬、銀屑病、皮膚搔癢、抗黴菌藥、抗生素、保濕、類固醇藥膏、止癢藥、抗組織胺、膿包、傷口感染、抗黴菌藥膏、乾癬治療、銀白色皮屑、皮膚照護",
+    "og_title": "乾癬（自體免疫造成）｜藥局衛教助手",
+    "og_description": "這張圖卡整理「乾癬（自體免疫造成）」重點，幫助民眾了解常見五種皮膚紅腫的原因相關衛教資訊。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/psoriasis_s.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/psoriasis_s.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/psoriasis_s.html",
+    "twitter_card": "summary_large_image"
   }
 }

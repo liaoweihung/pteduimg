@@ -1095,13 +1095,33 @@
       "銀屑病",
       "皮膚搔癢",
       "抗黴菌藥",
-      "抗生素"
+      "抗生素",
+      "保濕",
+      "類固醇藥膏",
+      "止癢藥",
+      "抗組織胺",
+      "膿包",
+      "傷口感染",
+      "抗黴菌藥膏",
+      "乾癬治療",
+      "銀白色皮屑",
+      "皮膚照護"
     ],
     "texts": [
-      "常見五種皮膚紅腫的原因"
+      "常見五種皮膚紅腫的原因",
+      "濕疹（皮膚發炎）",
+      "癬（黴菌感染）",
+      "膿（細菌感染）",
+      "蕁麻疹",
+      "乾癬（自體免疫造成）"
     ],
     "steps": [
-      "img/common_skin_redness_causes.webp"
+      "img/common_skin_redness_causes.webp",
+      "img/eczema_s.webp",
+      "img/tinea_s.webp",
+      "img/pus_s.webp",
+      "img/hives_s.webp",
+      "img/psoriasis_s.webp"
     ]
   }
 }
