@@ -191,16 +191,19 @@
 </div>
 
 <!-- 分類區塊會由 cards.json 自動產生，不用再手動修改 index.html -->
+<div id="home-loading" class="home-loading" role="status" aria-live="polite">正在載入圖卡...</div>
 <div id="category-sections"></div>
 
 <div id="qr-modal">
     <div class="qr-box">
-        <h3 class="qr-title">請患者掃描下載</h3>
+        <h3 class="qr-title">請患者掃描開啟這張圖卡</h3>
+        <p class="qr-hint">掃描後會直接打開目前這張衛教圖卡。</p>
         <canvas id="qr-canvas"></canvas> 
         <br>
         <button class="qr-close" onclick="closeQRModal()">完成</button>
     </div>
 </div>
+<div id="favorite-toast" class="favorite-toast" role="status" aria-live="polite"></div>
 
 <div id="share-modal">
     <div class="share-box">
@@ -373,6 +376,26 @@
 
     function saveMainCardOrder() {
         localStorage.setItem(MAIN_ORDER_STORAGE_KEY, JSON.stringify(mainCardOrder));
+    }
+
+    let favoriteToastTimer = null;
+    function showFavoriteToast(message) {
+        const toast = document.getElementById('favorite-toast');
+        if (!toast) return;
+        toast.innerText = message;
+        toast.classList.add('show');
+        clearTimeout(favoriteToastTimer);
+        favoriteToastTimer = setTimeout(() => {
+            toast.classList.remove('show');
+        }, 1800);
+    }
+
+    function showHomeLoading() {
+        document.getElementById('home-loading')?.removeAttribute('hidden');
+    }
+
+    function hideHomeLoading() {
+        document.getElementById('home-loading')?.setAttribute('hidden', '');
     }
 
     function requestResetMainCardOrder() {
@@ -876,10 +899,12 @@ function updateContent() {
 
     function toggleCurrentFav() {
         const currentKey = `${currentType}-${currentIdx}`;
-        if (favoriteImages.includes(currentKey)) favoriteImages = favoriteImages.filter(k => k !== currentKey);
+        const isFavorite = favoriteImages.includes(currentKey);
+        if (isFavorite) favoriteImages = favoriteImages.filter(k => k !== currentKey);
         else favoriteImages.push(currentKey);
         saveFavorites();
         updateContent();
+        showFavoriteToast(isFavorite ? '已從常用圖卡移除' : '已加入常用圖卡');
     }
 
    function changeStep(dir) {
@@ -1112,8 +1137,16 @@ function updateContent() {
         setupPageHeader();
         const hasCachedCards = loadCachedEducationData();
         loadCachedSeoData();
-        if (hasCachedCards) renderHome();
-        Promise.all([loadEducationData(), loadSeoData()]).then(renderHome);
+        if (hasCachedCards) {
+            hideHomeLoading();
+            renderHome();
+        } else {
+            showHomeLoading();
+        }
+        Promise.all([loadEducationData(), loadSeoData()]).then(() => {
+            hideHomeLoading();
+            renderHome();
+        });
     }
 
     if (document.readyState === 'loading') {

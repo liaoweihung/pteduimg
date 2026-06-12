@@ -93,16 +93,29 @@
     function toggleFavorite() {
       var favorites = getFavorites();
       var index = favorites.indexOf(cardFavoriteKey);
-      if (index === -1) favorites.push(cardFavoriteKey);
+      var isAdding = index === -1;
+      if (isAdding) favorites.push(cardFavoriteKey);
       else favorites.splice(index, 1);
       localStorage.setItem('favImages', JSON.stringify(favorites));
       setFavoriteButtonState();
+      showFavoriteToast(isAdding ? '已加入常用圖卡' : '已從常用圖卡移除');
       if (shouldTrackAnalytics()) {
-        gtag('event', index === -1 ? 'add_favorite_card' : 'remove_favorite_card', {
+        gtag('event', isAdding ? 'add_favorite_card' : 'remove_favorite_card', {
           card_title: cardTitle,
           step_number: 3
         });
       }
+    }
+    var favoriteToastTimer = null;
+    function showFavoriteToast(message) {
+      var toast = document.getElementById('favorite-toast');
+      if (!toast) return;
+      toast.textContent = message;
+      toast.classList.add('show');
+      clearTimeout(favoriteToastTimer);
+      favoriteToastTimer = setTimeout(function() {
+        toast.classList.remove('show');
+      }, 1800);
     }
     function showQRCode() {
       var modal = document.getElementById('qr-modal');
@@ -367,6 +380,18 @@
       height:220px;
       margin:0 auto 12px;
     }
+    .qr-title {
+      margin:0 0 6px;
+      color:var(--ink);
+      font-size:1.05rem;
+      line-height:1.35;
+    }
+    .qr-hint {
+      margin:0 0 16px;
+      color:var(--muted);
+      font-size:.9rem;
+      line-height:1.45;
+    }
     .qr-close {
       width:100%;
       border:0;
@@ -395,6 +420,29 @@
     .share-modal-actions .share-button {
       text-align:center;
       color:var(--brand);
+    }
+    .favorite-toast {
+      position:fixed;
+      left:50%;
+      bottom:26px;
+      z-index:30;
+      max-width:calc(100vw - 40px);
+      padding:11px 16px;
+      border-radius:999px;
+      background:rgba(38,50,56,.96);
+      color:#fff;
+      font-size:.95rem;
+      font-weight:700;
+      line-height:1.35;
+      box-shadow:0 8px 24px rgba(0,0,0,.22);
+      opacity:0;
+      pointer-events:none;
+      transform:translate(-50%,12px);
+      transition:opacity .2s ease, transform .2s ease;
+    }
+    .favorite-toast.show {
+      opacity:1;
+      transform:translate(-50%,0);
     }
     @media (min-width:680px) {
       .image-stage { min-height:calc(100svh - 112px); padding:16px; }
@@ -494,6 +542,8 @@
     </section>
     <div class="qr-modal" id="qr-modal" hidden>
       <div class="qr-box" role="dialog" aria-modal="true" aria-label="圖卡 QR code">
+        <div class="qr-title">請患者掃描開啟這張圖卡</div>
+        <p class="qr-hint">掃描後會直接打開目前這張衛教圖卡。</p>
         <canvas id="qr-canvas"></canvas>
         <button class="qr-close" type="button" onclick="closeQRCode()">完成</button>
       </div>
@@ -510,6 +560,7 @@
         <button class="qr-close" type="button" onclick="closeSharePanel()">完成</button>
       </div>
     </div>
+    <div id="favorite-toast" class="favorite-toast" role="status" aria-live="polite"></div>
   </main>
 </body>
 </html>

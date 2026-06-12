@@ -111,6 +111,12 @@
             background: white; padding: 30px; border-radius: 16px; text-align: center;
         }
         .qr-title { margin-top: 0; margin-bottom: 20px; color: #2c3e50; font-size: 1.2rem; }
+        .qr-hint {
+            margin: -8px 0 18px;
+            color: #5d6d7e;
+            font-size: 0.95rem;
+            line-height: 1.45;
+        }
         .qr-close {
             margin-top: 25px; padding: 12px 40px; background: #2c3e50; color: white;
             border: none; border-radius: 8px; font-size: 1.1rem; cursor: pointer; font-weight: bold;
@@ -295,6 +301,57 @@
         .top-nav a { display:inline-block; padding:9px 14px; border-radius:999px; background:white; color:#2c3e50; text-decoration:none; font-weight:bold; box-shadow:0 2px 8px rgba(0,0,0,0.06); border:1px solid #e5e8e8; font-size:0.95rem; }
         .top-nav a.active { background:#2c3e50; color:white; }
         .page-note { margin:10px 20px 0; padding:10px 12px; border-radius:12px; background:#ffffff; color:#5d6d7e; font-size:0.9rem; line-height:1.4; border:1px solid #e5e8e8; }
+        .home-loading {
+            margin: 18px 24px 28px;
+            padding: 20px 18px;
+            border: 1px solid #dfe6e9;
+            border-radius: 12px;
+            background: #ffffff;
+            color: #5d6d7e;
+            text-align: center;
+            font-weight: 700;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .home-loading[hidden] {
+            display: none;
+        }
+        .home-loading::before {
+            content: "";
+            display: block;
+            width: 28px;
+            height: 28px;
+            margin: 0 auto 10px;
+            border: 3px solid #dfe6e9;
+            border-top-color: #007b83;
+            border-radius: 50%;
+            animation: loading-spin 0.8s linear infinite;
+        }
+        @keyframes loading-spin {
+            to { transform: rotate(360deg); }
+        }
+        .favorite-toast {
+            position: fixed;
+            left: 50%;
+            bottom: 26px;
+            z-index: 11000;
+            max-width: calc(100vw - 40px);
+            padding: 11px 16px;
+            border-radius: 999px;
+            background: rgba(44, 62, 80, 0.96);
+            color: #fff;
+            font-size: 0.95rem;
+            font-weight: 700;
+            line-height: 1.35;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+            opacity: 0;
+            pointer-events: none;
+            transform: translate(-50%, 12px);
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        .favorite-toast.show {
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
         #reset-order-modal {
             display:none;
             position:fixed;
