@@ -1049,19 +1049,44 @@
     "twitter_card": "summary_large_image",
     "tracking_title": "濕敷療法｜藥局衛教助手"
   },
+  "cards/acne_stage.html": {
+    "page_title": "青春痘嚴重程度外觀｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「青春痘嚴重程度外觀」重點，幫助民眾了解青春痘嚴重程度相關衛教資訊。",
+    "h1": "青春痘嚴重程度外觀",
+    "image_alt": "青春痘嚴重程度外觀第 1 張圖卡",
+    "keywords": "青春痘、痘痘、粉刺、黑頭粉刺、白頭粉刺、面皰、丘疹、紅色丘疹、膿皰、結節、囊腫型青春痘、痘疤、痘印、青春痘分級、輕度青春痘、中度青春痘、重度青春痘、BPO、過氧化苯甲醯、A酸、杜鵑花酸、洗臉、保濕、控油",
+    "og_title": "青春痘嚴重程度外觀｜藥局衛教助手",
+    "og_description": "這張圖卡整理「青春痘嚴重程度外觀」重點，幫助民眾了解青春痘嚴重程度相關衛教資訊。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/acne_stage.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/acne_stage.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/acne_stage.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/comedo.html": {
+    "page_title": "粉刺如何處理?｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「粉刺如何處理?」重點，幫助民眾了解青春痘嚴重程度相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "粉刺如何處理?",
+    "image_alt": "粉刺如何處理?第 2 張圖卡",
+    "keywords": "青春痘、痘痘、粉刺、黑頭粉刺、白頭粉刺、面皰、丘疹、紅色丘疹、膿皰、結節、囊腫型青春痘、痘疤、痘印、青春痘分級、輕度青春痘、中度青春痘、重度青春痘、BPO、過氧化苯甲醯、A酸、杜鵑花酸、洗臉、保濕、控油",
+    "og_title": "粉刺如何處理?｜藥局衛教助手",
+    "og_description": "這張圖卡整理「粉刺如何處理?」重點，幫助民眾了解青春痘嚴重程度相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/comedo.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/comedo.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/comedo.html",
+    "twitter_card": "summary_large_image"
+  },
   "cards/acne.html": {
     "page_title": "青春痘嚴重度與照護｜藥局衛教助手",
-    "meta_description": "這張圖卡整理「青春痘嚴重度與照護」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
+    "meta_description": "這張圖卡整理「青春痘嚴重度與照護」重點，幫助民眾了解青春痘嚴重程度相關衛教資訊。",
     "h1": "青春痘嚴重度與照護",
-    "image_alt": "青春痘嚴重度與照護第 1 張圖卡",
-    "keywords": "青春痘嚴重度與照護、痤瘡、粉刺、皮膚照護、民眾衛教、藥局衛教",
+    "image_alt": "青春痘嚴重度與照護第 3 張圖卡",
+    "keywords": "青春痘、痘痘、粉刺、黑頭粉刺、白頭粉刺、面皰、丘疹、紅色丘疹、膿皰、結節、囊腫型青春痘、痘疤、痘印、青春痘分級、輕度青春痘、中度青春痘、重度青春痘、BPO、過氧化苯甲醯、A酸、杜鵑花酸、洗臉、保濕、控油",
     "og_title": "青春痘嚴重度與照護｜藥局衛教助手",
-    "og_description": "這張圖卡整理「青春痘嚴重度與照護」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
+    "og_description": "這張圖卡整理「青春痘嚴重度與照護」重點，幫助民眾了解青春痘嚴重程度相關衛教資訊。",
     "og_image": "https://liaoweihung.github.io/pteduimg/img/acne.png",
     "og_url": "https://liaoweihung.github.io/pteduimg/cards/acne.html",
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/acne.html",
-    "twitter_card": "summary_large_image",
-    "tracking_title": "青春痘嚴重度與照護｜藥局衛教助手"
+    "twitter_card": "summary_large_image"
   },
   "cards/oneFTU.html": {
     "page_title": "藥膏擦多少：指尖單位 FTU｜藥膏的使用｜藥局衛教助手",
