@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202606121205';
+const CACHE_NAME = 'pwa-cache-v202606121724';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -58,6 +58,7 @@ const urlsToCache = [
   "./img/Wet_Wrap.webp",
   "./img/ZithromaxPOS.webp",
   "./img/acne.png",
+  "./img/acne_dailycare.webp",
   "./img/acne_stage.webp",
   "./img/add_to_desktop_android.webp",
   "./img/add_to_desktop_ios.webp",
@@ -84,6 +85,7 @@ const urlsToCache = [
   "./img/bugspray_3.webp",
   "./img/bzd_z_sleep_aids.webp",
   "./img/comedo.webp",
+  "./img/comedo_dailycare.webp",
   "./img/common_skin_redness_causes.webp",
   "./img/constipation_cate.webp",
   "./img/dry_eye_comp.webp",
@@ -273,6 +275,8 @@ const urlsToCache = [
   "./cards/Wet_Wrap.html",
   "./cards/acne_stage.html",
   "./cards/comedo.html",
+  "./cards/comedo_dailycare.html",
+  "./cards/acne_dailycare.html",
   "./cards/acne.html",
   "./cards/oneFTU.html",
   "./cards/thin_skin_part.html",
