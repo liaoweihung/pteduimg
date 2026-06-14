@@ -410,6 +410,37 @@ body.health-tool-page header {
     font-weight: 900;
 }
 
+.source-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.source-list strong,
+.source-list span {
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 0.82rem;
+    line-height: 1.35;
+}
+
+.source-list strong {
+    background: #1f5b49;
+    color: #ffffff;
+}
+
+.source-list span {
+    background: #e8f7f1;
+    color: #1f5b49;
+    font-weight: 800;
+}
+
+.source-links a {
+    color: #1f5b49;
+    font-weight: 900;
+}
+
 @media (min-width: 720px) {
     .health-shell {
         padding-top: 24px;

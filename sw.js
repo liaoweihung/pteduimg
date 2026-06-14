@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202606130010';
+const CACHE_NAME = 'pwa-cache-v202606141323';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -9,6 +9,7 @@ const urlsToCache = [
   "./public.html",
   "./calc.html",
   "./health-check-calculator.html",
+  "./cancer-marker-calculator.html",
   "./growth-calculator.html",
   "./pregnancy-calculator.html",
   "./10-yr-cv-risk.html",
@@ -165,7 +166,11 @@ const urlsToCache = [
   "./img/oral_hygiene_06.webp",
   "./img/oral_hygiene_07.webp",
   "./img/oral_hygiene_08.webp",
-  "./img/otc_eye_drops.webp",
+  "./img/otc_anti_allergy_eye_drops.webp",
+  "./img/otc_antibiotic_eye_drops.webp",
+  "./img/otc_cooling_eye_drops.webp",
+  "./img/otc_eye_fatigue_drops.webp",
+  "./img/otc_redness_relief_eye_drops.webp",
   "./img/over_one_oint_01.webp",
   "./img/over_one_oint_02.webp",
   "./img/over_one_oint_03.webp",
@@ -391,7 +396,11 @@ const urlsToCache = [
   "./cards/artificial_tears_2.html",
   "./cards/artificial_tears_3.html",
   "./cards/artificial_tears_4.html",
-  "./cards/otc_eye_drops.html",
+  "./cards/otc_anti_allergy_eye_drops.html",
+  "./cards/otc_redness_relief_eye_drops.html",
+  "./cards/otc_antibiotic_eye_drops.html",
+  "./cards/otc_eye_fatigue_drops.html",
+  "./cards/otc_cooling_eye_drops.html",
   "./cards/hk_foot.html",
   "./cards/fungal_nail.html",
   "./cards/amorolfine.html",
@@ -420,6 +429,7 @@ const coreUrlsToCache = [
   "./public.html",
   "./calc.html",
   "./health-check-calculator.html",
+  "./cancer-marker-calculator.html",
   "./rx-refillable-date.html",
   "./icon.png",
   "./404.html",
@@ -427,7 +437,7 @@ const coreUrlsToCache = [
   "./seo.json",
   "./qrious.min.js",
   "./css/base.css?v=6",
-  "./css/health-tools.css?v=1",
+  "./css/health-tools.css?v=2",
   "./css/rx-refillable-date.css?v=5",
   "./css/pharmacist.css?v=2",
   "./css/public.css?v=3"

@@ -922,21 +922,42 @@
       "Vitamin B6",
       "Vitamin B12",
       "Menthol",
-      "Camphor"
+      "Camphor",
+      "Taurine",
+      "止癢型眼藥水",
+      "過敏性結膜炎",
+      "退紅型眼藥水",
+      "眼睛充血",
+      "抗菌型眼藥水",
+      "抗生素眼藥水",
+      "細菌性結膜炎",
+      "疲勞型眼藥水",
+      "營養補充型眼藥水",
+      "涼感型眼藥水",
+      "清涼眼藥水",
+      "眼睛乾澀"
     ],
     "texts": [
       "為什麼眼睛會乾乾的",
       "人工淚液的差別，怎麼選?",
       "眼藥水的防腐劑",
       "那一種人工淚液適合我?",
-      "常見OTC眼藥水"
+      "止癢型抗過敏眼藥水",
+      "退紅型血管收縮眼藥水",
+      "抗菌型抗生素眼藥水",
+      "疲勞型營養補充眼藥水",
+      "涼感型清涼舒緩眼藥水"
     ],
     "steps": [
       "img/artificial_tears_1.webp",
       "img/artificial_tears_2.webp",
       "img/artificial_tears_3.webp",
       "img/artificial_tears_4.webp",
-      "img/otc_eye_drops.webp"
+      "img/otc_anti_allergy_eye_drops.webp",
+      "img/otc_redness_relief_eye_drops.webp",
+      "img/otc_antibiotic_eye_drops.webp",
+      "img/otc_eye_fatigue_drops.webp",
+      "img/otc_cooling_eye_drops.webp"
     ]
   },
   "fungal_foot_nail": {
