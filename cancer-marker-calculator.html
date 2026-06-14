@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="./icon.png?v=3">
+    <title>癌症相關檢驗值解讀助手</title>
+    <meta name="description" content="輸入常見腫瘤標記與報告參考上限，整理偏高、趨勢變化、可能原因與五癌篩檢提醒。">
+    <script>
+      const GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
+      const urlParams = new URLSearchParams(window.location.search);
+      const host = window.location.hostname;
+      const isPrivateNetworkHost = ['localhost', '127.0.0.1', '::1'].includes(host)
+          || /^192\.168\./.test(host)
+          || /^10\./.test(host)
+          || /^172\.(1[6-9]|2\d|3[0-1])\./.test(host);
+      const isLocalPreview = isPrivateNetworkHost || window.location.protocol === 'file:';
+
+      if (urlParams.get('dev') === '1') {
+          localStorage.setItem('isDeveloper', 'true');
+          alert('已開啟開發者隱形模式！未來的瀏覽將不會被 GA4 記錄。');
+      }
+
+      if (urlParams.get('dev') === '0') {
+          localStorage.removeItem('isDeveloper');
+          alert('已關閉開發者隱形模式。');
+      }
+
+      window.isAnalyticsDisabled = isLocalPreview || localStorage.getItem('isDeveloper') === 'true';
+      window[`ga-disable-${GA_MEASUREMENT_ID}`] = window.isAnalyticsDisabled;
+
+      function shouldTrackAnalytics() {
+          return !window.isAnalyticsDisabled && typeof gtag === 'function';
+      }
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ dataLayer.push(arguments); };
+
+      if (!window.isAnalyticsDisabled) {
+          const gaScript = document.createElement('script');
+          gaScript.async = true;
+          gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+          document.head.appendChild(gaScript);
+          gtag('js', new Date());
+          gtag('config', GA_MEASUREMENT_ID);
+      }
+    </script>
+    <link rel="stylesheet" href="./css/base.css?v=6">
+    <link rel="stylesheet" href="./css/health-tools.css?v=2">
+    <script src="./qrious.min.js"></script>
+</head>
+<body class="health-tool-page">
+    <header>
+        <img src="icon.png?v=3" alt="網站圖示" class="header-icon">
+        <span>癌症相關檢驗值解讀助手</span>
+    </header>
+
+    <main class="health-shell">
+        <button class="back-button" type="button" onclick="goBackToSource()">‹ 回工具列表</button>
+
+        <section class="intro-card" aria-labelledby="cancer-title">
+            <div class="intro-icon" aria-hidden="true">🎗️</div>
+            <div>
+                <h1 id="cancer-title">癌症相關檢驗值解讀助手</h1>
+                <p>整理常見腫瘤標記物是否超過報告上限、是否較前次上升，以及可和醫師或藥師討論的下一步。</p>
+            </div>
+        </section>
+
+        <section class="form-card" aria-labelledby="form-title">
+            <h2 id="form-title">輸入檢驗資料</h2>
+            <form id="marker-form" novalidate>
+                <section class="input-group" aria-labelledby="basic-title">
+                    <h3 id="basic-title">基本資料</h3>
+                    <div class="field-grid two-columns">
+                        <label class="field">
+                            <span>年齡</span>
+                            <input type="number" id="age" inputmode="numeric" placeholder="例：52">
+                        </label>
+                        <label class="field">
+                            <span>性別</span>
+                            <select id="sex">
+                                <option value="female">女性</option>
+                                <option value="male">男性</option>
+                            </select>
+                        </label>
+                    </div>
+                </section>
+
+                <section class="input-group" aria-labelledby="gi-title">
+                    <h3 id="gi-title">腸胃 / 肝膽胰</h3>
+                    <div class="field-grid two-columns">
+                        <label class="field">
+                            <span>CEA 癌胚抗原 (ng/mL)</span>
+                            <input type="number" id="cea" inputmode="decimal" step="0.1" placeholder="例：4.8">
+                        </label>
+                        <label class="field">
+                            <span>CEA 報告上限</span>
+                            <input type="number" id="cea-limit" inputmode="decimal" step="0.1" placeholder="常見：5">
+                        </label>
+                        <label class="field">
+                            <span>AFP 甲型胎兒蛋白 (ng/mL)</span>
+                            <input type="number" id="afp" inputmode="decimal" step="0.1" placeholder="例：8.5">
+                        </label>
+                        <label class="field">
+                            <span>AFP 報告上限</span>
+                            <input type="number" id="afp-limit" inputmode="decimal" step="0.1" placeholder="常見：9">
+                        </label>
+                        <label class="field">
+                            <span>CA19-9 (U/mL)</span>
+                            <input type="number" id="ca199" inputmode="decimal" step="0.1" placeholder="例：42">
+                        </label>
+                        <label class="field">
+                            <span>CA19-9 報告上限</span>
+                            <input type="number" id="ca199-limit" inputmode="decimal" step="0.1" placeholder="常見：37">
+                        </label>
+                    </div>
+                </section>
+
+                <section class="input-group" aria-labelledby="women-title">
+                    <h3 id="women-title">婦科 / 乳房</h3>
+                    <div class="field-grid two-columns">
+                        <label class="field">
+                            <span>CA-125 (U/mL)</span>
+                            <input type="number" id="ca125" inputmode="decimal" step="0.1" placeholder="例：28">
+                        </label>
+                        <label class="field">
+                            <span>CA-125 報告上限</span>
+                            <input type="number" id="ca125-limit" inputmode="decimal" step="0.1" placeholder="常見：35">
+                        </label>
+                        <label class="field">
+                            <span>CA15-3 (U/mL)</span>
+                            <input type="number" id="ca153" inputmode="decimal" step="0.1" placeholder="例：25">
+                        </label>
+                        <label class="field">
+                            <span>CA15-3 報告上限</span>
+                            <input type="number" id="ca153-limit" inputmode="decimal" step="0.1" placeholder="常見：30">
+                        </label>
+                    </div>
+                </section>
+
+                <section class="input-group" aria-labelledby="other-title">
+                    <h3 id="other-title">攝護腺 / 其他</h3>
+                    <div class="field-grid two-columns">
+                        <label class="field">
+                            <span>PSA 攝護腺特異抗原 (ng/mL)</span>
+                            <input type="number" id="psa" inputmode="decimal" step="0.1" placeholder="例：3.2">
+                        </label>
+                        <label class="field">
+                            <span>PSA 報告上限</span>
+                            <input type="number" id="psa-limit" inputmode="decimal" step="0.1" placeholder="常見：4">
+                        </label>
+                        <label class="field">
+                            <span>SCC 鱗狀細胞癌抗原 (ng/mL)</span>
+                            <input type="number" id="scc" inputmode="decimal" step="0.1" placeholder="例：1.7">
+                        </label>
+                        <label class="field">
+                            <span>SCC 報告上限</span>
+                            <input type="number" id="scc-limit" inputmode="decimal" step="0.1" placeholder="常見：2.5">
+                        </label>
+                    </div>
+                </section>
+
+                <section class="input-group" aria-labelledby="trend-title">
+                    <h3 id="trend-title">前次數值（選填）</h3>
+                    <div class="field-grid two-columns">
+                        <label class="field"><span>CEA 前次</span><input type="number" id="cea-prev" inputmode="decimal" step="0.1"></label>
+                        <label class="field"><span>AFP 前次</span><input type="number" id="afp-prev" inputmode="decimal" step="0.1"></label>
+                        <label class="field"><span>CA19-9 前次</span><input type="number" id="ca199-prev" inputmode="decimal" step="0.1"></label>
+                        <label class="field"><span>CA-125 前次</span><input type="number" id="ca125-prev" inputmode="decimal" step="0.1"></label>
+                        <label class="field"><span>CA15-3 前次</span><input type="number" id="ca153-prev" inputmode="decimal" step="0.1"></label>
+                        <label class="field"><span>PSA 前次</span><input type="number" id="psa-prev" inputmode="decimal" step="0.1"></label>
+                        <label class="field"><span>SCC 前次</span><input type="number" id="scc-prev" inputmode="decimal" step="0.1"></label>
+                    </div>
+                </section>
+
+                <div class="check-card">
+                    <strong>五癌篩檢提醒</strong>
+                    <label><input type="checkbox" id="smoke"> 有吸菸或重度吸菸史</label>
+                    <label><input type="checkbox" id="betel"> 曾嚼檳榔或目前嚼檳榔</label>
+                    <label><input type="checkbox" id="lung-family"> 父母、子女或兄弟姊妹曾診斷肺癌</label>
+                    <label><input type="checkbox" id="colon-family"> 一等親有大腸癌病史</label>
+                    <label><input type="checkbox" id="known-cancer"> 已有癌症診斷，這次是治療或追蹤用途</label>
+                </div>
+
+                <p class="form-message" id="form-message" role="alert"></p>
+                <button class="primary-action" type="submit">解讀我的數值</button>
+                <button class="secondary-action" id="reset-form" type="button">清除資料</button>
+                <div class="sample-row">
+                    <button class="sample-action" type="button" data-sample="mild">套用範例：輕度偏高</button>
+                    <button class="sample-action" type="button" data-sample="follow">套用範例：追蹤中上升</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="result-card" id="result-card" aria-live="polite" hidden>
+            <div class="result-summary">
+                <strong id="summary-title">--</strong>
+                <span id="summary-text">--</span>
+            </div>
+            <div class="result-actions">
+                <button class="secondary-action" id="copy-share-link" type="button">複製結果連結</button>
+            </div>
+            <section class="share-card" id="share-card" aria-labelledby="share-title" hidden>
+                <h3 id="share-title">結果網頁 QR code</h3>
+                <p>掃描後會開啟同一份解讀結果。此連結只把本次輸入數值放在網址中，網站不會另外儲存資料。</p>
+                <canvas id="share-qr" aria-label="癌症相關檢驗值結果網頁 QR code"></canvas>
+                <label class="share-link-field">
+                    <span>結果連結</span>
+                    <input type="text" id="share-link" readonly>
+                </label>
+                <p class="copy-message" id="copy-message" role="status"></p>
+            </section>
+            <div class="finding-list" id="finding-list"></div>
+        </section>
+
+        <section class="note-card">
+            <h2>重要提醒</h2>
+            <p>腫瘤標記物可能因發炎、感染、肝膽疾病、抽菸、攝護腺肥大、月經、懷孕或良性疾病而上升；正常也不能排除癌症。本工具只做衛教整理，不能用來診斷癌症或取代醫師評估。</p>
+            <p>數值上限參考林口長庚紀念醫院檢驗醫學部檢驗項目查詢；五癌篩檢資格參考衛生福利部國民健康署。各院所參考值可能不同，請以檢驗報告標示為準。</p>
+            <div class="source-list" aria-label="數據範圍來源">
+                <strong>預設參考上限</strong>
+                <span>CEA ≤ 5.0 ng/mL</span>
+                <span>AFP < 9 ng/mL</span>
+                <span>CA19-9 < 37 U/mL</span>
+                <span>CA-125 < 35 U/mL</span>
+                <span>CA15-3 < 30 U/mL</span>
+                <span>PSA ≤ 4 ng/mL</span>
+                <span>SCC < 2.5 ng/mL</span>
+            </div>
+            <p class="source-links">
+                <a href="https://www1.cgmh.org.tw/intr/intr4/c8920/manual/N_manual_sch.asp?loc=3" target="_blank" rel="noopener">林口長庚檢驗項目查詢</a>
+                &nbsp;|&nbsp;
+                <a href="https://www.hpa.gov.tw/Pages/List.aspx?nodeid=211" target="_blank" rel="noopener">國健署癌症篩檢介紹</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p style="margin: 0 0 8px 0;">本工具圖文僅供藥師衛教參考，非專業人士務必諮詢藥師建議。</p>
+        <p style="margin: 0;">
+            <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a>
+            &nbsp;|&nbsp;
+            <a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" onclick="trackFeedbackClick()">💬 意見回饋</a>
+        </p>
+    </footer>
+
+    <script>
+        const form = document.getElementById('marker-form');
+        const formMessage = document.getElementById('form-message');
+        const resultCard = document.getElementById('result-card');
+        const findingList = document.getElementById('finding-list');
+        let latestShareUrl = '';
+
+        const markerDefs = {
+            cea: {
+                label: 'CEA 癌胚抗原',
+                group: '腸胃 / 肝膽胰',
+                unit: 'ng/mL',
+                defaultLimit: 5,
+                tags: ['腸胃道評估', '抽菸影響', '追蹤趨勢'],
+                normal: '目前未超過輸入的參考上限。若有症狀或家族史，仍應依醫師建議安排檢查。',
+                high: 'CEA 偏高不等於癌症，抽菸、腸胃道發炎、肝膽疾病也可能上升。建議帶完整報告與醫師討論是否需腸胃道或影像檢查。'
+            },
+            afp: {
+                label: 'AFP 甲型胎兒蛋白',
+                group: '腸胃 / 肝膽胰',
+                unit: 'ng/mL',
+                defaultLimit: 9,
+                tags: ['肝功能', 'B/C肝追蹤', '腹部超音波'],
+                normal: '目前未超過輸入的參考上限。若有 B 肝、C 肝或肝硬化，仍需依醫囑定期追蹤。',
+                high: 'AFP 偏高可能和肝癌、轉移性肝癌、部分生殖細胞腫瘤、肝硬化、肝炎、酒精性肝炎或懷孕相關。建議搭配肝功能、B/C 肝病史與腹部超音波評估。'
+            },
+            ca199: {
+                label: 'CA19-9',
+                group: '腸胃 / 肝膽胰',
+                unit: 'U/mL',
+                defaultLimit: 37,
+                tags: ['肝膽胰', '黃疸警訊', '腸胃科'],
+                normal: '目前未超過輸入的參考上限。若有腹痛、黃疸或體重下降，仍要就醫。',
+                high: 'CA19-9 偏高可能和膽道阻塞、胰臟或腸胃道疾病、發炎有關。若合併黃疸、茶色尿、體重下降，請儘快就醫。'
+            },
+            ca125: {
+                label: 'CA-125',
+                group: '婦科 / 乳房',
+                unit: 'U/mL',
+                defaultLimit: 35,
+                tags: ['婦科評估', '月經影響', '骨盆症狀'],
+                normal: '目前未超過輸入的參考上限。若有腹脹、骨盆疼痛或異常出血，仍建議婦產科評估。',
+                high: 'CA-125 偏高可能和月經、子宮內膜異位、骨盆腔發炎、懷孕或婦科腫瘤相關。請搭配症狀與超音波判斷。'
+            },
+            ca153: {
+                label: 'CA15-3',
+                group: '婦科 / 乳房',
+                unit: 'U/mL',
+                defaultLimit: 30,
+                tags: ['乳房檢查', '治療追蹤', '乳攝'],
+                normal: '目前未超過輸入的參考上限。乳癌篩檢仍以乳房 X 光攝影等正式篩檢為主。',
+                high: 'CA15-3 偏高可能和乳癌、胰臟癌、大腸癌、肝癌、肺癌、卵巢癌、腎臟癌，也可能和良性乳房或肝臟疾病、懷孕相關。單次偏高不能診斷乳癌，建議搭配乳房檢查與影像。'
+            },
+            psa: {
+                label: 'PSA 攝護腺特異抗原',
+                group: '攝護腺 / 其他',
+                unit: 'ng/mL',
+                defaultLimit: 4,
+                tags: ['泌尿科', '攝護腺肥大', '避免誤判'],
+                normal: '目前未超過輸入的參考上限。若排尿困難、血尿或家族史，仍可與泌尿科討論。',
+                high: 'PSA 偏高可能和攝護腺肥大、發炎、近期射精、導尿或攝護腺癌有關。建議不要只看單次數字，請和泌尿科討論。'
+            },
+            scc: {
+                label: 'SCC 鱗狀細胞癌抗原',
+                group: '攝護腺 / 其他',
+                unit: 'ng/mL',
+                defaultLimit: 2.5,
+                tags: ['皮膚黏膜', '婦科/胸腔', '追蹤用途'],
+                normal: '目前未超過輸入的參考上限。若有持續咳嗽、異常出血或不癒合傷口，仍需就醫。',
+                high: 'SCC 偏高可能和子宮頸癌、頭頸癌、口腔癌、肺癌、消化道惡性腫瘤或皮膚癌相關，也可能由子宮內膜異位、骨盆腔發炎、肝炎、肝硬化、腎功能不全、肺結核或肺炎造成。請依症狀與原科別追蹤。'
+            }
+        };
+
+        const markerIds = Object.keys(markerDefs);
+        const checkboxIds = ['smoke', 'betel', 'lung-family', 'colon-family', 'known-cancer'];
+
+        function readNumber(id) {
+            const value = document.getElementById(id).value.trim();
+            if (value === '') return null;
+            const number = Number(value);
+            return Number.isFinite(number) ? number : null;
+        }
+
+        function readValues() {
+            const markers = {};
+            markerIds.forEach((id) => {
+                markers[id] = {
+                    value: readNumber(id),
+                    limit: readNumber(`${id}-limit`),
+                    prev: readNumber(`${id}-prev`)
+                };
+            });
+
+            const checks = {};
+            checkboxIds.forEach((id) => {
+                checks[id] = document.getElementById(id).checked;
+            });
+
+            return {
+                age: readNumber('age'),
+                sex: document.getElementById('sex').value,
+                markers,
+                checks
+            };
+        }
+
+        function formatNumber(value) {
+            if (value === null || value === undefined) return '--';
+            return Number.isInteger(value) ? String(value) : value.toFixed(1).replace(/\.0$/, '');
+        }
+
+        function classifyMarker(id, data) {
+            const def = markerDefs[id];
+            if (data.value === null) return null;
+            const limit = data.limit || def.defaultLimit;
+            const ratio = data.value / limit;
+            const hasTrendRise = data.prev !== null && data.prev > 0 && data.value >= data.prev * 1.2;
+            const trendText = data.prev !== null
+                ? `前次 ${formatNumber(data.prev)}，本次 ${formatNumber(data.value)}，${hasTrendRise ? '有明顯上升趨勢。' : '未達明顯上升趨勢。'}`
+                : '未輸入前次數值，建議保留報告方便日後比較。';
+
+            let level = 'normal';
+            let severity = 'normal';
+            let title = '目前未超過參考上限';
+            let message = def.normal;
+
+            if (ratio > 2 || hasTrendRise) {
+                level = 'danger';
+                severity = '需要回診確認';
+                title = `${def.label} 需要回診確認`;
+                message = `${def.high} ${trendText}`;
+            } else if (ratio > 1) {
+                level = 'warning';
+                severity = '偏高需追蹤';
+                title = `${def.label} 偏高需追蹤`;
+                message = `${def.high} ${trendText}`;
+            }
+
+            if (level === 'normal') {
+                message = `${def.normal} ${trendText}`;
+            }
+
+            return {
+                id,
+                group: def.group,
+                label: def.label,
+                unit: def.unit,
+                level,
+                severity,
+                title,
+                value: data.value,
+                limit,
+                ratio,
+                tags: def.tags,
+                message
+            };
+        }
+
+        function buildScreeningFindings(values) {
+            const findings = [];
+            const age = values.age;
+            const sex = values.sex;
+            const c = values.checks;
+            const add = (title, message, tags) => {
+                findings.push({
+                    group: '五癌篩檢提醒',
+                    label: title,
+                    level: 'warning',
+                    severity: '偏高需追蹤',
+                    title,
+                    value: null,
+                    limit: null,
+                    tags,
+                    message
+                });
+            };
+
+            if (age === null) return findings;
+
+            if (sex === 'female' && age >= 40 && age <= 74) {
+                add('乳房 X 光攝影檢查資格', '國健署補助 40 至 74 歲婦女每 2 年 1 次乳房 X 光攝影檢查。腫瘤標記不能取代乳癌篩檢。', ['乳癌篩檢', '每2年']);
+            }
+            if (sex === 'female' && age >= 25) {
+                add('子宮頸抹片檢查資格', '國健署補助 25 至 29 歲婦女每 3 年 1 次，30 歲以上每年 1 次，並建議每 3 年至少做 1 次。', ['子宮頸癌', '抹片']);
+            }
+            if ((age >= 45 && age < 75) || (age >= 40 && age <= 44 && c['colon-family'])) {
+                add('糞便潛血檢查資格', '國健署補助 45 至未滿 75 歲民眾每 2 年 1 次；40 至 44 歲且具家族史者也符合補助。', ['大腸癌', '每2年']);
+            }
+            if (age >= 30 && (c.smoke || c.betel)) {
+                add('口腔黏膜檢查資格', '國健署補助 30 歲以上有吸菸或嚼檳榔者，每 2 年 1 次口腔黏膜檢查。', ['口腔癌', '每2年']);
+            }
+            if ((c['lung-family'] && ((sex === 'male' && age >= 45 && age <= 74) || (sex === 'female' && age >= 40 && age <= 74))) ||
+                (c.smoke && age >= 50 && age <= 74)) {
+                add('低劑量電腦斷層資格', '具肺癌家族史或重度吸菸史者，可能符合國健署低劑量電腦斷層補助條件，建議向醫療院所確認。', ['肺癌', 'LDCT']);
+            }
+
+            if (findings.length === 0) {
+                findings.push({
+                    group: '五癌篩檢提醒',
+                    label: '目前沒有明確符合的篩檢提醒',
+                    level: 'normal',
+                    severity: '目前未超過參考上限',
+                    title: '目前沒有明確符合的篩檢提醒',
+                    value: null,
+                    limit: null,
+                    tags: ['依症狀就醫', '定期健檢'],
+                    message: '依目前輸入資料，沒有整理出明確符合的國健署補助篩檢提醒。若有症狀、家族史或醫師建議，仍應主動就醫詢問。'
+                });
+            }
+
+            return findings;
+        }
+
+        function groupFindings(findings) {
+            const order = ['需要回診確認', '偏高需追蹤', '目前未超過參考上限'];
+            const bySeverity = new Map(order.map((name) => [name, []]));
+            findings.forEach((finding) => {
+                if (bySeverity.has(finding.severity)) bySeverity.get(finding.severity).push(finding);
+            });
+            return order
+                .map((severity) => ({ severity, findings: bySeverity.get(severity) }))
+                .filter((section) => section.findings.length > 0);
+        }
+
+        function renderResults(values, restored = false) {
+            const markerFindings = markerIds
+                .map((id) => classifyMarker(id, values.markers[id]))
+                .filter(Boolean);
+
+            if (markerFindings.length === 0 && values.age === null) {
+                formMessage.textContent = '請至少輸入一項檢驗值，或輸入年齡查看五癌篩檢提醒。';
+                resultCard.hidden = true;
+                return;
+            }
+
+            formMessage.textContent = '';
+            const screeningFindings = buildScreeningFindings(values);
+            const allFindings = [...markerFindings, ...screeningFindings];
+            const dangerCount = markerFindings.filter((item) => item.level === 'danger').length;
+            const warningCount = markerFindings.filter((item) => item.level === 'warning').length;
+            const normalCount = markerFindings.filter((item) => item.level === 'normal').length;
+
+            const summaryTitle = document.getElementById('summary-title');
+            const summaryText = document.getElementById('summary-text');
+            if (dangerCount > 0) {
+                summaryTitle.textContent = `有 ${dangerCount} 項需要回診確認`;
+                summaryText.textContent = '請帶完整報告回到原檢查院所或相關科別，由醫師搭配症狀、影像與病史判斷。';
+            } else if (warningCount > 0) {
+                summaryTitle.textContent = `有 ${warningCount} 項偏高需追蹤`;
+                summaryText.textContent = '多數腫瘤標記不能單獨判斷癌症，建議看趨勢、症狀與報告參考值。';
+            } else if (normalCount > 0) {
+                summaryTitle.textContent = '輸入的腫瘤標記目前未超過上限';
+                summaryText.textContent = '數值正常不能排除癌症，仍應依年齡、症狀與政府篩檢資格安排正式篩檢。';
+            } else {
+                summaryTitle.textContent = '已整理五癌篩檢提醒';
+                summaryText.textContent = '以下依國健署補助條件整理可詢問的篩檢項目。';
+            }
+
+            if (restored) {
+                summaryText.textContent = `${summaryText.textContent} 這是由 QR code 還原的結果頁。`;
+            }
+
+            findingList.innerHTML = '';
+            groupFindings(allFindings).forEach((section) => {
+                const card = document.createElement('section');
+                const cardLevel = section.severity === '需要回診確認' ? 'danger' : section.severity === '偏高需追蹤' ? 'warning' : '';
+                card.className = `finding-card ${cardLevel}`;
+
+                const title = document.createElement('h3');
+                title.textContent = section.severity;
+                card.appendChild(title);
+
+                const grouped = new Map();
+                section.findings.forEach((finding) => {
+                    const key = finding.group;
+                    if (!grouped.has(key)) grouped.set(key, []);
+                    grouped.get(key).push(finding);
+                });
+
+                grouped.forEach((items, groupName) => {
+                    const groupTitle = document.createElement('p');
+                    groupTitle.innerHTML = `<strong>${groupName}</strong>`;
+                    card.appendChild(groupTitle);
+
+                    const list = document.createElement('ul');
+                    list.className = 'finding-items';
+                    items.forEach((item) => {
+                        const li = document.createElement('li');
+                        const valueText = item.value === null
+                            ? ''
+                            : `：${formatNumber(item.value)} ${item.unit}，參考上限 ${formatNumber(item.limit)}`;
+                        li.innerHTML = `<strong>${item.label}${valueText}</strong><span>${item.message}</span>`;
+                        const pillRow = document.createElement('div');
+                        pillRow.className = 'pill-row';
+                        item.tags.forEach((tag) => {
+                            const pill = document.createElement('span');
+                            pill.className = 'pill';
+                            pill.textContent = tag;
+                            pillRow.appendChild(pill);
+                        });
+                        li.appendChild(pillRow);
+                        list.appendChild(li);
+                    });
+                    card.appendChild(list);
+                });
+
+                findingList.appendChild(card);
+            });
+
+            resultCard.hidden = false;
+            updateShareCard(values);
+            resultCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function encodeSharePayload(payload) {
+            const json = JSON.stringify(payload);
+            return btoa(encodeURIComponent(json).replace(/%([0-9A-F]{2})/g, (_, code) => String.fromCharCode(parseInt(code, 16))))
+                .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '');
+        }
+
+        function decodeSharePayload(encoded) {
+            const base64 = encoded.replace(/-/g, '+').replace(/_/g, '/');
+            const padded = base64 + '='.repeat((4 - base64.length % 4) % 4);
+            const binary = atob(padded);
+            const encodedJson = Array.from(binary, (char) => `%${char.charCodeAt(0).toString(16).padStart(2, '0')}`).join('');
+            return JSON.parse(decodeURIComponent(encodedJson));
+        }
+
+        function getCleanPageUrl() {
+            return `${window.location.origin}${window.location.pathname}`;
+        }
+
+        function updateShareCard(values) {
+            const shareCard = document.getElementById('share-card');
+            const shareLink = document.getElementById('share-link');
+            const qrCanvas = document.getElementById('share-qr');
+            latestShareUrl = `${getCleanPageUrl()}#report=${encodeSharePayload(values)}`;
+            shareLink.value = latestShareUrl;
+            shareCard.hidden = false;
+
+            if (typeof QRious === 'function') {
+                new QRious({
+                    element: qrCanvas,
+                    value: latestShareUrl,
+                    size: 220,
+                    level: 'M'
+                });
+            }
+        }
+
+        async function copyShareLink() {
+            const copyMessage = document.getElementById('copy-message');
+            if (!latestShareUrl) {
+                copyMessage.textContent = '請先產生結果。';
+                return;
+            }
+            try {
+                await navigator.clipboard.writeText(latestShareUrl);
+                copyMessage.textContent = '已複製結果連結。';
+            } catch (error) {
+                document.getElementById('share-link').select();
+                copyMessage.textContent = '無法自動複製，請長按連結欄位手動複製。';
+            }
+        }
+
+        function applySharePayload(payload) {
+            if (!payload || typeof payload !== 'object') return;
+            document.getElementById('age').value = payload.age ?? '';
+            document.getElementById('sex').value = payload.sex || 'female';
+            markerIds.forEach((id) => {
+                const marker = payload.markers?.[id] || {};
+                document.getElementById(id).value = marker.value ?? '';
+                document.getElementById(`${id}-limit`).value = marker.limit ?? '';
+                document.getElementById(`${id}-prev`).value = marker.prev ?? '';
+            });
+            checkboxIds.forEach((id) => {
+                document.getElementById(id).checked = Boolean(payload.checks?.[id]);
+            });
+            renderResults(readValues(), true);
+        }
+
+        function loadSharedReportFromHash() {
+            if (!window.location.hash.startsWith('#report=')) return;
+            try {
+                const payload = decodeSharePayload(window.location.hash.slice('#report='.length));
+                applySharePayload(payload);
+            } catch (error) {
+                formMessage.textContent = '結果連結無法讀取，請重新產生 QR code。';
+            }
+        }
+
+        function resetForm() {
+            form.reset();
+            formMessage.textContent = '';
+            resultCard.hidden = true;
+            latestShareUrl = '';
+            window.history.replaceState(null, '', getCleanPageUrl());
+        }
+
+        function applySample(type) {
+            resetForm();
+            document.getElementById('age').value = type === 'follow' ? '61' : '48';
+            document.getElementById('sex').value = type === 'follow' ? 'male' : 'female';
+            if (type === 'follow') {
+                document.getElementById('cea').value = '11.2';
+                document.getElementById('cea-prev').value = '6.8';
+                document.getElementById('ca199').value = '82';
+                document.getElementById('ca199-prev').value = '44';
+                document.getElementById('psa').value = '5.6';
+                document.getElementById('psa-prev').value = '3.9';
+                document.getElementById('smoke').checked = true;
+            } else {
+                document.getElementById('ca125').value = '42';
+                document.getElementById('ca125-prev').value = '36';
+                document.getElementById('cea').value = '5.7';
+                document.getElementById('cea-prev').value = '5.1';
+            }
+            renderResults(readValues());
+        }
+
+        function goBackToSource() {
+            window.location.href = './calc.html';
+        }
+
+        function trackFeedbackClick() {
+            if (typeof shouldTrackAnalytics === 'function' && shouldTrackAnalytics() && typeof gtag === 'function') {
+                gtag('event', 'click_feedback', { 'source_app': 'pteduimg' });
+            }
+        }
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            renderResults(readValues());
+        });
+        document.getElementById('reset-form').addEventListener('click', resetForm);
+        document.getElementById('copy-share-link').addEventListener('click', copyShareLink);
+        document.querySelectorAll('[data-sample]').forEach((button) => {
+            button.addEventListener('click', () => applySample(button.dataset.sample));
+        });
+        window.addEventListener('hashchange', loadSharedReportFromHash);
+        loadSharedReportFromHash();
+    </script>
+</body>
+</html>
