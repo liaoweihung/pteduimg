@@ -935,7 +935,15 @@
       "營養補充型眼藥水",
       "涼感型眼藥水",
       "清涼眼藥水",
-      "眼睛乾澀"
+      "眼睛乾澀",
+      "Chomolyn",
+      "Cromolyn Sodium",
+      "色甘酸鈉",
+      "預防型眼藥水",
+      "肥大細胞穩定劑",
+      "眼睛癢",
+      "流眼淚",
+      "季節性過敏"
     ],
     "texts": [
       "為什麼眼睛會乾乾的",
@@ -946,7 +954,8 @@
       "退紅型血管收縮眼藥水",
       "抗菌型抗生素眼藥水",
       "疲勞型營養補充眼藥水",
-      "涼感型清涼舒緩眼藥水"
+      "涼感型清涼舒緩眼藥水",
+      "Chomolyn抗過敏預防型眼藥水"
     ],
     "steps": [
       "img/artificial_tears_1.webp",
@@ -957,7 +966,8 @@
       "img/otc_redness_relief_eye_drops.webp",
       "img/otc_antibiotic_eye_drops.webp",
       "img/otc_eye_fatigue_drops.webp",
-      "img/otc_cooling_eye_drops.webp"
+      "img/otc_cooling_eye_drops.webp",
+      "img/chomolyn_cromolyn_eye_drops.webp"
     ]
   },
   "fungal_foot_nail": {
