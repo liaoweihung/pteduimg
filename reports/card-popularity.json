@@ -1,6 +1,181 @@
 {
-  "cutoff_taipei": "2026-06-14 04:00",
+  "cutoff_taipei": "2026-06-18 04:00",
   "recent_cards": [
+    {
+      "id": "artificial_tears",
+      "title": "人工淚液與常見眼藥水",
+      "step_number": 5,
+      "path": "img/otc_anti_allergy_eye_drops.webp",
+      "first_seen": "2026-06-14 13:35",
+      "windows": {
+        "24": {
+          "clicks": 0,
+          "site_views": 23,
+          "ratio": "0.0%"
+        },
+        "48": {
+          "clicks": 0,
+          "site_views": 143,
+          "ratio": "0.0%"
+        },
+        "72": {
+          "clicks": 0,
+          "site_views": 154,
+          "ratio": "0.0%"
+        },
+        "96": {
+          "clicks": 0,
+          "site_views": 234,
+          "ratio": "0.0%"
+        },
+        "120": {
+          "clicks": 0,
+          "site_views": 246,
+          "ratio": "0.0%"
+        }
+      },
+      "score_120h": 0.0
+    },
+    {
+      "id": "artificial_tears",
+      "title": "人工淚液與常見眼藥水",
+      "step_number": 6,
+      "path": "img/otc_redness_relief_eye_drops.webp",
+      "first_seen": "2026-06-14 13:35",
+      "windows": {
+        "24": {
+          "clicks": 0,
+          "site_views": 23,
+          "ratio": "0.0%"
+        },
+        "48": {
+          "clicks": 0,
+          "site_views": 143,
+          "ratio": "0.0%"
+        },
+        "72": {
+          "clicks": 0,
+          "site_views": 154,
+          "ratio": "0.0%"
+        },
+        "96": {
+          "clicks": 0,
+          "site_views": 234,
+          "ratio": "0.0%"
+        },
+        "120": {
+          "clicks": 0,
+          "site_views": 246,
+          "ratio": "0.0%"
+        }
+      },
+      "score_120h": 0.0
+    },
+    {
+      "id": "artificial_tears",
+      "title": "人工淚液與常見眼藥水",
+      "step_number": 7,
+      "path": "img/otc_antibiotic_eye_drops.webp",
+      "first_seen": "2026-06-14 13:35",
+      "windows": {
+        "24": {
+          "clicks": 0,
+          "site_views": 23,
+          "ratio": "0.0%"
+        },
+        "48": {
+          "clicks": 0,
+          "site_views": 143,
+          "ratio": "0.0%"
+        },
+        "72": {
+          "clicks": 0,
+          "site_views": 154,
+          "ratio": "0.0%"
+        },
+        "96": {
+          "clicks": 0,
+          "site_views": 234,
+          "ratio": "0.0%"
+        },
+        "120": {
+          "clicks": 0,
+          "site_views": 246,
+          "ratio": "0.0%"
+        }
+      },
+      "score_120h": 0.0
+    },
+    {
+      "id": "artificial_tears",
+      "title": "人工淚液與常見眼藥水",
+      "step_number": 8,
+      "path": "img/otc_eye_fatigue_drops.webp",
+      "first_seen": "2026-06-14 13:35",
+      "windows": {
+        "24": {
+          "clicks": 0,
+          "site_views": 23,
+          "ratio": "0.0%"
+        },
+        "48": {
+          "clicks": 0,
+          "site_views": 143,
+          "ratio": "0.0%"
+        },
+        "72": {
+          "clicks": 0,
+          "site_views": 154,
+          "ratio": "0.0%"
+        },
+        "96": {
+          "clicks": 0,
+          "site_views": 234,
+          "ratio": "0.0%"
+        },
+        "120": {
+          "clicks": 0,
+          "site_views": 246,
+          "ratio": "0.0%"
+        }
+      },
+      "score_120h": 0.0
+    },
+    {
+      "id": "artificial_tears",
+      "title": "人工淚液與常見眼藥水",
+      "step_number": 9,
+      "path": "img/otc_cooling_eye_drops.webp",
+      "first_seen": "2026-06-14 13:35",
+      "windows": {
+        "24": {
+          "clicks": 0,
+          "site_views": 23,
+          "ratio": "0.0%"
+        },
+        "48": {
+          "clicks": 0,
+          "site_views": 143,
+          "ratio": "0.0%"
+        },
+        "72": {
+          "clicks": 0,
+          "site_views": 154,
+          "ratio": "0.0%"
+        },
+        "96": {
+          "clicks": 0,
+          "site_views": 234,
+          "ratio": "0.0%"
+        },
+        "120": {
+          "clicks": 0,
+          "site_views": 246,
+          "ratio": "0.0%"
+        }
+      },
+      "score_120h": 0.0
+    },
     {
       "id": "common_skin_redness_causes",
       "title": "常見五種皮膚紅腫的原因",
@@ -10,27 +185,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 12,
+          "site_views": 23,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 134,
+          "site_views": 143,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 181,
+          "site_views": 154,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 220,
+          "site_views": 234,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 270,
+          "site_views": 246,
           "ratio": "0.0%"
         }
       },
@@ -45,27 +220,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 12,
+          "site_views": 23,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 134,
+          "site_views": 143,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 181,
+          "site_views": 154,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 220,
+          "site_views": 234,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 270,
+          "site_views": 246,
           "ratio": "0.0%"
         }
       },
@@ -80,27 +255,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 12,
+          "site_views": 23,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 134,
+          "site_views": 143,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 181,
+          "site_views": 154,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 220,
+          "site_views": 234,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 270,
+          "site_views": 246,
           "ratio": "0.0%"
         }
       },
@@ -115,27 +290,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 12,
+          "site_views": 23,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 134,
+          "site_views": 143,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 181,
+          "site_views": 154,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 220,
+          "site_views": 234,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 270,
+          "site_views": 246,
           "ratio": "0.0%"
         }
       },
@@ -150,27 +325,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 12,
+          "site_views": 23,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 134,
+          "site_views": 143,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 181,
+          "site_views": 154,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 220,
+          "site_views": 234,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 270,
+          "site_views": 246,
           "ratio": "0.0%"
         }
       },
@@ -185,62 +360,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 12,
+          "site_views": 23,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 134,
+          "site_views": 143,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 181,
+          "site_views": 154,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 220,
+          "site_views": 234,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 270,
-          "ratio": "0.0%"
-        }
-      },
-      "score_120h": 0.0
-    },
-    {
-      "id": "artificial_tears",
-      "title": "人工淚液與常見眼藥水",
-      "step_number": 5,
-      "path": "img/otc_eye_drops.webp",
-      "first_seen": "2026-06-12 20:52",
-      "windows": {
-        "24": {
-          "clicks": 0,
-          "site_views": 12,
-          "ratio": "0.0%"
-        },
-        "48": {
-          "clicks": 0,
-          "site_views": 134,
-          "ratio": "0.0%"
-        },
-        "72": {
-          "clicks": 0,
-          "site_views": 181,
-          "ratio": "0.0%"
-        },
-        "96": {
-          "clicks": 0,
-          "site_views": 220,
-          "ratio": "0.0%"
-        },
-        "120": {
-          "clicks": 0,
-          "site_views": 270,
+          "site_views": 246,
           "ratio": "0.0%"
         }
       },
@@ -255,27 +395,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 12,
+          "site_views": 23,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 134,
+          "site_views": 143,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 181,
+          "site_views": 154,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 220,
+          "site_views": 234,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 270,
+          "site_views": 246,
           "ratio": "0.0%"
         }
       },
@@ -290,27 +430,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 12,
+          "site_views": 23,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 134,
+          "site_views": 143,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 181,
+          "site_views": 154,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 220,
+          "site_views": 234,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 270,
+          "site_views": 246,
           "ratio": "0.0%"
         }
       },
@@ -325,27 +465,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 12,
+          "site_views": 23,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 134,
+          "site_views": 143,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 181,
+          "site_views": 154,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 220,
+          "site_views": 234,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 270,
+          "site_views": 246,
           "ratio": "0.0%"
         }
       },
@@ -360,27 +500,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 12,
+          "site_views": 23,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 134,
+          "site_views": 143,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 181,
+          "site_views": 154,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 220,
+          "site_views": 234,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 270,
+          "site_views": 246,
           "ratio": "0.0%"
         }
       },
@@ -395,27 +535,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 12,
+          "site_views": 23,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 134,
+          "site_views": 143,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 181,
+          "site_views": 154,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 220,
+          "site_views": 234,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 270,
+          "site_views": 246,
           "ratio": "0.0%"
         }
       },
@@ -430,27 +570,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 12,
+          "site_views": 23,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 134,
+          "site_views": 143,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 181,
+          "site_views": 154,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 220,
+          "site_views": 234,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 270,
+          "site_views": 246,
           "ratio": "0.0%"
         }
       },
@@ -465,27 +605,27 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 12,
+          "site_views": 23,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 134,
+          "site_views": 143,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 181,
+          "site_views": 154,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 220,
+          "site_views": 234,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 270,
+          "site_views": 246,
           "ratio": "0.0%"
         }
       },
@@ -500,31 +640,31 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 12,
+          "site_views": 23,
           "ratio": "0.0%"
         },
         "48": {
-          "clicks": 5,
-          "site_views": 134,
-          "ratio": "3.7%"
+          "clicks": 0,
+          "site_views": 143,
+          "ratio": "0.0%"
         },
         "72": {
-          "clicks": 5,
-          "site_views": 181,
-          "ratio": "2.8%"
+          "clicks": 0,
+          "site_views": 154,
+          "ratio": "0.0%"
         },
         "96": {
-          "clicks": 5,
-          "site_views": 220,
-          "ratio": "2.3%"
+          "clicks": 0,
+          "site_views": 234,
+          "ratio": "0.0%"
         },
         "120": {
-          "clicks": 5,
-          "site_views": 270,
-          "ratio": "1.9%"
+          "clicks": 0,
+          "site_views": 246,
+          "ratio": "0.0%"
         }
       },
-      "score_120h": 588.2352941176471
+      "score_120h": 0.0
     },
     {
       "id": "acne",
@@ -535,726 +675,354 @@
       "windows": {
         "24": {
           "clicks": 0,
-          "site_views": 12,
-          "ratio": "0.0%"
-        },
-        "48": {
-          "clicks": 10,
-          "site_views": 134,
-          "ratio": "7.5%"
-        },
-        "72": {
-          "clicks": 10,
-          "site_views": 181,
-          "ratio": "5.5%"
-        },
-        "96": {
-          "clicks": 10,
-          "site_views": 220,
-          "ratio": "4.5%"
-        },
-        "120": {
-          "clicks": 10,
-          "site_views": 270,
-          "ratio": "3.7%"
-        }
-      },
-      "score_120h": 1176.4705882352941
-    },
-    {
-      "id": "common_skin_redness_causes",
-      "title": "常見五種皮膚紅腫的原因",
-      "step_number": 1,
-      "path": "img/common_skin_redness_causes.webp",
-      "first_seen": "2026-06-11 13:04",
-      "windows": {
-        "24": {
-          "clicks": 0,
-          "site_views": 12,
+          "site_views": 23,
           "ratio": "0.0%"
         },
         "48": {
           "clicks": 0,
-          "site_views": 134,
+          "site_views": 143,
           "ratio": "0.0%"
         },
         "72": {
           "clicks": 0,
-          "site_views": 181,
+          "site_views": 154,
           "ratio": "0.0%"
         },
         "96": {
           "clicks": 0,
-          "site_views": 220,
+          "site_views": 234,
           "ratio": "0.0%"
         },
         "120": {
           "clicks": 0,
-          "site_views": 270,
+          "site_views": 246,
           "ratio": "0.0%"
         }
       },
       "score_120h": 0.0
-    },
-    {
-      "id": "angular_cheilitis",
-      "title": "口角炎",
-      "step_number": 1,
-      "path": "img/angular_cheilitis_01.webp",
-      "first_seen": "2026-06-11 12:22",
-      "windows": {
-        "24": {
-          "clicks": 0,
-          "site_views": 12,
-          "ratio": "0.0%"
-        },
-        "48": {
-          "clicks": 0,
-          "site_views": 134,
-          "ratio": "0.0%"
-        },
-        "72": {
-          "clicks": 0,
-          "site_views": 181,
-          "ratio": "0.0%"
-        },
-        "96": {
-          "clicks": 0,
-          "site_views": 220,
-          "ratio": "0.0%"
-        },
-        "120": {
-          "clicks": 0,
-          "site_views": 270,
-          "ratio": "0.0%"
-        }
-      },
-      "score_120h": 0.0
-    },
-    {
-      "id": "angular_cheilitis",
-      "title": "口角炎",
-      "step_number": 2,
-      "path": "img/angular_cheilitis_02.webp",
-      "first_seen": "2026-06-11 12:22",
-      "windows": {
-        "24": {
-          "clicks": 0,
-          "site_views": 12,
-          "ratio": "0.0%"
-        },
-        "48": {
-          "clicks": 0,
-          "site_views": 134,
-          "ratio": "0.0%"
-        },
-        "72": {
-          "clicks": 0,
-          "site_views": 181,
-          "ratio": "0.0%"
-        },
-        "96": {
-          "clicks": 0,
-          "site_views": 220,
-          "ratio": "0.0%"
-        },
-        "120": {
-          "clicks": 0,
-          "site_views": 270,
-          "ratio": "0.0%"
-        }
-      },
-      "score_120h": 0.0
-    },
-    {
-      "id": "angular_cheilitis",
-      "title": "口角炎",
-      "step_number": 3,
-      "path": "img/angular_cheilitis_03.webp",
-      "first_seen": "2026-06-11 12:22",
-      "windows": {
-        "24": {
-          "clicks": 0,
-          "site_views": 12,
-          "ratio": "0.0%"
-        },
-        "48": {
-          "clicks": 2,
-          "site_views": 134,
-          "ratio": "1.5%"
-        },
-        "72": {
-          "clicks": 2,
-          "site_views": 181,
-          "ratio": "1.1%"
-        },
-        "96": {
-          "clicks": 2,
-          "site_views": 220,
-          "ratio": "0.9%"
-        },
-        "120": {
-          "clicks": 2,
-          "site_views": 270,
-          "ratio": "0.7%"
-        }
-      },
-      "score_120h": 235.29411764705884
     }
   ],
   "top_cards": {
     "24": [
       {
         "rank": 1,
+        "title": "常用外傷用中成藥",
+        "clicks": 7,
+        "site_views": 23,
+        "ratio": "30.4%",
+        "score": 190.9090909090909
+      },
+      {
+        "rank": 2,
+        "title": "兒科感冒藥水",
+        "clicks": 3,
+        "site_views": 23,
+        "ratio": "13.0%",
+        "score": 81.81818181818183
+      },
+      {
+        "rank": 3,
         "title": "多語服藥時間",
-        "clicks": 2,
-        "site_views": 12,
-        "ratio": "16.7%",
-        "score": 100.0
+        "clicks": 1,
+        "site_views": 23,
+        "ratio": "4.3%",
+        "score": 27.272727272727277
       }
     ],
     "48": [
       {
         "rank": 1,
-        "title": "青春痘嚴重程度",
-        "clicks": 20,
-        "site_views": 134,
-        "ratio": "14.9%",
-        "score": 309.27835051546396
+        "title": "眼藥膏",
+        "clicks": 24,
+        "site_views": 143,
+        "ratio": "16.8%",
+        "score": 252.6315789473684
       },
       {
         "rank": 2,
-        "title": "傷口與疤痕",
+        "title": "鼻噴劑",
         "clicks": 14,
-        "site_views": 134,
-        "ratio": "10.4%",
-        "score": 216.49484536082474
+        "site_views": 143,
+        "ratio": "9.8%",
+        "score": 147.36842105263156
       },
       {
         "rank": 3,
-        "title": "MDI 吸入器",
-        "clicks": 11,
-        "site_views": 134,
-        "ratio": "8.2%",
-        "score": 170.10309278350516
+        "title": "網站使用說明",
+        "clicks": 10,
+        "site_views": 143,
+        "ratio": "7.0%",
+        "score": 105.26315789473684
       },
       {
         "rank": 4,
-        "title": "浣腸使用",
+        "title": "陰道軟膏",
         "clicks": 9,
-        "site_views": 134,
-        "ratio": "6.7%",
-        "score": 139.17525773195877
+        "site_views": 143,
+        "ratio": "6.3%",
+        "score": 94.73684210526315
       },
       {
         "rank": 5,
-        "title": "多語服藥時間",
-        "clicks": 6,
-        "site_views": 134,
-        "ratio": "4.5%",
-        "score": 92.78350515463917
+        "title": "常用外傷用中成藥",
+        "clicks": 8,
+        "site_views": 143,
+        "ratio": "5.6%",
+        "score": 84.21052631578947
       },
       {
         "rank": 6,
-        "title": "耳滴劑",
+        "title": "NTG 舌下錠",
         "clicks": 6,
-        "site_views": 134,
-        "ratio": "4.5%",
-        "score": 92.78350515463917
+        "site_views": 143,
+        "ratio": "4.2%",
+        "score": 63.1578947368421
       },
       {
         "rank": 7,
-        "title": "眼藥膏",
-        "clicks": 6,
-        "site_views": 134,
-        "ratio": "4.5%",
-        "score": 92.78350515463917
+        "title": "兒科感冒藥水",
+        "clicks": 3,
+        "site_views": 143,
+        "ratio": "2.1%",
+        "score": 31.57894736842105
       },
       {
         "rank": 8,
-        "title": "痔瘡軟膏(內)",
-        "clicks": 6,
-        "site_views": 134,
-        "ratio": "4.5%",
-        "score": 92.78350515463917
-      },
-      {
-        "rank": 9,
-        "title": "鼻噴劑",
-        "clicks": 5,
-        "site_views": 134,
-        "ratio": "3.7%",
-        "score": 77.31958762886599
-      },
-      {
-        "rank": 10,
-        "title": "藥膏一起擦",
-        "clicks": 4,
-        "site_views": 134,
-        "ratio": "3.0%",
-        "score": 61.855670103092784
-      },
-      {
-        "rank": 11,
-        "title": "NTG 舌下錠",
-        "clicks": 3,
-        "site_views": 134,
-        "ratio": "2.2%",
-        "score": 46.391752577319586
-      },
-      {
-        "rank": 12,
-        "title": "口角炎",
+        "title": "多語服藥時間",
         "clicks": 2,
-        "site_views": 134,
-        "ratio": "1.5%",
-        "score": 30.927835051546392
-      },
-      {
-        "rank": 13,
-        "title": "骨鬆藥與拔牙",
-        "clicks": 2,
-        "site_views": 134,
-        "ratio": "1.5%",
-        "score": 30.927835051546392
-      },
-      {
-        "rank": 14,
-        "title": "藥膏的使用",
-        "clicks": 2,
-        "site_views": 134,
-        "ratio": "1.5%",
-        "score": 30.927835051546392
-      },
-      {
-        "rank": 15,
-        "title": "常見助眠藥物分類",
-        "clicks": 1,
-        "site_views": 134,
-        "ratio": "0.7%",
-        "score": 15.463917525773196
+        "site_views": 143,
+        "ratio": "1.4%",
+        "score": 21.052631578947366
       }
     ],
     "72": [
       {
         "rank": 1,
-        "title": "MDI 吸入器",
-        "clicks": 21,
-        "site_views": 181,
-        "ratio": "11.6%",
-        "score": 274.61538461538464
+        "title": "眼藥膏",
+        "clicks": 24,
+        "site_views": 154,
+        "ratio": "15.6%",
+        "score": 249.35064935064935
       },
       {
         "rank": 2,
-        "title": "青春痘嚴重程度",
-        "clicks": 20,
-        "site_views": 181,
-        "ratio": "11.0%",
-        "score": 261.53846153846155
+        "title": "鼻噴劑",
+        "clicks": 14,
+        "site_views": 154,
+        "ratio": "9.1%",
+        "score": 145.45454545454547
       },
       {
         "rank": 3,
-        "title": "傷口與疤痕",
-        "clicks": 14,
-        "site_views": 181,
-        "ratio": "7.7%",
-        "score": 183.07692307692307
+        "title": "網站使用說明",
+        "clicks": 10,
+        "site_views": 154,
+        "ratio": "6.5%",
+        "score": 103.89610389610388
       },
       {
         "rank": 4,
-        "title": "多語服藥時間",
-        "clicks": 14,
-        "site_views": 181,
-        "ratio": "7.7%",
-        "score": 183.07692307692307
+        "title": "陰道軟膏",
+        "clicks": 9,
+        "site_views": 154,
+        "ratio": "5.8%",
+        "score": 93.5064935064935
       },
       {
         "rank": 5,
-        "title": "眼藥膏",
-        "clicks": 11,
-        "site_views": 181,
-        "ratio": "6.1%",
-        "score": 143.84615384615384
+        "title": "常用外傷用中成藥",
+        "clicks": 8,
+        "site_views": 154,
+        "ratio": "5.2%",
+        "score": 83.11688311688312
       },
       {
         "rank": 6,
-        "title": "浣腸使用",
-        "clicks": 9,
-        "site_views": 181,
-        "ratio": "5.0%",
-        "score": 117.6923076923077
+        "title": "NTG 舌下錠",
+        "clicks": 6,
+        "site_views": 154,
+        "ratio": "3.9%",
+        "score": 62.33766233766234
       },
       {
         "rank": 7,
-        "title": "耳滴劑",
-        "clicks": 6,
-        "site_views": 181,
-        "ratio": "3.3%",
-        "score": 78.46153846153847
+        "title": "多語服藥時間",
+        "clicks": 3,
+        "site_views": 154,
+        "ratio": "1.9%",
+        "score": 31.16883116883117
       },
       {
         "rank": 8,
-        "title": "痔瘡軟膏(內)",
-        "clicks": 6,
-        "site_views": 181,
-        "ratio": "3.3%",
-        "score": 78.46153846153847
-      },
-      {
-        "rank": 9,
-        "title": "陰道塞劑",
-        "clicks": 5,
-        "site_views": 181,
-        "ratio": "2.8%",
-        "score": 65.38461538461539
-      },
-      {
-        "rank": 10,
-        "title": "陰道軟膏",
-        "clicks": 5,
-        "site_views": 181,
-        "ratio": "2.8%",
-        "score": 65.38461538461539
-      },
-      {
-        "rank": 11,
-        "title": "鼻噴劑",
-        "clicks": 5,
-        "site_views": 181,
-        "ratio": "2.8%",
-        "score": 65.38461538461539
-      },
-      {
-        "rank": 12,
-        "title": "藥膏一起擦",
-        "clicks": 4,
-        "site_views": 181,
-        "ratio": "2.2%",
-        "score": 52.307692307692314
-      },
-      {
-        "rank": 13,
-        "title": "NTG 舌下錠",
+        "title": "兒科感冒藥水",
         "clicks": 3,
-        "site_views": 181,
-        "ratio": "1.7%",
-        "score": 39.23076923076923
-      },
-      {
-        "rank": 14,
-        "title": "口角炎",
-        "clicks": 2,
-        "site_views": 181,
-        "ratio": "1.1%",
-        "score": 26.153846153846157
-      },
-      {
-        "rank": 15,
-        "title": "骨鬆藥與拔牙",
-        "clicks": 2,
-        "site_views": 181,
-        "ratio": "1.1%",
-        "score": 26.153846153846157
-      },
-      {
-        "rank": 16,
-        "title": "藥膏的使用",
-        "clicks": 2,
-        "site_views": 181,
-        "ratio": "1.1%",
-        "score": 26.153846153846157
-      },
-      {
-        "rank": 17,
-        "title": "常見助眠藥物分類",
-        "clicks": 1,
-        "site_views": 181,
-        "ratio": "0.6%",
-        "score": 13.076923076923078
+        "site_views": 154,
+        "ratio": "1.9%",
+        "score": 31.16883116883117
       }
     ],
     "96": [
       {
         "rank": 1,
-        "title": "MDI 吸入器",
-        "clicks": 21,
-        "site_views": 220,
-        "ratio": "9.5%",
-        "score": 266.4179104477612
+        "title": "骨鬆藥與拔牙",
+        "clicks": 44,
+        "site_views": 234,
+        "ratio": "18.8%",
+        "score": 289.4736842105263
       },
       {
         "rank": 2,
-        "title": "青春痘嚴重程度",
-        "clicks": 20,
-        "site_views": 220,
-        "ratio": "9.1%",
-        "score": 253.73134328358208
+        "title": "浣腸使用",
+        "clicks": 30,
+        "site_views": 234,
+        "ratio": "12.8%",
+        "score": 197.3684210526316
       },
       {
         "rank": 3,
-        "title": "多語服藥時間",
-        "clicks": 17,
-        "site_views": 220,
-        "ratio": "7.7%",
-        "score": 215.67164179104475
+        "title": "眼藥膏",
+        "clicks": 24,
+        "site_views": 234,
+        "ratio": "10.3%",
+        "score": 157.89473684210526
       },
       {
         "rank": 4,
-        "title": "傷口與疤痕",
+        "title": "鼻噴劑",
         "clicks": 14,
-        "site_views": 220,
-        "ratio": "6.4%",
-        "score": 177.61194029850745
+        "site_views": 234,
+        "ratio": "6.0%",
+        "score": 92.10526315789474
       },
       {
         "rank": 5,
-        "title": "眼藥膏",
-        "clicks": 11,
-        "site_views": 220,
-        "ratio": "5.0%",
-        "score": 139.55223880597015
+        "title": "網站使用說明",
+        "clicks": 10,
+        "site_views": 234,
+        "ratio": "4.3%",
+        "score": 65.78947368421053
       },
       {
         "rank": 6,
-        "title": "浣腸使用",
+        "title": "陰道軟膏",
         "clicks": 9,
-        "site_views": 220,
-        "ratio": "4.1%",
-        "score": 114.17910447761193
+        "site_views": 234,
+        "ratio": "3.8%",
+        "score": 59.21052631578948
       },
       {
         "rank": 7,
-        "title": "耳滴劑",
-        "clicks": 6,
-        "site_views": 220,
-        "ratio": "2.7%",
-        "score": 76.11940298507463
+        "title": "常用外傷用中成藥",
+        "clicks": 8,
+        "site_views": 234,
+        "ratio": "3.4%",
+        "score": 52.63157894736842
       },
       {
         "rank": 8,
-        "title": "痔瘡軟膏(內)",
+        "title": "NTG 舌下錠",
         "clicks": 6,
-        "site_views": 220,
-        "ratio": "2.7%",
-        "score": 76.11940298507463
+        "site_views": 234,
+        "ratio": "2.6%",
+        "score": 39.473684210526315
       },
       {
         "rank": 9,
-        "title": "陰道塞劑",
-        "clicks": 5,
-        "site_views": 220,
-        "ratio": "2.3%",
-        "score": 63.43283582089552
+        "title": "多語服藥時間",
+        "clicks": 4,
+        "site_views": 234,
+        "ratio": "1.7%",
+        "score": 26.31578947368421
       },
       {
         "rank": 10,
-        "title": "陰道軟膏",
-        "clicks": 5,
-        "site_views": 220,
-        "ratio": "2.3%",
-        "score": 63.43283582089552
-      },
-      {
-        "rank": 11,
-        "title": "鼻噴劑",
-        "clicks": 5,
-        "site_views": 220,
-        "ratio": "2.3%",
-        "score": 63.43283582089552
-      },
-      {
-        "rank": 12,
-        "title": "藥膏一起擦",
-        "clicks": 4,
-        "site_views": 220,
-        "ratio": "1.8%",
-        "score": 50.74626865671642
-      },
-      {
-        "rank": 13,
-        "title": "NTG 舌下錠",
+        "title": "兒科感冒藥水",
         "clicks": 3,
-        "site_views": 220,
-        "ratio": "1.4%",
-        "score": 38.059701492537314
-      },
-      {
-        "rank": 14,
-        "title": "口角炎",
-        "clicks": 2,
-        "site_views": 220,
-        "ratio": "0.9%",
-        "score": 25.37313432835821
-      },
-      {
-        "rank": 15,
-        "title": "常見助眠藥物分類",
-        "clicks": 2,
-        "site_views": 220,
-        "ratio": "0.9%",
-        "score": 25.37313432835821
-      },
-      {
-        "rank": 16,
-        "title": "骨鬆藥與拔牙",
-        "clicks": 2,
-        "site_views": 220,
-        "ratio": "0.9%",
-        "score": 25.37313432835821
-      },
-      {
-        "rank": 17,
-        "title": "藥膏的使用",
-        "clicks": 2,
-        "site_views": 220,
-        "ratio": "0.9%",
-        "score": 25.37313432835821
+        "site_views": 234,
+        "ratio": "1.3%",
+        "score": 19.736842105263158
       }
     ],
     "120": [
       {
         "rank": 1,
-        "title": "MDI 吸入器",
-        "clicks": 21,
-        "site_views": 270,
-        "ratio": "7.8%",
-        "score": 243.87096774193552
+        "title": "骨鬆藥與拔牙",
+        "clicks": 44,
+        "site_views": 246,
+        "ratio": "17.9%",
+        "score": 285.7142857142857
       },
       {
         "rank": 2,
-        "title": "青春痘嚴重程度",
-        "clicks": 20,
-        "site_views": 270,
-        "ratio": "7.4%",
-        "score": 232.25806451612905
+        "title": "浣腸使用",
+        "clicks": 30,
+        "site_views": 246,
+        "ratio": "12.2%",
+        "score": 194.80519480519482
       },
       {
         "rank": 3,
-        "title": "多語服藥時間",
-        "clicks": 18,
-        "site_views": 270,
-        "ratio": "6.7%",
-        "score": 209.03225806451613
+        "title": "眼藥膏",
+        "clicks": 24,
+        "site_views": 246,
+        "ratio": "9.8%",
+        "score": 155.84415584415586
       },
       {
         "rank": 4,
-        "title": "傷口與疤痕",
+        "title": "鼻噴劑",
         "clicks": 14,
-        "site_views": 270,
-        "ratio": "5.2%",
-        "score": 162.58064516129033
+        "site_views": 246,
+        "ratio": "5.7%",
+        "score": 90.9090909090909
       },
       {
         "rank": 5,
-        "title": "鼻噴劑",
-        "clicks": 13,
-        "site_views": 270,
-        "ratio": "4.8%",
-        "score": 150.96774193548387
+        "title": "網站使用說明",
+        "clicks": 10,
+        "site_views": 246,
+        "ratio": "4.1%",
+        "score": 64.93506493506493
       },
       {
         "rank": 6,
-        "title": "常見皮膚狀況",
-        "clicks": 12,
-        "site_views": 270,
-        "ratio": "4.4%",
-        "score": 139.3548387096774
+        "title": "陰道軟膏",
+        "clicks": 9,
+        "site_views": 246,
+        "ratio": "3.7%",
+        "score": 58.44155844155844
       },
       {
         "rank": 7,
-        "title": "眼藥膏",
-        "clicks": 11,
-        "site_views": 270,
-        "ratio": "4.1%",
-        "score": 127.74193548387099
+        "title": "常用外傷用中成藥",
+        "clicks": 8,
+        "site_views": 246,
+        "ratio": "3.3%",
+        "score": 51.94805194805194
       },
       {
         "rank": 8,
-        "title": "浣腸使用",
-        "clicks": 9,
-        "site_views": 270,
-        "ratio": "3.3%",
-        "score": 104.51612903225806
+        "title": "NTG 舌下錠",
+        "clicks": 6,
+        "site_views": 246,
+        "ratio": "2.4%",
+        "score": 38.961038961038966
       },
       {
         "rank": 9,
-        "title": "耳滴劑",
+        "title": "多語服藥時間",
         "clicks": 6,
-        "site_views": 270,
-        "ratio": "2.2%",
-        "score": 69.6774193548387
+        "site_views": 246,
+        "ratio": "2.4%",
+        "score": 38.961038961038966
       },
       {
         "rank": 10,
-        "title": "痔瘡軟膏(內)",
-        "clicks": 6,
-        "site_views": 270,
-        "ratio": "2.2%",
-        "score": 69.6774193548387
-      },
-      {
-        "rank": 11,
-        "title": "陰道塞劑",
-        "clicks": 5,
-        "site_views": 270,
-        "ratio": "1.9%",
-        "score": 58.06451612903226
-      },
-      {
-        "rank": 12,
-        "title": "陰道軟膏",
-        "clicks": 5,
-        "site_views": 270,
-        "ratio": "1.9%",
-        "score": 58.06451612903226
-      },
-      {
-        "rank": 13,
-        "title": "藥膏一起擦",
-        "clicks": 4,
-        "site_views": 270,
-        "ratio": "1.5%",
-        "score": 46.45161290322581
-      },
-      {
-        "rank": 14,
-        "title": "NTG 舌下錠",
+        "title": "兒科感冒藥水",
         "clicks": 3,
-        "site_views": 270,
-        "ratio": "1.1%",
-        "score": 34.83870967741935
-      },
-      {
-        "rank": 15,
-        "title": "口角炎",
-        "clicks": 2,
-        "site_views": 270,
-        "ratio": "0.7%",
-        "score": 23.225806451612904
-      },
-      {
-        "rank": 16,
-        "title": "常見助眠藥物分類",
-        "clicks": 2,
-        "site_views": 270,
-        "ratio": "0.7%",
-        "score": 23.225806451612904
-      },
-      {
-        "rank": 17,
-        "title": "骨鬆藥與拔牙",
-        "clicks": 2,
-        "site_views": 270,
-        "ratio": "0.7%",
-        "score": 23.225806451612904
-      },
-      {
-        "rank": 18,
-        "title": "藥膏的使用",
-        "clicks": 2,
-        "site_views": 270,
-        "ratio": "0.7%",
-        "score": 23.225806451612904
+        "site_views": 246,
+        "ratio": "1.2%",
+        "score": 19.480519480519483
       }
     ]
   },
@@ -1263,92 +1031,60 @@
   ],
   "rising_72h": [
     {
-      "title": "青春痘嚴重程度",
-      "rank": 2,
+      "title": "網站使用說明",
+      "rank": 3,
       "previous_rank": "未進榜",
-      "improvement": 19,
-      "clicks": 20,
-      "previous_clicks": 0
-    },
-    {
-      "title": "耳滴劑",
-      "rank": 7,
-      "previous_rank": "未進榜",
-      "improvement": 14,
-      "clicks": 6,
-      "previous_clicks": 0
-    },
-    {
-      "title": "痔瘡軟膏(內)",
-      "rank": 8,
-      "previous_rank": "未進榜",
-      "improvement": 13,
-      "clicks": 6,
-      "previous_clicks": 0
-    },
-    {
-      "title": "陰道塞劑",
-      "rank": 9,
-      "previous_rank": "未進榜",
-      "improvement": 12,
-      "clicks": 5,
+      "improvement": 18,
+      "clicks": 10,
       "previous_clicks": 0
     },
     {
       "title": "陰道軟膏",
-      "rank": 10,
+      "rank": 4,
       "previous_rank": "未進榜",
-      "improvement": 11,
-      "clicks": 5,
+      "improvement": 17,
+      "clicks": 9,
       "previous_clicks": 0
     },
     {
-      "title": "藥膏一起擦",
-      "rank": 12,
+      "title": "常用外傷用中成藥",
+      "rank": 5,
       "previous_rank": "未進榜",
-      "improvement": 9,
-      "clicks": 4,
+      "improvement": 16,
+      "clicks": 8,
       "previous_clicks": 0
     },
     {
-      "title": "NTG 舌下錠",
-      "rank": 13,
+      "title": "兒科感冒藥水",
+      "rank": 8,
       "previous_rank": "未進榜",
-      "improvement": 8,
+      "improvement": 13,
       "clicks": 3,
       "previous_clicks": 0
     },
     {
-      "title": "口角炎",
-      "rank": 14,
-      "previous_rank": "未進榜",
-      "improvement": 7,
-      "clicks": 2,
-      "previous_clicks": 0
-    },
-    {
-      "title": "MDI 吸入器",
-      "rank": 1,
-      "previous_rank": 7,
-      "improvement": 6,
-      "clicks": 21,
-      "previous_clicks": 9
-    },
-    {
-      "title": "多語服藥時間",
-      "rank": 4,
-      "previous_rank": 9,
-      "improvement": 5,
+      "title": "鼻噴劑",
+      "rank": 2,
+      "previous_rank": 10,
+      "improvement": 8,
       "clicks": 14,
-      "previous_clicks": 8
+      "previous_clicks": 5
     },
     {
-      "title": "藥膏的使用",
-      "rank": 16,
-      "previous_rank": "未進榜",
-      "improvement": 5,
-      "clicks": 2,
-      "previous_clicks": 0
+      "title": "眼藥膏",
+      "rank": 1,
+      "previous_rank": 8,
+      "improvement": 7,
+      "clicks": 24,
+      "previous_clicks": 6
+    },
+    {
+      "title": "NTG 舌下錠",
+      "rank": 6,
+      "previous_rank": 12,
+      "improvement": 6,
+      "clicks": 6,
+      "previous_clicks": 3
     }
   ],
   "step_popularity": {
@@ -1446,8 +1182,8 @@
           {
             "step_number": 1,
             "path": "img/kwangdong_mu_yao_fen.webp",
-            "views_120h": 0,
-            "ratio_120h": "0.0%"
+            "views_120h": 3,
+            "ratio_120h": "1.2%"
           },
           {
             "step_number": 2,
@@ -1458,32 +1194,32 @@
           {
             "step_number": 3,
             "path": "img/zi_yun_gao.webp",
-            "views_120h": 0,
-            "ratio_120h": "0.0%"
+            "views_120h": 1,
+            "ratio_120h": "0.4%"
           },
           {
             "step_number": 4,
             "path": "img/zheng_gu_shui.webp",
-            "views_120h": 0,
-            "ratio_120h": "0.0%"
+            "views_120h": 1,
+            "ratio_120h": "0.4%"
           },
           {
             "step_number": 5,
             "path": "img/jinchuang_ointment.webp",
-            "views_120h": 0,
-            "ratio_120h": "0.0%"
+            "views_120h": 1,
+            "ratio_120h": "0.4%"
           },
           {
             "step_number": 6,
             "path": "img/jin_huang_san.webp",
-            "views_120h": 0,
-            "ratio_120h": "0.0%"
+            "views_120h": 1,
+            "ratio_120h": "0.4%"
           },
           {
             "step_number": 7,
             "path": "img/qili_san.webp",
-            "views_120h": 0,
-            "ratio_120h": "0.0%"
+            "views_120h": 1,
+            "ratio_120h": "0.4%"
           }
         ]
       },
@@ -1493,26 +1229,26 @@
           {
             "step_number": 1,
             "path": "img/atopic_dermatitis_care.webp",
-            "views_120h": 4,
-            "ratio_120h": "1.5%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
             "path": "img/wart.webp",
-            "views_120h": 3,
-            "ratio_120h": "1.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 3,
             "path": "img/bug_bite.webp",
-            "views_120h": 3,
-            "ratio_120h": "1.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 4,
             "path": "img/orabase.webp",
-            "views_120h": 2,
-            "ratio_120h": "0.7%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           }
         ]
       },
@@ -1575,8 +1311,8 @@
           {
             "step_number": 3,
             "path": "img/angular_cheilitis_03.webp",
-            "views_120h": 2,
-            "ratio_120h": "0.7%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           }
         ]
       },
@@ -1609,7 +1345,31 @@
           },
           {
             "step_number": 5,
-            "path": "img/otc_eye_drops.webp",
+            "path": "img/otc_anti_allergy_eye_drops.webp",
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
+          },
+          {
+            "step_number": 6,
+            "path": "img/otc_redness_relief_eye_drops.webp",
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
+          },
+          {
+            "step_number": 7,
+            "path": "img/otc_antibiotic_eye_drops.webp",
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
+          },
+          {
+            "step_number": 8,
+            "path": "img/otc_eye_fatigue_drops.webp",
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
+          },
+          {
+            "step_number": 9,
+            "path": "img/otc_cooling_eye_drops.webp",
             "views_120h": 0,
             "ratio_120h": "0.0%"
           }
@@ -1638,8 +1398,8 @@
           {
             "step_number": 1,
             "path": "img/bzd_z_sleep_aids.webp",
-            "views_120h": 2,
-            "ratio_120h": "0.7%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           }
         ]
       },
@@ -1835,14 +1595,14 @@
           {
             "step_number": 1,
             "path": "img/slipped_fall_wound.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
             "path": "img/wound_oint.webp",
-            "views_120h": 13,
-            "ratio_120h": "4.8%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 3,
@@ -1923,38 +1683,38 @@
           {
             "step_number": 1,
             "path": "img/eye_1.png",
-            "views_120h": 2,
-            "ratio_120h": "0.7%"
+            "views_120h": 8,
+            "ratio_120h": "3.3%"
           },
           {
             "step_number": 2,
             "path": "img/eye_2.png",
-            "views_120h": 2,
-            "ratio_120h": "0.7%"
+            "views_120h": 4,
+            "ratio_120h": "1.6%"
           },
           {
             "step_number": 3,
             "path": "img/eye_3.png",
-            "views_120h": 2,
-            "ratio_120h": "0.7%"
+            "views_120h": 4,
+            "ratio_120h": "1.6%"
           },
           {
             "step_number": 4,
             "path": "img/eye_4.png",
-            "views_120h": 2,
-            "ratio_120h": "0.7%"
+            "views_120h": 3,
+            "ratio_120h": "1.2%"
           },
           {
             "step_number": 5,
             "path": "img/eye_5.png",
             "views_120h": 2,
-            "ratio_120h": "0.7%"
+            "ratio_120h": "0.8%"
           },
           {
             "step_number": 6,
             "path": "img/eye_6.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 3,
+            "ratio_120h": "1.2%"
           }
         ]
       },
@@ -1964,14 +1724,14 @@
           {
             "step_number": 1,
             "path": "img/site_instruction_01.webp",
-            "views_120h": 0,
-            "ratio_120h": "0.0%"
+            "views_120h": 6,
+            "ratio_120h": "2.4%"
           },
           {
             "step_number": 2,
             "path": "img/site_instruction_02.webp",
-            "views_120h": 0,
-            "ratio_120h": "0.0%"
+            "views_120h": 4,
+            "ratio_120h": "1.6%"
           }
         ]
       },
@@ -2044,20 +1804,20 @@
           {
             "step_number": 1,
             "path": "img/ped_cold_cypromin.webp",
-            "views_120h": 0,
-            "ratio_120h": "0.0%"
+            "views_120h": 1,
+            "ratio_120h": "0.4%"
           },
           {
             "step_number": 2,
             "path": "img/ped_cold_cetirizine.webp",
-            "views_120h": 0,
-            "ratio_120h": "0.0%"
+            "views_120h": 1,
+            "ratio_120h": "0.4%"
           },
           {
             "step_number": 3,
             "path": "img/ped_cold_secorine.webp",
-            "views_120h": 0,
-            "ratio_120h": "0.0%"
+            "views_120h": 1,
+            "ratio_120h": "0.4%"
           }
         ]
       },
@@ -2067,14 +1827,14 @@
           {
             "step_number": 1,
             "path": "img/lan_1.webp",
-            "views_120h": 4,
-            "ratio_120h": "1.5%"
+            "views_120h": 1,
+            "ratio_120h": "0.4%"
           },
           {
             "step_number": 2,
             "path": "img/lan_2.webp",
-            "views_120h": 14,
-            "ratio_120h": "5.2%"
+            "views_120h": 5,
+            "ratio_120h": "2.0%"
           }
         ]
       },
@@ -2112,14 +1872,14 @@
           {
             "step_number": 1,
             "path": "img/acne_stage.webp",
-            "views_120h": 5,
-            "ratio_120h": "1.9%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
             "path": "img/comedo.webp",
-            "views_120h": 10,
-            "ratio_120h": "3.7%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 3,
@@ -2142,8 +1902,8 @@
           {
             "step_number": 6,
             "path": "img/acne.png",
-            "views_120h": 5,
-            "ratio_120h": "1.9%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           }
         ]
       },
@@ -2153,14 +1913,14 @@
           {
             "step_number": 1,
             "path": "img/oneFTU.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
             "path": "img/thin_skin_part.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 3,
@@ -2194,38 +1954,38 @@
           {
             "step_number": 1,
             "path": "img/ear_1.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
             "path": "img/ear_2.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 3,
             "path": "img/ear_3.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 4,
             "path": "img/ear_4.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 5,
             "path": "img/ear_5.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 6,
             "path": "img/ear_6.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           }
         ]
       },
@@ -2257,26 +2017,26 @@
           {
             "step_number": 1,
             "path": "img/over_one_oint_01.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
             "path": "img/over_one_oint_02.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 3,
             "path": "img/over_one_oint_03.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 4,
             "path": "img/over_one_oint_04.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           }
         ]
       },
@@ -2286,32 +2046,32 @@
           {
             "step_number": 1,
             "path": "img/nasal_1.png",
-            "views_120h": 2,
-            "ratio_120h": "0.7%"
+            "views_120h": 4,
+            "ratio_120h": "1.6%"
           },
           {
             "step_number": 2,
             "path": "img/nasal_2.png",
-            "views_120h": 4,
-            "ratio_120h": "1.5%"
+            "views_120h": 2,
+            "ratio_120h": "0.8%"
           },
           {
             "step_number": 3,
             "path": "img/nasal_3.png",
             "views_120h": 3,
-            "ratio_120h": "1.1%"
+            "ratio_120h": "1.2%"
           },
           {
             "step_number": 4,
             "path": "img/nasal_4.png",
-            "views_120h": 2,
-            "ratio_120h": "0.7%"
+            "views_120h": 3,
+            "ratio_120h": "1.2%"
           },
           {
             "step_number": 5,
             "path": "img/nasal_5.png",
             "views_120h": 2,
-            "ratio_120h": "0.7%"
+            "ratio_120h": "0.8%"
           }
         ]
       },
@@ -2321,20 +2081,20 @@
           {
             "step_number": 1,
             "path": "img/NTG_1.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 2,
+            "ratio_120h": "0.8%"
           },
           {
             "step_number": 2,
             "path": "img/NTG_2.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 2,
+            "ratio_120h": "0.8%"
           },
           {
             "step_number": 3,
             "path": "img/NTG_3.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 2,
+            "ratio_120h": "0.8%"
           }
         ]
       },
@@ -2344,44 +2104,44 @@
           {
             "step_number": 1,
             "path": "img/MDI_1.png",
-            "views_120h": 3,
-            "ratio_120h": "1.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
             "path": "img/MDI_2.png",
-            "views_120h": 3,
-            "ratio_120h": "1.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 3,
             "path": "img/MDI_3.png",
-            "views_120h": 2,
-            "ratio_120h": "0.7%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 4,
             "path": "img/MDI_4.png",
-            "views_120h": 3,
-            "ratio_120h": "1.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 5,
             "path": "img/MDI_5.png",
-            "views_120h": 3,
-            "ratio_120h": "1.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 6,
             "path": "img/MDI_6.png",
-            "views_120h": 3,
-            "ratio_120h": "1.1%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 7,
             "path": "img/MDI_7.png",
-            "views_120h": 4,
-            "ratio_120h": "1.5%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           }
         ]
       },
@@ -2408,38 +2168,38 @@
           {
             "step_number": 1,
             "path": "img/hem_oint_1.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
             "path": "img/hem_oint_2.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 3,
             "path": "img/hem_oint_3.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 4,
             "path": "img/hem_oint_4.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 5,
             "path": "img/hem_oint_5.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 6,
             "path": "img/hem_oint_6.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           }
         ]
       },
@@ -2502,56 +2262,56 @@
           {
             "step_number": 1,
             "path": "img/enema_step_1.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 4,
+            "ratio_120h": "1.6%"
           },
           {
             "step_number": 2,
             "path": "img/enema_step_2.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 4,
+            "ratio_120h": "1.6%"
           },
           {
             "step_number": 3,
             "path": "img/enema_step_3.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 4,
+            "ratio_120h": "1.6%"
           },
           {
             "step_number": 4,
             "path": "img/enema_step_4.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 4,
+            "ratio_120h": "1.6%"
           },
           {
             "step_number": 5,
             "path": "img/enema_step_5.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 4,
+            "ratio_120h": "1.6%"
           },
           {
             "step_number": 6,
             "path": "img/enema_step_6.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 4,
+            "ratio_120h": "1.6%"
           },
           {
             "step_number": 7,
             "path": "img/enema_step_7.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 4,
+            "ratio_120h": "1.6%"
           },
           {
             "step_number": 8,
             "path": "img/enema_steps.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 2,
+            "ratio_120h": "0.8%"
           },
           {
             "step_number": 9,
             "path": "img/enema_comp.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 10,
@@ -2573,26 +2333,26 @@
           {
             "step_number": 1,
             "path": "img/vag_1.png",
-            "views_120h": 2,
-            "ratio_120h": "0.7%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 2,
             "path": "img/vag_2.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 3,
             "path": "img/vag_3.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           },
           {
             "step_number": 4,
             "path": "img/vag_4.png",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 0,
+            "ratio_120h": "0.0%"
           }
         ]
       },
@@ -2602,8 +2362,8 @@
           {
             "step_number": 1,
             "path": "img/vag_oint_1.png",
-            "views_120h": 2,
-            "ratio_120h": "0.7%"
+            "views_120h": 3,
+            "ratio_120h": "1.2%"
           },
           {
             "step_number": 2,
@@ -2626,14 +2386,14 @@
           {
             "step_number": 5,
             "path": "img/vag_oint_5.png",
-            "views_120h": 0,
-            "ratio_120h": "0.0%"
+            "views_120h": 1,
+            "ratio_120h": "0.4%"
           },
           {
             "step_number": 6,
             "path": "img/vag_oint_6.png",
-            "views_120h": 0,
-            "ratio_120h": "0.0%"
+            "views_120h": 2,
+            "ratio_120h": "0.8%"
           }
         ]
       },
@@ -2696,20 +2456,20 @@
           {
             "step_number": 1,
             "path": "img/Osteo_tooth_01.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 15,
+            "ratio_120h": "6.1%"
           },
           {
             "step_number": 2,
             "path": "img/Osteo_tooth_03.webp",
-            "views_120h": 1,
-            "ratio_120h": "0.4%"
+            "views_120h": 17,
+            "ratio_120h": "6.9%"
           },
           {
             "step_number": 3,
             "path": "img/Osteo_tooth_04.webp",
-            "views_120h": 0,
-            "ratio_120h": "0.0%"
+            "views_120h": 12,
+            "ratio_120h": "4.9%"
           }
         ]
       },
@@ -2746,273 +2506,273 @@
     "top_steps_120h": [
       {
         "rank": 1,
-        "title": "多語服藥時間",
+        "title": "骨鬆藥與拔牙",
         "step_number": 2,
-        "path": "img/lan_2.webp",
-        "views_120h": 14,
-        "ratio_120h": "5.2%",
-        "score": 371.6814159292035
+        "path": "img/Osteo_tooth_03.webp",
+        "views_120h": 17,
+        "ratio_120h": "6.9%",
+        "score": 366.90647482014384
       },
       {
         "rank": 2,
-        "title": "傷口與疤痕",
-        "step_number": 2,
-        "path": "img/wound_oint.webp",
-        "views_120h": 13,
-        "ratio_120h": "4.8%",
-        "score": 345.1327433628319
+        "title": "骨鬆藥與拔牙",
+        "step_number": 1,
+        "path": "img/Osteo_tooth_01.webp",
+        "views_120h": 15,
+        "ratio_120h": "6.1%",
+        "score": 323.7410071942446
       },
       {
         "rank": 3,
-        "title": "青春痘嚴重程度",
-        "step_number": 2,
-        "path": "img/comedo.webp",
-        "views_120h": 10,
-        "ratio_120h": "3.7%",
-        "score": 265.4867256637168
+        "title": "骨鬆藥與拔牙",
+        "step_number": 3,
+        "path": "img/Osteo_tooth_04.webp",
+        "views_120h": 12,
+        "ratio_120h": "4.9%",
+        "score": 258.9928057553957
       },
       {
         "rank": 4,
-        "title": "青春痘嚴重程度",
-        "step_number": 6,
-        "path": "img/acne.png",
-        "views_120h": 5,
-        "ratio_120h": "1.9%",
-        "score": 132.7433628318584
+        "title": "眼藥膏",
+        "step_number": 1,
+        "path": "img/eye_1.png",
+        "views_120h": 8,
+        "ratio_120h": "3.3%",
+        "score": 172.66187050359713
       },
       {
         "rank": 5,
-        "title": "青春痘嚴重程度",
+        "title": "網站使用說明",
         "step_number": 1,
-        "path": "img/acne_stage.webp",
-        "views_120h": 5,
-        "ratio_120h": "1.9%",
-        "score": 132.7433628318584
+        "path": "img/site_instruction_01.webp",
+        "views_120h": 6,
+        "ratio_120h": "2.4%",
+        "score": 129.49640287769785
       },
       {
         "rank": 6,
-        "title": "常見皮膚狀況",
-        "step_number": 1,
-        "path": "img/atopic_dermatitis_care.webp",
-        "views_120h": 4,
-        "ratio_120h": "1.5%",
-        "score": 106.19469026548674
+        "title": "多語服藥時間",
+        "step_number": 2,
+        "path": "img/lan_2.webp",
+        "views_120h": 5,
+        "ratio_120h": "2.0%",
+        "score": 107.91366906474819
       },
       {
         "rank": 7,
-        "title": "鼻噴劑",
-        "step_number": 2,
-        "path": "img/nasal_2.png",
+        "title": "浣腸使用",
+        "step_number": 1,
+        "path": "img/enema_step_1.webp",
         "views_120h": 4,
-        "ratio_120h": "1.5%",
-        "score": 106.19469026548674
+        "ratio_120h": "1.6%",
+        "score": 86.33093525179856
       },
       {
         "rank": 8,
-        "title": "MDI 吸入器",
-        "step_number": 7,
-        "path": "img/MDI_7.png",
+        "title": "浣腸使用",
+        "step_number": 2,
+        "path": "img/enema_step_2.webp",
         "views_120h": 4,
-        "ratio_120h": "1.5%",
-        "score": 106.19469026548674
+        "ratio_120h": "1.6%",
+        "score": 86.33093525179856
       },
       {
         "rank": 9,
-        "title": "多語服藥時間",
-        "step_number": 1,
-        "path": "img/lan_1.webp",
+        "title": "浣腸使用",
+        "step_number": 3,
+        "path": "img/enema_step_3.webp",
         "views_120h": 4,
-        "ratio_120h": "1.5%",
-        "score": 106.19469026548674
+        "ratio_120h": "1.6%",
+        "score": 86.33093525179856
       },
       {
         "rank": 10,
-        "title": "常見皮膚狀況",
-        "step_number": 3,
-        "path": "img/bug_bite.webp",
-        "views_120h": 3,
-        "ratio_120h": "1.1%",
-        "score": 79.64601769911505
+        "title": "浣腸使用",
+        "step_number": 4,
+        "path": "img/enema_step_4.webp",
+        "views_120h": 4,
+        "ratio_120h": "1.6%",
+        "score": 86.33093525179856
       },
       {
         "rank": 11,
-        "title": "常見皮膚狀況",
-        "step_number": 2,
-        "path": "img/wart.webp",
-        "views_120h": 3,
-        "ratio_120h": "1.1%",
-        "score": 79.64601769911505
+        "title": "浣腸使用",
+        "step_number": 5,
+        "path": "img/enema_step_5.webp",
+        "views_120h": 4,
+        "ratio_120h": "1.6%",
+        "score": 86.33093525179856
       },
       {
         "rank": 12,
+        "title": "浣腸使用",
+        "step_number": 6,
+        "path": "img/enema_step_6.webp",
+        "views_120h": 4,
+        "ratio_120h": "1.6%",
+        "score": 86.33093525179856
+      },
+      {
+        "rank": 13,
+        "title": "浣腸使用",
+        "step_number": 7,
+        "path": "img/enema_step_7.webp",
+        "views_120h": 4,
+        "ratio_120h": "1.6%",
+        "score": 86.33093525179856
+      },
+      {
+        "rank": 14,
+        "title": "網站使用說明",
+        "step_number": 2,
+        "path": "img/site_instruction_02.webp",
+        "views_120h": 4,
+        "ratio_120h": "1.6%",
+        "score": 86.33093525179856
+      },
+      {
+        "rank": 15,
+        "title": "鼻噴劑",
+        "step_number": 1,
+        "path": "img/nasal_1.png",
+        "views_120h": 4,
+        "ratio_120h": "1.6%",
+        "score": 86.33093525179856
+      },
+      {
+        "rank": 16,
+        "title": "眼藥膏",
+        "step_number": 2,
+        "path": "img/eye_2.png",
+        "views_120h": 4,
+        "ratio_120h": "1.6%",
+        "score": 86.33093525179856
+      },
+      {
+        "rank": 17,
+        "title": "眼藥膏",
+        "step_number": 3,
+        "path": "img/eye_3.png",
+        "views_120h": 4,
+        "ratio_120h": "1.6%",
+        "score": 86.33093525179856
+      },
+      {
+        "rank": 18,
+        "title": "陰道軟膏",
+        "step_number": 1,
+        "path": "img/vag_oint_1.png",
+        "views_120h": 3,
+        "ratio_120h": "1.2%",
+        "score": 64.74820143884892
+      },
+      {
+        "rank": 19,
         "title": "鼻噴劑",
         "step_number": 3,
         "path": "img/nasal_3.png",
         "views_120h": 3,
-        "ratio_120h": "1.1%",
-        "score": 79.64601769911505
-      },
-      {
-        "rank": 13,
-        "title": "MDI 吸入器",
-        "step_number": 6,
-        "path": "img/MDI_6.png",
-        "views_120h": 3,
-        "ratio_120h": "1.1%",
-        "score": 79.64601769911505
-      },
-      {
-        "rank": 14,
-        "title": "MDI 吸入器",
-        "step_number": 1,
-        "path": "img/MDI_1.png",
-        "views_120h": 3,
-        "ratio_120h": "1.1%",
-        "score": 79.64601769911505
-      },
-      {
-        "rank": 15,
-        "title": "MDI 吸入器",
-        "step_number": 2,
-        "path": "img/MDI_2.png",
-        "views_120h": 3,
-        "ratio_120h": "1.1%",
-        "score": 79.64601769911505
-      },
-      {
-        "rank": 16,
-        "title": "MDI 吸入器",
-        "step_number": 4,
-        "path": "img/MDI_4.png",
-        "views_120h": 3,
-        "ratio_120h": "1.1%",
-        "score": 79.64601769911505
-      },
-      {
-        "rank": 17,
-        "title": "MDI 吸入器",
-        "step_number": 5,
-        "path": "img/MDI_5.png",
-        "views_120h": 3,
-        "ratio_120h": "1.1%",
-        "score": 79.64601769911505
-      },
-      {
-        "rank": 18,
-        "title": "常見皮膚狀況",
-        "step_number": 4,
-        "path": "img/orabase.webp",
-        "views_120h": 2,
-        "ratio_120h": "0.7%",
-        "score": 53.09734513274337
-      },
-      {
-        "rank": 19,
-        "title": "陰道塞劑",
-        "step_number": 1,
-        "path": "img/vag_1.png",
-        "views_120h": 2,
-        "ratio_120h": "0.7%",
-        "score": 53.09734513274337
+        "ratio_120h": "1.2%",
+        "score": 64.74820143884892
       },
       {
         "rank": 20,
-        "title": "陰道軟膏",
-        "step_number": 1,
-        "path": "img/vag_oint_1.png",
-        "views_120h": 2,
-        "ratio_120h": "0.7%",
-        "score": 53.09734513274337
-      },
-      {
-        "rank": 21,
-        "title": "口角炎",
-        "step_number": 3,
-        "path": "img/angular_cheilitis_03.webp",
-        "views_120h": 2,
-        "ratio_120h": "0.7%",
-        "score": 53.09734513274337
-      },
-      {
-        "rank": 22,
-        "title": "鼻噴劑",
-        "step_number": 1,
-        "path": "img/nasal_1.png",
-        "views_120h": 2,
-        "ratio_120h": "0.7%",
-        "score": 53.09734513274337
-      },
-      {
-        "rank": 23,
         "title": "鼻噴劑",
         "step_number": 4,
         "path": "img/nasal_4.png",
-        "views_120h": 2,
-        "ratio_120h": "0.7%",
-        "score": 53.09734513274337
+        "views_120h": 3,
+        "ratio_120h": "1.2%",
+        "score": 64.74820143884892
+      },
+      {
+        "rank": 21,
+        "title": "眼藥膏",
+        "step_number": 6,
+        "path": "img/eye_6.png",
+        "views_120h": 3,
+        "ratio_120h": "1.2%",
+        "score": 64.74820143884892
+      },
+      {
+        "rank": 22,
+        "title": "眼藥膏",
+        "step_number": 4,
+        "path": "img/eye_4.png",
+        "views_120h": 3,
+        "ratio_120h": "1.2%",
+        "score": 64.74820143884892
+      },
+      {
+        "rank": 23,
+        "title": "常用外傷用中成藥",
+        "step_number": 1,
+        "path": "img/kwangdong_mu_yao_fen.webp",
+        "views_120h": 3,
+        "ratio_120h": "1.2%",
+        "score": 64.74820143884892
       },
       {
         "rank": 24,
+        "title": "浣腸使用",
+        "step_number": 8,
+        "path": "img/enema_steps.webp",
+        "views_120h": 2,
+        "ratio_120h": "0.8%",
+        "score": 43.16546762589928
+      },
+      {
+        "rank": 25,
+        "title": "NTG 舌下錠",
+        "step_number": 1,
+        "path": "img/NTG_1.png",
+        "views_120h": 2,
+        "ratio_120h": "0.8%",
+        "score": 43.16546762589928
+      },
+      {
+        "rank": 26,
+        "title": "NTG 舌下錠",
+        "step_number": 2,
+        "path": "img/NTG_2.png",
+        "views_120h": 2,
+        "ratio_120h": "0.8%",
+        "score": 43.16546762589928
+      },
+      {
+        "rank": 27,
+        "title": "NTG 舌下錠",
+        "step_number": 3,
+        "path": "img/NTG_3.webp",
+        "views_120h": 2,
+        "ratio_120h": "0.8%",
+        "score": 43.16546762589928
+      },
+      {
+        "rank": 28,
+        "title": "陰道軟膏",
+        "step_number": 6,
+        "path": "img/vag_oint_6.png",
+        "views_120h": 2,
+        "ratio_120h": "0.8%",
+        "score": 43.16546762589928
+      },
+      {
+        "rank": 29,
+        "title": "鼻噴劑",
+        "step_number": 2,
+        "path": "img/nasal_2.png",
+        "views_120h": 2,
+        "ratio_120h": "0.8%",
+        "score": 43.16546762589928
+      },
+      {
+        "rank": 30,
         "title": "鼻噴劑",
         "step_number": 5,
         "path": "img/nasal_5.png",
         "views_120h": 2,
-        "ratio_120h": "0.7%",
-        "score": 53.09734513274337
-      },
-      {
-        "rank": 25,
-        "title": "常見助眠藥物分類",
-        "step_number": 1,
-        "path": "img/bzd_z_sleep_aids.webp",
-        "views_120h": 2,
-        "ratio_120h": "0.7%",
-        "score": 53.09734513274337
-      },
-      {
-        "rank": 26,
-        "title": "MDI 吸入器",
-        "step_number": 3,
-        "path": "img/MDI_3.png",
-        "views_120h": 2,
-        "ratio_120h": "0.7%",
-        "score": 53.09734513274337
-      },
-      {
-        "rank": 27,
-        "title": "眼藥膏",
-        "step_number": 1,
-        "path": "img/eye_1.png",
-        "views_120h": 2,
-        "ratio_120h": "0.7%",
-        "score": 53.09734513274337
-      },
-      {
-        "rank": 28,
-        "title": "眼藥膏",
-        "step_number": 2,
-        "path": "img/eye_2.png",
-        "views_120h": 2,
-        "ratio_120h": "0.7%",
-        "score": 53.09734513274337
-      },
-      {
-        "rank": 29,
-        "title": "眼藥膏",
-        "step_number": 3,
-        "path": "img/eye_3.png",
-        "views_120h": 2,
-        "ratio_120h": "0.7%",
-        "score": 53.09734513274337
-      },
-      {
-        "rank": 30,
-        "title": "眼藥膏",
-        "step_number": 4,
-        "path": "img/eye_4.png",
-        "views_120h": 2,
-        "ratio_120h": "0.7%",
-        "score": 53.09734513274337
+        "ratio_120h": "0.8%",
+        "score": 43.16546762589928
       }
     ]
   }
