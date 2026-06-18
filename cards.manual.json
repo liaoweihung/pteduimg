@@ -700,6 +700,49 @@
       "img/chomolyn_cromolyn_eye_drops.webp"
     ]
   },
+  "sore_throat_otc": {
+    "title": "喉嚨痛用藥與就醫警訊",
+    "category": "public_education",
+    "order": 1.6,
+    "hidden": false,
+    "icon": "🗣️",
+    "tags": [
+      "喉嚨痛",
+      "喉嚨乾燥",
+      "感冒",
+      "鼻涕倒流",
+      "胃食道逆流",
+      "喉嚨卡卡",
+      "咳嗽",
+      "聲音沙啞",
+      "含片",
+      "喉嚨噴劑",
+      "止痛藥",
+      "潤喉產品",
+      "Acetaminophen",
+      "Ibuprofen",
+      "Benzydamine",
+      "Povidone-Iodine",
+      "蜂蜜",
+      "高燒",
+      "吞嚥困難",
+      "呼吸困難",
+      "扁桃腺",
+      "白色膿點",
+      "抗生素",
+      "就醫警訊"
+    ],
+    "texts": [
+      "喉嚨痛不一定是感冒",
+      "喉嚨痛怎麼選OTC產品",
+      "喉嚨痛出現這些情況建議就醫"
+    ],
+    "steps": [
+      "img/sore_throat_causes.webp",
+      "img/sore_throat_otc_choice.webp",
+      "img/sore_throat_red_flags.webp"
+    ]
+  },
   "fungal_foot_nail": {
     "title": "香港腳與灰指甲",
     "category": "public_education",

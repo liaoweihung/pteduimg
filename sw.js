@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202606190014';
+const CACHE_NAME = 'pwa-cache-v202606190038';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -200,6 +200,9 @@ const urlsToCache = [
   "./img/site_instruction_01.webp",
   "./img/site_instruction_02.webp",
   "./img/slipped_fall_wound.webp",
+  "./img/sore_throat_causes.webp",
+  "./img/sore_throat_otc_choice.webp",
+  "./img/sore_throat_red_flags.webp",
   "./img/stretch_marks.webp",
   "./img/terbinafine_7_days.webp",
   "./img/thin_skin_part.webp",
@@ -403,6 +406,9 @@ const urlsToCache = [
   "./cards/otc_eye_fatigue_drops.html",
   "./cards/otc_cooling_eye_drops.html",
   "./cards/chomolyn_cromolyn_eye_drops.html",
+  "./cards/sore_throat_causes.html",
+  "./cards/sore_throat_otc_choice.html",
+  "./cards/sore_throat_red_flags.html",
   "./cards/hk_foot.html",
   "./cards/fungal_nail.html",
   "./cards/amorolfine.html",
