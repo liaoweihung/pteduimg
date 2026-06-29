@@ -46,11 +46,22 @@ python build.py
 - root `404.html`
 - `cards/404.html`
 - `sitemap.xml`
+- `all-cards.html`
 - `seo.json`
 - `robots.txt`
 - `sw.js`
 
 Generated card pages must keep static Open Graph tags in the HTML head. Do not rely on JavaScript to inject OG tags.
+
+## Static All Cards Index
+
+`build.py` also generates `all-cards.html`, a plain static HTML index of every public card page. This page is part of the SEO crawl surface and must stay updated whenever cards are added, removed, hidden, published, or reordered. Do not edit `all-cards.html` by hand; run:
+
+```bash
+python build.py
+```
+
+After changes, verify that `all-cards.html` links to the expected generated `cards/*.html` pages and that `sitemap.xml` / `sitemap-main.xml` include `all-cards.html`.
 
 ## Adding A New Image To An Existing Card
 
@@ -77,7 +88,7 @@ python -m json.tool cards.manual.json
 cards/wound_4_soln.html
 ```
 
-8. Check that `sitemap.xml` and `sw.js` mention the new generated page/image.
+8. Check that `sitemap.xml`, `all-cards.html`, and `sw.js` mention the new generated page/image.
 
 ## Adding A New Card Series
 
@@ -204,6 +215,7 @@ After changes are verified, tell the user to commit/push these updated files:
 - changed `cards.manual.json` when applicable
 - generated `cards/*.html`
 - `sitemap.xml`
+- `all-cards.html`
 - `seo.json`
 - `robots.txt`
 - `sw.js`

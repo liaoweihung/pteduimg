@@ -815,6 +815,120 @@ def render_404_page():
 """
 
 
+def render_all_cards_page(cards, seo_index):
+    sections = []
+    total_pages = 0
+    used_ids = set()
+
+    for card_id, card in cards.items():
+        if is_scheduled_hidden(card):
+            continue
+        steps = card.get("steps") or []
+        if not steps:
+            continue
+
+        series_title = clean_seo_text(card.get("title") or card_id)
+        category = card.get("category") or "uncategorized"
+        category_label = CATEGORY_LABELS.get(category, category)
+        tags = [clean_seo_text(tag) for tag in (card.get("tags") or []) if clean_seo_text(tag)]
+        items = []
+
+        for index, step in enumerate(steps):
+            if not step:
+                continue
+            image_id = Path(step).stem
+            if image_id in used_ids:
+                continue
+            used_ids.add(image_id)
+            page_path = page_for_image(step)
+            seo = seo_index.get(page_path) or fallback_seo_for_card(card_id, card, step, index)
+            topic = clean_seo_text(seo.get("h1") or step_topic(card_id, card, step, index))
+            description = clean_seo_text(seo.get("meta_description") or "")
+            keyword_text = clean_seo_text(seo.get("keywords") or "?".join(tags))
+            total_pages += 1
+            items.append(
+                f"""          <li>
+            <a href=\"{esc(page_path)}\">{esc(topic)}</a>
+            <p>{esc(description)}</p>
+            {f'<small>{esc(keyword_text)}</small>' if keyword_text else ''}
+          </li>"""
+            )
+
+        if not items:
+            continue
+
+        sections.append(
+            f"""      <section class=\"series\">
+        <h2>{esc(series_title)}</h2>
+        <p class=\"series-meta\">{esc(category_label)} ? {len(items)} ???</p>
+        <ol>
+{chr(10).join(items)}
+        </ol>
+      </section>"""
+        )
+
+    generated_at = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y-%m-%d")
+    return f"""<!DOCTYPE html>
+<html lang=\"zh-TW\">
+<head>
+  <meta charset=\"UTF-8\">
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+  <title>?????????{SITE_TITLE}</title>
+  <meta name=\"description\" content=\"???????????????????????????????????\">
+  <link rel=\"canonical\" href=\"{esc(abs_url('all-cards.html'))}\">
+  <style>
+    :root {{ color-scheme: light; --brand:#007b83; --ink:#263238; --muted:#607d8b; --line:#dfe7ea; --bg:#f6fafb; }}
+    * {{ box-sizing:border-box; }}
+    body {{ margin:0; font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans TC\",sans-serif; color:var(--ink); background:var(--bg); line-height:1.65; }}
+    header {{ background:#fff; border-bottom:1px solid var(--line); }}
+    .wrap {{ width:min(1080px, calc(100% - 32px)); margin:0 auto; }}
+    .hero {{ padding:28px 0 22px; }}
+    .crumbs {{ display:flex; gap:12px; flex-wrap:wrap; margin-bottom:12px; font-size:.95rem; }}
+    a {{ color:var(--brand); text-decoration:none; }}
+    a:hover {{ text-decoration:underline; }}
+    h1 {{ margin:0 0 8px; font-size:clamp(1.8rem, 4vw, 2.6rem); line-height:1.18; letter-spacing:0; }}
+    h2 {{ margin:0; font-size:1.2rem; letter-spacing:0; }}
+    .lead {{ margin:0; color:var(--muted); max-width:760px; }}
+    .stats {{ display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; color:var(--muted); font-size:.95rem; }}
+    main {{ padding:24px 0 44px; }}
+    .series {{ padding:18px 0 20px; border-bottom:1px solid var(--line); }}
+    .series-meta {{ margin:2px 0 12px; color:var(--muted); font-size:.92rem; }}
+    ol {{ display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:12px 18px; list-style:none; padding:0; margin:0; }}
+    li {{ min-width:0; padding:0; }}
+    li a {{ display:inline-block; font-weight:700; }}
+    li p {{ margin:4px 0 0; color:#455a64; font-size:.94rem; }}
+    small {{ display:block; margin-top:4px; color:var(--muted); font-size:.82rem; overflow-wrap:anywhere; }}
+    footer {{ padding:20px 0 32px; color:var(--muted); font-size:.9rem; }}
+  </style>
+</head>
+<body>
+  <header>
+    <div class=\"wrap hero\">
+      <nav class=\"crumbs\" aria-label=\"????\">
+        <a href=\"./\">????</a>
+        <a href=\"./public.html\">??????</a>
+      </nav>
+      <h1>????????</h1>
+      <p class=\"lead\">????????????????????????????????????????</p>
+      <div class=\"stats\">
+        <span>? {total_pages} ???</span>
+        <span>?????{generated_at}</span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class=\"wrap\">
+{chr(10).join(sections)}
+    </div>
+  </main>
+  <footer>
+    <div class=\"wrap\">? 2026 DiamondL ??????</div>
+  </footer>
+</body>
+</html>
+"""
+
+
 def generate_card_pages(cards, seo_index):
     CARDS_DIR.mkdir(exist_ok=True)
     for old_page in CARDS_DIR.glob("*.html"):
@@ -870,6 +984,7 @@ def update_service_worker(cards, generated_pages):
         "./",
         "./index.html",
         "./public.html",
+        "./all-cards.html",
         "./calc.html",
         "./health-check-calculator.html",
         "./cancer-marker-calculator.html",
@@ -896,6 +1011,7 @@ def update_service_worker(cards, generated_pages):
         "./",
         "./index.html",
         "./public.html",
+        "./all-cards.html",
         "./calc.html",
         "./health-check-calculator.html",
         "./cancer-marker-calculator.html",
@@ -938,6 +1054,7 @@ def update_sitemap(generated_pages):
         ("", "weekly", "1.0"),
         ("index.html", "weekly", "1.0"),
         ("public.html", "weekly", "0.8"),
+        ("all-cards.html", "weekly", "0.8"),
         ("calc.html", "monthly", "0.7"),
         ("health-check-calculator.html", "monthly", "0.6"),
         ("cancer-marker-calculator.html", "monthly", "0.6"),
@@ -988,11 +1105,12 @@ def main():
     cards = read_cards()
     seo_index = build_seo_index(cards)
     generated_pages = generate_card_pages(cards, seo_index)
+    (ROOT / "all-cards.html").write_text(render_all_cards_page(cards, seo_index), encoding="utf-8", newline="\n")
     update_service_worker(cards, generated_pages)
     update_sitemap(generated_pages)
     update_robots()
     print(f"Generated {len(generated_pages)} static card pages.")
-    print("Updated seo.json, sitemap.xml, sitemap-main.xml, robots.txt, and sw.js.")
+    print("Updated all-cards.html, seo.json, sitemap.xml, sitemap-main.xml, robots.txt, and sw.js.")
 
 
 if __name__ == "__main__":
