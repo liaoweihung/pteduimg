@@ -1521,6 +1521,58 @@
     "twitter_card": "summary_large_image",
     "tracking_title": "NTG 舌下錠｜藥局衛教助手"
   },
+  "cards/contraceptive_pills_how_to_take.html": {
+    "page_title": "事前避孕藥怎麼吃?｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「事前避孕藥怎麼吃?」重點，幫助民眾了解避孕藥相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "事前避孕藥怎麼吃?",
+    "image_alt": "事前避孕藥怎麼吃?第 1 張圖卡",
+    "keywords": "避孕藥、事前避孕藥、口服避孕藥、21顆裝、28顆裝、月經第一天、固定時間服用、停藥7天、避孕效果、忘記吃避孕藥、漏吃避孕藥、補吃避孕藥、24小時內、超過24小時、保險套、事後避孕藥、緊急避孕藥、Levonorgestrel、Ulipristal acetate、72小時內、120小時內、保險套破裂、避孕失敗、副作用、噁心、頭痛、月經延遲、驗孕、子宮外孕警訊、後續避孕",
+    "og_title": "事前避孕藥怎麼吃?｜藥局衛教助手",
+    "og_description": "這張圖卡整理「事前避孕藥怎麼吃?」重點，幫助民眾了解避孕藥相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/contraceptive_pills_how_to_take.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/contraceptive_pills_how_to_take.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/contraceptive_pills_how_to_take.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/contraceptive_pills_missed_dose.html": {
+    "page_title": "忘記吃避孕藥怎麼辦?｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「忘記吃避孕藥怎麼辦?」重點，幫助民眾了解避孕藥相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "忘記吃避孕藥怎麼辦?",
+    "image_alt": "忘記吃避孕藥怎麼辦?第 2 張圖卡",
+    "keywords": "避孕藥、事前避孕藥、口服避孕藥、21顆裝、28顆裝、月經第一天、固定時間服用、停藥7天、避孕效果、忘記吃避孕藥、漏吃避孕藥、補吃避孕藥、24小時內、超過24小時、保險套、事後避孕藥、緊急避孕藥、Levonorgestrel、Ulipristal acetate、72小時內、120小時內、保險套破裂、避孕失敗、副作用、噁心、頭痛、月經延遲、驗孕、子宮外孕警訊、後續避孕",
+    "og_title": "忘記吃避孕藥怎麼辦?｜藥局衛教助手",
+    "og_description": "這張圖卡整理「忘記吃避孕藥怎麼辦?」重點，幫助民眾了解避孕藥相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/contraceptive_pills_missed_dose.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/contraceptive_pills_missed_dose.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/contraceptive_pills_missed_dose.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/emergency_contraceptive_pills_how_to_take.html": {
+    "page_title": "事後避孕藥怎麼吃?｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「事後避孕藥怎麼吃?」重點，幫助民眾了解避孕藥相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "h1": "事後避孕藥怎麼吃?",
+    "image_alt": "事後避孕藥怎麼吃?第 3 張圖卡",
+    "keywords": "避孕藥、事前避孕藥、口服避孕藥、21顆裝、28顆裝、月經第一天、固定時間服用、停藥7天、避孕效果、忘記吃避孕藥、漏吃避孕藥、補吃避孕藥、24小時內、超過24小時、保險套、事後避孕藥、緊急避孕藥、Levonorgestrel、Ulipristal acetate、72小時內、120小時內、保險套破裂、避孕失敗、副作用、噁心、頭痛、月經延遲、驗孕、子宮外孕警訊、後續避孕",
+    "og_title": "事後避孕藥怎麼吃?｜藥局衛教助手",
+    "og_description": "這張圖卡整理「事後避孕藥怎麼吃?」重點，幫助民眾了解避孕藥相關衛教資訊，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/emergency_contraceptive_pills_how_to_take.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/emergency_contraceptive_pills_how_to_take.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/emergency_contraceptive_pills_how_to_take.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/emergency_contraceptive_pills_notice.html": {
+    "page_title": "吃完事後避孕藥要注意什麼?｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「吃完事後避孕藥要注意什麼?」重點，幫助民眾了解避孕藥相關衛教資訊。",
+    "h1": "吃完事後避孕藥要注意什麼?",
+    "image_alt": "吃完事後避孕藥要注意什麼?第 4 張圖卡",
+    "keywords": "避孕藥、事前避孕藥、口服避孕藥、21顆裝、28顆裝、月經第一天、固定時間服用、停藥7天、避孕效果、忘記吃避孕藥、漏吃避孕藥、補吃避孕藥、24小時內、超過24小時、保險套、事後避孕藥、緊急避孕藥、Levonorgestrel、Ulipristal acetate、72小時內、120小時內、保險套破裂、避孕失敗、副作用、噁心、頭痛、月經延遲、驗孕、子宮外孕警訊、後續避孕",
+    "og_title": "吃完事後避孕藥要注意什麼?｜藥局衛教助手",
+    "og_description": "這張圖卡整理「吃完事後避孕藥要注意什麼?」重點，幫助民眾了解避孕藥相關衛教資訊。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/emergency_contraceptive_pills_notice.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/emergency_contraceptive_pills_notice.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/emergency_contraceptive_pills_notice.html",
+    "twitter_card": "summary_large_image"
+  },
   "cards/MDI_1.html": {
     "page_title": "MDI 吸入器使用步驟第 1 張｜藥局衛教助手",
     "meta_description": "這張圖卡整理「MDI 吸入器」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",

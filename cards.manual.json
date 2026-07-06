@@ -446,6 +446,57 @@
     "hidden": false,
     "icon": "💊"
   },
+  "contraceptive_pills": {
+    "title": "避孕藥",
+    "category": "pharmacist_general",
+    "order": 55,
+    "hidden": false,
+    "icon": "💊",
+    "tags": [
+      "避孕藥",
+      "事前避孕藥",
+      "口服避孕藥",
+      "21顆裝",
+      "28顆裝",
+      "月經第一天",
+      "固定時間服用",
+      "停藥7天",
+      "避孕效果",
+      "忘記吃避孕藥",
+      "漏吃避孕藥",
+      "補吃避孕藥",
+      "24小時內",
+      "超過24小時",
+      "保險套",
+      "事後避孕藥",
+      "緊急避孕藥",
+      "Levonorgestrel",
+      "Ulipristal acetate",
+      "72小時內",
+      "120小時內",
+      "保險套破裂",
+      "避孕失敗",
+      "副作用",
+      "噁心",
+      "頭痛",
+      "月經延遲",
+      "驗孕",
+      "子宮外孕警訊",
+      "後續避孕"
+    ],
+    "texts": [
+      "事前避孕藥怎麼吃?",
+      "忘記吃避孕藥怎麼辦?",
+      "事後避孕藥怎麼吃?",
+      "吃完事後避孕藥要注意什麼?"
+    ],
+    "steps": [
+      "img/contraceptive_pills_how_to_take.webp",
+      "img/contraceptive_pills_missed_dose.webp",
+      "img/emergency_contraceptive_pills_how_to_take.webp",
+      "img/emergency_contraceptive_pills_notice.webp"
+    ]
+  },
   "MDI": {
     "title": "MDI 吸入器",
     "category": "pharmacist_general",

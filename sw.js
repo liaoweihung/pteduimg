@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202606291301';
+const CACHE_NAME = 'pwa-cache-v202607062329';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -100,6 +100,8 @@ const urlsToCache = [
   "./img/comedo_dailycare.webp",
   "./img/common_skin_redness_causes.webp",
   "./img/constipation_cate.webp",
+  "./img/contraceptive_pills_how_to_take.webp",
+  "./img/contraceptive_pills_missed_dose.webp",
   "./img/dry_eye_comp.webp",
   "./img/dry_eye_dailycare.webp",
   "./img/dry_eye_tx.webp",
@@ -110,6 +112,8 @@ const urlsToCache = [
   "./img/ear_5.png",
   "./img/ear_6.png",
   "./img/eczema_s.webp",
+  "./img/emergency_contraceptive_pills_how_to_take.webp",
+  "./img/emergency_contraceptive_pills_notice.webp",
   "./img/enema_clinical_cond.webp",
   "./img/enema_comp.webp",
   "./img/enema_step_1.webp",
@@ -337,6 +341,10 @@ const urlsToCache = [
   "./cards/NTG_1.html",
   "./cards/NTG_2.html",
   "./cards/NTG_3.html",
+  "./cards/contraceptive_pills_how_to_take.html",
+  "./cards/contraceptive_pills_missed_dose.html",
+  "./cards/emergency_contraceptive_pills_how_to_take.html",
+  "./cards/emergency_contraceptive_pills_notice.html",
   "./cards/MDI_1.html",
   "./cards/MDI_2.html",
   "./cards/MDI_3.html",
