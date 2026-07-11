@@ -1,3 +1,0 @@
-﻿source_id,source_name,source_type,source_url,downloaded_at,file_name,file_hash,notes
-SRC0001,TFDA 西藥、醫療器材、含藥化粧品許可證資料集,OFFICIAL_OPEN_DATA_ZIP,https://data.fda.gov.tw/opendata/exportDataList.do?method=ExportData&InfoId=36&logType=5,2026-07-11,source\raw\tfda_drug_license_info36_20260711.zip,664b8e3fe55e7d97f06ed55c7bac470ee7be200ce7c67ad2b28b8665ddd6c2a8,官方開放資料 InfoId=36
-SRC0002,TFDA InfoId=36 extracted JSON,OFFICIAL_OPEN_DATA_JSON,https://data.fda.gov.tw/opendata/exportDataList.do?method=ExportData&InfoId=36&logType=5,2026-07-11,source\raw\36_5.json,b1a2d0000beb32a23ad63981e1e3fd387de4266b4e5ab54831e120c85ef7a79b,由官方 ZIP 解壓之 36_5.json
