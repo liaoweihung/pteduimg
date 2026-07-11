@@ -1,0 +1,17 @@
+﻿indication_id,standardized_name_zh,standardized_name_en,normalization_method
+IND001,乾眼／潤滑與淚液不足,,keyword_rule_v1
+IND002,過敏性結膜炎／眼部過敏,,keyword_rule_v1
+IND003,細菌性眼部感染,,keyword_rule_v1
+IND004,青光眼／高眼壓,,keyword_rule_v1
+IND005,眼部發炎,,keyword_rule_v1
+IND006,散瞳／睫狀肌麻痺,,keyword_rule_v1
+IND007,縮瞳,,keyword_rule_v1
+IND008,眼科診斷／局部麻醉,,keyword_rule_v1
+IND009,角膜上皮障礙／角膜修復,,keyword_rule_v1
+IND010,眼睛疲勞／調節性症狀,,keyword_rule_v1
+IND011,結膜充血／退紅,,keyword_rule_v1
+IND012,白內障,,keyword_rule_v1
+IND013,病毒性眼部感染,,keyword_rule_v1
+IND014,黴菌性眼部感染,,keyword_rule_v1
+IND015,眼科手術前後照護,,keyword_rule_v1
+IND999,其他／未標準化眼科適應症,,keyword_rule_v1

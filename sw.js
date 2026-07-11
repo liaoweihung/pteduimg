@@ -473,7 +473,7 @@ self.addEventListener('install', (e) => {
       return Promise.all(
         coreUrlsToCache.map(url => { // ?? ?ㄐ銋???? urlsToCache
           return cache.add(url).catch(err => {
-            console.error('?? ?瑼??曆??堆?隢炎??GitHub 瑼?嚗?, url);
+            console.error('Failed to cache core asset:', url, err);
           });
         })
       );

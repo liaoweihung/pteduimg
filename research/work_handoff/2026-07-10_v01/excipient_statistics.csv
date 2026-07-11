@@ -1,0 +1,60 @@
+﻿analysis_type,dimension,dimension_value,base_substance_group,role,product_count,denominator_products,proportion
+excipient_usage,all,all,BETAMETHASONE,buffer,24,494,0.048583
+excipient_usage,all,all,DEXAMETHASONE,buffer,22,494,0.044534
+excipient_usage,all,all,SODIUM CHLORIDE,tonicity_agent,19,494,0.038462
+excipient_usage,all,all,HYPROMELLOSE,viscosity_agent,14,494,0.02834
+excipient_usage,all,all,POTASSIUM CHLORIDE,tonicity_agent,13,494,0.026316
+excipient_usage,all,all,CARBOMER,viscosity_agent,7,494,0.01417
+excipient_usage,all,all,BORIC ACID,buffer,5,494,0.010121
+excipient_usage,all,all,PROPYLENE GLYCOL,other_excipient,5,494,0.010121
+excipient_usage,all,all,CARBOXYMETHYLCELLULOSE,viscosity_agent,5,494,0.010121
+excipient_usage,all,all,GLYCERIN,other_excipient,5,494,0.010121
+excipient_usage,all,all,PREDNISOLONE,buffer,4,494,0.008097
+excipient_usage,all,all,POLYETHYLENE GLYCOL 400,other_excipient,3,494,0.006073
+excipient_usage,all,all,MINERAL OIL,ointment_base,3,494,0.006073
+excipient_usage,all,all,ANTAZOLINE PHOSPHATE,buffer,2,494,0.004049
+excipient_usage,all,all,POLYVINYL ALCOHOL,viscosity_agent,2,494,0.004049
+excipient_usage,all,all,SODIUM PHOSPHATE MONOBASIC,buffer,2,494,0.004049
+excipient_usage,all,all,EDETATE,chelator,1,494,0.002024
+excipient_usage,all,all,HYDROXYPROPYL METHYLCELLULOSE,viscosity_agent,1,494,0.002024
+excipient_usage,all,all,HYDROXYETHYLCELLULOSE,viscosity_agent,1,494,0.002024
+excipient_usage,all,all,SODIUM BORATE DECAHYDRATE,buffer,1,494,0.002024
+excipient_usage,all,all,SODIUM PHOSPHATE DIBASIC HEPTAHYDRATE,buffer,1,494,0.002024
+excipient_usage,all,all,POVIDONE,viscosity_agent,1,494,0.002024
+excipient_usage,all,all,SODIUM PHOSPHATE DIBASIC,buffer,1,494,0.002024
+excipient_usage,all,all,CARBOMER 940,viscosity_agent,1,494,0.002024
+excipient_usage,all,all,POLYSORBATE 80,surfactant,1,494,0.002024
+excipient_usage,all,all,MINERAL OIL LIGHT,ointment_base,1,494,0.002024
+excipient_usage,dosage_form,ophthalmic_emulsion,PROPYLENE GLYCOL,other_excipient,2,5,0.4
+excipient_usage,dosage_form,ophthalmic_emulsion,CARBOXYMETHYLCELLULOSE,viscosity_agent,1,5,0.2
+excipient_usage,dosage_form,ophthalmic_emulsion,GLYCERIN,other_excipient,1,5,0.2
+excipient_usage,dosage_form,ophthalmic_emulsion,POLYSORBATE 80,surfactant,1,5,0.2
+excipient_usage,dosage_form,ophthalmic_gel,CARBOMER,viscosity_agent,7,11,0.636364
+excipient_usage,dosage_form,ophthalmic_gel,DEXAMETHASONE,buffer,2,11,0.181818
+excipient_usage,dosage_form,ophthalmic_gel,CARBOMER 940,viscosity_agent,1,11,0.090909
+excipient_usage,dosage_form,ophthalmic_ointment,BETAMETHASONE,buffer,3,35,0.085714
+excipient_usage,dosage_form,ophthalmic_ointment,DEXAMETHASONE,buffer,2,35,0.057143
+excipient_usage,dosage_form,ophthalmic_ointment,MINERAL OIL,ointment_base,2,35,0.057143
+excipient_usage,dosage_form,ophthalmic_solution,BETAMETHASONE,buffer,21,423,0.049645
+excipient_usage,dosage_form,ophthalmic_solution,SODIUM CHLORIDE,tonicity_agent,19,423,0.044917
+excipient_usage,dosage_form,ophthalmic_solution,DEXAMETHASONE,buffer,18,423,0.042553
+excipient_usage,dosage_form,ophthalmic_solution,HYPROMELLOSE,viscosity_agent,14,423,0.033097
+excipient_usage,dosage_form,ophthalmic_solution,POTASSIUM CHLORIDE,tonicity_agent,13,423,0.030733
+excipient_usage,dosage_form,ophthalmic_solution,BORIC ACID,buffer,5,423,0.01182
+excipient_usage,dosage_form,ophthalmic_solution,CARBOXYMETHYLCELLULOSE,viscosity_agent,4,423,0.009456
+excipient_usage,dosage_form,ophthalmic_solution,GLYCERIN,other_excipient,4,423,0.009456
+excipient_usage,dosage_form,ophthalmic_solution,PREDNISOLONE,buffer,4,423,0.009456
+excipient_usage,dosage_form,ophthalmic_solution,POLYETHYLENE GLYCOL 400,other_excipient,3,423,0.007092
+excipient_usage,dosage_form,ophthalmic_solution,PROPYLENE GLYCOL,other_excipient,3,423,0.007092
+excipient_usage,dosage_form,ophthalmic_solution,ANTAZOLINE PHOSPHATE,buffer,2,423,0.004728
+excipient_usage,dosage_form,ophthalmic_solution,POLYVINYL ALCOHOL,viscosity_agent,2,423,0.004728
+excipient_usage,dosage_form,ophthalmic_solution,SODIUM PHOSPHATE MONOBASIC,buffer,2,423,0.004728
+excipient_usage,dosage_form,ophthalmic_solution,EDETATE,chelator,1,423,0.002364
+excipient_usage,dosage_form,ophthalmic_solution,HYDROXYPROPYL METHYLCELLULOSE,viscosity_agent,1,423,0.002364
+excipient_usage,dosage_form,ophthalmic_solution,HYDROXYETHYLCELLULOSE,viscosity_agent,1,423,0.002364
+excipient_usage,dosage_form,ophthalmic_solution,SODIUM BORATE DECAHYDRATE,buffer,1,423,0.002364
+excipient_usage,dosage_form,ophthalmic_solution,SODIUM PHOSPHATE DIBASIC HEPTAHYDRATE,buffer,1,423,0.002364
+excipient_usage,dosage_form,ophthalmic_solution,POVIDONE,viscosity_agent,1,423,0.002364
+excipient_usage,dosage_form,ophthalmic_solution,SODIUM PHOSPHATE DIBASIC,buffer,1,423,0.002364
+excipient_usage,dosage_form,ophthalmic_solution,MINERAL OIL LIGHT,ointment_base,1,423,0.002364
+excipient_usage,dosage_form,ophthalmic_solution,MINERAL OIL,ointment_base,1,423,0.002364

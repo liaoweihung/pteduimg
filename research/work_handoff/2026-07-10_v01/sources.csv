@@ -1,0 +1,6 @@
+﻿source_id,title,publisher,url,dataset_info_id,source_data_date,retrieved_at,use
+SRC001,TFDA 全部藥品許可證資料集,衛生福利部食品藥物管理署,https://data.fda.gov.tw/frontsite/data/DataAction.do?infoId=36&method=doDetail,36,2026-07-01,2026-07-10,產品、藥證狀態、劑型、適應症、用法用量、申請商、製造商
+SRC002,TFDA 藥品詳細處方成分資料集,衛生福利部食品藥物管理署,https://data.fda.gov.tw/frontsite/data/DataAction.do?infoId=43&method=doDetail,43,2026-06-24,2026-07-10,產品成分、含量與單位
+SRC003,TFDA 藥品藥理治療分類 ATC 碼資料集,衛生福利部食品藥物管理署,https://data.fda.gov.tw/frontsite/data/DataAction.do?infoId=41&method=doDetail,41,2026-07-01,2026-07-10,ATC 分類
+SRC004,TFDA 藥品藥理治療分類 AHFS/DI 碼資料集,衛生福利部食品藥物管理署,https://data.fda.gov.tw/frontsite/data/DataAction.do?infoId=40&method=doDetail,40,2025-12-23,2026-07-10,AHFS/DI 分類
+SRC005,TFDA 藥品仿單或外盒資料集索引,衛生福利部食品藥物管理署,https://data.fda.gov.tw/frontsite/data/DataAction.do?infoId=39&method=doDetail,39,2026-07-01,2026-07-10,仿單查核索引；本版未批次擷取 PDF 內容

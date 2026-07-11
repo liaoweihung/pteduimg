@@ -1,0 +1,7 @@
+﻿rule_id,field,rule,version,review_required
+NR001,product inclusion,官方眼用劑型白名單；洗眼／灌洗、植入、眼內注射排除,1.0,false
+NR002,license_status,註銷／廢止依官方欄位；其餘以有效日期相對 2026-07-10 判定有效或屆期未展延,1.0,true
+NR003,substance role,僅對 TFDA 已列成分套用保守的製劑功能關鍵字；未命中者暫列 active；所有角色 confirmed=false，需仿單複核,1.0,true
+NR004,base_substance_group,已知鹽類／水合物／別名映射至分析基礎群組；其餘保留去括號後名稱,1.0,true
+NR005,indication,保留 indication_raw；另以關鍵字映射多個高階適應症群組,1.0,true
+NR006,preservative_free_status,只有官方文字明示無／不含防腐劑才確認；未列保存劑不得推定無保存劑,1.0,false
