@@ -1,5 +1,0 @@
-﻿record_id,license_number,chinese_name,review_type,issue,suggested_action,source_id
-衛署藥輸字第022314號,衛署藥輸字第022314號,滴可明專業眼藥水－原配０．０５％（鹽酸四氫咪唑）,route_form_conflict,商品名及適應症指向眼用，但官方劑型為點耳液劑。,查核准仿單確認實際使用途徑。,SRC001
-衛署藥輸字第023030號,衛署藥輸字第023030號,淚格靈眼藥水４０公絲/公撮,missing_detailed_ingredients,TFDA 藥品詳細處方成分資料集無對應紀錄。,查核准仿單或向 TFDA 查詢，不得由商品名推定。,SRC002
-衛署藥輸字第023036號,衛署藥輸字第023036號,淚格靈眼藥水２０公絲/公撮,missing_detailed_ingredients,TFDA 藥品詳細處方成分資料集無對應紀錄。,查核准仿單或向 TFDA 查詢，不得由商品名推定。,SRC002
-衛部藥製字第062373號,衛部藥製字第062373號,倍可洛舒點眼懸液0.05%,missing_detailed_ingredients,TFDA 藥品詳細處方成分資料集無對應紀錄。,查核准仿單或向 TFDA 查詢，不得由商品名推定。,SRC002
