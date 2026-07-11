@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202607101210';
+const CACHE_NAME = 'pwa-cache-v202607111820';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -9,6 +9,7 @@ const urlsToCache = [
   "./public.html",
   "./all-cards.html",
   "./calc.html",
+  "./web/taiwan_medicinal_patch_database_v2.html",
   "./health-check-calculator.html",
   "./cancer-marker-calculator.html",
   "./growth-calculator.html",
@@ -446,6 +447,7 @@ const coreUrlsToCache = [
   "./public.html",
   "./all-cards.html",
   "./calc.html",
+  "./web/taiwan_medicinal_patch_database_v2.html",
   "./health-check-calculator.html",
   "./cancer-marker-calculator.html",
   "./rx-refillable-date.html",
