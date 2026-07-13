@@ -1,0 +1,7 @@
+﻿rule_id,description
+normalize_case_space_punctuation,"NFKC normalize, lower-case, collapse spaces, remove punctuation for dictionary matching."
+normalize_eq_to_parentheses,"Treat EQ TO, equivalent to/as and parenthetical salt/base descriptions as non-distinguishing matching text."
+normalize_hcl_hydrochloride,"Map hydrochloride and hydrogen chloride to hcl, then compare both salt and salt-stripped variants."
+normalize_salt_hydrate_phosphate_forms,"Generate salt/base variants by removing known salt, hydrate, ester and phosphate tokens only for matching against an existing confirmed active dictionary."
+normalize_vitamin_synonyms,Generate vitamin A and cyanocobalamin/Vit B12 variants when both names are present in existing official ingredient strings.
+role_conflict_guard,"Do not auto-upgrade when any matched variant has confirmed preservative, vehicle, buffer, viscosity, chelator, surfactant, antioxidant, pH adjuster, ointment base, or other excipient evidence."

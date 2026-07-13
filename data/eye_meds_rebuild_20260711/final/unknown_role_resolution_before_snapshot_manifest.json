@@ -1,0 +1,37 @@
+{
+  "created_at": "2026-07-14T01:43:31+08:00",
+  "purpose": "Before snapshot for systematic unknown role resolution",
+  "snapshot_file": "unknown_role_resolution_before_snapshot.zip",
+  "entries": [
+    {
+      "filename": "substances.csv",
+      "size_bytes": 13173,
+      "sha256": "7e81fe72fad6a4917275065261020cafb8ee55038a7a63a713ad67e66cbf9ca7"
+    },
+    {
+      "filename": "product_substances.csv",
+      "size_bytes": 264182,
+      "sha256": "623a3b2d376b0bab4cb05007e542f9d7377cdd358574bfceb280d2ca0f550faf"
+    },
+    {
+      "filename": "manual_review_queue.csv",
+      "size_bytes": 171257,
+      "sha256": "545189f56cd5d5b737b98c36465b8034f1eb16aac171e2db4ff16927da581dc2"
+    },
+    {
+      "filename": "eye_meds_final.json",
+      "size_bytes": 2168980,
+      "sha256": "389bf41c8b8dec468141b888c7377973be0331581e439a642373578083d38f86"
+    },
+    {
+      "filename": "data_quality_report.md",
+      "size_bytes": 1244,
+      "sha256": "7682220bb06c46c848da2eb58d7ade0fd4bae596e8763be7a41d5dbd0c898ad3"
+    },
+    {
+      "filename": "final_build_summary.md",
+      "size_bytes": 792,
+      "sha256": "a952228b0e7ecfbeb4455e3f26f7360e7073415c049f1d5c5d15fb9d9e0d5015"
+    }
+  ]
+}

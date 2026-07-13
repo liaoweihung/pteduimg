@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const DATA_URL = "./data/eye_meds_rebuild_20260711/final/eye_meds_final.json?v=20260714";
+  const DATA_URL = "./data/eye_meds_rebuild_20260711/final/eye_meds_final.json?v=20260714c";
   const PAGE_SIZE = 24;
 
   const state = {

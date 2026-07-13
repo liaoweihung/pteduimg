@@ -1,0 +1,196 @@
+﻿substance_id,standard_name,chinese_name,base_ingredient_name,salt_ester_hydrate_form,default_role
+sub_0001,carboxymethylcellulose,羧甲基纖維素鈉,carboxymethylcellulose,sodium,active
+sub_0002,carbomer,卡波姆,carbomer,,active
+sub_0003,glycerin,甘油,glycerin,,active
+sub_0004,ketotifen,酮替芬,ketotifen,fumarate,active
+sub_0005,cromolyn,色甘酸,cromolyn,sodium,active
+sub_0006,tobramycin,妥布黴素,tobramycin,,active
+sub_0007,moxifloxacin,莫西沙星,moxifloxacin,hydrochloride,active
+sub_0008,besifloxacin,貝西沙星,besifloxacin,hydrochloride,active
+sub_0009,acyclovir,阿昔洛韋,acyclovir,,active
+sub_0010,fluorometholone,氟米龍,fluorometholone,,active
+sub_0011,tetrahydrozoline,四氫唑啉,tetrahydrozoline,hcl,active
+sub_0012,prednisolone,潑尼松龍,prednisolone,acetate,active
+sub_0013,diclofenac,雙氯芬酸,diclofenac,sodium,active
+sub_0014,nepafenac,奈帕芬胺,nepafenac,,active
+sub_0015,ketorolac,酮咯酸,ketorolac,tromethamine,active
+sub_0016,dorzolamide,多佐胺,dorzolamide,hydrochloride,active
+sub_0017,timolol,噻嗎洛爾,timolol,maleate,active
+sub_0018,tafluprost,他氟前列素,tafluprost,,active
+sub_0019,bimatoprost,比馬前列素,bimatoprost,,active
+sub_0020,tropicamide,托吡卡胺,tropicamide,,active
+sub_0021,atropine,阿托品,atropine,sulfate,active
+sub_0022,phenylephrine,去氧腎上腺素,phenylephrine,hcl,active
+sub_0023,dexpanthenol,右泛醇,dexpanthenol,,active
+sub_0024,dexamethasone,地塞米松,dexamethasone,,active
+sub_0025,neomycin,新黴素,neomycin,sulfate,active
+sub_0026,polymyxin b,多黏菌素B,polymyxin b,sulfate,active
+sub_0027,erythromycin,紅黴素,erythromycin,,active
+sub_0028,natamycin,那他黴素,natamycin,,active
+sub_0029,gentamicin,慶大黴素,gentamicin,sulfate,active
+sub_0030,chondroitin sulfate,硫酸軟骨素,chondroitin sulfate,sulfate; sodium,active
+sub_0031,hypromellose,羥丙甲纖維素,hypromellose,,active
+sub_0032,sodium hyaluronate,玻尿酸鈉,sodium hyaluronate,sodium,active
+sub_0033,polyethylene glycol 400,聚乙二醇400,polyethylene glycol 400,,active
+sub_0034,propylene glycol,丙二醇,propylene glycol,,active
+sub_0035,betamethasone,倍他米松,betamethasone,sodium,active
+sub_0036,travoprost,曲伏前列素,travoprost,,active
+sub_0037,timolol,噻嗎洛爾,timolol,,active
+sub_0038,latanoprostene bunod,拉坦前列素布諾,latanoprostene bunod,,active
+sub_0039,norfloxacin,諾氟沙星,norfloxacin,,active
+sub_0040,latanoprost,拉坦前列素,latanoprost,,active
+sub_0041,lifitegrast,利非格司,lifitegrast,,active
+sub_0042,bacitracin,桿菌肽,bacitracin,,active
+sub_0043,tetracycline,四環素,tetracycline,hcl,active
+sub_0044,chloramphenicol,氯黴素,chloramphenicol,,active
+sub_0045,pirfenoxone,吡非諾酮,pirfenoxone,,active
+sub_0046,loteprednol,氯替潑諾,loteprednol,,active
+sub_0047,brinzolamide,布林佐胺,brinzolamide,,active
+sub_0048,betaxolol,倍他洛爾,betaxolol,hcl,active
+sub_0049,cyclosporine,環孢素,cyclosporine,,active
+sub_0050,mineral oil,礦物油,mineral oil,,active
+sub_0051,light mineral oil,輕質礦物油,light mineral oil,,active
+sub_0052,brimonidine,溴莫尼定,brimonidine,,active
+sub_0053,olopatadine,奧洛他定,olopatadine,,active
+sub_0054,ciprofloxacin,環丙沙星,ciprofloxacin,hcl,active
+sub_0055,levofloxacin,左氧氟沙星,levofloxacin,,active
+sub_0056,vitamin a,維生素A,vitamin a,,active
+sub_0057,chlorpheniramine,氯苯那敏,chlorpheniramine,maleate,active
+sub_0058,taurine,牛磺酸,taurine,,active
+sub_0059,dextran 70,右旋糖酐70,dextran 70,,active
+sub_0060,hydrocortisone,氫化可體松,hydrocortisone,acetate,active
+sub_0061,triamcinolone,曲安西龍,triamcinolone,,active
+sub_0062,atropine,阿托品,atropine,sulfate; monohydrate; hydrate,active
+sub_0063,carteolol,卡替洛爾,carteolol,hcl,active
+sub_0064,ofloxacin,氧氟沙星,ofloxacin,,active
+sub_0065,ofloxacin,氧氟沙星,ofloxacin,hydrate,active
+sub_0066,gentamicin,慶大黴素,gentamicin,,active
+sub_0067,betamethasone,倍他米松,betamethasone,,active
+sub_0068,ofloxacin,氧氟沙星,ofloxacin,hcl,active
+sub_0069,tobramycin,妥布黴素,tobramycin,sulfate,active
+sub_0070,zinc sulfate,硫酸鋅,zinc sulfate,sulfate; hydrate,active
+sub_0071,potassium aspartate,天門冬氨酸鉀,potassium aspartate,,active
+sub_0072,allantoin,尿囊素,allantoin,,active
+sub_0073,naphazoline,萊甲唑啉,naphazoline,hcl,active
+sub_0074,cyanocobalamin,維生素B12,cyanocobalamin,,active
+sub_0075,pyridoxine,吡哆醇,pyridoxine,hydrochloride,active
+sub_0076,neostigmine,新斯的明,neostigmine,sulfate,active
+sub_0077,dipotassium glycyrrhizinate,甘草酸二鉀,dipotassium glycyrrhizinate,,active
+sub_0078,antazoline,安他唑啉,antazoline,,active
+sub_0079,antazoline,安他唑啉,antazoline,hcl,active
+sub_0080,tocopherol,維生素E,tocopherol,acetate,active
+sub_0081,benoxinate,倍諾喜,benoxinate,hcl,active
+sub_0082,panthenol,泛醇,panthenol,,active
+sub_0083,procaine,普魯卡因,procaine,hcl,active
+sub_0084,prednisolone,潑尼松龍,prednisolone,sodium,active
+sub_0085,oxymetazoline,羥甲唑啉,oxymetazoline,hcl,active
+sub_0086,dexamethasone,地塞米松,dexamethasone,sodium,active
+sub_0087,flavin adenine dinucleotide,黃素腺嘌呆核苷酸,flavin adenine dinucleotide,sodium,active
+sub_0088,chondroitin sulfate,硫酸軟骨素,chondroitin sulfate,sulfate,active
+sub_0089,aspartate,天門冬氨酸,aspartate,,active
+sub_0090,zinc sulfate,硫酸鋅,zinc sulfate,sulfate,active
+sub_0091,pyridoxine,吡哆醇,pyridoxine,hcl,active
+sub_0092,diquafosol,地夸磷索,diquafosol,sodium,active
+sub_0093,naphazoline,萊甲唑啉,naphazoline,hydrochloride,active
+sub_0094,tetrahydrozoline,四氫唑啉,tetrahydrozoline,hydrochloride,active
+sub_0095,procaine,普魯卡因,procaine,hydrochloride,active
+sub_0096,sulfamethoxazole,磺胺甲噤唑,sulfamethoxazole,sodium,active
+sub_0097,chondroitin sulfate,硫酸軟骨素,chondroitin sulfate,sodium,active
+sub_0098,phenylephrine,去氧腎上腺素,phenylephrine,hydrochloride,active
+sub_0099,sulfamethoxazole,磺胺甲噤唑,sulfamethoxazole,,active
+sub_0100,neomycin,新霉素,neomycin,,active
+sub_0101,homosulfamine,高磺胺,homosulfamine,,active
+sub_0102,pilocarpine,毛果芸香鹼,pilocarpine,hcl,active
+sub_0103,naphazoline,萊甲唑啉,naphazoline,,active
+sub_0104,carbachol,卡巴膽鹼,carbachol,,active
+sub_0105,fusidic acid,夫西地酸,fusidic acid,,active
+sub_0106,polysorbate 80,聚山梨醇酯80,polysorbate 80,,surfactant
+sub_0107,benzalkonium chloride,,benzalkonium chloride,,preservative
+sub_0108,chlorobutanol,,chlorobutanol,,preservative
+sub_0109,potassium chloride,氯化鉀,potassium chloride,,tonicity_agent
+sub_0110,calcium chloride,氯化鈣,calcium chloride,hydrate,tonicity_agent
+sub_0111,sodium chloride,氯化鈉,sodium chloride,sodium,tonicity_agent
+sub_0112,magnesium sulfate,硫酸鎂,magnesium sulfate,sulfate; hydrate,tonicity_agent
+sub_0113,cyanocobalamin,,cyanocobalamin (vit b12),,active
+sub_0114,sodium phosphate,磷酸鈉,sodium phosphate,sodium,buffer
+sub_0115,sodium carboxymethylcellulose (type 7h3sxf10-15),,sodium carboxymethylcellulose (type 7h3sxf10-15),sodium,unknown
+sub_0116,sodium carboxymethylcellulose (type 7m8sfph),,sodium carboxymethylcellulose (type 7m8sfph),sodium,unknown
+sub_0117,tetracycline,,tetracycline (hcl),hcl,active
+sub_0118,tetracycline hcl (eq to tetracycline hydrochloride),,tetracycline hcl (eq to tetracycline hydrochloride),hydrochloride; hcl,unknown
+sub_0119,proparacaine hcl,,proparacaine hcl,hcl,unknown
+sub_0120,pemirolast potassium,,pemirolast potassium,,unknown
+sub_0121,brimonidine,,brimonidine tartrate,,active
+sub_0122,chlorhexidine gluconate,,chlorhexidine gluconate,,unknown
+sub_0123,20% chlorhexidine gluconate solution,,20% chlorhexidine gluconate solution,,unknown
+sub_0124,aminocaproic acid epsilon-,,aminocaproic acid epsilon-,,unknown
+sub_0125,ephedrine hcl (eq to ephedrine hydrochloride),,ephedrine hcl (eq to ephedrine hydrochloride),hydrochloride; hcl,unknown
+sub_0126,tetracaine hcl,,tetracaine hcl,hcl,unknown
+sub_0127,dipivefrin hcl,,dipivefrin hcl,hcl,unknown
+sub_0128,omidenepag isopropyl,,omidenepag isopropyl,,unknown
+sub_0129,emedastine (as difumarate),,emedastine (as difumarate),fumarate,unknown
+sub_0130,povidone (eq to polyvinyl pyrrolidone)( eq to pvp ) ( eq to polyvidone)(eq to polyvinylpyrrolidone),,povidone (eq to polyvinyl pyrrolidone)( eq to pvp ) ( eq to polyvidone)(eq to polyvinylpyrrolidone),,unknown
+sub_0131,polyvinyl alcohol,,polyvinyl alcohol,,unknown
+sub_0132,chlorobutanol (trichlorisobutylic alcohol),,chlorobutanol (trichlorisobutylic alcohol),,unknown
+sub_0133,idoxuridine,,idoxuridine,,unknown
+sub_0134,unknown,,unknown,,unknown
+sub_0135,sodium bicarbonate ( eq to sodium hydrogen carbonate),,sodium bicarbonate ( eq to sodium hydrogen carbonate),sodium,unknown
+sub_0136,boric acid,硼酸,boric acid,,buffer
+sub_0137,edetate disodium dihydrate (eq to disodium edetate dihydrate),,edetate disodium dihydrate (eq to disodium edetate dihydrate),sodium; hydrate,unknown
+sub_0138,sorbic acid,,sorbic acid,,unknown
+sub_0139,sorbic acid,,sorbic acid,,preservative
+sub_0140,pantothenyl alcohol d-,,pantothenyl alcohol d-,,unknown
+sub_0141,vitamin a,,vitamin a palmitate,,active
+sub_0142,retinol palmitate,,retinol palmitate,,unknown
+sub_0143,sodium carbonate,碳酸鈉,sodium carbonate,sodium,buffer
+sub_0144,aminoethylsulfonic acid,,aminoethylsulfonic acid,,unknown
+sub_0145,sodium borate decahydrate (borax),,sodium borate decahydrate (borax),sodium; hydrate,unknown
+sub_0146,benzalkonium chloride,,benzalkonium chloride,,unknown
+sub_0147,sodium phosphate,磷酸鈉,sodium phosphate,sodium; hydrate,buffer
+sub_0148,dl-alpha-tocopheryl acetate,,dl-alpha-tocopheryl acetate,acetate,unknown
+sub_0149,hydroxyethylcellulose,,hydroxyethylcellulose,,unknown
+sub_0150,hydroxypropyl methylcellulose (eq to hpmc),,hydroxypropyl methylcellulose (eq to hpmc),,unknown
+sub_0151,polyquaternium-1,,polyquaternium-1,,preservative
+sub_0152,benzyl alcohol,,benzyl alcohol,,preservative
+sub_0153,lomefloxacin hydrochloride,,lomefloxacin hydrochloride,hydrochloride,unknown
+sub_0154,cetrimide,,cetrimide,,preservative
+sub_0155,sorbitol,,sorbitol,,tonicity_agent
+sub_0156,sodium hydroxide,,sodium hydroxide,,ph_adjuster
+sub_0157,sodium chloride,,sodium chloride,,tonicity_agent
+sub_0158,tromethamine,,tromethamine,,buffer
+sub_0159,propylene glycol,,propylene glycol,,vehicle
+sub_0160,water for injection,,water for injection,,vehicle
+sub_0161,medium chain triglycerides,,medium chain triglycerides,,vehicle
+sub_0162,disodium phosphate dodecahydrate,,disodium phosphate dodecahydrate,,buffer
+sub_0163,preservative-free statement,,preservative-free statement,,preservative
+sub_0164,liquid paraffin,,liquid paraffin,,ointment_base
+sub_0165,white petrolatum,,white petrolatum,,ointment_base
+sub_0166,butylated hydroxyanisole,,butylated hydroxyanisole,,antioxidant
+sub_0167,yellow soft paraffin,,yellow soft paraffin,,ointment_base
+sub_0168,methyl paraben,,methyl paraben,,preservative
+sub_0169,propyl paraben,,propyl paraben,,preservative
+sub_0170,lanolin anhydrous,,lanolin anhydrous,,ointment_base
+sub_0171,povidone,,povidone,,viscosity_agent
+sub_0172,sodium phosphate dibasic,,sodium phosphate dibasic,,buffer
+sub_0173,sodium citrate,,sodium citrate,,buffer
+sub_0174,glycerin,,glycerin,,tonicity_agent
+sub_0175,sodium borate,,sodium borate,,buffer
+sub_0176,edetate disodium,,edetate disodium,,chelator
+sub_0177,ethanol,,ethanol,,vehicle
+sub_0178,distilled water,,distilled water,,vehicle
+sub_0179,polycarbophil,,polycarbophil,,viscosity_agent
+sub_0180,mannitol,,mannitol,,tonicity_agent
+sub_0181,poloxamer 407,,poloxamer 407,,surfactant
+sub_0182,hypromellose,,hypromellose,,viscosity_agent
+sub_0183,purified water,,purified water,,vehicle
+sub_0184,menthol,,menthol,,other_excipient
+sub_0185,sodium phosphate monobasic,,sodium phosphate monobasic,,buffer
+sub_0186,borneol,,borneol,,other_excipient
+sub_0187,hydroxyethylcellulose,,hydroxyethylcellulose,,viscosity_agent
+sub_0188,hydrochloric acid,,hydrochloric acid,,ph_adjuster
+sub_0189,polyvinyl alcohol,,polyvinyl alcohol,,viscosity_agent
+sub_0190,borax,,borax,,buffer
+sub_0191,ethyl parahydroxybenzoate,,ethyl parahydroxybenzoate,,preservative
+sub_0192,propyl parahydroxybenzoate,,propyl parahydroxybenzoate,,preservative
+sub_0193,sodium metabisulfite,,sodium metabisulfite,,antioxidant
+sub_0194,chlorhexidine gluconate,,chlorhexidine gluconate,,preservative
+sub_0195,sodium thiosulfate,,sodium thiosulfate,,antioxidant
