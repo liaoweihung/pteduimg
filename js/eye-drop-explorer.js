@@ -10,9 +10,12 @@
     selectedId: "",
     page: 1,
     query: "",
+    activeIngredientFilter: "",
+    showAllIngredientStats: false,
     filters: {
       dosage: "",
       className: "",
+      indication: "",
       year: "",
       status: "",
       ingredient: "",
@@ -37,12 +40,15 @@
       "filters",
       "dosageFilter",
       "classFilter",
+      "indicationFilter",
       "yearFilter",
       "statusFilter",
       "ingredientFilter",
       "resultCount",
       "totalCount",
       "activeFilters",
+      "ingredientStats",
+      "listHeading",
       "resultList",
       "detailPanel",
       "prevPage",
@@ -67,12 +73,15 @@
     [
       ["dosageFilter", "dosage"],
       ["classFilter", "className"],
+      ["indicationFilter", "indication"],
       ["yearFilter", "year"],
       ["statusFilter", "status"],
       ["ingredientFilter", "ingredient"],
     ].forEach(([elementId, filterKey]) => {
       els[elementId].addEventListener("change", () => {
         state.filters[filterKey] = els[elementId].value;
+        state.activeIngredientFilter = "";
+        state.showAllIngredientStats = false;
         state.page = 1;
         applyFilters();
       });
@@ -112,6 +121,10 @@
     const nonActive = substances.filter((item) => item.substance_role !== "active");
     const indications = product.indications || [];
     const classes = product.classes || [];
+    const confirmedActiveNames = unique(
+      active.map((item) => item.substance_normalized || item.substance_raw).filter(Boolean)
+    );
+    const indicationCategoryNames = unique(indications.map((item) => item.indication_category).filter(Boolean));
     const searchable = [
       product.chinese_name,
       product.english_name,
@@ -126,8 +139,10 @@
     return {
       ...product,
       activeIngredients: active,
+      confirmedActiveNames,
       nonActiveSubstances: nonActive,
       indicationCategories: indications,
+      indicationCategoryNames,
       classItems: classes,
       searchable,
       hasConfirmedActive: active.length > 0,
@@ -137,15 +152,23 @@
   function buildFilters() {
     fillSelect(els.dosageFilter, "全部劑型", unique(state.products.map((p) => p.dosage_form_normalized)));
     fillSelect(els.classFilter, "全部分類", unique(state.products.map((p) => p.drug_class)));
+    fillSelect(
+      els.indicationFilter,
+      "全部適應症大類",
+      unique(state.products.flatMap((p) => p.indicationCategoryNames)).sort((a, b) =>
+        displayIndicationCategory(a).localeCompare(displayIndicationCategory(b), "zh-Hant")
+      ),
+      displayIndicationCategory
+    );
     fillSelect(els.yearFilter, "全部年份", unique(state.products.map((p) => p.license_year)).sort((a, b) => b.localeCompare(a)));
     fillSelect(els.statusFilter, "全部狀態", unique(state.products.map((p) => p.license_status)));
     els.totalCount.textContent = `/ ${state.products.length} 筆正式產品`;
   }
 
-  function fillSelect(select, label, values) {
+  function fillSelect(select, label, values, formatter = displayValue) {
     select.innerHTML = "";
     select.append(new Option(label, ""));
-    values.filter(Boolean).forEach((value) => select.append(new Option(displayValue(value), value)));
+    values.filter(Boolean).forEach((value) => select.append(new Option(formatter(value), value)));
   }
 
   function applyFilters() {
@@ -153,16 +176,19 @@
       if (state.query && !product.searchable.includes(state.query)) return false;
       if (state.filters.dosage && product.dosage_form_normalized !== state.filters.dosage) return false;
       if (state.filters.className && product.drug_class !== state.filters.className) return false;
+      if (state.filters.indication && !product.indicationCategoryNames.includes(state.filters.indication)) return false;
       if (state.filters.year && product.license_year !== state.filters.year) return false;
       if (state.filters.status && product.license_status !== state.filters.status) return false;
       if (state.filters.ingredient === "confirmed" && !product.hasConfirmedActive) return false;
       if (state.filters.ingredient === "pending" && product.hasConfirmedActive) return false;
+      if (state.activeIngredientFilter && !product.confirmedActiveNames.includes(state.activeIngredientFilter)) return false;
       return true;
     });
     if (!state.filtered.some((product) => product.product_id === state.selectedId)) {
       state.selectedId = state.filtered[0] ? state.filtered[0].product_id : "";
     }
     renderActiveFilters();
+    renderIngredientStats();
     renderResults();
     renderDetail();
   }
@@ -172,10 +198,109 @@
     if (state.query) chips.push(`搜尋：${state.query}`);
     if (state.filters.dosage) chips.push(`劑型：${displayValue(state.filters.dosage)}`);
     if (state.filters.className) chips.push(`分類：${state.filters.className}`);
+    if (state.filters.indication) chips.push(`適應症：${displayIndicationCategory(state.filters.indication)}`);
     if (state.filters.year) chips.push(`年份：${state.filters.year}`);
     if (state.filters.status) chips.push(`狀態：${state.filters.status}`);
     if (state.filters.ingredient) chips.push(state.filters.ingredient === "confirmed" ? "有 confirmed active" : "有效成分待確認");
+    if (state.activeIngredientFilter) chips.push(`有效成分：${state.activeIngredientFilter}`);
     els.activeFilters.innerHTML = chips.map((chip) => `<span class="filter-chip">${escapeHtml(chip)}</span>`).join("");
+  }
+
+  function renderIngredientStats() {
+    const category = state.filters.indication;
+    if (!category) {
+      els.ingredientStats.hidden = true;
+      els.ingredientStats.innerHTML = "";
+      return;
+    }
+
+    const baseProducts = productsForIngredientStats();
+    const denominator = baseProducts.length;
+    const rows = ingredientStatsRows(baseProducts);
+    const displayRows = state.showAllIngredientStats ? rows : rows.slice(0, 10);
+    const categoryLabel = displayIndicationCategory(category);
+    const activeName = state.activeIngredientFilter;
+
+    els.ingredientStats.hidden = false;
+    els.ingredientStats.innerHTML = `
+      <div class="ingredient-stats-header">
+        <div>
+          <h2>${escapeHtml(categoryLabel)}類常見有效成分</h2>
+          <p>共 ${denominator} 項產品，包含 ${rows.length} 種已確認有效成分</p>
+        </div>
+        ${activeName ? `<button class="secondary-button clear-ingredient-filter" type="button">清除成分條件</button>` : ""}
+      </div>
+      ${
+        rows.length
+          ? `<div class="ingredient-stat-list">
+              ${displayRows.map((row) => renderIngredientStatRow(row, denominator, activeName)).join("")}
+            </div>`
+          : '<div class="empty-results">此適應症大類尚無已確認有效成分可統計。</div>'
+      }
+      ${
+        rows.length > 10
+          ? `<button class="secondary-button stats-toggle" type="button">${state.showAllIngredientStats ? "收合" : "顯示全部"}</button>`
+          : ""
+      }
+    `;
+
+    els.ingredientStats.querySelectorAll("[data-stat-ingredient]").forEach((button) => {
+      button.addEventListener("click", () => toggleStatIngredient(button.dataset.statIngredient));
+    });
+    const clearButton = els.ingredientStats.querySelector(".clear-ingredient-filter");
+    if (clearButton) clearButton.addEventListener("click", () => toggleStatIngredient(activeName));
+    const toggleButton = els.ingredientStats.querySelector(".stats-toggle");
+    if (toggleButton) {
+      toggleButton.addEventListener("click", () => {
+        state.showAllIngredientStats = !state.showAllIngredientStats;
+        renderIngredientStats();
+      });
+    }
+  }
+
+  function productsForIngredientStats() {
+    return state.products.filter((product) => {
+      if (state.query && !product.searchable.includes(state.query)) return false;
+      if (state.filters.dosage && product.dosage_form_normalized !== state.filters.dosage) return false;
+      if (state.filters.className && product.drug_class !== state.filters.className) return false;
+      if (state.filters.indication && !product.indicationCategoryNames.includes(state.filters.indication)) return false;
+      if (state.filters.year && product.license_year !== state.filters.year) return false;
+      if (state.filters.status && product.license_status !== state.filters.status) return false;
+      if (state.filters.ingredient === "confirmed" && !product.hasConfirmedActive) return false;
+      if (state.filters.ingredient === "pending" && product.hasConfirmedActive) return false;
+      return true;
+    });
+  }
+
+  function ingredientStatsRows(products) {
+    const counts = new Map();
+    products.forEach((product) => {
+      new Set(product.confirmedActiveNames).forEach((name) => {
+        counts.set(name, (counts.get(name) || 0) + 1);
+      });
+    });
+    return Array.from(counts, ([name, count]) => ({ name, count })).sort((a, b) => {
+      if (b.count !== a.count) return b.count - a.count;
+      return a.name.localeCompare(b.name, "en", { sensitivity: "base" });
+    });
+  }
+
+  function renderIngredientStatRow(row, denominator, activeName) {
+    const percent = denominator ? (row.count / denominator) * 100 : 0;
+    const isActive = row.name === activeName ? " active" : "";
+    return `
+      <button class="ingredient-stat${isActive}" type="button" data-stat-ingredient="${escapeAttr(row.name)}">
+        <span class="stat-name">${escapeHtml(row.name)}</span>
+        <span class="stat-count">${row.count} 項產品（${percent.toFixed(1)}%）</span>
+        <span class="stat-bar" aria-hidden="true"><span style="width: ${percent.toFixed(1)}%"></span></span>
+      </button>
+    `;
+  }
+
+  function toggleStatIngredient(name) {
+    state.activeIngredientFilter = state.activeIngredientFilter === name ? "" : name;
+    state.page = 1;
+    applyFilters();
   }
 
   function renderResults() {
@@ -185,6 +310,7 @@
     const visible = state.filtered.slice(start, start + PAGE_SIZE);
 
     els.resultCount.textContent = String(state.filtered.length);
+    els.listHeading.textContent = resultHeading();
     els.pageInfo.textContent = `${state.page} / ${maxPage}`;
     els.prevPage.disabled = state.page <= 1;
     els.nextPage.disabled = state.page >= maxPage;
@@ -198,6 +324,15 @@
     els.resultList.querySelectorAll(".result-card").forEach((button) => {
       button.addEventListener("click", () => selectProduct(button.dataset.id));
     });
+  }
+
+  function resultHeading() {
+    if (!state.filters.indication) return `查詢結果：${state.filtered.length} 項產品`;
+    const category = displayIndicationCategory(state.filters.indication);
+    if (state.activeIngredientFilter) {
+      return `${category}／${state.activeIngredientFilter}：${state.filtered.length} 項產品`;
+    }
+    return `${category}：${state.filtered.length} 項產品`;
   }
 
   function renderCard(product) {
@@ -314,6 +449,7 @@
     if (type === "ingredient") {
       els.searchInput.value = value;
       state.query = value.toLowerCase();
+      state.activeIngredientFilter = "";
     }
     if (type === "class") {
       state.filters.className = value;
@@ -329,10 +465,13 @@
 
   function clearFilters() {
     state.query = "";
-    state.filters = { dosage: "", className: "", year: "", status: "", ingredient: "" };
+    state.activeIngredientFilter = "";
+    state.showAllIngredientStats = false;
+    state.filters = { dosage: "", className: "", indication: "", year: "", status: "", ingredient: "" };
     els.searchInput.value = "";
     els.dosageFilter.value = "";
     els.classFilter.value = "";
+    els.indicationFilter.value = "";
     els.yearFilter.value = "";
     els.statusFilter.value = "";
     els.ingredientFilter.value = "";
@@ -379,6 +518,13 @@
       ointment_base: "眼藥膏基劑",
       other_excipient: "其他賦形劑",
       unknown: "角色待確認",
+    };
+    return labels[value] || value || "資料未提供";
+  }
+
+  function displayIndicationCategory(value) {
+    const labels = {
+      "細菌感染": "抗菌",
     };
     return labels[value] || value || "資料未提供";
   }

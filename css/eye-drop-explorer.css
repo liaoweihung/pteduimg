@@ -138,7 +138,7 @@ button:focus-visible {
 
 .filters {
   display: grid;
-  grid-template-columns: repeat(5, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 10px;
   margin-top: 12px;
 }
@@ -187,6 +187,97 @@ button:focus-visible {
   grid-template-columns: minmax(0, 1fr) minmax(360px, 0.74fr);
   gap: 16px;
   align-items: start;
+}
+
+.ingredient-stats {
+  margin: 0 0 14px;
+  padding: 16px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.ingredient-stats-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.ingredient-stats h2,
+.list-heading {
+  margin: 0;
+  font-size: 1.05rem;
+  letter-spacing: 0;
+}
+
+.ingredient-stats p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.ingredient-stat-list {
+  display: grid;
+  gap: 8px;
+}
+
+.ingredient-stat {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) auto;
+  gap: 8px 12px;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+
+.ingredient-stat:hover,
+.ingredient-stat.active {
+  border-color: var(--accent);
+  background: var(--soft);
+}
+
+.stat-name {
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.stat-count {
+  color: var(--muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.stat-bar {
+  grid-column: 1 / -1;
+  display: block;
+  height: 7px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e9eef2;
+}
+
+.stat-bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+}
+
+.stats-toggle {
+  margin-top: 10px;
+}
+
+.list-heading {
+  margin-bottom: 10px;
 }
 
 .result-list {
@@ -401,6 +492,20 @@ button:focus-visible {
   .status-bar {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .ingredient-stats-header {
+    display: grid;
+  }
+
+  .ingredient-stat {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    min-height: 58px;
+  }
+
+  .stat-count {
+    white-space: normal;
   }
 
   .card-title {

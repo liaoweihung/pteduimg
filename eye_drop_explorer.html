@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="./icon.png?v=3">
   <title>台灣局部眼用藥品查詢工具</title>
   <meta name="description" content="台灣局部眼用藥品查詢工具，依商品名、藥證字號、有效成分、適應症、劑型與分類查詢正式產品資料。">
-  <link rel="stylesheet" href="./css/eye-drop-explorer.css?v=20260714">
+  <link rel="stylesheet" href="./css/eye-drop-explorer.css?v=20260714b">
 </head>
 <body>
   <header class="app-header">
@@ -40,6 +40,10 @@
           <select id="classFilter"></select>
         </label>
         <label>
+          <span>適應症大類</span>
+          <select id="indicationFilter"></select>
+        </label>
+        <label>
           <span>藥證年份</span>
           <select id="yearFilter"></select>
         </label>
@@ -66,8 +70,11 @@
       <div id="activeFilters" class="active-filters"></div>
     </section>
 
+    <section id="ingredientStats" class="ingredient-stats" aria-live="polite" hidden></section>
+
     <section class="content-grid">
       <div class="results-column">
+        <h2 id="listHeading" class="list-heading">查詢結果</h2>
         <div id="resultList" class="result-list"></div>
         <div class="pager">
           <button id="prevPage" class="secondary-button" type="button">上一頁</button>
@@ -87,6 +94,6 @@
     <span>缺少仿單、保存劑或賦形劑不代表產品資料錯誤。</span>
   </footer>
 
-  <script src="./js/eye-drop-explorer.js?v=20260714"></script>
+  <script src="./js/eye-drop-explorer.js?v=20260714b"></script>
 </body>
 </html>
