@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="./icon.png?v=3">
+  <title>台灣局部眼用藥品查詢工具</title>
+  <meta name="description" content="台灣局部眼用藥品查詢工具，依商品名、藥證字號、有效成分、適應症、劑型與分類查詢正式產品資料。">
+  <link rel="stylesheet" href="./css/eye-drop-explorer.css?v=20260714">
+</head>
+<body>
+  <header class="app-header">
+    <a class="back-link" href="./calc.html" aria-label="返回工具列表">返回工具列表</a>
+    <div>
+      <p class="eyebrow">台灣局部眼用藥品</p>
+      <h1>眼科外用藥品查詢工具</h1>
+      <p class="header-note">資料供藥師查詢與校對參考，不能取代核准仿單及醫療專業判斷。</p>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <section class="search-panel" aria-label="搜尋與篩選">
+      <div class="search-row">
+        <label class="search-box">
+          <span>關鍵字搜尋</span>
+          <input id="searchInput" type="search" autocomplete="off" placeholder="商品名、藥證字號、有效成分、適應症">
+        </label>
+        <button id="clearButton" class="secondary-button" type="button">清除條件</button>
+        <button id="filterToggle" class="secondary-button mobile-only" type="button" aria-expanded="false">篩選</button>
+      </div>
+
+      <div id="filters" class="filters">
+        <label>
+          <span>劑型</span>
+          <select id="dosageFilter"></select>
+        </label>
+        <label>
+          <span>藥品分類</span>
+          <select id="classFilter"></select>
+        </label>
+        <label>
+          <span>藥證年份</span>
+          <select id="yearFilter"></select>
+        </label>
+        <label>
+          <span>藥證狀態</span>
+          <select id="statusFilter"></select>
+        </label>
+        <label>
+          <span>成分確認</span>
+          <select id="ingredientFilter">
+            <option value="">全部</option>
+            <option value="confirmed">有 confirmed active ingredient</option>
+            <option value="pending">有效成分待確認</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section class="status-bar" aria-live="polite">
+      <div>
+        <strong id="resultCount">0</strong>
+        <span id="totalCount">/ 0 筆正式產品</span>
+      </div>
+      <div id="activeFilters" class="active-filters"></div>
+    </section>
+
+    <section class="content-grid">
+      <div class="results-column">
+        <div id="resultList" class="result-list"></div>
+        <div class="pager">
+          <button id="prevPage" class="secondary-button" type="button">上一頁</button>
+          <span id="pageInfo"></span>
+          <button id="nextPage" class="secondary-button" type="button">下一頁</button>
+        </div>
+      </div>
+
+      <aside id="detailPanel" class="detail-panel" aria-label="產品詳細資料">
+        <div class="empty-detail">請選擇左側產品查看完整資料。</div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <span>資料版本：final build</span>
+    <span>缺少仿單、保存劑或賦形劑不代表產品資料錯誤。</span>
+  </footer>
+
+  <script src="./js/eye-drop-explorer.js?v=20260714"></script>
+</body>
+</html>
