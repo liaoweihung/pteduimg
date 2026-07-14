@@ -6,6 +6,8 @@
   const uniq=a=>[...new Set(a.filter(Boolean))], sort=a=>[...a].sort((a,b)=>String(a).localeCompare(String(b),'zh-Hant'));
   const state={mode:'indication', indication:'', ingredient:'', query:'', page:1, filters:{}}; let products=[];
   const track=e=>window.medicineTrack?.(e);
+  const footerNoteObserver=new MutationObserver(()=>{const note=$('.me-data-note'),footer=$('.me-footer');if(note&&footer&&note.parentElement!==footer){footer.prepend(note);footerNoteObserver.disconnect()}});footerNoteObserver.observe(document.documentElement,{childList:true,subtree:true});
+  const footerNoteTimer=setInterval(()=>{const note=$('.me-data-note'),footer=$('.me-footer');if(note&&footer&&note.parentElement!==footer){footer.prepend(note);clearInterval(footerNoteTimer)}},25);
   function normalizeRaw(raw) {
     if(key==='topical') return Object.entries(raw.products).map(([license,p])=>({license,zh:p.name,en:p.englishName,active:p.ingredients||[],indications:indicationsForTopical(license,raw),dosage:p.dosageForm,summary:p.indicationSummary,full:p.fullIndication,source:p.sources,fields:{ingredientClass:'',dosage:p.dosageForm,legal:p.drugClass,status:p.isValid}}));
     if(key==='patch') return raw.products.map(p=>({license:p.license_no,zh:p.chinese_name,en:p.english_name,active:(p.ingredients||[]).filter(x=>x.role==='ACTIVE').map(x=>x.ingredient_inn||x.ingredient_name_raw),indications:p.indication_standards||[],dosage:p.dosage_form_raw,summary:p.indication_raw,full:p.indication_raw,source:p.source_url,extra:`規格：${(p.size_labels||[]).join('、')||p.package_raw||'未提供'}`,fields:{ingredientClass:'',dosage:p.dosage_form_raw,indicationCategory:(p.indication_categories||[]).join('、'),legal:p.prescription_class}}));
