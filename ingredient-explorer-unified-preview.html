@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>藥品資料庫統一查詢介面｜外用藥膏預覽</title>
+  <link rel="stylesheet" href="css/medicine-explorer-theme.css">
+</head>
+<body>
+  <header class="me-header">
+    <img src="icon.png?v=3" alt="藥師好幫手">
+    <div class="me-title"><strong>藥品資料庫統一查詢介面</strong><span>外用藥膏｜母版預覽</span></div>
+    <select id="databaseSelect" class="me-database" aria-label="切換資料庫"></select>
+  </header>
+  <div class="me-app">
+    <aside class="me-sidebar">
+      <h1>外用藥膏查詢</h1>
+      <p class="me-help">先選擇查詢方式，再用簡單條件縮小範圍。</p>
+      <div class="me-control"><label>查詢方式</label><div class="me-mode-buttons" id="modeButtons"></div></div>
+      <div class="me-control" id="primaryControl"></div>
+      <details class="me-more"><summary>更多篩選</summary><div id="moreFilters" class="me-more-inner"></div></details>
+    </aside>
+    <main class="me-main" id="medicineExplorerResult"><div class="me-loading">正在載入外用藥膏資料…</div></main>
+  </div>
+  <footer class="me-footer">資料僅供查詢整理，不能取代藥師或醫師的專業判斷。<a href="calc.html">返回工具首頁</a></footer>
+  <script>
+    window.MEDICINE_EXPLORER_CONFIG = {
+      databaseName: '外用藥膏',
+      sourcePage: 'ingredient-explorer.html',
+      databases: [
+        {name: '外用藥膏', href: 'ingredient-explorer-unified-preview.html'},
+        {name: '眼用藥品', href: 'eye_drop_explorer.html'},
+        {name: '鼻腔與口咽噴劑', href: 'spray_medicine_explorer.html'},
+        {name: '肛門與陰道塞劑', href: 'suppository_medicine_explorer.html'},
+        {name: '口服液劑', href: 'oral_liquid_medicine_explorer.html'}
+      ]
+    };
+  </script>
+  <script src="js/medicine-explorer-shell.js?v=20260714"></script>
+</body>
+</html>
