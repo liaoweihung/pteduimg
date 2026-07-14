@@ -1,0 +1,149 @@
+﻿review_id,license_number,chinese_name,english_name,dosage_form_raw,route_raw,candidate_reason,ambiguity_reason,recommended_action,source_id,verified_at
+review_0062,衛署藥製字第006553號,"""豐田"" 氫氧化鋁凝膠錠","ALUMINUM HYDROXIDE DRIED GEL TABLETS ""HONTEN""",錠劑,一天3至4次，或需要時服用。應嚼碎後吞服。成人每次2錠，12歲以上適用成人劑量。6歲以上未滿12歲，每次1錠。3歲以上未滿 6歲，每次1/2錠。3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0080,衛署藥製字第013666號,明德銳利解痛錠５００毫克,Relax Analgesic Tablets 500mg,錠劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0110,衛署藥製字第034632號,達樂２００公絲膠囊（單那若）,"DANAL 200MG CAPSULES (DANAZOLE) ""ROYAL""",膠囊劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0131,衛署藥製字第039745號,伏痛凝膠10毫克/公克,FUTON GEL 10MG/GM (INDOMETHACIN),膠囊劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0234,內衛藥製字第009649號,"""人人""桿菌素眼軟膏","BACITRACIN OPHTHALMIC OINTMENT ""GCPC""",點眼膏劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0249,內衛藥製字第009859號,"""人人""乾燥氫氧化鋁凝膠錠",DRIED ALUMINUM HYDROXIDE GEL TABLETS,錠劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0270,內衛藥製字第011133號,紐安必新眼軟膏,NEOBACIN OPHTHALMIC OINTMENT,點眼膏劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0324,衛署藥製字第019607號,"""久松""松安止痛錠","SUNG AN ANALGESIC TABLETS ""C.S.""",錠劑,發燒或需要時服用，若症狀持續，則每4-6小時可重複使用，每24小時內不可超過3次，飯後半小時內服用為宜。成人每次2錠，12歲以上適用成人劑量；6歲以上未滿12歲，每次1錠；3歲以上未滿6歲，每次1/2錠；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0546,衛署藥製字第016042號,疼痛寧顆粒,ANALGESIN GRANULES,內服顆粒劑,一日3次。飯後半小時內服用為宜。成人每次0.8公克，18歲以上，適用成人劑量。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0578,衛署藥製字第018609號,"""盈盈""鎮痛解熱錠500毫克（乙醯胺酚）","ANALGESIC TABLETS 500MG ""SOURIREE"" (ACETAMINOPHEN)",錠劑,發燒或需要時服用，若症狀持續，則每4~6小時可重複服用，每24小時內不可超過4次。成人每次1~2錠，12歲以上適用成人劑量；6歲以上未滿12歲，每次1/2~1錠；3歲以上未滿6歲，每次1/2~1/4錠；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。初次應使用最小建議劑量，再視症狀增減用量。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0588,衛署藥製字第022020號,"""人生""胃乳錠（氫氧化鋁凝膠）","ALUMINGEL TABLETS ""JEN SHENG"" (ALUMINUM HYDROXIDE GEL)",錠劑,一天3至4次，或需要時服用。應嚼碎後吞服。成人每次2錠，12歲以上適用成人劑量；6歲以上未滿12歲，每次1錠；3歲以上未滿6歲，每次1/2錠；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0631,衛署藥製字第035789號,"""翰偉""痛奇液１５毫克/毫升（乙醯胺酚）","ANALGESIC SOLUTION 15MG/ML ""HANN VEI"" (ACETAMINOPHEN)",內服液劑,發燒或需要時服用，若症狀持續，則每4~6小時可重複服用，每24小時內不可超過6次。成人每次10mL，12歲以上適用成人劑量；6歲以上未滿12歲，每次5mL；3歲以上未滿6歲，每次2.5mL；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0687,衛署藥輸字第009554號,隆我心錠,LANOXIN DIGOXIN TABLETS 0.25MG B.P.,錠劑,"Lanoxin劑量需依據個人年齡，精瘦體重及腎功能而裁定。
+建議劑量只能作為初期使用原則。
+變更劑量時必須考慮注射型與口服型Digoxin在生體可用率方面的差異。舉例來說，如果患者從口服改為接受靜脈注射，則劑量應調降大約33％。
+成人及10歲以上兒童
+	快速口服負荷量：
+一次給藥750至1500微毫克(μg)(0.75~1.5毫克)。
+當情況較不緊急，或毒性危險性較高時，例如老年人，則口服負荷量應分次給藥，間隔6小時。
+每再給藥一次額外劑量時，皆需評估臨床反應(參考警告與注意事項)。
+	慢速口服負荷量：
+應每天給藥250至750μg (0.25~0.75mg)，共一星期，接著給予一適當的維持劑量。一星期內應可觀察到臨床反應。
+注意：慢速或快速口服負荷量之選擇應依病人臨床狀況及病情危急程度而定。
+	維持劑量：
+維持劑量應依據每日經由排泄流失的尖峰體內儲存量百分比而定。下列公式臨床應用很廣泛。
+維持劑量 = 尖峰體內儲存量 x 
+
+	在此處：	尖峰體內儲存量 ＝ 負荷量
+		每日流失量% ＝ 14 +  
+
+	Ccr為修正到70kg體重或1.73m2體表面積之肌酸酐廓清率。若只有血清肌酸酐(Scr)濃度，則可用下列公式估計男性Ccr (修正至70kg體重)：
+		Ccr =  
+
+	注意：若所獲得血清肌酸酐值單位為μmol/L，必須用下列公式轉換成mg/100 ml (mg %)：
+		Scr (mg/100 ml) =	 
+
+		                          = 	 
+
+	此處113.12為肌酸酐的分子量。
+女性方面：得到的結果應乘以0.85。
+注意：這些公式不適用於兒童的肌酸酐廓清率。
+實際運用時，這表示大部分患者可給予每日125至250μg (0.125~0.25mg) digoxin作為維持劑量，但對於那些digoxin副作用敏感較高的患者，每日62.5μg (0.0625mg) digoxin或62.5μg以下digoxin之維持量即足夠。
+	緊急注射給藥負荷量(對於那些前二星期內未曾給予強心配醣體之患者)：
+Lanoxin注射劑的總負荷量為500至1000μg (0.5~1.0mg)，依年齡、精瘦體重及腎功能而定。總負荷量應分次給藥，第一次約給予全部劑量的一半，剩餘劑量依4至8小時的間隔分次給藥。每給予一次額外劑量時皆應評估臨床反應。每次劑量皆應使用靜脈輸注10至20分鐘的速度給藥(參考[稀釋])。
+新生兒、嬰兒及10歲以下兒童(在前二星期內未曾給予強心配醣體之患者)
+若開始Lanoxin治療前二星期內曾給予其他強心配醣體，則應考慮Lanoxin之最佳負荷量將少於下列建議劑量。
+	靜脈負荷量：
+應依下表給藥：
+小於1.5 kg之未足月新生兒		20 μg/kg 24小時內
+1.5至2.5 kg之未足月新生兒		30 μg/kg 24小時內
+足月新生兒至2歲兒童		35 μg/kg 24小時內
+2至5歲兒童		35 μg/kg 24小時內
+5至10歲兒童		25 μg/kg 24小時內
+
+負荷量應分次給藥，第一次約給予全部劑量的一半，剩餘劑量依4至8小時的間隔分次給藥。每給予一次額外劑量時皆應評估臨床反應。每次劑量皆應使用靜脈輸注10至20分鐘的速度給藥(參考[稀釋])。
+	口服負荷劑量：
+應依下表給藥：
+小於1.5 kg之未足月新生兒		每24小時25 μg/kg
+1.5至2.5 kg之未足月新生兒		每24小時30 μg/kg
+足月新生兒至2歲兒童		每24小時45 μg/kg
+2至5歲兒童		每24小時35 μg/kg
+5至10歲兒童		每24小時25 μg/kg
+
+負荷量應分次給藥，第一次約給予全部劑量的一半，剩餘劑量依4至8小時的間隔分次給藥。每給予一次額外劑量時皆應評估臨床反應。
+	維持劑量：
+應依下表給藥：
+未足月新生兒	每日劑量 = 24小時負荷量(靜脈注射或口服)的20%。
+足月新生兒及10歲以下兒童	每日劑量 = 24小時負荷量(靜脈注射或口服)的25%。
+
+這些劑量表僅供參考，應以仔細觀察臨床反應及監測血清digoxin濃度(參考[監測])作為小兒科患者調整劑量之依據。
+老年人
+對於老年人應使用低於非老年人的Lanoxin劑量，否則會因老年人常有之腎功能障礙及低精瘦體重而影響Lanoxin之藥物動力學，之後產生高血清digoxin濃度及相關之毒性。應定期監測血清digoxin濃度及避免低血鉀。
+腎障礙或同時併用利尿劑之建議劑量：
+參考[警語和注意事項]。",TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0732,內衛藥製字第003424號,"""應元""乾燥氫氧化鋁凝膠錠","DRIED ALUMINUM HYDROXIDE GEL TABLETS ""Y.Y.""",錠劑,成人一次2錠，一天3至四次，或需要時服用。請嚼碎後吞服，一日最大劑量10錠。12歲以上適用成人劑量。6歲以上未滿12歲，適用成人劑量之1/2。3歲以上未滿6歲，適用成人劑量之1/4。3歲以下之嬰兒幼兒，請洽醫師診治，不宜自行使用。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0790,衛部藥製字第060527號,利美可通眼用軟膏,Limecort Ophthalmic Ointment,點眼膏劑,請詳見仿單,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0876,衛署藥製字第021874號,乾燥氫氧化鋁凝膠錠,"DRY ALUMINUM HYDROXIDE GEL ""ASTAR""",錠劑,一天3至4次，或需要時服用。成人每次1-2錠，應嚼碎後吞服；12歲以上，適用成人劑量；6歲以上未滿12歲，每次1/2錠；3歲以上未滿6歲，每次1/4-1/2錠；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0919,內衛藥製字第016499號,卡拿隆錠,CANALON TABLETS,錠劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0985,衛署藥製字第027672號,"""長安""嘴破口內膏",Zuipo in Orabase,口內膏,以棉花棒沾取適量藥膏直接塗抹於患部(避免唾液沾染藥膏管口，以免軟膏硬化不易擠出)，一日一次。根據症狀的嚴重程度，一天可使用2-3次。建議於飯後及睡前使用佳。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_0993,衛署藥製字第027912號,大正百保能解痛金加強錠,PABRON ANALGESIC DELUX TABLETS,錠劑,15歲以上1次2錠，8〜15歲未滿:1次1錠，5〜8歲未滿:1次1/2錠，1日三次，避免空腹時服用,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_1153,衛署藥製字第010414號,眼用溫拿可通軟膏,"EYE WINACORT OINTMENT ""WINSTON""",點眼膏劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_1203,衛署藥製字第040305號,〝利達〞利胃寧錠375毫克（氫氧化鋁碳酸鎂凝膠）,"LIWEILIN TABLETS 375MG ""LITA"" (ALUMINUM HYDROXIDE MAGNESIUM CARBONATE CO-DRIDE GEL )",錠劑,一天3至4次，或需要時服用。應嚼碎後吞服。成人每次2錠，12歲以上適用成人劑量；6歲以上未滿12歲，每次1錠；3歲以上未滿6歲每次1/2錠；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_1239,衛署藥製字第041953號,舒舒治痛錠,S.S. ANALGESIC TABLET,錠劑,發燒或需要時服用，若症狀持續，則每4~6小時可重複服用，每24小時內不可超過5次。成人每次1錠，12歲以上適用成人劑量；6歲以上未滿12歲，每次1/2錠；3歲以上未滿6歲，每次1/4錠；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_1327,衛部罕藥輸字第000061號,安脈樂1毫克膠囊,Analide 1 mg capsule,膠囊劑,詳見仿單,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_1328,衛部罕藥輸字第000062號,安脈樂0.5毫克膠囊,Analide 0.5mg Capsule,膠囊劑,請詳見仿單,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_1352,衛署藥製字第015373號,"""富邦""優潔霜乳膏","PRETTY CREAM ""F.B""",霜劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_1387,衛署藥製字第019158號,"""正和""合胃錠（氫氧化鋁凝膠）","CO-STOMACH TABLETS ""C.H.""",錠劑,成人每次一~二錠，一天三~四次，或需要時服用。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_1390,衛署藥製字第023807號,耐挫敷隆軟膏敷料,"NITROFURAZONE OINTMENT DRESSINGS ""GENTLE""",敷料劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_1577,衛署藥輸字第024205號,首利安錠400毫克,SOLIAN 400MG FILM-COATED SCORED TABLET,膜衣錠,一般而言，如果SOLIAN的每日劑量低於400MG，則每日單次給藥即可。然而，如果每日劑量高於400MG，則應分兩次投藥。以負性症狀為主要表現者：建議劑量50-300MG/DAY。然而，應該依照病患個人的需要加以調整。最適宜的劑量約為100MG/DAY。其病徵包括活性及負性症狀者：治療初期的劑量以能控制活性症狀為目的，約為400-800MG/DAY，然後再根據病人的反應，調整至最低有效劑量。急性精神病症：治療初期：－在開始治療的首幾天，可以肌肉注射給藥，其最高劑量為400MG/DAY，之後再改為口服給藥。－口服建議劑量為400-800MG；最高劑量勿超過1200MG。之後，－維持劑量應根據病患個人的反應加以調整。病人的維持劑量乃因人而異，應以最低有效劑量為原則。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_1586,衛部罕藥輸字第000080號,緩板凝膠囊0.5毫克,Anagrevitae 0.5mg hard capsules,膠囊劑,請詳見仿單,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_1587,衛部罕藥輸字第000100號,安血凝膠囊0.5毫克,Anagre Cap. 0.5mg,膠囊劑,詳如仿單,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_1749,衛署藥製字第004974號,新比達爽眼用軟膏,NEO-BETASON EYE OINTMENT,點眼膏劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_1751,衛署藥製字第005446號,"""台灣汎生""汎力黴素膠囊250毫克","PARAFLEX CAPSULES 250MG ""PANBIOTIC""",膠囊劑,"成人劑量一日1-4克，分次服用。
+對於輕微單純尿道感染、鏈球菌咽炎-扁桃腺炎、皮膚和軟組織感染，使用劑量通常為每6小時250毫克或每12小時500毫克。
+對於較嚴重的感染或由感受性較低的細菌引起的感染，則需服用較高的劑量。若一日劑量超過4克，則應考慮使用適量的頭孢子菌素類抗生素注射劑為宜。
+【兒童】
+通常一日劑量為每公斤體重25-100毫克，分次服用。對於1歲以上鏈球菌性咽喉炎-扁桃腺炎、輕微的泌尿道感染的兒童患者，每日劑量可分兩次服用(每隔12小時口服ㄧ次)。
+治療中耳炎的臨床研究顯示，每日需要的劑量為每公斤體重75-100毫克，分4次服用。治療β-溶血性鏈球菌之感染，應至少持續服用Cephalexin治療劑量10日。
+【老年人】參考成人劑量。但老年人可能有腎功能不全的問題，且Cephalexin主要經由腎臟排除，建議監測老年人之腎功能並謹慎給藥。",TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_1926,衛署藥製字第055943號,普拿疼 舒痛散,Panadol Analgesic Powder,散劑,詳見仿單,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_2052,衛署藥製字第041035號,“國嘉”樂導便腸溶錠5毫克（秘可舒）,"CATHARTINOL E.C. TABLETS 5MG ""KOJAR""(BISACODYL)",腸溶錠,除非醫師另有處方，否則依下列推薦劑量使用。便祕：成人及10歲以上的兒童：1〜2錠(5〜10mg)。4〜10歲兒童：1錠(5mg)。4歲以上兒童：建議使用1/2栓劑(5mg)。建議在晚上服用腸溶錠，翌晨即可排便，且必須整錠伴與適量的液體吞服。但腸溶錠請勿與會降低上胃腸道酸度的製品(例如牛奶、制酸劑或某些正子幫浦抑制劑)同時服用，以免腸溶衣過早被溶解。用於診斷過程及手術前的準備：用於診斷過程及手術前、後淸除腸容物時，需在醫護監督下使用Bisacodyl。用於腹部放射照影檢查或手術前腸容物清除時，爲了使腸容物徹底排空，錠劑必須與栓劑配合使用。成人：建議劑量爲在檢查前夜睡前服用2-4顆腸溶錠，檢查當天早上再使用一個栓劑。4歲及4歲以上兒童：建議在晚上服用一顆腸溶錠，翌晨再使用半個栓劑。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_2080,衛署藥製字第048865號,覆胃朗錠,Anxowen Tablets,錠劑,I.胃炎，胃潰瘍：通常1次1錠，1日1~3次餐前服用。宜將1錠溶解於100ml之開水服用。依年齡症狀可適當增減。II.含漱(洗口)：將1~3錠溶解於水，1日使用數次。III.注腸(直腸洗滌)：1日1次將5錠溶解於500ml之開水注腸使用。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_2114,衛署藥製字第050088號,斯斯解痛加強錠,U-Chu Plus Analgesic Caplets,錠劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_2126,衛署藥輸字第023223號,威洛速膜衣錠４００毫克,AVELOX FILM-COATED TABLET 400MG,膜衣錠,皮膚和軟組織的感染-7至21天【非複雜性︰7天；複雜性︰7-21天﹝包括注射和注射轉口服治療﹞】。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_2165,衛部藥製字第059079號,和興活絡通凝膠,Hoe Hin Recurring Gel,乳膠劑,請詳閱說明書使用,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_2187,衛署藥製字第025128號,"""人人""紫菌素眼用軟膏３公絲/公克","GENTAMYCIN OPHTH. OINTMENT 3MG/GM ""GCPC""",點眼膏劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_2238,衛署藥製字第034035號,妳胎寧錠１０公絲（鹽酸立特林）,RITOPARLIN TABLETS 10MG (RITODRINE HYDROCHLORIDE),錠劑,"注射後以口服維持劑量每２∼６小時一片，視其反應及副作用情形，增減劑量，只要醫師認為必要，口服可以繼續。
+本藥品用於產科相關適應症時，須經醫師審慎評估病患使用本藥品之效益大於風險時方可使用，應嚴密監視母親及胎兒發生心血管相關不良反應之風險，尤其是於長時間的使用下(超過48小時)。",TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_2406,衛署藥製字第014165號,"""久松""痛友好液","ANALGESIC SOLUTION ""C.S.""",內服液劑,發燒或需要時服用，若症狀持續，則每4-6小時可重複服用，每24小時內不可超過5次，飯後半小時內服用為宜。成人每次20ml，12歲以上適用成人劑量。6歲以上未滿12歲，每次10ml。3歲以上未滿 6歲，每次5ml。3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_2576,衛署藥輸字第024416號,威樂寧口炎凝膠,Kamistad Gel,口內膏,對於大人及12歲以上的青少年，每天塗抹3次，每次約1/2公分長的條狀凝膠。局部塗抹口腔內及牙肉周圍發炎疼痛部位或傷口處，必要時輕予按摩之。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_2660,衛署藥製字第032311號,"""瑞安"" 得孕樂膠囊２００毫克（單那若）","DANALOL CAPSULE 200MG (DANAZOL) ""PURZER""",膠囊劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_2726,衛署藥製字第043924號,"""大豐""舒筋鎮凝膠10毫克/公克","SHUJEN GEL 10MG/G ""T.F.""",膠劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_2917,衛署藥製字第041625號,快安治痛加強錠,Quit A.C. Analgesic Tablet,錠劑,發燒或需要時服用，若症狀持續，則每4~6小時可重複服用，每24小時內不可超過4次。成人每次1錠，12歲以上適用成人劑量；6歲以上未滿12歲，每次1/2錠；3歲以上未滿6歲，每次1/4錠；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_2929,衛署藥製字第046189號,"""黃氏"" 舒炎寧口內膏","SUYENIN ORAL BASE ""H.S.""",口內膏,以棉花棒沾取適量藥膏直接塗抹於患部(避免唾液沾染藥膏管口，以免軟膏硬化不易擠出)，一日一次。根據症狀的嚴重程度，一天可使用2-3次。建議於飯後及睡前使用佳。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_2999,衛署藥輸字第023460號,疏痙 直腸用液劑10毫克,STESOLID RECTAL TUBE 10MG,液劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_3036,衛部藥輸字第027127號,派來福糖漿24毫克/毫升,PanaLife 120mg/5ml,糖漿劑,請詳見仿單,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_3141,衛部藥輸字第026822號,派來福錠500毫克,PanaLife 500,錠劑,請詳見仿單,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_3297,衛署藥製字第036084號,"""美西"" 口康寧口內膠１公絲/公克（安西諾隆）","CORKELIN ORAL GEL 1MG/GM ""M.S.""(TRIAMCINOLONE)",口內膏,以棉花棒沾取適量藥膏直接塗抹於患部(避免唾液沾染藥膏管口，以免軟膏硬化不易擠出)，一日一次。根據症狀的嚴重程度，一天可使用2-3次。建議於飯後及睡前使用佳。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_3341,衛署藥製字第037704號,快安治痛錠,QUIT ANALGESIC TABLET,錠劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_3368,衛署藥製字第039883號,斯斯解痛錠１２５毫克,U CHIU ANALGESIC CAPLETS 125MG,錠劑,發燒或需要時服用，若症狀持續，則每4~6小時可重複服用。每24小時內不可超過6次。成人每次2錠，12歲以上適用成人劑量；6歲以上未滿12歲，每次1錠；3歲以上未滿6歲，每次1/2錠；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_3393,衛署藥製字第043124號,"""溫士頓"" 莫痛炎眼藥水０．１％（二克氯吩鈉）","VOLEN OPHTHALMIC SOLUTION 0.1% (DICLOFENAC SODIUM)""WINSTON""",點眼液劑,成人：-手術前：開刀前3小時起，每半小時一滴，共5滴。-手術後：開刀後立即滴3滴，之後每天3-5次，每次一滴，依需要調整使用天數。-其他適應症：白天4-5次，每次一滴，以病情程度調整劑量。-只有在仔細的評估及眼睛檢查後才能考慮長期性的治療。一般而言，不應使用超過一週，只有很少數的病例做較延長的使用。兒童：無特殊研究本品用於兒童，但口服劑型或栓劑的Voltaren用於12個月以上的兒童，則已被證實可行。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_3397,衛署藥製字第043176號,大正百保能解痛加強錠,PABRON EXTRA ANALGESIC TABLETS,錠劑,發燒或需要時服用，若症狀持續，則每4~6小時可重複服用，每24小時內不可超過4次。成人每次1錠，12歲以上適用成人劑量；6歲以上未滿12歲，每次1/2錠；3歲以上未滿6歲，每次1/4錠；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_3427,衛署藥製字第048152號,源展膠囊200毫克,LIV-UP Capsule 200mg,膠囊劑,Liv-up膠囊以口服給予，每天劑量為1000-1200毫克，分兩次服用（早晨和傍晚）：合併interferon alfa-2b 多劑量筆注射液以皮下注射投予，每次劑量為三百萬國際單位，每週3次（隔天一次），持續24週（詳細見interferon alfa-2b多劑量筆注射液的使用方法）。Liv-up膠囊的使用劑量依照病人的體重：病人體重＜75公斤時每天應接受1000毫克，早晨兩顆200毫克之膠囊，傍晚服用三顆200毫克之膠囊。病人體重＞75公斤時每天應接受1200毫克，早晨三顆200毫克之膠囊，傍晚服用三顆200毫克之膠囊。本藥須由醫師處方使用，經口服給予。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_3475,衛署藥製字第051196號,舒口炎口內膏 1 毫克/ 公克,Shu Kou Yan oral paste 1mg/ g,口內膏,以棉花棒沾取適量藥膏直接塗抹於患部(避免唾液沾染藥膏管口，以免軟膏硬化不易擠出)，一日一次。根據症狀的嚴重程度，一天可使用2-3次。建議於飯後及睡前使用佳。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_3864,衛署藥製字第010478號,"""溫士頓"" 比達爽眼用軟膏","BETASON-N EYE OINTMENT ""WINSTON""",點眼膏劑,,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_4047,衛署藥製字第031991號,“衛達”優得舒錠１０毫克（鹽酸立特林）,"UTELAX TABLETS 10MG ""WEIDAR""(RITODRINE HYDROCHLORIDE)",錠劑,"起始劑量1顆 (l0mg)約在靜脈注射停止前30分鐘給予，剛給藥的24小時內，每2個小時給一顆，之後，每4～6小時，給1～2顆。
+這些劑量可根據子宮反應和副作用的出現而作調整。
+全天劑量不得超過120 mg。治療期可隨醫師視需要而繼續給藥。
+本藥品用於產科相關適應症時，須經醫師審慎評估病患使用本藥品之效益大於風險時方可使用，應嚴密監視母親及胎兒發生心血管相關不良反應之風險，尤其是於長時間的使用下(超過48小時)。",TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_4076,衛署藥製字第037944號,斯斯解痛錠,U CHU ANALGESIC CAPLETS,錠劑,發燒或需要時服用，若症狀持續，則每4~6小時可重複服用，每24小時內不可超過4次。成人每次1~2錠，12歲以上適用成人劑量；6歲以上未滿12歲，每次1/2~1錠；3歲以上未滿6歲，每次1/4~1/2錠；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。初次應使用最小建議劑量，再視症狀增減用量。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_4104,衛署藥製字第049164號,舒下腸溶錠,Shuxia E.C. Tablets,腸溶錠,"用法用量
+本藥須由醫師處方使用。
+除非醫師另有處方，否則依下列推薦劑量使用。
+便祕
+成人及10歲以上的兒童：1-2錠(5－10 mg)。
+4－10歲兒童：1錠(5 mg)。
+4歲以下兒童：建議使用1/2栓劑(5 mg)。
+建議在晚上服用腸溶錠，翌晨即可排便，且必須整錠伴與適量的液體吞服。
+但腸溶錠請勿與會降低上胃腸道酸度的製品(例如：牛奶、制酸劑或某些正子幫浦抑制劑)同時服用，以免腸溶衣過早被溶解。
+用於診斷過程及手術前的準備
+用於診斷過程及手術前、後清除腸容物時，需在醫護監督下使用bisacodyl。用於腹部放射照影檢查或手術前腸容物清除時，為了使腸容易徹底排空，錠劑必須與栓劑配合使用。
+成人：建議劑量為在檢查前夜睡前服用2－4顆腸溶錠，檢查當天早上再使用一個栓劑。
+4歲及4歲以上兒童：建議在晚上服用一顆腸溶錠，翌晨再使用半個栓劑。",TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_4161,衛署藥製字第005445號,"""台灣汎生""汎力黴素膠囊500毫克","PARAFLEX CAPSULES 500MG ""PANBIOTIC""",膠囊劑,成人劑量一日1-4克，分次服用。 對於輕微單純尿道感染、鏈球菌咽炎-扁桃腺炎、皮膚和軟組織感染，使用劑量通常為每6小時250毫克或每12小時500毫克。 對於較嚴重的感染或由感受性較低的細菌引起的感染，則需服用較高的劑量。若一日劑量超過4克，則應考慮使用適量的頭孢子菌素類抗生素注射劑為宜。【兒童】通常一日劑量為每公斤體重25-100毫克，分次服用。對於1歲以上鏈球菌性咽喉炎-扁桃腺炎、輕微的泌尿道感染的兒童患者，每日劑量可分兩次服用(每隔12小時口服ㄧ次)。 治療中耳炎的臨床研究顯示，每日需要的劑量為每公斤體重75-100毫克，分4次服用。治療β-溶血性鏈球菌之感染，應至少持續服用Cephalexin治療劑量10日。【老年人】參考成人劑量。但老年人可能有腎功能不全的問題，且Cephalexin主要經由腎臟排除，建議監測老年人之腎功能並謹慎給藥。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_4220,衛署藥製字第020137號,痛立舒泰膜衣錠400毫克,TURNSTYLE ANALGESIC F.C. TABLETS 400MG,膜衣錠,成人及12歲以上，1次1錠，1日服用3次，每日最高劑量為1200mg。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_4251,衛署藥製字第027918號,大正百保能止痛雙效顆粒,PABRON ANALGESIC PLUS GRANULES,內服顆粒劑,成人及18歲以下每次1包(1.2g)，發燒或需要時服用，若症狀持續，則每4~6小時可重複服用，每24小時內不可超過2次，飯後半小時內服用為宜。18歲以下請勿使用。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_4363,衛署藥製字第037196號,"""信東""安寶錠１０毫克",ANPO TABLETS 10MG,錠劑,起始劑量1 顆(10mg)，約在靜脈注射停止前30 分鐘給予。剛給藥的24 小時內，每2 個小時給1 顆，之後，每4~6 小時給1~2 顆。這些劑量可根據子宮反應和副作用的出現而作調整。全天劑量不得超過120mg。治療期可隨醫師視需要而繼續給藥。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+review_4520,衛署藥製字第041732號,速舒口內膏０．１％（丙酮特安皮質醇）〝井田〞,"SEU-SU ORAL BASE 0.1% (TRIAMCINOLONE ACETONIDE) ""Chinteng""",口內膏,以棉花棒沾取適量藥膏直接塗抹於患部(避免唾液沾染藥膏管口，以免軟膏硬化不易擠出)，一日一次。根據症狀的嚴重程度，一天可使用2-3次。建議於飯後及睡前使用佳。,TFDA solid insertion dosage-form/name/use signal,solid_insertion_not_confirmed,Check official TFDA route/approved leaflet manually; do not include before site is confirmed.,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00

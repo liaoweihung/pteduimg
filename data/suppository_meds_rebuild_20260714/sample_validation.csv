@@ -1,0 +1,21 @@
+﻿group,license_number,chinese_name,english_name,dosage_form,decision,evidence
+rectal_local,衛部藥製字第060236號,"""國嘉""樂導便栓劑10毫克","Cathartinol Suppository 10mg ""Kojar""",栓劑,rectal,TFDA structured dosage form/name/use reviewed before full deterministic run.
+rectal_local,衛署藥製字第009250號,"""永信""無秘栓劑","BISACODYL SUPPOSITORIES ""YUNG SHIN""",栓劑,rectal,TFDA structured dosage form/name/use reviewed before full deterministic run.
+rectal_local,衛署藥製字第044211號,〝華興〞舒便栓劑１０毫克,"SUBEN SUPPOSITORIES 10MG ""H.S."" (BISACODYL)",栓劑,rectal,TFDA structured dosage form/name/use reviewed before full deterministic run.
+rectal_local,衛署藥輸字第025318號,日方痔瘡栓劑,HEMOSCUT SUPPOSITORIES,栓劑,rectal,TFDA structured dosage form/name/use reviewed before full deterministic run.
+rectal_systemic,衛署藥製字第030553號,小兒熱之100止熱栓劑,ACETA 100 SUPPOSITORY,栓劑,rectal,TFDA structured dosage form/name/use reviewed before full deterministic run.
+rectal_systemic,衛署藥製字第030554號,熱之３００止熱栓劑,ACETA 300 SUPPOSITORY,栓劑,rectal,TFDA structured dosage form/name/use reviewed before full deterministic run.
+rectal_systemic,衛署藥製字第030591號,"""培力"" 普他寧栓劑50毫克（待克菲鈉）","VOTALIN SUPPOSITORY 50MG ""P.L."" (DICLOFENAC SODIUM)",栓劑,rectal,TFDA structured dosage form/name/use reviewed before full deterministic run.
+vaginal_suppository,衛署藥製字第034585號,"""衛達""妳達新陰道栓劑","NYDASIN VAGINAL SUPPOSITORIES ""WEIDAR""",栓劑,vaginal,TFDA structured dosage form/name/use reviewed before full deterministic run.
+vaginal_suppository,衛署藥製字第055238號,“培力”保理寧陰道栓劑,Polinin vaginal suppositories“P.L.”,陰道栓劑,vaginal,TFDA structured dosage form/name/use reviewed before full deterministic run.
+vaginal_suppository,衛署藥輸字第016229號,安可治陰道栓劑,ALBOTHYL VAGINAL SUPPOSITORIES (OVULES),栓劑,vaginal,TFDA structured dosage form/name/use reviewed before full deterministic run.
+vaginal_suppository,衛署藥製字第023664號,"""歐業""宜克治陰道栓劑（亦可那挫）","ECONAZOLE VAGINAL SUPPOSITORIES ""O.Y.""",栓劑,vaginal,TFDA structured dosage form/name/use reviewed before full deterministic run.
+vaginal_tablet_or_capsule,衛部藥製字第060150號,允消淨沒黴陰道錠500毫克,Winsolve Clinbeauty Vaginal Tablets 500mg,陰道錠,vaginal,TFDA structured dosage form/name/use reviewed before full deterministic run.
+vaginal_tablet_or_capsule,衛部藥製字第060255號,"""永信""淨沒黴陰道錠100毫克","Clinbeauty Vaginal Tablets 100mg ""Yung Shin""",陰道錠,vaginal,TFDA structured dosage form/name/use reviewed before full deterministic run.
+vaginal_tablet_or_capsule,衛署藥製字第040974號,"""榮民"" 克黴樂陰道錠500毫克（克氯黴唑）","CLOMAZOLE VAGINAL TABLETS 500MG (CLOTRIMAZOLE) ""VPP""",陰道錠,vaginal,TFDA structured dosage form/name/use reviewed before full deterministic run.
+vaginal_tablet_or_capsule,衛署藥製字第043459號,婦淨陰道錠１００公絲〝華興〞,"LICOMILE VAGINAL TABLETS 100MG (ISOCONAZOLE) ""H.S.""",陰道錠,vaginal,TFDA structured dosage form/name/use reviewed before full deterministic run.
+hemorrhoid_ointment_excluded,內衛藥製字第005461號,“紐約”痔瘡膏,"HEMORRHOIDS OINTMENT ""NEW YORK""",軟膏劑,topical_ointment_cream_gel,TFDA structured dosage form/name/use reviewed before full deterministic run.
+vaginal_cream_or_gel_excluded,衛署藥製字第039737號,克寧菲兒私密乳膏,CLEAN FAVORITE VAGINAL CREAM,乳膏劑,topical_ointment_cream_gel,TFDA structured dosage form/name/use reviewed before full deterministic run.
+enema_excluded,衛署藥製字第034255號,意福灌腸液,EVAC ENEMA,外用液劑,enema,TFDA structured dosage form/name/use reviewed before full deterministic run.
+enema_excluded,內衛成製字第000943號,白蘭浣腸,PAILAN ENEMA,浣腸劑,enema,TFDA structured dosage form/name/use reviewed before full deterministic run.
+oral_tablet_capsule_excluded_control,衛署藥製字第034549號,"""育生""美洛醣錠500毫克（二甲二脈）","LOFORMIN TABLETS 500MG ""ENSAFE"" (METFORMIN)",錠劑,excluded,TFDA structured dosage form/name/use reviewed before full deterministic run.

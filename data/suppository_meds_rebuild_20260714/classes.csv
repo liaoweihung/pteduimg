@@ -1,0 +1,18 @@
+﻿class_id,class_label,scope,classification_rule,source_id
+hemorrhoid,hemorrhoid,rectal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711
+laxative,laxative,rectal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711
+local_anesthetic,local_anesthetic,rectal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711
+anti_inflammatory_local,anti_inflammatory_local,rectal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711
+antipyretic_analgesic,antipyretic_analgesic,rectal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711
+anti_inflammatory_systemic,anti_inflammatory_systemic,rectal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711
+antiemetic,antiemetic,rectal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711
+anticonvulsant,anticonvulsant,rectal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711
+other_rectal,other_rectal,rectal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711
+antifungal,antifungal,vaginal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711
+antibacterial,antibacterial,vaginal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711
+antiprotozoal,antiprotozoal,vaginal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711
+antiseptic,antiseptic,vaginal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711
+hormone,hormone,vaginal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711
+mucosal_protective,mucosal_protective,vaginal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711
+combination,combination,vaginal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711
+other_vaginal,other_vaginal,vaginal,Documented multi-signal pharmacologic rule using TFDA active summary; indication may corroborate only.,tfda_open_data_info37_43_cached_20260711

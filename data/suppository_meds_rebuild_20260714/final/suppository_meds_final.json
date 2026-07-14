@@ -1,0 +1,4238 @@
+{
+  "schema_version": "1.0",
+  "generated_from": [
+    "products.csv",
+    "substances.csv",
+    "product_substances.csv",
+    "product_classes.csv"
+  ],
+  "product_count": 148,
+  "products": [
+    {
+      "product_id": "supp_0001",
+      "license_number": "衛部藥製字第060150號",
+      "chinese_name": "允消淨沒黴陰道錠500毫克",
+      "english_name": "Winsolve Clinbeauty Vaginal Tablets 500mg",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "請詳見仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "由黴菌(多數念珠球菌毛滴蟲屬)所引起之白帶、陰道炎。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2018",
+      "license_status": "active",
+      "license_expiry_date": "2028/08/13",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=請詳見仿單; product names=允消淨沒黴陰道錠500毫克 / Winsolve Clinbeauty Vaginal Tablets 500mg. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0002",
+      "license_number": "衛部藥製字第060236號",
+      "chinese_name": "\"國嘉\"樂導便栓劑10毫克",
+      "english_name": "Cathartinol Suppository 10mg \"Kojar\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "請詳見仿單",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "暫時緩解便秘，診斷及手術前清腸。",
+      "indication_category": "便秘與排便準備",
+      "active_ingredients": [
+        "BISACODYL"
+      ],
+      "therapeutic_classes": [
+        "laxative"
+      ],
+      "license_year": "2019",
+      "license_status": "active",
+      "license_expiry_date": "2029/01/31",
+      "applicant": "國嘉製藥工業股份有限公司幼獅三廠",
+      "manufacturer": "國嘉製藥工業股份有限公司幼獅三廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=請詳見仿單; product names=\"國嘉\"樂導便栓劑10毫克 / Cathartinol Suppository 10mg \"Kojar\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0003",
+      "license_number": "衛部藥製字第060255號",
+      "chinese_name": "\"永信\"淨沒黴陰道錠100毫克",
+      "english_name": "Clinbeauty Vaginal Tablets 100mg \"Yung Shin\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "請詳見仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "治療陰道念珠菌及滴蟲所引起之陰道感染。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2019",
+      "license_status": "active",
+      "license_expiry_date": "2029/03/19",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=請詳見仿單; product names=\"永信\"淨沒黴陰道錠100毫克 / Clinbeauty Vaginal Tablets 100mg \"Yung Shin\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0004",
+      "license_number": "衛署藥製字第006485號",
+      "chinese_name": "化熱栓劑",
+      "english_name": "Lybrile Suppositories",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "發燒或需要時服用，若症狀持續，則每4-6小時可重複服用，每24小時內不可超過3次。成人及12歲以上，每次4粒，不可剝半使用。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "退燒、止痛（緩解頭痛、牙痛、咽喉痛、關節痛、神經痛、肌肉酸痛、月經痛）。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "ASPIRIN"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1975",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/25",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=發燒或需要時服用，若症狀持續，則每4-6小時可重複服用，每24小時內不可超過3次。成人及12歲以上，每次4粒，不可剝半使用。; product names=化熱栓劑 / Lybrile Suppositories. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0005",
+      "license_number": "衛署藥製字第006507號",
+      "chinese_name": "\"中美\" 愛潔栓劑",
+      "english_name": "TRICHAZOL SUPPOSITORIES \"C.M.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "陰道滴蟲感染所引起之陰道炎。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "METRONIDAZOLE"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1975",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/25",
+      "applicant": "中美兄弟製藥股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"中美\" 愛潔栓劑 / TRICHAZOL SUPPOSITORIES \"C.M.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0006",
+      "license_number": "衛署藥製字第006593號",
+      "chinese_name": "通樂栓劑",
+      "english_name": "THROUGH SUPPOSITORIES \"C.M.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "僂麻質斯熱、關節僂麻質斯、關節痛、神經痛、頭痛、齒痛、月經痛等之鎮痛解熱消炎。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "ASPIRIN"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1975",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/25",
+      "applicant": "中美兄弟製藥股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=通樂栓劑 / THROUGH SUPPOSITORIES \"C.M.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0007",
+      "license_number": "衛署藥製字第034585號",
+      "chinese_name": "\"衛達\"妳達新陰道栓劑",
+      "english_name": "NYDASIN VAGINAL SUPPOSITORIES \"WEIDAR\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "念珠菌感染引起之陰道炎。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "NYSTATIN"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1991",
+      "license_status": "active",
+      "license_expiry_date": "2026/11/19",
+      "applicant": "衛達化學製藥股份有限公司",
+      "manufacturer": "衛達化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"衛達\"妳達新陰道栓劑 / NYDASIN VAGINAL SUPPOSITORIES \"WEIDAR\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0008",
+      "license_number": "衛署藥製字第040974號",
+      "chinese_name": "\"榮民\" 克黴樂陰道錠500毫克（克氯黴唑）",
+      "english_name": "CLOMAZOLE VAGINAL TABLETS 500MG (CLOTRIMAZOLE) \"VPP\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "由黴菌（多數念珠球菌毛滴蟲屬）所引起之白帶、陰道炎。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1997",
+      "license_status": "active",
+      "license_expiry_date": "2027/03/19",
+      "applicant": "榮民製藥股份有限公司",
+      "manufacturer": "榮民製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=\"榮民\" 克黴樂陰道錠500毫克（克氯黴唑） / CLOMAZOLE VAGINAL TABLETS 500MG (CLOTRIMAZOLE) \"VPP\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0009",
+      "license_number": "衛署藥製字第055238號",
+      "chinese_name": "“培力”保理寧陰道栓劑",
+      "english_name": "Polinin vaginal suppositories“P.L.”",
+      "dosage_form": "陰道栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "詳見仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "子宮頸糜爛、子宮頸炎(含由毛滴蟲及念珠菌引起者)、陰道炎、白帶。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "POLYCRESOLSULFONATE (POLICRESULEN)"
+      ],
+      "therapeutic_classes": [
+        "antiseptic"
+      ],
+      "license_year": "2010",
+      "license_status": "active",
+      "license_expiry_date": "2030/08/03",
+      "applicant": "培力藥品工業股份有限公司",
+      "manufacturer": "培力藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道栓劑; approved use=詳見仿單; product names=“培力”保理寧陰道栓劑 / Polinin vaginal suppositories“P.L.”. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0010",
+      "license_number": "衛署藥製字第009250號",
+      "chinese_name": "\"永信\"無秘栓劑",
+      "english_name": "BISACODYL SUPPOSITORIES \"YUNG SHIN\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "除非醫師另有處方，否則依下列推薦劑量使用。\r\n便祕：[成人及10歲以上的兒童]1-2錠(5-10mg)，[4-10歲兒童]1錠(5mg)，[4歲以下兒童]建議使用1/2栓劑(5mg)。建議在晚上服用腸溶糖衣錠，翌晨即可排便，且必須整錠伴與適量的液體吞服。但腸溶糖衣錠請勿與會降低上腸胃道酸度的製品（例如牛奶、制酸劑或某些正子幫浦抑制劑）同時服用，以免腸溶衣過早被溶解。\r\n用於診斷過程及手術前的準備：用於診斷過程及手術前、後清除腸容物時，需在醫護監督下使用Bisacodyl。用於腹部放射照影檢查或手術前腸容物徹底排空，錠劑必須與栓劑配合使用。[成人]建議劑量為在檢查前夜睡前2-4顆腸溶糖衣錠 ，檢查當天早上再使用一個栓劑。[4歲及4歲以上兒童]建議在晚上服用一顆腸溶糖衣錠，翌晨再使用半個栓劑。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "暫時緩解便秘，診斷及手術前清腸。",
+      "indication_category": "便秘與排便準備",
+      "active_ingredients": [
+        "BISACODYL"
+      ],
+      "therapeutic_classes": [
+        "laxative"
+      ],
+      "license_year": "1976",
+      "license_status": "active",
+      "license_expiry_date": "2030/03/17",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=除非醫師另有處方，否則依下列推薦劑量使用。\r\n便祕：[成人及10歲以上的兒童]1-2錠(5-10mg)，[4-10歲兒童]1錠(5mg)，[4歲以下兒童]建議使用1/2栓劑(5mg)。建議在晚上服用腸溶糖衣錠，翌晨即可排便，且必須整錠伴與適量的液體吞服。但腸溶糖衣錠請勿與會降低上腸胃道酸度的製品（例如牛奶、制酸劑或某些正子幫浦抑制劑）同時服用，以免腸溶衣過早被溶解。\r\n用於診斷過程及手術前的準備：用於診斷過程及手術前、後清除腸容物時，需在醫護監督下使用Bisacodyl。用於腹部放射照影檢查或手術前腸容物徹底排空，錠劑必須與栓劑配合使用。[成人]建議劑量為在檢查前夜睡前2-4顆腸溶糖衣錠 ，檢查當天早上再使用一個栓劑。[4歲及4歲以上兒童]建議在晚上服用一顆腸溶糖衣錠，翌晨再使用半個栓劑。; product names=\"永信\"無秘栓劑 / BISACODYL SUPPOSITORIES \"YUNG SHIN\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0011",
+      "license_number": "衛署藥製字第030538號",
+      "chinese_name": "\"培力\"益汝栓劑５０毫克",
+      "english_name": "ECOVAL SUPPOSITORY 50MG \"P.L.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "黴菌、念珠菌感染所引起之腟炎及外陰腟炎",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "ECONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1987",
+      "license_status": "active",
+      "license_expiry_date": "2029/12/14",
+      "applicant": "培力藥品工業股份有限公司",
+      "manufacturer": "培力藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"培力\"益汝栓劑５０毫克 / ECOVAL SUPPOSITORY 50MG \"P.L.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0012",
+      "license_number": "衛署藥製字第030552號",
+      "chinese_name": "小兒熱之200止熱栓劑",
+      "english_name": "ACETA 200 SUPPOSITORY",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "發燒或需要時服用，若症狀持續，則每4~6小時可重複服用。每24小時內不可超過5次。6歲以上未滿12歲，每次1~2顆；3歲以上未滿6歲，每次1顆；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。初次應使用最小建議劑量，再視症狀增減用量。本藥不得剝半使用。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "退燒、止痛(緩解頭痛、牙痛、咽喉痛、關節痛、神經痛、肌肉酸痛、月經痛)。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "ANIMAL HEART EXTRACT, WATER INSOLUBLE *"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1987",
+      "license_status": "active",
+      "license_expiry_date": "2028/09/03",
+      "applicant": "回春堂製藥廠股份有限公司",
+      "manufacturer": "回春堂製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=發燒或需要時服用，若症狀持續，則每4~6小時可重複服用。每24小時內不可超過5次。6歲以上未滿12歲，每次1~2顆；3歲以上未滿6歲，每次1顆；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。初次應使用最小建議劑量，再視症狀增減用量。本藥不得剝半使用。; product names=小兒熱之200止熱栓劑 / ACETA 200 SUPPOSITORY. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0013",
+      "license_number": "衛署藥製字第030553號",
+      "chinese_name": "小兒熱之100止熱栓劑",
+      "english_name": "ACETA 100 SUPPOSITORY",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "發燒或需要時服用，若症狀持續，則每4~6小時可重複服用。每24小時內不可超過6次。6歲以上未滿12歲，每次2~3顆；3歲以上未滿6歲，每次1顆；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。初次應使用最小建議劑量，再視症狀增減用量。本藥不得剝半使用。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "退燒、止痛(緩解頭痛、牙痛、咽喉痛、關節痛、神經痛、肌肉酸痛、月經痛)。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "ACETAMINOPHEN (EQ TO PARACETAMOL)"
+      ],
+      "therapeutic_classes": [
+        "antipyretic_analgesic"
+      ],
+      "license_year": "1987",
+      "license_status": "active",
+      "license_expiry_date": "2028/08/27",
+      "applicant": "回春堂製藥廠股份有限公司",
+      "manufacturer": "回春堂製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=發燒或需要時服用，若症狀持續，則每4~6小時可重複服用。每24小時內不可超過6次。6歲以上未滿12歲，每次2~3顆；3歲以上未滿6歲，每次1顆；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。初次應使用最小建議劑量，再視症狀增減用量。本藥不得剝半使用。; product names=小兒熱之100止熱栓劑 / ACETA 100 SUPPOSITORY. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0014",
+      "license_number": "衛署藥製字第030554號",
+      "chinese_name": "熱之３００止熱栓劑",
+      "english_name": "ACETA 300 SUPPOSITORY",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "發燒或需要時使用，若症狀持續，則每4~6小時可重複使用，每24小時內不可超過4次。成人每次1顆，12歲以上適用成人劑量。本藥不得剝半使用。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "退燒、止痛（緩解頭痛、牙痛、咽喉痛、關節痛、神經痛、肌肉酸痛、月經痛）。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "ACETAMINOPHEN (EQ TO PARACETAMOL)"
+      ],
+      "therapeutic_classes": [
+        "antipyretic_analgesic"
+      ],
+      "license_year": "1987",
+      "license_status": "active",
+      "license_expiry_date": "2028/10/20",
+      "applicant": "回春堂製藥廠股份有限公司",
+      "manufacturer": "回春堂製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=發燒或需要時使用，若症狀持續，則每4~6小時可重複使用，每24小時內不可超過4次。成人每次1顆，12歲以上適用成人劑量。本藥不得剝半使用。; product names=熱之３００止熱栓劑 / ACETA 300 SUPPOSITORY. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0015",
+      "license_number": "衛署藥製字第030591號",
+      "chinese_name": "\"培力\" 普他寧栓劑50毫克（待克菲鈉）",
+      "english_name": "VOTALIN SUPPOSITORY 50MG \"P.L.\" (DICLOFENAC SODIUM)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "本藥須由醫師處方使用。降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。 成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投 予75-100 mg 即足夠。每日總劑量應分2-3 次使用。為避免夜間疼痛及早晨僵硬 症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。 兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg 體重，分2-3 次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg 體重分次使用。 栓劑50 mg 不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1988",
+      "license_status": "active",
+      "license_expiry_date": "2030/01/18",
+      "applicant": "培力藥品工業股份有限公司",
+      "manufacturer": "培力藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=本藥須由醫師處方使用。降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。 成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投 予75-100 mg 即足夠。每日總劑量應分2-3 次使用。為避免夜間疼痛及早晨僵硬 症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。 兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg 體重，分2-3 次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg 體重分次使用。 栓劑50 mg 不建議使用於孩童。; product names=\"培力\" 普他寧栓劑50毫克（待克菲鈉） / VOTALIN SUPPOSITORY 50MG \"P.L.\" (DICLOFENAC SODIUM). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0016",
+      "license_number": "衛署藥製字第030647號",
+      "chinese_name": "\"生達\" 必克炎栓劑１２．５毫克（待克菲那）",
+      "english_name": "Difena Supp. 12.5mg \"Standard\" (Diclofenac Sodium)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "詳如仿單",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1988",
+      "license_status": "active",
+      "license_expiry_date": "2030/02/09",
+      "applicant": "生達化學製藥股份有限公司",
+      "manufacturer": "培力藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=詳如仿單; product names=\"生達\" 必克炎栓劑１２．５毫克（待克菲那） / Difena Supp. 12.5mg \"Standard\" (Diclofenac Sodium). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0017",
+      "license_number": "衛署藥製字第030651號",
+      "chinese_name": "“生達”必克炎栓劑２５毫克（待克菲那）",
+      "english_name": "Difena Supp. 25mg \"Standard\" (Diclofenac Sodium)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "詳如仿單",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1988",
+      "license_status": "active",
+      "license_expiry_date": "2030/02/09",
+      "applicant": "生達化學製藥股份有限公司",
+      "manufacturer": "培力藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=詳如仿單; product names=“生達”必克炎栓劑２５毫克（待克菲那） / Difena Supp. 25mg \"Standard\" (Diclofenac Sodium). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0018",
+      "license_number": "衛署藥製字第037645號",
+      "chinese_name": "\"華興\"安喘康栓劑",
+      "english_name": "ATHMACON SUPPOSITORIES \"H.S.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "氣管與支氣管痙攣。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "DL-METHYLEPHEDRINE HCL",
+        "DIPROPHYLLINE"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1994",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/31",
+      "applicant": "華興化學製藥廠股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"華興\"安喘康栓劑 / ATHMACON SUPPOSITORIES \"H.S.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0019",
+      "license_number": "衛署藥製字第044211號",
+      "chinese_name": "〝華興〞舒便栓劑１０毫克",
+      "english_name": "SUBEN SUPPOSITORIES 10MG \"H.S.\" (BISACODYL)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "成人一次使用1個，每日可使用1個，12歲以上適用成人劑量，12歲以下不建議使用。本劑不得剝半使用。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "緩解便祕。",
+      "indication_category": "便秘與排便準備",
+      "active_ingredients": [
+        "BISACODYL"
+      ],
+      "therapeutic_classes": [
+        "laxative"
+      ],
+      "license_year": "2001",
+      "license_status": "active",
+      "license_expiry_date": "2031/01/15",
+      "applicant": "華興化學製藥廠股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=成人一次使用1個，每日可使用1個，12歲以上適用成人劑量，12歲以下不建議使用。本劑不得剝半使用。; product names=〝華興〞舒便栓劑１０毫克 / SUBEN SUPPOSITORIES 10MG \"H.S.\" (BISACODYL). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0020",
+      "license_number": "衛署藥輸字第025318號",
+      "chinese_name": "日方痔瘡栓劑",
+      "english_name": "HEMOSCUT SUPPOSITORIES",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "詳見仿單",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "內外痔核、肛門裂傷、肛門搔癢、脫肛、肛門周圍炎、痔出血、腫脹、疼痛等症狀之緩解。",
+      "indication_category": "痔瘡與肛門直腸不適",
+      "active_ingredients": [
+        "HYDROCORTISONE ACETATE",
+        "TOCOPHEROL ACETATE",
+        "ZINC OXIDE",
+        "LIDOCAINE",
+        "ALLANTOIN"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_local",
+        "hemorrhoid",
+        "local_anesthetic"
+      ],
+      "license_year": "2017",
+      "license_status": "active",
+      "license_expiry_date": "2026/01/12",
+      "applicant": "德佑藥品有限公司",
+      "manufacturer": "YUKINOMOTO HONTEN CO., LTD.",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=詳見仿單; product names=日方痔瘡栓劑 / HEMOSCUT SUPPOSITORIES. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0021",
+      "license_number": "衛署藥製字第018597號",
+      "chinese_name": "痣可妥栓劑",
+      "english_name": "HEMODIN SUPPOSITORIES",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "外痔核、痔出血、痔疼痛、肛門裂創、肛門周圍炎、肛門搔癢症、肛門濕疹、肛門潰瘍",
+      "indication_category": "痔瘡與肛門直腸不適",
+      "active_ingredients": [
+        "BETAMETHASONE VALERATE",
+        "PHENYLEPHRINE HCL",
+        "LIDOCAINE HCL"
+      ],
+      "therapeutic_classes": [
+        "hemorrhoid",
+        "local_anesthetic"
+      ],
+      "license_year": "1979",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/25",
+      "applicant": "臺灣派頓化學製藥股份有限公司",
+      "manufacturer": "國嘉製藥工業股份有限公司幼獅三廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=痣可妥栓劑 / HEMODIN SUPPOSITORIES. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0022",
+      "license_number": "衛署藥製字第022200號",
+      "chinese_name": "喜癒痔栓劑",
+      "english_name": "XYLMOL SUPPOSITORY \"SINPHAR\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "痔瘡、肛門裂傷、肛門周圍膿腫及脫肛",
+      "indication_category": "痔瘡與肛門直腸不適",
+      "active_ingredients": [
+        "ALUMINUM ACETATE",
+        "HYDROCORTISONE ACETATE",
+        "ZINC OXIDE",
+        "LIDOCAINE"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_local",
+        "hemorrhoid",
+        "local_anesthetic"
+      ],
+      "license_year": "1980",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/25",
+      "applicant": "杏輝藥品工業股份有限公司",
+      "manufacturer": "杏輝藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=喜癒痔栓劑 / XYLMOL SUPPOSITORY \"SINPHAR\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0023",
+      "license_number": "衛署藥輸字第016229號",
+      "chinese_name": "安可治陰道栓劑",
+      "english_name": "ALBOTHYL VAGINAL SUPPOSITORIES (OVULES)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "子宮頸糜爛、白帶、陰道炎、子宮頸炎（含由毛滴蟲及念珠菌引起者）",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "META-CRESOLSULFONIC ACID (POLICRESULEN)"
+      ],
+      "therapeutic_classes": [
+        "antiseptic"
+      ],
+      "license_year": "2025",
+      "license_status": "active",
+      "license_expiry_date": "2029/11/16",
+      "applicant": "瑞慶藥業有限公司",
+      "manufacturer": "瑪里士實業有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=安可治陰道栓劑 / ALBOTHYL VAGINAL SUPPOSITORIES (OVULES). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0024",
+      "license_number": "衛署藥製字第023664號",
+      "chinese_name": "\"歐業\"宜克治陰道栓劑（亦可那挫）",
+      "english_name": "ECONAZOLE VAGINAL SUPPOSITORIES \"O.Y.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "女性陰道念珠菌與革蘭氏陽性細菌之感染症及混合感染症",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "ECONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1981",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/25",
+      "applicant": "歐業藥品股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"歐業\"宜克治陰道栓劑（亦可那挫） / ECONAZOLE VAGINAL SUPPOSITORIES \"O.Y.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0025",
+      "license_number": "衛署藥製字第031608號",
+      "chinese_name": "\"生達\"吐必止栓劑１０毫克（多普利杜）",
+      "english_name": "DOMPEDON SUPPOSITORY 10MG \"STANDARD\"(DOMPERIDONE)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "小兒:一天2-3次直腸投與,三歲以上一次30mg,三歲以下一次，10mg,可視年齡,體重,症狀適宜增減大人:一天2-4次,一次30-60mg",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "無法口服情況下，用於噁心、嘔吐的症狀治療，糖尿病引起的胃腸蠕動異常。",
+      "indication_category": "噁心與嘔吐",
+      "active_ingredients": [
+        "DOMPERIDONE"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1989",
+      "license_status": "active",
+      "license_expiry_date": "2029/06/26",
+      "applicant": "生達化學製藥股份有限公司",
+      "manufacturer": "培力藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=小兒:一天2-3次直腸投與,三歲以上一次30mg,三歲以下一次，10mg,可視年齡,體重,症狀適宜增減大人:一天2-4次,一次30-60mg; product names=\"生達\"吐必止栓劑１０毫克（多普利杜） / DOMPEDON SUPPOSITORY 10MG \"STANDARD\"(DOMPERIDONE). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0026",
+      "license_number": "衛署藥製字第031880號",
+      "chinese_name": "\"培力\"普他寧栓劑25毫克(待克菲鈉)",
+      "english_name": "VOTALIN SUPPOSITORY 25MG \"P.L\" (DICLOFENAC SODIUM)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。 成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投 予75-100 mg 即足夠。每日總劑量應分2-3 次使用。為避免夜間疼痛及早晨僵硬 症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。 兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg 體重，分2-3 次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg 體重分次使用。 栓劑50 mg 不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1989",
+      "license_status": "active",
+      "license_expiry_date": "2029/10/20",
+      "applicant": "培力藥品工業股份有限公司",
+      "manufacturer": "培力藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。 成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投 予75-100 mg 即足夠。每日總劑量應分2-3 次使用。為避免夜間疼痛及早晨僵硬 症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。 兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg 體重，分2-3 次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg 體重分次使用。 栓劑50 mg 不建議使用於孩童。; product names=\"培力\"普他寧栓劑25毫克(待克菲鈉) / VOTALIN SUPPOSITORY 25MG \"P.L\" (DICLOFENAC SODIUM). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0027",
+      "license_number": "衛署藥製字第031881號",
+      "chinese_name": "''培力''普他寧栓劑１２．５毫克（待克菲鈉）",
+      "english_name": "VOTALIN SUPPOSITORY 12.5MG (DICLOFENAC SODIUM) \"P.L.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。 成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投 予75-100 mg 即足夠。每日總劑量應分2-3 次使用。為避免夜間疼痛及早晨僵硬 症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。 兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg 體重，分2-3 次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg 體重分次使用。 栓劑50 mg不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1989",
+      "license_status": "active",
+      "license_expiry_date": "2029/10/20",
+      "applicant": "培力藥品工業股份有限公司",
+      "manufacturer": "培力藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。 成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投 予75-100 mg 即足夠。每日總劑量應分2-3 次使用。為避免夜間疼痛及早晨僵硬 症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。 兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg 體重，分2-3 次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg 體重分次使用。 栓劑50 mg不建議使用於孩童。; product names=''培力''普他寧栓劑１２．５毫克（待克菲鈉） / VOTALIN SUPPOSITORY 12.5MG (DICLOFENAC SODIUM) \"P.L.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0028",
+      "license_number": "衛署藥製字第031918號",
+      "chinese_name": "痔福栓劑",
+      "english_name": "PILELIFE SUPPOSITORIES",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "緩解痔核、裂痔、痔腫、痔痒、外痔症狀所產生的痔痛、痔腫、癢及出血現象",
+      "indication_category": "痔瘡與肛門直腸不適",
+      "active_ingredients": [
+        "LIDOCAINE",
+        "TOCOPHEROL ACETATE ALPHA DL-",
+        "PREDNISOLONE ACETATE",
+        "CHLORHEXIDINE HCL",
+        "ALUMINUM CHLORHYDROXYALLANTOINATE (ALCOXA)"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_local",
+        "hemorrhoid",
+        "local_anesthetic"
+      ],
+      "license_year": "1989",
+      "license_status": "active",
+      "license_expiry_date": "2029/11/15",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=痔福栓劑 / PILELIFE SUPPOSITORIES. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0029",
+      "license_number": "衛署藥製字第031976號",
+      "chinese_name": "\"生達\"速樂陰道栓劑150毫克（亦可那挫）",
+      "english_name": "STAZOL VAG. SUPP. 150MG \"STANDARD\"(ECONAZOLE)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "女性陰道念珠菌與革蘭氏陽性細菌感染症及混合感染症",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "ECONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1989",
+      "license_status": "active",
+      "license_expiry_date": "2029/12/09",
+      "applicant": "生達化學製藥股份有限公司",
+      "manufacturer": "培力藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"生達\"速樂陰道栓劑150毫克（亦可那挫） / STAZOL VAG. SUPP. 150MG \"STANDARD\"(ECONAZOLE). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0030",
+      "license_number": "內衛藥製字第016526號",
+      "chinese_name": "秘利栓劑",
+      "english_name": "BIDYL SUPPOSITORIES",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "一日1次，於睡前(或空腹時)使用。成人1次1顆，12歲以上適用成人劑量。本藥不得&#21093;半使用。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "緩解便秘。",
+      "indication_category": "便秘與排便準備",
+      "active_ingredients": [
+        "BISACODYL"
+      ],
+      "therapeutic_classes": [
+        "laxative"
+      ],
+      "license_year": "1971",
+      "license_status": "active",
+      "license_expiry_date": "2029/03/10",
+      "applicant": "中國化學製藥股份有限公司新豐工廠",
+      "manufacturer": "中國化學製藥股份有限公司新豐工廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=一日1次，於睡前(或空腹時)使用。成人1次1顆，12歲以上適用成人劑量。本藥不得&#21093;半使用。; product names=秘利栓劑 / BIDYL SUPPOSITORIES. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0031",
+      "license_number": "衛署藥製字第010335號",
+      "chinese_name": "\"派頓”阿司比靈栓劑",
+      "english_name": "ASPIRIN SUPPOSITORIES \"PATRON\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "發燒或需要時服用，若症狀持續，則每4~6小時可重複使用，每24小時內不可超過3次。成人每次1顆，12歲以上適用成人劑量。本藥不得剝半使用。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "退燒、止痛（緩解頭痛、牙痛、咽喉痛、關節痛、神經痛、肌肉酸痛、月經痛）",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "ASPIRIN"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1976",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/25",
+      "applicant": "臺灣派頓化學製藥股份有限公司",
+      "manufacturer": "臺灣派頓化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=發燒或需要時服用，若症狀持續，則每4~6小時可重複使用，每24小時內不可超過3次。成人每次1顆，12歲以上適用成人劑量。本藥不得剝半使用。; product names=\"派頓”阿司比靈栓劑 / ASPIRIN SUPPOSITORIES \"PATRON\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0032",
+      "license_number": "衛署藥製字第029482號",
+      "chinese_name": "\"大豐\"便利栓劑10毫克",
+      "english_name": "BENLY SUPPOSITORIES 10MG \"T.F.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "1次使用1個。每日可使用1個。栓劑不得剝半使用。使用時撕開栓殼後，由肛門直腸塞入即可。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "緩解便祕。",
+      "indication_category": "便秘與排便準備",
+      "active_ingredients": [
+        "BISACODYL"
+      ],
+      "therapeutic_classes": [
+        "laxative"
+      ],
+      "license_year": "1987",
+      "license_status": "active",
+      "license_expiry_date": "2029/03/07",
+      "applicant": "大豐製藥股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=1次使用1個。每日可使用1個。栓劑不得剝半使用。使用時撕開栓殼後，由肛門直腸塞入即可。; product names=\"大豐\"便利栓劑10毫克 / BENLY SUPPOSITORIES 10MG \"T.F.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0033",
+      "license_number": "衛署藥製字第029558號",
+      "chinese_name": "\"大豐\" 消炎栓劑１２．５毫克（待克菲那）",
+      "english_name": "SHOREN SUPPOSITORIES 12.5MG \"T.F.\" (DICLOFENAC)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。 成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投 予75-100 mg 即足夠。每日總劑量應分2-3 次使用。為避免夜間疼痛及早晨僵硬 症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。 兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg 體重，分2-3 次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg 體重分次使用。 栓劑50 mg 及75 mg 不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1987",
+      "license_status": "active",
+      "license_expiry_date": "2029/04/02",
+      "applicant": "大豐製藥股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。 成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投 予75-100 mg 即足夠。每日總劑量應分2-3 次使用。為避免夜間疼痛及早晨僵硬 症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。 兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg 體重，分2-3 次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg 體重分次使用。 栓劑50 mg 及75 mg 不建議使用於孩童。; product names=\"大豐\" 消炎栓劑１２．５毫克（待克菲那） / SHOREN SUPPOSITORIES 12.5MG \"T.F.\" (DICLOFENAC). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0034",
+      "license_number": "衛署藥製字第029559號",
+      "chinese_name": "\"大豐\" 消炎栓劑２５毫克（待克菲那）",
+      "english_name": "SHOREN SUPPOSITORIES 25MG \"T.F.\" (DICLOFENAC)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。\r\n成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投\r\n予75-100 mg 即足夠。每日總劑量應分2-3 次使用。為避免夜間疼痛及早晨僵硬症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。\r\n兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg 體重，分2-3\r\n次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg 體重分次使用。\r\n栓劑50 mg 及75 mg 不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1987",
+      "license_status": "active",
+      "license_expiry_date": "2029/04/02",
+      "applicant": "大豐製藥股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。\r\n成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投\r\n予75-100 mg 即足夠。每日總劑量應分2-3 次使用。為避免夜間疼痛及早晨僵硬症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。\r\n兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg 體重，分2-3\r\n次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg 體重分次使用。\r\n栓劑50 mg 及75 mg 不建議使用於孩童。; product names=\"大豐\" 消炎栓劑２５毫克（待克菲那） / SHOREN SUPPOSITORIES 25MG \"T.F.\" (DICLOFENAC). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0035",
+      "license_number": "衛署藥製字第029608號",
+      "chinese_name": "\"明德\" 速莫炎栓劑12.5毫克",
+      "english_name": "SUMOFEN SUPPOSITORY 12.5MG (DICLOFENAC)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "詳如仿單",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1987",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/11",
+      "applicant": "明德製藥股份有限公司",
+      "manufacturer": "明德製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=詳如仿單; product names=\"明德\" 速莫炎栓劑12.5毫克 / SUMOFEN SUPPOSITORY 12.5MG (DICLOFENAC). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0036",
+      "license_number": "衛署藥製字第029609號",
+      "chinese_name": "\"明德\"速莫炎栓劑２５毫克",
+      "english_name": "SUMOFEN SUPPOSITORY 25MG (DICLOFENAC)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "詳如仿單",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1987",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/11",
+      "applicant": "明德製藥股份有限公司",
+      "manufacturer": "明德製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=詳如仿單; product names=\"明德\"速莫炎栓劑２５毫克 / SUMOFEN SUPPOSITORY 25MG (DICLOFENAC). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0037",
+      "license_number": "衛署藥製字第040292號",
+      "chinese_name": "\"明德\" 咳喘寧　栓劑",
+      "english_name": "CARESS SUPPOSITORIES \"MEIDER\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "氣管與支氣管痙攣",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "DIPROPHYLLINE",
+        "DL-METHYLEPHEDRINE HCL"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1996",
+      "license_status": "active",
+      "license_expiry_date": "2026/09/16",
+      "applicant": "明德製藥股份有限公司",
+      "manufacturer": "明德製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"明德\" 咳喘寧　栓劑 / CARESS SUPPOSITORIES \"MEIDER\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0038",
+      "license_number": "衛署藥製字第041957號",
+      "chinese_name": "樂定小兒用栓劑１６０毫克（乙醯胺酚）",
+      "english_name": "LOTIN CHILDREN'S SUPPOSITORIES 160MG (ACETAMINOPHEN)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "發燒或需要時使用，若症狀持續，則每4~6小時可重複使用，每24小時內不可超過5次。6歲以上未滿12歲，每次1顆；6歲以下之幼童，請洽醫師診治，不宜自行使用。本藥不得剝半使用。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "退燒、止痛〈緩解頭痛、牙痛、咽喉痛、關節痛、神經痛、肌肉酸痛、月經痛〉。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "ACETAMINOPHEN (EQ TO PARACETAMOL)"
+      ],
+      "therapeutic_classes": [
+        "antipyretic_analgesic"
+      ],
+      "license_year": "1998",
+      "license_status": "active",
+      "license_expiry_date": "2028/03/05",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=發燒或需要時使用，若症狀持續，則每4~6小時可重複使用，每24小時內不可超過5次。6歲以上未滿12歲，每次1顆；6歲以下之幼童，請洽醫師診治，不宜自行使用。本藥不得剝半使用。; product names=樂定小兒用栓劑１６０毫克（乙醯胺酚） / LOTIN CHILDREN'S SUPPOSITORIES 160MG (ACETAMINOPHEN). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0039",
+      "license_number": "衛署藥製字第043250號",
+      "chinese_name": "〝派頓〞甘油栓劑",
+      "english_name": "GLYCERIN SUPPOSITORIES \"PATRON\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "成人1次使用1個，每日可使用1次，12歲以上適用成人劑量。本藥不可剝半使用。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "軟便。",
+      "indication_category": "便秘與排便準備",
+      "active_ingredients": [
+        "GLYCERIN (eq to GLYCEROL)"
+      ],
+      "therapeutic_classes": [
+        "laxative"
+      ],
+      "license_year": "1999",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/25",
+      "applicant": "臺灣派頓化學製藥股份有限公司",
+      "manufacturer": "臺灣派頓化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=成人1次使用1個，每日可使用1次，12歲以上適用成人劑量。本藥不可剝半使用。; product names=〝派頓〞甘油栓劑 / GLYCERIN SUPPOSITORIES \"PATRON\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0040",
+      "license_number": "衛署藥製字第043459號",
+      "chinese_name": "婦淨陰道錠１００公絲〝華興〞",
+      "english_name": "LICOMILE VAGINAL TABLETS 100MG (ISOCONAZOLE) \"H.S.\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "陰道黴菌感染包括與革蘭氏陽性細菌的混合感染。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "ISOCONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2000",
+      "license_status": "active",
+      "license_expiry_date": "2030/01/05",
+      "applicant": "華興化學製藥廠股份有限公司",
+      "manufacturer": "華興化學製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=婦淨陰道錠１００公絲〝華興〞 / LICOMILE VAGINAL TABLETS 100MG (ISOCONAZOLE) \"H.S.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0041",
+      "license_number": "衛署藥製字第057924號",
+      "chinese_name": "婦可安陰道錠10萬單位(耐絲菌素)",
+      "english_name": "FUKEAN Vaginal Tablets 100,000units (Nystatin)",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "請詳見仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "陰道念珠菌感染症。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "NYSTATIN"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2013",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/09",
+      "applicant": "井田國際醫藥廠股份有限公司",
+      "manufacturer": "井田國際醫藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=請詳見仿單; product names=婦可安陰道錠10萬單位(耐絲菌素) / FUKEAN Vaginal Tablets 100,000units (Nystatin). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0042",
+      "license_number": "衛署藥製字第018786號",
+      "chinese_name": "\"嘉林\"脫利可膣錠",
+      "english_name": "TRICO VAGINAL TABLETS\"C.L\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "陰道滴蟲感染所引起之陰道炎",
+      "indication_category": "陰道細菌或滴蟲感染",
+      "active_ingredients": [
+        "METRONIDAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antibacterial",
+        "antiprotozoal",
+        "combination"
+      ],
+      "license_year": "1979",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/25",
+      "applicant": "嘉林藥品有限公司",
+      "manufacturer": "旭能醫藥生技股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=\"嘉林\"脫利可膣錠 / TRICO VAGINAL TABLETS\"C.L\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0043",
+      "license_number": "衛署藥製字第023796號",
+      "chinese_name": "\"回春堂\"美可能陰道栓劑（亦可那挫）",
+      "english_name": "ECORIN VAGINAL SUPPOSITORY \"H.C.T.\" (ECONAZOLE)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "黴菌、念珠菌及細菌之陰道及陰部感染",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "ECONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1981",
+      "license_status": "active",
+      "license_expiry_date": "2029/07/03",
+      "applicant": "回春堂製藥廠股份有限公司",
+      "manufacturer": "回春堂製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"回春堂\"美可能陰道栓劑（亦可那挫） / ECORIN VAGINAL SUPPOSITORY \"H.C.T.\" (ECONAZOLE). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0044",
+      "license_number": "衛署藥製字第023864號",
+      "chinese_name": "千痔療栓劑",
+      "english_name": "ALL RIGHT Hemorrhoidal Suppository",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "內痔、外痔、肛門裂傷、肛門周圍炎、痔疾引起之腫痛、出血之緩和",
+      "indication_category": "痔瘡與肛門直腸不適",
+      "active_ingredients": [
+        "LIDOCAINE",
+        "HYDROCORTISONE ACETATE",
+        "ZINC OXIDE",
+        "ALLANTOIN"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_local",
+        "hemorrhoid",
+        "local_anesthetic"
+      ],
+      "license_year": "1981",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/25",
+      "applicant": "回春堂製藥廠股份有限公司",
+      "manufacturer": "回春堂製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=千痔療栓劑 / ALL RIGHT Hemorrhoidal Suppository. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0045",
+      "license_number": "衛署藥製字第028315號",
+      "chinese_name": "痔莫痛栓劑",
+      "english_name": "HEMOTHOL SUPPOSITORIES",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "內外痔核、肛門裂傷、肛門搔癢、脫肛、肛門潰爛、肛門周圍炎、痔出血、痔疼痛",
+      "indication_category": "痔瘡與肛門直腸不適",
+      "active_ingredients": [
+        "ALLANTOIN",
+        "TOCOPHEROL ACETATE ALPHA DL-",
+        "BENZOCAINE (ETHYL AMINOBENZOATE)",
+        "HYDROCORTISONE ACETATE",
+        "ZINC OXIDE",
+        "CHLORHEXIDINE HCL"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_local",
+        "hemorrhoid",
+        "local_anesthetic"
+      ],
+      "license_year": "1985",
+      "license_status": "active",
+      "license_expiry_date": "2029/10/01",
+      "applicant": "中國化學製藥股份有限公司新豐工廠",
+      "manufacturer": "中國化學製藥股份有限公司新豐工廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=痔莫痛栓劑 / HEMOTHOL SUPPOSITORIES. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0046",
+      "license_number": "衛署藥製字第028341號",
+      "chinese_name": "可寧陰道錠１００公絲（邁可那挫）",
+      "english_name": "GYNOMYCODERIN VAGINAL TABLETS 100MG (MICONAZOE NITRATE)",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "由念珠菌及其他黴菌所引起的陰道炎及外陰道炎",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "MICONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1985",
+      "license_status": "active",
+      "license_expiry_date": "2029/11/06",
+      "applicant": "寶齡富錦生技股份有限公司",
+      "manufacturer": "寶齡富錦生技股份有限公司平鎮廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=可寧陰道錠１００公絲（邁可那挫） / GYNOMYCODERIN VAGINAL TABLETS 100MG (MICONAZOE NITRATE). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0047",
+      "license_number": "衛署藥製字第028615號",
+      "chinese_name": "\"衛達\" 易樂潔陰道錠１５０毫克",
+      "english_name": "ECOZOL VAGINAL TABLETS 150MG \"WEIDAR\" (ECONAZOLE)",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "因念珠菌及其他念珠屬菌種、酵母及酵母樣真菌、麴菌屬菌種、放射線菌、革蘭氏陽性菌等引起之陰道炎",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "ECONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1986",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/01",
+      "applicant": "衛達化學製藥股份有限公司",
+      "manufacturer": "衛達化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=\"衛達\" 易樂潔陰道錠１５０毫克 / ECOZOL VAGINAL TABLETS 150MG \"WEIDAR\" (ECONAZOLE). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0048",
+      "license_number": "衛署藥製字第028656號",
+      "chinese_name": "非炎栓劑１２．５毫克（待克菲那）",
+      "english_name": "VOREN SUPPOSITORIES 12.5MG (DICLOFENAC)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "請詳見仿單",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1998",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/12",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=請詳見仿單; product names=非炎栓劑１２．５毫克（待克菲那） / VOREN SUPPOSITORIES 12.5MG (DICLOFENAC). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0049",
+      "license_number": "衛署藥製字第028659號",
+      "chinese_name": "非炎栓劑５０公絲（待克菲那）",
+      "english_name": "VOREN SUPPOSITORIES 50MG (DICLOFENAC)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "請詳見仿單",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1986",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/14",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=請詳見仿單; product names=非炎栓劑５０公絲（待克菲那） / VOREN SUPPOSITORIES 50MG (DICLOFENAC). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0050",
+      "license_number": "衛署藥製字第028804號",
+      "chinese_name": "麻敵通栓劑２５公絲（待克菲那）",
+      "english_name": "MULTIDON SUPPOSITORY 25MG (DICLOFENAC)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "成人: 建議起始劑量為每日100-150mg。症狀較輕或長期治療時, 每日投予75-100mg即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀, 日間以錠劑治療外, 可於睡前補充一粒栓劑(至每日最大劑量150mg)。\r\n兒童: 一歲以上的孩童視病情的嚴重度給予每天0.5-2mg/Kg體重, 分2-3次使用。幼年型風濕性關節炎的治療可提高至3mg/Kg體重分次使用。\r\n栓劑50mg及75mg不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1986",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/26",
+      "applicant": "回春堂製藥廠股份有限公司",
+      "manufacturer": "回春堂製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=成人: 建議起始劑量為每日100-150mg。症狀較輕或長期治療時, 每日投予75-100mg即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀, 日間以錠劑治療外, 可於睡前補充一粒栓劑(至每日最大劑量150mg)。\r\n兒童: 一歲以上的孩童視病情的嚴重度給予每天0.5-2mg/Kg體重, 分2-3次使用。幼年型風濕性關節炎的治療可提高至3mg/Kg體重分次使用。\r\n栓劑50mg及75mg不建議使用於孩童。; product names=麻敵通栓劑２５公絲（待克菲那） / MULTIDON SUPPOSITORY 25MG (DICLOFENAC). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0051",
+      "license_number": "衛署藥製字第028805號",
+      "chinese_name": "麻敵通栓劑12.5毫克(待克菲那)",
+      "english_name": "MULTIDON SUPPOSITORY 12.5MG (DICLOFENAC)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。\r\n成人： 每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投予75 -100 mg即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。\r\n兒童：一歲以上的孩童視病情的嚴重度給予每天0.5 -2 mg/kg體重，分 2-3次使用。幼年型風濕性關節炎的治療可提高至 3 mg/kg體重分次使用。 \r\n栓劑50 mg及75 mg不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1986",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/26",
+      "applicant": "回春堂製藥廠股份有限公司",
+      "manufacturer": "回春堂製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。\r\n成人： 每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投予75 -100 mg即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。\r\n兒童：一歲以上的孩童視病情的嚴重度給予每天0.5 -2 mg/kg體重，分 2-3次使用。幼年型風濕性關節炎的治療可提高至 3 mg/kg體重分次使用。 \r\n栓劑50 mg及75 mg不建議使用於孩童。; product names=麻敵通栓劑12.5毫克(待克菲那) / MULTIDON SUPPOSITORY 12.5MG (DICLOFENAC). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0052",
+      "license_number": "衛署藥製字第032800號",
+      "chinese_name": "\"衛達\"來克炎栓劑12.5毫克",
+      "english_name": "Dicloren Suppositories 12.5mg \"Weidar\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "本藥須由醫師處方使用。為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。\r\n成人：每日最大劑量不建議大於100MG。症狀較輕或長期治療時，每日投予75-100MG即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。\r\n兒童:一歲以上的孩童視病情的嚴重度給予每天0.5-2MG/KG體重，分2-3次使用。幼年型風濕性關節炎的治療可提高至3MG/KG體重分次使用。栓劑50mg及75mg不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1990",
+      "license_status": "active",
+      "license_expiry_date": "2030/07/23",
+      "applicant": "衛達化學製藥股份有限公司",
+      "manufacturer": "衛達化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=本藥須由醫師處方使用。為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。\r\n成人：每日最大劑量不建議大於100MG。症狀較輕或長期治療時，每日投予75-100MG即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。\r\n兒童:一歲以上的孩童視病情的嚴重度給予每天0.5-2MG/KG體重，分2-3次使用。幼年型風濕性關節炎的治療可提高至3MG/KG體重分次使用。栓劑50mg及75mg不建議使用於孩童。; product names=\"衛達\"來克炎栓劑12.5毫克 / Dicloren Suppositories 12.5mg \"Weidar\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0053",
+      "license_number": "衛署藥製字第032809號",
+      "chinese_name": "\"派頓\"挪痛炎栓劑２５毫克（待克菲那）",
+      "english_name": "NOTAREN SUPPOSITORIED 25MG \"PATRON\" (DICLOFENAC)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "如仿單",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1990",
+      "license_status": "active",
+      "license_expiry_date": "2030/07/24",
+      "applicant": "臺灣派頓化學製藥股份有限公司",
+      "manufacturer": "臺灣派頓化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=如仿單; product names=\"派頓\"挪痛炎栓劑２５毫克（待克菲那） / NOTAREN SUPPOSITORIED 25MG \"PATRON\" (DICLOFENAC). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0054",
+      "license_number": "衛署藥製字第032836號",
+      "chinese_name": "非常理痔栓劑",
+      "english_name": "PILESGOOD SUPPOSITORIES \"J.C.S.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "緩解裂痔、痔核、痔腫、痔痒、外痔症狀所產生之痔痛、痔腫、痒及出血現象",
+      "indication_category": "痔瘡與肛門直腸不適",
+      "active_ingredients": [
+        "TOCOPHEROL ACETATE ALPHA DL-",
+        "PREDNISOLONE ACETATE",
+        "ALUMINUM CHLORHYDROXYALLANTOINATE (ALCOXA)",
+        "CHLORHEXIDINE HCL",
+        "LIDOCAINE"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_local",
+        "hemorrhoid",
+        "local_anesthetic"
+      ],
+      "license_year": "1990",
+      "license_status": "active",
+      "license_expiry_date": "2030/07/26",
+      "applicant": "興中美生技有限公司",
+      "manufacturer": "培力藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=非常理痔栓劑 / PILESGOOD SUPPOSITORIES \"J.C.S.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0055",
+      "license_number": "衛署藥製字第032885號",
+      "chinese_name": "\"華興\"膣潔陰道錠250公絲(硝基甲嘧唑乙醇)",
+      "english_name": "VAZOLE VAGINAL TABLETS 250MG (METRONIDAZOLE)\"H.S.\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "陰道滴蟲感染所引起之陰道炎",
+      "indication_category": "陰道細菌或滴蟲感染",
+      "active_ingredients": [
+        "METRONIDAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antibacterial",
+        "antiprotozoal",
+        "combination"
+      ],
+      "license_year": "1990",
+      "license_status": "active",
+      "license_expiry_date": "2030/08/09",
+      "applicant": "華興化學製藥廠股份有限公司",
+      "manufacturer": "華興化學製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=\"華興\"膣潔陰道錠250公絲(硝基甲嘧唑乙醇) / VAZOLE VAGINAL TABLETS 250MG (METRONIDAZOLE)\"H.S.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0056",
+      "license_number": "衛署藥製字第032892號",
+      "chinese_name": "“大豐”莫林栓劑10毫克",
+      "english_name": "Molin Suppository 10mg \"T.F.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "小兒:一天2-3次直腸投與，三歲以上一次30mg，三歲以下一次10mg，可視年齡、體重、症狀適宜增減。大人:一天2-4次 ，一次30-60mg。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "無法口服情況下,用於噁心、嘔吐的症狀治療,糖尿病引起的胃腸蠕動異常。",
+      "indication_category": "噁心與嘔吐",
+      "active_ingredients": [
+        "DOMPERIDONE"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1990",
+      "license_status": "active",
+      "license_expiry_date": "2030/08/10",
+      "applicant": "大豐製藥股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=小兒:一天2-3次直腸投與，三歲以上一次30mg，三歲以下一次10mg，可視年齡、體重、症狀適宜增減。大人:一天2-4次 ，一次30-60mg。; product names=“大豐”莫林栓劑10毫克 / Molin Suppository 10mg \"T.F.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0057",
+      "license_number": "衛署藥製字第032937號",
+      "chinese_name": "\"華興\"待可芬栓劑25公絲(待克菲那)",
+      "english_name": "DICLOFEN SUPPOSITORY 25MG (DICLOFENAC) \"H.S.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "成人: 建議起始劑量為每日100-150mg。症狀較輕或長期治療時, 每日投與75-100mg即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀, 日間以錠劑治療外, 可於睡前補充一粒栓劑(至每日最大劑量150mg)。\r\n兒童: 一歲以上的孩童視病情的嚴重度給予每天0.5-2mg/Kg體重, 分2-3次使用。幼年型風濕性關節炎的治療可提高至3mg/Kg體重分次使用。\r\n栓劑50mg及75mg不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1990",
+      "license_status": "active",
+      "license_expiry_date": "2030/08/23",
+      "applicant": "華興化學製藥廠股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=成人: 建議起始劑量為每日100-150mg。症狀較輕或長期治療時, 每日投與75-100mg即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀, 日間以錠劑治療外, 可於睡前補充一粒栓劑(至每日最大劑量150mg)。\r\n兒童: 一歲以上的孩童視病情的嚴重度給予每天0.5-2mg/Kg體重, 分2-3次使用。幼年型風濕性關節炎的治療可提高至3mg/Kg體重分次使用。\r\n栓劑50mg及75mg不建議使用於孩童。; product names=\"華興\"待可芬栓劑25公絲(待克菲那) / DICLOFEN SUPPOSITORY 25MG (DICLOFENAC) \"H.S.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0058",
+      "license_number": "衛署藥製字第039303號",
+      "chinese_name": "“國嘉”冬培力栓劑３０毫克",
+      "english_name": "DOMPERID SUPPOSITORIES 30MG (DOMPERIDONE) \"KOJAR\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "小兒：一天2-3次直腸投予，三歲以上一次30mg，三歲以下一次10mg，可視年齡、體重、症狀適宜增減。\r\n大人：一天2-4次，一次30-60mg。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "無法口服情況下，用於噁心、嘔吐的症狀治療，糖尿病引起的胃腸蠕動異常？",
+      "indication_category": "噁心與嘔吐",
+      "active_ingredients": [
+        "DOMPERIDONE"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1995",
+      "license_status": "active",
+      "license_expiry_date": "2030/09/16",
+      "applicant": "國嘉製藥工業股份有限公司幼獅三廠",
+      "manufacturer": "國嘉製藥工業股份有限公司幼獅三廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=小兒：一天2-3次直腸投予，三歲以上一次30mg，三歲以下一次10mg，可視年齡、體重、症狀適宜增減。\r\n大人：一天2-4次，一次30-60mg。; product names=“國嘉”冬培力栓劑３０毫克 / DOMPERID SUPPOSITORIES 30MG (DOMPERIDONE) \"KOJAR\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0059",
+      "license_number": "衛署藥製字第039350號",
+      "chinese_name": "達克芬栓劑２５毫克",
+      "english_name": "DICLOFEN SUPPOSITORIES 25MG (DICLOFENAC) \"KOJAR\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "成人：建議起始劑量為每日100-150mg。症狀較輕或長期治療時，每日投予75mg-100mg即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀，日間以錠劑治療外，可於睡前補充一粒栓劑（至每日最大劑量150mg）。\r\n兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2mg/kg體重，分2-3次使用。幼年型風濕性關節炎的治療可提高至3mg/kg體重分次使用。\r\n栓劑50mg及75mg不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1995",
+      "license_status": "active",
+      "license_expiry_date": "2030/09/30",
+      "applicant": "國嘉製藥工業股份有限公司幼獅三廠",
+      "manufacturer": "國嘉製藥工業股份有限公司幼獅三廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=成人：建議起始劑量為每日100-150mg。症狀較輕或長期治療時，每日投予75mg-100mg即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀，日間以錠劑治療外，可於睡前補充一粒栓劑（至每日最大劑量150mg）。\r\n兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2mg/kg體重，分2-3次使用。幼年型風濕性關節炎的治療可提高至3mg/kg體重分次使用。\r\n栓劑50mg及75mg不建議使用於孩童。; product names=達克芬栓劑２５毫克 / DICLOFEN SUPPOSITORIES 25MG (DICLOFENAC) \"KOJAR\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0060",
+      "license_number": "衛署藥製字第039351號",
+      "chinese_name": "\"國嘉\" 達克芬栓劑12.5毫克（待克菲那）",
+      "english_name": "DICLOFEN SUPPOSITORIES 12.5MG (DICLOFENAC) \"KOJAR\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "成人：建議起始劑量為每日100-150mg。症狀較輕或長期治療時，每日投予75-100mg即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀，日間以錠劑治療外，可於睡前補充一粒栓劑(至每日最大劑量150mg)。\r\n兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2mg/kg體重，分2-3次使用。幼年型風濕性關節炎的治療可提高至3mg/kg體重分次使用。\r\n栓劑50mg及75mg不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1995",
+      "license_status": "active",
+      "license_expiry_date": "2030/09/30",
+      "applicant": "國嘉製藥工業股份有限公司幼獅三廠",
+      "manufacturer": "國嘉製藥工業股份有限公司幼獅三廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=成人：建議起始劑量為每日100-150mg。症狀較輕或長期治療時，每日投予75-100mg即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀，日間以錠劑治療外，可於睡前補充一粒栓劑(至每日最大劑量150mg)。\r\n兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2mg/kg體重，分2-3次使用。幼年型風濕性關節炎的治療可提高至3mg/kg體重分次使用。\r\n栓劑50mg及75mg不建議使用於孩童。; product names=\"國嘉\" 達克芬栓劑12.5毫克（待克菲那） / DICLOFEN SUPPOSITORIES 12.5MG (DICLOFENAC) \"KOJAR\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0061",
+      "license_number": "衛署藥製字第047280號",
+      "chinese_name": "潔諾速陰道錠500毫克",
+      "english_name": "GYNOX VAGINAL TABLETS 500MG",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "詳見仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "由黴菌多(數念珠球菌毛滴蟲屬)所引起之白帶、陰道炎。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2005",
+      "license_status": "active",
+      "license_expiry_date": "2030/05/23",
+      "applicant": "明則實業有限公司",
+      "manufacturer": "旭能醫藥生技股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=詳見仿單; product names=潔諾速陰道錠500毫克 / GYNOX VAGINAL TABLETS 500MG. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0062",
+      "license_number": "衛署藥製字第047550號",
+      "chinese_name": "雅伯痔栓劑",
+      "english_name": "EBODYL Suppositories",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "每天2-3次，每次一個，於排便後塞入。症狀消除後，可改為每天一個栓劑。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "痔瘡及肛門直腸裂隙和破裂所引起之疼痛、出血、搔癢及發炎。",
+      "indication_category": "痔瘡與肛門直腸不適",
+      "active_ingredients": [
+        "POLYCRESOLSULFONATE (POLICRESULEN)",
+        "CINCHOCAINE HYDROCHLORIDE"
+      ],
+      "therapeutic_classes": [
+        "hemorrhoid",
+        "local_anesthetic"
+      ],
+      "license_year": "2005",
+      "license_status": "active",
+      "license_expiry_date": "2030/10/03",
+      "applicant": "明德製藥股份有限公司",
+      "manufacturer": "明德製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=每天2-3次，每次一個，於排便後塞入。症狀消除後，可改為每天一個栓劑。; product names=雅伯痔栓劑 / EBODYL Suppositories. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0063",
+      "license_number": "衛署藥輸字第022737號",
+      "chinese_name": "頗得斯安栓劑",
+      "english_name": "PENTASA SUPPOSITORIES 1G",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "輕度至中度潰瘍性直腸炎。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "MESALAZINE(MESALAMINE)"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "2024",
+      "license_status": "active",
+      "license_expiry_date": "2030/01/11",
+      "applicant": "輝凌藥品股份有限公司",
+      "manufacturer": "FERRING INTERNATIONAL CENTER S.A.",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=頗得斯安栓劑 / PENTASA SUPPOSITORIES 1G. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0064",
+      "license_number": "衛部藥輸字第027702號",
+      "chinese_name": "服密淨陰道錠",
+      "english_name": "Fluomizin Vaginal Tablets",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "詳見仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "細菌性陰道感染。",
+      "indication_category": "陰道細菌或滴蟲感染",
+      "active_ingredients": [
+        "DEQUALINIUM CHLORIDE"
+      ],
+      "therapeutic_classes": [
+        "antibacterial",
+        "antiseptic",
+        "combination"
+      ],
+      "license_year": "2019",
+      "license_status": "active",
+      "license_expiry_date": "2029/07/15",
+      "applicant": "台灣大昌華嘉股份有限公司",
+      "manufacturer": "ROTTENDORF PHARMA GMBH",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=詳見仿單; product names=服密淨陰道錠 / Fluomizin Vaginal Tablets. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0065",
+      "license_number": "衛部藥輸字第027921號",
+      "chinese_name": "瑪克淨陰道錠200毫克",
+      "english_name": "\"Remedica\" Mycoril Vaginal Tablets 200mg",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "請詳見仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "使用於曾由醫師診斷為黴菌(多數為念珠菌)感染所引起陰道炎之復發治療。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2020",
+      "license_status": "active",
+      "license_expiry_date": "2025/07/17",
+      "applicant": "富彰行貿易有限公司",
+      "manufacturer": "REMEDICA LTD.",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=請詳見仿單; product names=瑪克淨陰道錠200毫克 / \"Remedica\" Mycoril Vaginal Tablets 200mg. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0066",
+      "license_number": "衛部藥輸字第027951號",
+      "chinese_name": "護妳淨陰道錠100毫克",
+      "english_name": "\"Remedica\" Mycoril Vaginal Tablets 100mg",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "請詳見仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "使用於曾由醫師診斷為黴菌(多數為念珠菌)感染所引起陰道炎之復發治療。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2020",
+      "license_status": "active",
+      "license_expiry_date": "2025/08/26",
+      "applicant": "富彰行貿易有限公司",
+      "manufacturer": "REMEDICA LTD.",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=請詳見仿單; product names=護妳淨陰道錠100毫克 / \"Remedica\" Mycoril Vaginal Tablets 100mg. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0067",
+      "license_number": "衛部藥輸字第028470號",
+      "chinese_name": "希可捷陰道栓劑400毫克",
+      "english_name": "CYCLOGEST 400mg PESSARIES",
+      "dosage_form": "陰道栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "詳見中文仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "作為對不孕女性進行輔助生殖技術治療的一部分，用於黃體功能的補充",
+      "indication_category": "陰道萎縮與荷爾蒙相關用途",
+      "active_ingredients": [
+        "PROGESTERONE"
+      ],
+      "therapeutic_classes": [
+        "hormone"
+      ],
+      "license_year": "2023",
+      "license_status": "active",
+      "license_expiry_date": "2028/06/06",
+      "applicant": "裕利股份有限公司",
+      "manufacturer": "ACCORD-UK LIMITED",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道栓劑; approved use=詳見中文仿單; product names=希可捷陰道栓劑400毫克 / CYCLOGEST 400mg PESSARIES. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0068",
+      "license_number": "衛部藥輸字第028495號",
+      "chinese_name": "阿腸克栓劑1公克",
+      "english_name": "Asacol 1g suppositories",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "詳見仿單",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "輕度至中度潰瘍性直腸炎",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "MESALAZINE(MESALAMINE)"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "2023",
+      "license_status": "active",
+      "license_expiry_date": "2028/06/28",
+      "applicant": "科懋生物科技股份有限公司",
+      "manufacturer": "TILLOTTS PHARMACEUTICAL AG",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=詳見仿單; product names=阿腸克栓劑1公克 / Asacol 1g suppositories. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0069",
+      "license_number": "衛署藥製字第035051號",
+      "chinese_name": "〝華興〞吐平栓劑10 毫克(多普利杜)",
+      "english_name": "DOMPE SUPPOSITORIES 10MG (DOMPERIDONE) \"H.S.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "1.「成人」及「12歲以上體重大於35kg之青少年」：1次10-30mg，每日最多2次。 2.「12歲以下兒童」及「12歲以上體重小於35kg之青少年」：1次10mg/kg，每日最多3次。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "無法口服情況下，用於噁心、嘔吐的症狀治療，糖尿病引起的胃腸蠕動異常。",
+      "indication_category": "噁心與嘔吐",
+      "active_ingredients": [
+        "DOMPERIDONE"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1992",
+      "license_status": "active",
+      "license_expiry_date": "2027/03/27",
+      "applicant": "華興化學製藥廠股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=1.「成人」及「12歲以上體重大於35kg之青少年」：1次10-30mg，每日最多2次。 2.「12歲以下兒童」及「12歲以上體重小於35kg之青少年」：1次10mg/kg，每日最多3次。; product names=〝華興〞吐平栓劑10 毫克(多普利杜) / DOMPE SUPPOSITORIES 10MG (DOMPERIDONE) \"H.S.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0070",
+      "license_number": "衛署藥製字第035088號",
+      "chinese_name": "\"中國化學\" 威鎮栓劑１２．５公絲(待克菲那)",
+      "english_name": "VETIN SUPPOSITORIES 12.5MG (DICLOFENAC) \"C.C.P.C.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。\r\n成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投予75-100 mg即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。\r\n兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg體重，分2-3次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg體重分次使用。\r\n栓劑50 mg及75 mg不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1992",
+      "license_status": "active",
+      "license_expiry_date": "2027/04/10",
+      "applicant": "中國化學製藥股份有限公司新豐工廠",
+      "manufacturer": "中國化學製藥股份有限公司新豐工廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。\r\n成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投予75-100 mg即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。\r\n兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg體重，分2-3次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg體重分次使用。\r\n栓劑50 mg及75 mg不建議使用於孩童。; product names=\"中國化學\" 威鎮栓劑１２．５公絲(待克菲那) / VETIN SUPPOSITORIES 12.5MG (DICLOFENAC) \"C.C.P.C.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0071",
+      "license_number": "衛署藥製字第035169號",
+      "chinese_name": "〝瑞安〞袪黴陰道錠100毫克（克催瑪汝）",
+      "english_name": "CAMAZOLE VAGINAL TABLET 100MG (CLOTRIMAZOLE) \"PURZER\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "治療陰道念珠菌及滴蟲所引起之陰道感染。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1992",
+      "license_status": "active",
+      "license_expiry_date": "2027/04/23",
+      "applicant": "瑞安大藥廠股份有限公司",
+      "manufacturer": "優良化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=〝瑞安〞袪黴陰道錠100毫克（克催瑪汝） / CAMAZOLE VAGINAL TABLET 100MG (CLOTRIMAZOLE) \"PURZER\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0072",
+      "license_number": "衛部藥輸字第028169號",
+      "chinese_name": "理冒伯樂小兒用栓劑125毫克",
+      "english_name": "Fucole PORO Suppositories 125mg",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "請詳見仿單",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "退燒、止痛（緩解頭痛、牙痛、咽喉痛、關節痛、神經痛、肌肉酸痛、月經痛）。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "ACETAMINOPHEN (EQ TO PARACETAMOL)"
+      ],
+      "therapeutic_classes": [
+        "antipyretic_analgesic"
+      ],
+      "license_year": "2021",
+      "license_status": "active",
+      "license_expiry_date": "2026/09/27",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "Y.S.P. INDUSTRIES (M) SDN. BHD.",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=請詳見仿單; product names=理冒伯樂小兒用栓劑125毫克 / Fucole PORO Suppositories 125mg. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0073",
+      "license_number": "衛部藥輸字第028205號",
+      "chinese_name": "茵若颯陰道栓劑",
+      "english_name": "INTRAROSA Pessary",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "詳見仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "unclear",
+      "indication": "適用於治療停經後之外陰陰道萎縮。",
+      "indication_category": "陰道萎縮與荷爾蒙相關用途",
+      "active_ingredients": [
+        "DEHYDROEPIANDROSTERONE SODIUM (SODIUM PRASTERONE)"
+      ],
+      "therapeutic_classes": [
+        "other_vaginal"
+      ],
+      "license_year": "2021",
+      "license_status": "active",
+      "license_expiry_date": "2026/12/27",
+      "applicant": "台灣李氏藥業有限公司",
+      "manufacturer": "MSH PHARMA INC.",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=詳見仿單; product names=茵若颯陰道栓劑 / INTRAROSA Pessary. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0074",
+      "license_number": "衛署藥製字第029726號",
+      "chinese_name": "克路淨栓劑",
+      "english_name": "CHLOTIN VAGINAL SUPPOSITORIES \"YUNG SHIN\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "unclear",
+      "indication": "急慢性陰道炎、由陰道滴蟲引起之陰道炎、子宮頸管炎其他各種原因引起之白帶",
+      "indication_category": "陰道細菌或滴蟲感染",
+      "active_ingredients": [
+        "CARBARSONE",
+        "CHLORAMPHENICOL",
+        "BENZETHONIUM CHLORIDE"
+      ],
+      "therapeutic_classes": [
+        "other_vaginal"
+      ],
+      "license_year": "1987",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/25",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=克路淨栓劑 / CHLOTIN VAGINAL SUPPOSITORIES \"YUNG SHIN\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0075",
+      "license_number": "衛署藥製字第029755號",
+      "chinese_name": "益康娜陰道栓劑１５０毫克（亦可那挫）",
+      "english_name": "EKONA VAGINAL SUP. (ECONAZOLE)",
+      "dosage_form": "陰道栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "陰道黴菌感染",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "ECONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1987",
+      "license_status": "active",
+      "license_expiry_date": "2029/06/04",
+      "applicant": "明德製藥股份有限公司",
+      "manufacturer": "明德製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道栓劑; approved use=; product names=益康娜陰道栓劑１５０毫克（亦可那挫） / EKONA VAGINAL SUP. (ECONAZOLE). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0076",
+      "license_number": "衛署藥製字第036863號",
+      "chinese_name": "吐福栓劑１０毫克（多普利杜）",
+      "english_name": "DOMPER SUPPOSITORIES 10MG (DOMPERIDONE)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "1.「成人」及「12歲以上體重大於35kg之青少年」：1次10-30mg，每日最多2次。 2.「12歲以下兒童」及「12歲以上體重小於35kg之青少年」：1次10mg，每日最多3次。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "無法口服情況下，用於噁心、嘔吐的症狀治療，糖尿病引起的胃腸蠕動異常。",
+      "indication_category": "噁心與嘔吐",
+      "active_ingredients": [
+        "DOMPERIDONE"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1993",
+      "license_status": "active",
+      "license_expiry_date": "2028/10/22",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=1.「成人」及「12歲以上體重大於35kg之青少年」：1次10-30mg，每日最多2次。 2.「12歲以下兒童」及「12歲以上體重小於35kg之青少年」：1次10mg，每日最多3次。; product names=吐福栓劑１０毫克（多普利杜） / DOMPER SUPPOSITORIES 10MG (DOMPERIDONE). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0077",
+      "license_number": "衛署藥製字第022526號",
+      "chinese_name": "阿斯美栓劑",
+      "english_name": "ASMETHOL SUPPOSITORIES \"C.C.P.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "鎮咳、袪痰（由氣喘、支氣管炎、感冒等引起之咳嗽及喀痰）",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "EPHEDRINE SULFATE",
+        "DIPHENHYDRAMINE HCL",
+        "DIPROPHYLLINE",
+        "GUAIACOL GLYCOLATE (EQ TO GLYCERYL GUAIACOLATE)"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "2003",
+      "license_status": "active",
+      "license_expiry_date": "2028/11/25",
+      "applicant": "中國化學製藥股份有限公司新豐工廠",
+      "manufacturer": "中國化學製藥股份有限公司新豐工廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=阿斯美栓劑 / ASMETHOL SUPPOSITORIES \"C.C.P.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0078",
+      "license_number": "衛署藥製字第022767號",
+      "chinese_name": "\"瑞士\" 達膚寧膣錠（邁可那挫）",
+      "english_name": "DAFRIN VAGINAL TABLETS \"SWISS\"(MICONAZOLE)",
+      "dosage_form": "錠劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "念球菌感染之婦女陰道疾患、以及併有革蘭氏陽性菌感染之陰道炎",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "MICONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1981",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/25",
+      "applicant": "瑞士藥廠股份有限公司",
+      "manufacturer": "瑞士藥廠股份有限公司新市廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=錠劑; approved use=; product names=\"瑞士\" 達膚寧膣錠（邁可那挫） / DAFRIN VAGINAL TABLETS \"SWISS\"(MICONAZOLE). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0079",
+      "license_number": "衛署藥製字第025682號",
+      "chinese_name": "剋黴栓劑１５０毫克（亦可那挫）",
+      "english_name": "ECONAZOLE NITRATE SUPPOSITORIES 150MG \"YUNG SHIN\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "念珠菌性女陰陰道炎及併有革蘭氏陽性細菌感染之婦女陰道炎。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "ECONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1982",
+      "license_status": "active",
+      "license_expiry_date": "2028/06/23",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=剋黴栓劑１５０毫克（亦可那挫） / ECONAZOLE NITRATE SUPPOSITORIES 150MG \"YUNG SHIN\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0080",
+      "license_number": "衛署藥製字第025967號",
+      "chinese_name": "惠皮安陰道栓劑１５０公絲（亦可那挫）",
+      "english_name": "PHEPIX VAGINAL SUPPOSITORY 150MG (ECONAZOLE)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "由黴菌及伴有革蘭氏陽性菌所引起之陰道感染症",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "ECONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1982",
+      "license_status": "active",
+      "license_expiry_date": "2028/08/03",
+      "applicant": "中國化學製藥股份有限公司新豐工廠",
+      "manufacturer": "中國化學製藥股份有限公司新豐工廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=惠皮安陰道栓劑１５０公絲（亦可那挫） / PHEPIX VAGINAL SUPPOSITORY 150MG (ECONAZOLE). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0081",
+      "license_number": "衛署藥製字第037005號",
+      "chinese_name": "\"華興\"愛樂信栓劑125公絲(紅絲菌素)",
+      "english_name": "EROCIN SUPPOSITORIES 125MG (ERYTHROMYCIN) \"H.S.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "葡萄球菌、鏈球菌、肺炎雙球菌、腦膜炎球菌及其他具有感受性細菌引起之感染症。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "ERYTHROMYCIN"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1993",
+      "license_status": "active",
+      "license_expiry_date": "2028/12/07",
+      "applicant": "華興化學製藥廠股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"華興\"愛樂信栓劑125公絲(紅絲菌素) / EROCIN SUPPOSITORIES 125MG (ERYTHROMYCIN) \"H.S.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0082",
+      "license_number": "衛署藥輸字第023012號",
+      "chinese_name": "汝樂淨　陰道錠",
+      "english_name": "MYCORIL 100 VAGINAL TABLETS",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "使用於曾由醫師診斷為黴菌(多數為念珠菌)感染所引起陰道炎之復發治療。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2000",
+      "license_status": "active",
+      "license_expiry_date": "2025/10/05",
+      "applicant": "富富企業股份有限公司",
+      "manufacturer": "REMEDICA LTD. MANUFACTURERS OF PHARMACEUTICALS",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=汝樂淨　陰道錠 / MYCORIL 100 VAGINAL TABLETS. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0083",
+      "license_number": "衛部藥製字第059001號",
+      "chinese_name": "黴可治陰道錠100毫克",
+      "english_name": "Mikizol Vaginal Tablets 100mg",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "請詳閱說明書",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "治療陰道念珠菌和滴蟲所引起之陰道感染。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2016",
+      "license_status": "active",
+      "license_expiry_date": "2026/11/30",
+      "applicant": "強生化學製藥廠股份有限公司",
+      "manufacturer": "強生化學製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=請詳閱說明書; product names=黴可治陰道錠100毫克 / Mikizol Vaginal Tablets 100mg. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0084",
+      "license_number": "衛部藥輸字第027968號",
+      "chinese_name": "婦汝淨陰道錠200毫克",
+      "english_name": "Mycoril 200mg Vaginal Tablets",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "請詳見仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "治療念珠菌屬、陰道滴蟲屬、串狀釀母菌屬及細菌混合感染引起的陰道炎、白帶。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2020",
+      "license_status": "active",
+      "license_expiry_date": "2025/09/26",
+      "applicant": "富富企業股份有限公司",
+      "manufacturer": "REMEDICA LTD.",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=請詳見仿單; product names=婦汝淨陰道錠200毫克 / Mycoril 200mg Vaginal Tablets. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0085",
+      "license_number": "衛署藥製字第024730號",
+      "chinese_name": "\"約克\"婦可淨膣錠１００毫克",
+      "english_name": "FUCODINE VAGINAL TABLETS 100MG \"Y.K.\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "黴菌所引起之膣炎、及其所併發之白帶、外陰膣炎",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1982",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/25",
+      "applicant": "約克製藥股份有限公司",
+      "manufacturer": "約克製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=\"約克\"婦可淨膣錠１００毫克 / FUCODINE VAGINAL TABLETS 100MG \"Y.K.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0086",
+      "license_number": "衛署藥製字第024864號",
+      "chinese_name": "鎮定栓劑１２５毫克",
+      "english_name": "TINTEN SUPPOSITORIES 125MG",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "發燒或需要時服用，若症狀持續，則每4~6小時可重複使用，每24小時內不可超過4次。3歲以上未滿6歲，每次1~2顆。3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。初次應使用最小建議劑量，再視症狀增減用量。栓劑不得剝半使用。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "退燒、止痛（緩解頭痛、牙痛、咽喉痛、關節痛、神經痛、肌肉酸痛、月經痛）。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "ACETAMINOPHEN (EQ TO PARACETAMOL)"
+      ],
+      "therapeutic_classes": [
+        "antipyretic_analgesic"
+      ],
+      "license_year": "1982",
+      "license_status": "active",
+      "license_expiry_date": "2030/02/18",
+      "applicant": "中國化學製藥股份有限公司新豐工廠",
+      "manufacturer": "中國化學製藥股份有限公司新豐工廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=發燒或需要時服用，若症狀持續，則每4~6小時可重複使用，每24小時內不可超過4次。3歲以上未滿6歲，每次1~2顆。3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。初次應使用最小建議劑量，再視症狀增減用量。栓劑不得剝半使用。; product names=鎮定栓劑１２５毫克 / TINTEN SUPPOSITORIES 125MG. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0087",
+      "license_number": "衛署藥製字第026501號",
+      "chinese_name": "''長安''汝佳陰道錠１００毫克（邁可那挫）",
+      "english_name": "ZOOZEAN VAGINAL TABLETS 100MG (MICONAZOLE)",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "念珠菌性陰道炎、感染性白帶及其他具有感受性病原體所引起之感染症",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "MICONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1982",
+      "license_status": "active",
+      "license_expiry_date": "2028/12/31",
+      "applicant": "長安化學工業股份有限公司",
+      "manufacturer": "長安化學工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=''長安''汝佳陰道錠１００毫克（邁可那挫） / ZOOZEAN VAGINAL TABLETS 100MG (MICONAZOLE). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0088",
+      "license_number": "衛署藥製字第026563號",
+      "chinese_name": "\"皇佳\" 婦淨喜陰道錠２００公絲（克摧瑪汝）",
+      "english_name": "FASTIN VAGINAL TABLETS 200MG (CLOTRIMAZOLE)",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "治療念珠菌屬、陰道滴蟲屬、串狀釀母菌屬及細菌混合感染引起的陰道炎、白帶",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1982",
+      "license_status": "active",
+      "license_expiry_date": "2028/11/19",
+      "applicant": "皇佳化學製藥股份有限公司",
+      "manufacturer": "皇佳化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=\"皇佳\" 婦淨喜陰道錠２００公絲（克摧瑪汝） / FASTIN VAGINAL TABLETS 200MG (CLOTRIMAZOLE). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0089",
+      "license_number": "衛署藥製字第026747號",
+      "chinese_name": "“培力”阿西他栓劑１００毫克",
+      "english_name": "ACETA SUPPOSITORY 100MG“P.L.”",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "發燒或需要時使用，若症狀持續，則每4~6小時可重複使用，每24小時內不可超過5次。成人每次4~8顆，12歲以上適用成人劑量；6歲以上未滿12歲，每次2~4顆；3歲以上未滿6歲，每次1~2顆；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。初次應使用最小建議劑量，再視症狀增減用量。本藥不得剝半使用。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "退燒、止痛〈緩解頭痛、牙痛、咽喉痛、關節痛、神經痛、肌肉酸痛、月經痛〉。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "ACETAMINOPHEN (EQ TO PARACETAMOL)"
+      ],
+      "therapeutic_classes": [
+        "antipyretic_analgesic"
+      ],
+      "license_year": "1983",
+      "license_status": "active",
+      "license_expiry_date": "2029/01/11",
+      "applicant": "培力藥品工業股份有限公司",
+      "manufacturer": "培力藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=發燒或需要時使用，若症狀持續，則每4~6小時可重複使用，每24小時內不可超過5次。成人每次4~8顆，12歲以上適用成人劑量；6歲以上未滿12歲，每次2~4顆；3歲以上未滿6歲，每次1~2顆；3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。初次應使用最小建議劑量，再視症狀增減用量。本藥不得剝半使用。; product names=“培力”阿西他栓劑１００毫克 / ACETA SUPPOSITORY 100MG“P.L.”. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0090",
+      "license_number": "衛署藥製字第034061號",
+      "chinese_name": "\"瑞安\" 愛膚健陰道錠100毫克（艾索那挫）",
+      "english_name": "ISOGEN VAG. TABLET 100MG (ISOCONAZOLE) \"PURZER\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "陰道黴菌感染包括與革蘭氏陽性細菌的混合感染。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "ISOCONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1991",
+      "license_status": "active",
+      "license_expiry_date": "2031/06/11",
+      "applicant": "瑞安大藥廠股份有限公司",
+      "manufacturer": "優良化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=\"瑞安\" 愛膚健陰道錠100毫克（艾索那挫） / ISOGEN VAG. TABLET 100MG (ISOCONAZOLE) \"PURZER\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0091",
+      "license_number": "衛署藥製字第047029號",
+      "chinese_name": "\"培力\" 宜痔平栓劑",
+      "english_name": "POSULINE SUPPOSITORIES \"P.L.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "痔瘡及肛門直腸裂隙和破裂所引起之疼痛、出血、搔癢及發炎。",
+      "indication_category": "痔瘡與肛門直腸不適",
+      "active_ingredients": [
+        "POLYCRESOLSULFONATE (POLICRESULEN)",
+        "CINCHOCAINE HYDROCHLORIDE"
+      ],
+      "therapeutic_classes": [
+        "hemorrhoid",
+        "local_anesthetic"
+      ],
+      "license_year": "2005",
+      "license_status": "active",
+      "license_expiry_date": "2030/02/16",
+      "applicant": "培力藥品工業股份有限公司",
+      "manufacturer": "培力藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"培力\" 宜痔平栓劑 / POSULINE SUPPOSITORIES \"P.L.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0092",
+      "license_number": "衛署藥輸字第024954號",
+      "chinese_name": "保能痔栓劑",
+      "english_name": "Borraginol-A Suppositories",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "詳情請參照仿單。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "緩解因痔瘡所引起的疼痛、灼熱、搔癢、腫脹、痔出血。",
+      "indication_category": "痔瘡與肛門直腸不適",
+      "active_ingredients": [
+        "PREDNISOLONE ACETATE",
+        "LIDOCAINE",
+        "ALLANTOIN",
+        "TOCOPHEROL ACETATE"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_local",
+        "hemorrhoid",
+        "local_anesthetic"
+      ],
+      "license_year": "2009",
+      "license_status": "active",
+      "license_expiry_date": "2029/01/08",
+      "applicant": "台灣曼秀雷敦股份有限公司",
+      "manufacturer": "AMATO PHARMACEUTICAL PRODUCTS LTD.",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=詳情請參照仿單。; product names=保能痔栓劑 / Borraginol-A Suppositories. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0093",
+      "license_number": "衛署藥製字第000642號",
+      "chinese_name": "熱妙栓劑",
+      "english_name": "ZAMIN SUPPOSITORIES",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "發燒或需要時服用，若症狀持續，則每4~6小時可重複使用，每24小時內不可超過5次。成人每次1顆，12歲以上適用成人劑量。本藥不得剝半使用。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "退燒、止痛（緩解關節痛、神經痛、頭痛、牙痛、咽喉痛、肌肉酸痛、月經痛）",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "ACETYLSALICYLATE (LYSINE)"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1972",
+      "license_status": "active",
+      "license_expiry_date": "2030/02/02",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=發燒或需要時服用，若症狀持續，則每4~6小時可重複使用，每24小時內不可超過5次。成人每次1顆，12歲以上適用成人劑量。本藥不得剝半使用。; product names=熱妙栓劑 / ZAMIN SUPPOSITORIES. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0094",
+      "license_number": "衛署藥製字第013722號",
+      "chinese_name": "“大豐”滅菌佳得陰道栓劑250毫克",
+      "english_name": "Metrocide Vaginal Suppositories 250mg \"T.F.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "陰道滴蟲感染所引起之陰道炎",
+      "indication_category": "陰道細菌或滴蟲感染",
+      "active_ingredients": [
+        "METRONIDAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antibacterial",
+        "antiprotozoal",
+        "combination"
+      ],
+      "license_year": "1977",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/25",
+      "applicant": "大豐製藥股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=“大豐”滅菌佳得陰道栓劑250毫克 / Metrocide Vaginal Suppositories 250mg \"T.F.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0095",
+      "license_number": "衛署藥製字第034764號",
+      "chinese_name": "\"華興\"待可芬栓劑12.5公絲(待克菲那)",
+      "english_name": "DICLOFEN SUPPOSITORIES 12.5MG (DICLOFENAC)\"H.S\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "成人：建議起始劑量為每日100-150mg。症狀較輕或長期治療時，每日投予75-100mg即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀，日間以錠劑治療外，可於睡前補充一粒栓劑(至每日最大劑量150mg)。兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2mg/kg體重，分2-3次使用。幼年型風濕性關節炎的治療可提高至3mg/kg體重分次使用。栓劑50mg及75mg不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1992",
+      "license_status": "active",
+      "license_expiry_date": "2027/01/07",
+      "applicant": "華興化學製藥廠股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=成人：建議起始劑量為每日100-150mg。症狀較輕或長期治療時，每日投予75-100mg即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀，日間以錠劑治療外，可於睡前補充一粒栓劑(至每日最大劑量150mg)。兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2mg/kg體重，分2-3次使用。幼年型風濕性關節炎的治療可提高至3mg/kg體重分次使用。栓劑50mg及75mg不建議使用於孩童。; product names=\"華興\"待可芬栓劑12.5公絲(待克菲那) / DICLOFEN SUPPOSITORIES 12.5MG (DICLOFENAC)\"H.S\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0096",
+      "license_number": "衛署藥製字第034978號",
+      "chinese_name": "〝達德士〞敵克炎栓劑12.5毫克",
+      "english_name": "DICLOPHEN SUPPOSITORY 12.5MG (DICLOFENAC) \"DTS\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "本藥須由醫師處方使用。\r\n為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。\r\n成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投\r\n予75-100 mg 即足夠。每日總劑量應分2-3 次使用。為避免夜間疼痛及早晨僵硬\r\n症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。\r\n兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg 體重，分2-3\r\n次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg 體重分次使用。\r\n栓劑50 mg 及75 mg 不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "2012",
+      "license_status": "active",
+      "license_expiry_date": "2027/08/21",
+      "applicant": "達德士藥品有限公司",
+      "manufacturer": "衛達化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=本藥須由醫師處方使用。\r\n為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。\r\n成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投\r\n予75-100 mg 即足夠。每日總劑量應分2-3 次使用。為避免夜間疼痛及早晨僵硬\r\n症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。\r\n兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg 體重，分2-3\r\n次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg 體重分次使用。\r\n栓劑50 mg 及75 mg 不建議使用於孩童。; product names=〝達德士〞敵克炎栓劑12.5毫克 / DICLOPHEN SUPPOSITORY 12.5MG (DICLOFENAC) \"DTS\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0097",
+      "license_number": "衛署藥製字第034980號",
+      "chinese_name": "\"達德士\"敵克炎栓劑２５毫克",
+      "english_name": "DICLOPHEN SUPPOSITORY 25MG \"DTS\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "本藥須由醫師處方使用。\r\n為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。\r\n成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投\r\n予75-100 mg 即足夠。每日總劑量應分2-3 次使用。為避免夜間疼痛及早晨僵硬症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。\r\n兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg 體重，分2-3\r\n次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg 體重分次使用。\r\n栓劑50 mg 及75 mg 不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "2012",
+      "license_status": "active",
+      "license_expiry_date": "2027/09/06",
+      "applicant": "達德士藥品有限公司",
+      "manufacturer": "衛達化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=本藥須由醫師處方使用。\r\n為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。\r\n成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投\r\n予75-100 mg 即足夠。每日總劑量應分2-3 次使用。為避免夜間疼痛及早晨僵硬症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。\r\n兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg 體重，分2-3\r\n次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg 體重分次使用。\r\n栓劑50 mg 及75 mg 不建議使用於孩童。; product names=\"達德士\"敵克炎栓劑２５毫克 / DICLOPHEN SUPPOSITORY 25MG \"DTS\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0098",
+      "license_number": "衛署藥製字第047611號",
+      "chinese_name": "舒伯痔栓劑",
+      "english_name": "Subodyl Suppositories",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "詳見仿單。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "痔瘡及肛門直腸裂隙和破裂所引起之疼痛、出血、搔癢及發炎。",
+      "indication_category": "痔瘡與肛門直腸不適",
+      "active_ingredients": [
+        "CINCHOCAINE HYDROCHLORIDE",
+        "POLYCRESOLSULFONATE (POLICRESULEN)"
+      ],
+      "therapeutic_classes": [
+        "hemorrhoid",
+        "local_anesthetic"
+      ],
+      "license_year": "2005",
+      "license_status": "active",
+      "license_expiry_date": "2030/10/31",
+      "applicant": "東竹藥品股份有限公司",
+      "manufacturer": "明德製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=詳見仿單。; product names=舒伯痔栓劑 / Subodyl Suppositories. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0099",
+      "license_number": "衛署藥輸字第018215號",
+      "chinese_name": "普洛舒定－益二型陰道錠",
+      "english_name": "PROSTIN E2 VAGINAL TABLETS",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "unclear",
+      "indication": "對經產婦或順產婦之引產有效",
+      "indication_category": "其他陰道用途",
+      "active_ingredients": [
+        "DINOPROSTONE"
+      ],
+      "therapeutic_classes": [
+        "other_vaginal"
+      ],
+      "license_year": "2014",
+      "license_status": "active",
+      "license_expiry_date": "2029/09/05",
+      "applicant": "輝瑞大藥廠股份有限公司",
+      "manufacturer": "久裕企業股份有限公司(委託包裝)",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=普洛舒定－益二型陰道錠 / PROSTIN E2 VAGINAL TABLETS. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0100",
+      "license_number": "衛署藥輸字第019327號",
+      "chinese_name": "歐適達陰道栓劑０．５公絲",
+      "english_name": "OVESTIN VAGINAL SUPPOSITORIES 0.5MG",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "陰道炎、子宮頸管炎及子宮膣部糜爛。",
+      "indication_category": "陰道萎縮與荷爾蒙相關用途",
+      "active_ingredients": [
+        "ESTRIOL"
+      ],
+      "therapeutic_classes": [
+        "hormone"
+      ],
+      "license_year": "2017",
+      "license_status": "active",
+      "license_expiry_date": "2027/06/24",
+      "applicant": "安沛國際有限公司",
+      "manufacturer": "UNITHER INDUSTRIES",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=歐適達陰道栓劑０．５公絲 / OVESTIN VAGINAL SUPPOSITORIES 0.5MG. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0101",
+      "license_number": "衛部藥製字第060477號",
+      "chinese_name": "\"大豐\"樂樂陰道錠200毫克",
+      "english_name": "Lo-Lo Vaginal Tablets 200mg \"T.F.\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "請詳見仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "治療陰道念珠菌屬、陰道滴蟲屬、串狀釀母菌屬及細菌混和感染引起的陰道炎、白帶。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2020",
+      "license_status": "active",
+      "license_expiry_date": "2030/04/14",
+      "applicant": "大豐製藥股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=請詳見仿單; product names=\"大豐\"樂樂陰道錠200毫克 / Lo-Lo Vaginal Tablets 200mg \"T.F.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0102",
+      "license_number": "衛部藥製字第060478號",
+      "chinese_name": "\"大豐\"樂樂陰道錠100毫克",
+      "english_name": "Lo-Lo Vaginal Tablets 100mg \"T.F.\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "請詳見仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "治療陰道念珠菌和滴蟲所引之陰道感染。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2020",
+      "license_status": "active",
+      "license_expiry_date": "2030/04/14",
+      "applicant": "大豐製藥股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=請詳見仿單; product names=\"大豐\"樂樂陰道錠100毫克 / Lo-Lo Vaginal Tablets 100mg \"T.F.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0103",
+      "license_number": "衛署藥製字第031176號",
+      "chinese_name": "非炎栓劑25毫克(待克菲那)",
+      "english_name": "VOREN SUPOSITORIES 25MG (DICLOFENAC)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。 成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投 予75-100 mg 即足夠。每日總劑量應分2-3 次使用。為避免夜間疼痛及早晨僵硬 症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。 兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg 體重，分2-3 次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg 體重分次使用。 栓劑50 mg 及75 mg 不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1988",
+      "license_status": "active",
+      "license_expiry_date": "2028/12/30",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=為降低不良反應之風險，應使用最低有效劑量，並作為期最短之治療。 成人：每日最大劑量不建議大於100 mg。症狀較輕或長期治療時，每日投 予75-100 mg 即足夠。每日總劑量應分2-3 次使用。為避免夜間疼痛及早晨僵硬 症狀，日間以錠劑治療外，可於睡前補充一粒栓劑。 兒童：一歲以上的孩童視病情的嚴重度給予每天0.5-2 mg/kg 體重，分2-3 次使用。幼年型風濕性關節炎的治療可提高至3 mg/kg 體重分次使用。 栓劑50 mg 及75 mg 不建議使用於孩童。; product names=非炎栓劑25毫克(待克菲那) / VOREN SUPOSITORIES 25MG (DICLOFENAC). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0104",
+      "license_number": "衛署藥製字第032267號",
+      "chinese_name": "\"汎生\"克催瑪汝陰道錠５００毫克（克催瑪汝）",
+      "english_name": "CLOTRIMAZOLE VAG. TAB. (CLOTRIMAZOLE) \"PANBIOTIC\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "一般成人劑量：睡前放置一錠於陰道深處(限於未懷孕者)。",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "由黴菌（數念珠球菌毛滴蟲屬）所引起之白帶、陰道炎",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1990",
+      "license_status": "active",
+      "license_expiry_date": "2030/03/06",
+      "applicant": "臺灣汎生製藥廠股份有限公司",
+      "manufacturer": "臺灣汎生製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=一般成人劑量：睡前放置一錠於陰道深處(限於未懷孕者)。; product names=\"汎生\"克催瑪汝陰道錠５００毫克（克催瑪汝） / CLOTRIMAZOLE VAG. TAB. (CLOTRIMAZOLE) \"PANBIOTIC\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0105",
+      "license_number": "衛署藥製字第042341號",
+      "chinese_name": "\"培力\"莫吐栓劑１０毫克（多普利杜）",
+      "english_name": "MOTOU SUPPOSITORIES 10MG \"P.L.\" (DOMPERIDONE)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "成人及12歲以上體重大於35kg之青少年；1次10-30mg，每日最多2次。\r\n12歲以下兒童及12歲以上體重小於35kg之青少年；1次10mg，每日最多3次。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "無法口服情況下,用於噁心,嘔吐的症狀治療,糖尿病引起的胃腸蠕動異常",
+      "indication_category": "噁心與嘔吐",
+      "active_ingredients": [
+        "DOMPERIDONE"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1998",
+      "license_status": "active",
+      "license_expiry_date": "2028/06/09",
+      "applicant": "培力藥品工業股份有限公司",
+      "manufacturer": "培力藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=成人及12歲以上體重大於35kg之青少年；1次10-30mg，每日最多2次。\r\n12歲以下兒童及12歲以上體重小於35kg之青少年；1次10mg，每日最多3次。; product names=\"培力\"莫吐栓劑１０毫克（多普利杜） / MOTOU SUPPOSITORIES 10MG \"P.L.\" (DOMPERIDONE). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0106",
+      "license_number": "衛署藥製字第042629號",
+      "chinese_name": "\"大豐\" 滅菌佳得陰道栓劑500毫克",
+      "english_name": "METROCIDE VAGINAL SUPPOSITORIES 500MG \"T.F.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "陰道滴蟲感染所引起之陰道炎。",
+      "indication_category": "陰道細菌或滴蟲感染",
+      "active_ingredients": [
+        "METRONIDAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antibacterial",
+        "antiprotozoal",
+        "combination"
+      ],
+      "license_year": "1998",
+      "license_status": "active",
+      "license_expiry_date": "2028/10/28",
+      "applicant": "大豐製藥股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"大豐\" 滅菌佳得陰道栓劑500毫克 / METROCIDE VAGINAL SUPPOSITORIES 500MG \"T.F.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0107",
+      "license_number": "衛署藥製字第043899號",
+      "chinese_name": "\"華興\" 膣潔陰道錠５００公絲（硝基甲嘧唑乙醇）",
+      "english_name": "VAZOLE VAGINAL TABLETS 500MG \"H.S.\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "陰道滴蟲感染所引起之陰道炎。",
+      "indication_category": "陰道細菌或滴蟲感染",
+      "active_ingredients": [
+        "METRONIDAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antibacterial",
+        "antiprotozoal",
+        "combination"
+      ],
+      "license_year": "2000",
+      "license_status": "active",
+      "license_expiry_date": "2030/08/02",
+      "applicant": "華興化學製藥廠股份有限公司",
+      "manufacturer": "華興化學製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=\"華興\" 膣潔陰道錠５００公絲（硝基甲嘧唑乙醇） / VAZOLE VAGINAL TABLETS 500MG \"H.S.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0108",
+      "license_number": "衛署藥製字第044039號",
+      "chinese_name": "柔潔陰道錠１００公絲〝應元〞",
+      "english_name": "ZOLGEN VAGINAL TABLETS 100MG \"Y.Y.\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "陰道黴菌感染，包括與革蘭氏陽性細菌的混合感染。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "ISOCONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2000",
+      "license_status": "active",
+      "license_expiry_date": "2030/10/19",
+      "applicant": "應元化學製藥股份有限公司",
+      "manufacturer": "應元化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=柔潔陰道錠１００公絲〝應元〞 / ZOLGEN VAGINAL TABLETS 100MG \"Y.Y.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0109",
+      "license_number": "衛部藥製字第061572號",
+      "chinese_name": "\"衛達\"可挫黴陰道栓劑200毫克",
+      "english_name": "Clotrimax Vaginal Suppositories 200mg \"Weidar\"",
+      "dosage_form": "陰道栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "詳見仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "因念珠菌及滴蟲屬等引起之感染症：如白帶、陰道炎及會陰炎。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2024",
+      "license_status": "active",
+      "license_expiry_date": "2029/01/19",
+      "applicant": "衛達化學製藥股份有限公司",
+      "manufacturer": "衛達化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道栓劑; approved use=詳見仿單; product names=\"衛達\"可挫黴陰道栓劑200毫克 / Clotrimax Vaginal Suppositories 200mg \"Weidar\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0110",
+      "license_number": "衛署藥製字第046258號",
+      "chinese_name": "\"明德\" 痔妥栓劑",
+      "english_name": "JETOO SUPPOSITORIES \"MEIDER\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "下列症狀之緩和：內痔、外痔、肛門裂傷、脫肛、痔出血、肛門溼疹、肛門搔癢。",
+      "indication_category": "痔瘡與肛門直腸不適",
+      "active_ingredients": [
+        "BENZOCAINE (ETHYL AMINOBENZOATE)",
+        "TOCOPHEROL ACETATE",
+        "PREDNISOLONE",
+        "TETRACAINE HCL",
+        "ZINC OXIDE"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_local",
+        "hemorrhoid",
+        "local_anesthetic"
+      ],
+      "license_year": "2004",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/04",
+      "applicant": "明德製藥股份有限公司",
+      "manufacturer": "明德製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"明德\" 痔妥栓劑 / JETOO SUPPOSITORIES \"MEIDER\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0111",
+      "license_number": "衛署藥製字第047875號",
+      "chinese_name": "婦保淨陰道栓劑",
+      "english_name": "FUBODYL Vaginal Suppositories",
+      "dosage_form": "陰道栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "如仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "子宮頸糜爛、子宮頸炎(含由毛滴蟲及念珠菌引起者)，陰道炎、白帶。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "POLYCRESOLSULFONATE (POLICRESULEN)"
+      ],
+      "therapeutic_classes": [
+        "antiseptic"
+      ],
+      "license_year": "2006",
+      "license_status": "active",
+      "license_expiry_date": "2031/03/08",
+      "applicant": "明德製藥股份有限公司",
+      "manufacturer": "明德製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道栓劑; approved use=如仿單; product names=婦保淨陰道栓劑 / FUBODYL Vaginal Suppositories. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0112",
+      "license_number": "衛署藥製字第047893號",
+      "chinese_name": "艾娣陰道栓劑",
+      "english_name": "ATYL Vaginal suppositories",
+      "dosage_form": "陰道栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "詳見仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "子宮頸糜爛、白帶、陰道炎、子宮頸炎(含由毛滴蟲及念珠菌引起者)。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "POLYCRESOLSULFONATE (POLICRESULEN)"
+      ],
+      "therapeutic_classes": [
+        "antiseptic"
+      ],
+      "license_year": "2006",
+      "license_status": "active",
+      "license_expiry_date": "2031/03/16",
+      "applicant": "東竹藥品股份有限公司",
+      "manufacturer": "明德製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道栓劑; approved use=詳見仿單; product names=艾娣陰道栓劑 / ATYL Vaginal suppositories. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0113",
+      "license_number": "衛署藥製字第027233號",
+      "chinese_name": "\"派頓\"勝碘陰道栓劑２００毫克（普威隆碘）",
+      "english_name": "SAINT-IODINE VAGINAL SUPPOSITORIES 200MG \"PATRON\" (POVIDONE-IODINE)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "輕度陰道刺激，搔癢及疼腫之緩解。",
+      "indication_category": "其他陰道用途",
+      "active_ingredients": [
+        "IODINE (POVIDONE)"
+      ],
+      "therapeutic_classes": [
+        "antiseptic"
+      ],
+      "license_year": "1983",
+      "license_status": "active",
+      "license_expiry_date": "2029/07/18",
+      "applicant": "臺灣派頓化學製藥股份有限公司",
+      "manufacturer": "臺灣派頓化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"派頓\"勝碘陰道栓劑２００毫克（普威隆碘） / SAINT-IODINE VAGINAL SUPPOSITORIES 200MG \"PATRON\" (POVIDONE-IODINE). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0114",
+      "license_number": "衛署藥製字第027557號",
+      "chinese_name": "\"生達\" 速淨陰道錠１０萬單位（耐絲菌素）",
+      "english_name": "STATIN VAGINAL TABLETS 100000 UNITS \"STANDARD\" (NYSTATIN)",
+      "dosage_form": "外用錠劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "陰道念珠菌感染症",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "NYSTATIN"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1984",
+      "license_status": "active",
+      "license_expiry_date": "2030/02/10",
+      "applicant": "生達化學製藥股份有限公司",
+      "manufacturer": "生達化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=外用錠劑; approved use=; product names=\"生達\" 速淨陰道錠１０萬單位（耐絲菌素） / STATIN VAGINAL TABLETS 100000 UNITS \"STANDARD\" (NYSTATIN). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0115",
+      "license_number": "衛署藥製字第029213號",
+      "chinese_name": "\"大豐\"抗黴菌陰道栓劑150毫克",
+      "english_name": "Fungicidon Vaginal Suppositories 150mg \"T.F.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "黴菌所引起之陰道感染症、念珠菌感染之婦女陰道炎、與伴有革蘭氏陽性菌感染之女陰道炎",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "ECONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1986",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/25",
+      "applicant": "大豐製藥股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"大豐\"抗黴菌陰道栓劑150毫克 / Fungicidon Vaginal Suppositories 150mg \"T.F.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0116",
+      "license_number": "衛署藥製字第029222號",
+      "chinese_name": "能百鎮栓劑５００公絲（那普洛先）",
+      "english_name": "NAPOSIN SUPPOSITORIES 500MG (NAPROXEN)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "鎮痛、消炎",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "NAPROXEN"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1986",
+      "license_status": "active",
+      "license_expiry_date": "2028/10/15",
+      "applicant": "中國化學製藥股份有限公司新豐工廠",
+      "manufacturer": "中國化學製藥股份有限公司新豐工廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=能百鎮栓劑５００公絲（那普洛先） / NAPOSIN SUPPOSITORIES 500MG (NAPROXEN). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0117",
+      "license_number": "衛部藥製字第059757號",
+      "chinese_name": "\"一成\"婦樂淨陰道錠100毫克",
+      "english_name": "Isoconazole Nitrate Vaginal Tablets 100mg \"SUC\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "請詳見仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "陰道黴菌感染，包括與革蘭氏陽性細菌的混合感染。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "ISOCONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2017",
+      "license_status": "active",
+      "license_expiry_date": "2027/09/04",
+      "applicant": "一成藥品股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=請詳見仿單; product names=\"一成\"婦樂淨陰道錠100毫克 / Isoconazole Nitrate Vaginal Tablets 100mg \"SUC\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0118",
+      "license_number": "衛部藥輸字第026784號",
+      "chinese_name": "安度孕陰道錠100毫克",
+      "english_name": "Endometrin 100mg vaginal tablet",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "從取卵當天開始，自陰道投予，每次100mg，每日使用2 或3 次，持續使用10週(或12 週懷孕週期)。35 歲以上婦女之臨床療效尚無法確立，因此於此年齡層尚未有合適的建議劑量。",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "作為對不孕女性進行輔助生殖技術治療的一部分，用於黃體功能的補充。",
+      "indication_category": "陰道萎縮與荷爾蒙相關用途",
+      "active_ingredients": [
+        "PROGESTERONE MICRONIZED"
+      ],
+      "therapeutic_classes": [
+        "hormone"
+      ],
+      "license_year": "2016",
+      "license_status": "active",
+      "license_expiry_date": "2026/05/23",
+      "applicant": "輝凌藥品股份有限公司",
+      "manufacturer": "SEVER PHARMA SOLUTIONS AB",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=從取卵當天開始，自陰道投予，每次100mg，每日使用2 或3 次，持續使用10週(或12 週懷孕週期)。35 歲以上婦女之臨床療效尚無法確立，因此於此年齡層尚未有合適的建議劑量。; product names=安度孕陰道錠100毫克 / Endometrin 100mg vaginal tablet. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0119",
+      "license_number": "衛署藥製字第012407號",
+      "chinese_name": "千痔康栓劑",
+      "english_name": "ANTI-GI SUPPOSITORY",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "內痔、外痔、痔出血、肛門周圍炎、肛門裂傷",
+      "indication_category": "痔瘡與肛門直腸不適",
+      "active_ingredients": [
+        "BENZOCAINE (ETHYL AMINOBENZOATE)",
+        "GLYCYRRHETIC ACID (EQ TO GLYCYRRHETINIC ACID)",
+        "PHENYLEPHRINE HCL",
+        "CHLORHEXIDINE ACETATE",
+        "BISMUTH SUBNITRATE (BISMUTH NITRATE BASIC)",
+        "LIDOCAINE"
+      ],
+      "therapeutic_classes": [
+        "hemorrhoid",
+        "local_anesthetic"
+      ],
+      "license_year": "1977",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/03",
+      "applicant": "回春堂製藥廠股份有限公司",
+      "manufacturer": "回春堂製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=千痔康栓劑 / ANTI-GI SUPPOSITORY. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0120",
+      "license_number": "衛署藥製字第012443號",
+      "chinese_name": "\"派頓”炎撒清得栓劑",
+      "english_name": "INTHACID SUPPOSITORIES \"PATRON\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "慢性風濕性關節炎、變形性脊椎症、痛風等之消炎、解熱、鎮痛、腰痛、神經痛、肩胛痛、手術後之鎮痛",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "INDOMETHACIN (eq to Indometacin)"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1977",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/25",
+      "applicant": "臺灣派頓化學製藥股份有限公司",
+      "manufacturer": "臺灣派頓化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"派頓”炎撒清得栓劑 / INTHACID SUPPOSITORIES \"PATRON\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0121",
+      "license_number": "衛署藥製字第023169號",
+      "chinese_name": "克黴樂陰道錠100毫克",
+      "english_name": "CLOMAZOLE VAGINAL TABLETS 100MG",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "治療陰道念珠菌和滴蟲所引起之陰道感染",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1981",
+      "license_status": "active",
+      "license_expiry_date": "2029/04/16",
+      "applicant": "榮民製藥股份有限公司",
+      "manufacturer": "榮民製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=克黴樂陰道錠100毫克 / CLOMAZOLE VAGINAL TABLETS 100MG. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0122",
+      "license_number": "衛署藥製字第026234號",
+      "chinese_name": "\"瑞士\"康得淨膣錠100毫克（克催瑪汝）",
+      "english_name": "KANEZIN VAGINAL TABLETS 100MG \"SWISS\" (CLOTRIMAZOLE)",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "黴菌及念珠菌感染之婦女陰道感染症",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1982",
+      "license_status": "active",
+      "license_expiry_date": "2028/09/17",
+      "applicant": "瑞士藥廠股份有限公司",
+      "manufacturer": "瑞士藥廠股份有限公司新市廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=\"瑞士\"康得淨膣錠100毫克（克催瑪汝） / KANEZIN VAGINAL TABLETS 100MG \"SWISS\" (CLOTRIMAZOLE). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0123",
+      "license_number": "衛署藥製字第031130號",
+      "chinese_name": "樂下栓劑",
+      "english_name": "LAXATIN SUPPOSITORY",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "成人1次使用1個(每日可使用1個)；12歲以上，適用成人劑量，栓劑不得剝半使用。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "軟便。",
+      "indication_category": "便秘與排便準備",
+      "active_ingredients": [
+        "BISACODYL"
+      ],
+      "therapeutic_classes": [
+        "laxative"
+      ],
+      "license_year": "1988",
+      "license_status": "active",
+      "license_expiry_date": "2029/11/25",
+      "applicant": "回春堂製藥廠股份有限公司",
+      "manufacturer": "回春堂製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=成人1次使用1個(每日可使用1個)；12歲以上，適用成人劑量，栓劑不得剝半使用。; product names=樂下栓劑 / LAXATIN SUPPOSITORY. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0124",
+      "license_number": "衛署藥製字第031131號",
+      "chinese_name": "小兒樂下栓劑",
+      "english_name": "CHILDREN LAXATIN SUPPOSITORY",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "6歲以上未滿12歲，1次使用1個(5mg)，每日一次。栓劑不得剝半使用。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "緩解便秘。",
+      "indication_category": "便秘與排便準備",
+      "active_ingredients": [
+        "BISACODYL"
+      ],
+      "therapeutic_classes": [
+        "laxative"
+      ],
+      "license_year": "1988",
+      "license_status": "active",
+      "license_expiry_date": "2029/09/22",
+      "applicant": "回春堂製藥廠股份有限公司",
+      "manufacturer": "回春堂製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=6歲以上未滿12歲，1次使用1個(5mg)，每日一次。栓劑不得剝半使用。; product names=小兒樂下栓劑 / CHILDREN LAXATIN SUPPOSITORY. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0125",
+      "license_number": "衛署藥製字第032378號",
+      "chinese_name": "芬司得陰道栓劑",
+      "english_name": "FEMSTAT VAGINAL SUPPOSITORY",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "vaginal_suppository",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "unclear",
+      "indication": "由黴菌引起之陰道感染症",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "BUTOCONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "other_vaginal"
+      ],
+      "license_year": "1990",
+      "license_status": "active",
+      "license_expiry_date": "2028/03/19",
+      "applicant": "中國化學製藥股份有限公司新豐工廠",
+      "manufacturer": "中國化學製藥股份有限公司新豐工廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=芬司得陰道栓劑 / FEMSTAT VAGINAL SUPPOSITORY. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0126",
+      "license_number": "衛署藥製字第036350號",
+      "chinese_name": "\"明德\"秘瀉樂栓劑１０毫克（秘可舒）",
+      "english_name": "BISADYL SUPPOSITORIES 10MG \"MEIDER\" (BISACODYL)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "便秘\r\n成人及10歲以上的兒童：1-2錠(5-10mg)。\r\n4-10歲兒童：1錠(5mg)。\r\n4歲以下兒童：建議使用1/2栓劑（5mg)。\r\n建議在晚上服用腸溶糖衣錠，翌晨即可排便，且必須整錠伴與適量的液體吞服。但腸溶糖衣錠請勿與會降低上腸胃道酸度的製品(例如牛奶、制酸劑或某些正子幫浦抑制劑)同時服用，以免腸溶衣過早被溶解。\r\n用於診斷過程及手術前的準備\r\n用於診斷過程及手術前、後清除腸容物時，需在醫護監督下使用BISADYL。用於腹部放射照影檢查或手術前腸容物清除時，為了使腸容物徹底排空，錠劑必須與栓劑配合使用。\r\n成人：建議劑量為在檢查前夜睡前服用2-4顆腸溶糖衣錠，檢查當天早上再使用一個栓劑。\r\n4歲及4歲以上兒童：建議在晚上服用一顆腸溶糖衣錠，翌晨再使用半個栓劑。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "暫時緩解便秘、診斷及手術前清腸。",
+      "indication_category": "便秘與排便準備",
+      "active_ingredients": [
+        "BISACODYL"
+      ],
+      "therapeutic_classes": [
+        "laxative"
+      ],
+      "license_year": "1993",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/06",
+      "applicant": "明德製藥股份有限公司",
+      "manufacturer": "明德製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=便秘\r\n成人及10歲以上的兒童：1-2錠(5-10mg)。\r\n4-10歲兒童：1錠(5mg)。\r\n4歲以下兒童：建議使用1/2栓劑（5mg)。\r\n建議在晚上服用腸溶糖衣錠，翌晨即可排便，且必須整錠伴與適量的液體吞服。但腸溶糖衣錠請勿與會降低上腸胃道酸度的製品(例如牛奶、制酸劑或某些正子幫浦抑制劑)同時服用，以免腸溶衣過早被溶解。\r\n用於診斷過程及手術前的準備\r\n用於診斷過程及手術前、後清除腸容物時，需在醫護監督下使用BISADYL。用於腹部放射照影檢查或手術前腸容物清除時，為了使腸容物徹底排空，錠劑必須與栓劑配合使用。\r\n成人：建議劑量為在檢查前夜睡前服用2-4顆腸溶糖衣錠，檢查當天早上再使用一個栓劑。\r\n4歲及4歲以上兒童：建議在晚上服用一顆腸溶糖衣錠，翌晨再使用半個栓劑。; product names=\"明德\"秘瀉樂栓劑１０毫克（秘可舒） / BISADYL SUPPOSITORIES 10MG \"MEIDER\" (BISACODYL). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0127",
+      "license_number": "衛署藥製字第038013號",
+      "chinese_name": "\"培力\"美汝栓劑１５０毫克（亦可那挫）",
+      "english_name": "ECOVALE SUPPOSITORIES 150 MG \"P.L.\" (ECONAZOLE)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "念珠菌性女陰陰道炎及併有革蘭氏陽性細菌感染之婦女陰道炎。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "ECONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1994",
+      "license_status": "active",
+      "license_expiry_date": "2029/08/26",
+      "applicant": "培力藥品工業股份有限公司",
+      "manufacturer": "培力藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"培力\"美汝栓劑１５０毫克（亦可那挫） / ECOVALE SUPPOSITORIES 150 MG \"P.L.\" (ECONAZOLE). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0128",
+      "license_number": "衛署藥製字第038084號",
+      "chinese_name": "\"生達\"舒暢栓劑10毫克(秘可舒)",
+      "english_name": "LICODYL SUPPOSITORY 10MG \"STANDARD\" (BISACODYL)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "成人一次使用1個，每日可使用1個。12歲以上適用成人劑量。栓劑不得剝半使用。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "緩解便秘。",
+      "indication_category": "便秘與排便準備",
+      "active_ingredients": [
+        "BISACODYL"
+      ],
+      "therapeutic_classes": [
+        "laxative"
+      ],
+      "license_year": "1994",
+      "license_status": "active",
+      "license_expiry_date": "2029/09/10",
+      "applicant": "生達化學製藥股份有限公司二廠",
+      "manufacturer": "培力藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=成人一次使用1個，每日可使用1個。12歲以上適用成人劑量。栓劑不得剝半使用。; product names=\"生達\"舒暢栓劑10毫克(秘可舒) / LICODYL SUPPOSITORY 10MG \"STANDARD\" (BISACODYL). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0129",
+      "license_number": "衛署藥製字第039953號",
+      "chinese_name": "“國嘉”冬培力栓劑１０毫克（多普利杜）",
+      "english_name": "DOMPERID SUPPOSITORY 10MG (DOMPERIDONE) \"KOJAR\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "無法口服情況下，用於噁心、嘔吐的症狀治療，糖尿病引起的胃腸蠕動異常。",
+      "indication_category": "噁心與嘔吐",
+      "active_ingredients": [
+        "DOMPERIDONE"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1996",
+      "license_status": "active",
+      "license_expiry_date": "2031/05/03",
+      "applicant": "國嘉製藥工業股份有限公司幼獅三廠",
+      "manufacturer": "國嘉製藥工業股份有限公司幼獅三廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=“國嘉”冬培力栓劑１０毫克（多普利杜） / DOMPERID SUPPOSITORY 10MG (DOMPERIDONE) \"KOJAR\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0130",
+      "license_number": "衛署藥製字第042954號",
+      "chinese_name": "〝華興〞吐平栓劑３０毫克（多普利杜）",
+      "english_name": "DOMPE SUPPOSITORIES 30MG (DOMPERIDONE) \"H.S.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "1.「成人」及「12歲以上體重大於35kg之青少年」：1次10-30mg，每日最多2次。\r\n2.「12歲以下兒童」及「12歲以上體重小於35kg之青少年」：1次10mg/kg，每日最多3次。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "無法口服的情況下，用於噁心、嘔吐的症狀治療，糖尿病引起的胃腸蠕動異常。",
+      "indication_category": "噁心與嘔吐",
+      "active_ingredients": [
+        "DOMPERIDONE"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1999",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/12",
+      "applicant": "華興化學製藥廠股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=1.「成人」及「12歲以上體重大於35kg之青少年」：1次10-30mg，每日最多2次。\r\n2.「12歲以下兒童」及「12歲以上體重小於35kg之青少年」：1次10mg/kg，每日最多3次。; product names=〝華興〞吐平栓劑３０毫克（多普利杜） / DOMPE SUPPOSITORIES 30MG (DOMPERIDONE) \"H.S.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0131",
+      "license_number": "衛署藥製字第043161號",
+      "chinese_name": "益痔康栓劑",
+      "english_name": "ALCOS-ANAL SUPPOSITORIES",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "痔瘡。",
+      "indication_category": "痔瘡與肛門直腸不適",
+      "active_ingredients": [
+        "SODIUM OLEATE"
+      ],
+      "therapeutic_classes": [
+        "hemorrhoid"
+      ],
+      "license_year": "1999",
+      "license_status": "active",
+      "license_expiry_date": "2029/08/16",
+      "applicant": "育新企業股份有限公司",
+      "manufacturer": "明德製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=益痔康栓劑 / ALCOS-ANAL SUPPOSITORIES. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0132",
+      "license_number": "衛署藥製字第044451號",
+      "chinese_name": "達來陰道錠",
+      "english_name": "ZALAIN VAGINAL TABLET",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "unclear",
+      "indication": "治療黴菌（多數為白色念珠菌）引起之陰道感染症。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "SERTACONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "other_vaginal"
+      ],
+      "license_year": "2001",
+      "license_status": "active",
+      "license_expiry_date": "2031/05/10",
+      "applicant": "科進製藥科技股份有限公司",
+      "manufacturer": "科進製藥科技股份有限公司新竹廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=達來陰道錠 / ZALAIN VAGINAL TABLET. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0133",
+      "license_number": "衛署藥輸字第021083號",
+      "chinese_name": "安腸克栓劑",
+      "english_name": "ASACOL SUPPOSITORIES",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "潰瘍性結腸炎、輕度到中度直腸炎及直腸乙狀結腸炎。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "AMINOSALICYLIC ACID META-"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "2020",
+      "license_status": "active",
+      "license_expiry_date": "2030/11/18",
+      "applicant": "科懋生物科技股份有限公司",
+      "manufacturer": "TILLOTTS PHARMA AG",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=安腸克栓劑 / ASACOL SUPPOSITORIES. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0134",
+      "license_number": "衛署藥輸字第016450號",
+      "chinese_name": "痔克妥栓劑",
+      "english_name": "FAKTU SUPPOSITORIES",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "local",
+      "indication": "痔瘡及肛門直腸裂隙和破裂所引起之疼痛、出血、搔癢及發炎",
+      "indication_category": "痔瘡與肛門直腸不適",
+      "active_ingredients": [
+        "POLYCRESOLSULFONATE (POLICRESULEN)",
+        "CINCHOCAINE HYDROCHLORIDE"
+      ],
+      "therapeutic_classes": [
+        "hemorrhoid",
+        "local_anesthetic"
+      ],
+      "license_year": "2025",
+      "license_status": "active",
+      "license_expiry_date": "2029/07/16",
+      "applicant": "瑞慶藥業有限公司",
+      "manufacturer": "瑪里士實業有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=痔克妥栓劑 / FAKTU SUPPOSITORIES. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0135",
+      "license_number": "衛署藥輸字第017335號",
+      "chinese_name": "卡黴速停陰道錠５００毫克",
+      "english_name": "CANESTEN 1 VAGINAL TABLETS",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "使用於曾由醫師診斷為黴菌(多數為念珠菌)感染所引起陰道炎之復發治療",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1989",
+      "license_status": "active",
+      "license_expiry_date": "2028/12/20",
+      "applicant": "台灣拜耳股份有限公司",
+      "manufacturer": "HAUPT PHARMA WULFING GMBH",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=卡黴速停陰道錠５００毫克 / CANESTEN 1 VAGINAL TABLETS. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0136",
+      "license_number": "內衛藥製字第000847號",
+      "chinese_name": "服樂淨栓劑",
+      "english_name": "FROTIN SUPPOSITORIES",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "陰道滴蟲感染所引起之陰道炎",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "METRONIDAZOLE"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1969",
+      "license_status": "active",
+      "license_expiry_date": "2029/06/30",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=服樂淨栓劑 / FROTIN SUPPOSITORIES. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0137",
+      "license_number": "內衛藥製字第001073號",
+      "chinese_name": "小兒用喘靜栓劑",
+      "english_name": "CHILDREN'S SENTIN SUPPOSITORIES",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "氣喘及支氣管痙攣",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "DIPROPHYLLINE"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1969",
+      "license_status": "active",
+      "license_expiry_date": "2029/08/31",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=小兒用喘靜栓劑 / CHILDREN'S SENTIN SUPPOSITORIES. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0138",
+      "license_number": "衛署藥製字第040651號",
+      "chinese_name": "怡膚陰道錠１００毫克（艾索那挫）",
+      "english_name": "YI-FU VAGINAL TABLETS 100MG (ISOCONAZOLE) \"S.C.\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "陰道黴菌感染包括與革蘭氏陽性細菌的混合感染。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "ISOCONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1996",
+      "license_status": "active",
+      "license_expiry_date": "2026/11/30",
+      "applicant": "十全實業股份有限公司",
+      "manufacturer": "十全實業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=怡膚陰道錠１００毫克（艾索那挫） / YI-FU VAGINAL TABLETS 100MG (ISOCONAZOLE) \"S.C.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0139",
+      "license_number": "衛署藥製字第048441號",
+      "chinese_name": "\"強生\" 柔芬 陰道錠100毫克",
+      "english_name": "JOPHUN VAGINAL TABLETS 100MG \"JOHNSON\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "詳如仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "由念珠球菌及其他黴菌所引起陰道炎及外陰道炎。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "MICONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2006",
+      "license_status": "active",
+      "license_expiry_date": "2026/12/06",
+      "applicant": "強生化學製藥廠股份有限公司",
+      "manufacturer": "強生化學製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=詳如仿單; product names=\"強生\" 柔芬 陰道錠100毫克 / JOPHUN VAGINAL TABLETS 100MG \"JOHNSON\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0140",
+      "license_number": "衛署藥製字第014596號",
+      "chinese_name": "\"永信\"寧司泰定陰道錠",
+      "english_name": "NYSTATIN VAGINAL TABLETS \"YUNG SHIN\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "念珠菌所引起之陰道感染症",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "NYSTATIN"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1978",
+      "license_status": "active",
+      "license_expiry_date": "2030/04/03",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=\"永信\"寧司泰定陰道錠 / NYSTATIN VAGINAL TABLETS \"YUNG SHIN\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0141",
+      "license_number": "衛署藥製字第037878號",
+      "chinese_name": "\"杏輝\"抑疼炎栓劑12.5毫克（待克菲那）",
+      "english_name": "VALTAFEN SUPPOSITORY 12.5MG\"SINPHAR\" (DICLOFENAC)",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "成人: 建議起始劑量為每日100-150mg。症狀較輕或長期治療時, 每日投予75-100mg即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀, 日間以錠劑治療外, 可於睡前補充一粒栓劑 (至每日最大劑量150mg)。\r\n兒童: 一歲以上的孩童視病情的嚴重程度給予每天0.5-2mg/Kg體重, 分2-3次使用。幼年型風濕性關節炎的治療可提高至3mg/Kg體重分次使用。\r\n栓劑50mg及75mg不建議使用於孩童。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "緩解發炎及因發炎反應引起之疼痛。",
+      "indication_category": "發燒、疼痛與發炎",
+      "active_ingredients": [
+        "DICLOFENAC SODIUM"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1994",
+      "license_status": "active",
+      "license_expiry_date": "2024/08/03",
+      "applicant": "杏輝藥品工業股份有限公司",
+      "manufacturer": "杏輝藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=成人: 建議起始劑量為每日100-150mg。症狀較輕或長期治療時, 每日投予75-100mg即足夠。每日總劑量應分2-3次使用。為避免夜間疼痛及早晨僵硬症狀, 日間以錠劑治療外, 可於睡前補充一粒栓劑 (至每日最大劑量150mg)。\r\n兒童: 一歲以上的孩童視病情的嚴重程度給予每天0.5-2mg/Kg體重, 分2-3次使用。幼年型風濕性關節炎的治療可提高至3mg/Kg體重分次使用。\r\n栓劑50mg及75mg不建議使用於孩童。; product names=\"杏輝\"抑疼炎栓劑12.5毫克（待克菲那） / VALTAFEN SUPPOSITORY 12.5MG\"SINPHAR\" (DICLOFENAC). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0142",
+      "license_number": "衛署藥製字第001128號",
+      "chinese_name": "阿斯匹林栓劑",
+      "english_name": "ASPIRIN SUPPOSITORIES \"C.M.\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "發燒或需要時使用，若症狀持續，則每4~6小時可重複使用，每24小時內不可超過3次。成人每次1顆，12歲以上適用成人劑量。本藥不得剝半使用。",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "unclear",
+      "indication": "退燒、止痛(緩解頭痛、牙痛、咽喉痛、關節痛、神經痛、肌肉酸痛、月經痛)。",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "ASPIRIN"
+      ],
+      "therapeutic_classes": [
+        "other_rectal"
+      ],
+      "license_year": "1972",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/25",
+      "applicant": "中美兄弟製藥股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=發燒或需要時使用，若症狀持續，則每4~6小時可重複使用，每24小時內不可超過3次。成人每次1顆，12歲以上適用成人劑量。本藥不得剝半使用。; product names=阿斯匹林栓劑 / ASPIRIN SUPPOSITORIES \"C.M.\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0143",
+      "license_number": "衛署藥製字第001386號",
+      "chinese_name": "\"永信\"克炎栓劑",
+      "english_name": "INDOMEN SUPPOSITORIES \"YUNG SHIN\"",
+      "dosage_form": "栓劑",
+      "dosage_form_normalized": "rectal_suppository",
+      "route_raw": "",
+      "route_normalized": "rectal",
+      "application_site": "rectal",
+      "action_scope": "systemic",
+      "indication": "關節炎、僂麻質斯、變形性關節症之消炎、鎮痛、解熱",
+      "indication_category": "其他肛門／直腸用途",
+      "active_ingredients": [
+        "INDOMETHACIN (eq to Indometacin)"
+      ],
+      "therapeutic_classes": [
+        "anti_inflammatory_systemic"
+      ],
+      "license_year": "1972",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/25",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=栓劑; approved use=; product names=\"永信\"克炎栓劑 / INDOMEN SUPPOSITORIES \"YUNG SHIN\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0144",
+      "license_number": "衛署藥製字第020295號",
+      "chinese_name": "\"永信\"無黴陰道錠（邁可那挫）",
+      "english_name": "ANTIFUNGAL VAGINAL TABLETS (MICONAZOLE) \"YUNG SHIN\"",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "念珠菌性陰道炎、感染性白帶及其他具有感受性病原體所引起之感染性",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "MICONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1980",
+      "license_status": "active",
+      "license_expiry_date": "2030/01/24",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=\"永信\"無黴陰道錠（邁可那挫） / ANTIFUNGAL VAGINAL TABLETS (MICONAZOLE) \"YUNG SHIN\". Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0145",
+      "license_number": "衛部藥製字第059868號",
+      "chinese_name": "薇詩婷陰道錠",
+      "english_name": "Esvatin Vaginal Tablets",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "請詳見仿單",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "萎縮性陰道炎、子宮頸管炎及子宮膣部糜爛",
+      "indication_category": "陰道萎縮與荷爾蒙相關用途",
+      "active_ingredients": [
+        "ESTRIOL"
+      ],
+      "therapeutic_classes": [
+        "hormone"
+      ],
+      "license_year": "2018",
+      "license_status": "active",
+      "license_expiry_date": "2028/02/22",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=請詳見仿單; product names=薇詩婷陰道錠 / Esvatin Vaginal Tablets. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0146",
+      "license_number": "衛部藥製字第059899號",
+      "chinese_name": "黴可治陰道錠500毫克",
+      "english_name": "Mikizol Vaginal Tablets 500mg",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "於晚上睡前使用，一錠即為一個完整療程。使用前先用肥皂及清水徹底清洗雙手，並將藥錠自包裝中取出：使用時採仰躺姿勢，雙腳微屈，用食指及中指將陰道錠輕推入陰道口，放妥後，將藥錠用手指推送入陰道深處3-5公分後，不要站起或走動，避免滑出。",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "由黴菌(多數念珠球菌毛滴蟲屬)所引起之白帶、陰道炎。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2018",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/02",
+      "applicant": "強生化學製藥廠股份有限公司",
+      "manufacturer": "強生化學製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=於晚上睡前使用，一錠即為一個完整療程。使用前先用肥皂及清水徹底清洗雙手，並將藥錠自包裝中取出：使用時採仰躺姿勢，雙腳微屈，用食指及中指將陰道錠輕推入陰道口，放妥後，將藥錠用手指推送入陰道深處3-5公分後，不要站起或走動，避免滑出。; product names=黴可治陰道錠500毫克 / Mikizol Vaginal Tablets 500mg. Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0147",
+      "license_number": "衛署藥製字第025217號",
+      "chinese_name": "\"十全\"抗黴陰道錠100毫克（邁可那挫）",
+      "english_name": "ANTIFUNGAL VAGINAL TABLETS 100MG \"S.C.\" (MICONAZOLE)",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "念球菌性陰道炎及真菌所引起之陰道感染症",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "MICONAZOLE NITRATE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "1982",
+      "license_status": "active",
+      "license_expiry_date": "2029/04/14",
+      "applicant": "十全實業股份有限公司",
+      "manufacturer": "十全實業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=; product names=\"十全\"抗黴陰道錠100毫克（邁可那挫） / ANTIFUNGAL VAGINAL TABLETS 100MG \"S.C.\" (MICONAZOLE). Inclusion determined from dosage form and route/name signals, not indication alone."
+    },
+    {
+      "product_id": "supp_0148",
+      "license_number": "衛署藥製字第057859號",
+      "chinese_name": "黴可清陰道錠200毫克(克催瑪汝)",
+      "english_name": "MEKECIN Vaginal Tablets 200mg (Clotrimazole)",
+      "dosage_form": "陰道錠",
+      "dosage_form_normalized": "vaginal_tablet",
+      "route_raw": "請詳閱說明書",
+      "route_normalized": "intravaginal",
+      "application_site": "vaginal",
+      "action_scope": "local",
+      "indication": "治療念珠菌屬、陰道滴蟲屬、串狀釀母菌屬及細菌混合感染引起的陰道炎、白帶。",
+      "indication_category": "陰道黴菌感染",
+      "active_ingredients": [
+        "CLOTRIMAZOLE"
+      ],
+      "therapeutic_classes": [
+        "antifungal"
+      ],
+      "license_year": "2013",
+      "license_status": "active",
+      "license_expiry_date": "2028/03/15",
+      "applicant": "井田國際醫藥廠股份有限公司",
+      "manufacturer": "井田國際醫藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "verified_at": "2026-07-14T00:00:00+08:00",
+      "inclusion_evidence": "TFDA dosage form=陰道錠; approved use=請詳閱說明書; product names=黴可清陰道錠200毫克(克催瑪汝) / MEKECIN Vaginal Tablets 200mg (Clotrimazole). Inclusion determined from dosage form and route/name signals, not indication alone."
+    }
+  ]
+}

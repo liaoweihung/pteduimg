@@ -1,0 +1,49 @@
+﻿substance_id,raw_name,normalized_name,base_substance_group,strength,strength_unit,source_id,verified_at
+sub_clotrimazole,CLOTRIMAZOLE,clotrimazole,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_bisacodyl,BISACODYL,bisacodyl,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_aspirin,ASPIRIN,aspirin,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_metronidazole,METRONIDAZOLE,metronidazole,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_nystatin,NYSTATIN,nystatin,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_polycresolsulfonate_policresulen,POLYCRESOLSULFONATE (POLICRESULEN),polycresolsulfonate (policresulen),,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_econazole_nitrate,ECONAZOLE NITRATE,econazole nitrate,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_animal_heart_extract_water_insoluble,"ANIMAL HEART EXTRACT, WATER INSOLUBLE *","animal heart extract, water insoluble *",,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_acetaminophen_eq_to_paracetamol,ACETAMINOPHEN (EQ TO PARACETAMOL),acetaminophen (eq to paracetamol),,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_diclofenac_sodium,DICLOFENAC SODIUM,diclofenac sodium,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_dl_methylephedrine_hcl_diprophylline,DL-METHYLEPHEDRINE HCL;;DIPROPHYLLINE,dl-methylephedrine hcl;;diprophylline,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_hydrocortisone_acetate_tocopherol_acetate_zinc_oxide_lidocaine_allantoin,HYDROCORTISONE ACETATE;;TOCOPHEROL ACETATE;;ZINC OXIDE;;LIDOCAINE;;ALLANTOIN,hydrocortisone acetate;;tocopherol acetate;;zinc oxide;;lidocaine;;allantoin,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_betamethasone_valerate_phenylephrine_hcl_lidocaine_hcl,BETAMETHASONE VALERATE;;PHENYLEPHRINE HCL;;LIDOCAINE HCL,betamethasone valerate;;phenylephrine hcl;;lidocaine hcl,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_aluminum_acetate_hydrocortisone_acetate_zinc_oxide_lidocaine,ALUMINUM ACETATE;;HYDROCORTISONE ACETATE;;ZINC OXIDE;;LIDOCAINE,aluminum acetate;;hydrocortisone acetate;;zinc oxide;;lidocaine,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_meta_cresolsulfonic_acid_policresulen,META-CRESOLSULFONIC ACID (POLICRESULEN),meta-cresolsulfonic acid (policresulen),,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_domperidone,DOMPERIDONE,domperidone,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_lidocaine_tocopherol_acetate_alpha_dl_prednisolone_acetate_chlorhexidine_hcl_aluminum_chlorhydroxyallantoinate_alcoxa,LIDOCAINE;;TOCOPHEROL ACETATE ALPHA DL-;;PREDNISOLONE ACETATE;;CHLORHEXIDINE HCL;;ALUMINUM CHLORHYDROXYALLANTOINATE (ALCOXA),lidocaine;;tocopherol acetate alpha dl-;;prednisolone acetate;;chlorhexidine hcl;;aluminum chlorhydroxyallantoinate (alcoxa),,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_diprophylline_dl_methylephedrine_hcl,DIPROPHYLLINE;;DL-METHYLEPHEDRINE HCL,diprophylline;;dl-methylephedrine hcl,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_glycerin_eq_to_glycerol,GLYCERIN (eq to GLYCEROL),glycerin (eq to glycerol),,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_isoconazole_nitrate,ISOCONAZOLE NITRATE,isoconazole nitrate,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_lidocaine_hydrocortisone_acetate_zinc_oxide_allantoin,LIDOCAINE;;HYDROCORTISONE ACETATE;;ZINC OXIDE;;ALLANTOIN,lidocaine;;hydrocortisone acetate;;zinc oxide;;allantoin,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_allantoin_tocopherol_acetate_alpha_dl_benzocaine_ethyl_aminobenzoate_hydrocortisone_acetate_zinc_oxide_chlorhexidine_hcl,ALLANTOIN;;TOCOPHEROL ACETATE ALPHA DL-;;BENZOCAINE (ETHYL AMINOBENZOATE);;HYDROCORTISONE ACETATE;;ZINC OXIDE;;CHLORHEXIDINE HCL,allantoin;;tocopherol acetate alpha dl-;;benzocaine (ethyl aminobenzoate);;hydrocortisone acetate;;zinc oxide;;chlorhexidine hcl,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_miconazole_nitrate,MICONAZOLE NITRATE,miconazole nitrate,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_tocopherol_acetate_alpha_dl_prednisolone_acetate_aluminum_chlorhydroxyallantoinate_alcoxa_chlorhexidine_hcl_lidocaine,TOCOPHEROL ACETATE ALPHA DL-;;PREDNISOLONE ACETATE;;ALUMINUM CHLORHYDROXYALLANTOINATE (ALCOXA);;CHLORHEXIDINE HCL;;LIDOCAINE,tocopherol acetate alpha dl-;;prednisolone acetate;;aluminum chlorhydroxyallantoinate (alcoxa);;chlorhexidine hcl;;lidocaine,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_polycresolsulfonate_policresulen_cinchocaine_hydrochloride,POLYCRESOLSULFONATE (POLICRESULEN);;CINCHOCAINE HYDROCHLORIDE,polycresolsulfonate (policresulen);;cinchocaine hydrochloride,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_mesalazine_mesalamine,MESALAZINE(MESALAMINE),mesalazine(mesalamine),,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_dequalinium_chloride,DEQUALINIUM CHLORIDE,dequalinium chloride,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_progesterone,PROGESTERONE,progesterone,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_dehydroepiandrosterone_sodium_sodium_prasterone,DEHYDROEPIANDROSTERONE SODIUM (SODIUM PRASTERONE),dehydroepiandrosterone sodium (sodium prasterone),,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_carbarsone_chloramphenicol_benzethonium_chloride,CARBARSONE;;CHLORAMPHENICOL;;BENZETHONIUM CHLORIDE,carbarsone;;chloramphenicol;;benzethonium chloride,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_ephedrine_sulfate_diphenhydramine_hcl_diprophylline_guaiacol_glycolate_eq_to_glyceryl_guaiacolate_diphenhydramine_hcl_ephedrine_sulfate_guaiacol_glycolate_eq_to_glyceryl_guaiacolate_diprophylline,EPHEDRINE SULFATE;;DIPHENHYDRAMINE HCL;;DIPROPHYLLINE;;GUAIACOL GLYCOLATE (EQ TO GLYCERYL GUAIACOLATE);;DIPHENHYDRAMINE HCL;;EPHEDRINE SULFATE;;GUAIACOL GLYCOLATE (EQ TO GLYCERYL GUAIACOLATE);;DIPROPHYLLINE,ephedrine sulfate;;diphenhydramine hcl;;diprophylline;;guaiacol glycolate (eq to glyceryl guaiacolate);;diphenhydramine hcl;;ephedrine sulfate;;guaiacol glycolate (eq to glyceryl guaiacolate);;diprophylline,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_erythromycin,ERYTHROMYCIN,erythromycin,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_prednisolone_acetate_lidocaine_allantoin_tocopherol_acetate,PREDNISOLONE ACETATE;;LIDOCAINE;;ALLANTOIN;;TOCOPHEROL ACETATE,prednisolone acetate;;lidocaine;;allantoin;;tocopherol acetate,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_acetylsalicylate_lysine,ACETYLSALICYLATE (LYSINE),acetylsalicylate (lysine),,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_cinchocaine_hydrochloride_polycresolsulfonate_policresulen,CINCHOCAINE HYDROCHLORIDE;;POLYCRESOLSULFONATE (POLICRESULEN),cinchocaine hydrochloride;;polycresolsulfonate (policresulen),,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_dinoprostone,DINOPROSTONE,dinoprostone,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_estriol,ESTRIOL,estriol,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_benzocaine_ethyl_aminobenzoate_tocopherol_acetate_prednisolone_tetracaine_hcl_zinc_oxide,BENZOCAINE (ETHYL AMINOBENZOATE);;TOCOPHEROL ACETATE;;PREDNISOLONE;;TETRACAINE HCL;;ZINC OXIDE,benzocaine (ethyl aminobenzoate);;tocopherol acetate;;prednisolone;;tetracaine hcl;;zinc oxide,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_iodine_povidone,IODINE (POVIDONE),iodine (povidone),,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_naproxen,NAPROXEN,naproxen,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_progesterone_micronized,PROGESTERONE MICRONIZED,progesterone micronized,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_benzocaine_ethyl_aminobenzoate_glycyrrhetic_acid_eq_to_glycyrrhetinic_acid_phenylephrine_hcl_chlorhexidine_acetate_bismuth_subnitrate_bismuth_nitrate_basic_lidocaine,BENZOCAINE (ETHYL AMINOBENZOATE);;GLYCYRRHETIC ACID (EQ TO GLYCYRRHETINIC ACID);;PHENYLEPHRINE HCL;;CHLORHEXIDINE ACETATE;;BISMUTH SUBNITRATE (BISMUTH NITRATE BASIC);;LIDOCAINE,benzocaine (ethyl aminobenzoate);;glycyrrhetic acid (eq to glycyrrhetinic acid);;phenylephrine hcl;;chlorhexidine acetate;;bismuth subnitrate (bismuth nitrate basic);;lidocaine,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_indomethacin_eq_to_indometacin,INDOMETHACIN (eq to Indometacin),indomethacin (eq to indometacin),,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_butoconazole_nitrate,BUTOCONAZOLE NITRATE,butoconazole nitrate,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_sodium_oleate,SODIUM OLEATE,sodium oleate,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_sertaconazole_nitrate,SERTACONAZOLE NITRATE,sertaconazole nitrate,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_aminosalicylic_acid_meta,AMINOSALICYLIC ACID META-,aminosalicylic acid meta-,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_diprophylline,DIPROPHYLLINE,diprophylline,,,,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00

@@ -1,0 +1,7 @@
+﻿rule_id,rule_type,rule,source
+candidate,candidate,TFDA manufactured products with solid insertion form/name/use signal.,TFDA InfoId=37/43
+inclusion,inclusion,"Priority: TFDA dosage form, approved route/use, product names, then use; indications never decide inclusion.",TFDA InfoId=37/43
+exclude,exclusion,"Ointment, cream, gel, enema, injection, implant, device, and non-solid dosage forms excluded.",TFDA InfoId=37/43
+roles,ingredient_role,Only InfoId=37 official main-active summary yields confirmed active. Bases/excipients are not inferred from formula rows.,TFDA InfoId=37/43
+class,classification,Multi-signal pharmacologic mapping from active summary; indication only corroborates; unknown maps conservatively to other_*.,TFDA InfoId=37/43
+scope,action_scope,"Systemic only for documented rectal systemic-active patterns; otherwise local when class supports it, unclear when not reliable.",TFDA InfoId=37/43
