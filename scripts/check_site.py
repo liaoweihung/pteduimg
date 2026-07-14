@@ -169,6 +169,24 @@ def check_analytics_guards(failures: list[str]) -> None:
             f"{name} is missing local/private GA guard",
             failures,
         )
+    medicine_pages = [
+        "ingredient-explorer.html", "eye_drop_explorer.html", "web/taiwan_medicinal_patch_database_v2.html",
+        "spray_medicine_explorer.html", "suppository_medicine_explorer.html", "oral_liquid_medicine_explorer.html",
+    ]
+    for name in medicine_pages:
+        html = read_text(ROOT / name)
+        check(
+            html.count("medicine-explorer-analytics.js") == 1 and "G-T5R33JYTC0" in read_text(ROOT / "js" / "medicine-explorer-analytics.js"),
+            f"{name} has one guarded shared GA loader",
+            f"{name} is missing or duplicates the shared GA loader",
+            failures,
+        )
+        check(
+            html.count("feedback.html?source=") == 0,
+            f"{name} delegates one feedback link to the shared shell",
+            f"{name} has a duplicate page-level feedback link",
+            failures,
+        )
         check(
             '<script async src="https://www.googletagmanager.com/gtag/js' not in html,
             f"{name} does not load GA unconditionally",
@@ -212,11 +230,45 @@ def check_oral_liquid_explorer(failures: list[str]) -> None:
     check(summary.get("ready_to_use") == 963 and summary.get("requires_reconstitution") == 71, "oral-liquid preparation counts match formal data", "oral-liquid preparation counts do not match", failures)
     check(summary.get("unresolved_candidates_excluded") == 105, "oral-liquid unresolved candidates stay excluded", "oral-liquid unresolved candidate count is wrong", failures)
     check(all("錠劑" not in product.get("dosage_form_raw", "") and "膠囊" not in product.get("dosage_form_raw", "") for product in data.get("products", [])), "oral-liquid export excludes tablets and capsules", "oral-liquid export includes a solid oral form", failures)
-    for control in ("preparationFilter", "formFilter", "classFilter", "indicationFilter", "ingredientFilter", "query", "clear"):
-        check(f'id="{control}"' in html, f"oral-liquid explorer exposes {control}", f"oral-liquid explorer is missing {control}", failures)
-    check("PAGE_SIZE = 25" in js and "slice(start, start + PAGE_SIZE)" in js, "oral-liquid explorer paginates results", "oral-liquid explorer does not paginate results", failures)
-    check("commonIngredients" in js and "concentrationGroups" in js, "oral-liquid explorer renders ingredient and concentration insights", "oral-liquid explorer is missing ingredient/concentration insights", failures)
+    shell = read_text(ROOT / "js" / "medicine-explorer-shell.js")
+    check("MEDICINE_EXPLORER_PAGE='oral'" in html and "medicine-explorer-shell.js" in html, "oral-liquid explorer uses shared shell", "oral-liquid explorer does not use shared shell", failures)
+    check("slice((state.page-1)*20,state.page*20)" in shell, "shared shell paginates results by 20", "shared shell does not paginate results by 20", failures)
+    check("官方濃度" in shell and "配製方式" in shell, "oral-liquid explorer keeps concentration/preparation fields", "oral-liquid explorer is missing concentration/preparation fields", failures)
     check("oral_liquid_medicine_explorer.html" in sw and "oral_liquid_meds_final.json" in sw, "service worker includes oral-liquid assets", "service worker misses oral-liquid assets", failures)
+
+
+def check_medicine_shell(failures: list[str]) -> None:
+    shell = read_text(ROOT / "js" / "medicine-explorer-shell.js")
+    css = read_text(ROOT / "css" / "medicine-explorer-theme.css")
+    for needle in ("依適應症", "依成分", "搜尋產品", "me-return", "me-db-pill", "藥證資料查詢截至民國115年7月", "product_detail_open"):
+        check(needle in shell or needle in css, f"shared medicine shell has {needle}", f"shared medicine shell is missing {needle}", failures)
+    for banned in ("Breadth Score", "Bridge Score", "Archetype", "Top 5"):
+        check(banned not in shell, f"shared medicine shell hides {banned}", f"shared medicine shell exposes {banned}", failures)
+
+
+def check_medicine_data_regression(failures: list[str]) -> None:
+    topical = read_text(ROOT / "ingredient-explorer.html")
+    topical_match = re.search(r"window\.EXPLORER_DATA=(\{[\s\S]*?\});\s*\nconst ", topical)
+    topical_data = json.loads(topical_match.group(1)) if topical_match else {}
+    check(topical_data.get("metadata", {}).get("productCount") == 2250 and topical_data.get("metadata", {}).get("classCount") == 17, "topical data keeps 2,250 products / 17 classes", "topical product or class baseline changed", failures)
+    patch_bytes = (ROOT / "web" / "taiwan_medicinal_patch_database_v2.html").read_bytes()
+    patch_match = re.search(br'<script id="patch-data" type="application/json">(.*?)</script>', patch_bytes, flags=re.S)
+    patch_data = json.loads(patch_match.group(1).decode("utf-8")) if patch_match else {}
+    check(len(patch_data.get("products", [])) == 404 and len(patch_data.get("categories", [])) == 15, "patch data keeps 404 products / 15 categories", "patch product or category baseline changed", failures)
+    checks = [
+        ("eye", "eye_meds_rebuild_20260711/final/eye_meds_final.json", 492, 63),
+        ("spray", "spray_meds_rebuild_20260714/final/spray_meds_final.json", 141, 12),
+        ("suppository", "suppository_meds_rebuild_20260714/final/suppository_meds_final.json", 148, 14),
+        ("oral liquid", "oral_liquid_meds_rebuild_20260714/final/oral_liquid_meds_final.json", 1034, 17),
+    ]
+    for label, rel_path, count, class_count in checks:
+        data = load_json(ROOT / "data" / rel_path)
+        products = data.get("products", [])
+        if label == "eye":
+            classes = {item.get("class_name") for product in products for item in product.get("classes", []) if item.get("class_name")}
+        else:
+            classes = {item for product in products for item in product.get("therapeutic_classes", [])}
+        check(len(products) == count and len(classes) == class_count, f"{label} data keeps {count} products / {class_count} classes", f"{label} product or class baseline changed", failures)
 
 
 def main() -> int:
@@ -228,6 +280,8 @@ def main() -> int:
     check_analytics_guards(failures)
     check_service_worker(failures)
     check_oral_liquid_explorer(failures)
+    check_medicine_shell(failures)
+    check_medicine_data_regression(failures)
 
     if failures:
         print("\nSite check failed:")

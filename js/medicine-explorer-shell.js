@@ -1,116 +1,32 @@
-/* Reusable shell: each medicine database supplies only its title, source page and links. */
+/* Shared configurable medicine-database UI. It intentionally contains no database content. */
 (() => {
   'use strict';
-  const config = window.MEDICINE_EXPLORER_CONFIG;
-  const $ = (selector) => document.querySelector(selector);
-  const result = $('#medicineExplorerResult');
-  const state = { mode: 'indication', indication: '', ingredient: '', search: '', page: 1, filters: {} };
-  let data, products, ingredientByName, indicationByName;
-  const esc = (value = '') => String(value).replace(/[&<>'"]/g, (character) => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[character]));
-  const unique = (items) => [...new Set(items.filter(Boolean))];
-  const sorted = (items) => [...items].sort((a, b) => String(a).localeCompare(String(b), 'en'));
-  const optionList = (items, selected, placeholder) => `<option value="">${esc(placeholder)}</option>${sorted(items).map((item) => `<option value="${esc(item)}"${item === selected ? ' selected' : ''}>${esc(item)}</option>`).join('')}`;
-
-  function setupDatabaseSwitcher() {
-    const select = $('#databaseSelect');
-    select.innerHTML = config.databases.map((database) => `<option value="${esc(database.href)}"${database.name === config.databaseName ? ' selected' : ''}>${esc(database.name)}</option>`).join('');
-    select.addEventListener('change', () => { window.location.href = select.value; });
+  const key=window.MEDICINE_EXPLORER_PAGE, C=window.MedicineExplorerConfigs?.[key]; if(!C) return;
+  const $=(s,r=document)=>r.querySelector(s), esc=v=>String(v??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+  const uniq=a=>[...new Set(a.filter(Boolean))], sort=a=>[...a].sort((a,b)=>String(a).localeCompare(String(b),'zh-Hant'));
+  const state={mode:'indication', indication:'', ingredient:'', query:'', page:1, filters:{}}; let products=[];
+  const track=e=>window.medicineTrack?.(e);
+  function normalizeRaw(raw) {
+    if(key==='topical') return Object.entries(raw.products).map(([license,p])=>({license,zh:p.name,en:p.englishName,active:p.ingredients||[],indications:indicationsForTopical(license,raw),dosage:p.dosageForm,summary:p.indicationSummary,full:p.fullIndication,source:p.sources,fields:{ingredientClass:'',dosage:p.dosageForm,legal:p.drugClass,status:p.isValid}}));
+    if(key==='patch') return raw.products.map(p=>({license:p.license_no,zh:p.chinese_name,en:p.english_name,active:(p.ingredients||[]).filter(x=>x.role==='ACTIVE').map(x=>x.ingredient_inn||x.ingredient_name_raw),indications:p.indication_standards||[],dosage:p.dosage_form_raw,summary:p.indication_raw,full:p.indication_raw,source:p.source_url,extra:`規格：${(p.size_labels||[]).join('、')||p.package_raw||'未提供'}`,fields:{ingredientClass:'',dosage:p.dosage_form_raw,indicationCategory:(p.indication_categories||[]).join('、'),legal:p.prescription_class}}));
+    if(key==='eye') return raw.products.map(p=>{const active=(p.substances||[]).filter(x=>x.substance_role==='active'&&x.confirmed_status==='confirmed').map(x=>x.substance_normalized||x.substance_raw);return {license:p.license_number,zh:p.chinese_name,en:p.english_name,active,indications:(p.indications||[]).map(x=>x.indication_category),dosage:p.dosage_form_raw,summary:p.indication_raw,full:p.indication_raw,source:(p.sources||[]).map(x=>x.source_name).join('；'),extra:`成分確認狀態：${active.length?'已確認有效成分':'有效成分待確認'}`,fields:{dosage:p.dosage_form_normalized||p.dosage_form_raw,legal:p.drug_class,year:p.license_year,status:p.license_status,confirmed:active.length?'confirmed':'pending'}}});
+    if(key==='oral') return raw.products.map(p=>({license:p.license_number,zh:p.chinese_name,en:p.english_name,active:(p.active_ingredients||[]).map(x=>x.name),indications:[p.indication_category],dosage:p.dosage_form_group,summary:p.indication,full:p.indication,source:p.source_id,extra:`配製方式：${p.preparation_type==='requires_reconstitution'?'需要加水配製':'開瓶可直接使用'}；官方濃度：${(p.active_ingredients||[]).map(x=>x.display_concentration).filter(Boolean).join('、')||'待確認'}`,fields:{preparation:p.preparation_type,dosage:p.dosage_form_group,legal:p.therapeutic_classes||[],concentration:p.concentration_pending?'待確認':p.has_display_concentration?'有官方濃度':'未提供'}}));
+    return raw.products.map(p=>({license:p.license_number,zh:p.chinese_name,en:p.english_name,active:p.active_ingredients||[],indications:[p.indication_category],dosage:p.dosage_form,summary:p.indication,full:p.indication,source:p.source_id,extra:key==='spray'?`使用部位：${siteLabel(p.application_site)}`:`使用部位：${siteLabel(p.application_site)}；作用範圍：${scopeLabel(p.action_scope)}`,fields:{site:siteLabel(p.application_site),scope:scopeLabel(p.action_scope),legal:p.therapeutic_classes||[]}}));
   }
-
-  async function loadData() {
-    const response = await fetch(config.sourcePage, { cache: 'no-cache' });
-    if (!response.ok) throw new Error(`無法載入資料（${response.status}）`);
-    const source = await response.text();
-    const match = source.match(/window\.EXPLORER_DATA=(\{[\s\S]*?\});\s*\nconst /);
-    if (!match) throw new Error('找不到既有外用藥膏資料。');
-    data = JSON.parse(match[1]);
-    products = Object.entries(data.products).map(([license, product]) => ({ ...product, license }));
-    ingredientByName = new Map(data.ingredients.map((ingredient) => [ingredient.ingredient, ingredient]));
-    indicationByName = new Map(data.indications.map((indication) => [indication.displayName, indication]));
-  }
-
-  function renderModeButtons() {
-    const modes = [{id:'indication',label:'依適應症'},{id:'ingredient',label:'依成分'},{id:'product',label:'搜尋產品'}];
-    $('#modeButtons').innerHTML = modes.map((mode) => `<button type="button" class="me-button" data-mode="${mode.id}" aria-pressed="${state.mode === mode.id}">${mode.label}</button>`).join('');
-    $('#modeButtons').querySelectorAll('button').forEach((button) => button.addEventListener('click', () => {
-      state.mode = button.dataset.mode; state.page = 1; render();
-    }));
-  }
-
-  function renderPrimaryControl() {
-    const box = $('#primaryControl');
-    if (state.mode === 'indication') {
-      box.innerHTML = `<label for="primarySelect">適應症</label><select id="primarySelect">${optionList(data.indications.map((item) => item.displayName), state.indication, '請選擇適應症')}</select>`;
-      $('#primarySelect').addEventListener('change', (event) => { state.indication = event.target.value; state.ingredient = ''; state.page = 1; render(); });
-    } else if (state.mode === 'ingredient') {
-      box.innerHTML = `<label for="primarySelect">有效成分</label><select id="primarySelect">${optionList(data.ingredients.map((item) => item.ingredient), state.ingredient, '請選擇有效成分')}</select>`;
-      $('#primarySelect').addEventListener('change', (event) => { state.ingredient = event.target.value; state.indication = ''; state.page = 1; render(); });
-    } else {
-      box.innerHTML = `<label for="productSearch">搜尋產品</label><input id="productSearch" type="search" value="${esc(state.search)}" placeholder="商品名、藥證字號、有效成分或適應症">`;
-      $('#productSearch').addEventListener('input', (event) => { state.search = event.target.value; state.page = 1; renderResult(); });
-    }
-  }
-
-  function scopedProducts() {
-    if (state.mode === 'indication' && state.indication) return productSet(indicationByName.get(state.indication)?.productLicenses || []);
-    if (state.mode === 'ingredient' && state.ingredient) return products.filter((product) => product.ingredients.includes(state.ingredient));
-    return state.mode === 'product' ? products : [];
-  }
-  function productSet(licenses) { const allowed = new Set(licenses); return products.filter((product) => allowed.has(product.license)); }
-  function filterProducts(items) {
-    const text = state.mode === 'product' ? state.search.trim().toLocaleLowerCase() : '';
-    return items.filter((product) => {
-      if (text && ![product.name, product.englishName, product.license, product.ingredientText, product.indicationSummary, product.fullIndication].join(' ').toLocaleLowerCase().includes(text)) return false;
-      if (state.filters.dosageForm && product.dosageForm !== state.filters.dosageForm) return false;
-      if (state.filters.drugClass && product.drugClass !== state.filters.drugClass) return false;
-      if (state.filters.isValid && product.isValid !== state.filters.isValid) return false;
-      if (state.filters.ingredientClass && !product.ingredients.some((name) => ingredientByName.get(name)?.ingredientClass === state.filters.ingredientClass)) return false;
-      return true;
-    });
-  }
-  function renderFilters(items) {
-    const fields = [
-      ['ingredientClass', '成分類別', unique(items.flatMap((product) => product.ingredients.map((name) => ingredientByName.get(name)?.ingredientClass)))],
-      ['dosageForm', '劑型', unique(items.map((product) => product.dosageForm))],
-      ['drugClass', '法律分類', unique(items.map((product) => product.drugClass))],
-      ['isValid', '藥證狀態', unique(items.map((product) => product.isValid))]
-    ];
-    $('#moreFilters').innerHTML = fields.map(([key, label, values]) => `<div class="me-filter"><label for="filter-${key}">${label}</label><select id="filter-${key}" data-filter="${key}">${optionList(values, state.filters[key] || '', '不限')}</select></div>`).join('');
-    $('#moreFilters').querySelectorAll('select').forEach((select) => select.addEventListener('change', () => { state.filters[select.dataset.filter] = select.value; state.page = 1; renderResult(); }));
-  }
-  function bars(title, items, total, onClick) {
-    if (!items.length) return `<section class="me-card"><h3>${esc(title)}</h3><p class="me-summary">沒有可顯示的關聯資料。</p></section>`;
-    const max = Math.max(...items.map((item) => item.count));
-    return `<section class="me-card"><h3>${esc(title)}</h3><div class="me-bars">${items.slice(0, 12).map((item) => `<button type="button" class="me-bar-button" data-query="${esc(onClick)}" data-name="${esc(item.name)}"><span class="me-bar-name">${esc(item.name)}</span><span class="me-bar-track"><span class="me-bar-fill" style="width:${Math.max(3, item.count / max * 100)}%"></span></span><span class="me-bar-value">${item.count} 筆・${total ? (item.count / total * 100).toFixed(1) : 0}%</span></button>`).join('')}</div></section>`;
-  }
-  function bindBars() { result.querySelectorAll('.me-bar-button').forEach((button) => button.addEventListener('click', () => { if (button.dataset.query === 'ingredient') { state.mode = 'ingredient'; state.ingredient = button.dataset.name; state.indication = ''; } else { state.mode = 'indication'; state.indication = button.dataset.name; state.ingredient = ''; } state.page = 1; render(); })); }
-  function counts(items, selector) { const count = new Map(); items.forEach((item) => selector(item).forEach((name) => count.set(name, (count.get(name) || 0) + 1))); return [...count].map(([name, count]) => ({name, count})).sort((a,b) => b.count - a.count || a.name.localeCompare(b.name)); }
-  function indicationRelations(items) { return counts(items, (product) => product.ingredients); }
-  function ingredientRelations(items) {
-    const current = new Set(items.map((product) => product.license));
-    return data.indications.map((indication) => ({ name: indication.displayName, count: indication.productLicenses.filter((license) => current.has(license)).length })).filter((item) => item.count).sort((a,b) => b.count - a.count || a.name.localeCompare(b.name));
-  }
-  function coIngredients(items) { return counts(items, (product) => product.ingredients.filter((name) => name !== state.ingredient)); }
-  function renderProducts(items) {
-    const pageSize = 20, pageCount = Math.max(1, Math.ceil(items.length / pageSize));
-    state.page = Math.min(state.page, pageCount);
-    const pageItems = items.slice((state.page - 1) * pageSize, state.page * pageSize);
-    const cards = pageItems.map((product) => `<article class="me-product"><div class="me-product-title">${esc(product.name || '未提供商品名')}</div><div class="me-product-line"><strong>有效成分：</strong>${esc(product.ingredientText || product.ingredients.join('；'))}</div><div class="me-product-line"><strong>劑型：</strong>${esc(product.dosageForm || '未提供')}　<strong>適應症：</strong>${esc(product.indicationSummary || '待確認')}</div><details><summary>查看完整藥證與適應症</summary><div class="me-product-line"><strong>藥證：</strong>${esc(product.license)}</div><div class="me-product-line"><strong>完整適應症：</strong>${esc(product.fullIndication || product.indicationSummary || '待確認')}</div></details></article>`).join('');
-    return `<section class="me-card"><h3>產品</h3>${cards || '<p class="me-summary">沒有符合條件的產品。</p>'}${items.length ? `<div class="me-pagination"><button class="me-button" type="button" data-page="prev" ${state.page === 1 ? 'disabled' : ''}>上一頁</button><span>第 ${state.page} / ${pageCount} 頁</span><button class="me-button" type="button" data-page="next" ${state.page === pageCount ? 'disabled' : ''}>下一頁</button></div>` : ''}</section>`;
-  }
-  function bindPagination() { result.querySelectorAll('[data-page]').forEach((button) => button.addEventListener('click', () => { state.page += button.dataset.page === 'next' ? 1 : -1; renderResult(); window.scrollTo({top:0, behavior:'smooth'}); })); }
-  function renderResult() {
-    const base = scopedProducts(); renderFilters(base); const visible = filterProducts(base);
-    if ((state.mode === 'indication' && !state.indication) || (state.mode === 'ingredient' && !state.ingredient)) { result.innerHTML = `<div class="me-empty">請從左側選擇${state.mode === 'indication' ? '適應症' : '有效成分'}，即可查看關聯資料與產品。</div>`; return; }
-    const selected = state.mode === 'indication' ? state.indication : state.mode === 'ingredient' ? state.ingredient : (state.search ? `產品搜尋：${state.search}` : '全部外用藥膏產品');
-    const description = state.mode === 'indication' ? '顯示此適應症的常見有效成分；點選成分可繼續限縮產品。' : state.mode === 'ingredient' ? '顯示此成分的常見相關適應症與常一起出現的有效成分。' : '可依商品名、藥證字號、有效成分或適應症搜尋。';
-    let relations = '';
-    if (state.mode === 'indication') relations = `<div class="me-grid">${bars('常見有效成分', indicationRelations(visible), visible.length, 'ingredient')}</div>`;
-    if (state.mode === 'ingredient') relations = `<div class="me-grid">${bars('常見相關適應症', ingredientRelations(visible), visible.length, 'indication')}${bars('常一起出現的有效成分', coIngredients(visible), visible.length, 'ingredient')}</div>`;
-    result.innerHTML = `<section class="me-card"><h2>${esc(selected)}</h2><p class="me-summary">${description}</p><span class="me-count">符合 ${visible.length} 個不重複藥證產品</span></section>${relations}${renderProducts(visible)}`;
-    bindBars(); bindPagination();
-  }
-  function render() { renderModeButtons(); renderPrimaryControl(); renderResult(); }
-  async function init() { setupDatabaseSwitcher(); try { await loadData(); render(); } catch (error) { result.innerHTML = `<div class="me-empty">${esc(error.message)} 請確認以網站預覽方式開啟本頁。</div>`; } }
+  function indicationsForTopical(license,raw){return raw.indications.filter(x=>x.productLicenses?.includes(license)).map(x=>x.displayName)}
+  function siteLabel(v){return ({nasal:'鼻腔',throat:'咽喉',oral_mucosal:'口腔黏膜',rectal:'肛門／直腸',vaginal:'陰道',urethral:'尿道'})[v]||v||'待確認'}
+  function scopeLabel(v){return ({local:'局部作用',systemic:'全身作用',mixed:'混合作用',unclear:'作用範圍待確認'})[v]||v||'待確認'}
+  async function getRaw(){if(key==='topical') return window.EXPLORER_DATA;if(key==='patch') return window.__PATCH_DB_V2__;const r=await fetch(C.dataUrl,{cache:'no-cache'});if(!r.ok)throw Error(`資料無法載入（${r.status}）`);return r.json()}
+  function chrome(){document.body.innerHTML=`<a class="me-return" href="${C.root}calc.html">‹ 返回工具</a><button class="me-db-pill" id="meDb" type="button">${C.icon} <span>${C.name}</span></button><nav class="me-db-menu" id="meMenu" hidden></nav><main class="me-shell" style="--me-accent:${C.accent}"><header class="me-heading"><h1>${C.icon} ${C.name}查詢</h1><p>依適應症、有效成分或產品資料快速查詢。</p><section class="me-data-note"><strong>藥證資料查詢截至民國115年7月（2026年7月）。</strong><br>內容由 AI 協助整理，仍須由專業人員判定；藥證、成分、適應症及用藥資訊請以 TFDA 官方資料與核准仿單為準。</section></header><section class="me-query-card"><div class="me-mode" id="meModes"></div><div class="me-primary" id="mePrimary"></div><details class="me-more" id="meMore"><summary>更多篩選</summary><div id="meFilters" class="me-filter-grid"></div></details><button class="me-clear" id="meClear" type="button">清除條件</button></section><section id="meResult" aria-live="polite"></section></main><footer class="me-footer">本工具僅供藥師工作查詢與資料整理參考，不能取代核准仿單、醫師或藥師的專業判斷。<br>© 2026 💎 DiamondL 藥師開發設計　<a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" rel="noopener noreferrer">💬 意見回饋</a></footer>`; const menu=$('#meMenu');menu.innerHTML=window.MedicineExplorerLinks.map(([k,url])=>`<a class="${k===key?'current':''}" href="${C.root}${url}">${window.MedicineExplorerConfigs[k].icon} ${window.MedicineExplorerConfigs[k].name}</a>`).join('');$('#meDb').onclick=e=>{e.stopPropagation();menu.hidden=!menu.hidden};document.addEventListener('click',()=>menu.hidden=true);document.addEventListener('keydown',e=>{if(e.key==='Escape')menu.hidden=true});$('#meMore').addEventListener('toggle',()=>{if($('#meMore').open)track('filter_open')});$('#meClear').onclick=()=>{Object.assign(state,{indication:'',ingredient:'',query:'',page:1,filters:{}});render()}}
+  function option(values,current,placeholder){return `<option value="">${placeholder}</option>${sort(values).map(v=>`<option value="${esc(v)}"${v===current?' selected':''}>${esc(v)}</option>`).join('')}`}
+  const fieldValues=(product,key)=>{const value=product.fields[key];return Array.isArray(value)?value.filter(Boolean):value?[value]:[]};
+  function renderControls(){const modes=[['indication','依適應症'],['ingredient','依成分'],['product','搜尋產品']];$('#meModes').innerHTML=modes.map(([v,t])=>`<button type="button" class="${state.mode===v?'active':''}" data-mode="${v}">${t}</button>`).join('');$('#meModes').querySelectorAll('button').forEach(b=>b.onclick=()=>{state.mode=b.dataset.mode;state.page=1;track('mode_change');render()});const box=$('#mePrimary');if(state.mode==='indication'){box.innerHTML=`<label>適應症<select id="meSelect">${option(uniq(products.flatMap(p=>p.indications)),state.indication,'請選擇適應症')}</select></label>`;$('#meSelect').onchange=e=>{state.indication=e.target.value;state.ingredient='';state.page=1;render()}}else if(state.mode==='ingredient'){box.innerHTML=`<label>有效成分<select id="meSelect">${option(uniq(products.flatMap(p=>p.active)),state.ingredient,'請選擇有效成分')}</select></label>`;$('#meSelect').onchange=e=>{state.ingredient=e.target.value;state.indication='';state.page=1;render()}}else{box.innerHTML=`<label>搜尋產品<input id="meSearch" type="search" placeholder="商品名、英文名、藥證字號、有效成分或適應症" value="${esc(state.query)}"></label>`;$('#meSearch').oninput=e=>{state.query=e.target.value;state.page=1;renderResults()}}const base=scoped(false);$('#meFilters').innerHTML=C.filters.map(([k,t])=>`<label>${t}<select data-filter="${k}">${option(uniq(base.flatMap(p=>fieldValues(p,k))),state.filters[k], '不限')}</select></label>`).join('');$('#meFilters').querySelectorAll('select').forEach(s=>s.onchange=()=>{state.filters[s.dataset.filter]=s.value;state.page=1;renderResults()})}
+  function scoped(apply=true){let rows=products;if(state.mode==='indication'&&state.indication)rows=rows.filter(p=>p.indications.includes(state.indication));if(state.mode==='ingredient'&&state.ingredient)rows=rows.filter(p=>p.active.includes(state.ingredient));if(state.mode==='product'&&state.query){const q=state.query.toLowerCase();rows=rows.filter(p=>[p.zh,p.en,p.license,p.summary,p.full,...p.active,...p.indications].join(' ').toLowerCase().includes(q))}return apply?rows.filter(p=>Object.entries(state.filters).every(([k,v])=>!v||fieldValues(p,k).includes(v))):rows}
+  function stats(rows,field){const m=new Map;rows.forEach(p=>new Set(p[field]).forEach(v=>m.set(v,(m.get(v)||0)+1)));return [...m].map(([name,count])=>({name,count})).sort((a,b)=>b.count-a.count||a.name.localeCompare(b.name,'zh-Hant'))}
+  function bar(title,items,total,mode){if(!items.length)return'';const max=items[0].count;return `<section class="me-card"><h2>${title}</h2><div class="me-bars">${items.slice(0,12).map(x=>`<button data-value="${esc(x.name)}" data-rel="${mode}"><span>${esc(x.name)}</span><i><b style="width:${Math.max(4,x.count/max*100)}%"></b></i><em>${x.count} 筆・${(x.count/total*100).toFixed(1)}%</em></button>`).join('')}</div></section>`}
+  function renderResults(){const rows=scoped();const unselected=(state.mode==='indication'&&!state.indication)||(state.mode==='ingredient'&&!state.ingredient);if(unselected){$('#meResult').innerHTML='<section class="me-empty">請選擇主要條件，即可查看關聯有效成分與產品。</section>';return}const title=state.mode==='indication'?state.indication:state.mode==='ingredient'?state.ingredient:(state.query?`產品搜尋：${state.query}`:'全部產品');const desc=state.mode==='indication'?'顯示目前條件下常見有效成分；點選成分可繼續查詢。':state.mode==='ingredient'?'顯示相關適應症與常一起出現的有效成分。':'直接顯示符合搜尋條件的產品。';let rel='';if(state.mode==='indication')rel=bar('常見有效成分',stats(rows,'active'),rows.length,'ingredient');if(state.mode==='ingredient'){rel=bar('常見相關適應症',stats(rows,'indications'),rows.length,'indication')+bar('常一起出現的有效成分',stats(rows.map(p=>({...p,active:p.active.filter(a=>a!==state.ingredient)})),'active'),rows.length,'ingredient')}$('#meResult').innerHTML=`<section class="me-card me-result-title"><h2>${esc(title)}</h2><p>${desc}</p><strong>${rows.length} 個不重複藥證產品　·　${uniq(rows.flatMap(p=>p.active)).length} 種已確認有效成分</strong></section><div class="me-relations">${rel}</div>${renderProducts(rows)}`;$('#meResult').querySelectorAll('[data-rel]').forEach(b=>b.onclick=()=>{state.mode=b.dataset.rel;state[b.dataset.rel]=b.dataset.value;state.page=1;render()});$('#meResult').querySelectorAll('details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)track('product_detail_open')}));$('#meResult').querySelectorAll('[data-page]').forEach(b=>b.onclick=()=>{state.page+=b.dataset.page==='next'?1:-1;renderResults();scrollTo({top:0,behavior:'smooth'})})}
+  function renderProducts(rows){const pages=Math.max(1,Math.ceil(rows.length/20));state.page=Math.min(state.page,pages);const shown=rows.slice((state.page-1)*20,state.page*20);return `<section class="me-card"><h2>產品列表</h2><div class="me-products">${shown.map(p=>`<details><summary><b>${esc(p.zh||'未提供商品名')}</b><small>${esc(p.en||'')}</small><span>藥證：${esc(p.license)}</span><span>有效成分：${esc(p.active.join('、')||'待確認')}</span><span>劑型：${esc(p.dosage||'未提供')}　適應症：${esc(p.summary||p.indications.join('、')||'待確認')}</span>${p.extra?`<span>${esc(p.extra)}</span>`:''}</summary><p><b>完整適應症：</b>${esc(p.full||'未提供')}</p><p><b>官方來源：</b>${esc(p.source||'未提供')}</p></details>`).join('')||'<p>沒有符合條件的產品。</p>'}</div>${rows.length?`<nav class="me-pager"><button data-page="prev" ${state.page===1?'disabled':''}>上一頁</button><span>第 ${state.page} / ${pages} 頁</span><button data-page="next" ${state.page===pages?'disabled':''}>下一頁</button></nav>`:''}</section>`}
+  function render(){renderControls();renderResults()}
+  async function init(){try{const raw=await getRaw();products=normalizeRaw(raw);if(C.total&&products.length!==C.total)throw Error('產品數量驗證不符');chrome();render();if('serviceWorker' in navigator) navigator.serviceWorker.register(`${C.root}sw.js`).catch(()=>{})}catch(e){document.body.innerHTML=`<main class="me-shell"><p class="me-empty">資料載入失敗：${esc(e.message)}</p></main>`}}
   init();
 })();
