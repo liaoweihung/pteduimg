@@ -1,0 +1,19 @@
+﻿class_id,class_label,classification_rule,source_id
+antibiotic,antibiotic,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+antiviral,antiviral,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+antifungal,antifungal,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+antipyretic_analgesic,antipyretic_analgesic,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+antihistamine,antihistamine,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+cough,cough,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+expectorant_mucolytic,expectorant_mucolytic,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+bronchodilator,bronchodilator,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+gastrointestinal,gastrointestinal,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+laxative,laxative,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+antidiarrheal,antidiarrheal,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+antiemetic,antiemetic,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+acid_suppression,acid_suppression,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+vitamin_or_mineral_drug,vitamin_or_mineral_drug,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+corticosteroid,corticosteroid,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+neurologic,neurologic,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+cardiovascular,cardiovascular,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711
+other,other,Multi-signal mapping from TFDA active ingredient summary; indication is corroboration only.,tfda_open_data_info37_cached_20260711

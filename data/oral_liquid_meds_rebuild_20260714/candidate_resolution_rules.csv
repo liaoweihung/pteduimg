@@ -1,0 +1,8 @@
+﻿rule_id,priority,decision,description,required_evidence,confidence
+MR-A01,10,auto_include,TFDA dosage form explicitly says an oral liquid form.,Explicit oral/enteral wording in dosage_form_raw.,high
+MR-A02,20,auto_include,Generic liquid dosage form plus explicit oral wording in official name or use.,Compatible liquid form and oral/enteral/swallow/use wording.,high
+MR-A03,30,auto_include,Reconstitution form plus explicit evidence that the resulting liquid is oral.,Suspension/solution powder or granules and oral wording in official name/use.,high
+MR-B01,1,auto_exclude,TFDA dosage form explicitly identifies a non-oral preparation.,"Eye, ear, nose, inhalation, injection, cavity, dental, gas, topical, or enema dosage form.",high
+MR-B02,2,auto_exclude,Official licence status is inactive or cancelled.,Non-empty TFDA cancellation status.,high
+MR-C01,90,unresolved,Only product name or indication suggests a liquid; route/form evidence is insufficient.,No explicit official oral route or oral dosage-form wording.,low
+MR-C02,91,unresolved,Formal website-core fields or confirmed active ingredient are incomplete.,"Missing active, indication, issue date, or official source row.",low

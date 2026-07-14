@@ -1,0 +1,6 @@
+﻿rule_id,rule_type,rule,source
+r01,inclusion,TFDA dosage form + approved oral route are required; product name and indication never decide inclusion.,tfda_open_data_info37_cached_20260711
+r02,forms,Ready-to-use and reconstituted oral liquids use the specified normalized groups.,tfda_open_data_info37_cached_20260711
+r03,active,Only TFDA official main-active summary is a confirmed active; excipients are never inferred as active.,tfda_open_data_info37_cached_20260711
+r04,concentration,No concentration is guessed; all lack role-labelled detail are queued as unclear.,tfda_open_data_info37_cached_20260711
+r05,classification,Therapeutic classes use multi-signal active/indication rules and retain multiple classes.,tfda_open_data_info37_cached_20260711

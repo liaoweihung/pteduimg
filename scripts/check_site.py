@@ -194,6 +194,31 @@ def check_service_worker(failures: list[str]) -> None:
         check(needle in sw, ok, fail, failures)
 
 
+def check_oral_liquid_explorer(failures: list[str]) -> None:
+    html_path = ROOT / "oral_liquid_medicine_explorer.html"
+    js_path = ROOT / "js" / "oral-liquid-medicine-explorer.js"
+    data_path = ROOT / "data" / "oral_liquid_meds_rebuild_20260714" / "final" / "oral_liquid_meds_final.json"
+    css_path = ROOT / "css" / "oral-liquid-medicine-explorer.css"
+    required = [html_path, js_path, data_path, css_path]
+    check(all(path.exists() for path in required), "oral-liquid explorer assets exist", "oral-liquid explorer assets are missing", failures)
+    if not all(path.exists() for path in required):
+        return
+    html = read_text(html_path)
+    js = read_text(js_path)
+    sw = read_text(ROOT / "sw.js")
+    data = load_json(data_path)
+    check(data.get("product_count") == 1034 and len(data.get("products", [])) == 1034, "oral-liquid export has 1,034 formal products", "oral-liquid export count is not 1,034", failures)
+    summary = data.get("summary", {})
+    check(summary.get("ready_to_use") == 963 and summary.get("requires_reconstitution") == 71, "oral-liquid preparation counts match formal data", "oral-liquid preparation counts do not match", failures)
+    check(summary.get("unresolved_candidates_excluded") == 105, "oral-liquid unresolved candidates stay excluded", "oral-liquid unresolved candidate count is wrong", failures)
+    check(all("錠劑" not in product.get("dosage_form_raw", "") and "膠囊" not in product.get("dosage_form_raw", "") for product in data.get("products", [])), "oral-liquid export excludes tablets and capsules", "oral-liquid export includes a solid oral form", failures)
+    for control in ("preparationFilter", "formFilter", "classFilter", "indicationFilter", "ingredientFilter", "query", "clear"):
+        check(f'id="{control}"' in html, f"oral-liquid explorer exposes {control}", f"oral-liquid explorer is missing {control}", failures)
+    check("PAGE_SIZE = 25" in js and "slice(start, start + PAGE_SIZE)" in js, "oral-liquid explorer paginates results", "oral-liquid explorer does not paginate results", failures)
+    check("commonIngredients" in js and "concentrationGroups" in js, "oral-liquid explorer renders ingredient and concentration insights", "oral-liquid explorer is missing ingredient/concentration insights", failures)
+    check("oral_liquid_medicine_explorer.html" in sw and "oral_liquid_meds_final.json" in sw, "service worker includes oral-liquid assets", "service worker misses oral-liquid assets", failures)
+
+
 def main() -> int:
     failures: list[str] = []
     cards, _manual = check_json_files(failures)
@@ -202,6 +227,7 @@ def main() -> int:
     check_static_card_template(pages, failures)
     check_analytics_guards(failures)
     check_service_worker(failures)
+    check_oral_liquid_explorer(failures)
 
     if failures:
         print("\nSite check failed:")

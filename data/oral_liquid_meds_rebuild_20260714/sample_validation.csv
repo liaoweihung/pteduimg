@@ -1,0 +1,31 @@
+﻿sample_group,license_number,chinese_name,dosage_form,decision,evidence
+syrup,內衛藥製字第005900號,羅咪咳嗽甜漿,糖漿劑,include,"TFDA dosage form=糖漿劑; approved use=; names=羅咪咳嗽甜漿 / ROMITUSSIN SYRUP. Inclusion uses dosage form and approved oral route, not indication alone."
+syrup,內衛藥製字第006278號,"""健康"" 百樂咳糖漿",糖漿劑,include,"TFDA dosage form=糖漿劑; approved use=; names=""健康"" 百樂咳糖漿 / BENACOUGH SYRUP ""HEALTH"". Inclusion uses dosage form and approved oral route, not indication alone."
+oral_solution,內衛藥製字第005541號,賜百力口服液,口服液劑,include,"TFDA dosage form=口服液劑; approved use=; names=賜百力口服液 / TZUPARA ORAL LIQUID. Inclusion uses dosage form and approved oral route, not indication alone."
+oral_solution,內衛藥製字第005966號,千百力－威口服液１００ＭＬ,口服液劑,include,"TFDA dosage form=口服液劑; approved use=; names=千百力－威口服液１００ＭＬ / CHENPALI ORAL LIQUID 100ML. Inclusion uses dosage form and approved oral route, not indication alone."
+oral_suspension,內衛藥製字第005500號,"""華盛頓""克痢懸浮液",懸液劑,review,"Candidate form/name exists, but TFDA structured dosage form and approved use do not confirm oral liquid use."
+oral_suspension,衛部藥輸字第026652號,瀉必寧30毫克懸浮液用顆粒劑,懸浮液用顆粒劑,review,"Candidate form/name exists, but TFDA structured dosage form and approved use do not confirm oral liquid use."
+oral_drops_review,衛署藥製字第037561號,循利寧滴劑,滴劑,review,"Candidate form/name exists, but TFDA structured dosage form and approved use do not confirm oral liquid use."
+oral_drops_review,衛署藥製字第044130號,暢快拉拉滴劑7.5毫克/毫升,滴劑,review,"Candidate form/name exists, but TFDA structured dosage form and approved use do not confirm oral liquid use."
+powder_for_oral_suspension,衛部藥製字第060217號,復抑諾懸液用粉40毫克/毫升,懸液用粉劑,review,"Candidate form/name exists, but TFDA structured dosage form and approved use do not confirm oral liquid use."
+powder_for_oral_suspension,衛署藥製字第013198號,安比西林口服懸浮液用粉,懸液用粉劑,review,"Candidate form/name exists, but TFDA structured dosage form and approved use do not confirm oral liquid use."
+granules_for_oral_suspension_review,衛署藥製字第040659號,賜福樂素口服懸液用顆粒25毫克/毫升,懸液用顆粒劑,review,"Candidate form/name exists, but TFDA structured dosage form and approved use do not confirm oral liquid use."
+granules_for_oral_suspension_review,內衛藥製字第000938號,安利黴素懸濁用顆粒,懸液用顆粒劑,review,"Candidate form/name exists, but TFDA structured dosage form and approved use do not confirm oral liquid use."
+topical_liquid_excluded,內衛成製字第000093號,"""美""利風油",外用液劑,exclude,excluded_topical: TFDA form/name/use identifies a topical preparation.
+topical_liquid_excluded,內衛成製字第000403號,速淨－Ｋ消毒液,外用液劑,exclude,excluded_topical: TFDA form/name/use identifies a topical preparation.
+mouthwash_excluded,衛署藥製字第040809號,"""華盛頓""口爽含漱液５公絲/公撮（普威隆碘）",漱口劑,exclude,excluded_mouthwash: TFDA form/name/use identifies a mouthwash or gargle.
+mouthwash_excluded,衛署藥製字第049690號,“派頓”勝碘漱口液,外用液劑,exclude,excluded_mouthwash: TFDA form/name/use identifies a mouthwash or gargle.
+inhalation_excluded,衛部藥輸字第026632號,"""美國廠""泰若然吸入用液劑",吸入用液劑,exclude,excluded_inhalation: TFDA form/name/use identifies an inhalation preparation.
+inhalation_excluded,衛部藥輸字第027767號,吸洛復250定量噴霧吸入劑,口腔吸入劑,exclude,excluded_inhalation: TFDA form/name/use identifies an inhalation preparation.
+enema_excluded,衛署藥製字第034255號,意福灌腸液,外用液劑,exclude,excluded_enema: TFDA form/name/use identifies an enema preparation.
+enema_excluded,內衛成製字第000943號,白蘭浣腸,浣腸劑,exclude,excluded_enema: TFDA form/name/use identifies an enema preparation.
+oral_tablet_granule_control,衛部藥輸字第026624號,"""日科""抗風邪綜合感冒軟膠囊",軟膠囊劑,not_candidate,Not selected by oral-liquid candidate rule.
+oral_tablet_granule_control,衛署藥製字第006528號,"""人生""阿司匹靈錠",錠劑,not_candidate,Not selected by oral-liquid candidate rule.
+additional_formal,衛部藥製字第060158號,"""國嘉""袪敏內服液1毫克/毫升",內服液劑,include,"TFDA dosage form=內服液劑; approved use=請詳見仿單; names=""國嘉""袪敏內服液1毫克/毫升 / Cetirizine Oral Solution 1mg/mL ""Kojar"". Inclusion uses dosage form and approved oral route, not indication alone."
+additional_formal,衛署藥製字第005948號,"""達德士""固咳液",內服液劑,include,"TFDA dosage form=內服液劑; approved use=一天3次。成人每次6ml，12歲以上適用成人劑量；6歲以上未滿12歲，每次3ml；3歲以上未滿6歲，每次1.5ml；3歲以下之嬰幼兒，請洽醫師診治。; names=""達德士""固咳液 / CUCO SOLUTION ""D.T.S"". Inclusion uses dosage form and approved oral route, not indication alone."
+additional_formal,衛署藥製字第005959號,理肝力口服液,口服液劑,include,"TFDA dosage form=口服液劑; approved use=; names=理肝力口服液 / LIKANLI ORAL LIQUID. Inclusion uses dosage form and approved oral route, not indication alone."
+additional_formal,衛署藥製字第005974號,"""久松""嗽友液",內服液劑,include,"TFDA dosage form=內服液劑; approved use=; names=""久松""嗽友液 / SAUYOU LIQUID ""C.S."". Inclusion uses dosage form and approved oral route, not indication alone."
+additional_formal,衛署藥製字第006692號,嗽百安液,內服液劑,include,"TFDA dosage form=內服液劑; approved use=; names=嗽百安液 / SAUPAN SOLUTION ""CHEN TA"". Inclusion uses dosage form and approved oral route, not indication alone."
+additional_formal,衛署藥製字第013134號,"""救人""救嗽感冒液",內服液劑,include,"TFDA dosage form=內服液劑; approved use=成人一次10ml，一天4次。12歲以上，適用成人劑量。6歲以上未滿12歲，適用成人劑量之1/2。3歲以上未滿6歲，適用成人劑量之1/4。3歲以下之嬰幼兒，請洽醫師診治，不宜自行使用。; names=""救人""救嗽感冒液 / COLD SOLUTION ""C.J."". Inclusion uses dosage form and approved oral route, not indication alone."
+additional_formal,衛署藥製字第013231號,久松感熱安感冒液,內服液劑,include,"TFDA dosage form=內服液劑; approved use=; names=久松感熱安感冒液 / KAN JO KAO SOLUTION ""C.S."". Inclusion uses dosage form and approved oral route, not indication alone."
+additional_formal,衛署藥製字第013339號,百嗽寶糖漿,糖漿劑,include,"TFDA dosage form=糖漿劑; approved use=; names=百嗽寶糖漿 / PANCOPAR SYRUP ""BOWLIN"". Inclusion uses dosage form and approved oral route, not indication alone."

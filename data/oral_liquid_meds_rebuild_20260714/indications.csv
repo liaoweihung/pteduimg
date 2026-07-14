@@ -1,0 +1,68 @@
+﻿indication_id,indication_raw,indication_normalized,source_id
+ind_unknown,消除疲勞、病中病後之營養補給、增強體力、妊娠婦之補給營養。,消除疲勞、病中病後之營養補給、增強體力、妊娠婦之補給營養。,tfda_open_data_info37_cached_20260711
+ind_30129,治療成人及三歲以上兒童局部癲癇發作之輔助療法。治療成人帶狀&#30129;疹後神經痛。,治療成人及三歲以上兒童局部癲癇發作之輔助療法。治療成人帶狀&#30129;疹後神經痛。,tfda_open_data_info37_cached_20260711
+ind_16_4_12_12,"16歲以上病人之局部癲癇發作(併有或不併有次發性全身發作)之單獨治療。
+4歲以上孩童或成人病人之局部癲癇發作(併有或不併有次發性全身發作)，12歲以上青少年與成人病人之肌抽躍性癲癇發作，以及12歲以上青少年與成⼈患有體質性泛發性癲癇的原發性泛發性強直陣攣發作之輔助治療。",16歲以上病人之局部癲癇發作(併有或不併有次發性全身發作)之單獨治療。 4歲以上孩童或成人病人之局部癲癇發作(併有或不併有次發性全身發作)，12歲以上青少年與成人病人之肌抽躍性癲癇發作，以及12歲以上青少年與成⼈患有體質性泛發性癲癇的原發性泛發性強直陣攣發作之輔助治療。,tfda_open_data_info37_cached_20260711
+ind_ntrk_1_ntrk_acquired_resistance_mutation_2_severe_morbidity_3,"適用於有NTRK 基因融合的實體腫瘤之成人和兒童病人，並應符合以下三項條件:
+1、具NTRK基因融合且無已知的後天阻抗性突變(acquired resistance mutation)；
+2、為轉移性實體腫瘤，或手術切除極可能造成嚴重病症(severe morbidity)；
+3、沒有合適的替代治療選項，或於治療後發生疾病惡化。",適用於有ntrk 基因融合的實體腫瘤之成人和兒童病人，並應符合以下三項條件: 1、具ntrk基因融合且無已知的後天阻抗性突變(acquired resistance mutation)； 2、為轉移性實體腫瘤，或手術切除極可能造成嚴重病症(severe morbidity)； 3、沒有合適的替代治療選項，或於治療後發生疾病惡化。,tfda_open_data_info37_cached_20260711
+ind_a_d,鈣及維生素A、D缺乏症之治療。,鈣及維生素a、d缺乏症之治療。,tfda_open_data_info37_cached_20260711
+ind_x,緩解偶發性便秘、手術前、X光或內視鏡檢查前之腸灌洗。,緩解偶發性便秘、手術前、x光或內視鏡檢查前之腸灌洗。,tfda_open_data_info37_cached_20260711
+ind_portal_systemic_encephalopathy_hepatic_precoma_hepatic_coma,患病期慢性便秘、門系肝腦病變 (portal systemic encephalopathy)、肝昏迷前期 (hepatic precoma)、肝昏迷 (hepatic coma),患病期慢性便秘、門系肝腦病變 (portal systemic encephalopathy)、肝昏迷前期 (hepatic precoma)、肝昏迷 (hepatic coma),tfda_open_data_info37_cached_20260711
+ind_1_2,1.類鴉片物質成癮之戒毒。2.類鴉片物質成癮替代療法。,1.類鴉片物質成癮之戒毒。2.類鴉片物質成癮替代療法。,tfda_open_data_info37_cached_20260711
+ind_a,巴金森病，預防及治療A型流行感冒症狀。,巴金森病，預防及治療a型流行感冒症狀。,tfda_open_data_info37_cached_20260711
+ind_1_13_17_2_10_17_valproate_3_valproate_4_5_6_17_6,"1.成人和青少年(13至17歲)的思覺失調症。 
+2.成人和兒童(10至17歲)的雙極性疾患之躁症發作及混合型發作，可單獨使用或做為鋰鹽或Valproate的輔助治療。 
+3.第一型雙極性疾患維持治療之鋰鹽或valproate的輔助治療。 
+4.重鬱症之輔助治療。 
+5.兒童(6至17歲)的自閉性疾患伴隨之急躁易怒。
+6.妥瑞氏症。",1.成人和青少年(13至17歲)的思覺失調症。 2.成人和兒童(10至17歲)的雙極性疾患之躁症發作及混合型發作，可單獨使用或做為鋰鹽或valproate的輔助治療。 3.第一型雙極性疾患維持治療之鋰鹽或valproate的輔助治療。 4.重鬱症之輔助治療。 5.兒童(6至17歲)的自閉性疾患伴隨之急躁易怒。 6.妥瑞氏症。,tfda_open_data_info37_cached_20260711
+ind_citrulline,先天性因CITRULLINE缺乏引起之尿素代謝具常之高血氨症。,先天性因citrulline缺乏引起之尿素代謝具常之高血氨症。,tfda_open_data_info37_cached_20260711
+ind_carnitine,用於先天遺傳性代謝異常的續發性Carnitine缺乏症病患之急性慢性治療。,用於先天遺傳性代謝異常的續發性carnitine缺乏症病患之急性慢性治療。,tfda_open_data_info37_cached_20260711
+ind_1_2_1_complex_partial_seizure_simple_or_complex_partial_seizure_with_secondary_generalization_2_primary_generalized_tonic_clonic_seizures_pgtcs_idiopathic_generalized_epilepsy,"1.四歲以上有或無次發性全身發作的局部癲癇發作病人的單一藥物治療。
+2.輔助治療以下症狀：
+(1) 四歲以上複雜性局部癲癇發作(complex partial seizure)與單純或複雜性局部發作之合併有次發性全身發作(simple or complex partial seizure with secondary generalization)癲癇病人。
+(2) 四歲以上原發性全面強直陣攣發作(primary generalized tonic-clonic seizures; PGTCS)合併特發性全面癲癇發作(idiopathic generalized epilepsy)的病人。",1.四歲以上有或無次發性全身發作的局部癲癇發作病人的單一藥物治療。 2.輔助治療以下症狀： (1) 四歲以上複雜性局部癲癇發作(complex partial seizure)與單純或複雜性局部發作之合併有次發性全身發作(simple or complex partial seizure with secondary generalization)癲癇病人。 (2) 四歲以上原發性全面強直陣攣發作(primary generalized tonic-clonic seizures; pgtcs)合併特發性全面癲癇發作(idiopathic generalized epilepsy)的病人。,tfda_open_data_info37_cached_20260711
+ind_6_11_20,緩解6至11歲且體重達20公斤以上兒童過敏性鼻炎(季節性和常年性)及慢性蕁麻疹的症狀。,緩解6至11歲且體重達20公斤以上兒童過敏性鼻炎(季節性和常年性)及慢性蕁麻疹的症狀。,tfda_open_data_info37_cached_20260711
+ind_meniere_s,利尿、降眼壓、MENIERE'S病之改善。,利尿、降眼壓、meniere's病之改善。,tfda_open_data_info37_cached_20260711
+ind_fibromyalgia,糖尿病周邊神經病變所引起的神經性疼痛、帶狀疱疹後神經痛、成人局部癲癇的輔助治療、纖維肌痛(fibromyalgia)、脊髓損傷所引起的神經性疼痛。,糖尿病周邊神經病變所引起的神經性疼痛、帶狀疱疹後神經痛、成人局部癲癇的輔助治療、纖維肌痛(fibromyalgia)、脊髓損傷所引起的神經性疼痛。,tfda_open_data_info37_cached_20260711
+ind_1_13_17_2_3_10_17_valproate_4_valproate_5_6_6_17_7,"1.成人和青少年(13至17歲)的思覺失調症。
+2.治療小兒思覺失調症的特殊考量：兒童及青少年的精神疾患的診斷標準通常與成人不一致。建議於充分診斷及評估相關風險後再給予藥物治療。藥物治療小兒思覺失調症應僅是總體治療(包含心理、教育及社會介入)的一部分。
+3.成⼈和兒童(10⾄17歲)的雙極性疾患之躁症發作及混合型發作，可單獨使⽤或做為鋰鹽或Valproate的輔助治療。
+4.第⼀型雙極性疾患維持治療之鋰鹽或valproate的輔助治療。
+5.重鬱症之輔助治療。
+6.兒童(6⾄17歲)的⾃閉性疾患伴隨之急躁易怒。
+7.妥瑞氏症。",1.成人和青少年(13至17歲)的思覺失調症。 2.治療小兒思覺失調症的特殊考量：兒童及青少年的精神疾患的診斷標準通常與成人不一致。建議於充分診斷及評估相關風險後再給予藥物治療。藥物治療小兒思覺失調症應僅是總體治療(包含心理、教育及社會介入)的一部分。 3.成⼈和兒童(10⾄17歲)的雙極性疾患之躁症發作及混合型發作，可單獨使⽤或做為鋰鹽或valproate的輔助治療。 4.第⼀型雙極性疾患維持治療之鋰鹽或valproate的輔助治療。 5.重鬱症之輔助治療。 6.兒童(6⾄17歲)的⾃閉性疾患伴隨之急躁易怒。 7.妥瑞氏症。,tfda_open_data_info37_cached_20260711
+ind_non_painful_procedure,兒童檢查(non-painful procedure)前之鎮靜,兒童檢查(non-painful procedure)前之鎮靜,tfda_open_data_info37_cached_20260711
+ind_x_linked_hypophosphatemic_rickets,性聯遺傳型低磷酸鹽佝僂症(X-linked Hypophosphatemic Rickets),性聯遺傳型低磷酸鹽佝僂症(x-linked hypophosphatemic rickets),tfda_open_data_info37_cached_20260711
+ind_2_pcjia_methotrexate_dmards_xeljanz_dmards_azathioprine_cyclosporine,"多關節型兒童特發性關節炎：
+適用於治療2歲以上病人的活動性多關節型兒童特發性關節炎(pcJIA)，病人先前需對methotrexate或其他疾病緩解型抗風溼藥物(DMARDs)無法產生適當治療反應或無法耐受。
+使用限制：不建議XELJANZ口服液與生物性的疾病緩解型抗風濕藥物(DMARDs)，或與強效免疫抑制劑(如azathioprine與cyclosporine)合併使用。",多關節型兒童特發性關節炎： 適用於治療2歲以上病人的活動性多關節型兒童特發性關節炎(pcjia)，病人先前需對methotrexate或其他疾病緩解型抗風溼藥物(dmards)無法產生適當治療反應或無法耐受。 使用限制：不建議xeljanz口服液與生物性的疾病緩解型抗風濕藥物(dmards)，或與強效免疫抑制劑(如azathioprine與cyclosporine)合併使用。,tfda_open_data_info37_cached_20260711
+ind_d,適用於成人維生素D缺乏症的起始治療。,適用於成人維生素d缺乏症的起始治療。,tfda_open_data_info37_cached_20260711
+ind_hiv,治療HIV陽性反應及其它免疫功能不全病人的口腔念珠菌感染和/或食道念珠菌感染。,治療hiv陽性反應及其它免疫功能不全病人的口腔念珠菌感染和/或食道念珠菌感染。,tfda_open_data_info37_cached_20260711
+ind_sma_smn2_1_3_sma,適用於治療經基因確診之脊髓性肌肉萎縮症(SMA) 病人，其SMN2為1到3套或已出現症狀之SMA第一、二、三型病人。,適用於治療經基因確診之脊髓性肌肉萎縮症(sma) 病人，其smn2為1到3套或已出現症狀之sma第一、二、三型病人。,tfda_open_data_info37_cached_20260711
+ind_1_alagille_syndrome_algs_2_progressive_familial_intrahepatic_cholestasis_pfic_livmarli_pfic_abcb11_bsep_3,"1. 用於治療二個月以上的阿拉吉歐症候群 ( Alagille syndrome, ALGS) 病人的膽汁鬱積搔癢症。
+2. 用於治療三個月以上的進行性家族性肝內膽汁滯留症 (Progressive Familial Intrahepatic Cholestasis, PFIC)病人的膽汁鬱積搔癢症。使用限制：LIVMARLI可能對於PFIC第二型病人帶有ABCB11變異所導致不具功能或完全缺失的膽鹽輸出幫浦蛋白 (BSEP-3) 無效。","1. 用於治療二個月以上的阿拉吉歐症候群 ( alagille syndrome, algs) 病人的膽汁鬱積搔癢症。 2. 用於治療三個月以上的進行性家族性肝內膽汁滯留症 (progressive familial intrahepatic cholestasis, pfic)病人的膽汁鬱積搔癢症。使用限制：livmarli可能對於pfic第二型病人帶有abcb11變異所導致不具功能或完全缺失的膽鹽輸出幫浦蛋白 (bsep-3) 無效。",tfda_open_data_info37_cached_20260711
+ind_dravet_dravet_syndrome_ds_tuberous_sclerosis_complex_tsc,適用於年滿二歲之Dravet症候群(Dravet syndrome；DS)，或年滿一歲之結節性硬化症(Tuberous Sclerosis Complex；TSC)的病人，作為該二類病人於現有藥物治療下癲癇控制不佳時之輔助治療,適用於年滿二歲之dravet症候群(dravet syndrome；ds)，或年滿一歲之結節性硬化症(tuberous sclerosis complex；tsc)的病人，作為該二類病人於現有藥物治療下癲癇控制不佳時之輔助治療,tfda_open_data_info37_cached_20260711
+ind_urea_cycle_disorders_ucds_carbamoyl_phosphate_synthetase_cps_i_ornithine_carbamoyltransferase_otc_argininosuccinate_synthetase_ass_argininosuccinate_lyase_asl_arginase_arg_i_ornithine_translocase_hyperornithinaemia_hyperammonaemia_homocitrullinuria_syndrome_hhh_arginine_citrulline_acute_hyperammonemia,"本品用於不能藉由限制蛋白質的攝入和/或單純補充氨基酸控制的尿素循環代謝異常（Urea Cycle Disorders；UCDs）病人的長期輔助治療，包括carbamoyl phosphate synthetase (CPS) I缺乏症、鳥胺酸氨甲醯基轉移酶（ornithine carbamoyltransferase（OTC））缺乏症、argininosuccinate synthetase（ASS）缺乏症、argininosuccinate lyase（ASL）缺乏症、arginase (ARG) I缺乏症和ornithine translocase缺失引起之高鳥胺酸血症－高氨血症－高瓜胺酸血症症候群（hyperornithinaemia-hyperammonaemia homocitrullinuria syndrome；HHH）。
+使用限制：
+１、服用本品時，必須限制飲食中的蛋白質，某些情況下還應添加膳食補充劑(例如必需氨基酸、精氨酸[arginine]、瓜氨酸[citrulline]、無蛋白熱量補充劑)。
+２、本品不得使用於急性高氨血症(acute hyperammonemia)之控制。",本品用於不能藉由限制蛋白質的攝入和/或單純補充氨基酸控制的尿素循環代謝異常（urea cycle disorders；ucds）病人的長期輔助治療，包括carbamoyl phosphate synthetase (cps) i缺乏症、鳥胺酸氨甲醯基轉移酶（ornithine carbamoyltransferase（otc））缺乏症、argininosuccinate synthetase（ass）缺乏症、argininosuccinate lyase（asl）缺乏症、arginase (arg) i缺乏症和ornithine translocase缺失引起之高鳥胺酸血症－高氨血症－高瓜胺酸血症症候群（hyperornithinaemia-hyperammonaemia homocitrullinuria syndrome；hhh）。 使用限制： １、服用本品時，必須限制飲食中的蛋白質，某些情況下還應添加膳食補充劑(例如必需氨基酸、精氨酸[arginine]、瓜氨酸[citrulline]、無蛋白熱量補充劑)。 ２、本品不得使用於急性高氨血症(acute hyperammonemia)之控制。,tfda_open_data_info37_cached_20260711
+ind_2_dravet_syndrome,適用於治療2歲以上卓飛症候群(Dravet syndrome)病人之癲癇發作。,適用於治療2歲以上卓飛症候群(dravet syndrome)病人之癲癇發作。,tfda_open_data_info37_cached_20260711
+ind_anhydrous_sevelamer_carbonate,Anhydrous sevelamer carbonate是一種磷酸鹽結合劑，適用於正在進行透析的慢性腎臟疾病患者之血磷濃度控制。,anhydrous sevelamer carbonate是一種磷酸鹽結合劑，適用於正在進行透析的慢性腎臟疾病患者之血磷濃度控制。,tfda_open_data_info37_cached_20260711
+ind_2_1,用於緩解2歲以上孩童因季節性過敏性鼻炎，及1歲以上孩童因常年性過敏性鼻炎與慢性原發性蕁麻疹所引起的相關症狀。,用於緩解2歲以上孩童因季節性過敏性鼻炎，及1歲以上孩童因常年性過敏性鼻炎與慢性原發性蕁麻疹所引起的相關症狀。,tfda_open_data_info37_cached_20260711
+ind_amyotrophic_laterl_sclerosis_als,"肌萎縮脊髓側索硬化症(AMYOTROPHIC LATERL SCLEROSIS, ALS)","肌萎縮脊髓側索硬化症(amyotrophic laterl sclerosis, als)",tfda_open_data_info37_cached_20260711
+ind_1_2_1_complex_partial_seizure_2_simple_or_complex_partial_seizure_with_secondary_generalization_add_on_therapy,"1.四歲以上有或無次發性全身發作的局部癲癇發作患者的單一藥物治療。 
+2.四歲以上之(1)複雜性局部癲癇發作(complex partial seizure)與 (2)單純或複雜性局部發作之合併有次發性全身發作(simple or complex partial seizure with secondary generalization)癲癇患者之輔助治療(add-on therapy)。",1.四歲以上有或無次發性全身發作的局部癲癇發作患者的單一藥物治療。 2.四歲以上之(1)複雜性局部癲癇發作(complex partial seizure)與 (2)單純或複雜性局部發作之合併有次發性全身發作(simple or complex partial seizure with secondary generalization)癲癇患者之輔助治療(add-on therapy)。,tfda_open_data_info37_cached_20260711
+ind_2,"治療2歲(含)以上兒童(併用口服脫水補充液)及成人之急性腹瀉。
+症狀性治療成人的慢性功能性腹瀉。",治療2歲(含)以上兒童(併用口服脫水補充液)及成人之急性腹瀉。 症狀性治療成人的慢性功能性腹瀉。,tfda_open_data_info37_cached_20260711
+ind_1,適用於1個月大以上局部癲癇發作病人的治療。,適用於1個月大以上局部癲癇發作病人的治療。,tfda_open_data_info37_cached_20260711
+ind_6,適用於控制接受透析治療的成年及6 歲以上孩童慢性腎病病人的高磷血症。,適用於控制接受透析治療的成年及6 歲以上孩童慢性腎病病人的高磷血症。,tfda_open_data_info37_cached_20260711
+ind_adhd,注意力缺損/ 過動症(ADHD)。,注意力缺損/ 過動症(adhd)。,tfda_open_data_info37_cached_20260711
+ind_zollinger_ellison,胃潰瘍、十二指腸潰瘍、胃炎、胃酸過多、胃泌素瘤(Zollinger Ellison)症候群、逆流性食道炎。,胃潰瘍、十二指腸潰瘍、胃炎、胃酸過多、胃泌素瘤(zollinger ellison)症候群、逆流性食道炎。,tfda_open_data_info37_cached_20260711
+ind_bechet_biopsy_cytostatic_50,預防器官移植及骨髓移植後之移植排斥、預防移植反宿主疾病、活動性有失明危險之中部或後部非感染性葡萄膜炎、使用傳統療法無法控制者、BECHET病一再發炎、且已侵犯視網膜者、替代性療法無效或不適用之嚴重性乾癬、標準療法無效或不適用之嚴重類風濕性關節炎、以類固醇治療無效或對類固醇有依賴性的原發性腎病症候群(活體檢視(BIOPSY))主要為微小病變疾病或局部環節腎絲球硬化症)，經細胞穩定(CYTOSTATIC)治療無效且腎功能指數在正常值50%以上之病人。後天型嚴重再生不良性貧血。異位性皮膚炎。,預防器官移植及骨髓移植後之移植排斥、預防移植反宿主疾病、活動性有失明危險之中部或後部非感染性葡萄膜炎、使用傳統療法無法控制者、bechet病一再發炎、且已侵犯視網膜者、替代性療法無效或不適用之嚴重性乾癬、標準療法無效或不適用之嚴重類風濕性關節炎、以類固醇治療無效或對類固醇有依賴性的原發性腎病症候群(活體檢視(biopsy))主要為微小病變疾病或局部環節腎絲球硬化症)，經細胞穩定(cytostatic)治療無效且腎功能指數在正常值50%以上之病人。後天型嚴重再生不良性貧血。異位性皮膚炎。,tfda_open_data_info37_cached_20260711
+ind_1_2_3,1. 甲狀腺機能亢進：葛瑞夫茲氏病、毒性多結節性甲狀腺腫或甲狀腺自主性結節。 2. 甲狀腺乳突癌或甲狀腺濾泡癌術後，以清除剩餘的甲狀腺組織。 3. 甲狀腺乳突癌或甲狀腺濾泡癌之轉移。,1. 甲狀腺機能亢進：葛瑞夫茲氏病、毒性多結節性甲狀腺腫或甲狀腺自主性結節。 2. 甲狀腺乳突癌或甲狀腺濾泡癌術後，以清除剩餘的甲狀腺組織。 3. 甲狀腺乳突癌或甲狀腺濾泡癌之轉移。,tfda_open_data_info37_cached_20260711
+ind_3,適用於嬰兒(3個月以上)及兒童當口服補充液體及一般支持療法不足以控制臨床狀況之輔助性急性腹瀉症狀治療。,適用於嬰兒(3個月以上)及兒童當口服補充液體及一般支持療法不足以控制臨床狀況之輔助性急性腹瀉症狀治療。,tfda_open_data_info37_cached_20260711
+ind_4_7,適用於4歲以上病人局部癲癇發作併有或未併有續發型全身發作之治療。 適用於7歲以上病人原發型全身性強直陣攣癲癇發作併有原發性全身發作之輔助治療。,適用於4歲以上病人局部癲癇發作併有或未併有續發型全身發作之治療。 適用於7歲以上病人原發型全身性強直陣攣癲癇發作併有原發性全身發作之輔助治療。,tfda_open_data_info37_cached_20260711
+ind_8,成人和8歲以上兒童軟便(暫時性的症狀緩解)。,成人和8歲以上兒童軟便(暫時性的症狀緩解)。,tfda_open_data_info37_cached_20260711

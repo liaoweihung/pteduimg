@@ -1,0 +1,3 @@
+﻿source_id,source_type,source_name,source_detail,official_url,checked_at
+tfda_open_data_info37_cached_20260711,TFDA_open_data_cache,TFDA drug license structured data,"Reused local official InfoId=37 cache; no download, bulk leaflet retrieval, or OCR.",https://data.gov.tw/,2026-07-14T00:00:00+08:00
+tfda_open_data_info43_cached_20260711,TFDA_open_data_cache,TFDA detailed prescription ingredient data,Reused local official InfoId=43 cache and filtered to phase-1 licences; no download or OCR.,https://data.gov.tw/,2026-07-14T17:29:35+08:00

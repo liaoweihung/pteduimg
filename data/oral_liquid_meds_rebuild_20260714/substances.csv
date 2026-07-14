@@ -1,0 +1,387 @@
+﻿substance_id,raw_name,normalized_name,base_substance_group,source_id
+sub_tfda_4020100442,ASPARTATE POTASSIUM L- (eq to POTASSIUM L-ASPARTATE),aspartate potassium l- (eq to potassium l-aspartate),aspartate potassium l- (eq to potassium l-aspartate),tfda_open_data_info43_cached_20260711
+sub_tfda_4020100432,ASPARTATE MAGNESIUM L-,aspartate magnesium l-,aspartate magnesium l-,tfda_open_data_info43_cached_20260711
+sub_tfda_8810101001,THIAMINE MONONITRATE,thiamine mononitrate,thiamine mononitrate,tfda_open_data_info43_cached_20260711
+sub_tfda_8810200400,RIBOFLAVIN (VIT B2),riboflavin (vit b2),riboflavin (vit b2),tfda_open_data_info43_cached_20260711
+sub_tfda_8810600300,PYRIDOXINE HCL,pyridoxine hcl,pyridoxine hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_8810000300,NIACINAMIDE (NICOTINAMIDE),niacinamide (nicotinamide),niacinamide (nicotinamide),tfda_open_data_info43_cached_20260711
+sub_tfda_4800001010,DEXTROMETHORPHAN HBR,dextromethorphan hbr,dextromethorphan hbr,tfda_open_data_info43_cached_20260711
+sub_tfda_1212002310,PHENYLEPHRINE HCL,phenylephrine hcl,phenylephrine hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_0400003410,PYRILAMINE MALEATE (MEPYRAMINE MALEATE),pyrilamine maleate (mepyramine maleate),pyrilamine maleate (mepyramine maleate),tfda_open_data_info43_cached_20260711
+sub_tfda_4004000200,AMMONIUM CHLORIDE,ammonium chloride,ammonium chloride,tfda_open_data_info43_cached_20260711
+sub_tfda_4800002800,POTASSIUM GUAIACOLSULFONATE,potassium guaiacolsulfonate,potassium guaiacolsulfonate,tfda_open_data_info43_cached_20260711
+sub_tfda_8816000100,ASCORBIC ACID (VIT C),ascorbic acid (vit c),ascorbic acid (vit c),tfda_open_data_info43_cached_20260711
+sub_tfda_8811200300,CYANOCOBALAMIN (VIT B12),cyanocobalamin (vit b12),cyanocobalamin (vit b12),tfda_open_data_info43_cached_20260711
+sub_tfda_8416000700,PANTHENOL,panthenol,panthenol,tfda_open_data_info43_cached_20260711
+sub_tfda_0400001610,DIPHENHYDRAMINE HCL,diphenhydramine hcl,diphenhydramine hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_0400005810,CETIRIZINE DIHYDROCHLORIDE (EQ TO CETIRIZINE 2HCL ),cetirizine dihydrochloride (eq to cetirizine 2hcl ),cetirizine dihydrochloride (eq to cetirizine 2hcl ),tfda_open_data_info43_cached_20260711
+sub_tfda_4800003700,POTASSIUM CRESOLSULFONATE,potassium cresolsulfonate,potassium cresolsulfonate,tfda_open_data_info43_cached_20260711
+sub_tfda_8813000100,INOSITOL (MESO-INOSITOL),inositol (meso-inositol),inositol (meso-inositol),tfda_open_data_info43_cached_20260711
+sub_tfda_5656900720,THIOCTIC ACID AMIDE (THIOCTAMIDE),thioctic acid amide (thioctamide),thioctic acid amide (thioctamide),tfda_open_data_info43_cached_20260711
+sub_tfda_1212001710,METHOXYPHENAMINE HCL,methoxyphenamine hcl,methoxyphenamine hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_4800001420,GUAIACOL GLYCERYL ETHER (EQ TO GUAIFENESIN),guaiacol glyceryl ether (eq to guaifenesin),guaiacol glyceryl ether (eq to guaifenesin),tfda_open_data_info43_cached_20260711
+sub_tfda_1212001813,DL-METHYLEPHEDRINE HCL,dl-methylephedrine hcl,dl-methylephedrine hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_8600000800,DYPHYLLINE,dyphylline,dyphylline,tfda_open_data_info43_cached_20260711
+sub_tfda_2820000460,CAFFEINE HYDRATE,caffeine hydrate,caffeine hydrate,tfda_open_data_info43_cached_20260711
+sub_tfda_0400000810,CHLORPHENIRAMINE MALEATE,chlorpheniramine maleate,chlorpheniramine maleate,tfda_open_data_info43_cached_20260711
+sub_tfda_2808000100,ACETAMINOPHEN (EQ TO PARACETAMOL),acetaminophen (eq to paracetamol),acetaminophen (eq to paracetamol),tfda_open_data_info43_cached_20260711
+sub_tfda_5620000500,SENEGA,senega,senega,tfda_open_data_info43_cached_20260711
+sub_tfda_4800000510,CARBETAPENTANE CITRATE (eq to Pentoxyverine Citrate),carbetapentane citrate (eq to pentoxyverine citrate),carbetapentane citrate (eq to pentoxyverine citrate),tfda_open_data_info43_cached_20260711
+sub_tfda_2820000450,CAFFEINE ANHYDROUS,caffeine anhydrous,caffeine anhydrous,tfda_open_data_info43_cached_20260711
+sub_tfda_2820000400,CAFFEINE,caffeine,caffeine,tfda_open_data_info43_cached_20260711
+sub_tfda_9200004401,GLYCYRRHIZA EXTRACT,glycyrrhiza extract,glycyrrhiza extract,tfda_open_data_info43_cached_20260711
+sub_tfda_2808800110,CODEINE PHOSPHATE,codeine phosphate,codeine phosphate,tfda_open_data_info43_cached_20260711
+sub_tfda_4800003601,PLATYCODON EXTRACT,platycodon extract,platycodon extract,tfda_open_data_info43_cached_20260711
+sub_tfda_8810200700,RIBOFLAVIN PHOSPHATE SODIUM,riboflavin phosphate sodium,riboflavin phosphate sodium,tfda_open_data_info43_cached_20260711
+sub_tfda_4800001810,AMBROXOL HYDROCHLORIDE,ambroxol hydrochloride,ambroxol hydrochloride,tfda_open_data_info43_cached_20260711
+sub_tfda_8810200752,RIBOFLAVIN-5-PHOSPHATE SODIUM,riboflavin-5-phosphate sodium,riboflavin-5-phosphate sodium,tfda_open_data_info43_cached_20260711
+sub_tfda_8816000102,ASCORBIC ACID,ascorbic acid,ascorbic acid,tfda_open_data_info43_cached_20260711
+sub_tfda_8810000330,NICOTINAMIDE,nicotinamide,nicotinamide,tfda_open_data_info43_cached_20260711
+sub_tfda_8813000105,INOSITOL,inositol,inositol,tfda_open_data_info43_cached_20260711
+sub_tfda_0400000813,DL-CHLORPHENIRAMINE MALEATE,dl-chlorpheniramine maleate,dl-chlorpheniramine maleate,tfda_open_data_info43_cached_20260711
+sub_tfda_0400001210,CYPROHEPTADINE HCL,cyproheptadine hcl,cyproheptadine hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_4800001430,GUAIACOL GLYCOLATE (EQ TO GLYCERYL GUAIACOLATE),guaiacol glycolate (eq to glyceryl guaiacolate),guaiacol glycolate (eq to glyceryl guaiacolate),tfda_open_data_info43_cached_20260711
+sub_tfda_1212002610,PSEUDOEPHEDRINE HCL,pseudoephedrine hcl,pseudoephedrine hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_4800001020,DEXTROMETHORPHAN HCL,dextromethorphan hcl,dextromethorphan hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_4010000300,LACTULOSE,lactulose,lactulose,tfda_open_data_info43_cached_20260711
+sub_tfda_0400092410,KETOTIFEN (FUMARATE),ketotifen (fumarate),ketotifen (fumarate),tfda_open_data_info43_cached_20260711
+sub_tfda_4800000310,BROMHEXINE HCL,bromhexine hcl,bromhexine hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_2812001700,GABAPENTIN,gabapentin,gabapentin,tfda_open_data_info43_cached_20260711
+sub_tfda_5622000400,DIMENHYDRINATE,dimenhydrinate,dimenhydrinate,tfda_open_data_info43_cached_20260711
+sub_tfda_2808800622,MORPHINE SULFATE,morphine sulfate,morphine sulfate,tfda_open_data_info43_cached_20260711
+sub_tfda_4800000410,BUTAMIRATE CITRATE,butamirate citrate,butamirate citrate,tfda_open_data_info43_cached_20260711
+sub_tfda_2820003700,LEVETIRACETAM,levetiracetam,levetiracetam,tfda_open_data_info43_cached_20260711
+sub_tfda_4012004000,SODIUM HYPOPHOSPHITE,sodium hypophosphite,sodium hypophosphite,tfda_open_data_info43_cached_20260711
+sub_tfda_0820000630,QUININE SULFATE,quinine sulfate,quinine sulfate,tfda_open_data_info43_cached_20260711
+sub_tfda_9200018080,CAPSICUM TINCTURE,capsicum tincture,capsicum tincture,tfda_open_data_info43_cached_20260711
+sub_tfda_8408000100,CAMPHOR,camphor,camphor,tfda_open_data_info43_cached_20260711
+sub_tfda_9690007500,ACETUM SCILLAE,acetum scillae,acetum scillae,tfda_open_data_info43_cached_20260711
+sub_tfda_9200016031,TINCTURE CARDAMON COMPOUND,tincture cardamon compound,tincture cardamon compound,tfda_open_data_info43_cached_20260711
+sub_tfda_9600001805,ALMOND OIL,almond oil,almond oil,tfda_open_data_info43_cached_20260711
+sub_tfda_4800002410,NOSCAPINE HCL,noscapine hcl,noscapine hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_8600001010,ETHAVERINE HCL (eq to BALBONIN) (eq to Ethylpapaverine HCl),ethaverine hcl (eq to balbonin) (eq to ethylpapaverine hcl),ethaverine hcl (eq to balbonin) (eq to ethylpapaverine hcl),tfda_open_data_info43_cached_20260711
+sub_tfda_8810100900,THIAMINE HYDROCHLORIDE,thiamine hydrochloride,thiamine hydrochloride,tfda_open_data_info43_cached_20260711
+sub_tfda_8812300200,PANTOTHENATE CALCIUM,pantothenate calcium,pantothenate calcium,tfda_open_data_info43_cached_20260711
+sub_tfda_9200000900,TAURINE (EQ TO 2-AMINOETHANE SULFONIC ACID),taurine (eq to 2-aminoethane sulfonic acid),taurine (eq to 2-aminoethane sulfonic acid),tfda_open_data_info43_cached_20260711
+sub_tfda_9600017803,MALIC ACID DL-,malic acid dl-,malic acid dl-,tfda_open_data_info43_cached_20260711
+sub_tfda_8804000100,VITAMIN A,vitamin a,vitamin a,tfda_open_data_info43_cached_20260711
+sub_tfda_8818000200,ERGOCALCIFEROL (VIT D2CALCIFEROL),ergocalciferol (vit d2calciferol),ergocalciferol (vit d2calciferol),tfda_open_data_info43_cached_20260711
+sub_tfda_8810200600,RIBOFLAVIN PHOSPHATE,riboflavin phosphate,riboflavin phosphate,tfda_open_data_info43_cached_20260711
+sub_tfda_4020101312,LYSINE L- HCL ( EQ TO L-LYSINE HCL),lysine l- hcl ( eq to l-lysine hcl),lysine l- hcl ( eq to l-lysine hcl),tfda_open_data_info43_cached_20260711
+sub_tfda_1212000510,EPHEDRINE HCL (EQ TO EPHEDRINE HYDROCHLORIDE),ephedrine hcl (eq to ephedrine hydrochloride),ephedrine hcl (eq to ephedrine hydrochloride),tfda_open_data_info43_cached_20260711
+sub_tfda_4800003801,POLYGALA EXTRACT,polygala extract,polygala extract,tfda_open_data_info43_cached_20260711
+sub_tfda_2808600900,ETHENZAMIDE (ETHOXYBENZAMIDE),ethenzamide (ethoxybenzamide),ethenzamide (ethoxybenzamide),tfda_open_data_info43_cached_20260711
+sub_tfda_8810209700,RIBOFLAVIN(5-PHOSPHATE SODIUM),riboflavin(5-phosphate sodium),riboflavin(5-phosphate sodium),tfda_open_data_info43_cached_20260711
+sub_tfda_8812300300,SODIUM PANTOTHENATE,sodium pantothenate,sodium pantothenate,tfda_open_data_info43_cached_20260711
+sub_tfda_4020100450,ASPARTATE POTASSIUM MAGNESIUM,aspartate potassium magnesium,aspartate potassium magnesium,tfda_open_data_info43_cached_20260711
+sub_tfda_8416000701,PANTHENOL D- (EQ TO D-PANTHENOL),panthenol d- (eq to d-panthenol),panthenol d- (eq to d-panthenol),tfda_open_data_info43_cached_20260711
+sub_tfda_0808001520,PIPERAZINE CITRATE,piperazine citrate,piperazine citrate,tfda_open_data_info43_cached_20260711
+sub_tfda_4020100000,AMINO ACID,amino acid,amino acid,tfda_open_data_info43_cached_20260711
+sub_tfda_8811600100,FOLIC ACID,folic acid,folic acid,tfda_open_data_info43_cached_20260711
+sub_tfda_2004800800,LIVER CONC.,liver conc.,liver conc.,tfda_open_data_info43_cached_20260711
+sub_tfda_9200016000,CARDAMON,cardamon,cardamon,tfda_open_data_info43_cached_20260711
+sub_tfda_4800003100,SQUILL (SCILLAE),squill (scillae),squill (scillae),tfda_open_data_info43_cached_20260711
+sub_tfda_2812001330,SODIUM VALPROATE,sodium valproate,sodium valproate,tfda_open_data_info43_cached_20260711
+sub_tfda_1013007500,Larotrectinib,larotrectinib,larotrectinib,tfda_open_data_info43_cached_20260711
+sub_tfda_8810100500,THIAMINE (VITAMIN B1),thiamine (vitamin b1),thiamine (vitamin b1),tfda_open_data_info43_cached_20260711
+sub_tfda_4020001700,SUCROSE (SUGAR REFINED),sucrose (sugar refined),sucrose (sugar refined),tfda_open_data_info43_cached_20260711
+sub_tfda_9600029600,SORBITOL,sorbitol,sorbitol,tfda_open_data_info43_cached_20260711
+sub_tfda_9200001700,CITRIC ACID,citric acid,citric acid,tfda_open_data_info43_cached_20260711
+sub_tfda_2816100300,HALOPERIDOL,haloperidol,haloperidol,tfda_open_data_info43_cached_20260711
+sub_tfda_0400000610,CARBINOXAMINE MALEATE,carbinoxamine maleate,carbinoxamine maleate,tfda_open_data_info43_cached_20260711
+sub_tfda_4800003821,POLYGALA FLUIDEXTRACT,polygala fluidextract,polygala fluidextract,tfda_open_data_info43_cached_20260711
+sub_tfda_2412001101,GINKGO BILOBA EXTRACT,ginkgo biloba extract,ginkgo biloba extract,tfda_open_data_info43_cached_20260711
+sub_tfda_9200004001,GINSENG EXTRACT,ginseng extract,ginseng extract,tfda_open_data_info43_cached_20260711
+sub_tfda_2824000220,BEZOAR BOVIS EXTRACT,bezoar bovis extract,bezoar bovis extract,tfda_open_data_info43_cached_20260711
+sub_tfda_8810101000,THIAMINE NITRATE,thiamine nitrate,thiamine nitrate,tfda_open_data_info43_cached_20260711
+sub_tfda_8813000102,INOSITOL L-,inositol l-,inositol l-,tfda_open_data_info43_cached_20260711
+sub_tfda_1212001410,METAPROTERENOL SULFATE (ORCIPRENALINE SULFATE),metaproterenol sulfate (orciprenaline sulfate),metaproterenol sulfate (orciprenaline sulfate),tfda_open_data_info43_cached_20260711
+sub_tfda_0400001810,DOXYLAMINE SUCCINATE,doxylamine succinate,doxylamine succinate,tfda_open_data_info43_cached_20260711
+sub_tfda_2820009450,CAFFEINE (ANHYDROUS),caffeine (anhydrous),caffeine (anhydrous),tfda_open_data_info43_cached_20260711
+sub_tfda_8600100100,THEOPHYLLINE,theophylline,theophylline,tfda_open_data_info43_cached_20260711
+sub_tfda_0812600200,AMOXICILLIN,amoxicillin,amoxicillin,tfda_open_data_info43_cached_20260711
+sub_tfda_4410000400,CLAVULANIC ACID,clavulanic acid,clavulanic acid,tfda_open_data_info43_cached_20260711
+sub_tfda_0400005600,LORATADINE,loratadine,loratadine,tfda_open_data_info43_cached_20260711
+sub_tfda_5604001340,TRICALCIUM PHOSPHATE,tricalcium phosphate,tricalcium phosphate,tfda_open_data_info43_cached_20260711
+sub_tfda_8818000300,CHOLECALCIFEROL ( EQ TO VIT D3) ( EQ TO VITAMIN D3),cholecalciferol ( eq to vit d3) ( eq to vitamin d3),cholecalciferol ( eq to vit d3) ( eq to vitamin d3),tfda_open_data_info43_cached_20260711
+sub_tfda_1212000910,FENOTEROL HYDROBROMIDE,fenoterol hydrobromide,fenoterol hydrobromide,tfda_open_data_info43_cached_20260711
+sub_tfda_5612002605,SODIUM PHOSPHATE DIBASIC ANHYDROUS (EQ TO DISODIUM HYDROGEN PHOSPHATE ANHYDROUS)(EQ TO DIBASIC SODIUM PHOSPHATE ANHYDROUS)(DISODIUM PHOSPHATE ANHYDROUS),sodium phosphate dibasic anhydrous (eq to disodium hydrogen phosphate anhydrous)(eq to dibasic sodium phosphate anhydrous)(disodium phosphate anhydrous),sodium phosphate dibasic anhydrous (eq to disodium hydrogen phosphate anhydrous)(eq to dibasic sodium phosphate anhydrous)(disodium phosphate anhydrous),tfda_open_data_info43_cached_20260711
+sub_tfda_5612002615,SODIUM PHOSPHATE MONOBASIC ANHYDROUS,sodium phosphate monobasic anhydrous,sodium phosphate monobasic anhydrous,tfda_open_data_info43_cached_20260711
+sub_tfda_0400006810,LEVOCETIRIZINE DIHYDROCHLORIDE (EQ TO LEVOCETIRIZINE 2HCL),levocetirizine dihydrochloride (eq to levocetirizine 2hcl),levocetirizine dihydrochloride (eq to levocetirizine 2hcl),tfda_open_data_info43_cached_20260711
+sub_tfda_2816100600,RISPERIDONE,risperidone,risperidone,tfda_open_data_info43_cached_20260711
+sub_tfda_8404602000,IODINE,iodine,iodine,tfda_open_data_info43_cached_20260711
+sub_tfda_4800002900,POTASSIUM IODIDE,potassium iodide,potassium iodide,tfda_open_data_info43_cached_20260711
+sub_tfda_0400001310,DEXCHLORPHENIRAMINE MALEATE,dexchlorpheniramine maleate,dexchlorpheniramine maleate,tfda_open_data_info43_cached_20260711
+sub_tfda_1212002620,PSEUDOEPHEDRINE SULFATE,pseudoephedrine sulfate,pseudoephedrine sulfate,tfda_open_data_info43_cached_20260711
+sub_tfda_6836800214,CARNITINE CHLORIDE,carnitine chloride,carnitine chloride,tfda_open_data_info43_cached_20260711
+sub_tfda_6824000200,CALCIUM LACTATE,calcium lactate,calcium lactate,tfda_open_data_info43_cached_20260711
+sub_tfda_5612004110,ANTHRAQUINONE GLYCOSIDES,anthraquinone glycosides,anthraquinone glycosides,tfda_open_data_info43_cached_20260711
+sub_tfda_8428000700,SALICYLIC ACID,salicylic acid,salicylic acid,tfda_open_data_info43_cached_20260711
+sub_tfda_8804009300,VITAMIN A (PALMITATE),vitamin a (palmitate),vitamin a (palmitate),tfda_open_data_info43_cached_20260711
+sub_tfda_8820000213,TOCOPHEROL ACETATE ALPHA DL-,tocopherol acetate alpha dl-,tocopherol acetate alpha dl-,tfda_open_data_info43_cached_20260711
+sub_tfda_8810209600,RIBOFLAVIN(PHOSPHATE),riboflavin(phosphate),riboflavin(phosphate),tfda_open_data_info43_cached_20260711
+sub_tfda_4800003611,PLATYCODI RADIX EXTRACT,platycodi radix extract,platycodi radix extract,tfda_open_data_info43_cached_20260711
+sub_tfda_5620000501,SENEGA EXTRACT,senega extract,senega extract,tfda_open_data_info43_cached_20260711
+sub_tfda_9600013500,GLYCERIN (eq to GLYCEROL),glycerin (eq to glycerol),glycerin (eq to glycerol),tfda_open_data_info43_cached_20260711
+sub_tfda_4800000600,CARBOCYSTEINE (S-CARBOXYMETHYL CYSTEINE),carbocysteine (s-carboxymethyl cysteine),carbocysteine (s-carboxymethyl cysteine),tfda_open_data_info43_cached_20260711
+sub_tfda_4400001310,LYSOZYME CHLORIDE,lysozyme chloride,lysozyme chloride,tfda_open_data_info43_cached_20260711
+sub_tfda_1212009110,SALBUTAMOL (SULFATE),salbutamol (sulfate),salbutamol (sulfate),tfda_open_data_info43_cached_20260711
+sub_tfda_5608000810,LOPERAMIDE HCL,loperamide hcl,loperamide hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_4010000310,LACTULOSE 50%,lactulose 50%,lactulose 50%,tfda_open_data_info43_cached_20260711
+sub_tfda_9200004600,GLYCYRRHIZINIC ACID (EQ TO GLYCYRRHETINIC ACID GLYCOSIDE)(EQ TO GLYCYRRHIZIC ACID ),glycyrrhizinic acid (eq to glycyrrhetinic acid glycoside)(eq to glycyrrhizic acid ),glycyrrhizinic acid (eq to glycyrrhetinic acid glycoside)(eq to glycyrrhizic acid ),tfda_open_data_info43_cached_20260711
+sub_tfda_2808801910,METHADONE HYDROCHLORIDE,methadone hydrochloride,methadone hydrochloride,tfda_open_data_info43_cached_20260711
+sub_tfda_1212003915,PROCATEROL HYDROCHLORIDE HEMIHYDRATE,procaterol hydrochloride hemihydrate,procaterol hydrochloride hemihydrate,tfda_open_data_info43_cached_20260711
+sub_tfda_5612002610,SODIUM PHOSPHATE MONOBASIC (EQ TO MONOSODIUM PHOSPHATE)(EQ TO SODIUM DIHYDROGEN PHOSPHATE),sodium phosphate monobasic (eq to monosodium phosphate)(eq to sodium dihydrogen phosphate),sodium phosphate monobasic (eq to monosodium phosphate)(eq to sodium dihydrogen phosphate),tfda_open_data_info43_cached_20260711
+sub_tfda_5612002600,SODIUM PHOSPHATE DIBASIC (eq to DISOD. HYDROGEN PHOSPHATE) (eq to DISODIUM PHOSPHATE),sodium phosphate dibasic (eq to disod. hydrogen phosphate) (eq to disodium phosphate),sodium phosphate dibasic (eq to disod. hydrogen phosphate) (eq to disodium phosphate),tfda_open_data_info43_cached_20260711
+sub_tfda_0818000310,AMANTADINE HCL,amantadine hcl,amantadine hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_9200014580,ARMENIACA WATER,armeniaca water,armeniaca water,tfda_open_data_info43_cached_20260711
+sub_tfda_4008000800,SODIUM CITRATE (SODIUM CITRATE TRIBASIC),sodium citrate (sodium citrate tribasic),sodium citrate (sodium citrate tribasic),tfda_open_data_info43_cached_20260711
+sub_tfda_8810200404,VITAMIN B2 (RIBOFLAVIN),vitamin b2 (riboflavin),vitamin b2 (riboflavin),tfda_open_data_info43_cached_20260711
+sub_tfda_8812300210,Calcium Pantothenate,calcium pantothenate,calcium pantothenate,tfda_open_data_info43_cached_20260711
+sub_tfda_8820000113,TOCOPHEROL ALPHA DL- (EQ TO DL-ALPHA TOCOPHEROL),tocopherol alpha dl- (eq to dl-alpha tocopherol),tocopherol alpha dl- (eq to dl-alpha tocopherol),tfda_open_data_info43_cached_20260711
+sub_tfda_2824000200,BEZOAR ORIENTALE,bezoar orientale,bezoar orientale,tfda_open_data_info43_cached_20260711
+sub_tfda_8804000300,VITAMIN A PALMITATE,vitamin a palmitate,vitamin a palmitate,tfda_open_data_info43_cached_20260711
+sub_tfda_8810600100,PYRIDOXINE(VITAMIN B6),pyridoxine(vitamin b6),pyridoxine(vitamin b6),tfda_open_data_info43_cached_20260711
+sub_tfda_8810000200,NIACIN (NICOTINIC ACID),niacin (nicotinic acid),niacin (nicotinic acid),tfda_open_data_info43_cached_20260711
+sub_tfda_0812509210,ERYTHROMYCIN (ESTOLATE),erythromycin (estolate),erythromycin (estolate),tfda_open_data_info43_cached_20260711
+sub_tfda_9200036810,DONEPEZIL HYDROCHLORIDE,donepezil hydrochloride,donepezil hydrochloride,tfda_open_data_info43_cached_20260711
+sub_tfda_8424124700,MACROGOL 4000,macrogol 4000,macrogol 4000,tfda_open_data_info43_cached_20260711
+sub_tfda_9200095400,ARIPIPRAZOLE,aripiprazole,aripiprazole,tfda_open_data_info43_cached_20260711
+sub_tfda_4010000110,CITRULLINE MALATE,citrulline malate,citrulline malate,tfda_open_data_info43_cached_20260711
+sub_tfda_6836800230,L-CARNITINE INNER SALT,l-carnitine inner salt,l-carnitine inner salt,tfda_open_data_info43_cached_20260711
+sub_tfda_4800003630,PLATYCODON FLUID EXTRACT,platycodon fluid extract,platycodon fluid extract,tfda_open_data_info43_cached_20260711
+sub_tfda_2004409700,FERRIC (PYROPHOSPHATE),ferric (pyrophosphate),ferric (pyrophosphate),tfda_open_data_info43_cached_20260711
+sub_tfda_4020101310,LYSINE HCL,lysine hcl,lysine hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_5622009725,METOCLOPRAMIDE (2HCL MONOHYDRATE),metoclopramide (2hcl monohydrate),metoclopramide (2hcl monohydrate),tfda_open_data_info43_cached_20260711
+sub_tfda_6804001540,PREDNISOLONE PHOSPHATE SODIUM,prednisolone phosphate sodium,prednisolone phosphate sodium,tfda_open_data_info43_cached_20260711
+sub_tfda_2820002500,PIRACETAM,piracetam,piracetam,tfda_open_data_info43_cached_20260711
+sub_tfda_0812800910,TETRACYCLINE HCL (EQ TO TETRACYCLINE HYDROCHLORIDE),tetracycline hcl (eq to tetracycline hydrochloride),tetracycline hcl (eq to tetracycline hydrochloride),tfda_open_data_info43_cached_20260711
+sub_tfda_8818000000,VITAMIN D,vitamin d,vitamin d,tfda_open_data_info43_cached_20260711
+sub_tfda_5608001100,PECTIN,pectin,pectin,tfda_open_data_info43_cached_20260711
+sub_tfda_5608000601,KAOLIN COLLOIDAL,kaolin colloidal,kaolin colloidal,tfda_open_data_info43_cached_20260711
+sub_tfda_3668001600,SODIUM IODIDE,sodium iodide,sodium iodide,tfda_open_data_info43_cached_20260711
+sub_tfda_4020100452,ASPARTATE POTASSIUM MAGNESIUM L- ( EQ TO MAGNESIUM POTASSIUM L-ASPARTATE),aspartate potassium magnesium l- ( eq to magnesium potassium l-aspartate),aspartate potassium magnesium l- ( eq to magnesium potassium l-aspartate),tfda_open_data_info43_cached_20260711
+sub_tfda_4800003901,PRUNUS YEDOEUSIS EXTRACT,prunus yedoeusis extract,prunus yedoeusis extract,tfda_open_data_info43_cached_20260711
+sub_tfda_4020100702,GLUTAMIC ACID L-,glutamic acid l-,glutamic acid l-,tfda_open_data_info43_cached_20260711
+sub_tfda_4020002100,GALACTOSE,galactose,galactose,tfda_open_data_info43_cached_20260711
+sub_tfda_9200004002,GINSENG LIQUID EXTRACT,ginseng liquid extract,ginseng liquid extract,tfda_open_data_info43_cached_20260711
+sub_tfda_9200028501,LIQUSTICUM EXTRACT,liqusticum extract,liqusticum extract,tfda_open_data_info43_cached_20260711
+sub_tfda_2812002300,Lacosamide,lacosamide,lacosamide,tfda_open_data_info43_cached_20260711
+sub_tfda_0400007100,Bilastine,bilastine,bilastine,tfda_open_data_info43_cached_20260711
+sub_tfda_4800001470,GUAIACOL GLYCERIN ETHER,guaiacol glycerin ether,guaiacol glycerin ether,tfda_open_data_info43_cached_20260711
+sub_tfda_8600100403,DIHYDROXYPROPYL THEOPHYLLINE,dihydroxypropyl theophylline,dihydroxypropyl theophylline,tfda_open_data_info43_cached_20260711
+sub_tfda_9200004405,GLYCYRRHIZAE EXTRACT,glycyrrhizae extract,glycyrrhizae extract,tfda_open_data_info43_cached_20260711
+sub_tfda_9200017911,ANGELICA RADIX EXTRACT,angelica radix extract,angelica radix extract,tfda_open_data_info43_cached_20260711
+sub_tfda_9200004012,GINSENG RADIX EXTRACT,ginseng radix extract,ginseng radix extract,tfda_open_data_info43_cached_20260711
+sub_tfda_9200024911,CNIDIUM RHIZOMA EXTRACT,cnidium rhizoma extract,cnidium rhizoma extract,tfda_open_data_info43_cached_20260711
+sub_tfda_4020101302,LYSINE L-,lysine l-,lysine l-,tfda_open_data_info43_cached_20260711
+sub_tfda_4020101503,METHIONINE DL-,methionine dl-,methionine dl-,tfda_open_data_info43_cached_20260711
+sub_tfda_2004401100,FERROUS FUMARATE,ferrous fumarate,ferrous fumarate,tfda_open_data_info43_cached_20260711
+sub_tfda_8813000300,INOSITOL FROM YEAST CONC.,inositol from yeast conc.,inositol from yeast conc.,tfda_open_data_info43_cached_20260711
+sub_tfda_0808002900,ANTIMONY POTASSIUM TARTRATE,antimony potassium tartrate,antimony potassium tartrate,tfda_open_data_info43_cached_20260711
+sub_tfda_9200030580,ETHYL NITRITE SPIRIT,ethyl nitrite spirit,ethyl nitrite spirit,tfda_open_data_info43_cached_20260711
+sub_tfda_2808800882,CAMPHORATED OPIUM TINCTURE,camphorated opium tincture,camphorated opium tincture,tfda_open_data_info43_cached_20260711
+sub_tfda_8810109900,THIAMINE(HCL),thiamine(hcl),thiamine(hcl),tfda_open_data_info43_cached_20260711
+sub_tfda_4028001100,ISOSORBIDE,isosorbide,isosorbide,tfda_open_data_info43_cached_20260711
+sub_tfda_2812001310,VALPROATE SODIUM,valproate sodium,valproate sodium,tfda_open_data_info43_cached_20260711
+sub_tfda_2808800880,OPIUM TINCTURE,opium tincture,opium tincture,tfda_open_data_info43_cached_20260711
+sub_tfda_2808800881,OPIUM CAMPHOR TINCTURE,opium camphor tincture,opium camphor tincture,tfda_open_data_info43_cached_20260711
+sub_tfda_8408000180,CAMPHORATE TINCTURE,camphorate tincture,camphorate tincture,tfda_open_data_info43_cached_20260711
+sub_tfda_2408000300,CAPTOPRIL,captopril,captopril,tfda_open_data_info43_cached_20260711
+sub_tfda_2812009200,PREGABALIN,pregabalin,pregabalin,tfda_open_data_info43_cached_20260711
+sub_tfda_0400004110,TRIPROLIDINE HCL,triprolidine hcl,triprolidine hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_4800003640,EXTRACTUM PLATYCODI LIQUIDUM,extractum platycodi liquidum,extractum platycodi liquidum,tfda_open_data_info43_cached_20260711
+sub_tfda_5612005210,PICOSULFATE SODIUM,picosulfate sodium,picosulfate sodium,tfda_open_data_info43_cached_20260711
+sub_tfda_4800003320,TIPEPIDINE HIBENZATE,tipepidine hibenzate,tipepidine hibenzate,tfda_open_data_info43_cached_20260711
+sub_tfda_4800092410,NOSCAPINE (HCL),noscapine (hcl),noscapine (hcl),tfda_open_data_info43_cached_20260711
+sub_tfda_0400000811,D-CHLORPHENIRAMINE MALEATE,d-chlorpheniramine maleate,d-chlorpheniramine maleate,tfda_open_data_info43_cached_20260711
+sub_tfda_2824800600,CHLORAL HYDRATE,chloral hydrate,chloral hydrate,tfda_open_data_info43_cached_20260711
+sub_tfda_5612002694,DIBASIC SODIUM PHOSPHATE HEPTAHYDRATE,dibasic sodium phosphate heptahydrate,dibasic sodium phosphate heptahydrate,tfda_open_data_info43_cached_20260711
+sub_tfda_9600022500,PHOSPHORIC ACID,phosphoric acid,phosphoric acid,tfda_open_data_info43_cached_20260711
+sub_tfda_9200080610,Tofacitinib citrate,tofacitinib citrate,tofacitinib citrate,tfda_open_data_info43_cached_20260711
+sub_tfda_4010000404,MONOSODIUM L-GLUTAMATE,monosodium l-glutamate,monosodium l-glutamate,tfda_open_data_info43_cached_20260711
+sub_tfda_4020100414,MONOSODIUM L-ASPARTATE,monosodium l-aspartate,monosodium l-aspartate,tfda_open_data_info43_cached_20260711
+sub_tfda_4020101314,L-LYSINE MONOHYDROCHLORIDE,l-lysine monohydrochloride,l-lysine monohydrochloride,tfda_open_data_info43_cached_20260711
+sub_tfda_9900081400,AMINOETHYLSULFONIC ACID,aminoethylsulfonic acid,aminoethylsulfonic acid,tfda_open_data_info43_cached_20260711
+sub_tfda_0812301300,CEPHALEXIN,cephalexin,cephalexin,tfda_open_data_info43_cached_20260711
+sub_tfda_5620000520,SENEGA SYRUP,senega syrup,senega syrup,tfda_open_data_info43_cached_20260711
+sub_tfda_5604000202,ALUMINUM HYDROXIDE DRIED GEL,aluminum hydroxide dried gel,aluminum hydroxide dried gel,tfda_open_data_info43_cached_20260711
+sub_tfda_5604002500,MAGNESIUM HYDROXIDE,magnesium hydroxide,magnesium hydroxide,tfda_open_data_info43_cached_20260711
+sub_tfda_0400002410,KETOTIFEN FUMARATE,ketotifen fumarate,ketotifen fumarate,tfda_open_data_info43_cached_20260711
+sub_tfda_5640000500,CIMETIDINE,cimetidine,cimetidine,tfda_open_data_info43_cached_20260711
+sub_tfda_5604002400,MAGNESIUM CARBONATE,magnesium carbonate,magnesium carbonate,tfda_open_data_info43_cached_20260711
+sub_tfda_9200001750,CITRIC ACID ANHYDROUS,citric acid anhydrous,citric acid anhydrous,tfda_open_data_info43_cached_20260711
+sub_tfda_4012002500,POTASSIUM BICARBONATE (EQ TO POTASSIUM DICARBONATE)(EQ TO POTASSIUM HYDROGEN CARBONATE),potassium bicarbonate (eq to potassium dicarbonate)(eq to potassium hydrogen carbonate),potassium bicarbonate (eq to potassium dicarbonate)(eq to potassium hydrogen carbonate),tfda_open_data_info43_cached_20260711
+sub_tfda_5622009710,METOCLOPRAMIDE (HCL),metoclopramide (hcl),metoclopramide (hcl),tfda_open_data_info43_cached_20260711
+sub_tfda_0812600270,AMOXICILLIN (AS TRIHYDATE),amoxicillin (as trihydate),amoxicillin (as trihydate),tfda_open_data_info43_cached_20260711
+sub_tfda_0812203500,ITRACONAZOLE,itraconazole,itraconazole,tfda_open_data_info43_cached_20260711
+sub_tfda_5604002010,SYNTHETIC HYDROTALCITE,synthetic hydrotalcite,synthetic hydrotalcite,tfda_open_data_info43_cached_20260711
+sub_tfda_4020102400,GLYCINE (EQ TO AMINOACETIC ACID)(EQ TO GLYCOCOLL),glycine (eq to aminoacetic acid)(eq to glycocoll),glycine (eq to aminoacetic acid)(eq to glycocoll),tfda_open_data_info43_cached_20260711
+sub_tfda_5236004000,risdiplam,risdiplam,risdiplam,tfda_open_data_info43_cached_20260711
+sub_tfda_5632002000,Maralixibat Chloride,maralixibat chloride,maralixibat chloride,tfda_open_data_info43_cached_20260711
+sub_tfda_2820004000,CANNABIDIOL,cannabidiol,cannabidiol,tfda_open_data_info43_cached_20260711
+sub_tfda_9600013580,Glycerol phenylbutyrate,glycerol phenylbutyrate,glycerol phenylbutyrate,tfda_open_data_info43_cached_20260711
+sub_tfda_2820001410,FENFLURAMINE HCL,fenfluramine hcl,fenfluramine hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_0400000510,BROMPHENIRAMINE MALEATE,brompheniramine maleate,brompheniramine maleate,tfda_open_data_info43_cached_20260711
+sub_tfda_9200050500,DIOCTAHEDRAL SMECTITE,dioctahedral smectite,dioctahedral smectite,tfda_open_data_info43_cached_20260711
+sub_tfda_5610000682,SIMETHICONE EMULSION 30%,simethicone emulsion 30%,simethicone emulsion 30%,tfda_open_data_info43_cached_20260711
+sub_tfda_8810209100,VITAMIN B2 (YEAST CONC.),vitamin b2 (yeast conc.),vitamin b2 (yeast conc.),tfda_open_data_info43_cached_20260711
+sub_tfda_8810609300,VITAMIN B6 (HCL),vitamin b6 (hcl),vitamin b6 (hcl),tfda_open_data_info43_cached_20260711
+sub_tfda_4800001015,DEXTROMETHORPHAN HBR ANHYDROUS,dextromethorphan hbr anhydrous,dextromethorphan hbr anhydrous,tfda_open_data_info43_cached_20260711
+sub_tfda_4800002400,NOSCAPINE,noscapine,noscapine,tfda_open_data_info43_cached_20260711
+sub_tfda_2412001111,GINKGO BILOBA FOLIUM EXTRACT,ginkgo biloba folium extract,ginkgo biloba folium extract,tfda_open_data_info43_cached_20260711
+sub_tfda_2412001130,"GINKGO BILOBA EXTRACT((9.6mg GINKGO FLAVONGLYCOSIDES CALCULATED AS QUERCETIN,KAEMPFEROL AND ISORHAMNETIN,2.4mg TERPENLACTONES )","ginkgo biloba extract((9.6mg ginkgo flavonglycosides calculated as quercetin,kaempferol and isorhamnetin,2.4mg terpenlactones )","ginkgo biloba extract((9.6mg ginkgo flavonglycosides calculated as quercetin,kaempferol and isorhamnetin,2.4mg terpenlactones )",tfda_open_data_info43_cached_20260711
+sub_tfda_9200028311,LYCII FRUCTUS EXTRACT,lycii fructus extract,lycii fructus extract,tfda_open_data_info43_cached_20260711
+sub_tfda_9200028411,EPIMEDII HERBA EXTRACT,epimedii herba extract,epimedii herba extract,tfda_open_data_info43_cached_20260711
+sub_tfda_6824000100,CALCIUM GLUCONATE,calcium gluconate,calcium gluconate,tfda_open_data_info43_cached_20260711
+sub_tfda_2816401520,SERTRALINE HYDROCHLORIDE,sertraline hydrochloride,sertraline hydrochloride,tfda_open_data_info43_cached_20260711
+sub_tfda_8600109150,THEOPHYLLINE (ANHYDROUS),theophylline (anhydrous),theophylline (anhydrous),tfda_open_data_info43_cached_20260711
+sub_tfda_1204001410,RIVASTIGMINE HYDROGEN TARTRATE,rivastigmine hydrogen tartrate,rivastigmine hydrogen tartrate,tfda_open_data_info43_cached_20260711
+sub_tfda_5612002617,SODIUM PHOSPHATE MONOBASIC MONOHYDRATE (SODIUM DIHYDROGEN PHOSPHATE MONOHYDRATE),sodium phosphate monobasic monohydrate (sodium dihydrogen phosphate monohydrate),sodium phosphate monobasic monohydrate (sodium dihydrogen phosphate monohydrate),tfda_open_data_info43_cached_20260711
+sub_tfda_5640002000,TRIPOTASSIUM DICITRATE BISMUTHATE,tripotassium dicitrate bismuthate,tripotassium dicitrate bismuthate,tfda_open_data_info43_cached_20260711
+sub_tfda_8820000200,TOCOPHEROL ACETATE,tocopherol acetate,tocopherol acetate,tfda_open_data_info43_cached_20260711
+sub_tfda_4800001440,GUAIACOL POTASSIUM SULPHONATE,guaiacol potassium sulphonate,guaiacol potassium sulphonate,tfda_open_data_info43_cached_20260711
+sub_tfda_4012001900,POTASSIUM GLUCONATE,potassium gluconate,potassium gluconate,tfda_open_data_info43_cached_20260711
+sub_tfda_9200050620,ANHYDROUS SEVELAMER CARBONATE,anhydrous sevelamer carbonate,anhydrous sevelamer carbonate,tfda_open_data_info43_cached_20260711
+sub_tfda_9200004407,GLYCYRRHIZA FLUIDEXTRACT,glycyrrhiza fluidextract,glycyrrhiza fluidextract,tfda_open_data_info43_cached_20260711
+sub_tfda_2820009460,CAFFEINE (HYDRATE),caffeine (hydrate),caffeine (hydrate),tfda_open_data_info43_cached_20260711
+sub_tfda_8804009200,VITAMIN A (ACETATE),vitamin a (acetate),vitamin a (acetate),tfda_open_data_info43_cached_20260711
+sub_tfda_8818000230,ERGOCALCIFEROL ACETATE,ergocalciferol acetate,ergocalciferol acetate,tfda_open_data_info43_cached_20260711
+sub_tfda_0400006600,DESLORATADINE,desloratadine,desloratadine,tfda_open_data_info43_cached_20260711
+sub_tfda_9200100100,"四物浸膏(當歸,川芎,白芍,熟地黃,矯味的桂圓,紅棗,枸杞的比例為3:3:1:1:2:1:1)(composite of Angelicae Radix,Ligustici Rhizoma,Paeoniae Radix,Rehmanniae Radix,Arillus Longan,Jujubae Fructus,Lycii Fructus is 3311211)","四物浸膏(當歸,川芎,白芍,熟地黃,矯味的桂圓,紅棗,枸杞的比例為3:3:1:1:2:1:1)(composite of angelicae radix,ligustici rhizoma,paeoniae radix,rehmanniae radix,arillus longan,jujubae fructus,lycii fructus is 3311211)","四物浸膏(當歸,川芎,白芍,熟地黃,矯味的桂圓,紅棗,枸杞的比例為3:3:1:1:2:1:1)(composite of angelicae radix,ligustici rhizoma,paeoniae radix,rehmanniae radix,arillus longan,jujubae fructus,lycii fructus is 3311211)",tfda_open_data_info43_cached_20260711
+sub_tfda_9200100200,甘胺酸亞鐵(Ferrous bisglycinate chelate),甘胺酸亞鐵(ferrous bisglycinate chelate),甘胺酸亞鐵(ferrous bisglycinate chelate),tfda_open_data_info43_cached_20260711
+sub_tfda_9200004010,GINSENG RADIX,ginseng radix,ginseng radix,tfda_open_data_info43_cached_20260711
+sub_tfda_9200017910,ANGELICA RADIX,angelica radix,angelica radix,tfda_open_data_info43_cached_20260711
+sub_tfda_8811300200,CHOLINE OROTATE,choline orotate,choline orotate,tfda_open_data_info43_cached_20260711
+sub_tfda_9200004000,GINSENG,ginseng,ginseng,tfda_open_data_info43_cached_20260711
+sub_tfda_0812391350,CEPHALEXIN (MONOHYDRATE),cephalexin (monohydrate),cephalexin (monohydrate),tfda_open_data_info43_cached_20260711
+sub_tfda_5612002614,Dibasic Sodium Phosphate (heptahydrate),dibasic sodium phosphate (heptahydrate),dibasic sodium phosphate (heptahydrate),tfda_open_data_info43_cached_20260711
+sub_tfda_9200037100,RILUZOLE,riluzole,riluzole,tfda_open_data_info43_cached_20260711
+sub_tfda_2820000420,CAFFEINE SODIUM BENZOATE,caffeine sodium benzoate,caffeine sodium benzoate,tfda_open_data_info43_cached_20260711
+sub_tfda_4028000900,FUROSEMIDE,furosemide,furosemide,tfda_open_data_info43_cached_20260711
+sub_tfda_5622000710,METOCLOPRAMIDE HCL,metoclopramide hcl,metoclopramide hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_9200090010,MEMANTINE HYDROCHLORIDE,memantine hydrochloride,memantine hydrochloride,tfda_open_data_info43_cached_20260711
+sub_tfda_9200098910,ESCITALOPRAM OXALATE,escitalopram oxalate,escitalopram oxalate,tfda_open_data_info43_cached_20260711
+sub_tfda_2820000410,CAFFEINE CITRATE,caffeine citrate,caffeine citrate,tfda_open_data_info43_cached_20260711
+sub_tfda_V03AE10000,Sodium Zirconium Cyclosilicate,sodium zirconium cyclosilicate,sodium zirconium cyclosilicate,tfda_open_data_info43_cached_20260711
+sub_tfda_4410000500,VIGABATRIN,vigabatrin,vigabatrin,tfda_open_data_info43_cached_20260711
+sub_tfda_9600092420,TINCTURA CAPSICI,tinctura capsici,tinctura capsici,tfda_open_data_info43_cached_20260711
+sub_tfda_9600092430,TINCTURA CATECH,tinctura catech,tinctura catech,tfda_open_data_info43_cached_20260711
+sub_tfda_9600092440,TINCTURA SCOPOLIA,tinctura scopolia,tinctura scopolia,tfda_open_data_info43_cached_20260711
+sub_tfda_5624000400,CHOLINE BITARTRATE,choline bitartrate,choline bitartrate,tfda_open_data_info43_cached_20260711
+sub_tfda_0816001600,THIOCARLIDE,thiocarlide,thiocarlide,tfda_open_data_info43_cached_20260711
+sub_tfda_0400003310,PROMETHAZINE HCL,promethazine hcl,promethazine hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_5620000301,IPECAC EXTRACT,ipecac extract,ipecac extract,tfda_open_data_info43_cached_20260711
+sub_tfda_1212001803,METHYLEPHEDRINE DL-,methylephedrine dl-,methylephedrine dl-,tfda_open_data_info43_cached_20260711
+sub_tfda_9200004601,GLYCYRRHIZINE EXTRACT,glycyrrhizine extract,glycyrrhizine extract,tfda_open_data_info43_cached_20260711
+sub_tfda_9200004402,GLYCYRRHIZA POWDER,glycyrrhiza powder,glycyrrhiza powder,tfda_open_data_info43_cached_20260711
+sub_tfda_8424121900,POLYETHYLENE GLYCOL 4000,polyethylene glycol 4000,polyethylene glycol 4000,tfda_open_data_info43_cached_20260711
+sub_tfda_8804000103,VITAMIN A WATER MISCIBLE,vitamin a water miscible,vitamin a water miscible,tfda_open_data_info43_cached_20260711
+sub_tfda_8833009100,VITAMIN A (VITAMIN A + VITAMIN D3),vitamin a (vitamin a + vitamin d3),vitamin a (vitamin a + vitamin d3),tfda_open_data_info43_cached_20260711
+sub_tfda_5604001300,CALCIUM PHOSPHATE TRIBASIC (CALCIUM PHOSPHATE),calcium phosphate tribasic (calcium phosphate),calcium phosphate tribasic (calcium phosphate),tfda_open_data_info43_cached_20260711
+sub_tfda_2808401800,MEFENAMIC ACID,mefenamic acid,mefenamic acid,tfda_open_data_info43_cached_20260711
+sub_tfda_8404000315,ETHACRIDINE LACTATE MONOHYDRATE (ACRINOL),ethacridine lactate monohydrate (acrinol),ethacridine lactate monohydrate (acrinol),tfda_open_data_info43_cached_20260711
+sub_tfda_0804000230,BERBERINE TANNATE,berberine tannate,berberine tannate,tfda_open_data_info43_cached_20260711
+sub_tfda_8810600330,PYRIDOXINE HYDROCHLORIDE,pyridoxine hydrochloride,pyridoxine hydrochloride,tfda_open_data_info43_cached_20260711
+sub_tfda_4800004200,HYDROPROPIZINE,hydropropizine,hydropropizine,tfda_open_data_info43_cached_20260711
+sub_tfda_0812309250,CEFADROXIL (MONOHYDRATE),cefadroxil (monohydrate),cefadroxil (monohydrate),tfda_open_data_info43_cached_20260711
+sub_tfda_4800004800,BROCINE,brocine,brocine,tfda_open_data_info43_cached_20260711
+sub_tfda_1208004910,TRIHEXYPHENIDYL HCL (EQ TO BENZHEXOL HYDROCHLORIDE),trihexyphenidyl hcl (eq to benzhexol hydrochloride),trihexyphenidyl hcl (eq to benzhexol hydrochloride),tfda_open_data_info43_cached_20260711
+sub_tfda_0840001700,TRIMETHOPRIM,trimethoprim,trimethoprim,tfda_open_data_info43_cached_20260711
+sub_tfda_0824001500,SULFAMETHOXAZOLE,sulfamethoxazole,sulfamethoxazole,tfda_open_data_info43_cached_20260711
+sub_tfda_1212001810,METHYLEPHEDRINE HCL,methylephedrine hcl,methylephedrine hcl,tfda_open_data_info43_cached_20260711
+sub_tfda_4012002100,SODIUM CHLORIDE,sodium chloride,sodium chloride,tfda_open_data_info43_cached_20260711
+sub_tfda_4008008360,POTASSIUM CITRATE (MONOHYDRATE),potassium citrate (monohydrate),potassium citrate (monohydrate),tfda_open_data_info43_cached_20260711
+sub_tfda_4008008880,SODIUM CITRATE (DEHYDRATE),sodium citrate (dehydrate),sodium citrate (dehydrate),tfda_open_data_info43_cached_20260711
+sub_tfda_4020000570,DEXTROSE MONOHYDRATE,dextrose monohydrate,dextrose monohydrate,tfda_open_data_info43_cached_20260711
+sub_tfda_9200008400,SODIUM FLUORIDE,sodium fluoride,sodium fluoride,tfda_open_data_info43_cached_20260711
+sub_tfda_2808401300,IBUPROFEN,ibuprofen,ibuprofen,tfda_open_data_info43_cached_20260711
+sub_tfda_1212003920,PROCATEROL HYDROCHLORIDE HYDRATE,procaterol hydrochloride hydrate,procaterol hydrochloride hydrate,tfda_open_data_info43_cached_20260711
+sub_tfda_4800003603,PLATYCODN FLUID EXTRACT,platycodn fluid extract,platycodn fluid extract,tfda_open_data_info43_cached_20260711
+sub_tfda_4020001702,SUCROSE,sucrose,sucrose,tfda_open_data_info43_cached_20260711
+sub_tfda_8811300100,OROTIC ACID (VIT B13),orotic acid (vit b13),orotic acid (vit b13),tfda_open_data_info43_cached_20260711
+sub_tfda_8824000300,MENADIONE (VIT K3),menadione (vit k3),menadione (vit k3),tfda_open_data_info43_cached_20260711
+sub_tfda_5656900700,THIOCTIC ACID (VIT B14ALPHA-LIPOIC ACID),thioctic acid (vit b14alpha-lipoic acid),thioctic acid (vit b14alpha-lipoic acid),tfda_open_data_info43_cached_20260711
+sub_tfda_9200024902,CNIDIUM EXTRACT,cnidium extract,cnidium extract,tfda_open_data_info43_cached_20260711
+sub_tfda_4026000400,CALCIUM,calcium,calcium,tfda_open_data_info43_cached_20260711
+sub_tfda_9200025202,HOELEN EXTRACT,hoelen extract,hoelen extract,tfda_open_data_info43_cached_20260711
+sub_tfda_2812002600,Brivaracetam,brivaracetam,brivaracetam,tfda_open_data_info43_cached_20260711
+sub_tfda_2004800100,LIVER EXTRACT,liver extract,liver extract,tfda_open_data_info43_cached_20260711
+sub_tfda_4020100430,ASPARTATE MAGNESIUM,aspartate magnesium,aspartate magnesium,tfda_open_data_info43_cached_20260711
+sub_tfda_4020100440,ASPARTATE POTASSIUM,aspartate potassium,aspartate potassium,tfda_open_data_info43_cached_20260711
+sub_tfda_4800001210,DIMEMORFAN PHOSPHATE,dimemorfan phosphate,dimemorfan phosphate,tfda_open_data_info43_cached_20260711
+sub_tfda_9200001760,CITRIC ACID MONOHYDRATE,citric acid monohydrate,citric acid monohydrate,tfda_open_data_info43_cached_20260711
+sub_tfda_9200024950,CNIDII RHIZOMA EXTRACT,cnidii rhizoma extract,cnidii rhizoma extract,tfda_open_data_info43_cached_20260711
+sub_tfda_5620000320,Ipecac Fluidextract,ipecac fluidextract,ipecac fluidextract,tfda_open_data_info43_cached_20260711
+sub_tfda_0818001610,ABACAVIR SULFATE,abacavir sulfate,abacavir sulfate,tfda_open_data_info43_cached_20260711
+sub_tfda_5610000171,CASSIA LIQUID EXTRACT,cassia liquid extract,cassia liquid extract,tfda_open_data_info43_cached_20260711
+sub_tfda_2816402010,ATOMOXETINE HYDROCHLORIDE,atomoxetine hydrochloride,atomoxetine hydrochloride,tfda_open_data_info43_cached_20260711
+sub_tfda_0818001400,LAMIVUDINE,lamivudine,lamivudine,tfda_open_data_info43_cached_20260711
+sub_tfda_9200025200,HOELEN,hoelen,hoelen,tfda_open_data_info43_cached_20260711
+sub_tfda_9200022711,CONIOSELINI RHIZOMA EXTRACT,conioselini rhizoma extract,conioselini rhizoma extract,tfda_open_data_info43_cached_20260711
+sub_tfda_9600092410,TINCTURA AMARA,tinctura amara,tinctura amara,tfda_open_data_info43_cached_20260711
+sub_tfda_9600092450,TINCTURA AROMATIC,tinctura aromatic,tinctura aromatic,tfda_open_data_info43_cached_20260711
+sub_tfda_8408000300,MENTHOL,menthol,menthol,tfda_open_data_info43_cached_20260711
+sub_tfda_0400005820,CETIRIZINE HYDROCHLORIDE,cetirizine hydrochloride,cetirizine hydrochloride,tfda_open_data_info43_cached_20260711
+sub_tfda_4020002310,CALCIUM GLUCEPTATE (CAL. GLUCOHEPTONATECAL. HEPT,calcium gluceptate (cal. glucoheptonatecal. hept,calcium gluceptate (cal. glucoheptonatecal. hept,tfda_open_data_info43_cached_20260711
+sub_tfda_4800003811,POLYGALA RADIX EXTRACT,polygala radix extract,polygala radix extract,tfda_open_data_info43_cached_20260711
+sub_tfda_5604000201,ALUMINUM HYDROXIDE GEL,aluminum hydroxide gel,aluminum hydroxide gel,tfda_open_data_info43_cached_20260711
+sub_tfda_5610000600,SIMETHICONE (ACTIVE DIMETHICONE),simethicone (active dimethicone),simethicone (active dimethicone),tfda_open_data_info43_cached_20260711
+sub_tfda_0812609250,AMOXICILLIN (TRIHYDRATE),amoxicillin (trihydrate),amoxicillin (trihydrate),tfda_open_data_info43_cached_20260711
+sub_tfda_4410000410,CLAVULANATE POTASSIUM,clavulanate potassium,clavulanate potassium,tfda_open_data_info43_cached_20260711
+sub_tfda_0400004115,TRIPROLIDINE HCL MONOHYDRATE,triprolidine hcl monohydrate,triprolidine hcl monohydrate,tfda_open_data_info43_cached_20260711
+sub_tfda_9200032102,PUERARIAE RADIX EXTRACT,puerariae radix extract,puerariae radix extract,tfda_open_data_info43_cached_20260711
+sub_tfda_9200036101,ZIZYPHI FRUCTUS EXTRACT,zizyphi fructus extract,zizyphi fructus extract,tfda_open_data_info43_cached_20260711
+sub_tfda_5608000600,KAOLIN (WHITE)(BOLUS ALBA),kaolin (white)(bolus alba),kaolin (white)(bolus alba),tfda_open_data_info43_cached_20260711
+sub_tfda_5608000620,KAOLIN,kaolin,kaolin,tfda_open_data_info43_cached_20260711
+sub_tfda_5604002700,MAGNESIUM TRISILICATE,magnesium trisilicate,magnesium trisilicate,tfda_open_data_info43_cached_20260711
+sub_tfda_8816009600,ASCORBIC ACID (SILICONE COATED),ascorbic acid (silicone coated),ascorbic acid (silicone coated),tfda_open_data_info43_cached_20260711
+sub_tfda_0812609360,AMPICILLIN (TRIHYDRATE),ampicillin (trihydrate),ampicillin (trihydrate),tfda_open_data_info43_cached_20260711
+sub_tfda_5604000203,ALUMINUM HYDROXIDE WET GEL,aluminum hydroxide wet gel,aluminum hydroxide wet gel,tfda_open_data_info43_cached_20260711
+sub_tfda_5604002501,MAGNESIUM HYDROXIDE WET GEL,magnesium hydroxide wet gel,magnesium hydroxide wet gel,tfda_open_data_info43_cached_20260711
+sub_tfda_5604009202,ALUMINUM HYDROXIDE (DRIED GEL),aluminum hydroxide (dried gel),aluminum hydroxide (dried gel),tfda_open_data_info43_cached_20260711
+sub_tfda_0812509220,ERYTHROMYCIN (ETHYLSUCCINATE),erythromycin (ethylsuccinate),erythromycin (ethylsuccinate),tfda_open_data_info43_cached_20260711
+sub_tfda_5604002000,HYDROTALCITE,hydrotalcite,hydrotalcite,tfda_open_data_info43_cached_20260711
+sub_tfda_0812400200,THIAMPHENICOL,thiamphenicol,thiamphenicol,tfda_open_data_info43_cached_20260711
+sub_tfda_5604000200,ALUMINUM HYDROXIDE (ALUMINA HYDRATED),aluminum hydroxide (alumina hydrated),aluminum hydroxide (alumina hydrated),tfda_open_data_info43_cached_20260711
+sub_tfda_0812301350,CEPHALEXIN MONOHYDRATE,cephalexin monohydrate,cephalexin monohydrate,tfda_open_data_info43_cached_20260711
+sub_tfda_5604000801,ALUMINUM PHOSPHATE COLLOID (EQ TO COLLOIDAL ALUMINUM PHOSPHATE ),aluminum phosphate colloid (eq to colloidal aluminum phosphate ),aluminum phosphate colloid (eq to colloidal aluminum phosphate ),tfda_open_data_info43_cached_20260711
+sub_tfda_5604002900,OXETHAZAINE,oxethazaine,oxethazaine,tfda_open_data_info43_cached_20260711
+sub_tfda_5604000802,ALUMINIUM PHOSPHATE DRIED GEL,aluminium phosphate dried gel,aluminium phosphate dried gel,tfda_open_data_info43_cached_20260711
+sub_tfda_5604000803,ALUMINUM PHOSPHATE GEL,aluminum phosphate gel,aluminum phosphate gel,tfda_open_data_info43_cached_20260711
+sub_tfda_5604000800,ALUMINUM PHOSPHATE,aluminum phosphate,aluminum phosphate,tfda_open_data_info43_cached_20260711
+sub_tfda_0812200900,NYSTATIN,nystatin,nystatin,tfda_open_data_info43_cached_20260711
+sub_tfda_2412001175,"GINKGO BILOBA EXTRACT(eq. to 9.6mg GINKGO FLAVONGLYCOSIDES CALCULATED AS QUERCETIN, KAEMPFEROL AND ISORHAMNETIN )","ginkgo biloba extract(eq. to 9.6mg ginkgo flavonglycosides calculated as quercetin, kaempferol and isorhamnetin )","ginkgo biloba extract(eq. to 9.6mg ginkgo flavonglycosides calculated as quercetin, kaempferol and isorhamnetin )",tfda_open_data_info43_cached_20260711
+sub_tfda_0812391750,CEPHRADINE (MONOHYDRATE),cephradine (monohydrate),cephradine (monohydrate),tfda_open_data_info43_cached_20260711
+sub_tfda_0812300100,CEFACLOR,cefaclor,cefaclor,tfda_open_data_info43_cached_20260711
+sub_tfda_2412001170,"Ginkgo Biloba Purified Extract (Equivalent to 9.6mg Ginkgoflavoneglycosides calculated as Quercetin, Kaempferol and Isorhamnetin)","ginkgo biloba purified extract (equivalent to 9.6mg ginkgoflavoneglycosides calculated as quercetin, kaempferol and isorhamnetin)","ginkgo biloba purified extract (equivalent to 9.6mg ginkgoflavoneglycosides calculated as quercetin, kaempferol and isorhamnetin)",tfda_open_data_info43_cached_20260711
+sub_tfda_5610000680,SIMETHICONE EMULSION,simethicone emulsion,simethicone emulsion,tfda_open_data_info43_cached_20260711
+sub_tfda_0812309150,CEFACLOR (MONOHYDRATE),cefaclor (monohydrate),cefaclor (monohydrate),tfda_open_data_info43_cached_20260711
+sub_tfda_5622000600,DOMPERIDONE,domperidone,domperidone,tfda_open_data_info43_cached_20260711
+sub_tfda_0812600250,AMOXICILLIN TRIHYDRATE,amoxicillin trihydrate,amoxicillin trihydrate,tfda_open_data_info43_cached_20260711
+sub_tfda_1010000310,MEGESTROL ACETATE,megestrol acetate,megestrol acetate,tfda_open_data_info43_cached_20260711
+sub_tfda_9600013330,GLUCOSAMINE SULPHATE SODIUM CHLORIDE,glucosamine sulphate sodium chloride,glucosamine sulphate sodium chloride,tfda_open_data_info43_cached_20260711
+sub_tfda_9600013372,CRYSTALLINE D-GLUCOSAMINE SULFATE (EQ. TO GLUCOSAMINE SULFATE 1500MG AND SODIUM CHLORIDE 384MG),crystalline d-glucosamine sulfate (eq. to glucosamine sulfate 1500mg and sodium chloride 384mg),crystalline d-glucosamine sulfate (eq. to glucosamine sulfate 1500mg and sodium chloride 384mg),tfda_open_data_info43_cached_20260711
+sub_tfda_9600013340,CRYSTALLINE GLUCOSAMINE SULFATE,crystalline glucosamine sulfate,crystalline glucosamine sulfate,tfda_open_data_info43_cached_20260711
+sub_tfda_5626001300,SUCRALFATE,sucralfate,sucralfate,tfda_open_data_info43_cached_20260711
+sub_tfda_9600013332,GLUCOSAMINE SULFATE 2NACL,glucosamine sulfate 2nacl,glucosamine sulfate 2nacl,tfda_open_data_info43_cached_20260711
+sub_tfda_9600001410,ALGINATE SODIUM,alginate sodium,alginate sodium,tfda_open_data_info43_cached_20260711
+sub_tfda_4008000700,SODIUM BICARBONATE ( EQ TO SODIUM HYDROGEN CARBONATE),sodium bicarbonate ( eq to sodium hydrogen carbonate),sodium bicarbonate ( eq to sodium hydrogen carbonate),tfda_open_data_info43_cached_20260711
+sub_tfda_5604001200,CALCIUM CARBONATE,calcium carbonate,calcium carbonate,tfda_open_data_info43_cached_20260711
+sub_tfda_9600013370,CRYSTALLINE GLUCOSAMINE SULFATE (EQ. TO GLUCOSAMINE SULFATE 1500MG AND SODIUM CHLORIDE 384MG),crystalline glucosamine sulfate (eq. to glucosamine sulfate 1500mg and sodium chloride 384mg),crystalline glucosamine sulfate (eq. to glucosamine sulfate 1500mg and sodium chloride 384mg),tfda_open_data_info43_cached_20260711
+sub_tfda_2812001800,OXCARBAZEPINE,oxcarbazepine,oxcarbazepine,tfda_open_data_info43_cached_20260711
+sub_tfda_0812500420,AZITHROMYCIN DIHYDRATE,azithromycin dihydrate,azithromycin dihydrate,tfda_open_data_info43_cached_20260711
+sub_tfda_2808402000,NAPROXEN,naproxen,naproxen,tfda_open_data_info43_cached_20260711
+sub_tfda_9250000700,CYCLOSPORIN,cyclosporin,cyclosporin,tfda_open_data_info43_cached_20260711
+sub_tfda_0812590410,AZITHROMYCIN (AS DIHYDRATE),azithromycin (as dihydrate),azithromycin (as dihydrate),tfda_open_data_info43_cached_20260711
+sub_tfda_9600013400,GLUCOSAMINE SULFATE CRYSTALLINE,glucosamine sulfate crystalline,glucosamine sulfate crystalline,tfda_open_data_info43_cached_20260711
+sub_tfda_9600013331,GLUCOSAMINE SULFATE SODIUM CHLORIDE,glucosamine sulfate sodium chloride,glucosamine sulfate sodium chloride,tfda_open_data_info43_cached_20260711
+sub_tfda_9200037620,QUETIAPINE FUMARATE,quetiapine fumarate,quetiapine fumarate,tfda_open_data_info43_cached_20260711
+sub_tfda_0812203400,FLUCONAZOLE,fluconazole,fluconazole,tfda_open_data_info43_cached_20260711
+sub_tfda_3668001610,SODIUM IODIDE I-131,sodium iodide i-131,sodium iodide i-131,tfda_open_data_info43_cached_20260711
+sub_tfda_5608002900,Racecadotril,racecadotril,racecadotril,tfda_open_data_info43_cached_20260711
+sub_tfda_2812002400,Perampanel,perampanel,perampanel,tfda_open_data_info43_cached_20260711
+sub_tfda_0818001810,OSELTAMIVIR PHOSPHATE,oseltamivir phosphate,oseltamivir phosphate,tfda_open_data_info43_cached_20260711
+sub_tfda_4012002252,SODIUM SULFATE ANHYDROUS (EQ TO SODIUM SULPHATE ANHYDROUS),sodium sulfate anhydrous (eq to sodium sulphate anhydrous),sodium sulfate anhydrous (eq to sodium sulphate anhydrous),tfda_open_data_info43_cached_20260711
+sub_tfda_5612001583,MAGNESIUM SULPHATE HEPTAHYDRATE,magnesium sulphate heptahydrate,magnesium sulphate heptahydrate,tfda_open_data_info43_cached_20260711
+sub_tfda_5612002100,POTASSIUM SULFATE,potassium sulfate,potassium sulfate,tfda_open_data_info43_cached_20260711
