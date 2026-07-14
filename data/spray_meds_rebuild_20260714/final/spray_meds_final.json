@@ -1,0 +1,4004 @@
+{
+  "schema_version": "1.0",
+  "generated_from": [
+    "products.csv",
+    "product_substances.csv",
+    "indications.csv",
+    "product_indications.csv",
+    "product_classes.csv"
+  ],
+  "product_count": 141,
+  "products": [
+    {
+      "product_id": "spray_0001",
+      "license_number": "內衛藥製字第005906號",
+      "chinese_name": "必愈鼻鼻用噴霧劑",
+      "english_name": "P.A.B. NASAL SPRAY",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "鼻塞、流鼻水、鼻竇炎、過敏性鼻炎",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "phenylephrine hcl"
+      ],
+      "active_ingredient_raw": "PHENYLEPHRINE HCL",
+      "strength": "",
+      "strength_unit": "%",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1970",
+      "license_status": "active",
+      "license_expiry_date": "2027/12/31",
+      "applicant": "人人化學製藥股份有限公司",
+      "manufacturer": "人人化學製藥股份有限公司中壢廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=必愈鼻鼻用噴霧劑/P.A.B. NASAL SPRAY. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0002",
+      "license_number": "衛部藥製字第060125號",
+      "chinese_name": "\"國嘉\"歐立舒消炎鎮痛噴液1.5毫克/毫升",
+      "english_name": "Desore Anti-inflammatory Pain Relief Throat Spray 1.5mg/ml \"Kojar\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2018",
+      "license_status": "active",
+      "license_expiry_date": "2028/06/21",
+      "applicant": "國嘉製藥工業股份有限公司幼獅三廠",
+      "manufacturer": "國嘉製藥工業股份有限公司幼獅三廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人及12歲以上噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。6歲以上 未滿12歲噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。6歲以下及有肝、腎疾病或其他重大疾病請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=成人及12歲以上噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。6歲以上 未滿12歲噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。6歲以下及有肝、腎疾病或其他重大疾病請洽醫師診治。; 品名=\"國嘉\"歐立舒消炎鎮痛噴液1.5毫克/毫升/Desore Anti-inflammatory Pain Relief Throat Spray 1.5mg/ml \"Kojar\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0003",
+      "license_number": "衛署藥製字第049759號",
+      "chinese_name": "“中美”鼻舒康噴鼻液",
+      "english_name": "Bisoucan Nasal Spray“C.M.”",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "鼻炎、副鼻腔炎、過敏性鼻炎所引起之流鼻水、鼻塞及鼻出血。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "diphenhydramine hcl",
+        "naphazoline hcl",
+        "procaine hcl"
+      ],
+      "active_ingredient_raw": "DIPHENHYDRAMINE HCL;;NAPHAZOLINE HCL;;PROCAINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2008",
+      "license_status": "active",
+      "license_expiry_date": "2028/11/05",
+      "applicant": "興中美生技有限公司",
+      "manufacturer": "中美兄弟製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳見仿單。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳見仿單。; 品名=“中美”鼻舒康噴鼻液/Bisoucan Nasal Spray“C.M.”. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0004",
+      "license_number": "衛部藥製字第058647號",
+      "chinese_name": "\"廣欣\"克伏寧加強消炎噴液劑3毫克/毫升",
+      "english_name": "Cufflam Forte Anti-inflammatory Throat Spray 3mg/ml \"G.S.\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "舒解口腔及咽喉疼痛，包括下列疾病或症狀引起的疼痛：扁桃腺炎、咽嚨痛、放射治療引起的黏膜炎、鵝口瘡潰瘍、口腔與牙周手術後疼痛。",
+      "indication_category": "口腔／咽喉黴菌感染",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2015",
+      "license_status": "active",
+      "license_expiry_date": "2030/03/27",
+      "applicant": "廣欣藥品股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=請詳見仿單; 品名=\"廣欣\"克伏寧加強消炎噴液劑3毫克/毫升/Cufflam Forte Anti-inflammatory Throat Spray 3mg/ml \"G.S.\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0005",
+      "license_number": "衛部藥製字第058777號",
+      "chinese_name": "樂鼻寧水性鼻用噴液劑50微公克/劑量",
+      "english_name": "Momenase Aqueous Nasal Spray 50mcg/dose",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "成人、青少年及二歲以上兒童之季節性或常年性過敏性鼻炎。亦用於治療18歲及以上成年人輕度到中度鼻息肉之相關症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "mometasone"
+      ],
+      "active_ingredient_raw": "MOMETASONE FUROATE MONOHYDRATE MICRONIZED EQ TO MOMETASONE FUROATE ANHYDROUS",
+      "strength": "(0.5mg).",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2015",
+      "license_status": "active",
+      "license_expiry_date": "2030/05/27",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=請詳見仿單; 品名=樂鼻寧水性鼻用噴液劑50微公克/劑量/Momenase Aqueous Nasal Spray 50mcg/dose. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0006",
+      "license_number": "衛署藥製字第037385號",
+      "chinese_name": "通鼻通噴鼻劑０．５公絲/公撮（異每達佐林）",
+      "english_name": "CORTIMIN NASAL SPRAY 0.5MG/ML (OXYMETAZOLINE) \"B&F\"",
+      "dosage_form": "外用液劑",
+      "dosage_form_normalized": "nasal_local_other",
+      "application_site": "nasal",
+      "indication": "感冒、過敏、鼻竇炎等所引起鼻塞之緩解",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "0.5",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1994",
+      "license_status": "active",
+      "license_expiry_date": "2029/03/28",
+      "applicant": "寶齡富錦生技股份有限公司",
+      "manufacturer": "寶齡富錦生技股份有限公司平鎮廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=外用液劑; 用法用量=; 品名=通鼻通噴鼻劑０．５公絲/公撮（異每達佐林）/CORTIMIN NASAL SPRAY 0.5MG/ML (OXYMETAZOLINE) \"B&F\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0007",
+      "license_number": "衛署藥製字第044299號",
+      "chinese_name": "\"黃氏\"鼻康納鼻用噴液　５０μＧ/ＳＰＲＡＹ",
+      "english_name": "BETONASE AQUEOUS NASAL SPRAY 50μG/SPRAY \"H.S.\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解經醫師診斷之過敏性鼻炎或其他上呼吸道過敏相關症狀：鼻塞、流鼻水、打噴嚏、鼻搔癢、眼睛癢、流眼淚。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "beclomethasone"
+      ],
+      "active_ingredient_raw": "BECLOMETHASONE DIPROPIONATE",
+      "strength": "50.0",
+      "strength_unit": "MCG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2001",
+      "license_status": "active",
+      "license_expiry_date": "2031/02/27",
+      "applicant": "黃氏製藥股份有限公司",
+      "manufacturer": "黃氏製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳見仿單; 品名=\"黃氏\"鼻康納鼻用噴液　５０μＧ/ＳＰＲＡＹ/BETONASE AQUEOUS NASAL SPRAY 50μG/SPRAY \"H.S.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0008",
+      "license_number": "衛署藥輸字第024654號",
+      "chinese_name": "歐治鼻 噴鼻液 0.1%(西羅美塔柔林)",
+      "english_name": "Otrivin Moisturzing 0.1 %, nasal drops in Metered-Dose-Spray",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "xylometazoline"
+      ],
+      "active_ingredient_raw": "XYLOMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2007",
+      "license_status": "active",
+      "license_expiry_date": "2030/03/28",
+      "applicant": "英商赫力昂股份有限公司台灣分公司",
+      "manufacturer": "新竹物流股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳如仿單。; 品名=歐治鼻 噴鼻液 0.1%(西羅美塔柔林)/Otrivin Moisturzing 0.1 %, nasal drops in Metered-Dose-Spray. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0009",
+      "license_number": "衛部藥製字第062098號",
+      "chinese_name": "樂佐寧噴鼻液0.1%",
+      "english_name": "NAZOLINE NASAL SPRAY 0.1%",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "一般感冒、鼻塞、流鼻水、打噴嚏、過敏性鼻炎及由過敏所引起之鼻充血。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "xylometazoline"
+      ],
+      "active_ingredient_raw": "XYLOMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2026",
+      "license_status": "active",
+      "license_expiry_date": "2031/01/05",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳如仿單; 品名=樂佐寧噴鼻液0.1%/NAZOLINE NASAL SPRAY 0.1%. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0010",
+      "license_number": "衛部藥輸字第029015號",
+      "chinese_name": "維圖可鼻噴劑10毫克",
+      "english_name": "Valtoco (diazepam nasal spray) 10 mg",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "適用於6歲以上癲癇病人，用於急性治療間歇、定型的(stereotypic)頻繁癲癇發作(即叢集性癲癇(seizure clusters)、急性反覆發作)，這些發作與病人通常的癲癇發作模式不同。",
+      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "active_ingredients": [
+        "diazepam"
+      ],
+      "active_ingredient_raw": "DIAZEPAM",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "other_nasal"
+      ],
+      "license_year": "2025",
+      "license_status": "active",
+      "license_expiry_date": "2030/09/08",
+      "applicant": "台灣康聯達股份有限公司",
+      "manufacturer": "Renaissance Lakewood, LLC.",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳如仿單; 品名=維圖可鼻噴劑10毫克/Valtoco (diazepam nasal spray) 10 mg. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0011",
+      "license_number": "衛部藥輸字第029016號",
+      "chinese_name": "維圖可鼻噴劑7.5毫克",
+      "english_name": "Valtoco (diazepam nasal spray) 7.5 mg",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "適用於6歲以上癲癇病人，用於急性治療間歇、定型的(stereotypic)頻繁癲癇發作(即叢集性癲癇(seizure clusters)、急性反覆發作)，這些發作與病人通常的癲癇發作模式不同。",
+      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "active_ingredients": [
+        "diazepam"
+      ],
+      "active_ingredient_raw": "DIAZEPAM",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "other_nasal"
+      ],
+      "license_year": "2025",
+      "license_status": "active",
+      "license_expiry_date": "2030/09/08",
+      "applicant": "台灣康聯達股份有限公司",
+      "manufacturer": "Renaissance Lakewood, LLC.",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳如仿單; 品名=維圖可鼻噴劑7.5毫克/Valtoco (diazepam nasal spray) 7.5 mg. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0012",
+      "license_number": "衛部藥輸字第029017號",
+      "chinese_name": "維圖可鼻噴劑5毫克",
+      "english_name": "Valtoco (diazepam nasal spray) 5 mg",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "適用於6歲以上癲癇病人，用於急性治療間歇、定型的(stereotypic)頻繁癲癇發作(即叢集性癲癇(seizure clusters)、急性反覆發作)，這些發作與病人通常的癲癇發作模式不同。",
+      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "active_ingredients": [
+        "diazepam"
+      ],
+      "active_ingredient_raw": "DIAZEPAM",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "other_nasal"
+      ],
+      "license_year": "2025",
+      "license_status": "active",
+      "license_expiry_date": "2030/09/08",
+      "applicant": "台灣康聯達股份有限公司",
+      "manufacturer": "Renaissance Lakewood, LLC.",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳如仿單; 品名=維圖可鼻噴劑5毫克/Valtoco (diazepam nasal spray) 5 mg. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0013",
+      "license_number": "衛署藥製字第016222號",
+      "chinese_name": "\"溫士頓\"舒鼻喜噴鼻液",
+      "english_name": "SUBICIN NASAL SPRAY \"WINSTON\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "鼻炎、副鼻腔炎、過敏性鼻炎及流鼻水、鼻塞、鼻出血",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "naphazoline hcl",
+        "diphenhydramine hcl",
+        "procaine hcl"
+      ],
+      "active_ingredient_raw": "NAPHAZOLINE HCL;;DIPHENHYDRAMINE HCL;;PROCAINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1978",
+      "license_status": "active",
+      "license_expiry_date": "2029/12/20",
+      "applicant": "溫士頓醫藥股份有限公司",
+      "manufacturer": "溫士頓醫藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=\"溫士頓\"舒鼻喜噴鼻液/SUBICIN NASAL SPRAY \"WINSTON\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0014",
+      "license_number": "衛署藥製字第016353號",
+      "chinese_name": "“人人”鼻復寧噴鼻液",
+      "english_name": "EPHRINE NASAL SPRAY \"GCPC\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "0.5",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1979",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/25",
+      "applicant": "人人化學製藥股份有限公司",
+      "manufacturer": "人人化學製藥股份有限公司中壢廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "6歲以下，每次於鼻腔內噴2~3下，每次需間隔10-12小時。未滿6歲，請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=6歲以下，每次於鼻腔內噴2~3下，每次需間隔10-12小時。未滿6歲，請洽醫師診治。; 品名=“人人”鼻復寧噴鼻液/EPHRINE NASAL SPRAY \"GCPC\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0015",
+      "license_number": "衛署藥製字第035546號",
+      "chinese_name": "\"生達\"醫鼻易噴鼻液０．５毫克／毫升（異每達佐林）",
+      "english_name": "SINDECON NASAL SPRAY 0.5MG/ML \"STANDARD\" (OXYMETAZOLINE)",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "0.5",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1992",
+      "license_status": "active",
+      "license_expiry_date": "2027/08/13",
+      "applicant": "生達化學製藥股份有限公司",
+      "manufacturer": "生達化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "6歲以上，每次於鼻腔內噴2-3下，每次需間隔10-12小時；未滿6歲，請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=6歲以上，每次於鼻腔內噴2-3下，每次需間隔10-12小時；未滿6歲，請洽醫師診治。; 品名=\"生達\"醫鼻易噴鼻液０．５毫克／毫升（異每達佐林）/SINDECON NASAL SPRAY 0.5MG/ML \"STANDARD\" (OXYMETAZOLINE). 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0016",
+      "license_number": "衛部藥製字第060502號",
+      "chinese_name": "鼻通敏噴液劑",
+      "english_name": "NAZAL M SPRAY",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "急性鼻炎、過敏性鼻炎、血管舒縮性鼻炎、鼻竇炎、鼻咽炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2020",
+      "license_status": "active",
+      "license_expiry_date": "2030/05/19",
+      "applicant": "佐藤製藥股份有限公司新竹廠",
+      "manufacturer": "佐藤製藥股份有限公司新竹廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=請詳見仿單; 品名=鼻通敏噴液劑/NAZAL M SPRAY. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0017",
+      "license_number": "衛部藥製字第060851號",
+      "chinese_name": "\"健喬\"帝伏寧137/50定量鼻噴懸液劑",
+      "english_name": "Dufanas Nasal Spray",
+      "dosage_form": "鼻用懸液劑",
+      "dosage_form_normalized": "nasal_local_other",
+      "application_site": "nasal",
+      "indication": "本品適用於治療6歲以上兒童及成人之中度至重度過敏性鼻炎的相關症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "fluticasone propionate micronized",
+        "azelastine hydrochloride"
+      ],
+      "active_ingredient_raw": "FLUTICASONE PROPIONATE MICRONIZED;;AZELASTINE HYDROCHLORIDE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "antihistamine",
+        "combination",
+        "corticosteroid"
+      ],
+      "license_year": "2021",
+      "license_status": "active",
+      "license_expiry_date": "2031/04/08",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用懸液劑; 用法用量=請詳見仿單; 品名=\"健喬\"帝伏寧137/50定量鼻噴懸液劑/Dufanas Nasal Spray. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0018",
+      "license_number": "衛署藥製字第017733號",
+      "chinese_name": "瑞寧噴鼻液（奧每達佐林）",
+      "english_name": "SWININ NASAL SOLUTION (OXYMETAZOLINE)",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "0.5",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1979",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/25",
+      "applicant": "瑞士藥廠股份有限公司",
+      "manufacturer": "瑞士藥廠股份有限公司新市廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳如仿單; 品名=瑞寧噴鼻液（奧每達佐林）/SWININ NASAL SOLUTION (OXYMETAZOLINE). 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0019",
+      "license_number": "內衛藥製字第011931號",
+      "chinese_name": "新黴素鼻孔噴霧劑",
+      "english_name": "BIOMYCIN NASAL SPRAY \"CBC\"",
+      "dosage_form": "鼻用氣化噴霧劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "鼻炎、充血、過敏性鼻炎",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "neomycin sulfate",
+        "diphenhydramine hcl",
+        "phenylephrine",
+        "prednisolone"
+      ],
+      "active_ingredient_raw": "NEOMYCIN SULFATE;;DIPHENHYDRAMINE HCL;;PHENYLEPHRINE;;PREDNISOLONE",
+      "strength": "50; 2; 50; 10",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "anti_infective",
+        "combination",
+        "decongestant"
+      ],
+      "license_year": "1970",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/25",
+      "applicant": "中生生技製藥股份有限公司淡水廠",
+      "manufacturer": "中生生技製藥股份有限公司淡水廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用氣化噴霧劑; 用法用量=; 品名=新黴素鼻孔噴霧劑/BIOMYCIN NASAL SPRAY \"CBC\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0020",
+      "license_number": "衛部藥輸字第027835號",
+      "chinese_name": "尼古清戒菸噴霧",
+      "english_name": "Nicorette QuickMist Spray",
+      "dosage_form": "口腔噴霧溶液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "oral_mucosal",
+      "indication": "戒菸輔助劑。",
+      "indication_category": "其他口腔／咽喉局部症狀",
+      "active_ingredients": [
+        "nicotine"
+      ],
+      "active_ingredient_raw": "NICOTINE;;NICOTINE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "other_oropharyngeal"
+      ],
+      "license_year": "2020",
+      "license_status": "active",
+      "license_expiry_date": "2030/04/06",
+      "applicant": "嘉安家護股份有限公司",
+      "manufacturer": "香港商臺灣馬士基物流有限公司台灣分公司大同倉",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=口腔噴霧溶液劑; 用法用量=請詳見仿單; 品名=尼古清戒菸噴霧/Nicorette QuickMist Spray. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0021",
+      "license_number": "衛部藥輸字第028906號",
+      "chinese_name": "日方藥研口腔消炎噴劑",
+      "english_name": "Coughdis AC Throat Spray",
+      "dosage_form": "外用噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "口腔、咽頭、扁桃腺之消炎、殺菌。",
+      "indication_category": "口腔／咽喉局部感染",
+      "active_ingredients": [
+        "azulene sodium sulfonate",
+        "cetylpyridinium chloride hydrate"
+      ],
+      "active_ingredient_raw": "AZULENE SODIUM SULFONATE;;Cetylpyridinium Chloride Hydrate",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "antiseptic_or_anti_infective"
+      ],
+      "license_year": "2025",
+      "license_status": "active",
+      "license_expiry_date": "2030/04/11",
+      "applicant": "德佑藥品有限公司",
+      "manufacturer": "FUKUCHI PHARMACEUTICAL CO., LTD.",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=外用噴液劑; 用法用量=詳見仿單; 品名=日方藥研口腔消炎噴劑/Coughdis AC Throat Spray. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0022",
+      "license_number": "衛署藥製字第023380號",
+      "chinese_name": "\"健康\"宜鼻噴鼻液",
+      "english_name": "YIPI NASAL SOLUTION \"HEALTH\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "急慢性鼻炎、過敏性鼻炎、副鼻腔炎、鼻塞、鼻充血",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "procaine hcl",
+        "diphenhydramine hcl",
+        "naphazoline hcl"
+      ],
+      "active_ingredient_raw": "PROCAINE HCL;;DIPHENHYDRAMINE HCL;;NAPHAZOLINE HCL",
+      "strength": "0.5; 2.0; 10.0",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1981",
+      "license_status": "active",
+      "license_expiry_date": "2029/02/06",
+      "applicant": "健康化學製藥股份有限公司",
+      "manufacturer": "健康化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=\"健康\"宜鼻噴鼻液/YIPI NASAL SOLUTION \"HEALTH\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0023",
+      "license_number": "衛部藥製字第060919號",
+      "chinese_name": "\"喜達\"鼻炎噴鼻液",
+      "english_name": "Bienpan Nasal Solution \"Cida\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "消除鼻粘膜充血、粘膜炎腫、抑制鼻液分泌過多、鼻竇炎、乾草熱及呼吸道過敏。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2021",
+      "license_status": "active",
+      "license_expiry_date": "2031/07/09",
+      "applicant": "喜達國際有限公司",
+      "manufacturer": "羅得化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=請詳見仿單; 品名=\"喜達\"鼻炎噴鼻液/Bienpan Nasal Solution \"Cida\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0024",
+      "license_number": "衛部藥製字第060930號",
+      "chinese_name": "鼻暢順鼻用噴液劑",
+      "english_name": "Bichanshun Nasal Solution",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "消除鼻粘膜充血、粘膜炎腫、抑制鼻液分泌過多、鼻竇炎、乾草熱及呼吸道過敏。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2021",
+      "license_status": "active",
+      "license_expiry_date": "2031/07/23",
+      "applicant": "羅得國際有限公司",
+      "manufacturer": "羅得化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=請詳見仿單; 品名=鼻暢順鼻用噴液劑/Bichanshun Nasal Solution. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0025",
+      "license_number": "衛部藥製字第061922號",
+      "chinese_name": "\"利達\"優利碘喉嚨殺菌噴液劑4.5毫克/毫升",
+      "english_name": "Brightadine Spray for Throat   Solution 4.5 mg/mL \"Lita\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "口腔消毒殺菌。",
+      "indication_category": "口腔／咽喉局部感染",
+      "active_ingredients": [
+        "povidone-iodine"
+      ],
+      "active_ingredient_raw": "POVIDONE-IODINE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "antiseptic_or_anti_infective"
+      ],
+      "license_year": "2025",
+      "license_status": "active",
+      "license_expiry_date": "2030/01/17",
+      "applicant": "利達製藥股份有限公司",
+      "manufacturer": "利達製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳見仿單。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=詳見仿單。; 品名=\"利達\"優利碘喉嚨殺菌噴液劑4.5毫克/毫升/Brightadine Spray for Throat   Solution 4.5 mg/mL \"Lita\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0026",
+      "license_number": "衛部藥製字第061966號",
+      "chinese_name": "喉必碘殺菌口腔噴液",
+      "english_name": "Throbidyne Throat Spray",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "口腔消毒殺菌",
+      "indication_category": "口腔／咽喉局部感染",
+      "active_ingredients": [
+        "povidone lodine"
+      ],
+      "active_ingredient_raw": "Povidone lodine",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "antiseptic_or_anti_infective"
+      ],
+      "license_year": "2025",
+      "license_status": "active",
+      "license_expiry_date": "2030/04/21",
+      "applicant": "中國化學製藥股份有限公司新豐工廠",
+      "manufacturer": "中國化學製藥股份有限公司新豐工廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=詳如仿單; 品名=喉必碘殺菌口腔噴液/Throbidyne Throat Spray. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0027",
+      "license_number": "衛署藥製字第043440號",
+      "chinese_name": "思鼻力鼻通液０．５公絲/公撮",
+      "english_name": "NOSTRA NASAL SPRAY 0.5MG/ML",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因感冒過敏或鼻竇炎所引起之鼻充血。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "0.5",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2000",
+      "license_status": "active",
+      "license_expiry_date": "2029/12/22",
+      "applicant": "五洲製藥股份有限公司",
+      "manufacturer": "五洲製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=思鼻力鼻通液０．５公絲/公撮/NOSTRA NASAL SPRAY 0.5MG/ML. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0028",
+      "license_number": "衛署藥製字第043489號",
+      "chinese_name": "\"約克\" 舒鼻爽噴鼻液",
+      "english_name": "SUBISON NASAL SPRAY \"Y.K.\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "鼻炎、副鼻腔炎、過敏性鼻炎所引起之流鼻水、鼻塞及鼻出血。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "naphazoline hcl",
+        "diphenhydramine hcl",
+        "procaine hcl"
+      ],
+      "active_ingredient_raw": "NAPHAZOLINE HCL;;DIPHENHYDRAMINE HCL;;PROCAINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2000",
+      "license_status": "active",
+      "license_expiry_date": "2025/01/28",
+      "applicant": "約克製藥股份有限公司",
+      "manufacturer": "約克製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=\"約克\" 舒鼻爽噴鼻液/SUBISON NASAL SPRAY \"Y.K.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0029",
+      "license_number": "衛署藥輸字第021824號",
+      "chinese_name": "艾麗鼻用噴液劑２．８ＭＧ/ＳＰＲＡＹ",
+      "english_name": "ALLERGOCROM NASAL SPRAY SOLUTION 2.8MG/SPRAY",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "過敏性鼻炎",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "cromolyn"
+      ],
+      "active_ingredient_raw": "CROMOLYN SODIUM (EQ TO SODIUM CROMOGLICATE)(EQ TO SODIUM CROMOGLYCATE)",
+      "strength": "20",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "mast_cell_stabilizer"
+      ],
+      "license_year": "2022",
+      "license_status": "active",
+      "license_expiry_date": "2027/07/24",
+      "applicant": "吉富貿易有限公司",
+      "manufacturer": "URSAPHARM ARZNEIMITTEL GMBH",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=艾麗鼻用噴液劑２．８ＭＧ/ＳＰＲＡＹ/ALLERGOCROM NASAL SPRAY SOLUTION 2.8MG/SPRAY. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0030",
+      "license_number": "衛署藥輸字第021874號",
+      "chinese_name": "迷你寧鼻腔噴霧劑１０ＵＧ／ＤＯＳＥ",
+      "english_name": "MINIRIN NASAL SPRAY 10 UG/DOSE",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "中樞尿崩症、腎功能試驗。",
+      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "active_ingredients": [
+        "desmopressin acetate"
+      ],
+      "active_ingredient_raw": "DESMOPRESSIN ACETATE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "other_nasal"
+      ],
+      "license_year": "2022",
+      "license_status": "active",
+      "license_expiry_date": "2027/09/03",
+      "applicant": "輝凌藥品股份有限公司",
+      "manufacturer": "FERRING  GMBH",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如核定本",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳如核定本; 品名=迷你寧鼻腔噴霧劑１０ＵＧ／ＤＯＳＥ/MINIRIN NASAL SPRAY 10 UG/DOSE. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0031",
+      "license_number": "衛署藥製字第015762號",
+      "chinese_name": "嘉舒樂噴鼻液",
+      "english_name": "KASULO NASAL SPRAY \"C.S.P.\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "鼻塞、鼻充血、鼻竇炎、過敏性鼻炎",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "naphazoline hcl",
+        "chlorpheniramine maleate"
+      ],
+      "active_ingredient_raw": "NAPHAZOLINE HCL;;CHLORPHENIRAMINE MALEATE",
+      "strength": "0.5; 4.0",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1978",
+      "license_status": "active",
+      "license_expiry_date": "2029/12/31",
+      "applicant": "嘉信藥品股份有限公司",
+      "manufacturer": "政德製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=嘉舒樂噴鼻液/KASULO NASAL SPRAY \"C.S.P.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0032",
+      "license_number": "衛署藥製字第033076號",
+      "chinese_name": "\"羅得\"利鼻通液0.05%",
+      "english_name": "LIBITON NASAL SOLUTION 0.05% \"R.T.\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "0.5",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1990",
+      "license_status": "active",
+      "license_expiry_date": "2030/10/02",
+      "applicant": "羅得化學製藥股份有限公司",
+      "manufacturer": "羅得化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "6歲以上，1日2次，每次於鼻腔內噴2-3下，每次需間隔10-12小時；未滿6歲，請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=6歲以上，1日2次，每次於鼻腔內噴2-3下，每次需間隔10-12小時；未滿6歲，請洽醫師診治。; 品名=\"羅得\"利鼻通液0.05%/LIBITON NASAL SOLUTION 0.05% \"R.T.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0033",
+      "license_number": "衛署藥製字第039432號",
+      "chinese_name": "必可通噴鼻劑０．４２毫克/公克（貝克每松）",
+      "english_name": "BECOTON NASAL SPRAY 0.42MG/GM (BECLOMETHASONE) \"B&F\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "常年性及季節性過敏鼻炎、含乾草熱及血管運動性鼻炎",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "beclomethasone"
+      ],
+      "active_ingredient_raw": "BECLOMETHASONE DIPROPIONATE",
+      "strength": "0.42",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "1995",
+      "license_status": "active",
+      "license_expiry_date": "2030/10/30",
+      "applicant": "寶齡富錦生技股份有限公司",
+      "manufacturer": "寶齡富錦生技股份有限公司平鎮廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=必可通噴鼻劑０．４２毫克/公克（貝克每松）/BECOTON NASAL SPRAY 0.42MG/GM (BECLOMETHASONE) \"B&F\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0034",
+      "license_number": "衛署藥製字第043574號",
+      "chinese_name": "倍樂水性噴鼻液１００微公克/劑量",
+      "english_name": "BELAX AQUA NASAL SPRAY 100MCG/DOSE",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "季節性過敏性鼻炎、常年性過敏性鼻炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "beclomethasone"
+      ],
+      "active_ingredient_raw": "BECLOMETHASONE DIPROPIONATE",
+      "strength": "1",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2000",
+      "license_status": "active",
+      "license_expiry_date": "2030/03/02",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=倍樂水性噴鼻液１００微公克/劑量/BELAX AQUA NASAL SPRAY 100MCG/DOSE. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0035",
+      "license_number": "衛署藥製字第043631號",
+      "chinese_name": "斯斯鼻通噴鼻液０．１％",
+      "english_name": "SUZULEX NASAL SPRAY 0.1%",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "xylometazoline"
+      ],
+      "active_ingredient_raw": "XYLOMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2000",
+      "license_status": "active",
+      "license_expiry_date": "2030/04/05",
+      "applicant": "五洲製藥股份有限公司",
+      "manufacturer": "五洲製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人及12歲以上，每次於鼻腔內噴2~3下，每次需間隔8~10小時。未滿12歲，請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=成人及12歲以上，每次於鼻腔內噴2~3下，每次需間隔8~10小時。未滿12歲，請洽醫師診治。; 品名=斯斯鼻通噴鼻液０．１％/SUZULEX NASAL SPRAY 0.1%. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0036",
+      "license_number": "衛署藥製字第045447號",
+      "chinese_name": "\"生達\" 力明鼻腔定量噴液劑５０微公絲＼劑量 (亞丁皮質醇)",
+      "english_name": "ALLERCORT NASAL AQUA  50μG/DOSE \"STANDARD\" (BUDESONIDE)",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "季節性及經年性過敏鼻炎、血管運動性鼻炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "budesonide"
+      ],
+      "active_ingredient_raw": "BUDESONIDE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2003",
+      "license_status": "active",
+      "license_expiry_date": "2028/03/31",
+      "applicant": "生達化學製藥股份有限公司",
+      "manufacturer": "生達化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=\"生達\" 力明鼻腔定量噴液劑５０微公絲＼劑量 (亞丁皮質醇)/ALLERCORT NASAL AQUA  50μG/DOSE \"STANDARD\" (BUDESONIDE). 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0037",
+      "license_number": "衛署藥製字第045485號",
+      "chinese_name": "碧適清鼻腔定量噴液劑100微公克/劑量",
+      "english_name": "BESONIN AQUA NASAL SPRAY 100mcg/dose",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "季節性及經年性過敏鼻炎、血管性鼻炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "budesonide"
+      ],
+      "active_ingredient_raw": "BUDESONIDE MICRONIZED",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2003",
+      "license_status": "active",
+      "license_expiry_date": "2028/04/14",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=碧適清鼻腔定量噴液劑100微公克/劑量/BESONIN AQUA NASAL SPRAY 100mcg/dose. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0038",
+      "license_number": "衛署藥製字第045719號",
+      "chinese_name": "碧適清 鼻腔定量噴液劑50微公克/劑量",
+      "english_name": "BESONIN AQUA NASAL SPRAY 50MCG/DOSE",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "季節性及經年性過敏鼻炎、血管性鼻炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "budesonide"
+      ],
+      "active_ingredient_raw": "BUDESONIDE MICRONIZED",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2003",
+      "license_status": "active",
+      "license_expiry_date": "2028/08/25",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=碧適清 鼻腔定量噴液劑50微公克/劑量/BESONIN AQUA NASAL SPRAY 50MCG/DOSE. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0039",
+      "license_number": "衛署藥製字第047345號",
+      "chinese_name": "大正百保能噴鼻液0.1%",
+      "english_name": "Taisho Pabron Nasal Spray 0.1%",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "ㄧ般感冒、鼻塞、流鼻水、打噴嚏、過敏性鼻炎及由過敏所引起之鼻充血。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "xylometazoline"
+      ],
+      "active_ingredient_raw": "XYLOMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2005",
+      "license_status": "active",
+      "license_expiry_date": "2030/06/09",
+      "applicant": "台灣大正製藥股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "醫師藥師藥劑生指示藥品。只能用於成人和7歲以上的孩童。ㄧ天一次或數次最多四次即足夠，將本藥在兩鼻腔內各噴一次。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=醫師藥師藥劑生指示藥品。只能用於成人和7歲以上的孩童。ㄧ天一次或數次最多四次即足夠，將本藥在兩鼻腔內各噴一次。; 品名=大正百保能噴鼻液0.1%/Taisho Pabron Nasal Spray 0.1%. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0040",
+      "license_number": "衛署藥製字第047402號",
+      "chinese_name": "\"利達\" 去喉痛噴液劑 1.5 毫克/毫升",
+      "english_name": "S.L. SPRAY SOLUTION \"LITA\" 1.5MG/ML",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine hcl"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL;;BENZYDAMINE HCL;;BENZYDAMINE HCL;;BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2005",
+      "license_status": "active",
+      "license_expiry_date": "2030/06/27",
+      "applicant": "利達製藥股份有限公司",
+      "manufacturer": "利達製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "如仿單",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=如仿單; 品名=\"利達\" 去喉痛噴液劑 1.5 毫克/毫升/S.L. SPRAY SOLUTION \"LITA\" 1.5MG/ML. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0041",
+      "license_number": "衛署藥輸字第022808號",
+      "chinese_name": "\"賽普敦特\" 口腔噴液劑",
+      "english_name": "XYLONOR SPRAY",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "oral_mucosal",
+      "indication": "牙科用局部麻醉劑。",
+      "indication_category": "其他口腔／咽喉局部症狀",
+      "active_ingredients": [
+        "lidocaine",
+        "cetrimide"
+      ],
+      "active_ingredient_raw": "LIDOCAINE;;CETRIMIDE",
+      "strength": "",
+      "strength_unit": "GM",
+      "therapeutic_classes": [
+        "local_anesthetic"
+      ],
+      "license_year": "2025",
+      "license_status": "active",
+      "license_expiry_date": "2030/03/14",
+      "applicant": "安捷國際實業股份有限公司",
+      "manufacturer": "SEPTODONT",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=; 品名=\"賽普敦特\" 口腔噴液劑/XYLONOR SPRAY. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0042",
+      "license_number": "衛署藥輸字第022820號",
+      "chinese_name": "拿塞可得鼻用噴液劑",
+      "english_name": "NASACORT AQ",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "成人之季節性及經年性過敏性鼻炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "triamcinolone"
+      ],
+      "active_ingredient_raw": "TRIAMCINOLONE ACETONIDE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2000",
+      "license_status": "active",
+      "license_expiry_date": "2025/04/07",
+      "applicant": "台灣大昌華嘉股份有限公司",
+      "manufacturer": "RECIPHARM HC LIMITED",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=拿塞可得鼻用噴液劑/NASACORT AQ. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0043",
+      "license_number": "衛署藥輸字第022924號",
+      "chinese_name": "內舒拿水溶性鼻用噴液劑",
+      "english_name": "NASONEX AQUEOUS NASAL SPRAY",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解18歲以上成年人經醫師診斷之過敏性鼻炎或其他上呼吸道過敏相關症狀：鼻塞、流鼻水、打噴嚏、鼻搔癢、眼睛癢、流眼淚。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "mometasone"
+      ],
+      "active_ingredient_raw": "MOMETASONE FUROATE MONOHYDRATE MICRONIZED EQ TO MOMETASONE FUROATE ANHYDROUS",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2025",
+      "license_status": "active",
+      "license_expiry_date": "2030/06/20",
+      "applicant": "荷蘭商歐嘉隆有限公司台灣分公司",
+      "manufacturer": "Organon Heist bv",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=內舒拿水溶性鼻用噴液劑/NASONEX AQUEOUS NASAL SPRAY. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0044",
+      "license_number": "衛部藥輸字第028833號",
+      "chinese_name": "星特潤噴鼻液",
+      "english_name": "TYRVAYA Nasal Spray",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "治療乾眼症之徵候及症狀。",
+      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "active_ingredients": [
+        "varenicline tartrate"
+      ],
+      "active_ingredient_raw": "VARENICLINE TARTRATE",
+      "strength": "(Eg. to Varenicline 0.6 mg)",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "other_nasal"
+      ],
+      "license_year": "2024",
+      "license_status": "active",
+      "license_expiry_date": "2029/11/26",
+      "applicant": "東生華製藥股份有限公司",
+      "manufacturer": "Renaissance Lakewood, LLC.",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳見仿單; 品名=星特潤噴鼻液/TYRVAYA Nasal Spray. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0045",
+      "license_number": "衛署藥製字第038215號",
+      "chinese_name": "\"黃氏\"安捷兒噴鼻液",
+      "english_name": "Anjet J. Nasal Spray  \"H.S.\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因感冒過敏或鼻竇炎所引起之鼻充血暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "0.5",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1994",
+      "license_status": "active",
+      "license_expiry_date": "2029/10/27",
+      "applicant": "黃氏製藥股份有限公司",
+      "manufacturer": "黃氏製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳見仿單。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳見仿單。; 品名=\"黃氏\"安捷兒噴鼻液/Anjet J. Nasal Spray  \"H.S.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0046",
+      "license_number": "衛署藥製字第038302號",
+      "chinese_name": "\"福元\"鼻舒通噴鼻液",
+      "english_name": "SAHL Nasal Spray\"F.Y.\"",
+      "dosage_form": "外用液劑",
+      "dosage_form_normalized": "nasal_local_other",
+      "application_site": "nasal",
+      "indication": "鼻炎、副鼻腔炎、上呼吸道炎、過敏性鼻液、鼻塞",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "chlorpheniramine maleate",
+        "naphazoline nitrate"
+      ],
+      "active_ingredient_raw": "CHLORPHENIRAMINE MALEATE;;NAPHAZOLINE NITRATE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2009",
+      "license_status": "active",
+      "license_expiry_date": "2029/11/28",
+      "applicant": "福元化學製藥股份有限公司",
+      "manufacturer": "福元化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=外用液劑; 用法用量=; 品名=\"福元\"鼻舒通噴鼻液/SAHL Nasal Spray\"F.Y.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0047",
+      "license_number": "衛署藥製字第046537號",
+      "chinese_name": "\"德聯\" 喉癒口腔噴液劑1.5毫克/毫升",
+      "english_name": "FRESHENUP SPRAY 1.5MG/ML \"T.L.\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2004",
+      "license_status": "active",
+      "license_expiry_date": "2029/09/27",
+      "applicant": "德聯藥品有限公司",
+      "manufacturer": "黃氏製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人及12歲以上兒童：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲至12歲兒童：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲以下兒童：請洽醫師診治。 肝腎疾病患者：請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=成人及12歲以上兒童：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲至12歲兒童：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲以下兒童：請洽醫師診治。 肝腎疾病患者：請洽醫師診治。; 品名=\"德聯\" 喉癒口腔噴液劑1.5毫克/毫升/FRESHENUP SPRAY 1.5MG/ML \"T.L.\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0048",
+      "license_number": "衛署藥製字第046541號",
+      "chinese_name": "\"羅得\" 噴喉口腔消炎噴液劑",
+      "english_name": "STG ANTI-INFLAMMATORY SPRAY \"ROOT\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine hcl"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL;;BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2004",
+      "license_status": "active",
+      "license_expiry_date": "2029/09/29",
+      "applicant": "羅得化學製藥股份有限公司",
+      "manufacturer": "羅得化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人及12歲以上兒童：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲至12歲兒童：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲以下兒童：請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=成人及12歲以上兒童：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲至12歲兒童：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲以下兒童：請洽醫師診治。; 品名=\"羅得\" 噴喉口腔消炎噴液劑/STG ANTI-INFLAMMATORY SPRAY \"ROOT\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0049",
+      "license_number": "衛署藥製字第046637號",
+      "chinese_name": "悅寧 鼻腔定量噴液劑32微公克/劑量",
+      "english_name": "BESONIN AQUA NASAL SPRAY 32 UG/DOSE",
+      "dosage_form": "鼻用懸液劑",
+      "dosage_form_normalized": "nasal_local_other",
+      "application_site": "nasal",
+      "indication": "季節性及經年性鼻炎、血管性鼻炎及治療鼻息肉的相關症狀。",
+      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "active_ingredients": [
+        "budesonide"
+      ],
+      "active_ingredient_raw": "BUDESONIDE MICRONIZED",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2004",
+      "license_status": "active",
+      "license_expiry_date": "2029/11/16",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用懸液劑; 用法用量=; 品名=悅寧 鼻腔定量噴液劑32微公克/劑量/BESONIN AQUA NASAL SPRAY 32 UG/DOSE. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0050",
+      "license_number": "衛署藥製字第046639號",
+      "chinese_name": "海必適鼻腔定量噴液劑64微公克/劑量",
+      "english_name": "HEBIS AQUA NASAL SPRAY 64 mcg/dose",
+      "dosage_form": "鼻用懸液劑",
+      "dosage_form_normalized": "nasal_local_other",
+      "application_site": "nasal",
+      "indication": "季節性及經年性鼻炎、血管性鼻炎及治療鼻息肉的相關症狀。",
+      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "active_ingredients": [
+        "budesonide micronized"
+      ],
+      "active_ingredient_raw": "BUDESONIDE MICRONIZED;;BUDESONIDE MICRONIZED",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2004",
+      "license_status": "active",
+      "license_expiry_date": "2029/11/16",
+      "applicant": "台灣海默尼藥業有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用懸液劑; 用法用量=; 品名=海必適鼻腔定量噴液劑64微公克/劑量/HEBIS AQUA NASAL SPRAY 64 mcg/dose. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0051",
+      "license_number": "衛署藥製字第046641號",
+      "chinese_name": "\"美時\" 全妥 噴鼻液10毫克/毫升",
+      "english_name": "BUTARO NASAL SPRAY 10MG/ML \"LOTUS\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "使用鴉片類止痛劑治療的疼痛。",
+      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "active_ingredients": [
+        "butorphanol tartrate"
+      ],
+      "active_ingredient_raw": "BUTORPHANOL TARTRATE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "other_nasal"
+      ],
+      "license_year": "2004",
+      "license_status": "active",
+      "license_expiry_date": "2029/11/16",
+      "applicant": "美時化學製藥股份有限公司",
+      "manufacturer": "美時化學製藥股份有限公司南投廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=\"美時\" 全妥 噴鼻液10毫克/毫升/BUTARO NASAL SPRAY 10MG/ML \"LOTUS\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0052",
+      "license_number": "衛署藥製字第046692號",
+      "chinese_name": "\"應元\" 鼻順噴鼻液 0.1%",
+      "english_name": "BISUNG NASAL SOLUTION 0.1%\"Y.Y.\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "一般感冒、鼻塞、流鼻水、打噴嚏、過敏性鼻炎及由過敏所引起之鼻充血。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "xylometazoline"
+      ],
+      "active_ingredient_raw": "XYLOMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2004",
+      "license_status": "active",
+      "license_expiry_date": "2029/12/08",
+      "applicant": "應元化學製藥股份有限公司",
+      "manufacturer": "應元化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=\"應元\" 鼻順噴鼻液 0.1%/BISUNG NASAL SOLUTION 0.1%\"Y.Y.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0053",
+      "license_number": "衛署藥製字第046704號",
+      "chinese_name": "百喉寧口腔消炎噴液劑1.5毫克/毫升",
+      "english_name": "BIOLIN ANTI-INFLAMMATORY SPRAY 1.5MG/ML",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2004",
+      "license_status": "active",
+      "license_expiry_date": "2029/12/15",
+      "applicant": "溫士頓醫藥股份有限公司",
+      "manufacturer": "溫士頓醫藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人及12歲以上噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。6歲以上未滿12歲噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。6歲以下及有肝、腎疾病或其他重大疾病請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=成人及12歲以上噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。6歲以上未滿12歲噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。6歲以下及有肝、腎疾病或其他重大疾病請洽醫師診治。; 品名=百喉寧口腔消炎噴液劑1.5毫克/毫升/BIOLIN ANTI-INFLAMMATORY SPRAY 1.5MG/ML. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0054",
+      "license_number": "衛部藥製字第059891號",
+      "chinese_name": "樂佐寧複方噴鼻液",
+      "english_name": "Nazoline Duo Nasal Spray",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "一般感冒引起的鼻塞、流鼻水症狀之治療。",
+      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "active_ingredients": [
+        "ipratropium bromide (monohydrate)",
+        "xylometazoline hcl"
+      ],
+      "active_ingredient_raw": "Ipratropium bromide (monohydrate);;XYLOMETAZOLINE HCL",
+      "strength": "(eq. to Ipratropium Bromide.....0.6mg)",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "anticholinergic",
+        "combination",
+        "decongestant"
+      ],
+      "license_year": "2018",
+      "license_status": "active",
+      "license_expiry_date": "2028/04/09",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=請詳見仿單; 品名=樂佐寧複方噴鼻液/Nazoline Duo Nasal Spray. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0055",
+      "license_number": "衛部藥製字第060122號",
+      "chinese_name": "\"國嘉\"歐立舒加強消炎鎮痛噴液3毫克/毫升",
+      "english_name": "Desore Anti-inflammatory Pain Relief Throat Spray 3mg/ml \"Kojar\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "舒解口腔及咽喉疼痛，包括下列疾病或症狀引起的疼痛：扁桃腺炎、喉嚨痛、放射治療引起的黏膜炎、鵝口瘡潰瘍、口腔與牙周手術後疼痛。",
+      "indication_category": "口腔／咽喉黴菌感染",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2018",
+      "license_status": "active",
+      "license_expiry_date": "2028/06/13",
+      "applicant": "國嘉製藥工業股份有限公司幼獅三廠",
+      "manufacturer": "國嘉製藥工業股份有限公司幼獅三廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=請詳見仿單; 品名=\"國嘉\"歐立舒加強消炎鎮痛噴液3毫克/毫升/Desore Anti-inflammatory Pain Relief Throat Spray 3mg/ml \"Kojar\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0056",
+      "license_number": "衛部藥製字第061093號",
+      "chinese_name": "\"元宙\"鼻通暢鼻用噴液劑",
+      "english_name": "Nasflow Nasal Spray \"Y.C.\"",
+      "dosage_form": "點鼻液劑",
+      "dosage_form_normalized": "nasal_local_other",
+      "application_site": "nasal",
+      "indication": "鼻塞、流鼻水、打噴嚏。",
+      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "active_ingredients": [
+        "naphazoline hcl",
+        "chlorpheniramine maleate",
+        "benzalkonium chloride"
+      ],
+      "active_ingredient_raw": "NAPHAZOLINE HCL;;CHLORPHENIRAMINE MALEATE;;BENZALKONIUM CHLORIDE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2022",
+      "license_status": "active",
+      "license_expiry_date": "2027/04/01",
+      "applicant": "元宙化學製藥股份有限公司",
+      "manufacturer": "元宙化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=點鼻液劑; 用法用量=請詳見仿單; 品名=\"元宙\"鼻通暢鼻用噴液劑/Nasflow Nasal Spray \"Y.C.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0057",
+      "license_number": "衛部藥輸字第028215號",
+      "chinese_name": "速開朗鼻噴劑",
+      "english_name": "SPRAVATO (esketamine) Nasal Spray",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "１、治療成人的難治型憂鬱症(treatment-resistant depression，TRD)。\n２、與口服抗憂鬱劑併用，治療患有重鬱症(major depressive disorder，MDD)且出現急性自殺想法或行為之成人的憂鬱症狀。",
+      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "active_ingredients": [
+        "esketamine hcl"
+      ],
+      "active_ingredient_raw": "Esketamine HCl",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "other_nasal"
+      ],
+      "license_year": "2022",
+      "license_status": "active",
+      "license_expiry_date": "2027/01/13",
+      "applicant": "嬌生股份有限公司",
+      "manufacturer": "裕利股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳見仿單; 品名=速開朗鼻噴劑/SPRAVATO (esketamine) Nasal Spray. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0058",
+      "license_number": "衛署藥製字第014620號",
+      "chinese_name": "奧每達佐林鼻用噴液劑",
+      "english_name": "OXYMETAZOLINE Nasal Spray",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "急性鼻炎、過敏性鼻炎、血管舒縮性鼻炎、鼻竇炎、鼻咽炎、鼻咽道卡他、感冒引起之鼻部症狀",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "0.5",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1978",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/25",
+      "applicant": "國信藥品股份有限公司",
+      "manufacturer": "壽元化學工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=奧每達佐林鼻用噴液劑/OXYMETAZOLINE Nasal Spray. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0059",
+      "license_number": "衛署藥製字第038771號",
+      "chinese_name": "鼻速通噴鼻劑１毫克/毫升（奧每達佐林）",
+      "english_name": "BI SHU TUN NASAL SPRAY 1MG/ML(OXYMETAZOLINE)",
+      "dosage_form": "點鼻液劑",
+      "dosage_form_normalized": "nasal_local_other",
+      "application_site": "nasal",
+      "indication": "解除因感染或過敏而引起之鼻部充血及鼻炎",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1995",
+      "license_status": "active",
+      "license_expiry_date": "2030/04/24",
+      "applicant": "寶齡富錦生技股份有限公司",
+      "manufacturer": "寶齡富錦生技股份有限公司平鎮廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=點鼻液劑; 用法用量=; 品名=鼻速通噴鼻劑１毫克/毫升（奧每達佐林）/BI SHU TUN NASAL SPRAY 1MG/ML(OXYMETAZOLINE). 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0060",
+      "license_number": "衛署藥製字第039046號",
+      "chinese_name": "〝井田〞鼻通爽噴鼻液０．０５％",
+      "english_name": "PITOSAN NASAL SPRAY 0.05%  \"CHINTENG\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "0.5",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1995",
+      "license_status": "active",
+      "license_expiry_date": "2030/07/17",
+      "applicant": "井田國際醫藥廠股份有限公司",
+      "manufacturer": "井田國際醫藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "6歲以上每次於各⿐腔內噴1 下，每次需間隔10-12 ⼩時。未滿6 歲請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=6歲以上每次於各⿐腔內噴1 下，每次需間隔10-12 ⼩時。未滿6 歲請洽醫師診治。; 品名=〝井田〞鼻通爽噴鼻液０．０５％/PITOSAN NASAL SPRAY 0.05%  \"CHINTENG\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0061",
+      "license_number": "衛署藥製字第039047號",
+      "chinese_name": "\"近江兄弟\"鼻立通噴液",
+      "english_name": "BILITON NASAL SPRAY \"O.B.\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水、打噴嚏症狀",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "chlorpheniramine maleate",
+        "naphazoline hcl"
+      ],
+      "active_ingredient_raw": "CHLORPHENIRAMINE MALEATE;;NAPHAZOLINE HCL",
+      "strength": "0.5; 5",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1995",
+      "license_status": "active",
+      "license_expiry_date": "2030/07/17",
+      "applicant": "人生製藥股份有限公司",
+      "manufacturer": "人生製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=\"近江兄弟\"鼻立通噴液/BILITON NASAL SPRAY \"O.B.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0062",
+      "license_number": "衛署藥製字第048635號",
+      "chinese_name": "噴立停 鼻用噴液劑140微公克/劑量",
+      "english_name": "Azetin Nasal Spray 140mcg/dose",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "過敏性鼻炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "azelastine"
+      ],
+      "active_ingredient_raw": "AZELASTINE HYDROCHLORIDE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "antihistamine"
+      ],
+      "license_year": "2007",
+      "license_status": "active",
+      "license_expiry_date": "2027/03/22",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人及12歲以上兒童：每次兩鼻孔各噴一下(0.14ml=0.14mg azelastine hydrochloride)，每天使用二次(每日劑量相當於0.56mg的azelastine hydrochloride)，可依病情須要增加至每次兩鼻孔各噴二下，每天使用二次。\r\n5~11歲兒童：每次兩鼻孔各噴一下(0.14ml=0.14mg azelastine hydrochloride)，每天使用二次(每日劑量相當於0.56mg的azelastine hydrochloride)。\r\n老年人：現尚無針對老年人之使用的研究報告。因本品使用於局部，且其每日總計量很低，所以並無減低使用劑量的需要。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=成人及12歲以上兒童：每次兩鼻孔各噴一下(0.14ml=0.14mg azelastine hydrochloride)，每天使用二次(每日劑量相當於0.56mg的azelastine hydrochloride)，可依病情須要增加至每次兩鼻孔各噴二下，每天使用二次。\r\n5~11歲兒童：每次兩鼻孔各噴一下(0.14ml=0.14mg azelastine hydrochloride)，每天使用二次(每日劑量相當於0.56mg的azelastine hydrochloride)。\r\n老年人：現尚無針對老年人之使用的研究報告。因本品使用於局部，且其每日總計量很低，所以並無減低使用劑量的需要。; 品名=噴立停 鼻用噴液劑140微公克/劑量/Azetin Nasal Spray 140mcg/dose. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0063",
+      "license_number": "衛署藥製字第048636號",
+      "chinese_name": "\"強生\" 適鼻能 鼻腔定量噴液劑64微公克/劑量",
+      "english_name": "BUNO NASAL AQUA 64ug/dose \"JOHNSON\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "季節性及經年性鼻炎、血管性鼻炎及治療鼻息肉的相關症狀。",
+      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "active_ingredients": [
+        "budesonide"
+      ],
+      "active_ingredient_raw": "BUDESONIDE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2007",
+      "license_status": "active",
+      "license_expiry_date": "2027/03/22",
+      "applicant": "強生化學製藥廠股份有限公司",
+      "manufacturer": "強生化學製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "本藥須由醫師處方使用。劑量應依個人需要調整。鼻炎：成人及大於6歲之兒童：建議之起始劑量為256ug/天。此劑量可在每天早晨1次給藥，或在早、晚分成兩次給藥使用。治療鼻息肉：建議之劑量為每天256ug。劑量可在每天早晨一次給藥，或在早、晚分成兩次給藥使用。在獲得理想之臨床效果後，應將維持劑量降低至能控制症狀最小劑量。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=本藥須由醫師處方使用。劑量應依個人需要調整。鼻炎：成人及大於6歲之兒童：建議之起始劑量為256ug/天。此劑量可在每天早晨1次給藥，或在早、晚分成兩次給藥使用。治療鼻息肉：建議之劑量為每天256ug。劑量可在每天早晨一次給藥，或在早、晚分成兩次給藥使用。在獲得理想之臨床效果後，應將維持劑量降低至能控制症狀最小劑量。; 品名=\"強生\" 適鼻能 鼻腔定量噴液劑64微公克/劑量/BUNO NASAL AQUA 64ug/dose \"JOHNSON\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0064",
+      "license_number": "衛署藥製字第048725號",
+      "chinese_name": "鼻拿通鼻用噴液劑",
+      "english_name": "Suber Nasal Spray",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "消除鼻部黏膜充血、黏膜炎腫、抑制鼻液分泌過多、鼻竇炎、乾草熱及呼吸道過敏。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2007",
+      "license_status": "active",
+      "license_expiry_date": "2027/05/07",
+      "applicant": "美西製藥有限公司",
+      "manufacturer": "美西製藥有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "如仿單。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=如仿單。; 品名=鼻拿通鼻用噴液劑/Suber Nasal Spray. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0065",
+      "license_number": "衛署藥製字第048785號",
+      "chinese_name": "再柔靈噴鼻液 0.1%",
+      "english_name": "Xyzoline Nasal Spray 0.1%",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "xylometazoline"
+      ],
+      "active_ingredient_raw": "XYLOMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2007",
+      "license_status": "active",
+      "license_expiry_date": "2027/06/04",
+      "applicant": "人人化學製藥股份有限公司",
+      "manufacturer": "人人化學製藥股份有限公司中壢廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "12歲以上，每次於鼻腔內噴2~3下，每次需間隔8-10小時。未滿12歲，請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=12歲以上，每次於鼻腔內噴2~3下，每次需間隔8-10小時。未滿12歲，請洽醫師診治。; 品名=再柔靈噴鼻液 0.1%/Xyzoline Nasal Spray 0.1%. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0066",
+      "license_number": "衛署藥製字第048787號",
+      "chinese_name": "賓漱 口腔噴液劑",
+      "english_name": "Benzy Spray",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "oral_mucosal",
+      "indication": "舒解口腔及咽喉疼痛，包括下列疾病或症狀引起的疼痛：扁桃腺炎、喉嚨痛、放射治療引起的黏膜炎、鵝口瘡潰瘍、口腔與牙周手術後的疼痛。",
+      "indication_category": "口腔／咽喉黴菌感染",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2007",
+      "license_status": "active",
+      "license_expiry_date": "2027/06/04",
+      "applicant": "華盛頓製藥廠股份有限公司",
+      "manufacturer": "華盛頓製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳見仿單。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=詳見仿單。; 品名=賓漱 口腔噴液劑/Benzy Spray. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0067",
+      "license_number": "衛署藥製字第048804號",
+      "chinese_name": "'' 黃氏\"倍康納鼻用噴液",
+      "english_name": "Beclomase Aqueous Nasal Spray \" H.S.\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "季節性過敏性鼻炎、常年性過敏性鼻炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "beclomethasone"
+      ],
+      "active_ingredient_raw": "BECLOMETHASONE DIPROPIONATE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2007",
+      "license_status": "active",
+      "license_expiry_date": "2027/06/11",
+      "applicant": "黃氏製藥股份有限公司",
+      "manufacturer": "黃氏製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人：每鼻孔每天一次噴入量，每次噴兩次量(即200ug/2dose)或每天兩次每次噴一次量(即100ug/dose)。每天最高劑量為10次噴入量。小孩：按年齡或病況嚴重性，每鼻孔每次噴一次量(即100ug/dose)，每天一次至兩次。未滿12歲之孩童，每天之最高劑量給予五次噴入量(500ug/天)。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=成人：每鼻孔每天一次噴入量，每次噴兩次量(即200ug/2dose)或每天兩次每次噴一次量(即100ug/dose)。每天最高劑量為10次噴入量。小孩：按年齡或病況嚴重性，每鼻孔每次噴一次量(即100ug/dose)，每天一次至兩次。未滿12歲之孩童，每天之最高劑量給予五次噴入量(500ug/天)。; 品名='' 黃氏\"倍康納鼻用噴液/Beclomase Aqueous Nasal Spray \" H.S.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0068",
+      "license_number": "衛署藥製字第055891號",
+      "chinese_name": "“汎生”歐瑞芬噴鼻液 0.1%",
+      "english_name": "Orzefin Nasal solution 0.1%“Panbiotic”",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "一般感冒、鼻塞、流鼻水、打噴嚏、過敏性鼻炎及由過敏所引起之鼻充血。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "xylometazoline"
+      ],
+      "active_ingredient_raw": "XYLOMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2010",
+      "license_status": "active",
+      "license_expiry_date": "2030/12/23",
+      "applicant": "臺灣汎生製藥廠股份有限公司",
+      "manufacturer": "臺灣汎生製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳見仿單; 品名=“汎生”歐瑞芬噴鼻液 0.1%/Orzefin Nasal solution 0.1%“Panbiotic”. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0069",
+      "license_number": "衛部藥製字第061412號",
+      "chinese_name": "\"中美\"炎立停口腔消炎噴液劑",
+      "english_name": "Yan Li Ting Anti-inflammatory Spray \"C.M.\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "oral_mucosal",
+      "indication": "舒解口腔及咽喉疼痛，包括下列疾病或症狀引起的疼痛：扁桃腺炎、喉嚨痛、放射治療引起的黏膜炎、鵝口瘡潰瘍、口腔與牙周手術後疼痛。",
+      "indication_category": "口腔／咽喉黴菌感染",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2023",
+      "license_status": "active",
+      "license_expiry_date": "2028/01/11",
+      "applicant": "興中美生技有限公司",
+      "manufacturer": "中美兄弟製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=請詳見仿單; 品名=\"中美\"炎立停口腔消炎噴液劑/Yan Li Ting Anti-inflammatory Spray \"C.M.\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0070",
+      "license_number": "衛部藥製字第061432號",
+      "chinese_name": "\"大豐\"克敏通噴鼻液0.1%",
+      "english_name": "Clomiton Nasal Spray 0.1% \"T.F.\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "xylometazoline"
+      ],
+      "active_ingredient_raw": "XYLOMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2023",
+      "license_status": "active",
+      "license_expiry_date": "2028/03/14",
+      "applicant": "大豐製藥股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=請詳見仿單; 品名=\"大豐\"克敏通噴鼻液0.1%/Clomiton Nasal Spray 0.1% \"T.F.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0071",
+      "license_number": "衛署藥製字第020501號",
+      "chinese_name": "\"艾力特\" 佑鼻噴霧液",
+      "english_name": "UNIBE NASAL SPRAY \"ELT\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "急、慢性副鼻腔炎、肥厚性鼻炎、急性鼻炎、過敏性鼻炎、感冒所引起之鼻塞、充血及上呼吸道之發炎症狀",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "chlorpheniramine maleate",
+        "naphazoline hcl"
+      ],
+      "active_ingredient_raw": "CHLORPHENIRAMINE MALEATE;;NAPHAZOLINE HCL",
+      "strength": "0.5; 1",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1980",
+      "license_status": "active",
+      "license_expiry_date": "2031/07/26",
+      "applicant": "艾力特生技製藥股份有限公司將軍廠",
+      "manufacturer": "艾力特生技製藥股份有限公司將軍廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=\"艾力特\" 佑鼻噴霧液/UNIBE NASAL SPRAY \"ELT\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0072",
+      "license_number": "衛署藥製字第041040號",
+      "chinese_name": "倍樂水性噴鼻液42微公克/劑量",
+      "english_name": "Belax Aqua Nasal Spray  42 mcg/dose",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "季節性過敏性鼻炎，常年性過敏性鼻炎，非過敏性鼻炎（鼻充血、鼻塞），血管運性鼻炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "beclomethasone"
+      ],
+      "active_ingredient_raw": "BECLOMETHASONE DIPROPIONATE",
+      "strength": "0.42",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "1997",
+      "license_status": "active",
+      "license_expiry_date": "2027/04/11",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=倍樂水性噴鼻液42微公克/劑量/Belax Aqua Nasal Spray  42 mcg/dose. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0073",
+      "license_number": "衛署藥製字第048998號",
+      "chinese_name": "〝大豐〞舒喉寧 口腔消炎噴液 1.5 毫克/毫升",
+      "english_name": "THROTIN ANTI-INFLAMMATORY THROAT SPRAY 1.5 MG/ML“T.F.”",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2007",
+      "license_status": "active",
+      "license_expiry_date": "2027/08/30",
+      "applicant": "大豐製藥股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人及12歲以上噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。6歲以上 未滿12歲噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。6歲以下及有肝、腎疾病或其他重大疾病請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=成人及12歲以上噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。6歲以上 未滿12歲噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。6歲以下及有肝、腎疾病或其他重大疾病請洽醫師診治。; 品名=〝大豐〞舒喉寧 口腔消炎噴液 1.5 毫克/毫升/THROTIN ANTI-INFLAMMATORY THROAT SPRAY 1.5 MG/ML“T.F.”. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0074",
+      "license_number": "衛署藥製字第049954號",
+      "chinese_name": "噴可通噴鼻液 0.1%",
+      "english_name": "Pen Ke Tong Nasal Solution 0.1%",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "xylometazoline"
+      ],
+      "active_ingredient_raw": "XYLOMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2009",
+      "license_status": "active",
+      "license_expiry_date": "2029/02/05",
+      "applicant": "井田國際醫藥廠股份有限公司",
+      "manufacturer": "井田國際醫藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "內容詳見仿單。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=內容詳見仿單。; 品名=噴可通噴鼻液 0.1%/Pen Ke Tong Nasal Solution 0.1%. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0075",
+      "license_number": "衛署藥輸字第025186號",
+      "chinese_name": "歐治鼻 噴鼻液0.05%",
+      "english_name": "Otrivin Moisturizing Nasal Metered-Dose Spray 0.05%",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "xylometazoline"
+      ],
+      "active_ingredient_raw": "XYLOMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2010",
+      "license_status": "active",
+      "license_expiry_date": "2030/05/12",
+      "applicant": "英商赫力昂股份有限公司台灣分公司",
+      "manufacturer": "HALEON CH SARL",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳如仿單; 品名=歐治鼻 噴鼻液0.05%/Otrivin Moisturizing Nasal Metered-Dose Spray 0.05%. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0076",
+      "license_number": "衛署藥輸字第025194號",
+      "chinese_name": "得伏寧加強消炎噴液劑3.0毫克/毫升",
+      "english_name": "DIFFLAM FORTE ANTI-INFLAMMATORY THROAT SPRAY 3.0MG/ML",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "舒解口腔及咽喉疼痛，包括下列疾病或症狀引起的疼痛：扁桃腺炎、喉嚨痛、放射治療引起的黏膜炎、鵝口瘡潰瘍、口腔與牙周手術後疼痛",
+      "indication_category": "口腔／咽喉黴菌感染",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "GM",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2010",
+      "license_status": "active",
+      "license_expiry_date": "2030/05/26",
+      "applicant": "裕利股份有限公司",
+      "manufacturer": "裕利股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=詳見仿單; 品名=得伏寧加強消炎噴液劑3.0毫克/毫升/DIFFLAM FORTE ANTI-INFLAMMATORY THROAT SPRAY 3.0MG/ML. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0077",
+      "license_number": "衛部藥製字第059030號",
+      "chinese_name": "\"黃氏\"舒喉爽加強消炎口腔噴劑3.0毫克/毫升",
+      "english_name": "Doubleson Anti-inflammatory Spray \"H.S.\" 3.0mg/ml",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "舒解口腔及咽喉疼痛，包括下列疾病或症狀引起的疼痛：扁桃腺炎、喉嚨痛、放射治療引起的黏膜炎、鵝口瘡潰瘍、口腔與牙周手術後疼痛。",
+      "indication_category": "口腔／咽喉黴菌感染",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2016",
+      "license_status": "active",
+      "license_expiry_date": "2031/08/01",
+      "applicant": "黃氏製藥股份有限公司",
+      "manufacturer": "黃氏製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=請詳見仿單; 品名=\"黃氏\"舒喉爽加強消炎口腔噴劑3.0毫克/毫升/Doubleson Anti-inflammatory Spray \"H.S.\" 3.0mg/ml. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0078",
+      "license_number": "衛部藥製字第059039號",
+      "chinese_name": "理冒消炎噴液劑1.5毫克/毫升",
+      "english_name": "Fucole Anti-Inflammatory Spray 1.5mg/ml",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "oral_mucosal",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2016",
+      "license_status": "active",
+      "license_expiry_date": "2031/03/14",
+      "applicant": "永信藥品工業股份有限公司",
+      "manufacturer": "永信藥品工業股份有限公司台中幼獅廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=請詳如仿單; 品名=理冒消炎噴液劑1.5毫克/毫升/Fucole Anti-Inflammatory Spray 1.5mg/ml. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0079",
+      "license_number": "衛署藥製字第047146號",
+      "chinese_name": "\"元宙\" 炎必克口腔消炎噴液劑 1.5 毫克/毫升",
+      "english_name": "MERIC ANTI-INFLAMMATORY SPRAY 1.5MG/ML \"Y.C.\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "oral_mucosal",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2010",
+      "license_status": "active",
+      "license_expiry_date": "2030/03/30",
+      "applicant": "元宙化學製藥股份有限公司",
+      "manufacturer": "元宙化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人及12歲以上兒童：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲至12歲兒童：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲以下兒童：請洽醫師診治。 肝腎疾病患者：請洽醫師診治",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=成人及12歲以上兒童：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲至12歲兒童：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲以下兒童：請洽醫師診治。 肝腎疾病患者：請洽醫師診治; 品名=\"元宙\" 炎必克口腔消炎噴液劑 1.5 毫克/毫升/MERIC ANTI-INFLAMMATORY SPRAY 1.5MG/ML \"Y.C.\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0080",
+      "license_number": "衛署藥製字第057785號",
+      "chinese_name": "拿舒理鼻噴劑0.05%",
+      "english_name": "Nasolax Nasal Spray 0.05%",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2012",
+      "license_status": "active",
+      "license_expiry_date": "2027/12/21",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳閱仿單說明",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=請詳閱仿單說明; 品名=拿舒理鼻噴劑0.05%/Nasolax Nasal Spray 0.05%. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0081",
+      "license_number": "衛署藥製字第057919號",
+      "chinese_name": "特索寧水性鼻用噴液劑55微公克/劑量",
+      "english_name": "Trisonin Aqueous Nasal Spray 55 mcg/dose",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "成人之季節性及經年性過敏性鼻炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "triamcinolone"
+      ],
+      "active_ingredient_raw": "TRIAMCINOLONE ACETONIDE",
+      "strength": "(Triamcinolone Acetonide Micronized...0.55mg)",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2013",
+      "license_status": "active",
+      "license_expiry_date": "2028/04/30",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見說明書內容",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=請詳見說明書內容; 品名=特索寧水性鼻用噴液劑55微公克/劑量/Trisonin Aqueous Nasal Spray 55 mcg/dose. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0082",
+      "license_number": "衛署藥輸字第024908號",
+      "chinese_name": "雪之元噴鼻液",
+      "english_name": "YUKINOMOTO NASAL SPRAY",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水、打噴嚏症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "naphazoline hcl",
+        "lidocaine",
+        "chlorpheniramine maleate"
+      ],
+      "active_ingredient_raw": "NAPHAZOLINE HCL;;LIDOCAINE;;CHLORPHENIRAMINE MALEATE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2008",
+      "license_status": "active",
+      "license_expiry_date": "2028/10/17",
+      "applicant": "德佑藥品有限公司",
+      "manufacturer": "YUKINOMOTO HONTEN CO., LTD.",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "1. 成人及12歲以上: 每次於鼻腔內噴1~3下，每次使用需間隔4小時以上。\r\n2. 未滿12歲: 請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=1. 成人及12歲以上: 每次於鼻腔內噴1~3下，每次使用需間隔4小時以上。\r\n2. 未滿12歲: 請洽醫師診治。; 品名=雪之元噴鼻液/YUKINOMOTO NASAL SPRAY. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0083",
+      "license_number": "衛署藥輸字第024930號",
+      "chinese_name": "塞羅通噴鼻液",
+      "english_name": "Xylo-POS Nasal Spray Solution",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "一般感冒、鼻塞、流鼻水、打噴嚏、過敏性鼻炎及由過敏所引起之鼻充血。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "xylometazoline"
+      ],
+      "active_ingredient_raw": "XYLOMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2008",
+      "license_status": "active",
+      "license_expiry_date": "2028/12/01",
+      "applicant": "吉富貿易有限公司",
+      "manufacturer": "URSAPHARM ARZNEIMITTEL GMBH",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳見仿單。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳見仿單。; 品名=塞羅通噴鼻液/Xylo-POS Nasal Spray Solution. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0084",
+      "license_number": "衛署藥製字第033483號",
+      "chinese_name": "\"大豐\"鼻速通噴鼻液",
+      "english_name": "BISTON NASAL SOLUTION \"T.F.\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "緩解過敏性鼻炎、枯草熱所引起之相關症狀（流鼻水，鼻塞，打噴嚏）",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "naphazoline hcl",
+        "chlorpheniramine maleate",
+        "benzethonium chloride"
+      ],
+      "active_ingredient_raw": "NAPHAZOLINE HCL;;CHLORPHENIRAMINE MALEATE;;BENZETHONIUM CHLORIDE",
+      "strength": "0.5; 5.0; 0.2",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1991",
+      "license_status": "active",
+      "license_expiry_date": "2031/01/22",
+      "applicant": "大豐製藥股份有限公司",
+      "manufacturer": "大豐製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=\"大豐\"鼻速通噴鼻液/BISTON NASAL SOLUTION \"T.F.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0085",
+      "license_number": "衛署藥製字第045808號",
+      "chinese_name": "\"黃氏\" 喉清爽口腔噴劑1.5毫克﹨毫升",
+      "english_name": "THROFRESH SPRAY 1.5MG/ML \"H.S\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2003",
+      "license_status": "active",
+      "license_expiry_date": "2028/10/01",
+      "applicant": "黃氏製藥股份有限公司",
+      "manufacturer": "黃氏製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人及12歲以上兒童：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲至12歲兒童：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲以下兒童：請洽醫師診治。 肝腎疾病患者：請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=成人及12歲以上兒童：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲至12歲兒童：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲以下兒童：請洽醫師診治。 肝腎疾病患者：請洽醫師診治。; 品名=\"黃氏\" 喉清爽口腔噴劑1.5毫克﹨毫升/THROFRESH SPRAY 1.5MG/ML \"H.S\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0086",
+      "license_number": "衛署藥製字第045852號",
+      "chinese_name": "\"約克\" 舒喉痛消炎噴液1.5毫克/毫升",
+      "english_name": "THROATON ANTI-INFLAMMATORY SPRAY 1.5MG/ML \"Y.K.\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "舒解口腔及咽喉疼痛，包括下列疾病或症狀引起的疼痛：扁桃腺炎、喉嚨痛、放射治療引起的黏膜炎、鵝口瘡潰瘍、口腔及牙周手術後疼痛。",
+      "indication_category": "口腔／咽喉黴菌感染",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2003",
+      "license_status": "active",
+      "license_expiry_date": "2028/10/27",
+      "applicant": "約克製藥股份有限公司",
+      "manufacturer": "約克製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=; 品名=\"約克\" 舒喉痛消炎噴液1.5毫克/毫升/THROATON ANTI-INFLAMMATORY SPRAY 1.5MG/ML \"Y.K.\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0087",
+      "license_number": "衛署藥製字第046027號",
+      "chinese_name": "舒炎寧消炎噴液劑1.5公絲/公撮",
+      "english_name": "SUYANING ANTI INFLAMMATORY SPRAY 1.5MG/ML",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "oral_mucosal",
+      "indication": "舒解口腔及咽喉疼痛，包刮下列疾病或症狀引起的疼痛：扁桃腺炎、喉嚨痛、放射治療引起的黏膜炎、鵝口瘡潰瘍、口腔及牙周手術後的疼痛。",
+      "indication_category": "口腔／咽喉黴菌感染",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2003",
+      "license_status": "active",
+      "license_expiry_date": "2028/12/31",
+      "applicant": "優良化學製藥股份有限公司",
+      "manufacturer": "健康化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=; 品名=舒炎寧消炎噴液劑1.5公絲/公撮/SUYANING ANTI INFLAMMATORY SPRAY 1.5MG/ML. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0088",
+      "license_number": "衛署藥製字第046031號",
+      "chinese_name": "渡邊鼻通好噴鼻液",
+      "english_name": "WATANABE PITONHO NASAL SOLUTION",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2004",
+      "license_status": "active",
+      "license_expiry_date": "2029/01/05",
+      "applicant": "人生製藥股份有限公司",
+      "manufacturer": "人生製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "6歲以上，每次於鼻腔內噴1下，每次需間隔10-12小時；未滿6歲，請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=6歲以上，每次於鼻腔內噴1下，每次需間隔10-12小時；未滿6歲，請洽醫師診治。; 品名=渡邊鼻通好噴鼻液/WATANABE PITONHO NASAL SOLUTION. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0089",
+      "license_number": "衛署藥製字第047657號",
+      "chinese_name": "\"黃氏\"欣潔口腔噴劑",
+      "english_name": "Hexedin Spray \"H.S.\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "oral_mucosal",
+      "indication": "口腔清潔。",
+      "indication_category": "口腔／咽喉局部感染",
+      "active_ingredients": [
+        "hexetidine"
+      ],
+      "active_ingredient_raw": "HEXETIDINE (STERISOL)",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "antiseptic_or_anti_infective"
+      ],
+      "license_year": "2005",
+      "license_status": "active",
+      "license_expiry_date": "2030/12/06",
+      "applicant": "黃氏製藥股份有限公司",
+      "manufacturer": "黃氏製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "如仿單。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=如仿單。; 品名=\"黃氏\"欣潔口腔噴劑/Hexedin Spray \"H.S.\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0090",
+      "license_number": "衛署藥製字第047693號",
+      "chinese_name": "\"井田\"噴可舒口腔消炎噴液劑",
+      "english_name": "PHONKHOUZSU Anti-inflammatory spray \"Chin Teng\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "oral_mucosal",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine hcl"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL;;BENZYDAMINE HCL;;BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2005",
+      "license_status": "active",
+      "license_expiry_date": "2030/12/26",
+      "applicant": "井田國際醫藥廠股份有限公司",
+      "manufacturer": "井田國際醫藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=詳如仿單。; 品名=\"井田\"噴可舒口腔消炎噴液劑/PHONKHOUZSU Anti-inflammatory spray \"Chin Teng\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0091",
+      "license_number": "衛署藥製字第047697號",
+      "chinese_name": "噴利喉口腔噴液劑",
+      "english_name": "Painon Mouth Spray",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "口腔消毒殺菌。",
+      "indication_category": "口腔／咽喉局部感染",
+      "active_ingredients": [
+        "povidone-iodine"
+      ],
+      "active_ingredient_raw": "POVIDONE-IODINE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "antiseptic_or_anti_infective"
+      ],
+      "license_year": "2005",
+      "license_status": "active",
+      "license_expiry_date": "2030/12/29",
+      "applicant": "天良生物科技企業股份有限公司",
+      "manufacturer": "衛肯生技製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=詳如仿單。; 品名=噴利喉口腔噴液劑/Painon Mouth Spray. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0092",
+      "license_number": "衛署藥製字第047716號",
+      "chinese_name": "絲丹蔻噴利喉口腔消炎噴液劑 1.5毫克/毫升",
+      "english_name": "Starcosmo Painon Antiinflammatory Spray 1.5 mg/ml \"H.C.\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "舒解口腔及咽喉疼痛，包括下列疾病或症狀引起的疼痛：扁桃腺炎、喉嚨痛、放射治療引起的黏膜炎、鵝口瘡潰瘍、口腔與牙周手術後疼痛。",
+      "indication_category": "口腔／咽喉黴菌感染",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2006",
+      "license_status": "active",
+      "license_expiry_date": "2026/01/04",
+      "applicant": "天良生物科技企業股份有限公司",
+      "manufacturer": "美西製藥有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=詳如仿單; 品名=絲丹蔻噴利喉口腔消炎噴液劑 1.5毫克/毫升/Starcosmo Painon Antiinflammatory Spray 1.5 mg/ml \"H.C.\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0093",
+      "license_number": "衛署藥製字第047751號",
+      "chinese_name": "\"應元\" 速痛平口腔消炎噴液劑",
+      "english_name": "Damine Anti-Inflammatory Spray 1.5 mg/ml \"Y.Y.\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "oral_mucosal",
+      "indication": "舒解口腔及咽喉疼痛，包括下列疾病或症狀引起的疼痛：扁桃腺炎、喉嚨痛、放射治療引起的黏膜炎、鵝口瘡潰瘍、口腔與牙周手術後疼痛。",
+      "indication_category": "口腔／咽喉黴菌感染",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2006",
+      "license_status": "active",
+      "license_expiry_date": "2031/01/13",
+      "applicant": "應元化學製藥股份有限公司",
+      "manufacturer": "應元化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=詳如仿單; 品名=\"應元\" 速痛平口腔消炎噴液劑/Damine Anti-Inflammatory Spray 1.5 mg/ml \"Y.Y.\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0094",
+      "license_number": "衛署藥製字第047809號",
+      "chinese_name": "\"黃氏\" 敏保鼻用噴液劑",
+      "english_name": "Cromyn Nasal Spray \"H.S.\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "各種過敏性鼻炎、季節性及全年性的鼻炎、乾草熱。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "cromolyn"
+      ],
+      "active_ingredient_raw": "CROMOLYN SODIUM (EQ TO SODIUM CROMOGLICATE)(EQ TO SODIUM CROMOGLYCATE)",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "mast_cell_stabilizer"
+      ],
+      "license_year": "2006",
+      "license_status": "active",
+      "license_expiry_date": "2031/02/10",
+      "applicant": "黃氏製藥股份有限公司",
+      "manufacturer": "黃氏製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳如仿單; 品名=\"黃氏\" 敏保鼻用噴液劑/Cromyn Nasal Spray \"H.S.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0095",
+      "license_number": "衛署藥輸字第024244號",
+      "chinese_name": "得伏寧消炎噴液劑1.5毫克/公撮",
+      "english_name": "DIFFLAM ANTI-INFLAMMATORY THROAT SPRAY 1.5 MG/ML",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2005",
+      "license_status": "active",
+      "license_expiry_date": "2030/06/01",
+      "applicant": "裕利股份有限公司",
+      "manufacturer": "AZIENDE CHIMICHE RIUNITE ANGELINI FRANCESCO (ACRAF SPA)",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳見仿單。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=詳見仿單。; 品名=得伏寧消炎噴液劑1.5毫克/公撮/DIFFLAM ANTI-INFLAMMATORY THROAT SPRAY 1.5 MG/ML. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0096",
+      "license_number": "衛部藥製字第059220號",
+      "chinese_name": "\"元宙\"克炎寧加強消炎噴液劑3.0毫克/毫升",
+      "english_name": "Coserrin Forte Anti-Inflammatory Throat Spray 3.0 mg/ml \"Y.C.\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "舒解口腔及咽喉疼痛，包括下列疾病或症狀引起的疼痛：扁桃腺炎、喉嚨痛、放射治療引起的黏膜炎、鵝口瘡潰瘍、口腔與牙周手術後疼痛。",
+      "indication_category": "口腔／咽喉黴菌感染",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2016",
+      "license_status": "active",
+      "license_expiry_date": "2031/06/20",
+      "applicant": "元宙化學製藥股份有限公司",
+      "manufacturer": "元宙化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=請詳見仿單; 品名=\"元宙\"克炎寧加強消炎噴液劑3.0毫克/毫升/Coserrin Forte Anti-Inflammatory Throat Spray 3.0 mg/ml \"Y.C.\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0097",
+      "license_number": "衛部藥製字第059249號",
+      "chinese_name": "\"強生\"欣鼻通噴鼻液0.1%",
+      "english_name": "Jolax AQ Nasal Spray 0.1% (Xylometazoline Hydrochloride) \"Johnson\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "一般感冒、鼻塞、流鼻水、打噴嚏、過敏性鼻炎及由過敏所引起之鼻充血。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "xylometazoline"
+      ],
+      "active_ingredient_raw": "XYLOMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2016",
+      "license_status": "active",
+      "license_expiry_date": "2026/08/01",
+      "applicant": "強生化學製藥廠股份有限公司",
+      "manufacturer": "強生化學製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=請詳如仿單; 品名=\"強生\"欣鼻通噴鼻液0.1%/Jolax AQ Nasal Spray 0.1% (Xylometazoline Hydrochloride) \"Johnson\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0098",
+      "license_number": "衛部藥製字第059307號",
+      "chinese_name": "\"德聯\"倍康健加強消炎口腔噴液劑3.0毫克/毫升",
+      "english_name": "Twofold Anti-inflammatory Spray 3.0 mg/ml \"T.L.\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "oral_mucosal",
+      "indication": "舒解口腔及咽喉疼痛，包括下列疾病或症狀引起的疼痛：扁桃腺炎、喉嚨痛、放射治療引起的黏膜炎、鵝口瘡潰瘍、口腔與牙周手術後疼痛。",
+      "indication_category": "口腔／咽喉黴菌感染",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2016",
+      "license_status": "active",
+      "license_expiry_date": "2031/10/17",
+      "applicant": "德聯藥品有限公司",
+      "manufacturer": "黃氏製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=請詳見仿單; 品名=\"德聯\"倍康健加強消炎口腔噴液劑3.0毫克/毫升/Twofold Anti-inflammatory Spray 3.0 mg/ml \"T.L.\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0099",
+      "license_number": "衛部藥製字第059628號",
+      "chinese_name": "舒立克喉嚨噴液劑",
+      "english_name": "Throatec Spray for Throat",
+      "dosage_form": "外用液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "口腔消毒殺菌。",
+      "indication_category": "口腔／咽喉局部感染",
+      "active_ingredients": [
+        "povidone-iodine"
+      ],
+      "active_ingredient_raw": "POVIDONE-IODINE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "antiseptic_or_anti_infective"
+      ],
+      "license_year": "2017",
+      "license_status": "active",
+      "license_expiry_date": "2027/02/13",
+      "applicant": "倍斯特醫藥生物科技股份有限公司",
+      "manufacturer": "利達製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "1天數次適量使用於喉嚨粘膜處。",
+      "inclusion_evidence": "TFDA 劑型=外用液劑; 用法用量=1天數次適量使用於喉嚨粘膜處。; 品名=舒立克喉嚨噴液劑/Throatec Spray for Throat. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0100",
+      "license_number": "衛部藥製字第060313號",
+      "chinese_name": "碧適清鼻腔定量噴液劑64微公克/劑量",
+      "english_name": "Besonin Aqua Nasal spray 64mcg/dose",
+      "dosage_form": "鼻用懸液劑",
+      "dosage_form_normalized": "nasal_local_other",
+      "application_site": "nasal",
+      "indication": "季節性及經年性鼻炎、血管性鼻炎及治療鼻息肉的相關症狀。",
+      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "active_ingredients": [
+        "budesonide"
+      ],
+      "active_ingredient_raw": "BUDESONIDE MICRONIZED",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2019",
+      "license_status": "active",
+      "license_expiry_date": "2029/06/27",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用懸液劑; 用法用量=請詳見仿單; 品名=碧適清鼻腔定量噴液劑64微公克/劑量/Besonin Aqua Nasal spray 64mcg/dose. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0101",
+      "license_number": "衛部藥製字第060354號",
+      "chinese_name": "喉你好-殺菌口腔噴液",
+      "english_name": "Hou Ni Hao Throat Spray",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "口腔消毒殺菌。",
+      "indication_category": "口腔／咽喉局部感染",
+      "active_ingredients": [
+        "povidone-iodine"
+      ],
+      "active_ingredient_raw": "POVIDONE-IODINE",
+      "strength": "(Available Iodine.....0.4725mg)",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "antiseptic_or_anti_infective"
+      ],
+      "license_year": "2019",
+      "license_status": "active",
+      "license_expiry_date": "2029/09/19",
+      "applicant": "井田國際醫藥廠股份有限公司",
+      "manufacturer": "井田國際醫藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=請詳見仿單; 品名=喉你好-殺菌口腔噴液/Hou Ni Hao Throat Spray. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0102",
+      "license_number": "衛署藥製字第032148號",
+      "chinese_name": "寧疤寧黑圓圈噴鼻劑",
+      "english_name": "080 BLACK SHADOW NASAL SPRAYS",
+      "dosage_form": "點鼻液劑",
+      "dosage_form_normalized": "nasal_local_other",
+      "application_site": "nasal",
+      "indication": "過敏性鼻炎、鼻塞",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "chlorpheniramine maleate",
+        "naphazoline hcl"
+      ],
+      "active_ingredient_raw": "CHLORPHENIRAMINE MALEATE;;NAPHAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1990",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/25",
+      "applicant": "澳斯麗國際股份有限公司淡水廠",
+      "manufacturer": "澳斯麗國際股份有限公司淡水廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=點鼻液劑; 用法用量=; 品名=寧疤寧黑圓圈噴鼻劑/080 BLACK SHADOW NASAL SPRAYS. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0103",
+      "license_number": "衛署藥製字第043974號",
+      "chinese_name": "安捷噴鼻液〝黃氏〞",
+      "english_name": "AN-JET NASAL SPRAY \"H.S.\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "鼻塞、鼻竇炎及感冒引起之鼻粘膜充血。",
+      "indication_category": "鼻竇／鼻腔發炎症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "1.0",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2000",
+      "license_status": "active",
+      "license_expiry_date": "2030/09/25",
+      "applicant": "黃氏製藥股份有限公司",
+      "manufacturer": "黃氏製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=安捷噴鼻液〝黃氏〞/AN-JET NASAL SPRAY \"H.S.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0104",
+      "license_number": "衛部藥製字第061525號",
+      "chinese_name": "輔停敏鼻用噴液懸浮劑 27.5微公克/劑量",
+      "english_name": "Flutimy Nasal Spray 27.5 mcg/spray",
+      "dosage_form": "鼻用懸液劑",
+      "dosage_form_normalized": "nasal_local_other",
+      "application_site": "nasal",
+      "indication": "治療2歲以上的兒童、青少年與成人的過敏性鼻炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "fluticasone"
+      ],
+      "active_ingredient_raw": "FLUTICASONE FUROATE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2023",
+      "license_status": "active",
+      "license_expiry_date": "2028/11/28",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用懸液劑; 用法用量=; 品名=輔停敏鼻用噴液懸浮劑 27.5微公克/劑量/Flutimy Nasal Spray 27.5 mcg/spray. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0105",
+      "license_number": "衛署藥製字第001153號",
+      "chinese_name": "噴通點鼻液",
+      "english_name": "PEN TUNG NAZAL SPRAY",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "因感冒而引起之鼻塞、鼻炎、肥厚性鼻炎等所引起之鼻充血",
+      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "active_ingredients": [
+        "naphazoline hcl",
+        "chlorpheniramine maleate"
+      ],
+      "active_ingredient_raw": "NAPHAZOLINE HCL;;CHLORPHENIRAMINE MALEATE",
+      "strength": "0.5; 5",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1972",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/25",
+      "applicant": "三洋藥品工業股份有限公司大發廠",
+      "manufacturer": "三洋藥品工業股份有限公司大發廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=噴通點鼻液/PEN TUNG NAZAL SPRAY. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0106",
+      "license_number": "衛署藥製字第041468號",
+      "chinese_name": "溫敏噴鼻劑0.5毫克/毫升",
+      "english_name": "WIN-MIN NASAL SPRAY 0.5MG/ML",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "0.5",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1997",
+      "license_status": "active",
+      "license_expiry_date": "2026/08/20",
+      "applicant": "溫士頓醫藥股份有限公司",
+      "manufacturer": "溫士頓醫藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=請詳見仿單。; 品名=溫敏噴鼻劑0.5毫克/毫升/WIN-MIN NASAL SPRAY 0.5MG/ML. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0107",
+      "license_number": "衛署藥製字第046405號",
+      "chinese_name": "\"春鼎\"護喉口腔噴液劑1.5毫克/毫升",
+      "english_name": "GIFDAM SPRAY 1.5MG/ML \"T.D.\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2010",
+      "license_status": "active",
+      "license_expiry_date": "2030/02/02",
+      "applicant": "春鼎藥品有限公司",
+      "manufacturer": "黃氏製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人及12歲以上兒童：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲至12歲兒童：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲以下兒童：請洽醫師診治。 肝腎疾病患者：請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=成人及12歲以上兒童：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲至12歲兒童：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲以下兒童：請洽醫師診治。 肝腎疾病患者：請洽醫師診治。; 品名=\"春鼎\"護喉口腔噴液劑1.5毫克/毫升/GIFDAM SPRAY 1.5MG/ML \"T.D.\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0108",
+      "license_number": "衛署藥製字第047879號",
+      "chinese_name": "愛鼻安鼻用噴液劑液",
+      "english_name": "Azela Nasal Spray 0.1% W/V",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "過敏性鼻炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "azelastine"
+      ],
+      "active_ingredient_raw": "AZELASTINE HYDROCHLORIDE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "antihistamine"
+      ],
+      "license_year": "2006",
+      "license_status": "active",
+      "license_expiry_date": "2031/03/08",
+      "applicant": "壽元化學工業股份有限公司",
+      "manufacturer": "壽元化學工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人及12歲以上兒童：每次兩鼻孔各噴一下(0.14ml=0.14mg azelastine hydrochloride)，每天使用二次(每日劑量相當於0.56mg的azelastine hydrochloride)，可依病情須要增加至每次兩鼻孔各噴二下，每天使用二次。 5~11歲兒童：每次兩鼻孔各噴一下(0.14ml=0.14mg azelastine hydrochloride)，每天使用二次(每日劑量相當於0.56mg的azelastine hydrochloride)。老年人：現尚無針對老年人之使用的研究報告。因本品使用於局部，且其每日總計量很低，所以並無減低使用劑量的需要。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=成人及12歲以上兒童：每次兩鼻孔各噴一下(0.14ml=0.14mg azelastine hydrochloride)，每天使用二次(每日劑量相當於0.56mg的azelastine hydrochloride)，可依病情須要增加至每次兩鼻孔各噴二下，每天使用二次。 5~11歲兒童：每次兩鼻孔各噴一下(0.14ml=0.14mg azelastine hydrochloride)，每天使用二次(每日劑量相當於0.56mg的azelastine hydrochloride)。老年人：現尚無針對老年人之使用的研究報告。因本品使用於局部，且其每日總計量很低，所以並無減低使用劑量的需要。; 品名=愛鼻安鼻用噴液劑液/Azela Nasal Spray 0.1% W/V. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0109",
+      "license_number": "衛署藥製字第047962號",
+      "chinese_name": "\"成大\" 清喉炎口腔噴液劑1.5毫克/毫升",
+      "english_name": "Qing-hou-yan spray 1.5mg/ml \"Chen Ta\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine hcl"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL;;BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2006",
+      "license_status": "active",
+      "license_expiry_date": "2026/05/04",
+      "applicant": "成大藥品股份有限公司",
+      "manufacturer": "成大藥品股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人及12歲以上：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲至12歲：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲以下：請洽醫師診治。 肝腎疾病的人：請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=成人及12歲以上：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲至12歲：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲以下：請洽醫師診治。 肝腎疾病的人：請洽醫師診治。; 品名=\"成大\" 清喉炎口腔噴液劑1.5毫克/毫升/Qing-hou-yan spray 1.5mg/ml \"Chen Ta\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0110",
+      "license_number": "衛署藥製字第049075號",
+      "chinese_name": "舒可鼻 鼻腔定量噴液劑 2毫克/毫升",
+      "english_name": "Budesonide Nasal Spray 2mg/mL",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "季節性及經年性過敏鼻炎、血管性鼻炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "budesonide"
+      ],
+      "active_ingredient_raw": "BUDESONIDE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2007",
+      "license_status": "active",
+      "license_expiry_date": "2027/10/08",
+      "applicant": "一成藥品股份有限公司",
+      "manufacturer": "衛達化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳如仿單。; 品名=舒可鼻 鼻腔定量噴液劑 2毫克/毫升/Budesonide Nasal Spray 2mg/mL. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0111",
+      "license_number": "衛部藥製字第058080號",
+      "chinese_name": "康護寧加強消炎噴液劑3毫克/毫升",
+      "english_name": "Comfflam Forte Anti-inflammatory Throat spray 3mg/ml",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "舒解口腔及咽喉疼痛，包括下列疾病或症狀引起的疼痛：扁桃腺炎、喉嚨痛、放射治療引起的黏膜炎、鵝口瘡潰瘍、口腔與牙周手術後疼痛。",
+      "indication_category": "口腔／咽喉黴菌感染",
+      "active_ingredients": [
+        "benzydamine hcl"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL;;BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2013",
+      "license_status": "active",
+      "license_expiry_date": "2028/09/24",
+      "applicant": "倍斯特醫藥生物科技股份有限公司",
+      "manufacturer": "旭能醫藥生技股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單說明",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=請詳見仿單說明; 品名=康護寧加強消炎噴液劑3毫克/毫升/Comfflam Forte Anti-inflammatory Throat spray 3mg/ml. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0112",
+      "license_number": "衛部藥輸字第026339號",
+      "chinese_name": "必達定殺菌口腔噴液",
+      "english_name": "Betadine Throat Spray",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "口腔消毒殺菌",
+      "indication_category": "口腔／咽喉局部感染",
+      "active_ingredients": [
+        "povidone lodine"
+      ],
+      "active_ingredient_raw": "Povidone lodine",
+      "strength": "",
+      "strength_unit": "%(W/V)",
+      "therapeutic_classes": [
+        "antiseptic_or_anti_infective"
+      ],
+      "license_year": "2014",
+      "license_status": "active",
+      "license_expiry_date": "2029/07/18",
+      "applicant": "裕利股份有限公司",
+      "manufacturer": "MUNDIPHARMA PHARMACEUTICALS LTD.",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=詳如仿單; 品名=必達定殺菌口腔噴液/Betadine Throat Spray. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0113",
+      "license_number": "衛部藥輸字第027184號",
+      "chinese_name": "心安鼻舒鼻噴劑",
+      "english_name": "Taiyo Rhinitis Spray Alpha",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "急性鼻炎、過敏性鼻炎、鼻塞、流鼻水、噴嚏、鼻充血、肥厚性鼻炎、副鼻腔炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "chlorpheniramine maleate",
+        "naphazoline hydrochloride",
+        "benzalkonium chloride"
+      ],
+      "active_ingredient_raw": "CHLORPHENIRAMINE MALEATE;;NAPHAZOLINE HYDROCHLORIDE;;BENZALKONIUM CHLORIDE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2018",
+      "license_status": "active",
+      "license_expiry_date": "2028/04/25",
+      "applicant": "大法貿易股份有限公司",
+      "manufacturer": "BANKYO PHARMACEUTICAL CO., LTD. PLANT NO. 4",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳如仿單; 品名=心安鼻舒鼻噴劑/Taiyo Rhinitis Spray Alpha. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0114",
+      "license_number": "衛署藥製字第021045號",
+      "chinese_name": "康鼻鼻用噴液劑",
+      "english_name": "COMBAT NASAL SPRAY",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞和流鼻水症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "(0.05%)0.5",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1988",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/25",
+      "applicant": "美西製藥有限公司",
+      "manufacturer": "美西製藥有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "6歲以上：每次於鼻腔內噴1~3下，每次需間隔10-12小時；未滿6歲：請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=6歲以上：每次於鼻腔內噴1~3下，每次需間隔10-12小時；未滿6歲：請洽醫師診治。; 品名=康鼻鼻用噴液劑/COMBAT NASAL SPRAY. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0115",
+      "license_number": "衛署藥製字第029174號",
+      "chinese_name": "\"杏輝\"鼻利噴鼻液０．０５％（氧美佐林）",
+      "english_name": "RHINLY NASAL SPRAY 0.05% \"SINPHAR\"(OXYMETAZOLINE)",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "鼻腔發炎及對於鼻粘膜充血、鼻塞症狀之緩解",
+      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "0.5",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1986",
+      "license_status": "active",
+      "license_expiry_date": "2024/09/24",
+      "applicant": "杏輝藥品工業股份有限公司",
+      "manufacturer": "杏輝藥品工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=\"杏輝\"鼻利噴鼻液０．０５％（氧美佐林）/RHINLY NASAL SPRAY 0.05% \"SINPHAR\"(OXYMETAZOLINE). 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0116",
+      "license_number": "衛署藥輸字第020454號",
+      "chinese_name": "鼻舒鼻用懸液劑100MCG/DOSE",
+      "english_name": "BECLOMET NASAL AQUA 100 MCG/DOSE NASAL SPRAY",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "季節性過敏性鼻炎、常年性過敏性鼻炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "beclomethasone"
+      ],
+      "active_ingredient_raw": "BECLOMETHASONE DIPROPIONATE",
+      "strength": "1.11",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2019",
+      "license_status": "active",
+      "license_expiry_date": "2029/05/18",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "ORION CORPORATION ORION PHARMA, KUOPIO PLANT",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=鼻舒鼻用懸液劑100MCG/DOSE/BECLOMET NASAL AQUA 100 MCG/DOSE NASAL SPRAY. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0117",
+      "license_number": "衛部藥製字第059702號",
+      "chinese_name": "\"黃氏\"樂喉舒口腔噴劑",
+      "english_name": "Happy Mouth Spray \"H.S.\"",
+      "dosage_form": "外用液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "口腔消毒殺菌。",
+      "indication_category": "口腔／咽喉局部感染",
+      "active_ingredients": [
+        "povidone-iodine"
+      ],
+      "active_ingredient_raw": "POVIDONE-IODINE;;POVIDONE-IODINE;;POVIDONE-IODINE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "antiseptic_or_anti_infective"
+      ],
+      "license_year": "2017",
+      "license_status": "active",
+      "license_expiry_date": "2027/06/01",
+      "applicant": "黃氏製藥股份有限公司",
+      "manufacturer": "黃氏製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=外用液劑; 用法用量=請詳如仿單; 品名=\"黃氏\"樂喉舒口腔噴劑/Happy Mouth Spray \"H.S.\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0118",
+      "license_number": "衛部藥製字第059724號",
+      "chinese_name": "\"黃氏\"鼻通樂噴鼻液",
+      "english_name": "Flowfree Nasal Spray \"H.S.\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "xylometazoline"
+      ],
+      "active_ingredient_raw": "XYLOMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2017",
+      "license_status": "active",
+      "license_expiry_date": "2027/07/03",
+      "applicant": "黃氏製藥股份有限公司",
+      "manufacturer": "黃氏製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "12歲以上，每次於鼻腔內噴1下，每次需間隔8-10小時；未滿12歲，請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=12歲以上，每次於鼻腔內噴1下，每次需間隔8-10小時；未滿12歲，請洽醫師診治。; 品名=\"黃氏\"鼻通樂噴鼻液/Flowfree Nasal Spray \"H.S.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0119",
+      "license_number": "衛部藥製字第059738號",
+      "chinese_name": "普樂康舒敏鼻噴劑",
+      "english_name": "Panacon Anti-Allergy Nasal Spray",
+      "dosage_form": "鼻用噴液懸浮劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解已經醫師診斷之過敏性鼻炎或其他上呼吸道過敏相關症狀：鼻塞、流鼻水、打噴嚏、鼻搔癢、眼睛癢、流眼淚。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "fluticasone"
+      ],
+      "active_ingredient_raw": "FLUTICASONE PROPIONATE MICRONIZED",
+      "strength": "mcg/spray",
+      "strength_unit": "MCG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2017",
+      "license_status": "active",
+      "license_expiry_date": "2027/07/24",
+      "applicant": "健喬信元醫藥生技股份有限公司",
+      "manufacturer": "健喬信元醫藥生技股份有限公司健喬廠",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液懸浮劑; 用法用量=請詳見仿單; 品名=普樂康舒敏鼻噴劑/Panacon Anti-Allergy Nasal Spray. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0120",
+      "license_number": "衛部藥輸字第026450號",
+      "chinese_name": "歐治鼻薄荷噴鼻液0.1% (西羅美塔柔林)",
+      "english_name": "Otrivin Menthol 0.1%, nasal drops in Metered-Dose-Spray",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "xylometazoline"
+      ],
+      "active_ingredient_raw": "XYLOMETAZOLINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2014",
+      "license_status": "active",
+      "license_expiry_date": "2029/11/13",
+      "applicant": "英商赫力昂股份有限公司台灣分公司",
+      "manufacturer": "HALEON CH SARL",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請參閱仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=請參閱仿單; 品名=歐治鼻薄荷噴鼻液0.1% (西羅美塔柔林)/Otrivin Menthol 0.1%, nasal drops in Metered-Dose-Spray. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0121",
+      "license_number": "衛署藥製字第044368號",
+      "chinese_name": "〝華盛頓〞樂寧噴鼻液",
+      "english_name": "NASLINE NASAL SOLUTION \"W.P.\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "過敏性鼻炎、急性鼻炎、鼻竇炎、鼻咽炎、血管舒縮性鼻炎、感冒引起之鼻部症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "0.5",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "2001",
+      "license_status": "active",
+      "license_expiry_date": "2031/03/26",
+      "applicant": "華盛頓製藥廠股份有限公司",
+      "manufacturer": "華盛頓製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=〝華盛頓〞樂寧噴鼻液/NASLINE NASAL SOLUTION \"W.P.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0122",
+      "license_number": "衛署藥製字第048213號",
+      "chinese_name": "\"應元\"剋菌利口腔噴液劑",
+      "english_name": "Orapovidone Throat Spray \"Y.Y.\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "口腔消毒殺菌。",
+      "indication_category": "口腔／咽喉局部感染",
+      "active_ingredients": [
+        "povidone-iodine"
+      ],
+      "active_ingredient_raw": "POVIDONE-IODINE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "antiseptic_or_anti_infective"
+      ],
+      "license_year": "2006",
+      "license_status": "active",
+      "license_expiry_date": "2031/09/06",
+      "applicant": "應元化學製藥股份有限公司",
+      "manufacturer": "應元化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "六歲以上 局部(口腔與喉嚨)使用\r\n- 直接噴液2~3 下於疼痛及發炎的部位，每3-4 小時重複一次，每天可使用數次，或依照醫師或牙醫指示。\r\n未滿六歲 請勿使用\r\n- 若您忘記使用藥物，請儘快使用，再依照原先使用時間使用。但若已經接近下次使用的時間，則跳過不用，下次恢復正常時間使用。\r\n- 治療時間應由您的醫師依據您的情況決定。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=六歲以上 局部(口腔與喉嚨)使用\r\n- 直接噴液2~3 下於疼痛及發炎的部位，每3-4 小時重複一次，每天可使用數次，或依照醫師或牙醫指示。\r\n未滿六歲 請勿使用\r\n- 若您忘記使用藥物，請儘快使用，再依照原先使用時間使用。但若已經接近下次使用的時間，則跳過不用，下次恢復正常時間使用。\r\n- 治療時間應由您的醫師依據您的情況決定。; 品名=\"應元\"剋菌利口腔噴液劑/Orapovidone Throat Spray \"Y.Y.\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0123",
+      "license_number": "衛署藥製字第048277號",
+      "chinese_name": "\"汎生\" 比特斯鼻腔定量噴液劑 (64微公克/劑量)",
+      "english_name": "Budes Nasal Aqua (64ug/dose) \"Panbiotic\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "季節性及經年性過敏性鼻炎、血管性鼻炎及治療鼻息肉的相關症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "budesonide"
+      ],
+      "active_ingredient_raw": "BUDESONIDE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2006",
+      "license_status": "active",
+      "license_expiry_date": "2026/09/29",
+      "applicant": "臺灣汎生製藥廠股份有限公司",
+      "manufacturer": "臺灣汎生製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "如仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=如仿單; 品名=\"汎生\" 比特斯鼻腔定量噴液劑 (64微公克/劑量)/Budes Nasal Aqua (64ug/dose) \"Panbiotic\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0124",
+      "license_number": "衛署藥製字第051028號",
+      "chinese_name": "舒治敏鼻用噴液劑",
+      "english_name": "SUALLERGIC Nasal Spray Solution",
+      "dosage_form": "點鼻液劑",
+      "dosage_form_normalized": "nasal_local_other",
+      "application_site": "nasal",
+      "indication": "急性鼻炎、過敏性鼻炎、鼻竇炎、鼻咽炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "cromolyn"
+      ],
+      "active_ingredient_raw": "CROMOLYN SODIUM (EQ TO SODIUM CROMOGLICATE)(EQ TO SODIUM CROMOGLYCATE)",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "mast_cell_stabilizer"
+      ],
+      "license_year": "2009",
+      "license_status": "active",
+      "license_expiry_date": "2024/09/18",
+      "applicant": "廣欣藥品股份有限公司",
+      "manufacturer": "歐帕生技醫藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=點鼻液劑; 用法用量=詳見仿單; 品名=舒治敏鼻用噴液劑/SUALLERGIC Nasal Spray Solution. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0125",
+      "license_number": "衛署藥製字第051392號",
+      "chinese_name": "“衛達”鼻得順 鼻腔定量噴液劑 100 微克/劑量",
+      "english_name": "Budeson Aqua Nasal Spray 100 mcg/dose“Weidar”",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "季節性及經年性過敏鼻炎、血管性鼻炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "budesonide"
+      ],
+      "active_ingredient_raw": "BUDESONIDE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2009",
+      "license_status": "active",
+      "license_expiry_date": "2029/10/02",
+      "applicant": "衛達化學製藥股份有限公司",
+      "manufacturer": "衛達化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=詳見仿單; 品名=“衛達”鼻得順 鼻腔定量噴液劑 100 微克/劑量/Budeson Aqua Nasal Spray 100 mcg/dose“Weidar”. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0126",
+      "license_number": "衛署藥製字第052299號",
+      "chinese_name": "克伏寧消炎噴液劑1.5毫克/毫升",
+      "english_name": "CUFFLAM ANTI-INFLAMMATORY SPRAY 1.5MG/ML",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "oral_mucosal",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine hcl"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL;;BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2009",
+      "license_status": "active",
+      "license_expiry_date": "2029/11/30",
+      "applicant": "廣欣藥品股份有限公司",
+      "manufacturer": "人生製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=詳如仿單; 品名=克伏寧消炎噴液劑1.5毫克/毫升/CUFFLAM ANTI-INFLAMMATORY SPRAY 1.5MG/ML. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0127",
+      "license_number": "衛署藥製字第021719號",
+      "chinese_name": "\"尼斯可\"噴鼻液",
+      "english_name": "NASAL SPRAY \"NYSCO\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解因鼻炎、過敏性鼻炎、過敏或感冒引起之鼻塞、流鼻水、打噴嚏症狀",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "naphazoline nitrate",
+        "chlorpheniramine maleate"
+      ],
+      "active_ingredient_raw": "NAPHAZOLINE NITRATE;;CHLORPHENIRAMINE MALEATE;;CHLORPHENIRAMINE MALEATE;;NAPHAZOLINE NITRATE",
+      "strength": "0.5; 1; 0.5; 1",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1980",
+      "license_status": "active",
+      "license_expiry_date": "2028/05/25",
+      "applicant": "尼斯可生技股份有限公司",
+      "manufacturer": "衛肯生技製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "12歲以上，⼀⽇3～4次，每次噴1～3下(0.13ml/下)，間隔需超過4⼩時。\r\n未滿12歲，請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=12歲以上，⼀⽇3～4次，每次噴1～3下(0.13ml/下)，間隔需超過4⼩時。\r\n未滿12歲，請洽醫師診治。; 品名=\"尼斯可\"噴鼻液/NASAL SPRAY \"NYSCO\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0128",
+      "license_number": "衛署藥製字第040546號",
+      "chinese_name": "〝派頓〞速通鼻噴鼻劑０．１％（奧每達佐林）",
+      "english_name": "SUTON-P NASAL SPRAY  0.1% (OXYMETAZOLINE) \"PATRON\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "解除因感過染或過敏而引起之鼻部充血及鼻炎．",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "1",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1996",
+      "license_status": "active",
+      "license_expiry_date": "2031/11/07",
+      "applicant": "臺灣派頓化學製藥股份有限公司",
+      "manufacturer": "臺灣派頓化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=〝派頓〞速通鼻噴鼻劑０．１％（奧每達佐林）/SUTON-P NASAL SPRAY  0.1% (OXYMETAZOLINE) \"PATRON\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0129",
+      "license_number": "衛署藥輸字第023741號",
+      "chinese_name": "英明格鼻用噴液劑20毫克",
+      "english_name": "IMIGRAN NASSAL SPRAY 20MG",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "有先兆或無先兆偏頭痛發作之急性緩解，本藥僅適用於有明確診斷之偏頭痛。",
+      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "active_ingredients": [
+        "sumatriptan"
+      ],
+      "active_ingredient_raw": "SUMATRIPTAN",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "other_nasal"
+      ],
+      "license_year": "2003",
+      "license_status": "active",
+      "license_expiry_date": "2028/06/11",
+      "applicant": "荷商葛蘭素史克藥廠股份有限公司台灣分公司",
+      "manufacturer": "裕利股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=英明格鼻用噴液劑20毫克/IMIGRAN NASSAL SPRAY 20MG. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0130",
+      "license_number": "衛部藥製字第062105號",
+      "chinese_name": "欣輔寧137/50定量鼻用噴霧劑",
+      "english_name": "Synfanas Nasal Spray",
+      "dosage_form": "鼻用懸液劑",
+      "dosage_form_normalized": "nasal_local_other",
+      "application_site": "nasal",
+      "indication": "本品適用於治療6歲以上兒童及成人之中度至重度過敏性鼻炎的相關症狀。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "azelastine hydrochloride",
+        "fluticasone propionate micronized"
+      ],
+      "active_ingredient_raw": "AZELASTINE HYDROCHLORIDE;;FLUTICASONE PROPIONATE MICRONIZED",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "antihistamine",
+        "combination",
+        "corticosteroid"
+      ],
+      "license_year": "2026",
+      "license_status": "active",
+      "license_expiry_date": "2031/01/14",
+      "applicant": "益得生物科技股份有限公司",
+      "manufacturer": "益得生物科技股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳如仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用懸液劑; 用法用量=詳如仿單; 品名=欣輔寧137/50定量鼻用噴霧劑/Synfanas Nasal Spray. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0131",
+      "license_number": "衛署藥輸字第021477號",
+      "chinese_name": "歐治鼻舒敏抗過敏鼻噴劑",
+      "english_name": "Otrivin Anti-Allergy Nasal Spray",
+      "dosage_form": "鼻用噴液懸浮劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解已經醫師診斷之過敏性鼻炎或其他上呼吸道過敏相關症狀：鼻塞、流鼻水、打噴嚏、鼻搔癢、眼睛癢、流眼淚。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "fluticasone"
+      ],
+      "active_ingredient_raw": "FLUTICASONE PROPIONATE",
+      "strength": "(MICRONISED)",
+      "strength_unit": "MCG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2021",
+      "license_status": "active",
+      "license_expiry_date": "2026/12/23",
+      "applicant": "英商赫力昂股份有限公司台灣分公司",
+      "manufacturer": "新竹物流股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "12歲以上：第1週：每天一次，每一鼻孔噴2下；第2週到第6個月：視症狀所需，每天一次，每一鼻孔噴1-2下飯後服用；每天勿超過每個鼻孔2下。\r\n4-11歲：每天一次，每一鼻孔噴1下；每天勿超過每個鼻孔1下。",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液懸浮劑; 用法用量=12歲以上：第1週：每天一次，每一鼻孔噴2下；第2週到第6個月：視症狀所需，每天一次，每一鼻孔噴1-2下飯後服用；每天勿超過每個鼻孔2下。\r\n4-11歲：每天一次，每一鼻孔噴1下；每天勿超過每個鼻孔1下。; 品名=歐治鼻舒敏抗過敏鼻噴劑/Otrivin Anti-Allergy Nasal Spray. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0132",
+      "license_number": "衛署藥輸字第024877號",
+      "chinese_name": "艾敏釋鼻用噴液懸浮劑",
+      "english_name": "Avamys Nasal Spray",
+      "dosage_form": "鼻用懸液劑",
+      "dosage_form_normalized": "nasal_local_other",
+      "application_site": "nasal",
+      "indication": "治療2歲以上的兒童、青少年與成人的過敏性鼻炎。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "fluticasone"
+      ],
+      "active_ingredient_raw": "FLUTICASONE FUROATE",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2008",
+      "license_status": "active",
+      "license_expiry_date": "2028/09/03",
+      "applicant": "荷商葛蘭素史克藥廠股份有限公司台灣分公司",
+      "manufacturer": "裕利股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "詳見仿單。",
+      "inclusion_evidence": "TFDA 劑型=鼻用懸液劑; 用法用量=詳見仿單。; 品名=艾敏釋鼻用噴液懸浮劑/Avamys Nasal Spray. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0133",
+      "license_number": "衛部藥輸字第028510號",
+      "chinese_name": "謀敏態鼻用噴液劑",
+      "english_name": "MOMATE NASAL SPRAY (Mometasone Furoate Monohydrate Nasal Spray 50mcg)",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "暫時緩解18歲以上成年人經醫師診斷之過敏性鼻炎或其他上呼吸道過敏相關症狀：鼻塞、流鼻水、打噴嚏、鼻搔癢、眼睛癢、流眼淚。",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "mometasone"
+      ],
+      "active_ingredient_raw": "MOMETASONE FUROATE MONOHYDRATE",
+      "strength": "(eq. to Mometasone Furoate Anhydrous.....0.05mg)",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "corticosteroid"
+      ],
+      "license_year": "2023",
+      "license_status": "active",
+      "license_expiry_date": "2028/07/13",
+      "applicant": "吉富貿易有限公司",
+      "manufacturer": "GLENMARK PHARMACEUTICALS LIMITED",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "請詳見仿單",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=請詳見仿單; 品名=謀敏態鼻用噴液劑/MOMATE NASAL SPRAY (Mometasone Furoate Monohydrate Nasal Spray 50mcg). 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0134",
+      "license_number": "衛署藥製字第045389號",
+      "chinese_name": "\"中美\" 伏您炎口腔消炎噴液劑 1.5 毫克／毫升 (本基達明)",
+      "english_name": "FREE-END ANTI-INFLAMMATORY SPRAY 1.5MG/ML \"C.M.\" (BENZYDAMINE)",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "oral_mucosal",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine hcl"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL;;BENZYDAMINE HCL;;BENZYDAMINE HCL;;BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2003",
+      "license_status": "active",
+      "license_expiry_date": "2028/03/04",
+      "applicant": "興中美生技有限公司",
+      "manufacturer": "中美兄弟製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人及12歲以上兒童：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。\r\n6歲至12歲兒童：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。\r\n6歲以下兒童：請洽醫師診治。\r\n肝腎疾病患者：請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=成人及12歲以上兒童：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。\r\n6歲至12歲兒童：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。\r\n6歲以下兒童：請洽醫師診治。\r\n肝腎疾病患者：請洽醫師診治。; 品名=\"中美\" 伏您炎口腔消炎噴液劑 1.5 毫克／毫升 (本基達明)/FREE-END ANTI-INFLAMMATORY SPRAY 1.5MG/ML \"C.M.\" (BENZYDAMINE). 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0135",
+      "license_number": "衛署藥製字第045922號",
+      "chinese_name": "康護寧消炎噴液劑1.5公絲／公撮",
+      "english_name": "COMFFLAM ANTI-INFLAMMATORY SPRAY 1.5MG/ML",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "oral_mucosal",
+      "indication": "舒解口腔及咽喉疼痛，包括下列疾病或症狀引起的疼痛:扁桃腺炎、喉嚨痛、放射治療引起的黏膜炎、鵝口瘡潰瘳、口腔與牙周手術後疼痛。",
+      "indication_category": "口腔／咽喉黴菌感染",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2003",
+      "license_status": "active",
+      "license_expiry_date": "2028/11/10",
+      "applicant": "倍斯特醫藥生物科技股份有限公司",
+      "manufacturer": "旭能醫藥生技股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人或年齡大於12歲的小孩﹕直接噴液4-8次(1-2公絲) 於疼痛紅腫部位後緩慢吞服。如有必要每1.5-3小時可重複使用。\r\n年齡6-12的小孩﹕直接噴液4次(1公絲) 於疼痛紅腫部位後緩慢吞服。如有必要每1.5-3小時可重複使用。\r\n6歲以下孩童﹕不建議使用。\r\n除非在醫師指示之下, 連續治療不應超過7天。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=成人或年齡大於12歲的小孩﹕直接噴液4-8次(1-2公絲) 於疼痛紅腫部位後緩慢吞服。如有必要每1.5-3小時可重複使用。\r\n年齡6-12的小孩﹕直接噴液4次(1公絲) 於疼痛紅腫部位後緩慢吞服。如有必要每1.5-3小時可重複使用。\r\n6歲以下孩童﹕不建議使用。\r\n除非在醫師指示之下, 連續治療不應超過7天。; 品名=康護寧消炎噴液劑1.5公絲／公撮/COMFFLAM ANTI-INFLAMMATORY SPRAY 1.5MG/ML. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0136",
+      "license_number": "衛署藥製字第038772號",
+      "chinese_name": "\"中美\"鼻那通噴鼻液０．１％（奧每達佐林）",
+      "english_name": "BERTON NASAL SPRAY 0.1% (OXYMETAZOLINE) \"C.M.\"",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "消除鼻粘膜充血，粘膜炎腫，抑制鼻液分過多，鼻竇炎，乾草熱及呼吸道過敏",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "1",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1995",
+      "license_status": "active",
+      "license_expiry_date": "2029/10/11",
+      "applicant": "興中美生技有限公司",
+      "manufacturer": "中美兄弟製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=\"中美\"鼻那通噴鼻液０．１％（奧每達佐林）/BERTON NASAL SPRAY 0.1% (OXYMETAZOLINE) \"C.M.\". 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0137",
+      "license_number": "衛署藥製字第047675號",
+      "chinese_name": "保喉樂 消炎噴液1.5毫克/毫升",
+      "english_name": "Porthroter Anti-Inflammatory Spray 1.5mg/ml",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2005",
+      "license_status": "active",
+      "license_expiry_date": "2030/12/19",
+      "applicant": "凱信藥品有限公司",
+      "manufacturer": "羅得化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人及12歲以上兒童：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲至12歲兒童：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲以下兒童：請洽醫師診治。 肝腎疾病患者：請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=成人及12歲以上兒童：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲至12歲兒童：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲以下兒童：請洽醫師診治。 肝腎疾病患者：請洽醫師診治。; 品名=保喉樂 消炎噴液1.5毫克/毫升/Porthroter Anti-Inflammatory Spray 1.5mg/ml. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0138",
+      "license_number": "衛署藥製字第050019號",
+      "chinese_name": "“派頓”爽喉樂消炎噴液 1.5 毫克/毫升",
+      "english_name": "Throlo Anti-Inflammatory Spray 1.5 mg/ml“Patron”",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL",
+      "strength": "",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "2009",
+      "license_status": "active",
+      "license_expiry_date": "2029/03/04",
+      "applicant": "臺灣派頓化學製藥股份有限公司",
+      "manufacturer": "臺灣派頓化學製藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人及12歲以上兒童:噴液劑每次噴4~8下，直接噴於疼痛和發炎部位，若需要時，可每1.5~3小時使用一次。\r\n6歲至12歲兒童:噴液劑每次噴4下，直接噴於疼痛和發炎部位，若需要時，可每1.5~3小時使用一次。\r\n6歲以下兒童:請洽醫師診治。\r\n肝腎疾病患者:請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=成人及12歲以上兒童:噴液劑每次噴4~8下，直接噴於疼痛和發炎部位，若需要時，可每1.5~3小時使用一次。\r\n6歲至12歲兒童:噴液劑每次噴4下，直接噴於疼痛和發炎部位，若需要時，可每1.5~3小時使用一次。\r\n6歲以下兒童:請洽醫師診治。\r\n肝腎疾病患者:請洽醫師診治。; 品名=“派頓”爽喉樂消炎噴液 1.5 毫克/毫升/Throlo Anti-Inflammatory Spray 1.5 mg/ml“Patron”. 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0139",
+      "license_number": "衛署藥製字第023148號",
+      "chinese_name": "溫維噴鼻劑",
+      "english_name": "WIN-WAY NASAL SPRAY",
+      "dosage_form": "鼻用噴液劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "消除鼻粘膜充血、粘膜炎腫、抑制鼻液分泌過多、鼻竇炎、乾草熱及呼吸道過敏",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "oxymetazoline"
+      ],
+      "active_ingredient_raw": "OXYMETAZOLINE HCL",
+      "strength": "1",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "decongestant"
+      ],
+      "license_year": "1992",
+      "license_status": "active",
+      "license_expiry_date": "2029/04/11",
+      "applicant": "溫士頓醫藥股份有限公司",
+      "manufacturer": "溫士頓醫藥股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型=鼻用噴液劑; 用法用量=; 品名=溫維噴鼻劑/WIN-WAY NASAL SPRAY. 鼻腔局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0140",
+      "license_number": "衛署藥製字第043319號",
+      "chinese_name": "\"汎生\"治喉痛噴劑1.5毫克/毫升",
+      "english_name": "ZUHOTAN SPRAY 1.5MG/ML \"PANBIOTIC\"",
+      "dosage_form": "口腔噴液劑",
+      "dosage_form_normalized": "oropharyngeal_spray",
+      "application_site": "throat",
+      "indication": "緩解喉嚨及口腔部位的疼痛，如喉嚨痛、舌頭或牙齦疼痛、口腔潰瘍。",
+      "indication_category": "口腔／咽喉疼痛與發炎",
+      "active_ingredients": [
+        "benzydamine hcl"
+      ],
+      "active_ingredient_raw": "BENZYDAMINE HCL;;BENZYDAMINE HCL",
+      "strength": "1.5; 1.5",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "analgesic_or_anti_inflammatory"
+      ],
+      "license_year": "1999",
+      "license_status": "active",
+      "license_expiry_date": "2029/10/22",
+      "applicant": "臺灣汎生製藥廠股份有限公司",
+      "manufacturer": "臺灣汎生製藥廠股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "成人及12歲以上兒童：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲至12歲兒童：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲以下兒童：請洽醫師診治。",
+      "inclusion_evidence": "TFDA 劑型=口腔噴液劑; 用法用量=成人及12歲以上兒童：噴液劑每次噴4-8下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲至12歲兒童：噴液劑每次噴4下，直接噴於疼痛及發炎部位。需要時，可每1.5-3小時使用一次。 6歲以下兒童：請洽醫師診治。; 品名=\"汎生\"治喉痛噴劑1.5毫克/毫升/ZUHOTAN SPRAY 1.5MG/ML \"PANBIOTIC\". 口腔/咽喉局部使用訊號由劑型/用法或品名交叉支持。"
+    },
+    {
+      "product_id": "spray_0141",
+      "license_number": "衛署藥製字第019585號",
+      "chinese_name": "\"長安\"汎鼻寧噴劑",
+      "english_name": "FUANPILIN SPRAY \"C.A.\"",
+      "dosage_form": "鼻用氣化噴霧劑",
+      "dosage_form_normalized": "nasal_spray",
+      "application_site": "nasal",
+      "indication": "鼻炎、副鼻腔炎、過敏性鼻炎（鼻塞、流鼻水）鼻出血",
+      "indication_category": "過敏性鼻部症狀",
+      "active_ingredients": [
+        "naphazoline hcl",
+        "diphenhydramine hcl",
+        "procaine hcl"
+      ],
+      "active_ingredient_raw": "NAPHAZOLINE HCL;;DIPHENHYDRAMINE HCL;;PROCAINE HCL",
+      "strength": "0.5; 2; 10",
+      "strength_unit": "MG",
+      "therapeutic_classes": [
+        "antihistamine",
+        "combination",
+        "decongestant"
+      ],
+      "license_year": "1979",
+      "license_status": "active",
+      "license_expiry_date": "2029/12/31",
+      "applicant": "長安化學工業股份有限公司",
+      "manufacturer": "長安化學工業股份有限公司",
+      "source_id": "tfda_open_data_info37_43_cached_20260711",
+      "route_raw": "",
+      "inclusion_evidence": "TFDA 劑型「鼻用氣化噴霧劑」且中文品名含「鼻」；適應症為鼻炎/副鼻腔炎/過敏性鼻炎與鼻出血。"
+    }
+  ]
+}

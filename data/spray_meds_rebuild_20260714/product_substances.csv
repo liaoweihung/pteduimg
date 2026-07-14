@@ -1,0 +1,142 @@
+﻿product_id,substance_id,role,strength,strength_unit,source_id,verified_at
+spray_0001,sub_phenylephrine_hcl,active,,%,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0002,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0003,sub_naphazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0004,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0005,sub_mometasone,active,(0.5mg).,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0006,sub_oxymetazoline,active,0.5,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0007,sub_beclomethasone,active,50.0,MCG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0008,sub_xylometazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0009,sub_xylometazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0010,sub_diazepam,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0011,sub_diazepam,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0012,sub_diazepam,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0013,sub_naphazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0014,sub_oxymetazoline,active,0.5,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0015,sub_oxymetazoline,active,0.5,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0016,sub_oxymetazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0017,sub_fluticasone_azelastine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0018,sub_oxymetazoline,active,0.5,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0019,sub_neomycin_sulfate_diphenhydramine_hcl_phenylephrine_prednisolone,active,50; 2; 50; 10,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0020,sub_nicotine_nicotine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0021,sub_cetylpyridinium,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0022,sub_naphazoline,active,0.5; 2.0; 10.0,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0023,sub_oxymetazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0024,sub_oxymetazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0025,sub_povidone_iodine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0026,sub_povidone_lodine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0027,sub_oxymetazoline,active,0.5,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0028,sub_naphazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0029,sub_cromolyn,active,20,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0030,sub_desmopressin_acetate,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0031,sub_naphazoline,active,0.5; 4.0,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0032,sub_oxymetazoline,active,0.5,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0033,sub_beclomethasone,active,0.42,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0034,sub_beclomethasone,active,1,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0035,sub_xylometazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0036,sub_budesonide,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0037,sub_budesonide,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0038,sub_budesonide,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0039,sub_xylometazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0040,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0041,sub_lidocaine,active,,GM,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0042,sub_triamcinolone,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0043,sub_mometasone,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0044,sub_varenicline_tartrate,active,(Eg. to Varenicline 0.6 mg),MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0045,sub_oxymetazoline,active,0.5,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0046,sub_naphazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0047,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0048,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0049,sub_budesonide,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0050,sub_budesonide,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0051,sub_butorphanol_tartrate,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0052,sub_xylometazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0053,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0054,sub_xylometazoline_ipratropium,active,(eq. to Ipratropium Bromide.....0.6mg),MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0055,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0056,sub_naphazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0057,sub_esketamine_hcl,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0058,sub_oxymetazoline,active,0.5,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0059,sub_oxymetazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0060,sub_oxymetazoline,active,0.5,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0061,sub_naphazoline,active,0.5; 5,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0062,sub_azelastine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0063,sub_budesonide,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0064,sub_oxymetazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0065,sub_xylometazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0066,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0067,sub_beclomethasone,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0068,sub_xylometazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0069,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0070,sub_xylometazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0071,sub_naphazoline,active,0.5; 1,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0072,sub_beclomethasone,active,0.42,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0073,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0074,sub_xylometazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0075,sub_xylometazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0076,sub_benzydamine,active,,GM,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0077,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0078,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0079,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0080,sub_oxymetazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0081,sub_triamcinolone,active,(Triamcinolone Acetonide Micronized...0.55mg),MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0082,sub_naphazoline_lidocaine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0083,sub_xylometazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0084,sub_naphazoline,active,0.5; 5.0; 0.2,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0085,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0086,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0087,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0088,sub_oxymetazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0089,sub_hexetidine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0090,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0091,sub_povidone_iodine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0092,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0093,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0094,sub_cromolyn,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0095,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0096,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0097,sub_xylometazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0098,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0099,sub_povidone_iodine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0100,sub_budesonide,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0101,sub_povidone_iodine,active,(Available Iodine.....0.4725mg),MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0102,sub_naphazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0103,sub_oxymetazoline,active,1.0,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0104,sub_fluticasone,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0105,sub_naphazoline,active,0.5; 5,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0106,sub_oxymetazoline,active,0.5,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0107,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0108,sub_azelastine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0109,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0110,sub_budesonide,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0111,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0112,sub_povidone_lodine,active,,%(W/V),tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0113,sub_naphazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0114,sub_oxymetazoline,active,(0.05%)0.5,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0115,sub_oxymetazoline,active,0.5,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0116,sub_beclomethasone,active,1.11,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0117,sub_povidone_iodine_povidone_iodine_povidone_iodine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0118,sub_xylometazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0119,sub_fluticasone,active,mcg/spray,MCG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0120,sub_xylometazoline,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0121,sub_oxymetazoline,active,0.5,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0122,sub_povidone_iodine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0123,sub_budesonide,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0124,sub_cromolyn,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0125,sub_budesonide,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0126,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0127,sub_naphazoline,active,0.5; 1; 0.5; 1,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0128,sub_oxymetazoline,active,1,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0129,sub_sumatriptan,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0130,sub_fluticasone_azelastine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0131,sub_fluticasone,active,(MICRONISED),MCG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0132,sub_fluticasone,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0133,sub_mometasone,active,(eq. to Mometasone Furoate Anhydrous.....0.05mg),MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0134,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0135,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0136,sub_oxymetazoline,active,1,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0137,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0138,sub_benzydamine,active,,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0139,sub_oxymetazoline,active,1,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0140,sub_benzydamine,active,1.5; 1.5,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+spray_0141,sub_naphazoline_diphenhydramine_procaine,active,0.5; 2; 10,MG,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00

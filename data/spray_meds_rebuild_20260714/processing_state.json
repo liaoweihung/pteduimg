@@ -1,0 +1,1171 @@
+{
+  "project": "taiwan_local_nasal_oropharyngeal_spray",
+  "phase": "manual_review_resolution_complete",
+  "source_cache": {
+    "info37": "C:\\Users\\liaow\\OneDrive\\文件\\GitHub\\pteduimg\\data\\eye_meds_rebuild_20260711\\tfda_info37.zip",
+    "info43": "C:\\Users\\liaow\\OneDrive\\文件\\GitHub\\pteduimg\\data\\eye_meds_rebuild_20260711\\tfda_info43.zip"
+  },
+  "candidate_total": 202,
+  "included_total": 141,
+  "excluded_total": 56,
+  "manual_review_total": 5,
+  "batch_size_max": 50,
+  "completed_records": [
+    {
+      "license_number": "內衛藥製字第005906號",
+      "status": "included",
+      "product_id": "spray_0001",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第060125號",
+      "status": "included",
+      "product_id": "spray_0002",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第049702號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第049759號",
+      "status": "included",
+      "product_id": "spray_0003",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第049765號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第049839號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第049852號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第055246號",
+      "status": "unresolved",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第058647號",
+      "status": "included",
+      "product_id": "spray_0004",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第058777號",
+      "status": "included",
+      "product_id": "spray_0005",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第019585號",
+      "status": "include_nasal",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第037385號",
+      "status": "included",
+      "product_id": "spray_0006",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第044299號",
+      "status": "included",
+      "product_id": "spray_0007",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第024654號",
+      "status": "included",
+      "product_id": "spray_0008",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第062098號",
+      "status": "included",
+      "product_id": "spray_0009",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第028984號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第029015號",
+      "status": "included",
+      "product_id": "spray_0010",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第029016號",
+      "status": "included",
+      "product_id": "spray_0011",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第029017號",
+      "status": "included",
+      "product_id": "spray_0012",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第016222號",
+      "status": "included",
+      "product_id": "spray_0013",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第016353號",
+      "status": "included",
+      "product_id": "spray_0014",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第035546號",
+      "status": "included",
+      "product_id": "spray_0015",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第035693號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第049668號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第022329號",
+      "status": "unresolved",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第060502號",
+      "status": "included",
+      "product_id": "spray_0016",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第060851號",
+      "status": "included",
+      "product_id": "spray_0017",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第026657號",
+      "status": "exclude_pulmonary_inhalation",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第017733號",
+      "status": "included",
+      "product_id": "spray_0018",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第057328號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第057333號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "內衛藥製字第011931號",
+      "status": "included",
+      "product_id": "spray_0019",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第027524號",
+      "status": "exclude_pulmonary_inhalation",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第027835號",
+      "status": "included",
+      "product_id": "spray_0020",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第028906號",
+      "status": "included",
+      "product_id": "spray_0021",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第023380號",
+      "status": "included",
+      "product_id": "spray_0022",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第038648號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第060919號",
+      "status": "included",
+      "product_id": "spray_0023",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第060930號",
+      "status": "included",
+      "product_id": "spray_0024",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第061922號",
+      "status": "included",
+      "product_id": "spray_0025",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第061966號",
+      "status": "included",
+      "product_id": "spray_0026",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第043440號",
+      "status": "included",
+      "product_id": "spray_0027",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第043489號",
+      "status": "included",
+      "product_id": "spray_0028",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第021824號",
+      "status": "included",
+      "product_id": "spray_0029",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第021874號",
+      "status": "included",
+      "product_id": "spray_0030",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第015762號",
+      "status": "included",
+      "product_id": "spray_0031",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第033076號",
+      "status": "included",
+      "product_id": "spray_0032",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第039432號",
+      "status": "included",
+      "product_id": "spray_0033",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第043574號",
+      "status": "included",
+      "product_id": "spray_0034",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第043631號",
+      "status": "included",
+      "product_id": "spray_0035",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第045447號",
+      "status": "included",
+      "product_id": "spray_0036",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第045485號",
+      "status": "included",
+      "product_id": "spray_0037",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第045719號",
+      "status": "included",
+      "product_id": "spray_0038",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第047345號",
+      "status": "included",
+      "product_id": "spray_0039",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第047402號",
+      "status": "included",
+      "product_id": "spray_0040",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第022808號",
+      "status": "included",
+      "product_id": "spray_0041",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第022820號",
+      "status": "included",
+      "product_id": "spray_0042",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第022924號",
+      "status": "included",
+      "product_id": "spray_0043",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第027672號",
+      "status": "exclude_pulmonary_inhalation",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第027945號",
+      "status": "exclude_pulmonary_inhalation",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第028490號",
+      "status": "exclude_pulmonary_inhalation",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第028833號",
+      "status": "included",
+      "product_id": "spray_0044",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第038085號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第038182號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第038215號",
+      "status": "included",
+      "product_id": "spray_0045",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第038302號",
+      "status": "included",
+      "product_id": "spray_0046",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第046537號",
+      "status": "included",
+      "product_id": "spray_0047",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第046541號",
+      "status": "included",
+      "product_id": "spray_0048",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第046637號",
+      "status": "included",
+      "product_id": "spray_0049",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第046639號",
+      "status": "included",
+      "product_id": "spray_0050",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第046641號",
+      "status": "included",
+      "product_id": "spray_0051",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第046692號",
+      "status": "included",
+      "product_id": "spray_0052",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第046704號",
+      "status": "included",
+      "product_id": "spray_0053",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第046747號",
+      "status": "unresolved",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第059891號",
+      "status": "included",
+      "product_id": "spray_0054",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第060122號",
+      "status": "included",
+      "product_id": "spray_0055",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第061033號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第061093號",
+      "status": "included",
+      "product_id": "spray_0056",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第028183號",
+      "status": "exclude_pulmonary_inhalation",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第028215號",
+      "status": "included",
+      "product_id": "spray_0057",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第014620號",
+      "status": "included",
+      "product_id": "spray_0058",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第038771號",
+      "status": "included",
+      "product_id": "spray_0059",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第038957號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第039046號",
+      "status": "included",
+      "product_id": "spray_0060",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第039047號",
+      "status": "included",
+      "product_id": "spray_0061",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第048635號",
+      "status": "included",
+      "product_id": "spray_0062",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第048636號",
+      "status": "included",
+      "product_id": "spray_0063",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第048725號",
+      "status": "included",
+      "product_id": "spray_0064",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第048785號",
+      "status": "included",
+      "product_id": "spray_0065",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第048787號",
+      "status": "included",
+      "product_id": "spray_0066",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第048804號",
+      "status": "included",
+      "product_id": "spray_0067",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第052437號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第052621號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第055891號",
+      "status": "included",
+      "product_id": "spray_0068",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第061164號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第061412號",
+      "status": "included",
+      "product_id": "spray_0069",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第061432號",
+      "status": "included",
+      "product_id": "spray_0070",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第020501號",
+      "status": "included",
+      "product_id": "spray_0071",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第041040號",
+      "status": "included",
+      "product_id": "spray_0072",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第048998號",
+      "status": "included",
+      "product_id": "spray_0073",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第049019號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第049954號",
+      "status": "included",
+      "product_id": "spray_0074",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第023074號",
+      "status": "exclude_pulmonary_inhalation",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第025186號",
+      "status": "included",
+      "product_id": "spray_0075",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第025194號",
+      "status": "included",
+      "product_id": "spray_0076",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第059030號",
+      "status": "included",
+      "product_id": "spray_0077",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第059039號",
+      "status": "included",
+      "product_id": "spray_0078",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第027989號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第047146號",
+      "status": "included",
+      "product_id": "spray_0079",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第048583號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第057770號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第057780號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第057785號",
+      "status": "included",
+      "product_id": "spray_0080",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第057919號",
+      "status": "included",
+      "product_id": "spray_0081",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第024908號",
+      "status": "included",
+      "product_id": "spray_0082",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第024930號",
+      "status": "included",
+      "product_id": "spray_0083",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第027051號",
+      "status": "exclude_skin_or_other",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第033483號",
+      "status": "included",
+      "product_id": "spray_0084",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第045808號",
+      "status": "included",
+      "product_id": "spray_0085",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第045849號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第045852號",
+      "status": "included",
+      "product_id": "spray_0086",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第046027號",
+      "status": "included",
+      "product_id": "spray_0087",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第046031號",
+      "status": "included",
+      "product_id": "spray_0088",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第047657號",
+      "status": "included",
+      "product_id": "spray_0089",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第047693號",
+      "status": "included",
+      "product_id": "spray_0090",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第047697號",
+      "status": "included",
+      "product_id": "spray_0091",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第047716號",
+      "status": "included",
+      "product_id": "spray_0092",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第047751號",
+      "status": "included",
+      "product_id": "spray_0093",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第047809號",
+      "status": "included",
+      "product_id": "spray_0094",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第018684號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第024244號",
+      "status": "included",
+      "product_id": "spray_0095",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第059220號",
+      "status": "included",
+      "product_id": "spray_0096",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第059249號",
+      "status": "included",
+      "product_id": "spray_0097",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第059307號",
+      "status": "included",
+      "product_id": "spray_0098",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第059628號",
+      "status": "included",
+      "product_id": "spray_0099",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第060313號",
+      "status": "included",
+      "product_id": "spray_0100",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第060354號",
+      "status": "included",
+      "product_id": "spray_0101",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第060446號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第028249號",
+      "status": "exclude_skin_or_other",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第032148號",
+      "status": "included",
+      "product_id": "spray_0102",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第043974號",
+      "status": "included",
+      "product_id": "spray_0103",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第056295號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第061525號",
+      "status": "included",
+      "product_id": "spray_0104",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署成製字第009690號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署成製字第012669號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署成製字第012879號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第001153號",
+      "status": "included",
+      "product_id": "spray_0105",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第041468號",
+      "status": "included",
+      "product_id": "spray_0106",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第046405號",
+      "status": "included",
+      "product_id": "spray_0107",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第047879號",
+      "status": "included",
+      "product_id": "spray_0108",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第047962號",
+      "status": "included",
+      "product_id": "spray_0109",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第049047號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第049075號",
+      "status": "included",
+      "product_id": "spray_0110",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第049211號",
+      "status": "exclude_pulmonary_inhalation",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第023473號",
+      "status": "exclude_pulmonary_inhalation",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第058080號",
+      "status": "included",
+      "product_id": "spray_0111",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第026339號",
+      "status": "included",
+      "product_id": "spray_0112",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第027184號",
+      "status": "included",
+      "product_id": "spray_0113",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第021045號",
+      "status": "included",
+      "product_id": "spray_0114",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第029174號",
+      "status": "included",
+      "product_id": "spray_0115",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第042767號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第020042號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第020454號",
+      "status": "included",
+      "product_id": "spray_0116",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第059702號",
+      "status": "included",
+      "product_id": "spray_0117",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第059724號",
+      "status": "included",
+      "product_id": "spray_0118",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第059738號",
+      "status": "included",
+      "product_id": "spray_0119",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第026417號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第026450號",
+      "status": "included",
+      "product_id": "spray_0120",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第026760號",
+      "status": "exclude_pulmonary_inhalation",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第036032號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第036236號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第037659號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第043125號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第044368號",
+      "status": "included",
+      "product_id": "spray_0121",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第044618號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第048186號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第048213號",
+      "status": "included",
+      "product_id": "spray_0122",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第048250號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第048277號",
+      "status": "included",
+      "product_id": "spray_0123",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第049430號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第051028號",
+      "status": "included",
+      "product_id": "spray_0124",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第051392號",
+      "status": "included",
+      "product_id": "spray_0125",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第052299號",
+      "status": "included",
+      "product_id": "spray_0126",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第021719號",
+      "status": "included",
+      "product_id": "spray_0127",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第040546號",
+      "status": "included",
+      "product_id": "spray_0128",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第023741號",
+      "status": "included",
+      "product_id": "spray_0129",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥製字第062105號",
+      "status": "included",
+      "product_id": "spray_0130",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第021477號",
+      "status": "included",
+      "product_id": "spray_0131",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第022332號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥輸字第024877號",
+      "status": "included",
+      "product_id": "spray_0132",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛部藥輸字第028510號",
+      "status": "included",
+      "product_id": "spray_0133",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第045389號",
+      "status": "included",
+      "product_id": "spray_0134",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第045922號",
+      "status": "included",
+      "product_id": "spray_0135",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第038772號",
+      "status": "included",
+      "product_id": "spray_0136",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第047675號",
+      "status": "included",
+      "product_id": "spray_0137",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第047832號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第048197號",
+      "status": "excluded",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第050019號",
+      "status": "included",
+      "product_id": "spray_0138",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第023148號",
+      "status": "included",
+      "product_id": "spray_0139",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第043319號",
+      "status": "included",
+      "product_id": "spray_0140",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第055411號",
+      "status": "unresolved",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    },
+    {
+      "license_number": "衛署藥製字第055413號",
+      "status": "unresolved",
+      "last_updated": "2026-07-14T00:00:00+08:00"
+    }
+  ],
+  "resume_from": "complete; unresolved records remain excluded from formal products and can be reviewed later.",
+  "updated_at": "2026-07-14T00:00:00+08:00",
+  "manual_review_resolved_total": 18,
+  "ready_for_site": true,
+  "website_core_completeness": 100.0,
+  "optional_detail_completeness": 17.6
+}

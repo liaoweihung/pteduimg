@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202607140300';
+const CACHE_NAME = 'pwa-cache-v202607140500';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -10,6 +10,10 @@ const urlsToCache = [
   "./all-cards.html",
   "./calc.html",
   "./eye_drop_explorer.html",
+  "./spray_medicine_explorer.html",
+  "./css/spray-medicine-explorer.css",
+  "./js/spray-medicine-explorer.js",
+  "./data/spray_meds_rebuild_20260714/final/spray_meds_final.json",
   "./css/eye-drop-explorer.css",
   "./js/eye-drop-explorer.js",
   "./data/eye_meds_rebuild_20260711/final/eye_meds_final.json",
@@ -451,6 +455,10 @@ const coreUrlsToCache = [
   "./public.html",
   "./all-cards.html",
   "./calc.html",
+  "./spray_medicine_explorer.html",
+  "./css/spray-medicine-explorer.css",
+  "./js/spray-medicine-explorer.js",
+  "./data/spray_meds_rebuild_20260714/final/spray_meds_final.json",
   "./web/taiwan_medicinal_patch_database_v2.html",
   "./health-check-calculator.html",
   "./cancer-marker-calculator.html",

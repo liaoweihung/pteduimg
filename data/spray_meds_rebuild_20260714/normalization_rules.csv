@@ -1,0 +1,6 @@
+﻿rule_id,rule_type,rule,source
+candidate,candidate,製劑且劑型、品名或官方用法含噴劑訊號才成為候選,TFDA InfoId=37
+inclusion,inclusion,鼻/口咽收錄需劑型、官方用法或名稱顯示局部目標部位；單靠適應症不收錄,TFDA InfoId=37
+exclude,exclusion,肺部吸入、舌下全身作用、皮膚/傷口/耳/環境噴劑優先排除,TFDA InfoId=37
+roles,ingredient_role,主成分略述=active；處方未能以結構化資料判別角色者不推定為保存劑或賦形劑,TFDA InfoId=37/43
+class,classification,以主成分藥理映射多標籤；無可靠映射歸 other_*，非單一名稱關鍵字判定,TFDA InfoId=37

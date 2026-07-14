@@ -1,0 +1,31 @@
+﻿substance_id,substance_name_raw,substance_name_normalized,role,role_evidence,source_id,verified_at
+sub_phenylephrine_hcl,PHENYLEPHRINE HCL,phenylephrine hcl,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_benzydamine,BENZYDAMINE HCL,benzydamine,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_naphazoline,DIPHENHYDRAMINE HCL;;NAPHAZOLINE HCL;;PROCAINE HCL,naphazoline,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_mometasone,MOMETASONE FUROATE MONOHYDRATE MICRONIZED EQ TO MOMETASONE FUROATE ANHYDROUS,mometasone,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_oxymetazoline,OXYMETAZOLINE HCL,oxymetazoline,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_beclomethasone,BECLOMETHASONE DIPROPIONATE,beclomethasone,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_xylometazoline,XYLOMETAZOLINE HCL,xylometazoline,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_diazepam,DIAZEPAM,diazepam,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_fluticasone_azelastine,FLUTICASONE PROPIONATE MICRONIZED;;AZELASTINE HYDROCHLORIDE,fluticasone; azelastine,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_neomycin_sulfate_diphenhydramine_hcl_phenylephrine_prednisolone,NEOMYCIN SULFATE;;DIPHENHYDRAMINE HCL;;PHENYLEPHRINE;;PREDNISOLONE,neomycin sulfate;;diphenhydramine hcl;;phenylephrine;;prednisolone,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_nicotine_nicotine,NICOTINE;;NICOTINE,nicotine;;nicotine,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_cetylpyridinium,AZULENE SODIUM SULFONATE;;Cetylpyridinium Chloride Hydrate,cetylpyridinium,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_povidone_iodine,POVIDONE-IODINE,povidone-iodine,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_povidone_lodine,Povidone lodine,povidone lodine,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_cromolyn,CROMOLYN SODIUM (EQ TO SODIUM CROMOGLICATE)(EQ TO SODIUM CROMOGLYCATE),cromolyn,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_desmopressin_acetate,DESMOPRESSIN ACETATE,desmopressin acetate,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_budesonide,BUDESONIDE,budesonide,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_lidocaine,LIDOCAINE;;CETRIMIDE,lidocaine,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_triamcinolone,TRIAMCINOLONE ACETONIDE,triamcinolone,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_varenicline_tartrate,VARENICLINE TARTRATE,varenicline tartrate,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_butorphanol_tartrate,BUTORPHANOL TARTRATE,butorphanol tartrate,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_xylometazoline_ipratropium,Ipratropium bromide (monohydrate);;XYLOMETAZOLINE HCL,xylometazoline; ipratropium,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_esketamine_hcl,Esketamine HCl,esketamine hcl,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_azelastine,AZELASTINE HYDROCHLORIDE,azelastine,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_naphazoline_lidocaine,NAPHAZOLINE HCL;;LIDOCAINE;;CHLORPHENIRAMINE MALEATE,naphazoline; lidocaine,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_hexetidine,HEXETIDINE (STERISOL),hexetidine,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_fluticasone,FLUTICASONE FUROATE,fluticasone,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_povidone_iodine_povidone_iodine_povidone_iodine,POVIDONE-IODINE;;POVIDONE-IODINE;;POVIDONE-IODINE,povidone-iodine;;povidone-iodine;;povidone-iodine,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_sumatriptan,SUMATRIPTAN,sumatriptan,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00
+sub_naphazoline_diphenhydramine_procaine,NAPHAZOLINE HCL;;DIPHENHYDRAMINE HCL;;PROCAINE HCL,naphazoline; diphenhydramine; procaine,active,TFDA 許可證主成分略述欄位,tfda_open_data_info37_43_cached_20260711,2026-07-14T00:00:00+08:00

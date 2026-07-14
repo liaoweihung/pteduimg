@@ -1,0 +1,18 @@
+﻿class_id,class_label,scope,classification_rule,source_id
+corticosteroid,corticosteroid,nasal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
+antihistamine,antihistamine,nasal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
+decongestant,decongestant,nasal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
+anticholinergic,anticholinergic,nasal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
+mast_cell_stabilizer,mast_cell_stabilizer,nasal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
+saline_or_moisturizing_drug,saline_or_moisturizing_drug,nasal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
+anti_infective,anti_infective,nasal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
+combination,combination,nasal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
+other_nasal,other_nasal,nasal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
+antiseptic_or_anti_infective,antiseptic_or_anti_infective,oropharyngeal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
+local_anesthetic,local_anesthetic,oropharyngeal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
+analgesic_or_anti_inflammatory,analgesic_or_anti_inflammatory,oropharyngeal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
+antifungal,antifungal,oropharyngeal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
+corticosteroid,corticosteroid,oropharyngeal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
+mucosal_protective,mucosal_protective,oropharyngeal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
+combination,combination,oropharyngeal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
+other_oropharyngeal,other_oropharyngeal,oropharyngeal,Multi-signal rule: TFDA 主成分略述 mapped to a documented pharmacologic class; combination only when two or more base classes apply.,tfda_open_data_info37_43_cached_20260711
