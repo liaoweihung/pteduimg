@@ -2,9 +2,6 @@ name: Scheduled card publish
 
 on:
   workflow_dispatch:
-  schedule:
-    # Every hour at minute 12. GitHub Actions uses UTC and may start a few minutes late.
-    - cron: "12 * * * *"
 
 permissions:
   contents: write
