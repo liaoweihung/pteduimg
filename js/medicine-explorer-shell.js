@@ -4,7 +4,7 @@
   const key=window.MEDICINE_EXPLORER_PAGE, C=window.MedicineExplorerConfigs?.[key]; if(!C) return;
   const $=(s,r=document)=>r.querySelector(s), esc=v=>String(v??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
   const uniq=a=>[...new Set(a.filter(Boolean))], sort=a=>[...a].sort((a,b)=>String(a).localeCompare(String(b),'zh-Hant'));
-  const cleanIndication=v=>String(v??'').replace(/^[\s:：(（]+/u,'').replace(/[\s)）]+$/u,'').trim();
+  const cleanIndication=v=>{const text=String(v??'').replace(/^[\s:：(（]+/u,'').replace(/[\s)）]+$/u,'').trim();return /^上腕骨上\s*[髁踝顆課膘]炎$/u.test(text)?'上腕骨關節炎':text};
   const state={mode:'indication', indication:'', ingredient:'', query:'', page:1, filters:{}}; let products=[];
   const track=e=>window.medicineTrack?.(e);
   const footerNoteObserver=new MutationObserver(()=>{const note=$('.me-data-note'),footer=$('.me-footer');if(note&&footer&&note.parentElement!==footer){footer.prepend(note);footerNoteObserver.disconnect()}});footerNoteObserver.observe(document.documentElement,{childList:true,subtree:true});
