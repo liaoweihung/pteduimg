@@ -562,7 +562,7 @@
       "dosage_form_normalized": "oropharyngeal_spray",
       "application_site": "oral_mucosal",
       "indication": "戒菸輔助劑。",
-      "indication_category": "其他口腔／咽喉局部症狀",
+      "indication_category": "其他",
       "active_ingredients": [
         "nicotine"
       ],
@@ -1156,7 +1156,7 @@
       "dosage_form_normalized": "oropharyngeal_spray",
       "application_site": "oral_mucosal",
       "indication": "牙科用局部麻醉劑。",
-      "indication_category": "其他口腔／咽喉局部症狀",
+      "indication_category": "其他",
       "active_ingredients": [
         "lidocaine",
         "cetrimide"
