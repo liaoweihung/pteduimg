@@ -15,7 +15,7 @@ def category(p):
         if '過敏' in p['indication_raw'] or 'allerg' in s:return '過敏性鼻部症狀'
         if '鼻竇' in p['indication_raw']:return '鼻竇／鼻腔發炎症狀'
         return '鼻塞、流鼻水與其他鼻部症狀'
-    if any(x in s for x in ('真菌','鵝口瘡','fungal','nystatin','miconazole')):return '口腔／咽喉黴菌感染'
+    if any(x in s for x in ('真菌','鵝口瘡','fungal','nystatin','miconazole')):return '口腔／咽喉感染'
     if any(x in s for x in ('疼痛','痛','pain','analgesic','anti-inflammatory')):return '口腔／咽喉疼痛與發炎'
     if any(x in s for x in ('感染','antiseptic','infective')):return '口腔／咽喉局部感染'
     return '其他口腔／咽喉局部症狀'
