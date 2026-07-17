@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202607170907';
+const CACHE_NAME = 'pwa-cache-v202607171930';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -14,6 +14,7 @@ const urlsToCache = [
   "./spray_medicine_explorer.html",
   "./suppository_medicine_explorer.html",
   "./oral_liquid_medicine_explorer.html",
+  "./inhaler_medicine_explorer.html",
   "./css/spray-medicine-explorer.css",
   "./js/spray-medicine-explorer.js",
   "./data/spray_meds_rebuild_20260714/final/spray_meds_final.json",
@@ -23,6 +24,9 @@ const urlsToCache = [
   "./css/oral-liquid-medicine-explorer.css",
   "./js/oral-liquid-medicine-explorer.js",
   "./data/oral_liquid_meds_rebuild_20260714/final/oral_liquid_meds_final.json",
+  "./css/inhaler-medicine-explorer.css",
+  "./js/inhaler-medicine-explorer.js",
+  "./data/inhaler_meds_20260716/taiwan_inhalers.json",
   "./css/eye-drop-explorer.css",
   "./js/eye-drop-explorer.js",
   "./data/eye_meds_rebuild_20260711/final/eye_meds_final.json",
@@ -471,6 +475,7 @@ const coreUrlsToCache = [
   "./spray_medicine_explorer.html",
   "./suppository_medicine_explorer.html",
   "./oral_liquid_medicine_explorer.html",
+  "./inhaler_medicine_explorer.html",
   "./css/spray-medicine-explorer.css",
   "./js/spray-medicine-explorer.js",
   "./data/spray_meds_rebuild_20260714/final/spray_meds_final.json",
@@ -480,6 +485,9 @@ const coreUrlsToCache = [
   "./css/oral-liquid-medicine-explorer.css",
   "./js/oral-liquid-medicine-explorer.js",
   "./data/oral_liquid_meds_rebuild_20260714/final/oral_liquid_meds_final.json",
+  "./css/inhaler-medicine-explorer.css",
+  "./js/inhaler-medicine-explorer.js",
+  "./data/inhaler_meds_20260716/taiwan_inhalers.json",
   "./web/taiwan_medicinal_patch_database_v2.html",
   "./health-check-calculator.html",
   "./cancer-marker-calculator.html",
