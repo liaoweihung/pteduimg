@@ -11,6 +11,8 @@ for r in read('product_indications.csv'):pis[r['product_id']].append(inds.get(r[
 for r in read('product_classes.csv'):pcs[r['product_id']].append(r['class_id'])
 def category(p):
     s=(p['indication_raw']+' '+p['therapeutic_class']).lower()
+    product_text=(p['chinese_name']+' '+p['english_name']+' '+p['active_ingredient_raw']).lower()
+    if any(x in product_text for x in ('spravato','esketamine','imigran','sumatriptan')):return '其他'
     if p['application_site']=='nasal':
         if '過敏' in p['indication_raw'] or 'allerg' in s:return '過敏性鼻部症狀'
         if '鼻竇' in p['indication_raw']:return '鼻竇／鼻腔發炎症狀'

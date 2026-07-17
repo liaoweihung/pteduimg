@@ -1611,7 +1611,7 @@
       "dosage_form_normalized": "nasal_spray",
       "application_site": "nasal",
       "indication": "１、治療成人的難治型憂鬱症(treatment-resistant depression，TRD)。\n２、與口服抗憂鬱劑併用，治療患有重鬱症(major depressive disorder，MDD)且出現急性自殺想法或行為之成人的憂鬱症狀。",
-      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "indication_category": "其他",
       "active_ingredients": [
         "esketamine hcl"
       ],
@@ -3638,7 +3638,7 @@
       "dosage_form_normalized": "nasal_spray",
       "application_site": "nasal",
       "indication": "有先兆或無先兆偏頭痛發作之急性緩解，本藥僅適用於有明確診斷之偏頭痛。",
-      "indication_category": "鼻塞、流鼻水與其他鼻部症狀",
+      "indication_category": "其他",
       "active_ingredients": [
         "sumatriptan"
       ],
