@@ -4,7 +4,20 @@
   const key=window.MEDICINE_EXPLORER_PAGE, C=window.MedicineExplorerConfigs?.[key]; if(!C) return;
   const $=(s,r=document)=>r.querySelector(s), esc=v=>String(v??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
   const uniq=a=>[...new Set(a.filter(Boolean))], sort=a=>[...a].sort((a,b)=>String(a).localeCompare(String(b),'zh-Hant'));
-  const cleanIndication=v=>{const text=String(v??'').replace(/^[\s:：(（]+/u,'').replace(/[\s)）]+$/u,'').trim();return /^上腕骨上\s*[髁踝顆課膘]炎$/u.test(text)?'上腕骨關節炎':text};
+  const indicationAliases=new Map([
+    ['主治神精痛','神經痛'],['神精痛','神經痛'],
+    ['僂麻質斯痛','僂麻質斯'],
+    ['疼痛','外傷後之腫脹'],
+    ['疼痛症狀的鎮痛','外傷之腫脹疼痛等上述疾患及症狀之鎮痛消炎'],
+    ['疼痛等上述疾患及症狀之鎮痛','外傷之腫脹疼痛等上述疾患及症狀之鎮痛消炎'],
+    ['疼痛等諸症狀之鎮痛','外傷之腫脹疼痛等上述疾患及症狀之鎮痛消炎'],
+    ['筋肉痛之消炎','肌肉痛之消炎鎮痛'],
+    ['肩膀痛等疾患之消炎','肩膀痛'],
+    ['肩膀酸痛之鎮痛','肩膀酸痛'],
+    ['腫痛之緩解','腫痛'],
+    ['腰痛等症狀','腰痛']
+  ]);
+  const cleanIndication=v=>{const text=String(v??'').replace(/^[\s:：(（]+/u,'').replace(/[\s)）]+$/u,'').trim();if(key==='patch'&&indicationAliases.has(text))return indicationAliases.get(text);return key==='patch'&&/^上腕骨上\s*[髁踝顆課膘]炎$/u.test(text)?'上腕骨關節炎':text};
   const state={mode:'indication', indication:'', ingredient:'', query:'', page:1, filters:{}}; let products=[];
   const track=e=>window.medicineTrack?.(e);
   const footerNoteObserver=new MutationObserver(()=>{const note=$('.me-data-note'),footer=$('.me-footer');if(note&&footer&&note.parentElement!==footer){footer.prepend(note);footerNoteObserver.disconnect()}});footerNoteObserver.observe(document.documentElement,{childList:true,subtree:true});
