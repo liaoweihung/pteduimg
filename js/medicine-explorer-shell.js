@@ -7,6 +7,17 @@
   const indicationAliases=new Map([
     ['主治神精痛','神經痛'],['神精痛','神經痛'],
     ['僂麻質斯痛','僂麻質斯'],
+    ['創傷傷口之消毒保護','創傷面之消毒'],
+    ['口腔粘膜潰瘍之緩解','口腔黏膜潰瘍之緩解'],
+    ['坐骨神精痛','坐骨神經痛'],
+    ['外傷之腫脤疼痛等上述疾患及症狀之鎮痛消炎','外傷之腫脹疼痛等上述疾患及症狀之鎮痛消炎'],
+    ['外傷之腫脹疼痛等諸症狀之鎮痛','外傷之腫脹疼痛等上述疾患及症狀之鎮痛消炎'],
+    ['外傷後之腫脹‧疼痛等諸症狀的鎮痛','外傷之腫脹疼痛等上述疾患及症狀之鎮痛消炎'],
+    ['外傷後之腫脹疼痛','外傷之腫脹疼痛等上述疾患及症狀之鎮痛消炎'],
+    ['外傷後之腫脹？疼痛等諸症狀的鎮痛','外傷之腫脹疼痛等上述疾患及症狀之鎮痛消炎'],
+    ['暫時緩解局部疼痛．','暫時緩解局部疼痛'],
+    ['治療疣','治療疣。'],
+    ['用於緩解皰疹神經痛(post-herpetic Neuralgia)','用於緩解皰疹後神經痛(Post-herpetic Neuralgia)'],
     ['疼痛','外傷後之腫脹'],
     ['疼痛症狀的鎮痛','外傷之腫脹疼痛等上述疾患及症狀之鎮痛消炎'],
     ['疼痛等上述疾患及症狀之鎮痛','外傷之腫脹疼痛等上述疾患及症狀之鎮痛消炎'],
@@ -15,9 +26,36 @@
     ['肩膀痛等疾患之消炎','肩膀痛'],
     ['肩膀酸痛之鎮痛','肩膀酸痛'],
     ['腫痛之緩解','腫痛'],
-    ['腰痛等症狀','腰痛']
+    ['腰痛等症狀','腰痛'],
+    ['腰酸背痛之消炎','腰酸背痛'],
+    ['腱‧腱鞘炎','肌腱腱鞘炎'],
+    ['腱？腱鞘炎','肌腱腱鞘炎'],
+    ['退化性關節痛','關節痛'],
+    ['關節炎之消炎','關節炎'],
+    ['關節炎腫脹等症狀的消炎鎮痛','關節炎'],
+    ['關節痛之消炎','關節炎'],
+    ['關節痛等疾患之消炎','關節炎'],
+    ['關節痛等症之消炎','關節炎'],
+    ['預防及治療冠狀動脈疾病引起之狹心症','預防及治療冠狀動脈疾病引起之狹心症發作'],
+    ['預防及治療冠狀和動脈疾病引起之狹心症發作','預防及治療冠狀動脈疾病引起之狹心症發作'],
+    ['頭痛等症狀','頭痛'],
+    ['風濕痛．','風濕痛'],
+    ['骨折','骨折痛'],
+    ['骨關節炎（關節痛','骨關節炎'],
+    ['（神經痛','神經痛'],
+    ['變形關節症','變形性關節症'],
+    ['打傷消腫','打傷'],
+    ['筋骨疲勞等炎症','筋骨疲勞'],
+    ['肌腱','肌腱腱鞘炎'],
+    ['自然停經或手術後引起之停經症候群','自然或手術引起之停經症候群'],
+    ['關節風濕痛','風濕關節痛'],
+    ['預防停經後的骨質疏鬆症','停經後骨質疏鬆症之防治'],
+    ['預防或治療冠狀動脈疾病引起久狹心症','預防及治療冠狀動脈疾病引起之狹心症發作'],
+    ['預防或治療冠狀動脈疾病引起之狹心症','預防及治療冠狀動脈疾病引起之狹心症發作'],
+    ['風濕關節炎','風濕性關節炎'],
+    ['（關節痛','關節痛']
   ]);
-  const cleanIndication=v=>{const text=String(v??'').replace(/^[\s:：(（]+/u,'').replace(/[\s)）]+$/u,'').trim();if(key==='patch'&&indicationAliases.has(text))return indicationAliases.get(text);return key==='patch'&&/^上腕骨上\s*[髁踝顆課膘]炎$/u.test(text)?'上腕骨關節炎':text};
+  const cleanIndication=v=>{let text=String(v??'').replace(/^[\s:：(（]+/u,'').replace(/[\s）]+$/u,'').trim();if(!text.includes('('))text=text.replace(/\)+$/u,'').trim();if(key==='patch'&&indicationAliases.has(text))return indicationAliases.get(text);return key==='patch'&&/^上腕骨上\s*[髁踝顆課膘]炎$/u.test(text)?'上腕骨關節炎':text};
   const state={mode:'indication', indication:'', ingredient:'', query:'', page:1, filters:{}}; let products=[];
   const track=e=>window.medicineTrack?.(e);
   const footerNoteObserver=new MutationObserver(()=>{const note=$('.me-data-note'),footer=$('.me-footer');if(note&&footer&&note.parentElement!==footer){footer.prepend(note);footerNoteObserver.disconnect()}});footerNoteObserver.observe(document.documentElement,{childList:true,subtree:true});
