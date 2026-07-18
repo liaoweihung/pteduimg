@@ -32,6 +32,7 @@ const urlsToCache = [
   "./js/tcm-formula-explorer.js",
   "./data/tcm_formula_explorer/index.json",
   "./data/tcm_formula_explorer/formulas.json",
+  "./data/tcm_formula_explorer/relationship_analysis.json",
   "./css/eye-drop-explorer.css",
   "./js/eye-drop-explorer.js",
   "./data/eye_meds_rebuild_20260711/final/eye_meds_final.json",

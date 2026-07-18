@@ -279,6 +279,7 @@ def check_tcm_formula_explorer(failures: list[str]) -> None:
         ROOT / "js" / "tcm-formula-explorer.js",
         data_dir / "index.json",
         data_dir / "formulas.json",
+        data_dir / "relationship_analysis.json",
     ]
     check(all(path.exists() for path in required), "TCM formula explorer assets exist", "TCM formula explorer assets are missing", failures)
     if not all(path.exists() for path in required):
@@ -292,7 +293,7 @@ def check_tcm_formula_explorer(failures: list[str]) -> None:
     js = read_text(ROOT / "js" / "tcm-formula-explorer.js")
     sw = read_text(ROOT / "sw.js")
     check("products-${String(chunk).padStart(2, '0')}.json" in js and "state.chunks" in js, "TCM details load on demand", "TCM detail chunks are not lazy loaded", failures)
-    check("index.json" in sw and "formulas.json" in sw and "products-" not in sw, "TCM core cache excludes detail chunks", "TCM detail chunks are pre-cached", failures)
+    check("index.json" in sw and "formulas.json" in sw and "relationship_analysis.json" in sw and "products-" not in sw, "TCM core cache excludes detail chunks", "TCM detail chunks are pre-cached", failures)
     check("非歷史源流或製造商聲明" in js, "TCM AI inference notice is present", "TCM AI inference notice is missing", failures)
 
 
