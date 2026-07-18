@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const base = 'data/tcm_formula_explorer/';
-  const state = { index: [], formulas: {}, analysis: {}, mode: 'product', query: '', legal: '', confidence: '', page: 1, chunks: new Map() };
+  const state = { index: [], formulas: {}, analysis: {}, mode: 'product', query: '', category: '', formula: '', legal: '', confidence: '', page: 1, chunks: new Map() };
   const $ = (s, root = document) => root.querySelector(s);
   const esc = (value) => String(value ?? '').replace(/[&<>'"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', "'":'&#39;', '"':'&quot;' })[c]);
   const unique = values => [...new Set(values.filter(Boolean))].sort((a,b) => String(a).localeCompare(String(b), 'zh-Hant'));
@@ -16,7 +16,7 @@
       <main class="me-shell" style="--me-accent:#4b7f42">
         <header class="me-heading"><h1>🌿 中成藥母方查詢</h1><p>依產品名稱、藥證字號、推測母方或母方藥材，查閱官方產品資訊與組成相似度推測。</p>
         <section class="me-data-note tcm-note"><strong>重要說明</strong><br>母方關係與加減藥材是 AI 依商品名及處方組成相似度所做的推測，非歷史源流或製造商聲明；請以官方處方自行判斷。官方適應症與處方均依原文呈現。</section></header>
-        <section class="me-query-card"><div class="me-mode" id="tcmModes"><button class="active" data-mode="product">母方／產品</button><button data-mode="category">適應症大類</button><button data-mode="ingredient">藥材查詢</button></div><div class="me-primary"><label id="tcmSearchLabel">搜尋商品名、藥證字號、推測母方或母方藥材<input id="tcmSearch" type="search" placeholder="例如：知柏地黃丸、衛署成製字、熟地黃"></label></div>
+        <section class="me-query-card"><div class="me-mode" id="tcmModes"><button class="active" data-mode="product">母方／產品</button><button data-mode="category">適應症大類</button><button data-mode="ingredient">藥材查詢</button></div><div class="me-primary"><label id="tcmSearchLabel">搜尋商品名、藥證字號、推測母方或母方藥材<input id="tcmSearch" type="search" placeholder="例如：知柏地黃丸、衛署成製字、熟地黃"></label><label id="tcmCategoryLabel" hidden>適應症大類<select id="tcmCategory"></select></label><label id="tcmFormulaLabel">推測母方<select id="tcmFormula"></select></label></div>
         <details class="me-more"><summary>篩選條件</summary><div class="me-filter-grid tcm-filter-grid"><label>法規分類<select id="tcmLegal"></select></label><label>AI 推測信心<select id="tcmConfidence"><option value="">全部</option><option value="high">高</option><option value="medium">中</option><option value="low">低</option><option value="none">待確認／無可靠候選</option></select></label></div></details>
         <button class="me-clear" id="tcmClear" type="button">清除條件</button></section><section id="tcmResults" aria-live="polite"></section>
       </main><footer class="me-footer">資料為中成藥產品與傳統成方的組成對照工具，不能取代專業診療或官方核准資料。</footer>`;
@@ -26,13 +26,16 @@
     $('#tcmMenuButton').onclick = e => { e.stopPropagation(); menu.hidden = !menu.hidden; };
     document.addEventListener('click', () => { menu.hidden = true; });
     $('#tcmSearch').oninput = e => { state.query = e.target.value.trim().toLowerCase(); state.page = 1; render(); };
-    $('#tcmModes').querySelectorAll('button').forEach(b=>b.onclick=()=>{state.mode=b.dataset.mode;state.query='';state.page=1;render();});
+    $('#tcmCategory').onchange = e => { state.category = e.target.value; render(); };
+    $('#tcmFormula').onchange = e => { state.formula = e.target.value; state.page = 1; render(); };
+    $('#tcmModes').querySelectorAll('button').forEach(b=>b.onclick=()=>{state.mode=b.dataset.mode;state.query='';state.category='';state.formula='';state.page=1;render();});
     $('#tcmLegal').onchange = e => { state.legal = e.target.value; state.page = 1; render(); };
     $('#tcmConfidence').onchange = e => { state.confidence = e.target.value; state.page = 1; render(); };
     $('#tcmClear').onclick = () => { state.query = state.legal = state.confidence = ''; state.page = 1; render(); };
   }
 
   function matches(item) {
+    if (state.formula && item.formula !== state.formula) return false;
     if (state.legal && item.class !== state.legal) return false;
     if (state.confidence && (state.confidence === 'none' ? !!item.confidence : item.confidence !== state.confidence)) return false;
     if (!state.query) return true;
@@ -44,9 +47,12 @@
     $('#tcmModes').querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.mode===state.mode));
     $('#tcmSearchLabel').childNodes[0].textContent=state.mode==='product'?'搜尋商品名、藥證字號、推測母方或母方藥材':state.mode==='ingredient'?'搜尋或點選藥材':'搜尋適應症大類';
     $('#tcmSearch').placeholder=state.mode==='ingredient'?'例如：熟地黃、甘草':state.mode==='category'?'例如：婦科、消化、感冒':'例如：知柏地黃丸、衛署成製字、熟地黃';
+    $('#tcmCategoryLabel').hidden=state.mode!=='category';
+    $('#tcmFormulaLabel').hidden=state.mode!=='product';
     if(state.mode==='category'){ $('#tcmLegal').closest('details').hidden=true; renderCategories(); return; }
     if(state.mode==='ingredient'){ $('#tcmLegal').closest('details').hidden=true; renderIngredients(); return; }
     $('#tcmLegal').closest('details').hidden=false;
+    const formulaSelect=$('#tcmFormula'); const formulaNames=unique(state.index.map(x=>x.formula)); formulaSelect.innerHTML=`<option value="">全部母方</option>${formulaNames.map(v=>`<option value="${esc(v)}"${v===state.formula?' selected':''}>${esc(v)}</option>`).join('')}`;
     const legal = $('#tcmLegal');
     legal.innerHTML = `<option value="">全部</option>${unique(state.index.map(x => x.class)).map(x => `<option value="${esc(x)}" ${x === state.legal ? 'selected' : ''}>${esc(x)}</option>`).join('')}`;
     $('#tcmSearch').value = state.query;
@@ -59,7 +65,7 @@
   }
 
   function bars(items, label='項') { const max=Math.max(1,...items.map(x=>x.count)); return `<div class="me-bars">${items.map(x=>`<button type="button" data-value="${esc(x.name)}"><span>${esc(x.name)}</span><i><b style="width:${x.count/max*100}%"></b></i><em>${x.count} ${label}</em></button>`).join('')}</div>`; }
-  function renderCategories(){ const q=state.query; const rows=Object.entries(state.analysis.categories||{}).filter(([k])=>!q||k.toLowerCase().includes(q)); $('#tcmResults').innerHTML=`<section class="me-card me-result-title"><h2>適應症大類</h2><p>大類依官方適應症原文以公開關鍵字規則整理，不取代官方適應症。</p><strong>${rows.length} 個大類</strong></section>${rows.map(([name,x])=>`<section class="me-card"><h2>${esc(name)}</h2><p class="me-summary">產品 ${x.productCount} 項・推測母方 ${x.formulaCount} 個</p><h3>常見藥材</h3>${bars(x.ingredients)}<h3>常見藥材組合</h3>${bars(x.combinations)}<h3>官方適應症原文代表例</h3>${x.evidence.map(e=>`<details><summary>${esc(e.name)}（${esc(e.license)}）</summary><p class="tcm-raw">${esc(e.indications)}</p></details>`).join('')}</section>`).join('')||'<section class="me-empty">沒有符合的大類。</section>'}`; }
+  function renderCategories(){ const select=$('#tcmCategory'); const names=Object.keys(state.analysis.categories||{}).sort((a,b)=>a.localeCompare(b,'zh-Hant')); select.innerHTML=`<option value="">全部適應症大類</option>${names.map(v=>`<option value="${esc(v)}"${v===state.category?' selected':''}>${esc(v)}</option>`).join('')}`; const q=state.query; const rows=Object.entries(state.analysis.categories||{}).filter(([k])=>(!state.category||k===state.category)&&(!q||k.toLowerCase().includes(q))); $('#tcmResults').innerHTML=`<section class="me-card me-result-title"><h2>適應症大類</h2><p>大類依官方適應症原文以公開關鍵字規則整理，不取代官方適應症。</p><strong>${rows.length} 個大類</strong></section>${rows.map(([name,x])=>`<section class="me-card"><h2>${esc(name)}</h2><p class="me-summary">產品 ${x.productCount} 項・推測母方 ${x.formulaCount} 個</p><h3>常見藥材</h3>${bars(x.ingredients)}<h3>常見藥材組合</h3>${bars(x.combinations)}<h3>官方適應症原文代表例</h3>${x.evidence.map(e=>`<details><summary>${esc(e.name)}（${esc(e.license)}）</summary><p class="tcm-raw">${esc(e.indications)}</p></details>`).join('')}</section>`).join('')||'<section class="me-empty">沒有符合的大類。</section>'}`; }
   function renderIngredients(){ const q=state.query; const rows=Object.entries(state.analysis.ingredients||{}).filter(([k])=>!q||k.toLowerCase().includes(q)).sort((a,b)=>b[1].productCount-a[1].productCount).slice(0,q?50:30); $('#tcmResults').innerHTML=`<section class="me-card me-result-title"><h2>藥材關聯</h2><p>以母方組成或產品實際處方中可辨識藥材計算；已排除常見賦形劑。名稱正規化僅用於統計，官方原文仍保留在產品詳情。</p><strong>${rows.length} 項藥材</strong></section>${rows.map(([name,x])=>`<section class="me-card"><h2>${esc(name)}</h2><p class="me-summary">相關產品 ${x.productCount} 項・母方 ${x.formulaCount} 個</p><h3>最常出現的適應症大類</h3>${bars(x.categories)}<h3>共現藥材</h3>${bars(x.cooccurring)}<h3>官方適應症原文代表例</h3>${x.evidence.map(v=>`<p class="tcm-raw">${esc(v)}</p>`).join('')}<h3>代表中成藥／母方</h3>${x.representatives.map(v=>`<p>${esc(v.name)}（${esc(v.license)}）${v.formula?`・${esc(v.formula)}`:''}</p>`).join('')}</section>`).join('')||'<section class="me-empty">沒有符合的藥材。</section>'}`; $('#tcmResults').querySelectorAll('[data-value]').forEach(b=>b.onclick=()=>{state.query=b.dataset.value;render();}); }
 
   function card(item) {
