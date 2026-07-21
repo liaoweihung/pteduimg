@@ -160,6 +160,40 @@
     color: #2c3e50;
 }
 
+.card-search-wrap {
+    max-width: 720px;
+    margin: 16px auto 6px;
+    padding: 0 16px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.card-search-input {
+    width: 100%;
+    min-height: 44px;
+    border: 1px solid #b8cbd1;
+    border-radius: 10px;
+    padding: 10px 14px;
+    color: #263238;
+    font-size: 1rem;
+}
+
+.search-empty {
+    padding: 20px;
+    color: #607d8b;
+    text-align: center;
+}
+
 .reset-main-order-btn:active {
     transform: translateY(1px);
     box-shadow: 0 2px 8px rgba(0,0,0,0.16);
@@ -188,6 +222,11 @@
 <div id="fav-section" style="display:none;">
     <div class="section-title">⭐ 常用圖卡</div>
     <div class="menu-grid" id="fav-grid"></div>
+</div>
+
+<div class="card-search-wrap">
+    <label for="card-search" class="sr-only">搜尋圖卡</label>
+    <input id="card-search" class="card-search-input" type="search" placeholder="搜尋圖卡，例如：出國、胰島素、日本、安眠藥" autocomplete="off">
 </div>
 
 <!-- 分類區塊會由 cards.json 自動產生，不用再手動修改 index.html -->
@@ -266,6 +305,7 @@
     const EDUCATION_DATA_CACHE_KEY = 'pteduimg:cardsData:v1';
     const SEO_DATA_CACHE_KEY = 'pteduimg:seoData:v1';
     const MAIN_ORDER_STORAGE_KEY = `mainCardOrder:${PAGE_TYPE}`;
+    let cardSearchTerm = '';
 
     const featuredCardIds = [
         "heat_exhaustion",
@@ -786,6 +826,21 @@
         return shouldShowStepTitles(item) ? getStepTitle(item, index) : `步驟 ${index + 1}`;
     }
 
+    function matchesCardSearch(item) {
+        if (!cardSearchTerm) return true;
+        const searchableText = [
+            item.title || '',
+            ...(Array.isArray(item.tags) ? item.tags : []),
+            ...(Array.isArray(item.texts) ? item.texts : [])
+        ].join(' ').toLocaleLowerCase();
+        return searchableText.includes(cardSearchTerm);
+    }
+
+    function updateCardSearch(value) {
+        cardSearchTerm = (value || '').trim().toLocaleLowerCase();
+        renderHome();
+    }
+
     function renderHome() {
         const sectionRoot = document.getElementById('category-sections');
         const favGrid = document.getElementById('fav-grid');
@@ -798,6 +853,7 @@
             const item = educationData[key];
             if (item.hidden) return;   // 👈 加這一行（關鍵！）
             if (!isVisibleOnPage(item)) return;
+            if (!matchesCardSearch(item)) return;
             const cat = item.category || 'uncategorized';
             if (!categories[cat]) categories[cat] = [];
             categories[cat].push({ key, item });
@@ -824,6 +880,10 @@
                             </div>`;
                     });
             });
+
+        if (!Object.keys(categories).length && cardSearchTerm) {
+            sectionRoot.innerHTML = '<div class="search-empty">找不到符合的圖卡，請換個關鍵字試試。</div>';
+        }
 
         let visibleFavCount = 0;
         favoriteImages.forEach(favKey => {
@@ -1135,6 +1195,9 @@ function updateContent() {
     }
     function initPage() {
         setupPageHeader();
+        document.getElementById('card-search').addEventListener('input', function(event) {
+            updateCardSearch(event.target.value);
+        });
         const hasCachedCards = loadCachedEducationData();
         loadCachedSeoData();
         if (hasCachedCards) {

@@ -1,5 +1,27 @@
 # pteduimg
 
+## 中成藥母方查詢
+
+`tcm_formula_explorer.html` 是手機優先的中成藥母方組成相似度查詢頁。首次只下載 `data/tcm_formula_explorer/index.json`（產品索引）與 `formulas.json`（204 個母方）；使用者展開產品後，才下載其對應的 `products-00.json` 至 `products-31.json` 分檔。
+
+匯入／更新交付資料時執行：
+
+```powershell
+python scripts/prepare_tcm_formula_explorer.py
+```
+
+此程序只修復交付檔中索引與母方表的舊 Big5 顯示問題；產品分檔的官方適應症與處方原文會原樣複製。不要把所有產品重組為單一 JSON，也不要把 32 個產品分檔加入 service worker 的預先快取。
+
+關聯分析檔由現有產品分檔與母方表產生：
+
+```powershell
+python scripts/build_tcm_formula_relationships.py
+```
+
+它只產生 `relationship_analysis.json`，供適應症大類與藥材共現查詢使用；官方原文仍只在產品詳細資料中呈現。
+
+重要說明：母方關係與加減藥材為 AI 的組成相似度推測，非歷史源流或製造商聲明；查閱時應以官方處方原文自行判斷。
+
 這是靜態 GitHub Pages 專案，包含藥師與民眾教育工具。
 
 ## 台灣局部眼用藥品資料庫

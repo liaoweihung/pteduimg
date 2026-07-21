@@ -1185,6 +1185,61 @@
       "img/bzd_z_sleep_aids.webp"
     ]
   },
+  "travel_medication": {
+    "title": "出國帶藥",
+    "category": "public_education",
+    "order": 4,
+    "hidden": false,
+    "icon": "🧳",
+    "tags": [
+      "出國",
+      "旅行",
+      "旅遊",
+      "帶藥",
+      "藥品",
+      "處方箋",
+      "診斷證明",
+      "安眠藥",
+      "管制藥",
+      "胰島素",
+      "針頭",
+      "液體藥",
+      "隨身行李",
+      "托運",
+      "日本",
+      "韓國",
+      "新加坡",
+      "澳洲",
+      "美國",
+      "中國",
+      "中藥",
+      "保健食品"
+    ],
+    "texts": [
+      "出國可以帶藥嗎？",
+      "可以帶多少天、多少藥？",
+      "哪些藥需要處方或證明？",
+      "哪些藥要特別注意？",
+      "藥放隨身行李還是托運？",
+      "液體藥、胰島素與針具怎麼帶？",
+      "藥品怎麼包裝與標示？",
+      "日本、韓國、新加坡帶藥重點",
+      "澳洲、美國、中國帶藥重點",
+      "出國帶藥常見 Q&A"
+    ],
+    "steps": [
+      "img/01_can_i_bring_medicine.png",
+      "img/02_how_much_medicine.png",
+      "img/03_prescription_documents.png",
+      "img/04_controlled_medicines.png",
+      "img/05_carry_on_or_checked.png",
+      "img/06_liquid_insulin_needles.png",
+      "img/07_packaging_and_labels.png",
+      "img/08_japan_korea_singapore.png",
+      "img/09_australia_usa_china.png",
+      "img/10_common_questions.png"
+    ]
+  },
   "angular_cheilitis": {
     "title": "口角炎",
     "category": "public_education",

@@ -271,6 +271,32 @@ def check_medicine_data_regression(failures: list[str]) -> None:
         check(len(products) == count and len(classes) == class_count, f"{label} data keeps {count} products / {class_count} classes", f"{label} product or class baseline changed", failures)
 
 
+def check_tcm_formula_explorer(failures: list[str]) -> None:
+    data_dir = ROOT / "data" / "tcm_formula_explorer"
+    required = [
+        ROOT / "tcm_formula_explorer.html",
+        ROOT / "css" / "tcm-formula-explorer.css",
+        ROOT / "js" / "tcm-formula-explorer.js",
+        data_dir / "index.json",
+        data_dir / "formulas.json",
+        data_dir / "relationship_analysis.json",
+    ]
+    check(all(path.exists() for path in required), "TCM formula explorer assets exist", "TCM formula explorer assets are missing", failures)
+    if not all(path.exists() for path in required):
+        return
+    index = load_json(data_dir / "index.json")
+    formulas = load_json(data_dir / "formulas.json")
+    chunks = sorted(data_dir.glob("products-*.json"))
+    check(index.get("productCount") == 21196 and len(index.get("products", [])) == 21196, "TCM index keeps 21,196 products", "TCM index product count is wrong", failures)
+    check(len(formulas.get("formulas", {})) == 204, "TCM formula table keeps 204 formulas", "TCM formula table count is wrong", failures)
+    check(len(chunks) == 32, "TCM explorer keeps 32 detail chunks", "TCM explorer detail chunk count is wrong", failures)
+    js = read_text(ROOT / "js" / "tcm-formula-explorer.js")
+    sw = read_text(ROOT / "sw.js")
+    check("products-${String(chunk).padStart(2, '0')}.json" in js and "state.chunks" in js, "TCM details load on demand", "TCM detail chunks are not lazy loaded", failures)
+    check("index.json" in sw and "formulas.json" in sw and "relationship_analysis.json" in sw and "products-" not in sw, "TCM core cache excludes detail chunks", "TCM detail chunks are pre-cached", failures)
+    check("非歷史源流或製造商聲明" in js, "TCM AI inference notice is present", "TCM AI inference notice is missing", failures)
+
+
 def main() -> int:
     failures: list[str] = []
     cards, _manual = check_json_files(failures)
@@ -282,6 +308,7 @@ def main() -> int:
     check_oral_liquid_explorer(failures)
     check_medicine_shell(failures)
     check_medicine_data_regression(failures)
+    check_tcm_formula_explorer(failures)
 
     if failures:
         print("\nSite check failed:")

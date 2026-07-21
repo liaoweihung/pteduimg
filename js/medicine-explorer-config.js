@@ -7,8 +7,9 @@ window.MedicineExplorerConfigs = {
   suppository: { key:'suppository', name:'肛門／陰道塞劑', icon:'◒', accent:'#9a416c', root:'', dataUrl:'data/suppository_meds_rebuild_20260714/final/suppository_meds_final.json', total:148, filters:[['site','使用部位'],['scope','作用範圍'],['legal','治療分類']] },
   oral: { key:'oral', name:'口服液劑', icon:'🥄', accent:'#bd7b19', root:'', dataUrl:'data/oral_liquid_meds_rebuild_20260714/final/oral_liquid_meds_final.json', total:1034, filters:[['preparation','配製方式'],['dosage','劑型'],['legal','治療分類'],['concentration','濃度狀態']] }
   ,inhaler: { key:'inhaler', name:'台灣吸入劑', icon:'🫁', root:'' }
+  ,tcm: { key:'tcm', name:'中成藥母方查詢', icon:'🌿', root:'' }
 };
 window.MedicineExplorerLinks = [
   ['topical','ingredient-explorer.html'], ['eye','eye_drop_explorer.html'], ['patch','web/taiwan_medicinal_patch_database_v2.html'], ['spray','spray_medicine_explorer.html'], ['suppository','suppository_medicine_explorer.html'], ['oral','oral_liquid_medicine_explorer.html']
-  ,['inhaler','inhaler_medicine_explorer.html']
+  ,['inhaler','inhaler_medicine_explorer.html'], ['tcm','tcm_formula_explorer.html']
 ];
