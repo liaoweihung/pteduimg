@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202607272047';
+const CACHE_NAME = 'pwa-cache-v202607272352';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -13,7 +13,6 @@ const urlsToCache = [
   "./suppository_medicine_explorer.html",
   "./oral_liquid_medicine_explorer.html",
   "./inhaler_medicine_explorer.html",
-  "./tcm_formula_explorer.html",
   "./css/spray-medicine-explorer.css",
   "./js/spray-medicine-explorer.js",
   "./data/spray_meds_rebuild_20260714/final/spray_meds_final.json",
@@ -26,15 +25,6 @@ const urlsToCache = [
   "./css/inhaler-medicine-explorer.css",
   "./js/inhaler-medicine-explorer.js",
   "./data/inhaler_meds_20260716/taiwan_inhalers.json",
-  "./css/tcm-formula-explorer.css",
-  "./js/tcm-formula-explorer.js",
-  "./data/tcm_formula_explorer/index.json",
-  "./data/tcm_formula_explorer/formulas.json",
-  "./data/tcm_formula_explorer/relationship_analysis.json",
-  "./data/tcm_formula_explorer/tcm_indication_relationship_analysis.json",
-  "./data/tcm_formula_explorer/indication_taxonomy_summary.csv",
-  "./data/tcm_formula_explorer/herb_indication_profiles.csv",
-  "./data/tcm_formula_explorer/herb_cooccurrence.csv",
   "./web/taiwan_medicinal_patch_database_v2.html",
   "./health-check-calculator.html",
   "./cancer-marker-calculator.html",
@@ -509,7 +499,6 @@ const coreUrlsToCache = [
   "./suppository_medicine_explorer.html",
   "./oral_liquid_medicine_explorer.html",
   "./inhaler_medicine_explorer.html",
-  "./tcm_formula_explorer.html",
   "./css/spray-medicine-explorer.css",
   "./js/spray-medicine-explorer.js",
   "./data/spray_meds_rebuild_20260714/final/spray_meds_final.json",
@@ -522,15 +511,6 @@ const coreUrlsToCache = [
   "./css/inhaler-medicine-explorer.css",
   "./js/inhaler-medicine-explorer.js",
   "./data/inhaler_meds_20260716/taiwan_inhalers.json",
-  "./css/tcm-formula-explorer.css",
-  "./js/tcm-formula-explorer.js",
-  "./data/tcm_formula_explorer/index.json",
-  "./data/tcm_formula_explorer/formulas.json",
-  "./data/tcm_formula_explorer/relationship_analysis.json",
-  "./data/tcm_formula_explorer/tcm_indication_relationship_analysis.json",
-  "./data/tcm_formula_explorer/indication_taxonomy_summary.csv",
-  "./data/tcm_formula_explorer/herb_indication_profiles.csv",
-  "./data/tcm_formula_explorer/herb_cooccurrence.csv",
   "./web/taiwan_medicinal_patch_database_v2.html",
   "./health-check-calculator.html",
   "./cancer-marker-calculator.html",

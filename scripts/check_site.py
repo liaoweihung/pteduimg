@@ -293,7 +293,19 @@ def check_tcm_formula_explorer(failures: list[str]) -> None:
     js = read_text(ROOT / "js" / "tcm-formula-explorer.js")
     sw = read_text(ROOT / "sw.js")
     check("products-${String(chunk).padStart(2, '0')}.json" in js and "state.chunks" in js, "TCM details load on demand", "TCM detail chunks are not lazy loaded", failures)
-    check("index.json" in sw and "formulas.json" in sw and "relationship_analysis.json" in sw and "products-" not in sw, "TCM core cache excludes detail chunks", "TCM detail chunks are pre-cached", failures)
+    tcm_cache_paths = (
+        "tcm_formula_explorer.html",
+        "tcm-formula-explorer.css",
+        "tcm-formula-explorer.js",
+        "data/tcm_formula_explorer/",
+    )
+    check(not any(path in sw for path in tcm_cache_paths), "TCM explorer is excluded from offline cache", "TCM explorer remains in offline cache", failures)
+    calc = read_text(ROOT / "calc.html")
+    nav = read_text(ROOT / "js" / "medicine-explorer-config.js")
+    readme = read_text(ROOT / "README.md")
+    check("tcm_formula_explorer.html" not in calc, "health tools omit the TCM explorer", "health tools still link to the TCM explorer", failures)
+    check("'tcm'" not in nav and "tcm_formula_explorer.html" not in nav, "medicine navigation omits the TCM explorer", "medicine navigation still links to the TCM explorer", failures)
+    check("中成藥母方查詢" not in readme, "README omits the TCM explorer", "README still documents the TCM explorer", failures)
     check("非歷史源流或製造商聲明" in js, "TCM AI inference notice is present", "TCM AI inference notice is missing", failures)
 
 
