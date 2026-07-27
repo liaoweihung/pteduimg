@@ -256,9 +256,9 @@
     ]
   },
   "bruising_care": {
-    "title": "瘀青處理 4 步驟",
-    "category": "public_education",
-    "order": 11,
+    "title": "瘀青藥膏使用",
+    "category": "pharmacist_general",
+    "order": 24,
     "hidden": false,
     "icon": "🟣",
     "tags": [
