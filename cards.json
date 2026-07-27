@@ -231,6 +231,37 @@
       "img/stretch_marks.webp"
     ]
   },
+  "bruising_care": {
+    "title": "瘀青處理 4 步驟",
+    "category": "public_education",
+    "order": 11,
+    "hidden": false,
+    "icon": "🟣",
+    "tags": [
+      "瘀青",
+      "瘀青處理",
+      "挫傷",
+      "碰撞",
+      "皮下出血",
+      "冰敷",
+      "藥膏",
+      "消腫",
+      "外傷照護",
+      "瘀青何時就醫"
+    ],
+    "texts": [
+      "瘀青前 48 小時：先冰敷",
+      "瘀青擦藥：取適量、薄薄覆蓋",
+      "瘀青藥膏怎麼擦？",
+      "瘀青處理注意事項與就醫時機"
+    ],
+    "steps": [
+      "img/bruising_care_1.webp",
+      "img/bruising_care_2.webp",
+      "img/bruising_care_3.webp",
+      "img/bruising_care_4.webp"
+    ]
+  },
   "common_trauma_tcm": {
     "title": "常用外傷用中成藥",
     "category": "pharmacist_product",
