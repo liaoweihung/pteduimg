@@ -1356,7 +1356,7 @@
     ]
   },
   "oral_patch_use": {
-    "title": "口內貼片的使用",
+    "title": "口內貼片和口內膏的使用",
     "category": "pharmacist_general",
     "order": 122,
     "hidden": false,
@@ -1370,11 +1370,19 @@
       "口腔黏膜",
       "貼片使用方法",
       "溶解型貼片",
-      "不溶型貼片"
+      "不溶型貼片",
+      "口內膏",
+      "口內膏使用方法",
+      "口腔潰瘍藥膏",
+      "嘴破藥",
+      "患部吸乾",
+      "棉棒塗抹",
+      "口腔潰瘍照護"
     ],
     "steps": [
       "img/oral_patch_use.webp",
-      "img/oral_patch_use_2.webp"
+      "img/oral_patch_use_2.webp",
+      "img/oral_patch_use_3.webp"
     ]
   }
 }
