@@ -1354,5 +1354,27 @@
       "img/hives_s.webp",
       "img/psoriasis_s.webp"
     ]
+  },
+  "oral_patch_use": {
+    "title": "口內貼片的使用",
+    "category": "pharmacist_general",
+    "order": 122,
+    "hidden": false,
+    "icon": "🩹",
+    "tags": [
+      "口內貼片",
+      "口內膏貼",
+      "口腔潰瘍",
+      "嘴破",
+      "口內破",
+      "口腔黏膜",
+      "貼片使用方法",
+      "溶解型貼片",
+      "不溶型貼片"
+    ],
+    "steps": [
+      "img/oral_patch_use.webp",
+      "img/oral_patch_use_2.webp"
+    ]
   }
 }

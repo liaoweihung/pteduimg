@@ -3023,5 +3023,31 @@
     "og_url": "https://liaoweihung.github.io/pteduimg/cards/psoriasis_s.html",
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/psoriasis_s.html",
     "twitter_card": "summary_large_image"
+  },
+  "cards/oral_patch_use.html": {
+    "page_title": "口內貼片的使用｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「口內貼片的使用」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
+    "h1": "口內貼片的使用",
+    "image_alt": "口內貼片的使用圖卡",
+    "keywords": "口內貼片、口內膏貼、口腔潰瘍、嘴破、口內破、口腔黏膜、貼片使用方法、溶解型貼片、不溶型貼片",
+    "og_title": "口內貼片的使用｜藥局衛教助手",
+    "og_description": "這張圖卡整理「口內貼片的使用」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/oral_patch_use.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/oral_patch_use.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/oral_patch_use.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/oral_patch_use_2.html": {
+    "page_title": "口內貼片的使用｜藥局衛教助手",
+    "meta_description": "這張圖卡整理「口內貼片的使用」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
+    "h1": "口內貼片的使用",
+    "image_alt": "口內貼片的使用第 2 張圖卡",
+    "keywords": "口內貼片、口內膏貼、口腔潰瘍、嘴破、口內破、口腔黏膜、貼片使用方法、溶解型貼片、不溶型貼片",
+    "og_title": "口內貼片的使用｜藥局衛教助手",
+    "og_description": "這張圖卡整理「口內貼片的使用」重點，幫助民眾了解相關衛教資訊與注意事項，方便就醫或諮詢藥師時參考。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/oral_patch_use_2.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/oral_patch_use_2.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/oral_patch_use_2.html",
+    "twitter_card": "summary_large_image"
   }
 }

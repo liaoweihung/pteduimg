@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202607272352';
+const CACHE_NAME = 'pwa-cache-v202607281214';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -203,6 +203,8 @@ const urlsToCache = [
   "./img/oral_hygiene_06.webp",
   "./img/oral_hygiene_07.webp",
   "./img/oral_hygiene_08.webp",
+  "./img/oral_patch_use.webp",
+  "./img/oral_patch_use_2.webp",
   "./img/otc_anti_allergy_eye_drops.webp",
   "./img/otc_antibiotic_eye_drops.webp",
   "./img/otc_cooling_eye_drops.webp",
@@ -486,6 +488,8 @@ const urlsToCache = [
   "./cards/pus_s.html",
   "./cards/hives_s.html",
   "./cards/psoriasis_s.html",
+  "./cards/oral_patch_use.html",
+  "./cards/oral_patch_use_2.html",
   "./cards/404.html"
 ];
 
