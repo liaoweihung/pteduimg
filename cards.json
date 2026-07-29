@@ -1355,6 +1355,37 @@
       "img/psoriasis_s.webp"
     ]
   },
+  "japan_otc_drug_classification": {
+    "title": "日本成藥的分級",
+    "category": "public_education",
+    "order": 1.7,
+    "hidden": false,
+    "icon": "🇯🇵",
+    "tags": [
+      "日本成藥",
+      "日本OTC藥品",
+      "日本藥品分級",
+      "第一類醫藥品",
+      "第二類醫藥品",
+      "第三類醫藥品",
+      "指定第二類醫藥品",
+      "一般用醫藥品",
+      "日本藥妝",
+      "日本藥局",
+      "旅日購藥",
+      "藥師",
+      "登錄販賣者",
+      "成藥分級",
+      "用藥安全",
+      "OTC"
+    ],
+    "texts": [
+      "日本成藥第一類、第二類、第三類醫藥品的風險與購買方式"
+    ],
+    "steps": [
+      "img/japan_otc_drug_classification.webp"
+    ]
+  },
   "oral_patch_use": {
     "title": "口內貼片和口內膏的使用",
     "category": "pharmacist_general",
