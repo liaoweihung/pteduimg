@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202607290449';
+const CACHE_NAME = 'pwa-cache-v202607302135';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -13,6 +13,8 @@ const urlsToCache = [
   "./suppository_medicine_explorer.html",
   "./oral_liquid_medicine_explorer.html",
   "./inhaler_medicine_explorer.html",
+  "./tcm_external_patch_explorer.html",
+  "./tcm_external_formula_patterns.html",
   "./css/spray-medicine-explorer.css",
   "./js/spray-medicine-explorer.js",
   "./data/spray_meds_rebuild_20260714/final/spray_meds_final.json",
@@ -25,6 +27,12 @@ const urlsToCache = [
   "./css/inhaler-medicine-explorer.css",
   "./js/inhaler-medicine-explorer.js",
   "./data/inhaler_meds_20260716/taiwan_inhalers.json",
+  "./css/tcm-external-patch-explorer.css",
+  "./js/tcm-external-patch-explorer.js",
+  "./data/tcm_external_patch_rx_20260730.json",
+  "./css/tcm-external-formula-patterns.css",
+  "./js/tcm-external-formula-patterns.js",
+  "./data/tcm_external_formula_patterns_20260730/external_formula_pattern_analysis.json",
   "./web/taiwan_medicinal_patch_database_v2.html",
   "./health-check-calculator.html",
   "./cancer-marker-calculator.html",
@@ -507,6 +515,8 @@ const coreUrlsToCache = [
   "./suppository_medicine_explorer.html",
   "./oral_liquid_medicine_explorer.html",
   "./inhaler_medicine_explorer.html",
+  "./tcm_external_patch_explorer.html",
+  "./tcm_external_formula_patterns.html",
   "./css/spray-medicine-explorer.css",
   "./js/spray-medicine-explorer.js",
   "./data/spray_meds_rebuild_20260714/final/spray_meds_final.json",
@@ -519,6 +529,12 @@ const coreUrlsToCache = [
   "./css/inhaler-medicine-explorer.css",
   "./js/inhaler-medicine-explorer.js",
   "./data/inhaler_meds_20260716/taiwan_inhalers.json",
+  "./css/tcm-external-patch-explorer.css",
+  "./js/tcm-external-patch-explorer.js",
+  "./data/tcm_external_patch_rx_20260730.json",
+  "./css/tcm-external-formula-patterns.css",
+  "./js/tcm-external-formula-patterns.js",
+  "./data/tcm_external_formula_patterns_20260730/external_formula_pattern_analysis.json",
   "./web/taiwan_medicinal_patch_database_v2.html",
   "./health-check-calculator.html",
   "./cancer-marker-calculator.html",
