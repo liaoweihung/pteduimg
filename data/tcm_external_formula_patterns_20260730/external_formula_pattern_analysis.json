@@ -12,11 +12,12 @@
   "clusters": [
     {
       "cluster_id": "EFP-001",
-      "product_count": 97,
+      "product_count": 102,
       "member_licenses": [
         "衛署成製字第012554號",
         "衛部成製字第016639號",
         "衛署成製字第005693號",
+        "衛署成製字第012568號",
         "衛署成製字第014846號",
         "衛署成製字第010295號",
         "衛署成製字第013894號",
@@ -24,6 +25,7 @@
         "衛部成製字第017057號",
         "衛署成製字第013895號",
         "衛署成製字第014483號",
+        "衛署成製字第014939號",
         "衛署成製字第010973號",
         "衛署成製字第011917號",
         "衛署成製字第015630號",
@@ -38,6 +40,7 @@
         "衛署成製字第015025號",
         "衛部成製字第016612號",
         "衛署成製字第008800號",
+        "衛署成製字第012936號",
         "衛署成製字第013473號",
         "衛署成製字第007683號",
         "衛署成製字第006275號",
@@ -54,6 +57,7 @@
         "衛署成製字第015773號",
         "衛部成製字第016590號",
         "衛署成製字第007354號",
+        "衛署成製字第014857號",
         "衛署成製字第012017號",
         "衛署成製字第013199號",
         "衛署成製字第014871號",
@@ -80,6 +84,7 @@
         "衛部成製字第017017號",
         "衛署成製字第014535號",
         "衛署成製字第014673號",
+        "衛署成製字第009980號",
         "衛署成製字第012625號",
         "衛署成製字第014446號",
         "衛署成製字第015772號",
@@ -121,12 +126,7 @@
       ],
       "common_added_traditional_materials": [],
       "rare_or_unique_traditional_materials": [
-        "氫氯酸鋁",
-        "淨香油",
-        "瀝青",
-        "田七(川七)",
-        "碳酸鈣",
-        "葡萄柚油"
+        "田七(川七)"
       ]
     },
     {
@@ -253,10 +253,8 @@
         "辣椒"
       ],
       "rare_or_unique_traditional_materials": [
-        "丁香醇",
         "木瓜",
-        "木龞子",
-        "桂花油"
+        "木龞子"
       ]
     },
     {
@@ -384,9 +382,7 @@
         "土鼈子",
         "地黃",
         "桂枝",
-        "淨香油",
-        "白笈",
-        "遠紅外線礦石粉"
+        "白笈"
       ]
     },
     {
@@ -490,8 +486,6 @@
       ],
       "rare_or_unique_traditional_materials": [
         "一條根(大葉千斤拔)",
-        "丁香醇",
-        "桂花油",
         "梅片(冰片)",
         "歸尾",
         "葱(帶鬚)",
@@ -500,8 +494,7 @@
         "蔥(帶鬚)",
         "薄荷葉",
         "藥用炭",
-        "辣椒提取物",
-        "香油"
+        "辣椒提取物"
       ]
     },
     {
@@ -580,8 +573,7 @@
       "rare_or_unique_traditional_materials": [
         "川附子",
         "炮附子",
-        "萆解",
-        "香精"
+        "萆解"
       ]
     },
     {
@@ -642,9 +634,7 @@
         "生梔子"
       ],
       "rare_or_unique_traditional_materials": [
-        "氫氯酸鋁",
         "白蘝",
-        "碳酸鈣",
         "膠",
         "麝香銅"
       ]
@@ -719,7 +709,7 @@
     },
     {
       "cluster_id": "EFP-008",
-      "product_count": 26,
+      "product_count": 25,
       "member_licenses": [
         "衛署成製字第014425號",
         "衛署成製字第007348號",
@@ -728,13 +718,11 @@
         "衛署成製字第009180號",
         "衛署成製字第012242號",
         "衛部成製字第012793A   號",
-        "衛署成製字第014521號",
-        "衛署成製字第008523號",
+        "衛署成製字第015959號",
         "衛署成製字第009981號",
         "衛署成製字第011833號",
         "衛署成製字第003944號",
         "衛署成製字第012793號",
-        "衛署成製字第005222號",
         "衛署成製字第012053號",
         "衛署成製字第012529號",
         "衛署成製字第014386號",
@@ -746,19 +734,15 @@
         "衛署成製字第012019號",
         "衛部成製字第016930號",
         "衛署成製字第014343號",
-        "衛署成製字第014666號"
+        "衛署成製字第014666號",
+        "衛署成製字第015307號"
       ],
       "core_traditional_materials": [
         "乳香",
-        "沒藥",
-        "生薑汁"
+        "沒藥"
       ],
-      "common_added_traditional_materials": [
-        "牛皮膠"
-      ],
-      "rare_or_unique_traditional_materials": [
-        "香精"
-      ]
+      "common_added_traditional_materials": [],
+      "rare_or_unique_traditional_materials": []
     },
     {
       "cluster_id": "EFP-009",
@@ -779,15 +763,9 @@
         "川椒",
         "沒藥",
         "牙皂",
-        "牛皮膠",
-        "米醋",
-        "薑汁",
         "陳皮"
       ],
-      "common_added_traditional_materials": [
-        "葱汁",
-        "蔥汁"
-      ],
+      "common_added_traditional_materials": [],
       "rare_or_unique_traditional_materials": []
     },
     {
@@ -847,45 +825,6 @@
     },
     {
       "cluster_id": "EFP-011",
-      "product_count": 7,
-      "member_licenses": [
-        "衛署成製字第015763號",
-        "衛署成製字第014242號",
-        "衛署成製字第015421號",
-        "衛署成製字第009962號",
-        "衛署成製字第015263號",
-        "衛署成製字第012533號",
-        "衛署成製字第015270號"
-      ],
-      "core_traditional_materials": [
-        "沙拉油",
-        "辣椒"
-      ],
-      "common_added_traditional_materials": [],
-      "rare_or_unique_traditional_materials": []
-    },
-    {
-      "cluster_id": "EFP-012",
-      "product_count": 5,
-      "member_licenses": [
-        "衛署成製字第012568號",
-        "衛署成製字第014939號",
-        "衛署成製字第012936號",
-        "衛署成製字第014857號",
-        "衛署成製字第009980號"
-      ],
-      "core_traditional_materials": [
-        "乳香",
-        "威靈仙",
-        "木鼈子",
-        "沒藥",
-        "蓖麻子油"
-      ],
-      "common_added_traditional_materials": [],
-      "rare_or_unique_traditional_materials": []
-    },
-    {
-      "cluster_id": "EFP-013",
       "product_count": 3,
       "member_licenses": [
         "衛署成製字第007144號",
@@ -895,11 +834,7 @@
       "core_traditional_materials": [
         "乳香",
         "沒藥",
-        "牛皮膠",
-        "米醋",
         "花椒",
-        "蔥汁",
-        "薑汁",
         "豬牙皂",
         "陳皮"
       ],
@@ -909,7 +844,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-014",
+      "cluster_id": "EFP-012",
       "product_count": 3,
       "member_licenses": [
         "衛署成製字第013701號",
@@ -937,24 +872,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-015",
-      "product_count": 2,
-      "member_licenses": [
-        "衛署成製字第012120號",
-        "衛署成製字第012351號"
-      ],
-      "core_traditional_materials": [
-        "沙拉油",
-        "白腊",
-        "辣椒"
-      ],
-      "common_added_traditional_materials": [
-        "蜂臘"
-      ],
-      "rare_or_unique_traditional_materials": []
-    },
-    {
-      "cluster_id": "EFP-016",
+      "cluster_id": "EFP-013",
       "product_count": 2,
       "member_licenses": [
         "衛署成製字第013746號",
@@ -972,14 +890,28 @@
         "白陶土",
         "羧甲基纖維素-1380",
         "羧甲基纖維素-2200",
-        "蓖麻子",
-        "蓖麻子油"
+        "蓖麻子"
       ],
       "common_added_traditional_materials": [],
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-017",
+      "cluster_id": "EFP-014",
+      "product_count": 2,
+      "member_licenses": [
+        "衛署成製字第014521號",
+        "衛署成製字第008523號"
+      ],
+      "core_traditional_materials": [
+        "乳香",
+        "沒藥",
+        "麝香酮"
+      ],
+      "common_added_traditional_materials": [],
+      "rare_or_unique_traditional_materials": []
+    },
+    {
+      "cluster_id": "EFP-015",
       "product_count": 2,
       "member_licenses": [
         "衛署成製字第015929號",
@@ -1003,25 +935,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-018",
-      "product_count": 2,
-      "member_licenses": [
-        "衛署成製字第015959號",
-        "衛署成製字第015307號"
-      ],
-      "core_traditional_materials": [
-        "乳香",
-        "沒藥",
-        "牛皮膠",
-        "玫瑰香精",
-        "生薑汁",
-        "薰衣草香精"
-      ],
-      "common_added_traditional_materials": [],
-      "rare_or_unique_traditional_materials": []
-    },
-    {
-      "cluster_id": "EFP-019",
+      "cluster_id": "EFP-016",
       "product_count": 2,
       "member_licenses": [
         "衛署成製字第016082號",
@@ -1035,7 +949,24 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-020",
+      "cluster_id": "EFP-017",
+      "product_count": 2,
+      "member_licenses": [
+        "衛部成製字第016906號",
+        "衛署成製字第005222號"
+      ],
+      "core_traditional_materials": [
+        "乳香",
+        "沒藥",
+        "薄荷"
+      ],
+      "common_added_traditional_materials": [
+        "生薑"
+      ],
+      "rare_or_unique_traditional_materials": []
+    },
+    {
+      "cluster_id": "EFP-018",
       "product_count": 2,
       "member_licenses": [
         "衛部成製字第017034號",
@@ -1054,7 +985,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-021",
+      "cluster_id": "EFP-019",
       "product_count": 1,
       "member_licenses": [
         "衛署成製字第001293號"
@@ -1062,16 +993,13 @@
       "core_traditional_materials": [
         "川椒",
         "沒藥",
-        "牙皂",
-        "米醋",
-        "蔥汁",
-        "薑汁"
+        "牙皂"
       ],
       "common_added_traditional_materials": [],
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-022",
+      "cluster_id": "EFP-020",
       "product_count": 1,
       "member_licenses": [
         "衛署成製字第008160號"
@@ -1092,7 +1020,19 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-023",
+      "cluster_id": "EFP-021",
+      "product_count": 1,
+      "member_licenses": [
+        "衛署成製字第009962號"
+      ],
+      "core_traditional_materials": [
+        "辣椒"
+      ],
+      "common_added_traditional_materials": [],
+      "rare_or_unique_traditional_materials": []
+    },
+    {
+      "cluster_id": "EFP-022",
       "product_count": 1,
       "member_licenses": [
         "衛署成製字第009994號"
@@ -1115,7 +1055,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-024",
+      "cluster_id": "EFP-023",
       "product_count": 1,
       "member_licenses": [
         "衛署成製字第010213號"
@@ -1138,13 +1078,12 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-025",
+      "cluster_id": "EFP-024",
       "product_count": 1,
       "member_licenses": [
         "衛署成製字第011640號"
       ],
       "core_traditional_materials": [
-        "沙拉油",
         "白臘",
         "蜂臘",
         "辣椒"
@@ -1153,7 +1092,46 @@
       "rare_or_unique_traditional_materials": []
     },
     {
+      "cluster_id": "EFP-025",
+      "product_count": 1,
+      "member_licenses": [
+        "衛署成製字第012120號"
+      ],
+      "core_traditional_materials": [
+        "白腊",
+        "蜂臘",
+        "辣椒"
+      ],
+      "common_added_traditional_materials": [],
+      "rare_or_unique_traditional_materials": []
+    },
+    {
       "cluster_id": "EFP-026",
+      "product_count": 1,
+      "member_licenses": [
+        "衛署成製字第012351號"
+      ],
+      "core_traditional_materials": [
+        "白腊",
+        "辣椒"
+      ],
+      "common_added_traditional_materials": [],
+      "rare_or_unique_traditional_materials": []
+    },
+    {
+      "cluster_id": "EFP-027",
+      "product_count": 1,
+      "member_licenses": [
+        "衛署成製字第012533號"
+      ],
+      "core_traditional_materials": [
+        "辣椒"
+      ],
+      "common_added_traditional_materials": [],
+      "rare_or_unique_traditional_materials": []
+    },
+    {
+      "cluster_id": "EFP-028",
       "product_count": 1,
       "member_licenses": [
         "衛署成製字第013442號"
@@ -1171,7 +1149,6 @@
         "羧甲基纖維素1380",
         "羧甲基纖維素2200",
         "草烏",
-        "蓖麻子油",
         "豬牙皂角",
         "連鬚葉葱"
       ],
@@ -1179,7 +1156,19 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-027",
+      "cluster_id": "EFP-029",
+      "product_count": 1,
+      "member_licenses": [
+        "衛署成製字第014242號"
+      ],
+      "core_traditional_materials": [
+        "辣椒"
+      ],
+      "common_added_traditional_materials": [],
+      "rare_or_unique_traditional_materials": []
+    },
+    {
+      "cluster_id": "EFP-030",
       "product_count": 1,
       "member_licenses": [
         "衛署成製字第014546號"
@@ -1197,7 +1186,6 @@
         "羧甲基纖維素-1380",
         "羧甲基纖維素-2200",
         "草烏",
-        "蓖麻子油",
         "豬牙皂角",
         "連鬚葉蔥"
       ],
@@ -1205,16 +1193,14 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-028",
+      "cluster_id": "EFP-031",
       "product_count": 1,
       "member_licenses": [
         "衛署成製字第014818號"
       ],
       "core_traditional_materials": [
-        "丁香醇",
         "乳香",
         "杏仁(去尖皮)",
-        "桂花油",
         "沒藥",
         "玄參",
         "當歸尾",
@@ -1228,7 +1214,55 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-029",
+      "cluster_id": "EFP-032",
+      "product_count": 1,
+      "member_licenses": [
+        "衛署成製字第015263號"
+      ],
+      "core_traditional_materials": [
+        "辣椒"
+      ],
+      "common_added_traditional_materials": [],
+      "rare_or_unique_traditional_materials": []
+    },
+    {
+      "cluster_id": "EFP-033",
+      "product_count": 1,
+      "member_licenses": [
+        "衛署成製字第015270號"
+      ],
+      "core_traditional_materials": [
+        "辣椒"
+      ],
+      "common_added_traditional_materials": [],
+      "rare_or_unique_traditional_materials": []
+    },
+    {
+      "cluster_id": "EFP-034",
+      "product_count": 1,
+      "member_licenses": [
+        "衛署成製字第015421號"
+      ],
+      "core_traditional_materials": [
+        "辣椒"
+      ],
+      "common_added_traditional_materials": [],
+      "rare_or_unique_traditional_materials": []
+    },
+    {
+      "cluster_id": "EFP-035",
+      "product_count": 1,
+      "member_licenses": [
+        "衛署成製字第015763號"
+      ],
+      "core_traditional_materials": [
+        "辣椒"
+      ],
+      "common_added_traditional_materials": [],
+      "rare_or_unique_traditional_materials": []
+    },
+    {
+      "cluster_id": "EFP-036",
       "product_count": 1,
       "member_licenses": [
         "衛署藥製字第045712號"
@@ -1240,7 +1274,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-030",
+      "cluster_id": "EFP-037",
       "product_count": 1,
       "member_licenses": [
         "衛署藥製字第047969號"
@@ -1252,7 +1286,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-031",
+      "cluster_id": "EFP-038",
       "product_count": 1,
       "member_licenses": [
         "衛署藥製字第048017號"
@@ -1264,7 +1298,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-032",
+      "cluster_id": "EFP-039",
       "product_count": 1,
       "member_licenses": [
         "衛署藥製字第048117號"
@@ -1277,7 +1311,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-033",
+      "cluster_id": "EFP-040",
       "product_count": 1,
       "member_licenses": [
         "衛署藥製字第049686號"
@@ -1309,7 +1343,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-034",
+      "cluster_id": "EFP-041",
       "product_count": 1,
       "member_licenses": [
         "衛署藥製字第051385號"
@@ -1321,7 +1355,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-035",
+      "cluster_id": "EFP-042",
       "product_count": 1,
       "member_licenses": [
         "衛部成製字第016381號"
@@ -1333,7 +1367,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-036",
+      "cluster_id": "EFP-043",
       "product_count": 1,
       "member_licenses": [
         "衛部成製字第016419號"
@@ -1370,7 +1404,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-037",
+      "cluster_id": "EFP-044",
       "product_count": 1,
       "member_licenses": [
         "衛部成製字第016521號"
@@ -1383,7 +1417,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-038",
+      "cluster_id": "EFP-045",
       "product_count": 1,
       "member_licenses": [
         "衛部成製字第016541號"
@@ -1396,7 +1430,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-039",
+      "cluster_id": "EFP-046",
       "product_count": 1,
       "member_licenses": [
         "衛部成製字第016629號"
@@ -1410,7 +1444,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-040",
+      "cluster_id": "EFP-047",
       "product_count": 1,
       "member_licenses": [
         "衛部成製字第016729號"
@@ -1441,7 +1475,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-041",
+      "cluster_id": "EFP-048",
       "product_count": 1,
       "member_licenses": [
         "衛部成製字第016749號"
@@ -1453,14 +1487,13 @@
         "栝樓根",
         "桂枝",
         "沒藥",
-        "色膏",
-        "香精"
+        "色膏"
       ],
       "common_added_traditional_materials": [],
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-042",
+      "cluster_id": "EFP-049",
       "product_count": 1,
       "member_licenses": [
         "衛部成製字第016872號"
@@ -1491,7 +1524,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-043",
+      "cluster_id": "EFP-050",
       "product_count": 1,
       "member_licenses": [
         "衛部成製字第016896號"
@@ -1503,22 +1536,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-044",
-      "product_count": 1,
-      "member_licenses": [
-        "衛部成製字第016906號"
-      ],
-      "core_traditional_materials": [
-        "乳香",
-        "沒藥",
-        "生薑",
-        "薄荷"
-      ],
-      "common_added_traditional_materials": [],
-      "rare_or_unique_traditional_materials": []
-    },
-    {
-      "cluster_id": "EFP-045",
+      "cluster_id": "EFP-051",
       "product_count": 1,
       "member_licenses": [
         "衛部成製字第017036號"
@@ -1535,7 +1553,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-046",
+      "cluster_id": "EFP-052",
       "product_count": 1,
       "member_licenses": [
         "衛部成製字第017068號"
@@ -1560,7 +1578,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-047",
+      "cluster_id": "EFP-053",
       "product_count": 1,
       "member_licenses": [
         "衛部藥製字第057339號"
@@ -1572,7 +1590,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-048",
+      "cluster_id": "EFP-054",
       "product_count": 1,
       "member_licenses": [
         "衛部藥製字第057517號"
@@ -1584,7 +1602,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-049",
+      "cluster_id": "EFP-055",
       "product_count": 1,
       "member_licenses": [
         "衛部藥製字第057527號"
@@ -1596,7 +1614,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-050",
+      "cluster_id": "EFP-056",
       "product_count": 1,
       "member_licenses": [
         "衛部藥製字第057528號"
@@ -1608,7 +1626,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-051",
+      "cluster_id": "EFP-057",
       "product_count": 1,
       "member_licenses": [
         "衛部藥製字第058702號"
@@ -1629,7 +1647,7 @@
       "rare_or_unique_traditional_materials": []
     },
     {
-      "cluster_id": "EFP-052",
+      "cluster_id": "EFP-058",
       "product_count": 1,
       "member_licenses": [
         "衛部藥製字第058722號"
@@ -1944,11 +1962,11 @@
     }
   ],
   "material_categories": {
-    "traditional_medicinal_material": 7056,
-    "vehicle_or_patch_base": 950,
-    "topical_active_or_volatile": 1225,
-    "excipient_or_colour": 1198,
-    "unresolved": 547,
-    "nontraditional_active_or_preservative": 162
+    "traditional_medicinal_material": 6892,
+    "vehicle_or_patch_base": 1092,
+    "topical_active_or_volatile": 1231,
+    "excipient_or_colour": 1200,
+    "unresolved": 559,
+    "nontraditional_active_or_preservative": 164
   }
 }

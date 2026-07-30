@@ -37,18 +37,19 @@ NORMALIZE = {
 }
 TOPICAL_VOLATILES = {
     "薄荷腦", "冰片", "冬綠油", "樟腦", "薄荷油", "桉油", "桉葉油",
-    "尤加利油", "丁香油", "松節油", "薰衣草油", "樟腦油",
+    "尤加利油", "丁香油", "松節油", "薰衣草油", "樟腦油", "丁香醇",
+    "桂花油", "葡萄柚油", "辣椒精油",
 }
 VEHICLE_TERMS = (
     "橡膠", "樹脂", "松脂", "松香", "膠質", "膠布", "基劑", "凡士林", "羊毛脂", "鯨蠟醇",
     "麻油", "芝麻油", "清油", "蜂蠟", "石蠟", "硬脂酸", "聚乙烯", "聚丙烯",
-    "聚山梨醇", "聚乙二醇", "純水", "蒸餾水", "乙醇", "酒精", "甘油", "硬脂醇", "單硬脂酸甘油酯", "黃蠟", "白蠟", "凡士林", "基質",
+    "聚山梨醇", "聚乙二醇", "純水", "蒸餾水", "乙醇", "酒精", "甘油", "硬脂醇", "單硬脂酸甘油酯", "黃蠟", "白蠟", "凡士林", "基質", "瀝青", "沙拉油", "蓖麻子油", "牛皮膠", "米醋", "薑汁", "葱汁", "蔥汁", "香油",
 )
 EXCIPIENT_TERMS = ("氧化鋅", "氧化鉛", "色素", "活性碳", "二氧化鈦", "碳黑", "食用", "麗基")
 NONTRADITIONAL_TERMS = (
     "Diphenhydramine", "DIPHENHYDRAMINE", "二苯安明", "對羥基苯甲酸",
     "苯甲酸", "BHA", "BHT", "抗氧化劑", "防腐劑", "氯化", "硫酸", "鹽酸",
-    "Methylparaben", "Propylparaben", "Paraben",
+    "Methylparaben", "Propylparaben", "Paraben", "氫氯酸鋁",
 )
 INGREDIENT_RE = re.compile(r"^\s*(?P<name>.*?)\s*\((?P<amount>[^)]*)\)\s*$")
 TRAILING_AMOUNT_RE = re.compile(r"\s*\d+(?:\.\d+)?\s*(?:mg|g|mcg|%)\s*$", re.I)
@@ -75,11 +76,11 @@ def clean_material_name(value: str) -> str:
 
 
 def category_for(raw: str) -> str:
-    if not raw or "?" in raw or "\uf21f" in raw or "浸膏" in raw or "加至" in raw or "香料" in raw or raw in {"以上生藥製成", "以上生藥"}:
+    if not raw or "?" in raw or "\uf21f" in raw or "浸膏" in raw or "加至" in raw or "香料" in raw or "香精" in raw or "淨香油" in raw or "遠紅外線" in raw or raw in {"以上生藥製成", "以上生藥"}:
         return "unresolved"
     if raw in TOPICAL_VOLATILES or "精油" in raw or raw.endswith("酚"):
         return "topical_active_or_volatile"
-    if any(term in raw for term in EXCIPIENT_TERMS) or "氧化" in raw or ("色" in raw and ("號" in raw or "紅" in raw or "黃" in raw or "藍" in raw or "綠" in raw)):
+    if any(term in raw for term in EXCIPIENT_TERMS) or "氧化" in raw or "碳酸鈣" in raw or ("色" in raw and ("號" in raw or "紅" in raw or "黃" in raw or "藍" in raw or "綠" in raw)):
         return "excipient_or_colour"
     if any(term in raw for term in VEHICLE_TERMS):
         return "vehicle_or_patch_base"
