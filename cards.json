@@ -234,7 +234,7 @@
   "bruising_care": {
     "title": "瘀青藥膏使用",
     "category": "pharmacist_general",
-    "order": 24,
+    "order": 124,
     "hidden": false,
     "icon": "🟣",
     "tags": [
@@ -1419,7 +1419,7 @@
   "eye_wash_solution": {
     "title": "洗眼液",
     "category": "pharmacist_general",
-    "order": 11,
+    "order": 123,
     "hidden": false,
     "icon": "🥛",
     "tags": [
