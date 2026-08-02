@@ -48,7 +48,7 @@
       }
     </script>
     <link rel="stylesheet" href="./css/base.css?v=6">
-    <link rel="stylesheet" href="./css/rx-refillable-date.css?v=5">
+    <link rel="stylesheet" href="./css/rx-refillable-date.css?v=6">
 </head>
 <body class="rx-page">
     <header>
@@ -71,14 +71,24 @@
             <h2 id="form-title">基本資料</h2>
             <form id="rx-form" novalidate>
                 <div class="field-grid">
-                    <label class="field">
-                        <span>處方箋開立日期</span>
+                    <div class="field issue-date-field">
+                        <label for="issue-date"><span>處方開立日期</span></label>
                         <input type="date" id="issue-date" required>
-                    </label>
+                        <label class="check-field" for="first-fill-same-day">
+                            <input type="checkbox" id="first-fill-same-day" checked>
+                            <span>處方當天即第一次領藥</span>
+                        </label>
+                    </div>
+
+                    <div class="field first-fill-field" id="first-fill-group" hidden>
+                        <span id="first-fill-label">第一次領藥日期</span>
+                        <div class="button-group first-fill-options" role="group" aria-labelledby="first-fill-label" id="first-fill-options"></div>
+                        <input type="hidden" id="first-fill-date">
+                    </div>
 
                     <div class="field">
-                        <span>慢箋次數</span>
-                        <div class="button-group" role="group" aria-label="慢箋次數">
+                        <span>慢箋可領幾次</span>
+                        <div class="button-group" role="group" aria-label="慢箋可領幾次">
                             <button class="choice-button" type="button" data-target="refill-count" data-value="2">兩次</button>
                             <button class="choice-button is-selected" type="button" data-target="refill-count" data-value="3">三次</button>
                         </div>
@@ -86,45 +96,63 @@
                     </div>
 
                     <div class="field">
-                        <span>慢箋領藥天數</span>
-                        <div class="button-group" role="group" aria-label="慢箋領藥天數">
-                            <button class="choice-button" type="button" data-target="supply-days" data-value="28">28 天</button>
-                            <button class="choice-button" type="button" data-target="supply-days" data-value="29">29 天</button>
-                            <button class="choice-button is-selected" type="button" data-target="supply-days" data-value="30">30 天</button>
+                        <span>領第幾次</span>
+                        <div class="button-group" role="group" aria-label="領第幾次">
+                            <button class="choice-button" type="button" data-target="refill-time" data-value="3" id="third-refill-button">第三次</button>
+                            <button class="choice-button is-selected" type="button" data-target="refill-time" data-value="2">第二次</button>
+                            <button class="choice-button" type="button" data-target="refill-time" data-value="1">第一次</button>
                         </div>
-                        <input type="hidden" id="supply-days" value="30">
+                        <input type="hidden" id="refill-time" value="2">
                     </div>
+
+                    <label class="field second-fill-field" id="second-fill-group" hidden>
+                        <span>第二次領藥日期</span>
+                        <input type="date" id="second-fill-date">
+                    </label>
 
                     <div class="field">
-                        <span>這是第幾次領藥？</span>
-                        <div class="button-group" role="group" aria-label="這是第幾次領藥">
-                            <button class="choice-button is-selected" type="button" data-target="refill-time" data-value="1">第一次</button>
-                            <button class="choice-button" type="button" data-target="refill-time" data-value="2">第二次</button>
-                            <button class="choice-button" type="button" data-target="refill-time" data-value="3" id="third-refill-button">第三次</button>
+                        <span>處方天數</span>
+                        <div class="button-group" role="group" aria-label="處方天數">
+                            <button class="choice-button is-selected" type="button" data-target="supply-days" data-value="28">28 天</button>
+                            <button class="choice-button" type="button" data-target="supply-days" data-value="30">30 天</button>
+                            <button class="choice-button" type="button" data-target="supply-days" data-value="29">29 天</button>
                         </div>
-                        <input type="hidden" id="refill-time" value="1">
+                        <input type="hidden" id="supply-days" value="28">
                     </div>
 
-                    <label class="field last-date-field" id="last-date-group" hidden>
-                        <span>上次實際過卡日期</span>
-                        <input type="date" id="last-date">
-                    </label>
                 </div>
 
                 <p class="form-message" id="form-message" role="alert"></p>
-                <button class="primary-action" type="submit">計算合法過卡區間</button>
+                <button class="primary-action" type="submit">計算最早可領處方日期</button>
             </form>
         </section>
 
         <section class="result-card" id="result-card" aria-live="polite" hidden>
             <div class="result-summary">
+                <div class="earliest-result">
+                    <span class="summary-label">最早可以領處方的日期</span>
+                    <strong id="valid-window-start">--</strong>
+                    <span class="remaining-days">預計餘藥天數：<b id="remaining-days">10</b> 天</span>
+                </div>
+                <div id="latest-date-result">
+                    <span class="summary-label">不影響下次領藥的最晚領藥日</span>
+                    <strong id="valid-window-end">--</strong>
+                    <span class="remaining-days">預計餘藥天數：<b id="latest-remaining-days">10</b> 天</span>
+                </div>
+                <div id="third-eligible-date-result" hidden>
+                    <span class="summary-label">第三次可領日期</span>
+                    <strong id="third-eligible-date">--</strong>
+                    <span class="remaining-days">預計餘藥天數：<b id="third-eligible-remaining-days">10</b> 天</span>
+                </div>
                 <div>
                     <span class="summary-label">處方箋總效期至</span>
                     <strong id="expire-date">--</strong>
+                    <span class="remaining-days">預計餘藥天數：<b id="expiry-remaining-days">0</b> 天</span>
                 </div>
-                <div>
-                    <span class="summary-label">合法過卡區間</span>
-                    <strong><span id="valid-window-start">--</span> ~ <span id="valid-window-end">--</span></strong>
+                <div id="visit-date-result" hidden>
+                    <span class="summary-label">預計回診日期</span>
+                    <strong id="visit-date-output">--</strong>
+                    <span class="remaining-days">預計餘藥天數：<b id="visit-remaining-days">0</b> 天</span>
                 </div>
             </div>
             <div class="warning-box" id="warning-box"></div>
@@ -135,9 +163,11 @@
             <p class="result-note">計算依《全民健康保險醫療辦法》第 24、25、26 條整理；國定假日順延與出國、離島、船員、罕病等提前領藥例外，仍請依健保署、醫療院所與藥局現場判定為準。</p>
             <button class="secondary-action" id="reset-calculator" type="button">清除資料，重新計算</button>
         </section>
+
     </main>
 
     <script>
+      if (false) { // Legacy calculator retained temporarily for source-history reference.
         const form = document.getElementById('rx-form');
         const issueDateInput = document.getElementById('issue-date');
         const refillCountInput = document.getElementById('refill-count');
@@ -399,6 +429,8 @@
         updateChoiceButtons('refill-time', refillTimeInput.value);
         syncRefillCountOptions();
         toggleLastDate();
+      }
     </script>
+    <script src="./js/rx-refillable-date-ui.js?v=16"></script>
 </body>
 </html>
