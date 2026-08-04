@@ -2,6 +2,7 @@
   "child_height_weight": {
     "title": "小孩身高體重",
     "category": "public_education",
+    "topics": ["growth"],
     "order": -10,
     "hidden": false,
     "icon": "📏",
@@ -28,6 +29,7 @@
   "Prevent_Enterovirus": {
     "title": "預防腸病毒",
     "category": "public_education",
+    "topics": ["infectious_diseases"],
     "order": 0,
     "hidden": false,
     "icon": "🧼",
@@ -46,6 +48,7 @@
   "dry_eye": {
     "title": "乾眼症",
     "category": "public_education",
+    "topics": ["eyes"],
     "order": 1,
     "hidden": false,
     "icon": "👁️",
@@ -70,6 +73,7 @@
   "Hpylori_exam": {
     "title": "胃幽門螺旋桿菌檢查",
     "category": "public_education",
+    "topics": ["gastrointestinal"],
     "order": 5,
     "hidden": false,
     "icon": "🫃",
@@ -89,6 +93,7 @@
   "Hantaviridae": {
     "title": "漢他病毒",
     "category": "public_education",
+    "topics": ["infectious_diseases"],
     "order": 6,
     "hidden": false,
     "icon": "🦠",
@@ -103,6 +108,7 @@
   "Res3_ABCovid": {
     "title": "三合一快篩",
     "category": "public_education",
+    "topics": ["infectious_diseases"],
     "order": 7,
     "hidden": false,
     "icon": "🧪",
@@ -121,6 +127,7 @@
   "oral_hygiene": {
     "title": "口腔清潔",
     "category": "public_education",
+    "topics": ["oral_health"],
     "order": 7,
     "hidden": false,
     "icon": "🪥",
@@ -138,6 +145,7 @@
   "bugspray": {
     "title": "防蚊液",
     "category": "public_education",
+    "topics": ["insect_repellent"],
     "order": 8,
     "hidden": false,
     "icon": "🦟",
@@ -153,6 +161,7 @@
   "fall_wound": {
     "title": "傷口與疤痕",
     "category": "public_education",
+    "topics": ["skin_wound"],
     "order": 10,
     "hidden": false,
     "icon": "🤕",
@@ -453,6 +462,7 @@
   "adult_diaper": {
     "title": "成人紙尿布",
     "category": "public_education",
+    "topics": ["elimination_care"],
     "order": 13,
     "hidden": false,
     "icon": "🧻",
@@ -479,6 +489,7 @@
   "Wet_Wrap": {
     "title": "濕敷療法",
     "category": "public_education",
+    "topics": ["skin_wound"],
     "order": 20,
     "hidden": false,
     "icon": "💦",
@@ -489,6 +500,7 @@
   "acne": {
     "title": "青春痘嚴重程度",
     "category": "public_education",
+    "topics": ["skin_wound"],
     "order": 21,
     "hidden": false,
     "icon": "😊",
@@ -603,6 +615,7 @@
   "DM_damage": {
     "title": "長期高血糖的危害",
     "category": "public_education",
+    "topics": ["chronic_conditions"],
     "order": 30,
     "hidden": false,
     "icon": "🍭",
@@ -623,6 +636,7 @@
   "hair_wash": {
     "title": "洗去頭皮油膏",
     "category": "public_education",
+    "topics": ["skin_wound"],
     "order": 40,
     "hidden": false,
     "icon": "💆",
@@ -633,6 +647,7 @@
   "over_one_oint": {
     "title": "藥膏一起擦",
     "category": "public_education",
+    "topics": ["skin_wound"],
     "order": 40,
     "hidden": false,
     "icon": "🧴",
@@ -755,6 +770,7 @@
   "hemorr_sitbath": {
     "title": "痔瘡坐浴",
     "category": "public_education",
+    "topics": ["elimination_care"],
     "order": 70,
     "hidden": false,
     "icon": "🧘",
@@ -953,6 +969,7 @@
   "heat_exhaustion": {
     "title": "中暑",
     "category": "public_education",
+    "topics": ["heat_illness"],
     "order": 2,
     "hidden": false,
     "icon": "🌡️",
@@ -973,6 +990,7 @@
   "artificial_tears": {
     "title": "人工淚液與常見眼藥水",
     "category": "public_education",
+    "topics": ["eyes"],
     "order": 1.5,
     "hidden": false,
     "icon": "💧",
@@ -1055,6 +1073,7 @@
   "sore_throat_otc": {
     "title": "喉嚨痛用藥與就醫警訊",
     "category": "public_education",
+    "topics": ["throat"],
     "order": 1.6,
     "hidden": false,
     "icon": "🗣️",
@@ -1098,6 +1117,7 @@
   "fungal_foot_nail": {
     "title": "香港腳與灰指甲",
     "category": "public_education",
+    "topics": ["skin_wound"],
     "order": 9,
     "hidden": false,
     "icon": "🦶",
@@ -1159,6 +1179,7 @@
   "common_skin_conditions": {
     "title": "常見皮膚狀況",
     "category": "public_education",
+    "topics": ["skin_wound"],
     "order": 1.2,
     "hidden": false,
     "icon": "🧴",
@@ -1194,6 +1215,7 @@
   "insomnia_sleep_aids": {
     "title": "常見助眠藥物分類",
     "category": "public_education",
+    "topics": ["sleep"],
     "order": 3,
     "hidden": false,
     "icon": "🌙",
@@ -1219,6 +1241,7 @@
   "travel_medication": {
     "title": "出國帶藥",
     "category": "public_education",
+    "topics": ["travel_medication"],
     "order": 4,
     "hidden": false,
     "icon": "🧳",
@@ -1274,6 +1297,7 @@
   "angular_cheilitis": {
     "title": "口角炎",
     "category": "public_education",
+    "topics": ["skin_wound", "oral_health"],
     "order": 1.3,
     "hidden": false,
     "icon": "👄",
@@ -1306,6 +1330,7 @@
   "common_skin_redness_causes": {
     "title": "常見五種皮膚紅腫的原因",
     "category": "public_education",
+    "topics": ["skin_wound"],
     "order": 1.25,
     "hidden": false,
     "icon": "🔍",
@@ -1358,6 +1383,7 @@
   "japan_otc_drug_classification": {
     "title": "日本成藥的分級",
     "category": "public_education",
+    "topics": ["travel_medication"],
     "order": 1.7,
     "hidden": false,
     "icon": "🇯🇵",

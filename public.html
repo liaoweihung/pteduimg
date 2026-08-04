@@ -194,6 +194,51 @@
     text-align: center;
 }
 
+.topic-filter-section {
+    max-width: 900px;
+    margin: 16px auto 8px;
+    padding: 0 16px;
+}
+
+.topic-filter-title {
+    margin: 0 0 10px;
+    color: #334155;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.topic-filter-list {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 0 0 8px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.topic-filter-list::-webkit-scrollbar {
+    display: none;
+}
+
+.topic-filter-btn {
+    flex: 0 0 auto;
+    min-height: 40px;
+    border: 1px solid #bfdbfe;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #1e3a8a;
+    padding: 8px 14px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.topic-filter-btn[aria-pressed="true"] {
+    border-color: #1d4ed8;
+    background: #1d4ed8;
+    color: #ffffff;
+}
+
 .reset-main-order-btn:active {
     transform: translateY(1px);
     box-shadow: 0 2px 8px rgba(0,0,0,0.16);
@@ -228,6 +273,11 @@
     <label for="card-search" class="sr-only">搜尋圖卡</label>
     <input id="card-search" class="card-search-input" type="search" placeholder="搜尋圖卡，例如：出國、胰島素、日本、安眠藥" autocomplete="off">
 </div>
+
+<section class="topic-filter-section" aria-labelledby="topic-filter-title">
+    <h2 class="topic-filter-title" id="topic-filter-title">依主題瀏覽</h2>
+    <div class="topic-filter-list" id="topic-filter-list" role="group" aria-label="圖卡主題篩選"></div>
+</section>
 
 <!-- 分類區塊會由 cards.json 自動產生，不用再手動修改 index.html -->
 <div id="home-loading" class="home-loading" role="status" aria-live="polite">正在載入圖卡...</div>
@@ -306,6 +356,24 @@
     const SEO_DATA_CACHE_KEY = 'pteduimg:seoData:v1';
     const MAIN_ORDER_STORAGE_KEY = `mainCardOrder:${PAGE_TYPE}`;
     let cardSearchTerm = '';
+    let activePublicTopic = 'all';
+
+    const publicTopicMeta = [
+        { id: 'all', title: '全部圖卡' },
+        { id: 'skin_wound', title: '皮膚與傷口' },
+        { id: 'eyes', title: '眼睛' },
+        { id: 'oral_health', title: '口腔' },
+        { id: 'throat', title: '喉嚨' },
+        { id: 'infectious_diseases', title: '傳染病' },
+        { id: 'heat_illness', title: '中暑' },
+        { id: 'insect_repellent', title: '防蚊液' },
+        { id: 'gastrointestinal', title: '胃腸相關' },
+        { id: 'elimination_care', title: '排泄與照護' },
+        { id: 'growth', title: '成長' },
+        { id: 'chronic_conditions', title: '慢性病' },
+        { id: 'sleep', title: '睡眠' },
+        { id: 'travel_medication', title: '旅遊與用藥常識' }
+    ];
 
     const featuredCardIds = [
         "heat_exhaustion",
@@ -836,6 +904,34 @@
         return searchableText.includes(cardSearchTerm);
     }
 
+    function matchesPublicTopic(item) {
+        return activePublicTopic === 'all'
+            || (Array.isArray(item.topics) && item.topics.includes(activePublicTopic));
+    }
+
+    function renderTopicFilters() {
+        const filterRoot = document.getElementById('topic-filter-list');
+        if (!filterRoot) return;
+
+        filterRoot.innerHTML = publicTopicMeta.map(topic => `
+            <button class="topic-filter-btn"
+                    type="button"
+                    data-topic="${topic.id}"
+                    aria-pressed="${topic.id === activePublicTopic}">
+                ${topic.title}
+            </button>`).join('');
+    }
+
+    function selectPublicTopic(topicId) {
+        if (!publicTopicMeta.some(topic => topic.id === topicId)) return;
+        activePublicTopic = topicId;
+        renderHome();
+    }
+
+    function getActivePublicTopicTitle() {
+        return publicTopicMeta.find(topic => topic.id === activePublicTopic)?.title || '全部圖卡';
+    }
+
     function updateCardSearch(value) {
         cardSearchTerm = (value || '').trim().toLocaleLowerCase();
         renderHome();
@@ -847,6 +943,7 @@
         sectionRoot.innerHTML = '';
         favGrid.innerHTML = '';
         renderFeaturedCards();
+        renderTopicFilters();
 
         const categories = {};
         Object.keys(educationData).forEach(key => {
@@ -854,6 +951,7 @@
             if (item.hidden) return;   // 👈 加這一行（關鍵！）
             if (!isVisibleOnPage(item)) return;
             if (!matchesCardSearch(item)) return;
+            if (!matchesPublicTopic(item)) return;
             const cat = item.category || 'uncategorized';
             if (!categories[cat]) categories[cat] = [];
             categories[cat].push({ key, item });
@@ -862,7 +960,9 @@
         Object.keys(categories)
             .sort((a, b) => (categoryMeta[a]?.order || 99) - (categoryMeta[b]?.order || 99))
             .forEach(cat => {
-                const title = categoryMeta[cat]?.title || cat;
+                const title = PAGE_TYPE === 'public' && cat === 'public_education'
+                    ? getActivePublicTopicTitle()
+                    : (categoryMeta[cat]?.title || cat);
                 const gridId = `grid-${cat}`;
                 sectionRoot.innerHTML += `<div class="section-title">${title}</div><div class="menu-grid" id="${gridId}"></div>`;
                 const grid = document.getElementById(gridId);
@@ -881,8 +981,11 @@
                     });
             });
 
-        if (!Object.keys(categories).length && cardSearchTerm) {
-            sectionRoot.innerHTML = '<div class="search-empty">找不到符合的圖卡，請換個關鍵字試試。</div>';
+        if (!Object.keys(categories).length) {
+            const emptyMessage = cardSearchTerm
+                ? '找不到符合的圖卡，請換個關鍵字試試。'
+                : `${getActivePublicTopicTitle()}目前尚無圖卡，敬請期待。`;
+            sectionRoot.innerHTML = `<div class="search-empty">${emptyMessage}</div>`;
         }
 
         let visibleFavCount = 0;
@@ -1197,6 +1300,10 @@ function updateContent() {
         setupPageHeader();
         document.getElementById('card-search').addEventListener('input', function(event) {
             updateCardSearch(event.target.value);
+        });
+        document.getElementById('topic-filter-list').addEventListener('click', function(event) {
+            const button = event.target.closest('.topic-filter-btn');
+            if (button) selectPublicTopic(button.dataset.topic);
         });
         const hasCachedCards = loadCachedEducationData();
         loadCachedSeoData();
