@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202608050013';
+const CACHE_NAME = 'pwa-cache-v202608050036';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -133,6 +133,12 @@ const urlsToCache = [
   "./img/bugspray_1.webp",
   "./img/bugspray_2.webp",
   "./img/bugspray_3.webp",
+  "./img/burn_first_aid_01.webp",
+  "./img/burn_first_aid_02.webp",
+  "./img/burn_first_aid_03.webp",
+  "./img/burn_first_aid_04.webp",
+  "./img/burn_first_aid_05.webp",
+  "./img/burn_first_aid_06.webp",
   "./img/bzd_z_sleep_aids.webp",
   "./img/chomolyn_cromolyn_eye_drops.webp",
   "./img/comedo.webp",
@@ -292,6 +298,12 @@ const urlsToCache = [
   "./cards/dry_eye_comp.html",
   "./cards/dry_eye_tx.html",
   "./cards/dry_eye_dailycare.html",
+  "./cards/burn_first_aid_01.html",
+  "./cards/burn_first_aid_02.html",
+  "./cards/burn_first_aid_03.html",
+  "./cards/burn_first_aid_04.html",
+  "./cards/burn_first_aid_05.html",
+  "./cards/burn_first_aid_06.html",
   "./cards/Exame_Hpylore.html",
   "./cards/5_ways_stomatch.html",
   "./cards/methodology_of_exam_Hp.html",

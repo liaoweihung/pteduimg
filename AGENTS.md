@@ -13,6 +13,22 @@ Project skill: for card additions, scheduled card releases, image conversion, an
 - Public education cards use:
   - `category`: `public_education`
   - public page: `public.html`
+  - a non-empty `topics` array so the card appears in one or more public-page topic filters. Without `topics`, the card appears only in `全部圖卡`.
+- Use one or more of these public-card topic IDs in `topics`:
+  - `skin_wound`
+  - `eyes`
+  - `oral_health`
+  - `throat`
+  - `infectious_diseases`
+  - `heat_illness`
+  - `insect_repellent`
+  - `gastrointestinal`
+  - `elimination_care`
+  - `growth`
+  - `chronic_conditions`
+  - `sleep`
+  - `travel_medication`
+- When adding a public education card, add the same `topics` metadata to both `cards.json` and `cards.manual.json`. Use multiple topic IDs when the card genuinely belongs to more than one topic.
 - Pharmacist cards generally use:
   - `category`: `pharmacist_general` or `pharmacist_product`
   - pharmacist page: `index.html`

@@ -70,6 +70,53 @@
       "img/dry_eye_dailycare.webp"
     ]
   },
+  "burn_first_aid": {
+    "title": "燙傷怎麼辦？",
+    "category": "public_education",
+    "topics": ["skin_wound"],
+    "order": 1.1,
+    "hidden": false,
+    "icon": "🔥",
+    "tags": [
+      "燙傷",
+      "燒燙傷",
+      "燙傷處理",
+      "燙傷急救",
+      "流動冷水",
+      "燙傷水泡",
+      "水泡破掉",
+      "傷口滲液",
+      "燙傷藥膏",
+      "燙傷敷料",
+      "不沾黏敷料",
+      "泡棉敷料",
+      "含銀敷料",
+      "凡士林",
+      "Silver sulfadiazine",
+      "燙傷就醫",
+      "燙傷感染",
+      "燙傷疤痕",
+      "矽膠除疤凝膠",
+      "矽膠片",
+      "防曬"
+    ],
+    "texts": [
+      "燙傷急救：先沖水、移除飾品與衣物",
+      "燙傷不要做的事與需要就醫的情況",
+      "燙傷未破皮時的照護與水泡處理",
+      "水泡破掉、傷口滲液時的處理",
+      "燙傷常見藥品與敷料怎麼選",
+      "燙傷癒合後如何減少疤痕"
+    ],
+    "steps": [
+      "img/burn_first_aid_01.webp",
+      "img/burn_first_aid_02.webp",
+      "img/burn_first_aid_03.webp",
+      "img/burn_first_aid_04.webp",
+      "img/burn_first_aid_05.webp",
+      "img/burn_first_aid_06.webp"
+    ]
+  },
   "Hpylori_exam": {
     "title": "胃幽門螺旋桿菌檢查",
     "category": "public_education",
