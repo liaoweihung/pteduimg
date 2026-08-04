@@ -225,6 +225,26 @@ body.rx-page header {
     cursor: pointer;
 }
 
+.today-action {
+    width: 100%;
+    min-height: 44px;
+    margin-top: 10px;
+    border: 1px solid #1f8f6b;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #1f5b49;
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.today-result-card h2 {
+    margin: 0 0 14px;
+    color: #1f5b49;
+    font-size: 1.08rem;
+}
+
 .primary-action {
     border: 0;
     background: #1f8f6b;

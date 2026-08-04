@@ -15,6 +15,8 @@
     const message = document.getElementById('form-message');
     const warningBox = document.getElementById('warning-box');
     const nextWindowCard = document.getElementById('next-window-card');
+    const todayFillButton = document.getElementById('today-fill');
+    const todayResultCard = document.getElementById('today-result-card');
 
     const formatInput = (date) => {
         const year = date.getFullYear();
@@ -112,6 +114,60 @@
         warningBox.textContent = text;
     }
 
+    function getRemainingDays(targetDate, previousFillDate, supplyDays) {
+        if (!targetDate || !previousFillDate) return 0;
+        const elapsedDays = Math.floor((targetDate - previousFillDate) / 86400000);
+        return Math.max(0, supplyDays - elapsedDays);
+    }
+
+    function getToday() {
+        const now = new Date();
+        return new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    }
+
+    function runTodayFill() {
+        const issued = parseDate(issueDate.value);
+        const days = Number(supplyDays.value);
+        const count = Number(refillCount.value);
+        const refill = Number(refillTime.value);
+        if (!issued || !days || !count || !refill) {
+            message.textContent = '請先填寫完整資料。';
+            todayResultCard.hidden = true;
+            return;
+        }
+
+        const today = getToday();
+        const expiry = addDays(issued, Math.min(days * count, 90));
+        const visit = addDays(expiry, days === 30 ? 1 : 0);
+        const hasNextRefill = refill < count;
+        const nextDate = addDays(today, days - 10);
+        const nextDateGroup = document.getElementById('today-next-date-group');
+        const todayWarning = document.getElementById('today-warning');
+
+        document.getElementById('today-fill-date').textContent = formatTaiwan(today);
+        document.getElementById('today-visit-date').textContent = formatTaiwan(visit);
+        document.getElementById('today-expiry-date').textContent = formatTaiwan(expiry);
+        nextDateGroup.hidden = !hasNextRefill || nextDate > expiry;
+        if (!nextDateGroup.hidden) document.getElementById('today-next-date').textContent = formatTaiwan(nextDate);
+
+        if (today > expiry) {
+            todayWarning.className = 'warning-box danger';
+            todayWarning.textContent = '今天已超過處方失效日，無法依本張處方領藥。';
+        } else if (!hasNextRefill) {
+            todayWarning.className = 'warning-box info';
+            todayWarning.textContent = '本次為最後一次領藥，沒有後續可領藥日期。';
+        } else if (nextDate > expiry) {
+            todayWarning.className = 'warning-box danger';
+            todayWarning.textContent = '下一次最早可領藥日已超過處方失效日。';
+        } else {
+            todayWarning.className = 'warning-box info';
+            todayWarning.textContent = '下次領藥日依病人餘藥數小於或等於 10 天計算。';
+        }
+        message.textContent = '';
+        todayResultCard.hidden = false;
+        todayResultCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
     function runLogic() {
         const issued = parseDate(issueDate.value);
         const first = parseDate(firstFillDate.value);
@@ -140,19 +196,25 @@
         const latest = addDays(expiry, -(count - refill) * (days - 10));
         const visit = addDays(expiry, days === 30 ? 1 : 0);
         const thirdEligible = addDays(earliest, days - 10);
+        const previousFill = refill === 1 ? null : refill === 2 ? first : second;
+        const earliestRemaining = getRemainingDays(earliest, previousFill, days);
+        const latestRemaining = getRemainingDays(latest, previousFill, days);
+        const thirdEligibleRemaining = getRemainingDays(thirdEligible, earliest, days);
+        const expiryRemaining = getRemainingDays(expiry, previousFill, days);
+        const visitRemaining = getRemainingDays(visit, previousFill, days);
         document.getElementById('valid-window-start').textContent = formatTaiwan(earliest);
-        document.getElementById('remaining-days').textContent = '10';
+        document.getElementById('remaining-days').textContent = String(earliestRemaining);
         document.getElementById('valid-window-end').textContent = formatTaiwan(latest);
-        document.getElementById('latest-remaining-days').textContent = '10';
+        document.getElementById('latest-remaining-days').textContent = String(latestRemaining);
         document.getElementById('latest-date-result').hidden = refill === 3;
         document.getElementById('third-eligible-date-result').hidden = count !== 3 || refill !== 2;
         document.getElementById('third-eligible-date').textContent = formatTaiwan(thirdEligible);
-        document.getElementById('third-eligible-remaining-days').textContent = '10';
+        document.getElementById('third-eligible-remaining-days').textContent = String(thirdEligibleRemaining);
         document.getElementById('expire-date').textContent = formatTaiwan(expiry);
-        document.getElementById('expiry-remaining-days').textContent = '0';
+        document.getElementById('expiry-remaining-days').textContent = String(expiryRemaining);
         document.getElementById('visit-date-result').hidden = false;
         document.getElementById('visit-date-output').textContent = formatTaiwan(visit);
-        document.getElementById('visit-remaining-days').textContent = '0';
+        document.getElementById('visit-remaining-days').textContent = String(visitRemaining);
         nextWindowCard.hidden = true;
         message.textContent = '';
         if (earliest > expiry) {
@@ -185,6 +247,7 @@
         syncRefillCount();
         syncSecondFill();
         resultCard.hidden = true;
+        todayResultCard.hidden = true;
         message.textContent = '';
     }
 
@@ -192,6 +255,7 @@
     issueDate.addEventListener('change', () => { firstFillDate.value = ''; secondFillDate.value = ''; syncFirstFill(); syncSecondFill(); runLogic(); });
     sameDay.addEventListener('change', () => { syncFirstFill(); secondFillDate.value = ''; syncSecondFill(); runLogic(); });
     secondFillDate.addEventListener('change', runLogic);
+    todayFillButton.addEventListener('click', runTodayFill);
     document.querySelectorAll('.choice-button[data-target]').forEach((button) => {
         button.addEventListener('click', () => setChoice(button.dataset.target, button.dataset.value));
     });

@@ -124,6 +124,7 @@
 
                 <p class="form-message" id="form-message" role="alert"></p>
                 <button class="primary-action" type="submit">計算最早可領處方日期</button>
+                <button class="today-action" id="today-fill" type="button">今天領藥</button>
             </form>
         </section>
 
@@ -162,6 +163,30 @@
             </div>
             <p class="result-note">計算依《全民健康保險醫療辦法》第 24、25、26 條整理；國定假日順延與出國、離島、船員、罕病等提前領藥例外，仍請依健保署、醫療院所與藥局現場判定為準。</p>
             <button class="secondary-action" id="reset-calculator" type="button">清除資料，重新計算</button>
+        </section>
+
+        <section class="result-card today-result-card" id="today-result-card" aria-live="polite" hidden>
+            <h2>今天領藥試算</h2>
+            <div class="result-summary">
+                <div>
+                    <span class="summary-label">今天領藥日期</span>
+                    <strong id="today-fill-date">--</strong>
+                </div>
+                <div>
+                    <span class="summary-label">預計回診日</span>
+                    <strong id="today-visit-date">--</strong>
+                </div>
+                <div>
+                    <span class="summary-label">處方失效日</span>
+                    <strong id="today-expiry-date">--</strong>
+                </div>
+                <div id="today-next-date-group" hidden>
+                    <span class="summary-label">下次最早可領藥日</span>
+                    <strong id="today-next-date">--</strong>
+                    <span class="remaining-days">預計餘藥天數：<b>10</b> 天</span>
+                </div>
+            </div>
+            <div class="warning-box info" id="today-warning"></div>
         </section>
 
     </main>
@@ -431,6 +456,6 @@
         toggleLastDate();
       }
     </script>
-    <script src="./js/rx-refillable-date-ui.js?v=17" defer></script>
+    <script src="./js/rx-refillable-date-ui.js?v=21" defer></script>
 </body>
 </html>
