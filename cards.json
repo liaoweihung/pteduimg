@@ -2,7 +2,9 @@
   "child_height_weight": {
     "title": "小孩身高體重",
     "category": "public_education",
-    "topics": ["growth"],
+    "topics": [
+      "growth"
+    ],
     "order": -10,
     "hidden": false,
     "icon": "📏",
@@ -29,7 +31,9 @@
   "Prevent_Enterovirus": {
     "title": "預防腸病毒",
     "category": "public_education",
-    "topics": ["infectious_diseases"],
+    "topics": [
+      "infectious_diseases"
+    ],
     "order": 0,
     "hidden": false,
     "icon": "🧼",
@@ -48,7 +52,9 @@
   "dry_eye": {
     "title": "乾眼症",
     "category": "public_education",
-    "topics": ["eyes"],
+    "topics": [
+      "eyes"
+    ],
     "order": 1,
     "hidden": false,
     "icon": "👁️",
@@ -73,7 +79,9 @@
   "burn_first_aid": {
     "title": "燙傷怎麼辦？",
     "category": "public_education",
-    "topics": ["skin_wound"],
+    "topics": [
+      "skin_wound"
+    ],
     "order": 1.1,
     "hidden": false,
     "icon": "🔥",
@@ -120,7 +128,9 @@
   "Hpylori_exam": {
     "title": "胃幽門螺旋桿菌檢查",
     "category": "public_education",
-    "topics": ["gastrointestinal"],
+    "topics": [
+      "gastrointestinal"
+    ],
     "order": 5,
     "hidden": false,
     "icon": "🫃",
@@ -140,7 +150,9 @@
   "Hantaviridae": {
     "title": "漢他病毒",
     "category": "public_education",
-    "topics": ["infectious_diseases"],
+    "topics": [
+      "infectious_diseases"
+    ],
     "order": 6,
     "hidden": false,
     "icon": "🦠",
@@ -155,7 +167,9 @@
   "Res3_ABCovid": {
     "title": "三合一快篩",
     "category": "public_education",
-    "topics": ["infectious_diseases"],
+    "topics": [
+      "infectious_diseases"
+    ],
     "order": 7,
     "hidden": false,
     "icon": "🧪",
@@ -174,7 +188,9 @@
   "oral_hygiene": {
     "title": "口腔清潔",
     "category": "public_education",
-    "topics": ["oral_health"],
+    "topics": [
+      "oral_health"
+    ],
     "order": 7,
     "hidden": false,
     "icon": "🪥",
@@ -192,7 +208,9 @@
   "bugspray": {
     "title": "防蚊液",
     "category": "public_education",
-    "topics": ["insect_repellent"],
+    "topics": [
+      "insect_repellent"
+    ],
     "order": 8,
     "hidden": false,
     "icon": "🦟",
@@ -208,7 +226,9 @@
   "fall_wound": {
     "title": "傷口與疤痕",
     "category": "public_education",
-    "topics": ["skin_wound"],
+    "topics": [
+      "skin_wound"
+    ],
     "order": 10,
     "hidden": false,
     "icon": "🤕",
@@ -509,7 +529,9 @@
   "adult_diaper": {
     "title": "成人紙尿布",
     "category": "public_education",
-    "topics": ["elimination_care"],
+    "topics": [
+      "elimination_care"
+    ],
     "order": 13,
     "hidden": false,
     "icon": "🧻",
@@ -536,7 +558,9 @@
   "Wet_Wrap": {
     "title": "濕敷療法",
     "category": "public_education",
-    "topics": ["skin_wound"],
+    "topics": [
+      "skin_wound"
+    ],
     "order": 20,
     "hidden": false,
     "icon": "💦",
@@ -547,7 +571,9 @@
   "acne": {
     "title": "青春痘嚴重程度",
     "category": "public_education",
-    "topics": ["skin_wound"],
+    "topics": [
+      "skin_wound"
+    ],
     "order": 21,
     "hidden": false,
     "icon": "😊",
@@ -662,7 +688,9 @@
   "DM_damage": {
     "title": "長期高血糖的危害",
     "category": "public_education",
-    "topics": ["chronic_conditions"],
+    "topics": [
+      "chronic_conditions"
+    ],
     "order": 30,
     "hidden": false,
     "icon": "🍭",
@@ -683,7 +711,9 @@
   "hair_wash": {
     "title": "洗去頭皮油膏",
     "category": "public_education",
-    "topics": ["skin_wound"],
+    "topics": [
+      "skin_wound"
+    ],
     "order": 40,
     "hidden": false,
     "icon": "💆",
@@ -694,7 +724,9 @@
   "over_one_oint": {
     "title": "藥膏一起擦",
     "category": "public_education",
-    "topics": ["skin_wound"],
+    "topics": [
+      "skin_wound"
+    ],
     "order": 40,
     "hidden": false,
     "icon": "🧴",
@@ -817,7 +849,9 @@
   "hemorr_sitbath": {
     "title": "痔瘡坐浴",
     "category": "public_education",
-    "topics": ["elimination_care"],
+    "topics": [
+      "elimination_care"
+    ],
     "order": 70,
     "hidden": false,
     "icon": "🧘",
@@ -1016,7 +1050,9 @@
   "heat_exhaustion": {
     "title": "中暑",
     "category": "public_education",
-    "topics": ["heat_illness"],
+    "topics": [
+      "heat_illness"
+    ],
     "order": 2,
     "hidden": false,
     "icon": "🌡️",
@@ -1037,7 +1073,9 @@
   "artificial_tears": {
     "title": "人工淚液與常見眼藥水",
     "category": "public_education",
-    "topics": ["eyes"],
+    "topics": [
+      "eyes"
+    ],
     "order": 1.5,
     "hidden": false,
     "icon": "💧",
@@ -1120,7 +1158,9 @@
   "sore_throat_otc": {
     "title": "喉嚨痛用藥與就醫警訊",
     "category": "public_education",
-    "topics": ["throat"],
+    "topics": [
+      "throat"
+    ],
     "order": 1.6,
     "hidden": false,
     "icon": "🗣️",
@@ -1164,7 +1204,9 @@
   "fungal_foot_nail": {
     "title": "香港腳與灰指甲",
     "category": "public_education",
-    "topics": ["skin_wound"],
+    "topics": [
+      "skin_wound"
+    ],
     "order": 9,
     "hidden": false,
     "icon": "🦶",
@@ -1226,7 +1268,9 @@
   "common_skin_conditions": {
     "title": "常見皮膚狀況",
     "category": "public_education",
-    "topics": ["skin_wound"],
+    "topics": [
+      "skin_wound"
+    ],
     "order": 1.2,
     "hidden": false,
     "icon": "🧴",
@@ -1262,7 +1306,9 @@
   "insomnia_sleep_aids": {
     "title": "常見助眠藥物分類",
     "category": "public_education",
-    "topics": ["sleep"],
+    "topics": [
+      "sleep"
+    ],
     "order": 3,
     "hidden": false,
     "icon": "🌙",
@@ -1288,7 +1334,9 @@
   "travel_medication": {
     "title": "出國帶藥",
     "category": "public_education",
-    "topics": ["travel_medication"],
+    "topics": [
+      "travel_medication"
+    ],
     "order": 4,
     "hidden": false,
     "icon": "🧳",
@@ -1344,7 +1392,10 @@
   "angular_cheilitis": {
     "title": "口角炎",
     "category": "public_education",
-    "topics": ["skin_wound", "oral_health"],
+    "topics": [
+      "skin_wound",
+      "oral_health"
+    ],
     "order": 1.3,
     "hidden": false,
     "icon": "👄",
@@ -1377,7 +1428,9 @@
   "common_skin_redness_causes": {
     "title": "常見五種皮膚紅腫的原因",
     "category": "public_education",
-    "topics": ["skin_wound"],
+    "topics": [
+      "skin_wound"
+    ],
     "order": 1.25,
     "hidden": false,
     "icon": "🔍",
@@ -1430,7 +1483,9 @@
   "japan_otc_drug_classification": {
     "title": "日本成藥的分級",
     "category": "public_education",
-    "topics": ["travel_medication"],
+    "topics": [
+      "travel_medication"
+    ],
     "order": 1.7,
     "hidden": false,
     "icon": "🇯🇵",
@@ -1523,6 +1578,109 @@
       "img/eye_wash_pour_solution.webp",
       "img/eye_wash_rinse_steps.webp",
       "img/eye_wash_precautions.webp"
+    ]
+  },
+  "pregnancy_test_use": {
+    "title": "驗孕筆如何用?",
+    "category": "pharmacist_general",
+    "order": 125,
+    "hidden": false,
+    "icon": "🫄",
+    "tags": [
+      "驗孕筆",
+      "驗孕",
+      "驗孕棒",
+      "怎麼驗孕",
+      "懷孕檢測",
+      "月經延遲",
+      "晨尿",
+      "hCG",
+      "偽陰性",
+      "陰性",
+      "陽性",
+      "淡陽性",
+      "控制線",
+      "測試線",
+      "判讀時間",
+      "婦產科",
+      "腹痛",
+      "陰道出血",
+      "就醫警訊"
+    ],
+    "texts": [
+      "驗孕筆什麼時候驗最準?",
+      "驗孕筆正確使用第 1、2 步",
+      "驗孕筆正確使用第 3、4 步",
+      "驗孕筆如何判讀結果?",
+      "驗孕筆常見問題 Q&A"
+    ],
+    "steps": [
+      "img/pregnancy_test_timing.webp",
+      "img/pregnancy_test_steps_1_2.webp",
+      "img/pregnancy_test_steps_3_4.webp",
+      "img/pregnancy_test_result_reading.webp",
+      "img/pregnancy_test_faq.webp"
+    ]
+  },
+  "condom_use": {
+    "title": "保險套如何使用",
+    "category": "pharmacist_general",
+    "order": 126,
+    "hidden": false,
+    "icon": "🛡️",
+    "tags": [
+      "保險套",
+      "保險套怎麼戴",
+      "保險套正確使用",
+      "避孕",
+      "性傳染病",
+      "性病預防",
+      "安全性行為",
+      "使用前檢查",
+      "有效期限",
+      "包裝破損",
+      "儲精囊",
+      "排出空氣",
+      "全程使用",
+      "使用後處理",
+      "水性潤滑液",
+      "矽性潤滑液",
+      "油性潤滑液",
+      "保險套破裂",
+      "保險套滑落",
+      "緊急避孕",
+      "杜蕾斯",
+      "岡本",
+      "相模",
+      "不二乳膠",
+      "SKYN",
+      "Durex",
+      "Okamoto",
+      "Sagami",
+      "保險套常見問題",
+      "保險套破了怎麼辦",
+      "保險套尺寸",
+      "保險套材質",
+      "乳膠保險套",
+      "聚異戊二烯",
+      "非乳膠保險套",
+      "潤滑液選擇"
+    ],
+    "texts": [
+      "保險套使用前先檢查",
+      "保險套正確配戴第 1 部分",
+      "保險套正確配戴與潤滑液選擇",
+      "保險套使用後怎麼處理?",
+      "保險套常見使用錯誤",
+      "保險套常見問題 Q&A"
+    ],
+    "steps": [
+      "img/condom_check_before_use.webp",
+      "img/condom_wearing_steps_1.webp",
+      "img/condom_lubricant_use.webp",
+      "img/condom_after_use.webp",
+      "img/condom_common_mistakes.webp",
+      "img/condom_faq.webp"
     ]
   }
 }
