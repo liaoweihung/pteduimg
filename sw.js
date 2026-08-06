@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202608050036';
+const CACHE_NAME = 'pwa-cache-v202608061134';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -144,6 +144,12 @@ const urlsToCache = [
   "./img/comedo.webp",
   "./img/comedo_dailycare.webp",
   "./img/common_skin_redness_causes.webp",
+  "./img/condom_after_use.webp",
+  "./img/condom_check_before_use.webp",
+  "./img/condom_common_mistakes.webp",
+  "./img/condom_faq.webp",
+  "./img/condom_lubricant_use.webp",
+  "./img/condom_wearing_steps_1.webp",
   "./img/constipation_cate.webp",
   "./img/contraceptive_pills_how_to_take.webp",
   "./img/contraceptive_pills_missed_dose.webp",
@@ -241,6 +247,11 @@ const urlsToCache = [
   "./img/ped_cold_cetirizine.webp",
   "./img/ped_cold_cypromin.webp",
   "./img/ped_cold_secorine.webp",
+  "./img/pregnancy_test_faq.webp",
+  "./img/pregnancy_test_result_reading.webp",
+  "./img/pregnancy_test_steps_1_2.webp",
+  "./img/pregnancy_test_steps_3_4.webp",
+  "./img/pregnancy_test_timing.webp",
   "./img/prevent_scar.webp",
   "./img/psoriasis_s.webp",
   "./img/pus_s.webp",
@@ -522,6 +533,17 @@ const urlsToCache = [
   "./cards/eye_wash_pour_solution.html",
   "./cards/eye_wash_rinse_steps.html",
   "./cards/eye_wash_precautions.html",
+  "./cards/pregnancy_test_timing.html",
+  "./cards/pregnancy_test_steps_1_2.html",
+  "./cards/pregnancy_test_steps_3_4.html",
+  "./cards/pregnancy_test_result_reading.html",
+  "./cards/pregnancy_test_faq.html",
+  "./cards/condom_check_before_use.html",
+  "./cards/condom_wearing_steps_1.html",
+  "./cards/condom_lubricant_use.html",
+  "./cards/condom_after_use.html",
+  "./cards/condom_common_mistakes.html",
+  "./cards/condom_faq.html",
   "./cards/404.html"
 ];
 
