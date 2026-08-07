@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202608070945';
+const CACHE_NAME = 'pwa-cache-v202608080018';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -153,6 +153,7 @@ const urlsToCache = [
   "./img/constipation_cate.webp",
   "./img/contraceptive_pills_how_to_take.webp",
   "./img/contraceptive_pills_missed_dose.webp",
+  "./img/diosmin_use.webp",
   "./img/dry_eye_comp.webp",
   "./img/dry_eye_dailycare.webp",
   "./img/dry_eye_tx.webp",
@@ -211,6 +212,7 @@ const urlsToCache = [
   "./img/lan_1.webp",
   "./img/lan_2.webp",
   "./img/methodology_of_exam_Hp.webp",
+  "./img/mpff_use.webp",
   "./img/nasal_1.png",
   "./img/nasal_2.png",
   "./img/nasal_3.png",
@@ -544,6 +546,8 @@ const urlsToCache = [
   "./cards/condom_after_use.html",
   "./cards/condom_common_mistakes.html",
   "./cards/condom_faq.html",
+  "./cards/diosmin_use.html",
+  "./cards/mpff_use.html",
   "./cards/404.html"
 ];
 

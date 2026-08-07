@@ -205,7 +205,9 @@
   "Ped_susp": {
     "title": "安滅菌糖漿泡製",
     "category": "pharmacist_product",
-    "departments": ["pediatrics"],
+    "departments": [
+      "pediatrics"
+    ],
     "order": 10,
     "hidden": false,
     "icon": "👶"
@@ -213,7 +215,9 @@
   "Champix": {
     "title": "戒必適Champix",
     "category": "pharmacist_product",
-    "departments": ["chest_medicine_smoking_cessation"],
+    "departments": [
+      "chest_medicine_smoking_cessation"
+    ],
     "order": 15,
     "hidden": false,
     "icon": "🚭",
@@ -224,7 +228,9 @@
   "Osteo_tooth": {
     "title": "骨鬆藥與拔牙",
     "category": "pharmacist_general",
-    "departments": ["dentistry"],
+    "departments": [
+      "dentistry"
+    ],
     "order": 120,
     "hidden": false,
     "icon": "🦷",
@@ -243,7 +249,9 @@
   "eye": {
     "title": "眼藥膏",
     "category": "pharmacist_general",
-    "departments": ["ophthalmology"],
+    "departments": [
+      "ophthalmology"
+    ],
     "order": 10,
     "hidden": false,
     "icon": "👁️"
@@ -335,7 +343,9 @@
   "bruising_care": {
     "title": "瘀青藥膏使用",
     "category": "pharmacist_general",
-    "departments": ["plastic_surgery"],
+    "departments": [
+      "plastic_surgery"
+    ],
     "order": 124,
     "hidden": false,
     "icon": "🟣",
@@ -367,7 +377,9 @@
   "common_trauma_tcm": {
     "title": "常用外傷用中成藥",
     "category": "pharmacist_product",
-    "departments": ["chinese_medicine"],
+    "departments": [
+      "chinese_medicine"
+    ],
     "order": 1,
     "hidden": false,
     "icon": "🌿",
@@ -418,7 +430,9 @@
   "chinese_powder_prep": {
     "title": "中藥散劑怎麼調",
     "category": "pharmacist_general",
-    "departments": ["chinese_medicine"],
+    "departments": [
+      "chinese_medicine"
+    ],
     "order": 121,
     "hidden": false,
     "icon": "🥣",
@@ -460,7 +474,9 @@
   "multi_lang": {
     "title": "多語服藥時間",
     "category": "pharmacist_general",
-    "departments": ["pharmacy_general"],
+    "departments": [
+      "pharmacy_general"
+    ],
     "order": 20,
     "hidden": false,
     "icon": "🌍",
@@ -518,7 +534,9 @@
   "ear": {
     "title": "耳滴劑",
     "category": "pharmacist_general",
-    "departments": ["ent"],
+    "departments": [
+      "ent"
+    ],
     "order": 30,
     "hidden": false,
     "icon": "👂"
@@ -546,7 +564,9 @@
   "nasal": {
     "title": "鼻噴劑",
     "category": "pharmacist_general",
-    "departments": ["ent"],
+    "departments": [
+      "ent"
+    ],
     "order": 40,
     "hidden": false,
     "icon": "👃"
@@ -568,7 +588,9 @@
   "NTG": {
     "title": "NTG 舌下錠",
     "category": "pharmacist_general",
-    "departments": ["cardiology"],
+    "departments": [
+      "cardiology"
+    ],
     "order": 50,
     "hidden": false,
     "icon": "💊"
@@ -576,7 +598,9 @@
   "contraceptive_pills": {
     "title": "避孕藥",
     "category": "pharmacist_general",
-    "departments": ["obstetrics_gynecology"],
+    "departments": [
+      "obstetrics_gynecology"
+    ],
     "order": 55,
     "hidden": false,
     "icon": "💊",
@@ -628,7 +652,9 @@
   "MDI": {
     "title": "MDI 吸入器",
     "category": "pharmacist_general",
-    "departments": ["chest_medicine_smoking_cessation"],
+    "departments": [
+      "chest_medicine_smoking_cessation"
+    ],
     "order": 60,
     "hidden": false,
     "icon": "🌬️"
@@ -636,7 +662,9 @@
   "hem_oint": {
     "title": "痔瘡軟膏(內)",
     "category": "pharmacist_general",
-    "departments": ["colorectal_surgery"],
+    "departments": [
+      "colorectal_surgery"
+    ],
     "order": 70,
     "hidden": false,
     "icon": "🧻"
@@ -644,7 +672,9 @@
   "rectal": {
     "title": "肛門塞劑",
     "category": "pharmacist_general",
-    "departments": ["colorectal_surgery"],
+    "departments": [
+      "colorectal_surgery"
+    ],
     "order": 80,
     "hidden": false,
     "icon": "🍑"
@@ -652,7 +682,9 @@
   "vaginal": {
     "title": "陰道塞劑",
     "category": "pharmacist_general",
-    "departments": ["obstetrics_gynecology"],
+    "departments": [
+      "obstetrics_gynecology"
+    ],
     "order": 90,
     "hidden": false,
     "icon": "🧴"
@@ -660,7 +692,9 @@
   "vag_oint": {
     "title": "陰道軟膏",
     "category": "pharmacist_general",
-    "departments": ["obstetrics_gynecology"],
+    "departments": [
+      "obstetrics_gynecology"
+    ],
     "order": 100,
     "hidden": false,
     "icon": "🌸"
@@ -668,7 +702,9 @@
   "Ped_abx_susp": {
     "title": "兒科抗生素藥水泡製",
     "category": "pharmacist_general",
-    "departments": ["pediatrics"],
+    "departments": [
+      "pediatrics"
+    ],
     "order": 110,
     "hidden": false,
     "icon": "🍼",
@@ -686,7 +722,9 @@
   "ped_fever_reducer": {
     "title": "兒科退燒藥水",
     "category": "pharmacist_product",
-    "departments": ["pediatrics"],
+    "departments": [
+      "pediatrics"
+    ],
     "order": 16,
     "hidden": false,
     "icon": "🌡️",
@@ -713,7 +751,9 @@
   "pediatric_cold_syrup": {
     "title": "兒科感冒藥水",
     "category": "pharmacist_product",
-    "departments": ["pediatrics"],
+    "departments": [
+      "pediatrics"
+    ],
     "order": 17,
     "hidden": false,
     "publish_at": "2026-05-23T07:00:00+08:00",
@@ -744,7 +784,9 @@
   "enema_use": {
     "title": "浣腸使用",
     "category": "pharmacist_general",
-    "departments": ["colorectal_surgery"],
+    "departments": [
+      "colorectal_surgery"
+    ],
     "order": 81,
     "hidden": false,
     "icon": "🚽",
@@ -1329,7 +1371,9 @@
   "oral_patch_use": {
     "title": "口內貼片和口內膏的使用",
     "category": "pharmacist_general",
-    "departments": ["dentistry"],
+    "departments": [
+      "dentistry"
+    ],
     "order": 122,
     "hidden": false,
     "icon": "🩹",
@@ -1360,7 +1404,9 @@
   "eye_wash_solution": {
     "title": "洗眼液",
     "category": "pharmacist_general",
-    "departments": ["ophthalmology"],
+    "departments": [
+      "ophthalmology"
+    ],
     "order": 123,
     "hidden": false,
     "icon": "🥛",
@@ -1397,7 +1443,9 @@
   "pregnancy_test_use": {
     "title": "驗孕筆如何用?",
     "category": "pharmacist_general",
-    "departments": ["obstetrics_gynecology"],
+    "departments": [
+      "obstetrics_gynecology"
+    ],
     "order": 125,
     "hidden": false,
     "icon": "🫄",
@@ -1440,7 +1488,9 @@
   "condom_use": {
     "title": "保險套如何使用",
     "category": "pharmacist_general",
-    "departments": ["obstetrics_gynecology"],
+    "departments": [
+      "obstetrics_gynecology"
+    ],
     "order": 126,
     "hidden": false,
     "icon": "🛡️",
@@ -1497,6 +1547,82 @@
       "img/condom_after_use.webp",
       "img/condom_common_mistakes.webp",
       "img/condom_faq.webp"
+    ]
+  },
+  "diosmin_use": {
+    "title": "Diosmin/MPFF使用說明",
+    "category": "pharmacist_product",
+    "order": 60,
+    "hidden": false,
+    "icon": "💊",
+    "departments": [
+      "colorectal_surgery",
+      "plastic_surgery"
+    ],
+    "tags": [
+      "Diosmin",
+      "DIOSMIN",
+      "Diosmin 500 mg",
+      "diosmin 500",
+      "地奧司明",
+      "靜脈功能不全",
+      "慢性靜脈功能不全",
+      "腿部疼痛",
+      "腿部腫脹",
+      "水腫",
+      "痔瘡",
+      "痔瘡發作",
+      "急性痔瘡",
+      "肛門出血",
+      "餐時服用",
+      "隨餐服用",
+      "療程",
+      "用藥方式",
+      "ALVOLON",
+      "Alvolon",
+      "ALVOLON 500MG TAB",
+      "艾歐復隆",
+      "艾歐復隆膜衣錠",
+      "Dasmin",
+      "Dasmin 500mg",
+      "法迪朗",
+      "法迪朗膜衣錠",
+      "Daflon",
+      "DAFLON",
+      "Daflon 500",
+      "DAFLON 1000MG TAB",
+      "達促朗",
+      "達促朗膜衣錠",
+      "MPFF",
+      "Micronized purified flavonoid fraction",
+      "Diosmin/MPFF",
+      "Diosmin/MPFF使用說明",
+      "Diosmin 單方",
+      "MPFF 複方",
+      "Diosmin 900 mg",
+      "Hesperidin 100 mg",
+      "Diosmin + Hesperidin",
+      "橙皮苷",
+      "類黃酮",
+      "黃酮類",
+      "急性痔瘡發作",
+      "痔瘡用藥",
+      "腿部沉重",
+      "腿部疲倦",
+      "腿部酸脹",
+      "靜脈曲張",
+      "Daflon film-coated tablets 1000mg",
+      "Daflon 1000mg",
+      "Alvolon 500mg film-coated tablets",
+      "Dasmin 500mg film coated tablets"
+    ],
+    "texts": [
+      "Diosmin 500 mg（單方）使用方式",
+      "MPFF（複方）使用方式"
+    ],
+    "steps": [
+      "img/diosmin_use.webp",
+      "img/mpff_use.webp"
     ]
   }
 }
