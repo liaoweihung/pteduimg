@@ -164,6 +164,50 @@
     transform: translateY(1px);
     box-shadow: 0 2px 8px rgba(0,0,0,0.16);
 }
+
+.department-filter-section {
+    max-width: 900px;
+    margin: 16px auto 8px;
+    padding: 0 16px;
+}
+
+.department-filter-title {
+    margin: 0 0 10px;
+    color: #334155;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.department-filter-list {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 0 0 6px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.department-filter-list::-webkit-scrollbar {
+    display: none;
+}
+
+.department-filter-btn {
+    flex: 0 0 auto;
+    min-height: 40px;
+    border: 1px solid #bfdbfe;
+    border-radius: 999px;
+    padding: 8px 14px;
+    background: #eff6ff;
+    color: #1e3a8a;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.department-filter-btn[aria-pressed="true"] {
+    border-color: #1d4ed8;
+    background: #1d4ed8;
+    color: #ffffff;
+}
 </style>
 
 </head>
@@ -184,6 +228,11 @@
     <div class="section-title">⭐ 常用圖卡</div>
     <div class="menu-grid" id="fav-grid"></div>
 </div>
+
+<section class="department-filter-section" aria-labelledby="department-filter-title">
+    <h2 class="department-filter-title" id="department-filter-title">依科別瀏覽</h2>
+    <div class="department-filter-list" id="department-filter-list" role="group" aria-label="藥師衛教科別篩選"></div>
+</section>
 
 <!-- 分類區塊會由 cards.json 自動產生，不用再手動修改 index.html -->
 <div id="home-loading" class="home-loading" role="status" aria-live="polite">正在載入圖卡...</div>
@@ -261,6 +310,23 @@
     const EDUCATION_DATA_CACHE_KEY = 'pteduimg:cardsData:v1';
     const SEO_DATA_CACHE_KEY = 'pteduimg:seoData:v1';
     const MAIN_ORDER_STORAGE_KEY = `mainCardOrder:${PAGE_TYPE}`;
+    let activeDepartment = 'all';
+
+    const pharmacistDepartmentMeta = [
+        { id: 'all', title: '全部圖卡' },
+        { id: 'ophthalmology', title: '眼科' },
+        { id: 'ent', title: '耳鼻喉科' },
+        { id: 'dermatology', title: '皮膚科' },
+        { id: 'plastic_surgery', title: '整形外科' },
+        { id: 'colorectal_surgery', title: '直腸外科' },
+        { id: 'dentistry', title: '牙科' },
+        { id: 'obstetrics_gynecology', title: '婦產科' },
+        { id: 'pediatrics', title: '兒科' },
+        { id: 'chest_medicine_smoking_cessation', title: '胸腔內科／戒菸' },
+        { id: 'cardiology', title: '心臟內科' },
+        { id: 'chinese_medicine', title: '中醫／中藥' },
+        { id: 'pharmacy_general', title: '藥事通用' }
+    ];
 
     const pageMeta = {
         pharmacist: {
@@ -731,6 +797,34 @@
         return shouldShowStepTitles(item) ? getStepTitle(item, index) : `步驟 ${index + 1}`;
     }
 
+    function matchesPharmacistDepartment(item) {
+        return activeDepartment === 'all'
+            || (Array.isArray(item.departments) && item.departments.includes(activeDepartment));
+    }
+
+    function renderDepartmentFilters() {
+        const filterRoot = document.getElementById('department-filter-list');
+        if (!filterRoot) return;
+
+        filterRoot.innerHTML = pharmacistDepartmentMeta.map(department => `
+            <button class="department-filter-btn"
+                    type="button"
+                    data-department="${department.id}"
+                    aria-pressed="${department.id === activeDepartment}">
+                ${department.title}
+            </button>`).join('');
+
+        filterRoot.querySelectorAll('[data-department]').forEach(button => {
+            button.addEventListener('click', () => selectPharmacistDepartment(button.dataset.department));
+        });
+    }
+
+    function selectPharmacistDepartment(departmentId) {
+        if (!pharmacistDepartmentMeta.some(department => department.id === departmentId)) return;
+        activeDepartment = departmentId;
+        renderHome();
+    }
+
     function renderHome() {
         const sectionRoot = document.getElementById('category-sections');
         const favGrid = document.getElementById('fav-grid');
@@ -742,6 +836,7 @@
             const item = educationData[key];
             if (item.hidden) return;   // 👈 加這一行（關鍵！）
             if (!isVisibleOnPage(item)) return;
+            if (!matchesPharmacistDepartment(item)) return;
             const cat = item.category || 'uncategorized';
             if (!categories[cat]) categories[cat] = [];
             categories[cat].push({ key, item });
@@ -790,6 +885,7 @@
             }
         });
         document.getElementById('fav-section').style.display = visibleFavCount > 0 ? 'block' : 'none';
+        renderDepartmentFilters();
         initMainSorting();
         initFavoriteSorting();
     }
