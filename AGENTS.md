@@ -32,6 +32,20 @@ Project skill: for card additions, scheduled card releases, image conversion, an
 - Pharmacist cards generally use:
   - `category`: `pharmacist_general` or `pharmacist_product`
   - pharmacist page: `index.html`
+  - a non-empty `departments` array so the card appears in the `index.html` horizontal “依科別瀏覽” navigation. Use one or more applicable IDs:
+    - `ophthalmology`
+    - `ent`
+    - `dermatology`
+    - `plastic_surgery`
+    - `colorectal_surgery`
+    - `dentistry`
+    - `obstetrics_gynecology`
+    - `pediatrics`
+    - `chest_medicine_smoking_cessation`
+    - `cardiology`
+    - `chinese_medicine`
+    - `pharmacy_general`
+- When adding a pharmacist card, add the same `departments` metadata to both `cards.json` and `cards.manual.json` when the card exists in both files. Use multiple IDs when the card genuinely belongs to more than one department. Without `departments`, the card appears only under `全部圖卡`.
 
 ## Static Card Pages
 
