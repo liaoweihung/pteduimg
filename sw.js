@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202608071634';
+const CACHE_NAME = 'pwa-cache-v202608091132';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -37,14 +37,15 @@ const urlsToCache = [
   "./health-check-calculator.html",
   "./cancer-marker-calculator.html",
   "./growth-calculator.html",
-  "./pregnancy-calculator.html",
+  "./menstrual-calculator.html",
   "./10-yr-cv-risk.html",
   "./rx-refillable-date.html",
   "./taiwan_child_growth_data.json",
   "./taiwan_child_growth_data.js",
   "./css/health-tools.css",
   "./css/growth-calculator.css",
-  "./css/pregnancy-calculator.css",
+  "./css/menstrual-calculator.css",
+  "./js/menstrual-calculator.js",
   "./css/rx-refillable-date.css",
   "./icon.png",
   "./404.html",
@@ -584,6 +585,7 @@ const coreUrlsToCache = [
   "./web/taiwan_medicinal_patch_database_v2.html",
   "./health-check-calculator.html",
   "./cancer-marker-calculator.html",
+  "./menstrual-calculator.html",
   "./rx-refillable-date.html",
   "./icon.png",
   "./404.html",
@@ -592,6 +594,7 @@ const coreUrlsToCache = [
   "./qrious.min.js",
   "./css/base.css?v=6",
   "./css/health-tools.css?v=2",
+  "./css/menstrual-calculator.css?v=2",
   "./css/rx-refillable-date.css?v=5",
   "./css/pharmacist.css?v=2",
   "./css/public.css?v=3"

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="./icon.png?v=3">
+  <link rel="canonical" href="https://liaoweihung.github.io/pteduimg/menstrual-calculator.html">
+  <title>經期計算器｜排卵日、受孕期、延經、催經、孕週與預產期計算</title>
+  <meta name="description" content="免費經期計算器，可依最後一次月經與週期預估下次月經、排卵日、易受孕期，並計算延經開始日期、催經療程日期、孕週及預產期。">
+  <meta name="keywords" content="經期計算器,月經計算器,月經週期計算,下次月經,排卵日計算,排卵期,易受孕期,延經,催經,黃體素,月經遲來,預產期計算,懷孕週數,LMP">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="經期・排卵・延經・催經・預產期計算器">
+  <meta property="og:description" content="月經週期、排卵受孕期、延經／催經日期、孕週與預產期一次計算。">
+  <meta property="og:url" content="https://liaoweihung.github.io/pteduimg/menstrual-calculator.html">
+  <meta property="og:image" content="https://liaoweihung.github.io/pteduimg/icon.png">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"經期・排卵・延經・催經・預產期計算器","applicationCategory":"HealthApplication","operatingSystem":"Web","description":"以本機日期運算提供月經週期、排卵、孕週與預產期的衛教推算。","url":"https://liaoweihung.github.io/pteduimg/menstrual-calculator.html"}</script>
+  <link rel="stylesheet" href="./css/base.css?v=6">
+  <link rel="stylesheet" href="./css/menstrual-calculator.css?v=2">
+</head>
+<body class="menstrual-page">
+  <header><img src="icon.png?v=3" alt="網站圖示" class="header-icon"><span>經期・排卵・預產期計算器</span></header>
+  <main class="calculator-shell">
+    <a class="back-button" href="./calc.html">‹ 回醫藥計算器</a>
+    <section class="intro-card" aria-labelledby="page-title">
+      <div class="intro-icon" aria-hidden="true">🌷</div>
+      <div><h1 id="page-title">經期・排卵・延經・催經・預產期計算器</h1><p>月經週期、排卵受孕期、延經／催經日期、孕週與預產期一次計算</p></div>
+    </section>
+
+    <section class="form-card basic-card" aria-labelledby="basic-title">
+      <h2 id="basic-title">基本資料</h2>
+      <div class="field-grid">
+        <label class="field"><span>最後一次月經第一天</span><small>以正式月經出血的第一天為準</small><input id="lmp" type="date" aria-describedby="lmp-error"></label>
+        <label class="field"><span>平均月經週期</span><small>預設 28 天，可依平常週期修改</small><input id="cycle-length" type="number" inputmode="numeric" min="21" max="45" value="28" aria-describedby="cycle-error"><em>天</em></label>
+      </div>
+      <p class="form-message" id="basic-message" role="alert"></p>
+      <p class="subtle-note">週期不規律時，排卵日與月經日期的推算誤差會較大。</p>
+    </section>
+
+    <div class="card-controls"><p>選擇要計算的項目</p><button id="toggle-all-cards" type="button" aria-expanded="false">全部展開</button></div>
+    <section class="feature-grid" aria-label="計算結果">
+      <article class="feature-card is-collapsed" id="period-card">
+        <button class="card-heading" type="button" aria-expanded="false" aria-controls="period-card"><span aria-hidden="true">🗓️</span><h2>月經／經期</h2><i aria-hidden="true">⌄</i></button>
+        <p class="result-label">預估下次月經</p><strong class="big-date" id="next-period">請先輸入日期</strong>
+        <div class="mini-results"><p>目前週期第 <b id="cycle-day">--</b> 天</p><p>再下一次：<b id="following-period">--</b></p><p id="period-countdown">--</p></div>
+        <details><summary>計算原理</summary><p>以最後一次月經第一天加上平均週期天數，估算下一次月經第一天；實際日期可能受到疾病、壓力、作息與週期變化影響。</p></details>
+      </article>
+
+      <article class="feature-card is-collapsed" id="ovulation-card">
+        <button class="card-heading" type="button" aria-expanded="false" aria-controls="ovulation-card"><span aria-hidden="true">✨</span><h2>排卵／易受孕期</h2><i aria-hidden="true">⌄</i></button>
+        <p class="result-label">預估排卵日</p><strong class="big-date" id="ovulation-date">請先輸入日期</strong>
+        <div class="mini-results"><p>易受孕期：<b id="fertile-window">--</b></p><p id="ovulation-countdown">--</p></div>
+        <p class="inline-warning">此為週期推算，無法確認實際排卵時間，不應單獨作為避孕依據。</p>
+        <details><summary>計算原理</summary><p>本工具以「下一次預估月經日前 14 天」估算排卵日，易受孕期以排卵日前 5 天至排卵後 1 天呈現。排卵時間可能提前或延後。</p></details>
+      </article>
+
+      <article class="feature-card is-collapsed" id="delay-card">
+        <button class="card-heading" type="button" aria-expanded="false" aria-controls="delay-card"><span aria-hidden="true">⏳</span><h2>延經</h2><i aria-hidden="true">⌄</i></button>
+        <p class="result-label">最晚服用藥品時間（Norethisterone）</p><strong class="big-date" id="delay-start">請先輸入日期</strong>
+        <p class="inline-warning">延經藥建議在預估月經日前五天開始評估；少於三天時，延經效果可能較不穩定。</p>
+        <div class="field compact-field"><label for="delay-until">希望延經至何日</label><input id="delay-until" type="date"></div>
+        <div class="mini-results"><p>計算基準月經：<b id="delay-period">--</b></p><p>預計停藥日：<b id="delay-stop">--</b></p><p>停藥後可能出血：<b id="delay-bleed">--</b></p><p class="status" id="delay-status">--</p></div>
+        <details><summary>計算原理</summary><p>本頁以預估月經日前 5 天顯示較早的開始評估時間；Norethisterone 通常至少應於預計月經前 3 天開始才可能有效。停藥後出血以約 2～3 天的區間呈現。此為用藥時程衛教，是否適用須由醫療人員評估。</p></details>
+      </article>
+
+      <article class="feature-card is-collapsed" id="induce-card">
+        <button class="card-heading" type="button" aria-expanded="false" aria-controls="induce-card"><span aria-hidden="true">💊</span><h2>催經</h2><i aria-hidden="true">⌄</i></button>
+        <p class="result-label">日期／療程計算與用藥前提醒</p><strong class="big-date small-big" id="late-period">請先輸入日期</strong>
+        <p class="inline-warning">如有懷孕可能，使用催經藥前應先排除懷孕。</p>
+        <div class="field-grid compact-grid">
+          <label class="field"><span>療程開始日期</span><input id="induce-start" type="date"></label>
+          <label class="field"><span>每日劑量</span><input id="induce-dose" type="text" placeholder="依處方／醫囑"></label>
+          <label class="field"><span>療程天數</span><select id="induce-days"><option value="5">5 天</option><option value="7">7 天</option><option value="10" selected>10 天</option><option value="custom">自訂</option></select></label>
+          <label class="field" id="custom-days-wrap" hidden><span>自訂療程天數</span><input id="custom-days" type="number" min="1" inputmode="numeric"></label>
+        </div>
+        <div class="mini-results"><p>方案：<b>Medroxyprogesterone</b></p><p>療程：<b id="induce-course">--</b></p><p>撤退性出血預估：<b id="withdrawal-bleed">--</b></p></div>
+        <p class="form-message" id="induce-message" role="alert"></p>
+        <details><summary>計算原理</summary><p>最後服藥日＝開始日期＋療程天數－1；撤退性出血以最後服藥日後約 3～7 天估計。這不是正常排卵週期恢復的保證，也不提供劑量建議。</p></details>
+      </article>
+
+      <article class="feature-card pregnancy-card is-collapsed" id="pregnancy-card">
+        <button class="card-heading" type="button" aria-expanded="false" aria-controls="pregnancy-card"><span aria-hidden="true">🤰</span><h2>預產期／孕週</h2><i aria-hidden="true">⌄</i></button>
+        <p class="result-label">以最後一次月經估算的預產期</p><strong class="big-date" id="lmp-due-date">請先輸入日期</strong>
+        <div class="mini-results"><p>目前孕齡：<b id="gestational-age">--</b></p></div>
+        <div class="alternate-dates">
+          <label class="field"><span>已知排卵日／受孕日</span><input id="conception-date" type="date"></label><p>依受孕日預產期：<b id="conception-due-date">--</b></p>
+          <label class="field"><span>醫師／超音波確認的預產期</span><input id="confirmed-due-date" type="date"></label><p>依確認預產期推估孕齡：<b id="confirmed-gestation">--</b></p>
+          <label class="field"><span>指定日期孕週</span><input id="gestation-on-date" type="date"></label><p id="gestation-on-result">--</p>
+        </div>
+        <p class="form-message" id="pregnancy-message" role="alert"></p>
+        <details><summary>計算原理</summary><p>預產期以 LMP＋280 天（40 週）或已知受孕日＋266 天（38 週）估算。若醫師已依超音波校正預產期，臨床上應以醫療院所確認日期為準。</p></details>
+      </article>
+    </section>
+
+    <section class="medical-note" aria-label="醫療提示"><h2>使用提醒</h2><p>本工具僅提供日期推算與用藥衛教參考，實際排卵日、月經來潮及撤退性出血時間可能因個人週期而不同。</p><p>延經或催經藥屬藥物治療，使用前應確認適應症、禁忌症及懷孕可能。若月經長期未來、不規則出血、異常腹痛或可能懷孕，請接受醫療評估。</p><p>預產期為估算值；若醫療院所已依超音波校正孕週或預產期，應以醫療紀錄為準。</p><details><summary>計算依據與參考來源</summary><p>預產期採 LMP＋280 天的慣例；排卵日採下次月經前 14 天的簡化假設。延經日期以預估月經日前 5 天作為較早的開始評估時間，且 Norethisterone 通常至少要在預計月經前 3 天開始才可能有效；口服 Medroxyprogesterone 停藥後的撤退性出血以 3～7 天估計。各藥物方案與個人適用性須由醫療人員確認。</p><p><a href="https://www.acog.org/womens-health/faqs/when-pregnancy-goes-past-your-due-date" target="_blank" rel="noopener">ACOG：預產期與 LMP</a>　<a href="https://www.nhs.uk/conditions/periods/fertility-in-the-menstrual-cycle/" target="_blank" rel="noopener">NHS：月經週期與排卵</a>　<a href="https://www.sps.nhs.uk/articles/choosing-a-medicine-to-delay-periods/" target="_blank" rel="noopener">NHS SPS：延經藥物選擇</a>　<a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=1020bb60-4f13-4cd7-aaa1-c556752c84b7&amp;version=1" target="_blank" rel="noopener">DailyMed：Medroxyprogesterone</a></p></details></section>
+  </main>
+  <footer class="site-footer"><p>本工具僅供健康衛教與日期推算參考，不能取代醫師、藥師或婦產科醫療評估。</p><p><a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a></p></footer>
+  <script src="./js/menstrual-calculator.js?v=3"></script>
+</body>
+</html>

@@ -158,7 +158,6 @@ def check_analytics_guards(failures: list[str]) -> None:
         "public.html",
         "calc.html",
         "growth-calculator.html",
-        "pregnancy-calculator.html",
         "rx-refillable-date.html",
     ]
     for name in protected_pages:
