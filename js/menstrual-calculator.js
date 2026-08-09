@@ -50,6 +50,14 @@
   }
   ['lmp','cycle-length','delay-until','induce-start','induce-dose','induce-days','custom-days','conception-date','confirmed-due-date','gestation-on-date'].forEach(id => $(id).addEventListener('input',updateAll));
   $('induce-days').addEventListener('change',updateAll); updateAll();
+  const dateInputCounts = {};
+  ['lmp','delay-until','induce-start','conception-date','confirmed-due-date','gestation-on-date'].forEach(id => {
+    $(id).addEventListener('change', () => {
+      if (!$(id).value) return;
+      dateInputCounts[id] = (dateInputCounts[id] || 0) + 1;
+      trackCalculatorEvent('calculator_date_input', { field: id, session_input_count: dateInputCounts[id] });
+    });
+  });
   const cards = [...document.querySelectorAll('.feature-card')];
   const allCardsButton = $('toggle-all-cards');
   function setCardExpanded(card, expanded) {
@@ -62,12 +70,15 @@
     allCardsButton.setAttribute('aria-expanded', String(allExpanded));
   }
   cards.forEach(card => card.querySelector('.card-heading').addEventListener('click', () => {
-    setCardExpanded(card, card.classList.contains('is-collapsed'));
+    const expanded = card.classList.contains('is-collapsed');
+    setCardExpanded(card, expanded);
+    trackCalculatorEvent('calculator_card_toggle', { card: card.id.replace('-card', ''), action: expanded ? 'expand' : 'collapse' });
     updateAllCardsButton();
   }));
   allCardsButton.addEventListener('click', () => {
     const expand = cards.some(card => card.classList.contains('is-collapsed'));
     cards.forEach(card => setCardExpanded(card, expand));
+    trackCalculatorEvent('calculator_card_toggle', { card: 'all_cards', action: expand ? 'expand' : 'collapse' });
     updateAllCardsButton();
   });
   updateAllCardsButton();

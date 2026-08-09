@@ -15,6 +15,34 @@
   <meta property="og:url" content="https://liaoweihung.github.io/pteduimg/menstrual-calculator.html">
   <meta property="og:image" content="https://liaoweihung.github.io/pteduimg/icon.png">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"經期・排卵・延經・催經・預產期計算器","applicationCategory":"HealthApplication","operatingSystem":"Web","description":"以本機日期運算提供月經週期、排卵、孕週與預產期的衛教推算。","url":"https://liaoweihung.github.io/pteduimg/menstrual-calculator.html"}</script>
+  <script>
+    const GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
+    const urlParams = new URLSearchParams(window.location.search);
+    const host = window.location.hostname;
+    const isPrivateNetworkHost = ['localhost', '127.0.0.1', '::1'].includes(host)
+      || /^192\.168\./.test(host) || /^10\./.test(host) || /^172\.(1[6-9]|2\d|3[0-1])\./.test(host);
+    const isLocalPreview = isPrivateNetworkHost || window.location.protocol === 'file:';
+    if (urlParams.get('dev') === '1') localStorage.setItem('isDeveloper', 'true');
+    if (urlParams.get('dev') === '0') localStorage.removeItem('isDeveloper');
+    window.isAnalyticsDisabled = isLocalPreview || localStorage.getItem('isDeveloper') === 'true';
+    window[`ga-disable-${GA_MEASUREMENT_ID}`] = window.isAnalyticsDisabled;
+    function shouldTrackAnalytics() { return !window.isAnalyticsDisabled && typeof gtag === 'function'; }
+    function trackCalculatorEvent(eventName, parameters) {
+      if (shouldTrackAnalytics()) gtag('event', eventName, parameters);
+    }
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(){ dataLayer.push(arguments); };
+    if (!window.isAnalyticsDisabled) {
+      const gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+      document.head.appendChild(gaScript);
+      gtag('js', new Date());
+      gtag('config', GA_MEASUREMENT_ID);
+    }
+  </script>
   <link rel="stylesheet" href="./css/base.css?v=6">
   <link rel="stylesheet" href="./css/menstrual-calculator.css?v=2">
 </head>
@@ -95,6 +123,6 @@
     <section class="medical-note" aria-label="醫療提示"><h2>使用提醒</h2><p>本工具僅提供日期推算與用藥衛教參考，實際排卵日、月經來潮及撤退性出血時間可能因個人週期而不同。</p><p>延經或催經藥屬藥物治療，使用前應確認適應症、禁忌症及懷孕可能。若月經長期未來、不規則出血、異常腹痛或可能懷孕，請接受醫療評估。</p><p>預產期為估算值；若醫療院所已依超音波校正孕週或預產期，應以醫療紀錄為準。</p><details><summary>計算依據與參考來源</summary><p>預產期採 LMP＋280 天的慣例；排卵日採下次月經前 14 天的簡化假設。延經日期以預估月經日前 5 天作為較早的開始評估時間，且 Norethisterone 通常至少要在預計月經前 3 天開始才可能有效；口服 Medroxyprogesterone 停藥後的撤退性出血以 3～7 天估計。各藥物方案與個人適用性須由醫療人員確認。</p><p><a href="https://www.acog.org/womens-health/faqs/when-pregnancy-goes-past-your-due-date" target="_blank" rel="noopener">ACOG：預產期與 LMP</a>　<a href="https://www.nhs.uk/conditions/periods/fertility-in-the-menstrual-cycle/" target="_blank" rel="noopener">NHS：月經週期與排卵</a>　<a href="https://www.sps.nhs.uk/articles/choosing-a-medicine-to-delay-periods/" target="_blank" rel="noopener">NHS SPS：延經藥物選擇</a>　<a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=1020bb60-4f13-4cd7-aaa1-c556752c84b7&amp;version=1" target="_blank" rel="noopener">DailyMed：Medroxyprogesterone</a></p></details></section>
   </main>
   <footer class="site-footer"><p>本工具僅供健康衛教與日期推算參考，不能取代醫師、藥師或婦產科醫療評估。</p><p><a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a></p></footer>
-  <script src="./js/menstrual-calculator.js?v=3"></script>
+  <script src="./js/menstrual-calculator.js?v=4"></script>
 </body>
 </html>
