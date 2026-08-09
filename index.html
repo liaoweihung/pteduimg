@@ -208,6 +208,12 @@
     background: #1d4ed8;
     color: #ffffff;
 }
+
+.department-tool-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
 </style>
 
 </head>
@@ -326,6 +332,21 @@
         { id: 'cardiology', title: '心臟內科' },
         { id: 'chinese_medicine', title: '中醫／中藥' },
         { id: 'pharmacy_general', title: '藥事通用' }
+    ];
+
+    const pharmacistDepartmentTools = [
+        {
+            title: '經期・排卵・預產期計算器',
+            icon: '🌷',
+            href: './menstrual-calculator.html',
+            departments: ['obstetrics_gynecology']
+        },
+        {
+            title: '兒童生長計算器',
+            icon: '📈',
+            href: './growth-calculator.html',
+            departments: ['pediatrics']
+        }
     ];
 
     const pageMeta = {
@@ -825,6 +846,24 @@
         renderHome();
     }
 
+    function renderDepartmentTools(sectionRoot) {
+        const tools = pharmacistDepartmentTools.filter(tool =>
+            activeDepartment !== 'all' && tool.departments.includes(activeDepartment)
+        );
+        if (!tools.length) return;
+
+        const departmentTitle = pharmacistDepartmentMeta.find(department => department.id === activeDepartment)?.title || '科別';
+        sectionRoot.innerHTML += `<div class="section-title">🧮 ${departmentTitle}工具</div><div class="menu-grid" id="department-tool-grid"></div>`;
+        const toolGrid = document.getElementById('department-tool-grid');
+        tools.forEach(tool => {
+            toolGrid.innerHTML += `
+                <a class="menu-item department-tool-card" href="${tool.href}">
+                    <span class="icon">${tool.icon}</span>
+                    <div style="font-weight:bold; font-size:1.1rem;">${tool.title}</div>
+                </a>`;
+        });
+    }
+
     function renderHome() {
         const sectionRoot = document.getElementById('category-sections');
         const favGrid = document.getElementById('fav-grid');
@@ -863,6 +902,8 @@
                             </div>`;
                     });
             });
+
+        renderDepartmentTools(sectionRoot);
 
         let visibleFavCount = 0;
         favoriteImages.forEach(favKey => {
