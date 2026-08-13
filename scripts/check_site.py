@@ -103,6 +103,12 @@ def check_home_viewer(failures: list[str]) -> None:
             f"{name} bypasses cards.json cache",
             failures,
         )
+        check(
+            "id=\"update-light\"" in html and "updatefound" in html and "window.location.reload()" in html,
+            f"{name} keeps the user-initiated update pill",
+            f"{name} is missing the update pill or its update flow",
+            failures,
+        )
 
     check(
         ".side-nav-zone" in base_css and "background: transparent" in base_css,

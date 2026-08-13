@@ -216,6 +216,12 @@ For card pages, verify:
 
 ## Regression Check
 
+## Offline Cache and Update Experience
+
+The site intentionally uses a cache-first service-worker strategy for HTML, scripts, and data. Serve the cached page immediately for a fast, reliable offline-friendly experience, while fetching a newer version in the background. Do not change this to network-first or add cache-busting query parameters unless the user explicitly requests it.
+
+Keep the existing update pill (`#update-light`) on both `index.html` and `public.html`. When a new service worker has installed while an older one controls the current page, it must appear; users choose when to apply the update by clicking it, which reloads the page. Do not force reloads or silently switch users to a new page version.
+
 After changing homepage behavior, card page layout, service worker caching,
 analytics, generated card pages, or `build.py`, run:
 
@@ -229,6 +235,8 @@ This checks key site invariants, including:
 - Referenced images and generated `cards/*.html` pages exist.
 - Homepage viewer keeps both transparent side-tap navigation and visible bottom navigation buttons.
 - Homepage card data loading does not bypass cache.
+- Service-worker fresh assets remain cache-first, with background updates.
+- The update pill remains available for user-initiated version updates.
 - Static card pages register the service worker.
 - Static card pages keep side navigation and bottom page navigation.
 - Static card page titles do not include redundant step-number suffixes.
