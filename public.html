@@ -290,7 +290,7 @@
 </header>
 
 <nav class="top-nav">
-    <a href="./index.html" id="nav-pharmacist">藥師衛教</a>
+    <a href="./index.html#related-public-navigation" id="nav-pharmacist">藥師衛教</a>
     <a href="./public.html" id="nav-public">民眾疾病衛教</a>
 </nav>
 <div class="page-note" id="page-note"></div>
@@ -994,14 +994,20 @@
 
     function renderRelatedPharmacistNavigation() {
         const root = document.getElementById('related-pharmacist-navigation');
-        const departments = publicTopicRelatedDepartments[activePublicTopic] || [];
-        if (!departments.length) {
-            root.innerHTML = '';
-            return;
-        }
+        const departments = publicTopicRelatedDepartments[activePublicTopic]
+            || Object.keys(pharmacistDepartmentTitles);
         root.innerHTML = `<h2 class="related-navigation-title">💊 給藥師的相關衛教</h2><div class="related-navigation-list">${departments.map(departmentId =>
             `<a class="related-navigation-link" href="./index.html?department=${encodeURIComponent(departmentId)}">${pharmacistDepartmentTitles[departmentId]}</a>`
         ).join('')}</div>`;
+    }
+
+    function scrollToHashTarget() {
+        const targetId = window.location.hash.slice(1);
+        const target = targetId && document.getElementById(targetId);
+        if (target) {
+            window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY, behavior: 'auto' });
+            history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
     }
 
     function getActivePublicTopicTitle() {
@@ -1021,6 +1027,7 @@
         renderFeaturedCards();
         renderTopicFilters();
         renderRelatedPharmacistNavigation();
+        scrollToHashTarget();
 
         const categories = {};
         Object.keys(educationData).forEach(key => {

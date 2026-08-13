@@ -262,7 +262,7 @@
 
 <nav class="top-nav">
     <a href="./index.html" id="nav-pharmacist">藥師衛教</a>
-    <a href="./public.html" id="nav-public">民眾疾病衛教</a>
+    <a href="./public.html#related-pharmacist-navigation" id="nav-public">民眾疾病衛教</a>
 </nav>
 <div class="page-note" id="page-note"></div>
 
@@ -911,14 +911,20 @@
 
     function renderRelatedPublicNavigation() {
         const root = document.getElementById('related-public-navigation');
-        const topics = departmentRelatedPublicTopics[activeDepartment] || [];
-        if (!topics.length) {
-            root.innerHTML = '';
-            return;
-        }
+        const topics = departmentRelatedPublicTopics[activeDepartment]
+            || Object.keys(publicTopicTitles);
         root.innerHTML = `<h2 class="related-navigation-title">👥 可給民眾看的相關衛教</h2><div class="related-navigation-list">${topics.map(topicId =>
             `<a class="related-navigation-link" href="./public.html?topic=${encodeURIComponent(topicId)}">${publicTopicTitles[topicId]}</a>`
         ).join('')}</div>`;
+    }
+
+    function scrollToHashTarget() {
+        const targetId = window.location.hash.slice(1);
+        const target = targetId && document.getElementById(targetId);
+        if (target) {
+            window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY, behavior: 'auto' });
+            history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
     }
 
     function renderDepartmentTools(sectionRoot) {
@@ -980,6 +986,7 @@
 
         renderDepartmentTools(sectionRoot);
         renderRelatedPublicNavigation();
+        scrollToHashTarget();
 
         let visibleFavCount = 0;
         favoriteImages.forEach(favKey => {
