@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202608090411';
+const CACHE_NAME = 'pwa-cache-v202608132109';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -250,6 +250,14 @@ const urlsToCache = [
   "./img/ped_cold_cetirizine.webp",
   "./img/ped_cold_cypromin.webp",
   "./img/ped_cold_secorine.webp",
+  "./img/pregnancy_minor_constipation.webp",
+  "./img/pregnancy_minor_cough.webp",
+  "./img/pregnancy_minor_diarrhea.webp",
+  "./img/pregnancy_minor_fever_pain.webp",
+  "./img/pregnancy_minor_insomnia.webp",
+  "./img/pregnancy_minor_itch.webp",
+  "./img/pregnancy_minor_nausea.webp",
+  "./img/pregnancy_minor_rhinitis.webp",
   "./img/pregnancy_test_faq.webp",
   "./img/pregnancy_test_result_reading.webp",
   "./img/pregnancy_test_steps_1_2.webp",
@@ -549,6 +557,14 @@ const urlsToCache = [
   "./cards/condom_faq.html",
   "./cards/diosmin_use.html",
   "./cards/mpff_use.html",
+  "./cards/pregnancy_minor_fever_pain.html",
+  "./cards/pregnancy_minor_rhinitis.html",
+  "./cards/pregnancy_minor_cough.html",
+  "./cards/pregnancy_minor_constipation.html",
+  "./cards/pregnancy_minor_diarrhea.html",
+  "./cards/pregnancy_minor_nausea.html",
+  "./cards/pregnancy_minor_itch.html",
+  "./cards/pregnancy_minor_insomnia.html",
   "./cards/404.html"
 ];
 
