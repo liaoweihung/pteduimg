@@ -239,6 +239,42 @@
     color: #ffffff;
 }
 
+.related-navigation {
+    max-width: 900px;
+    margin: 4px auto 12px;
+    padding: 0 16px;
+}
+
+.related-navigation-title {
+    margin: 0 0 8px;
+    color: #475569;
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.related-navigation-list {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.related-navigation-list::-webkit-scrollbar {
+    display: none;
+}
+
+.related-navigation-link {
+    flex: 0 0 auto;
+    border: 1px solid #c4b5fd;
+    border-radius: 999px;
+    padding: 8px 12px;
+    background: #f5f3ff;
+    color: #5b21b6;
+    font-weight: 700;
+    text-decoration: none;
+}
+
 .reset-main-order-btn:active {
     transform: translateY(1px);
     box-shadow: 0 2px 8px rgba(0,0,0,0.16);
@@ -278,6 +314,7 @@
     <h2 class="topic-filter-title" id="topic-filter-title">依主題瀏覽</h2>
     <div class="topic-filter-list" id="topic-filter-list" role="group" aria-label="圖卡主題篩選"></div>
 </section>
+<section class="related-navigation" id="related-pharmacist-navigation" aria-live="polite"></section>
 
 <!-- 分類區塊會由 cards.json 自動產生，不用再手動修改 index.html -->
 <div id="home-loading" class="home-loading" role="status" aria-live="polite">正在載入圖卡...</div>
@@ -375,6 +412,25 @@
         { id: 'pregnancy', title: '懷孕' },
         { id: 'travel_medication', title: '旅遊與用藥常識' }
     ];
+
+    const publicTopicRelatedDepartments = {
+        eyes: ['ophthalmology'],
+        skin_wound: ['dermatology', 'plastic_surgery'],
+        oral_health: ['dentistry'],
+        throat: ['ent'],
+        infectious_diseases: ['pediatrics'],
+        elimination_care: ['colorectal_surgery'],
+        growth: ['pediatrics'],
+        chronic_conditions: ['cardiology'],
+        pregnancy: ['obstetrics_gynecology'],
+        travel_medication: ['pharmacy_general']
+    };
+
+    const pharmacistDepartmentTitles = {
+        ophthalmology: '眼科', ent: '耳鼻喉科', dermatology: '皮膚科', plastic_surgery: '整形外科',
+        colorectal_surgery: '直腸外科', dentistry: '牙科', obstetrics_gynecology: '婦產科',
+        pediatrics: '兒科', cardiology: '心臟內科', pharmacy_general: '藥事通用'
+    };
 
     const featuredCardIds = [
         "heat_exhaustion",
@@ -929,6 +985,25 @@
         renderHome();
     }
 
+    function applyPublicTopicFromUrl() {
+        const topicId = new URLSearchParams(window.location.search).get('topic');
+        if (publicTopicMeta.some(topic => topic.id === topicId)) {
+            activePublicTopic = topicId;
+        }
+    }
+
+    function renderRelatedPharmacistNavigation() {
+        const root = document.getElementById('related-pharmacist-navigation');
+        const departments = publicTopicRelatedDepartments[activePublicTopic] || [];
+        if (!departments.length) {
+            root.innerHTML = '';
+            return;
+        }
+        root.innerHTML = `<h2 class="related-navigation-title">💊 給藥師的相關衛教</h2><div class="related-navigation-list">${departments.map(departmentId =>
+            `<a class="related-navigation-link" href="./index.html?department=${encodeURIComponent(departmentId)}">${pharmacistDepartmentTitles[departmentId]}</a>`
+        ).join('')}</div>`;
+    }
+
     function getActivePublicTopicTitle() {
         return publicTopicMeta.find(topic => topic.id === activePublicTopic)?.title || '全部圖卡';
     }
@@ -945,6 +1020,7 @@
         favGrid.innerHTML = '';
         renderFeaturedCards();
         renderTopicFilters();
+        renderRelatedPharmacistNavigation();
 
         const categories = {};
         Object.keys(educationData).forEach(key => {
@@ -1299,6 +1375,7 @@ function updateContent() {
     }
     function initPage() {
         setupPageHeader();
+        applyPublicTopicFromUrl();
         document.getElementById('card-search').addEventListener('input', function(event) {
             updateCardSearch(event.target.value);
         });
