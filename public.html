@@ -1008,7 +1008,7 @@
         if (!target) return;
 
         const scrollToTarget = () => {
-            window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY, behavior: 'auto' });
+            document.body.scrollTo({ top: target.getBoundingClientRect().top + document.body.scrollTop, behavior: 'auto' });
         };
 
         scrollToTarget();
