@@ -27,6 +27,7 @@ Project skill: for card additions, scheduled card releases, image conversion, an
   - `growth`
   - `chronic_conditions`
   - `sleep`
+  - `pregnancy`
   - `travel_medication`
 - When adding a public education card, add the same `topics` metadata to both `cards.json` and `cards.manual.json`. Use multiple topic IDs when the card genuinely belongs to more than one topic.
 - Pharmacist cards generally use:
