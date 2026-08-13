@@ -290,7 +290,7 @@
 </header>
 
 <nav class="top-nav">
-    <a href="./index.html#related-public-navigation" id="nav-pharmacist">藥師衛教</a>
+    <a href="./index.html?focus=related-public" id="nav-pharmacist">藥師衛教</a>
     <a href="./public.html" id="nav-public">民眾疾病衛教</a>
 </nav>
 <div class="page-note" id="page-note"></div>
@@ -1001,13 +1001,19 @@
         ).join('')}</div>`;
     }
 
-    function scrollToHashTarget() {
-        const targetId = window.location.hash.slice(1);
-        const target = targetId && document.getElementById(targetId);
-        if (target) {
+    function focusRelatedNavigation() {
+        if (new URLSearchParams(window.location.search).get('focus') !== 'related-pharmacist') return;
+
+        const target = document.getElementById('related-pharmacist-navigation');
+        if (!target) return;
+
+        const scrollToTarget = () => {
             window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY, behavior: 'auto' });
-            history.replaceState(null, '', window.location.pathname + window.location.search);
-        }
+        };
+
+        scrollToTarget();
+        requestAnimationFrame(scrollToTarget);
+        history.replaceState(null, '', window.location.pathname);
     }
 
     function getActivePublicTopicTitle() {
@@ -1027,7 +1033,6 @@
         renderFeaturedCards();
         renderTopicFilters();
         renderRelatedPharmacistNavigation();
-        scrollToHashTarget();
 
         const categories = {};
         Object.keys(educationData).forEach(key => {
@@ -1095,6 +1100,7 @@
         document.getElementById('fav-section').style.display = visibleFavCount > 0 ? 'block' : 'none';
         initMainSorting();
         initFavoriteSorting();
+        focusRelatedNavigation();
     }
 
     function openViewer(type, startIndex = 0) {
