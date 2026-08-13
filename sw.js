@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202608132305';
+const CACHE_NAME = 'pwa-cache-v202608132315';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -666,14 +666,17 @@ self.addEventListener('fetch', (e) => {
 
   if (isFreshAsset) {
     e.respondWith(
-      // Keep HTML, scripts and data current; fall back to the last cached copy only offline.
-      fetch(request).then(response => {
-        if (response && response.ok) {
-          const copy = response.clone();
-          caches.open(RUNTIME_CACHE).then(cache => cache.put(request, copy));
-        }
-        return response;
-      }).catch(() => caches.match(request))
+      caches.match(request).then(cachedResponse => {
+        const networkUpdate = fetch(request).then(response => {
+          if (response && response.ok) {
+            const copy = response.clone();
+            caches.open(RUNTIME_CACHE).then(cache => cache.put(request, copy));
+          }
+          return response;
+        }).catch(() => caches.match(request));
+
+        return cachedResponse || networkUpdate;
+      })
     );
     return;
   }

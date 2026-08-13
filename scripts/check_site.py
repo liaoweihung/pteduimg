@@ -206,7 +206,7 @@ def check_service_worker(failures: list[str]) -> None:
             "runtime cache may be deleted on each update",
         ),
         ("coreUrlsToCache", "core pre-cache is limited", "sw.js is missing core pre-cache list"),
-        ("Keep HTML, scripts and data current", "fresh assets use network first", "sw.js may serve stale homepage assets"),
+        ("caches.match(request).then(cachedResponse", "requests check cache first", "sw.js is not cache-first"),
     ]
     for needle, ok, fail in checks:
         check(needle in sw, ok, fail, failures)
