@@ -1455,6 +1455,46 @@
       "img/10_common_questions.png"
     ]
   },
+  "motion_sickness_meds": {
+    "title": "暈車/船/機藥",
+    "category": "public_education",
+    "topics": [
+      "travel_medication"
+    ],
+    "order": 4.1,
+    "hidden": false,
+    "icon": "🚗",
+    "tags": [
+      "暈車藥",
+      "暈船藥",
+      "暈機藥",
+      "動暈症",
+      "旅遊用藥",
+      "防暈車",
+      "防暈船",
+      "防暈機",
+      "Dimenhydrinate",
+      "Meclizine",
+      "Scopolamine",
+      "暈車藥錠",
+      "暈車糖漿",
+      "暈車貼片",
+      "Scopolamine貼片",
+      "Dimenhydrinate糖漿",
+      "兒童暈車",
+      "嗜睡",
+      "口乾",
+      "視力模糊"
+    ],
+    "texts": [
+      "暈車藥錠劑比較與使用提醒",
+      "暈車藥糖漿與貼片使用方式"
+    ],
+    "steps": [
+      "img/motion_sickness_meds_1.webp",
+      "img/motion_sickness_meds_2.webp"
+    ]
+  },
   "angular_cheilitis": {
     "title": "口角炎",
     "category": "public_education",
