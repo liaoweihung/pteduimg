@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html as html_module
 import json
 import re
 import sys
@@ -154,6 +155,68 @@ def check_static_card_template(pages: list[Path], failures: list[str]) -> None:
         not noisy_h1,
         "sample card page titles omit step-number suffix",
         f"card page h1 still contains step suffix: {noisy_h1}",
+        failures,
+    )
+
+
+def check_static_card_text_content(cards: dict, failures: list[str]) -> None:
+    content_records = load_json(ROOT / "data" / "card_content.json")
+    high_records = [
+        record for record in content_records
+        if isinstance(record, dict) and record.get("matchConfidence") == "high"
+    ]
+    high_images = {record.get("image") for record in high_records if record.get("image")}
+    content_errors: list[str] = []
+
+    for record in high_records:
+        image = record.get("image")
+        page = page_for_image(image) if isinstance(image, str) else None
+        if not page or not page.exists():
+            content_errors.append(f"missing page for {image}")
+            continue
+        page_html = read_text(page)
+        decoded = html_module.unescape(page_html)
+        title = str(record.get("title") or "").strip()
+        summary = str(record.get("summary") or "").strip()
+        alt_text = str(record.get("altText") or "").strip()
+        h1_matches = re.findall(r"<h1>(.*?)</h1>", page_html, flags=re.S)
+        required = [
+            title and re.search(r"<title>[^<]+</title>", page_html),
+            summary and f'<meta name="description" content="' in page_html and summary in decoded,
+            len(h1_matches) == 1 and title in html_module.unescape(h1_matches[0]),
+            alt_text and alt_text in decoded,
+            '<article class="card-text-content">' in page_html,
+            '<details class="card-text-details">' in page_html,
+            '<p class="card-summary">' in page_html,
+            bool(re.search(r"<section>\s*<h2>.+?</h2>\s*<p>.+?</p>\s*</section>", page_html, flags=re.S)),
+            f'<link rel="canonical" href="https://liaoweihung.github.io/pteduimg/cards/{Path(image).stem}.html">' in page_html,
+        ]
+        if not all(required):
+            content_errors.append(rel(page))
+
+    unexpected_text_pages: list[str] = []
+    checked_images: set[str] = set()
+    for card in cards.values():
+        if is_scheduled_hidden(card):
+            continue
+        for image in card.get("steps", []):
+            if not isinstance(image, str) or image in checked_images or image in high_images:
+                continue
+            checked_images.add(image)
+            page = page_for_image(image)
+            if page.exists() and '<article class="card-text-content">' in read_text(page):
+                unexpected_text_pages.append(rel(page))
+
+    check(
+        not content_errors,
+        f"all {len(high_records)} high-confidence card pages contain static text and SEO fields",
+        f"high-confidence card text integration errors: {content_errors[:5]}",
+        failures,
+    )
+    check(
+        not unexpected_text_pages,
+        "cards without recovered high-confidence text keep the original template",
+        f"unexpected text blocks on non-high pages: {unexpected_text_pages[:5]}",
         failures,
     )
 
@@ -321,6 +384,7 @@ def main() -> int:
     pages = check_card_pages(cards, failures)
     check_home_viewer(failures)
     check_static_card_template(pages, failures)
+    check_static_card_text_content(cards, failures)
     check_analytics_guards(failures)
     check_service_worker(failures)
     check_oral_liquid_explorer(failures)

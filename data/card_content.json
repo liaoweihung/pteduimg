@@ -1,0 +1,600 @@
+[
+  {
+    "cardId": "fall_wound",
+    "title": "傷口覆蓋與保護",
+    "image": "img/wound_cover.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/wound_cover.html",
+    "summary": "敷料大小要超過傷口邊緣 1–2 公分，完整覆蓋傷口，保持乾淨平整並避免直接摩擦。",
+    "sections": [
+      {
+        "heading": "如何固定",
+        "text": "紙膠帶固定四周；關節處可用彈性繃帶輔助。不要包太緊。"
+      },
+      {
+        "heading": "固定過緊的警訊",
+        "text": "若出現麻木、腫脹、發紫或疼痛加劇，可能固定過緊。"
+      }
+    ],
+    "altText": "傷口覆蓋與保護第 10 張圖卡",
+    "sourceConversationId": "6a053ce1-1fa0-83ab-9839-04aaf7a70ec8",
+    "sourceMessageId": "5bac24c7-41f5-4cba-a323-f65630510af0",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "Ped_abx_susp",
+    "title": "小兒抗生素水劑一般泡製方式",
+    "summary": "輕彈瓶身：泡製前先將粉末彈鬆，避免結塊附著在瓶底。",
+    "sections": [
+      {
+        "heading": "彈、鬆、看",
+        "text": "輕彈瓶身：泡製前先將粉末彈鬆，避免結塊附著在瓶底。"
+      }
+    ],
+    "altText": "彈、鬆、看：輕彈瓶身：泡製前先將粉末彈鬆，避免結塊附著在瓶底。",
+    "sourceConversationId": "69ead1da-a170-8321-af83-30b9f59c4c79",
+    "sourceMessageId": "c88a92a5-6ae0-4337-99b8-3f3e7a464f79",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "image": "img/Ped_abx_susp_1.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_1.html"
+  },
+  {
+    "cardId": "Ped_abx_susp",
+    "title": "用冷開水，不能用熱水",
+    "summary": "第一次加水：加入冷開水至「刻度線以下」，不可一次加滿。",
+    "sections": [
+      {
+        "heading": "先加一點水",
+        "text": "第一次加水：加入冷開水至「刻度線以下」，不可一次加滿。"
+      }
+    ],
+    "altText": "先加一點水：第一次加水：加入冷開水至「刻度線以下」，不可一次加滿。",
+    "sourceConversationId": "69ead1da-a170-8321-af83-30b9f59c4c79",
+    "sourceMessageId": "c77619c5-2a00-44ef-a9e6-1c92cf80a3db",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/Ped_abx_susp_2.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_2.html"
+  },
+  {
+    "cardId": "Ped_abx_susp",
+    "title": "搖晃均勻方法",
+    "summary": "充分搖晃：蓋緊瓶蓋後用力搖勻，直到沒有粉末結塊。",
+    "sections": [
+      {
+        "heading": "用力搖勻",
+        "text": "充分搖晃：蓋緊瓶蓋後用力搖勻，直到沒有粉末結塊。"
+      }
+    ],
+    "altText": "用力搖勻：充分搖晃：蓋緊瓶蓋後用力搖勻，直到沒有粉末結塊。",
+    "sourceConversationId": "69ead1da-a170-8321-af83-30b9f59c4c79",
+    "sourceMessageId": "5a487d65-a23e-45b8-96f5-5e476066b8e3",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "image": "img/Ped_abx_susp_3.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_3.html"
+  },
+  {
+    "cardId": "Ped_abx_susp",
+    "title": "再加水到刻度線",
+    "summary": "補足水量：待泡沫消退後，再加水至刻度線。",
+    "sections": [
+      {
+        "heading": "補到刻度線",
+        "text": "補足水量：待泡沫消退後，再加水至刻度線。"
+      }
+    ],
+    "altText": "補到刻度線：補足水量：待泡沫消退後，再加水至刻度線。",
+    "sourceConversationId": "69ead1da-a170-8321-af83-30b9f59c4c79",
+    "sourceMessageId": "93904a30-1ae9-4f32-9539-a43300cc3064",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "image": "img/Ped_abx_susp_4.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_4.html"
+  },
+  {
+    "cardId": "Ped_abx_susp",
+    "title": "再次搖勻",
+    "summary": "再次搖勻：讓藥液濃度均勻，完成泡製。",
+    "sections": [
+      {
+        "heading": "再搖一次",
+        "text": "再次搖勻：讓藥液濃度均勻，完成泡製。"
+      }
+    ],
+    "altText": "再搖一次：再次搖勻：讓藥液濃度均勻，完成泡製。",
+    "sourceConversationId": "69ead1da-a170-8321-af83-30b9f59c4c79",
+    "sourceMessageId": "326afe21-203c-4b82-9695-29399ba60d45",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "image": "img/Ped_abx_susp_5.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_5.html"
+  },
+  {
+    "cardId": "Ped_abx_susp",
+    "title": "使用前要搖一搖",
+    "summary": "用前搖一搖：每次服用前都要搖勻，避免濃度不均。",
+    "sections": [
+      {
+        "heading": "使用前要搖",
+        "text": "用前搖一搖：每次服用前都要搖勻，避免濃度不均。"
+      }
+    ],
+    "altText": "使用前要搖：用前搖一搖：每次服用前都要搖勻，避免濃度不均。",
+    "sourceConversationId": "69ead1da-a170-8321-af83-30b9f59c4c79",
+    "sourceMessageId": "70b6ab6c-d5bb-4522-8f53-0903e468770a",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/Ped_abx_susp_6.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_6.html"
+  },
+  {
+    "cardId": "Ped_abx_susp",
+    "title": "不可冷凍。過期就丟棄，顏色稍微變深是正常的",
+    "summary": "保存方式：依藥品指示冷藏或室溫保存，並於7天內使用完畢（依藥品不同可能為7–14天）。",
+    "sections": [
+      {
+        "heading": "保存與期限",
+        "text": "保存方式：依藥品指示冷藏或室溫保存，並於7天內使用完畢（依藥品不同可能為7–14天）。"
+      }
+    ],
+    "altText": "保存與期限：保存方式：依藥品指示冷藏或室溫保存，並於7天內使用完畢（依藥品不同可能為7–14天）。",
+    "sourceConversationId": "69ead1da-a170-8321-af83-30b9f59c4c79",
+    "sourceMessageId": "3ca88761-c5da-4d03-a7fa-ddb39fb4fb1a",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/Ped_abx_susp_7.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_7.html"
+  },
+  {
+    "cardId": "Ped_abx_susp",
+    "title": "整合全部的步驟",
+    "summary": "小兒抗生素水劑泡製的七個步驟整合版。",
+    "sections": [
+      {
+        "heading": "彈、鬆、看",
+        "text": "輕彈瓶身：泡製前先將粉末彈鬆，避免結塊附著在瓶底。"
+      },
+      {
+        "heading": "先加一點水",
+        "text": "第一次加水：加入冷開水至「刻度線以下」，不可一次加滿。"
+      },
+      {
+        "heading": "用力搖勻",
+        "text": "充分搖晃：蓋緊瓶蓋後用力搖勻，直到沒有粉末結塊。"
+      },
+      {
+        "heading": "補到刻度線",
+        "text": "補足水量：待泡沫消退後，再加水至刻度線。"
+      },
+      {
+        "heading": "再搖一次",
+        "text": "再次搖勻：讓藥液濃度均勻，完成泡製。"
+      },
+      {
+        "heading": "使用前要搖",
+        "text": "用前搖一搖：每次服用前都要搖勻，避免濃度不均。"
+      },
+      {
+        "heading": "保存與期限",
+        "text": "保存方式：依藥品指示冷藏或室溫保存，並於7天內使用完畢（依藥品不同可能為7–14天）。"
+      }
+    ],
+    "altText": "小兒抗生素水劑泡製七步驟整合圖卡。",
+    "sourceConversationId": "69ead1da-a170-8321-af83-30b9f59c4c79",
+    "sourceMessageId": "9e98bc44-d072-40fa-bffa-ac794059b362",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/Ped_abx_susp_8.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_8.html"
+  },
+  {
+    "cardId": "ped_fever_reducer",
+    "title": "安佳熱",
+    "image": "img/antiphen.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/antiphen.html",
+    "summary": "安佳熱（Acetaminophen）退燒糖漿：紅色（草莓口味）或紫色糖漿；耳溫達 38°C～39°C 時使用。",
+    "sections": [
+      {
+        "heading": "給藥間隔與上限",
+        "text": "兩次服藥至少間隔 4 小時；一天最多 5 次。"
+      },
+      {
+        "heading": "年齡劑量",
+        "text": "6～12歲每次10～15毫升；3～6歲每次5～7.5毫升；3歲以下由醫師評估使用。"
+      },
+      {
+        "heading": "劑量速算",
+        "text": "單次劑量（c.c.）＝孩童體重（kg）÷ 2。"
+      }
+    ],
+    "altText": "安佳熱第 1 張圖卡",
+    "sourceConversationId": "6a0dc1ca-25dc-83a6-a126-60ef828de577",
+    "sourceMessageId": "d05150de-6f3a-4861-b562-84b8dc8577c6",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "ped_fever_reducer",
+    "title": "依普芬",
+    "image": "img/ibuprofen_sol.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ibuprofen_sol.html",
+    "summary": "依普芬（Ibuprofen）：紫色或紅色懸浮液，使用前需搖勻；耳溫達 39°C 以上時使用。",
+    "sections": [
+      {
+        "heading": "給藥間隔",
+        "text": "兩次服藥至少間隔 6 小時。"
+      },
+      {
+        "heading": "劑量速算",
+        "text": "單次劑量（c.c.）＝孩童體重（kg）÷ 2；若發燒程度較輕，醫師有時會建議體重 ÷ 4 的低劑量。"
+      }
+    ],
+    "altText": "依普芬第 2 張圖卡",
+    "sourceConversationId": "6a0dc1ca-25dc-83a6-a126-60ef828de577",
+    "sourceMessageId": "61126f11-7ccd-49d6-a48e-bf2c074a8641",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "oral_hygiene",
+    "title": "口腔清潔",
+    "summary": "漱口水應依防蛀、抗菌或清新口氣等需求選擇，且不能取代刷牙與牙線。",
+    "sections": [
+      {
+        "heading": "依需求選擇",
+        "text": "含氟型可幫助防蛀；抗菌型可減少牙菌斑與牙齦發炎；草本或清新型主要提供口氣與使用感。"
+      },
+      {
+        "heading": "使用原則",
+        "text": "漱口水是輔助工具，不能取代刷牙與牙線；刺激感強不代表效果較好。"
+      }
+    ],
+    "altText": "口腔清潔：漱口水應依防蛀、抗菌或清新口氣等需求選擇，且不能取代刷牙與牙線。",
+    "sourceConversationId": "6a0282e2-a674-83a6-b981-ac356831606f",
+    "sourceMessageId": "54674457-c72f-47f7-a78b-7af1be6780f4",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/oral_hygiene_01.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_01.html"
+  },
+  {
+    "cardId": "oral_hygiene",
+    "title": "口腔清潔",
+    "summary": "正確刷牙重點是 45 度、小力道、慢慢刷，並清潔所有牙面與舌面。",
+    "sections": [
+      {
+        "heading": "刷牙動作",
+        "text": "牙刷斜 45 度靠在牙齒與牙齦交界，以小力道、短距離來回刷動。"
+      },
+      {
+        "heading": "範圍與時間",
+        "text": "外側、內側、咬合面、後排牙齒與舌面都要清潔；每天至少 2 次，每次至少 2 分鐘。"
+      }
+    ],
+    "altText": "口腔清潔：正確刷牙重點是 45 度、小力道、慢慢刷，並清潔所有牙面與舌面。",
+    "sourceConversationId": "6a0282e2-a674-83a6-b981-ac356831606f",
+    "sourceMessageId": "63f8ab70-70a6-432f-b25b-12b8bf0e2002",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/oral_hygiene_02.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_02.html"
+  },
+  {
+    "cardId": "oral_hygiene",
+    "title": "口腔清潔",
+    "summary": "刷牙流血可能是牙菌斑堆積與牙周發炎的警訊，仍需正確清潔並接受牙科處理。",
+    "sections": [
+      {
+        "heading": "原因與警訊",
+        "text": "牙菌斑堆積可造成牙齦發炎與牙周病；常見警訊包括刷牙流血、紅腫、口臭與牙結石。"
+      },
+      {
+        "heading": "處理重點",
+        "text": "持續正確刷牙並使用牙線或牙間刷；牙結石需由牙醫處理，必要時接受牙周治療。"
+      }
+    ],
+    "altText": "口腔清潔：刷牙流血可能是牙菌斑堆積與牙周發炎的警訊，仍需正確清潔並接受牙科處理。",
+    "sourceConversationId": "6a0282e2-a674-83a6-b981-ac356831606f",
+    "sourceMessageId": "0301225c-b431-4310-905e-f1a53af55d93",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/oral_hygiene_03.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_03.html"
+  },
+  {
+    "cardId": "oral_hygiene",
+    "title": "口腔清潔",
+    "summary": "牙齦保健需結合合適牙膏、牙齦邊緣清潔、牙線或牙間刷與定期牙科檢查。",
+    "sections": [
+      {
+        "heading": "牙膏與清潔",
+        "text": "牙膏是輔助；刷牙要清到牙齦邊緣，並每天使用牙線或牙間刷清潔牙縫。"
+      },
+      {
+        "heading": "定期照護",
+        "text": "牙結石無法自行刷除，需定期洗牙與檢查；牙齦經常流血應提早就醫。"
+      }
+    ],
+    "altText": "口腔清潔：牙齦保健需結合合適牙膏、牙齦邊緣清潔、牙線或牙間刷與定期牙科檢查。",
+    "sourceConversationId": "6a0282e2-a674-83a6-b981-ac356831606f",
+    "sourceMessageId": "b712d46a-3cfd-4513-a301-531f2692b8c2",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/oral_hygiene_04.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_04.html"
+  },
+  {
+    "cardId": "oral_hygiene",
+    "title": "口腔清潔",
+    "summary": "牙刷宜選軟毛、磨圓刷毛與適當大小刷頭，並以好握、方便控制為原則。",
+    "sections": [
+      {
+        "heading": "刷毛",
+        "text": "建議選軟毛，刷毛尖端宜經磨圓處理，以減少牙齦刺激與受傷風險。"
+      },
+      {
+        "heading": "刷頭與刷柄",
+        "text": "小型或中小型刷頭較容易清潔後排與死角；刷柄以好握、止滑、容易控制為主。"
+      }
+    ],
+    "altText": "口腔清潔：牙刷宜選軟毛、磨圓刷毛與適當大小刷頭，並以好握、方便控制為原則。",
+    "sourceConversationId": "6a0282e2-a674-83a6-b981-ac356831606f",
+    "sourceMessageId": "3f51fbd1-b9e7-4e21-bf6c-0ab4c2ada274",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/oral_hygiene_05.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_05.html"
+  },
+  {
+    "cardId": "oral_hygiene",
+    "title": "口腔清潔",
+    "summary": "牙間刷與沖牙機可協助清潔牙縫，但需選對尺寸、控制力道，且不能取代基本刷牙。",
+    "sections": [
+      {
+        "heading": "牙間刷",
+        "text": "選對尺寸後順著牙縫輕放並前後移動，不要硬塞；使用後清洗晾乾，刷毛變形時更換。"
+      },
+      {
+        "heading": "沖牙機",
+        "text": "以水柱輔助沖除牙縫與牙齦邊緣殘渣，應由低壓開始並調整合適角度。"
+      }
+    ],
+    "altText": "口腔清潔：牙間刷與沖牙機可協助清潔牙縫，但需選對尺寸、控制力道，且不能取代基本刷牙。",
+    "sourceConversationId": "6a0282e2-a674-83a6-b981-ac356831606f",
+    "sourceMessageId": "a8e131e5-72b8-4cd0-af1e-12d506445db0",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/oral_hygiene_06.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_06.html"
+  },
+  {
+    "cardId": "oral_hygiene",
+    "title": "口腔清潔",
+    "summary": "假牙應每天清潔，避免一般牙膏與熱水，並依正確步驟使用假牙清潔用品。",
+    "sections": [
+      {
+        "heading": "日常清潔",
+        "text": "每天至少清潔 1–2 次，睡前一定要清潔；可用假牙刷、中性清潔劑或假牙清潔錠。"
+      },
+      {
+        "heading": "清潔步驟",
+        "text": "準備清潔盒、放入清潔錠與假牙、加水、等待 5–10 分鐘，再取出晾乾或收妥。"
+      }
+    ],
+    "altText": "口腔清潔：假牙應每天清潔，避免一般牙膏與熱水，並依正確步驟使用假牙清潔用品。",
+    "sourceConversationId": "6a0282e2-a674-83a6-b981-ac356831606f",
+    "sourceMessageId": "f8ed83be-3eed-4e5b-9c81-b79eb3b31d81",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/oral_hygiene_07.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_07.html"
+  },
+  {
+    "cardId": "oral_hygiene",
+    "title": "口腔清潔",
+    "summary": "假牙黏著劑應少量使用、正確定位並每日清潔，不能用來取代不合適假牙的調整。",
+    "sections": [
+      {
+        "heading": "使用方式",
+        "text": "使用前清潔並擦乾假牙，少量點狀或細條狀塗抹；戴上後對準位置並輕壓固定。"
+      },
+      {
+        "heading": "拆除與注意",
+        "text": "不易取下時可先喝一點溫熱水再慢慢鬆開；每天清除殘膠，明顯鬆動或疼痛應回牙科檢查。"
+      }
+    ],
+    "altText": "口腔清潔：假牙黏著劑應少量使用、正確定位並每日清潔，不能用來取代不合適假牙的調整。",
+    "sourceConversationId": "6a0282e2-a674-83a6-b981-ac356831606f",
+    "sourceMessageId": "d572b8ba-c617-4a81-bd46-c48f1aae7125",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/oral_hygiene_08.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_08.html"
+  },
+  {
+    "cardId": "adult_diaper",
+    "title": "成人紙尿布怎麼挑",
+    "summary": "成人紙尿布可依日夜吸收需求、腰圍或臀圍、透氣材質與附加功能選擇。",
+    "sections": [
+      {
+        "heading": "吸水量",
+        "text": "白天可選薄型並勤更換；夜間可選高吸收款。替換式尿片可搭配尿布使用。"
+      },
+      {
+        "heading": "尺寸選擇",
+        "text": "以腰圍或臀圍為依據；太緊容易紅腫、破皮，太鬆容易從胯下漏尿。"
+      },
+      {
+        "heading": "材質與功能",
+        "text": "可選透氣材質並搭配隔離霜；附加功能包括抗菌、除臭與尿量顯示線。"
+      }
+    ],
+    "altText": "成人紙尿布怎麼挑：成人紙尿布可依日夜吸收需求、腰圍或臀圍、透氣材質與附加功能選擇。",
+    "sourceConversationId": "6a06a7fa-6bf4-83a3-8664-2e46aa2b4939",
+    "sourceMessageId": "8c6b22c8-9ba2-4e76-8c3c-1ec8f9998687",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/adult_diaper_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/adult_diaper_2.html"
+  },
+  {
+    "cardId": "over_one_oint",
+    "title": "藥膏一起擦",
+    "summary": "不同藥膏原則上不要混合，需依醫囑分區或錯開時間使用。",
+    "sections": [
+      {
+        "heading": "不要混擦",
+        "text": "不要把兩種藥膏擠在一起混，也不要未經指示同時塗在完全相同的位置。"
+      },
+      {
+        "heading": "分時與分區",
+        "text": "不同部位可分區使用；同一部位通常建議間隔 15–30 分鐘，並依治療目的安排順序。"
+      }
+    ],
+    "altText": "藥膏一起擦：不同藥膏原則上不要混合，需依醫囑分區或錯開時間使用。",
+    "sourceConversationId": "69ecd5a1-5154-83a6-aed0-63150c0240e1",
+    "sourceMessageId": "fb6411ee-4b25-410a-9e9a-e9f9b3c04199",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/over_one_oint_01.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/over_one_oint_01.html"
+  },
+  {
+    "cardId": "over_one_oint",
+    "title": "藥膏一起擦",
+    "summary": "抗感染藥、類固醇與其他藥膏併用時，需留意使用順序與感染惡化風險。",
+    "sections": [
+      {
+        "heading": "抗感染藥搭配",
+        "text": "抗生素與抗黴菌藥不建議自行同時塗同一區；疑似混合感染應由醫師評估。"
+      },
+      {
+        "heading": "與類固醇併用",
+        "text": "可依指示先擦抗感染藥，間隔 15–30 分鐘後再薄擦類固醇，並留意症狀是否被掩蓋。"
+      }
+    ],
+    "altText": "藥膏一起擦：抗感染藥、類固醇與其他藥膏併用時，需留意使用順序與感染惡化風險。",
+    "sourceConversationId": "69ecd5a1-5154-83a6-aed0-63150c0240e1",
+    "sourceMessageId": "cf53f7a8-921d-4f09-bc86-f685f39bbd0c",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/over_one_oint_02.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/over_one_oint_02.html"
+  },
+  {
+    "cardId": "over_one_oint",
+    "title": "藥膏一起擦",
+    "summary": "不同劑型一起使用時，原則為先水後油、薄擦一層並保留吸收時間。",
+    "sections": [
+      {
+        "heading": "使用順序",
+        "text": "先使用溶液、凝膠等水狀清爽劑型，再使用乳膏，最後才是較油的軟膏。"
+      },
+      {
+        "heading": "間隔與厚度",
+        "text": "不同劑型間可等候 5–10 分鐘；不要混在一起，也不要厚厚疊擦。"
+      }
+    ],
+    "altText": "藥膏一起擦：不同劑型一起使用時，原則為先水後油、薄擦一層並保留吸收時間。",
+    "sourceConversationId": "69ecd5a1-5154-83a6-aed0-63150c0240e1",
+    "sourceMessageId": "8d1af855-f05c-4122-9161-b824e7c17457",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/over_one_oint_03.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/over_one_oint_03.html"
+  },
+  {
+    "cardId": "pediatric_cold_syrup",
+    "title": "希普利敏",
+    "summary": "希普利敏為 cyproheptadine 0.4 mg/mL 糖漿，圖卡整理用途、小兒劑量速算與常見副作用。",
+    "sections": [
+      {
+        "heading": "用途與成分",
+        "text": "成分為 cyproheptadine HCl，常見濃度 0.4 mg/mL，屬第一代抗組織胺，用於過敏相關症狀。"
+      },
+      {
+        "heading": "圖卡速算與副作用",
+        "text": "圖卡採體重 ÷ 4 約為每次 mL 數的簡化方式；常見副作用包括嗜睡、頭暈、口乾與食慾增加。"
+      }
+    ],
+    "altText": "希普利敏：希普利敏為 cyproheptadine 0.4 mg/mL 糖漿，圖卡整理用途、小兒劑量速算與常見副作用。",
+    "sourceConversationId": "6a105d3e-a598-83a7-9ed7-4626f7d645b7",
+    "sourceMessageId": "b108138c-034d-4eb0-aea8-d2df9dfadde3",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/ped_cold_cypromin.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_cypromin.html"
+  },
+  {
+    "cardId": "pediatric_cold_syrup",
+    "title": "勝克敏",
+    "summary": "勝克敏為 cetirizine 1 mg/mL 糖漿，圖卡整理過敏用途、小兒劑量速算與常見副作用。",
+    "sections": [
+      {
+        "heading": "用途與成分",
+        "text": "成分為 cetirizine，常見糖漿濃度 1 mg/mL，屬第二代抗組織胺，用於過敏性鼻炎、蕁麻疹與搔癢。"
+      },
+      {
+        "heading": "圖卡速算與副作用",
+        "text": "圖卡採體重 ÷ 4 約為每次 mL 數的簡化方式；常見副作用包括輕微嗜睡、頭暈、口乾、疲倦與頭痛。"
+      }
+    ],
+    "altText": "勝克敏：勝克敏為 cetirizine 1 mg/mL 糖漿，圖卡整理過敏用途、小兒劑量速算與常見副作用。",
+    "sourceConversationId": "6a105d3e-a598-83a7-9ed7-4626f7d645b7",
+    "sourceMessageId": "cb37b121-ac81-4f6b-8d81-9acaceaae1e5",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/ped_cold_cetirizine.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_cetirizine.html"
+  },
+  {
+    "cardId": "pediatric_cold_syrup",
+    "title": "息咳寧",
+    "summary": "息咳寧為複方感冒止咳糖漿，圖卡整理主要成分、用途、小兒劑量速算與常見副作用。",
+    "sections": [
+      {
+        "heading": "成分與用途",
+        "text": "每 1 mL 含 dl-methylephedrine 1 mg、chlorpheniramine 0.1 mg、glyceryl guaiacolate 5 mg，用於流鼻水、鼻塞、咳嗽與有痰等症狀。"
+      },
+      {
+        "heading": "圖卡速算與副作用",
+        "text": "圖卡採體重 ÷ 4 約為每次 mL 數的簡化方式；常見副作用包括嗜睡、頭暈、噁心、口乾與心跳變快。"
+      }
+    ],
+    "altText": "息咳寧：息咳寧為複方感冒止咳糖漿，圖卡整理主要成分、用途、小兒劑量速算與常見副作用。",
+    "sourceConversationId": "6a105d3e-a598-83a7-9ed7-4626f7d645b7",
+    "sourceMessageId": "49f322f7-00b3-444c-9b36-a26f4d2bd1e0",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "image": "img/ped_cold_secorine.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html"
+  }
+]

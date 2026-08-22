@@ -12,6 +12,8 @@ GA_MEASUREMENT_ID = "G-T5R33JYTC0"
 ROOT = Path(__file__).resolve().parent
 CARDS_JSON = ROOT / "cards.json"
 SEO_JSON = ROOT / "seo.json"
+CARD_CONTENT_JSON = ROOT / "data" / "card_content.json"
+CARD_TEXT_REPORT = ROOT / "data" / "card_text_web_integration_report.md"
 CARDS_DIR = ROOT / "cards"
 SITE_TITLE = "藥局衛教助手"
 
@@ -38,6 +40,25 @@ def read_seo():
     with SEO_JSON.open("r", encoding="utf-8") as file:
         data = json.load(file)
     return data if isinstance(data, dict) else {}
+
+
+def read_card_content():
+    if not CARD_CONTENT_JSON.exists():
+        return {}
+    with CARD_CONTENT_JSON.open("r", encoding="utf-8") as file:
+        data = json.load(file)
+    if not isinstance(data, list):
+        raise ValueError("data/card_content.json must be a JSON array")
+
+    content_index = {}
+    for record in data:
+        if not isinstance(record, dict) or record.get("matchConfidence") != "high":
+            continue
+        image = record.get("image")
+        if not isinstance(image, str) or not image:
+            continue
+        content_index[image.replace("\\", "/")] = record
+    return content_index
 
 
 def is_scheduled_hidden(card):
@@ -151,7 +172,25 @@ def normalize_card_seo(raw_seo, fallback):
     return seo
 
 
-def build_seo_index(cards):
+def apply_card_content_seo(seo, card_content):
+    if not card_content:
+        return seo
+    title = clean_seo_text(card_content.get("title"))
+    summary = clean_seo_text(card_content.get("summary"))
+    alt_text = clean_seo_text(card_content.get("altText"))
+    if title:
+        seo["page_title"] = f"{title}｜{SITE_TITLE}"
+        seo["h1"] = title
+        seo["og_title"] = seo["page_title"]
+    if summary:
+        seo["meta_description"] = summary
+        seo["og_description"] = summary
+    if alt_text:
+        seo["image_alt"] = alt_text
+    return seo
+
+
+def build_seo_index(cards, card_content_index):
     existing_seo = read_seo()
     seo_index = {}
     used_ids = set()
@@ -170,7 +209,9 @@ def build_seo_index(cards):
             page_path = page_for_image(step)
             fallback = fallback_seo_for_card(card_id, card, step, index)
             raw_seo = existing_seo.get(page_path) or existing_seo.get(image_id)
-            seo_index[page_path] = normalize_card_seo(raw_seo, fallback)
+            seo = normalize_card_seo(raw_seo, fallback)
+            card_content = card_content_index.get(step.replace("\\", "/"))
+            seo_index[page_path] = apply_card_content_seo(seo, card_content)
 
     SEO_JSON.write_text(
         json.dumps(seo_index, ensure_ascii=False, indent=2) + "\n",
@@ -205,7 +246,39 @@ def render_related_cards(series_steps, current_step):
     return "\n".join(items)
 
 
-def render_card_page(card_id, card, step, step_index, seo):
+def render_card_text_content(card_content, h1, category_label, step_number, total):
+    if not card_content:
+        return ""
+    summary = clean_seo_text(card_content.get("summary"))
+    section_html = []
+    for section in card_content.get("sections") or []:
+        if not isinstance(section, dict):
+            continue
+        heading = clean_seo_text(section.get("heading"))
+        text = clean_seo_text(section.get("text"))
+        if not heading or not text:
+            continue
+        section_html.append(
+            f"""          <section>
+            <h2>{esc(heading)}</h2>
+            <p>{esc(text)}</p>
+          </section>"""
+        )
+    sections = "\n".join(section_html)
+    return f"""      <article class="card-text-content">
+        <h1>{esc(h1)}</h1>
+        <p class="meta">{esc(category_label)} · {step_number}/{total}</p>
+        <details class="card-text-details">
+          <summary>文字版重點</summary>
+          <div class="card-text-body">
+            <p class="card-summary">{esc(summary)}</p>
+{sections}
+          </div>
+        </details>
+      </article>"""
+
+
+def render_card_page(card_id, card, step, step_index, seo, card_content=None):
     steps = card.get("steps") or []
     total = len(steps)
     step_number = step_index + 1
@@ -216,7 +289,7 @@ def render_card_page(card_id, card, step, step_index, seo):
     tracking_title = seo.get("tracking_title") or title
     description = seo["meta_description"]
     keywords = clean_seo_text(seo.get("keywords") or "")
-    h1 = clean_seo_text(card.get("title") or seo["h1"])
+    h1 = clean_seo_text((card_content or {}).get("title") or card.get("title") or seo["h1"])
     image_alt = seo["image_alt"]
     page_path = page_for_image(step)
     page_url = seo["canonical"]
@@ -228,10 +301,65 @@ def render_card_page(card_id, card, step, step_index, seo):
     prev_url = f"../{page_for_image(prev_step)}"
     next_url = f"../{page_for_image(next_step)}"
     calculator_styles = ""
+    card_text_styles = ""
     info_heading = (
         f"      <h1>{esc(h1)}</h1>\n"
         f"      <p class=\"meta\">{esc(category_label)} · {step_number}/{total}</p>"
     )
+    if card_content:
+        info_heading = render_card_text_content(card_content, h1, category_label, step_number, total)
+        card_text_styles = """    .card-text-content {
+      margin:0 0 18px;
+    }
+    .card-text-details {
+      border:1px solid var(--line);
+      border-radius:10px;
+      background:#fff;
+      overflow:hidden;
+    }
+    .card-text-details summary {
+      display:flex;
+      align-items:center;
+      gap:8px;
+      min-height:44px;
+      padding:10px 12px;
+      color:var(--brand);
+      font-size:.95rem;
+      font-weight:700;
+      cursor:pointer;
+      list-style:none;
+    }
+    .card-text-details summary::-webkit-details-marker { display:none; }
+    .card-text-details summary::before {
+      content:"▼";
+      display:inline-block;
+      font-size:.72rem;
+      transition:transform .18s ease;
+    }
+    .card-text-details[open] summary::before { transform:rotate(180deg); }
+    .card-text-details[open] summary { border-bottom:1px solid var(--line); }
+    .card-text-body {
+      padding:12px;
+      color:var(--ink);
+      font-size:.95rem;
+      line-height:1.65;
+    }
+    .card-text-body .card-summary {
+      margin:0 0 14px;
+      color:#475569;
+    }
+    .card-text-body section + section {
+      margin-top:14px;
+      padding-top:14px;
+      border-top:1px solid var(--line);
+    }
+    .card-text-body h2 {
+      margin:0 0 5px;
+      font-size:1rem;
+      line-height:1.4;
+    }
+    .card-text-body section p { margin:0; }
+"""
     if card_id == "child_height_weight":
         calculator_styles = """    .info-header {
       display:flex;
@@ -580,7 +708,7 @@ def render_card_page(card_id, card, step, step_index, seo):
       color:var(--muted);
       font-size:.86rem;
     }}
-{calculator_styles}    .share-row {{
+{card_text_styles}{calculator_styles}    .share-row {{
       display:flex;
       gap:8px;
       overflow-x:auto;
@@ -929,7 +1057,7 @@ def render_all_cards_page(cards, seo_index):
 """
 
 
-def generate_card_pages(cards, seo_index):
+def generate_card_pages(cards, seo_index, card_content_index):
     CARDS_DIR.mkdir(exist_ok=True)
     for old_page in CARDS_DIR.glob("*.html"):
         try:
@@ -955,8 +1083,9 @@ def generate_card_pages(cards, seo_index):
             used_ids.add(image_id)
             page_path = page_for_image(step)
             seo = seo_index.get(page_path) or fallback_seo_for_card(card_id, card, step, index)
+            card_content = card_content_index.get(step.replace("\\", "/"))
             (ROOT / page_path).write_text(
-                render_card_page(card_id, card, step, index, seo),
+                render_card_page(card_id, card, step, index, seo, card_content),
                 encoding="utf-8",
                 newline="\n",
             )
@@ -965,6 +1094,104 @@ def generate_card_pages(cards, seo_index):
     (CARDS_DIR / "404.html").write_text(render_404_page(), encoding="utf-8", newline="\n")
     (ROOT / "404.html").write_text(render_404_page(), encoding="utf-8", newline="\n")
     return generated_pages
+
+
+def markdown_cell(value):
+    return clean_seo_text(value).replace("|", "\\|") or "—"
+
+
+def build_card_text_integration_report(card_content_index):
+    rows = []
+    success_count = 0
+    for image, record in card_content_index.items():
+        page_path = ROOT / page_for_image(image)
+        expected_title = clean_seo_text(record.get("title"))
+        expected_summary = clean_seo_text(record.get("summary"))
+        expected_alt = clean_seo_text(record.get("altText"))
+        expected_url = clean_seo_text(record.get("url")) or abs_url(page_for_image(image))
+        errors = []
+        page_html = page_path.read_text(encoding="utf-8") if page_path.exists() else ""
+
+        title_match = re.search(r"<title>(.*?)</title>", page_html, flags=re.DOTALL)
+        description_match = re.search(r'<meta name="description" content="(.*?)">', page_html, flags=re.DOTALL)
+        h1_matches = re.findall(r"<h1>(.*?)</h1>", page_html, flags=re.DOTALL)
+        alt_match = re.search(r'<img class="hero-img"[^>]* alt="(.*?)"', page_html, flags=re.DOTALL)
+        canonical_match = re.search(r'<link rel="canonical" href="(.*?)">', page_html, flags=re.DOTALL)
+
+        title_ok = bool(title_match and expected_title and expected_title in html.unescape(title_match.group(1)))
+        description_ok = bool(
+            description_match and expected_summary
+            and html.unescape(description_match.group(1)) == expected_summary
+        )
+        h1_ok = bool(
+            len(h1_matches) == 1 and expected_title
+            and html.unescape(h1_matches[0]).strip() == expected_title
+        )
+        alt_ok = bool(alt_match and expected_alt and html.unescape(alt_match.group(1)) == expected_alt)
+        sections = [section for section in (record.get("sections") or []) if isinstance(section, dict)]
+        html_text_ok = bool(
+            '<article class="card-text-content">' in page_html
+            and '<details class="card-text-details">' in page_html
+            and '<p class="card-summary">' in page_html
+            and expected_summary
+            and esc(expected_summary) in page_html
+            and sections
+            and all(
+                f"<h2>{esc(clean_seo_text(section.get('heading')))}</h2>" in page_html
+                and f"<p>{esc(clean_seo_text(section.get('text')))}</p>" in page_html
+                for section in sections
+            )
+        )
+        canonical_ok = bool(
+            canonical_match
+            and html.unescape(canonical_match.group(1)) == abs_url(page_for_image(image))
+        )
+
+        checks = {
+            "title": title_ok,
+            "meta description": description_ok,
+            "h1": h1_ok,
+            "alt": alt_ok,
+            "HTML text": html_text_ok,
+            "canonical": canonical_ok,
+        }
+        for label, passed in checks.items():
+            if not passed:
+                errors.append(f"{label} 未完成")
+        if not page_path.exists():
+            errors.insert(0, "頁面不存在")
+        if not errors:
+            success_count += 1
+
+        yes_no = lambda value: "是" if value else "否"
+        rows.append(
+            "| " + " | ".join([
+                markdown_cell(record.get("cardId")),
+                markdown_cell(expected_title),
+                markdown_cell(expected_url),
+                yes_no(title_ok),
+                yes_no(description_ok),
+                yes_no(h1_ok),
+                yes_no(alt_ok),
+                yes_no(html_text_ok),
+                markdown_cell("；".join(errors) if errors else "無"),
+            ]) + " |"
+        )
+
+    failure_count = len(card_content_index) - success_count
+    report = [
+        "# 圖卡文字網頁整合報告",
+        "",
+        f"- 成功加入文字頁數：{success_count}",
+        f"- 失敗頁數：{failure_count}",
+        "",
+        "| cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |",
+        "|---|---|---|---:|---:|---:|---:|---:|---|",
+        *rows,
+        "",
+    ]
+    CARD_TEXT_REPORT.write_text("\n".join(report), encoding="utf-8", newline="\n")
+    return success_count, failure_count
 
 
 def update_service_worker(cards, generated_pages):
@@ -1156,13 +1383,16 @@ Sitemap: {abs_url("sitemap-main.xml")}
 
 def main():
     cards = read_cards()
-    seo_index = build_seo_index(cards)
-    generated_pages = generate_card_pages(cards, seo_index)
+    card_content_index = read_card_content()
+    seo_index = build_seo_index(cards, card_content_index)
+    generated_pages = generate_card_pages(cards, seo_index, card_content_index)
     (ROOT / "all-cards.html").write_text(render_all_cards_page(cards, seo_index), encoding="utf-8", newline="\n")
+    text_success, text_failures = build_card_text_integration_report(card_content_index)
     update_service_worker(cards, generated_pages)
     update_sitemap(generated_pages)
     update_robots()
     print(f"Generated {len(generated_pages)} static card pages.")
+    print(f"Integrated static text for {text_success} card pages ({text_failures} failures).")
     print("Updated all-cards.html, seo.json, sitemap.xml, sitemap-main.xml, robots.txt, and sw.js.")
 
 
