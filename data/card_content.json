@@ -596,5 +596,1132 @@
     "needsMedicalReview": true,
     "image": "img/ped_cold_secorine.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html"
+  },
+  {
+    "cardId": "motion_sickness_meds",
+    "title": "暈車藥錠劑比較與使用提醒",
+    "image": "img/motion_sickness_meds_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/motion_sickness_meds_1.html",
+    "summary": "暈車藥錠劑可先依短效、長效與複方錠辨識，通常於出發前 30～60 分鐘服用。",
+    "sections": [
+      {
+        "heading": "短效錠劑",
+        "text": "Dimenhydrinate：作用約 4～6 小時；若需要再次使用，依產品說明或藥師指示。"
+      },
+      {
+        "heading": "長效錠劑",
+        "text": "Meclizine：作用約 12～24 小時。"
+      },
+      {
+        "heading": "複方錠劑",
+        "text": "Scopolamine 口服複方：通常出發前 30～60 分鐘服用；孕婦不要自行使用，先詢問醫師或藥師。"
+      },
+      {
+        "heading": "共同提醒",
+        "text": "可能嗜睡、口乾、視力模糊；服用後避免開車或操作機械。"
+      }
+    ],
+    "altText": "暈車藥錠劑比較與使用提醒衛教圖卡",
+    "sourceConversationId": "6a85bf17-f890-83e8-82f7-99715758761e",
+    "sourceMessageId": "a8414572-e8e1-4c30-9e51-dc6922ab6d3e",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "motion_sickness_meds",
+    "title": "暈車藥糖漿與貼片使用方式",
+    "image": "img/motion_sickness_meds_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/motion_sickness_meds_2.html",
+    "summary": "暈車糖漿常見成分為 Dimenhydrinate；Scopolamine 貼片需提早貼於耳後無毛髮處。",
+    "sections": [
+      {
+        "heading": "暈車糖漿",
+        "text": "Dimenhydrinate 3 mg/mL：成人與 12 歲以上每次 16 mL（48 mg）；6～未滿 12 歲每次 8 mL（24 mg）；未滿 6 歲不要自行使用。不同品牌濃度可能不同，請依標示或藥師指示。"
+      },
+      {
+        "heading": "Scopolamine 貼片",
+        "text": "至少出發前 4 小時貼於耳後無毛髮處；一片最長可使用 72 小時；一次只貼一片，不要剪開。"
+      },
+      {
+        "heading": "貼片提醒",
+        "text": "貼完洗手並避免碰眼睛；孕婦使用前先詢問醫師。"
+      }
+    ],
+    "altText": "暈車藥糖漿與貼片使用方式衛教圖卡",
+    "sourceConversationId": "6a85bf17-f890-83e8-82f7-99715758761e",
+    "sourceMessageId": "a8414572-e8e1-4c30-9e51-dc6922ab6d3e",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "sore_throat_otc",
+    "title": "喉嚨痛不一定是感冒",
+    "image": "img/sore_throat_causes.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/sore_throat_causes.html",
+    "summary": "喉嚨痛不一定是感冒，常見原因包括病毒感染、乾燥或用聲過度、鼻涕倒流與胃食道逆流。",
+    "sections": [
+      {
+        "heading": "常見原因",
+        "text": "病毒性感冒；空氣乾燥或用聲過度；過敏或鼻涕倒流；胃食道逆流。"
+      },
+      {
+        "heading": "先判斷再處理",
+        "text": "不同原因的處理方式不同，不要只因喉嚨痛就直接使用抗生素。"
+      }
+    ],
+    "altText": "喉嚨痛不一定是感冒衛教圖卡",
+    "sourceConversationId": "6a2ed4de-e580-83ee-899f-1e34094320b8",
+    "sourceMessageId": "fa8db78d-b5e0-4c33-9fbd-0bbd77b8f08b",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "sore_throat_otc",
+    "title": "喉嚨痛怎麼選OTC產品",
+    "image": "img/sore_throat_otc_choice.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/sore_throat_otc_choice.html",
+    "summary": "喉嚨痛的 OTC 產品可依症狀選擇含片、噴劑、止痛藥或滋潤型產品。",
+    "sections": [
+      {
+        "heading": "含片",
+        "text": "常見成分：Amylmetacresol／Dichlorobenzyl alcohol（AMC／DCBA）、Cetylpyridinium chloride（CPC）。"
+      },
+      {
+        "heading": "喉嚨噴劑",
+        "text": "常見成分：Benzydamine、Povidone-Iodine。"
+      },
+      {
+        "heading": "止痛藥",
+        "text": "常見成分：Acetaminophen、Ibuprofen。"
+      },
+      {
+        "heading": "滋潤舒緩",
+        "text": "常見成分：Honey、Glycerin 或草本成分。"
+      }
+    ],
+    "altText": "喉嚨痛怎麼選OTC產品衛教圖卡",
+    "sourceConversationId": "6a2ed4de-e580-83ee-899f-1e34094320b8",
+    "sourceMessageId": "afb76aa6-2fc8-4f66-b835-6d467280dd9d",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "sore_throat_otc",
+    "title": "喉嚨痛出現這些情況建議就醫",
+    "image": "img/sore_throat_red_flags.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/sore_throat_red_flags.html",
+    "summary": "高燒、吞嚥或呼吸困難、扁桃腺白色膿點、症狀久未改善等情況應就醫。",
+    "sections": [
+      {
+        "heading": "建議就醫",
+        "text": "發燒超過 38.5°C；吞嚥困難或呼吸困難；扁桃腺出現白色膿點；喉嚨痛超過 1 週；聲音沙啞超過 2～3 週；症狀反覆發作。"
+      }
+    ],
+    "altText": "喉嚨痛出現這些情況建議就醫衛教圖卡",
+    "sourceConversationId": "6a2ed4de-e580-83ee-899f-1e34094320b8",
+    "sourceMessageId": "fa8db78d-b5e0-4c33-9fbd-0bbd77b8f08b",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "adult_diaper",
+    "title": "成人紙尿布的分類",
+    "image": "img/adult_diaper_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/adult_diaper_1.html",
+    "summary": "成人紙尿布可依行動力分為褲型紙尿褲與黏貼型尿布。",
+    "sections": [
+      {
+        "heading": "褲型紙尿褲",
+        "text": "適合仍有行動力、正在復健、長途搭車或外出、容易來不及上廁所者；活力褲可自行走動自理，復健褲需攙扶協助穿脫。"
+      },
+      {
+        "heading": "黏貼型尿布",
+        "text": "適合臥床、無行動力、失能或失智照護；容易更換，適合照護者協助穿戴。"
+      },
+      {
+        "heading": "選擇重點",
+        "text": "選對類型，兼顧舒適、防漏、活動方便與照護省力。"
+      }
+    ],
+    "altText": "成人紙尿布的分類衛教圖卡",
+    "sourceConversationId": "6a06a7fa-6bf4-83a3-8664-2e46aa2b4939",
+    "sourceMessageId": "b7287935-60b0-4958-a080-f41850882cf2",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "adult_diaper",
+    "title": "成人紙尿布使用的小重點",
+    "image": "img/adult_diaper_3.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/adult_diaper_3.html",
+    "summary": "成人紙尿布不是越久換越好；漏尿也不一定代表吸收量不足。",
+    "sections": [
+      {
+        "heading": "更換頻率",
+        "text": "白天建議定時檢查，潮濕就要更換；長時間悶住容易造成尿布疹、皮膚破皮、感染與異味增加。"
+      },
+      {
+        "heading": "漏尿原因",
+        "text": "可能是尺寸不合、穿法錯誤、大小便集中單側，或沒有立起防漏側邊。"
+      },
+      {
+        "heading": "夜間照護",
+        "text": "睡前先如廁；夜用型搭配看護墊；睡姿調整可減少側漏。"
+      },
+      {
+        "heading": "皮膚警訊",
+        "text": "明顯破皮、滲液、異味、發紅擴大、疼痛或發燒，建議就醫；不建議使用爽身粉，可改用隔離霜。"
+      }
+    ],
+    "altText": "成人紙尿布使用的小重點衛教圖卡",
+    "sourceConversationId": "6a06a7fa-6bf4-83a3-8664-2e46aa2b4939",
+    "sourceMessageId": "c556a972-0cec-46a1-8122-f23f26d14e12",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "adult_diaper",
+    "title": "照護的小幫手",
+    "image": "img/adult_diaper_4.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/adult_diaper_4.html",
+    "summary": "看護墊、合適的濕紙巾、潔膚液與隔離霜可協助成人尿布照護。",
+    "sections": [
+      {
+        "heading": "看護墊",
+        "text": "可保護床單、輪椅與沙發；可依需求裁切，下層防水，但液體仍可能從側邊滲漏。"
+      },
+      {
+        "heading": "濕紙巾",
+        "text": "選擇無酒精、無香料、純水型、尺寸夠大且厚度足夠；開蓋設計方便單手抽取；濕紙巾不可丟馬桶。"
+      },
+      {
+        "heading": "潔膚液與隔離霜",
+        "text": "可減少皮膚刺激、降低過敏機會並幫助維持皮膚保護力；清潔後再薄擦隔離霜。"
+      }
+    ],
+    "altText": "照護的小幫手衛教圖卡",
+    "sourceConversationId": "6a06a7fa-6bf4-83a3-8664-2e46aa2b4939",
+    "sourceMessageId": "ead42cb3-87fa-48f7-b651-db3a1545a19a",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "Hantaviridae",
+    "title": "漢他病毒",
+    "image": "img/Hantaviridae_01.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/Hantaviridae_01.html",
+    "summary": "預防漢他病毒的重點是防鼠：不讓鼠來、不讓鼠住、不讓鼠吃。",
+    "sections": [
+      {
+        "heading": "防鼠三不原則",
+        "text": "不讓鼠來；不讓鼠住；不讓鼠吃。"
+      },
+      {
+        "heading": "日常預防",
+        "text": "食物、廚餘密封處理；清除雜物；封住牆洞、排水孔等入口；定期清潔環境與滅鼠。"
+      },
+      {
+        "heading": "發現鼠類排泄物",
+        "text": "戴口罩與手套，開窗通風，用漂白水消毒後再清理，避免吸入帶病毒粉塵。"
+      },
+      {
+        "heading": "傳染提醒",
+        "text": "漢他病毒主要透過接觸或吸入鼠類排泄物污染物傳染。"
+      }
+    ],
+    "altText": "漢他病毒衛教圖卡",
+    "sourceConversationId": "69f87191-b60c-83ab-912a-dc750dcafe2d",
+    "sourceMessageId": "4d85782f-8048-4c0c-85b8-01f5276f7bbc",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "pregnancy_test_use",
+    "title": "驗孕筆什麼時候驗最準?",
+    "image": "img/pregnancy_test_timing.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/pregnancy_test_timing.html",
+    "summary": "月經預計來潮後再驗準確度較高；週期不規則可於性行為後約 2～3 週檢測。",
+    "sections": [
+      {
+        "heading": "建議驗孕時間",
+        "text": "月經預計來潮後再驗；月經週期不規則，可於性行為後約 2～3 週檢測；提早檢測可能因 hCG 濃度不足而出現偽陰性。"
+      },
+      {
+        "heading": "是否一定要晨尿",
+        "text": "月經剛延遲時，建議使用第一次晨尿；已延遲數天以上，一般尿液多半也可檢測。"
+      },
+      {
+        "heading": "使用前確認",
+        "text": "檢查有效期限、包裝完整再拆封，並先閱讀產品說明書。"
+      }
+    ],
+    "altText": "驗孕筆什麼時候驗最準?衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "eaa0d509-5eec-4c7b-b1d6-2969f048d5e8",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "pregnancy_test_use",
+    "title": "驗孕筆正確使用第 1、2 步",
+    "image": "img/pregnancy_test_steps_1_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/pregnancy_test_steps_1_2.html",
+    "summary": "驗孕筆使用前先拆封並保持吸尿端乾淨，再依產品說明用尿流法或尿杯法收集尿液。",
+    "sections": [
+      {
+        "heading": "STEP 1",
+        "text": "拆封並取出驗孕筆；保持吸尿端乾淨，不要碰觸吸尿棉。"
+      },
+      {
+        "heading": "STEP 2",
+        "text": "依產品說明，直接置於尿流中數秒，或使用乾淨容器收集尿液，再浸泡吸尿端數秒。"
+      }
+    ],
+    "altText": "驗孕筆正確使用第 1、2 步衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "eaa0d509-5eec-4c7b-b1d6-2969f048d5e8",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "pregnancy_test_use",
+    "title": "驗孕筆正確使用第 3、4 步",
+    "image": "img/pregnancy_test_steps_3_4.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/pregnancy_test_steps_3_4.html",
+    "summary": "蓋回驗孕筆保護蓋並平放，依產品說明等待，多數約 3～5 分鐘判讀。",
+    "sections": [
+      {
+        "heading": "STEP 3",
+        "text": "蓋回保護蓋並平放；不要倒放，也不要甩動。"
+      },
+      {
+        "heading": "STEP 4",
+        "text": "依產品說明等待，多數約 3～5 分鐘；超過規定判讀時間後，不建議再解讀結果。"
+      }
+    ],
+    "altText": "驗孕筆正確使用第 3、4 步衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "eaa0d509-5eec-4c7b-b1d6-2969f048d5e8",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "pregnancy_test_use",
+    "title": "驗孕筆如何判讀結果?",
+    "image": "img/pregnancy_test_result_reading.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/pregnancy_test_result_reading.html",
+    "summary": "控制線一條為陰性，控制線與測試線兩條為陽性；沒有控制線則檢測無效。",
+    "sections": [
+      {
+        "heading": "陰性",
+        "text": "一條控制線：目前未檢出懷孕。"
+      },
+      {
+        "heading": "陽性",
+        "text": "控制線加測試線兩條：表示可能懷孕。"
+      },
+      {
+        "heading": "無效",
+        "text": "沒有控制線：檢測失敗，請重新使用新的驗孕筆。"
+      },
+      {
+        "heading": "淡陽性",
+        "text": "第二條線即使很淡，只要在判讀時間內出現，通常仍應視為陽性，建議至婦產科確認。"
+      }
+    ],
+    "altText": "驗孕筆如何判讀結果?衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "eaa0d509-5eec-4c7b-b1d6-2969f048d5e8",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "pregnancy_test_use",
+    "title": "驗孕筆常見問題 Q&A",
+    "image": "img/pregnancy_test_faq.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/pregnancy_test_faq.html",
+    "summary": "驗太早可能偽陰性；陰性但月經未來可於 2～3 天後再驗；陽性後應安排婦產科就診。",
+    "sections": [
+      {
+        "heading": "驗太早",
+        "text": "可能因 hCG 濃度不足而出現偽陰性。"
+      },
+      {
+        "heading": "陰性但月經還沒來",
+        "text": "建議 2～3 天後再次檢測，或就醫確認。"
+      },
+      {
+        "heading": "陽性後",
+        "text": "安排婦產科就診，確認是否正常懷孕及孕週。"
+      },
+      {
+        "heading": "盡快就醫",
+        "text": "驗孕陽性合併腹痛、大量陰道出血、劇烈腹痛或昏眩。"
+      }
+    ],
+    "altText": "驗孕筆常見問題 Q&A衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "eaa0d509-5eec-4c7b-b1d6-2969f048d5e8",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "condom_use",
+    "title": "保險套使用前先檢查",
+    "image": "img/condom_check_before_use.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/condom_check_before_use.html",
+    "summary": "使用保險套前要確認有效期限、包裝完整，並小心撕開。",
+    "sections": [
+      {
+        "heading": "使用前檢查",
+        "text": "確認有效期限；包裝完整沒有破損；小心撕開，不要用剪刀或牙齒；每次性行為全程使用新的保險套。"
+      },
+      {
+        "heading": "保護效果",
+        "text": "可避孕並降低性傳染病風險，但無法 100% 預防。"
+      }
+    ],
+    "altText": "保險套使用前先檢查衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "79658bbc-76a7-42ac-8c42-65d3305fd452",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "condom_use",
+    "title": "保險套正確配戴第 1 部分",
+    "image": "img/condom_wearing_steps_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/condom_wearing_steps_1.html",
+    "summary": "陰莖完全勃起後再配戴保險套，確認方向、捏住儲精囊排氣，再一路捲到底部。",
+    "sections": [
+      {
+        "heading": "正確配戴",
+        "text": "陰莖完全勃起後配戴；確認可順利向下展開的方向；捏住前端儲精囊排出空氣；一路捲到底部。"
+      },
+      {
+        "heading": "戴反時",
+        "text": "不要翻面再使用，請換新的保險套。"
+      }
+    ],
+    "altText": "保險套正確配戴第 1 部分衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "79658bbc-76a7-42ac-8c42-65d3305fd452",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "condom_use",
+    "title": "保險套正確配戴與潤滑液選擇",
+    "image": "img/condom_lubricant_use.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/condom_lubricant_use.html",
+    "summary": "保險套應全程配戴；需要潤滑時選擇水性或矽性潤滑液。",
+    "sections": [
+      {
+        "heading": "潤滑液選擇",
+        "text": "使用水性或矽性潤滑液。"
+      },
+      {
+        "heading": "避免油性產品",
+        "text": "凡士林、嬰兒油、按摩油與乳液可能破壞乳膠材質，增加破裂風險。"
+      }
+    ],
+    "altText": "保險套正確配戴與潤滑液選擇衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "79658bbc-76a7-42ac-8c42-65d3305fd452",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "condom_use",
+    "title": "保險套使用後怎麼處理?",
+    "image": "img/condom_after_use.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/condom_after_use.html",
+    "summary": "射精後趁仍勃起時握住保險套根部慢慢退出，取下、打結包好後丟入垃圾桶。",
+    "sections": [
+      {
+        "heading": "使用後步驟",
+        "text": "握住保險套根部；慢慢退出；取下保險套並避免精液外漏；打結包好後丟入垃圾桶。"
+      },
+      {
+        "heading": "不要沖馬桶",
+        "text": "保險套不要沖入馬桶。"
+      }
+    ],
+    "altText": "保險套使用後怎麼處理?衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "79658bbc-76a7-42ac-8c42-65d3305fd452",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "condom_use",
+    "title": "保險套常見使用錯誤",
+    "image": "img/condom_common_mistakes.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/condom_common_mistakes.html",
+    "summary": "沒戴到底、沒捏儲精囊、戴反再翻面、重複使用、同時戴兩個、使用油性潤滑液或中途才戴，都可能增加失敗風險。",
+    "sections": [
+      {
+        "heading": "常見錯誤",
+        "text": "沒戴到底；沒捏儲精囊；戴反再翻面使用；重複使用；同時戴兩個；使用油性潤滑液；中途才開始戴。"
+      },
+      {
+        "heading": "可能結果",
+        "text": "增加破裂、滑落或避孕失敗的風險。"
+      }
+    ],
+    "altText": "保險套常見使用錯誤衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "79658bbc-76a7-42ac-8c42-65d3305fd452",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "pregnancy_minor_ailments",
+    "title": "懷孕頭痛、發燒可以吃什麼？",
+    "image": "img/pregnancy_minor_fever_pain.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/pregnancy_minor_fever_pain.html",
+    "summary": "懷孕頭痛或發燒可優先考慮 Acetaminophen／Paracetamol，並以最低有效劑量、最短時間使用。",
+    "sections": [
+      {
+        "heading": "建議劑量",
+        "text": "一般成人每次 500～1000 mg，至少間隔 4～6 小時；若需連續使用超過 3 天，建議就醫。注意綜合感冒藥也可能含 acetaminophen，避免重複服用。"
+      },
+      {
+        "heading": "避免自行使用",
+        "text": "NSAID 類，尤其懷孕 20 週後，不應自行使用。"
+      },
+      {
+        "heading": "就醫警訊",
+        "text": "高燒持續不退、劇烈或反覆頭痛、視力異常、明顯水腫或血壓升高。"
+      }
+    ],
+    "altText": "懷孕頭痛、發燒可以吃什麼？衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "9fb21d48-cfcc-4f14-a8c8-c3dd1af616b1",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "pregnancy_minor_ailments",
+    "title": "懷孕鼻塞流鼻水可以用什麼？",
+    "image": "img/pregnancy_minor_rhinitis.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/pregnancy_minor_rhinitis.html",
+    "summary": "懷孕鼻塞流鼻水可先使用生理食鹽水，過敏性鼻炎用藥則由醫師或藥師評估。",
+    "sections": [
+      {
+        "heading": "先從非藥物開始",
+        "text": "生理食鹽水噴鼻或洗鼻、補充水分、避免已知過敏原。"
+      },
+      {
+        "heading": "過敏性鼻炎",
+        "text": "可評估 Loratadine、Cetirizine、Chlorphenamine，或 fluticasone 等類固醇鼻噴劑。"
+      },
+      {
+        "heading": "慎用或避免",
+        "text": "含 pseudoephedrine／phenylephrine 的鼻充血劑，以及 Naphazoline／Oxymetazoline 去充血鼻噴劑，不建議孕婦自行使用。"
+      }
+    ],
+    "altText": "懷孕鼻塞流鼻水可以用什麼？衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "9fb21d48-cfcc-4f14-a8c8-c3dd1af616b1",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "pregnancy_minor_ailments",
+    "title": "懷孕期間咳嗽可以吃什麼？",
+    "image": "img/pregnancy_minor_cough.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/pregnancy_minor_cough.html",
+    "summary": "懷孕期間乾咳可評估短期使用 Dextromethorphan，並優先選單方、不含酒精的產品。",
+    "sections": [
+      {
+        "heading": "先做這些",
+        "text": "多補充水分、溫熱飲品、適度休息、保持空氣不過度乾燥。"
+      },
+      {
+        "heading": "乾咳",
+        "text": "Dextromethorphan 適合乾咳、刺激性咳嗽；目前資料未顯示正常劑量使用會增加先天缺陷風險，可短期使用。"
+      },
+      {
+        "heading": "有痰的咳嗽",
+        "text": "先補充水分；若需要化痰藥，由醫師或藥師依孕週與症狀評估。"
+      }
+    ],
+    "altText": "懷孕期間咳嗽可以吃什麼？衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "9fb21d48-cfcc-4f14-a8c8-c3dd1af616b1",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "pregnancy_minor_ailments",
+    "title": "懷孕期間便秘可以用什麼？",
+    "image": "img/pregnancy_minor_constipation.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/pregnancy_minor_constipation.html",
+    "summary": "懷孕便秘先從水分、纖維與活動調整；需要藥物時可詢問醫師或藥師。",
+    "sections": [
+      {
+        "heading": "優先考慮",
+        "text": "Psyllium／Ispaghula、Lactulose、Macrogol／PEG。"
+      },
+      {
+        "heading": "短期救急",
+        "text": "卡在肛門口時，可評估 Glycerin suppository、Bisacodyl suppository 或 Enema；適合偶爾短期救急，不要天天依賴。"
+      },
+      {
+        "heading": "需要就醫",
+        "text": "嚴重腹痛、持續嘔吐、血便、腹脹明顯或完全無法排便排氣。"
+      }
+    ],
+    "altText": "懷孕期間便秘可以用什麼？衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "9fb21d48-cfcc-4f14-a8c8-c3dd1af616b1",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "pregnancy_minor_ailments",
+    "title": "懷孕拉肚子先別急著吃止瀉藥",
+    "image": "img/pregnancy_minor_diarrhea.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/pregnancy_minor_diarrhea.html",
+    "summary": "懷孕拉肚子最重要的是補水與電解質；目前沒有孕婦通用、可自行服用的首選止瀉藥。",
+    "sections": [
+      {
+        "heading": "第一選擇",
+        "text": "補水與 ORS（Oral Rehydration Solution，口服補充液／口服電解質補充液），少量多次補充。"
+      },
+      {
+        "heading": "止瀉藥",
+        "text": "Loperamide、Diosmectite、Kaolin／Pectin 都不是第一選擇；Probiotics 可作輔助但不是止瀉主力；Bismuth subsalicylate 應避免自行使用。"
+      },
+      {
+        "heading": "就醫警訊",
+        "text": "高燒、血便或黑便、劇烈腹痛、持續嘔吐無法進食喝水、尿量減少或脫水、腹瀉持續不改善。"
+      }
+    ],
+    "altText": "懷孕拉肚子先別急著吃止瀉藥衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "e98f8133-e2bb-44d3-8a39-1e064d81dc76",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "pregnancy_minor_ailments",
+    "title": "懷孕一直想吐可以吃什麼？",
+    "image": "img/pregnancy_minor_nausea.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/pregnancy_minor_nausea.html",
+    "summary": "一般孕吐先生活調整；Vitamin B6 或 Doxylamine 加 Pyridoxine 可作為第一線選擇。",
+    "sections": [
+      {
+        "heading": "先做這些",
+        "text": "少量多餐、避免空腹、小口補充水分、避開誘發氣味，可嘗試薑。"
+      },
+      {
+        "heading": "第一線可考慮",
+        "text": "Vitamin B6（Pyridoxine）可先單獨使用；若 B6 效果不足，可考慮 Doxylamine＋Pyridoxine，依醫師或藥師建議使用。"
+      },
+      {
+        "heading": "盡快就醫",
+        "text": "24 小時幾乎無法進食或喝水、尿量減少或脫水、頭暈無力、體重下降、腹痛、發燒或吐血。"
+      }
+    ],
+    "altText": "懷孕一直想吐可以吃什麼？衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "195ad25b-ab5f-4fef-8678-855ffb99111d",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "pregnancy_minor_ailments",
+    "title": "懷孕期間皮膚癢可以用什麼？",
+    "image": "img/pregnancy_minor_itch.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/pregnancy_minor_itch.html",
+    "summary": "懷孕期間輕微皮膚癢先加強保濕；局部發炎或較明顯搔癢再由醫師或藥師評估用藥。",
+    "sections": [
+      {
+        "heading": "先做這些",
+        "text": "使用無香精保濕乳或潤膚劑，避免熱水澡、香精皂與過度搔抓。"
+      },
+      {
+        "heading": "可評估用藥",
+        "text": "局部紅癢或濕疹可短期薄擦 hydrocortisone 等低效價外用類固醇；較明顯搔癢可評估 cetirizine、loratadine 或 chlorphenamine。"
+      },
+      {
+        "heading": "盡快就醫",
+        "text": "全身很癢但沒有明顯皮疹，尤其手掌、腳底夜間劇癢，需注意妊娠肝內膽汁鬱積。"
+      }
+    ],
+    "altText": "懷孕期間皮膚癢可以用什麼？衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "b054a034-3fd1-4414-8020-06d8e6f7f3e8",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "pregnancy_minor_ailments",
+    "title": "懷孕期間睡不好可以怎麼做？",
+    "image": "img/pregnancy_minor_insomnia.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/pregnancy_minor_insomnia.html",
+    "summary": "懷孕期間睡不好先調整作息與生活；必要時再詢問醫師或藥師是否適合短期用藥。",
+    "sections": [
+      {
+        "heading": "先做這些",
+        "text": "固定作息、白天適度活動、下午後減少咖啡因、睡前少喝水與少滑手機、側睡並用枕頭支撐。"
+      },
+      {
+        "heading": "必要時可詢問",
+        "text": "Doxylamine 可評估短期使用；Diphenhydramine 可使用但非首選，可能嗜睡或頭暈。"
+      },
+      {
+        "heading": "不建議自行使用",
+        "text": "Melatonin、其他安眠藥、鎮靜藥或複方助眠產品。"
+      },
+      {
+        "heading": "需要找醫師",
+        "text": "失眠持續數週、白天嚴重嗜睡、打鼾合併呼吸中止、腿部強烈不適，或合併明顯焦慮與情緒低落。"
+      }
+    ],
+    "altText": "懷孕期間睡不好可以怎麼做？衛教圖卡",
+    "sourceConversationId": "6a7379b4-1240-83ee-a92c-e898548a5782",
+    "sourceMessageId": "e4af6c1a-aa1f-4700-a495-064904efa430",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "burn_first_aid",
+    "title": "燙傷急救：先沖水、移除飾品與衣物",
+    "image": "img/burn_first_aid_01.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_01.html",
+    "summary": "剛燙傷先以流動涼水沖洗 15～30 分鐘，先降溫再評估是否需要擦藥。",
+    "sections": [
+      {
+        "heading": "立即降溫",
+        "text": "用流動涼水沖洗 15～30 分鐘；不要用冰塊或泡冰水。"
+      },
+      {
+        "heading": "移除物品",
+        "text": "腫起前取下戒指、手錶、手環與寬鬆衣物；黏住皮膚的衣服不要硬撕。"
+      },
+      {
+        "heading": "沖水完成前",
+        "text": "不要擦燙傷藥膏、凡士林、抗生素藥膏、牙膏、油類或其他偏方。"
+      },
+      {
+        "heading": "沖水後",
+        "text": "範圍小、輕微紅痛且沒有破皮或大片水泡，可薄擦單純凡士林或溫和保濕軟膏；有水泡、破皮、滲液或傷口較深時，先覆蓋不沾黏敷料並請專業人員評估。"
+      }
+    ],
+    "altText": "燙傷急救：先沖水、移除飾品與衣物衛教圖卡",
+    "sourceConversationId": "6a71fa1a-13d4-83e8-8875-2f875e18b409",
+    "sourceMessageId": "c120cd28-dc69-4c16-b4cd-1032fbc01f0a",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "burn_first_aid",
+    "title": "燙傷不要做的事與需要就醫的情況",
+    "image": "img/burn_first_aid_02.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_02.html",
+    "summary": "剛燙傷不要冰敷、塗偏方、戳破水泡或反覆以刺激性消毒劑處理。",
+    "sections": [
+      {
+        "heading": "不要做",
+        "text": "不要冰敷或泡冰水；不要塗牙膏、醬油、麻油或藥膏；不要戳破水泡；不要用酒精、雙氧水反覆刺激傷口。"
+      },
+      {
+        "heading": "建議就醫",
+        "text": "面積大於一個手掌；臉、手、腳、關節或生殖器燙傷；傷口發白、發黑或感覺遲鈍；水泡很多或疼痛明顯；小孩、長者或糖尿病患者。"
+      }
+    ],
+    "altText": "燙傷不要做的事與需要就醫的情況衛教圖卡",
+    "sourceConversationId": "6a71fa1a-13d4-83e8-8875-2f875e18b409",
+    "sourceMessageId": "a28f1b37-a7fc-424d-956c-7db866b78c7a",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "burn_first_aid",
+    "title": "燙傷未破皮時的照護與水泡處理",
+    "image": "img/burn_first_aid_03.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_03.html",
+    "summary": "燙傷後若只有紅、熱、痛或完整水泡，重點是保持清潔、避免摩擦並保護傷口。",
+    "sections": [
+      {
+        "heading": "皮膚完整",
+        "text": "可薄擦單純保濕產品或凡士林，減少乾裂與摩擦；不一定需要抗生素藥膏。"
+      },
+      {
+        "heading": "水泡完整",
+        "text": "不要自行刺破、剪開或撕皮；可用不沾黏敷料保護。水泡很大、很痛或位於關節處時建議就醫。"
+      },
+      {
+        "heading": "注意變化",
+        "text": "紅腫範圍擴大、疼痛加劇、膿液、異味、發燒，或 10～14 天仍未明顯改善時就醫。"
+      }
+    ],
+    "altText": "燙傷未破皮時的照護與水泡處理衛教圖卡",
+    "sourceConversationId": "6a71fa1a-13d4-83e8-8875-2f875e18b409",
+    "sourceMessageId": "a28f1b37-a7fc-424d-956c-7db866b78c7a",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "burn_first_aid",
+    "title": "水泡破掉、傷口滲液時的處理",
+    "image": "img/burn_first_aid_04.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_04.html",
+    "summary": "水泡破掉或傷口有滲液時，以清水或生理食鹽水清潔，依滲液量選擇不沾黏敷料。",
+    "sections": [
+      {
+        "heading": "清潔",
+        "text": "以清水或生理食鹽水輕柔清潔，不要用酒精或雙氧水反覆刺激，也不要用力擦拭。"
+      },
+      {
+        "heading": "敷料方向",
+        "text": "滲液少可用不沾黏敷料或凡士林紗布；滲液中等可用泡棉敷料；感染風險較高時由醫療人員評估含銀敷料。"
+      },
+      {
+        "heading": "更換與就醫",
+        "text": "敷料濕透、髒污或鬆脫時更換；紅腫擴大、疼痛加劇、膿液、異味、發燒，或 10～14 天未改善時就醫。"
+      }
+    ],
+    "altText": "水泡破掉、傷口滲液時的處理衛教圖卡",
+    "sourceConversationId": "6a71fa1a-13d4-83e8-8875-2f875e18b409",
+    "sourceMessageId": "a28f1b37-a7fc-424d-956c-7db866b78c7a",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "burn_first_aid",
+    "title": "燙傷常見藥品與敷料怎麼選",
+    "image": "img/burn_first_aid_05.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_05.html",
+    "summary": "燙傷藥品與敷料應依傷口狀況選擇，不是越多越好。",
+    "sections": [
+      {
+        "heading": "凡士林",
+        "text": "適合較表淺、較乾的傷口，幫助保濕並減少敷料沾黏。"
+      },
+      {
+        "heading": "藥膏",
+        "text": "外用抗生素不是每個燙傷都需要；Silver sulfadiazine 也不是所有小燙傷的第一選擇，是否使用由醫師評估。"
+      },
+      {
+        "heading": "敷料",
+        "text": "不沾黏敷料適合表淺破皮或水泡破掉；泡棉敷料適合滲液較多；含銀敷料適合感染風險較高或滲液較多時，並非每個小燙傷都需要。"
+      }
+    ],
+    "altText": "燙傷常見藥品與敷料怎麼選衛教圖卡",
+    "sourceConversationId": "6a71fa1a-13d4-83e8-8875-2f875e18b409",
+    "sourceMessageId": "a28f1b37-a7fc-424d-956c-7db866b78c7a",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "burn_first_aid",
+    "title": "燙傷癒合後如何減少疤痕",
+    "image": "img/burn_first_aid_06.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_06.html",
+    "summary": "燙傷傷口完全長皮、沒有滲液或開放性傷口後，才開始除疤照護。",
+    "sections": [
+      {
+        "heading": "矽膠產品",
+        "text": "矽膠除疤凝膠適合臉部、關節或不易貼片的位置；矽膠片適合較平坦、範圍較大的疤痕，依產品說明逐步增加貼附時間。"
+      },
+      {
+        "heading": "日常照護",
+        "text": "持續保濕；皮膚穩定後輕柔按摩；做好防曬，避免色素沉澱。"
+      },
+      {
+        "heading": "進一步評估",
+        "text": "疤痕越來越紅、凸、硬、癢，拉扯感明顯或影響關節活動時，建議就醫。"
+      }
+    ],
+    "altText": "燙傷癒合後如何減少疤痕衛教圖卡",
+    "sourceConversationId": "6a71fa1a-13d4-83e8-8875-2f875e18b409",
+    "sourceMessageId": "a28f1b37-a7fc-424d-956c-7db866b78c7a",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "acne",
+    "title": "青春痘嚴重程度外觀",
+    "image": "img/acne_stage.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_stage.html",
+    "summary": "青春痘可依外觀分為輕度粉刺型、輕度發炎型、中度發炎型與重度囊腫型。",
+    "sections": [
+      {
+        "heading": "輕度粉刺型",
+        "text": "黑頭、白頭粉刺為主，幾乎沒有紅腫。"
+      },
+      {
+        "heading": "輕度發炎型",
+        "text": "除粉刺外開始出現紅色丘疹，偶爾疼痛。"
+      },
+      {
+        "heading": "中度發炎型",
+        "text": "紅腫丘疹與膿皰明顯增加，可能疼痛且容易留下色素沉澱。"
+      },
+      {
+        "heading": "重度囊腫型",
+        "text": "大型結節或囊腫、疼痛明顯、容易形成永久痘疤，建議儘早由皮膚科醫師評估。"
+      }
+    ],
+    "altText": "青春痘嚴重程度外觀衛教圖卡",
+    "sourceConversationId": "6a2b7fa2-72e8-83e8-b932-f201f2eadc8e",
+    "sourceMessageId": "b9084da9-f4f5-473e-b5da-c09b48732612",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "acne",
+    "title": "輕度粉刺日常保養這樣做",
+    "image": "img/comedo_dailycare.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/comedo_dailycare.html",
+    "summary": "輕度粉刺日常照護以溫和清潔、規律保濕、防曬與避免反覆拔粉刺為主。",
+    "sections": [
+      {
+        "heading": "清潔與保濕",
+        "text": "一天清潔 2 次；大量流汗時可增加一次。保濕可選凝膠型、清爽乳液或標示 Non-comedogenic 的產品。"
+      },
+      {
+        "heading": "白天防曬",
+        "text": "建議 SPF 30 以上、清爽且不易致痘的配方。"
+      },
+      {
+        "heading": "不要一直拔粉刺",
+        "text": "過度拔除可能造成泛紅、色素沉澱、毛孔粗大或凹疤。"
+      },
+      {
+        "heading": "可考慮成分",
+        "text": "水楊酸可疏通毛孔、減少粉刺；A 醇可幫助角質代謝。持續 4～8 週通常才會看到明顯改善。"
+      }
+    ],
+    "altText": "輕度粉刺日常保養這樣做衛教圖卡",
+    "sourceConversationId": "6a2b7fa2-72e8-83e8-b932-f201f2eadc8e",
+    "sourceMessageId": "8ba274c2-1838-45b2-9a16-02cc115f88a4",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "acne",
+    "title": "輕度發炎型青春痘日常照護怎麼做",
+    "image": "img/acne_dailycare.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_dailycare.html",
+    "summary": "輕度發炎型青春痘的日常照護重點是減少刺激、不要擠壓、保濕與防曬。",
+    "sections": [
+      {
+        "heading": "溫和清潔",
+        "text": "一天 2 次；不要一天洗很多次、用洗臉機大力刷洗、磨砂去角質或以酒精反覆擦痘痘。"
+      },
+      {
+        "heading": "不要擠痘痘",
+        "text": "可能造成發炎加劇、痘印、色素沉澱或凹疤。"
+      },
+      {
+        "heading": "保濕與防曬",
+        "text": "選擇清爽凝膠、清爽乳液或 Non-comedogenic 產品；白天使用 SPF 30 以上、清爽且不易致痘的防曬。"
+      },
+      {
+        "heading": "可考慮成分",
+        "text": "Benzoyl peroxide、水楊酸或 A 醇類；若痘痘增加、出現硬塊或囊腫、開始留疤，或 2～3 個月仍無改善，建議就醫。"
+      }
+    ],
+    "altText": "輕度發炎型青春痘日常照護怎麼做衛教圖卡",
+    "sourceConversationId": "6a2b7fa2-72e8-83e8-b932-f201f2eadc8e",
+    "sourceMessageId": "9335e575-56d2-4d0e-8667-732c54cbafe4",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "acne",
+    "title": "中度發炎型青春痘用藥期間注意事項",
+    "image": "img/acne_dailycare_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_dailycare_2.html",
+    "summary": "中度發炎型青春痘常同時使用外用藥與口服藥，需規律用藥並給藥物足夠時間。",
+    "sections": [
+      {
+        "heading": "外用藥",
+        "text": "不是只點在痘痘上，而是長痘區域薄擦；A 酸類、A 醇或 Adapalene 初期可能泛紅、乾燥、脫皮或刺癢，前 2～4 週較明顯。"
+      },
+      {
+        "heading": "口服抗生素",
+        "text": "Doxycycline、Minocycline 等應依醫師指示完成療程，不要看到改善就自行停藥。"
+      },
+      {
+        "heading": "需要時間",
+        "text": "A 酸與 A 醇約 4～8 週開始改善，約 3 個月評估療效。"
+      },
+      {
+        "heading": "其他提醒",
+        "text": "BPO 可能漂白衣物、枕套與毛巾；痘痘突然惡化、嚴重脫皮或過敏、吃藥後不適時應回診。"
+      }
+    ],
+    "altText": "中度發炎型青春痘用藥期間注意事項衛教圖卡",
+    "sourceConversationId": "6a2b7fa2-72e8-83e8-b932-f201f2eadc8e",
+    "sourceMessageId": "4287e5ed-fd7a-44e2-8025-a87f24dcbbad",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "eye_wash_solution",
+    "title": "洗眼液使用前準備",
+    "image": "img/eye_wash_prepare.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/eye_wash_prepare.html",
+    "summary": "使用洗眼液前先洗手、取下隱形眼鏡，並確認產品未過期且液體與器具乾淨。",
+    "sections": [
+      {
+        "heading": "先洗手",
+        "text": "使用前先把雙手洗乾淨，避免將灰塵或細菌帶進眼睛。"
+      },
+      {
+        "heading": "取下隱形眼鏡",
+        "text": "不要戴著隱形眼鏡使用洗眼液。"
+      },
+      {
+        "heading": "檢查洗眼液",
+        "text": "確認尚未超過有效期限、液體沒有變色或混濁、瓶口及洗眼杯保持乾淨。"
+      }
+    ],
+    "altText": "洗眼液使用前準備衛教圖卡",
+    "sourceConversationId": "6a6b788e-3c44-83ee-8883-716467e6b54f",
+    "sourceMessageId": "a3f529c0-0af3-4135-88df-8e8b29491ffc",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "eye_wash_solution",
+    "title": "洗眼液使用注意事項",
+    "image": "img/eye_wash_precautions.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/eye_wash_precautions.html",
+    "summary": "洗眼液一眼使用一份，洗眼杯不要共用，用過的液體不要倒回原瓶，也不要過度使用。",
+    "sections": [
+      {
+        "heading": "避免污染",
+        "text": "不要使用同一杯洗眼液清洗兩眼；每個人使用自己的洗眼杯；使用後清洗並充分晾乾；用過的液體不要倒回瓶中。"
+      },
+      {
+        "heading": "不要過度使用",
+        "text": "洗眼液主要用於短暫沖洗眼表，不建議頻繁使用或當作每天必要保養；乾澀通常應選擇適合的人工淚液。"
+      },
+      {
+        "heading": "應就醫情況",
+        "text": "明顯疼痛、畏光、睜不開眼、視力模糊、異物感持續、紅腫或不適沒有改善。"
+      },
+      {
+        "heading": "化學物質入眼",
+        "text": "立即使用大量流動清水持續沖洗並儘快就醫，不要只使用一般洗眼液。"
+      }
+    ],
+    "altText": "洗眼液使用注意事項衛教圖卡",
+    "sourceConversationId": "6a6b788e-3c44-83ee-8883-716467e6b54f",
+    "sourceMessageId": "a3f529c0-0af3-4135-88df-8e8b29491ffc",
+    "sourceType": "chatgpt_history",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "contact_lens_eye_drops",
+    "title": "戴隱形眼鏡，買眼藥水先注意這些",
+    "image": "img/contact_lens_eye_drops_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/contact_lens_eye_drops_1.html",
+    "summary": "戴隱形眼鏡選眼藥水前，先確認產品是否標示可於配戴時使用；人工淚液不一定都能戴著點，保養液也不能當眼藥水。",
+    "sections": [
+      {
+        "heading": "先確認能不能戴著點",
+        "text": "買眼藥水前先看包裝是否明確標示「隱形眼鏡配戴時可使用」或「適用於軟式隱形眼鏡」。沒有標示或不確定時，先取下隱形眼鏡再使用。"
+      },
+      {
+        "heading": "人工淚液仍要看標示",
+        "text": "人工淚液主要用於補充水分與潤滑眼睛，但不同產品的防腐劑、黏稠度與配方不同，是否能戴著隱形眼鏡使用仍要看產品標示。"
+      },
+      {
+        "heading": "保養液不能當眼藥水",
+        "text": "眼藥水或潤濕液是點進眼睛使用；隱形眼鏡保養液用於清潔、沖洗、消毒或保存鏡片，不能當眼藥水直接點眼睛。"
+      },
+      {
+        "heading": "不舒服先取下鏡片",
+        "text": "戴鏡片時若出現明顯紅眼、疼痛、怕光、視力模糊、異常流淚或分泌物，先取下隱形眼鏡，不要只靠眼藥水撐著繼續戴。"
+      },
+      {
+        "heading": "選購原則",
+        "text": "先看「能不能戴著點」，再看「這瓶是治什麼」。有疑問時，請諮詢藥師或眼科醫師。"
+      }
+    ],
+    "altText": "戴隱形眼鏡買眼藥水注意事項衛教圖卡",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "contact_lens_eye_drops",
+    "title": "戴隱形眼鏡，眼睛不舒服怎麼選？",
+    "image": "img/contact_lens_eye_drops_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/contact_lens_eye_drops_2.html",
+    "summary": "戴隱形眼鏡出現乾、癢、紅時，應依症狀選擇潤濕液、人工淚液或抗過敏眼藥水；疼痛、畏光、視力變差應先取下鏡片並就醫。",
+    "sections": [
+      {
+        "heading": "乾澀、戴久不舒服",
+        "text": "可考慮隱形眼鏡潤濕液或人工淚液，用於增加潤滑、改善乾澀與摩擦不適；戴著鏡片使用前要確認產品標示適用於隱形眼鏡。"
+      },
+      {
+        "heading": "眼睛癢",
+        "text": "眼睛癢常見原因包括過敏或刺激，可依情況考慮抗過敏或止癢眼藥水；不要預設所有止癢眼藥水都能戴著隱形眼鏡使用。"
+      },
+      {
+        "heading": "眼睛紅",
+        "text": "眼睛紅可能是乾澀、刺激、過敏、結膜炎、角膜受傷或感染，不要只看到「退紅」就選眼藥水；隱形眼鏡族的紅眼要更謹慎。"
+      },
+      {
+        "heading": "分泌物、紅腫、疼痛",
+        "text": "有分泌物、紅腫或疼痛時，不建議自行挑抗菌眼藥水處理；先停止配戴隱形眼鏡，並建議接受醫療評估。"
+      },
+      {
+        "heading": "痛、怕光、視力變差",
+        "text": "出現明顯疼痛、怕光、視力模糊或視力下降時，不要再挑眼藥水，應立即取下隱形眼鏡並儘快就醫。"
+      }
+    ],
+    "altText": "戴隱形眼鏡眼睛不舒服如何選眼藥水衛教圖卡",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
   }
 ]

@@ -1221,6 +1221,55 @@
       "img/chomolyn_cromolyn_eye_drops.webp"
     ]
   },
+  "contact_lens_eye_drops": {
+    "title": "戴隱形眼怎麼選眼藥水",
+    "category": "public_education",
+    "topics": [
+      "eyes"
+    ],
+    "order": 1.55,
+    "hidden": false,
+    "icon": "💧",
+    "tags": [
+      "隱形眼鏡",
+      "眼藥水",
+      "人工淚液",
+      "隱形眼鏡潤濕液",
+      "隱形眼鏡藥水",
+      "隱形眼鏡保養液",
+      "戴隱形眼鏡可以點眼藥水嗎",
+      "戴隱形眼鏡眼藥水",
+      "戴隱形眼鏡眼睛乾",
+      "戴隱形眼鏡眼睛癢",
+      "戴隱形眼鏡眼睛紅",
+      "眼睛乾",
+      "眼睛癢",
+      "眼睛紅",
+      "乾眼",
+      "乾眼症",
+      "抗過敏眼藥水",
+      "止癢眼藥水",
+      "退紅眼藥水",
+      "抗菌眼藥水",
+      "防腐劑",
+      "角膜炎",
+      "結膜炎",
+      "眼睛感染",
+      "眼睛分泌物",
+      "眼睛疼痛",
+      "畏光",
+      "視力模糊",
+      "隱形眼鏡配戴時可使用"
+    ],
+    "texts": [
+      "戴隱形眼鏡，買眼藥水先注意這些",
+      "戴隱形眼鏡，眼睛不舒服怎麼選？"
+    ],
+    "steps": [
+      "img/contact_lens_eye_drops_1.webp",
+      "img/contact_lens_eye_drops_2.webp"
+    ]
+  },
   "sore_throat_otc": {
     "title": "喉嚨痛用藥與就醫警訊",
     "category": "public_education",
