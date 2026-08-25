@@ -1723,5 +1723,104 @@
     "sourceType": "user_provided",
     "matchConfidence": "high",
     "needsMedicalReview": true
+  },
+  {
+    "cardId": "tooth_extraction_meds",
+    "title": "剛拔完牙，接下來怎麼做？",
+    "image": "img/tooth_extraction_aftercare_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_aftercare_1.html",
+    "summary": "拔牙後前幾個小時的照護會影響傷口癒合與疼痛程度，重點包括咬緊紗布、少量喝水、吃軟涼溫食物、冰敷、依醫囑用藥與觀察回診警訊。",
+    "sections": [
+      {
+        "heading": "剛拔完先止血",
+        "text": "用紗布對摺後咬緊在傷口上方，通常持續咬緊 30～60 分鐘，讓血塊穩定形成。紗布取下後少量滲血或口水呈粉紅色多半仍可觀察。"
+      },
+      {
+        "heading": "麻醉未退要小心",
+        "text": "嘴唇、臉頰或舌頭麻麻的是常見現象，麻醉未退前避免咬到自己，也先不要吃東西或喝熱飲。"
+      },
+      {
+        "heading": "飲食與冰敷",
+        "text": "術後可少量喝水，選擇軟、涼、溫且容易吞嚥的食物，避免過燙、過硬或刺激性食物；前 24 小時可從臉頰外側冰敷幫助減少腫脹。"
+      },
+      {
+        "heading": "不要這樣做",
+        "text": "24 小時內避免漱口、用力吐口水、使用吸管、抽菸、電子菸、喝酒，也不要用舌頭或手碰傷口，以免破壞血塊、增加出血或感染風險。"
+      },
+      {
+        "heading": "何時要回牙科",
+        "text": "若持續大量流血、疼痛越來越嚴重、明顯腫脹發燒、口中有臭味或怪味、吞嚥或呼吸困難，應儘快聯絡牙醫診所。"
+      }
+    ],
+    "altText": "拔牙後照護與回牙科警訊衛教圖卡",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "tooth_extraction_meds",
+    "title": "拔牙後痛怎麼辦？",
+    "image": "img/tooth_extraction_pain_meds.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_pain_meds.html",
+    "summary": "拔牙後止痛藥常見選項包括 Ibuprofen 與 Acetaminophen，應依醫師或藥師指示規律服用，不自行加量；若疼痛持續或第 2～4 天突然加劇應回牙科。",
+    "sections": [
+      {
+        "heading": "疼痛處理流程",
+        "text": "麻醉退了開始痛時，通常先依照醫囑使用止痛藥；若疼痛未改善、加劇，或越來越痛，應回牙科檢查。"
+      },
+      {
+        "heading": "常見止痛藥",
+        "text": "Ibuprofen 屬 NSAID 類，消炎止痛效果佳，但有胃潰瘍、腎臟病、氣喘或正在服用抗凝血藥者應先告知醫師或藥師。Acetaminophen 止痛效果良好，對胃部刺激較小，但避免和其他含乙醯胺酚成分藥物重複使用。"
+      },
+      {
+        "heading": "服藥注意",
+        "text": "不要等到痛到受不了才吃藥，不要自行加量；搭配開水服用，不配酒、含酒精飲料或咖啡。連續使用 3 天仍劇痛，或第 2～4 天疼痛突然加劇，應回牙科檢查傷口。"
+      },
+      {
+        "heading": "特別注意",
+        "text": "第 2～4 天突然劇烈抽痛、疼痛放射到耳朵或太陽穴、口中有臭味或怪味，可能是乾性齒槽炎，需要牙科處理，不是單靠多吃止痛藥即可。"
+      },
+      {
+        "heading": "常見問題",
+        "text": "NSAID 通常建議餐後吃；Acetaminophen 是否可空腹使用、是否能與其他止痛藥交替或合併使用，應依醫師、牙醫師或藥師建議。孕婦拔牙後止痛藥應先告知醫師，不同懷孕週數建議可能不同。"
+      }
+    ],
+    "altText": "拔牙後疼痛與止痛藥使用注意事項衛教圖卡",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "tooth_extraction_meds",
+    "title": "拔牙後抗生素怎麼吃？",
+    "image": "img/tooth_extraction_antibiotics.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_antibiotics.html",
+    "summary": "不是每次拔牙都需要抗生素；若牙醫師開立抗生素，應依醫囑規律服用並吃滿療程，不自行停藥、加量或使用別人剩下的藥。",
+    "sections": [
+      {
+        "heading": "哪些情況可能需要抗生素",
+        "text": "拔牙處已有感染、感染有擴散風險、全身性疾病或免疫力較差、出現發燒畏寒等全身症狀時，牙醫師可能評估開立抗生素。單純拔牙且沒有感染跡象時，通常不一定需要抗生素。"
+      },
+      {
+        "heading": "正確服用方式",
+        "text": "抗生素要依醫囑服用，按照「一天幾次、每次幾顆、吃幾天」規律用藥，吃滿牙醫師開立的天數。搭配開水吞服；是否需飯後服用，依藥品特性與醫囑調整。"
+      },
+      {
+        "heading": "忘記吃怎麼辦",
+        "text": "若離下次服藥時間還有 4 小時以上，通常可儘快補吃；若已接近下次服藥時間，跳過這一次並照原時間服藥。不要一次吃兩倍劑量。"
+      },
+      {
+        "heading": "副作用與停藥警訊",
+        "text": "可能出現腸胃不適、噁心、腹瀉、腹痛、皮膚過敏或黴菌感染。若有全身蕁麻疹、臉或嘴唇腫脹、呼吸困難、喘鳴、嚴重腹瀉或血便、持續發燒或嚴重不適，應立即停藥並就醫。"
+      },
+      {
+        "heading": "使用小提醒",
+        "text": "不要使用別人剩下的抗生素，也不要自行購買或長期備用。正在服用其他藥物、保健品，或懷孕、哺乳、高齡、腎臟或肝臟疾病者，應先告知醫師或藥師。"
+      }
+    ],
+    "altText": "拔牙後抗生素正確服用與注意事項衛教圖卡",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
   }
 ]

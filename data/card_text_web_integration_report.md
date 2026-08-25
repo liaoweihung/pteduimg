@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：67
+- 成功加入文字頁數：70
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -72,3 +72,6 @@
 | eye_wash_solution | 洗眼液使用注意事項 | https://liaoweihung.github.io/pteduimg/cards/eye_wash_precautions.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | contact_lens_eye_drops | 戴隱形眼鏡，買眼藥水先注意這些 | https://liaoweihung.github.io/pteduimg/cards/contact_lens_eye_drops_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | contact_lens_eye_drops | 戴隱形眼鏡，眼睛不舒服怎麼選？ | https://liaoweihung.github.io/pteduimg/cards/contact_lens_eye_drops_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| tooth_extraction_meds | 剛拔完牙，接下來怎麼做？ | https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_aftercare_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| tooth_extraction_meds | 拔牙後痛怎麼辦？ | https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_pain_meds.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| tooth_extraction_meds | 拔牙後抗生素怎麼吃？ | https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_antibiotics.html | 是 | 是 | 是 | 是 | 是 | 無 |

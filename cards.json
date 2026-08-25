@@ -1580,6 +1580,58 @@
       "img/angular_cheilitis_03.webp"
     ]
   },
+  "tooth_extraction_meds": {
+    "title": "拔牙以後該怎麼吃藥",
+    "category": "public_education",
+    "topics": [
+      "oral_health"
+    ],
+    "order": 1.35,
+    "hidden": false,
+    "icon": "🦷",
+    "tags": [
+      "拔牙",
+      "拔牙後",
+      "拔牙後吃藥",
+      "拔牙後照護",
+      "拔牙後止痛藥",
+      "拔牙後抗生素",
+      "拔牙後疼痛",
+      "拔牙後流血",
+      "拔牙後腫脹",
+      "拔牙後回牙科",
+      "拔牙傷口",
+      "咬紗布",
+      "冰敷",
+      "乾性齒槽炎",
+      "牙科",
+      "口腔外科",
+      "止痛藥",
+      "抗生素",
+      "Ibuprofen",
+      "布洛芬",
+      "Acetaminophen",
+      "乙醯胺酚",
+      "Amoxicillin",
+      "阿莫西林",
+      "Amoxicillin Clavulanate",
+      "Cephalosporin",
+      "Azithromycin",
+      "孕婦拔牙",
+      "抗凝血藥",
+      "牙齒疼痛"
+    ],
+    "texts": [
+      "剛拔完牙，接下來怎麼做？",
+      "拔牙後痛怎麼辦？",
+      "拔牙後抗生素怎麼吃？"
+    ],
+    "steps": [
+      "img/tooth_extraction_aftercare_1.webp",
+      "img/tooth_extraction_pain_meds.webp",
+      "img/tooth_extraction_antibiotics.webp"
+    ]
+  },
   "common_skin_redness_causes": {
     "title": "常見五種皮膚紅腫的原因",
     "category": "public_education",
