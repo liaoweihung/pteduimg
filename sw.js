@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202608250952';
+const CACHE_NAME = 'pwa-cache-v202608251758';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -295,7 +295,12 @@ const urlsToCache = [
   "./img/tinea_s.webp",
   "./img/tooth_extraction_aftercare_1.webp",
   "./img/tooth_extraction_antibiotics.webp",
+  "./img/tooth_extraction_day_0.webp",
+  "./img/tooth_extraction_days_1_3.webp",
+  "./img/tooth_extraction_days_3_7.webp",
+  "./img/tooth_extraction_normal_vs_warning.webp",
   "./img/tooth_extraction_pain_meds.webp",
+  "./img/tooth_extraction_weeks_1_2.webp",
   "./img/treatment_of_Hpylore.webp",
   "./img/vag_1.png",
   "./img/vag_2.png",
@@ -544,6 +549,11 @@ const urlsToCache = [
   "./cards/tooth_extraction_aftercare_1.html",
   "./cards/tooth_extraction_pain_meds.html",
   "./cards/tooth_extraction_antibiotics.html",
+  "./cards/tooth_extraction_day_0.html",
+  "./cards/tooth_extraction_days_1_3.html",
+  "./cards/tooth_extraction_days_3_7.html",
+  "./cards/tooth_extraction_weeks_1_2.html",
+  "./cards/tooth_extraction_normal_vs_warning.html",
   "./cards/common_skin_redness_causes.html",
   "./cards/eczema_s.html",
   "./cards/tinea_s.html",
@@ -709,4 +719,5 @@ self.addEventListener('fetch', (e) => {
     })
   );
 });
+
 

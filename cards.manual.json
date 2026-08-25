@@ -1347,6 +1347,62 @@
       "img/tooth_extraction_antibiotics.webp"
     ]
   },
+  "tooth_extraction_daily_changes": {
+    "title": "拔牙後每天變化",
+    "category": "public_education",
+    "topics": [
+      "oral_health"
+    ],
+    "order": 1.36,
+    "hidden": false,
+    "icon": "🦷",
+    "tags": [
+      "拔牙",
+      "拔牙後",
+      "拔牙後傷口",
+      "拔牙後每天變化",
+      "拔牙後恢復",
+      "拔牙傷口癒合",
+      "拔牙後血塊",
+      "拔牙後有洞",
+      "拔牙後腫脹",
+      "拔牙後疼痛",
+      "拔牙後滲血",
+      "拔牙後白白的",
+      "拔牙後黃色組織",
+      "拔牙後牙齦",
+      "乾性齒槽炎",
+      "拔牙後感染",
+      "拔牙後回診",
+      "拔牙後就醫",
+      "拔牙後冰敷",
+      "拔牙後漱口",
+      "拔牙後飲食",
+      "拔牙後刷牙",
+      "拔牙後抽菸",
+      "拔牙後喝酒",
+      "咬紗布",
+      "血塊",
+      "牙科",
+      "口腔外科",
+      "傷口照護",
+      "口腔照護"
+    ],
+    "texts": [
+      "拔牙當天：為什麼有一個洞？",
+      "第 1～3 天：為什麼反而更痛、更腫？",
+      "第 3～7 天：怎樣代表正在變好？",
+      "1～2 週後：還有一個洞，是不是沒好？",
+      "拔牙後怎樣判斷正常或異常？"
+    ],
+    "steps": [
+      "img/tooth_extraction_day_0.webp",
+      "img/tooth_extraction_days_1_3.webp",
+      "img/tooth_extraction_days_3_7.webp",
+      "img/tooth_extraction_weeks_1_2.webp",
+      "img/tooth_extraction_normal_vs_warning.webp"
+    ]
+  },
   "common_skin_redness_causes": {
     "title": "常見五種皮膚紅腫的原因",
     "category": "public_education",

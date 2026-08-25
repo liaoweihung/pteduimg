@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：70
+- 成功加入文字頁數：75
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -75,3 +75,8 @@
 | tooth_extraction_meds | 剛拔完牙，接下來怎麼做？ | https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_aftercare_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | tooth_extraction_meds | 拔牙後痛怎麼辦？ | https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_pain_meds.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | tooth_extraction_meds | 拔牙後抗生素怎麼吃？ | https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_antibiotics.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| tooth_extraction_daily_changes | 拔牙當天：為什麼有一個洞？ | https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_day_0.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| tooth_extraction_daily_changes | 第 1～3 天：為什麼反而更痛、更腫？ | https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_days_1_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| tooth_extraction_daily_changes | 第 3～7 天：怎樣代表正在變好？ | https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_days_3_7.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| tooth_extraction_daily_changes | 1～2 週後：還有一個洞，是不是沒好？ | https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_weeks_1_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| tooth_extraction_daily_changes | 拔牙後怎樣判斷正常或異常？ | https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_normal_vs_warning.html | 是 | 是 | 是 | 是 | 是 | 無 |

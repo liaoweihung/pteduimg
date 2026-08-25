@@ -1822,5 +1822,154 @@
     "sourceType": "user_provided",
     "matchConfidence": "high",
     "needsMedicalReview": true
+  },
+  {
+    "cardId": "tooth_extraction_daily_changes",
+    "title": "拔牙當天：為什麼有一個洞？",
+    "image": "img/tooth_extraction_day_0.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_day_0.html",
+    "summary": "拔牙當天傷口會留下牙窩，血塊形成是正常且重要的癒合第一步；有洞、有血塊與一點疼痛不代表傷口有問題。",
+    "sections": [
+      {
+        "heading": "拔牙後為什麼有洞",
+        "text": "牙齒被拔除後會留下牙窩，這是正常現象。傷口會先形成血塊，保護牙窩並幫助後續癒合。"
+      },
+      {
+        "heading": "當天可能出現的情況",
+        "text": "麻醉退後開始痠痛、少量滲血使口水呈粉紅或淡紅色、傷口附近開始腫、口水帶血絲或少量流血，都可能是拔牙當天常見情況。"
+      },
+      {
+        "heading": "重點是保護血塊",
+        "text": "避免一直漱口、用力吐口水、吸吮傷口、用吸管、用舌頭或手碰傷口、抽菸或喝酒，以免血塊脫落影響癒合。"
+      },
+      {
+        "heading": "小提醒",
+        "text": "保護血塊，讓它穩定待在牙窩裡，才能幫助傷口順利癒合。"
+      }
+    ],
+    "altText": "拔牙當天傷口變化與血塊保護衛教圖卡",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "tooth_extraction_daily_changes",
+    "title": "第 1～3 天：為什麼反而更痛、更腫？",
+    "image": "img/tooth_extraction_days_1_3.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_days_1_3.html",
+    "summary": "拔牙後第 2～3 天常是疼痛與腫脹較明顯的癒合高峰，不一定代表感染；重點是觀察之後是否開始慢慢改善。",
+    "sections": [
+      {
+        "heading": "第 1～3 天常見變化",
+        "text": "這段時間可能疼痛較明顯、臉頰腫脹、咬東西不舒服、下顎痠或嘴巴較難張開，也可能出現瘀青或傷口表面的白色、淡黃色修復組織。"
+      },
+      {
+        "heading": "為什麼會這樣",
+        "text": "身體正在修復傷口，發炎反應會讓血管充血與組織腫脹，因此疼痛和不適可能在第 2～3 天較明顯。"
+      },
+      {
+        "heading": "可以怎麼照護",
+        "text": "可冰敷臉頰、按時依醫囑使用止痛藥、吃軟涼食物並多休息。避免用力漱口、用力吐口水、使用吸管或用舌頭與手碰傷口。"
+      },
+      {
+        "heading": "觀察重點",
+        "text": "判斷重點不是完全不痛，而是接下來有沒有開始改善；若疼痛和腫脹慢慢減輕，通常是好轉訊號。"
+      }
+    ],
+    "altText": "拔牙後第 1 到 3 天疼痛腫脹變化衛教圖卡",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "tooth_extraction_daily_changes",
+    "title": "第 3～7 天：怎樣代表正在變好？",
+    "image": "img/tooth_extraction_days_3_7.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_days_3_7.html",
+    "summary": "拔牙後第 3～7 天進入恢復期，若疼痛減輕、腫脹消退、較少出血並能慢慢恢復進食與張口，通常代表傷口正在好轉。",
+    "sections": [
+      {
+        "heading": "好轉的跡象",
+        "text": "疼痛一天比一天少、臉部腫脹慢慢改善、幾乎不再出血、可以吃軟食且較不疼痛、張口比較舒服，都是常見的正常恢復現象。"
+      },
+      {
+        "heading": "傷口外觀",
+        "text": "傷口可能逐漸被白色或淡黃色組織覆蓋，這常是修復組織，不要自行清除或摳掉。"
+      },
+      {
+        "heading": "這段時間可以做",
+        "text": "維持口腔清潔，飯後可輕輕漱口或用生理食鹽水漱口；可輕刷牙齒但避開傷口，吃軟且好咀嚼的食物，避免吸菸飲酒並充分休息。"
+      },
+      {
+        "heading": "仍需注意",
+        "text": "避免食物直接刺激或塞進牙窩，不要用手或舌頭碰傷口，也不要自行清除傷口表面的白膜。若疼痛突然加重、腫脹增加、持續出血、有膿臭味或吞嚥呼吸困難，應回診或就醫。"
+      }
+    ],
+    "altText": "拔牙後第 3 到 7 天好轉跡象與照護衛教圖卡",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "tooth_extraction_daily_changes",
+    "title": "1～2 週後：還有一個洞，是不是沒好？",
+    "image": "img/tooth_extraction_weeks_1_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_weeks_1_2.html",
+    "summary": "拔牙後 1～2 週仍看到一個洞多半是正常修復過程；牙齦會逐漸往中間生長，骨頭則需要數週到數個月慢慢修復。",
+    "sections": [
+      {
+        "heading": "為什麼還有洞",
+        "text": "牙齦長起來需要時間，尤其較大的牙齒或智齒拔除後，牙窩可能存在好幾週。還有一個洞不等於傷口沒好。"
+      },
+      {
+        "heading": "修復進程",
+        "text": "拔牙後第 1 週傷口表面可能被白色或淡黃色修復組織覆蓋；第 1～2 週新牙齦組織逐漸往中間長，傷口變小變平整；2 週後到數週，牙齦逐漸覆蓋，底下骨頭仍在修復。"
+      },
+      {
+        "heading": "常見疑問",
+        "text": "食物跑進洞裡時不要用牙籤、手指或尖銳物挖洞，可用溫鹽水輕輕漱口或依牙醫指示清潔。大多數日常活動 1～2 週後可恢復，劇烈運動或提重物建議先詢問牙醫。"
+      },
+      {
+        "heading": "這段時間的狀況",
+        "text": "若幾乎不痛、腫脹大多改善、飲食多半正常、可以正常刷牙且仍在持續修復中，通常是持續變好的證據。"
+      }
+    ],
+    "altText": "拔牙後 1 到 2 週仍有牙窩的正常修復過程衛教圖卡",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "tooth_extraction_daily_changes",
+    "title": "拔牙後怎樣判斷正常或異常？",
+    "image": "img/tooth_extraction_normal_vs_warning.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_normal_vs_warning.html",
+    "summary": "判斷拔牙後恢復是否正常，最重要是看整體趨勢：疼痛、腫脹與滲血若逐漸改善通常正常；若突然變糟或出現感染警訊應回牙科或就醫。",
+    "sections": [
+      {
+        "heading": "正常恢復趨勢",
+        "text": "疼痛通常慢慢減輕，腫脹可能在第 2～3 天較明顯後逐漸消退，滲血越來越少或停止。一日比一日舒服，通常代表正在變好。"
+      },
+      {
+        "heading": "異常情況要注意",
+        "text": "疼痛突然加劇、越來越痛或止痛藥無效，腫脹持續增加並合併紅熱硬痛，出現黃綠色分泌物、口臭怪味、發燒或全身不適，或出血持續不止，都應提高警覺。"
+      },
+      {
+        "heading": "什麼是乾性齒槽炎",
+        "text": "正常情況下血塊會保護傷口；若血塊脫落露出骨頭，可能造成很痛的乾性齒槽炎，常見於拔牙後第 2～5 天。"
+      },
+      {
+        "heading": "如何降低風險",
+        "text": "避免吸吮與用力漱口，不抽菸不喝酒，按時吃藥並好好休息，飲食清淡並避免刺激性食物。"
+      },
+      {
+        "heading": "需要回診或就醫",
+        "text": "若劇烈疼痛持續不改善、腫脹持續增加或擴散、黃綠色分泌物或惡臭、發燒或全身不適、吞嚥或呼吸困難、出血止不住或大量出血，請回牙科或就醫。"
+      }
+    ],
+    "altText": "拔牙後正常恢復趨勢與異常警訊衛教圖卡",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
   }
 ]
