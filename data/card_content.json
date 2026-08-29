@@ -1971,5 +1971,71 @@
     "sourceType": "user_provided",
     "matchConfidence": "high",
     "needsMedicalReview": true
+  },
+  {
+    "cardId": "acne_patch_use",
+    "title": "痘痘貼適合什麼狀況？",
+    "image": "img/acne_patch_when_to_use.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_patch_when_to_use.html",
+    "summary": "水膠體痘痘貼主要吸收表面滲液、覆蓋並保護患部，較適合有白頭、自然破掉少量滲液，或容易一直摸、一直摳的痘痘。",
+    "sections": [
+      {
+        "heading": "主要作用",
+        "text": "水膠體痘痘貼主要用來吸收表面滲液、覆蓋患部並減少手摸或摳抓。它不是完整的青春痘治療，也不能預防新的粉刺形成。"
+      },
+      {
+        "heading": "最適合使用的狀況",
+        "text": "有白頭或膿頭的痘痘、自然破掉且有少量滲液的痘痘，或因為容易一直摸、一直摳而需要遮蓋保護時，通常較適合使用。"
+      },
+      {
+        "heading": "效果較有限",
+        "text": "只有紅腫但還沒有白頭的痘痘，或黑頭粉刺、閉鎖性粉刺，使用痘痘貼的效果通常較有限。"
+      },
+      {
+        "heading": "不太適合",
+        "text": "深層、又硬又痛的痘痘，或反覆很多顆、嚴重發炎的青春痘，不建議只靠痘痘貼處理，應考慮皮膚科評估。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "不要為了貼痘痘貼先把痘痘硬擠破。若反覆出現深層疼痛痘痘、留下痘疤或範圍越來越多，建議就醫評估。"
+      }
+    ],
+    "altText": "痘痘貼適合什麼狀況與不適合情境衛教圖卡",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "acne_patch_use",
+    "title": "痘痘貼怎麼用？",
+    "image": "img/acne_patch_how_to_use.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_patch_how_to_use.html",
+    "summary": "痘痘貼應貼在乾淨、乾燥的皮膚上，完整覆蓋痘痘中央；變白或鼓起時可更換，若只有紅腫沒有白頭，效果可能有限。",
+    "sections": [
+      {
+        "heading": "先洗手、清潔皮膚",
+        "text": "使用前先洗手並把臉洗乾淨，將痘痘周圍的髒污與油脂清除，降低污染傷口或貼不住的機會。"
+      },
+      {
+        "heading": "完全擦乾再貼",
+        "text": "貼之前皮膚要完全擦乾，不要有水、乳液、精華或厚重藥膏，否則會影響痘痘貼黏著。"
+      },
+      {
+        "heading": "完整覆蓋痘痘",
+        "text": "選擇大小合適的痘痘貼，貼在痘痘中央並完整覆蓋患部。不要為了貼片先把痘痘硬擠破。"
+      },
+      {
+        "heading": "貼多久與何時更換",
+        "text": "依產品標示貼數小時或過夜，期間盡量不要一直摸。痘痘貼吸到滲液後變白或鼓起時可取下，清潔後視情況再更換一片。"
+      },
+      {
+        "heading": "小叮嚀",
+        "text": "若只紅腫沒有白頭，效果可能有限；若痘痘很深、很痛、反覆很多顆，建議就醫。若貼不住，先確認皮膚是否太油或沒有擦乾。"
+      }
+    ],
+    "altText": "水膠體痘痘貼正確使用方法衛教圖卡",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
   }
 ]

@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202608251200';
+const CACHE_NAME = 'pwa-cache-v202608261115';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -105,6 +105,8 @@ const urlsToCache = [
   "./img/acne.png",
   "./img/acne_dailycare.webp",
   "./img/acne_dailycare_2.webp",
+  "./img/acne_patch_how_to_use.webp",
+  "./img/acne_patch_when_to_use.webp",
   "./img/acne_stage.webp",
   "./img/add_to_desktop_android.webp",
   "./img/add_to_desktop_ios.webp",
@@ -415,6 +417,8 @@ const urlsToCache = [
   "./cards/acne_dailycare.html",
   "./cards/acne_dailycare_2.html",
   "./cards/acne.html",
+  "./cards/acne_patch_when_to_use.html",
+  "./cards/acne_patch_how_to_use.html",
   "./cards/oneFTU.html",
   "./cards/thin_skin_part.html",
   "./cards/over_one_oint_01.html",
@@ -719,5 +723,6 @@ self.addEventListener('fetch', (e) => {
     })
   );
 });
+
 
 
