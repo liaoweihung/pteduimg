@@ -596,7 +596,8 @@
     "title": "青春痘嚴重程度",
     "category": "public_education",
     "topics": [
-      "skin_wound"
+      "skin_wound",
+      "acne"
     ],
     "order": 21,
     "hidden": false,
@@ -669,7 +670,8 @@
     "title": "痘痘貼怎麼用?",
     "category": "public_education",
     "topics": [
-      "skin_wound"
+      "skin_wound",
+      "acne"
     ],
     "order": 21.1,
     "hidden": false,
