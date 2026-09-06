@@ -2,7 +2,7 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="./icon.png?v=3">
     <link rel="canonical" href="https://liaoweihung.github.io/pteduimg/public.html">
@@ -295,30 +295,41 @@
 </nav>
 <div class="page-note" id="page-note"></div>
 
-<section class="featured-section" aria-labelledby="featured-title">
-    <div class="section-title" id="featured-title">近日熱門議題</div>
-    <div class="featured-carousel" id="featured-carousel"></div>
-</section>
-
-<div id="fav-section" style="display:none;">
-    <div class="section-title">⭐ 常用圖卡</div>
-    <div class="menu-grid" id="fav-grid"></div>
-</div>
-
+<main id="public-content">
 <div class="card-search-wrap">
-    <label for="card-search" class="sr-only">搜尋圖卡</label>
-    <input id="card-search" class="card-search-input" type="search" placeholder="搜尋圖卡，例如：出國、胰島素、日本、安眠藥" autocomplete="off">
+    <h1>想找哪方面的照護資訊？</h1>
+    <label for="card-search" class="sr-only">搜尋所有民眾圖卡</label>
+    <input id="card-search" class="card-search-input" type="search" placeholder="輸入關鍵字，例如：傷口、睡眠、出國" autocomplete="off" enterkeyhint="search" aria-controls="category-sections">
+    <p class="search-hint">搜尋標題與關鍵字，或從下方選擇主題。</p>
 </div>
-
-<section class="topic-filter-section" aria-labelledby="topic-filter-title">
-    <h2 class="topic-filter-title" id="topic-filter-title">依主題瀏覽</h2>
-    <div class="topic-filter-list" id="topic-filter-list" role="group" aria-label="圖卡主題篩選"></div>
+<section class="topic-filter-section" aria-label="依主題瀏覽">
+    <details id="topic-picker">
+        <summary id="topic-filter-title">依主題瀏覽：全部圖卡</summary>
+        <div class="topic-filter-list" id="topic-filter-list" role="group" aria-label="圖卡主題篩選"></div>
+    </details>
 </section>
-<section class="related-navigation" id="related-pharmacist-navigation" aria-live="polite"></section>
-
-<!-- 分類區塊會由 cards.json 自動產生，不用再手動修改 index.html -->
+<details id="fav-section" style="display:none;">
+    <summary>⭐ 我的收藏 <span id="fav-count"></span></summary>
+    <div class="menu-grid" id="fav-grid"></div>
+</details>
+<div class="results-toolbar">
+    <p id="result-count" role="status" aria-live="polite"></p>
+    <button type="button" id="clear-filters" onclick="clearPublicFilters()" hidden>清除篩選</button>
+</div>
 <div id="home-loading" class="home-loading" role="status" aria-live="polite">正在載入圖卡...</div>
 <div id="category-sections"></div>
+<button id="show-more" class="show-more" type="button" onclick="showMoreCards()" hidden>顯示更多主題</button>
+<section class="featured-section" aria-labelledby="featured-title">
+    <h2 class="section-title" id="featured-title">精選圖卡</h2>
+    <div class="featured-carousel" id="featured-carousel"></div>
+</section>
+<details class="professional-tools" id="professional-tools">
+    <summary>藥品使用說明與其他工具</summary>
+    <section class="related-navigation" id="related-pharmacist-navigation" aria-live="polite"></section>
+    <a href="./calc.html">醫藥計算器</a>
+</details>
+<noscript><p>請前往<a href="./all-cards.html">完整圖卡目錄</a>瀏覽所有圖卡。</p></noscript>
+</main>
 
 <div id="qr-modal">
     <div class="qr-box">
@@ -394,6 +405,7 @@
     const MAIN_ORDER_STORAGE_KEY = `mainCardOrder:${PAGE_TYPE}`;
     let cardSearchTerm = '';
     let activePublicTopic = 'all';
+    let visibleSeriesLimit = 12;
 
     const publicTopicMeta = [
         { id: 'all', title: '全部圖卡' },
@@ -515,7 +527,7 @@
             if (!Object.keys(educationData).length) {
                 document.getElementById('category-sections').innerHTML = `
                     <div style="padding:20px; color:#c0392b; line-height:1.6;">
-                        找不到圖卡資料 cards.json。請先執行 <b>python build.py</b>，或確認 GitHub Actions 已完成自動建置。
+                        暫時無法載入圖卡，請確認網路後重新整理，或瀏覽<a href="./all-cards.html">完整圖卡目錄</a>。
                     </div>`;
                 educationData = {};
             }
@@ -906,7 +918,7 @@
                     class="featured-card"
                     onclick="openFeaturedTopic('${key}', ${index})"
                     aria-label="開啟${item.title}第 ${index + 1} 張">
-                <img class="featured-card-img" src="${step}" alt="${item.title}第 ${index + 1} 張">
+                <img class="featured-card-img" loading="lazy" src="${step}" alt="${item.title}第 ${index + 1} 張">
                 <div class="featured-card-title">${item.title}</div>
             </button>
         `).join('');
@@ -958,9 +970,10 @@
         const searchableText = [
             item.title || '',
             ...(Array.isArray(item.tags) ? item.tags : []),
-            ...(Array.isArray(item.texts) ? item.texts : [])
+            ...(Array.isArray(item.texts) ? item.texts : []),
+            ...(item.steps || []).map((_, index) => getStepTitle(item, index))
         ].join(' ').toLocaleLowerCase();
-        return searchableText.includes(cardSearchTerm);
+        return cardSearchTerm.split(/\s+/).every(term => searchableText.includes(term));
     }
 
     function matchesPublicTopic(item) {
@@ -984,7 +997,10 @@
     function selectPublicTopic(topicId) {
         if (!publicTopicMeta.some(topic => topic.id === topicId)) return;
         activePublicTopic = topicId;
+        visibleSeriesLimit = 12;
+        document.getElementById('topic-picker').open = false;
         renderHome();
+        document.getElementById('topic-filter-title').focus();
     }
 
     function applyPublicTopicFromUrl() {
@@ -1009,6 +1025,7 @@
         const target = document.getElementById('related-pharmacist-navigation');
         if (!target) return;
 
+        document.getElementById('professional-tools').open = true;
         const scrollToTarget = () => {
             document.body.scrollTo({ top: target.getBoundingClientRect().top + document.body.scrollTop, behavior: 'auto' });
         };
@@ -1024,7 +1041,26 @@
 
     function updateCardSearch(value) {
         cardSearchTerm = (value || '').trim().toLocaleLowerCase();
+        visibleSeriesLimit = 12;
         renderHome();
+    }
+
+    function clearPublicFilters() {
+        activePublicTopic = 'all';
+        document.getElementById('card-search').value = '';
+        updateCardSearch('');
+        document.getElementById('card-search').focus();
+    }
+
+    function showMoreCards() {
+        const previousCount = document.querySelectorAll('.series-card').length;
+        visibleSeriesLimit += 12;
+        renderHome();
+        document.querySelectorAll('.series-link')[previousCount]?.focus();
+    }
+
+    function escapeCardText(value) {
+        return String(value).replace(/[&<>"']/g, character => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[character]));
     }
 
     function renderHome() {
@@ -1048,28 +1084,35 @@
             categories[cat].push({ key, item });
         });
 
+        const total = Object.values(categories).reduce((count, items) => count + items.length, 0);
+        document.getElementById('result-count').textContent = `${getActivePublicTopicTitle()} · ${total} 個系列${cardSearchTerm ? '符合搜尋' : ''}`;
+        document.getElementById('topic-filter-title').textContent = `依主題瀏覽：${getActivePublicTopicTitle()}`;
+        document.getElementById('clear-filters').hidden = !cardSearchTerm && activePublicTopic === 'all';
+        document.querySelector('.featured-section').hidden = !!cardSearchTerm || activePublicTopic !== 'all';
+        document.getElementById('show-more').hidden = total <= visibleSeriesLimit;
+        document.getElementById('show-more').textContent = `顯示更多（還有 ${Math.max(0, total - visibleSeriesLimit)} 個系列）`;
+        let shown = 0;
         Object.keys(categories)
             .sort((a, b) => (categoryMeta[a]?.order || 99) - (categoryMeta[b]?.order || 99))
             .forEach(cat => {
-                const title = PAGE_TYPE === 'public' && cat === 'public_education'
-                    ? getActivePublicTopicTitle()
-                    : (categoryMeta[cat]?.title || cat);
-                const gridId = `grid-${cat}`;
-                sectionRoot.innerHTML += `<div class="section-title">${title}</div><div class="menu-grid" id="${gridId}"></div>`;
-                const grid = document.getElementById(gridId);
-
-                getOrderedCategoryItems(cat, categories[cat])
-                    .forEach(({ key, item }) => {
-                        grid.innerHTML += `
-                            <div class="menu-item sortable-main"
-                                 data-card-key="${key}"
-                                 data-category="${cat}"
-                                 onclick="handleMainCardClick(event, '${key}')">
-                                <span class="drag-grip main-drag-grip">☰</span>
-                                <span class="icon">${item.icon || '📌'}</span>
-                                <div style="font-weight:bold; font-size:1.1rem;">${item.title}</div>
-                            </div>`;
-                    });
+                const ordered = getOrderedCategoryItems(cat, categories[cat]);
+                if (cardSearchTerm) ordered.sort((a, b) => Number(b.item.title.toLocaleLowerCase().includes(cardSearchTerm)) - Number(a.item.title.toLocaleLowerCase().includes(cardSearchTerm)));
+                const items = ordered.slice(0, Math.max(0, visibleSeriesLimit - shown));
+                shown += items.length;
+                sectionRoot.innerHTML += items.map(({ key, item }) => {
+                    const steps = item.steps || [];
+                    const matchingLinks = cardSearchTerm ? steps.map((step, index) => ({step, index, title: getStepTitle(item, index)})).filter(entry => cardSearchTerm.split(/\s+/).every(term => entry.title.toLocaleLowerCase().includes(term))).slice(0, 3).map(entry => `<a href="${getCardPagePath(entry.step)}">${escapeCardText(entry.title)}</a>`).join('') : '';
+                    const links = steps.map((step, index) => `<a href="${getCardPagePath(step)}">${index + 1}. ${escapeCardText(getStepTitle(item, index))}</a>`).join('');
+                    return `<article class="series-card">
+                        <a class="series-link" href="${getCardPagePath(steps[0])}">
+                            <span class="series-icon" aria-hidden="true">${item.icon || '📌'}</span>
+                            <span><strong>${escapeCardText(item.title)}</strong><small>${steps.length} 張圖卡</small></span>
+                            <span class="series-arrow" aria-hidden="true">›</span>
+                        </a>
+                        ${matchingLinks && steps.length > 1 ? `<div class="matching-links"><small>符合的圖卡</small>${matchingLinks}</div>` : ''}
+                        ${steps.length > 1 ? `<details class="series-directory"><summary>展開圖卡目錄</summary><div>${links}</div></details>` : ''}
+                    </article>`;
+                }).join('');
             });
 
         if (!Object.keys(categories).length) {
@@ -1100,7 +1143,7 @@
             }
         });
         document.getElementById('fav-section').style.display = visibleFavCount > 0 ? 'block' : 'none';
-        initMainSorting();
+        document.getElementById('fav-count').textContent = `（${visibleFavCount} 張）`;
         initFavoriteSorting();
         focusRelatedNavigation();
     }
@@ -1438,11 +1481,7 @@ function updateContent() {
     
 </script>
 <footer class="site-footer">
-  <div class="reset-main-order-wrap">
-    <button type="button" class="reset-main-order-btn" onclick="resetMainCardOrder()">↻<br>恢復圖卡預設排列</button>
-    <a class="reset-main-order-btn" href="./calc.html">🧮<br>醫藥計算器</a>
-  </div>
-  <p style="margin: 0 0 8px 0;">本工具圖文僅供藥師衛教參考，非專業人士務必諮詢藥師建議。</p>
+  <p style="margin: 0 0 8px 0;">圖卡提供一般衛教資訊；個人用藥與照護問題，請諮詢醫師或藥師。</p>
   <p style="margin: 0;">
     <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a> 
     &nbsp;|&nbsp; 
