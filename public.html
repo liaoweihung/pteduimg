@@ -316,6 +316,7 @@
     <p id="result-count" role="status" aria-live="polite"></p>
     <button type="button" id="clear-filters" onclick="clearPublicFilters()" hidden>清除篩選</button>
 </div>
+<p id="ranking-note" class="search-hint">依台灣近一年關鍵字搜尋熱度排序 · 2026/09 更新</p>
 <div id="home-loading" class="home-loading" role="status" aria-live="polite">正在載入圖卡...</div>
 <div id="category-sections"></div>
 <button id="show-more" class="show-more" type="button" onclick="showMoreCards()" hidden>顯示更多主題</button>
@@ -647,11 +648,13 @@
     }
 
     function getDefaultSortedItems(items) {
-        return [...items].sort((a, b) => (a.item.order || 999) - (b.item.order || 999) || a.item.title.localeCompare(b.item.title, 'zh-Hant'));
+        return [...items].sort((a, b) => (a.item.order ?? 999) - (b.item.order ?? 999) || a.item.title.localeCompare(b.item.title, 'zh-Hant'));
     }
 
     function getOrderedCategoryItems(cat, items) {
         const defaultItems = getDefaultSortedItems(items);
+        // Public browsing follows the curated search-interest order, including returning visitors.
+        if (cat === 'public_education') return defaultItems;
         const savedKeys = Array.isArray(mainCardOrder[cat]) ? mainCardOrder[cat] : [];
         const byKey = new Map(defaultItems.map(entry => [entry.key, entry]));
         const ordered = [];
@@ -1084,6 +1087,7 @@
             categories[cat].push({ key, item });
         });
 
+        document.getElementById('ranking-note').hidden = !!cardSearchTerm;
         const total = Object.values(categories).reduce((count, items) => count + items.length, 0);
         document.getElementById('result-count').textContent = `${getActivePublicTopicTitle()} · ${total} 個系列${cardSearchTerm ? '符合搜尋' : ''}`;
         document.getElementById('topic-filter-title').textContent = `依主題瀏覽：${getActivePublicTopicTitle()}`;

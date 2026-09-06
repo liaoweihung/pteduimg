@@ -5,7 +5,7 @@
     "topics": [
       "growth"
     ],
-    "order": -10,
+    "order": 23,
     "hidden": false,
     "icon": "📏",
     "steps": [
@@ -34,7 +34,7 @@
     "topics": [
       "infectious_diseases"
     ],
-    "order": 0,
+    "order": 6,
     "hidden": false,
     "icon": "🧼",
     "steps": [
@@ -55,7 +55,7 @@
     "topics": [
       "eyes"
     ],
-    "order": 1,
+    "order": 19,
     "hidden": false,
     "icon": "👁️",
     "tags": [
@@ -82,7 +82,7 @@
     "topics": [
       "skin_wound"
     ],
-    "order": 1.1,
+    "order": 8,
     "hidden": false,
     "icon": "🔥",
     "tags": [
@@ -131,7 +131,7 @@
     "topics": [
       "gastrointestinal"
     ],
-    "order": 5,
+    "order": 21,
     "hidden": false,
     "icon": "🫃",
     "steps": [
@@ -153,7 +153,7 @@
     "topics": [
       "infectious_diseases"
     ],
-    "order": 6,
+    "order": 16,
     "hidden": false,
     "icon": "🦠",
     "steps": [
@@ -170,7 +170,7 @@
     "topics": [
       "oral_health"
     ],
-    "order": 7,
+    "order": 27,
     "hidden": false,
     "icon": "🪥",
     "steps": [
@@ -190,7 +190,7 @@
     "topics": [
       "insect_repellent"
     ],
-    "order": 8,
+    "order": 17,
     "hidden": false,
     "icon": "🦟",
     "steps": [
@@ -262,7 +262,7 @@
     "topics": [
       "skin_wound"
     ],
-    "order": 10,
+    "order": 3,
     "hidden": false,
     "icon": "🤕",
     "tags": [
@@ -491,7 +491,7 @@
     "topics": [
       "elimination_care"
     ],
-    "order": 13,
+    "order": 29,
     "hidden": false,
     "icon": "🧻",
     "tags": [
@@ -520,7 +520,7 @@
     "topics": [
       "skin_wound"
     ],
-    "order": 20,
+    "order": 30,
     "hidden": false,
     "icon": "💦"
   },
@@ -547,7 +547,7 @@
     "topics": [
       "chronic_conditions"
     ],
-    "order": 30,
+    "order": 2,
     "hidden": false,
     "icon": "🍭"
   },
@@ -557,7 +557,7 @@
     "topics": [
       "skin_wound"
     ],
-    "order": 40,
+    "order": 31,
     "hidden": false,
     "icon": "💆"
   },
@@ -834,7 +834,7 @@
     "topics": [
       "heat_illness"
     ],
-    "order": 2,
+    "order": 9,
     "hidden": false,
     "icon": "🌡️",
     "tags": [
@@ -857,7 +857,7 @@
     "topics": [
       "eyes"
     ],
-    "order": 1.5,
+    "order": 18,
     "hidden": false,
     "icon": "💧",
     "tags": [
@@ -942,7 +942,7 @@
     "topics": [
       "eyes"
     ],
-    "order": 1.55,
+    "order": 26,
     "hidden": false,
     "icon": "💧",
     "tags": [
@@ -991,7 +991,7 @@
     "topics": [
       "throat"
     ],
-    "order": 1.6,
+    "order": 4,
     "hidden": false,
     "icon": "🗣️",
     "tags": [
@@ -1037,7 +1037,7 @@
     "topics": [
       "skin_wound"
     ],
-    "order": 9,
+    "order": 14,
     "hidden": false,
     "icon": "🦶",
     "tags": [
@@ -1101,7 +1101,7 @@
     "topics": [
       "skin_wound"
     ],
-    "order": 1.2,
+    "order": 7,
     "hidden": false,
     "icon": "🧴",
     "tags": [
@@ -1139,7 +1139,7 @@
     "topics": [
       "sleep"
     ],
-    "order": 3,
+    "order": 10,
     "hidden": false,
     "icon": "🌙",
     "tags": [
@@ -1167,7 +1167,7 @@
     "topics": [
       "travel_medication"
     ],
-    "order": 4,
+    "order": 24,
     "hidden": false,
     "icon": "🧳",
     "tags": [
@@ -1225,7 +1225,7 @@
     "topics": [
       "travel_medication"
     ],
-    "order": 4.1,
+    "order": 20,
     "hidden": false,
     "icon": "🚗",
     "tags": [
@@ -1266,7 +1266,7 @@
       "skin_wound",
       "oral_health"
     ],
-    "order": 1.3,
+    "order": 22,
     "hidden": false,
     "icon": "👄",
     "tags": [
@@ -1301,7 +1301,7 @@
     "topics": [
       "oral_health"
     ],
-    "order": 1.35,
+    "order": 11,
     "hidden": false,
     "icon": "🦷",
     "tags": [
@@ -1353,7 +1353,7 @@
     "topics": [
       "oral_health"
     ],
-    "order": 1.36,
+    "order": 12,
     "hidden": false,
     "icon": "🦷",
     "tags": [
@@ -1409,7 +1409,7 @@
     "topics": [
       "skin_wound"
     ],
-    "order": 1.25,
+    "order": 25,
     "hidden": false,
     "icon": "🔍",
     "tags": [
@@ -1465,7 +1465,7 @@
       "skin_wound",
       "acne"
     ],
-    "order": 21,
+    "order": 1,
     "hidden": false,
     "icon": "😊",
     "tags": [
@@ -1539,7 +1539,7 @@
       "skin_wound",
       "acne"
     ],
-    "order": 21.1,
+    "order": 15,
     "hidden": false,
     "icon": "🩹",
     "tags": [
@@ -1589,7 +1589,7 @@
     "topics": [
       "travel_medication"
     ],
-    "order": 1.7,
+    "order": 28,
     "hidden": false,
     "icon": "🇯🇵",
     "tags": [
@@ -1877,7 +1877,7 @@
   "pregnancy_minor_ailments": {
     "title": "懷孕期間小毛病",
     "category": "public_education",
-    "order": 80,
+    "order": 33,
     "hidden": false,
     "icon": "🫄",
     "topics": [
@@ -2009,6 +2009,63 @@
       "img/pregnancy_minor_nausea.webp",
       "img/pregnancy_minor_itch.webp",
       "img/pregnancy_minor_insomnia.webp"
+    ]
+  },
+  "hemorr_sitbath": {
+    "title": "痔瘡坐浴",
+    "category": "public_education",
+    "topics": [
+      "elimination_care"
+    ],
+    "order": 5,
+    "hidden": false,
+    "icon": "🧘",
+    "steps": [
+      "img/hemorr_sitbath_1.png",
+      "img/hemorr_sitbath_2.png"
+    ]
+  },
+  "Res3_ABCovid": {
+    "title": "三合一快篩",
+    "category": "public_education",
+    "topics": [
+      "infectious_diseases"
+    ],
+    "order": 13,
+    "hidden": false,
+    "icon": "🧪",
+    "steps": [
+      "img/Res3_ABCovid_1.webp",
+      "img/Res3_ABCovid_2.webp",
+      "img/Res3_ABCovid_3.webp",
+      "img/Res3_ABCovid_4.webp"
+    ],
+    "tags": [
+      "三合一快篩",
+      "流感",
+      "新冠"
+    ]
+  },
+  "over_one_oint": {
+    "title": "藥膏一起擦",
+    "category": "public_education",
+    "topics": [
+      "skin_wound"
+    ],
+    "order": 32,
+    "hidden": false,
+    "icon": "🧴",
+    "texts": [
+      "",
+      "",
+      "",
+      "整合內容"
+    ],
+    "steps": [
+      "img/over_one_oint_01.webp",
+      "img/over_one_oint_02.webp",
+      "img/over_one_oint_03.webp",
+      "img/over_one_oint_04.webp"
     ]
   }
 }
