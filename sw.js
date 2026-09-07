@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202609061123';
+const CACHE_NAME = 'pwa-cache-v202609071311';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -108,6 +108,18 @@ const urlsToCache = [
   "./img/acne_patch_how_to_use.webp",
   "./img/acne_patch_when_to_use.webp",
   "./img/acne_stage.webp",
+  "./img/acne_topicals_01_basics.webp",
+  "./img/acne_topicals_02_retinoids.webp",
+  "./img/acne_topicals_03_azelaic.webp",
+  "./img/acne_topicals_04_bpo.webp",
+  "./img/acne_topicals_05_clindamycin.webp",
+  "./img/acne_topicals_06_erythromycin.webp",
+  "./img/acne_topicals_07_metronidazole.webp",
+  "./img/acne_topicals_08_salicylic.webp",
+  "./img/acne_topicals_09_combinations.webp",
+  "./img/acne_topicals_10_pairing.webp",
+  "./img/acne_topicals_11_routine.webp",
+  "./img/acne_topicals_12_irritation.webp",
   "./img/add_to_desktop_android.webp",
   "./img/add_to_desktop_ios.webp",
   "./img/adult_diaper_1.webp",
@@ -417,6 +429,18 @@ const urlsToCache = [
   "./cards/acne_dailycare.html",
   "./cards/acne_dailycare_2.html",
   "./cards/acne.html",
+  "./cards/acne_topicals_01_basics.html",
+  "./cards/acne_topicals_02_retinoids.html",
+  "./cards/acne_topicals_03_azelaic.html",
+  "./cards/acne_topicals_04_bpo.html",
+  "./cards/acne_topicals_05_clindamycin.html",
+  "./cards/acne_topicals_06_erythromycin.html",
+  "./cards/acne_topicals_07_metronidazole.html",
+  "./cards/acne_topicals_08_salicylic.html",
+  "./cards/acne_topicals_09_combinations.html",
+  "./cards/acne_topicals_10_pairing.html",
+  "./cards/acne_topicals_11_routine.html",
+  "./cards/acne_topicals_12_irritation.html",
   "./cards/acne_patch_when_to_use.html",
   "./cards/acne_patch_how_to_use.html",
   "./cards/oneFTU.html",

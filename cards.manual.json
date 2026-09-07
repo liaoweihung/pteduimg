@@ -1459,7 +1459,7 @@
     ]
   },
   "acne": {
-    "title": "青春痘嚴重程度",
+    "title": "青春痘照護與痘痘藥怎麼擦",
     "category": "public_education",
     "topics": [
       "skin_wound",
@@ -1513,7 +1513,17 @@
       "Tretinoin",
       "用藥期間",
       "發紅脫皮",
-      "自行停藥"
+      "自行停藥",
+      "痘痘藥",
+      "擦藥順序",
+      "藥膏刺激",
+      "外用抗生素",
+      "酒糟",
+      "Clindamycin",
+      "Erythromycin",
+      "Metronidazole",
+      "複方痘痘藥",
+      "抗藥性"
     ],
     "texts": [
       "青春痘嚴重程度外觀",
@@ -1521,7 +1531,19 @@
       "輕度粉刺日常保養這樣做",
       "輕度發炎型青春痘日常照護怎麼做",
       "中度發炎型青春痘用藥期間注意事項",
-      "青春痘嚴重度與照護"
+      "青春痘嚴重度與照護",
+      "擦痘痘藥的基本原則",
+      "A 酸類怎麼擦？",
+      "杜鵑花酸怎麼擦？",
+      "BPO 怎麼擦？",
+      "Clindamycin 怎麼擦？",
+      "Erythromycin 怎麼擦？",
+      "Metronidazole 怎麼擦？",
+      "水楊酸怎麼用？",
+      "複方痘痘藥怎麼用？",
+      "兩種痘痘藥一起用？",
+      "早晚擦藥怎麼排？",
+      "擦到紅、乾、刺怎麼辦？"
     ],
     "steps": [
       "img/acne_stage.webp",
@@ -1529,7 +1551,19 @@
       "img/comedo_dailycare.webp",
       "img/acne_dailycare.webp",
       "img/acne_dailycare_2.webp",
-      "img/acne.png"
+      "img/acne.png",
+      "img/acne_topicals_01_basics.webp",
+      "img/acne_topicals_02_retinoids.webp",
+      "img/acne_topicals_03_azelaic.webp",
+      "img/acne_topicals_04_bpo.webp",
+      "img/acne_topicals_05_clindamycin.webp",
+      "img/acne_topicals_06_erythromycin.webp",
+      "img/acne_topicals_07_metronidazole.webp",
+      "img/acne_topicals_08_salicylic.webp",
+      "img/acne_topicals_09_combinations.webp",
+      "img/acne_topicals_10_pairing.webp",
+      "img/acne_topicals_11_routine.webp",
+      "img/acne_topicals_12_irritation.webp"
     ]
   },
   "acne_patch_use": {
