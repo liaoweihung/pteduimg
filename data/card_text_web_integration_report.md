@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：77
+- 成功加入文字頁數：75
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -65,9 +65,7 @@
 | burn_first_aid | 燙傷常見藥品與敷料怎麼選 | https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | burn_first_aid | 燙傷癒合後如何減少疤痕 | https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_06.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | acne | 青春痘嚴重程度外觀 | https://liaoweihung.github.io/pteduimg/cards/acne_stage.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| acne | 輕度粉刺日常保養這樣做 | https://liaoweihung.github.io/pteduimg/cards/comedo_dailycare.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | acne | 輕度發炎型青春痘日常照護怎麼做 | https://liaoweihung.github.io/pteduimg/cards/acne_dailycare.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| acne | 中度發炎型青春痘用藥期間注意事項 | https://liaoweihung.github.io/pteduimg/cards/acne_dailycare_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | eye_wash_solution | 洗眼液使用前準備 | https://liaoweihung.github.io/pteduimg/cards/eye_wash_prepare.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | eye_wash_solution | 洗眼液使用注意事項 | https://liaoweihung.github.io/pteduimg/cards/eye_wash_precautions.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | contact_lens_eye_drops | 戴隱形眼鏡，買眼藥水先注意這些 | https://liaoweihung.github.io/pteduimg/cards/contact_lens_eye_drops_1.html | 是 | 是 | 是 | 是 | 是 | 無 |

@@ -6,6 +6,8 @@ import re
 from pathlib import Path
 from urllib.parse import quote
 
+from scripts.card_archive import read_retired_cards, write_retired_pages
+
 
 BASE_URL = "https://liaoweihung.github.io/pteduimg/"
 GA_MEASUREMENT_ID = "G-T5R33JYTC0"
@@ -278,7 +280,7 @@ def render_card_text_content(card_content, h1, category_label, step_number, tota
       </article>"""
 
 
-def render_card_page(card_id, card, step, step_index, seo, card_content=None):
+def render_card_page(card_id, card, step, step_index, seo, card_content=None, series_links=""):
     steps = card.get("steps") or []
     total = len(steps)
     step_number = step_index + 1
@@ -477,7 +479,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None):
     function returnToCardHome() {{
       location.href = sessionStorage.getItem('pteduimgCardReturnPage') || {json.dumps(default_return_page)};
     }}
-    var cardFavoriteKey = {json.dumps(f"{card_id}-{step_index}")};
+    var cardFavoriteKey = {json.dumps((card.get('favorite_keys') or [f'{card_id}-{i}' for i in range(total)])[step_index])};
     var cardShareUrl = {json.dumps(page_url)};
     var cardTitle = {json.dumps(title, ensure_ascii=False)};
     function getFavorites() {{
@@ -885,7 +887,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None):
       <div class="section-title">同系列圖卡</div>
       <div class="related-grid">
         {related_cards}
-      </div>
+      </div>{series_links}
     </section>
     <div class="qr-modal" id="qr-modal" hidden>
       <div class="qr-box" role="dialog" aria-modal="true" aria-label="圖卡 QR code">
@@ -1085,7 +1087,7 @@ def generate_card_pages(cards, seo_index, card_content_index):
             seo = seo_index.get(page_path) or fallback_seo_for_card(card_id, card, step, index)
             card_content = card_content_index.get(step.replace("\\", "/"))
             (ROOT / page_path).write_text(
-                render_card_page(card_id, card, step, index, seo, card_content),
+                render_card_page(card_id, card, step, index, seo, card_content, render_series_links(card, cards)),
                 encoding="utf-8",
                 newline="\n",
             )
@@ -1094,6 +1096,20 @@ def generate_card_pages(cards, seo_index, card_content_index):
     (CARDS_DIR / "404.html").write_text(render_404_page(), encoding="utf-8", newline="\n")
     (ROOT / "404.html").write_text(render_404_page(), encoding="utf-8", newline="\n")
     return generated_pages
+
+
+def render_series_links(card, cards):
+    links = []
+    for key in card.get('related_series', []):
+        related = cards.get(key)
+        if not related or related.get('hidden') or not related.get('steps'):
+            continue
+        links.append(f'<li><a href="../{esc(page_for_image(related["steps"][0]))}">{esc(related["title"])}</a></li>')
+    note = card.get('image_numbering_note')
+    parts = [f'<p class="meta">{esc(note)}</p>'] if note else []
+    if links:
+        parts.append('<nav aria-label="相關系列"><h2 class="section-title">接著可以看</h2><ul style="line-height:2.4">' + ''.join(links) + '</ul></nav>')
+    return '\n      ' + '\n      '.join(parts) if parts else ''
 
 
 def markdown_cell(value):
@@ -1194,7 +1210,7 @@ def build_card_text_integration_report(card_content_index):
     return success_count, failure_count
 
 
-def update_service_worker(cards, generated_pages):
+def update_service_worker(cards, generated_pages, retired_pages=()):
     sw_path = ROOT / "sw.js"
     if not sw_path.exists():
         return
@@ -1258,6 +1274,8 @@ def update_service_worker(cards, generated_pages):
     ]
     cache_items.extend(f"./img/{img}" for img in image_files)
     cache_items.extend(f"./{page}" for page in generated_pages)
+    cache_items.extend(f"./{page}" for page in retired_pages)
+    cache_items.extend(['./retired-cards.html', './css/card-archive.css', './js/card-archive.js'])
     cache_items.append("./cards/404.html")
     cache_array = ",\n  ".join(json.dumps(item, ensure_ascii=False) for item in cache_items)
     core_cache_items = [
@@ -1335,6 +1353,7 @@ def update_sitemap(generated_pages):
         ("index.html", "weekly", "1.0"),
         ("public.html", "weekly", "0.8"),
         ("all-cards.html", "weekly", "0.8"),
+        ("retired-cards.html", "monthly", "0.3"),
         ("calc.html", "monthly", "0.7"),
         ("health-check-calculator.html", "monthly", "0.6"),
         ("cancer-marker-calculator.html", "monthly", "0.6"),
@@ -1383,15 +1402,19 @@ Sitemap: {abs_url("sitemap-main.xml")}
 
 def main():
     cards = read_cards()
-    card_content_index = read_card_content()
+    retired = read_retired_cards(ROOT, cards)
+    retired_images = {entry['image'] for entry in retired}
+    card_content_index = {image: content for image, content in read_card_content().items() if image not in retired_images}
     seo_index = build_seo_index(cards, card_content_index)
     generated_pages = generate_card_pages(cards, seo_index, card_content_index)
+    write_retired_pages(ROOT, retired, BASE_URL)
     (ROOT / "all-cards.html").write_text(render_all_cards_page(cards, seo_index), encoding="utf-8", newline="\n")
     text_success, text_failures = build_card_text_integration_report(card_content_index)
-    update_service_worker(cards, generated_pages)
+    update_service_worker(cards, generated_pages, [entry['page'] for entry in retired])
     update_sitemap(generated_pages)
     update_robots()
     print(f"Generated {len(generated_pages)} static card pages.")
+    print(f"Preserved {len(retired)} retired URLs and updated retired-cards.html.")
     print(f"Integrated static text for {text_success} card pages ({text_failures} failures).")
     print("Updated all-cards.html, seo.json, sitemap.xml, sitemap-main.xml, robots.txt, and sw.js.")
 

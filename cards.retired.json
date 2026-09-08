@@ -1,0 +1,79 @@
+[
+  {
+    "image": "img/acne.png",
+    "title": "青春痘大解密：藥師圖卡懶人包",
+    "reason": "與嚴重度及用藥圖卡重複；原圖按嚴重度列出固定治療月數，可能被誤解為個人療程。",
+    "page": "cards/acne.html",
+    "retired_at": "2026-09-08",
+    "original_series": "青春痘照護與痘痘藥怎麼擦",
+    "replacements": [
+      {
+        "page": "cards/acne_stage.html",
+        "title": "青春痘嚴重程度外觀"
+      },
+      {
+        "page": "cards/acne_topicals_01_basics.html",
+        "title": "擦痘痘藥的基本原則"
+      }
+    ],
+    "tags": [
+      "青春痘",
+      "粉刺",
+      "痘痘藥"
+    ]
+  },
+  {
+    "image": "img/comedo_dailycare.webp",
+    "title": "輕度粉刺日常保養這樣做",
+    "reason": "清潔、保濕、防曬與其他照護圖卡重複；保養品推薦及乾燥與出油的因果敘述需重新整理。",
+    "page": "cards/comedo_dailycare.html",
+    "retired_at": "2026-09-08",
+    "original_series": "青春痘照護與痘痘藥怎麼擦",
+    "replacements": [
+      {
+        "page": "cards/acne_dailycare.html",
+        "title": "輕度發炎型青春痘日常照護怎麼做"
+      },
+      {
+        "page": "cards/acne_topicals_08_salicylic.html",
+        "title": "水楊酸怎麼用？"
+      },
+      {
+        "page": "cards/acne_topicals_02_retinoids.html",
+        "title": "A 酸類怎麼擦？"
+      }
+    ],
+    "tags": [
+      "青春痘",
+      "粉刺",
+      "痘痘藥"
+    ]
+  },
+  {
+    "image": "img/acne_dailycare_2.webp",
+    "title": "中度發炎型青春痘用藥期間注意事項",
+    "reason": "薄擦、刺激處理、保濕與抗生素療程內容已有較聚焦的新卡承接；避免藥用 A 酸與保養品 A 醇混淆。",
+    "page": "cards/acne_dailycare_2.html",
+    "retired_at": "2026-09-08",
+    "original_series": "青春痘照護與痘痘藥怎麼擦",
+    "replacements": [
+      {
+        "page": "cards/acne_topicals_01_basics.html",
+        "title": "擦痘痘藥的基本原則"
+      },
+      {
+        "page": "cards/acne_topicals_05_clindamycin.html",
+        "title": "Clindamycin 怎麼擦？"
+      },
+      {
+        "page": "cards/acne_topicals_12_irritation.html",
+        "title": "擦到紅、乾、刺怎麼辦？"
+      }
+    ],
+    "tags": [
+      "青春痘",
+      "粉刺",
+      "痘痘藥"
+    ]
+  }
+]

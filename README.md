@@ -2,6 +2,12 @@
 
 這是靜態 GitHub Pages 專案，包含藥師與民眾教育工具。
 
+## 圖卡退出與改版紀錄
+
+- [退出圖卡紀錄網頁](https://liaoweihung.github.io/pteduimg/retired-cards.html)：搜尋舊網址、退出原因與替代圖卡。
+- 退出資料維護於 `cards.retired.json`，再執行 `python build.py` 產生紀錄頁及原網址的歷史頁面。
+- [青春痘系列重整與待補圖卡清單](docs/acne-series-maintenance.md)。
+
 ## 台灣局部眼用藥品資料庫
 
 藥師版查詢頁：

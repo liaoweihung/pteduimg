@@ -161,9 +161,10 @@ def check_static_card_template(pages: list[Path], failures: list[str]) -> None:
 
 def check_static_card_text_content(cards: dict, failures: list[str]) -> None:
     content_records = load_json(ROOT / "data" / "card_content.json")
+    retired_images = {item['image'] for item in load_json(ROOT / 'cards.retired.json')}
     high_records = [
         record for record in content_records
-        if isinstance(record, dict) and record.get("matchConfidence") == "high"
+        if isinstance(record, dict) and record.get("matchConfidence") == "high" and record.get('image') not in retired_images
     ]
     high_images = {record.get("image") for record in high_records if record.get("image")}
     content_errors: list[str] = []
@@ -378,9 +379,51 @@ def check_tcm_formula_explorer(failures: list[str]) -> None:
     check("非歷史源流或製造商聲明" in js, "TCM AI inference notice is present", "TCM AI inference notice is missing", failures)
 
 
+def check_retired_cards(cards: dict, manual: dict, failures: list[str]) -> None:
+    retired = load_json(ROOT / 'cards.retired.json')
+    active_pages = {rel(page_for_image(image)) for card in cards.values() for image in card.get('steps', [])}
+    archive = read_text(ROOT / 'retired-cards.html')
+    sitemap = read_text(ROOT / 'sitemap.xml')
+    all_cards = read_text(ROOT / 'all-cards.html')
+    sw = read_text(ROOT / 'sw.js')
+    errors = []
+    seen = set()
+    for item in retired:
+        page = item['page']
+        if page in seen or page in active_pages or page in sitemap or page in all_cards:
+            errors.append(page + ': retired URL is duplicated or still in active indexes')
+        seen.add(page)
+        path = ROOT / page
+        content = read_text(path) if path.exists() else ''
+        if not content or 'noindex, follow' not in content or 'historical-image' not in content or '已退出主要目錄' not in content:
+            errors.append(page + ': missing retirement notice or historical content')
+        if page not in archive or page not in sw or not (ROOT / item['image']).exists():
+            errors.append(page + ': missing ledger, cache route or historical image')
+        for replacement in item['replacements']:
+            if replacement['page'] not in active_pages or replacement['page'] not in content:
+                errors.append(page + ': broken replacement URL')
+    check(not errors, 'retired URLs stay reachable with notices, replacements and noindex', str(errors), failures)
+    check('retired-cards.html' in read_text(ROOT / 'public.html') and 'archive-search' in archive,
+          'retirement log is discoverable and searchable', 'retirement log is missing its entry or search', failures)
+    expected = {'acne':3, 'acne_topical_medicines':4, 'acne_antibiotics':3, 'acne_application':4, 'acne_patch_use':2, 'rosacea_care':1}
+    actual_keys = []
+    for key, size in expected.items():
+        card = cards.get(key, {})
+        keys = card.get('favorite_keys') or [f'{key}-{i}' for i in range(size)]
+        check(card == manual.get(key) and len(card.get('steps', [])) == size and len(keys) == size,
+              f'{key} has synchronized data and {size} current cards', f'{key} regrouping mismatch', failures)
+        for i, image in enumerate(card.get('steps', [])):
+            content = read_text(page_for_image(image))
+            if f'var cardFavoriteKey = "{keys[i]}";' not in content:
+                errors.append(image + ': changed favorite identity')
+        actual_keys.extend(keys)
+    check(not errors and len(actual_keys) == len(set(actual_keys)), 'regrouped cards preserve unique favorite identities', 'favorite identity regression', failures)
+
+
 def main() -> int:
     failures: list[str] = []
     cards, _manual = check_json_files(failures)
+    check_retired_cards(cards, _manual, failures)
     pages = check_card_pages(cards, failures)
     check_home_viewer(failures)
     check_static_card_template(pages, failures)

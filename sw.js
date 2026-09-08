@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202609070542';
+const CACHE_NAME = 'pwa-cache-v202609082125';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -102,9 +102,7 @@ const urlsToCache = [
   "./img/Wash_hands_five_steps.webp",
   "./img/Wet_Wrap.webp",
   "./img/ZithromaxPOS.webp",
-  "./img/acne.png",
   "./img/acne_dailycare.webp",
-  "./img/acne_dailycare_2.webp",
   "./img/acne_patch_how_to_use.webp",
   "./img/acne_patch_when_to_use.webp",
   "./img/acne_stage.webp",
@@ -157,7 +155,6 @@ const urlsToCache = [
   "./img/bzd_z_sleep_aids.webp",
   "./img/chomolyn_cromolyn_eye_drops.webp",
   "./img/comedo.webp",
-  "./img/comedo_dailycare.webp",
   "./img/common_skin_redness_causes.webp",
   "./img/condom_after_use.webp",
   "./img/condom_check_before_use.webp",
@@ -425,22 +422,19 @@ const urlsToCache = [
   "./cards/Wet_Wrap.html",
   "./cards/acne_stage.html",
   "./cards/comedo.html",
-  "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare.html",
-  "./cards/acne_dailycare_2.html",
-  "./cards/acne.html",
-  "./cards/acne_topicals_01_basics.html",
   "./cards/acne_topicals_02_retinoids.html",
   "./cards/acne_topicals_03_azelaic.html",
   "./cards/acne_topicals_04_bpo.html",
+  "./cards/acne_topicals_08_salicylic.html",
   "./cards/acne_topicals_05_clindamycin.html",
   "./cards/acne_topicals_06_erythromycin.html",
-  "./cards/acne_topicals_07_metronidazole.html",
-  "./cards/acne_topicals_08_salicylic.html",
   "./cards/acne_topicals_09_combinations.html",
+  "./cards/acne_topicals_01_basics.html",
   "./cards/acne_topicals_10_pairing.html",
   "./cards/acne_topicals_11_routine.html",
   "./cards/acne_topicals_12_irritation.html",
+  "./cards/acne_topicals_07_metronidazole.html",
   "./cards/acne_patch_when_to_use.html",
   "./cards/acne_patch_how_to_use.html",
   "./cards/oneFTU.html",
@@ -617,6 +611,12 @@ const urlsToCache = [
   "./cards/pregnancy_minor_nausea.html",
   "./cards/pregnancy_minor_itch.html",
   "./cards/pregnancy_minor_insomnia.html",
+  "./cards/acne.html",
+  "./cards/comedo_dailycare.html",
+  "./cards/acne_dailycare_2.html",
+  "./retired-cards.html",
+  "./css/card-archive.css",
+  "./js/card-archive.js",
   "./cards/404.html"
 ];
 

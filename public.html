@@ -328,6 +328,7 @@
     <summary>藥品使用說明與其他工具</summary>
     <section class="related-navigation" id="related-pharmacist-navigation" aria-live="polite"></section>
     <a href="./calc.html">醫藥計算器</a>
+    <a href="./retired-cards.html">退出圖卡紀錄</a>
 </details>
 <noscript><p>請前往<a href="./all-cards.html">完整圖卡目錄</a>瀏覽所有圖卡。</p></noscript>
 </main>
@@ -549,6 +550,22 @@
 
     let favoriteImages = JSON.parse(localStorage.getItem('favImages')) || [];
     let mainCardOrder = JSON.parse(localStorage.getItem(MAIN_ORDER_STORAGE_KEY)) || {};
+
+    // Preserve saved image identities when a series is regrouped.
+    function getCardFavoriteKey(type, idx) {
+        return educationData[type]?.favorite_keys?.[idx] || `${type}-${idx}`;
+    }
+
+    function resolveCardFavoriteKey(key) {
+        for (const [type, card] of Object.entries(educationData)) {
+            const idx = card.favorite_keys?.indexOf(key) ?? -1;
+            if (idx >= 0) return { type, idx };
+        }
+        const [type, idxStr] = key.split('-');
+        const idx = Number(idxStr);
+        if (!Number.isInteger(idx) || getCardFavoriteKey(type, idx) !== key) return {};
+        return { type, idx };
+    }
 
     function saveFavorites() {
         localStorage.setItem('favImages', JSON.stringify(favoriteImages));
@@ -1128,8 +1145,7 @@
 
         let visibleFavCount = 0;
         favoriteImages.forEach(favKey => {
-            const [type, idxStr] = favKey.split('-');
-            const idx = parseInt(idxStr);
+            const { type, idx } = resolveCardFavoriteKey(favKey);
             if (educationData[type] && educationData[type].hidden) return;
             if(educationData[type] && educationData[type].steps[idx] && isVisibleOnPage(educationData[type])) {
                 visibleFavCount++;
@@ -1181,7 +1197,7 @@ function updateContent() {
         document.getElementById('v-title').innerText = `${data.title} (${currentIdx + 1}/${data.steps.length})`;
         document.getElementById('main-img').src = data.steps[currentIdx];
         document.getElementById('v-steps').innerHTML = data.steps.map((_, i) => `<div class="dot ${i === currentIdx ? 'active' : ''}"></div>`).join('');
-        const currentKey = `${currentType}-${currentIdx}`;
+        const currentKey = getCardFavoriteKey(currentType, currentIdx);
         document.getElementById('viewer-fav-btn').className = favoriteImages.includes(currentKey) ? 'viewer-icon-btn active' : 'viewer-icon-btn';
 
         // 👇 新增：更新底部文字區塊的邏輯 👇
@@ -1200,7 +1216,7 @@ function updateContent() {
     
 
     function toggleCurrentFav() {
-        const currentKey = `${currentType}-${currentIdx}`;
+        const currentKey = getCardFavoriteKey(currentType, currentIdx);
         const isFavorite = favoriteImages.includes(currentKey);
         if (isFavorite) favoriteImages = favoriteImages.filter(k => k !== currentKey);
         else favoriteImages.push(currentKey);
