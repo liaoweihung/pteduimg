@@ -790,16 +790,32 @@
       "Metronidazole",
       "臉部泛紅",
       "丘疹",
-      "膿疱"
+      "膿疱",
+      "清潔",
+      "保濕",
+      "防曬",
+      "減少刺激",
+      "眼睛症狀"
     ],
     "texts": [
-      "Metronidazole 怎麼擦？"
+      "青春痘還是酒糟？哪些線索值得就醫確認？",
+      "Metronidazole 怎麼擦？",
+      "酒糟肌如何清潔、保濕、防曬與減少刺激？"
     ],
     "steps": [
-      "img/acne_topicals_07_metronidazole.webp"
+      "img/rosacea_vs_acne_clues.webp",
+      "img/acne_topicals_07_metronidazole.webp",
+      "img/rosacea_skin_care.webp"
     ],
     "favorite_keys": [
-      "acne-12"
+      "rosacea_care-0",
+      "acne-12",
+      "rosacea_care-2"
+    ],
+    "favorite_keys": [
+      "rosacea_care-0",
+      "acne-12",
+      "rosacea_care-2"
     ],
     "related_series": [
       "acne"
@@ -850,11 +866,18 @@
     ],
     "texts": [
       "痘痘貼適合什麼狀況？",
-      "痘痘貼怎麼用？"
+      "痘痘貼怎麼用？",
+      "痘痘破了怎麼辦？還能擦藥、貼痘痘貼嗎？"
     ],
     "steps": [
       "img/acne_patch_when_to_use.webp",
-      "img/acne_patch_how_to_use.webp"
+      "img/acne_patch_how_to_use.webp",
+      "img/acne_patch_broken_skin.webp"
+    ],
+    "favorite_keys": [
+      "acne_patch_use-0",
+      "acne_patch_use-1",
+      "acne_patch_use-2"
     ],
     "related_series": [
       "acne",

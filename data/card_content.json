@@ -2037,5 +2037,100 @@
     "sourceType": "user_provided",
     "matchConfidence": "high",
     "needsMedicalReview": true
+  },
+  {
+    "cardId": "acne_patch_use",
+    "title": "痘痘破了怎麼辦？還能擦藥、貼痘痘貼嗎？",
+    "image": "img/acne_patch_broken_skin.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_patch_broken_skin.html",
+    "summary": "痘痘破皮後先清潔並止血；A 酸、BPO、水楊酸先避開破口。小範圍、淺表且少量滲液時，可考慮單純水膠體痘痘貼。",
+    "sections": [
+      {
+        "heading": "清潔、止血，別再擠",
+        "text": "洗手後輕柔清潔；若出血，用乾淨紗布持續輕壓。"
+      },
+      {
+        "heading": "破皮處先避開痘痘藥",
+        "text": "A 酸、BPO、水楊酸先不要擦在破口；癒合、無滲液後再恢復。"
+      },
+      {
+        "heading": "何時可以貼",
+        "text": "小範圍、淺表、少量滲液：清潔並擦乾後，可貼單純水膠體痘痘貼。不要選含酸類或茶樹精油的款式，也不要在貼片下疊擦藥。"
+      },
+      {
+        "heading": "貼後這樣觀察",
+        "text": "依產品說明更換；滲漏、翹起就換。若紅、癢、刺痛，先取下。"
+      },
+      {
+        "heading": "這些情況請就醫",
+        "text": "紅腫向外擴大、越來越熱痛、膿液增加、發燒，或持續出血壓不住，請就醫。"
+      }
+    ],
+    "altText": "痘痘破皮後清潔、擦藥與使用水膠體痘痘貼的衛教圖卡",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "rosacea_care",
+    "title": "青春痘還是酒糟？哪些線索值得就醫確認？",
+    "image": "img/rosacea_vs_acne_clues.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/rosacea_vs_acne_clues.html",
+    "summary": "粉刺、分布、反覆泛紅與眼睛症狀可提供辨識線索；青春痘與酒糟也可能同時存在，應由皮膚科確認。",
+    "sections": [
+      {
+        "heading": "比較像青春痘",
+        "text": "常見黑頭、白頭粉刺；可有粉刺、紅痘、膿皰或深層硬痘，臉部也可能延伸到胸、背。"
+      },
+      {
+        "heading": "提醒可能有酒糟",
+        "text": "通常沒有粉刺；鼻子、雙頰等臉部中央反覆泛紅，合併紅色小疹或膿皰。"
+      },
+      {
+        "heading": "值得看皮膚科的線索",
+        "text": "雙頰、鼻子反覆泛紅或紅很久不退；遇熱、日曬、熱飲或辛辣後容易潮紅、發燙；洗臉或擦保養品時常灼熱、刺痛；看得到細小血管。"
+      },
+      {
+        "heading": "眼睛症狀也別漏掉",
+        "text": "反覆眼乾、異物感、眼紅或眼瞼發炎，就診時要一起說。眼痛、明顯畏光或視力模糊，請當天就醫，優先眼科評估。"
+      }
+    ],
+    "altText": "青春痘與酒糟外觀線索及眼睛就醫警訊比較衛教圖卡",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "rosacea_care",
+    "title": "酒糟肌如何清潔、保濕、防曬與減少刺激？",
+    "image": "img/rosacea_skin_care.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/rosacea_skin_care.html",
+    "summary": "酒糟肌以溫和清潔、規律保濕、每天防曬為日常核心；新品慢慢加入，並記錄自己的誘因。",
+    "sections": [
+      {
+        "heading": "輕柔清潔",
+        "text": "早晚用溫和潔面產品，以指腹輕洗、微溫水沖淨；避免熱水、洗臉刷、磨砂與搓揉。"
+      },
+      {
+        "heading": "洗後保濕",
+        "text": "出油也需要保濕；選無香精、擦起來不刺激的乳霜。有外用藥時，通常先擦藥、再保濕；依醫囑調整。"
+      },
+      {
+        "heading": "每天防曬",
+        "text": "選廣效、SPF 30+ 防曬，搭配帽子或遮陽傘；若容易刺痛，可試無香精的礦物性防曬。"
+      },
+      {
+        "heading": "保養簡單，新品慢慢加",
+        "text": "新品先小範圍試用，一次只新增一種；避免磨砂、去角質與自行刷酸。"
+      },
+      {
+        "heading": "找出自己的誘因",
+        "text": "記錄日曬、悶熱、熱飲、辛辣、酒精或壓力是否讓臉更紅。每個人不同，不必一律忌口。"
+      }
+    ],
+    "altText": "酒糟肌溫和清潔、保濕、防曬與減少刺激衛教圖卡",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": true
   }
 ]

@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：75
+- 成功加入文字頁數：78
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -80,3 +80,6 @@
 | tooth_extraction_daily_changes | 拔牙後怎樣判斷正常或異常？ | https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_normal_vs_warning.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | acne_patch_use | 痘痘貼適合什麼狀況？ | https://liaoweihung.github.io/pteduimg/cards/acne_patch_when_to_use.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | acne_patch_use | 痘痘貼怎麼用？ | https://liaoweihung.github.io/pteduimg/cards/acne_patch_how_to_use.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_patch_use | 痘痘破了怎麼辦？還能擦藥、貼痘痘貼嗎？ | https://liaoweihung.github.io/pteduimg/cards/acne_patch_broken_skin.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| rosacea_care | 青春痘還是酒糟？哪些線索值得就醫確認？ | https://liaoweihung.github.io/pteduimg/cards/rosacea_vs_acne_clues.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| rosacea_care | 酒糟肌如何清潔、保濕、防曬與減少刺激？ | https://liaoweihung.github.io/pteduimg/cards/rosacea_skin_care.html | 是 | 是 | 是 | 是 | 是 | 無 |

@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202609081327';
+const CACHE_NAME = 'pwa-cache-v202609090945';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -103,6 +103,7 @@ const urlsToCache = [
   "./img/Wet_Wrap.webp",
   "./img/ZithromaxPOS.webp",
   "./img/acne_dailycare.webp",
+  "./img/acne_patch_broken_skin.webp",
   "./img/acne_patch_how_to_use.webp",
   "./img/acne_patch_when_to_use.webp",
   "./img/acne_stage.webp",
@@ -290,6 +291,8 @@ const urlsToCache = [
   "./img/rec_6.png",
   "./img/rec_7.png",
   "./img/rec_8.png",
+  "./img/rosacea_skin_care.webp",
+  "./img/rosacea_vs_acne_clues.webp",
   "./img/scar_remove.webp",
   "./img/scar_remove_detail.webp",
   "./img/site_instruction_01.webp",
@@ -434,9 +437,12 @@ const urlsToCache = [
   "./cards/acne_topicals_10_pairing.html",
   "./cards/acne_topicals_11_routine.html",
   "./cards/acne_topicals_12_irritation.html",
+  "./cards/rosacea_vs_acne_clues.html",
   "./cards/acne_topicals_07_metronidazole.html",
+  "./cards/rosacea_skin_care.html",
   "./cards/acne_patch_when_to_use.html",
   "./cards/acne_patch_how_to_use.html",
+  "./cards/acne_patch_broken_skin.html",
   "./cards/oneFTU.html",
   "./cards/thin_skin_part.html",
   "./cards/over_one_oint_01.html",

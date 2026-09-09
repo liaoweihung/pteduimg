@@ -405,7 +405,7 @@ def check_retired_cards(cards: dict, manual: dict, failures: list[str]) -> None:
     check(not errors, 'retired URLs stay reachable with notices, replacements and noindex', str(errors), failures)
     check('retired-cards.html' in read_text(ROOT / 'public.html') and 'archive-search' in archive,
           'retirement log is discoverable and searchable', 'retirement log is missing its entry or search', failures)
-    expected = {'acne':3, 'acne_topical_medicines':4, 'acne_antibiotics':3, 'acne_application':4, 'acne_patch_use':2, 'rosacea_care':1}
+    expected = {'acne':3, 'acne_topical_medicines':4, 'acne_antibiotics':3, 'acne_application':4, 'acne_patch_use':3, 'rosacea_care':3}
     actual_keys = []
     for key, size in expected.items():
         card = cards.get(key, {})
