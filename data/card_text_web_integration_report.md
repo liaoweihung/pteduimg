@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：78
+- 成功加入文字頁數：88
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -83,3 +83,13 @@
 | acne_patch_use | 痘痘破了怎麼辦？還能擦藥、貼痘痘貼嗎？ | https://liaoweihung.github.io/pteduimg/cards/acne_patch_broken_skin.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | rosacea_care | 青春痘還是酒糟？哪些線索值得就醫確認？ | https://liaoweihung.github.io/pteduimg/cards/rosacea_vs_acne_clues.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | rosacea_care | 酒糟肌如何清潔、保濕、防曬與減少刺激？ | https://liaoweihung.github.io/pteduimg/cards/rosacea_skin_care.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| travel_medication | 出國可以帶藥嗎？ | https://liaoweihung.github.io/pteduimg/cards/01_can_i_bring_medicine.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| travel_medication | 可以帶多少天、多少藥？ | https://liaoweihung.github.io/pteduimg/cards/02_how_much_medicine.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| travel_medication | 哪些藥需要處方或證明？ | https://liaoweihung.github.io/pteduimg/cards/03_prescription_documents.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| travel_medication | 哪些藥要特別注意？ | https://liaoweihung.github.io/pteduimg/cards/04_controlled_medicines.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| travel_medication | 藥放隨身行李還是托運？ | https://liaoweihung.github.io/pteduimg/cards/05_carry_on_or_checked.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| travel_medication | 液體藥、胰島素與針具怎麼帶？ | https://liaoweihung.github.io/pteduimg/cards/06_liquid_insulin_needles.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| travel_medication | 藥品怎麼包裝與標示？ | https://liaoweihung.github.io/pteduimg/cards/07_packaging_and_labels.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| travel_medication | 日本、韓國、新加坡帶藥重點 | https://liaoweihung.github.io/pteduimg/cards/08_japan_korea_singapore.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| travel_medication | 澳洲、美國、中國帶藥重點 | https://liaoweihung.github.io/pteduimg/cards/09_australia_usa_china.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| travel_medication | 出國帶藥常見 Q&A | https://liaoweihung.github.io/pteduimg/cards/10_common_questions.html | 是 | 是 | 是 | 是 | 是 | 無 |

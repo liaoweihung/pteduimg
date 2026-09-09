@@ -2132,5 +2132,263 @@
     "sourceType": "user_provided",
     "matchConfidence": "high",
     "needsMedicalReview": true
+  },
+  {
+    "cardId": "travel_medication",
+    "title": "出國可以帶藥嗎？",
+    "image": "img/01_can_i_bring_medicine.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/01_can_i_bring_medicine.html",
+    "summary": "出國通常可以攜帶自用藥，但是否准許入境仍取決於目的地對成分、劑型與數量的規定。",
+    "sections": [
+      {
+        "heading": "先查英文學名",
+        "text": "用英文學名查目的地官方規定；感冒藥、安眠藥、止痛藥與 ADHD 藥尤其要逐項確認成分。"
+      },
+      {
+        "heading": "備藥量不是法律額度",
+        "text": "依旅程天數準備並多留少量備用，是避免延誤或遺失的旅行建議；實際可攜數量仍以目的地規定為準。"
+      },
+      {
+        "heading": "行前準備",
+        "text": "列出藥品英文學名、劑量與用法，查目的地主管機關；高風險藥先向醫師、藥師及官方窗口確認。"
+      }
+    ],
+    "altText": "出國攜帶自用藥的基本原則與行前查詢提醒",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": false
+  },
+  {
+    "cardId": "travel_medication",
+    "title": "可以帶多少天、多少藥？",
+    "image": "img/02_how_much_medicine.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/02_how_much_medicine.html",
+    "summary": "各國數量規定不同；慢性病藥可按旅程天數多備約一週，常用 OTC 備用藥可準備約 3–5 天，但這些都是備藥建議，不是入境額度。",
+    "sections": [
+      {
+        "heading": "慢性病藥",
+        "text": "可按出國天數多準備約一週，並攜帶印有本人姓名、藥名與用法的藥袋或處方文件。"
+      },
+      {
+        "heading": "OTC 備用藥",
+        "text": "感冒、腹瀉等備用藥可保留完整包裝，準備約 3–5 天用量；錠劑可保留可辨識的一至兩排包裝。"
+      },
+      {
+        "heading": "仍要查目的地規定",
+        "text": "韓國、中國等地常以個人自用與合理數量判定；備藥建議不能取代目的地的成分、數量或申報要求。"
+      },
+      {
+        "heading": "回台灣限量",
+        "text": "非處方藥每種最多 12 件、合計不超過 36 件；處方藥無證明以 2 個月為限，有處方或證明則以合理用量且最多 6 個月為限。"
+      }
+    ],
+    "altText": "出國慢性病藥與常用成藥的備藥量及回台灣限量提醒",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": false
+  },
+  {
+    "cardId": "travel_medication",
+    "title": "哪些藥需要處方或證明？",
+    "image": "img/03_prescription_documents.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/03_prescription_documents.html",
+    "summary": "一般 OTC 與慢性病處方藥的文件準備不同；針劑、胰島素、醫療器材及受管制成分通常需要更完整資料。",
+    "sections": [
+      {
+        "heading": "一般 OTC",
+        "text": "常見退燒、腸胃或外用藥通常不需處方，但仍應保留原包裝並符合目的地成分與合理用量規定。"
+      },
+      {
+        "heading": "慢性病處方藥",
+        "text": "建議準備英文處方或醫師證明，列出姓名、診斷簡述、英文學名、劑量、每日用法、總量及醫療院所聯絡資訊。"
+      },
+      {
+        "heading": "高風險藥品",
+        "text": "針劑、胰島素、受管制藥品或數量較多時，先確認是否需要醫師證明、處方或事前核准。"
+      }
+    ],
+    "altText": "出國攜帶一般成藥、慢性病處方藥與高風險藥品所需文件",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": false
+  },
+  {
+    "cardId": "travel_medication",
+    "title": "哪些藥要特別注意？",
+    "image": "img/04_controlled_medicines.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/04_controlled_medicines.html",
+    "summary": "安眠藥、鎮靜或抗焦慮藥、鴉片類止痛藥、ADHD 藥及含 codeine 或 pseudoephedrine 的感冒藥，須按英文學名逐項查目的地規定。",
+    "sections": [
+      {
+        "heading": "ADHD 藥",
+        "text": "含 methylphenidate、amphetamine、dexamphetamine 或 lisdexamfetamine 的藥品須逐項查詢；日本禁止 amphetamine 類入境，部分其他成分可能需要事前許可。"
+      },
+      {
+        "heading": "感冒藥",
+        "text": "含 codeine 或 pseudoephedrine 的複方在各國限制差異很大。攜帶藥袋或原裝藥盒有助辨識，但仍須先確認是否禁止、限量或需要核准。"
+      },
+      {
+        "heading": "管制藥文件與數量",
+        "text": "備妥有本人姓名、藥名及用法用量的藥袋、處方箋或醫師證明；攜帶量須符合目的地許可或數量門檻，不能只用旅程天數加幾天概括所有國家。"
+      },
+      {
+        "heading": "事前核准",
+        "text": "日本、新加坡、韓國對部分管制成分設有事前核准程序；出發前依英文學名向官方機關確認並預留申請時間。"
+      }
+    ],
+    "altText": "出國攜帶管制藥、ADHD 藥及含 codeine 或 pseudoephedrine 感冒藥的提醒",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": false
+  },
+  {
+    "cardId": "travel_medication",
+    "title": "藥放隨身行李還是托運？",
+    "image": "img/05_carry_on_or_checked.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/05_carry_on_or_checked.html",
+    "summary": "每天使用的處方藥、胰島素、急救藥、吸入劑與少量備用量宜放隨身行李，降低托運延誤、遺失或溫度不穩的風險。",
+    "sections": [
+      {
+        "heading": "隨身行李優先",
+        "text": "必需藥、醫療證明及可辨識的原包裝放在隨身行李；不急用的備用藥可分散放置。"
+      },
+      {
+        "heading": "保存條件",
+        "text": "不要把藥留在高溫車內或曝曬；冷藏藥依藥袋或仿單條件保存，保冷袋不能取代藥品指定方式。"
+      }
+    ],
+    "altText": "出國藥品放隨身行李或托運行李的實用分裝方式",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": false
+  },
+  {
+    "cardId": "travel_medication",
+    "title": "液體藥、胰島素與針具怎麼帶？",
+    "image": "img/06_liquid_insulin_needles.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/06_liquid_insulin_needles.html",
+    "summary": "一般隨身液體受 100 mL 容器與 1 L 透明袋規則限制；醫療必需液體、胰島素與針具有例外，但應主動申報並備妥證明。",
+    "sections": [
+      {
+        "heading": "一般液體",
+        "text": "通常每個容器不超過 100 mL，全部放入 1 L 透明可密封袋；判斷以容器容量為準。"
+      },
+      {
+        "heading": "醫療必需液體",
+        "text": "超過 100 mL 時應在安檢前主動申報，提出藥品或醫療證明並配合查驗；實際程序依機場與當地規定。"
+      },
+      {
+        "heading": "胰島素與針具",
+        "text": "依醫療需要攜帶，保留原包裝、藥袋、處方或醫師證明；用過針具放入硬殼針具盒。"
+      }
+    ],
+    "altText": "出國攜帶液體藥、胰島素、針頭與注射筆的航空安檢提醒",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": false
+  },
+  {
+    "cardId": "travel_medication",
+    "title": "藥品怎麼包裝與標示？",
+    "image": "img/07_packaging_and_labels.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/07_packaging_and_labels.html",
+    "summary": "保留可辨識的原包裝、藥袋或藥盒，讓查驗人員看得出藥品屬於誰、是什麼藥及如何使用。",
+    "sections": [
+      {
+        "heading": "標示內容",
+        "text": "最好包含本人姓名、英文學名、劑量或濃度、用法、藥局或醫療院所資訊。"
+      },
+      {
+        "heading": "不要混裝",
+        "text": "不要把不同藥物混進無標籤小罐；若保留鋁箔片，至少連同可辨識品名、成分與批號的外盒或藥袋。"
+      },
+      {
+        "heading": "建立藥品清單",
+        "text": "列出中英文藥名、劑量、用途、每日用法、攜帶總量與開立醫師或藥局聯絡資料。"
+      }
+    ],
+    "altText": "出國藥品保留原包裝、藥袋與英文藥品清單的標示原則",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": false
+  },
+  {
+    "cardId": "travel_medication",
+    "title": "日本、韓國、新加坡帶藥重點",
+    "image": "img/08_japan_korea_singapore.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/08_japan_korea_singapore.html",
+    "summary": "日本、韓國與新加坡對一般處方藥及管制成分的處理不同，應以英文學名查詢，並事先完成需要的核准。",
+    "sections": [
+      {
+        "heading": "日本",
+        "text": "多數處方藥以 1 個月為常見免申請範圍；麻醉藥或醫藥品覺醒劑原料可能需事前許可，amphetamine 類禁止攜入。"
+      },
+      {
+        "heading": "韓國",
+        "text": "含麻醉藥或精神作用管制成分的藥品，入境前需向 MFDS 申請許可；一般藥也應保留英文文件與原包裝。"
+      },
+      {
+        "heading": "新加坡",
+        "text": "不需核准且不含禁止成分的個人用藥，通常可攜最多 3 個月；受管制成分須依 HSA 規定申請。"
+      }
+    ],
+    "altText": "前往日本、韓國與新加坡攜帶一般藥及管制藥的規定重點",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": false
+  },
+  {
+    "cardId": "travel_medication",
+    "title": "澳洲、美國、中國帶藥重點",
+    "image": "img/09_australia_usa_china.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/09_australia_usa_china.html",
+    "summary": "澳洲、美國與中國都要求自用與合理數量；原包裝、處方或醫師證明有助查驗，但仍需遵守各地的禁止成分、申報與檢疫規定。",
+    "sections": [
+      {
+        "heading": "澳洲",
+        "text": "旅客豁免通常以不超過 3 個月為限，保留原包裝並攜帶處方或醫師信；食品及動植物成分也可能需要申報或檢疫。"
+      },
+      {
+        "heading": "美國",
+        "text": "90 天常被用作個人用量參考，但不保證所有藥物均可入境；受管制藥品及各州規定應個別確認。"
+      },
+      {
+        "heading": "中國",
+        "text": "以個人自用、少量與合理數量為原則；攜帶可辨識包裝與處方資料，有疑問時主動申報。"
+      },
+      {
+        "heading": "中藥與保健食品",
+        "text": "維生素、草本、中藥及含動植物成分產品可能同時受藥品、食品與檢疫規定限制。保留標有商品名、成分及使用方式的原始包裝。"
+      }
+    ],
+    "altText": "前往澳洲、美國與中國攜帶藥品、中藥和保健食品的規定重點",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": false
+  },
+  {
+    "cardId": "travel_medication",
+    "title": "出國帶藥常見 Q&A",
+    "image": "img/10_common_questions.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/10_common_questions.html",
+    "summary": "出發前確認英文學名、目的地規定、藥品文件、原包裝、隨身必需藥、液體針具及返台限量。",
+    "sections": [
+      {
+        "heading": "藥物與文件",
+        "text": "列出英文學名、劑量、每日用法及總量；攜帶原包裝、藥袋及需要的處方或英文醫師證明。"
+      },
+      {
+        "heading": "特殊項目",
+        "text": "高風險藥先確認核准；必需藥、胰島素與吸入劑放隨身行李；液體與針具按航空安檢規定整理。"
+      },
+      {
+        "heading": "中藥與返台",
+        "text": "中藥、保健食品與動植物成分需確認藥品、食品及檢疫規定；回台灣前再次核對 TFDA 最新限量。"
+      }
+    ],
+    "altText": "出國攜帶藥品的行前文件、包裝、安檢與返台限量檢查清單",
+    "sourceType": "user_provided",
+    "matchConfidence": "high",
+    "needsMedicalReview": false
   }
 ]
