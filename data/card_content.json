@@ -1,28 +1,5 @@
 [
   {
-    "cardId": "fall_wound",
-    "title": "傷口覆蓋與保護",
-    "image": "img/wound_cover.webp",
-    "url": "https://liaoweihung.github.io/pteduimg/cards/wound_cover.html",
-    "summary": "敷料大小要超過傷口邊緣 1–2 公分，完整覆蓋傷口，保持乾淨平整並避免直接摩擦。",
-    "sections": [
-      {
-        "heading": "如何固定",
-        "text": "紙膠帶固定四周；關節處可用彈性繃帶輔助。不要包太緊。"
-      },
-      {
-        "heading": "固定過緊的警訊",
-        "text": "若出現麻木、腫脹、發紫或疼痛加劇，可能固定過緊。"
-      }
-    ],
-    "altText": "傷口覆蓋與保護第 10 張圖卡",
-    "sourceConversationId": "6a053ce1-1fa0-83ab-9839-04aaf7a70ec8",
-    "sourceMessageId": "5bac24c7-41f5-4cba-a323-f65630510af0",
-    "sourceType": "chatgpt_history",
-    "matchConfidence": "high",
-    "needsMedicalReview": true
-  },
-  {
     "cardId": "Ped_abx_susp",
     "title": "小兒抗生素水劑一般泡製方式",
     "summary": "輕彈瓶身：泡製前先將粉末彈鬆，避免結塊附著在瓶底。",
@@ -1424,33 +1401,6 @@
   },
   {
     "cardId": "burn_first_aid",
-    "title": "燙傷常見藥品與敷料怎麼選",
-    "image": "img/burn_first_aid_05.webp",
-    "url": "https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_05.html",
-    "summary": "燙傷藥品與敷料應依傷口狀況選擇，不是越多越好。",
-    "sections": [
-      {
-        "heading": "凡士林",
-        "text": "適合較表淺、較乾的傷口，幫助保濕並減少敷料沾黏。"
-      },
-      {
-        "heading": "藥膏",
-        "text": "外用抗生素不是每個燙傷都需要；Silver sulfadiazine 也不是所有小燙傷的第一選擇，是否使用由醫師評估。"
-      },
-      {
-        "heading": "敷料",
-        "text": "不沾黏敷料適合表淺破皮或水泡破掉；泡棉敷料適合滲液較多；含銀敷料適合感染風險較高或滲液較多時，並非每個小燙傷都需要。"
-      }
-    ],
-    "altText": "燙傷常見藥品與敷料怎麼選衛教圖卡",
-    "sourceConversationId": "6a71fa1a-13d4-83e8-8875-2f875e18b409",
-    "sourceMessageId": "a28f1b37-a7fc-424d-956c-7db866b78c7a",
-    "sourceType": "chatgpt_history",
-    "matchConfidence": "high",
-    "needsMedicalReview": true
-  },
-  {
-    "cardId": "burn_first_aid",
     "title": "燙傷癒合後如何減少疤痕",
     "image": "img/burn_first_aid_06.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_06.html",
@@ -2390,5 +2340,845 @@
     "sourceType": "user_provided",
     "matchConfidence": "high",
     "needsMedicalReview": false
+  },
+  {
+    "cardId": "fall_wound",
+    "title": "小擦傷、割傷，先這樣處理",
+    "image": "img/slipped_fall_wound.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/slipped_fall_wound.html",
+    "summary": "適用：表淺、範圍小、已止血的傷口",
+    "sections": [
+      {
+        "heading": "1 先止血",
+        "text": "用乾淨紗布持續直接加壓。仍止不住血，立即就醫。"
+      },
+      {
+        "heading": "2 洗手，再沖洗",
+        "text": "以乾淨流動清水或生理食鹽水沖掉表面髒污。深嵌異物不要自行挖取。"
+      },
+      {
+        "heading": "3 保持適度濕潤",
+        "text": "清潔的小傷口可薄擦單純凡士林。不必例行擦抗生素藥膏。"
+      },
+      {
+        "heading": "4 覆蓋與觀察",
+        "text": "使用合適敷料保護，依敷料種類與傷口狀態更換。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "深大傷口、咬傷、刺傷或症狀惡化，先請醫療人員評估。"
+      }
+    ],
+    "altText": "小擦傷、割傷，先這樣處理衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "NHS：Cuts and grazes",
+        "url": "https://www.nhs.uk/conditions/cuts-and-grazes/"
+      },
+      {
+        "title": "AAD：When to use antibiotics on your skin",
+        "url": "https://www.aad.org/news/when-to-use-antibiotics-skin"
+      }
+    ]
+  },
+  {
+    "cardId": "fall_wound",
+    "title": "傷口一定要擦抗生素嗎？",
+    "image": "img/wound_oint.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/wound_oint.html",
+    "summary": "清潔的小傷口，不必例行使用抗生素",
+    "sections": [
+      {
+        "heading": "先做好清潔與保護",
+        "text": "表淺、乾淨、未感染的小傷口，可薄擦單純凡士林並用合適敷料覆蓋。"
+      },
+      {
+        "heading": "凡士林不是抗生素",
+        "text": "主要幫助保濕、減少乾裂與沾黏，不能用來治療感染。"
+      },
+      {
+        "heading": "抗生素要有使用理由",
+        "text": "疑似感染時先就醫評估。已開立的藥品依醫囑使用，不自行延長或混擦。"
+      },
+      {
+        "heading": "越擦越紅、越癢？",
+        "text": "可能是刺激或接觸性過敏。停用新加的產品，請藥師或醫師協助確認。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "不要自行把含類固醇的複方藥膏當成一般傷口藥。"
+      }
+    ],
+    "altText": "傷口一定要擦抗生素嗎？衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "AAD：When to use antibiotics on your skin",
+        "url": "https://www.aad.org/news/when-to-use-antibiotics-skin"
+      }
+    ]
+  },
+  {
+    "cardId": "fall_wound",
+    "title": "傷口清潔與消毒，怎麼分？",
+    "image": "img/wound_4_soln.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/wound_4_soln.html",
+    "summary": "先沖掉髒污，別把多種藥水混著用",
+    "sections": [
+      {
+        "heading": "清潔：移除表面髒污",
+        "text": "一般小傷口以乾淨流動清水或生理食鹽水沖洗。深嵌異物請醫療人員處理。"
+      },
+      {
+        "heading": "消毒：看用途與指示",
+        "text": "皮膚消毒與開放傷口處理不同。依產品標示或醫療人員指示使用，勿自行反覆灌洗。"
+      },
+      {
+        "heading": "顏色不能代替成分",
+        "text": "紅、紫、黃、白藥水是俗稱。選用前確認成分與適用部位，不依顏色自行挑藥。"
+      },
+      {
+        "heading": "有感染警訊，先評估",
+        "text": "紅腫擴大、疼痛加劇、流膿或發燒時就醫，不靠加強消毒拖延處理。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "沒有生理食鹽水時，先用乾淨流動清水沖洗，不必等買到藥水。"
+      }
+    ],
+    "altText": "傷口清潔與消毒，怎麼分？衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "NHS：Cuts and grazes",
+        "url": "https://www.nhs.uk/conditions/cuts-and-grazes/"
+      }
+    ]
+  },
+  {
+    "cardId": "wound_dressings",
+    "title": "傷口敷料怎麼選？",
+    "image": "img/oint_choose.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/oint_choose.html",
+    "summary": "先看傷口狀態，再看敷料功能",
+    "sections": [
+      {
+        "heading": "OK繃：小範圍保護",
+        "text": "適合小而表淺的傷口。讓中央敷墊覆蓋傷口，黏膠貼在完整皮膚。"
+      },
+      {
+        "heading": "不沾黏接觸層",
+        "text": "減少換藥時拉扯。石蠟紗布屬於接觸層，外面還需要吸收與固定。"
+      },
+      {
+        "heading": "人工皮：吸收後形成凝膠",
+        "text": "可用於合適的乾淨表淺傷口，依產品吸收能力選擇。疑似感染先評估。"
+      },
+      {
+        "heading": "吸收層：處理滲液",
+        "text": "紗布、吸收墊與泡棉功能不同。滲液多、傷口深或變大，請專業人員協助。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "傷口保持適度濕潤，不等於浸泡，也不是藥膏越厚越好。"
+      }
+    ],
+    "altText": "傷口敷料怎麼選？衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "NHS：Cuts and grazes",
+        "url": "https://www.nhs.uk/conditions/cuts-and-grazes/"
+      },
+      {
+        "title": "ConvaTec：DuoDERM Extra Thin 使用說明",
+        "url": "https://www.convatecmdr.com/media/ps0dgi0h/1704750g5.pdf"
+      },
+      {
+        "title": "Smith+Nephew：JELONET 石蠟紗布",
+        "url": "https://www.smith-nephew.com/en-au/pharmacy/product-range/healthcare-in-the-home/jelonet"
+      }
+    ]
+  },
+  {
+    "cardId": "wound_dressings",
+    "title": "人工皮與石蠟紗布，有什麼不同？",
+    "image": "img/artficial_vs_paraffin.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/artficial_vs_paraffin.html",
+    "summary": "一個吸收成膠，一個減少沾黏",
+    "sections": [
+      {
+        "heading": "人工皮：水膠體敷料",
+        "text": "吸收滲液後形成凝膠。適用範圍與留置時間依產品說明，不是每種傷口都能貼。"
+      },
+      {
+        "heading": "石蠟紗布：不沾黏接觸層",
+        "text": "主要減少傷口與敷料沾黏，本身吸收能力有限。外加吸收敷料，再固定。"
+      },
+      {
+        "heading": "更換依據不同",
+        "text": "人工皮依吸收、滲漏、邊緣鬆脫與產品指示更換。石蠟紗布與外層依滲液及醫囑更換。"
+      },
+      {
+        "heading": "不要只看滲液多少",
+        "text": "傷口深度、皮膚狀態與感染風險也要考慮。化膿、紅腫擴大或疼痛加劇時就醫。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "石蠟紗布不是高吸收敷料；人工皮也不是除疤矽膠片。"
+      }
+    ],
+    "altText": "人工皮與石蠟紗布，有什麼不同？衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "ConvaTec：DuoDERM Extra Thin 使用說明",
+        "url": "https://www.convatecmdr.com/media/ps0dgi0h/1704750g5.pdf"
+      },
+      {
+        "title": "NHS：Cuts and grazes",
+        "url": "https://www.nhs.uk/conditions/cuts-and-grazes/"
+      },
+      {
+        "title": "Smith+Nephew：JELONET 石蠟紗布",
+        "url": "https://www.smith-nephew.com/en-au/pharmacy/product-range/healthcare-in-the-home/jelonet"
+      }
+    ]
+  },
+  {
+    "cardId": "wound_dressings",
+    "title": "換藥與更換敷料，怎麼做？",
+    "image": "img/wound_care.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/wound_care.html",
+    "summary": "頻率看敷料與傷口，不套用同一張時間表",
+    "sections": [
+      {
+        "heading": "先洗手，輕柔取下",
+        "text": "紗布黏住時，可用清水或生理食鹽水沾濕後慢慢取下，不要硬撕。"
+      },
+      {
+        "heading": "依種類決定更換",
+        "text": "一般敷料與人工皮留置時間不同。依產品說明、醫囑及滲液量安排。"
+      },
+      {
+        "heading": "這些情況要處理",
+        "text": "敷料滲漏、髒污、鬆脫或傷口不適加劇時，及早更換或請醫療人員評估。"
+      },
+      {
+        "heading": "每次留意變化",
+        "text": "觀察傷口大小、疼痛、紅腫與滲液。紅腫擴大、膿液或發燒時就醫。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "人工皮吸收後變白不等於化膿；合併症狀惡化時，不要自行判定正常。"
+      }
+    ],
+    "altText": "換藥與更換敷料，怎麼做？衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "NHS：Cuts and grazes",
+        "url": "https://www.nhs.uk/conditions/cuts-and-grazes/"
+      },
+      {
+        "title": "ConvaTec：DuoDERM Extra Thin 使用說明",
+        "url": "https://www.convatecmdr.com/media/ps0dgi0h/1704750g5.pdf"
+      }
+    ]
+  },
+  {
+    "cardId": "wound_dressings",
+    "title": "傷口覆蓋與固定",
+    "image": "img/wound_cover.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/wound_cover.html",
+    "summary": "完整覆蓋，避免摩擦，也不要包太緊",
+    "sections": [
+      {
+        "heading": "選對大小",
+        "text": "敷墊完整蓋住傷口，黏膠貼在完整皮膚。邊緣預留範圍依敷料說明。"
+      },
+      {
+        "heading": "保持平整",
+        "text": "以膠帶或合適繃帶固定，避免皺摺與滑動；不要用力拉緊。"
+      },
+      {
+        "heading": "固定後檢查",
+        "text": "若手腳麻木、冰冷、發紫或疼痛增加，立即鬆開重新評估。症狀未改善要就醫。"
+      },
+      {
+        "heading": "日常保護",
+        "text": "避免摩擦與泡水。敷料髒污、滲漏或鬆脫時，依指示更換。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "需要保護的是傷口；包得更緊不代表保護更好。"
+      }
+    ],
+    "altText": "傷口覆蓋與固定衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "NHS：Cuts and grazes",
+        "url": "https://www.nhs.uk/conditions/cuts-and-grazes/"
+      },
+      {
+        "title": "Dudley Group NHS：Sprains and strains",
+        "url": "https://www.dgft.nhs.uk/pil/sprains-and-strains/"
+      }
+    ]
+  },
+  {
+    "cardId": "scar_care",
+    "title": "傷口好了，開始疤痕照護",
+    "image": "img/prevent_scar.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/prevent_scar.html",
+    "summary": "先確認完全長皮，沒有破皮或滲液",
+    "sections": [
+      {
+        "heading": "保濕與防曬",
+        "text": "使用溫和保濕產品；以衣物遮蔽，皮膚穩定後使用 SPF 30 以上防曬。"
+      },
+      {
+        "heading": "矽膠：依產品使用",
+        "text": "凝膠或貼片可協助改善部分疤痕。依說明持續使用，留意刺激，不等同壓力治療。"
+      },
+      {
+        "heading": "按摩：先確認時機",
+        "text": "完全癒合且皮膚穩定後，依醫療人員建議進行。不要揉破或痛到勉強忍耐。"
+      },
+      {
+        "heading": "壓力治療：專業指導",
+        "text": "壓力衣、加壓方法與時數須個別評估，不自行用繃帶緊纏代替。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "疤痕持續變凸、變硬、疼癢或影響活動，請皮膚科或整形外科評估。"
+      }
+    ],
+    "altText": "傷口好了，開始疤痕照護衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "NHS：Scars",
+        "url": "https://www.nhs.uk/conditions/scars/"
+      },
+      {
+        "title": "Guy’s and St Thomas’ NHS：Scar care",
+        "url": "https://www.guysandstthomas.nhs.uk/health-information/scar-care-hand-injuries"
+      }
+    ]
+  },
+  {
+    "cardId": "scar_care",
+    "title": "疤痕產品怎麼用？",
+    "image": "img/scar_remove.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/scar_remove.html",
+    "summary": "目標是改善外觀與不適，效果因人而異",
+    "sections": [
+      {
+        "heading": "先確認傷口已癒合",
+        "text": "沒有開放傷口或滲液，才開始疤痕產品；不把除疤產品當傷口藥。"
+      },
+      {
+        "heading": "矽膠凝膠",
+        "text": "依產品說明薄擦、待乾。適合不易貼片的位置；頻率依產品與專業建議。"
+      },
+      {
+        "heading": "矽膠貼片",
+        "text": "依說明清潔皮膚、貼附與清洗，逐步適應。出現刺激、浸潤或破皮先停用並諮詢。"
+      },
+      {
+        "heading": "保濕乳液與其他修護品",
+        "text": "保濕可減少乾燥不適。不同成分作用不同，不把淡斑、保濕與改善凸疤視為同一件事。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "凹疤、蟹足腫或持續增厚的疤痕，單靠保養品可能不足，請就醫評估。"
+      }
+    ],
+    "altText": "疤痕產品怎麼用？衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "NHS：Scars",
+        "url": "https://www.nhs.uk/conditions/scars/"
+      },
+      {
+        "title": "Guy’s and St Thomas’ NHS：Scar care",
+        "url": "https://www.guysandstthomas.nhs.uk/health-information/scar-care-hand-injuries"
+      }
+    ]
+  },
+  {
+    "cardId": "scar_care",
+    "title": "紅黑印、凸疤、凹疤，怎麼分？",
+    "image": "img/scar_remove_detail.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/scar_remove_detail.html",
+    "summary": "先辨識外觀，再討論適合的照護",
+    "sections": [
+      {
+        "heading": "平坦紅印或黑印",
+        "text": "主要是顏色改變，不一定是凸起或凹陷的疤痕。注意防曬與減少刺激。"
+      },
+      {
+        "heading": "肥厚性疤痕",
+        "text": "凸起、較硬，通常仍在原本傷口範圍內。持續疼癢或增厚時就醫。"
+      },
+      {
+        "heading": "蟹足腫",
+        "text": "增生超出原傷口邊界，可能持續長大。需要醫師評估，不自行剪除或刺激。"
+      },
+      {
+        "heading": "凹陷疤痕",
+        "text": "表面凹下、呈坑洞，常見於痘痘後。保養品難以填平，可諮詢皮膚科。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "外觀只能提供線索；若傷口仍開放、流膿或發熱，先處理傷口問題。"
+      }
+    ],
+    "altText": "紅黑印、凸疤、凹疤，怎麼分？衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "NHS：Scars",
+        "url": "https://www.nhs.uk/conditions/scars/"
+      }
+    ]
+  },
+  {
+    "cardId": "bruise_care",
+    "title": "碰撞瘀青，先這樣照顧",
+    "image": "img/bruise_be_gone.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/bruise_be_gone.html",
+    "summary": "適用：一般碰撞後、皮膚完整的瘀青",
+    "sections": [
+      {
+        "heading": "剛受傷：休息與冰敷",
+        "text": "以布包冰袋短時間冰敷，不直接接觸皮膚；感覺異常、皮膚變白或疼痛就停止。"
+      },
+      {
+        "heading": "減少腫脹",
+        "text": "可抬高患部。前期避免熱敷與用力按摩；加壓要適度，不可麻木或發紫。"
+      },
+      {
+        "heading": "藥膏不是每次都需要",
+        "text": "先確認成分與適用情況，依標示或藥師指示使用；不要擦在破皮處。"
+      },
+      {
+        "heading": "這些情況先就醫",
+        "text": "不明原因、快速擴大、劇痛或活動困難，或合併其他出血。使用抗凝血藥者應主動告知。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "若有破皮，另外依傷口方式照護；瘀青藥膏不能直接當傷口藥。"
+      }
+    ],
+    "altText": "碰撞瘀青，先這樣照顧衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "Gloucestershire Hospitals NHS：Ice and heat treatment",
+        "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/ice-and-heat-treatment/"
+      },
+      {
+        "title": "Dudley Group NHS：Sprains and strains",
+        "url": "https://www.dgft.nhs.uk/pil/sprains-and-strains/"
+      }
+    ]
+  },
+  {
+    "cardId": "stretch_marks_care",
+    "title": "妊娠紋、肥胖紋，怎麼照護？",
+    "image": "img/stretch_marks.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/stretch_marks.html",
+    "summary": "伸展紋很常見，通常會隨時間變淡",
+    "sections": [
+      {
+        "heading": "新紋與成熟紋",
+        "text": "新紋常偏紅、紫或粉紅；成熟後可能變淡、偏白。顏色也受膚色影響。"
+      },
+      {
+        "heading": "保濕：改善乾燥不適",
+        "text": "可使用溫和保濕產品改善乾燥不適，但預防或淡化伸展紋的效果有限，不宜期待消除既有紋路。"
+      },
+      {
+        "heading": "孕期避免 A 醇與 A 酸",
+        "text": "懷孕期間避免使用含 A 醇或 A 酸類產品。備孕、哺乳或不確定成分，先詢問醫師或藥師。"
+      },
+      {
+        "heading": "想改善外觀",
+        "text": "部分早期紋路可能對治療有反應；效果因人而異。可諮詢皮膚科，不急著買除紋產品。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "不把「保濕」「預防」「淡化」「完全消除」當成相同效果。"
+      }
+    ],
+    "altText": "妊娠紋、肥胖紋，怎麼照護？衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "AAD：Stretch marks",
+        "url": "https://www.aad.org/public/cosmetic/scars-stretch-marks/stretch-marks-why-appear"
+      },
+      {
+        "title": "AAD：Pregnancy skin care",
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care"
+      }
+    ]
+  },
+  {
+    "cardId": "burn_first_aid",
+    "title": "燙傷藥品與敷料，怎麼選？",
+    "image": "img/burn_first_aid_05.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_05.html",
+    "summary": "先降溫與評估，再依傷口狀態處理",
+    "sections": [
+      {
+        "heading": "凡士林與保濕",
+        "text": "完成降溫後，輕微表淺、皮膚完整且乾燥時，可用單純保濕產品。"
+      },
+      {
+        "heading": "不沾黏與吸收敷料",
+        "text": "不沾黏接觸層減少拉扯，吸收敷料處理滲液。破皮或滲液時請專業人員協助選擇。"
+      },
+      {
+        "heading": "抗生素與含銀產品",
+        "text": "不是所有小燙傷都需要。是否使用抗生素、含銀敷料或磺胺嘧啶銀，由醫療人員評估。"
+      },
+      {
+        "heading": "滲液多，不等於需要銀",
+        "text": "吸收滲液與抗菌是不同目的。不能只因滲液較多，就自行選用含銀產品。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "紅腫擴大、疼痛加劇、膿液或發燒時就醫，不自行換更強的藥。"
+      }
+    ],
+    "altText": "燙傷藥品與敷料，怎麼選？衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "AAD：When to use antibiotics on your skin",
+        "url": "https://www.aad.org/news/when-to-use-antibiotics-skin"
+      },
+      {
+        "title": "NHS：Cuts and grazes",
+        "url": "https://www.nhs.uk/conditions/cuts-and-grazes/"
+      },
+      {
+        "title": "AAD：Treating a minor burn",
+        "url": "https://www.aad.org/public/everyday-care/injured-skin/burns/treat-minor-burns"
+      },
+      {
+        "title": "Smith+Nephew：ACTICOAT 含銀敷料",
+        "url": "https://www.smith-nephew.com/en-us/health-care-professionals/products/advanced-wound-management/acticoat-global"
+      }
+    ]
+  },
+  {
+    "cardId": "fall_wound",
+    "title": "這個傷口，可以自己照顧嗎？",
+    "image": "img/wound_when_to_seek_care.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/wound_when_to_seek_care.html",
+    "summary": "剛受傷，先看需要哪一種協助",
+    "sections": [
+      {
+        "heading": "立即就醫",
+        "text": "持續加壓仍止不住血、噴血，或傷口很深很大；麻木、活動困難、深嵌異物也要立即評估。"
+      },
+      {
+        "heading": "儘早請醫療人員評估",
+        "text": "人或動物咬傷、深刺傷、髒污難以清除，或可能需要縫合的傷口。"
+      },
+      {
+        "heading": "高風險者多留意",
+        "text": "糖尿病、免疫功能低下或循環不良者，特別是足部傷口，宜提早尋求協助。"
+      },
+      {
+        "heading": "可先做居家照護",
+        "text": "範圍小、表淺、能清潔、已止血，且沒有上述情況：清潔、保護並持續觀察。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "若大量失血、暈厥或情況危急，請撥 119。"
+      }
+    ],
+    "altText": "這個傷口，可以自己照顧嗎？衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "NHS：Cuts and grazes",
+        "url": "https://www.nhs.uk/conditions/cuts-and-grazes/"
+      },
+      {
+        "title": "AAD：Diabetes skin care",
+        "url": "https://www.aad.org/public/diseases/a-z/diabetes-skin-care"
+      }
+    ]
+  },
+  {
+    "cardId": "fall_wound",
+    "title": "受傷後，需要評估破傷風嗎？",
+    "image": "img/wound_tetanus.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/wound_tetanus.html",
+    "summary": "看傷口種類，也看疫苗接種史",
+    "sections": [
+      {
+        "heading": "不只生鏽鐵釘",
+        "text": "刺傷、咬傷、泥土污染、擠壓傷與燒燙傷，都可能需要評估。"
+      },
+      {
+        "heading": "準備接種資訊",
+        "text": "告訴醫師是否完成基礎接種、最後一劑時間；不記得也要說明。"
+      },
+      {
+        "heading": "由醫師決定預防方式",
+        "text": "依傷口與接種史，評估追加疫苗；部分高風險情況還需要破傷風免疫球蛋白。"
+      },
+      {
+        "heading": "先清潔，儘早評估",
+        "text": "清除表面髒污並覆蓋保護。不要等到發病，也不要以擦藥代替疫苗評估。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "抗生素與消毒藥水，不能取代破傷風的免疫預防。"
+      }
+    ],
+    "altText": "受傷後，需要評估破傷風嗎？衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "CDC：Wound management to prevent tetanus",
+        "url": "https://www.cdc.gov/tetanus/hcp/clinical-guidance/index.html"
+      },
+      {
+        "title": "臺灣疾管署：破傷風指引",
+        "url": "https://www.cdc.gov.tw/En/Category/MPage/1pegI_Sg6BvXDSxrEEB7Ag"
+      }
+    ]
+  },
+  {
+    "cardId": "wound_dressings",
+    "title": "人工皮怎麼貼、何時換？",
+    "image": "img/hydrocolloid_how_to_use.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_how_to_use.html",
+    "summary": "適用：經評估合適的乾淨、表淺傷口",
+    "sections": [
+      {
+        "heading": "1 清潔後再貼",
+        "text": "先洗手、沖洗傷口，輕拍乾周圍完整皮膚。挑選合適尺寸，覆蓋範圍依產品說明。"
+      },
+      {
+        "heading": "2 貼平，不拉緊",
+        "text": "讓黏貼邊緣貼合完整皮膚。不要自行把藥膏厚塗在人工皮下，依產品指示使用。"
+      },
+      {
+        "heading": "3 留意吸收與邊緣",
+        "text": "吸收後變白、形成凝膠是常見變化。膨起接近邊緣、滲漏或鬆脫時依說明更換。"
+      },
+      {
+        "heading": "4 有警訊先求助",
+        "text": "紅腫擴大、疼痛增加、流膿或發燒時就醫。深傷口、咬傷或疑似感染，不自行貼住了事。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "最長可貼多久依產品而定；不是一定每天換，也不是一定能貼滿幾天。"
+      }
+    ],
+    "altText": "人工皮怎麼貼、何時換？衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "ConvaTec：DuoDERM Extra Thin 使用說明",
+        "url": "https://www.convatecmdr.com/media/ps0dgi0h/1704750g5.pdf"
+      },
+      {
+        "title": "NHS：Cuts and grazes",
+        "url": "https://www.nhs.uk/conditions/cuts-and-grazes/"
+      }
+    ]
+  },
+  {
+    "cardId": "fall_wound",
+    "title": "傷口正在變好，還是需要就醫？",
+    "image": "img/wound_healing_signs.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/wound_healing_signs.html",
+    "summary": "看變化趨勢，不只看單一顏色",
+    "sections": [
+      {
+        "heading": "逐漸改善的線索",
+        "text": "傷口慢慢縮小、疼痛減輕、滲液減少。新長的皮膚可能偏粉紅。"
+      },
+      {
+        "heading": "惡化警訊",
+        "text": "紅腫往外擴大、越來越痛、傷口變大、流膿或發燒，應儘速就醫。"
+      },
+      {
+        "heading": "人工皮變白怎麼看？",
+        "text": "可能是吸收滲液形成凝膠。不能只憑白色判定化膿，也不能忽略疼痛與紅腫惡化。"
+      },
+      {
+        "heading": "停滯、反覆裂開",
+        "text": "傷口一直沒有改善或反覆破開，請醫療人員評估；糖尿病或循環不良者更要提早求助。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "出現惡化警訊，不必等滿幾天才就醫。"
+      }
+    ],
+    "altText": "傷口正在變好，還是需要就醫？衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "NHS：Cuts and grazes",
+        "url": "https://www.nhs.uk/conditions/cuts-and-grazes/"
+      },
+      {
+        "title": "ConvaTec：DuoDERM Extra Thin 使用說明",
+        "url": "https://www.convatecmdr.com/media/ps0dgi0h/1704750g5.pdf"
+      },
+      {
+        "title": "AAD：Diabetes skin care",
+        "url": "https://www.aad.org/public/diseases/a-z/diabetes-skin-care"
+      }
+    ]
+  },
+  {
+    "cardId": "bruising_care",
+    "title": "瘀青藥膏，別靠用力揉開",
+    "image": "img/bruising_care_3.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/bruising_care_3.html",
+    "summary": "先確認成分、時機與皮膚是否完整",
+    "sections": [
+      {
+        "heading": "剛受傷，避免用力按摩",
+        "text": "前期揉壓或熱敷可能加重腫脹。先休息、適度冰敷與觀察。"
+      },
+      {
+        "heading": "依產品指示輕塗",
+        "text": "不同成分的用法不相同。取適量塗在完整皮膚，不自行增加用量或次數。"
+      },
+      {
+        "heading": "不是每種腫痛都叫瘀青",
+        "text": "沿靜脈紅腫、硬痛，或單側肢體明顯腫脹，應就醫評估，不自行揉散。"
+      },
+      {
+        "heading": "越痛、越腫，先求助",
+        "text": "劇痛、快速擴大、麻木或活動困難時就醫，不只更換另一條藥膏。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "不要塗在開放傷口、眼睛或黏膜；使用後洗手。"
+      }
+    ],
+    "altText": "瘀青藥膏，別靠用力揉開衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-09",
+    "updatedAt": "2026-09-09",
+    "references": [
+      {
+        "title": "Dudley Group NHS：Sprains and strains",
+        "url": "https://www.dgft.nhs.uk/pil/sprains-and-strains/"
+      },
+      {
+        "title": "Gloucestershire Hospitals NHS：Ice and heat treatment",
+        "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/ice-and-heat-treatment/"
+      },
+      {
+        "title": "NHS：Phlebitis",
+        "url": "https://www.nhs.uk/conditions/phlebitis/"
+      }
+    ]
   }
 ]

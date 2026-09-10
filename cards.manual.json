@@ -113,7 +113,7 @@
       "燙傷不要做的事與需要就醫的情況",
       "燙傷未破皮時的照護與水泡處理",
       "水泡破掉、傷口滲液時的處理",
-      "燙傷常見藥品與敷料怎麼選",
+      "燙傷藥品與敷料，怎麼選？",
       "燙傷癒合後如何減少疤痕"
     ],
     "steps": [
@@ -123,6 +123,11 @@
       "img/burn_first_aid_04.webp",
       "img/burn_first_aid_05.webp",
       "img/burn_first_aid_06.webp"
+    ],
+    "related_series": [
+      "fall_wound",
+      "wound_dressings",
+      "scar_care"
     ]
   },
   "Hpylori_exam": {
@@ -257,87 +262,61 @@
     "icon": "👁️"
   },
   "fall_wound": {
-    "title": "傷口與疤痕",
+    "title": "小傷口怎麼處理？",
     "category": "public_education",
     "topics": [
       "skin_wound"
     ],
     "order": 3,
     "hidden": false,
-    "icon": "🤕",
+    "icon": "🩹",
     "tags": [
       "傷口",
-      "抗菌藥膏",
+      "擦傷",
+      "割傷",
+      "跌倒",
+      "傷口清潔",
+      "抗生素藥膏",
+      "凡士林",
+      "消毒",
       "紅藥水",
       "白藥水",
       "黃藥水",
       "紫藥水",
-      "紗布",
-      "OK繃",
-      "人工皮",
-      "石蠟紗布",
-      "疤痕",
-      "換藥",
-      "繃帶",
-      "瘀青",
-      "瘀青處理",
-      "瘀青藥膏",
-      "冰敷",
-      "熱敷",
-      "加壓",
-      "抬高",
-      "消腫",
-      "皮下出血",
-      "碰撞",
-      "挫傷",
-      "Bruise-B-Gone",
-      "除疤",
-      "除疤藥膏",
-      "疤痕照護",
-      "疤痕淡化",
-      "矽膠凝膠",
-      "矽膠貼片",
-      "維他命C",
-      "A醇",
-      "Retinol",
-      "姊足腫",
-      "凹陷疤痕",
-      "肥厚性疤痕",
-      "妊娠紋",
-      "肥胖紋",
-      "伸展紋",
-      "紅紋",
-      "白紋",
-      "除紋霜",
-      "保濕乳液"
+      "刺傷",
+      "咬傷",
+      "破傷風",
+      "傷口感染",
+      "就醫警訊"
     ],
     "texts": [
-      "跌倒傷口正確處理原則",
-      "傷口的藥膏怎麼選",
-      "除疤藥膏挑選指南",
-      "除疤痕全攻略",
-      "認識傳統四色藥水(紅藥水、紫藥水、黃藥水、白藥水)",
-      "OK繃、紗布、開放傷口的差異",
-      "人工皮與石蠟紗布的不同",
-      "避免傷口留疤痕的原則",
-      "定期換藥",
-      "傷口覆蓋與保護",
-      "瘀青退散懶人包",
-      "妊娠紋與肥胖紋怎麼看"
+      "這個傷口，可以自己照顧嗎？",
+      "小擦傷、割傷，先這樣處理",
+      "傷口清潔與消毒，怎麼分？",
+      "傷口一定要擦抗生素嗎？",
+      "受傷後，需要評估破傷風嗎？",
+      "傷口正在變好，還是需要就醫？"
     ],
     "steps": [
+      "img/wound_when_to_seek_care.webp",
       "img/slipped_fall_wound.webp",
-      "img/wound_oint.webp",
-      "img/scar_remove.webp",
-      "img/scar_remove_detail.webp",
       "img/wound_4_soln.webp",
-      "img/oint_choose.webp",
-      "img/artficial_vs_paraffin.webp",
-      "img/prevent_scar.webp",
-      "img/wound_care.webp",
-      "img/wound_cover.webp",
-      "img/bruise_be_gone.webp",
-      "img/stretch_marks.webp"
+      "img/wound_oint.webp",
+      "img/wound_tetanus.webp",
+      "img/wound_healing_signs.webp"
+    ],
+    "favorite_keys": [
+      "wound_when_to_seek_care-0",
+      "fall_wound-0",
+      "fall_wound-4",
+      "fall_wound-1",
+      "wound_tetanus-0",
+      "wound_healing_signs-0"
+    ],
+    "related_series": [
+      "wound_dressings",
+      "scar_care",
+      "burn_first_aid"
     ]
   },
   "bruising_care": {
@@ -364,7 +343,7 @@
     "texts": [
       "瘀青前 48 小時：先冰敷",
       "瘀青擦藥：取適量、薄薄覆蓋",
-      "瘀青藥膏怎麼擦？",
+      "瘀青藥膏，別靠用力揉開",
       "瘀青處理注意事項與就醫時機"
     ],
     "steps": [
@@ -372,6 +351,10 @@
       "img/bruising_care_2.webp",
       "img/bruising_care_3.webp",
       "img/bruising_care_4.webp"
+    ],
+    "related_series": [
+      "bruise_care",
+      "fall_wound"
     ]
   },
   "common_trauma_tcm": {
@@ -1747,7 +1730,8 @@
     ],
     "related_series": [
       "acne",
-      "acne_application"
+      "acne_application",
+      "wound_dressings"
     ]
   },
   "japan_otc_drug_classification": {
@@ -2233,6 +2217,173 @@
       "img/over_one_oint_02.webp",
       "img/over_one_oint_03.webp",
       "img/over_one_oint_04.webp"
+    ]
+  },
+  "wound_dressings": {
+    "title": "敷料怎麼選、怎麼換？",
+    "category": "public_education",
+    "topics": [
+      "skin_wound"
+    ],
+    "order": 3.1,
+    "hidden": false,
+    "icon": "🩹",
+    "tags": [
+      "傷口",
+      "人工皮",
+      "水膠體",
+      "敷料",
+      "紗布",
+      "石蠟紗布",
+      "不沾黏敷料",
+      "泡棉",
+      "OK繃",
+      "換藥",
+      "包紮",
+      "滲液",
+      "人工皮變白"
+    ],
+    "texts": [
+      "傷口敷料怎麼選？",
+      "人工皮與石蠟紗布，有什麼不同？",
+      "人工皮怎麼貼、何時換？",
+      "傷口覆蓋與固定",
+      "換藥與更換敷料，怎麼做？"
+    ],
+    "steps": [
+      "img/oint_choose.webp",
+      "img/artficial_vs_paraffin.webp",
+      "img/hydrocolloid_how_to_use.webp",
+      "img/wound_cover.webp",
+      "img/wound_care.webp"
+    ],
+    "favorite_keys": [
+      "fall_wound-5",
+      "fall_wound-6",
+      "hydrocolloid_how_to_use-0",
+      "fall_wound-9",
+      "fall_wound-8"
+    ],
+    "related_series": [
+      "fall_wound",
+      "scar_care",
+      "burn_first_aid",
+      "acne_patch_use"
+    ]
+  },
+  "scar_care": {
+    "title": "傷口好了，如何照顧疤痕？",
+    "category": "public_education",
+    "topics": [
+      "skin_wound"
+    ],
+    "order": 3.2,
+    "hidden": false,
+    "icon": "🌿",
+    "tags": [
+      "疤痕",
+      "除疤",
+      "防疤",
+      "矽膠",
+      "矽膠凝膠",
+      "矽膠貼片",
+      "蟹足腫",
+      "肥厚性疤痕",
+      "凹疤",
+      "紅印",
+      "黑印",
+      "防曬",
+      "保濕"
+    ],
+    "texts": [
+      "傷口好了，開始疤痕照護",
+      "疤痕產品怎麼用？",
+      "紅黑印、凸疤、凹疤，怎麼分？"
+    ],
+    "steps": [
+      "img/prevent_scar.webp",
+      "img/scar_remove.webp",
+      "img/scar_remove_detail.webp"
+    ],
+    "favorite_keys": [
+      "fall_wound-7",
+      "fall_wound-2",
+      "fall_wound-3"
+    ],
+    "related_series": [
+      "fall_wound",
+      "burn_first_aid",
+      "stretch_marks_care"
+    ]
+  },
+  "bruise_care": {
+    "title": "瘀青怎麼處理？",
+    "category": "public_education",
+    "topics": [
+      "skin_wound"
+    ],
+    "order": 3.3,
+    "hidden": false,
+    "icon": "🟣",
+    "tags": [
+      "瘀青",
+      "挫傷",
+      "碰撞",
+      "皮下出血",
+      "冰敷",
+      "熱敷",
+      "加壓",
+      "抬高",
+      "瘀青藥膏",
+      "消腫"
+    ],
+    "texts": [
+      "碰撞瘀青，先這樣照顧"
+    ],
+    "steps": [
+      "img/bruise_be_gone.webp"
+    ],
+    "favorite_keys": [
+      "fall_wound-10"
+    ],
+    "related_series": [
+      "bruising_care",
+      "fall_wound"
+    ]
+  },
+  "stretch_marks_care": {
+    "title": "妊娠紋與肥胖紋",
+    "category": "public_education",
+    "topics": [
+      "skin_wound",
+      "pregnancy"
+    ],
+    "order": 3.4,
+    "hidden": false,
+    "icon": "🌱",
+    "tags": [
+      "妊娠紋",
+      "肥胖紋",
+      "伸展紋",
+      "紅紋",
+      "白紋",
+      "除紋霜",
+      "保濕",
+      "懷孕",
+      "A醇",
+      "Retinol"
+    ],
+    "texts": [
+      "妊娠紋、肥胖紋，怎麼照護？"
+    ],
+    "steps": [
+      "img/stretch_marks.webp"
+    ],
+    "favorite_keys": [
+      "fall_wound-11"
+    ],
+    "related_series": [
+      "scar_care"
     ]
   }
 }

@@ -267,6 +267,20 @@ def render_card_text_content(card_content, h1, category_label, step_number, tota
           </section>"""
         )
     sections = "\n".join(section_html)
+    reference_links = []
+    for reference in card_content.get("references") or []:
+        if not isinstance(reference, dict):
+            continue
+        url = reference.get("url", "")
+        label = clean_seo_text(reference.get("title"))
+        if isinstance(url, str) and url.startswith("https://") and label:
+            reference_links.append(f'<li><a href="{esc(url)}" target="_blank" rel="noopener noreferrer">{esc(label)}</a></li>')
+    references = ""
+    if reference_links:
+        checked_at = clean_seo_text(card_content.get("sourceCheckedAt"))
+        date_label = f"（資料查核：{esc(checked_at)}）" if checked_at else ""
+        references = f'<section class="card-references"><h2>資料來源{date_label}</h2><ul>{"".join(reference_links)}</ul></section>'
+        sections += "\n" + references
     return f"""      <article class="card-text-content">
         <h1>{esc(h1)}</h1>
         <p class="meta">{esc(category_label)} · {step_number}/{total}</p>

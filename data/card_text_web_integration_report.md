@@ -1,11 +1,10 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：88
+- 成功加入文字頁數：104
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
 |---|---|---|---:|---:|---:|---:|---:|---|
-| fall_wound | 傷口覆蓋與保護 | https://liaoweihung.github.io/pteduimg/cards/wound_cover.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | Ped_abx_susp | 小兒抗生素水劑一般泡製方式 | https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | Ped_abx_susp | 用冷開水，不能用熱水 | https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | Ped_abx_susp | 搖晃均勻方法 | https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
@@ -62,7 +61,6 @@
 | burn_first_aid | 燙傷不要做的事與需要就醫的情況 | https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | burn_first_aid | 燙傷未破皮時的照護與水泡處理 | https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_03.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | burn_first_aid | 水泡破掉、傷口滲液時的處理 | https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_04.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| burn_first_aid | 燙傷常見藥品與敷料怎麼選 | https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | burn_first_aid | 燙傷癒合後如何減少疤痕 | https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_06.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | acne | 青春痘嚴重程度外觀 | https://liaoweihung.github.io/pteduimg/cards/acne_stage.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | acne | 輕度發炎型青春痘日常照護怎麼做 | https://liaoweihung.github.io/pteduimg/cards/acne_dailycare.html | 是 | 是 | 是 | 是 | 是 | 無 |
@@ -93,3 +91,21 @@
 | travel_medication | 日本、韓國、新加坡帶藥重點 | https://liaoweihung.github.io/pteduimg/cards/08_japan_korea_singapore.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | travel_medication | 澳洲、美國、中國帶藥重點 | https://liaoweihung.github.io/pteduimg/cards/09_australia_usa_china.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | travel_medication | 出國帶藥常見 Q&A | https://liaoweihung.github.io/pteduimg/cards/10_common_questions.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| fall_wound | 小擦傷、割傷，先這樣處理 | https://liaoweihung.github.io/pteduimg/cards/slipped_fall_wound.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| fall_wound | 傷口一定要擦抗生素嗎？ | https://liaoweihung.github.io/pteduimg/cards/wound_oint.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| fall_wound | 傷口清潔與消毒，怎麼分？ | https://liaoweihung.github.io/pteduimg/cards/wound_4_soln.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| wound_dressings | 傷口敷料怎麼選？ | https://liaoweihung.github.io/pteduimg/cards/oint_choose.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| wound_dressings | 人工皮與石蠟紗布，有什麼不同？ | https://liaoweihung.github.io/pteduimg/cards/artficial_vs_paraffin.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| wound_dressings | 換藥與更換敷料，怎麼做？ | https://liaoweihung.github.io/pteduimg/cards/wound_care.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| wound_dressings | 傷口覆蓋與固定 | https://liaoweihung.github.io/pteduimg/cards/wound_cover.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| scar_care | 傷口好了，開始疤痕照護 | https://liaoweihung.github.io/pteduimg/cards/prevent_scar.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| scar_care | 疤痕產品怎麼用？ | https://liaoweihung.github.io/pteduimg/cards/scar_remove.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| scar_care | 紅黑印、凸疤、凹疤，怎麼分？ | https://liaoweihung.github.io/pteduimg/cards/scar_remove_detail.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| bruise_care | 碰撞瘀青，先這樣照顧 | https://liaoweihung.github.io/pteduimg/cards/bruise_be_gone.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| stretch_marks_care | 妊娠紋、肥胖紋，怎麼照護？ | https://liaoweihung.github.io/pteduimg/cards/stretch_marks.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| burn_first_aid | 燙傷藥品與敷料，怎麼選？ | https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| fall_wound | 這個傷口，可以自己照顧嗎？ | https://liaoweihung.github.io/pteduimg/cards/wound_when_to_seek_care.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| fall_wound | 受傷後，需要評估破傷風嗎？ | https://liaoweihung.github.io/pteduimg/cards/wound_tetanus.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| wound_dressings | 人工皮怎麼貼、何時換？ | https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_how_to_use.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| fall_wound | 傷口正在變好，還是需要就醫？ | https://liaoweihung.github.io/pteduimg/cards/wound_healing_signs.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| bruising_care | 瘀青藥膏，別靠用力揉開 | https://liaoweihung.github.io/pteduimg/cards/bruising_care_3.html | 是 | 是 | 是 | 是 | 是 | 無 |

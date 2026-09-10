@@ -420,10 +420,52 @@ def check_retired_cards(cards: dict, manual: dict, failures: list[str]) -> None:
     check(not errors and len(actual_keys) == len(set(actual_keys)), 'regrouped cards preserve unique favorite identities', 'favorite identity regression', failures)
 
 
+def check_wound_regrouping(cards: dict, manual: dict, failures: list[str]) -> None:
+    """Protect the pre-reorganization identities, not just key uniqueness."""
+    legacy = ['slipped_fall_wound', 'wound_oint', 'scar_remove', 'scar_remove_detail',
+              'wound_4_soln', 'oint_choose', 'artficial_vs_paraffin', 'prevent_scar',
+              'wound_care', 'wound_cover', 'bruise_be_gone', 'stretch_marks']
+    sizes = {'fall_wound': 6, 'wound_dressings': 5, 'scar_care': 3,
+             'bruise_care': 1, 'stretch_marks_care': 1}
+    expected = {f'img/{name}.webp': f'fall_wound-{i}' for i, name in enumerate(legacy)}
+    actual = {}
+    errors = []
+    records = load_json(ROOT / 'data' / 'card_content.json')
+    seo = load_json(ROOT / 'seo.json')
+    for key, size in sizes.items():
+        card = cards.get(key, {})
+        steps = card.get('steps', [])
+        favorites = card.get('favorite_keys', [])
+        if card != manual.get(key) or len(steps) != size or len(favorites) != size:
+            errors.append(key + ': metadata or count mismatch')
+            continue
+        for image, favorite in zip(steps, favorites):
+            actual[image] = favorite
+            page = page_for_image(image)
+            content = read_text(page) if page.exists() else ''
+            if f'var cardFavoriteKey = "{favorite}";' not in content:
+                errors.append(image + ': page favorite mismatch')
+            matching = [r for r in records if Path(r.get('image', '')).stem == Path(image).stem]
+            if len(matching) != 1 or matching[0].get('image') != image:
+                errors.append(image + ': duplicate or mismatched text record')
+            page_seo = seo.get(f'cards/{Path(image).stem}.html', {})
+            if page_seo.get('keywords') != '、'.join(card['tags']):
+                errors.append(image + ': stale series search tags')
+            if page_seo.get('og_image') != 'https://liaoweihung.github.io/pteduimg/' + image:
+                errors.append(image + ': stale share image')
+    if any(actual.get(image) != favorite for image, favorite in expected.items()):
+        errors.append('original fall_wound-0 through fall_wound-11 no longer map to original images')
+    if len(actual) != 16 or len(set(actual.values())) != 16:
+        errors.append('wound images or favorite keys are duplicated')
+    check(not errors, 'wound series preserve all 12 legacy favorites and synchronized WebP/text/SEO',
+          f'wound regrouping errors: {errors}', failures)
+
+
 def main() -> int:
     failures: list[str] = []
     cards, _manual = check_json_files(failures)
     check_retired_cards(cards, _manual, failures)
+    check_wound_regrouping(cards, _manual, failures)
     pages = check_card_pages(cards, failures)
     check_home_viewer(failures)
     check_static_card_template(pages, failures)

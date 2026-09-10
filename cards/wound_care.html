@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>定期換藥｜藥局衛教助手</title>
-  <meta name="description" content="這張圖卡整理「定期換藥」重點，幫助民眾了解傷口與疤痕相關衛教資訊，方便就醫或諮詢藥師時參考。">
-  <meta name="keywords" content="傷口、抗菌藥膏、紅藥水、白藥水、黃藥水、紫藥水、紗布、OK繃、人工皮、石蠟紗布、疤痕、換藥、繃帶、瘀青、瘀青處理、瘀青藥膏、冰敷、熱敷、加壓、抬高、消腫、皮下出血、碰撞、挫傷、Bruise-B-Gone、除疤、除疤藥膏、疤痕照護、疤痕淡化、矽膠凝膠、矽膠貼片、維他命C、A醇、Retinol、姊足腫、凹陷疤痕、肥厚性疤痕、妊娠紋、肥胖紋、伸展紋、紅紋、白紋、除紋霜、保濕乳液">
+  <title>換藥與更換敷料，怎麼做？｜藥局衛教助手</title>
+  <meta name="description" content="頻率看敷料與傷口，不套用同一張時間表">
+  <meta name="keywords" content="傷口、人工皮、水膠體、敷料、紗布、石蠟紗布、不沾黏敷料、泡棉、OK繃、換藥、包紮、滲液、人工皮變白">
   <link rel="canonical" href="https://liaoweihung.github.io/pteduimg/cards/wound_care.html">
   <link rel="icon" type="image/png" href="../icon.png?v=3">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="藥局衛教助手">
-  <meta property="og:title" content="定期換藥｜藥局衛教助手">
-  <meta property="og:description" content="這張圖卡整理「定期換藥」重點，幫助民眾了解傷口與疤痕相關衛教資訊，方便就醫或諮詢藥師時參考。">
+  <meta property="og:title" content="換藥與更換敷料，怎麼做？｜藥局衛教助手">
+  <meta property="og:description" content="頻率看敷料與傷口，不套用同一張時間表">
   <meta property="og:image" content="https://liaoweihung.github.io/pteduimg/img/wound_care.webp">
   <meta property="og:url" content="https://liaoweihung.github.io/pteduimg/cards/wound_care.html">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="定期換藥｜藥局衛教助手">
-  <meta name="twitter:description" content="這張圖卡整理「定期換藥」重點，幫助民眾了解傷口與疤痕相關衛教資訊，方便就醫或諮詢藥師時參考。">
+  <meta name="twitter:title" content="換藥與更換敷料，怎麼做？｜藥局衛教助手">
+  <meta name="twitter:description" content="頻率看敷料與傷口，不套用同一張時間表">
   <meta name="twitter:image" content="https://liaoweihung.github.io/pteduimg/img/wound_care.webp">
   <script src="../qrious.min.js"></script>
   <script>
@@ -50,7 +50,7 @@
       document.head.appendChild(gaScript);
       gtag('js', new Date());
       gtag('config', GA_MEASUREMENT_ID, {
-        page_title: "定期換藥｜藥局衛教助手",
+        page_title: "換藥與更換敷料，怎麼做？｜藥局衛教助手",
         page_path: '/pteduimg/cards/wound_care.html'
       });
     }
@@ -72,7 +72,7 @@
     }
     var cardFavoriteKey = "fall_wound-8";
     var cardShareUrl = "https://liaoweihung.github.io/pteduimg/cards/wound_care.html";
-    var cardTitle = "定期換藥｜藥局衛教助手";
+    var cardTitle = "換藥與更換敷料，怎麼做？｜藥局衛教助手";
     function getFavorites() {
       try {
         var saved = JSON.parse(localStorage.getItem('favImages') || '[]');
@@ -102,7 +102,7 @@
       if (shouldTrackAnalytics()) {
         gtag('event', isAdding ? 'add_favorite_card' : 'remove_favorite_card', {
           card_title: cardTitle,
-          step_number: 9
+          step_number: 5
         });
       }
     }
@@ -126,7 +126,7 @@
       if (shouldTrackAnalytics()) {
         gtag('event', 'show_qr_code', {
           card_title: cardTitle,
-          step_number: 9
+          step_number: 5
         });
       }
     }
@@ -150,7 +150,7 @@
         gtag('event', 'share_instruction_card', {
           method: 'copy',
           card_title: cardTitle,
-          step_number: 9
+          step_number: 5
         });
       }
     }
@@ -301,6 +301,57 @@
       color:var(--muted);
       font-size:.86rem;
     }
+    .card-text-content {
+      margin:0 0 18px;
+    }
+    .card-text-details {
+      border:1px solid var(--line);
+      border-radius:10px;
+      background:#fff;
+      overflow:hidden;
+    }
+    .card-text-details summary {
+      display:flex;
+      align-items:center;
+      gap:8px;
+      min-height:44px;
+      padding:10px 12px;
+      color:var(--brand);
+      font-size:.95rem;
+      font-weight:700;
+      cursor:pointer;
+      list-style:none;
+    }
+    .card-text-details summary::-webkit-details-marker { display:none; }
+    .card-text-details summary::before {
+      content:"▼";
+      display:inline-block;
+      font-size:.72rem;
+      transition:transform .18s ease;
+    }
+    .card-text-details[open] summary::before { transform:rotate(180deg); }
+    .card-text-details[open] summary { border-bottom:1px solid var(--line); }
+    .card-text-body {
+      padding:12px;
+      color:var(--ink);
+      font-size:.95rem;
+      line-height:1.65;
+    }
+    .card-text-body .card-summary {
+      margin:0 0 14px;
+      color:#475569;
+    }
+    .card-text-body section + section {
+      margin-top:14px;
+      padding-top:14px;
+      border-top:1px solid var(--line);
+    }
+    .card-text-body h2 {
+      margin:0 0 5px;
+      font-size:1rem;
+      line-height:1.4;
+    }
+    .card-text-body section p { margin:0; }
     .share-row {
       display:flex;
       gap:8px;
@@ -463,82 +514,77 @@
         <button class="pill icon-pill" type="button" onclick="showSharePanel()" aria-label="分享圖卡">↗</button>
       </div>
     </div>
-    <section class="image-stage" aria-label="定期換藥｜藥局衛教助手">
-      <a class="image-side-link prev" href="../cards/prevent_scar.html" aria-label="上一張"></a>
-      <img class="hero-img" src="../img/wound_care.webp" alt="定期換藥第 9 張圖卡" decoding="async">
-      <a class="image-side-link next" href="../cards/wound_cover.html" aria-label="下一張"></a>
+    <section class="image-stage" aria-label="換藥與更換敷料，怎麼做？｜藥局衛教助手">
+      <a class="image-side-link prev" href="../cards/wound_cover.html" aria-label="上一張"></a>
+      <img class="hero-img" src="../img/wound_care.webp" alt="換藥與更換敷料，怎麼做？衛教圖卡" decoding="async">
+      <a class="image-side-link next" href="../cards/oint_choose.html" aria-label="下一張"></a>
     </section>
     <nav class="page-nav" aria-label="同系列翻頁">
-      <a class="page-arrow" href="../cards/prevent_scar.html" aria-label="上一張">‹</a>
-      <span class="page-count">9/12</span>
-      <a class="page-arrow" href="../cards/wound_cover.html" aria-label="下一張">›</a>
+      <a class="page-arrow" href="../cards/wound_cover.html" aria-label="上一張">‹</a>
+      <span class="page-count">5/5</span>
+      <a class="page-arrow" href="../cards/oint_choose.html" aria-label="下一張">›</a>
     </nav>
     <section class="info">
-      <h1>傷口與疤痕</h1>
-      <p class="meta">民眾疾病衛教 · 9/12</p>
+      <article class="card-text-content">
+        <h1>換藥與更換敷料，怎麼做？</h1>
+        <p class="meta">民眾疾病衛教 · 5/5</p>
+        <details class="card-text-details">
+          <summary>文字版重點</summary>
+          <div class="card-text-body">
+            <p class="card-summary">頻率看敷料與傷口，不套用同一張時間表</p>
+          <section>
+            <h2>先洗手，輕柔取下</h2>
+            <p>紗布黏住時，可用清水或生理食鹽水沾濕後慢慢取下，不要硬撕。</p>
+          </section>
+          <section>
+            <h2>依種類決定更換</h2>
+            <p>一般敷料與人工皮留置時間不同。依產品說明、醫囑及滲液量安排。</p>
+          </section>
+          <section>
+            <h2>這些情況要處理</h2>
+            <p>敷料滲漏、髒污、鬆脫或傷口不適加劇時，及早更換或請醫療人員評估。</p>
+          </section>
+          <section>
+            <h2>每次留意變化</h2>
+            <p>觀察傷口大小、疼痛、紅腫與滲液。紅腫擴大、膿液或發燒時就醫。</p>
+          </section>
+          <section>
+            <h2>重要提醒</h2>
+            <p>人工皮吸收後變白不等於化膿；合併症狀惡化時，不要自行判定正常。</p>
+          </section>
+<section class="card-references"><h2>資料來源（資料查核：2026-09-09）</h2><ul><li><a href="https://www.nhs.uk/conditions/cuts-and-grazes/" target="_blank" rel="noopener noreferrer">NHS：Cuts and grazes</a></li><li><a href="https://www.convatecmdr.com/media/ps0dgi0h/1704750g5.pdf" target="_blank" rel="noopener noreferrer">ConvaTec：DuoDERM Extra Thin 使用說明</a></li></ul></section>
+          </div>
+        </details>
+      </article>
       <div class="section-title">同系列圖卡</div>
       <div class="related-grid">
         
-            <a class="related-item" href="../cards/slipped_fall_wound.html">
-                <img src="../img/slipped_fall_wound.webp" alt="同系列圖卡 1" loading="lazy">
+            <a class="related-item" href="../cards/oint_choose.html">
+                <img src="../img/oint_choose.webp" alt="同系列圖卡 1" loading="lazy">
                 <span>第 1 張</span>
             </a>
 
-            <a class="related-item" href="../cards/wound_oint.html">
-                <img src="../img/wound_oint.webp" alt="同系列圖卡 2" loading="lazy">
+            <a class="related-item" href="../cards/artficial_vs_paraffin.html">
+                <img src="../img/artficial_vs_paraffin.webp" alt="同系列圖卡 2" loading="lazy">
                 <span>第 2 張</span>
             </a>
 
-            <a class="related-item" href="../cards/scar_remove.html">
-                <img src="../img/scar_remove.webp" alt="同系列圖卡 3" loading="lazy">
+            <a class="related-item" href="../cards/hydrocolloid_how_to_use.html">
+                <img src="../img/hydrocolloid_how_to_use.webp" alt="同系列圖卡 3" loading="lazy">
                 <span>第 3 張</span>
             </a>
 
-            <a class="related-item" href="../cards/scar_remove_detail.html">
-                <img src="../img/scar_remove_detail.webp" alt="同系列圖卡 4" loading="lazy">
+            <a class="related-item" href="../cards/wound_cover.html">
+                <img src="../img/wound_cover.webp" alt="同系列圖卡 4" loading="lazy">
                 <span>第 4 張</span>
             </a>
 
-            <a class="related-item" href="../cards/wound_4_soln.html">
-                <img src="../img/wound_4_soln.webp" alt="同系列圖卡 5" loading="lazy">
+            <a class="related-item active" href="../cards/wound_care.html">
+                <img src="../img/wound_care.webp" alt="同系列圖卡 5" loading="lazy">
                 <span>第 5 張</span>
             </a>
-
-            <a class="related-item" href="../cards/oint_choose.html">
-                <img src="../img/oint_choose.webp" alt="同系列圖卡 6" loading="lazy">
-                <span>第 6 張</span>
-            </a>
-
-            <a class="related-item" href="../cards/artficial_vs_paraffin.html">
-                <img src="../img/artficial_vs_paraffin.webp" alt="同系列圖卡 7" loading="lazy">
-                <span>第 7 張</span>
-            </a>
-
-            <a class="related-item" href="../cards/prevent_scar.html">
-                <img src="../img/prevent_scar.webp" alt="同系列圖卡 8" loading="lazy">
-                <span>第 8 張</span>
-            </a>
-
-            <a class="related-item active" href="../cards/wound_care.html">
-                <img src="../img/wound_care.webp" alt="同系列圖卡 9" loading="lazy">
-                <span>第 9 張</span>
-            </a>
-
-            <a class="related-item" href="../cards/wound_cover.html">
-                <img src="../img/wound_cover.webp" alt="同系列圖卡 10" loading="lazy">
-                <span>第 10 張</span>
-            </a>
-
-            <a class="related-item" href="../cards/bruise_be_gone.html">
-                <img src="../img/bruise_be_gone.webp" alt="同系列圖卡 11" loading="lazy">
-                <span>第 11 張</span>
-            </a>
-
-            <a class="related-item" href="../cards/stretch_marks.html">
-                <img src="../img/stretch_marks.webp" alt="同系列圖卡 12" loading="lazy">
-                <span>第 12 張</span>
-            </a>
       </div>
+      <nav aria-label="相關系列"><h2 class="section-title">接著可以看</h2><ul style="line-height:2.4"><li><a href="../cards/wound_when_to_seek_care.html">小傷口怎麼處理？</a></li><li><a href="../cards/prevent_scar.html">傷口好了，如何照顧疤痕？</a></li><li><a href="../cards/burn_first_aid_01.html">燙傷怎麼辦？</a></li><li><a href="../cards/acne_patch_when_to_use.html">痘痘貼與破皮照護</a></li></ul></nav>
     </section>
     <div class="qr-modal" id="qr-modal" hidden>
       <div class="qr-box" role="dialog" aria-modal="true" aria-label="圖卡 QR code">
@@ -554,7 +600,7 @@
         <div class="share-modal-actions">
           <a class="share-button" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Fcards%2Fwound_care.html" target="_blank" rel="noopener">LINE</a>
           <a class="share-button" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Fcards%2Fwound_care.html" target="_blank" rel="noopener">Facebook</a>
-          <a class="share-button" href="https://www.threads.net/intent/post?text=%E5%AE%9A%E6%9C%9F%E6%8F%9B%E8%97%A5%EF%BD%9C%E8%97%A5%E5%B1%80%E8%A1%9B%E6%95%99%E5%8A%A9%E6%89%8B%20https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Fcards%2Fwound_care.html" target="_blank" rel="noopener">Threads</a>
+          <a class="share-button" href="https://www.threads.net/intent/post?text=%E6%8F%9B%E8%97%A5%E8%88%87%E6%9B%B4%E6%8F%9B%E6%95%B7%E6%96%99%EF%BC%8C%E6%80%8E%E9%BA%BC%E5%81%9A%EF%BC%9F%EF%BD%9C%E8%97%A5%E5%B1%80%E8%A1%9B%E6%95%99%E5%8A%A9%E6%89%8B%20https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Fcards%2Fwound_care.html" target="_blank" rel="noopener">Threads</a>
           <button class="share-button" type="button" onclick="copyCardShareUrl()">複製連結</button>
         </div>
         <button class="qr-close" type="button" onclick="closeSharePanel()">完成</button>

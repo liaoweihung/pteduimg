@@ -307,25 +307,13 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/wound_when_to_seek_care.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://liaoweihung.github.io/pteduimg/cards/slipped_fall_wound.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/wound_oint.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/scar_remove.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/scar_remove_detail.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -337,43 +325,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/oint_choose.html</loc>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/wound_oint.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/artficial_vs_paraffin.html</loc>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/wound_tetanus.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/prevent_scar.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/wound_care.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/wound_cover.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/bruise_be_gone.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/stretch_marks.html</loc>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/wound_healing_signs.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1766,6 +1730,66 @@
   </url>
   <url>
     <loc>https://liaoweihung.github.io/pteduimg/cards/pregnancy_minor_insomnia.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/oint_choose.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/artficial_vs_paraffin.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_how_to_use.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/wound_cover.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/wound_care.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/prevent_scar.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/scar_remove.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/scar_remove_detail.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/bruise_be_gone.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/stretch_marks.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
