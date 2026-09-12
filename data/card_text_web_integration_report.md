@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：104
+- 成功加入文字頁數：107
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -109,3 +109,6 @@
 | wound_dressings | 人工皮怎麼貼、何時換？ | https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_how_to_use.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | fall_wound | 傷口正在變好，還是需要就醫？ | https://liaoweihung.github.io/pteduimg/cards/wound_healing_signs.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | bruising_care | 瘀青藥膏，別靠用力揉開 | https://liaoweihung.github.io/pteduimg/cards/bruising_care_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| postoperative_wound | 縫合／術後傷口，回家怎麼照顧？ | https://liaoweihung.github.io/pteduimg/cards/postoperative_wound.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diabetic_foot | 糖尿病足：腳有傷口，不痛也要處理 | https://liaoweihung.github.io/pteduimg/cards/diabetic_foot.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| elderly_skin_tear | 長者皮膚撕裂傷，先保護掀起的皮 | https://liaoweihung.github.io/pteduimg/cards/elderly_skin_tear.html | 是 | 是 | 是 | 是 | 是 | 無 |

@@ -2583,5 +2583,41 @@
     "related_series": [
       "scar_care"
     ]
+  },
+  "postoperative_wound": {
+    "title": "縫合／術後傷口，回家怎麼照顧？",
+    "category": "public_education",
+    "topics": ["skin_wound"],
+    "order": 3.5,
+    "hidden": false,
+    "icon": "🧵",
+    "tags": ["縫合傷口", "術後傷口", "手術傷口", "拆線", "換藥", "傷口碰水", "傷口膠", "免縫膠帶", "傷口裂開", "傷口感染"],
+    "texts": ["縫合／術後傷口，回家怎麼照顧？"],
+    "steps": ["img/postoperative_wound.webp"],
+    "related_series": ["wound_dressings", "scar_care", "fall_wound"]
+  },
+  "diabetic_foot": {
+    "title": "糖尿病足：腳有傷口，不痛也要處理",
+    "category": "public_education",
+    "topics": ["skin_wound", "chronic_conditions"],
+    "order": 3.6,
+    "hidden": false,
+    "icon": "🦶",
+    "tags": ["糖尿病足", "糖尿病傷口", "足部傷口", "足部潰瘍", "腳破皮", "腳底水泡", "傷口不癒合", "足部檢查", "神經病變", "減壓"],
+    "texts": ["糖尿病足：腳有傷口，不痛也要處理"],
+    "steps": ["img/diabetic_foot.webp"],
+    "related_series": ["fall_wound", "wound_dressings"]
+  },
+  "elderly_skin_tear": {
+    "title": "長者皮膚撕裂傷，先保護掀起的皮",
+    "category": "public_education",
+    "topics": ["skin_wound"],
+    "order": 3.7,
+    "hidden": false,
+    "icon": "🧓",
+    "tags": ["皮膚撕裂傷", "長者傷口", "老人皮膚破皮", "皮瓣", "脆弱皮膚", "膠帶撕傷", "不黏敷料", "矽膠敷料", "居家照護"],
+    "texts": ["長者皮膚撕裂傷，先保護掀起的皮"],
+    "steps": ["img/elderly_skin_tear.webp"],
+    "related_series": ["wound_dressings", "fall_wound"]
   }
 }

@@ -3946,5 +3946,44 @@
     "og_url": "https://liaoweihung.github.io/pteduimg/cards/stretch_marks.html",
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/stretch_marks.html",
     "twitter_card": "summary_large_image"
+  },
+  "cards/postoperative_wound.html": {
+    "page_title": "縫合／術後傷口，回家怎麼照顧？｜藥局衛教助手",
+    "meta_description": "換藥、碰水與拆線，依醫療團隊指示。",
+    "h1": "縫合／術後傷口，回家怎麼照顧？",
+    "image_alt": "縫合／術後傷口回家照護衛教圖卡",
+    "keywords": "縫合傷口、術後傷口、手術傷口、拆線、換藥、傷口碰水、傷口膠、免縫膠帶、傷口裂開、傷口感染",
+    "og_title": "縫合／術後傷口，回家怎麼照顧？｜藥局衛教助手",
+    "og_description": "換藥、碰水與拆線，依醫療團隊指示。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/postoperative_wound.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/postoperative_wound.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/postoperative_wound.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/diabetic_foot.html": {
+    "page_title": "糖尿病足：腳有傷口，不痛也要處理｜藥局衛教助手",
+    "meta_description": "每天看雙腳，發現破皮就提早求助。",
+    "h1": "糖尿病足：腳有傷口，不痛也要處理",
+    "image_alt": "糖尿病足每日檢查與傷口警訊衛教圖卡",
+    "keywords": "糖尿病足、糖尿病傷口、足部傷口、足部潰瘍、腳破皮、腳底水泡、傷口不癒合、足部檢查、神經病變、減壓",
+    "og_title": "糖尿病足：腳有傷口，不痛也要處理｜藥局衛教助手",
+    "og_description": "每天看雙腳，發現破皮就提早求助。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/diabetic_foot.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/diabetic_foot.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/diabetic_foot.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/elderly_skin_tear.html": {
+    "page_title": "長者皮膚撕裂傷，先保護掀起的皮｜藥局衛教助手",
+    "meta_description": "碰撞、摩擦或撕膠帶，都可能讓脆弱皮膚受傷。",
+    "h1": "長者皮膚撕裂傷，先保護掀起的皮",
+    "image_alt": "長者皮膚撕裂傷急性照護衛教圖卡",
+    "keywords": "皮膚撕裂傷、長者傷口、老人皮膚破皮、皮瓣、脆弱皮膚、膠帶撕傷、不黏敷料、矽膠敷料、居家照護",
+    "og_title": "長者皮膚撕裂傷，先保護掀起的皮｜藥局衛教助手",
+    "og_description": "碰撞、摩擦或撕膠帶，都可能讓脆弱皮膚受傷。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/elderly_skin_tear.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/elderly_skin_tear.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/elderly_skin_tear.html",
+    "twitter_card": "summary_large_image"
   }
 }

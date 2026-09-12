@@ -3180,5 +3180,78 @@
         "url": "https://www.nhs.uk/conditions/phlebitis/"
       }
     ]
+  },
+  {
+    "cardId": "postoperative_wound",
+    "title": "縫合／術後傷口，回家怎麼照顧？",
+    "image": "img/postoperative_wound.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/postoperative_wound.html",
+    "summary": "換藥、碰水與拆線，依醫療團隊指示。",
+    "sections": [
+      {"heading": "先看清楚照護指示", "text": "確認何時換藥、能否淋浴、何時回診。縫線、傷口膠與免縫膠帶，照護方式不同。"},
+      {"heading": "換藥前洗手，敷料保持清潔", "text": "不碰傷口或敷料內側；濕透、髒污或鬆脫時，依指示處理。不要自行加擦藥膏或消毒藥水。"},
+      {"heading": "保護傷口，避免拉扯", "text": "不摳傷口膠、不自行拉線或提早撕除免縫膠帶；能淋浴後也避免搓揉。"},
+      {"heading": "按時回診，留意每天變化", "text": "拆線時間依部位與癒合情況決定，不自行拆線。傷口裂開、紅腫擴大、疼痛增加、流膿或發燒，當天聯絡醫療團隊。"},
+      {"heading": "重要警訊", "text": "持續加壓仍止不住血，或傷口突然大幅裂開，立即就醫。"}
+    ],
+    "altText": "縫合／術後傷口回家照護衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-12",
+    "updatedAt": "2026-09-12",
+    "references": [
+      {"title": "University Hospitals Plymouth：Surgical Wound Care", "url": "https://www.plymouthhospitals.nhs.uk/display-pil/pil-surgical-wound-care-7107"}
+    ]
+  },
+  {
+    "cardId": "diabetic_foot",
+    "title": "糖尿病足：腳有傷口，不痛也要處理",
+    "image": "img/diabetic_foot.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diabetic_foot.html",
+    "summary": "每天看雙腳，發現破皮就提早求助。",
+    "sections": [
+      {"heading": "每天看腳底，也看趾縫", "text": "留意破皮、水泡、裂口、紅腫與滲液。看不到的地方，用鏡子或請家人協助。"},
+      {"heading": "發現傷口，當天聯絡醫療人員", "text": "不要等到疼痛、化膿才求助。即使沒有破皮，單腳突然紅、熱、腫，也要儘速評估。"},
+      {"heading": "先覆蓋保護，減少傷口受壓", "text": "用乾淨、不黏傷口的敷料暫時覆蓋。減少踩壓患處；已有減壓鞋或輔具，依醫囑使用。"},
+      {"heading": "避免再受傷，持續控制血糖", "text": "不赤腳、不泡腳、不用熱敷墊；穿鞋前檢查鞋內異物。不自行剪雞眼、厚繭或使用雞眼藥。"},
+      {"heading": "重要警訊", "text": "足部傷口合併發燒、畏寒，或腳趾發黑、突然冰冷變色，立即就醫。"}
+    ],
+    "altText": "糖尿病足每日檢查與傷口警訊衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-12",
+    "updatedAt": "2026-09-12",
+    "references": [
+      {"title": "NIDDK：Diabetes & Foot Problems", "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/foot-problems"},
+      {"title": "NICE：Diabetic foot problems", "url": "https://www.nice.org.uk/guidance/ng19/chapter/recommendations"}
+    ]
+  },
+  {
+    "cardId": "elderly_skin_tear",
+    "title": "長者皮膚撕裂傷，先保護掀起的皮",
+    "image": "img/elderly_skin_tear.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/elderly_skin_tear.html",
+    "summary": "碰撞、摩擦或撕膠帶，都可能讓脆弱皮膚受傷。",
+    "sections": [
+      {"heading": "先止血，再輕柔清潔", "text": "用乾淨的不黏敷料輕壓止血。清潔時動作輕柔，不刷洗、不來回摩擦。"},
+      {"heading": "掀起的皮，不要剪掉或撕掉", "text": "這片皮膚可能仍有保護作用。不硬拉、不自行修剪，儘早請醫療人員評估與復位。"},
+      {"heading": "選不黏傷口、容易移除的敷料", "text": "可請醫療人員評估矽膠接觸層等敷料。避免強黏膠帶或強黏人工皮；敷料黏住時不要硬撕。"},
+      {"heading": "保護周圍皮膚，減少再次受傷", "text": "完整皮膚規律保濕，可用長袖、長褲保護。協助移位時避免拖拉手臂，並依指示換藥與回診。"},
+      {"heading": "重要警訊", "text": "持續壓迫仍出血、傷口深大，立即就醫；紅腫擴大、流膿、發燒或皮瓣變黑，儘速評估。"}
+    ],
+    "altText": "長者皮膚撕裂傷急性照護衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-09-12",
+    "updatedAt": "2026-09-12",
+    "references": [
+      {"title": "ISTAP 2025：Best Practice Recommendations for Skin Tears in Aged Skin", "url": "https://woundsinternational.com/wp-content/uploads/2025/05/ISTAP25_CD_Skin-tears_WINT_web.pdf"}
+    ]
   }
 ]

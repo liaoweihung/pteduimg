@@ -1,5 +1,9 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202609120444';
+<<<<<<< HEAD
+const CACHE_NAME = 'pwa-cache-v202609121307';
+=======
+const CACHE_NAME = 'pwa-cache-v202609121307';
+>>>>>>> 84e0b07 (Publish second wound care card batch)
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -168,6 +172,7 @@ const urlsToCache = [
   "./img/contact_lens_eye_drops_2.webp",
   "./img/contraceptive_pills_how_to_take.webp",
   "./img/contraceptive_pills_missed_dose.webp",
+  "./img/diabetic_foot.webp",
   "./img/diosmin_use.webp",
   "./img/dry_eye_comp.webp",
   "./img/dry_eye_dailycare.webp",
@@ -179,6 +184,7 @@ const urlsToCache = [
   "./img/ear_5.png",
   "./img/ear_6.png",
   "./img/eczema_s.webp",
+  "./img/elderly_skin_tear.webp",
   "./img/emergency_contraceptive_pills_how_to_take.webp",
   "./img/emergency_contraceptive_pills_notice.webp",
   "./img/enema_clinical_cond.webp",
@@ -267,6 +273,7 @@ const urlsToCache = [
   "./img/ped_cold_cetirizine.webp",
   "./img/ped_cold_cypromin.webp",
   "./img/ped_cold_secorine.webp",
+  "./img/postoperative_wound.webp",
   "./img/pregnancy_minor_constipation.webp",
   "./img/pregnancy_minor_cough.webp",
   "./img/pregnancy_minor_diarrhea.webp",
@@ -637,6 +644,9 @@ const urlsToCache = [
   "./cards/scar_remove_detail.html",
   "./cards/bruise_be_gone.html",
   "./cards/stretch_marks.html",
+  "./cards/postoperative_wound.html",
+  "./cards/diabetic_foot.html",
+  "./cards/elderly_skin_tear.html",
   "./cards/acne.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare_2.html",
