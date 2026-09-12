@@ -1,8 +1,8 @@
 // ?湔???唾?嚗撥餈恍??唳??
 <<<<<<< HEAD
-const CACHE_NAME = 'pwa-cache-v202609121307';
+const CACHE_NAME = 'pwa-cache-v202609120507';
 =======
-const CACHE_NAME = 'pwa-cache-v202609121307';
+const CACHE_NAME = 'pwa-cache-v202609120507';
 >>>>>>> 84e0b07 (Publish second wound care card batch)
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
