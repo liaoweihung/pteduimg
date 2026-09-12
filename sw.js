@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202609100120';
+const CACHE_NAME = 'pwa-cache-v202609121242';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -307,6 +307,12 @@ const urlsToCache = [
   "./img/terbinafine_daily_cream.webp",
   "./img/terbinafine_once_treatment.webp",
   "./img/thin_skin_part.webp",
+  "./img/throat_spray_precautions.webp",
+  "./img/throat_spray_step_1.webp",
+  "./img/throat_spray_step_2.webp",
+  "./img/throat_spray_step_3.webp",
+  "./img/throat_spray_step_4.webp",
+  "./img/throat_spray_step_5.webp",
   "./img/tinea_s.webp",
   "./img/tooth_extraction_aftercare_1.webp",
   "./img/tooth_extraction_antibiotics.webp",
@@ -462,6 +468,12 @@ const urlsToCache = [
   "./cards/nasal_3.html",
   "./cards/nasal_4.html",
   "./cards/nasal_5.html",
+  "./cards/throat_spray_step_1.html",
+  "./cards/throat_spray_step_2.html",
+  "./cards/throat_spray_step_3.html",
+  "./cards/throat_spray_step_4.html",
+  "./cards/throat_spray_step_5.html",
+  "./cards/throat_spray_precautions.html",
   "./cards/Lidopat_1.html",
   "./cards/NTG_1.html",
   "./cards/NTG_2.html",
@@ -761,4 +773,3 @@ self.addEventListener('fetch', (e) => {
     })
   );
 });
-

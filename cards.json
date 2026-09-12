@@ -795,11 +795,6 @@
       "acne-12",
       "rosacea_care-2"
     ],
-    "favorite_keys": [
-      "rosacea_care-0",
-      "acne-12",
-      "rosacea_care-2"
-    ],
     "related_series": [
       "acne"
     ],
@@ -991,6 +986,54 @@
       "img/nasal_3.png",
       "img/nasal_4.png",
       "img/nasal_5.png"
+    ]
+  },
+  "throat_spray": {
+    "title": "喉嚨噴劑",
+    "category": "pharmacist_general",
+    "departments": [
+      "ent",
+      "pharmacy_general"
+    ],
+    "order": 45,
+    "hidden": false,
+    "icon": "🗣️",
+    "tags": [
+      "喉嚨噴劑",
+      "喉嚨痛",
+      "喉嚨發炎",
+      "咽喉痛",
+      "口腔噴劑",
+      "口咽噴劑",
+      "噴喉嚨",
+      "喉嚨噴劑怎麼用",
+      "喉嚨噴劑使用方式",
+      "Benzydamine",
+      "Povidone-Iodine",
+      "優碘喉嚨噴劑",
+      "消炎止痛噴劑",
+      "試噴",
+      "患部",
+      "不要吸氣",
+      "噴頭清潔",
+      "不要共用",
+      "就醫警訊"
+    ],
+    "texts": [
+      "喉嚨噴劑使用步驟：洗手並打開噴頭",
+      "喉嚨噴劑第一次使用要先試噴",
+      "喉嚨噴劑怎麼對準患部",
+      "喉嚨噴劑正確噴藥方式",
+      "喉嚨噴劑使用後清潔與收納",
+      "喉嚨噴劑使用注意事項與就醫警訊"
+    ],
+    "steps": [
+      "img/throat_spray_step_1.webp",
+      "img/throat_spray_step_2.webp",
+      "img/throat_spray_step_3.webp",
+      "img/throat_spray_step_4.webp",
+      "img/throat_spray_step_5.webp",
+      "img/throat_spray_precautions.webp"
     ]
   },
   "Lidopat": {
