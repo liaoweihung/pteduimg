@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202609121302';
+const CACHE_NAME = 'pwa-cache-v202609232324';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -226,6 +226,11 @@ const urlsToCache = [
   "./img/japan_otc_drug_classification.webp",
   "./img/jin_huang_san.webp",
   "./img/jinchuang_ointment.webp",
+  "./img/knee_brace_1.webp",
+  "./img/knee_brace_2.webp",
+  "./img/knee_brace_3.webp",
+  "./img/knee_brace_4.webp",
+  "./img/knee_brace_5.webp",
   "./img/kwangdong_mu_yao_fen.webp",
   "./img/lan_1.webp",
   "./img/lan_2.webp",
@@ -630,6 +635,11 @@ const urlsToCache = [
   "./cards/pregnancy_minor_nausea.html",
   "./cards/pregnancy_minor_itch.html",
   "./cards/pregnancy_minor_insomnia.html",
+  "./cards/knee_brace_1.html",
+  "./cards/knee_brace_2.html",
+  "./cards/knee_brace_3.html",
+  "./cards/knee_brace_4.html",
+  "./cards/knee_brace_5.html",
   "./cards/oint_choose.html",
   "./cards/artficial_vs_paraffin.html",
   "./cards/hydrocolloid_how_to_use.html",

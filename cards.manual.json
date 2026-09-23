@@ -2205,6 +2205,58 @@
       "img/pregnancy_minor_insomnia.webp"
     ]
   },
+  "knee_brace_guide": {
+    "title": "護膝怎麼選？",
+    "category": "public_education",
+    "topics": [
+      "chronic_conditions"
+    ],
+    "order": 34,
+    "hidden": false,
+    "icon": "🦵",
+    "tags": [
+      "護膝",
+      "護膝怎麼選",
+      "膝蓋護具",
+      "膝蓋痛",
+      "運動護膝",
+      "護膝尺寸",
+      "彈性套筒型護膝",
+      "髕骨肌腱帶",
+      "髕骨帶",
+      "跳躍膝",
+      "髕骨支撐型護膝",
+      "開孔護膝",
+      "側邊支架型護膝",
+      "彈簧支條護膝",
+      "卸力型護膝",
+      "退化性膝關節炎",
+      "膝關節退化",
+      "固定型護膝",
+      "角度限制型護膝",
+      "術後護膝",
+      "膝蓋前方痛",
+      "膝蓋內側痛",
+      "膝蓋外側痛",
+      "膝蓋軟腳",
+      "knee brace",
+      "patellar tendon strap"
+    ],
+    "texts": [
+      "護膝怎麼選？彈性套筒型與髕骨肌腱帶",
+      "護膝怎麼選？髕骨支撐型與側邊支架型",
+      "護膝怎麼選？卸力型與固定／角度限制型",
+      "買護膝前，先確認疼痛位置、尺寸與配戴感受",
+      "膝蓋痛在哪裡？依疼痛位置選護膝"
+    ],
+    "steps": [
+      "img/knee_brace_1.webp",
+      "img/knee_brace_2.webp",
+      "img/knee_brace_3.webp",
+      "img/knee_brace_4.webp",
+      "img/knee_brace_5.webp"
+    ]
+  },
   "hemorr_sitbath": {
     "title": "痔瘡坐浴",
     "category": "public_education",
