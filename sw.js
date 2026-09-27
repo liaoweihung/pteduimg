@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202609231525';
+const CACHE_NAME = 'pwa-cache-v202609280023';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -711,7 +711,23 @@ const coreUrlsToCache = [
 ];
 
 // === 摰??挾 ===
+// Generated from imageUpdatedAt in data/card_content.json.
+const revisedImageUrls = [
+  "./img/over_one_oint_01.webp",
+  "./img/ped_cold_cetirizine.webp",
+  "./img/ped_cold_secorine.webp"
+];
+
 self.addEventListener('install', (e) => {
+  // Refresh revised images in the stable cache on installation. Existing pages
+  // stay cache-first and are never reloaded here; a failed fetch keeps the old copy.
+  e.waitUntil(
+    caches.open(RUNTIME_CACHE).then(cache => Promise.all(
+      revisedImageUrls.map(url => fetch(url).then(response => {
+        if (response && response.ok) return cache.put(url, response);
+      }).catch(() => undefined))
+    ))
+  );
   // ? 1嚗歲??敺?撘瑕???啁?
   self.skipWaiting(); 
   

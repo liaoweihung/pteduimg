@@ -24,12 +24,12 @@
 | oral_hygiene | 口腔清潔 | https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_07.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | oral_hygiene | 口腔清潔 | https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_08.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | adult_diaper | 成人紙尿布怎麼挑 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| over_one_oint | 藥膏一起擦 | https://liaoweihung.github.io/pteduimg/cards/over_one_oint_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| over_one_oint | 兩種藥膏可以一起擦嗎？混擦、分區與使用順序 | https://liaoweihung.github.io/pteduimg/cards/over_one_oint_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | over_one_oint | 藥膏一起擦 | https://liaoweihung.github.io/pteduimg/cards/over_one_oint_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | over_one_oint | 藥膏一起擦 | https://liaoweihung.github.io/pteduimg/cards/over_one_oint_03.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | pediatric_cold_syrup | 希普利敏 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_cypromin.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| pediatric_cold_syrup | 勝克敏 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_cetirizine.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| pediatric_cold_syrup | 息咳寧 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| pediatric_cold_syrup | 勝克敏液兒童用量怎麼核對？成分、用途與副作用 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_cetirizine.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| pediatric_cold_syrup | 息咳寧糖漿：成分、兒童用量核對與副作用 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | motion_sickness_meds | 暈車藥錠劑比較與使用提醒 | https://liaoweihung.github.io/pteduimg/cards/motion_sickness_meds_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | motion_sickness_meds | 暈車藥糖漿與貼片使用方式 | https://liaoweihung.github.io/pteduimg/cards/motion_sickness_meds_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | sore_throat_otc | 喉嚨痛不一定是感冒 | https://liaoweihung.github.io/pteduimg/cards/sore_throat_causes.html | 是 | 是 | 是 | 是 | 是 | 無 |

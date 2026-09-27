@@ -187,7 +187,7 @@ def check_static_card_text_content(cards: dict, failures: list[str]) -> None:
             len(h1_matches) == 1 and title in html_module.unescape(h1_matches[0]),
             alt_text and alt_text in decoded,
             '<article class="card-text-content">' in page_html,
-            '<details class="card-text-details">' in page_html,
+            bool(re.search(r'<details class="card-text-details"(?: open)?>', page_html)),
             '<p class="card-summary">' in page_html,
             bool(re.search(r"<section>\s*<h2>.+?</h2>\s*<p>.+?</p>\s*</section>", page_html, flags=re.S)),
             f'<link rel="canonical" href="https://liaoweihung.github.io/pteduimg/cards/{Path(image).stem}.html">' in page_html,

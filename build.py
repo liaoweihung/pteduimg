@@ -281,10 +281,19 @@ def render_card_text_content(card_content, h1, category_label, step_number, tota
         date_label = f"（資料查核：{esc(checked_at)}）" if checked_at else ""
         references = f'<section class="card-references"><h2>資料來源{date_label}</h2><ul>{"".join(reference_links)}</ul></section>'
         sections += "\n" + references
+    editorial = ""
+    if card_content.get("updatedAt") and card_content.get("revisionCredit"):
+        editorial_parts = [f'內容更新：{clean_seo_text(card_content["updatedAt"])}']
+        for field, label in (("author", "作者"), ("revisionCredit", "本次修訂"), ("reviewStatus", "審閱狀態")):
+            value = clean_seo_text(card_content.get(field))
+            if value:
+                editorial_parts.append(f"{label}：{value}")
+        editorial = '\n        <p class="meta">' + esc(" ｜ ".join(editorial_parts)) + '</p>'
+    details_open = " open" if card_content.get("expandText") else ""
     return f"""      <article class="card-text-content">
         <h1>{esc(h1)}</h1>
-        <p class="meta">{esc(category_label)} · {step_number}/{total}</p>
-        <details class="card-text-details">
+        <p class="meta">{esc(category_label)} · {step_number}/{total}</p>{editorial}
+        <details class="card-text-details"{details_open}>
           <summary>文字版重點</summary>
           <div class="card-text-body">
             <p class="card-summary">{esc(summary)}</p>
@@ -1161,7 +1170,7 @@ def build_card_text_integration_report(card_content_index):
         sections = [section for section in (record.get("sections") or []) if isinstance(section, dict)]
         html_text_ok = bool(
             '<article class="card-text-content">' in page_html
-            and '<details class="card-text-details">' in page_html
+            and re.search(r'<details class="card-text-details"(?: open)?>', page_html)
             and '<p class="card-summary">' in page_html
             and expected_summary
             and esc(expected_summary) in page_html
@@ -1344,6 +1353,17 @@ def update_service_worker(cards, generated_pages, retired_pages=()):
     now = datetime.datetime.now()
     new_version = f"pwa-cache-v{now.strftime('%Y%m%d%H%M')}"
     sw_content = sw_path.read_text(encoding="utf-8")
+    revised_images = [
+        "./" + image for image, record in read_card_content().items()
+        if record.get("imageUpdatedAt") and Path(image).name in image_files
+    ]
+    revised_array = json.dumps(revised_images, ensure_ascii=False, indent=2)
+    sw_content = re.sub(
+        r"const revisedImageUrls = \[.*?\];",
+        f"const revisedImageUrls = {revised_array};",
+        sw_content,
+        flags=re.DOTALL,
+    )
     sw_content = re.sub(r"const CACHE_NAME = '.*?';", f"const CACHE_NAME = '{new_version}';", sw_content)
     sw_content = re.sub(
         r"const urlsToCache = \[.*?\];",
