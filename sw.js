@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202609271814';
+const CACHE_NAME = 'pwa-cache-v202609290038';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -234,6 +234,9 @@ const urlsToCache = [
   "./img/kwangdong_mu_yao_fen.webp",
   "./img/lan_1.webp",
   "./img/lan_2.webp",
+  "./img/lan_3.webp",
+  "./img/lan_4.webp",
+  "./img/lan_5.webp",
   "./img/methodology_of_exam_Hp.webp",
   "./img/motion_sickness_meds_1.webp",
   "./img/motion_sickness_meds_2.webp",
@@ -427,6 +430,9 @@ const urlsToCache = [
   "./cards/site_instruction_02.html",
   "./cards/lan_1.html",
   "./cards/lan_2.html",
+  "./cards/lan_3.html",
+  "./cards/lan_4.html",
+  "./cards/lan_5.html",
   "./cards/add_to_desktop_ios.html",
   "./cards/add_to_desktop_android.html",
   "./cards/ZithromaxPOS.html",

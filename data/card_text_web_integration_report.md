@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：107
+- 成功加入文字頁數：110
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -112,3 +112,6 @@
 | postoperative_wound | 縫合／術後傷口，回家怎麼照顧？ | https://liaoweihung.github.io/pteduimg/cards/postoperative_wound.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | diabetic_foot | 糖尿病足：腳有傷口，不痛也要處理 | https://liaoweihung.github.io/pteduimg/cards/diabetic_foot.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | elderly_skin_tear | 長者皮膚撕裂傷，先保護掀起的皮 | https://liaoweihung.github.io/pteduimg/cards/elderly_skin_tear.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| multi_lang | 咳嗽有痰的飲食提醒｜中文、英文、泰語、印尼語、越南語 | https://liaoweihung.github.io/pteduimg/cards/lan_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| multi_lang | 食物過敏的飲食注意事項｜五語衛教對照 | https://liaoweihung.github.io/pteduimg/cards/lan_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| multi_lang | 懷疑食物過敏怎麼辦？｜五語就醫提醒 | https://liaoweihung.github.io/pteduimg/cards/lan_5.html | 是 | 是 | 是 | 是 | 是 | 無 |

@@ -1033,6 +1033,45 @@
     "twitter_card": "summary_large_image",
     "tracking_title": "飯前飯後12小時一次｜藥局衛教助手"
   },
+  "cards/lan_3.html": {
+    "page_title": "咳嗽有痰的飲食提醒｜中文、英文、泰語、印尼語、越南語｜藥局衛教助手",
+    "meta_description": "咳嗽有痰時，適量補充水分。如果冰冷食物或飲料會讓你咳得更厲害，可暫時避免。少吃甜食、少喝含糖飲料。",
+    "h1": "咳嗽有痰的飲食提醒｜中文、英文、泰語、印尼語、越南語",
+    "image_alt": "咳嗽有痰的飲食提醒｜中文、英文、泰語、印尼語、越南語",
+    "keywords": "多語衛教、外籍看護、移工衛教、泰語、泰文、印尼語、印尼文、越南語、越南文、ภาษาไทย、Bahasa Indonesia、Tiếng Việt、咳嗽有痰、飲食提醒、ไอมีเสมหะ、batuk berdahak、ho có đờm、cough with phlegm、食物過敏、過敏原、แพ้อาหาร、alergi makanan、dị ứng thực phẩm、food allergy、疑似食物過敏、過敏就醫、嚴重過敏反應、呼吸困難、119",
+    "og_title": "咳嗽有痰的飲食提醒｜中文、英文、泰語、印尼語、越南語｜藥局衛教助手",
+    "og_description": "咳嗽有痰時，適量補充水分。如果冰冷食物或飲料會讓你咳得更厲害，可暫時避免。少吃甜食、少喝含糖飲料。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/lan_3.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/lan_3.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/lan_3.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/lan_4.html": {
+    "page_title": "食物過敏的飲食注意事項｜五語衛教對照｜藥局衛教助手",
+    "meta_description": "避免食用已知會讓你過敏的食物。圖中的海鮮、芒果、堅果、蛋與牛奶只是例子，不代表每個人都需要避免。請依個人過敏史與醫師建議調整飲食。",
+    "h1": "食物過敏的飲食注意事項｜五語衛教對照",
+    "image_alt": "食物過敏的飲食注意事項｜五語衛教對照",
+    "keywords": "多語衛教、外籍看護、移工衛教、泰語、泰文、印尼語、印尼文、越南語、越南文、ภาษาไทย、Bahasa Indonesia、Tiếng Việt、咳嗽有痰、飲食提醒、ไอมีเสมหะ、batuk berdahak、ho có đờm、cough with phlegm、食物過敏、過敏原、แพ้อาหาร、alergi makanan、dị ứng thực phẩm、food allergy、疑似食物過敏、過敏就醫、嚴重過敏反應、呼吸困難、119",
+    "og_title": "食物過敏的飲食注意事項｜五語衛教對照｜藥局衛教助手",
+    "og_description": "避免食用已知會讓你過敏的食物。圖中的海鮮、芒果、堅果、蛋與牛奶只是例子，不代表每個人都需要避免。請依個人過敏史與醫師建議調整飲食。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/lan_4.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/lan_4.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/lan_4.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/lan_5.html": {
+    "page_title": "懷疑食物過敏怎麼辦？｜五語就醫提醒｜藥局衛教助手",
+    "meta_description": "如果懷疑某種食物引起過敏，先諮詢醫師，不要自行試吃測試。食用後若出現過敏症狀，立即停止食用並就醫；若呼吸困難、舌頭或喉嚨腫脹、昏厥，立即撥打 119。",
+    "h1": "懷疑食物過敏怎麼辦？｜五語就醫提醒",
+    "image_alt": "懷疑食物過敏怎麼辦？｜五語就醫提醒",
+    "keywords": "多語衛教、外籍看護、移工衛教、泰語、泰文、印尼語、印尼文、越南語、越南文、ภาษาไทย、Bahasa Indonesia、Tiếng Việt、咳嗽有痰、飲食提醒、ไอมีเสมหะ、batuk berdahak、ho có đờm、cough with phlegm、食物過敏、過敏原、แพ้อาหาร、alergi makanan、dị ứng thực phẩm、food allergy、疑似食物過敏、過敏就醫、嚴重過敏反應、呼吸困難、119",
+    "og_title": "懷疑食物過敏怎麼辦？｜五語就醫提醒｜藥局衛教助手",
+    "og_description": "如果懷疑某種食物引起過敏，先諮詢醫師，不要自行試吃測試。食用後若出現過敏症狀，立即停止食用並就醫；若呼吸困難、舌頭或喉嚨腫脹、昏厥，立即撥打 119。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/lan_5.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/lan_5.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/lan_5.html",
+    "twitter_card": "summary_large_image"
+  },
   "cards/add_to_desktop_ios.html": {
     "page_title": "把衛教助手新增到手機桌面iOS｜藥局衛教助手",
     "meta_description": "這張圖卡整理「把衛教助手新增到手機桌面iOS」的操作重點，幫助民眾了解如何使用藥局衛教助手。",

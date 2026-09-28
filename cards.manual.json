@@ -455,7 +455,7 @@
     "icon": "🍼"
   },
   "multi_lang": {
-    "title": "多語服藥時間",
+    "title": "多語服藥與飲食衛教",
     "category": "pharmacist_general",
     "departments": [
       "pharmacy_general"
@@ -465,7 +465,48 @@
     "icon": "🌍",
     "texts": [
       "外籍看護服藥時間對照表（英、泰、印、越）第一頁",
-      "外籍看護服藥時間對照表第二頁"
+      "外籍看護服藥時間對照表第二頁",
+      "咳嗽有痰的飲食提醒｜中文、英文、泰語、印尼語、越南語",
+      "食物過敏的飲食注意事項｜五語衛教對照",
+      "懷疑食物過敏怎麼辦？｜五語就醫提醒"
+    ],
+    "steps": [
+      "img/lan_1.webp",
+      "img/lan_2.webp",
+      "img/lan_3.webp",
+      "img/lan_4.webp",
+      "img/lan_5.webp"
+    ],
+    "tags": [
+      "多語衛教",
+      "外籍看護",
+      "移工衛教",
+      "泰語",
+      "泰文",
+      "印尼語",
+      "印尼文",
+      "越南語",
+      "越南文",
+      "ภาษาไทย",
+      "Bahasa Indonesia",
+      "Tiếng Việt",
+      "咳嗽有痰",
+      "飲食提醒",
+      "ไอมีเสมหะ",
+      "batuk berdahak",
+      "ho có đờm",
+      "cough with phlegm",
+      "食物過敏",
+      "過敏原",
+      "แพ้อาหาร",
+      "alergi makanan",
+      "dị ứng thực phẩm",
+      "food allergy",
+      "疑似食物過敏",
+      "過敏就醫",
+      "嚴重過敏反應",
+      "呼吸困難",
+      "119"
     ]
   },
   "adult_diaper": {
@@ -2484,37 +2525,98 @@
   "postoperative_wound": {
     "title": "縫合／術後傷口，回家怎麼照顧？",
     "category": "public_education",
-    "topics": ["skin_wound"],
+    "topics": [
+      "skin_wound"
+    ],
     "order": 3.5,
     "hidden": false,
     "icon": "🧵",
-    "tags": ["縫合傷口", "術後傷口", "手術傷口", "拆線", "換藥", "傷口碰水", "傷口膠", "免縫膠帶", "傷口裂開", "傷口感染"],
-    "texts": ["縫合／術後傷口，回家怎麼照顧？"],
-    "steps": ["img/postoperative_wound.webp"],
-    "related_series": ["wound_dressings", "scar_care", "fall_wound"]
+    "tags": [
+      "縫合傷口",
+      "術後傷口",
+      "手術傷口",
+      "拆線",
+      "換藥",
+      "傷口碰水",
+      "傷口膠",
+      "免縫膠帶",
+      "傷口裂開",
+      "傷口感染"
+    ],
+    "texts": [
+      "縫合／術後傷口，回家怎麼照顧？"
+    ],
+    "steps": [
+      "img/postoperative_wound.webp"
+    ],
+    "related_series": [
+      "wound_dressings",
+      "scar_care",
+      "fall_wound"
+    ]
   },
   "diabetic_foot": {
     "title": "糖尿病足：腳有傷口，不痛也要處理",
     "category": "public_education",
-    "topics": ["skin_wound", "chronic_conditions"],
+    "topics": [
+      "skin_wound",
+      "chronic_conditions"
+    ],
     "order": 3.6,
     "hidden": false,
     "icon": "🦶",
-    "tags": ["糖尿病足", "糖尿病傷口", "足部傷口", "足部潰瘍", "腳破皮", "腳底水泡", "傷口不癒合", "足部檢查", "神經病變", "減壓"],
-    "texts": ["糖尿病足：腳有傷口，不痛也要處理"],
-    "steps": ["img/diabetic_foot.webp"],
-    "related_series": ["fall_wound", "wound_dressings"]
+    "tags": [
+      "糖尿病足",
+      "糖尿病傷口",
+      "足部傷口",
+      "足部潰瘍",
+      "腳破皮",
+      "腳底水泡",
+      "傷口不癒合",
+      "足部檢查",
+      "神經病變",
+      "減壓"
+    ],
+    "texts": [
+      "糖尿病足：腳有傷口，不痛也要處理"
+    ],
+    "steps": [
+      "img/diabetic_foot.webp"
+    ],
+    "related_series": [
+      "fall_wound",
+      "wound_dressings"
+    ]
   },
   "elderly_skin_tear": {
     "title": "長者皮膚撕裂傷，先保護掀起的皮",
     "category": "public_education",
-    "topics": ["skin_wound"],
+    "topics": [
+      "skin_wound"
+    ],
     "order": 3.7,
     "hidden": false,
     "icon": "🧓",
-    "tags": ["皮膚撕裂傷", "長者傷口", "老人皮膚破皮", "皮瓣", "脆弱皮膚", "膠帶撕傷", "不黏敷料", "矽膠敷料", "居家照護"],
-    "texts": ["長者皮膚撕裂傷，先保護掀起的皮"],
-    "steps": ["img/elderly_skin_tear.webp"],
-    "related_series": ["wound_dressings", "fall_wound"]
+    "tags": [
+      "皮膚撕裂傷",
+      "長者傷口",
+      "老人皮膚破皮",
+      "皮瓣",
+      "脆弱皮膚",
+      "膠帶撕傷",
+      "不黏敷料",
+      "矽膠敷料",
+      "居家照護"
+    ],
+    "texts": [
+      "長者皮膚撕裂傷，先保護掀起的皮"
+    ],
+    "steps": [
+      "img/elderly_skin_tear.webp"
+    ],
+    "related_series": [
+      "wound_dressings",
+      "fall_wound"
+    ]
   }
 }
