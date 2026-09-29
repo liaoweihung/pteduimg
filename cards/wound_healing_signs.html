@@ -154,6 +154,60 @@
         });
       }
     }
+    // Keep related originals off the network until the hero settles and they are near view.
+    function initRelatedImages() {
+      var hero = document.querySelector('.hero-img');
+      var pending = Array.prototype.slice.call(document.querySelectorAll('.related-item img[data-src]'));
+      if (!hero || !pending.length) return;
+      var started = false;
+      function reveal(image) {
+        var source = image.getAttribute('data-src');
+        if (!source) return;
+        image.src = source;
+        image.removeAttribute('data-src');
+      }
+      function start() {
+        if (started) return;
+        started = true;
+        hero.removeEventListener('load', start);
+        hero.removeEventListener('error', start);
+        requestAnimationFrame(function() {
+          if ('IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function(entries) {
+              entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                  reveal(entry.target);
+                  observer.unobserve(entry.target);
+                }
+              });
+            }, { rootMargin: '100px 0px' });
+            pending.forEach(function(image) { observer.observe(image); });
+          } else {
+            function checkNearby() {
+              pending = pending.filter(function(image) {
+                var rect = image.getBoundingClientRect();
+                if (rect.top <= window.innerHeight + 100 && rect.bottom >= -100) {
+                  reveal(image);
+                  return false;
+                }
+                return true;
+              });
+              if (!pending.length) {
+                window.removeEventListener('scroll', checkNearby);
+                window.removeEventListener('resize', checkNearby);
+              }
+            }
+            window.addEventListener('scroll', checkNearby, { passive: true });
+            window.addEventListener('resize', checkNearby);
+            checkNearby();
+          }
+        });
+      }
+      hero.addEventListener('load', start);
+      hero.addEventListener('error', start);
+      if (hero.complete) start();
+    }
+    document.addEventListener('DOMContentLoaded', initRelatedImages);
     document.addEventListener('DOMContentLoaded', setFavoriteButtonState);
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
@@ -391,6 +445,7 @@
       color:var(--ink);
       text-decoration:none;
     }
+    .related-item img:not([src]) { visibility:hidden; }
     .related-item.active { border-color:var(--brand); }
     .related-item img {
       display:block;
@@ -516,7 +571,7 @@
     </div>
     <section class="image-stage" aria-label="傷口正在變好，還是需要就醫？｜藥局衛教助手">
       <a class="image-side-link prev" href="../cards/wound_tetanus.html" aria-label="上一張"></a>
-      <img class="hero-img" src="../img/wound_healing_signs.webp" alt="傷口正在變好，還是需要就醫？衛教圖卡" decoding="async">
+      <img class="hero-img" src="../img/wound_healing_signs.webp" alt="傷口正在變好，還是需要就醫？衛教圖卡" decoding="async" fetchpriority="high">
       <a class="image-side-link next" href="../cards/wound_when_to_seek_care.html" aria-label="下一張"></a>
     </section>
     <nav class="page-nav" aria-label="同系列翻頁">
@@ -560,32 +615,32 @@
       <div class="related-grid">
         
             <a class="related-item" href="../cards/wound_when_to_seek_care.html">
-                <img src="../img/wound_when_to_seek_care.webp" alt="同系列圖卡 1" loading="lazy">
+                <img data-src="../img/wound_when_to_seek_care.webp" alt="同系列圖卡 1" decoding="async" fetchpriority="low">
                 <span>第 1 張</span>
             </a>
 
             <a class="related-item" href="../cards/slipped_fall_wound.html">
-                <img src="../img/slipped_fall_wound.webp" alt="同系列圖卡 2" loading="lazy">
+                <img data-src="../img/slipped_fall_wound.webp" alt="同系列圖卡 2" decoding="async" fetchpriority="low">
                 <span>第 2 張</span>
             </a>
 
             <a class="related-item" href="../cards/wound_4_soln.html">
-                <img src="../img/wound_4_soln.webp" alt="同系列圖卡 3" loading="lazy">
+                <img data-src="../img/wound_4_soln.webp" alt="同系列圖卡 3" decoding="async" fetchpriority="low">
                 <span>第 3 張</span>
             </a>
 
             <a class="related-item" href="../cards/wound_oint.html">
-                <img src="../img/wound_oint.webp" alt="同系列圖卡 4" loading="lazy">
+                <img data-src="../img/wound_oint.webp" alt="同系列圖卡 4" decoding="async" fetchpriority="low">
                 <span>第 4 張</span>
             </a>
 
             <a class="related-item" href="../cards/wound_tetanus.html">
-                <img src="../img/wound_tetanus.webp" alt="同系列圖卡 5" loading="lazy">
+                <img data-src="../img/wound_tetanus.webp" alt="同系列圖卡 5" decoding="async" fetchpriority="low">
                 <span>第 5 張</span>
             </a>
 
             <a class="related-item active" href="../cards/wound_healing_signs.html">
-                <img src="../img/wound_healing_signs.webp" alt="同系列圖卡 6" loading="lazy">
+                <img data-src="../img/wound_healing_signs.webp" alt="同系列圖卡 6" decoding="async" fetchpriority="low">
                 <span>第 6 張</span>
             </a>
       </div>

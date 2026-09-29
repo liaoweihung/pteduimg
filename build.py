@@ -241,7 +241,7 @@ def render_related_cards(series_steps, current_step):
         items.append(
             f"""
             <a class="related-item{active}" href="../{esc(page_path)}">
-                <img src="../{esc(step)}" alt="同系列圖卡 {index}" loading="lazy">
+                <img data-src="../{esc(step)}" alt="同系列圖卡 {index}" decoding="async" fetchpriority="low">
                 <span>第 {index} 張</span>
             </a>"""
         )
@@ -586,6 +586,60 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
         }});
       }}
     }}
+    // Keep related originals off the network until the hero settles and they are near view.
+    function initRelatedImages() {{
+      var hero = document.querySelector('.hero-img');
+      var pending = Array.prototype.slice.call(document.querySelectorAll('.related-item img[data-src]'));
+      if (!hero || !pending.length) return;
+      var started = false;
+      function reveal(image) {{
+        var source = image.getAttribute('data-src');
+        if (!source) return;
+        image.src = source;
+        image.removeAttribute('data-src');
+      }}
+      function start() {{
+        if (started) return;
+        started = true;
+        hero.removeEventListener('load', start);
+        hero.removeEventListener('error', start);
+        requestAnimationFrame(function() {{
+          if ('IntersectionObserver' in window) {{
+            var observer = new IntersectionObserver(function(entries) {{
+              entries.forEach(function(entry) {{
+                if (entry.isIntersecting) {{
+                  reveal(entry.target);
+                  observer.unobserve(entry.target);
+                }}
+              }});
+            }}, {{ rootMargin: '100px 0px' }});
+            pending.forEach(function(image) {{ observer.observe(image); }});
+          }} else {{
+            function checkNearby() {{
+              pending = pending.filter(function(image) {{
+                var rect = image.getBoundingClientRect();
+                if (rect.top <= window.innerHeight + 100 && rect.bottom >= -100) {{
+                  reveal(image);
+                  return false;
+                }}
+                return true;
+              }});
+              if (!pending.length) {{
+                window.removeEventListener('scroll', checkNearby);
+                window.removeEventListener('resize', checkNearby);
+              }}
+            }}
+            window.addEventListener('scroll', checkNearby, {{ passive: true }});
+            window.addEventListener('resize', checkNearby);
+            checkNearby();
+          }}
+        }});
+      }}
+      hero.addEventListener('load', start);
+      hero.addEventListener('error', start);
+      if (hero.complete) start();
+    }}
+    document.addEventListener('DOMContentLoaded', initRelatedImages);
     document.addEventListener('DOMContentLoaded', setFavoriteButtonState);
     if ('serviceWorker' in navigator) {{
       window.addEventListener('load', function() {{
@@ -772,6 +826,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
       color:var(--ink);
       text-decoration:none;
     }}
+    .related-item img:not([src]) {{ visibility:hidden; }}
     .related-item.active {{ border-color:var(--brand); }}
     .related-item img {{
       display:block;
@@ -897,7 +952,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     </div>
     <section class="image-stage" aria-label="{esc(title)}">
       <a class="image-side-link prev" href="{esc(prev_url)}" aria-label="上一張"></a>
-      <img class="hero-img" src="../{esc(step)}" alt="{esc(image_alt)}" decoding="async">
+      <img class="hero-img" src="../{esc(step)}" alt="{esc(image_alt)}" decoding="async" fetchpriority="high">
       <a class="image-side-link next" href="{esc(next_url)}" aria-label="下一張"></a>
     </section>
     <nav class="page-nav" aria-label="同系列翻頁">
@@ -1301,52 +1356,20 @@ def update_service_worker(cards, generated_pages, retired_pages=()):
     cache_items.extend(['./retired-cards.html', './css/card-archive.css', './js/card-archive.js'])
     cache_items.append("./cards/404.html")
     cache_array = ",\n  ".join(json.dumps(item, ensure_ascii=False) for item in cache_items)
+    # Only the basic card interface is installed; tools cache on demand.
     core_cache_items = [
         "./",
         "./index.html",
         "./public.html",
         "./all-cards.html",
-        "./calc.html",
-        "./spray_medicine_explorer.html",
-        "./suppository_medicine_explorer.html",
-        "./oral_liquid_medicine_explorer.html",
-        "./inhaler_medicine_explorer.html",
-        "./tcm_external_patch_explorer.html",
-        "./tcm_external_formula_patterns.html",
-        "./css/spray-medicine-explorer.css",
-        "./js/spray-medicine-explorer.js",
-        "./data/spray_meds_rebuild_20260714/final/spray_meds_final.json",
-        "./css/suppository-medicine-explorer.css",
-        "./js/suppository-medicine-explorer.js",
-        "./data/suppository_meds_rebuild_20260714/final/suppository_meds_final.json",
-        "./css/oral-liquid-medicine-explorer.css",
-        "./js/oral-liquid-medicine-explorer.js",
-        "./data/oral_liquid_meds_rebuild_20260714/final/oral_liquid_meds_final.json",
-        "./css/inhaler-medicine-explorer.css",
-        "./js/inhaler-medicine-explorer.js",
-        "./data/inhaler_meds_20260716/taiwan_inhalers.json",
-        "./css/tcm-external-patch-explorer.css",
-        "./js/tcm-external-patch-explorer.js",
-        "./data/tcm_external_patch_rx_20260730.json",
-        "./css/tcm-external-formula-patterns.css",
-        "./js/tcm-external-formula-patterns.js",
-        "./data/tcm_external_formula_patterns_20260730/external_formula_pattern_analysis.json",
-        "./web/taiwan_medicinal_patch_database_v2.html",
-        "./health-check-calculator.html",
-        "./cancer-marker-calculator.html",
-        "./menstrual-calculator.html",
-        "./rx-refillable-date.html",
-        "./icon.png",
         "./404.html",
         "./cards.json",
         "./seo.json",
         "./qrious.min.js",
         "./css/base.css?v=6",
-        "./css/health-tools.css?v=2",
-        "./css/menstrual-calculator.css?v=2",
-        "./css/rx-refillable-date.css?v=5",
         "./css/pharmacist.css?v=2",
         "./css/public.css?v=3",
+        "./icon.png",
     ]
     core_cache_array = ",\n  ".join(json.dumps(item, ensure_ascii=False) for item in core_cache_items)
 

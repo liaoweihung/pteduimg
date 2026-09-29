@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202609290038';
+const CACHE_NAME = 'pwa-cache-v202609291302';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -673,47 +673,14 @@ const coreUrlsToCache = [
   "./index.html",
   "./public.html",
   "./all-cards.html",
-  "./calc.html",
-  "./spray_medicine_explorer.html",
-  "./suppository_medicine_explorer.html",
-  "./oral_liquid_medicine_explorer.html",
-  "./inhaler_medicine_explorer.html",
-  "./tcm_external_patch_explorer.html",
-  "./tcm_external_formula_patterns.html",
-  "./css/spray-medicine-explorer.css",
-  "./js/spray-medicine-explorer.js",
-  "./data/spray_meds_rebuild_20260714/final/spray_meds_final.json",
-  "./css/suppository-medicine-explorer.css",
-  "./js/suppository-medicine-explorer.js",
-  "./data/suppository_meds_rebuild_20260714/final/suppository_meds_final.json",
-  "./css/oral-liquid-medicine-explorer.css",
-  "./js/oral-liquid-medicine-explorer.js",
-  "./data/oral_liquid_meds_rebuild_20260714/final/oral_liquid_meds_final.json",
-  "./css/inhaler-medicine-explorer.css",
-  "./js/inhaler-medicine-explorer.js",
-  "./data/inhaler_meds_20260716/taiwan_inhalers.json",
-  "./css/tcm-external-patch-explorer.css",
-  "./js/tcm-external-patch-explorer.js",
-  "./data/tcm_external_patch_rx_20260730.json",
-  "./css/tcm-external-formula-patterns.css",
-  "./js/tcm-external-formula-patterns.js",
-  "./data/tcm_external_formula_patterns_20260730/external_formula_pattern_analysis.json",
-  "./web/taiwan_medicinal_patch_database_v2.html",
-  "./health-check-calculator.html",
-  "./cancer-marker-calculator.html",
-  "./menstrual-calculator.html",
-  "./rx-refillable-date.html",
-  "./icon.png",
   "./404.html",
   "./cards.json",
   "./seo.json",
   "./qrious.min.js",
   "./css/base.css?v=6",
-  "./css/health-tools.css?v=2",
-  "./css/menstrual-calculator.css?v=2",
-  "./css/rx-refillable-date.css?v=5",
   "./css/pharmacist.css?v=2",
-  "./css/public.css?v=3"
+  "./css/public.css?v=3",
+  "./icon.png"
 ];
 
 // === 摰??挾 ===
@@ -729,8 +696,12 @@ self.addEventListener('install', (e) => {
   // stay cache-first and are never reloaded here; a failed fetch keeps the old copy.
   e.waitUntil(
     caches.open(RUNTIME_CACHE).then(cache => Promise.all(
-      revisedImageUrls.map(url => fetch(url).then(response => {
-        if (response && response.ok) return cache.put(url, response);
+      revisedImageUrls.map(url => caches.match(url).then(cached => {
+        // New visitors do not need revised images they have never viewed.
+        if (!cached) return;
+        return fetch(url).then(response => {
+          if (response && response.ok) return cache.put(url, response);
+        });
       }).catch(() => undefined))
     ))
   );
