@@ -233,17 +233,16 @@ def share_links(page_url, title):
     }
 
 
-def render_related_cards(series_steps, current_step):
+def render_related_cards(series_steps, current_step, seo_index):
     items = []
     for index, step in enumerate(series_steps, start=1):
         page_path = page_for_image(step)
-        active = " active" if step == current_step else ""
+        title = (seo_index.get(page_path) or {}).get("page_title") or f"第 {index} 張"
+        title = title.removesuffix(f"｜{SITE_TITLE}")
+        current = ' aria-current="page"' if step == current_step else ""
         items.append(
-            f"""
-            <a class="related-item{active}" href="../{esc(page_path)}">
-                <img data-src="../{esc(step)}" alt="同系列圖卡 {index}" decoding="async" fetchpriority="low">
-                <span>第 {index} 張</span>
-            </a>"""
+            f'<li><a class="related-item" href="../{esc(page_path)}"{current}>'
+            f'{esc(title)}</a></li>'
         )
     return "\n".join(items)
 
@@ -303,7 +302,7 @@ def render_card_text_content(card_content, h1, category_label, step_number, tota
       </article>"""
 
 
-def render_card_page(card_id, card, step, step_index, seo, card_content=None, series_links=""):
+def render_card_page(card_id, card, step, step_index, seo, card_content=None, series_links="", series_seo=None):
     steps = card.get("steps") or []
     total = len(steps)
     step_number = step_index + 1
@@ -314,13 +313,13 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     tracking_title = seo.get("tracking_title") or title
     description = seo["meta_description"]
     keywords = clean_seo_text(seo.get("keywords") or "")
-    h1 = clean_seo_text((card_content or {}).get("title") or card.get("title") or seo["h1"])
+    h1 = clean_seo_text(seo.get("display_title") or (card_content or {}).get("title") or card.get("title") or seo["h1"])
     image_alt = seo["image_alt"]
     page_path = page_for_image(step)
     page_url = seo["canonical"]
     image_url = seo["og_image"]
     links = share_links(page_url, title)
-    related_cards = render_related_cards(steps, step)
+    related_cards = render_related_cards(steps, step, series_seo or {})
     prev_step = steps[step_index - 1] if total > 1 else step
     next_step = steps[(step_index + 1) % total] if total > 1 else step
     prev_url = f"../{page_for_image(prev_step)}"
@@ -586,60 +585,6 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
         }});
       }}
     }}
-    // Keep related originals off the network until the hero settles and they are near view.
-    function initRelatedImages() {{
-      var hero = document.querySelector('.hero-img');
-      var pending = Array.prototype.slice.call(document.querySelectorAll('.related-item img[data-src]'));
-      if (!hero || !pending.length) return;
-      var started = false;
-      function reveal(image) {{
-        var source = image.getAttribute('data-src');
-        if (!source) return;
-        image.src = source;
-        image.removeAttribute('data-src');
-      }}
-      function start() {{
-        if (started) return;
-        started = true;
-        hero.removeEventListener('load', start);
-        hero.removeEventListener('error', start);
-        requestAnimationFrame(function() {{
-          if ('IntersectionObserver' in window) {{
-            var observer = new IntersectionObserver(function(entries) {{
-              entries.forEach(function(entry) {{
-                if (entry.isIntersecting) {{
-                  reveal(entry.target);
-                  observer.unobserve(entry.target);
-                }}
-              }});
-            }}, {{ rootMargin: '100px 0px' }});
-            pending.forEach(function(image) {{ observer.observe(image); }});
-          }} else {{
-            function checkNearby() {{
-              pending = pending.filter(function(image) {{
-                var rect = image.getBoundingClientRect();
-                if (rect.top <= window.innerHeight + 100 && rect.bottom >= -100) {{
-                  reveal(image);
-                  return false;
-                }}
-                return true;
-              }});
-              if (!pending.length) {{
-                window.removeEventListener('scroll', checkNearby);
-                window.removeEventListener('resize', checkNearby);
-              }}
-            }}
-            window.addEventListener('scroll', checkNearby, {{ passive: true }});
-            window.addEventListener('resize', checkNearby);
-            checkNearby();
-          }}
-        }});
-      }}
-      hero.addEventListener('load', start);
-      hero.addEventListener('error', start);
-      if (hero.complete) start();
-    }}
-    document.addEventListener('DOMContentLoaded', initRelatedImages);
     document.addEventListener('DOMContentLoaded', setFavoriteButtonState);
     if ('serviceWorker' in navigator) {{
       window.addEventListener('load', function() {{
@@ -812,35 +757,25 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
       font-size:.88rem;
       font-weight:700;
     }}
-    .related-grid {{
-      display:grid;
-      grid-template-columns:repeat(4,minmax(0,1fr));
-      gap:8px;
+    .related-list {{
+      margin:0;
+      padding-left:1.6rem;
     }}
+    .related-list li {{ margin:4px 0; }}
     .related-item {{
       display:block;
-      border:1px solid var(--line);
+      padding:10px 8px;
+      min-height:44px;
+      color:var(--brand);
+      line-height:1.5;
+      overflow-wrap:anywhere;
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }}
+    .related-item[aria-current="page"] {{
+      font-weight:700;
+      background:#f0f9f9;
       border-radius:6px;
-      overflow:hidden;
-      background:#fff;
-      color:var(--ink);
-      text-decoration:none;
-    }}
-    .related-item img:not([src]) {{ visibility:hidden; }}
-    .related-item.active {{ border-color:var(--brand); }}
-    .related-item img {{
-      display:block;
-      width:100%;
-      aspect-ratio:1;
-      object-fit:cover;
-      background:#fff;
-    }}
-    .related-item span {{
-      display:block;
-      padding:4px 5px;
-      font-size:.76rem;
-      text-align:center;
-      white-space:nowrap;
     }}
     .qr-modal {{
       position:fixed;
@@ -936,7 +871,6 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
       .hero-img {{ max-height:calc(100svh - 136px); }}
       .page-arrow {{ width:46px; height:46px; }}
       .info {{ padding:14px 16px 36px; }}
-      .related-grid {{ grid-template-columns:repeat(8,minmax(0,1fr)); }}
     }}
   </style>
 </head>
@@ -963,9 +897,9 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     <section class="info">
 {info_heading}
       <div class="section-title">同系列圖卡</div>
-      <div class="related-grid">
+      <ol class="related-list" aria-label="同系列圖卡">
         {related_cards}
-      </div>{series_links}
+      </ol>{series_links}
     </section>
     <div class="qr-modal" id="qr-modal" hidden>
       <div class="qr-box" role="dialog" aria-modal="true" aria-label="圖卡 QR code">
@@ -1165,7 +1099,7 @@ def generate_card_pages(cards, seo_index, card_content_index):
             seo = seo_index.get(page_path) or fallback_seo_for_card(card_id, card, step, index)
             card_content = card_content_index.get(step.replace("\\", "/"))
             (ROOT / page_path).write_text(
-                render_card_page(card_id, card, step, index, seo, card_content, render_series_links(card, cards)),
+                render_card_page(card_id, card, step, index, seo, card_content, render_series_links(card, cards), seo_index),
                 encoding="utf-8",
                 newline="\n",
             )

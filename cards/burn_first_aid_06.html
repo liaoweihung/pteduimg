@@ -154,60 +154,6 @@
         });
       }
     }
-    // Keep related originals off the network until the hero settles and they are near view.
-    function initRelatedImages() {
-      var hero = document.querySelector('.hero-img');
-      var pending = Array.prototype.slice.call(document.querySelectorAll('.related-item img[data-src]'));
-      if (!hero || !pending.length) return;
-      var started = false;
-      function reveal(image) {
-        var source = image.getAttribute('data-src');
-        if (!source) return;
-        image.src = source;
-        image.removeAttribute('data-src');
-      }
-      function start() {
-        if (started) return;
-        started = true;
-        hero.removeEventListener('load', start);
-        hero.removeEventListener('error', start);
-        requestAnimationFrame(function() {
-          if ('IntersectionObserver' in window) {
-            var observer = new IntersectionObserver(function(entries) {
-              entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                  reveal(entry.target);
-                  observer.unobserve(entry.target);
-                }
-              });
-            }, { rootMargin: '100px 0px' });
-            pending.forEach(function(image) { observer.observe(image); });
-          } else {
-            function checkNearby() {
-              pending = pending.filter(function(image) {
-                var rect = image.getBoundingClientRect();
-                if (rect.top <= window.innerHeight + 100 && rect.bottom >= -100) {
-                  reveal(image);
-                  return false;
-                }
-                return true;
-              });
-              if (!pending.length) {
-                window.removeEventListener('scroll', checkNearby);
-                window.removeEventListener('resize', checkNearby);
-              }
-            }
-            window.addEventListener('scroll', checkNearby, { passive: true });
-            window.addEventListener('resize', checkNearby);
-            checkNearby();
-          }
-        });
-      }
-      hero.addEventListener('load', start);
-      hero.addEventListener('error', start);
-      if (hero.complete) start();
-    }
-    document.addEventListener('DOMContentLoaded', initRelatedImages);
     document.addEventListener('DOMContentLoaded', setFavoriteButtonState);
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
@@ -431,35 +377,25 @@
       font-size:.88rem;
       font-weight:700;
     }
-    .related-grid {
-      display:grid;
-      grid-template-columns:repeat(4,minmax(0,1fr));
-      gap:8px;
+    .related-list {
+      margin:0;
+      padding-left:1.6rem;
     }
+    .related-list li { margin:4px 0; }
     .related-item {
       display:block;
-      border:1px solid var(--line);
+      padding:10px 8px;
+      min-height:44px;
+      color:var(--brand);
+      line-height:1.5;
+      overflow-wrap:anywhere;
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
+    .related-item[aria-current="page"] {
+      font-weight:700;
+      background:#f0f9f9;
       border-radius:6px;
-      overflow:hidden;
-      background:#fff;
-      color:var(--ink);
-      text-decoration:none;
-    }
-    .related-item img:not([src]) { visibility:hidden; }
-    .related-item.active { border-color:var(--brand); }
-    .related-item img {
-      display:block;
-      width:100%;
-      aspect-ratio:1;
-      object-fit:cover;
-      background:#fff;
-    }
-    .related-item span {
-      display:block;
-      padding:4px 5px;
-      font-size:.76rem;
-      text-align:center;
-      white-space:nowrap;
     }
     .qr-modal {
       position:fixed;
@@ -555,7 +491,6 @@
       .hero-img { max-height:calc(100svh - 136px); }
       .page-arrow { width:46px; height:46px; }
       .info { padding:14px 16px 36px; }
-      .related-grid { grid-template-columns:repeat(8,minmax(0,1fr)); }
     }
   </style>
 </head>
@@ -603,38 +538,14 @@
         </details>
       </article>
       <div class="section-title">同系列圖卡</div>
-      <div class="related-grid">
-        
-            <a class="related-item" href="../cards/burn_first_aid_01.html">
-                <img data-src="../img/burn_first_aid_01.webp" alt="同系列圖卡 1" decoding="async" fetchpriority="low">
-                <span>第 1 張</span>
-            </a>
-
-            <a class="related-item" href="../cards/burn_first_aid_02.html">
-                <img data-src="../img/burn_first_aid_02.webp" alt="同系列圖卡 2" decoding="async" fetchpriority="low">
-                <span>第 2 張</span>
-            </a>
-
-            <a class="related-item" href="../cards/burn_first_aid_03.html">
-                <img data-src="../img/burn_first_aid_03.webp" alt="同系列圖卡 3" decoding="async" fetchpriority="low">
-                <span>第 3 張</span>
-            </a>
-
-            <a class="related-item" href="../cards/burn_first_aid_04.html">
-                <img data-src="../img/burn_first_aid_04.webp" alt="同系列圖卡 4" decoding="async" fetchpriority="low">
-                <span>第 4 張</span>
-            </a>
-
-            <a class="related-item" href="../cards/burn_first_aid_05.html">
-                <img data-src="../img/burn_first_aid_05.webp" alt="同系列圖卡 5" decoding="async" fetchpriority="low">
-                <span>第 5 張</span>
-            </a>
-
-            <a class="related-item active" href="../cards/burn_first_aid_06.html">
-                <img data-src="../img/burn_first_aid_06.webp" alt="同系列圖卡 6" decoding="async" fetchpriority="low">
-                <span>第 6 張</span>
-            </a>
-      </div>
+      <ol class="related-list" aria-label="同系列圖卡">
+        <li><a class="related-item" href="../cards/burn_first_aid_01.html">燙傷急救：先沖水、移除飾品與衣物</a></li>
+<li><a class="related-item" href="../cards/burn_first_aid_02.html">燙傷不要做的事與需要就醫的情況</a></li>
+<li><a class="related-item" href="../cards/burn_first_aid_03.html">燙傷未破皮時的照護與水泡處理</a></li>
+<li><a class="related-item" href="../cards/burn_first_aid_04.html">水泡破掉、傷口滲液時的處理</a></li>
+<li><a class="related-item" href="../cards/burn_first_aid_05.html">燙傷藥品與敷料，怎麼選？</a></li>
+<li><a class="related-item" href="../cards/burn_first_aid_06.html" aria-current="page">燙傷癒合後如何減少疤痕</a></li>
+      </ol>
       <nav aria-label="相關系列"><h2 class="section-title">接著可以看</h2><ul style="line-height:2.4"><li><a href="../cards/wound_when_to_seek_care.html">小傷口怎麼處理？</a></li><li><a href="../cards/oint_choose.html">敷料怎麼選、怎麼換？</a></li><li><a href="../cards/prevent_scar.html">傷口好了，如何照顧疤痕？</a></li></ul></nav>
     </section>
     <div class="qr-modal" id="qr-modal" hidden>

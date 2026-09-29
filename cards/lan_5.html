@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>懷疑食物過敏怎麼辦？｜五語就醫提醒｜藥局衛教助手</title>
+  <title>懷疑食物過敏怎麼辦？｜What to do if you suspect a food allergy｜ทำอย่างไรเมื่อสงสัยว่าแพ้อาหาร｜Apa yang harus dilakukan jika mencurigai alergi makanan?｜Cần làm gì khi nghi ngờ dị ứng thực phẩm?｜藥局衛教助手</title>
   <meta name="description" content="如果懷疑某種食物引起過敏，先諮詢醫師，不要自行試吃測試。食用後若出現過敏症狀，立即停止食用並就醫；若呼吸困難、舌頭或喉嚨腫脹、昏厥，立即撥打 119。">
   <meta name="keywords" content="多語衛教、外籍看護、移工衛教、泰語、泰文、印尼語、印尼文、越南語、越南文、ภาษาไทย、Bahasa Indonesia、Tiếng Việt、咳嗽有痰、飲食提醒、ไอมีเสมหะ、batuk berdahak、ho có đờm、cough with phlegm、食物過敏、過敏原、แพ้อาหาร、alergi makanan、dị ứng thực phẩm、food allergy、疑似食物過敏、過敏就醫、嚴重過敏反應、呼吸困難、119">
   <link rel="canonical" href="https://liaoweihung.github.io/pteduimg/cards/lan_5.html">
   <link rel="icon" type="image/png" href="../icon.png?v=3">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="藥局衛教助手">
-  <meta property="og:title" content="懷疑食物過敏怎麼辦？｜五語就醫提醒｜藥局衛教助手">
+  <meta property="og:title" content="懷疑食物過敏怎麼辦？｜What to do if you suspect a food allergy｜ทำอย่างไรเมื่อสงสัยว่าแพ้อาหาร｜Apa yang harus dilakukan jika mencurigai alergi makanan?｜Cần làm gì khi nghi ngờ dị ứng thực phẩm?｜藥局衛教助手">
   <meta property="og:description" content="如果懷疑某種食物引起過敏，先諮詢醫師，不要自行試吃測試。食用後若出現過敏症狀，立即停止食用並就醫；若呼吸困難、舌頭或喉嚨腫脹、昏厥，立即撥打 119。">
   <meta property="og:image" content="https://liaoweihung.github.io/pteduimg/img/lan_5.webp">
   <meta property="og:url" content="https://liaoweihung.github.io/pteduimg/cards/lan_5.html">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="懷疑食物過敏怎麼辦？｜五語就醫提醒｜藥局衛教助手">
+  <meta name="twitter:title" content="懷疑食物過敏怎麼辦？｜What to do if you suspect a food allergy｜ทำอย่างไรเมื่อสงสัยว่าแพ้อาหาร｜Apa yang harus dilakukan jika mencurigai alergi makanan?｜Cần làm gì khi nghi ngờ dị ứng thực phẩm?｜藥局衛教助手">
   <meta name="twitter:description" content="如果懷疑某種食物引起過敏，先諮詢醫師，不要自行試吃測試。食用後若出現過敏症狀，立即停止食用並就醫；若呼吸困難、舌頭或喉嚨腫脹、昏厥，立即撥打 119。">
   <meta name="twitter:image" content="https://liaoweihung.github.io/pteduimg/img/lan_5.webp">
   <script src="../qrious.min.js"></script>
@@ -72,7 +72,7 @@
     }
     var cardFavoriteKey = "multi_lang-4";
     var cardShareUrl = "https://liaoweihung.github.io/pteduimg/cards/lan_5.html";
-    var cardTitle = "懷疑食物過敏怎麼辦？｜五語就醫提醒｜藥局衛教助手";
+    var cardTitle = "懷疑食物過敏怎麼辦？｜What to do if you suspect a food allergy｜ทำอย่างไรเมื่อสงสัยว่าแพ้อาหาร｜Apa yang harus dilakukan jika mencurigai alergi makanan?｜Cần làm gì khi nghi ngờ dị ứng thực phẩm?｜藥局衛教助手";
     function getFavorites() {
       try {
         var saved = JSON.parse(localStorage.getItem('favImages') || '[]');
@@ -154,60 +154,6 @@
         });
       }
     }
-    // Keep related originals off the network until the hero settles and they are near view.
-    function initRelatedImages() {
-      var hero = document.querySelector('.hero-img');
-      var pending = Array.prototype.slice.call(document.querySelectorAll('.related-item img[data-src]'));
-      if (!hero || !pending.length) return;
-      var started = false;
-      function reveal(image) {
-        var source = image.getAttribute('data-src');
-        if (!source) return;
-        image.src = source;
-        image.removeAttribute('data-src');
-      }
-      function start() {
-        if (started) return;
-        started = true;
-        hero.removeEventListener('load', start);
-        hero.removeEventListener('error', start);
-        requestAnimationFrame(function() {
-          if ('IntersectionObserver' in window) {
-            var observer = new IntersectionObserver(function(entries) {
-              entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                  reveal(entry.target);
-                  observer.unobserve(entry.target);
-                }
-              });
-            }, { rootMargin: '100px 0px' });
-            pending.forEach(function(image) { observer.observe(image); });
-          } else {
-            function checkNearby() {
-              pending = pending.filter(function(image) {
-                var rect = image.getBoundingClientRect();
-                if (rect.top <= window.innerHeight + 100 && rect.bottom >= -100) {
-                  reveal(image);
-                  return false;
-                }
-                return true;
-              });
-              if (!pending.length) {
-                window.removeEventListener('scroll', checkNearby);
-                window.removeEventListener('resize', checkNearby);
-              }
-            }
-            window.addEventListener('scroll', checkNearby, { passive: true });
-            window.addEventListener('resize', checkNearby);
-            checkNearby();
-          }
-        });
-      }
-      hero.addEventListener('load', start);
-      hero.addEventListener('error', start);
-      if (hero.complete) start();
-    }
-    document.addEventListener('DOMContentLoaded', initRelatedImages);
     document.addEventListener('DOMContentLoaded', setFavoriteButtonState);
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
@@ -431,35 +377,25 @@
       font-size:.88rem;
       font-weight:700;
     }
-    .related-grid {
-      display:grid;
-      grid-template-columns:repeat(4,minmax(0,1fr));
-      gap:8px;
+    .related-list {
+      margin:0;
+      padding-left:1.6rem;
     }
+    .related-list li { margin:4px 0; }
     .related-item {
       display:block;
-      border:1px solid var(--line);
+      padding:10px 8px;
+      min-height:44px;
+      color:var(--brand);
+      line-height:1.5;
+      overflow-wrap:anywhere;
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
+    .related-item[aria-current="page"] {
+      font-weight:700;
+      background:#f0f9f9;
       border-radius:6px;
-      overflow:hidden;
-      background:#fff;
-      color:var(--ink);
-      text-decoration:none;
-    }
-    .related-item img:not([src]) { visibility:hidden; }
-    .related-item.active { border-color:var(--brand); }
-    .related-item img {
-      display:block;
-      width:100%;
-      aspect-ratio:1;
-      object-fit:cover;
-      background:#fff;
-    }
-    .related-item span {
-      display:block;
-      padding:4px 5px;
-      font-size:.76rem;
-      text-align:center;
-      white-space:nowrap;
     }
     .qr-modal {
       position:fixed;
@@ -555,7 +491,6 @@
       .hero-img { max-height:calc(100svh - 136px); }
       .page-arrow { width:46px; height:46px; }
       .info { padding:14px 16px 36px; }
-      .related-grid { grid-template-columns:repeat(8,minmax(0,1fr)); }
     }
   </style>
 </head>
@@ -569,7 +504,7 @@
         <button class="pill icon-pill" type="button" onclick="showSharePanel()" aria-label="分享圖卡">↗</button>
       </div>
     </div>
-    <section class="image-stage" aria-label="懷疑食物過敏怎麼辦？｜五語就醫提醒｜藥局衛教助手">
+    <section class="image-stage" aria-label="懷疑食物過敏怎麼辦？｜What to do if you suspect a food allergy｜ทำอย่างไรเมื่อสงสัยว่าแพ้อาหาร｜Apa yang harus dilakukan jika mencurigai alergi makanan?｜Cần làm gì khi nghi ngờ dị ứng thực phẩm?｜藥局衛教助手">
       <a class="image-side-link prev" href="../cards/lan_4.html" aria-label="上一張"></a>
       <img class="hero-img" src="../img/lan_5.webp" alt="懷疑食物過敏怎麼辦？｜五語就醫提醒" decoding="async" fetchpriority="high">
       <a class="image-side-link next" href="../cards/lan_1.html" aria-label="下一張"></a>
@@ -581,7 +516,7 @@
     </nav>
     <section class="info">
       <article class="card-text-content">
-        <h1>懷疑食物過敏怎麼辦？｜五語就醫提醒</h1>
+        <h1>懷疑食物過敏怎麼辦？｜What to do if you suspect a food allergy｜ทำอย่างไรเมื่อสงสัยว่าแพ้อาหาร｜Apa yang harus dilakukan jika mencurigai alergi makanan?｜Cần làm gì khi nghi ngờ dị ứng thực phẩm?</h1>
         <p class="meta">藥師衛教 · 5/5</p>
         <details class="card-text-details">
           <summary>文字版重點</summary>
@@ -611,33 +546,13 @@
         </details>
       </article>
       <div class="section-title">同系列圖卡</div>
-      <div class="related-grid">
-        
-            <a class="related-item" href="../cards/lan_1.html">
-                <img data-src="../img/lan_1.webp" alt="同系列圖卡 1" decoding="async" fetchpriority="low">
-                <span>第 1 張</span>
-            </a>
-
-            <a class="related-item" href="../cards/lan_2.html">
-                <img data-src="../img/lan_2.webp" alt="同系列圖卡 2" decoding="async" fetchpriority="low">
-                <span>第 2 張</span>
-            </a>
-
-            <a class="related-item" href="../cards/lan_3.html">
-                <img data-src="../img/lan_3.webp" alt="同系列圖卡 3" decoding="async" fetchpriority="low">
-                <span>第 3 張</span>
-            </a>
-
-            <a class="related-item" href="../cards/lan_4.html">
-                <img data-src="../img/lan_4.webp" alt="同系列圖卡 4" decoding="async" fetchpriority="low">
-                <span>第 4 張</span>
-            </a>
-
-            <a class="related-item active" href="../cards/lan_5.html">
-                <img data-src="../img/lan_5.webp" alt="同系列圖卡 5" decoding="async" fetchpriority="low">
-                <span>第 5 張</span>
-            </a>
-      </div>
+      <ol class="related-list" aria-label="同系列圖卡">
+        <li><a class="related-item" href="../cards/lan_1.html">早・中・晚・睡前服藥時間｜Morning, noon, evening &amp; bedtime｜เช้า เที่ยง เย็น ก่อนนอน｜Pagi, siang, sore &amp; sebelum tidur｜Buổi sáng, buổi trưa, buổi tối &amp; trước khi ngủ｜Pagi, tengah hari, petang &amp; sebelum tidur</a></li>
+<li><a class="related-item" href="../cards/lan_2.html">飯前・飯後・每12小時服藥｜Before meals, after meals &amp; every 12 hours｜ก่อนอาหาร หลังอาหาร ทุก 12 ชั่วโมง｜Sebelum makan, sesudah makan &amp; setiap 12 jam｜Trước bữa ăn, sau bữa ăn &amp; mỗi 12 tiếng｜Sebelum makan, selepas makan &amp; setiap 12 jam</a></li>
+<li><a class="related-item" href="../cards/lan_3.html">咳嗽有痰的飲食提醒｜Diet tips for a cough with phlegm｜ข้อแนะนำด้านอาหารเมื่อไอมีเสมหะ｜Tips makan saat batuk berdahak｜Lưu ý ăn uống khi ho có đờm</a></li>
+<li><a class="related-item" href="../cards/lan_4.html">食物過敏的飲食注意事項｜Food allergy: dietary precautions｜ข้อควรระวังเรื่องอาหารสำหรับผู้แพ้อาหาร｜Alergi makanan: hal yang perlu diperhatikan｜Dị ứng thực phẩm: lưu ý ăn uống</a></li>
+<li><a class="related-item" href="../cards/lan_5.html" aria-current="page">懷疑食物過敏怎麼辦？｜What to do if you suspect a food allergy｜ทำอย่างไรเมื่อสงสัยว่าแพ้อาหาร｜Apa yang harus dilakukan jika mencurigai alergi makanan?｜Cần làm gì khi nghi ngờ dị ứng thực phẩm?</a></li>
+      </ol>
     </section>
     <div class="qr-modal" id="qr-modal" hidden>
       <div class="qr-box" role="dialog" aria-modal="true" aria-label="圖卡 QR code">
@@ -653,7 +568,7 @@
         <div class="share-modal-actions">
           <a class="share-button" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Fcards%2Flan_5.html" target="_blank" rel="noopener">LINE</a>
           <a class="share-button" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Fcards%2Flan_5.html" target="_blank" rel="noopener">Facebook</a>
-          <a class="share-button" href="https://www.threads.net/intent/post?text=%E6%87%B7%E7%96%91%E9%A3%9F%E7%89%A9%E9%81%8E%E6%95%8F%E6%80%8E%E9%BA%BC%E8%BE%A6%EF%BC%9F%EF%BD%9C%E4%BA%94%E8%AA%9E%E5%B0%B1%E9%86%AB%E6%8F%90%E9%86%92%EF%BD%9C%E8%97%A5%E5%B1%80%E8%A1%9B%E6%95%99%E5%8A%A9%E6%89%8B%20https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Fcards%2Flan_5.html" target="_blank" rel="noopener">Threads</a>
+          <a class="share-button" href="https://www.threads.net/intent/post?text=%E6%87%B7%E7%96%91%E9%A3%9F%E7%89%A9%E9%81%8E%E6%95%8F%E6%80%8E%E9%BA%BC%E8%BE%A6%EF%BC%9F%EF%BD%9CWhat%20to%20do%20if%20you%20suspect%20a%20food%20allergy%EF%BD%9C%E0%B8%97%E0%B8%B3%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%A3%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%AA%E0%B8%87%E0%B8%AA%E0%B8%B1%E0%B8%A2%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%9E%E0%B9%89%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%EF%BD%9CApa%20yang%20harus%20dilakukan%20jika%20mencurigai%20alergi%20makanan%3F%EF%BD%9CC%E1%BA%A7n%20l%C3%A0m%20g%C3%AC%20khi%20nghi%20ng%E1%BB%9D%20d%E1%BB%8B%20%E1%BB%A9ng%20th%E1%BB%B1c%20ph%E1%BA%A9m%3F%EF%BD%9C%E8%97%A5%E5%B1%80%E8%A1%9B%E6%95%99%E5%8A%A9%E6%89%8B%20https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Fcards%2Flan_5.html" target="_blank" rel="noopener">Threads</a>
           <button class="share-button" type="button" onclick="copyCardShareUrl()">複製連結</button>
         </div>
         <button class="qr-close" type="button" onclick="closeSharePanel()">完成</button>

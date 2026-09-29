@@ -112,6 +112,6 @@
 | postoperative_wound | 縫合／術後傷口，回家怎麼照顧？ | https://liaoweihung.github.io/pteduimg/cards/postoperative_wound.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | diabetic_foot | 糖尿病足：腳有傷口，不痛也要處理 | https://liaoweihung.github.io/pteduimg/cards/diabetic_foot.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | elderly_skin_tear | 長者皮膚撕裂傷，先保護掀起的皮 | https://liaoweihung.github.io/pteduimg/cards/elderly_skin_tear.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| multi_lang | 咳嗽有痰的飲食提醒｜中文、英文、泰語、印尼語、越南語 | https://liaoweihung.github.io/pteduimg/cards/lan_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| multi_lang | 食物過敏的飲食注意事項｜五語衛教對照 | https://liaoweihung.github.io/pteduimg/cards/lan_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| multi_lang | 懷疑食物過敏怎麼辦？｜五語就醫提醒 | https://liaoweihung.github.io/pteduimg/cards/lan_5.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| multi_lang | 咳嗽有痰的飲食提醒｜Diet tips for a cough with phlegm｜ข้อแนะนำด้านอาหารเมื่อไอมีเสมหะ｜Tips makan saat batuk berdahak｜Lưu ý ăn uống khi ho có đờm | https://liaoweihung.github.io/pteduimg/cards/lan_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| multi_lang | 食物過敏的飲食注意事項｜Food allergy: dietary precautions｜ข้อควรระวังเรื่องอาหารสำหรับผู้แพ้อาหาร｜Alergi makanan: hal yang perlu diperhatikan｜Dị ứng thực phẩm: lưu ý ăn uống | https://liaoweihung.github.io/pteduimg/cards/lan_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| multi_lang | 懷疑食物過敏怎麼辦？｜What to do if you suspect a food allergy｜ทำอย่างไรเมื่อสงสัยว่าแพ้อาหาร｜Apa yang harus dilakukan jika mencurigai alergi makanan?｜Cần làm gì khi nghi ngờ dị ứng thực phẩm? | https://liaoweihung.github.io/pteduimg/cards/lan_5.html | 是 | 是 | 是 | 是 | 是 | 無 |
