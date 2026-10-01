@@ -1,3 +1,4 @@
+import argparse
 import datetime
 import html
 import json
@@ -192,7 +193,7 @@ def apply_card_content_seo(seo, card_content):
     return seo
 
 
-def build_seo_index(cards, card_content_index):
+def build_seo_index(cards, card_content_index, write_output=True):
     existing_seo = read_seo()
     seo_index = {}
     used_ids = set()
@@ -215,12 +216,45 @@ def build_seo_index(cards, card_content_index):
             card_content = card_content_index.get(step.replace("\\", "/"))
             seo_index[page_path] = apply_card_content_seo(seo, card_content)
 
-    SEO_JSON.write_text(
-        json.dumps(seo_index, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-        newline="\n",
-    )
+    if write_output:
+        SEO_JSON.write_text(
+            json.dumps(seo_index, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+            newline="\n",
+        )
     return seo_index
+
+
+def render_json_ld(seo, headline, card_content=None):
+    date_modified = clean_seo_text(
+        (card_content or {}).get("updatedAt")
+        or (card_content or {}).get("imageUpdatedAt")
+    ) or datetime.datetime.now(
+        datetime.timezone(datetime.timedelta(hours=8))
+    ).strftime("%Y-%m-%d")
+    data = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": headline,
+        "description": seo["meta_description"],
+        "image": seo["og_image"],
+        "url": seo["canonical"],
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": seo["canonical"],
+        },
+        "inLanguage": "zh-TW",
+        "dateModified": date_modified,
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": SITE_TITLE,
+            "url": BASE_URL,
+        },
+    }
+    keywords = clean_seo_text(seo.get("keywords") or "")
+    if keywords:
+        data["keywords"] = keywords
+    return json.dumps(data, ensure_ascii=False, indent=2).replace("</", "<\\/")
 
 
 def share_links(page_url, title):
@@ -318,6 +352,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     page_path = page_for_image(step)
     page_url = seo["canonical"]
     image_url = seo["og_image"]
+    json_ld = render_json_ld(seo, h1, card_content)
     links = share_links(page_url, title)
     related_cards = render_related_cards(steps, step, series_seo or {})
     prev_step = steps[step_index - 1] if total > 1 else step
@@ -449,6 +484,9 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
   <meta name="twitter:title" content="{esc(seo['og_title'])}">
   <meta name="twitter:description" content="{esc(seo['og_description'])}">
   <meta name="twitter:image" content="{esc(image_url)}">
+  <script type="application/ld+json">
+{json_ld}
+  </script>
   <script src="../qrious.min.js"></script>
   <script>
     var GA_MEASUREMENT_ID = '{GA_MEASUREMENT_ID}';
@@ -1071,15 +1109,16 @@ def render_all_cards_page(cards, seo_index):
 """
 
 
-def generate_card_pages(cards, seo_index, card_content_index):
+def generate_card_pages(cards, seo_index, card_content_index, only_image_ids=None):
     CARDS_DIR.mkdir(exist_ok=True)
-    for old_page in CARDS_DIR.glob("*.html"):
-        try:
-            old_page.unlink()
-        except PermissionError:
-            # OneDrive can briefly lock generated files on Windows. Current pages
-            # are overwritten below, so a locked stale file should not stop builds.
-            pass
+    if only_image_ids is None:
+        for old_page in CARDS_DIR.glob("*.html"):
+            try:
+                old_page.unlink()
+            except PermissionError:
+                # OneDrive can briefly lock generated files on Windows. Current pages
+                # are overwritten below, so a locked stale file should not stop builds.
+                pass
 
     generated_pages = []
     used_ids = set()
@@ -1095,6 +1134,8 @@ def generate_card_pages(cards, seo_index, card_content_index):
             if image_id in used_ids:
                 continue
             used_ids.add(image_id)
+            if only_image_ids is not None and image_id not in only_image_ids:
+                continue
             page_path = page_for_image(step)
             seo = seo_index.get(page_path) or fallback_seo_for_card(card_id, card, step, index)
             card_content = card_content_index.get(step.replace("\\", "/"))
@@ -1105,8 +1146,9 @@ def generate_card_pages(cards, seo_index, card_content_index):
             )
             generated_pages.append(page_path)
 
-    (CARDS_DIR / "404.html").write_text(render_404_page(), encoding="utf-8", newline="\n")
-    (ROOT / "404.html").write_text(render_404_page(), encoding="utf-8", newline="\n")
+    if only_image_ids is None:
+        (CARDS_DIR / "404.html").write_text(render_404_page(), encoding="utf-8", newline="\n")
+        (ROOT / "404.html").write_text(render_404_page(), encoding="utf-8", newline="\n")
     return generated_pages
 
 
@@ -1391,13 +1433,30 @@ Sitemap: {abs_url("sitemap-main.xml")}
     (ROOT / "robots.txt").write_text(robots, encoding="utf-8", newline="\n")
 
 
-def main():
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Build static pteduimg card pages.")
+    parser.add_argument(
+        "--only",
+        nargs="+",
+        metavar="IMAGE_ID",
+        help="Regenerate only the listed card image IDs without updating site indexes.",
+    )
+    args = parser.parse_args(argv)
+    only_image_ids = {Path(value).stem for value in args.only} if args.only else None
+
     cards = read_cards()
     retired = read_retired_cards(ROOT, cards)
     retired_images = {entry['image'] for entry in retired}
     card_content_index = {image: content for image, content in read_card_content().items() if image not in retired_images}
-    seo_index = build_seo_index(cards, card_content_index)
-    generated_pages = generate_card_pages(cards, seo_index, card_content_index)
+    seo_index = build_seo_index(cards, card_content_index, write_output=only_image_ids is None)
+    generated_pages = generate_card_pages(cards, seo_index, card_content_index, only_image_ids)
+    if only_image_ids is not None:
+        generated_ids = {Path(page).stem for page in generated_pages}
+        missing_ids = sorted(only_image_ids - generated_ids)
+        if missing_ids:
+            parser.error("unknown or unavailable image IDs: " + ", ".join(missing_ids))
+        print(f"Generated {len(generated_pages)} selected static card pages.")
+        return
     write_retired_pages(ROOT, retired, BASE_URL)
     (ROOT / "all-cards.html").write_text(render_all_cards_page(cards, seo_index), encoding="utf-8", newline="\n")
     text_success, text_failures = build_card_text_integration_report(card_content_index)
