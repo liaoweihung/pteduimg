@@ -3598,5 +3598,553 @@
     "expandText": true,
     "matchConfidence": "high",
     "altText": "皮膚薄要注意第 2 張圖卡"
+  },
+  {
+    "cardId": "acne",
+    "title": "粉刺很多怎麼辦？清潔、保養與清粉刺注意事項",
+    "summary": "毛孔內角質與皮脂堆積會形成粉刺，反覆刷洗、磨砂或用力搓揉，可能讓皮膚更受刺激。",
+    "sections": [
+      {
+        "heading": "粉刺不是洗不乾淨。",
+        "text": "毛孔內角質與皮脂堆積會形成粉刺，反覆刷洗、磨砂或用力搓揉，可能讓皮膚更受刺激。"
+      },
+      {
+        "heading": "溫和清潔，搭配保濕。",
+        "text": "一般早晚各洗一次，大量流汗後再清潔；選擇不易致粉刺的保濕及防曬產品，不以洗到緊繃為目標。"
+      },
+      {
+        "heading": "不需要每個月固定擠粉刺。",
+        "text": "自行擠壓、挖除或反覆撕除，可能造成發炎、色素沉澱與疤痕。需要清除時，可由皮膚科醫師評估。"
+      },
+      {
+        "heading": "減少新粉刺，比反覆清除更重要。",
+        "text": "可依膚況評估外用 A 酸類等治療；不要一次加入多種酸類或去角質產品。"
+      },
+      {
+        "heading": "疼痛、發炎或開始留疤，應就醫。",
+        "text": "不要繼續自行擠壓深層、紅腫的痘痘。"
+      }
+    ],
+    "altText": "粉刺很多怎麼辦？清潔、保養與清粉刺注意事項圖卡",
+    "image": "img/comedo.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/comedo.html",
+    "references": [
+      {
+        "title": "AAD：10 skin care habits that can worsen acne",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+      },
+      {
+        "title": "AAD：How to treat different types of acne",
+        "url": "https://www.aad.org/public/diseases/acne/diy/types-breakouts"
+      }
+    ],
+    "sourceCheckedAt": "2026-10-02",
+    "updatedAt": "2026-10-02",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "matchConfidence": "high",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_application",
+    "title": "痘痘藥怎麼擦？薄擦、逐步適應與保濕防曬",
+    "summary": "避免磨砂、刷洗及用力摩擦；需等待多久依藥品仿單。",
+    "sections": [
+      {
+        "heading": "洗後輕拍乾，再依指示擦藥。",
+        "text": "避免磨砂、刷洗及用力摩擦；需等待多久依藥品仿單。"
+      },
+      {
+        "heading": "薄擦指定治療區，不厚敷。",
+        "text": "A 酸類等預防粉刺的藥物，通常不只點在單顆痘痘上，實際範圍依醫囑。"
+      },
+      {
+        "heading": "刺激性藥物可逐步適應。",
+        "text": "A 酸類、BPO 初期可依醫療人員指示降低使用頻率，耐受後再調整；不要自行把所有藥物都改成隔天擦。"
+      },
+      {
+        "heading": "保濕、防曬一起做。",
+        "text": "選擇不易致粉刺的產品；白天使用廣效 SPF 30 以上防曬，並搭配遮陽。"
+      },
+      {
+        "heading": "避開眼周、唇部及破皮處。",
+        "text": "刺痛、脫皮不代表藥效更強，持續不適應詢問醫師或藥師。"
+      }
+    ],
+    "altText": "痘痘藥怎麼擦？薄擦、逐步適應與保濕防曬圖卡",
+    "image": "img/acne_topicals_01_basics.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_01_basics.html",
+    "references": [
+      {
+        "title": "NICE：Acne vulgaris management recommendations",
+        "url": "https://www.nice.org.uk/guidance/ng198/chapter/Recommendations"
+      },
+      {
+        "title": "AAD：10 skin care habits that can worsen acne",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+      }
+    ],
+    "sourceCheckedAt": "2026-10-02",
+    "updatedAt": "2026-10-02",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "matchConfidence": "high",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_topical_medicines",
+    "title": "外用 A 酸怎麼擦？治療範圍、刺激處理與孕期提醒",
+    "summary": "常見成分包括 tretinoin、adapalene；不同成分、濃度與劑型不能直接視為相同。",
+    "sections": [
+      {
+        "heading": "外用 A 酸類可改善粉刺及部分發炎痘。",
+        "text": "常見成分包括 tretinoin、adapalene；不同成分、濃度與劑型不能直接視為相同。"
+      },
+      {
+        "heading": "薄擦容易長痘的指定治療區。",
+        "text": "不只點單顆痘痘，也不要自行擴大到眼周、唇部或破皮處。"
+      },
+      {
+        "heading": "洗後等待時間依產品。",
+        "text": "部分 tretinoin 乳膏要求洗後等 20–30 分鐘，讓皮膚乾燥再擦；不是所有 A 酸都必須等待同樣時間。"
+      },
+      {
+        "heading": "減少額外刺激。",
+        "text": "初期依指示調整頻率、搭配保濕，避免自行加用磨砂、去角質及其他酸類。"
+      },
+      {
+        "heading": "懷孕及備孕期間避免使用。",
+        "text": "若使用中發現懷孕，先停用並聯絡醫師；不要自行以 A 醇保養品替代治療。"
+      }
+    ],
+    "altText": "外用 A 酸怎麼擦？治療範圍、刺激處理與孕期提醒圖卡",
+    "image": "img/acne_topicals_02_retinoids.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_02_retinoids.html",
+    "references": [
+      {
+        "title": "DailyMed：Tretinoin cream prescribing information",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8929196c-389a-4c43-843c-00fbb26a1dd9"
+      },
+      {
+        "title": "NICE：Acne vulgaris management recommendations",
+        "url": "https://www.nice.org.uk/guidance/ng198/chapter/Recommendations"
+      }
+    ],
+    "sourceCheckedAt": "2026-10-02",
+    "updatedAt": "2026-10-02",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "matchConfidence": "high",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_topical_medicines",
+    "title": "杜鵑花酸怎麼擦？治痘、色素沉澱與刺激處理",
+    "summary": "這裡的色素沉澱指痘痘消退後留下的深色斑，不等於凹洞疤痕。",
+    "sections": [
+      {
+        "heading": "可用於青春痘，並改善部分痘後色素沉澱。",
+        "text": "這裡的色素沉澱指痘痘消退後留下的深色斑，不等於凹洞疤痕。"
+      },
+      {
+        "heading": "清潔、乾燥後薄擦。",
+        "text": "部分 20% 乳膏的用法為早晚使用，實際仍依藥袋及產品指示，不同產品不能一律套用。"
+      },
+      {
+        "heading": "初期可能刺、癢或灼熱。",
+        "text": "若不舒服，可詢問是否調整頻率，並搭配溫和保濕。"
+      },
+      {
+        "heading": "不要厚敷或擦在破皮處。",
+        "text": "多擦不會讓痘印更快消失，反而可能增加刺激。"
+      },
+      {
+        "heading": "持續灼熱或明顯紅腫時先停用並詢問。",
+        "text": "不要把嚴重刺激當作必須忍耐的適應過程。"
+      }
+    ],
+    "altText": "杜鵑花酸怎麼擦？治痘、色素沉澱與刺激處理圖卡",
+    "image": "img/acne_topicals_03_azelaic.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_03_azelaic.html",
+    "references": [
+      {
+        "title": "DailyMed：AZELEX azelaic acid cream prescribing information",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ebdfcaf7-b5d6-47e1-be87-ccaba4b97e75"
+      },
+      {
+        "title": "AAD：2024 acne management guidelines",
+        "url": "https://www.aad.org/news/updated-guidelines-acne-management"
+      }
+    ],
+    "sourceCheckedAt": "2026-10-02",
+    "updatedAt": "2026-10-02",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "matchConfidence": "high",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_topical_medicines",
+    "title": "BPO 怎麼用？劑型差異、刺激與漂白注意事項",
+    "summary": "可治療青春痘，與抗生素搭配有助降低抗藥性風險。",
+    "sections": [
+      {
+        "heading": "BPO 是過氧化苯甲醯，不是抗生素。",
+        "text": "可治療青春痘，與抗生素搭配有助降低抗藥性風險。"
+      },
+      {
+        "heading": "先分清留敷型與洗去型。",
+        "text": "留敷型依指示薄擦；洗去型依標示停留後沖洗，不自行延長時間。"
+      },
+      {
+        "heading": "不要追求高濃度或厚敷。",
+        "text": "初期若乾燥、脫屑，可詢問調整頻率並搭配保濕。"
+      },
+      {
+        "heading": "可能漂白毛髮與布料。",
+        "text": "使用後洗手，注意毛巾、衣領及枕套接觸。"
+      },
+      {
+        "heading": "明顯腫脹、水泡或大片搔癢時停用就醫。",
+        "text": "若合併喉嚨緊、呼吸困難或暈厥，立即求救。"
+      }
+    ],
+    "altText": "BPO 怎麼用？劑型差異、刺激與漂白注意事項圖卡",
+    "image": "img/acne_topicals_04_bpo.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_04_bpo.html",
+    "references": [
+      {
+        "title": "AAD：Acne diagnosis and treatment",
+        "url": "https://www.aad.org/public/diseases/acne/derm-treat/treat"
+      },
+      {
+        "title": "FDA：Acne product hypersensitivity review",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/214510Orig1s000OtherR.pdf"
+      }
+    ],
+    "sourceCheckedAt": "2026-10-02",
+    "updatedAt": "2026-10-02",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "matchConfidence": "high",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_antibiotics",
+    "title": "Clindamycin 痘痘藥怎麼擦？搭配治療與腹瀉警訊",
+    "summary": "依藥袋指示薄擦治療區，不當作一般保養品長期使用。",
+    "sections": [
+      {
+        "heading": "主要用於發炎型青春痘。",
+        "text": "依藥袋指示薄擦治療區，不當作一般保養品長期使用。"
+      },
+      {
+        "heading": "不建議單用外用抗生素治療青春痘。",
+        "text": "醫師通常會安排搭配治療，例如 BPO，以降低抗藥性風險；不要自行加藥。"
+      },
+      {
+        "heading": "按時評估療程。",
+        "text": "改善後是否停用抗生素或改成維持治療，由醫師決定，不把剩藥留著反覆自行使用。"
+      },
+      {
+        "heading": "外用也需留意腹瀉。",
+        "text": "若出現嚴重或持續腹瀉、血便，停用並就醫。"
+      },
+      {
+        "heading": "相關腸炎病史要先告知。",
+        "text": "曾有抗生素相關腸炎、潰瘍性結腸炎或克隆氏症，使用前請告知醫師。"
+      }
+    ],
+    "altText": "Clindamycin 痘痘藥怎麼擦？搭配治療與腹瀉警訊圖卡",
+    "image": "img/acne_topicals_05_clindamycin.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_05_clindamycin.html",
+    "references": [
+      {
+        "title": "AAD：2024 acne management guidelines",
+        "url": "https://www.aad.org/news/updated-guidelines-acne-management"
+      },
+      {
+        "title": "DailyMed：Clindamycin phosphate and tretinoin gel prescribing information",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0ed0215-ba60-45c6-8b1e-3d527cdce9ce"
+      }
+    ],
+    "sourceCheckedAt": "2026-10-02",
+    "updatedAt": "2026-10-02",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "matchConfidence": "high",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_antibiotics",
+    "title": "紅黴素痘痘藥怎麼擦？抗藥性與搭配注意事項",
+    "summary": "不因為同樣是紅腫痘，就自行沿用別人的藥。",
+    "sections": [
+      {
+        "heading": "紅黴素是抗生素，由醫師評估是否適合。",
+        "text": "不因為同樣是紅腫痘，就自行沿用別人的藥。"
+      },
+      {
+        "heading": "依指定劑型與頻率薄擦。",
+        "text": "不同產品用法可能不同，不自行增加次數或厚敷。"
+      },
+      {
+        "heading": "不建議單用外用抗生素。",
+        "text": "搭配 BPO 等治療及療程長度，應依處方安排。"
+      },
+      {
+        "heading": "不適可能與基劑有關。",
+        "text": "部分含酒精產品較乾、較刺，可詢問是否需要更換劑型。"
+      },
+      {
+        "heading": "不要自行疊加另一條抗生素。",
+        "text": "多擦一種不一定更有效，還可能增加刺激與不必要的抗生素使用。"
+      }
+    ],
+    "altText": "紅黴素痘痘藥怎麼擦？抗藥性與搭配注意事項圖卡",
+    "image": "img/acne_topicals_06_erythromycin.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_06_erythromycin.html",
+    "references": [
+      {
+        "title": "NICE：Acne vulgaris management recommendations",
+        "url": "https://www.nice.org.uk/guidance/ng198/chapter/Recommendations"
+      },
+      {
+        "title": "AAD：Acne diagnosis and treatment",
+        "url": "https://www.aad.org/public/diseases/acne/derm-treat/treat"
+      }
+    ],
+    "sourceCheckedAt": "2026-10-02",
+    "updatedAt": "2026-10-02",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "matchConfidence": "high",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_topical_medicines",
+    "title": "水楊酸怎麼用？粉刺照護與避免重複刷酸",
+    "summary": "不必因為有粉刺就同時加用多種酸類。",
+    "sections": [
+      {
+        "heading": "水楊酸可幫助改善毛孔堵塞與粉刺。",
+        "text": "不必因為有粉刺就同時加用多種酸類。"
+      },
+      {
+        "heading": "辨認洗去型與留敷型。",
+        "text": "使用部位、頻率與是否沖洗，依產品標示。"
+      },
+      {
+        "heading": "剛開始用 A 酸或 BPO，先不要自行加酸。",
+        "text": "多種刺激性成分一起用，可能更乾、更紅、更刺。"
+      },
+      {
+        "heading": "一起檢查保養品成分。",
+        "text": "洗面乳、化妝水與精華可能重複含水楊酸或其他去角質成分。"
+      },
+      {
+        "heading": "去疣、雞眼用產品不能拿來治臉部痘痘。",
+        "text": "這些產品的濃度及用途不同；破皮或已明顯刺激的部位也不宜自行使用。"
+      }
+    ],
+    "altText": "水楊酸怎麼用？粉刺照護與避免重複刷酸圖卡",
+    "image": "img/acne_topicals_08_salicylic.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_08_salicylic.html",
+    "references": [
+      {
+        "title": "AAD：Acne diagnosis and treatment",
+        "url": "https://www.aad.org/public/diseases/acne/derm-treat/treat"
+      },
+      {
+        "title": "FDA：Benzoyl peroxide acne products guidance",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/topical-acne-drug-products-over-counter-human-use-revision-labeling-and-classification-benzoyl"
+      }
+    ],
+    "sourceCheckedAt": "2026-10-02",
+    "updatedAt": "2026-10-02",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "matchConfidence": "high",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_antibiotics",
+    "title": "複方痘痘藥怎麼用？先查成分，避免重複用藥",
+    "summary": "先看藥袋及成分，不只記商品名稱。",
+    "sections": [
+      {
+        "heading": "一條複方可能已含兩種以上有效成分。",
+        "text": "先看藥袋及成分，不只記商品名稱。"
+      },
+      {
+        "heading": "不同複方有不同注意事項。",
+        "text": "Adapalene＋BPO 留意刺激；含 clindamycin 的複方，仍需評估抗生素療程。"
+      },
+      {
+        "heading": "不要再自行加擦相同成分。",
+        "text": "已含 A 酸、BPO 或抗生素時，額外加藥可能重複。"
+      },
+      {
+        "heading": "依整個產品的用法使用。",
+        "text": "不自行加倍，也不把固定複方想成必須拆成早晚兩種藥。"
+      },
+      {
+        "heading": "保存及開封期限依產品。",
+        "text": "不同複方可能有不同保存要求，領藥時確認。"
+      }
+    ],
+    "altText": "複方痘痘藥怎麼用？先查成分，避免重複用藥圖卡",
+    "image": "img/acne_topicals_09_combinations.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_09_combinations.html",
+    "references": [
+      {
+        "title": "NICE：Acne vulgaris management recommendations",
+        "url": "https://www.nice.org.uk/guidance/ng198/chapter/Recommendations"
+      },
+      {
+        "title": "DailyMed：Tretinoin and benzoyl peroxide combination cream",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=27208dff-e376-4c18-b56e-0a260f685a39"
+      }
+    ],
+    "sourceCheckedAt": "2026-10-02",
+    "updatedAt": "2026-10-02",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "matchConfidence": "high",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_application",
+    "title": "兩種痘痘藥能一起用嗎？搭配與分時使用原則",
+    "summary": "是否需要兩種藥、使用範圍與時段，先依處方確認。",
+    "sections": [
+      {
+        "heading": "搭配治療不等於自行混合。",
+        "text": "是否需要兩種藥、使用範圍與時段，先依處方確認。"
+      },
+      {
+        "heading": "外用抗生素常搭配 BPO。",
+        "text": "有助降低抗藥性風險，不代表可以自行添加另一條抗生素。"
+      },
+      {
+        "heading": "Adapalene 與 BPO 可以搭配。",
+        "text": "也有固定複方，但仍可能乾燥或刺激。"
+      },
+      {
+        "heading": "Tretinoin 與 BPO 要看製劑。",
+        "text": "傳統製劑常安排分時使用；特殊製劑或固定複方則依其仿單，不能一律判定不能合用。"
+      },
+      {
+        "heading": "多種酸類需注意刺激累加。",
+        "text": "杜鵑花酸、水楊酸或去角質產品是否加入，由醫療人員依膚況評估。"
+      },
+      {
+        "heading": "Dapsone 與 BPO 同時擦可能暫時變色。",
+        "text": "可使局部皮膚或毛髮呈黃橘色，使用時段先詢問醫師或藥師。"
+      }
+    ],
+    "altText": "兩種痘痘藥能一起用嗎？搭配與分時使用原則圖卡",
+    "image": "img/acne_topicals_10_pairing.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_10_pairing.html",
+    "references": [
+      {
+        "title": "AAD：2024 acne management guidelines",
+        "url": "https://www.aad.org/news/updated-guidelines-acne-management"
+      },
+      {
+        "title": "DailyMed：Tretinoin and benzoyl peroxide combination cream",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=27208dff-e376-4c18-b56e-0a260f685a39"
+      },
+      {
+        "title": "DailyMed：Dapsone gel prescribing information",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc495e54-8917-42de-a9fa-1f961bd99d61"
+      }
+    ],
+    "sourceCheckedAt": "2026-10-02",
+    "updatedAt": "2026-10-02",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "matchConfidence": "high",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_application",
+    "title": "痘痘藥、保濕與防曬怎麼排？早晚使用示例",
+    "summary": "藥品種類與使用頻率先依處方。",
+    "sections": [
+      {
+        "heading": "流程只示範已開立的藥，不是購物清單。",
+        "text": "藥品種類與使用頻率先依處方。"
+      },
+      {
+        "heading": "早上可依指示安排清潔、藥物、保濕及防曬。",
+        "text": "若用洗去型藥品，應依標示沖洗後再接續保養。"
+      },
+      {
+        "heading": "晚上清潔後，依產品要求讓皮膚乾燥再擦藥。",
+        "text": "A 酸或複方是否安排晚上，依個別產品。"
+      },
+      {
+        "heading": "容易乾燥者可詢問調整保濕順序。",
+        "text": "是否先保濕再擦藥，依耐受性與藥品決定；不要把藥自行混進乳液。"
+      },
+      {
+        "heading": "不是每一層都要等 20–30 分鐘。",
+        "text": "部分 tretinoin 的等待要求是為了洗後充分乾燥，不能推廣成所有產品的固定間隔。"
+      }
+    ],
+    "altText": "痘痘藥、保濕與防曬怎麼排？早晚使用示例圖卡",
+    "image": "img/acne_topicals_11_routine.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_11_routine.html",
+    "references": [
+      {
+        "title": "DailyMed：Tretinoin cream prescribing information",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8929196c-389a-4c43-843c-00fbb26a1dd9"
+      },
+      {
+        "title": "AAD：10 skin care habits that can worsen acne",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+      }
+    ],
+    "sourceCheckedAt": "2026-10-02",
+    "updatedAt": "2026-10-02",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "matchConfidence": "high",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_application",
+    "title": "擦痘痘藥紅、乾、刺怎麼辦？何時停用或就醫",
+    "summary": "加強溫和保濕，停止額外去角質，並詢問是否需調整刺激性藥物的頻率。",
+    "sections": [
+      {
+        "heading": "輕微乾燥、少量脫屑：先減少額外刺激。",
+        "text": "加強溫和保濕，停止額外去角質，並詢問是否需調整刺激性藥物的頻率。"
+      },
+      {
+        "heading": "持續灼熱、紅痛、裂開或滲液：暫停可疑產品並聯絡醫療人員。",
+        "text": "不要當成「排毒」或有效的證明。"
+      },
+      {
+        "heading": "臉唇腫脹、蕁麻疹：立即停用並就醫。",
+        "text": "若合併喉嚨緊、呼吸困難或暈厥，立即撥打 119。"
+      },
+      {
+        "heading": "治療通常需要數週。",
+        "text": "常在約 12 週評估效果，但不是不舒服也必須撐滿 12 週。"
+      },
+      {
+        "heading": "快速惡化、深層疼痛或開始留疤，提早回診。",
+        "text": "嚴重刺激不能直接視為正常「爆痘期」。"
+      }
+    ],
+    "altText": "擦痘痘藥紅、乾、刺怎麼辦？何時停用或就醫圖卡",
+    "image": "img/acne_topicals_12_irritation.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_12_irritation.html",
+    "references": [
+      {
+        "title": "NICE：Acne vulgaris management recommendations",
+        "url": "https://www.nice.org.uk/guidance/ng198/chapter/Recommendations"
+      },
+      {
+        "title": "FDA：Acne product hypersensitivity review",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/214510Orig1s000OtherR.pdf"
+      }
+    ],
+    "sourceCheckedAt": "2026-10-02",
+    "updatedAt": "2026-10-02",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "matchConfidence": "high",
+    "expandText": true
   }
 ]
