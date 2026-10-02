@@ -3512,5 +3512,91 @@
     "sourceType": "user_approved_text",
     "sourceConversationId": "6aba945f-1630-83e9-abb3-9ec984e3fa81",
     "needsMedicalReview": false
+  },
+  {
+    "cardId": "onitment_general",
+    "title": "藥膏一次擦多少？指尖單位 FTU 的用量與範圍",
+    "summary": "認識指尖單位（FTU）的估算方式與塗抹範圍，並依患部面積、年齡及藥品指示調整用量。",
+    "sections": [
+      {
+        "heading": "什麼是 1 FTU？",
+        "text": "指尖單位（FTU）是估算外用乳膏、軟膏用量的方法，常用於外用類固醇。使用約 5 mm 管口，沿成人食指掌側，從最靠近指尖的橫紋擠到指尖，約為 1 FTU。"
+      },
+      {
+        "heading": "1 FTU 可以擦多大範圍？",
+        "text": "成人 1 FTU 約為 0.5 公克，可薄薄塗抹約兩個成人手印的面積，手印包含手掌與手指。這是估算值，會受手指大小與管口影響。"
+      },
+      {
+        "heading": "依患部面積估算，不必整個部位都擦。",
+        "text": "依醫囑塗在需要治療的皮膚上；只有一小塊患部時，不需要使用整條手臂的參考用量。使用次數與療程依藥袋指示。"
+      },
+      {
+        "heading": "兒童與不同藥品不能直接套用成人用量。",
+        "text": "兒童需依年齡及治療範圍調整；眼藥膏、口內膏及有特殊用量指示的產品，不直接套用這套估算法。"
+      }
+    ],
+    "image": "img/oneFTU.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/oneFTU.html",
+    "references": [
+      {
+        "title": "Guy’s and St Thomas’ NHS Foundation Trust：Topical steroids",
+        "url": "https://www.guysandstthomas.nhs.uk/health-information/topical-steroids"
+      },
+      {
+        "title": "DermNet：Fingertip unit",
+        "url": "https://dermnetnz.org/topics/fingertip-unit"
+      }
+    ],
+    "sourceCheckedAt": "2026-10-02",
+    "updatedAt": "2026-10-02",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "expandText": true,
+    "matchConfidence": "high",
+    "altText": "藥膏擦多少?第 1 張圖卡"
+  },
+  {
+    "cardId": "onitment_general",
+    "title": "臉部、眼皮與鼠蹊部可以擦藥膏嗎？用藥注意事項",
+    "summary": "臉部、眼皮與皮膚皺摺處需選擇適合的藥膏；確認類固醇強度、療程及塗抹範圍，避免自行換部位使用或密封包覆。",
+    "sections": [
+      {
+        "heading": "這些部位可以治療，但要選對藥。",
+        "text": "臉部、眼皮、腋下、鼠蹊部與生殖器周圍，需依疾病與部位選擇合適藥品。不要把其他部位的藥膏自行拿來使用。"
+      },
+      {
+        "heading": "類固醇尤其要確認強度與療程。",
+        "text": "眼皮、生殖器及皮膚皺摺處，外用類固醇的吸收較高。應依醫囑選擇強度、用量與使用時間，不要自行加強或延長療程。"
+      },
+      {
+        "heading": "眼周與嘴唇先確認適用範圍。",
+        "text": "眼皮皮膚、眼睛內部、嘴唇與口腔黏膜的用藥不同。不要把一般皮膚藥膏塗進眼睛或口腔。"
+      },
+      {
+        "heading": "不要自行密封包覆。",
+        "text": "使用類固醇後，除非有醫療人員指示，不要再用保鮮膜或密封敷料包住患部，以免增加吸收。"
+      },
+      {
+        "heading": "出現持續不適時，請重新確認用藥。",
+        "text": "若使用後持續刺痛、紅腫加重或出現新疹，請聯絡醫師或藥師。不要自行增加用量，或加擦另一條藥膏。"
+      }
+    ],
+    "image": "img/thin_skin_part.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/thin_skin_part.html",
+    "references": [
+      {
+        "title": "DermNet：Topical steroid",
+        "url": "https://dermnetnz.org/topics/topical-steroid"
+      },
+      {
+        "title": "DermNet：Eyelid contact dermatitis",
+        "url": "https://dermnetnz.org/topics/eyelid-contact-dermatitis"
+      }
+    ],
+    "sourceCheckedAt": "2026-10-02",
+    "updatedAt": "2026-10-02",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "expandText": true,
+    "matchConfidence": "high",
+    "altText": "皮膚薄要注意第 2 張圖卡"
   }
 ]
