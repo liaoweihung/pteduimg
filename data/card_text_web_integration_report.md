@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：136
+- 成功加入文字頁數：133
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -27,9 +27,6 @@
 | over_one_oint | 兩種藥膏可以一起擦嗎？混擦、分區與使用順序 | https://liaoweihung.github.io/pteduimg/cards/over_one_oint_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | over_one_oint | 藥膏一起擦 | https://liaoweihung.github.io/pteduimg/cards/over_one_oint_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | over_one_oint | 藥膏一起擦 | https://liaoweihung.github.io/pteduimg/cards/over_one_oint_03.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| pediatric_cold_syrup | 希普利敏 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_cypromin.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| pediatric_cold_syrup | 勝克敏液兒童用量怎麼核對？成分、用途與副作用 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_cetirizine.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| pediatric_cold_syrup | 息咳寧糖漿：成分、兒童用量核對與副作用 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | motion_sickness_meds | 暈車藥錠劑比較與使用提醒 | https://liaoweihung.github.io/pteduimg/cards/motion_sickness_meds_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | motion_sickness_meds | 暈車藥糖漿與貼片使用方式 | https://liaoweihung.github.io/pteduimg/cards/motion_sickness_meds_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | sore_throat_otc | 喉嚨痛不一定是感冒 | https://liaoweihung.github.io/pteduimg/cards/sore_throat_causes.html | 是 | 是 | 是 | 是 | 是 | 無 |

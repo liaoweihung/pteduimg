@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202610040156';
+const CACHE_NAME = 'pwa-cache-v202610040211';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -690,9 +690,7 @@ const coreUrlsToCache = [
 // === 摰??挾 ===
 // Generated from imageUpdatedAt in data/card_content.json.
 const revisedImageUrls = [
-  "./img/over_one_oint_01.webp",
-  "./img/ped_cold_cetirizine.webp",
-  "./img/ped_cold_secorine.webp"
+  "./img/over_one_oint_01.webp"
 ];
 
 self.addEventListener('install', (e) => {
