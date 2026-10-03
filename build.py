@@ -318,6 +318,8 @@ def render_card_text_content(card_content, h1, category_label, step_number, tota
     if card_content.get("updatedAt") and card_content.get("revisionCredit"):
         editorial_parts = [f'內容更新：{clean_seo_text(card_content["updatedAt"])}']
         for field, label in (("author", "作者"), ("revisionCredit", "本次修訂"), ("reviewStatus", "審閱狀態")):
+            if card_content.get("showEditorialDetails") is False:
+                continue
             value = clean_seo_text(card_content.get(field))
             if value:
                 editorial_parts.append(f"{label}：{value}")
