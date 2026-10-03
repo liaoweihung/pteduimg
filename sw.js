@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202610021505';
+const CACHE_NAME = 'pwa-cache-v202610040114';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -221,6 +221,8 @@ const urlsToCache = [
   "./img/hemorr_sitbath_2.png",
   "./img/hives_s.webp",
   "./img/hk_foot.webp",
+  "./img/hydrocolloid_apply_steps.webp",
+  "./img/hydrocolloid_change_steps.webp",
   "./img/hydrocolloid_how_to_use.webp",
   "./img/ibuprofen_sol.webp",
   "./img/japan_otc_drug_classification.webp",
@@ -649,6 +651,8 @@ const urlsToCache = [
   "./cards/oint_choose.html",
   "./cards/artficial_vs_paraffin.html",
   "./cards/hydrocolloid_how_to_use.html",
+  "./cards/hydrocolloid_apply_steps.html",
+  "./cards/hydrocolloid_change_steps.html",
   "./cards/wound_cover.html",
   "./cards/wound_care.html",
   "./cards/prevent_scar.html",

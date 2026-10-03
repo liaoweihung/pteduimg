@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：110
+- 成功加入文字頁數：136
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -107,6 +107,8 @@
 | fall_wound | 這個傷口，可以自己照顧嗎？ | https://liaoweihung.github.io/pteduimg/cards/wound_when_to_seek_care.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | fall_wound | 受傷後，需要評估破傷風嗎？ | https://liaoweihung.github.io/pteduimg/cards/wound_tetanus.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | wound_dressings | 人工皮怎麼貼、何時換？ | https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_how_to_use.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| wound_dressings | 人工皮怎麼換？先慢慢取下 | https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_change_steps.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| wound_dressings | 人工皮怎麼貼？一步一步做 | https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_apply_steps.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | fall_wound | 傷口正在變好，還是需要就醫？ | https://liaoweihung.github.io/pteduimg/cards/wound_healing_signs.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | bruising_care | 瘀青藥膏，別靠用力揉開 | https://liaoweihung.github.io/pteduimg/cards/bruising_care_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | postoperative_wound | 縫合／術後傷口，回家怎麼照顧？ | https://liaoweihung.github.io/pteduimg/cards/postoperative_wound.html | 是 | 是 | 是 | 是 | 是 | 無 |
@@ -115,3 +117,27 @@
 | multi_lang | 咳嗽有痰的飲食提醒｜Diet tips for a cough with phlegm｜ข้อแนะนำด้านอาหารเมื่อไอมีเสมหะ｜Tips makan saat batuk berdahak｜Lưu ý ăn uống khi ho có đờm | https://liaoweihung.github.io/pteduimg/cards/lan_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | multi_lang | 食物過敏的飲食注意事項｜Food allergy: dietary precautions｜ข้อควรระวังเรื่องอาหารสำหรับผู้แพ้อาหาร｜Alergi makanan: hal yang perlu diperhatikan｜Dị ứng thực phẩm: lưu ý ăn uống | https://liaoweihung.github.io/pteduimg/cards/lan_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | multi_lang | 懷疑食物過敏怎麼辦？｜What to do if you suspect a food allergy｜ทำอย่างไรเมื่อสงสัยว่าแพ้อาหาร｜Apa yang harus dilakukan jika mencurigai alergi makanan?｜Cần làm gì khi nghi ngờ dị ứng thực phẩm? | https://liaoweihung.github.io/pteduimg/cards/lan_5.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| onitment_general | 藥膏一次擦多少？指尖單位 FTU 的用量與範圍 | https://liaoweihung.github.io/pteduimg/cards/oneFTU.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| onitment_general | 臉部、眼皮與鼠蹊部可以擦藥膏嗎？用藥注意事項 | https://liaoweihung.github.io/pteduimg/cards/thin_skin_part.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne | 粉刺很多怎麼辦？清潔、保養與清粉刺注意事項 | https://liaoweihung.github.io/pteduimg/cards/comedo.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_application | 痘痘藥怎麼擦？薄擦、逐步適應與保濕防曬 | https://liaoweihung.github.io/pteduimg/cards/acne_topicals_01_basics.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_topical_medicines | 外用 A 酸怎麼擦？治療範圍、刺激處理與孕期提醒 | https://liaoweihung.github.io/pteduimg/cards/acne_topicals_02_retinoids.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_topical_medicines | 杜鵑花酸怎麼擦？治痘、色素沉澱與刺激處理 | https://liaoweihung.github.io/pteduimg/cards/acne_topicals_03_azelaic.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_topical_medicines | BPO 怎麼用？劑型差異、刺激與漂白注意事項 | https://liaoweihung.github.io/pteduimg/cards/acne_topicals_04_bpo.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_antibiotics | Clindamycin 痘痘藥怎麼擦？搭配治療與腹瀉警訊 | https://liaoweihung.github.io/pteduimg/cards/acne_topicals_05_clindamycin.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_antibiotics | 紅黴素痘痘藥怎麼擦？抗藥性與搭配注意事項 | https://liaoweihung.github.io/pteduimg/cards/acne_topicals_06_erythromycin.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_topical_medicines | 水楊酸怎麼用？粉刺照護與避免重複刷酸 | https://liaoweihung.github.io/pteduimg/cards/acne_topicals_08_salicylic.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_antibiotics | 複方痘痘藥怎麼用？先查成分，避免重複用藥 | https://liaoweihung.github.io/pteduimg/cards/acne_topicals_09_combinations.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_application | 兩種痘痘藥能一起用嗎？搭配與分時使用原則 | https://liaoweihung.github.io/pteduimg/cards/acne_topicals_10_pairing.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_application | 痘痘藥、保濕與防曬怎麼排？早晚使用示例 | https://liaoweihung.github.io/pteduimg/cards/acne_topicals_11_routine.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_application | 擦痘痘藥紅、乾、刺怎麼辦？何時停用或就醫 | https://liaoweihung.github.io/pteduimg/cards/acne_topicals_12_irritation.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| artificial_tears | 眼睛為什麼會乾？ | https://liaoweihung.github.io/pteduimg/cards/artificial_tears_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| artificial_tears | 人工淚液有什麼差別？ | https://liaoweihung.github.io/pteduimg/cards/artificial_tears_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| artificial_tears | 人工淚液含防腐劑，可以用嗎？ | https://liaoweihung.github.io/pteduimg/cards/artificial_tears_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| artificial_tears | 人工淚液怎麼選？ | https://liaoweihung.github.io/pteduimg/cards/artificial_tears_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| artificial_tears | 眼睛癢，可以點抗過敏眼藥水嗎？ | https://liaoweihung.github.io/pteduimg/cards/otc_anti_allergy_eye_drops.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| artificial_tears | 退紅眼藥水，可以常點嗎？ | https://liaoweihung.github.io/pteduimg/cards/otc_redness_relief_eye_drops.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| artificial_tears | 紅眼、有分泌物，就要用抗生素眼藥水嗎？ | https://liaoweihung.github.io/pteduimg/cards/otc_antibiotic_eye_drops.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| artificial_tears | 眼睛疲勞，要點「營養型」眼藥水嗎？ | https://liaoweihung.github.io/pteduimg/cards/otc_eye_fatigue_drops.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| artificial_tears | 眼藥水越涼，越有效嗎？ | https://liaoweihung.github.io/pteduimg/cards/otc_cooling_eye_drops.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| artificial_tears | 色甘酸鈉眼藥水：規律使用，協助控制眼睛過敏 | https://liaoweihung.github.io/pteduimg/cards/chomolyn_cromolyn_eye_drops.html | 是 | 是 | 是 | 是 | 是 | 無 |

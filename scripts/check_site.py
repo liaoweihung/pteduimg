@@ -425,7 +425,7 @@ def check_wound_regrouping(cards: dict, manual: dict, failures: list[str]) -> No
     legacy = ['slipped_fall_wound', 'wound_oint', 'scar_remove', 'scar_remove_detail',
               'wound_4_soln', 'oint_choose', 'artficial_vs_paraffin', 'prevent_scar',
               'wound_care', 'wound_cover', 'bruise_be_gone', 'stretch_marks']
-    sizes = {'fall_wound': 6, 'wound_dressings': 5, 'scar_care': 3,
+    sizes = {'fall_wound': 6, 'wound_dressings': 7, 'scar_care': 3,
              'bruise_care': 1, 'stretch_marks_care': 1}
     expected = {f'img/{name}.webp': f'fall_wound-{i}' for i, name in enumerate(legacy)}
     actual = {}
@@ -455,7 +455,8 @@ def check_wound_regrouping(cards: dict, manual: dict, failures: list[str]) -> No
                 errors.append(image + ': stale share image')
     if any(actual.get(image) != favorite for image, favorite in expected.items()):
         errors.append('original fall_wound-0 through fall_wound-11 no longer map to original images')
-    if len(actual) != 16 or len(set(actual.values())) != 16:
+    expected_total = sum(sizes.values())
+    if len(actual) != expected_total or len(set(actual.values())) != expected_total:
         errors.append('wound images or favorite keys are duplicated')
     check(not errors, 'wound series preserve all 12 legacy favorites and synchronized WebP/text/SEO',
           f'wound regrouping errors: {errors}', failures)

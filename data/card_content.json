@@ -3182,6 +3182,114 @@
     ]
   },
   {
+    "cardId": "wound_dressings",
+    "title": "人工皮怎麼換？先慢慢取下",
+    "image": "img/hydrocolloid_change_steps.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_change_steps.html",
+    "summary": "人工皮白色膨起接近邊緣、滲漏、鬆脫或髒污時應更換。扶住周圍皮膚，慢慢取下；用生理食鹽水清洗殘留凝膠，觀察傷口後再決定是否貼新片。",
+    "sections": [
+      {
+        "heading": "1 先看是否需要更換",
+        "text": "白色膨起接近邊緣、滲漏、鬆脫或髒污時應更換；最長使用時間依產品說明。"
+      },
+      {
+        "heading": "2 洗手，掀起一小角",
+        "text": "一手輕壓旁邊的皮膚，另一手輕輕掀起人工皮邊角。"
+      },
+      {
+        "heading": "3 扶住皮膚，慢慢剝離",
+        "text": "一邊扶住皮膚，一邊慢慢取下，不要猛拉或硬撕。"
+      },
+      {
+        "heading": "4 沖洗殘留凝膠",
+        "text": "用生理食鹽水輕輕洗掉傷口與周圍的殘留物，不要用力刮除。"
+      },
+      {
+        "heading": "5 觀察後，再貼新片",
+        "text": "查看傷口有無惡化。若仍適合使用，拍乾周圍完整皮膚，再貼新的人工皮。"
+      },
+      {
+        "heading": "白色凝膠與就醫警訊",
+        "text": "吸收滲液後變白、形成凝膠是常見現象，不代表一定化膿，也不必一變白就撕掉。若紅腫擴大、疼痛加劇、流膿或發燒，應就醫，不要只換一片繼續貼。"
+      }
+    ],
+    "altText": "人工皮更換五步圖解：確認更換時機、洗手掀角、扶住皮膚剝離、生理食鹽水洗去凝膠、觀察後再貼新片。",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "updatedAt": "2026-10-03",
+    "revisionCredit": "AI 協助圖卡製作與資料整理",
+    "sourceCheckedAt": "2026-10-04",
+    "references": [
+      {
+        "title": "衛生福利部食品藥物管理署：聽說若有傷口或是其他皮膚問題，只要貼個人工皮就可以痊癒，這是真的嗎？（2020-06-09）",
+        "url": "https://www.fda.gov.tw/TC/newsContent.aspx?id=26140"
+      },
+      {
+        "title": "康威多愛膚：人工皮使用方式",
+        "url": "https://www.duoderm.com.tw/duoderm-use/"
+      }
+    ],
+    "expandText": true
+  },
+  {
+    "cardId": "wound_dressings",
+    "title": "人工皮怎麼貼？一步一步做",
+    "image": "img/hydrocolloid_apply_steps.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_apply_steps.html",
+    "summary": "適用於已止血、清潔乾淨，且經評估適合使用人工皮的表淺傷口。先洗手並以生理食鹽水沖洗傷口，拍乾周圍完整皮膚，再選尺寸、貼平邊緣。",
+    "sections": [
+      {
+        "heading": "1 洗手、備妥用品",
+        "text": "準備人工皮、生理食鹽水與乾淨紗布。"
+      },
+      {
+        "heading": "2 沖洗傷口",
+        "text": "以生理食鹽水輕輕沖掉髒污；異物若清不掉，先就醫處理。"
+      },
+      {
+        "heading": "3 拍乾周圍皮膚",
+        "text": "用紗布輕拍傷口周圍的完整皮膚，讓黏貼處乾爽；不要來回摩擦傷口。"
+      },
+      {
+        "heading": "4 選尺寸、依說明裁剪",
+        "text": "人工皮須超出傷口四周，常見約留 2～3 公分，依產品說明調整；只有可裁剪的款式才能剪。"
+      },
+      {
+        "heading": "5 撕背紙、對準傷口",
+        "text": "拿住邊緣，避免摸到接觸傷口的黏面。將傷口對準人工皮中央，輕輕貼上。"
+      },
+      {
+        "heading": "6 壓好四周",
+        "text": "輕壓黏貼邊緣，確認平整密合，不要拉緊人工皮再貼。除非醫護人員指示，不要自行在人工皮下加藥膏。"
+      },
+      {
+        "heading": "何時先求助",
+        "text": "深傷口、咬傷或疑似感染時，先就醫評估。"
+      }
+    ],
+    "altText": "人工皮貼法六步圖解：洗手備物、生理食鹽水沖洗、拍乾周圍、選尺寸、撕背紙貼上、壓好四周。",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "updatedAt": "2026-10-03",
+    "revisionCredit": "AI 協助圖卡製作與資料整理",
+    "sourceCheckedAt": "2026-10-04",
+    "references": [
+      {
+        "title": "衛生福利部食品藥物管理署：聽說若有傷口或是其他皮膚問題，只要貼個人工皮就可以痊癒，這是真的嗎？（2020-06-09）",
+        "url": "https://www.fda.gov.tw/TC/newsContent.aspx?id=26140"
+      },
+      {
+        "title": "康威多愛膚：人工皮使用方式",
+        "url": "https://www.duoderm.com.tw/duoderm-use/"
+      }
+    ],
+    "expandText": true
+  },
+  {
     "cardId": "fall_wound",
     "title": "傷口正在變好，還是需要就醫？",
     "image": "img/wound_healing_signs.webp",

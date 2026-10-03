@@ -4031,6 +4031,32 @@
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_how_to_use.html",
     "twitter_card": "summary_large_image"
   },
+  "cards/hydrocolloid_apply_steps.html": {
+    "page_title": "人工皮怎麼貼？一步一步做｜藥局衛教助手",
+    "meta_description": "適用於已止血、清潔乾淨，且經評估適合使用人工皮的表淺傷口。先洗手並以生理食鹽水沖洗傷口，拍乾周圍完整皮膚，再選尺寸、貼平邊緣。",
+    "h1": "人工皮怎麼貼？一步一步做",
+    "image_alt": "人工皮貼法六步圖解：洗手備物、生理食鹽水沖洗、拍乾周圍、選尺寸、撕背紙貼上、壓好四周。",
+    "keywords": "傷口、人工皮、水膠體、敷料、紗布、石蠟紗布、不沾黏敷料、泡棉、OK繃、換藥、包紮、滲液、人工皮變白",
+    "og_title": "人工皮怎麼貼？一步一步做｜藥局衛教助手",
+    "og_description": "適用於已止血、清潔乾淨，且經評估適合使用人工皮的表淺傷口。先洗手並以生理食鹽水沖洗傷口，拍乾周圍完整皮膚，再選尺寸、貼平邊緣。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/hydrocolloid_apply_steps.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_apply_steps.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_apply_steps.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/hydrocolloid_change_steps.html": {
+    "page_title": "人工皮怎麼換？先慢慢取下｜藥局衛教助手",
+    "meta_description": "人工皮白色膨起接近邊緣、滲漏、鬆脫或髒污時應更換。扶住周圍皮膚，慢慢取下；用生理食鹽水清洗殘留凝膠，觀察傷口後再決定是否貼新片。",
+    "h1": "人工皮怎麼換？先慢慢取下",
+    "image_alt": "人工皮更換五步圖解：確認更換時機、洗手掀角、扶住皮膚剝離、生理食鹽水洗去凝膠、觀察後再貼新片。",
+    "keywords": "傷口、人工皮、水膠體、敷料、紗布、石蠟紗布、不沾黏敷料、泡棉、OK繃、換藥、包紮、滲液、人工皮變白",
+    "og_title": "人工皮怎麼換？先慢慢取下｜藥局衛教助手",
+    "og_description": "人工皮白色膨起接近邊緣、滲漏、鬆脫或髒污時應更換。扶住周圍皮膚，慢慢取下；用生理食鹽水清洗殘留凝膠，觀察傷口後再決定是否貼新片。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/hydrocolloid_change_steps.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_change_steps.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_change_steps.html",
+    "twitter_card": "summary_large_image"
+  },
   "cards/wound_cover.html": {
     "page_title": "傷口覆蓋與固定｜藥局衛教助手",
     "meta_description": "完整覆蓋，避免摩擦，也不要包太緊",
