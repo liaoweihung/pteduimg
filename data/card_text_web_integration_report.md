@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：133
+- 成功加入文字頁數：143
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -138,3 +138,13 @@
 | artificial_tears | 眼睛疲勞，要點「營養型」眼藥水嗎？ | https://liaoweihung.github.io/pteduimg/cards/otc_eye_fatigue_drops.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | artificial_tears | 眼藥水越涼，越有效嗎？ | https://liaoweihung.github.io/pteduimg/cards/otc_cooling_eye_drops.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | artificial_tears | 色甘酸鈉眼藥水：規律使用，協助控制眼睛過敏 | https://liaoweihung.github.io/pteduimg/cards/chomolyn_cromolyn_eye_drops.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| adult_diaper_operation | 臥床換尿布①：取下與清潔｜步驟 1–2：備物與打開尿布 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_clean_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| adult_diaper_operation | 臥床換尿布①：取下與清潔｜步驟 3–4：取下髒尿布與清潔 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_clean_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| adult_diaper_operation | 臥床換尿布①：取下與清潔｜步驟 5–6：拍乾檢查皮膚與清潔雙手 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_clean_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| adult_diaper_operation | 臥床換尿布②：放正、貼好、防漏｜步驟 1–2：展開尿布與放好後半片 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_fit_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| adult_diaper_operation | 臥床換尿布②：放正、貼好、防漏｜步驟 3–4：翻回平躺與拉好前片 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_fit_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| adult_diaper_operation | 臥床換尿布②：放正、貼好、防漏｜步驟 5–6：固定黏貼帶與檢查防漏 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_fit_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| adult_diaper_operation | 臥床換尿布：六步驟總覽 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_bed_overview.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| adult_diaper_operation | 褲型成人尿褲｜步驟 1–3：穿上尿褲 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_pants_first.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| adult_diaper_operation | 褲型成人尿褲｜步驟 4–6：調整與更換 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_pants_last.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| adult_diaper_operation | 褲型成人尿褲：怎麼穿、怎麼脫？｜六步驟總覽 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_pants_overview.html | 是 | 是 | 是 | 是 | 是 | 無 |

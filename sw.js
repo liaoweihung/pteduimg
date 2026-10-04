@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202610040211';
+const CACHE_NAME = 'pwa-cache-v202610041233';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -125,6 +125,16 @@ const urlsToCache = [
   "./img/adult_diaper_2.webp",
   "./img/adult_diaper_3.webp",
   "./img/adult_diaper_4.webp",
+  "./img/adult_diaper_bed_overview.webp",
+  "./img/adult_diaper_clean_1.webp",
+  "./img/adult_diaper_clean_2.webp",
+  "./img/adult_diaper_clean_3.webp",
+  "./img/adult_diaper_fit_1.webp",
+  "./img/adult_diaper_fit_2.webp",
+  "./img/adult_diaper_fit_3.webp",
+  "./img/adult_diaper_pants_first.webp",
+  "./img/adult_diaper_pants_last.webp",
+  "./img/adult_diaper_pants_overview.webp",
   "./img/amorolfine.webp",
   "./img/angular_cheilitis_01.webp",
   "./img/angular_cheilitis_02.webp",
@@ -663,6 +673,16 @@ const urlsToCache = [
   "./cards/postoperative_wound.html",
   "./cards/diabetic_foot.html",
   "./cards/elderly_skin_tear.html",
+  "./cards/adult_diaper_clean_1.html",
+  "./cards/adult_diaper_clean_2.html",
+  "./cards/adult_diaper_clean_3.html",
+  "./cards/adult_diaper_fit_1.html",
+  "./cards/adult_diaper_fit_2.html",
+  "./cards/adult_diaper_fit_3.html",
+  "./cards/adult_diaper_bed_overview.html",
+  "./cards/adult_diaper_pants_first.html",
+  "./cards/adult_diaper_pants_last.html",
+  "./cards/adult_diaper_pants_overview.html",
   "./cards/acne.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare_2.html",

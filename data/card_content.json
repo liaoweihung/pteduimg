@@ -4578,5 +4578,441 @@
     "expandText": true,
     "matchConfidence": "high",
     "altText": "色甘酸鈉眼藥水：規律使用，協助控制眼睛過敏衛教圖卡"
+  },
+  {
+    "cardId": "adult_diaper_operation",
+    "image": "img/adult_diaper_clean_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/adult_diaper_clean_1.html",
+    "title": "臥床換尿布①：取下與清潔｜步驟 1–2：備物與打開尿布",
+    "summary": "由照護者協助更換黏貼型成人尿布。",
+    "sections": [
+      {
+        "heading": "1 備物、說明、遮蔽",
+        "text": "準備新尿布、看護墊、清潔用品、手套與垃圾袋。先告知要更換，關門或拉簾，注意保暖。"
+      },
+      {
+        "heading": "2 洗手、戴手套、打開尿布",
+        "text": "在臀部下方墊好看護墊，解開黏貼帶。若有糞便，先輕輕移除大部分髒污。"
+      },
+      {
+        "heading": "提醒",
+        "text": "翻身時留意管路，不要拉扯。若一人無法安全協助，請另一人幫忙。"
+      }
+    ],
+    "altText": "臥床換尿布①：取下與清潔｜步驟 1–2：備物與打開尿布",
+    "updatedAt": "2026-10-03",
+    "sourceCheckedAt": "2026-10-04",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "references": [
+      {
+        "title": "長庚醫療財團法人：更換尿布、尿套衛教手冊（2022）",
+        "url": "https://www1.cgmh.org.tw/intr/intr5/6370Z/health/6_diaper.pdf"
+      },
+      {
+        "title": "臺北榮總護理部：臥床病人會陰清潔之照護",
+        "url": "https://ihealth.vghtpe.gov.tw/media/1212"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
+  },
+  {
+    "cardId": "adult_diaper_operation",
+    "image": "img/adult_diaper_clean_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/adult_diaper_clean_2.html",
+    "title": "臥床換尿布①：取下與清潔｜步驟 3–4：取下髒尿布與清潔",
+    "summary": "由照護者協助更換黏貼型成人尿布。",
+    "sections": [
+      {
+        "heading": "3 協助側躺、取出髒尿布",
+        "text": "扶住肩背與髖部，協助側躺。將髒面往內捲，取出尿布；不要抓住腳踝硬抬臀部。"
+      },
+      {
+        "heading": "4 清潔前面，再清潔臀部",
+        "text": "使用溫水或合適的免沖洗潔膚用品。由前往後擦，擦過髒污就換乾淨面，不把糞便帶向尿道口。"
+      },
+      {
+        "heading": "提醒",
+        "text": "翻身時留意管路，不要拉扯。若一人無法安全協助，請另一人幫忙。"
+      }
+    ],
+    "altText": "臥床換尿布①：取下與清潔｜步驟 3–4：取下髒尿布與清潔",
+    "updatedAt": "2026-10-03",
+    "sourceCheckedAt": "2026-10-04",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "references": [
+      {
+        "title": "長庚醫療財團法人：更換尿布、尿套衛教手冊（2022）",
+        "url": "https://www1.cgmh.org.tw/intr/intr5/6370Z/health/6_diaper.pdf"
+      },
+      {
+        "title": "臺北榮總護理部：臥床病人會陰清潔之照護",
+        "url": "https://ihealth.vghtpe.gov.tw/media/1212"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
+  },
+  {
+    "cardId": "adult_diaper_operation",
+    "image": "img/adult_diaper_clean_3.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/adult_diaper_clean_3.html",
+    "title": "臥床換尿布①：取下與清潔｜步驟 5–6：拍乾檢查皮膚與清潔雙手",
+    "summary": "由照護者協助更換黏貼型成人尿布。",
+    "sections": [
+      {
+        "heading": "5 輕拍乾、檢查皮膚",
+        "text": "清潔皮膚皺摺並輕拍乾。查看鼠蹊部、臀部與尾骶部，有沒有紅、破、腫或疼痛。"
+      },
+      {
+        "heading": "6 清潔雙手，準備穿新片",
+        "text": "處理完髒污後，脫手套、洗手；需要時換新手套。可依產品說明薄擦皮膚保護霜。"
+      },
+      {
+        "heading": "提醒",
+        "text": "翻身時留意管路，不要拉扯。若一人無法安全協助，請另一人幫忙。"
+      }
+    ],
+    "altText": "臥床換尿布①：取下與清潔｜步驟 5–6：拍乾檢查皮膚與清潔雙手",
+    "updatedAt": "2026-10-03",
+    "sourceCheckedAt": "2026-10-04",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "references": [
+      {
+        "title": "長庚醫療財團法人：更換尿布、尿套衛教手冊（2022）",
+        "url": "https://www1.cgmh.org.tw/intr/intr5/6370Z/health/6_diaper.pdf"
+      },
+      {
+        "title": "臺北榮總護理部：臥床病人會陰清潔之照護",
+        "url": "https://ihealth.vghtpe.gov.tw/media/1212"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
+  },
+  {
+    "cardId": "adult_diaper_operation",
+    "image": "img/adult_diaper_fit_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/adult_diaper_fit_1.html",
+    "title": "臥床換尿布②：放正、貼好、防漏｜步驟 1–2：展開尿布與放好後半片",
+    "summary": "皮膚清潔乾爽後，穿上新尿布。",
+    "sections": [
+      {
+        "heading": "1 展開尿布、立起防漏邊",
+        "text": "依包裝辨認前後，輕輕展開，讓內側防漏邊立起。"
+      },
+      {
+        "heading": "2 側躺，放好後半片",
+        "text": "把尿布後半片鋪在臀部後方，中央對準臀溝；靠身體的一側先折入少許。"
+      },
+      {
+        "heading": "提醒",
+        "text": "有便便立即換；發現尿濕、髒污或滲漏時，儘快清潔更換。不要等到整片吸滿才處理。"
+      }
+    ],
+    "altText": "臥床換尿布②：放正、貼好、防漏｜步驟 1–2：展開尿布與放好後半片",
+    "updatedAt": "2026-10-03",
+    "sourceCheckedAt": "2026-10-04",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "references": [
+      {
+        "title": "來復易：防漏安心黏貼型紙尿褲使用方式",
+        "url": "https://www.lifree.com.tw/zh-tw/product/adult/Open_PE.html"
+      },
+      {
+        "title": "長庚醫療財團法人：更換尿布、尿套衛教手冊（2022）",
+        "url": "https://www1.cgmh.org.tw/intr/intr5/6370Z/health/6_diaper.pdf"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
+  },
+  {
+    "cardId": "adult_diaper_operation",
+    "image": "img/adult_diaper_fit_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/adult_diaper_fit_2.html",
+    "title": "臥床換尿布②：放正、貼好、防漏｜步驟 3–4：翻回平躺與拉好前片",
+    "summary": "皮膚清潔乾爽後，穿上新尿布。",
+    "sections": [
+      {
+        "heading": "3 翻回平躺、攤平另一側",
+        "text": "協助翻回平躺，必要時再稍微轉向另一側，拉出折入的部分，整理平整。"
+      },
+      {
+        "heading": "4 前片穿過兩腿",
+        "text": "將前片從兩腿間帶到腹部，調整到中央，讓吸收區貼近胯下。"
+      },
+      {
+        "heading": "提醒",
+        "text": "有便便立即換；發現尿濕、髒污或滲漏時，儘快清潔更換。不要等到整片吸滿才處理。"
+      }
+    ],
+    "altText": "臥床換尿布②：放正、貼好、防漏｜步驟 3–4：翻回平躺與拉好前片",
+    "updatedAt": "2026-10-03",
+    "sourceCheckedAt": "2026-10-04",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "references": [
+      {
+        "title": "來復易：防漏安心黏貼型紙尿褲使用方式",
+        "url": "https://www.lifree.com.tw/zh-tw/product/adult/Open_PE.html"
+      },
+      {
+        "title": "長庚醫療財團法人：更換尿布、尿套衛教手冊（2022）",
+        "url": "https://www1.cgmh.org.tw/intr/intr5/6370Z/health/6_diaper.pdf"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
+  },
+  {
+    "cardId": "adult_diaper_operation",
+    "image": "img/adult_diaper_fit_3.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/adult_diaper_fit_3.html",
+    "title": "臥床換尿布②：放正、貼好、防漏｜步驟 5–6：固定黏貼帶與檢查防漏",
+    "summary": "皮膚清潔乾爽後，穿上新尿布。",
+    "sections": [
+      {
+        "heading": "5 左右固定黏貼帶",
+        "text": "依包裝指示固定，調整腰部與腿部鬆緊。腰部不勒，腿根不留明顯空隙。"
+      },
+      {
+        "heading": "6 檢查防漏邊與舒適度",
+        "text": "防漏邊不可壓折，尿布不可扭轉或捲成一團。詢問是否太緊、不舒服，最後收拾、脫手套並洗手。"
+      },
+      {
+        "heading": "提醒",
+        "text": "有便便立即換；發現尿濕、髒污或滲漏時，儘快清潔更換。不要等到整片吸滿才處理。"
+      }
+    ],
+    "altText": "臥床換尿布②：放正、貼好、防漏｜步驟 5–6：固定黏貼帶與檢查防漏",
+    "updatedAt": "2026-10-03",
+    "sourceCheckedAt": "2026-10-04",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "references": [
+      {
+        "title": "來復易：防漏安心黏貼型紙尿褲使用方式",
+        "url": "https://www.lifree.com.tw/zh-tw/product/adult/Open_PE.html"
+      },
+      {
+        "title": "長庚醫療財團法人：更換尿布、尿套衛教手冊（2022）",
+        "url": "https://www1.cgmh.org.tw/intr/intr5/6370Z/health/6_diaper.pdf"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
+  },
+  {
+    "cardId": "adult_diaper_operation",
+    "image": "img/adult_diaper_bed_overview.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/adult_diaper_bed_overview.html",
+    "title": "臥床換尿布：六步驟總覽",
+    "summary": "由照護者協助更換黏貼型成人尿布。",
+    "sections": [
+      {
+        "heading": "1｜備物、遮蔽，洗手戴手套",
+        "text": "準備新尿布、看護墊、清潔用品與垃圾袋。先告知要更換，關門或拉簾，注意保暖。"
+      },
+      {
+        "heading": "2｜打開尿布，側躺取下",
+        "text": "臀部下方墊好看護墊，解開黏貼帶。若有糞便，先輕輕移除大部分髒污；協助側躺，將髒面朝內捲起取出。"
+      },
+      {
+        "heading": "3｜清潔、拍乾，檢查皮膚",
+        "text": "由前往後清潔，擦過髒污就換乾淨面。輕拍乾皮膚與皺摺，查看有沒有紅、破、腫或疼痛。"
+      },
+      {
+        "heading": "4｜清潔雙手，放好新尿布",
+        "text": "處理完髒污後，脫手套、洗手，需要時換新手套。展開新尿布、立起防漏邊；協助側躺，將後半片放在臀部後方，中央對準臀溝。"
+      },
+      {
+        "heading": "5｜翻回平躺，拉好前片",
+        "text": "協助翻回平躺，攤平兩側。將前片從兩腿間帶到腹部，調整到中央，讓吸收區貼近胯下。"
+      },
+      {
+        "heading": "6｜固定、檢查，收拾洗手",
+        "text": "依包裝指示固定黏貼帶，腰部不勒、腿根不留明顯空隙，防漏邊不壓折。確認舒適後，收拾用物、脫手套並洗手。"
+      },
+      {
+        "heading": "提醒",
+        "text": "有便便立即換；發現尿濕、髒污或滲漏時，儘快清潔更換。 翻身時留意管路，不要拉扯；不要抓住腳踝硬抬臀部。 若一人無法安全協助，請另一人幫忙。"
+      }
+    ],
+    "altText": "臥床換尿布：六步驟總覽",
+    "updatedAt": "2026-10-04",
+    "sourceCheckedAt": "2026-10-04",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "references": [
+      {
+        "title": "長庚醫療財團法人：更換尿布、尿套衛教手冊（2022）",
+        "url": "https://www1.cgmh.org.tw/intr/intr5/6370Z/health/6_diaper.pdf"
+      },
+      {
+        "title": "臺北榮總護理部：臥床病人會陰清潔之照護",
+        "url": "https://ihealth.vghtpe.gov.tw/media/1212"
+      },
+      {
+        "title": "來復易：防漏安心黏貼型紙尿褲使用方式",
+        "url": "https://www.lifree.com.tw/zh-tw/product/adult/Open_PE.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
+  },
+  {
+    "cardId": "adult_diaper_operation",
+    "image": "img/adult_diaper_pants_first.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/adult_diaper_pants_first.html",
+    "title": "褲型成人尿褲｜步驟 1–3：穿上尿褲",
+    "summary": "能自行穿脫，或可在協助下安全坐、站的人。",
+    "sections": [
+      {
+        "heading": "1 看前後、展開腰圍",
+        "text": "依包裝標示辨認前後，展開尿褲，整理內側防漏邊。"
+      },
+      {
+        "heading": "2 坐穩，再穿入雙腳",
+        "text": "坐在穩固的椅子或馬桶座上，一腳一腳穿入，先拉到膝蓋附近。"
+      },
+      {
+        "heading": "3 扶穩，再往上拉",
+        "text": "能安全站立者，扶穩扶手後站起，將尿褲拉到腰部。站不穩時，請照護者協助。"
+      },
+      {
+        "heading": "提醒",
+        "text": "不要單腳站著穿尿褲。尿褲與濕紙巾都不可丟入馬桶。"
+      },
+      {
+        "heading": "動作示意",
+        "text": "穿脫動作示意；實際使用時尿褲貼身穿著。"
+      }
+    ],
+    "altText": "褲型成人尿褲｜步驟 1–3：穿上尿褲",
+    "updatedAt": "2026-10-03",
+    "sourceCheckedAt": "2026-10-04",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "references": [
+      {
+        "title": "來復易：防漏安心復健褲使用方式與更換方法",
+        "url": "https://www.lifree.com.tw/zh-tw/product/adult/Leo_IIRehabili_pants.html"
+      },
+      {
+        "title": "臺北榮總護理部：臥床病人會陰清潔之照護",
+        "url": "https://ihealth.vghtpe.gov.tw/media/1212"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
+  },
+  {
+    "cardId": "adult_diaper_operation",
+    "image": "img/adult_diaper_pants_last.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/adult_diaper_pants_last.html",
+    "title": "褲型成人尿褲｜步驟 4–6：調整與更換",
+    "summary": "能自行穿脫，或可在協助下安全坐、站的人。",
+    "sections": [
+      {
+        "heading": "4 整理臀部與腿根",
+        "text": "確認臀部完整包覆、胯下貼合、防漏邊沒有壓折，腰部不勒。"
+      },
+      {
+        "heading": "5 更換時，依情況脫下",
+        "text": "可以像內褲一樣往下脫；有便便時，可依產品設計撕開兩側接縫，避免髒污拖過雙腿。"
+      },
+      {
+        "heading": "6 清潔、拍乾，再穿新片",
+        "text": "清潔皮膚後輕拍乾，再穿新的尿褲。用過的尿褲髒面朝內包好，丟垃圾桶，最後洗手。"
+      },
+      {
+        "heading": "提醒",
+        "text": "不要單腳站著穿尿褲。尿褲與濕紙巾都不可丟入馬桶。"
+      },
+      {
+        "heading": "動作示意",
+        "text": "穿脫動作示意；實際使用時尿褲貼身穿著。"
+      }
+    ],
+    "altText": "褲型成人尿褲｜步驟 4–6：調整與更換",
+    "updatedAt": "2026-10-03",
+    "sourceCheckedAt": "2026-10-04",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "references": [
+      {
+        "title": "來復易：防漏安心復健褲使用方式與更換方法",
+        "url": "https://www.lifree.com.tw/zh-tw/product/adult/Leo_IIRehabili_pants.html"
+      },
+      {
+        "title": "臺北榮總護理部：臥床病人會陰清潔之照護",
+        "url": "https://ihealth.vghtpe.gov.tw/media/1212"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
+  },
+  {
+    "cardId": "adult_diaper_operation",
+    "image": "img/adult_diaper_pants_overview.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/adult_diaper_pants_overview.html",
+    "title": "褲型成人尿褲：怎麼穿、怎麼脫？｜六步驟總覽",
+    "summary": "能自行穿脫，或可在協助下安全坐、站的人。",
+    "sections": [
+      {
+        "heading": "1 看前後、展開腰圍",
+        "text": "依包裝標示辨認前後，展開尿褲，整理內側防漏邊。"
+      },
+      {
+        "heading": "2 坐穩，再穿入雙腳",
+        "text": "坐在穩固的椅子或馬桶座上，一腳一腳穿入，先拉到膝蓋附近。"
+      },
+      {
+        "heading": "3 扶穩，再往上拉",
+        "text": "能安全站立者，扶穩扶手後站起，將尿褲拉到腰部。站不穩時，請照護者協助。"
+      },
+      {
+        "heading": "4 整理臀部與腿根",
+        "text": "確認臀部完整包覆、胯下貼合、防漏邊沒有壓折，腰部不勒。"
+      },
+      {
+        "heading": "5 更換時，依情況脫下",
+        "text": "可以像內褲一樣往下脫；有便便時，可依產品設計撕開兩側接縫，避免髒污拖過雙腿。"
+      },
+      {
+        "heading": "6 清潔、拍乾，再穿新片",
+        "text": "清潔皮膚後輕拍乾，再穿新的尿褲。用過的尿褲髒面朝內包好，丟垃圾桶，最後洗手。"
+      },
+      {
+        "heading": "提醒",
+        "text": "不要單腳站著穿尿褲。尿褲與濕紙巾都不可丟入馬桶。"
+      },
+      {
+        "heading": "動作示意",
+        "text": "穿脫動作示意；實際使用時尿褲貼身穿著。"
+      }
+    ],
+    "altText": "褲型成人尿褲：怎麼穿、怎麼脫？｜六步驟總覽",
+    "updatedAt": "2026-10-03",
+    "sourceCheckedAt": "2026-10-04",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "references": [
+      {
+        "title": "來復易：防漏安心復健褲使用方式與更換方法",
+        "url": "https://www.lifree.com.tw/zh-tw/product/adult/Leo_IIRehabili_pants.html"
+      },
+      {
+        "title": "臺北榮總護理部：臥床病人會陰清潔之照護",
+        "url": "https://ihealth.vghtpe.gov.tw/media/1212"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
   }
 ]

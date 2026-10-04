@@ -2713,5 +2713,58 @@
       "wound_dressings",
       "fall_wound"
     ]
+  },
+  "adult_diaper_operation": {
+    "title": "成人尿布操作圖卡",
+    "category": "public_education",
+    "topics": [
+      "elimination_care"
+    ],
+    "order": 29.1,
+    "hidden": false,
+    "icon": "🧻",
+    "tags": [
+      "成人紙尿布",
+      "活力褲",
+      "復健褲",
+      "濕紙巾",
+      "看護墊"
+    ],
+    "texts": [
+      "臥床換尿布①：取下與清潔｜步驟 1–2：備物與打開尿布",
+      "臥床換尿布①：取下與清潔｜步驟 3–4：取下髒尿布與清潔",
+      "臥床換尿布①：取下與清潔｜步驟 5–6：拍乾檢查皮膚與清潔雙手",
+      "臥床換尿布②：放正、貼好、防漏｜步驟 1–2：展開尿布與放好後半片",
+      "臥床換尿布②：放正、貼好、防漏｜步驟 3–4：翻回平躺與拉好前片",
+      "臥床換尿布②：放正、貼好、防漏｜步驟 5–6：固定黏貼帶與檢查防漏",
+      "臥床換尿布：六步驟總覽",
+      "褲型成人尿褲｜步驟 1–3：穿上尿褲",
+      "褲型成人尿褲｜步驟 4–6：調整與更換",
+      "褲型成人尿褲：怎麼穿、怎麼脫？｜六步驟總覽"
+    ],
+    "steps": [
+      "img/adult_diaper_clean_1.webp",
+      "img/adult_diaper_clean_2.webp",
+      "img/adult_diaper_clean_3.webp",
+      "img/adult_diaper_fit_1.webp",
+      "img/adult_diaper_fit_2.webp",
+      "img/adult_diaper_fit_3.webp",
+      "img/adult_diaper_bed_overview.webp",
+      "img/adult_diaper_pants_first.webp",
+      "img/adult_diaper_pants_last.webp",
+      "img/adult_diaper_pants_overview.webp"
+    ],
+    "favorite_keys": [
+      "adult_diaper_clean_1-0",
+      "adult_diaper_clean_2-0",
+      "adult_diaper_clean_3-0",
+      "adult_diaper_fit_1-0",
+      "adult_diaper_fit_2-0",
+      "adult_diaper_fit_3-0",
+      "adult_diaper_bed_overview-0",
+      "adult_diaper_pants_first-0",
+      "adult_diaper_pants_last-0",
+      "adult_diaper_pants_overview-0"
+    ]
   }
 }
