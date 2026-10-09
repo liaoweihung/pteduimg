@@ -5,6 +5,8 @@ import json
 import re
 import sys
 from pathlib import Path
+from acne_pilot import check_pilot
+from site_footer import sync_footer
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -477,6 +479,14 @@ def main() -> int:
     check_medicine_shell(failures)
     check_medicine_data_regression(failures)
     check_tcm_formula_explorer(failures)
+    pilot_errors = check_pilot(ROOT)
+    for page in ['index.html', 'public.html',
+                 'cards/acne_stage.html', 'cards/acne_topicals_02_retinoids.html',
+                 'cards/acne_patch_when_to_use.html', 'cards/acne_patch_broken_skin.html']:
+        check(sync_footer(ROOT, page=page), f"{page} footer matches shared source",
+              f"{page} footer differs from templates/site-footer.html", failures)
+    check(not pilot_errors, "acne pilot layout, navigation data and hub links",
+          "\n".join(pilot_errors), failures)
 
     if failures:
         print("\nSite check failed:")
