@@ -373,6 +373,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     pilot_navigation = render_navigation(pilot) if pilot else ""
     pilot_footer_start = '      <footer class="acne-pilot-footer">\n' if pilot else ""
     pilot_footer_end = '\n      </footer>\n' + render_footer(ROOT, page_path) if pilot else ""
+    shared_footer = '\n' + render_footer(ROOT, page_path) if card.get("showFooter") and not pilot else ""
     prev_step = steps[step_index - 1] if total > 1 else step
     next_step = steps[(step_index + 1) % total] if total > 1 else step
     prev_url = f"../{page_for_image(prev_step)}"
@@ -895,7 +896,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
       <ol class="related-list" aria-label="同系列圖卡">
         {related_cards}
       </ol>{series_links}{pilot_footer_end}
-    </section>
+    </section>{shared_footer}
     <div class="qr-modal" id="qr-modal" hidden>
       <div class="qr-box" role="dialog" aria-modal="true" aria-label="圖卡 QR code">
         <div class="qr-title">請患者掃描開啟這張圖卡</div>
@@ -1102,6 +1103,8 @@ def generate_card_pages(cards, seo_index, card_content_index, only_image_ids=Non
                                         pilot=pilot_pages.get(image_id))
             if image_id in pilot_pages:
                 page_html = page_html.replace("  </style>", ACNE_PILOT_STYLES + footer_styles(ROOT) + "\n  </style>", 1)
+            elif card.get("showFooter"):
+                page_html = page_html.replace("  </style>", footer_styles(ROOT) + "\n  </style>", 1)
             (ROOT / page_path).write_text(
                 page_html,
                 encoding="utf-8",

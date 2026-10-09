@@ -1,10 +1,16 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：143
+- 成功加入文字頁數：149
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| nasal_rinse | 如何使用洗鼻器？洗鼻用途與四步驟 | https://liaoweihung.github.io/pteduimg/cards/nasal_rinse_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| nasal_rinse | 洗鼻液怎麼準備？安全水源與洗鼻鹽調配 | https://liaoweihung.github.io/pteduimg/cards/nasal_rinse_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| nasal_rinse | 洗鼻器正確操作：姿勢、嘴巴呼吸與氣孔控制 | https://liaoweihung.github.io/pteduimg/cards/nasal_rinse_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| nasal_rinse | 洗鼻後如何排水？輕輕擤鼻與殘留液處理 | https://liaoweihung.github.io/pteduimg/cards/nasal_rinse_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| nasal_rinse | 洗鼻器怎麼清潔？拆洗、晾乾與收納 | https://liaoweihung.github.io/pteduimg/cards/nasal_rinse_5.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| nasal_rinse | 洗鼻注意事項：哪些情況應停止或先詢問醫師？ | https://liaoweihung.github.io/pteduimg/cards/nasal_rinse_6.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | Ped_abx_susp | 小兒抗生素水劑一般泡製方式 | https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | Ped_abx_susp | 用冷開水，不能用熱水 | https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | Ped_abx_susp | 搖晃均勻方法 | https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_3.html | 是 | 是 | 是 | 是 | 是 | 無 |

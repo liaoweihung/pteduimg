@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202610090205';
+const CACHE_NAME = 'pwa-cache-v202610091041';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -258,6 +258,12 @@ const urlsToCache = [
   "./img/nasal_3.png",
   "./img/nasal_4.png",
   "./img/nasal_5.png",
+  "./img/nasal_rinse_1.webp",
+  "./img/nasal_rinse_2.webp",
+  "./img/nasal_rinse_3.webp",
+  "./img/nasal_rinse_4.webp",
+  "./img/nasal_rinse_5.webp",
+  "./img/nasal_rinse_6.webp",
   "./img/notice_ped_fever_reducer.webp",
   "./img/oint_choose.webp",
   "./img/oneFTU.webp",
@@ -367,6 +373,12 @@ const urlsToCache = [
   "./img/yunnan_baiyao.webp",
   "./img/zheng_gu_shui.webp",
   "./img/zi_yun_gao.webp",
+  "./cards/nasal_rinse_1.html",
+  "./cards/nasal_rinse_2.html",
+  "./cards/nasal_rinse_3.html",
+  "./cards/nasal_rinse_4.html",
+  "./cards/nasal_rinse_5.html",
+  "./cards/nasal_rinse_6.html",
   "./cards/height_prediction.html",
   "./cards/boy_height2.html",
   "./cards/girl_height2.html",

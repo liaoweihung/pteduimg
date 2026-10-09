@@ -1,5 +1,301 @@
 [
   {
+    "cardId": "nasal_rinse",
+    "image": "img/nasal_rinse_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/nasal_rinse_1.html",
+    "title": "如何使用洗鼻器？洗鼻用途與四步驟",
+    "summary": "洗鼻器可協助清除黏稠鼻涕、灰塵與部分過敏原。本系列以氣孔控制式洗鼻器示範，依序說明洗鼻液準備、鼻腔沖洗、排水與器具清潔。",
+    "sections": [
+      {
+        "heading": "洗鼻能幫助什麼？",
+        "text": "鼻腔沖洗是輔助清潔，可帶走黏液與部分過敏原，舒緩鼻塞等鼻部不適。過敏性鼻炎、鼻涕黏稠或慢性鼻竇炎患者，可依醫師建議使用；不能取代原有治療。"
+      },
+      {
+        "heading": "先記住四個流程",
+        "text": "準備安全水源與洗鼻鹽，調配洗鼻液；以正確姿勢沖洗兩側鼻腔；讓殘留液流出並輕擤鼻；最後清洗器具、充分晾乾。"
+      },
+      {
+        "heading": "本系列示範的器型",
+        "text": "圖示為舉高瓶身、用氣孔或氣閥控制出水的重力式洗鼻器。不同型號的握法、配水量與清潔方式仍以產品說明書為準，不需用力擠壓瓶身。"
+      },
+      {
+        "heading": "一天可以洗鼻幾次？",
+        "text": "沒有人人適用的固定次數。常見使用頻率為每天一次或早晚各一次，應配合症狀、耐受程度與醫師指示。術後照護或需要更頻繁沖洗時，先詢問醫師；持續鼻塞或不適不應只靠增加次數處理。"
+      }
+    ],
+    "altText": "男性卡通人物介紹洗鼻用途，以及準備、沖洗、排水、清潔四個流程。",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "references": [
+      {
+        "title": "美國 FDA：Is Rinsing Your Sinuses With Neti Pots Safe?",
+        "url": "https://www.fda.gov/consumers/consumer-updates/rinsing-your-sinuses-neti-pots-safe"
+      },
+      {
+        "title": "海沛舒：洗鼻常見問題 FAQ（頻率、殘留液與器材清潔）",
+        "url": "https://www.hypersoo.com/pages/nasal-rinse-faq"
+      },
+      {
+        "title": "海沛舒：洗鼻器全攻略（氣閥開關與重力出水操作）",
+        "url": "https://www.hypersoo.com/pages/nasal09"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": false
+  },
+  {
+    "cardId": "nasal_rinse",
+    "image": "img/nasal_rinse_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/nasal_rinse_2.html",
+    "title": "洗鼻液怎麼準備？安全水源與洗鼻鹽調配",
+    "summary": "洗鼻前洗淨雙手，選用蒸餾水、無菌水或煮沸放涼的水，依洗鼻鹽標示配水並充分溶解；不可直接用自來水或只用清水沖洗。",
+    "sections": [
+      {
+        "heading": "先洗手、確認器具乾淨",
+        "text": "洗淨並擦乾雙手，確認洗鼻器與配件清潔、乾燥且完整，再準備當次使用的洗鼻液。"
+      },
+      {
+        "heading": "安全水源怎麼選？",
+        "text": "使用標示為蒸餾水或無菌水的水，或將自來水煮至持續沸騰一分鐘後放涼；海拔約二千公尺以上需沸騰三分鐘。未用完的煮沸水應裝在清潔、消毒過且有蓋的容器。"
+      },
+      {
+        "heading": "溫度與洗鼻鹽比例",
+        "text": "圖卡示意水溫約 30～35°C，重點是溫和舒適、不燙；實際溫度及配水量依產品說明。將專用洗鼻鹽依指定比例加入並充分溶解，常用等張洗鼻液的鹽濃度約為 0.9%，不要自行加濃。"
+      },
+      {
+        "heading": "可以直接用自來水或一般瓶裝飲用水嗎？",
+        "text": "不可把「可以喝」當作「可以直接洗鼻」。未煮沸的自來水，以及未標示蒸餾或無菌的一般瓶裝水、家用濾水，不能直接視為安全洗鼻用水。"
+      },
+      {
+        "heading": "可以只用清水，或自行抓食鹽調配嗎？",
+        "text": "單用清水較易造成刺激。選用專用洗鼻鹽並照包裝比例調配較容易控制濃度；不要憑感覺抓食鹽或任意更動水量。"
+      }
+    ],
+    "altText": "洗手、安全水源、洗鼻鹽比例及充分溶解示意，並提醒不可直接用自來水或只用清水洗鼻。",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "references": [
+      {
+        "title": "美國 CDC：How to Safely Rinse Sinuses（2025-07-16）",
+        "url": "https://www.cdc.gov/naegleria/prevention/sinus-rinsing.html"
+      },
+      {
+        "title": "美國 FDA：Is Rinsing Your Sinuses With Neti Pots Safe?",
+        "url": "https://www.fda.gov/consumers/consumer-updates/rinsing-your-sinuses-neti-pots-safe"
+      },
+      {
+        "title": "海沛舒：洗鼻正確5步驟教學（姿勢、排水與清潔）",
+        "url": "https://www.hypersoo.com/pages/classroom2"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": false
+  },
+  {
+    "cardId": "nasal_rinse",
+    "image": "img/nasal_rinse_3.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/nasal_rinse_3.html",
+    "title": "洗鼻器正確操作：姿勢、嘴巴呼吸與氣孔控制",
+    "summary": "使用氣孔控制式洗鼻器時，身體前傾、頭稍側傾，張嘴呼吸；舉高瓶身並控制氣孔，讓洗鼻液緩緩通過鼻腔，再換側沖洗。",
+    "sections": [
+      {
+        "heading": "姿勢與呼吸",
+        "text": "站在洗手台前，身體向前彎、頭稍微側傾，出水口輕貼較高側鼻孔。嘴巴張開、全程用嘴呼吸，不要仰頭、憋氣或用鼻子吸入洗鼻液。"
+      },
+      {
+        "heading": "用氣孔控制出水",
+        "text": "舉高瓶身，另一隻手依產品設計操作氣孔或氣閥，利用重力讓液體緩緩流入。氣孔開放時可出水，封閉時可控制或停止水流；實際按鈕操作仍依各型號說明，不要用力擠壓。"
+      },
+      {
+        "heading": "兩側輪流沖洗",
+        "text": "洗鼻液通常由另一側鼻孔流出。完成一側後先停止出水，再換另一側並重複相同步驟，保持溫和水流。"
+      },
+      {
+        "heading": "水沒有從另一側流出怎麼辦？",
+        "text": "先停止出水，檢查氣孔與頭部角度，再依產品說明調整。鼻腔腫脹或阻塞也會影響水流，不要增加壓力強行沖過去；完全阻塞時先不要自行洗鼻。"
+      },
+      {
+        "heading": "水跑到嘴巴裡怎麼辦？",
+        "text": "鼻腔後方與咽喉相通，少量液體可能流入口中，可吐掉並調整前傾、側頭角度；保持嘴巴呼吸。若嗆咳或明顯不適，先停止沖洗。"
+      }
+    ],
+    "altText": "最新版男性卡通圖卡：舉高重力式洗鼻器，另一手控制氣孔，前傾側頭並張嘴呼吸；不是擠壓瓶式操作。",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "references": [
+      {
+        "title": "美國 FDA：Is Rinsing Your Sinuses With Neti Pots Safe?",
+        "url": "https://www.fda.gov/consumers/consumer-updates/rinsing-your-sinuses-neti-pots-safe"
+      },
+      {
+        "title": "海沛舒：洗鼻器全攻略（氣閥開關與重力出水操作）",
+        "url": "https://www.hypersoo.com/pages/nasal09"
+      },
+      {
+        "title": "海沛舒：洗鼻正確5步驟教學（姿勢、排水與清潔）",
+        "url": "https://www.hypersoo.com/pages/classroom2"
+      },
+      {
+        "title": "DailyMed：CVS Allergy Relief Netipot 標示（2025-02；鼻腔完全阻塞、耳部感染與清潔警語）",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a782735a-862b-7173-e053-2995a90ad85d"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": false
+  },
+  {
+    "cardId": "nasal_rinse",
+    "image": "img/nasal_rinse_4.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/nasal_rinse_4.html",
+    "title": "洗鼻後如何排水？輕輕擤鼻與殘留液處理",
+    "summary": "洗鼻後稍微前傾，讓殘留液自然流出，再輕輕擤鼻。避免用力擤鼻或捏住兩側鼻孔吹氣；持續耳痛、耳悶或聽力不適應停止並就醫。",
+    "sections": [
+      {
+        "heading": "讓殘留液自然排出",
+        "text": "沖洗結束後稍微前傾，可緩慢低頭、左右轉頭，讓鼻腔內殘留液流出，再用衛生紙輕輕擤鼻，兩側輪流處理。"
+      },
+      {
+        "heading": "不要用力擤鼻",
+        "text": "避免大力擤鼻，也不要同時捏住兩側鼻孔用力吹氣，以免增加壓力與耳部不適。先讓殘留液排出並稍作休息，不急著躺下。"
+      },
+      {
+        "heading": "為什麼過一陣子又流出水？",
+        "text": "洗鼻後短時間流出少量液體，常是殘留的洗鼻液隨低頭或轉頭排出。可以稍微前傾並輕擤，不要為了排乾而用力吹氣。持續大量流水或合併其他不適時，請就醫評估。"
+      },
+      {
+        "heading": "耳朵悶塞怎麼辦？",
+        "text": "先停止洗鼻，不要加大水流或用力擤鼻。若耳痛、耳悶、聽力異常持續，應就醫評估後再決定是否繼續使用。"
+      }
+    ],
+    "altText": "洗鼻後前傾、輕擤鼻及低頭轉頭排出殘留液，並提醒避免強力吹氣和立即躺下。",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "references": [
+      {
+        "title": "海沛舒：洗鼻正確5步驟教學（姿勢、排水與清潔）",
+        "url": "https://www.hypersoo.com/pages/classroom2"
+      },
+      {
+        "title": "海沛舒：洗鼻常見問題 FAQ（頻率、殘留液與器材清潔）",
+        "url": "https://www.hypersoo.com/pages/nasal-rinse-faq"
+      },
+      {
+        "title": "DailyMed：CVS Allergy Relief Netipot 標示（2025-02；鼻腔完全阻塞、耳部感染與清潔警語）",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a782735a-862b-7173-e053-2995a90ad85d"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": false
+  },
+  {
+    "cardId": "nasal_rinse",
+    "image": "img/nasal_rinse_5.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/nasal_rinse_5.html",
+    "title": "洗鼻器怎麼清潔？拆洗、晾乾與收納",
+    "summary": "每次洗鼻後倒掉剩餘洗鼻液，依說明拆開瓶身與配件，清洗後充分晾乾再收納。洗鼻器應個人專用，消毒方式須符合產品說明。",
+    "sections": [
+      {
+        "heading": "倒掉剩液、拆開清洗",
+        "text": "每次使用後倒掉剩餘洗鼻液，依產品說明拆下瓶身、管路與鼻接頭，清洗各零件；可使用的清潔劑、刷具及消毒方式依原廠指示。"
+      },
+      {
+        "heading": "沖淨並充分晾乾",
+        "text": "沖淨鹽分與清潔劑；最後沖洗可使用蒸餾水、無菌水或煮沸放涼的水。將零件分開，放在乾淨通風處，待內外完全乾燥再組裝、收納。"
+      },
+      {
+        "heading": "避免潮濕與不當高溫處理",
+        "text": "不要讓剩液長時間留在瓶內，也不要用潮濕毛巾包住器具。未經產品允許，不使用洗碗機、烘碗機、蒸氣或其他高溫方式處理。"
+      },
+      {
+        "heading": "可以和家人共用嗎？",
+        "text": "不建議。洗鼻器是個人衛生用品，不與他人共用。器具若有損壞、難以清除的污垢或無法正常出水，依產品說明處理或更換。"
+      }
+    ],
+    "altText": "倒掉洗鼻剩液、拆洗瓶身與零件、分開晾乾再收納，以及個人專用與避免不當高溫清潔提醒。",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "references": [
+      {
+        "title": "美國 FDA：Is Rinsing Your Sinuses With Neti Pots Safe?",
+        "url": "https://www.fda.gov/consumers/consumer-updates/rinsing-your-sinuses-neti-pots-safe"
+      },
+      {
+        "title": "海沛舒：洗鼻常見問題 FAQ（頻率、殘留液與器材清潔）",
+        "url": "https://www.hypersoo.com/pages/nasal-rinse-faq"
+      },
+      {
+        "title": "DailyMed：CVS Allergy Relief Netipot 標示（2025-02；鼻腔完全阻塞、耳部感染與清潔警語）",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a782735a-862b-7173-e053-2995a90ad85d"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": false
+  },
+  {
+    "cardId": "nasal_rinse",
+    "image": "img/nasal_rinse_6.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/nasal_rinse_6.html",
+    "title": "洗鼻注意事項：哪些情況應停止或先詢問醫師？",
+    "summary": "洗鼻需安全用水、適當濃度與溫和水流。完全鼻塞、流鼻血或耳部感染時不要自行沖洗；術後、免疫功能低下與幼童先詢問醫師。",
+    "sections": [
+      {
+        "heading": "正確洗鼻的基本原則",
+        "text": "使用安全水源與依比例調好的洗鼻液，溫度舒適不燙，前傾側頭、張嘴呼吸，讓水流溫和通過。洗後輕擤鼻，器具每次清潔並完全晾乾。"
+      },
+      {
+        "heading": "哪些情況先不要自行洗鼻？",
+        "text": "鼻腔完全阻塞、正在流鼻血、有明顯耳痛、耳部感染或耳壓不適時，先停止並詢問醫師。近期鼻腔、鼻竇或耳部手術者，依手術醫師指示決定何時與如何洗鼻；免疫功能低下者也應先諮詢。"
+      },
+      {
+        "heading": "兒童使用注意",
+        "text": "先確認產品適用年齡並諮詢醫師；兒童須能配合姿勢及嘴巴呼吸，由成人協助或監督。幼童無法配合時不要強迫沖洗。"
+      },
+      {
+        "heading": "哪些症狀需要停止並就醫？",
+        "text": "明顯疼痛、持續流鼻血，或洗後持續耳痛、耳悶、聽力異常，應停止使用並接受評估。洗鼻後若出現頭痛、發燒、嘔吐或意識混亂，應立即就醫，不要等症狀加劇。"
+      },
+      {
+        "heading": "不是洗越多、越用力越好",
+        "text": "頻率及用量依症狀、產品說明與醫師建議。若症狀未改善或加重，不要只靠增加沖洗次數、水壓或鹽濃度。"
+      }
+    ],
+    "altText": "洗鼻安全原則、完全鼻塞與耳部不適等暫停情況、兒童監督，以及洗後異常症狀的就醫警示。",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "AI 協助資料整理與文字修訂",
+    "references": [
+      {
+        "title": "美國 CDC：How to Safely Rinse Sinuses（2025-07-16）",
+        "url": "https://www.cdc.gov/naegleria/prevention/sinus-rinsing.html"
+      },
+      {
+        "title": "美國 FDA：Is Rinsing Your Sinuses With Neti Pots Safe?",
+        "url": "https://www.fda.gov/consumers/consumer-updates/rinsing-your-sinuses-neti-pots-safe"
+      },
+      {
+        "title": "海沛舒：洗鼻常見問題 FAQ（頻率、殘留液與器材清潔）",
+        "url": "https://www.hypersoo.com/pages/nasal-rinse-faq"
+      },
+      {
+        "title": "DailyMed：CVS Allergy Relief Netipot 標示（2025-02；鼻腔完全阻塞、耳部感染與清潔警語）",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a782735a-862b-7173-e053-2995a90ad85d"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": false
+  },
+  {
     "cardId": "Ped_abx_susp",
     "title": "小兒抗生素水劑一般泡製方式",
     "summary": "輕彈瓶身：泡製前先將粉末彈鬆，避免結塊附著在瓶底。",

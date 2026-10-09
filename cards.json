@@ -1,4 +1,61 @@
 {
+  "nasal_rinse": {
+    "title": "如何使用洗鼻器",
+    "category": "pharmacist_general",
+    "departments": [
+      "ent",
+      "pharmacy_general"
+    ],
+    "order": 82,
+    "hidden": false,
+    "icon": "💧",
+    "showFooter": true,
+    "tags": [
+      "洗鼻器",
+      "洗鼻",
+      "洗鼻教學",
+      "鼻腔沖洗",
+      "鼻腔清潔",
+      "過敏性鼻炎",
+      "鼻過敏",
+      "鼻竇炎",
+      "鼻塞",
+      "鼻涕倒流",
+      "洗鼻液",
+      "洗鼻鹽",
+      "生理食鹽水",
+      "蒸餾水",
+      "無菌水",
+      "煮沸水",
+      "重力式洗鼻器",
+      "連通管洗鼻器",
+      "氣孔",
+      "氣閥",
+      "洗鼻姿勢",
+      "洗鼻後流水",
+      "洗鼻器清潔",
+      "洗鼻注意事項",
+      "兒童洗鼻",
+      "nasal irrigation",
+      "nasal rinse"
+    ],
+    "texts": [
+      "如何使用洗鼻器？洗鼻用途與四步驟",
+      "洗鼻液怎麼準備？安全水源與洗鼻鹽調配",
+      "洗鼻器正確操作：姿勢、嘴巴呼吸與氣孔控制",
+      "洗鼻後如何排水？輕輕擤鼻與殘留液處理",
+      "洗鼻器怎麼清潔？拆洗、晾乾與收納",
+      "洗鼻注意事項：哪些情況應停止或先詢問醫師？"
+    ],
+    "steps": [
+      "img/nasal_rinse_1.webp",
+      "img/nasal_rinse_2.webp",
+      "img/nasal_rinse_3.webp",
+      "img/nasal_rinse_4.webp",
+      "img/nasal_rinse_5.webp",
+      "img/nasal_rinse_6.webp"
+    ]
+  },
   "child_height_weight": {
     "title": "小孩身高體重",
     "category": "public_education",
