@@ -8,6 +8,10 @@ from pathlib import Path
 from urllib.parse import quote
 
 from scripts.card_archive import read_retired_cards, write_retired_pages
+from scripts.acne_pilot import load_navigation, render_navigation, STYLES as ACNE_PILOT_STYLES
+from scripts.site_footer import render_footer, footer_styles, sync_footer
+from scripts.site_header import HEADER_STYLES, render_header
+from scripts.acne_pilot import is_acne_topic, render_topic_return, TOP_NAV_STYLES
 
 
 BASE_URL = "https://liaoweihung.github.io/pteduimg/"
@@ -338,7 +342,10 @@ def render_card_text_content(card_content, h1, category_label, step_number, tota
       </article>"""
 
 
-def render_card_page(card_id, card, step, step_index, seo, card_content=None, series_links="", series_seo=None):
+def render_card_page(card_id, card, step, step_index, seo, card_content=None, series_links="", series_seo=None, pilot=None):
+    # Opt-in only: preserve every other series' output and the medical source record.
+    if pilot and card_content:
+        card_content = {**card_content, "expandText": False}
     steps = card.get("steps") or []
     total = len(steps)
     step_number = step_index + 1
@@ -352,11 +359,20 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     h1 = clean_seo_text(seo.get("display_title") or (card_content or {}).get("title") or card.get("title") or seo["h1"])
     image_alt = seo["image_alt"]
     page_path = page_for_image(step)
+    acne_topic = is_acne_topic(card_id, card)
+    top_actions_class = "top-actions acne-topic-actions" if acne_topic else "top-actions"
+    return_navigation = (render_topic_return(page_path) if acne_topic else
+                         '<button class="pill" type="button" onclick="returnToCardHome()">返回首頁</button>')
+    topic_nav_styles = TOP_NAV_STYLES if acne_topic else ""
+    header_html = render_header(return_navigation, '      <div class="action-cluster">\n        <button class="pill icon-pill" type="button" onclick="showQRCode()" aria-label="顯示 QR code">🔲</button>\n        <button class="pill icon-pill" id="favorite-button" type="button" onclick="toggleFavorite()" aria-pressed="false" aria-label="加入收藏">☆</button>\n        <button class="pill icon-pill" type="button" onclick="showSharePanel()" aria-label="分享圖卡">↗</button>\n      </div>', top_actions_class)
     page_url = seo["canonical"]
     image_url = seo["og_image"]
     json_ld = render_json_ld(seo, h1, card_content)
     links = share_links(page_url, title)
     related_cards = render_related_cards(steps, step, series_seo or {})
+    pilot_navigation = render_navigation(pilot) if pilot else ""
+    pilot_footer_start = '      <footer class="acne-pilot-footer">\n' if pilot else ""
+    pilot_footer_end = '\n      </footer>\n' + render_footer(ROOT, page_path) if pilot else ""
     prev_step = steps[step_index - 1] if total > 1 else step
     next_step = steps[(step_index + 1) % total] if total > 1 else step
     prev_url = f"../{page_for_image(prev_step)}"
@@ -671,61 +687,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     }}
     .image-side-link.prev {{ left:0; }}
     .image-side-link.next {{ right:0; }}
-    .top-actions {{
-      position:sticky;
-      top:0;
-      z-index:10;
-      display:flex;
-      min-height:48px;
-      justify-content:space-between;
-      align-items:center;
-      gap:8px;
-      padding:7px 8px;
-      background:rgba(255,255,255,.72);
-      border-bottom:1px solid rgba(229,231,235,.55);
-      backdrop-filter:blur(8px);
-    }}
-    .action-cluster {{
-      display:flex;
-      gap:6px;
-      overflow-x:auto;
-    }}
-    .pill {{
-      pointer-events:auto;
-      display:inline-flex;
-      align-items:center;
-      min-height:34px;
-      border:1px solid rgba(255,255,255,.42);
-      border-radius:8px;
-      background:rgba(255,255,255,.48);
-      color:rgba(38,50,56,.76);
-      text-decoration:none;
-      font-size:.9rem;
-      font-weight:700;
-      padding:6px 10px;
-      box-shadow:0 1px 5px rgba(15,23,42,.06);
-      cursor:pointer;
-      white-space:nowrap;
-    }}
-    .pill:hover,
-    .pill:focus-visible {{
-      background:rgba(255,255,255,.82);
-      color:var(--ink);
-    }}
-    .pill.active {{
-      background:rgba(0,123,131,.62);
-      border-color:rgba(0,123,131,.2);
-      color:#fff;
-    }}
-    .icon-pill {{
-      justify-content:center;
-      width:34px;
-      min-width:34px;
-      padding:0;
-      font-size:1.15rem;
-      line-height:1;
-    }}
-    .page-nav {{
+{HEADER_STYLES}    .page-nav {{
       min-height:56px;
       padding:8px 12px 12px;
       display:flex;
@@ -912,18 +874,11 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
       .page-arrow {{ width:46px; height:46px; }}
       .info {{ padding:14px 16px 36px; }}
     }}
-  </style>
+{topic_nav_styles}  </style>
 </head>
 <body>
   <main>
-    <div class="top-actions">
-      <button class="pill" type="button" onclick="returnToCardHome()">返回首頁</button>
-      <div class="action-cluster">
-        <button class="pill icon-pill" type="button" onclick="showQRCode()" aria-label="顯示 QR code">🔲</button>
-        <button class="pill icon-pill" id="favorite-button" type="button" onclick="toggleFavorite()" aria-pressed="false" aria-label="加入收藏">☆</button>
-        <button class="pill icon-pill" type="button" onclick="showSharePanel()" aria-label="分享圖卡">↗</button>
-      </div>
-    </div>
+{header_html}
     <section class="image-stage" aria-label="{esc(title)}">
       <a class="image-side-link prev" href="{esc(prev_url)}" aria-label="上一張"></a>
       <img class="hero-img" src="../{esc(step)}" alt="{esc(image_alt)}" decoding="async" fetchpriority="high">
@@ -936,10 +891,10 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     </nav>
     <section class="info">
 {info_heading}
-      <div class="section-title">同系列圖卡</div>
+{pilot_navigation}{pilot_footer_start}      <div class="section-title">同系列圖卡</div>
       <ol class="related-list" aria-label="同系列圖卡">
         {related_cards}
-      </ol>{series_links}
+      </ol>{series_links}{pilot_footer_end}
     </section>
     <div class="qr-modal" id="qr-modal" hidden>
       <div class="qr-box" role="dialog" aria-modal="true" aria-label="圖卡 QR code">
@@ -1112,6 +1067,7 @@ def render_all_cards_page(cards, seo_index):
 
 
 def generate_card_pages(cards, seo_index, card_content_index, only_image_ids=None):
+    pilot_pages = load_navigation(ROOT)
     CARDS_DIR.mkdir(exist_ok=True)
     if only_image_ids is None:
         for old_page in CARDS_DIR.glob("*.html"):
@@ -1141,8 +1097,13 @@ def generate_card_pages(cards, seo_index, card_content_index, only_image_ids=Non
             page_path = page_for_image(step)
             seo = seo_index.get(page_path) or fallback_seo_for_card(card_id, card, step, index)
             card_content = card_content_index.get(step.replace("\\", "/"))
+            page_html = render_card_page(card_id, card, step, index, seo, card_content,
+                                        render_series_links(card, cards), seo_index,
+                                        pilot=pilot_pages.get(image_id))
+            if image_id in pilot_pages:
+                page_html = page_html.replace("  </style>", ACNE_PILOT_STYLES + footer_styles(ROOT) + "\n  </style>", 1)
             (ROOT / page_path).write_text(
-                render_card_page(card_id, card, step, index, seo, card_content, render_series_links(card, cards), seo_index),
+                page_html,
                 encoding="utf-8",
                 newline="\n",
             )
@@ -1459,6 +1420,8 @@ def main(argv=None):
             parser.error("unknown or unavailable image IDs: " + ", ".join(missing_ids))
         print(f"Generated {len(generated_pages)} selected static card pages.")
         return
+    for homepage in ('index.html', 'public.html'):
+        sync_footer(ROOT, write=True, page=homepage)
     write_retired_pages(ROOT, retired, BASE_URL)
     (ROOT / "all-cards.html").write_text(render_all_cards_page(cards, seo_index), encoding="utf-8", newline="\n")
     text_success, text_failures = build_card_text_integration_report(card_content_index)

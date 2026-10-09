@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "page_id": "acne_stage",
+      "next_questions": [
+        {"label": "粉刺很多怎麼處理？", "target": "cards/comedo.html"},
+        {"label": "輕度發炎痘平常怎麼照顧？", "target": "cards/acne_dailycare.html"},
+        {"label": "這顆適合貼痘痘貼嗎？", "target": "cards/acne_patch_when_to_use.html"}
+      ],
+      "topic_hub": "topics/acne.html"
+    },
+    {
+      "page_id": "acne_topicals_02_retinoids",
+      "next_questions": [
+        {"label": "擦 A 酸紅、乾、刺怎麼辦？", "target": "cards/acne_topicals_12_irritation.html"},
+        {"label": "痘痘藥、保濕和防曬怎麼排？", "target": "cards/acne_topicals_11_routine.html"},
+        {"label": "可以和其他痘痘藥一起用嗎？", "target": "cards/acne_topicals_10_pairing.html"}
+      ],
+      "topic_hub": "topics/acne.html"
+    },
+    {
+      "page_id": "acne_patch_when_to_use",
+      "next_questions": [
+        {"label": "痘痘貼怎麼正確使用？", "target": "cards/acne_patch_how_to_use.html"},
+        {"label": "痘痘已經破了怎麼處理？", "target": "cards/acne_patch_broken_skin.html"},
+        {"label": "粉刺很多怎麼處理？", "target": "cards/comedo.html"}
+      ],
+      "topic_hub": "topics/acne.html"
+    },
+    {
+      "page_id": "acne_patch_broken_skin",
+      "next_questions": [
+        {"label": "痘痘破掉後怎麼清潔？", "target": "cards/wound_4_soln.html"},
+        {"label": "越來越紅、痛，是不是需要就醫？", "target": "cards/wound_healing_signs.html"},
+        {"label": "癒合後留下的是痘印還是痘疤？", "target": "cards/scar_remove_detail.html"}
+      ],
+      "topic_hub": "topics/acne.html"
+    }
+  ]
+}

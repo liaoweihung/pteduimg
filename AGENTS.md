@@ -288,3 +288,15 @@ Uploading an image to `img/` is not enough. A card appears on the site only afte
 ```text
 image exists -> cards.json references it -> python build.py has been run -> changes are committed/pushed
 ```
+
+## Acne Topic Pilot
+
+青春痘 Pilot 的版型規格以 `docs/acne-pilot-spec.md` 為準。
+修改青春痘 Pilot 頁面或相關生成程式前，先閱讀該規格。
+
+未經使用者明確要求，不要自行改變以下基本順序：
+
+圖卡 → 上一張／下一張 → 文字版重點 → 你可能想知道 → 查看青春痘完整主題 → 頁尾
+
+如果任務只是修改內容、連結、樣式或修 bug，不要順便重構這個版型。
+若未來使用者明確要求改版，可以正常修改規格，不需要把目前 v1.0 視為不可變動。
