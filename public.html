@@ -316,8 +316,17 @@
     <p id="result-count" role="status" aria-live="polite"></p>
     <button type="button" id="clear-filters" onclick="clearPublicFilters()" hidden>清除篩選</button>
 </div>
-<p id="ranking-note" class="search-hint">依台灣近一年關鍵字搜尋熱度排序 · 2026/09 更新</p>
+<p id="ranking-note" class="search-hint">依台灣近一年關鍵字搜尋熱度排序；青春痘相關系列列於最後 · 2026/09 更新</p>
 <div id="home-loading" class="home-loading" role="status" aria-live="polite">正在載入圖卡...</div>
+<section id="acne-hub-entry" class="acne-hub-entry" aria-label="青春痘完整主題" hidden>
+    <article class="series-card">
+        <a class="series-link" href="./topics/acne.html">
+            <img class="acne-hub-thumb" src="./img/topics/acne-identify.webp" width="56" height="56" alt="" loading="lazy">
+            <span><strong>青春痘</strong><small>查看完整主題與相關圖卡</small></span>
+            <span class="series-arrow" aria-hidden="true">›</span>
+        </a>
+    </article>
+</section>
 <div id="category-sections"></div>
 <button id="show-more" class="show-more" type="button" onclick="showMoreCards()" hidden>顯示更多主題</button>
 <section class="featured-section" aria-labelledby="featured-title">
@@ -684,6 +693,10 @@
         });
 
         return ordered.concat([...byKey.values()]);
+    }
+
+    function isAcneRelatedSeries(entry) {
+        return entry.key === 'rosacea_care' || (Array.isArray(entry.item.topics) && entry.item.topics.includes('acne'));
     }
 
     function mainPointerDown(event) {
@@ -1073,10 +1086,10 @@
     }
 
     function showMoreCards() {
-        const previousCount = document.querySelectorAll('.series-card').length;
+        const previousCount = document.querySelectorAll('#category-sections .series-card').length;
         visibleSeriesLimit += 12;
         renderHome();
-        document.querySelectorAll('.series-link')[previousCount]?.focus();
+        document.querySelectorAll('#category-sections .series-link')[previousCount]?.focus();
     }
 
     function escapeCardText(value) {
@@ -1105,6 +1118,7 @@
         });
 
         document.getElementById('ranking-note').hidden = !!cardSearchTerm;
+        document.getElementById('acne-hub-entry').hidden = !!cardSearchTerm || !['all', 'acne'].includes(activePublicTopic);
         const total = Object.values(categories).reduce((count, items) => count + items.length, 0);
         document.getElementById('result-count').textContent = `${getActivePublicTopicTitle()} · ${total} 個系列${cardSearchTerm ? '符合搜尋' : ''}`;
         document.getElementById('topic-filter-title').textContent = `依主題瀏覽：${getActivePublicTopicTitle()}`;
@@ -1112,15 +1126,15 @@
         document.querySelector('.featured-section').hidden = !!cardSearchTerm || activePublicTopic !== 'all';
         document.getElementById('show-more').hidden = total <= visibleSeriesLimit;
         document.getElementById('show-more').textContent = `顯示更多（還有 ${Math.max(0, total - visibleSeriesLimit)} 個系列）`;
-        let shown = 0;
-        Object.keys(categories)
+        const orderedItems = Object.keys(categories)
             .sort((a, b) => (categoryMeta[a]?.order || 99) - (categoryMeta[b]?.order || 99))
-            .forEach(cat => {
+            .flatMap(cat => {
                 const ordered = getOrderedCategoryItems(cat, categories[cat]);
                 if (cardSearchTerm) ordered.sort((a, b) => Number(b.item.title.toLocaleLowerCase().includes(cardSearchTerm)) - Number(a.item.title.toLocaleLowerCase().includes(cardSearchTerm)));
-                const items = ordered.slice(0, Math.max(0, visibleSeriesLimit - shown));
-                shown += items.length;
-                sectionRoot.innerHTML += items.map(({ key, item }) => {
+                return ordered;
+            })
+            .sort((a, b) => Number(isAcneRelatedSeries(a)) - Number(isAcneRelatedSeries(b)));
+        sectionRoot.innerHTML = orderedItems.slice(0, visibleSeriesLimit).map(({ key, item }) => {
                     const steps = item.steps || [];
                     const matchingLinks = cardSearchTerm ? steps.map((step, index) => ({step, index, title: getStepTitle(item, index)})).filter(entry => cardSearchTerm.split(/\s+/).every(term => entry.title.toLocaleLowerCase().includes(term))).slice(0, 3).map(entry => `<a href="${getCardPagePath(entry.step)}">${escapeCardText(entry.title)}</a>`).join('') : '';
                     const links = steps.map((step, index) => `<a href="${getCardPagePath(step)}">${index + 1}. ${escapeCardText(getStepTitle(item, index))}</a>`).join('');
@@ -1133,8 +1147,7 @@
                         ${matchingLinks && steps.length > 1 ? `<div class="matching-links"><small>符合的圖卡</small>${matchingLinks}</div>` : ''}
                         ${steps.length > 1 ? `<details class="series-directory"><summary>展開圖卡目錄</summary><div>${links}</div></details>` : ''}
                     </article>`;
-                }).join('');
-            });
+        }).join('');
 
         if (!Object.keys(categories).length) {
             const emptyMessage = cardSearchTerm
