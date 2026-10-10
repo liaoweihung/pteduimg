@@ -1,5 +1,503 @@
 [
   {
+    "cardId": "acne_face_wash",
+    "image": "img/acne_face_wash_01.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_01.html",
+    "title": "青春痘為什麼一直長？正確洗臉先破除迷思",
+    "summary": "青春痘不是單純沒洗乾淨；溫和清潔是照護的一環，不能取代治療。",
+    "sections": [
+      {
+        "heading": "圖片觀念補充",
+        "text": "漫畫中的「一定是臉沒洗乾淨」是常見迷思，不是正確結論。青春痘與皮脂分泌、毛囊阻塞、發炎及荷爾蒙變化等因素有關。"
+      },
+      {
+        "heading": "正確清潔的角色",
+        "text": "過度洗臉無法消除青春痘，反而可能刺激皮膚。正確、溫和的清潔是青春痘日常保養的第一步。"
+      }
+    ],
+    "altText": "青春痘洗臉衛教漫畫：青春痘為什麼一直長？正確洗臉先破除迷思",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "American Academy of Dermatology (AAD)：10 skin care habits that can worsen acne",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Tips for managing（2022-11-16）",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/tips"
+      },
+      {
+        "title": "NHS：Acne（2026-09-22）",
+        "url": "https://www.nhs.uk/conditions/acne/"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_face_wash",
+    "image": "img/acne_face_wash_02.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_02.html",
+    "title": "青春痘洗臉別用力搓：避免過度清潔與刺激",
+    "summary": "以溫和清潔取代搓揉與刷洗，不必追求完全去除油脂。",
+    "sections": [
+      {
+        "heading": "避免摩擦",
+        "text": "不要用力搓揉、摩擦或刷洗長痘痘的部位。過度清潔可能破壞皮膚屏障，引起乾燥、泛紅或刺痛，刺激也可能使青春痘惡化。"
+      },
+      {
+        "heading": "圖片觀念補充",
+        "text": "不宜把刺激後的變化一概說成「皮膚會出更多油」。重點是減少乾燥與刺激，而不是把所有油脂洗掉。"
+      }
+    ],
+    "altText": "青春痘洗臉衛教漫畫：青春痘洗臉別用力搓：避免過度清潔與刺激",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "American Academy of Dermatology (AAD)：10 skin care habits that can worsen acne",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Tips for managing（2022-11-16）",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/tips"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_face_wash",
+    "image": "img/acne_face_wash_03.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_03.html",
+    "title": "洗臉前先洗手：青春痘肌的清潔準備",
+    "summary": "洗臉前清潔雙手是良好衛生習慣，但不代表能預防青春痘。",
+    "sections": [
+      {
+        "heading": "清潔雙手",
+        "text": "先用肥皂或洗手乳將雙手洗乾淨，留意手心、手背、指縫及指尖，沖洗乾淨後再開始洗臉。"
+      },
+      {
+        "heading": "圖片觀念補充",
+        "text": "保持手部清潔可減少髒污轉移，但青春痘不是單由手上的細菌造成。不要把洗手視為一定不長痘痘的方法。"
+      }
+    ],
+    "altText": "青春痘洗臉衛教漫畫：洗臉前先洗手：青春痘肌的清潔準備",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "American Academy of Dermatology (AAD)：10 skin care habits that can worsen acne",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Tips for managing（2022-11-16）",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/tips"
+      },
+      {
+        "title": "CDC：Hand Hygiene Frequently Asked Questions（2024-03-14）",
+        "url": "https://www.cdc.gov/clean-hands/faq/index.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_face_wash",
+    "image": "img/acne_face_wash_04.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_04.html",
+    "title": "青春痘洗臉水溫怎麼選？溫水不會打開毛孔",
+    "summary": "用舒適的溫水打濕全臉，避免過熱；毛孔不會因冷熱水而開關。",
+    "sections": [
+      {
+        "heading": "圖片說法修正",
+        "text": "圖中的「幫助打開毛孔」不正確。毛孔不會像門一樣因熱水打開、因冷水關閉，不必為了毛孔而交替使用冷熱水。"
+      },
+      {
+        "heading": "適當水溫",
+        "text": "使用舒適的溫水輕輕打濕全臉。避免過熱造成乾燥與刺激，也不需要特別使用冰水。洗臉重點是溫和清潔，不是水溫越高越有效。"
+      }
+    ],
+    "altText": "青春痘洗臉衛教漫畫：青春痘洗臉水溫怎麼選？溫水不會打開毛孔",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "American Academy of Dermatology (AAD)：10 skin care habits that can worsen acne",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Tips for managing（2022-11-16）",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/tips"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：What can treat large facial pores?",
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/face/treat-large-pores"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_face_wash",
+    "image": "img/acne_face_wash_05.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_05.html",
+    "title": "青春痘洗面乳怎麼選？溫和、不易致粉刺",
+    "summary": "依膚況挑選低刺激清潔產品，抗痘成分不是每個人都需要。",
+    "sections": [
+      {
+        "heading": "挑選原則",
+        "text": "優先選擇溫和、低刺激的洗面乳，可留意「不易致粉刺」（Non-comedogenic）標示；敏感肌膚可優先考慮無香精產品。避免粗糙磨砂顆粒、強力去油或洗後明顯乾澀的產品。"
+      },
+      {
+        "heading": "抗痘成分需個別評估",
+        "text": "含水楊酸或過氧化苯甲醯（BPO）的產品可能適合部分患者，但應依膚況、濃度與耐受性選用，不是每個人都需要。"
+      },
+      {
+        "heading": "清潔不等於完整治療",
+        "text": "洗面乳主要清除多餘油脂、汗水與髒污，不能只憑成分名稱或洗面乳取代適當的青春痘治療。"
+      }
+    ],
+    "altText": "青春痘洗臉衛教漫畫：青春痘洗面乳怎麼選？溫和、不易致粉刺",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "American Academy of Dermatology (AAD)：10 skin care habits that can worsen acne",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Tips for managing（2022-11-16）",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/tips"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Diagnosis and treatment",
+        "url": "https://www.aad.org/public/diseases/acne/derm-treat/treat"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": false
+  },
+  {
+    "cardId": "acne_face_wash",
+    "image": "img/acne_face_wash_06.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_06.html",
+    "title": "青春痘洗臉步驟：用指腹輕柔清潔",
+    "summary": "用指腹溫和清潔全臉，不反覆摩擦，也不必刻意延長洗臉時間。",
+    "sections": [
+      {
+        "heading": "輕柔清潔",
+        "text": "將適量洗面乳塗抹於濕潤臉部，用指腹清潔額頭、鼻子、下巴及雙頰。留意容易出油的 T 字部位，但不要反覆強力摩擦。"
+      },
+      {
+        "heading": "避免刺激工具",
+        "text": "避免使用洗臉刷、粗糙海綿等可能刺激皮膚的工具。不需要刻意延長按摩時間，也沒有人人適用的固定洗臉秒數。"
+      }
+    ],
+    "altText": "青春痘洗臉衛教漫畫：青春痘洗臉步驟：用指腹輕柔清潔",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "American Academy of Dermatology (AAD)：10 skin care habits that can worsen acne",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Tips for managing（2022-11-16）",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/tips"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": false
+  },
+  {
+    "cardId": "acne_face_wash",
+    "image": "img/acne_face_wash_07.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_07.html",
+    "title": "洗面乳怎麼沖乾淨？留意髮際線、鼻翼與下巴",
+    "summary": "以溫水充分沖淨清潔產品，不要洗到緊繃、乾澀。",
+    "sections": [
+      {
+        "heading": "沖洗重點",
+        "text": "使用溫水將洗面乳充分沖洗乾淨，留意髮際線、鼻翼及下巴等容易殘留的位置，避免清潔產品長時間殘留引起刺激。"
+      },
+      {
+        "heading": "圖片觀念補充",
+        "text": "不要以「摸起來完全不滑」作為所有產品的清潔標準，也不需要反覆沖洗到皮膚緊繃、乾澀。沖洗時同樣避免過熱的水。"
+      }
+    ],
+    "altText": "青春痘洗臉衛教漫畫：洗面乳怎麼沖乾淨？留意髮際線、鼻翼與下巴",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "American Academy of Dermatology (AAD)：10 skin care habits that can worsen acne",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Tips for managing（2022-11-16）",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/tips"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_face_wash",
+    "image": "img/acne_face_wash_08.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_08.html",
+    "title": "洗臉後怎麼擦乾？柔軟毛巾輕拍不摩擦",
+    "summary": "用乾淨、柔軟的毛巾按壓吸水，保持毛巾清潔與乾燥。",
+    "sections": [
+      {
+        "heading": "輕拍吸乾",
+        "text": "洗臉後使用乾淨、柔軟的毛巾輕輕按壓吸乾水分，不要用力來回摩擦臉部。"
+      },
+      {
+        "heading": "毛巾照護",
+        "text": "毛巾應定期清洗並保持乾燥，可準備個人專用洗臉毛巾，避免共用。不需要把皮膚擦到完全乾燥、緊繃才算完成。"
+      }
+    ],
+    "altText": "青春痘洗臉衛教漫畫：洗臉後怎麼擦乾？柔軟毛巾輕拍不摩擦",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "American Academy of Dermatology (AAD)：10 skin care habits that can worsen acne",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Tips for managing（2022-11-16）",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/tips"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": false
+  },
+  {
+    "cardId": "acne_face_wash",
+    "image": "img/acne_face_wash_09.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_09.html",
+    "title": "洗臉後緊繃、刺痛正常嗎？青春痘肌保濕重點",
+    "summary": "洗後應清爽舒適；乾燥、泛紅或刺痛可能代表清潔方式不合適。",
+    "sections": [
+      {
+        "heading": "觀察洗後反應",
+        "text": "洗臉後不應明顯刺痛或緊繃。若有乾燥、脫皮、泛紅或刺痛，可能代表清潔方式或產品不適合，不必追求完全沒有油脂的膚感。"
+      },
+      {
+        "heading": "適度保濕",
+        "text": "洗後可用清爽、不易致粉刺的保濕產品。即使是油性肌膚或青春痘患者，也可能需要保濕；保濕有助維持皮膚屏障，但不能取代治療。"
+      },
+      {
+        "heading": "圖片觀念補充",
+        "text": "不以「後續保養品更容易吸收」作為洗臉效果或治療成效的判斷依據。"
+      }
+    ],
+    "altText": "青春痘洗臉衛教漫畫：洗臉後緊繃、刺痛正常嗎？青春痘肌保濕重點",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "American Academy of Dermatology (AAD)：10 skin care habits that can worsen acne",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Tips for managing（2022-11-16）",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/tips"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_face_wash",
+    "image": "img/acne_face_wash_10.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_10.html",
+    "title": "青春痘每天怎麼洗臉？清潔、保濕、防曬與就醫時機",
+    "summary": "早晚溫和清潔、流汗後適度清潔；正確洗臉不能單獨治好青春痘。",
+    "sections": [
+      {
+        "heading": "每天持續照護",
+        "text": "一般每天早晚各洗臉一次，明顯流汗後可再適度清潔。選擇適合膚質、溫和且不易致粉刺的產品，避免摳抓或擠壓青春痘。"
+      },
+      {
+        "heading": "保養與生活",
+        "text": "白天注意防曬，可選擇不易致粉刺的防曬產品。規律作息與均衡飲食有助整體健康，但不能取代青春痘治療。"
+      },
+      {
+        "heading": "圖片觀念補充與就醫",
+        "text": "6–8 週是合適青春痘治療開始看到改善的常見時間，不是單純洗臉的預期療效。反覆發炎、深層疼痛結節、疤痕或自行保養仍不改善，應就診皮膚科；嚴重症狀不必等滿 6–8 週。"
+      }
+    ],
+    "altText": "青春痘洗臉衛教漫畫：青春痘每天怎麼洗臉？清潔、保濕、防曬與就醫時機",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "American Academy of Dermatology (AAD)：10 skin care habits that can worsen acne",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Tips for managing（2022-11-16）",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/tips"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Diagnosis and treatment",
+        "url": "https://www.aad.org/public/diseases/acne/derm-treat/treat"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": true
+  },
+  {
+    "cardId": "acne_face_wash",
+    "image": "img/acne_face_wash_qa_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_qa_1.html",
+    "title": "青春痘洗臉 Q&A：一天洗幾次？熱水能打開毛孔嗎？",
+    "summary": "解答洗臉頻率與水溫迷思，避免越洗越刺激。",
+    "sections": [
+      {
+        "heading": "一天洗臉超過兩次，會比較不容易長痘痘嗎？",
+        "text": "不一定。一般早晚各一次即可，流汗後視情況增加清潔。頻繁洗臉可能刺激皮膚，不是洗越多次越好。"
+      },
+      {
+        "heading": "熱水可以打開毛孔嗎？",
+        "text": "不可以。毛孔沒有像門一樣開關的功能，熱水反而可能刺激皮膚。選擇舒適的溫水即可，不需為了特定溫度數字或毛孔效果使用冷熱水。"
+      }
+    ],
+    "altText": "青春痘洗臉問答圖卡：青春痘洗臉 Q&A：一天洗幾次？熱水能打開毛孔嗎？",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "American Academy of Dermatology (AAD)：10 skin care habits that can worsen acne",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Tips for managing（2022-11-16）",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/tips"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：What can treat large facial pores?",
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/face/treat-large-pores"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": false
+  },
+  {
+    "cardId": "acne_face_wash",
+    "image": "img/acne_face_wash_qa_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_qa_2.html",
+    "title": "青春痘洗臉 Q&A：油性肌保濕、抗痘洗面乳與洗臉刷",
+    "summary": "依膚況保濕，分清清潔與治療，避免磨砂或刷洗刺激。",
+    "sections": [
+      {
+        "heading": "油性肌膚可以不擦保濕乳液嗎？",
+        "text": "可以依皮膚狀況調整；若乾燥、脫皮或正在使用青春痘藥物，適當保濕通常有幫助。可選清爽、不易致粉刺的產品。"
+      },
+      {
+        "heading": "洗面乳可以直接治療青春痘嗎？",
+        "text": "一般清潔型洗面乳主要負責清潔。含水楊酸或過氧化苯甲醯等活性成分的產品可能有輔助作用，但不是每個人都需要，仍須依青春痘嚴重程度、濃度與耐受性選擇治療。"
+      },
+      {
+        "heading": "需要洗臉刷或磨砂產品嗎？",
+        "text": "不需要。指腹輕柔清潔即可，洗臉刷、粗糙海綿或磨砂顆粒可能增加摩擦與刺激。"
+      }
+    ],
+    "altText": "青春痘洗臉問答圖卡：青春痘洗臉 Q&A：油性肌保濕、抗痘洗面乳與洗臉刷",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "American Academy of Dermatology (AAD)：10 skin care habits that can worsen acne",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Tips for managing（2022-11-16）",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/tips"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Diagnosis and treatment",
+        "url": "https://www.aad.org/public/diseases/acne/derm-treat/treat"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": false
+  },
+  {
+    "cardId": "acne_face_wash",
+    "image": "img/acne_face_wash_qa_3.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_qa_3.html",
+    "title": "青春痘洗臉 Q&A：多久會改善？日常照護與就醫警訊",
+    "summary": "改善時間取決於合適治療；疼痛結節、留疤或持續惡化應就醫。",
+    "sections": [
+      {
+        "heading": "青春痘通常多久會改善？",
+        "text": "合適的青春痘治療通常約 6–8 週開始觀察到明顯改善，有些人更久。不能把這段時間當成單靠洗臉的預期效果，也不要因尚未滿 6–8 週而延誤處理嚴重症狀。"
+      },
+      {
+        "heading": "平常還能做什麼？",
+        "text": "溫和清潔、適度保濕、白天防曬，避免摳抓擠壓，選擇不易致粉刺產品。規律作息與均衡飲食是健康習慣，不能取代治療。"
+      },
+      {
+        "heading": "哪些情況要看皮膚科？",
+        "text": "持續惡化、深層疼痛結節、留下疤痕或自行照護仍不改善，應尋求皮膚科評估。若同時有月經不規則或多毛，也請向醫師說明，評估是否有荷爾蒙相關問題。"
+      }
+    ],
+    "altText": "青春痘洗臉問答圖卡：青春痘洗臉 Q&A：多久會改善？日常照護與就醫警訊",
+    "updatedAt": "2026-10-09",
+    "sourceCheckedAt": "2026-10-09",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "American Academy of Dermatology (AAD)：10 skin care habits that can worsen acne",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Tips for managing（2022-11-16）",
+        "url": "https://www.aad.org/public/diseases/acne/skin-care/tips"
+      },
+      {
+        "title": "American Academy of Dermatology (AAD)：Acne: Diagnosis and treatment",
+        "url": "https://www.aad.org/public/diseases/acne/derm-treat/treat"
+      },
+      {
+        "title": "NHS：Excessive hair growth (hirsutism)",
+        "url": "https://www.nhs.uk/symptoms/hirsutism/"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": false
+  },
+  {
     "cardId": "nasal_rinse",
     "image": "img/nasal_rinse_1.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/nasal_rinse_1.html",

@@ -1,4 +1,65 @@
 {
+  "acne_face_wash": {
+    "title": "青春痘的正確洗臉",
+    "category": "public_education",
+    "topics": [
+      "skin_wound",
+      "acne"
+    ],
+    "order": 1.05,
+    "hidden": false,
+    "icon": "🫧",
+    "showFooter": true,
+    "tags": [
+      "青春痘",
+      "痘痘",
+      "正確洗臉",
+      "洗面乳",
+      "溫和清潔",
+      "油性肌膚",
+      "保濕",
+      "不易致粉刺",
+      "毛孔",
+      "洗臉次數",
+      "水溫",
+      "毛巾",
+      "流汗"
+    ],
+    "texts": [
+      "青春痘為什麼一直長？正確洗臉先破除迷思",
+      "青春痘洗臉別用力搓：避免過度清潔與刺激",
+      "洗臉前先洗手：青春痘肌的清潔準備",
+      "青春痘洗臉水溫怎麼選？溫水不會打開毛孔",
+      "青春痘洗面乳怎麼選？溫和、不易致粉刺",
+      "青春痘洗臉步驟：用指腹輕柔清潔",
+      "洗面乳怎麼沖乾淨？留意髮際線、鼻翼與下巴",
+      "洗臉後怎麼擦乾？柔軟毛巾輕拍不摩擦",
+      "洗臉後緊繃、刺痛正常嗎？青春痘肌保濕重點",
+      "青春痘每天怎麼洗臉？清潔、保濕、防曬與就醫時機",
+      "青春痘洗臉 Q&A：一天洗幾次？熱水能打開毛孔嗎？",
+      "青春痘洗臉 Q&A：油性肌保濕、抗痘洗面乳與洗臉刷",
+      "青春痘洗臉 Q&A：多久會改善？日常照護與就醫警訊"
+    ],
+    "steps": [
+      "img/acne_face_wash_01.webp",
+      "img/acne_face_wash_02.webp",
+      "img/acne_face_wash_03.webp",
+      "img/acne_face_wash_04.webp",
+      "img/acne_face_wash_05.webp",
+      "img/acne_face_wash_06.webp",
+      "img/acne_face_wash_07.webp",
+      "img/acne_face_wash_08.webp",
+      "img/acne_face_wash_09.webp",
+      "img/acne_face_wash_10.webp",
+      "img/acne_face_wash_qa_1.webp",
+      "img/acne_face_wash_qa_2.webp",
+      "img/acne_face_wash_qa_3.webp"
+    ],
+    "related_series": [
+      "acne",
+      "acne_application"
+    ]
+  },
   "nasal_rinse": {
     "title": "如何使用洗鼻器",
     "category": "pharmacist_general",

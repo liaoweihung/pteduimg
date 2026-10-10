@@ -1,10 +1,23 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：149
+- 成功加入文字頁數：162
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| acne_face_wash | 青春痘為什麼一直長？正確洗臉先破除迷思 | https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_face_wash | 青春痘洗臉別用力搓：避免過度清潔與刺激 | https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_face_wash | 洗臉前先洗手：青春痘肌的清潔準備 | https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_03.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_face_wash | 青春痘洗臉水溫怎麼選？溫水不會打開毛孔 | https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_04.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_face_wash | 青春痘洗面乳怎麼選？溫和、不易致粉刺 | https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_face_wash | 青春痘洗臉步驟：用指腹輕柔清潔 | https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_06.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_face_wash | 洗面乳怎麼沖乾淨？留意髮際線、鼻翼與下巴 | https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_07.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_face_wash | 洗臉後怎麼擦乾？柔軟毛巾輕拍不摩擦 | https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_08.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_face_wash | 洗臉後緊繃、刺痛正常嗎？青春痘肌保濕重點 | https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_09.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_face_wash | 青春痘每天怎麼洗臉？清潔、保濕、防曬與就醫時機 | https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_10.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_face_wash | 青春痘洗臉 Q&A：一天洗幾次？熱水能打開毛孔嗎？ | https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_qa_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_face_wash | 青春痘洗臉 Q&A：油性肌保濕、抗痘洗面乳與洗臉刷 | https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_qa_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_face_wash | 青春痘洗臉 Q&A：多久會改善？日常照護與就醫警訊 | https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_qa_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | nasal_rinse | 如何使用洗鼻器？洗鼻用途與四步驟 | https://liaoweihung.github.io/pteduimg/cards/nasal_rinse_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | nasal_rinse | 洗鼻液怎麼準備？安全水源與洗鼻鹽調配 | https://liaoweihung.github.io/pteduimg/cards/nasal_rinse_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | nasal_rinse | 洗鼻器正確操作：姿勢、嘴巴呼吸與氣孔控制 | https://liaoweihung.github.io/pteduimg/cards/nasal_rinse_3.html | 是 | 是 | 是 | 是 | 是 | 無 |

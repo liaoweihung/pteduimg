@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202610091254';
+const CACHE_NAME = 'pwa-cache-v202610100924';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -103,6 +103,19 @@ const urlsToCache = [
   "./img/Wet_Wrap.webp",
   "./img/ZithromaxPOS.webp",
   "./img/acne_dailycare.webp",
+  "./img/acne_face_wash_01.webp",
+  "./img/acne_face_wash_02.webp",
+  "./img/acne_face_wash_03.webp",
+  "./img/acne_face_wash_04.webp",
+  "./img/acne_face_wash_05.webp",
+  "./img/acne_face_wash_06.webp",
+  "./img/acne_face_wash_07.webp",
+  "./img/acne_face_wash_08.webp",
+  "./img/acne_face_wash_09.webp",
+  "./img/acne_face_wash_10.webp",
+  "./img/acne_face_wash_qa_1.webp",
+  "./img/acne_face_wash_qa_2.webp",
+  "./img/acne_face_wash_qa_3.webp",
   "./img/acne_patch_broken_skin.webp",
   "./img/acne_patch_how_to_use.webp",
   "./img/acne_patch_when_to_use.webp",
@@ -373,6 +386,19 @@ const urlsToCache = [
   "./img/yunnan_baiyao.webp",
   "./img/zheng_gu_shui.webp",
   "./img/zi_yun_gao.webp",
+  "./cards/acne_face_wash_01.html",
+  "./cards/acne_face_wash_02.html",
+  "./cards/acne_face_wash_03.html",
+  "./cards/acne_face_wash_04.html",
+  "./cards/acne_face_wash_05.html",
+  "./cards/acne_face_wash_06.html",
+  "./cards/acne_face_wash_07.html",
+  "./cards/acne_face_wash_08.html",
+  "./cards/acne_face_wash_09.html",
+  "./cards/acne_face_wash_10.html",
+  "./cards/acne_face_wash_qa_1.html",
+  "./cards/acne_face_wash_qa_2.html",
+  "./cards/acne_face_wash_qa_3.html",
   "./cards/nasal_rinse_1.html",
   "./cards/nasal_rinse_2.html",
   "./cards/nasal_rinse_3.html",

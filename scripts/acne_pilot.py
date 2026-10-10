@@ -222,8 +222,17 @@ def check_pilot(root=ROOT, self_test=False):
         if not sync_hub_header(root):
             errors.append(f"{HUB}: Header differs from shared card Header source")
         headings = [n["text"] for n in hub.nodes if n["tag"] == "h2"]
-        if headings != ["認識青春痘與粉刺", "痘痘藥與使用方式", "痘痘貼與破皮照護", "其他相關問題"]:
-            errors.append(f"{HUB}: expected four Hub v1 sections")
+        if headings != ["青春痘的正確洗臉", "認識青春痘與粉刺", "痘痘藥與使用方式", "痘痘貼與破皮照護", "其他相關問題"]:
+            errors.append(f"{HUB}: expected five topic sections with face washing first")
+        more = hub.by_class("more-cards")
+        if len(more) != 4 or any(n["tag"] != "details" or "open" in n["attrs"] for n in more):
+            errors.append(f"{HUB}: expected four collapsed card-list extensions")
+        if any(hub.inside(n, "h2") or hub.inside(n, "h3") for n in more):
+            errors.append(f"{HUB}: topic and subgroup headings must remain visible")
+        for n in hub.nodes:
+            if n["tag"] == "ul" and not any(hub.nodes[i]["tag"] in ("details", "footer") for i in n["parents"]):
+                if len(hub.inside(n, "a")) > 3:
+                    errors.append(f"{HUB}: initial card lists must contain at most three links")
         for n in hub.nodes:
             if n["tag"] != "a":
                 continue
@@ -239,8 +248,10 @@ def check_pilot(root=ROOT, self_test=False):
         if not sync_footer(root, page=HUB):
             errors.append(f"{HUB}: footer differs from shared source")
         images = [n for n in hub.nodes if n["tag"] == "img"]
-        if len(images) != 4 or any(not (root / "topics" / n["attrs"].get("src", "")).is_file() for n in images):
-            errors.append(f"{HUB}: expected four existing topic illustrations")
+        if len(images) != 5 or any(not (root / "topics" / n["attrs"].get("src", "")).is_file() for n in images):
+            errors.append(f"{HUB}: expected five existing topic images")
+        elif images[0]["attrs"].get("src") != "../img/acne_face_wash_01.webp":
+            errors.append(f"{HUB}: face washing must use the first comic thumbnail")
     except (OSError, ValueError, KeyError, TypeError, StopIteration, AttributeError) as exc:
         errors.append(f"acne pilot: {exc}")
     return errors
