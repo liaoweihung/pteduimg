@@ -521,6 +521,25 @@
     .topic-return-nav .pill { min-height:44px; padding:8px; line-height:1.4; }
     .topic-return-nav a { white-space:normal; color:#00676e; }
     .topic-return-nav .pill:focus-visible { outline:2px solid var(--brand); outline-offset:2px; }
+
+    @media (max-width:679px) {
+      .image-stage { min-height:0; padding:12px 8px; }
+      .hero-img { max-height:calc(100svh - 220px); }
+    }
+.site-footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #7f8c8d; /* 跟您的 Section Title 使用一樣的高級灰 */
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+.site-footer a {
+    color: #7f8c8d;
+    text-decoration: none;
+}
+.site-footer a:active {
+    color: #2c3e50;
+}
   </style>
 </head>
 <body>
@@ -584,6 +603,19 @@
       </ol>
       <nav aria-label="相關系列"><h2 class="section-title">接著可以看</h2><ul style="line-height:2.4"><li><a href="../cards/acne_topicals_02_retinoids.html">A酸、杜鵑花酸、BPO、水楊酸怎麼用？</a></li><li><a href="../cards/acne_topicals_01_basics.html">痘痘藥怎麼搭，才不會越擦越刺激？</a></li><li><a href="../cards/acne_patch_when_to_use.html">痘痘貼與破皮照護</a></li></ul></nav>
     </section>
+<footer class="site-footer">
+  <p style="margin: 0 0 8px 0;">本工具圖文僅供藥師衛教參考，非專業人士務必諮詢藥師建議。</p>
+  <p style="margin: 0;">
+    <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a>
+    &nbsp;|&nbsp;
+   <a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" onclick="if (typeof trackFeedbackClick === 'function') trackFeedbackClick()">💬 意見回饋</a>
+  </p>
+  <p style="margin: 0 0 8px 0;">
+    <a href="../about.html">關於本站</a> &nbsp;|&nbsp;
+    <a href="../author.html">作者資訊</a> &nbsp;|&nbsp;
+    <a href="../editorial-policy.html">編輯與資料來源政策</a>
+  </p>
+</footer>
     <div class="qr-modal" id="qr-modal" hidden>
       <div class="qr-box" role="dialog" aria-modal="true" aria-label="圖卡 QR code">
         <div class="qr-title">請患者掃描開啟這張圖卡</div>

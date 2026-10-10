@@ -31,7 +31,7 @@
     "@id": "https://liaoweihung.github.io/pteduimg/cards/acne_stage.html"
   },
   "inLanguage": "zh-TW",
-  "dateModified": "2026-10-09",
+  "dateModified": "2026-10-10",
   "isPartOf": {
     "@type": "WebSite",
     "name": "藥局衛教助手",
@@ -521,6 +521,11 @@
     .topic-return-nav .pill { min-height:44px; padding:8px; line-height:1.4; }
     .topic-return-nav a { white-space:normal; color:#00676e; }
     .topic-return-nav .pill:focus-visible { outline:2px solid var(--brand); outline-offset:2px; }
+
+    @media (max-width:679px) {
+      .image-stage { min-height:0; padding:12px 8px; }
+      .hero-img { max-height:calc(100svh - 220px); }
+    }
 
     .card-text-content { margin-bottom:0; }
     .card-text-details { border:0; border-radius:0; background:transparent; }
