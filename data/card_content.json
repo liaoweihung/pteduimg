@@ -5808,5 +5808,462 @@
     "matchConfidence": "high",
     "sourceType": "source_checked_revision",
     "expandText": true
+  },
+  {
+    "cardId": "enema_use",
+    "title": "浣腸怎麼準備？先核對產品並洗手",
+    "summary": "先確認使用的是哪一種浣腸劑、適用年齡、包裝期限與產品說明；不同產品不能共用劑量或操作時間。",
+    "sections": [
+      {
+        "heading": "使用前",
+        "text": "洗手，準備衛生紙並在廁所附近操作。依產品標示與藥師指示確認使用方法；有腹部劇痛、嘔吐、血便或疑似腸阻塞時先就醫。"
+      },
+      {
+        "heading": "溫度與器具",
+        "text": "有些醫院的磷酸鹽浣腸衛教允許把未開封瓶身放在溫水中稍微回溫；不要使用熱水，也不要把所有產品一律加熱至固定溫度。"
+      }
+    ],
+    "altText": "浣腸怎麼準備？先核對產品並洗手；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "image": "img/enema_step_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/enema_step_1.html",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
+    "sourceCheckedAt": "2026-10-09",
+    "updatedAt": "2026-10-09",
+    "references": [
+      {
+        "title": "NHS：磷酸鹽浣腸自我操作",
+        "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/self-administration-of-a-phosphate-enema-ghpi1236/"
+      },
+      {
+        "title": "MedlinePlus：磷酸鈉直腸用藥",
+        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+      },
+      {
+        "title": "食藥署：浣腸劑使用與便祕原因",
+        "url": "https://www.fda.gov.tw/Tc/faqContent.aspx?id=1109"
+      }
+    ],
+    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+  },
+  {
+    "cardId": "enema_use",
+    "title": "浣腸姿勢：左側躺並彎曲右膝",
+    "summary": "圖中示範左側躺、右膝彎曲的操作姿勢；實際姿勢可依產品說明及身體能力調整。",
+    "sections": [
+      {
+        "heading": "準備姿勢",
+        "text": "在靠近廁所的安全位置側躺，彎曲膝蓋並放鬆。磷酸鈉及 bisacodyl 的藥品說明均列出左側躺、右膝靠近胸前的方式。"
+      },
+      {
+        "heading": "無法採用時",
+        "text": "行動不便、疼痛或需他人協助時，先請醫療人員指導，不要勉強維持圖中姿勢。"
+      }
+    ],
+    "altText": "浣腸姿勢：左側躺並彎曲右膝；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "image": "img/enema_step_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/enema_step_2.html",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
+    "sourceCheckedAt": "2026-10-09",
+    "updatedAt": "2026-10-09",
+    "references": [
+      {
+        "title": "MedlinePlus：磷酸鈉直腸用藥",
+        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+      },
+      {
+        "title": "MedlinePlus：Bisacodyl 直腸用藥",
+        "url": "https://medlineplus.gov/druginfo/meds/a611051.html"
+      },
+      {
+        "title": "NHS：磷酸鹽浣腸自我操作",
+        "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/self-administration-of-a-phosphate-enema-ghpi1236/"
+      }
+    ],
+    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+  },
+  {
+    "cardId": "enema_use",
+    "title": "浣腸管怎麼插入？輕柔操作，不套用固定深度",
+    "summary": "移除保護蓋後依產品說明輕柔置入管嘴；若有阻力或疼痛，停止，不可硬推。",
+    "sections": [
+      {
+        "heading": "依管嘴設計操作",
+        "text": "必要時依產品說明使用少量相容的潤滑劑。管嘴朝肚臍方向輕柔置入；不同產品與年齡不能照圖中的成人 7–10 公分、兒童 2–5 公分套用。"
+      },
+      {
+        "heading": "兒童特別注意",
+        "text": "兒童是否適用、產品規格與用量都須依當地核准仿單及醫囑確認；不可把成人規格直接用於兒童。"
+      }
+    ],
+    "altText": "浣腸管怎麼插入？輕柔操作，不套用固定深度；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "image": "img/enema_step_3.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/enema_step_3.html",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
+    "sourceCheckedAt": "2026-10-09",
+    "updatedAt": "2026-10-09",
+    "references": [
+      {
+        "title": "MedlinePlus：磷酸鈉直腸用藥",
+        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+      },
+      {
+        "title": "MedlinePlus：Bisacodyl 直腸用藥",
+        "url": "https://medlineplus.gov/druginfo/meds/a611051.html"
+      },
+      {
+        "title": "NHS：磷酸鹽浣腸自我操作",
+        "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/self-administration-of-a-phosphate-enema-ghpi1236/"
+      }
+    ],
+    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+  },
+  {
+    "cardId": "enema_use",
+    "title": "浣腸液怎麼擠入？慢慢擠壓，疼痛就停",
+    "summary": "輕柔擠壓瓶身，不要強行灌入；遇到阻力或明顯疼痛時立即停止並求助。",
+    "sections": [
+      {
+        "heading": "緩慢操作",
+        "text": "管嘴依產品說明置入後，輕柔擠壓瓶身，依仿單決定液量；部分瓶內會有剩餘液體，不必為了排空而用力擠壓。"
+      },
+      {
+        "heading": "避免傷害",
+        "text": "若流入有阻力、出血或疼痛，停止操作。不要把圖中的單一方法套用於所有產品。"
+      }
+    ],
+    "altText": "浣腸液怎麼擠入？慢慢擠壓，疼痛就停；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "image": "img/enema_step_4.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/enema_step_4.html",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
+    "sourceCheckedAt": "2026-10-09",
+    "updatedAt": "2026-10-09",
+    "references": [
+      {
+        "title": "MedlinePlus：磷酸鈉直腸用藥",
+        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+      },
+      {
+        "title": "MedlinePlus：Bisacodyl 直腸用藥",
+        "url": "https://medlineplus.gov/druginfo/meds/a611051.html"
+      },
+      {
+        "title": "NHS：磷酸鹽浣腸自我操作",
+        "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/self-administration-of-a-phosphate-enema-ghpi1236/"
+      }
+    ],
+    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+  },
+  {
+    "cardId": "enema_use",
+    "title": "浣腸後要等多久？以產品說明及便意為準",
+    "summary": "不同成分的保留時間不同；圖上的 5–15 分鐘不是所有浣腸劑的共同規則。",
+    "sections": [
+      {
+        "heading": "依產品而異",
+        "text": "磷酸鈉直腸浣腸通常在出現強烈便意時排便，官方資料寫通常 1–5 分鐘，且不應保留超過 10 分鐘；bisacodyl 浣腸資料則寫最多 10 分鐘。"
+      },
+      {
+        "heading": "不用強忍",
+        "text": "有強烈便意、疼痛或無法保留時不必硬忍到圖上的時間；依所用產品與醫囑處理。"
+      }
+    ],
+    "altText": "浣腸後要等多久？以產品說明及便意為準；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "image": "img/enema_step_5.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/enema_step_5.html",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
+    "sourceCheckedAt": "2026-10-09",
+    "updatedAt": "2026-10-09",
+    "references": [
+      {
+        "title": "MedlinePlus：磷酸鈉直腸用藥",
+        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+      },
+      {
+        "title": "MedlinePlus：Bisacodyl 直腸用藥",
+        "url": "https://medlineplus.gov/druginfo/meds/a611051.html"
+      },
+      {
+        "title": "食藥署：智慧選擇瀉劑",
+        "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=4&id=t622351"
+      }
+    ],
+    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+  },
+  {
+    "cardId": "enema_use",
+    "title": "浣腸後排便：有便意就慢慢起身",
+    "summary": "感到便意時慢慢起身並到廁所排便；不要用力過度。",
+    "sections": [
+      {
+        "heading": "留在廁所附近",
+        "text": "浣腸可能很快起效；起身前確認不會頭暈，排便後清潔雙手及器具。"
+      },
+      {
+        "heading": "沒有排便",
+        "text": "沒有達到預期效果時不要自行連續追加；磷酸鈉浣腸特別不能在 24 小時內使用超過一次。"
+      }
+    ],
+    "altText": "浣腸後排便：有便意就慢慢起身；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "image": "img/enema_step_6.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/enema_step_6.html",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
+    "sourceCheckedAt": "2026-10-09",
+    "updatedAt": "2026-10-09",
+    "references": [
+      {
+        "title": "MedlinePlus：磷酸鈉直腸用藥",
+        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+      },
+      {
+        "title": "NHS：磷酸鹽浣腸自我操作",
+        "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/self-administration-of-a-phosphate-enema-ghpi1236/"
+      }
+    ],
+    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+  },
+  {
+    "cardId": "enema_use",
+    "title": "浣腸後哪些症狀需要停止使用並就醫？",
+    "summary": "劇烈或持續腹痛、血便、嘔吐、腹部越來越脹，或使用後仍無效，應停止自行追加並就醫評估。",
+    "sections": [
+      {
+        "heading": "短暫反應",
+        "text": "便意、些許腹脹或不適可能發生；持續、加劇或伴隨血便、嘔吐，不應只當作正常反應。"
+      },
+      {
+        "heading": "磷酸鹽風險",
+        "text": "使用磷酸鈉後若出現明顯口渴、暈眩、尿量變少、嘔吐或嗜睡，應立即聯絡醫師。腎病、心衰竭、脫水及高齡者使用前應先評估。"
+      },
+      {
+        "heading": "反覆便祕",
+        "text": "浣腸僅是部分情況的短期處理；常需使用或排便習慣改變，應找原因並討論長期照護。"
+      }
+    ],
+    "altText": "浣腸後哪些症狀需要停止使用並就醫？；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "image": "img/enema_step_7.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/enema_step_7.html",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
+    "sourceCheckedAt": "2026-10-09",
+    "updatedAt": "2026-10-09",
+    "references": [
+      {
+        "title": "MedlinePlus：磷酸鈉直腸用藥",
+        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+      },
+      {
+        "title": "食藥署：浣腸劑使用與便祕原因",
+        "url": "https://www.fda.gov.tw/Tc/faqContent.aspx?id=1109"
+      },
+      {
+        "title": "MedlinePlus：便祕自我照護",
+        "url": "https://medlineplus.gov/ency/patientinstructions/000120.htm"
+      }
+    ],
+    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+  },
+  {
+    "cardId": "enema_use",
+    "title": "浣腸使用六步驟總覽：依產品仿單調整",
+    "summary": "圖卡示意準備、側躺、輕柔置入、緩慢擠入、有便意後排便及觀察警訊；固定深度與等待分鐘數不能跨產品套用。",
+    "sections": [
+      {
+        "heading": "操作順序",
+        "text": "核對產品與期限、洗手；依說明採姿勢、去蓋並輕柔置入，慢慢擠壓。遇到阻力、疼痛或出血就停止。"
+      },
+      {
+        "heading": "圖片數字的界線",
+        "text": "圖中成人 7–10 公分、兒童 2–5 公分和保留 5–15 分鐘都不是通用規範；例如磷酸鈉浣腸通常 1–5 分鐘有強烈便意，不應保留超過 10 分鐘。"
+      },
+      {
+        "heading": "何時求助",
+        "text": "血便、劇烈腹痛、嘔吐或腹部持續脹大時，停止自行使用並就醫；沒有排便也不要自行連續追加。"
+      }
+    ],
+    "altText": "浣腸使用六步驟總覽：依產品仿單調整；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "image": "img/enema_steps.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/enema_steps.html",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
+    "sourceCheckedAt": "2026-10-09",
+    "updatedAt": "2026-10-09",
+    "references": [
+      {
+        "title": "MedlinePlus：磷酸鈉直腸用藥",
+        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+      },
+      {
+        "title": "MedlinePlus：Bisacodyl 直腸用藥",
+        "url": "https://medlineplus.gov/druginfo/meds/a611051.html"
+      },
+      {
+        "title": "NHS：磷酸鹽浣腸自我操作",
+        "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/self-administration-of-a-phosphate-enema-ghpi1236/"
+      }
+    ],
+    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+  },
+  {
+    "cardId": "enema_use",
+    "title": "甘油與磷酸鹽等浣腸有何不同？先看成分與仿單",
+    "summary": "原圖列出多種產品及見效時間、刺激強度和適用族群；這些不是可直接套用的臺灣選藥表，須依實際核准產品確認。",
+    "sections": [
+      {
+        "heading": "先分辨成分",
+        "text": "臺灣常見甘油浣腸；磷酸鈉與 bisacodyl 直腸製劑也有不同作用及注意事項。不同品牌、配方、年齡及國家上市情況不能單憑示意圖判斷。"
+      },
+      {
+        "heading": "磷酸鹽特別注意",
+        "text": "磷酸鈉不可超過標示頻率；腎功能不良、心衰竭、脫水、高齡或併用特定藥物者，使用前應由醫療人員評估。"
+      },
+      {
+        "heading": "圖片比較待確認",
+        "text": "圖中的品牌、礦物油／生理食鹽水分類、星等、固定見效時間、兒童與孕婦適用標示及插入深度，需要逐項核對臺灣許可證與仿單；目前不作推薦依據。"
+      }
+    ],
+    "altText": "甘油與磷酸鹽等浣腸有何不同？先看成分與仿單；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "image": "img/enema_comp.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/enema_comp.html",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
+    "sourceCheckedAt": "2026-10-09",
+    "updatedAt": "2026-10-09",
+    "references": [
+      {
+        "title": "食藥署：浣腸劑使用與便祕原因",
+        "url": "https://www.fda.gov.tw/Tc/faqContent.aspx?id=1109"
+      },
+      {
+        "title": "食藥署：智慧選擇瀉劑",
+        "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=4&id=t622351"
+      },
+      {
+        "title": "MedlinePlus：磷酸鈉直腸用藥",
+        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+      },
+      {
+        "title": "MedlinePlus：Bisacodyl 直腸用藥",
+        "url": "https://medlineplus.gov/druginfo/meds/a611051.html"
+      }
+    ],
+    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+  },
+  {
+    "cardId": "enema_use",
+    "title": "糞便卡在出口可以自行浣腸嗎？先辨識警訊",
+    "summary": "糞便嵌塞需要評估，不能只因覺得「卡在肛門口」就自行反覆使用浣腸。",
+    "sections": [
+      {
+        "heading": "可能的情況",
+        "text": "硬便難排、便意頻繁但排不出來可能有多種原因；是否為糞便嵌塞，需要醫療人員檢查。"
+      },
+      {
+        "heading": "先排除急症",
+        "text": "若劇烈腹痛、嘔吐、腹脹加劇、血便或完全無法排氣，先就醫，不自行灌腸或反覆追加。"
+      },
+      {
+        "heading": "後續預防",
+        "text": "若經評估需處理嵌塞，醫療人員會選擇適合方法；之後再依原因調整飲水、纖維、排便習慣及藥物。"
+      }
+    ],
+    "altText": "糞便卡在出口可以自行浣腸嗎？先辨識警訊；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "image": "img/enema_clinical_cond.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/enema_clinical_cond.html",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
+    "sourceCheckedAt": "2026-10-09",
+    "updatedAt": "2026-10-09",
+    "references": [
+      {
+        "title": "MedlinePlus：糞便嵌塞",
+        "url": "https://medlineplus.gov/ency/article/000230.htm"
+      },
+      {
+        "title": "MedlinePlus：磷酸鈉直腸用藥",
+        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+      },
+      {
+        "title": "食藥署：浣腸劑使用與便祕原因",
+        "url": "https://www.fda.gov.tw/Tc/faqContent.aspx?id=1109"
+      }
+    ],
+    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+  },
+  {
+    "cardId": "enema_use",
+    "title": "便祕藥怎麼分？口服藥與浣腸的角色",
+    "summary": "便祕藥需看成因與個人狀況選擇；浣腸是局部短期處理，不能當成所有便祕的最後一線固定流程。",
+    "sections": [
+      {
+        "heading": "口服藥類型",
+        "text": "口服滲透性瀉劑如 PEG、乳果糖可增加腸道水分；刺激性瀉劑如 bisacodyl、番瀉苷有不同使用情境。選擇及使用多久應按個人狀況與產品說明。"
+      },
+      {
+        "heading": "浣腸的角色",
+        "text": "浣腸可用於部分短期或經評估的糞便嵌塞情境；圖中「第一線、救援、緊急出口」不是每個人的固定階梯。"
+      },
+      {
+        "heading": "圖片說法待修",
+        "text": "圖中把 PEG 畫在膨脹性瀉劑、把口服刺激性瀉劑寫成一概不可天天用，以及對安全性與依賴性的絕對敘述，均須依具體產品與臨床情境重新查核。"
+      }
+    ],
+    "altText": "便祕藥怎麼分？口服藥與浣腸的角色；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "image": "img/constipation_cate.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/constipation_cate.html",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
+    "sourceCheckedAt": "2026-10-09",
+    "updatedAt": "2026-10-09",
+    "references": [
+      {
+        "title": "食藥署：智慧選擇瀉劑",
+        "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=4&id=t622351"
+      },
+      {
+        "title": "食藥署：浣腸劑使用與便祕原因",
+        "url": "https://www.fda.gov.tw/Tc/faqContent.aspx?id=1109"
+      },
+      {
+        "title": "MedlinePlus：便祕自我照護",
+        "url": "https://medlineplus.gov/ency/patientinstructions/000120.htm"
+      },
+      {
+        "title": "MedlinePlus：糞便嵌塞",
+        "url": "https://medlineplus.gov/ency/article/000230.htm"
+      },
+      {
+        "title": "AGA/ACG：成人慢性特發性便祕藥物治療指引",
+        "url": "https://gi.org/journals-publications/ebgi/schoenfeld2_june2023/"
+      }
+    ],
+    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
   }
 ]

@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：162
+- 成功加入文字頁數：173
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -167,3 +167,14 @@
 | adult_diaper_operation | 褲型成人尿褲｜步驟 1–3：穿上尿褲 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_pants_first.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | adult_diaper_operation | 褲型成人尿褲｜步驟 4–6：調整與更換 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_pants_last.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | adult_diaper_operation | 褲型成人尿褲：怎麼穿、怎麼脫？｜六步驟總覽 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_pants_overview.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| enema_use | 浣腸怎麼準備？先核對產品並洗手 | https://liaoweihung.github.io/pteduimg/cards/enema_step_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| enema_use | 浣腸姿勢：左側躺並彎曲右膝 | https://liaoweihung.github.io/pteduimg/cards/enema_step_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| enema_use | 浣腸管怎麼插入？輕柔操作，不套用固定深度 | https://liaoweihung.github.io/pteduimg/cards/enema_step_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| enema_use | 浣腸液怎麼擠入？慢慢擠壓，疼痛就停 | https://liaoweihung.github.io/pteduimg/cards/enema_step_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| enema_use | 浣腸後要等多久？以產品說明及便意為準 | https://liaoweihung.github.io/pteduimg/cards/enema_step_5.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| enema_use | 浣腸後排便：有便意就慢慢起身 | https://liaoweihung.github.io/pteduimg/cards/enema_step_6.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| enema_use | 浣腸後哪些症狀需要停止使用並就醫？ | https://liaoweihung.github.io/pteduimg/cards/enema_step_7.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| enema_use | 浣腸使用六步驟總覽：依產品仿單調整 | https://liaoweihung.github.io/pteduimg/cards/enema_steps.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| enema_use | 甘油與磷酸鹽等浣腸有何不同？先看成分與仿單 | https://liaoweihung.github.io/pteduimg/cards/enema_comp.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| enema_use | 糞便卡在出口可以自行浣腸嗎？先辨識警訊 | https://liaoweihung.github.io/pteduimg/cards/enema_clinical_cond.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| enema_use | 便祕藥怎麼分？口服藥與浣腸的角色 | https://liaoweihung.github.io/pteduimg/cards/constipation_cate.html | 是 | 是 | 是 | 是 | 是 | 無 |

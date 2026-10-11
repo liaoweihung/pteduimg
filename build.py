@@ -361,6 +361,8 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     description = seo["meta_description"]
     keywords = clean_seo_text(seo.get("keywords") or "")
     h1 = clean_seo_text(seo.get("display_title") or (card_content or {}).get("title") or card.get("title") or seo["h1"])
+    if card_id == "enema_use" and card_content:
+        h1 = clean_seo_text(card_content["title"])
     image_alt = seo["image_alt"]
     page_path = page_for_image(step)
     acne_topic = is_acne_topic(card_id, card)

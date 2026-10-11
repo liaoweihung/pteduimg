@@ -1081,7 +1081,7 @@
       "浣腸使用步驟總覽",
       "藥局常見浣腸類型比較",
       "浣腸適用的時機",
-      "常見便祕藥物的類類型與使用時機"
+      "常見便祕藥物的類型與使用時機"
     ],
     "steps": [
       "img/enema_step_1.webp",
@@ -1095,7 +1095,8 @@
       "img/enema_comp.webp",
       "img/enema_clinical_cond.webp",
       "img/constipation_cate.webp"
-    ]
+    ],
+    "showFooter": true
   },
   "heat_exhaustion": {
     "title": "中暑",
