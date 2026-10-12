@@ -4,6 +4,7 @@ import html
 import json
 import os
 import re
+import warnings
 from pathlib import Path
 from urllib.parse import quote
 
@@ -229,13 +230,49 @@ def build_seo_index(cards, card_content_index, write_output=True):
     return seo_index
 
 
+def read_page_json_ld(path):
+    if not path.is_file():
+        return {}
+    match = re.search(
+        r'<script type="application/ld\+json">\s*(.*?)\s*</script>',
+        path.read_text(encoding="utf-8"),
+        re.DOTALL,
+    )
+    if not match:
+        return {}
+    try:
+        data = json.loads(match.group(1))
+        return data if isinstance(data, dict) else {}
+    except json.JSONDecodeError:
+        return {}
+
+
+def content_modified_date(card_content, page_url):
+    # These fields denote substantive text/image revisions, not exports or builds.
+    # Never infer a content date from source checks or previously generated HTML.
+    content = card_content or {}
+    dates = {}
+    for field in ("updatedAt", "imageUpdatedAt"):
+        value = content.get(field)
+        if value is None or value == "":
+            continue
+        if isinstance(value, str) and re.fullmatch(r"[0-9]{4}-[0-9]{2}-[0-9]{2}", value):
+            try:
+                datetime.date.fromisoformat(value)
+                dates[field] = value
+                continue
+            except ValueError:
+                pass
+        warnings.warn(
+            f"{page_url}: invalid {field}={value!r}; expected a valid YYYY-MM-DD; ignored.",
+            UserWarning,
+            stacklevel=2,
+        )
+    return dates.get("updatedAt") or dates.get("imageUpdatedAt")
+
+
 def render_json_ld(seo, headline, card_content=None):
-    date_modified = clean_seo_text(
-        (card_content or {}).get("updatedAt")
-        or (card_content or {}).get("imageUpdatedAt")
-    ) or datetime.datetime.now(
-        datetime.timezone(datetime.timedelta(hours=8))
-    ).strftime("%Y-%m-%d")
+    date_modified = content_modified_date(card_content, seo["canonical"])
     data = {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -248,16 +285,28 @@ def render_json_ld(seo, headline, card_content=None):
             "@id": seo["canonical"],
         },
         "inLanguage": "zh-TW",
-        "dateModified": date_modified,
         "isPartOf": {
             "@type": "WebSite",
             "name": SITE_TITLE,
             "url": BASE_URL,
         },
     }
+    if date_modified:
+        data["dateModified"] = date_modified
     keywords = clean_seo_text(seo.get("keywords") or "")
     if keywords:
         data["keywords"] = keywords
+    person = read_page_json_ld(ROOT / "author.html").get("mainEntity", {})
+    credited_author = clean_seo_text((card_content or {}).get("author"))
+    if (isinstance(person, dict) and person.get("@type") == "Person"
+            and all(person.get(key) for key in ("@id", "name", "url"))
+            and (not credited_author or credited_author == person["name"])):
+        data["author"] = {
+            "@type": "Person",
+            "@id": person["@id"],
+            "name": person["name"],
+            "url": person["url"],
+        }
     return json.dumps(data, ensure_ascii=False, indent=2).replace("</", "<\\/")
 
 
@@ -1357,8 +1406,8 @@ def update_service_worker(cards, generated_pages, retired_pages=()):
     sw_path.write_text(sw_content, encoding="utf-8", newline="\n")
 
 
-def update_sitemap(generated_pages):
-    today = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d")
+def update_sitemap(generated_pages, card_content_index):
+    content_by_page = {page_for_image(image): content for image, content in card_content_index.items()}
     static_pages = [
         ("", "weekly", "1.0"),
         ("index.html", "weekly", "1.0"),
@@ -1382,17 +1431,17 @@ def update_sitemap(generated_pages):
         urls.append(
             f"""  <url>
     <loc>{esc(abs_url(path))}</loc>
-    <lastmod>{today}</lastmod>
     <changefreq>{freq}</changefreq>
     <priority>{priority}</priority>
   </url>"""
         )
     for page in generated_pages:
+        modified = content_modified_date(content_by_page.get(page), abs_url(page))
+        lastmod = f"    <lastmod>{modified}</lastmod>\n" if modified else ""
         urls.append(
             f"""  <url>
     <loc>{esc(abs_url(page))}</loc>
-    <lastmod>{today}</lastmod>
-    <changefreq>monthly</changefreq>
+{lastmod}    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>"""
         )
@@ -1445,7 +1494,7 @@ def main(argv=None):
     (ROOT / "all-cards.html").write_text(render_all_cards_page(cards, seo_index), encoding="utf-8", newline="\n")
     text_success, text_failures = build_card_text_integration_report(card_content_index)
     update_service_worker(cards, generated_pages, [entry['page'] for entry in retired])
-    update_sitemap(generated_pages)
+    update_sitemap(generated_pages, card_content_index)
     update_robots()
     print(f"Generated {len(generated_pages)} static card pages.")
     print(f"Preserved {len(retired)} retired URLs and updated retired-cards.html.")
