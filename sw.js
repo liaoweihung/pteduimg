@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202610120422';
+const CACHE_NAME = 'pwa-cache-v202610130030';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -207,7 +207,6 @@ const urlsToCache = [
   "./img/emergency_contraceptive_pills_how_to_take.webp",
   "./img/emergency_contraceptive_pills_notice.webp",
   "./img/enema_clinical_cond.webp",
-  "./img/enema_comp.webp",
   "./img/enema_step_1.webp",
   "./img/enema_step_2.webp",
   "./img/enema_step_3.webp",
@@ -609,7 +608,6 @@ const urlsToCache = [
   "./cards/enema_step_6.html",
   "./cards/enema_step_7.html",
   "./cards/enema_steps.html",
-  "./cards/enema_comp.html",
   "./cards/enema_clinical_cond.html",
   "./cards/constipation_cate.html",
   "./cards/heat_exhaustion.html",
@@ -732,6 +730,7 @@ const urlsToCache = [
   "./cards/acne.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare_2.html",
+  "./cards/enema_comp.html",
   "./retired-cards.html",
   "./css/card-archive.css",
   "./js/card-archive.js",

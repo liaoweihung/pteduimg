@@ -75,5 +75,28 @@
       "粉刺",
       "痘痘藥"
     ]
+  },
+  {
+    "image": "img/enema_comp.webp",
+    "title": "臺灣甘油浣腸怎麼分？先看單方、複方與成分濃度",
+    "reason": "原圖的跨類型比較與臺灣甘油產品文字說明不一致，已移除比較卡；請改閱甘油浣腸操作與便祕用藥說明。",
+    "page": "cards/enema_comp.html",
+    "retired_at": "2026-10-12",
+    "original_series": "浣腸使用",
+    "replacements": [
+      {
+        "page": "cards/enema_steps.html",
+        "title": "甘油浣腸六步驟總覽"
+      },
+      {
+        "page": "cards/constipation_cate.html",
+        "title": "便祕用藥怎麼選？口服藥與甘油浣腸各有角色"
+      }
+    ],
+    "tags": [
+      "浣腸",
+      "甘油浣腸",
+      "浣腸比較"
+    ]
   }
 ]

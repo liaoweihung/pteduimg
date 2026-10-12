@@ -5991,459 +5991,487 @@
   },
   {
     "cardId": "enema_use",
-    "title": "浣腸怎麼準備？先核對產品並洗手",
-    "summary": "先確認使用的是哪一種浣腸劑、適用年齡、包裝期限與產品說明；不同產品不能共用劑量或操作時間。",
+    "title": "甘油浣腸前：核對產品、洗手與備妥用物",
+    "summary": "先看成分、適用年齡和使用量，再準備衛生紙、保護墊與方便如廁的環境。",
     "sections": [
       {
-        "heading": "使用前",
-        "text": "洗手，準備衛生紙並在廁所附近操作。依產品標示與藥師指示確認使用方法；有腹部劇痛、嘔吐、血便或疑似腸阻塞時先就醫。"
+        "heading": "先讀手上的產品",
+        "text": "同樣叫甘油球，可能是甘油單方，也可能另含氯化鈉。確認包裝完整、有效期限與仿單；兒童用量不能只按外觀猜測。"
       },
       {
-        "heading": "溫度與器具",
-        "text": "有些醫院的磷酸鹽浣腸衛教允許把未開封瓶身放在溫水中稍微回溫；不要使用熱水，也不要把所有產品一律加熱至固定溫度。"
+        "heading": "洗手與準備",
+        "text": "洗淨雙手，備妥衛生紙、保護墊和產品適用的潤滑用品；需要協助者先安排照顧者及便盆。"
+      },
+      {
+        "heading": "不把加溫當成必要步驟",
+        "text": "本次查閱的臺灣產品說明未要求加熱至 37°C；原圖的固定溫度不作為通用指示。儲存及使用方式以各產品說明為準。"
       }
     ],
-    "altText": "浣腸怎麼準備？先核對產品並洗手；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "altText": "甘油浣腸前：核對產品、洗手與備妥用物；原圖細節請搭配文字版與產品說明閱讀",
     "image": "img/enema_step_1.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/enema_step_1.html",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
-    "sourceCheckedAt": "2026-10-09",
-    "updatedAt": "2026-10-09",
+    "reviewStatus": "來源已查閱",
+    "sourceCheckedAt": "2026-10-11",
+    "updatedAt": "2026-10-11",
     "references": [
       {
-        "title": "NHS：磷酸鹽浣腸自我操作",
-        "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/self-administration-of-a-phosphate-enema-ghpi1236/"
+        "title": "黃氏製藥：甘油浣腸液 500 毫克／公克（產品用法與成分）",
+        "url": "https://www.hwangs.com.tw/zh-TW/products/glycerin-enema"
       },
       {
-        "title": "MedlinePlus：磷酸鈉直腸用藥",
-        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+        "title": "食藥署仿單查詢平台：便通樂甘油浣腸液（衛部成製字第016946號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛部成製字第016946號"
       },
       {
-        "title": "食藥署：浣腸劑使用與便祕原因",
-        "url": "https://www.fda.gov.tw/Tc/faqContent.aspx?id=1109"
+        "title": "臺北榮總桃園分院慈心病房：甘油球、萊潔灌腸法（2016-04-08）",
+        "url": "https://mercyheart.tw/甘油球、萊潔灌腸法/"
       }
     ],
-    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+    "revisionCredit": "AI 協助整理"
   },
   {
     "cardId": "enema_use",
-    "title": "浣腸姿勢：左側躺並彎曲右膝",
-    "summary": "圖中示範左側躺、右膝彎曲的操作姿勢；實際姿勢可依產品說明及身體能力調整。",
+    "title": "甘油浣腸姿勢：左側躺、膝蓋彎曲並放鬆",
+    "summary": "左側躺是臺灣醫院甘油球護理指導採用的姿勢；舒適、安全和放鬆比勉強擺出固定角度重要。",
     "sections": [
       {
-        "heading": "準備姿勢",
-        "text": "在靠近廁所的安全位置側躺，彎曲膝蓋並放鬆。磷酸鈉及 bisacodyl 的藥品說明均列出左側躺、右膝靠近胸前的方式。"
+        "heading": "側躺準備",
+        "text": "在穩定的床面左側躺，彎曲膝蓋，臀部下方放保護墊。保持隱私，放鬆腹部與肛門周圍肌肉。"
       },
       {
-        "heading": "無法採用時",
-        "text": "行動不便、疼痛或需他人協助時，先請醫療人員指導，不要勉強維持圖中姿勢。"
+        "heading": "需要協助時",
+        "text": "臥床、關節活動受限或無法自行翻身者，請護理人員教導照顧者適合的姿勢與如廁安排，不要勉強扭轉身體。"
       }
     ],
-    "altText": "浣腸姿勢：左側躺並彎曲右膝；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "altText": "甘油浣腸姿勢：左側躺、膝蓋彎曲並放鬆；原圖細節請搭配文字版與產品說明閱讀",
     "image": "img/enema_step_2.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/enema_step_2.html",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
-    "sourceCheckedAt": "2026-10-09",
-    "updatedAt": "2026-10-09",
+    "reviewStatus": "來源已查閱",
+    "sourceCheckedAt": "2026-10-11",
+    "updatedAt": "2026-10-11",
     "references": [
       {
-        "title": "MedlinePlus：磷酸鈉直腸用藥",
-        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+        "title": "臺北榮總臺東分院：便祕護理（2024-04-17 更新）",
+        "url": "https://org.vghtpe.gov.tw/vhtt/freePage/-1/11"
       },
       {
-        "title": "MedlinePlus：Bisacodyl 直腸用藥",
-        "url": "https://medlineplus.gov/druginfo/meds/a611051.html"
+        "title": "臺北榮總桃園分院慈心病房：甘油球、萊潔灌腸法（2016-04-08）",
+        "url": "https://mercyheart.tw/甘油球、萊潔灌腸法/"
       },
       {
-        "title": "NHS：磷酸鹽浣腸自我操作",
-        "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/self-administration-of-a-phosphate-enema-ghpi1236/"
+        "title": "奇美醫院：便秘護理指導 A9310011（2024-05）",
+        "url": "https://www.chimei.org.tw/main/cmh_department/59012/info/9310/A9310011.html"
       }
     ],
-    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+    "revisionCredit": "AI 協助整理"
   },
   {
     "cardId": "enema_use",
-    "title": "浣腸管怎麼插入？輕柔操作，不套用固定深度",
-    "summary": "移除保護蓋後依產品說明輕柔置入管嘴；若有阻力或疼痛，停止，不可硬推。",
+    "title": "甘油浣腸管嘴：先潤滑、輕柔置入，不硬推",
+    "summary": "移除保護蓋並依產品說明潤滑管嘴，注意角度、緩慢置入；遇到阻力、疼痛或出血即停止。",
     "sections": [
       {
-        "heading": "依管嘴設計操作",
-        "text": "必要時依產品說明使用少量相容的潤滑劑。管嘴朝肚臍方向輕柔置入；不同產品與年齡不能照圖中的成人 7–10 公分、兒童 2–5 公分套用。"
+        "heading": "小心管嘴造成傷害",
+        "text": "依器具設計與醫護指導操作，勿以硬管嘴強行頂入。甘油球使用不當也可能造成肛門或直腸損傷。"
       },
       {
-        "heading": "兒童特別注意",
-        "text": "兒童是否適用、產品規格與用量都須依當地核准仿單及醫囑確認；不可把成人規格直接用於兒童。"
+        "heading": "原圖深度不適合作為通則",
+        "text": "不要套用圖中的成人 7–10 公分、兒童 2–5 公分。不同管嘴長度與適用年齡不同，不能把一般肛管深度當成每種甘油球的置入深度。"
+      },
+      {
+        "heading": "兒童先確認產品",
+        "text": "例如黃氏甘油浣腸液規定未滿 3 歲應由醫師診治，不宜自行使用；其他年齡也須依該產品的兒童用法。"
       }
     ],
-    "altText": "浣腸管怎麼插入？輕柔操作，不套用固定深度；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "altText": "甘油浣腸管嘴：先潤滑、輕柔置入，不硬推；原圖細節請搭配文字版與產品說明閱讀",
     "image": "img/enema_step_3.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/enema_step_3.html",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
-    "sourceCheckedAt": "2026-10-09",
-    "updatedAt": "2026-10-09",
+    "reviewStatus": "來源已查閱",
+    "sourceCheckedAt": "2026-10-11",
+    "updatedAt": "2026-10-11",
     "references": [
       {
-        "title": "MedlinePlus：磷酸鈉直腸用藥",
-        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+        "title": "黃氏製藥：甘油浣腸液 500 毫克／公克（產品用法與成分）",
+        "url": "https://www.hwangs.com.tw/zh-TW/products/glycerin-enema"
       },
       {
-        "title": "MedlinePlus：Bisacodyl 直腸用藥",
-        "url": "https://medlineplus.gov/druginfo/meds/a611051.html"
+        "title": "臺北榮總桃園分院慈心病房：甘油球、萊潔灌腸法（2016-04-08）",
+        "url": "https://mercyheart.tw/甘油球、萊潔灌腸法/"
       },
       {
-        "title": "NHS：磷酸鹽浣腸自我操作",
-        "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/self-administration-of-a-phosphate-enema-ghpi1236/"
+        "title": "馬偕紀念醫院大腸直腸外科：常見問題（便祕、浣腸與排便警訊）",
+        "url": "https://www.mmh.org.tw/taitam/col_su/qa.html"
       }
     ],
-    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+    "revisionCredit": "AI 協助整理"
   },
   {
     "cardId": "enema_use",
-    "title": "浣腸液怎麼擠入？慢慢擠壓，疼痛就停",
-    "summary": "輕柔擠壓瓶身，不要強行灌入；遇到阻力或明顯疼痛時立即停止並求助。",
+    "title": "甘油浣腸液：緩慢擠入，使用後丟棄",
+    "summary": "管嘴放妥後，依產品標示量緩慢擠壓；不要因為難擠就加力推進管嘴。",
     "sections": [
       {
-        "heading": "緩慢操作",
-        "text": "管嘴依產品說明置入後，輕柔擠壓瓶身，依仿單決定液量；部分瓶內會有剩餘液體，不必為了排空而用力擠壓。"
+        "heading": "慢慢擠壓",
+        "text": "放鬆呼吸，輕柔擠入藥液。遇到明顯疼痛、阻力或出血，停止操作並尋求醫療協助。"
       },
       {
-        "heading": "避免傷害",
-        "text": "若流入有阻力、出血或疼痛，停止操作。不要把圖中的單一方法套用於所有產品。"
+        "heading": "退出與丟棄",
+        "text": "甘油球的醫院操作指導為維持擠壓狀態再緩慢退出；實際器具仍依產品說明。用過的容器及剩餘藥液丟棄，不留待下次使用。"
       }
     ],
-    "altText": "浣腸液怎麼擠入？慢慢擠壓，疼痛就停；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "altText": "甘油浣腸液：緩慢擠入，使用後丟棄；原圖細節請搭配文字版與產品說明閱讀",
     "image": "img/enema_step_4.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/enema_step_4.html",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
-    "sourceCheckedAt": "2026-10-09",
-    "updatedAt": "2026-10-09",
+    "reviewStatus": "來源已查閱",
+    "sourceCheckedAt": "2026-10-11",
+    "updatedAt": "2026-10-11",
     "references": [
       {
-        "title": "MedlinePlus：磷酸鈉直腸用藥",
-        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+        "title": "臺北榮總桃園分院慈心病房：甘油球、萊潔灌腸法（2016-04-08）",
+        "url": "https://mercyheart.tw/甘油球、萊潔灌腸法/"
       },
       {
-        "title": "MedlinePlus：Bisacodyl 直腸用藥",
-        "url": "https://medlineplus.gov/druginfo/meds/a611051.html"
+        "title": "黃氏製藥：甘油浣腸液 500 毫克／公克（產品用法與成分）",
+        "url": "https://www.hwangs.com.tw/zh-TW/products/glycerin-enema"
       },
       {
-        "title": "NHS：磷酸鹽浣腸自我操作",
-        "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/self-administration-of-a-phosphate-enema-ghpi1236/"
+        "title": "馬偕紀念醫院大腸直腸外科：常見問題（便祕、浣腸與排便警訊）",
+        "url": "https://www.mmh.org.tw/taitam/col_su/qa.html"
       }
     ],
-    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+    "revisionCredit": "AI 協助整理"
   },
   {
     "cardId": "enema_use",
-    "title": "浣腸後要等多久？以產品說明及便意為準",
-    "summary": "不同成分的保留時間不同；圖上的 5–15 分鐘不是所有浣腸劑的共同規則。",
+    "title": "甘油浣腸後稍作保留，讓藥液有時間發揮作用",
+    "summary": "注入甘油浣腸液後，在能忍受的情況下稍作保留，讓藥液有時間軟化糞便、幫助排便，不必立刻用力排出。",
     "sections": [
       {
-        "heading": "依產品而異",
-        "text": "磷酸鈉直腸浣腸通常在出現強烈便意時排便，官方資料寫通常 1–5 分鐘，且不應保留超過 10 分鐘；bisacodyl 浣腸資料則寫最多 10 分鐘。"
+        "heading": "稍微保留，讓藥液充分作用",
+        "text": "甘油浣腸的目的是幫助軟化糞便，使糞便較容易排出。注入後先放鬆、稍等一下，讓藥液留在直腸內作用，而不是一灌完就急著用力排出。"
       },
       {
-        "heading": "不用強忍",
-        "text": "有強烈便意、疼痛或無法保留時不必硬忍到圖上的時間；依所用產品與醫囑處理。"
+        "heading": "臺灣醫院的操作建議",
+        "text": "奇美醫院的甘油球照護指導建議保留約 5 分鐘；臺北榮總桃園分院則建議盡量保留 5–10 分鐘。重點是依身體能忍受的程度，留一點時間讓藥液作用；實際仍配合所用產品與醫護指示。"
+      },
+      {
+        "heading": "有明顯便意時再排便，不硬忍",
+        "text": "可以忍受時稍作保留，出現強烈便意時就安全如廁。保留時間不是越久越好，也不必為了達到圖片上的 5–15 分鐘而勉強忍耐；若有疼痛、出血或其他明顯不適，停止使用並尋求醫療協助。"
+      },
+      {
+        "heading": "臺灣產品說明補充",
+        "text": "黃氏製藥的「甘油浣腸液 500 毫克／公克」及中美醫藥產品頁的「便通樂甘油浣腸液（外用）」皆用於緩解便祕，但公開產品說明未列固定保留分鐘數。上面的時間是臺灣醫院護理指導，不是這兩項產品的仿單規定。"
       }
     ],
-    "altText": "浣腸後要等多久？以產品說明及便意為準；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "altText": "甘油浣腸後稍作保留、等待藥液作用的圖卡；保留時間依耐受程度及醫護指示調整",
     "image": "img/enema_step_5.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/enema_step_5.html",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
-    "sourceCheckedAt": "2026-10-09",
-    "updatedAt": "2026-10-09",
+    "reviewStatus": "來源已查閱",
+    "sourceCheckedAt": "2026-10-12",
+    "updatedAt": "2026-10-12",
     "references": [
       {
-        "title": "MedlinePlus：磷酸鈉直腸用藥",
-        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+        "title": "臺北榮總桃園分院慈心病房：甘油球、萊潔灌腸法（2016-04-08）",
+        "url": "https://mercyheart.tw/甘油球、萊潔灌腸法/"
       },
       {
-        "title": "MedlinePlus：Bisacodyl 直腸用藥",
-        "url": "https://medlineplus.gov/druginfo/meds/a611051.html"
+        "title": "奇美醫院：便秘護理指導 A9310011（2024-05）",
+        "url": "https://www.chimei.org.tw/main/cmh_department/59012/info/9310/A9310011.html"
       },
       {
-        "title": "食藥署：智慧選擇瀉劑",
-        "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=4&id=t622351"
+        "title": "黃氏製藥：甘油浣腸液 500 毫克／公克",
+        "url": "https://www.hwangs.com.tw/zh-TW/products/glycerin-enema"
+      },
+      {
+        "title": "中美醫藥：便通樂甘油浣腸液（外用）",
+        "url": "https://syntromed.com/product/便通樂甘油浣腸液（外用）/"
       }
     ],
-    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+    "revisionCredit": "AI 協助整理"
   },
   {
     "cardId": "enema_use",
-    "title": "浣腸後排便：有便意就慢慢起身",
-    "summary": "感到便意時慢慢起身並到廁所排便；不要用力過度。",
+    "title": "甘油浣腸後排便：安全起身，沒有排出先問藥師",
+    "summary": "有便意時安全如廁，避免持續用力；沒有排出時，先確認產品用法及症狀，再決定下一步。",
     "sections": [
       {
-        "heading": "留在廁所附近",
-        "text": "浣腸可能很快起效；起身前確認不會頭暈，排便後清潔雙手及器具。"
+        "heading": "如廁與觀察",
+        "text": "慢慢起身，需要協助者使用便盆或由照顧者陪同。觀察有無排便、糞便性狀及出血；不要長時間蹲坐、反覆用力。"
       },
       {
-        "heading": "沒有排便",
-        "text": "沒有達到預期效果時不要自行連續追加；磷酸鈉浣腸特別不能在 24 小時內使用超過一次。"
+        "heading": "不要連續加量求快",
+        "text": "各產品的追加方式與每日上限要分開看，不能互相套用。不確定是否能再用時，帶包裝詢問藥師；若伴隨腹痛、嘔吐或出血，停止自行追加並就醫。"
       }
     ],
-    "altText": "浣腸後排便：有便意就慢慢起身；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "altText": "甘油浣腸後排便：安全起身，沒有排出先問藥師；原圖細節請搭配文字版與產品說明閱讀",
     "image": "img/enema_step_6.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/enema_step_6.html",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
-    "sourceCheckedAt": "2026-10-09",
-    "updatedAt": "2026-10-09",
+    "reviewStatus": "來源已查閱",
+    "sourceCheckedAt": "2026-10-11",
+    "updatedAt": "2026-10-11",
     "references": [
       {
-        "title": "MedlinePlus：磷酸鈉直腸用藥",
-        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+        "title": "臺北榮總臺東分院：便祕護理（2024-04-17 更新）",
+        "url": "https://org.vghtpe.gov.tw/vhtt/freePage/-1/11"
       },
       {
-        "title": "NHS：磷酸鹽浣腸自我操作",
-        "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/self-administration-of-a-phosphate-enema-ghpi1236/"
+        "title": "馬偕紀念醫院大腸直腸外科：常見問題（便祕、浣腸與排便警訊）",
+        "url": "https://www.mmh.org.tw/taitam/col_su/qa.html"
+      },
+      {
+        "title": "黃氏製藥：甘油浣腸液 500 毫克／公克（產品用法與成分）",
+        "url": "https://www.hwangs.com.tw/zh-TW/products/glycerin-enema"
+      },
+      {
+        "title": "食藥署仿單查詢平台：便通樂甘油浣腸液（衛部成製字第016946號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛部成製字第016946號"
       }
     ],
-    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+    "revisionCredit": "AI 協助整理"
   },
   {
     "cardId": "enema_use",
-    "title": "浣腸後哪些症狀需要停止使用並就醫？",
-    "summary": "劇烈或持續腹痛、血便、嘔吐、腹部越來越脹，或使用後仍無效，應停止自行追加並就醫評估。",
+    "title": "甘油浣腸的警訊：疼痛、出血或持續腹瀉要停止",
+    "summary": "使用後的不適不能一概當成正常反應；持續或加劇的腹痛、血便、嘔吐等症狀需要醫療評估。",
     "sections": [
       {
-        "heading": "短暫反應",
-        "text": "便意、些許腹脹或不適可能發生；持續、加劇或伴隨血便、嘔吐，不應只當作正常反應。"
+        "heading": "哪些反應要注意",
+        "text": "甘油與氯化鈉複方的仿單列有直腸刺激、腹部不適及腹瀉；若不適出現或持續，應停止使用並諮詢醫療人員。不要為了排便而忍痛再灌。"
       },
       {
-        "heading": "磷酸鹽風險",
-        "text": "使用磷酸鈉後若出現明顯口渴、暈眩、尿量變少、嘔吐或嗜睡，應立即聯絡醫師。腎病、心衰竭、脫水及高齡者使用前應先評估。"
+        "heading": "先就醫的情況",
+        "text": "劇烈腹痛、血便、嘔吐或腹部持續脹大時，先就醫確認原因。插入時疼痛或出血也可能是器具造成的損傷。"
       },
       {
-        "heading": "反覆便祕",
-        "text": "浣腸僅是部分情況的短期處理；常需使用或排便習慣改變，應找原因並討論長期照護。"
+        "heading": "反覆需要時重新評估",
+        "text": "浣腸不適合成為每天自行處理便祕的固定習慣。持續無效、常需使用或排便習慣改變時，應檢查原因並安排長期照護。"
       }
     ],
-    "altText": "浣腸後哪些症狀需要停止使用並就醫？；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "altText": "甘油浣腸的警訊：疼痛、出血或持續腹瀉要停止；原圖細節請搭配文字版與產品說明閱讀",
     "image": "img/enema_step_7.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/enema_step_7.html",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
-    "sourceCheckedAt": "2026-10-09",
-    "updatedAt": "2026-10-09",
+    "reviewStatus": "來源已查閱",
+    "sourceCheckedAt": "2026-10-11",
+    "updatedAt": "2026-10-11",
     "references": [
       {
-        "title": "MedlinePlus：磷酸鈉直腸用藥",
-        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+        "title": "食藥署仿單查詢平台：便通樂甘油浣腸液（衛部成製字第016946號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛部成製字第016946號"
       },
       {
-        "title": "食藥署：浣腸劑使用與便祕原因",
-        "url": "https://www.fda.gov.tw/Tc/faqContent.aspx?id=1109"
+        "title": "馬偕紀念醫院大腸直腸外科：常見問題（便祕、浣腸與排便警訊）",
+        "url": "https://www.mmh.org.tw/taitam/col_su/qa.html"
       },
       {
-        "title": "MedlinePlus：便祕自我照護",
-        "url": "https://medlineplus.gov/ency/patientinstructions/000120.htm"
+        "title": "奇美醫院：便秘護理指導 A9310011（2024-05）",
+        "url": "https://www.chimei.org.tw/main/cmh_department/59012/info/9310/A9310011.html"
+      },
+      {
+        "title": "食藥署：浣腸劑購買與使用提醒（2018-02-12）",
+        "url": "https://www.fda.gov.tw/TC/faqContent.aspx?id=1109"
       }
     ],
-    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+    "revisionCredit": "AI 協助整理"
   },
   {
     "cardId": "enema_use",
-    "title": "浣腸使用六步驟總覽：依產品仿單調整",
-    "summary": "圖卡示意準備、側躺、輕柔置入、緩慢擠入、有便意後排便及觀察警訊；固定深度與等待分鐘數不能跨產品套用。",
+    "title": "甘油浣腸六步驟：準備、側躺、置入、擠入、等待、排便",
+    "summary": "以臺灣甘油浣腸的產品說明及醫院衛教整理流程；用量、管嘴深度與保留時間依實際產品調整。",
     "sections": [
       {
-        "heading": "操作順序",
-        "text": "核對產品與期限、洗手；依說明採姿勢、去蓋並輕柔置入，慢慢擠壓。遇到阻力、疼痛或出血就停止。"
+        "heading": "一、準備與側躺",
+        "text": "核對成分、年齡及用量，洗手並準備衛生紙與保護墊。左側躺、屈膝放鬆，需要時由照顧者協助。"
       },
       {
-        "heading": "圖片數字的界線",
-        "text": "圖中成人 7–10 公分、兒童 2–5 公分和保留 5–15 分鐘都不是通用規範；例如磷酸鈉浣腸通常 1–5 分鐘有強烈便意，不應保留超過 10 分鐘。"
+        "heading": "二、置入與擠入",
+        "text": "移除蓋子，依說明潤滑並輕柔置入管嘴，緩慢擠入。疼痛、阻力或出血就停止；不套用原圖的固定公分數。"
       },
       {
-        "heading": "何時求助",
-        "text": "血便、劇烈腹痛、嘔吐或腹部持續脹大時，停止自行使用並就醫；沒有排便也不要自行連續追加。"
+        "heading": "三、等待與排便",
+        "text": "依指導短暫保留，有強烈便意時安全如廁，不硬忍原圖的固定時間。用過的容器與餘液丟棄；無效時先詢問藥師，勿連續加量。"
       }
     ],
-    "altText": "浣腸使用六步驟總覽：依產品仿單調整；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "altText": "甘油浣腸六步驟：準備、側躺、置入、擠入、等待、排便；原圖細節請搭配文字版與產品說明閱讀",
     "image": "img/enema_steps.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/enema_steps.html",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
-    "sourceCheckedAt": "2026-10-09",
-    "updatedAt": "2026-10-09",
+    "reviewStatus": "來源已查閱",
+    "sourceCheckedAt": "2026-10-11",
+    "updatedAt": "2026-10-11",
     "references": [
       {
-        "title": "MedlinePlus：磷酸鈉直腸用藥",
-        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+        "title": "臺北榮總臺東分院：便祕護理（2024-04-17 更新）",
+        "url": "https://org.vghtpe.gov.tw/vhtt/freePage/-1/11"
       },
       {
-        "title": "MedlinePlus：Bisacodyl 直腸用藥",
-        "url": "https://medlineplus.gov/druginfo/meds/a611051.html"
+        "title": "黃氏製藥：甘油浣腸液 500 毫克／公克（產品用法與成分）",
+        "url": "https://www.hwangs.com.tw/zh-TW/products/glycerin-enema"
       },
       {
-        "title": "NHS：磷酸鹽浣腸自我操作",
-        "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/self-administration-of-a-phosphate-enema-ghpi1236/"
+        "title": "臺北榮總桃園分院慈心病房：甘油球、萊潔灌腸法（2016-04-08）",
+        "url": "https://mercyheart.tw/甘油球、萊潔灌腸法/"
       }
     ],
-    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+    "revisionCredit": "AI 協助整理"
   },
   {
     "cardId": "enema_use",
-    "title": "甘油與磷酸鹽等浣腸有何不同？先看成分與仿單",
-    "summary": "原圖列出多種產品及見效時間、刺激強度和適用族群；這些不是可直接套用的臺灣選藥表，須依實際核准產品確認。",
+    "title": "臺灣甘油浣腸怎麼分？先看單方、複方與成分濃度",
+    "summary": "臺灣可查到甘油單方及甘油加氯化鈉複方；「甘油球」的名稱與外觀，不能代替成分、用量和年齡限制。",
     "sections": [
       {
-        "heading": "先分辨成分",
-        "text": "臺灣常見甘油浣腸；磷酸鈉與 bisacodyl 直腸製劑也有不同作用及注意事項。不同品牌、配方、年齡及國家上市情況不能單憑示意圖判斷。"
+        "heading": "甘油單方：濃度單位要看清楚",
+        "text": "產品例：快通 50% 甘油浣腸液標示每 mL 含甘油 500 mg；黃氏甘油浣腸液則標示每公克含甘油 500 mg。每毫升與每公克是不同單位，不可直接視為同一濃度規格。這些例子用來辨識配方，不是品牌優劣排名。"
       },
       {
-        "heading": "磷酸鹽特別注意",
-        "text": "磷酸鈉不可超過標示頻率；腎功能不良、心衰竭、脫水、高齡或併用特定藥物者，使用前應由醫療人員評估。"
+        "heading": "甘油複方：還可能含氯化鈉",
+        "text": "便通樂甘油浣腸液每 mL 含甘油 150 mg 與氯化鈉 150 mg，並非甘油單方，也不是 0.9% 生理食鹽水。不能因包裝都像甘油球，就把不同產品的用量與注意事項互換。"
       },
       {
-        "heading": "圖片比較待確認",
-        "text": "圖中的品牌、礦物油／生理食鹽水分類、星等、固定見效時間、兒童與孕婦適用標示及插入深度，需要逐項核對臺灣許可證與仿單；目前不作推薦依據。"
+        "heading": "選用時核對三件事",
+        "text": "確認實際成分、適用年齡與每次／每日使用量。孕哺期、幼兒或正在併用其他瀉劑時，先讓醫師或藥師確認手上的產品；沒有一張通用星等表能替代這些判斷。"
+      },
+      {
+        "heading": "原圖比較表的使用界線",
+        "text": "原圖是跨類型的舊版示意，不能當作臺灣常見品項、購買清單或孕婦與兒童選藥表。本文已改以臺灣可查證的甘油產品為主；圖上的其他類型、星等與見效時間不作本版推薦依據。"
       }
     ],
-    "altText": "甘油與磷酸鹽等浣腸有何不同？先看成分與仿單；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "altText": "浣腸類型比較舊版圖；臺灣甘油單方與複方說明請見文字版",
     "image": "img/enema_comp.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/enema_comp.html",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
-    "sourceCheckedAt": "2026-10-09",
-    "updatedAt": "2026-10-09",
+    "reviewStatus": "來源已查閱",
+    "sourceCheckedAt": "2026-10-11",
+    "updatedAt": "2026-10-11",
     "references": [
       {
-        "title": "食藥署：浣腸劑使用與便祕原因",
-        "url": "https://www.fda.gov.tw/Tc/faqContent.aspx?id=1109"
+        "title": "健康化學製藥：快通 50% 甘油浣腸液（成分與包裝）",
+        "url": "https://www.healthcgmp.com.tw/products_detail/8"
       },
       {
-        "title": "食藥署：智慧選擇瀉劑",
-        "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=4&id=t622351"
+        "title": "黃氏製藥：甘油浣腸液 500 毫克／公克（產品用法與成分）",
+        "url": "https://www.hwangs.com.tw/zh-TW/products/glycerin-enema"
       },
       {
-        "title": "MedlinePlus：磷酸鈉直腸用藥",
-        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
-      },
-      {
-        "title": "MedlinePlus：Bisacodyl 直腸用藥",
-        "url": "https://medlineplus.gov/druginfo/meds/a611051.html"
+        "title": "食藥署仿單查詢平台：便通樂甘油浣腸液（衛部成製字第016946號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛部成製字第016946號"
       }
     ],
-    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+    "revisionCredit": "AI 協助整理"
   },
   {
     "cardId": "enema_use",
-    "title": "糞便卡在出口可以自行浣腸嗎？先辨識警訊",
-    "summary": "糞便嵌塞需要評估，不能只因覺得「卡在肛門口」就自行反覆使用浣腸。",
+    "title": "硬便卡在出口：甘油浣腸何時可以幫忙？",
+    "summary": "甘油浣腸可作短期排便處理，但「卡在出口」不等於每次都適合再灌一劑。",
     "sections": [
       {
-        "heading": "可能的情況",
-        "text": "硬便難排、便意頻繁但排不出來可能有多種原因；是否為糞便嵌塞，需要醫療人員檢查。"
+        "heading": "先確認是否適合",
+        "text": "經評估適合使用時，甘油浣腸可幫助軟化糞便、促進排出。反覆有便意卻排不出、需要頻繁浣腸，應請醫療人員評估是否有糞便嵌塞或其他排便問題。"
       },
       {
-        "heading": "先排除急症",
-        "text": "若劇烈腹痛、嘔吐、腹脹加劇、血便或完全無法排氣，先就醫，不自行灌腸或反覆追加。"
+        "heading": "有警訊先停止自行處理",
+        "text": "腹痛、噁心嘔吐、出血或疑似腸道阻塞時，先就醫。不要反覆用管嘴頂硬便，也不要自行照著醫療處置描述挖便。"
       },
       {
-        "heading": "後續預防",
-        "text": "若經評估需處理嵌塞，醫療人員會選擇適合方法；之後再依原因調整飲水、纖維、排便習慣及藥物。"
+        "heading": "短期處理之後",
+        "text": "排便改善後仍要檢視飲食、活動、排便習慣和用藥；需要時由醫師安排口服藥物，而非只靠甘油球反覆救急。"
       }
     ],
-    "altText": "糞便卡在出口可以自行浣腸嗎？先辨識警訊；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "altText": "硬便卡在出口：甘油浣腸何時可以幫忙？；原圖細節請搭配文字版與產品說明閱讀",
     "image": "img/enema_clinical_cond.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/enema_clinical_cond.html",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
-    "sourceCheckedAt": "2026-10-09",
-    "updatedAt": "2026-10-09",
+    "reviewStatus": "來源已查閱",
+    "sourceCheckedAt": "2026-10-11",
+    "updatedAt": "2026-10-11",
     "references": [
       {
-        "title": "MedlinePlus：糞便嵌塞",
-        "url": "https://medlineplus.gov/ency/article/000230.htm"
+        "title": "臺北榮總桃園分院慈心病房：甘油球、萊潔灌腸法（2016-04-08）",
+        "url": "https://mercyheart.tw/甘油球、萊潔灌腸法/"
       },
       {
-        "title": "MedlinePlus：磷酸鈉直腸用藥",
-        "url": "https://medlineplus.gov/druginfo/meds/a614018.html"
+        "title": "食藥署仿單查詢平台：便通樂甘油浣腸液（衛部成製字第016946號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛部成製字第016946號"
       },
       {
-        "title": "食藥署：浣腸劑使用與便祕原因",
-        "url": "https://www.fda.gov.tw/Tc/faqContent.aspx?id=1109"
+        "title": "馬偕紀念醫院大腸直腸外科：常見問題（便祕、浣腸與排便警訊）",
+        "url": "https://www.mmh.org.tw/taitam/col_su/qa.html"
+      },
+      {
+        "title": "奇美醫院：便秘護理指導 A9310011（2024-05）",
+        "url": "https://www.chimei.org.tw/main/cmh_department/59012/info/9310/A9310011.html"
       }
     ],
-    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+    "revisionCredit": "AI 協助整理"
   },
   {
     "cardId": "enema_use",
-    "title": "便祕藥怎麼分？口服藥與浣腸的角色",
-    "summary": "便祕藥需看成因與個人狀況選擇；浣腸是局部短期處理，不能當成所有便祕的最後一線固定流程。",
+    "title": "便祕用藥怎麼選？口服藥與甘油浣腸各有角色",
+    "summary": "口服藥用於調整糞便與排便情況，甘油浣腸則是部分情境的短期局部處理；不是所有人都照同一套順序用藥。",
     "sections": [
       {
-        "heading": "口服藥類型",
-        "text": "口服滲透性瀉劑如 PEG、乳果糖可增加腸道水分；刺激性瀉劑如 bisacodyl、番瀉苷有不同使用情境。選擇及使用多久應按個人狀況與產品說明。"
+        "heading": "口服藥看成分與需要",
+        "text": "滲透性瀉劑包括 PEG、乳果糖及氧化鎂；另有纖維補充劑及刺激性瀉劑，例如番瀉苷。各類藥物適用情境不同，選擇及使用期間應配合病況與醫囑。"
       },
       {
-        "heading": "浣腸的角色",
-        "text": "浣腸可用於部分短期或經評估的糞便嵌塞情境；圖中「第一線、救援、緊急出口」不是每個人的固定階梯。"
+        "heading": "甘油浣腸的定位",
+        "text": "需要短期協助排便且評估適合時，可選用甘油浣腸；它不能取代反覆便祕的原因評估。原圖的「第一線、救援、緊急出口」是簡化示意，不是每個人必須依序嘗試的階梯。"
       },
       {
-        "heading": "圖片說法待修",
-        "text": "圖中把 PEG 畫在膨脹性瀉劑、把口服刺激性瀉劑寫成一概不可天天用，以及對安全性與依賴性的絕對敘述，均須依具體產品與臨床情境重新查核。"
+        "heading": "長期用藥不能一概而論",
+        "text": "成人慢性特發性便祕指引支持 PEG 作為長期治療選項；其他藥物須依個別情況選擇。不能把所有便祕藥概括為「天天用就依賴」或「一定安全」，也不要自行停掉醫師安排的治療。"
       }
     ],
-    "altText": "便祕藥怎麼分？口服藥與浣腸的角色；圖卡細節及固定數字請核對網頁文字與產品說明",
+    "altText": "便祕用藥怎麼選？口服藥與甘油浣腸各有角色；原圖細節請搭配文字版與產品說明閱讀",
     "image": "img/constipation_cate.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/constipation_cate.html",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "來源已查閱；圖卡內容尚待藥師人工複核",
-    "sourceCheckedAt": "2026-10-09",
-    "updatedAt": "2026-10-09",
+    "reviewStatus": "來源已查閱",
+    "sourceCheckedAt": "2026-10-11",
+    "updatedAt": "2026-10-11",
     "references": [
       {
-        "title": "食藥署：智慧選擇瀉劑",
-        "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=4&id=t622351"
-      },
-      {
-        "title": "食藥署：浣腸劑使用與便祕原因",
-        "url": "https://www.fda.gov.tw/Tc/faqContent.aspx?id=1109"
-      },
-      {
-        "title": "MedlinePlus：便祕自我照護",
-        "url": "https://medlineplus.gov/ency/patientinstructions/000120.htm"
-      },
-      {
-        "title": "MedlinePlus：糞便嵌塞",
-        "url": "https://medlineplus.gov/ency/article/000230.htm"
-      },
-      {
-        "title": "AGA/ACG：成人慢性特發性便祕藥物治療指引",
+        "title": "美國胃腸病學院：AGA／ACG 成人慢性特發性便祕藥物指引解讀（2023-06-13）",
         "url": "https://gi.org/journals-publications/ebgi/schoenfeld2_june2023/"
+      },
+      {
+        "title": "食藥署：浣腸劑購買與使用提醒（2018-02-12）",
+        "url": "https://www.fda.gov.tw/TC/faqContent.aspx?id=1109"
+      },
+      {
+        "title": "奇美醫院：便秘護理指導 A9310011（2024-05）",
+        "url": "https://www.chimei.org.tw/main/cmh_department/59012/info/9310/A9310011.html"
       }
     ],
-    "revisionCredit": "AI 協助整理；尚待藥師人工複核"
+    "revisionCredit": "AI 協助整理"
   }
 ]
