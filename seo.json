@@ -1,4 +1,56 @@
 {
+  "cards/hand_eczema_symptoms.html": {
+    "page_title": "富貴手是什麼？手部乾裂、脫皮與濕疹症狀｜藥局衛教助手",
+    "meta_description": "認識手部濕疹的乾裂、脫皮、搔癢與常見誘因，也留意手癬等相似疾病。",
+    "h1": "富貴手是什麼？手部乾裂、脫皮與濕疹症狀",
+    "image_alt": "富貴手是什麼？手部乾裂、脫皮與濕疹症狀衛教圖解",
+    "keywords": "富貴手、手部濕疹、手部乾裂、手部脫皮、護手霜、保濕、接觸性皮膚炎、類固醇、手套防護、凡士林、洗手、就醫警訊、甘油、神經醯胺",
+    "og_title": "富貴手是什麼？手部乾裂、脫皮與濕疹症狀｜藥局衛教助手",
+    "og_description": "認識手部濕疹的乾裂、脫皮、搔癢與常見誘因，也留意手癬等相似疾病。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/hand_eczema_symptoms.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/hand_eczema_symptoms.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/hand_eczema_symptoms.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/hand_eczema_moisturizers.html": {
+    "page_title": "富貴手護手霜怎麼選？保濕成分與擦法｜藥局衛教助手",
+    "meta_description": "從保濕成分、乳霜與油膏的差別，選擇適合乾裂雙手的護手產品。",
+    "h1": "富貴手護手霜怎麼選？保濕成分與擦法",
+    "image_alt": "富貴手護手霜怎麼選？保濕成分與擦法衛教圖解",
+    "keywords": "富貴手、手部濕疹、手部乾裂、手部脫皮、護手霜、保濕、接觸性皮膚炎、類固醇、手套防護、凡士林、洗手、就醫警訊、甘油、神經醯胺",
+    "og_title": "富貴手護手霜怎麼選？保濕成分與擦法｜藥局衛教助手",
+    "og_description": "從保濕成分、乳霜與油膏的差別，選擇適合乾裂雙手的護手產品。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/hand_eczema_moisturizers.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/hand_eczema_moisturizers.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/hand_eczema_moisturizers.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/hand_eczema_handwashing_gloves.html": {
+    "page_title": "富貴手如何洗手、做家事？雙手防護四重點｜藥局衛教助手",
+    "meta_description": "溫水洗手、擦乾、洗後保濕與手套防護，減少手部反覆刺激。",
+    "h1": "富貴手如何洗手、做家事？雙手防護四重點",
+    "image_alt": "富貴手如何洗手、做家事？雙手防護四重點衛教圖解",
+    "keywords": "富貴手、手部濕疹、手部乾裂、手部脫皮、護手霜、保濕、接觸性皮膚炎、類固醇、手套防護、凡士林、洗手、就醫警訊、甘油、神經醯胺",
+    "og_title": "富貴手如何洗手、做家事？雙手防護四重點｜藥局衛教助手",
+    "og_description": "溫水洗手、擦乾、洗後保濕與手套防護，減少手部反覆刺激。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/hand_eczema_handwashing_gloves.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/hand_eczema_handwashing_gloves.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/hand_eczema_handwashing_gloves.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/hand_eczema_treatment.html": {
+    "page_title": "富貴手需要擦藥嗎？類固醇用法與就醫時機｜藥局衛教助手",
+    "meta_description": "認識保濕與抗發炎藥物的角色，依指示擦藥並辨認需要就醫的警訊。",
+    "h1": "富貴手需要擦藥嗎？類固醇用法與就醫時機",
+    "image_alt": "富貴手需要擦藥嗎？類固醇用法與就醫時機衛教圖解",
+    "keywords": "富貴手、手部濕疹、手部乾裂、手部脫皮、護手霜、保濕、接觸性皮膚炎、類固醇、手套防護、凡士林、洗手、就醫警訊、甘油、神經醯胺",
+    "og_title": "富貴手需要擦藥嗎？類固醇用法與就醫時機｜藥局衛教助手",
+    "og_description": "認識保濕與抗發炎藥物的角色，依指示擦藥並辨認需要就醫的警訊。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/hand_eczema_treatment.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/hand_eczema_treatment.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/hand_eczema_treatment.html",
+    "twitter_card": "summary_large_image"
+  },
   "cards/acne_face_wash_01.html": {
     "page_title": "青春痘為什麼一直長？正確洗臉先破除迷思｜藥局衛教助手",
     "meta_description": "青春痘不是單純沒洗乾淨；溫和清潔是照護的一環，不能取代治療。",

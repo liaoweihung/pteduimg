@@ -1,5 +1,185 @@
 [
   {
+    "cardId": "hand_eczema",
+    "image": "img/hand_eczema_symptoms.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/hand_eczema_symptoms.html",
+    "title": "富貴手是什麼？手部乾裂、脫皮與濕疹症狀",
+    "summary": "認識手部濕疹的乾裂、脫皮、搔癢與常見誘因，也留意手癬等相似疾病。",
+    "sections": [
+      {
+        "heading": "富貴手與常見症狀",
+        "text": "富貴手通常是手部濕疹的俗稱，常見手部乾燥、粗糙、脫皮、發紅、搔癢或刺痛；指尖、指節可能龜裂，嚴重時出現水泡、滲液。富貴手本身不是傳染病。"
+      },
+      {
+        "heading": "為什麼會發生？",
+        "text": "反覆碰水、洗手、接觸清潔劑或長時間戴手套，可能損害皮膚屏障並引起發炎。部分患者有異位性皮膚炎體質，也可能對特定物質產生過敏性接觸皮膚炎。"
+      },
+      {
+        "heading": "手部脫皮不一定都是富貴手",
+        "text": "手癬、乾癬等疾病可能有類似表現。若單手明顯脫皮，或同時有香港腳、灰指甲，應由醫師評估黴菌感染的可能性，不能僅憑外觀自行診斷。"
+      }
+    ],
+    "altText": "富貴手是什麼？手部乾裂、脫皮與濕疹症狀衛教圖解",
+    "updatedAt": "2026-10-12",
+    "sourceCheckedAt": "2026-10-12",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "American Academy of Dermatology：Dry, scaly, and painful hands could be hand eczema",
+        "url": "https://www.aad.org/public/diseases/eczema/types/hand-eczema"
+      },
+      {
+        "title": "DermNet：Hand dermatitis（手部濕疹）",
+        "url": "https://dermnetnz.org/topics/hand-dermatitis"
+      },
+      {
+        "title": "高雄榮民總醫院護理部：認識富貴手（7A10033，2025-03-03修訂）",
+        "url": "https://org.vghks.gov.tw/HE/pdf/7A10033_1.pdf"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": false
+  },
+  {
+    "cardId": "hand_eczema",
+    "image": "img/hand_eczema_moisturizers.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/hand_eczema_moisturizers.html",
+    "title": "富貴手護手霜怎麼選？保濕成分與擦法",
+    "summary": "從保濕成分、乳霜與油膏的差別，選擇適合乾裂雙手的護手產品。",
+    "sections": [
+      {
+        "heading": "選擇無香料、低刺激的保濕產品",
+        "text": "護手霜主要幫助減少水分散失並維持皮膚屏障。優先選擇無香料、低刺激配方；產品仍應依個人耐受性選用。"
+      },
+      {
+        "heading": "常見保濕成分",
+        "text": "Petrolatum（凡士林）：形成保護膜，減少水分散失。\nMineral oil（礦物油）：潤膚、減少水分散失。\nGlycerin（甘油）：吸引水分，幫助保濕。\nDimethicone（二甲矽油）：潤膚並提供屏障保護。\nCeramides（神經醯胺）：協助補充皮膚屏障脂質。"
+      },
+      {
+        "heading": "乳液、乳霜或油膏怎麼選？",
+        "text": "乳液較清爽，適合輕度乾燥；乾燥龜裂時可優先考慮較滋潤的乳霜或油膏。白天選擇方便補擦的乳霜，睡前可用較滋潤的油膏；若有滲液或明顯發炎，請先諮詢醫師或藥師。"
+      },
+      {
+        "heading": "何時擦與刺痛提醒",
+        "text": "每次洗手擦乾後、感覺乾燥時及睡前補擦。已有裂口時，尿素、酸類或香料產品可能刺痛；使用後持續不適應停用並諮詢。護手霜不能取代發炎時需要的藥物治療。"
+      }
+    ],
+    "altText": "富貴手護手霜怎麼選？保濕成分與擦法衛教圖解",
+    "updatedAt": "2026-10-12",
+    "sourceCheckedAt": "2026-10-12",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "食藥署：富貴手好煩惱？教您正確使用護手霜及藥膏（藥物食品安全週報第982期，2024-07-12）",
+        "url": "https://www.fda.gov.tw/TC/PublishOtherEpaperContent.aspx?id=1517&r=1400465825&tid=4810"
+      },
+      {
+        "title": "NHS：Contact dermatitis – Treatment",
+        "url": "https://www.nhs.uk/conditions/contact-dermatitis/treatment/"
+      },
+      {
+        "title": "DermNet：Emollients and moisturisers（潤膚與保濕產品）",
+        "url": "https://dermnetnz.org/topics/emollients-and-moisturisers"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": false
+  },
+  {
+    "cardId": "hand_eczema",
+    "image": "img/hand_eczema_handwashing_gloves.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/hand_eczema_handwashing_gloves.html",
+    "title": "富貴手如何洗手、做家事？雙手防護四重點",
+    "summary": "溫水洗手、擦乾、洗後保濕與手套防護，減少手部反覆刺激。",
+    "sections": [
+      {
+        "heading": "溫水洗手、輕輕擦乾",
+        "text": "使用溫水與溫和清潔用品，避免過熱的水及長時間浸泡。洗完輕輕擦乾雙手、指縫，不要用力搓揉。"
+      },
+      {
+        "heading": "洗後立即保濕",
+        "text": "洗手擦乾後立即補擦護手霜，減少水分散失。避免反覆接觸刺激性清潔劑及不必要的摩擦。"
+      },
+      {
+        "heading": "做家事戴適合的手套",
+        "text": "洗碗、打掃或接觸刺激物時使用適合該工作的防水手套。較長時間配戴時，可內搭棉質手套吸汗；手套內潮濕、流汗時應取下擦乾或更換，避免長時間悶住。"
+      },
+      {
+        "heading": "仍須做好手部衛生",
+        "text": "富貴手患者仍需要適當洗手。醫療、餐飲等工作者應遵循工作場所的手部衛生規範；不能因乾裂就忽略感染預防，也不能假設一般保濕清潔產品具備消毒作用。"
+      }
+    ],
+    "altText": "富貴手如何洗手、做家事？雙手防護四重點衛教圖解",
+    "updatedAt": "2026-10-12",
+    "sourceCheckedAt": "2026-10-12",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "高雄榮民總醫院護理部：認識富貴手（7A10033，2025-03-03修訂）",
+        "url": "https://org.vghks.gov.tw/HE/pdf/7A10033_1.pdf"
+      },
+      {
+        "title": "DermNet：Hand dermatitis（手部濕疹）",
+        "url": "https://dermnetnz.org/topics/hand-dermatitis"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": false
+  },
+  {
+    "cardId": "hand_eczema",
+    "image": "img/hand_eczema_treatment.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/hand_eczema_treatment.html",
+    "title": "富貴手需要擦藥嗎？類固醇用法與就醫時機",
+    "summary": "認識保濕與抗發炎藥物的角色，依指示擦藥並辨認需要就醫的警訊。",
+    "sections": [
+      {
+        "heading": "保濕與減少刺激是基礎",
+        "text": "輕微乾燥、脫皮時，先減少刺激並勤擦保濕產品；明顯紅腫、搔癢或發炎時，可能需要外用類固醇等抗發炎藥物。保濕不能完全取代必要的抗發炎治療。"
+      },
+      {
+        "heading": "外用類固醇依指示使用",
+        "text": "藥物強度、使用頻率與療程，應依診斷、病灶位置及嚴重程度決定。不要自行長期使用強效類固醇；懷疑手癬等黴菌感染時，應先評估，避免自行隨意擦藥。"
+      },
+      {
+        "heading": "藥膏與護手霜的使用順序",
+        "text": "食藥署衛教建議，需要同時使用時可先擦處方藥膏，間隔約15–30分鐘以上再擦護手霜，避免直接混合。不同指引與產品的順序可能不同，例如NHS建議先擦保濕產品再間隔約30分鐘用藥；請以醫師、藥師對實際藥品的指示為準。"
+      },
+      {
+        "heading": "何時需要就醫？",
+        "text": "深度龜裂、疼痛、流血、反覆發作、影響生活工作或持續不改善時，建議皮膚科評估。若有膿液、快速擴大紅腫、明顯紅腫熱痛或發燒，應儘速就醫排除感染。懷疑過敏性接觸皮膚炎時，醫師可能安排貼布測試。"
+      }
+    ],
+    "altText": "富貴手需要擦藥嗎？類固醇用法與就醫時機衛教圖解",
+    "updatedAt": "2026-10-12",
+    "sourceCheckedAt": "2026-10-12",
+    "revisionCredit": "依使用者提供文字，由 AI 協助資料核對與文字修訂",
+    "references": [
+      {
+        "title": "食藥署：富貴手好煩惱？教您正確使用護手霜及藥膏（藥物食品安全週報第982期，2024-07-12）",
+        "url": "https://www.fda.gov.tw/TC/PublishOtherEpaperContent.aspx?id=1517&r=1400465825&tid=4810"
+      },
+      {
+        "title": "NHS：Contact dermatitis – Treatment",
+        "url": "https://www.nhs.uk/conditions/contact-dermatitis/treatment/"
+      },
+      {
+        "title": "American Academy of Dermatology：Dry, scaly, and painful hands could be hand eczema",
+        "url": "https://www.aad.org/public/diseases/eczema/types/hand-eczema"
+      },
+      {
+        "title": "DermNet：Hand dermatitis（手部濕疹）",
+        "url": "https://dermnetnz.org/topics/hand-dermatitis"
+      }
+    ],
+    "matchConfidence": "high",
+    "sourceType": "source_checked_revision",
+    "expandText": false
+  },
+  {
     "cardId": "acne_face_wash",
     "image": "img/acne_face_wash_01.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_01.html",

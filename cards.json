@@ -1,4 +1,43 @@
 {
+  "hand_eczema": {
+    "title": "富貴手",
+    "category": "public_education",
+    "topics": [
+      "skin_wound"
+    ],
+    "order": 7.1,
+    "hidden": false,
+    "icon": "✋",
+    "showFooter": true,
+    "tags": [
+      "富貴手",
+      "手部濕疹",
+      "手部乾裂",
+      "手部脫皮",
+      "護手霜",
+      "保濕",
+      "接觸性皮膚炎",
+      "類固醇",
+      "手套防護",
+      "凡士林",
+      "洗手",
+      "就醫警訊",
+      "甘油",
+      "神經醯胺"
+    ],
+    "texts": [
+      "富貴手是什麼？手部乾裂、脫皮與濕疹症狀",
+      "富貴手護手霜怎麼選？保濕成分與擦法",
+      "富貴手如何洗手、做家事？雙手防護四重點",
+      "富貴手需要擦藥嗎？類固醇用法與就醫時機"
+    ],
+    "steps": [
+      "img/hand_eczema_symptoms.webp",
+      "img/hand_eczema_moisturizers.webp",
+      "img/hand_eczema_handwashing_gloves.webp",
+      "img/hand_eczema_treatment.webp"
+    ]
+  },
   "acne_face_wash": {
     "title": "青春痘的正確洗臉",
     "category": "public_education",

@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202610111214';
+const CACHE_NAME = 'pwa-cache-v202610121220';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -230,6 +230,10 @@ const urlsToCache = [
   "./img/fungal_nail.webp",
   "./img/girlBMI.webp",
   "./img/girl_height2.webp",
+  "./img/hand_eczema_handwashing_gloves.webp",
+  "./img/hand_eczema_moisturizers.webp",
+  "./img/hand_eczema_symptoms.webp",
+  "./img/hand_eczema_treatment.webp",
   "./img/heat_exhaustion.webp",
   "./img/heat_exhaustion_water_vs_electrolytes.webp",
   "./img/height_prediction.webp",
@@ -386,6 +390,10 @@ const urlsToCache = [
   "./img/yunnan_baiyao.webp",
   "./img/zheng_gu_shui.webp",
   "./img/zi_yun_gao.webp",
+  "./cards/hand_eczema_symptoms.html",
+  "./cards/hand_eczema_moisturizers.html",
+  "./cards/hand_eczema_handwashing_gloves.html",
+  "./cards/hand_eczema_treatment.html",
   "./cards/acne_face_wash_01.html",
   "./cards/acne_face_wash_02.html",
   "./cards/acne_face_wash_03.html",

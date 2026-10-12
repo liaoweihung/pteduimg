@@ -1,10 +1,14 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：173
+- 成功加入文字頁數：177
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| hand_eczema | 富貴手是什麼？手部乾裂、脫皮與濕疹症狀 | https://liaoweihung.github.io/pteduimg/cards/hand_eczema_symptoms.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| hand_eczema | 富貴手護手霜怎麼選？保濕成分與擦法 | https://liaoweihung.github.io/pteduimg/cards/hand_eczema_moisturizers.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| hand_eczema | 富貴手如何洗手、做家事？雙手防護四重點 | https://liaoweihung.github.io/pteduimg/cards/hand_eczema_handwashing_gloves.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| hand_eczema | 富貴手需要擦藥嗎？類固醇用法與就醫時機 | https://liaoweihung.github.io/pteduimg/cards/hand_eczema_treatment.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | acne_face_wash | 青春痘為什麼一直長？正確洗臉先破除迷思 | https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | acne_face_wash | 青春痘洗臉別用力搓：避免過度清潔與刺激 | https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | acne_face_wash | 洗臉前先洗手：青春痘肌的清潔準備 | https://liaoweihung.github.io/pteduimg/cards/acne_face_wash_03.html | 是 | 是 | 是 | 是 | 是 | 無 |
