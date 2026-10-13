@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "purpose": "管理索引；不是網站執行資料",
+  "authorities": {
+    "series": "cards.json",
+    "card_text": "data/card_content.json",
+    "retirement": "cards.retired.json",
+    "pilot_navigation": "data/acne_navigation.json"
+  },
+  "nodes": [
+    {
+      "id": "topic:acne",
+      "title": "青春痘",
+      "kind": "topic",
+      "status": "formal_page",
+      "page_path": "topics/acne.html",
+      "evidence": "topics/acne.html|docs/acne-pilot-spec.md",
+      "note": "正式主題頁已在repository；線上部署未於本次查核"
+    },
+    {
+      "id": "subtopic:acne:wash",
+      "title": "青春痘的正確洗臉",
+      "kind": "subtopic",
+      "status": "formal_page",
+      "page_path": "topics/acne.html#face-wash",
+      "evidence": "topics/acne.html",
+      "note": ""
+    },
+    {
+      "id": "subtopic:acne:identify",
+      "title": "認識青春痘與粉刺",
+      "kind": "subtopic",
+      "status": "formal_page",
+      "page_path": "topics/acne.html#identify",
+      "evidence": "topics/acne.html",
+      "note": ""
+    },
+    {
+      "id": "subtopic:acne:medicines",
+      "title": "痘痘藥與使用方式",
+      "kind": "subtopic",
+      "status": "formal_page",
+      "page_path": "topics/acne.html#medicines",
+      "evidence": "topics/acne.html",
+      "note": ""
+    },
+    {
+      "id": "subtopic:acne:patch",
+      "title": "痘痘貼與破皮照護",
+      "kind": "subtopic",
+      "status": "formal_page",
+      "page_path": "topics/acne.html#now",
+      "evidence": "topics/acne.html",
+      "note": ""
+    },
+    {
+      "id": "subtopic:acne:other",
+      "title": "其他相關問題",
+      "kind": "subtopic",
+      "status": "formal_page",
+      "page_path": "topics/acne.html#marks",
+      "evidence": "topics/acne.html",
+      "note": ""
+    },
+    {
+      "id": "subtopic:acne:diet",
+      "title": "青春痘與飲食",
+      "kind": "subtopic",
+      "status": "planned",
+      "page_path": "",
+      "evidence": "docs/acne-phase1-content-map.md",
+      "note": "僅歷史提案；未核准製作，不配置假URL"
+    },
+    {
+      "id": "subtopic:acne:hormonal",
+      "title": "女性荷爾蒙與青春痘",
+      "kind": "subtopic",
+      "status": "planned",
+      "page_path": "",
+      "evidence": "docs/acne-phase1-content-map.md",
+      "note": "僅歷史提案；未核准製作，不配置假URL"
+    },
+    {
+      "id": "subtopic:acne:oral-treatment",
+      "title": "青春痘口服治療",
+      "kind": "subtopic",
+      "status": "planned",
+      "page_path": "",
+      "evidence": "docs/acne-phase1-content-map.md",
+      "note": "僅歷史提案；未核准製作，不配置假URL"
+    },
+    {
+      "id": "topic:skin-care",
+      "title": "皮膚照護",
+      "kind": "topic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": "管理集合；不是已存在的疾病專頁；不新增公開頁面"
+    },
+    {
+      "id": "topic:long-term-care",
+      "title": "長照",
+      "kind": "topic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": "管理集合；不是已存在的疾病專頁；不新增公開頁面"
+    },
+    {
+      "id": "topic:maternal-child",
+      "title": "婦幼",
+      "kind": "topic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": "管理集合；不是已存在的疾病專頁；不新增公開頁面"
+    },
+    {
+      "id": "topic:dry-eye",
+      "title": "乾眼症",
+      "kind": "topic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": "管理集合；不是已存在的疾病專頁；不新增公開頁面"
+    },
+    {
+      "id": "topic:tinea-pedis",
+      "title": "香港腳",
+      "kind": "topic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": "管理集合；不是已存在的疾病專頁；不新增公開頁面"
+    },
+    {
+      "id": "topic:rosacea",
+      "title": "酒糟",
+      "kind": "topic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": "管理集合；不是已存在的疾病專頁；不新增公開頁面"
+    },
+    {
+      "id": "topic:wound-care",
+      "title": "傷口照護",
+      "kind": "topic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": "管理集合；不是已存在的疾病專頁；不新增公開頁面"
+    },
+    {
+      "id": "subtopic:dry-eye:education",
+      "title": "乾眼症衛教",
+      "kind": "subtopic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": ""
+    },
+    {
+      "id": "subtopic:tinea-pedis:education",
+      "title": "香港腳與灰指甲衛教",
+      "kind": "subtopic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": ""
+    },
+    {
+      "id": "subtopic:long-term-care:diaper",
+      "title": "成人尿布照護",
+      "kind": "subtopic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": ""
+    },
+    {
+      "id": "subtopic:maternal-child:pregnancy",
+      "title": "孕期與驗孕",
+      "kind": "subtopic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": ""
+    },
+    {
+      "id": "subtopic:skin-care:hand",
+      "title": "手部濕疹",
+      "kind": "subtopic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": ""
+    },
+    {
+      "id": "subtopic:rosacea:care",
+      "title": "酒糟照護",
+      "kind": "subtopic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": ""
+    },
+    {
+      "id": "subtopic:wound-care:scar",
+      "title": "疤痕照護",
+      "kind": "subtopic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": ""
+    },
+    {
+      "id": "tool:ingredient-explorer",
+      "title": "外用藥成分查詢",
+      "kind": "tool",
+      "status": "existing_tool",
+      "page_path": "ingredient-explorer.html",
+      "evidence": "ingredient-explorer.html",
+      "note": "藥師工具；不是民眾選藥建議"
+    },
+    {
+      "id": "tool:menstrual-calculator",
+      "title": "經期、排卵與預產期計算器",
+      "kind": "tool",
+      "status": "existing_tool",
+      "page_path": "menstrual-calculator.html",
+      "evidence": "calc.html",
+      "note": "存在不代表可診斷荷爾蒙痘；本次不建立痘痘工具導流"
+    }
+  ]
+}
