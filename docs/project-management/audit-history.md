@@ -442,3 +442,19 @@
 ## 追加格式
 
 後續每次只在此追加：日期、CR、精確頁/系列/工具ID、變更前證據指紋/Commit、修改範圍、新驗證、尚未解决事項、簽核是否失效、對應Commit/部署狀態。不要重寫上方歷史或改原報告數字。報告文件本身更新時，在追加事件中記錄舊SHA/版本、新SHA與理由，再更新audit-register的目前指紋。
+
+## 2026-10-13｜CR-2026-026 新增彈性襪
+
+- 範圍：series:compression_stockings 的八個新頁，以及索引、PWA 與管理投影；來源與圖文對應見 [任務證據](evidence/compression-stockings-2026-10-13.md)。未改既有圖卡內容或人工醫療欄位。
+- AUD-007 舊版本為 176 成功、0 失敗。先保存 [重建前原報告快照](evidence/card-text-integration-before-compression-2026-10-13.md)，SHA-256：216c6f181c80ccaba29a07d695366ede86b3b3a93a543d853c5ad03e620cec9e；原檔最後 Commit 為 737f2ab9c395636bc838c426c585842233f9f3a5，舊盤點日仍 unknown。
+- 本次完整建置新增八頁，報告變為 184 成功、0 失敗；新 SHA-256：c64abda5ebc0555284d331f61a2fef08e124c9bfb1063a3e68750359f3db91c9。audit-register 保留 previous_versions，不以單純更新 hash 消除舊結論。
+- 增量 --propose 只提出八個新 ID，沒有舊頁異動、移除或來源錯誤；[原提案](evidence/compression-stockings-proposals-2026-10-13.json)保留。新頁人工欄位 unknown，needsMedicalReview 保持 true。
+- 既有 CR-2026-023 字詞比對差異仍未解，AUD-007 的 conflict 保留；機械通過不代表藥師確認、全站 AEO 或搜尋成效。
+- 未新增／撤銷任何醫療簽核。Commit、Push、Pages 部署均未執行；最終測試記錄補於任務證據與 validation-report。
+
+## 2026-10-14｜CR-2026-026 本機驗收完成
+
+- 網站回歸檢查、管理一致性與18項管理測試通過；最終 --propose 無差異、無移除、無 source errors。
+- 八頁桌面／手機圖片與循環翻頁通過，public 列表第一個系列為彈性襪。原342頁人工欄位與343個舊HTML快照比對無變動。
+- CR 結案僅表示授權的本機製作及管理維護完成；不代表醫療簽核、Git提交或正式網站部署。來源查核與內容日期未隨驗收更新。
+- 細節見 [任務證據](evidence/compression-stockings-2026-10-13.md)及 [驗證報告](validation-report.md)。原 CR-2026-023 與其他未核准需求不變。

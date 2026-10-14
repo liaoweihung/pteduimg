@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202610130030';
+const CACHE_NAME = 'pwa-cache-v202610132327';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -180,6 +180,14 @@ const urlsToCache = [
   "./img/chomolyn_cromolyn_eye_drops.webp",
   "./img/comedo.webp",
   "./img/common_skin_redness_causes.webp",
+  "./img/compression_stockings_benefits.webp",
+  "./img/compression_stockings_care.webp",
+  "./img/compression_stockings_measurement.webp",
+  "./img/compression_stockings_pressure.webp",
+  "./img/compression_stockings_safety.webp",
+  "./img/compression_stockings_wear_1.webp",
+  "./img/compression_stockings_wear_2.webp",
+  "./img/compression_stockings_wear_3.webp",
   "./img/condom_after_use.webp",
   "./img/condom_check_before_use.webp",
   "./img/condom_common_mistakes.webp",
@@ -389,6 +397,14 @@ const urlsToCache = [
   "./img/yunnan_baiyao.webp",
   "./img/zheng_gu_shui.webp",
   "./img/zi_yun_gao.webp",
+  "./cards/compression_stockings_benefits.html",
+  "./cards/compression_stockings_pressure.html",
+  "./cards/compression_stockings_measurement.html",
+  "./cards/compression_stockings_wear_1.html",
+  "./cards/compression_stockings_wear_2.html",
+  "./cards/compression_stockings_wear_3.html",
+  "./cards/compression_stockings_care.html",
+  "./cards/compression_stockings_safety.html",
   "./cards/hand_eczema_symptoms.html",
   "./cards/hand_eczema_moisturizers.html",
   "./cards/hand_eczema_handwashing_gloves.html",

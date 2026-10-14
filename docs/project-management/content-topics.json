@@ -9,6 +9,24 @@
   },
   "nodes": [
     {
+      "id": "topic:venous-circulation",
+      "title": "靜脈循環與壓迫照護",
+      "kind": "topic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json|docs/project-management/evidence/compression-stockings-2026-10-13.md",
+      "note": "管理集合；public.html 使用 chronic_conditions 分類；未建立獨立疾病主題頁"
+    },
+    {
+      "id": "subtopic:venous-circulation:compression-stockings",
+      "title": "彈性襪選擇與穿戴",
+      "kind": "subtopic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": "CR-2026-026；管理分類不代表已經人工醫療複核"
+    },
+    {
       "id": "topic:acne",
       "title": "青春痘",
       "kind": "topic",

@@ -395,3 +395,13 @@ REL-5252a7ff84195006,subtopic:acne:other,shares_card,page:scar_remove,source_obs
 REL-dc1afa3c51bbd11c,topic:wound-care,shares_card,page:scar_remove,management_mapping,management,cards.json,同一page ID亦供青春痘引用
 REL-b125ebbebee8c284,topic:acne,differential,topic:rosacea,documented_proposal,management,docs/acne-phase1-content-map.md,角色關係；不把酒糟藥當一般青春痘藥
 REL-3a8b48c9f1b09629,page:acne_topicals_09_combinations,related_tool,tool:ingredient-explorer,documented_proposal,management,docs/acne-phase1-content-map.md,Phase1 S10提案；未宣稱已有公開連結或已獲核准
+REL-274a68005ccf8443,topic:venous-circulation,has_subtopic,subtopic:venous-circulation:compression-stockings,management_mapping,management,cards.json,CR-2026-026 管理集合；不新增疾病專頁
+REL-efe202ac3ba9d90f,subtopic:venous-circulation:compression-stockings,contains_series,series:compression_stockings,management_mapping,management,cards.json,CR-2026-026 管理集合；不新增疾病專頁
+REL-b273eaf034b3b841,series:compression_stockings,has_card,page:compression_stockings_benefits,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-e4339f149252b59f,series:compression_stockings,has_card,page:compression_stockings_pressure,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-145f58fff89c8f22,series:compression_stockings,has_card,page:compression_stockings_measurement,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-80b11cde108ed09d,series:compression_stockings,has_card,page:compression_stockings_wear_1,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-30cf95fe29abb609,series:compression_stockings,has_card,page:compression_stockings_wear_2,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-9e87d999f42809bb,series:compression_stockings,has_card,page:compression_stockings_wear_3,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-90da56b737e212d6,series:compression_stockings,has_card,page:compression_stockings_care,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-73b0441446030562,series:compression_stockings,has_card,page:compression_stockings_safety,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核

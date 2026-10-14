@@ -1,10 +1,18 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：176
+- 成功加入文字頁數：184
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| compression_stockings | 彈性襪有什麼作用？漸進式壓力與適用族群 | https://liaoweihung.github.io/pteduimg/cards/compression_stockings_benefits.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| compression_stockings | 彈性襪壓力怎麼選？認識 mmHg 與壓力分級 | https://liaoweihung.github.io/pteduimg/cards/compression_stockings_pressure.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| compression_stockings | 彈性襪尺寸怎麼量？腳踝、小腿與腿長量測 | https://liaoweihung.github.io/pteduimg/cards/compression_stockings_measurement.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| compression_stockings | 彈性襪怎麼穿？早晨準備與翻襪到腳跟 | https://liaoweihung.github.io/pteduimg/cards/compression_stockings_wear_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| compression_stockings | 彈性襪穿戴步驟：套好腳掌、對準腳跟再往上拉 | https://liaoweihung.github.io/pteduimg/cards/compression_stockings_wear_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| compression_stockings | 彈性襪穿好後怎麼檢查？避免皺褶、捲邊與反摺 | https://liaoweihung.github.io/pteduimg/cards/compression_stockings_wear_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| compression_stockings | 彈性襪怎麼洗與保養？清洗、陰乾及更換時機 | https://liaoweihung.github.io/pteduimg/cards/compression_stockings_care.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| compression_stockings | 哪些人不適合自行穿彈性襪？使用限制與就醫警訊 | https://liaoweihung.github.io/pteduimg/cards/compression_stockings_safety.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | hand_eczema | 富貴手是什麼？手部乾裂、脫皮與濕疹症狀 | https://liaoweihung.github.io/pteduimg/cards/hand_eczema_symptoms.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | hand_eczema | 富貴手護手霜怎麼選？保濕成分與擦法 | https://liaoweihung.github.io/pteduimg/cards/hand_eczema_moisturizers.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | hand_eczema | 富貴手如何洗手、做家事？雙手防護四重點 | https://liaoweihung.github.io/pteduimg/cards/hand_eczema_handwashing_gloves.html | 是 | 是 | 是 | 是 | 是 | 無 |

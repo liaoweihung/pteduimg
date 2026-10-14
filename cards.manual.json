@@ -1,4 +1,56 @@
 {
+  "compression_stockings": {
+    "title": "彈性襪",
+    "category": "public_education",
+    "topics": [
+      "chronic_conditions"
+    ],
+    "order": 0,
+    "hidden": false,
+    "icon": "🧦",
+    "showFooter": true,
+    "tags": [
+      "彈性襪",
+      "壓力襪",
+      "醫療彈性襪",
+      "漸進式壓力",
+      "靜脈曲張",
+      "靜脈回流",
+      "腿部腫脹",
+      "久站久坐",
+      "mmHg",
+      "壓力分級",
+      "彈性襪尺寸",
+      "腳踝圍",
+      "小腿圍",
+      "彈性襪穿法",
+      "彈性襪清洗",
+      "壓迫治療",
+      "動脈循環不良",
+      "深層靜脈栓塞",
+      "compression stockings"
+    ],
+    "texts": [
+      "彈性襪有什麼作用？漸進式壓力與適用族群",
+      "彈性襪壓力怎麼選？認識 mmHg 與壓力分級",
+      "彈性襪尺寸怎麼量？腳踝、小腿與腿長量測",
+      "彈性襪怎麼穿？早晨準備與翻襪到腳跟",
+      "彈性襪穿戴步驟：套好腳掌、對準腳跟再往上拉",
+      "彈性襪穿好後怎麼檢查？避免皺褶、捲邊與反摺",
+      "彈性襪怎麼洗與保養？清洗、陰乾及更換時機",
+      "哪些人不適合自行穿彈性襪？使用限制與就醫警訊"
+    ],
+    "steps": [
+      "img/compression_stockings_benefits.webp",
+      "img/compression_stockings_pressure.webp",
+      "img/compression_stockings_measurement.webp",
+      "img/compression_stockings_wear_1.webp",
+      "img/compression_stockings_wear_2.webp",
+      "img/compression_stockings_wear_3.webp",
+      "img/compression_stockings_care.webp",
+      "img/compression_stockings_safety.webp"
+    ]
+  },
   "hand_eczema": {
     "title": "富貴手",
     "category": "public_education",

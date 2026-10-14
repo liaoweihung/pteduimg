@@ -1,5 +1,353 @@
 [
   {
+    "cardId": "compression_stockings",
+    "image": "img/compression_stockings_benefits.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/compression_stockings_benefits.html",
+    "title": "彈性襪有什麼作用？漸進式壓力與適用族群",
+    "summary": "醫療彈性襪利用腳踝較高、往上逐漸降低的壓力，協助靜脈回流與減輕部分腿部不適；不是一般襪子，也不能根治靜脈曲張。",
+    "sections": [
+      {
+        "heading": "什麼是漸進式壓力？",
+        "text": "合適的醫療彈性襪在腳踝施加較高壓力，沿小腿向上逐漸降低，幫助腿部靜脈血液回流。不是整條腿越勒越好，也不能只憑穿起來緊不緊判斷效果。"
+      },
+      {
+        "heading": "哪些人可能需要？",
+        "text": "久站久坐後腿部痠脹、靜脈曲張、反覆腿部腫脹，或醫師建議壓迫治療的人，可能適合使用。腿腫原因很多，持續或新出現的腫脹應先評估，再決定壓力與長度。"
+      },
+      {
+        "heading": "改善症狀，不取代診斷",
+        "text": "彈性襪可協助症狀控制，但不能根治靜脈曲張，也不能取代活動與必要治療。單側腿突然腫脹、疼痛或發熱，不要自行買襪處理，應儘速就醫。"
+      }
+    ],
+    "altText": "彈性襪有什麼作用？漸進式壓力與適用族群圖解；操作細節及注意事項請搭配文字版閱讀",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱，尚未人工醫療複核",
+    "updatedAt": "2026-10-13",
+    "sourceCheckedAt": "2026-10-13",
+    "revisionCredit": "AI 協助整理",
+    "expandText": false,
+    "references": [
+      {
+        "title": "SIGVARIS：Compression levels and indications（壓力範圍與選擇）",
+        "url": "https://www.sigvaris.com/en-ca/expertise/basics/compression-levels"
+      },
+      {
+        "title": "NHS：Varicose eczema - Treatment（壓迫治療與保養；2023-04-20）",
+        "url": "https://www.nhs.uk/conditions/varicose-eczema/treatment/"
+      },
+      {
+        "title": "NHS：DVT (deep vein thrombosis)（症狀與緊急就醫；2026-04-30）",
+        "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/"
+      }
+    ]
+  },
+  {
+    "cardId": "compression_stockings",
+    "image": "img/compression_stockings_pressure.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/compression_stockings_pressure.html",
+    "title": "彈性襪壓力怎麼選？認識 mmHg 與壓力分級",
+    "summary": "選彈性襪先看 mmHg 壓力數值，再配合病況、循環與尺寸評估；不同國家的第一級、第二級不一定相同。",
+    "sections": [
+      {
+        "heading": "常見壓力範圍",
+        "text": "常見產品標示包括 8–15 mmHg（輕度支撐）、15–20 mmHg（較輕壓迫）、20–30 mmHg（中度醫療壓迫）及 30–40 mmHg（較高壓力）。這是閱讀圖卡用的概略分類，不是跨國統一標準，也不是自行選壓力的處方。"
+      },
+      {
+        "heading": "不要只看第一級、第二級",
+        "text": "不同標準與品牌的級別可能對應不同 mmHg 範圍。購買時應核對實際壓力標示、用途及尺寸表，而非只比較級別或襪子的厚薄。"
+      },
+      {
+        "heading": "第一次穿也要先確認適不適合",
+        "text": "圖中「初次使用適合」不代表所有初次使用者都能直接選 15–20 mmHg。壓力不是越高越好；20–30 mmHg 以上尤其應由醫療人員評估。有動脈循環不良、嚴重心衰竭、感覺遲鈍或皮膚傷口時，不要自行選購穿戴。"
+      }
+    ],
+    "altText": "彈性襪壓力怎麼選？認識 mmHg 與壓力分級圖解；操作細節及注意事項請搭配文字版閱讀",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱，尚未人工醫療複核",
+    "updatedAt": "2026-10-13",
+    "sourceCheckedAt": "2026-10-13",
+    "revisionCredit": "AI 協助整理",
+    "expandText": false,
+    "references": [
+      {
+        "title": "SIGVARIS：Compression levels and indications（壓力範圍與選擇）",
+        "url": "https://www.sigvaris.com/en-ca/expertise/basics/compression-levels"
+      },
+      {
+        "title": "SIGVARIS：Circular knit compression catalogue（AFNOR／RAL 分級與尺寸表）",
+        "url": "https://www.sigvaris.group/globalassets/pdf/pdf-local/uk/medical-literature/brochure_circular_knit.pdf"
+      },
+      {
+        "title": "Rabe 等：Risks and contraindications of medical compression treatment，國際共識（Phlebology，2020）",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7383414/"
+      }
+    ]
+  },
+  {
+    "cardId": "compression_stockings",
+    "image": "img/compression_stockings_measurement.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/compression_stockings_measurement.html",
+    "title": "彈性襪尺寸怎麼量？腳踝、小腿與腿長量測",
+    "summary": "彈性襪不能只靠鞋碼或身高挑尺寸。早晨腿還沒明顯腫脹時，量腳踝、小腿及腿長；大腿襪需依品牌要求加量大腿圍。",
+    "sections": [
+      {
+        "heading": "先量周徑，再量長度",
+        "text": "常見量測點是腳踝最細處與小腿最粗處。膝下襪還需量腿長，通常依產品指引從地面量至膝下指定位置；大腿襪需另量大腿圍及相應腿長。各品牌的量測位置、姿勢與尺寸分界應依原廠尺寸表。"
+      },
+      {
+        "heading": "什麼時候量比較合適？",
+        "text": "建議早晨、腿部尚未明顯腫脹時量測。以軟尺貼合皮膚但不要勒緊；左右腿若粗細不同，應分別量測並詢問專業人員，不要僅套用另一側尺寸。"
+      },
+      {
+        "heading": "尺寸不是越小越有效",
+        "text": "不要只看鞋碼、身高，或故意買小一號增加壓力。尺寸不合、腫脹變化或介於尺寸範圍時，請協助量測的醫療人員或合格配適人員確認。"
+      }
+    ],
+    "altText": "彈性襪尺寸怎麼量？腳踝、小腿與腿長量測圖解；操作細節及注意事項請搭配文字版閱讀",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱，尚未人工醫療複核",
+    "updatedAt": "2026-10-13",
+    "sourceCheckedAt": "2026-10-13",
+    "revisionCredit": "AI 協助整理",
+    "expandText": false,
+    "references": [
+      {
+        "title": "SIGVARIS：Compression levels and indications（壓力範圍與選擇）",
+        "url": "https://www.sigvaris.com/en-ca/expertise/basics/compression-levels"
+      },
+      {
+        "title": "SIGVARIS：Circular knit compression catalogue（AFNOR／RAL 分級與尺寸表）",
+        "url": "https://www.sigvaris.group/globalassets/pdf/pdf-local/uk/medical-literature/brochure_circular_knit.pdf"
+      },
+      {
+        "title": "Rabe 等：Risks and contraindications of medical compression treatment，國際共識（Phlebology，2020）",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7383414/"
+      }
+    ]
+  },
+  {
+    "cardId": "compression_stockings",
+    "image": "img/compression_stockings_wear_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/compression_stockings_wear_1.html",
+    "title": "彈性襪怎麼穿？早晨準備與翻襪到腳跟",
+    "summary": "早晨腿部還沒明顯腫脹時，坐穩後將襪筒翻到腳跟，讓接下來套入腳掌與定位腳跟更容易。",
+    "sections": [
+      {
+        "heading": "步驟 1：早晨準備",
+        "text": "依醫療人員指示，在起床後、腿部尚未明顯腫脹時穿戴。先坐穩再操作，避免站著單腳穿襪而跌倒。保持皮膚乾燥；若使用保濕品，待完全吸收後再穿。"
+      },
+      {
+        "heading": "步驟 2：翻至腳跟",
+        "text": "手伸進襪內抓住腳跟位置，將襪筒向外翻至腳跟，保留腳掌部位。先辨認腳跟與腳尖方向，再準備套入，避免一開始就把整條襪子拉扯成團。"
+      },
+      {
+        "heading": "穿戴前的小檢查",
+        "text": "留意指甲、戒指及粗糙皮膚，避免勾破襪子或刮傷皮膚。難以彎腰或出力時，可以請人協助，或詢問適合的穿襪輔具。穿戴時段依實際醫囑，不自行延長為全天連睡覺都穿。"
+      }
+    ],
+    "altText": "彈性襪怎麼穿？早晨準備與翻襪到腳跟圖解；操作細節及注意事項請搭配文字版閱讀",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱，尚未人工醫療複核",
+    "updatedAt": "2026-10-13",
+    "sourceCheckedAt": "2026-10-13",
+    "revisionCredit": "AI 協助整理",
+    "expandText": false,
+    "references": [
+      {
+        "title": "Guy's and St Thomas' NHS：Compression stockings（4375/VER2；2025-01）",
+        "url": "https://www.guysandstthomas.nhs.uk/health-information/compression-stockings"
+      },
+      {
+        "title": "Kent Community Health NHS：Applying graduated compression stockings（2026-05-05）",
+        "url": "https://www.kentcht.nhs.uk/leaflet/applying-graduated-compression-stockings/"
+      }
+    ]
+  },
+  {
+    "cardId": "compression_stockings",
+    "image": "img/compression_stockings_wear_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/compression_stockings_wear_2.html",
+    "title": "彈性襪穿戴步驟：套好腳掌、對準腳跟再往上拉",
+    "summary": "先將腳掌套入、對準腳跟，再分段從腳踝往上整理襪身；不要只抓襪口猛拉，以免移位、變形或局部過緊。",
+    "sections": [
+      {
+        "heading": "步驟 3：套好腳掌與腳跟",
+        "text": "將腳伸進襪內，確認腳跟落在襪子的腳跟位置。腳趾保持舒適，不要擠在一起；開趾款若有附穿襪輔具，依產品說明使用及取下。"
+      },
+      {
+        "heading": "步驟 4：慢慢往上整理",
+        "text": "用雙手由腳踝逐段向上整理襪身，讓布料貼合腿部。不要只拉襪口，也不要用力猛扯、扭轉或過度拉長襪子。"
+      },
+      {
+        "heading": "卡住時不要硬拉",
+        "text": "若布料扭曲、拉得過長或腳跟移位，先放鬆並重新整理位置，不要靠反摺襪口處理多出的長度。經常穿不上或難以操作，應請專業人員確認尺寸與輔具。"
+      }
+    ],
+    "altText": "彈性襪穿戴步驟：套好腳掌、對準腳跟再往上拉圖解；操作細節及注意事項請搭配文字版閱讀",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱，尚未人工醫療複核",
+    "updatedAt": "2026-10-13",
+    "sourceCheckedAt": "2026-10-13",
+    "revisionCredit": "AI 協助整理",
+    "expandText": false,
+    "references": [
+      {
+        "title": "Guy's and St Thomas' NHS：Compression stockings（4375/VER2；2025-01）",
+        "url": "https://www.guysandstthomas.nhs.uk/health-information/compression-stockings"
+      },
+      {
+        "title": "Kent Community Health NHS：Applying graduated compression stockings（2026-05-05）",
+        "url": "https://www.kentcht.nhs.uk/leaflet/applying-graduated-compression-stockings/"
+      }
+    ]
+  },
+  {
+    "cardId": "compression_stockings",
+    "image": "img/compression_stockings_wear_3.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/compression_stockings_wear_3.html",
+    "title": "彈性襪穿好後怎麼檢查？避免皺褶、捲邊與反摺",
+    "summary": "穿好後檢查襪身與襪口，避免皺褶、捲邊及反摺造成局部壓迫；疼痛、麻木或腳趾變色時不能硬撐。",
+    "sections": [
+      {
+        "heading": "步驟 5：檢查平整與位置",
+        "text": "確認腳跟定位正確，襪身貼合且沒有扭轉或堆成一圈。襪口應停在產品設計的位置，不要捲下或反摺，也不要讓布料卡在皮膚皺摺處。"
+      },
+      {
+        "heading": "平整不等於整條腿壓力相同",
+        "text": "圖中「壓力平均」指避免皺褶或襪口造成局部過度壓迫；漸進式彈性襪仍保留腳踝較高、往上逐漸降低的壓力設計。穿得越緊並不代表效果越好。"
+      },
+      {
+        "heading": "不舒服時的處理",
+        "text": "若出現明顯疼痛、麻木、腳趾蒼白或發紫冰冷、新傷口或壓痕破皮，立即脫下並就醫評估，不要只換尺寸後繼續撐著穿。一般日常使用多在睡前脫下，除非醫療人員另有指示。"
+      }
+    ],
+    "altText": "彈性襪穿好後怎麼檢查？避免皺褶、捲邊與反摺圖解；操作細節及注意事項請搭配文字版閱讀",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱，尚未人工醫療複核",
+    "updatedAt": "2026-10-13",
+    "sourceCheckedAt": "2026-10-13",
+    "revisionCredit": "AI 協助整理",
+    "expandText": false,
+    "references": [
+      {
+        "title": "Guy's and St Thomas' NHS：Compression stockings（4375/VER2；2025-01）",
+        "url": "https://www.guysandstthomas.nhs.uk/health-information/compression-stockings"
+      },
+      {
+        "title": "NHS：Varicose eczema - Treatment（壓迫治療與保養；2023-04-20）",
+        "url": "https://www.nhs.uk/conditions/varicose-eczema/treatment/"
+      },
+      {
+        "title": "Rabe 等：Risks and contraindications of medical compression treatment，國際共識（Phlebology，2020）",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7383414/"
+      }
+    ]
+  },
+  {
+    "cardId": "compression_stockings",
+    "image": "img/compression_stockings_care.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/compression_stockings_care.html",
+    "title": "彈性襪怎麼洗與保養？清洗、陰乾及更換時機",
+    "summary": "彈性襪需依洗標溫和清洗、避開漂白與高溫。鬆弛、破洞或壓力效果變差時應評估更換，不能只看使用月數。",
+    "sections": [
+      {
+        "heading": "清洗以產品洗標為準",
+        "text": "使用溫和洗劑；可手洗或依洗標採柔洗。避免漂白劑、柔軟精、乾洗及熨燙，不用高溫烘乾，以免影響材質及彈性。"
+      },
+      {
+        "heading": "自然乾燥與替換",
+        "text": "清洗後依產品說明處理水分，放在通風處自然陰乾，遠離暖氣及其他直接熱源。準備兩雙輪替，方便一雙穿、一雙洗晾；穿脫時也要避免指甲與飾品勾破。"
+      },
+      {
+        "heading": "何時評估更換？",
+        "text": "若襪子鬆弛、破洞、不再貼合或壓力效果變差，應提早評估更換。一般可在使用約 3–6 個月時檢查更換需要，但實際期限依品牌、使用頻率及醫療人員建議，不是一定要等滿六個月。"
+      }
+    ],
+    "altText": "彈性襪怎麼洗與保養？清洗、陰乾及更換時機圖解；操作細節及注意事項請搭配文字版閱讀",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱，尚未人工醫療複核",
+    "updatedAt": "2026-10-13",
+    "sourceCheckedAt": "2026-10-13",
+    "revisionCredit": "AI 協助整理",
+    "expandText": false,
+    "references": [
+      {
+        "title": "Kent Community Health NHS：Applying graduated compression stockings（2026-05-05）",
+        "url": "https://www.kentcht.nhs.uk/leaflet/applying-graduated-compression-stockings/"
+      },
+      {
+        "title": "Guy's and St Thomas' NHS：Compression stockings（4375/VER2；2025-01）",
+        "url": "https://www.guysandstthomas.nhs.uk/health-information/compression-stockings"
+      },
+      {
+        "title": "NHS：Varicose eczema - Treatment（壓迫治療與保養；2023-04-20）",
+        "url": "https://www.nhs.uk/conditions/varicose-eczema/treatment/"
+      }
+    ]
+  },
+  {
+    "cardId": "compression_stockings",
+    "image": "img/compression_stockings_safety.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/compression_stockings_safety.html",
+    "title": "哪些人不適合自行穿彈性襪？使用限制與就醫警訊",
+    "summary": "動脈循環不良、嚴重心衰竭、感覺遲鈍或腿部皮膚病灶，應先評估再使用。單側突然腫痛與胸痛、呼吸困難是不同層級的就醫警訊。",
+    "sections": [
+      {
+        "heading": "使用前先問醫師",
+        "text": "有腿部動脈循環不良、嚴重或未穩定的心臟衰竭、糖尿病合併感覺遲鈍，以及腿部傷口、感染或嚴重皮膚問題時，不要自行穿戴。糖尿病或傷口本身不代表所有壓迫治療都禁用；需由醫療人員判斷循環、感覺、傷口照護及適當壓力。"
+      },
+      {
+        "heading": "穿戴後哪些情況要立即停止？",
+        "text": "腳趾發紫、蒼白、冰冷，出現明顯疼痛或麻木，或新增傷口與壓痕破皮時，立即脫下並就醫評估。明顯缺血或嚴重持續疼痛不要等待一般回診。"
+      },
+      {
+        "heading": "單側腿突然腫痛：儘速就醫",
+        "text": "單側腿突然腫脹、疼痛、發熱，可能涉及深層靜脈栓塞等問題，應儘速、最好當日接受醫療評估，不要自行加壓或只靠彈性襪處理。"
+      },
+      {
+        "heading": "胸痛或呼吸困難：立即急診",
+        "text": "若突然胸痛或呼吸困難，尤其同時有腿部腫痛，可能是肺栓塞等急症，請立即呼叫 119 或至急診，不要自行開車或等症狀自行消失。"
+      }
+    ],
+    "altText": "哪些人不適合自行穿彈性襪？使用限制與就醫警訊圖解；操作細節及注意事項請搭配文字版閱讀",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱，尚未人工醫療複核",
+    "updatedAt": "2026-10-13",
+    "sourceCheckedAt": "2026-10-13",
+    "revisionCredit": "AI 協助整理",
+    "expandText": false,
+    "references": [
+      {
+        "title": "Rabe 等：Risks and contraindications of medical compression treatment，國際共識（Phlebology，2020）",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7383414/"
+      },
+      {
+        "title": "SIGVARIS：Compression levels and indications（壓力範圍與選擇）",
+        "url": "https://www.sigvaris.com/en-ca/expertise/basics/compression-levels"
+      },
+      {
+        "title": "NHS：DVT (deep vein thrombosis)（症狀與緊急就醫；2026-04-30）",
+        "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/"
+      }
+    ]
+  },
+  {
     "cardId": "hand_eczema",
     "image": "img/hand_eczema_symptoms.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/hand_eczema_symptoms.html",
