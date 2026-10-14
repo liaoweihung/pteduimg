@@ -1,4 +1,62 @@
 {
+  "elderly_nutrition_supplements": {
+    "title": "營養品怎麼選",
+    "category": "public_education",
+    "topics": [
+      "chronic_conditions"
+    ],
+    "order": 2.1,
+    "hidden": false,
+    "icon": "🥤",
+    "showFooter": true,
+    "tags": [
+      "長者食慾不佳",
+      "老人吃不下",
+      "老人沒胃口",
+      "營養補充品",
+      "老人營養品",
+      "均衡營養配方",
+      "高蛋白營養品",
+      "長者蛋白質",
+      "肌少症",
+      "少量多餐",
+      "糖尿病營養品",
+      "腎臟病營養品",
+      "洗腎營養品",
+      "吞嚥困難",
+      "體重下降",
+      "口服營養補充品",
+      "ONS",
+      "亞培安素",
+      "桂格完膳",
+      "雀巢立攝適",
+      "葡勝納",
+      "補體素",
+      "益富益力壯"
+    ],
+    "texts": [
+      "長者為什麼吃不下？食慾下降常見原因",
+      "長者食慾不好怎麼吃？少量多餐與飲食調整",
+      "長者蛋白質怎麼補？攝取量與食物來源",
+      "營養補充品怎麼選？一般、高蛋白與疾病配方",
+      "一般營養補充品是什麼？適用情況與選購重點",
+      "高蛋白營養補充品怎麼看？蛋白質、熱量與適用族群",
+      "糖尿病營養補充品怎麼選？熱量、碳水與血糖監測",
+      "腎臟病營養補充品怎麼選？洗腎前與洗腎中的差異",
+      "長者食慾不佳何時要就醫？體重下降與吞嚥警訊"
+    ],
+    "steps": [
+      "img/elderly_appetite_causes.webp",
+      "img/elderly_appetite_meal_tips.webp",
+      "img/elderly_protein_needs.webp",
+      "img/elderly_nutrition_supplements_choose.webp",
+      "img/balanced_nutrition_supplement.webp",
+      "img/high_protein_supplement.webp",
+      "img/diabetes_nutrition_formula.webp",
+      "img/kidney_nutrition_formula.webp",
+      "img/elderly_appetite_medical_alerts.webp"
+    ]
+  },
   "compression_stockings": {
     "title": "彈性襪",
     "category": "public_education",

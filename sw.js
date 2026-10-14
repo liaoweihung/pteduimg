@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202610140558';
+const CACHE_NAME = 'pwa-cache-v202610142008';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -159,6 +159,7 @@ const urlsToCache = [
   "./img/artificial_tears_3.webp",
   "./img/artificial_tears_4.webp",
   "./img/atopic_dermatitis_care.webp",
+  "./img/balanced_nutrition_supplement.webp",
   "./img/boyBMI.webp",
   "./img/boy_height2.webp",
   "./img/bruise_be_gone.webp",
@@ -199,6 +200,7 @@ const urlsToCache = [
   "./img/contact_lens_eye_drops_2.webp",
   "./img/contraceptive_pills_how_to_take.webp",
   "./img/contraceptive_pills_missed_dose.webp",
+  "./img/diabetes_nutrition_formula.webp",
   "./img/diabetic_foot.webp",
   "./img/diosmin_use.webp",
   "./img/dry_eye_comp.webp",
@@ -211,6 +213,11 @@ const urlsToCache = [
   "./img/ear_5.png",
   "./img/ear_6.png",
   "./img/eczema_s.webp",
+  "./img/elderly_appetite_causes.webp",
+  "./img/elderly_appetite_meal_tips.webp",
+  "./img/elderly_appetite_medical_alerts.webp",
+  "./img/elderly_nutrition_supplements_choose.webp",
+  "./img/elderly_protein_needs.webp",
   "./img/elderly_skin_tear.webp",
   "./img/emergency_contraceptive_pills_how_to_take.webp",
   "./img/emergency_contraceptive_pills_notice.webp",
@@ -253,6 +260,7 @@ const urlsToCache = [
   "./img/hem_oint_6.png",
   "./img/hemorr_sitbath_1.png",
   "./img/hemorr_sitbath_2.png",
+  "./img/high_protein_supplement.webp",
   "./img/hives_s.webp",
   "./img/hk_foot.webp",
   "./img/hydrocolloid_apply_steps.webp",
@@ -262,6 +270,7 @@ const urlsToCache = [
   "./img/japan_otc_drug_classification.webp",
   "./img/jin_huang_san.webp",
   "./img/jinchuang_ointment.webp",
+  "./img/kidney_nutrition_formula.webp",
   "./img/knee_brace_1.webp",
   "./img/knee_brace_2.webp",
   "./img/knee_brace_3.webp",
@@ -397,6 +406,15 @@ const urlsToCache = [
   "./img/yunnan_baiyao.webp",
   "./img/zheng_gu_shui.webp",
   "./img/zi_yun_gao.webp",
+  "./cards/elderly_appetite_causes.html",
+  "./cards/elderly_appetite_meal_tips.html",
+  "./cards/elderly_protein_needs.html",
+  "./cards/elderly_nutrition_supplements_choose.html",
+  "./cards/balanced_nutrition_supplement.html",
+  "./cards/high_protein_supplement.html",
+  "./cards/diabetes_nutrition_formula.html",
+  "./cards/kidney_nutrition_formula.html",
+  "./cards/elderly_appetite_medical_alerts.html",
   "./cards/compression_stockings_benefits.html",
   "./cards/compression_stockings_pressure.html",
   "./cards/compression_stockings_measurement.html",

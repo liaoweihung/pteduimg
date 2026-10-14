@@ -1,5 +1,368 @@
 [
   {
+    "cardId": "elderly_nutrition_supplements",
+    "image": "img/elderly_appetite_causes.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/elderly_appetite_causes.html",
+    "title": "長者為什麼吃不下？食慾下降常見原因",
+    "summary": "長者食慾下降不一定只是老化，口腔、腸胃、藥物、情緒與疾病都可能影響進食；持續吃不下或體重下降應進一步評估。",
+    "sections": [
+      {
+        "heading": "常見原因不只一種",
+        "text": "味覺、嗅覺、咀嚼與消化功能可能隨年齡改變，但持續食慾不佳不能全部歸因於老化。常見原因包括牙齒缺損、假牙不合、口乾、口腔疼痛、便祕、噁心、胃脹、感染、心臟或腎臟疾病及失智症等。"
+      },
+      {
+        "heading": "藥物與情緒也會影響食慾",
+        "text": "部分藥物可能造成噁心、口乾或食慾下降；憂鬱、喪偶、孤獨及缺少共同用餐的人也可能吃得更少。不要自行停用懷疑影響食慾的處方藥，應由醫師或藥師評估。"
+      },
+      {
+        "heading": "藥局可先問這些問題",
+        "text": "可先確認食慾下降多久、最近是否更換藥物、體重是否下降，以及是否有牙齒、咀嚼或吞嚥問題。若症狀持續、快速消瘦或合併其他不適，應就醫找出原因。"
+      }
+    ],
+    "altText": "長者食慾下降常見原因圖解，包含牙齒、味覺嗅覺、藥物、腸胃、情緒與疾病因素",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-14",
+    "sourceCheckedAt": "2026-10-14",
+    "revisionCredit": "使用者確認文案，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "MedlinePlus：Decreased appetite",
+        "url": "https://www.medlineplus.gov/ency/article/003121.htm"
+      },
+      {
+        "title": "MedlinePlus：Nutrition for Older Adults",
+        "url": "https://www.medlineplus.gov/nutritionforolderadults.html"
+      }
+    ]
+  },
+  {
+    "cardId": "elderly_nutrition_supplements",
+    "image": "img/elderly_appetite_meal_tips.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/elderly_appetite_meal_tips.html",
+    "title": "長者食慾不好怎麼吃？少量多餐與飲食調整",
+    "summary": "一次吃不多時，可用少量多餐、提高營養密度、調整食物質地與家人陪伴改善進食；先改善日常飲食，不要只依賴營養補充品。",
+    "sections": [
+      {
+        "heading": "少量多餐並提高營養密度",
+        "text": "一天可安排三餐加二至三次點心，不必勉強每餐吃下大量食物。優先選擇富含蛋白質與熱量、容易入口的蒸蛋、豆腐、魚肉、優格及牛奶。"
+      },
+      {
+        "heading": "依牙口調整食物質地",
+        "text": "可用切小塊、燉煮、去除筋膜等方式讓食物軟嫩好咀嚼。咀嚼困難與吞嚥困難不同；若吃東西或喝水容易嗆咳，應先接受吞嚥評估，不要自行只改成泥狀或流質。"
+      },
+      {
+        "heading": "三好一巧與持續觀察",
+        "text": "高齡飲食可掌握吃得下、吃得夠、吃得對、吃得巧。記錄每天食量與體重，選擇長者喜歡的食物並一起用餐；需要提高餐點熱量與蛋白質時，可請營養師協助。"
+      }
+    ],
+    "altText": "長者食慾不好時少量多餐、選高營養密度食物、調整質地與陪伴用餐的圖解",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-14",
+    "sourceCheckedAt": "2026-10-14",
+    "revisionCredit": "使用者確認文案，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "國民健康署：我的餐盤－銀髮族篇（三好一巧）",
+        "url": "https://health99.hpa.gov.tw/storage/pdf/materials/12683.pdf"
+      },
+      {
+        "title": "國民健康署：高齡營養飲食質地衛教手冊",
+        "url": "https://health99.hpa.gov.tw/storage/pdf/materials/22120.pdf"
+      },
+      {
+        "title": "國民健康署：質地調整飲食",
+        "url": "https://www.hpa.gov.tw/4131/11931/n"
+      }
+    ]
+  },
+  {
+    "cardId": "elderly_nutrition_supplements",
+    "image": "img/elderly_protein_needs.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/elderly_protein_needs.html",
+    "title": "長者蛋白質怎麼補？攝取量與食物來源",
+    "summary": "健康長者每日蛋白質可參考每公斤體重約 1.0 至 1.2 公克，並分配到三餐；腎功能不佳者須個別評估。",
+    "sections": [
+      {
+        "heading": "蛋白質有助維持肌肉",
+        "text": "長期熱量與蛋白質攝取不足，可能增加肌肉流失、體力下降及跌倒風險。雞蛋、牛奶與優格、豆腐與豆漿、魚肉及雞肉都是常見來源。"
+      },
+      {
+        "heading": "健康長者的參考量",
+        "text": "健康長者每日蛋白質可參考每公斤體重約 1.0 至 1.2 公克；60 公斤長者約為 60 至 72 公克。實際需求仍須考慮活動量、營養狀態與疾病，並建議分配在三餐。"
+      },
+      {
+        "heading": "特殊疾病要先評估",
+        "text": "慢性腎臟病患者，尤其尚未洗腎且需要限制蛋白質者，應由醫師或營養師決定攝取量。單純增加蛋白質不一定恢復肌肉量，還需要足夠熱量與適合身體狀況的肌力活動。"
+      }
+    ],
+    "altText": "長者蛋白質來源與每日每公斤體重 1.0 至 1.2 公克參考量圖解",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-14",
+    "sourceCheckedAt": "2026-10-14",
+    "revisionCredit": "使用者確認文案，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "ESPEN practical guideline: Clinical nutrition and hydration in geriatrics (2022)",
+        "url": "https://2022.espen.org/files/ESPEN-Guidelines/ESPEN_practical_guideline_Clinical_nutrition_and_hydration_in_geriatrics.pdf"
+      },
+      {
+        "title": "國民健康署：老年人應該多吃高蛋白粉嗎？",
+        "url": "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=127&pid=13140"
+      }
+    ]
+  },
+  {
+    "cardId": "elderly_nutrition_supplements",
+    "image": "img/elderly_nutrition_supplements_choose.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/elderly_nutrition_supplements_choose.html",
+    "title": "營養補充品怎麼選？一般、高蛋白與疾病配方",
+    "summary": "營養補充品可分為均衡營養、高蛋白與特殊疾病配方；選購前應看每份熱量、蛋白質及是否符合本身疾病與吞嚥狀況。",
+    "sections": [
+      {
+        "heading": "先分清楚產品用途",
+        "text": "均衡營養配方用於補充整體熱量與營養素；高蛋白產品以補充蛋白質為主；糖尿病或腎臟疾病配方則依特定營養需求設計。高蛋白產品不一定是完整營養配方，也不能一律作為唯一食物來源。"
+      },
+      {
+        "heading": "購買前看三件事",
+        "text": "比較每份熱量、每份蛋白質，以及配方是否適合本身疾病。糖尿病配方仍會影響血糖；腎臟配方要區分洗腎前與洗腎中；吞嚥不安全者應先評估。"
+      },
+      {
+        "heading": "口服營養補充品的使用原則",
+        "text": "對已營養不良或有風險、且能安全吞嚥的長者，當一般飲食與食物營養強化仍不足時可考慮口服營養補充品。ESPEN 建議此特定高風險族群的補充量至少每日 400 kcal 與 30 g 蛋白質，持續至少一個月並每月評估；不是所有長者都需要相同數量。"
+      }
+    ],
+    "altText": "均衡營養、高蛋白與糖尿病或腎臟疾病特殊配方選購重點圖解",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-14",
+    "sourceCheckedAt": "2026-10-14",
+    "revisionCredit": "使用者確認文案，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "ESPEN practical guideline: Clinical nutrition and hydration in geriatrics (2022)",
+        "url": "https://2022.espen.org/files/ESPEN-Guidelines/ESPEN_practical_guideline_Clinical_nutrition_and_hydration_in_geriatrics.pdf"
+      },
+      {
+        "title": "NICE CG32：Nutrition support for adults - Recommendations",
+        "url": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations"
+      }
+    ]
+  },
+  {
+    "cardId": "elderly_nutrition_supplements",
+    "image": "img/balanced_nutrition_supplement.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/balanced_nutrition_supplement.html",
+    "title": "一般營養補充品是什麼？適用情況與選購重點",
+    "summary": "一般均衡營養配方用來補足整體熱量、蛋白質、脂肪、碳水化合物及維生素礦物質，重點是一天總攝取量是否足夠。",
+    "sections": [
+      {
+        "heading": "一般營養配方補什麼？",
+        "text": "這類口服營養補充品通常提供熱量、蛋白質、脂肪、碳水化合物及多種維生素與礦物質，主要用途是補足整體攝取不足。"
+      },
+      {
+        "heading": "哪些情況可能適合？",
+        "text": "能正常吞嚥但正餐吃不夠、體重開始下降，或恢復期需要補充熱量與營養的長者，可經評估後考慮使用。先確認食量、體重變化與造成進食不足的原因。"
+      },
+      {
+        "heading": "看總量，不只看一瓶",
+        "text": "選購時比較每份熱量、蛋白質與建議份量，也要計算一天總共吃多少、喝多少。一般營養補充品是補不足，不應在未評估下完全取代正常飲食。"
+      }
+    ],
+    "altText": "一般均衡營養補充品的營養成分、適用情況與選購重點圖解",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-14",
+    "sourceCheckedAt": "2026-10-14",
+    "revisionCredit": "使用者確認文案，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "ESPEN practical guideline: Clinical nutrition and hydration in geriatrics (2022)",
+        "url": "https://2022.espen.org/files/ESPEN-Guidelines/ESPEN_practical_guideline_Clinical_nutrition_and_hydration_in_geriatrics.pdf"
+      },
+      {
+        "title": "NICE CG32：Nutrition support for adults - Recommendations",
+        "url": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations"
+      }
+    ]
+  },
+  {
+    "cardId": "elderly_nutrition_supplements",
+    "image": "img/high_protein_supplement.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/high_protein_supplement.html",
+    "title": "高蛋白營養補充品怎麼看？蛋白質、熱量與適用族群",
+    "summary": "高蛋白產品可補充蛋白質，但不一定營養完整；除了每份蛋白質，也要確認總熱量、整體飲食及腎功能。",
+    "sections": [
+      {
+        "heading": "高蛋白產品的用途",
+        "text": "每份蛋白質含量較高的產品，可能適合蛋白質攝取不足、肌少症風險較高、食量小或恢復期的長者，但是否需要應配合營養與疾病評估。"
+      },
+      {
+        "heading": "高蛋白不等於營養完整",
+        "text": "先看每份蛋白質有幾公克，也要看總熱量是否足夠。有些產品偏向蛋白補充，未提供完整熱量、維生素與礦物質，不適合作為唯一營養來源。"
+      },
+      {
+        "heading": "腎功能問題先詢問專業人員",
+        "text": "慢性腎臟病不同階段及是否透析，蛋白質需求差異很大，不能一概推薦高蛋白產品。補充前應向醫師或營養師確認適合的蛋白質與熱量目標。"
+      }
+    ],
+    "altText": "高蛋白營養補充品的蛋白質、熱量、完整營養與腎功能注意事項圖解",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-14",
+    "sourceCheckedAt": "2026-10-14",
+    "revisionCredit": "使用者確認文案，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "ESPEN practical guideline: Clinical nutrition and hydration in geriatrics (2022)",
+        "url": "https://2022.espen.org/files/ESPEN-Guidelines/ESPEN_practical_guideline_Clinical_nutrition_and_hydration_in_geriatrics.pdf"
+      },
+      {
+        "title": "國民健康署：老年人應該多吃高蛋白粉嗎？",
+        "url": "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=127&pid=13140"
+      }
+    ]
+  },
+  {
+    "cardId": "elderly_nutrition_supplements",
+    "image": "img/diabetes_nutrition_formula.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diabetes_nutrition_formula.html",
+    "title": "糖尿病營養補充品怎麼選？熱量、碳水與血糖監測",
+    "summary": "糖尿病專用配方可能調整碳水化合物、脂肪與纖維，但仍有熱量與碳水，不能取代血糖監測、整體飲食或藥物治療。",
+    "sections": [
+      {
+        "heading": "配方可能有哪些調整？",
+        "text": "糖尿病專用配方通常會調整碳水化合物的種類與比例，部分產品增加膳食纖維或調整脂肪組成，以配合血糖管理需求。"
+      },
+      {
+        "heading": "不要只看無糖標示",
+        "text": "選購時應看每份總熱量、總碳水化合物、蛋白質與建議份量。無糖不代表沒有碳水，也不代表可以不限量飲用。"
+      },
+      {
+        "heading": "仍要監測血糖與整體治療",
+        "text": "糖尿病配方不是喝了就不會升血糖，也不能取代原有藥物與飲食計畫。食量不足的糖尿病患者使用後仍應監測血糖，並依個人治療目標調整。"
+      }
+    ],
+    "altText": "糖尿病專用營養配方的碳水、熱量、蛋白質與血糖監測選購圖解",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-14",
+    "sourceCheckedAt": "2026-10-14",
+    "revisionCredit": "使用者確認文案，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "Australian Diabetes Society：Consensus Statement - Diabetes Specific Nutritional Formulas in T2D",
+        "url": "https://www.diabetessociety.com.au/guideline/consensus-statement-diabetes-specific-nutritional-formulas-in-t2d/"
+      },
+      {
+        "title": "American Diabetes Association：Standards of Care in Diabetes—2026, Facilitating Positive Health Behaviors and Well-being",
+        "url": "https://diabetesjournals.org/care/article/49/Supplement_1/S89/163932"
+      }
+    ]
+  },
+  {
+    "cardId": "elderly_nutrition_supplements",
+    "image": "img/kidney_nutrition_formula.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/kidney_nutrition_formula.html",
+    "title": "腎臟病營養補充品怎麼選？洗腎前與洗腎中的差異",
+    "summary": "慢性腎臟病在洗腎前與洗腎中的蛋白質及營養需求不同，腎臟病專用配方不能只看名稱，應依腎功能、透析與礦物質限制選擇。",
+    "sections": [
+      {
+        "heading": "未洗腎時可能需要限制蛋白質",
+        "text": "未接受透析的慢性腎臟病患者，常需依腎功能與營養狀態評估蛋白質是否限制，同時注意鈉、鉀、磷與總熱量；不能隨意加用高蛋白產品。"
+      },
+      {
+        "heading": "洗腎後蛋白質需求通常提高",
+        "text": "透析會造成胺基酸與蛋白質流失，接受洗腎的患者通常需要較多蛋白質及足夠熱量，但仍須依醫囑控制水分、鈉、鉀與磷。"
+      },
+      {
+        "heading": "腎臟病專用不代表人人相同",
+        "text": "洗腎前與洗腎中的配方目的不同。選購前應確認腎功能、是否透析、近期檢驗與飲食限制，交由醫師或營養師決定適合的產品與份量。"
+      }
+    ],
+    "altText": "腎臟病營養補充品洗腎前與洗腎中的蛋白質及電解質需求差異圖解",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-14",
+    "sourceCheckedAt": "2026-10-14",
+    "revisionCredit": "使用者確認文案，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "KDOQI Clinical Practice Guideline for Nutrition in CKD: 2020 Update",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32829751/"
+      },
+      {
+        "title": "國民健康署：社區營養照護作業手冊（2024）",
+        "url": "https://health99.hpa.gov.tw/storage/files/materials/22208-1.pdf"
+      }
+    ]
+  },
+  {
+    "cardId": "elderly_nutrition_supplements",
+    "image": "img/elderly_appetite_medical_alerts.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/elderly_appetite_medical_alerts.html",
+    "title": "長者食慾不佳何時要就醫？體重下降與吞嚥警訊",
+    "summary": "食慾不佳若合併非刻意體重下降、持續吃不下、吞嚥困難、明顯虛弱或其他症狀，應就醫評估，而不是只靠營養品。",
+    "sections": [
+      {
+        "heading": "體重與食量是重要線索",
+        "text": "三至六個月內非刻意減少約 5% 體重，或食量持續明顯下降，值得進一步評估。以原本 60 公斤為例，半年內非刻意減少約 3 公斤就應留意；這不是單一診斷標準，仍須合併 BMI、肌肉量、疾病與進食情況判斷。"
+      },
+      {
+        "heading": "吞嚥困難不要直接改喝營養品",
+        "text": "喝水嗆咳、吞嚥後聲音濕濁、食物卡住或進食時經常咳嗽，可能有吞嚥障礙與吸入風險。這類長者應先接受吞嚥評估，不宜在沒有評估下直接增加一般液態營養補充品。"
+      },
+      {
+        "heading": "需要儘快就醫的情況",
+        "text": "明顯虛弱、持續腹痛、嘔吐、發燒，或突然無法吞嚥、嚴重脫水、意識改變時應儘快就醫。若已連續多日幾乎沒有進食，不要自行突然大量補充，嚴重營養不足者可能有再餵食症候群風險，需要醫療監測。"
+      },
+      {
+        "heading": "社區藥局評估方向",
+        "text": "可詢問最近一至三個月體重、每天吃幾餐、是否新增藥物，以及牙齒與吞嚥問題。體重穩定者先改善飲食；開始下降者建議營養評估；慢性腎臟病先確認洗腎狀態；嗆咳或快速消瘦則優先轉介。"
+      }
+    ],
+    "altText": "長者食慾不佳合併體重下降、持續吃不下、吞嚥困難、虛弱及其他症狀的就醫警訊圖解",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-14",
+    "sourceCheckedAt": "2026-10-14",
+    "revisionCredit": "使用者確認文案，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "NICE CG32：Nutrition support for adults - Recommendations",
+        "url": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations"
+      },
+      {
+        "title": "MedlinePlus：Decreased appetite",
+        "url": "https://www.medlineplus.gov/ency/article/003121.htm"
+      },
+      {
+        "title": "ESPEN practical guideline: Clinical nutrition and hydration in geriatrics (2022)",
+        "url": "https://2022.espen.org/files/ESPEN-Guidelines/ESPEN_practical_guideline_Clinical_nutrition_and_hydration_in_geriatrics.pdf"
+      }
+    ]
+  },
+  {
     "cardId": "compression_stockings",
     "image": "img/compression_stockings_benefits.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/compression_stockings_benefits.html",

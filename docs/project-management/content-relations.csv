@@ -405,3 +405,14 @@ REL-30cf95fe29abb609,series:compression_stockings,has_card,page:compression_stoc
 REL-9e87d999f42809bb,series:compression_stockings,has_card,page:compression_stockings_wear_3,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
 REL-90da56b737e212d6,series:compression_stockings,has_card,page:compression_stockings_care,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
 REL-73b0441446030562,series:compression_stockings,has_card,page:compression_stockings_safety,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-d883437a68613cb5,topic:older-adult-nutrition,has_subtopic,subtopic:older-adult-nutrition:oral-supplements,management_mapping,management,cards.json,CR-2026-027 管理集合；不新增疾病專頁
+REL-955d982ce7f29adf,subtopic:older-adult-nutrition:oral-supplements,contains_series,series:elderly_nutrition_supplements,management_mapping,management,cards.json,CR-2026-027 管理集合；不新增疾病專頁
+REL-f1e59d97233d60ac,series:elderly_nutrition_supplements,has_card,page:elderly_appetite_causes,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-362cf7ed5d10a244,series:elderly_nutrition_supplements,has_card,page:elderly_appetite_meal_tips,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-3442f005bc502870,series:elderly_nutrition_supplements,has_card,page:elderly_protein_needs,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-3cc922ecc8969963,series:elderly_nutrition_supplements,has_card,page:elderly_nutrition_supplements_choose,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-f5202fcde1b0bd46,series:elderly_nutrition_supplements,has_card,page:balanced_nutrition_supplement,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-19e72849eaaff17d,series:elderly_nutrition_supplements,has_card,page:high_protein_supplement,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-6a21d25e6e1334e1,series:elderly_nutrition_supplements,has_card,page:diabetes_nutrition_formula,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-b83292672e420909,series:elderly_nutrition_supplements,has_card,page:kidney_nutrition_formula,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-8e4a2c2d530de26d,series:elderly_nutrition_supplements,has_card,page:elderly_appetite_medical_alerts,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核

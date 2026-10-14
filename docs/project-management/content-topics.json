@@ -9,6 +9,24 @@
   },
   "nodes": [
     {
+      "id": "topic:older-adult-nutrition",
+      "title": "高齡營養",
+      "kind": "topic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json|docs/project-management/evidence/elderly-nutrition-supplements-2026-10-14.md",
+      "note": "管理集合；public.html 使用 chronic_conditions 分類；未建立獨立疾病主題頁"
+    },
+    {
+      "id": "subtopic:older-adult-nutrition:oral-supplements",
+      "title": "長者食慾與口服營養補充",
+      "kind": "subtopic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": "CR-2026-027；管理分類不代表已經人工醫療複核"
+    },
+    {
       "id": "topic:venous-circulation",
       "title": "靜脈循環與壓迫照護",
       "kind": "topic",

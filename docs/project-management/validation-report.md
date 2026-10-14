@@ -93,3 +93,19 @@ git diff --check
 - 本次未Commit/Push；沒有宣稱GitHub Pages已部署。內容與來源日期為2026-10-13，驗收日為2026-10-14。
 
 完整範圍、圖片對應與測試限制見[任務證據](evidence/compression-stockings-2026-10-13.md)。
+
+## 2026-10-14 追加：CR-2026-027 營養品系列
+
+上方初建與 CR-2026-026 紀錄保持歷史版本。本次新增「營養品怎麼選」九頁，完整建置網站索引、PWA、新頁與管理增量，不重新進行全站醫療盤點。
+
+- 清冊由350列增為359列；新頁人工醫療狀態均為 unknown，來源 `needsMedicalReview=true`。
+- 管理主題增加2個 `collection_only` 節點，關聯由406增為417；沒有建立或宣稱獨立疾病主題頁。
+- `--propose` 先輸出9筆新增，合併後為零差異、零移除、零來源錯誤。提交前 Git 定點查核確認彈性襪八頁的圖片、HTML與文字紀錄相對目前 HEAD 無差異；原清冊雜湊已與可重算證據不一致，因此只同步八頁機械雜湊與檢查日期，人工欄位及頁面內容未改。證據見 `evidence/compression-stockings-fingerprint-sync-2026-10-14.md`。
+- `python -B scripts/check_site.py` 通過；`check_project_management.py` 為0錯誤；`test_project_management.py` 18項通過；三份JSON語法檢查通過。
+- 九頁皆有靜態收合文字、雙日期、直接來源、SEO、JSON-LD與共用頁尾，並出現在兩份 sitemap、all-cards、seo 及 service-worker 資產清單。
+- 手機寬度預覽確認 public 入口、第一與第九張圖片、圖下翻頁、1/9與9/9循環、文字來源及固定頁尾。
+- 完整建置後將原本乾淨的舊圖卡頁還原；`git diff --name-only -- cards` 仍只有開工前已存在的三張修改頁，本次新增九張頁另為 untracked。
+- AUD-007 的184頁報告先保存快照，再更新為193頁版本；舊字詞差異 CR-2026-023 仍保留。
+- 本次未 Commit、Push 或驗證 GitHub Pages 部署。內容及來源查核日為2026-10-14。
+
+完整範圍、來源與測試限制見[任務證據](evidence/elderly-nutrition-supplements-2026-10-14.md)。
