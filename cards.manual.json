@@ -148,6 +148,54 @@
       "img/hand_eczema_treatment.webp"
     ]
   },
+  "facial_spots": {
+    "title": "臉部斑點",
+    "category": "public_education",
+    "topics": [
+      "skin_wound"
+    ],
+    "order": 7.2,
+    "hidden": false,
+    "icon": "✨",
+    "showFooter": true,
+    "tags": [
+      "臉部斑點",
+      "黑斑",
+      "曬斑",
+      "雀斑",
+      "肝斑",
+      "痘印",
+      "發炎後色素沉澱",
+      "色素沉澱",
+      "淡斑",
+      "美白",
+      "維他命C",
+      "菸鹼醯胺",
+      "傳明酸",
+      "杜鵑花酸",
+      "防曬",
+      "氧化鐵",
+      "皮膚癌",
+      "黑色素瘤",
+      "ABCDE"
+    ],
+    "texts": [
+      "臉上的斑點有哪些種類？曬斑與雀斑",
+      "臉上的斑點有哪些種類？肝斑與痘印色素沉澱",
+      "常見淡斑成分有哪些？維他命C、菸鹼醯胺、傳明酸與杜鵑花酸",
+      "淡斑保養品怎麼使用？早晚步驟與刺激處理",
+      "想淡斑，防曬不能少：SPF、補擦與遮陽重點",
+      "哪些斑點需要看皮膚科？ABCDE 與就醫警訊"
+    ],
+    "steps": [
+      "img/facial_spots_types_sun_freckles.webp",
+      "img/facial_spots_types_melasma_acne_marks.webp",
+      "img/facial_spots_brightening_ingredients.webp",
+      "img/facial_spots_skincare_routine.webp",
+      "img/facial_spots_sun_protection.webp",
+      "img/facial_spots_when_to_see_dermatologist.webp"
+    ]
+  },
   "acne_face_wash": {
     "title": "青春痘的正確洗臉",
     "category": "public_education",

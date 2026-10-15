@@ -476,3 +476,12 @@
 - 手機寬度預覽確認 public 入口、第一與第九張圖片、圖下翻頁列、系列循環、文字來源與固定頁尾。
 - CR 結案僅表示授權的本機製作及管理維護完成；不代表醫療簽核、Git 提交或正式網站部署。
 - 細節見 [任務證據](evidence/elderly-nutrition-supplements-2026-10-14.md)及 [驗證報告](validation-report.md)。原 CR-2026-023 與其他未核准需求不變。
+
+## 2026-10-15｜CR-2026-028 新增臉部斑點並完成本機驗收
+
+- 範圍：`series:facial_spots` 的六個新頁，以及公開入口、索引、PWA 與管理投影；來源與圖文對應見 [任務證據](evidence/facial-spots-2026-10-15.md)。未改既有圖卡正文或人工醫療欄位。
+- AUD-007 建置前版本為 193 成功、0 失敗，先保存 [重建前原報告快照](evidence/card-text-integration-before-facial-spots-2026-10-15.md)，SHA-256：`e7b7ef8745a7c0c8a66452b71d103341ce02f1183d36e1613864ccf7e3eea9b4`。
+- 本次完整建置新增六頁，報告變為 199 成功、0 失敗；新 SHA-256：`abfa04883bcb8a12042dfdbfeb55a9154bf2d0bddd9c0f276f4a1360187a4af6`。audit-register 保留 previous_versions，不以更新 hash 消除舊結論。
+- 增量 `--propose` 先提出六筆新增，合併後為零差異、零移除、零來源錯誤；新頁人工欄位維持 unknown，`needsMedicalReview` 維持 true。
+- `check_site.py`、管理一致性檢查與18項管理測試通過；390×844 手機抽查確認公開入口、圖下翻頁、系列循環、文字來源及單一共用頁尾。
+- CR 結案只表示授權的本機製作與管理維護完成；不代表人工醫療複核、Git 提交、Pages 部署或搜尋收錄。Commit 與 Push 均未執行。

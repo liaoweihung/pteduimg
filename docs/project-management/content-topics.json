@@ -9,6 +9,24 @@
   },
   "nodes": [
     {
+      "id": "topic:facial-pigmentation",
+      "title": "臉部色素斑",
+      "kind": "topic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json|docs/project-management/evidence/facial-spots-2026-10-15.md",
+      "note": "管理集合；public.html 使用 skin_wound 分類；未建立獨立疾病主題頁"
+    },
+    {
+      "id": "subtopic:facial-pigmentation:education",
+      "title": "斑點辨識、淡斑保養與就醫警訊",
+      "kind": "subtopic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": "CR-2026-028；管理分類不代表已經人工醫療複核"
+    },
+    {
       "id": "topic:older-adult-nutrition",
       "title": "高齡營養",
       "kind": "topic",

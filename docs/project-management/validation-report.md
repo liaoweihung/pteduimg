@@ -109,3 +109,18 @@ git diff --check
 - 本次未 Commit、Push 或驗證 GitHub Pages 部署。內容及來源查核日為2026-10-14。
 
 完整範圍、來源與測試限制見[任務證據](evidence/elderly-nutrition-supplements-2026-10-14.md)。
+
+## 2026-10-15 追加：CR-2026-028 臉部斑點系列
+
+上方初建與先前新增系列紀錄保持歷史版本。本次新增「臉部斑點」六頁，完整建置公開入口、網站索引、PWA、新頁與管理增量，不重新進行全站醫療盤點。
+
+- 清冊由359列增為365列；新頁人工醫療狀態均為 unknown，來源 `needsMedicalReview=true`。
+- 管理主題增加2個 `collection_only` 節點，關聯由417增為425；沒有建立或宣稱獨立疾病主題頁。
+- `--propose` 先輸出6筆新增，合併後為零差異、零移除、零來源錯誤；原清冊人工欄位未覆蓋。
+- `python -B scripts/check_site.py` 通過；`check_project_management.py` 為0錯誤；`test_project_management.py` 18項通過；三份JSON語法檢查及 `git diff --check` 通過。
+- 六頁皆有靜態文字、雙日期、直接來源、SEO與共用頁尾，並出現在兩份 sitemap、all-cards、seo 及 service-worker 資產清單。
+- 390×844 手機預覽確認 public 搜尋入口、第一張、中間淡斑成分頁與最後一張；圖片沒有橫向溢出，圖下翻頁列及首尾循環正確，文字來源與單一共用頁尾存在。
+- AUD-007 的193頁報告先保存快照，再更新為199頁版本；既有字詞差異 CR-2026-023 仍保留。
+- 本次未 Commit、Push 或驗證 GitHub Pages 部署。內容及來源查核日為2026-10-15。
+
+完整範圍、來源與測試限制見[任務證據](evidence/facial-spots-2026-10-15.md)。

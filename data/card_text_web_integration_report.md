@@ -1,10 +1,16 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：193
+- 成功加入文字頁數：199
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
 |---|---|---|---:|---:|---:|---:|---:|---|
+| facial_spots | 臉上的斑點有哪些種類？曬斑與雀斑 | https://liaoweihung.github.io/pteduimg/cards/facial_spots_types_sun_freckles.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| facial_spots | 臉上的斑點有哪些種類？肝斑與痘印色素沉澱 | https://liaoweihung.github.io/pteduimg/cards/facial_spots_types_melasma_acne_marks.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| facial_spots | 常見淡斑成分有哪些？維他命C、菸鹼醯胺、傳明酸與杜鵑花酸 | https://liaoweihung.github.io/pteduimg/cards/facial_spots_brightening_ingredients.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| facial_spots | 淡斑保養品怎麼使用？早晚步驟與刺激處理 | https://liaoweihung.github.io/pteduimg/cards/facial_spots_skincare_routine.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| facial_spots | 想淡斑，防曬不能少：SPF、補擦與遮陽重點 | https://liaoweihung.github.io/pteduimg/cards/facial_spots_sun_protection.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| facial_spots | 哪些斑點需要看皮膚科？ABCDE 與就醫警訊 | https://liaoweihung.github.io/pteduimg/cards/facial_spots_when_to_see_dermatologist.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | elderly_nutrition_supplements | 長者為什麼吃不下？食慾下降常見原因 | https://liaoweihung.github.io/pteduimg/cards/elderly_appetite_causes.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | elderly_nutrition_supplements | 長者食慾不好怎麼吃？少量多餐與飲食調整 | https://liaoweihung.github.io/pteduimg/cards/elderly_appetite_meal_tips.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | elderly_nutrition_supplements | 長者蛋白質怎麼補？攝取量與食物來源 | https://liaoweihung.github.io/pteduimg/cards/elderly_protein_needs.html | 是 | 是 | 是 | 是 | 是 | 無 |

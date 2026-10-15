@@ -1,5 +1,239 @@
 [
   {
+    "cardId": "facial_spots",
+    "image": "img/facial_spots_types_sun_freckles.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/facial_spots_types_sun_freckles.html",
+    "title": "臉上的斑點有哪些種類？曬斑與雀斑",
+    "summary": "曬斑與雀斑都會受紫外線影響，但外觀、常見位置與形成原因不完全相同；先辨認可能類型，再安排防曬與後續處理。",
+    "sections": [
+      {
+        "heading": "曬斑常見特徵",
+        "text": "曬斑多為褐色或深咖啡色、扁平且邊界較清楚，常出現在臉頰、額頭等長期日曬部位。它與累積紫外線暴露有關，通常屬良性色素斑。"
+      },
+      {
+        "heading": "雀斑常見特徵",
+        "text": "雀斑通常是細小、分散的褐色斑點，常見於鼻樑與雙頰；與遺傳及日曬有關，日照較多時可能更明顯。"
+      },
+      {
+        "heading": "防曬與辨識限制",
+        "text": "兩者都可能因紫外線加深，日常應做好防曬與遮陽。單靠照片或外觀無法排除其他色素病灶；若斑點快速改變、出血或與其他斑點明顯不同，應由皮膚科醫師評估。"
+      }
+    ],
+    "altText": "臉部曬斑與雀斑的外觀、常見位置及紫外線影響比較圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-15",
+    "sourceCheckedAt": "2026-10-15",
+    "revisionCredit": "使用者提供文案，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "DermNet：Solar lentigo（2025 reviewed）",
+        "url": "https://dermnetnz.org/topics/solar-lentigo"
+      },
+      {
+        "title": "DermNet：Brown spots, lentigos and freckles",
+        "url": "https://dermnetnz.org/topics/brown-spots-and-freckles"
+      }
+    ]
+  },
+  {
+    "cardId": "facial_spots",
+    "image": "img/facial_spots_types_melasma_acne_marks.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/facial_spots_types_melasma_acne_marks.html",
+    "title": "臉上的斑點有哪些種類？肝斑與痘印色素沉澱",
+    "summary": "肝斑常呈對稱大片褐色斑，痘印色素沉澱則出現在原本發炎的位置；兩者成因與處理方式不同。",
+    "sections": [
+      {
+        "heading": "肝斑常見特徵",
+        "text": "肝斑常見於雙頰、額頭與上唇，通常呈左右對稱、邊界不規則的大片褐色斑。日曬與荷爾蒙變化都可能參與形成，而且容易反覆。"
+      },
+      {
+        "heading": "痘印色素沉澱",
+        "text": "痘痘發炎後可能在原位置留下褐色或灰褐色痕跡，稱為發炎後色素沉澱。部分痕跡會隨時間淡化，但持續發炎、摳抓或刺激可能留下新的色素沉澱。"
+      },
+      {
+        "heading": "先控制原因再談淡斑",
+        "text": "肝斑與痘印不能一律當成單純美白問題。肝斑需要持續光防護；痘痘反覆發炎時，應同時處理發炎原因，避免只擦淡斑產品卻持續產生新痕跡。"
+      }
+    ],
+    "altText": "臉部肝斑與痘印色素沉澱的外觀、位置與形成原因比較圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-15",
+    "sourceCheckedAt": "2026-10-15",
+    "revisionCredit": "使用者提供文案，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "DermNet：Melasma（facial pigmentation）",
+        "url": "https://dermnetnz.org/topics/melasma"
+      },
+      {
+        "title": "American Academy of Dermatology：How to fade dark spots in darker skin tones",
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots"
+      }
+    ]
+  },
+  {
+    "cardId": "facial_spots",
+    "image": "img/facial_spots_brightening_ingredients.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/facial_spots_brightening_ingredients.html",
+    "title": "常見淡斑成分有哪些？維他命C、菸鹼醯胺、傳明酸與杜鵑花酸",
+    "summary": "不同斑點適合的成分不同，淡斑效果也會受到濃度、配方、耐受性與持續使用時間影響，不是濃度越高越好。",
+    "sections": [
+      {
+        "heading": "常見保養與外用成分",
+        "text": "Vitamin C 可作為抗氧化與膚色不均保養成分；Niacinamide（菸鹼醯胺）常用於膚色與皮膚屏障保養；Azelaic acid（杜鵑花酸）具有抗發炎作用，可用於青春痘及部分發炎後色素沉澱。不同衍生物、濃度與配方的效果並不相同。"
+      },
+      {
+        "heading": "傳明酸外用與口服不同",
+        "text": "Tranexamic acid（傳明酸）外用配方可能用於部分色素沉澱或肝斑。口服傳明酸屬不同風險層級，尤其有血栓病史或風險者，必須由醫師評估，不可自行把外用保養概念套用到口服藥。"
+      },
+      {
+        "heading": "處方治療應由醫師評估",
+        "text": "皮膚科醫師可能依診斷使用 Hydroquinone、Tretinoin 或複方處方治療肝斑。這些成分可能引起刺激，也不適合自行長期使用；敏感肌或已有皮膚炎者可先詢問藥師或皮膚科醫師。"
+      }
+    ],
+    "altText": "維他命C、菸鹼醯胺、傳明酸與杜鵑花酸的淡斑用途及注意事項圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-15",
+    "sourceCheckedAt": "2026-10-15",
+    "revisionCredit": "使用者提供文案，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "American Academy of Dermatology：Melasma diagnosis and treatment",
+        "url": "https://www.aad.org/public/diseases/a-z/melasma-treatment"
+      },
+      {
+        "title": "DermNet：Brown spots, lentigos and freckles",
+        "url": "https://dermnetnz.org/topics/brown-spots-and-freckles"
+      }
+    ]
+  },
+  {
+    "cardId": "facial_spots",
+    "image": "img/facial_spots_skincare_routine.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/facial_spots_skincare_routine.html",
+    "title": "淡斑保養品怎麼使用？早晚步驟與刺激處理",
+    "summary": "淡斑保養以溫和清潔、單純步驟、保濕與白天防曬為核心；新成分先低頻率使用，避免一次混用多種刺激性產品。",
+    "sections": [
+      {
+        "heading": "早晚保養順序",
+        "text": "早上可依序溫和洗臉、使用淡斑保養、保濕並擦防曬；晚上可在清潔後使用淡斑保養與保濕。實際順序仍應依產品標示與質地調整，處方藥品依醫囑使用。"
+      },
+      {
+        "heading": "新產品先少量、低頻率",
+        "text": "第一次使用可先少量測試並從較低頻率開始。不要同時加入多種酸類、去角質或刺激性成分；明顯刺痛、泛紅、脫皮或濕疹惡化時，先停用並諮詢專業人員。"
+      },
+      {
+        "heading": "改善需要時間",
+        "text": "淡斑通常需要數週至數個月，不能期待幾天內消失。過度去角質或反覆刺激可能加重發炎後色素沉澱；若青春痘或濕疹仍在發炎，先控制發炎也很重要。"
+      }
+    ],
+    "altText": "淡斑保養品早晚使用順序、低頻率嘗試與刺激處理圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-15",
+    "sourceCheckedAt": "2026-10-15",
+    "revisionCredit": "使用者提供文案，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "American Academy of Dermatology：How to fade dark spots in darker skin tones",
+        "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots"
+      },
+      {
+        "title": "American Academy of Dermatology：Melasma diagnosis and treatment",
+        "url": "https://www.aad.org/public/diseases/a-z/melasma-treatment"
+      }
+    ]
+  },
+  {
+    "cardId": "facial_spots",
+    "image": "img/facial_spots_sun_protection.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/facial_spots_sun_protection.html",
+    "title": "想淡斑，防曬不能少：SPF、補擦與遮陽重點",
+    "summary": "防曬可降低新色素斑形成與既有斑點加深；應兼顧 UVA、UVB、足量使用、戶外補擦與帽子衣物等遮陽措施。",
+    "sections": [
+      {
+        "heading": "選擇並足量使用防曬",
+        "text": "可選擇 SPF 30 以上、廣效且具適當防水性的防曬產品。臉部可用約兩指長作為初步參考，但實際用量會受產品質地、容器及臉部面積影響；臉、耳朵與頸部等曝曬處都要覆蓋。"
+      },
+      {
+        "heading": "外出前使用並適時補擦",
+        "text": "一般建議外出前約 15 分鐘塗抹，仍以產品標示為準。戶外活動約每兩小時補擦，流汗、游泳或擦拭後應提早補擦；防曬不是早上擦一次就能維持整天。"
+      },
+      {
+        "heading": "肝斑也要注意可見光",
+        "text": "寬邊帽、陽傘、太陽眼鏡與遮陽衣物可加強保護。肝斑族群可考慮含氧化鐵的潤色防曬，協助降低部分可見光影響；即使陰天或靠近窗邊，仍應依曝曬情況做好防護。"
+      }
+    ],
+    "altText": "淡斑防曬的 SPF、UVA 防護、用量、補擦、遮陽及氧化鐵重點圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-15",
+    "sourceCheckedAt": "2026-10-15",
+    "revisionCredit": "使用者提供文案，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "American Academy of Dermatology：How to apply sunscreen",
+        "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen"
+      },
+      {
+        "title": "American Academy of Dermatology：Melasma self-care（updated 2023）",
+        "url": "https://www.aad.org/public/diseases/a-z/melasma-self-care"
+      }
+    ]
+  },
+  {
+    "cardId": "facial_spots",
+    "image": "img/facial_spots_when_to_see_dermatologist.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/facial_spots_when_to_see_dermatologist.html",
+    "title": "哪些斑點需要看皮膚科？ABCDE 與就醫警訊",
+    "summary": "大部分臉部色素斑屬良性，但新出現、持續改變、出血潰瘍或與其他斑點明顯不同的病灶，應由皮膚科醫師檢查。",
+    "sections": [
+      {
+        "heading": "ABCDE 觀察原則",
+        "text": "A 是左右不對稱，B 是邊緣不規則，C 是顏色不均，D 是直徑較大，E 是大小、形狀或顏色持續改變。黑色素瘤常大於 6 mm，但小於 6 mm 也不能完全排除。"
+      },
+      {
+        "heading": "其他需要就醫的變化",
+        "text": "新出現且快速變大、不明原因出血或潰瘍、持續結痂不癒合、搔癢疼痛，或與身上其他斑點明顯不同，都應儘快安排皮膚科評估。"
+      },
+      {
+        "heading": "不要自行點斑或雷射",
+        "text": "ABCDE 是提醒民眾觀察異常變化的工具，不是自行診斷標準。不確定斑點種類、長期使用保養仍無改善，或考慮藥物、點斑、雷射前，應先由皮膚科醫師確認診斷，避免延誤皮膚癌或其他疾病。"
+      }
+    ],
+    "altText": "臉部斑點的 ABCDE 皮膚癌警訊與需要皮膚科評估的變化圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-15",
+    "sourceCheckedAt": "2026-10-15",
+    "revisionCredit": "使用者提供文案，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "American Academy of Dermatology：What to look for—ABCDEs of melanoma",
+        "url": "https://www.aad.org/public/diseases/skin-cancer/abcdes-melanoma"
+      },
+      {
+        "title": "DermNet：Brown spots, lentigos and freckles",
+        "url": "https://dermnetnz.org/topics/brown-spots-and-freckles"
+      }
+    ]
+  },
+  {
     "cardId": "elderly_nutrition_supplements",
     "image": "img/elderly_appetite_causes.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/elderly_appetite_causes.html",

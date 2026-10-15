@@ -416,3 +416,11 @@ REL-19e72849eaaff17d,series:elderly_nutrition_supplements,has_card,page:high_pro
 REL-6a21d25e6e1334e1,series:elderly_nutrition_supplements,has_card,page:diabetes_nutrition_formula,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
 REL-b83292672e420909,series:elderly_nutrition_supplements,has_card,page:kidney_nutrition_formula,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
 REL-8e4a2c2d530de26d,series:elderly_nutrition_supplements,has_card,page:elderly_appetite_medical_alerts,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-886df1262e1ea812,topic:facial-pigmentation,has_subtopic,subtopic:facial-pigmentation:education,management_mapping,management,cards.json,CR-2026-028 管理集合；不新增疾病專頁
+REL-6002a52df3ca7177,subtopic:facial-pigmentation:education,contains_series,series:facial_spots,management_mapping,management,cards.json,CR-2026-028 管理集合；不代表人工醫療複核
+REL-bc599656c5ba745a,series:facial_spots,has_card,page:facial_spots_types_sun_freckles,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-526ba4f14790d064,series:facial_spots,has_card,page:facial_spots_types_melasma_acne_marks,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-8f7a34876daaf0bc,series:facial_spots,has_card,page:facial_spots_brightening_ingredients,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-4208ccf173e9977d,series:facial_spots,has_card,page:facial_spots_skincare_routine,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-4678e6ef96bf4bbc,series:facial_spots,has_card,page:facial_spots_sun_protection,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-957e4e6498a54a20,series:facial_spots,has_card,page:facial_spots_when_to_see_dermatologist,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核

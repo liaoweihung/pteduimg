@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202610141330';
+const CACHE_NAME = 'pwa-cache-v202610151023';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -241,6 +241,12 @@ const urlsToCache = [
   "./img/eye_wash_precautions.webp",
   "./img/eye_wash_prepare.webp",
   "./img/eye_wash_rinse_steps.webp",
+  "./img/facial_spots_brightening_ingredients.webp",
+  "./img/facial_spots_skincare_routine.webp",
+  "./img/facial_spots_sun_protection.webp",
+  "./img/facial_spots_types_melasma_acne_marks.webp",
+  "./img/facial_spots_types_sun_freckles.webp",
+  "./img/facial_spots_when_to_see_dermatologist.webp",
   "./img/fungal_nail.webp",
   "./img/girlBMI.webp",
   "./img/girl_height2.webp",
@@ -427,6 +433,12 @@ const urlsToCache = [
   "./cards/hand_eczema_moisturizers.html",
   "./cards/hand_eczema_handwashing_gloves.html",
   "./cards/hand_eczema_treatment.html",
+  "./cards/facial_spots_types_sun_freckles.html",
+  "./cards/facial_spots_types_melasma_acne_marks.html",
+  "./cards/facial_spots_brightening_ingredients.html",
+  "./cards/facial_spots_skincare_routine.html",
+  "./cards/facial_spots_sun_protection.html",
+  "./cards/facial_spots_when_to_see_dermatologist.html",
   "./cards/acne_face_wash_01.html",
   "./cards/acne_face_wash_02.html",
   "./cards/acne_face_wash_03.html",
