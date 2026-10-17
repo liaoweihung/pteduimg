@@ -282,16 +282,17 @@
 }
 </style>
 
+    <link rel="stylesheet" href="./css/brand-header.css">
 </head>
 <body>
 
-<header>
-    <img src="icon.png?v=3" alt="圖示" class="header-icon">
-    <span>藥局衛教助手</span>
+<header class="brand-header">
+    <img src="./assets/brand/icon-192.png" alt="藥局衛教助手紅臉黑鬍子 Logo" class="header-icon" width="48" height="48">
+    <div class="brand-copy"><span class="brand-name">藥局衛教助手</span><small class="brand-edition">民眾版</small></div>
 </header>
 
 <nav class="top-nav">
-    <a href="./index.html?focus=related-public" id="nav-pharmacist">藥師衛教</a>
+    <a href="./index.html" id="nav-pharmacist">藥師衛教</a>
     <a href="./public.html" id="nav-public">民眾疾病衛教</a>
 </nav>
 <div class="page-note" id="page-note"></div>
@@ -493,7 +494,7 @@
 
     document.body.classList.add(`${PAGE_TYPE}-page`);
 
-    document.querySelector('header span').innerText = meta.title;
+    document.querySelector('.brand-name').innerText = '藥局衛教助手';
 
     const noteElement = document.getElementById('page-note');
     if (meta.note) {
