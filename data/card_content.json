@@ -597,6 +597,279 @@
     ]
   },
   {
+    "cardId": "knee_brace_use",
+    "image": "img/knee_brace_fit.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/knee_brace_fit.html",
+    "title": "護膝怎麼戴才正確？髕骨、位置與尺寸",
+    "summary": "護膝應對準膝關節、選擇合適尺寸；開孔式護膝需依產品設計對準髕骨，側邊金屬彈簧支撐條應位於膝蓋兩側。",
+    "sections": [
+      {
+        "heading": "先確認髕骨與護膝位置",
+        "text": "髕骨位於膝蓋前方。開孔式護膝應依產品設計讓開孔對準髕骨；無開孔產品則依定位標記或支撐區域調整，讓護膝包覆正確的膝關節位置。"
+      },
+      {
+        "heading": "側邊金屬彈簧支撐條",
+        "text": "部分套筒式護膝兩側具有柔軟、可彎曲的金屬彈簧支撐條，用來提供側邊補強。穿戴時應讓支撐條位於膝關節兩側，避免扭轉、偏移或直接頂壓皮膚。"
+      },
+      {
+        "heading": "尺寸不是越緊越好",
+        "text": "依產品說明測量膝蓋中央、上方或下方的腿圍並對照尺寸表。太大容易滑動，太小可能造成局部壓迫、疼痛或皮膚不適；護膝是輔助用品，不能取代膝關節疾病的診斷與治療。"
+      }
+    ],
+    "altText": "護膝正確位置、髕骨開孔、側邊彈簧支撐條與尺寸選擇圖解",
+    "sourceType": "user_reviewed_source_checked",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-16",
+    "sourceCheckedAt": "2026-10-16",
+    "revisionCredit": "使用者提供並確認人工審核，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "Northern Care Alliance NHS：Orthotics - Knee Braces（reviewed 2026-02）",
+        "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/orthotics-knee-braces"
+      },
+      {
+        "title": "NICE NG226：Osteoarthritis in over 16s - Recommendations（2022）",
+        "url": "https://www.nice.org.uk/guidance/ng226/chapter/recommendations"
+      }
+    ]
+  },
+  {
+    "cardId": "knee_brace_use",
+    "image": "img/knee_brace_sleeve_steps_1_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/knee_brace_sleeve_steps_1_2.html",
+    "title": "套筒式護膝怎麼穿？坐穩並由腳往上套",
+    "summary": "穿套筒式護膝時先坐穩、確認方向與護膝完整，再從腳部套入並用雙手平均往上拉，避免單側拉扯造成扭轉。",
+    "sections": [
+      {
+        "heading": "步驟 1：坐穩準備",
+        "text": "坐在穩固且不易滑動的椅子上，保持雙腳穩定。確認皮膚乾爽、護膝沒有破損，並辨認上下方向與正反面；有側邊支撐條時，先確認沒有變形或扭曲。"
+      },
+      {
+        "heading": "步驟 2：由腳往上套",
+        "text": "將腳伸入護膝，雙手平均抓住護膝兩側，慢慢往膝蓋方向拉起。不要只抓單側布料用力拉扯，以免護膝偏斜、扭轉或損壞。"
+      },
+      {
+        "heading": "穿不進去時不要勉強",
+        "text": "若穿戴非常困難，先重新確認尺寸、方向及產品穿戴方式，不要硬拉。一般彈性套筒式與具有側邊金屬彈簧支撐條的套筒式護膝，基本穿法相近，但仍以產品說明為準。"
+      }
+    ],
+    "altText": "套筒式護膝正確穿戴第一至第二步：坐穩準備並由腳往上套",
+    "sourceType": "user_reviewed_source_checked",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-16",
+    "sourceCheckedAt": "2026-10-16",
+    "revisionCredit": "使用者提供並確認人工審核，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "Northern Care Alliance NHS：Orthotics - Knee Braces（reviewed 2026-02）",
+        "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/orthotics-knee-braces"
+      }
+    ]
+  },
+  {
+    "cardId": "knee_brace_use",
+    "image": "img/knee_brace_sleeve_steps_3_4.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/knee_brace_sleeve_steps_3_4.html",
+    "title": "套筒式護膝怎麼穿？定位、整理與檢查",
+    "summary": "套筒式護膝拉至膝蓋後，對準髕骨與側邊支撐條，整理皺褶與捲邊，再輕微彎曲膝蓋確認舒適、穩固且不滑動。",
+    "sections": [
+      {
+        "heading": "步驟 3：調整正確位置",
+        "text": "將護膝拉到產品指定的膝關節位置。開孔式護膝讓髕骨對準開孔；無開孔產品依標示調整。有側邊金屬彈簧支撐條時，確認金屬條位於膝關節兩旁並順著腿部排列。"
+      },
+      {
+        "heading": "步驟 4：整理並檢查",
+        "text": "將上下邊緣與布料整理平整，避免皺褶、反摺或捲邊。再次確認金屬支撐條沒有旋轉、變形或頂住皮膚。"
+      },
+      {
+        "heading": "完成後測試舒適度",
+        "text": "在安全情況下輕微彎曲及伸直膝蓋，確認護膝維持正確位置且沒有明顯疼痛或壓迫。若不斷滑落、穿戴後麻木或持續疼痛，停止使用並重新檢查尺寸與定位。"
+      }
+    ],
+    "altText": "套筒式護膝第三至第四步：對準髕骨與金屬彈簧支撐條並整理檢查",
+    "sourceType": "user_reviewed_source_checked",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-16",
+    "sourceCheckedAt": "2026-10-16",
+    "revisionCredit": "使用者提供並確認人工審核，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "Northern Care Alliance NHS：Orthotics - Knee Braces（reviewed 2026-02）",
+        "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/orthotics-knee-braces"
+      },
+      {
+        "title": "Kingston and Richmond NHS：Hinged knee brace（skin and fit precautions）",
+        "url": "https://www.kingstonandrichmond.nhs.uk/patients-and-families/patient-leaflets/hinged-knee-brace"
+      }
+    ]
+  },
+  {
+    "cardId": "knee_brace_use",
+    "image": "img/knee_brace_wrap_steps_1_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/knee_brace_wrap_steps_1_2.html",
+    "title": "魔鬼氈式護膝怎麼穿？打開固定帶並包覆膝蓋",
+    "summary": "魔鬼氈式護膝先全部鬆開並確認方向，再對準髕骨、平整包覆膝關節；位置正確後才開始固定帶子。",
+    "sections": [
+      {
+        "heading": "步驟 1：打開固定帶",
+        "text": "先將魔鬼氈固定帶全部鬆開，把護膝主體攤開，確認上下方向、正反面及髕骨定位位置。"
+      },
+      {
+        "heading": "步驟 2：包覆膝蓋",
+        "text": "坐穩後將護膝放在膝蓋正確位置。若有髕骨開孔，先讓開孔對準髕骨，再將護膝主體平整包覆膝關節。"
+      },
+      {
+        "heading": "先定位，再固定",
+        "text": "此時先保持護膝位置正確，不要一開始就把所有固定帶拉得太緊。對部分不方便將套筒式護膝由腳往上拉的人，包覆式產品可能較容易操作，但仍需選對尺寸及款式。"
+      }
+    ],
+    "altText": "魔鬼氈式護膝第一至第二步：打開固定帶、確認方向並對準髕骨包覆",
+    "sourceType": "user_reviewed_source_checked",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-16",
+    "sourceCheckedAt": "2026-10-16",
+    "revisionCredit": "使用者提供並確認人工審核，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "Northern Care Alliance NHS：Orthotics - Knee Braces（reviewed 2026-02）",
+        "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/orthotics-knee-braces"
+      }
+    ]
+  },
+  {
+    "cardId": "knee_brace_use",
+    "image": "img/knee_brace_wrap_steps_3_4.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/knee_brace_wrap_steps_3_4.html",
+    "title": "魔鬼氈式護膝怎麼穿？固定順序與鬆緊檢查",
+    "summary": "先固定護膝主體，再依產品設計逐條調整固定帶；完成後確認位置、活動舒適度及腳部感覺與顏色。",
+    "sections": [
+      {
+        "heading": "步驟 3：依產品設計固定",
+        "text": "先確認護膝主體位置，再依產品說明固定魔鬼氈並逐條調整鬆緊。固定帶數量、方向與先後順序會因款式不同，不宜把單一順序套用到所有護膝。"
+      },
+      {
+        "heading": "步驟 4：確認鬆緊",
+        "text": "固定完成後，檢查護膝有沒有偏移或明顯皺摺。若產品允許膝關節活動，可在安全情況下輕微彎曲膝蓋，確認不會明顯滑落或勒痛。"
+      },
+      {
+        "heading": "麻木或顏色改變要停用",
+        "text": "注意腳部是否麻木、刺痛、冰冷或顏色改變。出現上述情況時先停止使用、鬆開護膝並檢查；症狀持續則應就醫評估。"
+      }
+    ],
+    "altText": "魔鬼氈式護膝第三至第四步：依產品順序固定帶子並檢查鬆緊",
+    "sourceType": "user_reviewed_source_checked",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-16",
+    "sourceCheckedAt": "2026-10-16",
+    "revisionCredit": "使用者提供並確認人工審核，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "Northern Care Alliance NHS：Emergency and Urgent Care - Knee Brace/Splint",
+        "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/emergency-and-urgent-care-knee-bracesplint"
+      },
+      {
+        "title": "Kingston and Richmond NHS：Hinged knee brace（skin and fit precautions）",
+        "url": "https://www.kingstonandrichmond.nhs.uk/patients-and-families/patient-leaflets/hinged-knee-brace"
+      }
+    ]
+  },
+  {
+    "cardId": "knee_brace_use",
+    "image": "img/knee_brace_tightness.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/knee_brace_tightness.html",
+    "title": "護膝鬆緊怎麼判斷？太鬆、太緊與正確鬆緊",
+    "summary": "護膝太鬆會滑動偏移，太緊可能造成疼痛、麻木與皮膚壓迫；正確鬆緊應穩固、活動時舒適，腳部感覺與膚色正常。",
+    "sections": [
+      {
+        "heading": "太鬆與太緊的表現",
+        "text": "走路時經常往下滑或偏移，可能代表尺寸過大、固定不足或護膝已鬆弛。明顯勒痛、麻木、刺痛、冰冷或顏色改變，則可能太緊，應立即停止使用並檢查。"
+      },
+      {
+        "heading": "正確鬆緊的原則",
+        "text": "護膝應能維持正確位置，在產品允許的活動範圍內不造成明顯不適。部分固定帶式護具可用一至兩根手指作為初步參考，但並非所有產品都適用，仍以原廠說明與實際穿戴狀況判斷。"
+      },
+      {
+        "heading": "留意壓痕與高風險族群",
+        "text": "取下後短暫壓痕可能出現；若紅痕約 30 分鐘仍未消退，或已破皮、起水泡，應停用並尋求評估。糖尿病合併感覺遲鈍、循環不良或皮膚脆弱者需特別留意。"
+      }
+    ],
+    "altText": "護膝太鬆、正確鬆緊與太緊的滑動、壓痕及麻木警訊比較",
+    "sourceType": "user_reviewed_source_checked",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-16",
+    "sourceCheckedAt": "2026-10-16",
+    "revisionCredit": "使用者提供並確認人工審核，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "Kingston and Richmond NHS：Hinged knee brace（red marks and pressure areas）",
+        "url": "https://www.kingstonandrichmond.nhs.uk/patients-and-families/patient-leaflets/hinged-knee-brace"
+      },
+      {
+        "title": "Northern Care Alliance NHS：Orthotics - Knee Braces（reviewed 2026-02）",
+        "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/orthotics-knee-braces"
+      }
+    ]
+  },
+  {
+    "cardId": "knee_brace_use",
+    "image": "img/knee_brace_safety.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/knee_brace_safety.html",
+    "title": "穿戴護膝要注意什麼？清潔、皮膚檢查與就醫警訊",
+    "summary": "一般軟式護膝依活動需求及產品說明使用，並定期清潔與檢查皮膚；劇痛、無法承重、明顯變形、紅熱腫合併發燒或持續循環異常需就醫。",
+    "sections": [
+      {
+        "heading": "穿戴時間與清潔保養",
+        "text": "一般軟式護膝通常依活動與個人需求使用，沒有人人通用的固定時數；沒有醫療指示時，不自行長時間連續穿戴或睡覺時使用緊束護膝。依產品標示清潔並保持乾燥，有金屬彈簧支撐條時先確認能否拆卸或水洗，避免高溫烘乾。"
+      },
+      {
+        "heading": "定期檢查皮膚與護膝",
+        "text": "注意局部紅腫、摩擦、破皮、麻木或壓迫不適。護膝鬆弛、變形、固定帶失效或金屬支撐條損壞時，停止使用並評估更換。"
+      },
+      {
+        "heading": "膝蓋警訊與急症",
+        "text": "外傷後無法站立承重、膝關節明顯變形或嚴重腫脹，或關節紅、熱、腫合併發燒，應儘速就醫。持續麻木、皮膚損傷或腳部顏色異常也需評估。單側小腿突然腫痛發熱應當日就醫；合併胸痛或呼吸困難則立即急診。"
+      },
+      {
+        "heading": "護膝不能取代治療",
+        "text": "護膝只能提供包覆、壓迫或輔助支撐，不能取代診斷、復健與適當運動。退化性膝關節炎也不建議所有人常規使用護膝；是否適合應配合關節穩定度、力學負荷、運動治療及個人需求評估。"
+      }
+    ],
+    "altText": "護膝穿戴時間、清潔、皮膚檢查、損壞更換與膝痛就醫警訊圖解",
+    "sourceType": "user_reviewed_source_checked",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-16",
+    "sourceCheckedAt": "2026-10-16",
+    "revisionCredit": "使用者提供並確認人工審核，AI 整理網頁",
+    "expandText": false,
+    "references": [
+      {
+        "title": "NHS：Knee pain（urgent advice and warning signs）",
+        "url": "https://www.nhs.uk/symptoms/knee-pain/"
+      },
+      {
+        "title": "NICE NG226：Osteoarthritis in over 16s - Recommendations（2022）",
+        "url": "https://www.nice.org.uk/guidance/ng226/chapter/recommendations"
+      },
+      {
+        "title": "Northern Care Alliance NHS：Orthotics - Knee Braces（care and warning signs）",
+        "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/orthotics-knee-braces"
+      }
+    ]
+  },
+  {
     "cardId": "compression_stockings",
     "image": "img/compression_stockings_benefits.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/compression_stockings_benefits.html",

@@ -9,6 +9,24 @@
   },
   "nodes": [
     {
+      "id": "topic:knee-support",
+      "title": "膝關節護具",
+      "kind": "topic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json|docs/project-management/evidence/knee-brace-2026-10-16.md",
+      "note": "管理集合；public.html 使用 chronic_conditions 分類；未建立獨立疾病主題頁"
+    },
+    {
+      "id": "subtopic:knee-support:brace-use",
+      "title": "護膝穿戴與使用",
+      "kind": "subtopic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json",
+      "note": "CR-2026-029；使用者聲明內容已人工審核，但未提供可追溯審核者資料"
+    },
+    {
       "id": "topic:facial-pigmentation",
       "title": "臉部色素斑",
       "kind": "topic",

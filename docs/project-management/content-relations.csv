@@ -424,3 +424,12 @@ REL-8f7a34876daaf0bc,series:facial_spots,has_card,page:facial_spots_brightening_
 REL-4208ccf173e9977d,series:facial_spots,has_card,page:facial_spots_skincare_routine,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
 REL-4678e6ef96bf4bbc,series:facial_spots,has_card,page:facial_spots_sun_protection,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
 REL-957e4e6498a54a20,series:facial_spots,has_card,page:facial_spots_when_to_see_dermatologist,source_observed,series_membership,cards.json,依原始系列 steps；不是醫療複核
+REL-b475b68d758974b5,topic:knee-support,has_subtopic,subtopic:knee-support:brace-use,management_mapping,management,cards.json,CR-2026-029 管理集合；不新增疾病專頁
+REL-427951fa83f4ec8d,subtopic:knee-support:brace-use,contains_series,series:knee_brace_use,management_mapping,management,cards.json,CR-2026-029 管理集合；不代表正式醫療簽核
+REL-8f3363d281c8a2e2,series:knee_brace_use,has_card,page:knee_brace_fit,source_observed,series_membership,cards.json,依原始系列 steps；使用者聲明內容已人工審核但未提供可追溯審核者資料
+REL-fd9ab49131943303,series:knee_brace_use,has_card,page:knee_brace_sleeve_steps_1_2,source_observed,series_membership,cards.json,依原始系列 steps；使用者聲明內容已人工審核但未提供可追溯審核者資料
+REL-00739a909e6d7239,series:knee_brace_use,has_card,page:knee_brace_sleeve_steps_3_4,source_observed,series_membership,cards.json,依原始系列 steps；使用者聲明內容已人工審核但未提供可追溯審核者資料
+REL-e7b287fb7e5293b7,series:knee_brace_use,has_card,page:knee_brace_wrap_steps_1_2,source_observed,series_membership,cards.json,依原始系列 steps；使用者聲明內容已人工審核但未提供可追溯審核者資料
+REL-5f4fa4f530171343,series:knee_brace_use,has_card,page:knee_brace_wrap_steps_3_4,source_observed,series_membership,cards.json,依原始系列 steps；使用者聲明內容已人工審核但未提供可追溯審核者資料
+REL-044912bd0d16ac90,series:knee_brace_use,has_card,page:knee_brace_tightness,source_observed,series_membership,cards.json,依原始系列 steps；使用者聲明內容已人工審核但未提供可追溯審核者資料
+REL-a14856e6ea2cbdfc,series:knee_brace_use,has_card,page:knee_brace_safety,source_observed,series_membership,cards.json,依原始系列 steps；使用者聲明內容已人工審核但未提供可追溯審核者資料

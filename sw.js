@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202610150242';
+const CACHE_NAME = 'pwa-cache-v202610161114';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -282,6 +282,13 @@ const urlsToCache = [
   "./img/knee_brace_3.webp",
   "./img/knee_brace_4.webp",
   "./img/knee_brace_5.webp",
+  "./img/knee_brace_fit.webp",
+  "./img/knee_brace_safety.webp",
+  "./img/knee_brace_sleeve_steps_1_2.webp",
+  "./img/knee_brace_sleeve_steps_3_4.webp",
+  "./img/knee_brace_tightness.webp",
+  "./img/knee_brace_wrap_steps_1_2.webp",
+  "./img/knee_brace_wrap_steps_3_4.webp",
   "./img/kwangdong_mu_yao_fen.webp",
   "./img/lan_1.webp",
   "./img/lan_2.webp",
@@ -429,6 +436,13 @@ const urlsToCache = [
   "./cards/compression_stockings_wear_3.html",
   "./cards/compression_stockings_care.html",
   "./cards/compression_stockings_safety.html",
+  "./cards/knee_brace_fit.html",
+  "./cards/knee_brace_sleeve_steps_1_2.html",
+  "./cards/knee_brace_sleeve_steps_3_4.html",
+  "./cards/knee_brace_wrap_steps_1_2.html",
+  "./cards/knee_brace_wrap_steps_3_4.html",
+  "./cards/knee_brace_tightness.html",
+  "./cards/knee_brace_safety.html",
   "./cards/hand_eczema_symptoms.html",
   "./cards/hand_eczema_moisturizers.html",
   "./cards/hand_eczema_handwashing_gloves.html",

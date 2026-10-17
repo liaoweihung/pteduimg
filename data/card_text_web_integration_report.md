@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：199
+- 成功加入文字頁數：206
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -20,6 +20,13 @@
 | elderly_nutrition_supplements | 糖尿病營養補充品怎麼選？熱量、碳水與血糖監測 | https://liaoweihung.github.io/pteduimg/cards/diabetes_nutrition_formula.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | elderly_nutrition_supplements | 腎臟病營養補充品怎麼選？洗腎前與洗腎中的差異 | https://liaoweihung.github.io/pteduimg/cards/kidney_nutrition_formula.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | elderly_nutrition_supplements | 長者食慾不佳何時要就醫？體重下降與吞嚥警訊 | https://liaoweihung.github.io/pteduimg/cards/elderly_appetite_medical_alerts.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| knee_brace_use | 護膝怎麼戴才正確？髕骨、位置與尺寸 | https://liaoweihung.github.io/pteduimg/cards/knee_brace_fit.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| knee_brace_use | 套筒式護膝怎麼穿？坐穩並由腳往上套 | https://liaoweihung.github.io/pteduimg/cards/knee_brace_sleeve_steps_1_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| knee_brace_use | 套筒式護膝怎麼穿？定位、整理與檢查 | https://liaoweihung.github.io/pteduimg/cards/knee_brace_sleeve_steps_3_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| knee_brace_use | 魔鬼氈式護膝怎麼穿？打開固定帶並包覆膝蓋 | https://liaoweihung.github.io/pteduimg/cards/knee_brace_wrap_steps_1_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| knee_brace_use | 魔鬼氈式護膝怎麼穿？固定順序與鬆緊檢查 | https://liaoweihung.github.io/pteduimg/cards/knee_brace_wrap_steps_3_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| knee_brace_use | 護膝鬆緊怎麼判斷？太鬆、太緊與正確鬆緊 | https://liaoweihung.github.io/pteduimg/cards/knee_brace_tightness.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| knee_brace_use | 穿戴護膝要注意什麼？清潔、皮膚檢查與就醫警訊 | https://liaoweihung.github.io/pteduimg/cards/knee_brace_safety.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | compression_stockings | 彈性襪有什麼作用？漸進式壓力與適用族群 | https://liaoweihung.github.io/pteduimg/cards/compression_stockings_benefits.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | compression_stockings | 彈性襪壓力怎麼選？認識 mmHg 與壓力分級 | https://liaoweihung.github.io/pteduimg/cards/compression_stockings_pressure.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | compression_stockings | 彈性襪尺寸怎麼量？腳踝、小腿與腿長量測 | https://liaoweihung.github.io/pteduimg/cards/compression_stockings_measurement.html | 是 | 是 | 是 | 是 | 是 | 無 |

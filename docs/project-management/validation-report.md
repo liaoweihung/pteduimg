@@ -124,3 +124,18 @@ git diff --check
 - 本次未 Commit、Push 或驗證 GitHub Pages 部署。內容及來源查核日為2026-10-15。
 
 完整範圍、來源與測試限制見[任務證據](evidence/facial-spots-2026-10-15.md)。
+
+## 2026-10-16 追加：CR-2026-029 護膝怎麼穿系列
+
+上方初建與先前新增系列紀錄保持歷史版本。本次新增「護膝怎麼穿？」七頁，完整建置公開入口、網站索引、PWA、新頁與管理增量，不重新進行全站醫療盤點。
+
+- 清冊由365列增為372列；使用者聲明文字與圖卡內容已人工審核，但因未提供審核者姓名、資格與日期，正式醫療複核欄位維持 unknown，來源 `needsMedicalReview=true`。
+- 管理主題增加2個 `collection_only` 節點，關聯由425增為434；沒有建立或宣稱獨立疾病主題頁。
+- `--propose` 先輸出7筆新增，合併後為零差異、零移除、零來源錯誤；原清冊人工欄位未覆蓋。
+- `python -B scripts/check_site.py` 通過；`check_project_management.py` 為0錯誤；`test_project_management.py` 18項通過；四份JSON語法檢查及 `git diff --check` 通過。
+- 七頁皆有靜態文字、內容更新日、資料查核日、直接來源、SEO、JSON-LD與共用頁尾，並出現在兩份 sitemap、all-cards、seo 及 service-worker 資產清單。
+- 390×844 手機檢查確認 public 入口位於彈性襪之後；七頁無橫向溢出，均有圖下兩個翻頁按鈕、系列循環、文字日期、來源與單一共用頁尾。
+- AUD-007 的199頁報告先保存快照，再更新為206頁版本；既有字詞差異 CR-2026-023 仍保留。
+- 本次未 Commit、Push 或驗證 GitHub Pages 部署。內容及來源查核日為2026-10-16。
+
+完整範圍、來源與測試限制見[任務證據](evidence/knee-brace-2026-10-16.md)。

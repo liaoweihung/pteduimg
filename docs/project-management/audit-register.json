@@ -114,22 +114,41 @@
     {
       "audit_id": "AUD-007",
       "path": "data/card_text_web_integration_report.md",
-      "audit_date": "2026-10-15",
-      "date_basis": "CR-2026-028 本機建置與輸出核對",
+      "audit_date": "2026-10-16",
+      "date_basis": "CR-2026-029 本機建置與輸出核對",
       "kind": "generated_report",
-      "scope": "199 頁靜態文字整合",
-      "recorded_result": "2026-10-15 重建報告記錄 199 成功、0 失敗；僅涵蓋 title/meta/h1/alt/text",
+      "scope": "206 頁靜態文字整合",
+      "recorded_result": "2026-10-16 重建報告記錄 206 成功、0 失敗；僅涵蓋 title/meta/h1/alt/text",
       "known_issues": "本次另比較段落文字；09_australia_usa_china 字詞差異，原檢查未覆蓋",
       "followup_commits": [
         "333ed52512cfbaf2b0f900e76605bc0b5c8264cc"
       ],
       "validity": "conflict",
-      "current_interpretation": "新增六張臉部斑點頁通過字串比對；舊頁 09_australia_usa_china 字詞差異仍保留 CR-2026-023，未視為修復或醫療複核",
-      "last_report_commit": "7c37ae75e345a1bc4a6bbfd5f87d3b8a50b1656b",
-      "last_report_commit_date": "2026-10-14T21:29:33+08:00",
+      "current_interpretation": "新增七張護膝頁通過字串比對；舊頁 09_australia_usa_china 字詞差異仍保留 CR-2026-023，未視為修復或醫療複核",
+      "last_report_commit": "d235107d2f46653248e5b193d1ac3f26e1a48e85",
+      "last_report_commit_date": "2026-10-15T10:41:52+08:00",
       "working_tree_state": "modified_uncommitted",
-      "sha256": "abfa04883bcb8a12042dfdbfeb55a9154bf2d0bddd9c0f276f4a1360187a4af6",
+      "sha256": "3986df86a3c06d65485ee8bb64e909306f022e12e0e5420de9d37b1d40197ff4",
       "previous_versions": [
+        {
+          "audit_id": "AUD-007",
+          "path": "docs/project-management/evidence/card-text-integration-before-knee-brace-2026-10-16.md",
+          "audit_date": "2026-10-15",
+          "date_basis": "CR-2026-028 建置後提交版本",
+          "kind": "generated_report",
+          "scope": "199 頁靜態文字整合",
+          "recorded_result": "文件記錄 199 成功、0 失敗；僅涵蓋 title/meta/h1/alt/text",
+          "known_issues": "本次另比較段落文字；09_australia_usa_china 字詞差異，原檢查未覆蓋",
+          "followup_commits": [
+            "d235107d2f46653248e5b193d1ac3f26e1a48e85"
+          ],
+          "validity": "conflict",
+          "current_interpretation": "保留 CR-2026-028 已提交版本；不推論全站 AEO 或醫療通過",
+          "last_report_commit": "d235107d2f46653248e5b193d1ac3f26e1a48e85",
+          "last_report_commit_date": "2026-10-15T10:41:52+08:00",
+          "working_tree_state": "tracked",
+          "sha256": "abfa04883bcb8a12042dfdbfeb55a9154bf2d0bddd9c0f276f4a1360187a4af6"
+        },
         {
           "audit_id": "AUD-007",
           "path": "docs/project-management/evidence/card-text-integration-before-facial-spots-2026-10-15.md",

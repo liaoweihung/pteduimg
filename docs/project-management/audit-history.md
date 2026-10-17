@@ -485,3 +485,13 @@
 - 增量 `--propose` 先提出六筆新增，合併後為零差異、零移除、零來源錯誤；新頁人工欄位維持 unknown，`needsMedicalReview` 維持 true。
 - `check_site.py`、管理一致性檢查與18項管理測試通過；390×844 手機抽查確認公開入口、圖下翻頁、系列循環、文字來源及單一共用頁尾。
 - CR 結案只表示授權的本機製作與管理維護完成；不代表人工醫療複核、Git 提交、Pages 部署或搜尋收錄。Commit 與 Push 均未執行。
+
+## 2026-10-16｜CR-2026-029 新增護膝怎麼穿
+
+- 範圍：`series:knee_brace_use` 的七個新頁，以及公開入口、索引、PWA 與管理投影；來源與圖文對應見 [任務證據](evidence/knee-brace-2026-10-16.md)。未改既有圖卡正文或人工醫療欄位。
+- 使用者聲明文字與圖卡內容已人工審核；因未提供審核者姓名、資格與簽署日期，清冊正式醫療複核狀態維持 `unknown`，`needsMedicalReview` 維持 `true`。
+- AUD-007 建置前版本為 199 成功、0 失敗，先保存 [重建前原報告快照](evidence/card-text-integration-before-knee-brace-2026-10-16.md)，SHA-256：`abfa04883bcb8a12042dfdbfeb55a9154bf2d0bddd9c0f276f4a1360187a4af6`。
+- 本次完整建置新增七頁，報告變為 206 成功、0 失敗；新 SHA-256：`3986df86a3c06d65485ee8bb64e909306f022e12e0e5420de9d37b1d40197ff4`。audit-register 保留 previous_versions，不以更新 hash 消除舊結論。
+- 增量 `--propose` 先提出七筆新增，合併後為零差異、零移除、零來源錯誤；原清冊人工欄位未覆蓋。
+- 既有 CR-2026-023 字詞比對差異仍未解，AUD-007 的 conflict 保留；機械通過不代表正式醫療複核、全站 AEO 或搜尋成效。
+- Commit、Push、Pages 部署均未執行；最終測試記錄補於任務證據與 validation-report。

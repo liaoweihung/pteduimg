@@ -109,6 +109,53 @@
       "img/compression_stockings_safety.webp"
     ]
   },
+  "knee_brace_use": {
+    "title": "護膝怎麼穿?",
+    "category": "public_education",
+    "topics": [
+      "chronic_conditions"
+    ],
+    "order": 0.1,
+    "hidden": false,
+    "icon": "🦵",
+    "showFooter": true,
+    "tags": [
+      "護膝",
+      "護膝怎麼穿",
+      "護膝穿法",
+      "套筒式護膝",
+      "魔鬼氈護膝",
+      "膝蓋護具",
+      "髕骨",
+      "護膝尺寸",
+      "護膝鬆緊",
+      "金屬彈簧支撐條",
+      "膝痛",
+      "膝關節",
+      "退化性膝關節炎",
+      "護膝清洗",
+      "護膝注意事項",
+      "knee brace"
+    ],
+    "texts": [
+      "護膝怎麼戴才正確？髕骨、位置與尺寸",
+      "套筒式護膝怎麼穿？坐穩並由腳往上套",
+      "套筒式護膝怎麼穿？定位、整理與檢查",
+      "魔鬼氈式護膝怎麼穿？打開固定帶並包覆膝蓋",
+      "魔鬼氈式護膝怎麼穿？固定順序與鬆緊檢查",
+      "護膝鬆緊怎麼判斷？太鬆、太緊與正確鬆緊",
+      "穿戴護膝要注意什麼？清潔、皮膚檢查與就醫警訊"
+    ],
+    "steps": [
+      "img/knee_brace_fit.webp",
+      "img/knee_brace_sleeve_steps_1_2.webp",
+      "img/knee_brace_sleeve_steps_3_4.webp",
+      "img/knee_brace_wrap_steps_1_2.webp",
+      "img/knee_brace_wrap_steps_3_4.webp",
+      "img/knee_brace_tightness.webp",
+      "img/knee_brace_safety.webp"
+    ]
+  },
   "hand_eczema": {
     "title": "富貴手",
     "category": "public_education",
