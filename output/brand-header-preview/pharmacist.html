@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <base href="../../">
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="./icon.png?v=3">
+    <link rel="canonical" href="https://liaoweihung.github.io/pteduimg/">
+    <title>頁首預覽｜藥局衛教助手｜用藥指導與照護圖卡</title>
+<meta name="description" content="專為臨床醫療人員與民眾設計的數位衛教圖卡工具。提供包含眼藥水, 耳滴劑, NTG舌下錠, 吸入器教學、傷口與疤痕照護、外籍看護多語用藥對照等專業衛教資訊，支援離線使用。">
+<meta name="keywords" content="衛教圖卡, 藥師衛教, 眼藥水, 耳機劑, 傷口照護, 吸入器教學, 痔瘡軟膏, 肛門塞劑, 陰道塞劑, NTG舌下錠, 傷口照護, 減少疤痕, 醫療App, PWA">
+<meta name="author" content="藥師">
+    <meta property="og:title" content="藥局衛教助手｜讓您更瞭解藥品">
+<meta property="og:description" content="免下載安裝！一鍵開啟常見藥品，眼藥水、塞劑、吸入器、傷口照護、濕敷療法、小朋友抗生素水劑泡製，多國語言用藥指導圖卡。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://liaoweihung.github.io/pteduimg/icon.png?v=3">
+<meta property="og:url" content="https://liaoweihung.github.io/pteduimg/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="藥局衛教助手｜讓您更瞭解藥品">
+<meta name="twitter:description" content="免下載安裝！一鍵開啟常見藥品，眼藥水、塞劑、吸入器、傷口照護、濕敷療法、小朋友抗生素水劑泡製，多國語言用藥指導圖卡。">
+<meta name="twitter:image" content="https://liaoweihung.github.io/pteduimg/icon.png?v=3">
+    <!-- 👇 新增的隱形斗篷開關 👇 -->
+<script>
+  const GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
+  const urlParams = new URLSearchParams(window.location.search);
+  const host = window.location.hostname;
+  const isPrivateNetworkHost = ['localhost', '127.0.0.1', '::1'].includes(host)
+      || /^192\.168\./.test(host)
+      || /^10\./.test(host)
+      || /^172\.(1[6-9]|2\d|3[0-1])\./.test(host);
+  const isLocalPreview = isPrivateNetworkHost || window.location.protocol === 'file:';
+
+  if (urlParams.get('dev') === '1') {
+      sessionStorage.setItem('isDeveloper', 'true');
+      alert('已開啟開發者隱形模式！未來的瀏覽將不會被 GA4 記錄。');
+  }
+
+  if (urlParams.get('dev') === '0') {
+      sessionStorage.removeItem('isDeveloper');
+      alert('已關閉開發者隱形模式。');
+  }
+
+  window.isAnalyticsDisabled = isLocalPreview || sessionStorage.getItem('isDeveloper') === 'true';
+  window[`ga-disable-${GA_MEASUREMENT_ID}`] = window.isAnalyticsDisabled;
+
+  function shouldTrackAnalytics() {
+      return !window.isAnalyticsDisabled && typeof gtag === 'function';
+  }
+
+  if (window.isAnalyticsDisabled) {
+      console.log('🛡️ GA4 已暫停：本機預覽或開發者隱形模式');
+  }
+</script>
+<!-- 👆 隱形斗篷開關結束 👆 -->
+    <!-- Google tag (gtag.js) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ dataLayer.push(arguments); };
+
+  if (!window.isAnalyticsDisabled) {
+      const gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+      document.head.appendChild(gaScript);
+      gtag('js', new Date());
+      gtag('config', GA_MEASUREMENT_ID);
+  }
+</script>
+<script>
+      function trackImageUsage(imageName) {
+          // 確保 GA4 有順利載入才執行
+          if (shouldTrackAnalytics()) {
+              gtag('event', 'view_instruction_card', {
+                  'card_title': imageName
+              });
+              console.log('📍 已傳送 GA4 追蹤記錄：', imageName);
+          }
+      }
+    </script>
+
+    <script src="./qrious.min.js"></script>
+    <link rel="stylesheet" href="./css/base.css?v=6">
+    <link rel="stylesheet" href="./css/pharmacist.css?v=2">
+
+<style>
+/* === 我的最愛：長按拖曳排序 === */
+.fav-item.sortable-fav {
+    position: relative;
+    touch-action: pan-y;
+    /* 👇 封印手機原生行為，防止長按跳出選單或文字反白干擾 👇 */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.drag-grip {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #c0392b;
+    font-size: 0.95rem;
+    opacity: 0.75;
+    user-select: none;
+}
+
+.fav-dragging {
+    user-select: none;
+}
+
+/* 👇 補強殘影的獨立樣式 👇 */
+.fav-drag-ghost {
+    position: fixed;
+    z-index: 20000;
+    width: 42vw;
+    max-width: 210px;
+
+    /* 核心修正：加上背景色與基礎排版。
+       因為元素被拉到 <body> 底下，會失去原本 .menu-grid 的繼承樣式，
+       如果不加背景色，它就會變成透明的，導致您看不見它。 */
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #3498db; /* 加一個藍色邊框，讓殘影在拖曳時超級明顯 */
+
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 0.95;
+    pointer-events: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3); /* 加深陰影 */
+}
+
+.reset-main-order-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 22px 0 14px;
+}
+
+.reset-main-order-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42vw;
+    max-width: 210px;
+    min-height: 76px;
+    border: 2px solid #3498db;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #2c3e50;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.35;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    text-decoration: none;
+}
+
+.site-footer .reset-main-order-btn {
+    color: #2c3e50;
+}
+
+.reset-main-order-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.16);
+}
+
+.department-filter-section {
+    max-width: 900px;
+    margin: 16px auto 8px;
+    padding: 0 16px;
+}
+
+.department-filter-title {
+    margin: 0 0 10px;
+    color: #334155;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.department-filter-list {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 0 0 6px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.department-filter-list::-webkit-scrollbar {
+    display: none;
+}
+
+.department-filter-btn {
+    flex: 0 0 auto;
+    min-height: 40px;
+    border: 1px solid #bfdbfe;
+    border-radius: 999px;
+    padding: 8px 14px;
+    background: #eff6ff;
+    color: #1e3a8a;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.department-filter-btn[aria-pressed="true"] {
+    border-color: #1d4ed8;
+    background: #1d4ed8;
+    color: #ffffff;
+}
+
+.department-tool-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.related-navigation {
+    max-width: 900px;
+    margin: 4px auto 12px;
+    padding: 0 16px;
+}
+
+.related-navigation-title {
+    margin: 0 0 8px;
+    color: #475569;
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.related-navigation-list {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.related-navigation-list::-webkit-scrollbar {
+    display: none;
+}
+
+.related-navigation-link {
+    flex: 0 0 auto;
+    border: 1px solid #86efac;
+    border-radius: 999px;
+    padding: 8px 12px;
+    background: #f0fdf4;
+    color: #166534;
+    font-weight: 700;
+    text-decoration: none;
+}
+</style>
+
+<link rel="stylesheet" href="output/brand-header-preview/brand-header.css?v=2">
+</head>
+<body>
+
+<header class="brand-header">
+    <img src="output/brand-header-preview/logo.png" alt="紅臉黑鬍子微笑 Logo" class="header-icon" width="48" height="48">
+    <div class="brand-copy"><span class="brand-name">藥局衛教助手</span><small class="brand-edition">藥師版</small></div>
+</header>
+
+<nav class="top-nav">
+    <a href="./output/brand-header-preview/pharmacist.html" id="nav-pharmacist">藥師衛教</a>
+    <a href="./output/brand-header-preview/public.html" id="nav-public">民眾疾病衛教</a>
+</nav>
+<div class="page-note" id="page-note"></div>
+
+<div id="fav-section" style="display:none;">
+    <div class="section-title">⭐ 常用圖卡</div>
+    <div class="menu-grid" id="fav-grid"></div>
+</div>
+
+<section class="department-filter-section" aria-labelledby="department-filter-title">
+    <h2 class="department-filter-title" id="department-filter-title">依科別瀏覽</h2>
+    <div class="department-filter-list" id="department-filter-list" role="group" aria-label="藥師衛教科別篩選"></div>
+</section>
+<section class="related-navigation" id="related-public-navigation" aria-live="polite"></section>
+
+<!-- 分類區塊會由 cards.json 自動產生，不用再手動修改 index.html -->
+<div id="home-loading" class="home-loading" role="status" aria-live="polite">正在載入圖卡...</div>
+<div id="category-sections"></div>
+
+<div id="qr-modal">
+    <div class="qr-box">
+        <h3 class="qr-title">請患者掃描開啟這張圖卡</h3>
+        <p class="qr-hint">掃描後會直接打開目前這張衛教圖卡。</p>
+        <canvas id="qr-canvas"></canvas>
+        <br>
+        <button class="qr-close" onclick="closeQRModal()">完成</button>
+    </div>
+</div>
+<div id="favorite-toast" class="favorite-toast" role="status" aria-live="polite"></div>
+
+<div id="share-modal">
+    <div class="share-box">
+        <h3 class="share-title">&#20998;&#20139;&#36889;&#24373;&#22294;&#21345;</h3>
+        <p class="share-subtitle" id="share-card-title"></p>
+        <input id="share-url-input" class="share-url-input" type="text" readonly>
+        <div class="share-actions">
+            <button class="share-btn line" onclick="shareToLine()">LINE</button>
+            <button class="share-btn facebook" onclick="shareToFacebook()">Facebook</button>
+            <button class="share-btn threads" onclick="shareToThreads()">Threads</button>
+            <button class="share-btn instagram" onclick="shareToInstagram()">Instagram</button>
+            <button class="share-btn copy" onclick="copyShareUrl()">&#35079;&#35069;&#36899;&#32080;</button>
+        </div>
+        <button class="share-close" onclick="closeShareModal()">&#23436;&#25104;</button>
+    </div>
+</div>
+
+<div id="reset-order-modal">
+    <div class="reset-order-box">
+        <h3 class="reset-order-title">恢復圖卡預設排列</h3>
+        <p class="reset-order-message">確定要恢復圖卡預設排列嗎？目前手動調整的圖卡順序會被清除。</p>
+        <div class="reset-order-modal-actions">
+            <button type="button" class="reset-confirm-btn" onclick="confirmResetMainCardOrder()">確定恢復預設排列</button>
+            <button type="button" class="reset-cancel-btn" onclick="closeResetMainCardOrder()">取消</button>
+        </div>
+    </div>
+</div>
+
+<div id="viewer">
+    <div class="viewer-header">
+        <span id="v-title" style="font-size:1.2rem; font-weight:bold;">&#27161;&#38988;</span>
+        <div class="viewer-actions">
+            <button class="viewer-icon-btn" onclick="showQRCode()" title="QR Code">&#128306;</button>
+            <button class="viewer-icon-btn" onclick="shareCurrentCard()" title="Share">&#8599;</button>
+            <button id="viewer-fav-btn" class="viewer-icon-btn" onclick="toggleCurrentFav()" title="Favorite">&#10084;</button>
+            <button class="viewer-icon-btn close-viewer-btn" onclick="closeViewer()" title="Close">&#10005;</button>
+        </div>
+    </div>
+
+    <div class="image-viewport" id="touch-zone">
+        <img id="main-img" class="main-img" src="" alt="教學圖">
+        <button class="side-nav-zone side-nav-left" type="button" onclick="changeStep(-1)" aria-label="上一張"></button>
+        <button class="side-nav-zone side-nav-right" type="button" onclick="changeStep(1)" aria-label="下一張"></button>
+    </div>
+    <div class="footer-minimal">
+        <button class="nav-btn left-btn" type="button" onclick="changeStep(-1)" aria-label="上一張">❮</button>
+        <div class="step-dots" id="v-steps"></div>
+        <button class="nav-btn right-btn" type="button" onclick="changeStep(1)" aria-label="下一張">❯</button>
+    </div>
+    <div id="v-desc" class="step-desc"></div>
+</div>
+
+<script>
+    // 教育圖卡資料改由 build.py 產生 cards.json，新增圖片時不再手動改 index.html
+    let educationData = {};
+    let seoData = {};
+
+    const PAGE_TYPE = 'pharmacist';
+
+    const EDUCATION_DATA_CACHE_KEY = 'pteduimg:cardsData:v1';
+    const SEO_DATA_CACHE_KEY = 'pteduimg:seoData:v1';
+    const MAIN_ORDER_STORAGE_KEY = `mainCardOrder:${PAGE_TYPE}`;
+    let activeDepartment = 'all';
+
+    const pharmacistDepartmentMeta = [
+        { id: 'all', title: '全部圖卡' },
+        { id: 'ophthalmology', title: '眼科' },
+        { id: 'ent', title: '耳鼻喉科' },
+        { id: 'dermatology', title: '皮膚科' },
+        { id: 'plastic_surgery', title: '整形外科' },
+        { id: 'colorectal_surgery', title: '直腸外科' },
+        { id: 'dentistry', title: '牙科' },
+        { id: 'obstetrics_gynecology', title: '婦產科' },
+        { id: 'pediatrics', title: '兒科' },
+        { id: 'chest_medicine_smoking_cessation', title: '胸腔內科／戒菸' },
+        { id: 'cardiology', title: '心臟內科' },
+        { id: 'chinese_medicine', title: '中醫／中藥' },
+        { id: 'pharmacy_general', title: '藥事通用' }
+    ];
+
+    const pharmacistDepartmentTools = [
+        {
+            title: '經期・排卵・預產期計算器',
+            icon: '🌷',
+            href: './menstrual-calculator.html',
+            departments: ['obstetrics_gynecology']
+        },
+        {
+            title: '兒童生長計算器',
+            icon: '📈',
+            href: './growth-calculator.html',
+            departments: ['pediatrics']
+        }
+    ];
+
+    const departmentRelatedPublicTopics = {
+        ophthalmology: ['eyes'],
+        ent: ['throat'],
+        dermatology: ['skin_wound'],
+        plastic_surgery: ['skin_wound'],
+        colorectal_surgery: ['elimination_care'],
+        dentistry: ['oral_health'],
+        obstetrics_gynecology: ['pregnancy'],
+        pediatrics: ['growth', 'infectious_diseases'],
+        cardiology: ['chronic_conditions'],
+        pharmacy_general: ['travel_medication']
+    };
+
+    const publicTopicTitles = {
+        eyes: '眼睛', skin_wound: '皮膚與傷口', oral_health: '口腔', throat: '喉嚨',
+        infectious_diseases: '傳染病', elimination_care: '排泄與照護', growth: '成長',
+        chronic_conditions: '慢性病', pregnancy: '懷孕', travel_medication: '旅遊與用藥常識'
+    };
+
+    const pageMeta = {
+        pharmacist: {
+            title: '藥師藥品衛教助手',
+            navId: 'nav-pharmacist'
+        },
+        public: {
+            title: '民眾疾病衛教圖卡',
+            navId: 'nav-public'
+        }
+    };
+
+    const categoryMeta = {
+        pharmacist_general: { title: '🧴 通用藥品使用說明', order: 10, page: 'pharmacist' },
+        pharmacist_product: { title: '💊 特定產品衛教', order: 20, page: 'pharmacist' },
+        public_education: { title: '🩹 民眾疾病衛教圖卡', order: 10, page: 'public' },
+        uncategorized: { title: '📦 其他圖卡', order: 99, page: 'pharmacist' },
+        site_guide: { title: '🧭 網站使用說明', order: 999, page: 'all' }
+    };
+
+    function isVisibleOnPage(item) {
+        const cat = item.category || 'uncategorized';
+        const categoryPage = categoryMeta[cat]?.page || 'pharmacist';
+        return categoryPage === 'all' || categoryPage === PAGE_TYPE;
+    }
+
+   function setupPageHeader() {
+    const meta = pageMeta[PAGE_TYPE];
+
+    document.body.classList.add(`${PAGE_TYPE}-page`);
+
+    document.querySelector('.brand-name').innerText = '藥局衛教助手';
+
+    const noteElement = document.getElementById('page-note');
+    if (meta.note) {
+        noteElement.innerText = meta.note;
+        noteElement.style.display = '';
+    } else {
+        noteElement.style.display = 'none';
+    }
+
+    document.getElementById(meta.navId)?.classList.add('active');
+}
+
+    function loadCachedEducationData() {
+        try {
+            const cached = JSON.parse(sessionStorage.getItem(EDUCATION_DATA_CACHE_KEY) || 'null');
+            if (cached && typeof cached === 'object') {
+                educationData = cached;
+                return true;
+            }
+        } catch (err) {}
+        return false;
+    }
+
+    function loadCachedSeoData() {
+        try {
+            const cached = JSON.parse(sessionStorage.getItem(SEO_DATA_CACHE_KEY) || 'null');
+            if (cached && typeof cached === 'object') {
+                seoData = cached;
+                return true;
+            }
+        } catch (err) {}
+        return false;
+    }
+
+    async function loadEducationData() {
+        try {
+            const response = await fetch('./cards.json');
+            if (!response.ok) throw new Error('cards.json not found');
+            educationData = await response.json();
+            sessionStorage.setItem(EDUCATION_DATA_CACHE_KEY, JSON.stringify(educationData));
+        } catch (err) {
+            console.error('無法讀取 cards.json：', err);
+            if (!Object.keys(educationData).length) {
+                document.getElementById('category-sections').innerHTML = `
+                    <div style="padding:20px; color:#c0392b; line-height:1.6;">
+                        找不到圖卡資料 cards.json。請先執行 <b>python build.py</b>，或確認 GitHub Actions 已完成自動建置。
+                    </div>`;
+                educationData = {};
+            }
+        }
+    }
+
+    async function loadSeoData() {
+        try {
+            const response = await fetch('./seo.json');
+            if (!response.ok) throw new Error('seo.json not found');
+            seoData = await response.json();
+            sessionStorage.setItem(SEO_DATA_CACHE_KEY, JSON.stringify(seoData));
+        } catch (err) {
+            console.error('無法讀取 seo.json：', err);
+            seoData = seoData || {};
+        }
+    }
+
+    let favoriteImages = JSON.parse(sessionStorage.getItem('favImages')) || [];
+    let mainCardOrder = JSON.parse(sessionStorage.getItem(MAIN_ORDER_STORAGE_KEY)) || {};
+
+    // Preserve saved image identities when a series is regrouped.
+    function getCardFavoriteKey(type, idx) {
+        return educationData[type]?.favorite_keys?.[idx] || `${type}-${idx}`;
+    }
+
+    function resolveCardFavoriteKey(key) {
+        for (const [type, card] of Object.entries(educationData)) {
+            const idx = card.favorite_keys?.indexOf(key) ?? -1;
+            if (idx >= 0) return { type, idx };
+        }
+        const [type, idxStr] = key.split('-');
+        const idx = Number(idxStr);
+        if (!Number.isInteger(idx) || getCardFavoriteKey(type, idx) !== key) return {};
+        return { type, idx };
+    }
+
+    function saveFavorites() {
+        sessionStorage.setItem('favImages', JSON.stringify(favoriteImages));
+    }
+
+    function saveMainCardOrder() {
+        sessionStorage.setItem(MAIN_ORDER_STORAGE_KEY, JSON.stringify(mainCardOrder));
+    }
+
+    let favoriteToastTimer = null;
+    function showFavoriteToast(message) {
+        const toast = document.getElementById('favorite-toast');
+        if (!toast) return;
+        toast.innerText = message;
+        toast.classList.add('show');
+        clearTimeout(favoriteToastTimer);
+        favoriteToastTimer = setTimeout(() => {
+            toast.classList.remove('show');
+        }, 1800);
+    }
+
+    function showHomeLoading() {
+        document.getElementById('home-loading')?.removeAttribute('hidden');
+    }
+
+    function hideHomeLoading() {
+        document.getElementById('home-loading')?.setAttribute('hidden', '');
+    }
+
+    function requestResetMainCardOrder() {
+        document.getElementById('reset-order-modal').style.display = 'flex';
+    }
+
+    function closeResetMainCardOrder() {
+        document.getElementById('reset-order-modal').style.display = 'none';
+    }
+
+    function confirmResetMainCardOrder() {
+        mainCardOrder = {};
+        sessionStorage.removeItem(MAIN_ORDER_STORAGE_KEY);
+        closeResetMainCardOrder();
+        renderHome();
+    }
+
+    function resetMainCardOrder() {
+        requestResetMainCardOrder();
+    }
+
+    let currentType = '', currentIdx = 0;
+
+    // === 我的最愛：長按拖曳排序 ===
+    let favPressTimer = null;
+    let draggedFavKey = null;
+    let dragGhost = null;
+    let dragActive = false;
+    let dragStarted = false;
+    let favPressStartX = 0;
+    let favPressStartY = 0;
+    let mainPressTimer = null;
+    let mainPressStartX = 0;
+    let mainPressStartY = 0;
+    let draggedMainKey = null;
+    let draggedMainCategory = null;
+    let mainDragGhost = null;
+    let mainDragActive = false;
+    let mainDragStarted = false;
+    const MAIN_DRAG_MOVE_TOLERANCE = 10;
+
+    function initFavoriteSorting() {
+        document.querySelectorAll('.sortable-fav').forEach(el => {
+            el.addEventListener('click', handleFavClick);
+            el.addEventListener('pointerdown', favPointerDown);
+        });
+    }
+
+
+    function initMainSorting() {
+        document.querySelectorAll('.sortable-main').forEach(el => {
+            const grip = el.querySelector('.main-drag-grip');
+            if (!grip) return;
+            grip.addEventListener('pointerdown', mainPointerDown);
+            grip.addEventListener('click', event => {
+                event.preventDefault();
+                event.stopPropagation();
+            });
+        });
+    }
+
+    function handleMainCardClick(event, key) {
+        if (mainDragStarted) {
+            event.preventDefault();
+            event.stopPropagation();
+            return;
+        }
+
+        navigateToCardPage(key, 0);
+    }
+
+    function getDefaultSortedItems(items) {
+        return [...items].sort((a, b) => (a.item.order || 999) - (b.item.order || 999) || a.item.title.localeCompare(b.item.title, 'zh-Hant'));
+    }
+
+    function getOrderedCategoryItems(cat, items) {
+        const defaultItems = getDefaultSortedItems(items);
+        const savedKeys = Array.isArray(mainCardOrder[cat]) ? mainCardOrder[cat] : [];
+        const byKey = new Map(defaultItems.map(entry => [entry.key, entry]));
+        const ordered = [];
+
+        savedKeys.forEach(key => {
+            if (byKey.has(key)) {
+                ordered.push(byKey.get(key));
+                byKey.delete(key);
+            }
+        });
+
+        return ordered.concat([...byKey.values()]);
+    }
+
+    function mainPointerDown(event) {
+        const el = event.currentTarget.closest('.sortable-main');
+        if (!el) return;
+        if (event.pointerType === 'mouse' && event.button !== 0) return;
+
+        clearTimeout(mainPressTimer);
+        mainDragStarted = false;
+        mainPressStartX = event.clientX;
+        mainPressStartY = event.clientY;
+
+        mainPressTimer = setTimeout(() => {
+            startMainDrag(el, event.clientX, event.clientY);
+        }, 520);
+
+        document.addEventListener('pointermove', mainPendingPointerMove, { passive: true });
+        document.addEventListener('pointerup', mainPointerUp, { once: true });
+        document.addEventListener('pointercancel', mainPointerUp, { once: true });
+    }
+
+    function mainPendingPointerMove(event) {
+        const movedX = Math.abs(event.clientX - mainPressStartX);
+        const movedY = Math.abs(event.clientY - mainPressStartY);
+        if (movedX > MAIN_DRAG_MOVE_TOLERANCE || movedY > MAIN_DRAG_MOVE_TOLERANCE) {
+            clearTimeout(mainPressTimer);
+            mainPressTimer = null;
+        }
+    }
+
+    function mainPointerMove(event) {
+        if (!mainDragActive || !mainDragGhost) return;
+
+        if (event.cancelable) event.preventDefault();
+
+        mainDragGhost.style.left = `${event.clientX}px`;
+        mainDragGhost.style.top = `${event.clientY}px`;
+
+        const target = document.elementFromPoint(event.clientX, event.clientY)?.closest('.sortable-main');
+        if (target && target.dataset.cardKey && target.dataset.category === draggedMainCategory && target.dataset.cardKey !== draggedMainKey) {
+            moveMainCardBefore(draggedMainKey, target.dataset.cardKey, target.dataset.category);
+            saveMainCardOrder();
+            renderHome();
+
+            if (mainDragGhost && !document.body.contains(mainDragGhost)) {
+                document.body.appendChild(mainDragGhost);
+            }
+        }
+    }
+
+    function mainPointerUp() {
+        clearTimeout(mainPressTimer);
+        mainPressTimer = null;
+
+        document.removeEventListener('pointermove', mainPendingPointerMove);
+        document.removeEventListener('pointermove', mainPointerMove);
+
+        if (mainDragGhost) {
+            mainDragGhost.remove();
+            mainDragGhost = null;
+        }
+
+        if (mainDragActive) {
+            saveMainCardOrder();
+        }
+
+        mainDragActive = false;
+        draggedMainKey = null;
+        draggedMainCategory = null;
+        document.body.classList.remove('main-dragging');
+        document.querySelectorAll('.main-drag-source').forEach(el => el.classList.remove('main-drag-source'));
+
+        setTimeout(() => {
+            mainDragStarted = false;
+        }, 120);
+    }
+
+    function startMainDrag(el, x, y) {
+        document.removeEventListener('pointermove', mainPendingPointerMove);
+        document.addEventListener('pointermove', mainPointerMove, { passive: false });
+
+        draggedMainKey = el.dataset.cardKey;
+        draggedMainCategory = el.dataset.category;
+        mainDragActive = true;
+        mainDragStarted = true;
+        document.body.classList.add('main-dragging');
+        el.classList.add('main-drag-source');
+
+        mainDragGhost = el.cloneNode(true);
+        mainDragGhost.classList.add('main-drag-ghost');
+        mainDragGhost.style.left = `${x}px`;
+        mainDragGhost.style.top = `${y}px`;
+        document.body.appendChild(mainDragGhost);
+    }
+
+    function moveMainCardBefore(fromKey, toKey, cat) {
+        if (!cat) return;
+
+        const currentItems = Array.from(document.querySelectorAll(`.sortable-main[data-category="${cat}"]`)).map(el => el.dataset.cardKey);
+        let keys = currentItems.length ? currentItems : (mainCardOrder[cat] || []);
+        const fromIndex = keys.indexOf(fromKey);
+        const toIndex = keys.indexOf(toKey);
+
+        if (fromIndex === -1 || toIndex === -1 || fromIndex === toIndex) return;
+
+        const moved = keys.splice(fromIndex, 1)[0];
+        let insertIndex = keys.indexOf(toKey);
+        if (fromIndex < toIndex) insertIndex += 1;
+        keys.splice(insertIndex, 0, moved);
+
+        mainCardOrder[cat] = keys;
+    }
+
+    function handleFavClick(event) {
+        if (dragStarted) {
+            event.preventDefault();
+            event.stopPropagation();
+            return;
+        }
+
+        const el = event.currentTarget;
+        navigateToCardPage(el.dataset.type, parseInt(el.dataset.idx));
+    }
+
+    function favPointerDown(event) {
+        const el = event.currentTarget;
+        if (event.pointerType === 'mouse' && event.button !== 0) return;
+
+        clearTimeout(favPressTimer);
+        dragStarted = false;
+        favPressStartX = event.clientX;
+        favPressStartY = event.clientY;
+
+        favPressTimer = setTimeout(() => {
+            startFavDrag(el, event.clientX, event.clientY);
+        }, 420);
+
+        document.addEventListener('pointermove', favPointerMove, { passive: false });
+        document.addEventListener('pointerup', favPointerUp, { once: true });
+        document.addEventListener('pointercancel', favPointerUp, { once: true });
+    }
+
+    function favPointerMove(event) {
+        if (!dragActive) {
+            const dx = Math.abs(event.clientX - favPressStartX);
+            const dy = Math.abs(event.clientY - favPressStartY);
+            if (dx > MAIN_DRAG_MOVE_TOLERANCE || dy > MAIN_DRAG_MOVE_TOLERANCE) {
+                clearTimeout(favPressTimer);
+                favPressTimer = null;
+                document.removeEventListener('pointermove', favPointerMove);
+            }
+            return;
+        }
+
+        if (!dragActive || !dragGhost) return;
+
+        event.preventDefault();
+
+        dragGhost.style.left = `${event.clientX}px`;
+        dragGhost.style.top = `${event.clientY}px`;
+
+        const target = document.elementFromPoint(event.clientX, event.clientY)?.closest('.sortable-fav');
+        if (target && target.dataset.favKey && target.dataset.favKey !== draggedFavKey) {
+            moveFavoriteBefore(draggedFavKey, target.dataset.favKey);
+            saveFavorites();
+            renderHome();
+
+            // renderHome 會重畫畫面，所以 ghost 要重新放回 body，避免消失
+            if (dragGhost && !document.body.contains(dragGhost)) {
+                document.body.appendChild(dragGhost);
+            }
+        }
+    }
+
+    function favPointerUp() {
+        clearTimeout(favPressTimer);
+        favPressTimer = null;
+
+        document.removeEventListener('pointermove', favPointerMove);
+
+        if (dragGhost) {
+            dragGhost.remove();
+            dragGhost = null;
+        }
+
+        if (dragActive) {
+            saveFavorites();
+        }
+
+        dragActive = false;
+        draggedFavKey = null;
+        document.body.classList.remove('fav-dragging');
+        document.querySelectorAll('.drag-source').forEach(el => el.classList.remove('drag-source'));
+
+        setTimeout(() => {
+            dragStarted = false;
+        }, 120);
+    }
+
+    function startFavDrag(el, x, y) {
+        draggedFavKey = el.dataset.favKey;
+        dragActive = true;
+        dragStarted = true;
+        document.body.classList.add('fav-dragging');
+        el.classList.add('drag-source');
+
+        dragGhost = el.cloneNode(true);
+        dragGhost.classList.add('fav-drag-ghost');
+        dragGhost.style.left = `${x}px`;
+        dragGhost.style.top = `${y}px`;
+        document.body.appendChild(dragGhost);
+    }
+
+   function moveFavoriteBefore(fromKey, toKey) {
+    const fromIndex = favoriteImages.indexOf(fromKey);
+    const toIndex = favoriteImages.indexOf(toKey);
+
+    if (fromIndex === -1 || toIndex === -1 || fromIndex === toIndex) return;
+
+    const moved = favoriteImages.splice(fromIndex, 1)[0];
+
+    let insertIndex = favoriteImages.indexOf(toKey);
+
+    // 往後拖時，要插到目標後面
+    if (fromIndex < toIndex) {
+        insertIndex += 1;
+    }
+
+    favoriteImages.splice(insertIndex, 0, moved);
+}
+
+    function getFallbackStepTitle(item, index) {
+        const texts = Array.isArray(item.texts) ? item.texts : [];
+        const title = typeof texts[index] === 'string' ? texts[index].trim() : '';
+        return title || item.title || '';
+    }
+
+    function getStepTitle(item, index) {
+        const steps = Array.isArray(item.steps) ? item.steps : [];
+        const step = steps[index];
+        const pageTitle = step ? seoData[getCardPagePath(step)]?.page_title : '';
+        const title = typeof pageTitle === 'string' ? pageTitle.split(/[\uFF5C|]/)[0].trim() : '';
+        return title || getFallbackStepTitle(item, index);
+    }
+
+    function shouldShowStepTitles(item) {
+        const steps = Array.isArray(item.steps) ? item.steps : [];
+        if (steps.length <= 1) return false;
+        const titles = steps.map((_, index) => getStepTitle(item, index));
+        return new Set(titles).size > 1;
+    }
+
+    function getFavoriteStepLabel(item, index) {
+        return shouldShowStepTitles(item) ? getStepTitle(item, index) : `步驟 ${index + 1}`;
+    }
+
+    function matchesPharmacistDepartment(item) {
+        return activeDepartment === 'all'
+            || (Array.isArray(item.departments) && item.departments.includes(activeDepartment));
+    }
+
+    function renderDepartmentFilters() {
+        const filterRoot = document.getElementById('department-filter-list');
+        if (!filterRoot) return;
+
+        filterRoot.innerHTML = pharmacistDepartmentMeta.map(department => `
+            <button class="department-filter-btn"
+                    type="button"
+                    data-department="${department.id}"
+                    aria-pressed="${department.id === activeDepartment}">
+                ${department.title}
+            </button>`).join('');
+
+        filterRoot.querySelectorAll('[data-department]').forEach(button => {
+            button.addEventListener('click', () => selectPharmacistDepartment(button.dataset.department));
+        });
+    }
+
+    function selectPharmacistDepartment(departmentId) {
+        if (!pharmacistDepartmentMeta.some(department => department.id === departmentId)) return;
+        activeDepartment = departmentId;
+        renderHome();
+    }
+
+    function applyDepartmentFromUrl() {
+        const departmentId = new URLSearchParams(window.location.search).get('department');
+        if (pharmacistDepartmentMeta.some(department => department.id === departmentId)) {
+            activeDepartment = departmentId;
+        }
+    }
+
+    function renderRelatedPublicNavigation() {
+        const root = document.getElementById('related-public-navigation');
+        const topics = departmentRelatedPublicTopics[activeDepartment]
+            || Object.keys(publicTopicTitles);
+        root.innerHTML = `<h2 class="related-navigation-title">👥 可給民眾看的相關衛教</h2><div class="related-navigation-list">${topics.map(topicId =>
+            `<a class="related-navigation-link" href="./output/brand-header-preview/public.html?topic=${encodeURIComponent(topicId)}">${publicTopicTitles[topicId]}</a>`
+        ).join('')}</div>`;
+    }
+
+    function focusRelatedNavigation() {
+        if (new URLSearchParams(window.location.search).get('focus') !== 'related-public') return;
+
+        const target = document.getElementById('related-public-navigation');
+        if (!target) return;
+
+        const scrollToTarget = () => {
+            document.body.scrollTo({ top: target.getBoundingClientRect().top + document.body.scrollTop, behavior: 'auto' });
+        };
+
+        scrollToTarget();
+        requestAnimationFrame(scrollToTarget);
+        history.replaceState(null, '', window.location.pathname);
+    }
+
+    function renderDepartmentTools(sectionRoot) {
+        const tools = pharmacistDepartmentTools.filter(tool =>
+            activeDepartment !== 'all' && tool.departments.includes(activeDepartment)
+        );
+        if (!tools.length) return;
+
+        const departmentTitle = pharmacistDepartmentMeta.find(department => department.id === activeDepartment)?.title || '科別';
+        sectionRoot.innerHTML += `<div class="section-title">🧮 ${departmentTitle}工具</div><div class="menu-grid" id="department-tool-grid"></div>`;
+        const toolGrid = document.getElementById('department-tool-grid');
+        tools.forEach(tool => {
+            toolGrid.innerHTML += `
+                <a class="menu-item department-tool-card" href="${tool.href}">
+                    <span class="icon">${tool.icon}</span>
+                    <div style="font-weight:bold; font-size:1.1rem;">${tool.title}</div>
+                </a>`;
+        });
+    }
+
+    function renderHome() {
+        const sectionRoot = document.getElementById('category-sections');
+        const favGrid = document.getElementById('fav-grid');
+        sectionRoot.innerHTML = '';
+        favGrid.innerHTML = '';
+
+        const categories = {};
+        Object.keys(educationData).forEach(key => {
+            const item = educationData[key];
+            if (item.hidden) return;   // 👈 加這一行（關鍵！）
+            if (!isVisibleOnPage(item)) return;
+            if (!matchesPharmacistDepartment(item)) return;
+            const cat = item.category || 'uncategorized';
+            if (!categories[cat]) categories[cat] = [];
+            categories[cat].push({ key, item });
+        });
+
+        Object.keys(categories)
+            .sort((a, b) => (categoryMeta[a]?.order || 99) - (categoryMeta[b]?.order || 99))
+            .forEach(cat => {
+                const title = categoryMeta[cat]?.title || cat;
+                const gridId = `grid-${cat}`;
+                sectionRoot.innerHTML += `<div class="section-title">${title}</div><div class="menu-grid" id="${gridId}"></div>`;
+                const grid = document.getElementById(gridId);
+
+                getOrderedCategoryItems(cat, categories[cat])
+                    .forEach(({ key, item }) => {
+                        grid.innerHTML += `
+                            <div class="menu-item sortable-main"
+                                 data-card-key="${key}"
+                                 data-category="${cat}"
+                                 onclick="handleMainCardClick(event, '${key}')">
+                                <span class="drag-grip main-drag-grip">☰</span>
+                                <span class="icon">${item.icon || '📌'}</span>
+                                <div style="font-weight:bold; font-size:1.1rem;">${item.title}</div>
+                            </div>`;
+                    });
+            });
+
+        renderDepartmentTools(sectionRoot);
+        renderRelatedPublicNavigation();
+
+        let visibleFavCount = 0;
+        favoriteImages.forEach(favKey => {
+            const { type, idx } = resolveCardFavoriteKey(favKey);
+            if (educationData[type] && educationData[type].hidden) return;
+            if(educationData[type] && educationData[type].steps[idx] && isVisibleOnPage(educationData[type])) {
+                visibleFavCount++;
+                const favLabel = getFavoriteStepLabel(educationData[type], idx);
+                favGrid.innerHTML += `
+                    <div class="menu-item fav-item sortable-fav"
+                         data-fav-key="${favKey}"
+                         data-type="${type}"
+                         data-idx="${idx}">
+                        <span class="drag-grip">☰</span>
+                        <span class="icon">${educationData[type].icon}</span>
+                        <div style="font-weight:bold; font-size:1.1rem;">${educationData[type].title}</div>
+                        <div class="fav-label">${favLabel}</div>
+                    </div>`;
+            }
+        });
+        document.getElementById('fav-section').style.display = visibleFavCount > 0 ? 'block' : 'none';
+        renderDepartmentFilters();
+        initMainSorting();
+        initFavoriteSorting();
+        focusRelatedNavigation();
+    }
+
+    function openViewer(type, startIndex = 0) {
+        currentType = type;
+        currentIdx = startIndex;
+        resetZoom(); // 👈 新增：打開新圖片時重置縮放
+        updateContent();
+        document.getElementById('viewer').style.display = 'flex';
+        // 👇 新增：每次打開圖卡時，自動抓取圖卡標題並發送 GA4 追蹤 👇
+        if (educationData[type]) {
+            trackImageUsage(educationData[type].title);
+    }
+        // 👇 從這裡開始新增：修復 GA4 第一步起跑線盲區 👇
+        if (shouldTrackAnalytics()) {
+            gtag('event', 'view_instruction_step', {
+                'card_title': educationData[type].title,
+                'step_number': (currentIdx + 1) // 將程式的 0 轉換為人類理解的第 1 步
+            });
+        }
+        // 👆 新增結束 👆
+    }
+    function closeViewer() {
+        document.getElementById('viewer').style.display = 'none';
+        renderHome();
+    }
+
+function updateContent() {
+        const data = educationData[currentType];
+        document.getElementById('v-title').innerText = `${data.title} (${currentIdx + 1}/${data.steps.length})`;
+        document.getElementById('main-img').src = data.steps[currentIdx];
+        document.getElementById('v-steps').innerHTML = data.steps.map((_, i) => `<div class="dot ${i === currentIdx ? 'active' : ''}"></div>`).join('');
+        const currentKey = getCardFavoriteKey(currentType, currentIdx);
+        document.getElementById('viewer-fav-btn').className = favoriteImages.includes(currentKey) ? 'viewer-icon-btn active' : 'viewer-icon-btn';
+
+        // 👇 新增：更新底部文字區塊的邏輯 👇
+        const descElement = document.getElementById('v-desc');
+        if (data.texts && data.texts[currentIdx]) {
+            // 情況 A：如果有設定專屬的衛教台詞，就顯示台詞
+            descElement.innerHTML = data.texts[currentIdx];
+            descElement.style.color = '#fff'; // 台詞用亮白色強調
+        } else {
+            // 情況 B：如果沒設定，就顯示給新使用者的「預設操作提示」
+            descElement.innerHTML = '💡 提示：點擊兩側按鈕翻頁，雙指可放大圖片查看細節';
+            descElement.style.color = '#a4b0be'; // 提示用暗灰色，不喧賓奪主
+        }
+    }
+
+
+
+    function toggleCurrentFav() {
+        const currentKey = getCardFavoriteKey(currentType, currentIdx);
+        const isFavorite = favoriteImages.includes(currentKey);
+        if (isFavorite) favoriteImages = favoriteImages.filter(k => k !== currentKey);
+        else favoriteImages.push(currentKey);
+        saveFavorites();
+        updateContent();
+        showFavoriteToast(isFavorite ? '已從常用圖卡移除' : '已加入常用圖卡');
+    }
+
+   function changeStep(dir) {
+        // 防止事件冒泡（避免點按鈕卻點到後面的東西）
+        if (event) event.stopPropagation();
+
+        const total = educationData[currentType].steps.length;
+        currentIdx = (currentIdx + dir + total) % total;
+        resetZoom(); // 👈 翻頁時將圖片重置回原始大小，才不會卡住
+        updateContent();
+
+        // 重要：切換圖片時，將視窗捲軸重置回中心，方便下一張縮放
+        const viewport = document.getElementById('touch-zone');
+        viewport.scrollLeft = 0;
+        viewport.scrollTop = 0;
+
+        // 👇=== 新增：GA4 翻頁追蹤防彈裝甲 ===👇
+        // 確保有網路且 GA4 正常載入時，才執行追蹤，避免離線時當機
+        if (shouldTrackAnalytics()) {
+            gtag('event', 'view_instruction_step', {
+                'card_category': currentType,                     // 紀錄代號 (例如: 'fall_wound')
+                'card_title': educationData[currentType].title,   // 紀錄中文標題 (例如: '傷口照護')
+                'step_number': currentIdx + 1                     // 紀錄看了第幾張 (加 1 是因為陣列從 0 開始，這樣報表看 1, 2, 3 比較直覺)
+            });
+            console.log(`📊 GA4 追蹤：看了 [${educationData[currentType].title}] 的第 ${currentIdx + 1} 張圖`);
+        }
+        // 👆=== 新增結束 ===👆
+    }
+
+    function getPublicAssetUrl(path) {
+        const baseUrl = isLocalPreview ? 'https://liaoweihung.github.io/pteduimg/' : new URL('./', window.location.href).href;
+        return new URL(path, baseUrl).href;
+    }
+
+    function getCardPagePath(path) {
+        const fileName = path.split('/').pop() || '';
+        const cardId = fileName.replace(/\.[^.]+$/, '');
+        return `cards/${cardId}.html`;
+    }
+
+    function getCurrentCardPageUrl() {
+        const path = educationData[currentType].steps[currentIdx];
+        return getPublicAssetUrl(getCardPagePath(path));
+    }
+
+    function navigateToCardPage(type, index = 0) {
+        const item = educationData[type];
+        const step = item && item.steps && item.steps[index];
+        if (!step) return;
+        window.location.href = getCardPagePath(step);
+    }
+
+    function showQRCode() {
+        const fullUrl = getCurrentCardPageUrl();
+        new QRious({ element: document.getElementById('qr-canvas'), value: fullUrl, size: 220 });
+        document.getElementById('qr-modal').style.display = 'flex';
+
+        // 👇 新增的 GA4 追蹤雷達：記錄產生 QR Code 的動作 👇
+        if (shouldTrackAnalytics()) {
+            gtag('event', 'show_qr_code', {
+                'card_category': educationData[currentType].title, // 記錄是哪個主題 (例如: 眼藥膏)
+                'step_number': currentIdx + 1                      // 記錄是第幾個步驟的圖
+            });
+            console.log('📍 已傳送 GA4 記錄：產生 QR Code', educationData[currentType].title, '步驟', currentIdx + 1);
+        }
+    }
+
+    function closeQRModal() { document.getElementById('qr-modal').style.display = 'none'; }
+
+    function getCurrentShareUrl() {
+        return getCurrentCardPageUrl();
+    }
+
+    function getCurrentShareTitle() {
+        const data = educationData[currentType];
+        return `${data.title} \u7b2c ${currentIdx + 1} \u5f35\u5716\u5361`;
+    }
+
+    async function shareCurrentCard() {
+        const shareUrl = getCurrentShareUrl();
+        const shareTitle = getCurrentShareTitle();
+        const shareText = `\u85e5\u5c40\u885b\u6559\u52a9\u624b\uff1a${shareTitle}`;
+
+        if (navigator.share) {
+            try {
+                await navigator.share({
+                    title: shareTitle,
+                    text: shareText,
+                    url: shareUrl
+                });
+                trackShareEvent('native');
+                return;
+            } catch (err) {
+                if (err.name === 'AbortError') return;
+                console.warn('\u539f\u751f\u5206\u4eab\u5931\u6557\uff0c\u6539\u7528\u5206\u4eab\u9762\u677f\uff1a', err);
+            }
+        }
+
+        openShareModal(shareUrl, shareTitle);
+    }
+
+    function openShareModal(shareUrl, shareTitle) {
+        document.getElementById('share-card-title').innerText = shareTitle;
+        document.getElementById('share-url-input').value = shareUrl;
+        document.getElementById('share-modal').style.display = 'flex';
+    }
+
+    function closeShareModal() {
+        document.getElementById('share-modal').style.display = 'none';
+    }
+
+    function getShareModalUrl() {
+        return document.getElementById('share-url-input').value || getCurrentShareUrl();
+    }
+
+    function shareToLine() {
+        const shareUrl = encodeURIComponent(getShareModalUrl());
+        trackShareEvent('line');
+        window.open(`https://social-plugins.line.me/lineit/share?url=${shareUrl}`, '_blank', 'noopener');
+    }
+
+    function shareToFacebook() {
+        const shareUrl = encodeURIComponent(getShareModalUrl());
+        trackShareEvent('facebook');
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'noopener');
+    }
+
+    function shareToThreads() {
+        const shareUrl = encodeURIComponent(getShareModalUrl());
+        const shareText = encodeURIComponent(getCurrentShareTitle());
+        trackShareEvent('threads');
+        window.open(`https://www.threads.net/intent/post?text=${shareText}%20${shareUrl}`, '_blank', 'noopener');
+    }
+
+    async function shareToInstagram() {
+        await copyShareUrl('instagram');
+        window.open('https://www.instagram.com/', '_blank', 'noopener');
+        alert('\u5df2\u8907\u88fd\u5716\u5361\u9023\u7d50\uff0c\u53ef\u8cbc\u5230 Instagram \u8a0a\u606f\u3001\u9650\u6642\u52d5\u614b\u6216\u8cbc\u6587\u3002');
+    }
+
+    async function copyShareUrl(source = 'copy') {
+        const shareUrl = getShareModalUrl();
+        try {
+            await navigator.clipboard.writeText(shareUrl);
+        } catch (err) {
+            const input = document.getElementById('share-url-input');
+            input.focus();
+            input.select();
+            document.execCommand('copy');
+        }
+        trackShareEvent(source);
+        if (source === 'copy') alert('\u5df2\u8907\u88fd\u5716\u5361\u9023\u7d50');
+    }
+
+    function trackShareEvent(method) {
+        if (shouldTrackAnalytics()) {
+            gtag('event', 'share_instruction_card', {
+                'method': method,
+                'card_title': educationData[currentType].title,
+                'step_number': currentIdx + 1
+            });
+        }
+    }
+
+
+    function trackFeedbackClick() {
+        if (shouldTrackAnalytics()) {
+            gtag('event', 'click_feedback', { 'source_app': 'pteduimg' });
+        }
+    }
+// === 圖片專屬縮放與移動引擎 (完美相容 iOS/Android) ===
+    let scale = 1;
+    let pointX = 0, pointY = 0;
+    let start = { x: 0, y: 0 };
+    let initialDistance = 0, initialScale = 1;
+    let isPanning = false;
+
+    const imgElement = document.getElementById('main-img');
+    const tZone = document.getElementById('touch-zone');
+
+    // 計算兩指之間的距離
+    function getDistance(touches) {
+        return Math.hypot(touches[0].pageX - touches[1].pageX, touches[0].pageY - touches[1].pageY);
+    }
+
+    tZone.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            e.preventDefault(); // 防止整個網頁被縮放
+            initialDistance = getDistance(e.touches);
+            initialScale = scale;
+        } else if (e.touches.length === 1 && scale > 1) {
+            // 只有在圖片放大的狀態下，才允許單指拖曳移動
+            isPanning = true;
+            start = { x: e.touches[0].pageX - pointX, y: e.touches[0].pageY - pointY };
+        }
+    }, { passive: false });
+
+    tZone.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2) {
+            e.preventDefault();
+            const currentDistance = getDistance(e.touches);
+            scale = initialScale * (currentDistance / initialDistance);
+            // 限制縮放比例：最小 1 倍，最大 4 倍
+            scale = Math.min(Math.max(1, scale), 4);
+            applyTransform();
+        } else if (e.touches.length === 1 && isPanning && scale > 1) {
+            e.preventDefault();
+            pointX = e.touches[0].pageX - start.x;
+            pointY = e.touches[0].pageY - start.y;
+            applyTransform();
+        }
+    }, { passive: false });
+
+    tZone.addEventListener('touchend', (e) => {
+        if (e.touches.length < 2) isPanning = false;
+        if (scale <= 1) resetZoom(); // 縮小回原狀時，自動置中
+    });
+
+    function applyTransform() {
+        imgElement.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`;
+    }
+
+    function resetZoom() {
+        scale = 1;
+        pointX = 0;
+        pointY = 0;
+        applyTransform();
+    }
+    function initPage() {
+        setupPageHeader();
+        applyDepartmentFromUrl();
+        const hasCachedCards = loadCachedEducationData();
+        loadCachedSeoData();
+        if (hasCachedCards) {
+            hideHomeLoading();
+            renderHome();
+        } else {
+            showHomeLoading();
+        }
+        Promise.all([loadEducationData(), loadSeoData()]).then(() => {
+            hideHomeLoading();
+            renderHome();
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initPage);
+    } else {
+        initPage();
+    }
+
+// 👇 請把這段喚醒大腦的程式碼貼在這裡 👇
+  if (false /* 獨立預覽不註冊 Service Worker */) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').then(reg => {
+            reg.addEventListener('updatefound', () => {
+                const newWorker = reg.installing;
+                newWorker.addEventListener('statechange', () => {
+                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                        // 發現更新！點亮右上角的呼吸燈
+                        document.getElementById('update-light').style.display = 'flex';
+                    }
+                });
+            });
+        });
+    });
+}
+    // 👆 貼到這裡為止 👆
+
+</script>
+  <div class="reset-main-order-wrap">
+    <button type="button" class="reset-main-order-btn" onclick="resetMainCardOrder()">↻<br>恢復圖卡預設排列</button>
+    <a class="reset-main-order-btn" href="./calc.html">🧮<br>醫藥計算器</a>
+  </div>
+<footer class="site-footer">
+  <p style="margin: 0 0 8px 0;">本工具圖文僅供藥師衛教參考，非專業人士務必諮詢藥師建議。</p>
+  <p style="margin: 0;">
+    <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a>
+    &nbsp;|&nbsp;
+   <a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" onclick="if (typeof trackFeedbackClick === 'function') trackFeedbackClick()">💬 意見回饋</a>
+  </p>
+  <p style="margin: 0 0 8px 0;">
+    <a href="./about.html">關於本站</a> &nbsp;|&nbsp;
+    <a href="./author.html">作者資訊</a> &nbsp;|&nbsp;
+    <a href="./editorial-policy.html">編輯與資料來源政策</a>
+  </p>
+</footer>
+    <div id="update-light" onclick="window.location.reload()" title="點擊更新至最新版">
+    <span class="pulse-dot"></span>
+    <span class="light-text">有新圖卡，按這裡更新</span>
+</div>
+</div>
+</body>
+</html>
