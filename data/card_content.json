@@ -7712,7 +7712,6 @@
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "sources_checked_not_clinician_approval",
     "sourceCheckedAt": "2026-10-17",
     "updatedAt": "2026-10-17",
     "references": [
@@ -7751,7 +7750,6 @@
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "sources_checked_not_clinician_approval",
     "sourceCheckedAt": "2026-10-17",
     "updatedAt": "2026-10-17",
     "references": [
@@ -7794,7 +7792,6 @@
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "sources_checked_not_clinician_approval",
     "sourceCheckedAt": "2026-10-17",
     "updatedAt": "2026-10-17",
     "references": [
@@ -7837,7 +7834,6 @@
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "sources_checked_not_clinician_approval",
     "sourceCheckedAt": "2026-10-17",
     "updatedAt": "2026-10-17",
     "references": [
@@ -7880,7 +7876,6 @@
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "sources_checked_not_clinician_approval",
     "sourceCheckedAt": "2026-10-17",
     "updatedAt": "2026-10-17",
     "references": [
@@ -7923,7 +7918,6 @@
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "reviewStatus": "sources_checked_not_clinician_approval",
     "sourceCheckedAt": "2026-10-17",
     "updatedAt": "2026-10-17",
     "references": [
