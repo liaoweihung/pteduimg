@@ -1,12 +1,24 @@
 {
   "short_name": "衛教助手",
-  "name": "藥師快速衛教示意圖",
+  "name": "藥局衛教助手",
   "icons": [
     {
-      "src": "icon.png?v=3",
+      "src": "assets/brand/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/brand/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "assets/brand/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "start_url": "./index.html",
