@@ -139,3 +139,11 @@ git diff --check
 - 本次未 Commit、Push 或驗證 GitHub Pages 部署。內容及來源查核日為2026-10-16。
 
 完整範圍、來源與測試限制見[任務證據](evidence/knee-brace-2026-10-16.md)。
+
+## 2026-10-17｜CR-2026-030 除疤凝膠和貼片如何使用
+
+- 完整 `python build.py` 成功：374 個靜態圖卡頁；文字整合報告 212 成功、0 失敗。
+- 四份 JSON 語法檢查、`python -B scripts/check_site.py` 與 `git diff --check` 通過。
+- 六頁 `--propose` 為零機械差異、零移除、零來源錯誤；新頁的文字、雙日期、參考連結、SEO、JSON-LD、圖下翻頁與共用頁尾均為 `machine_pass`。
+- `check_project_management.py` 與其 18 項測試未全數通過，原因是既有全站清冊的舊頁 `source_sha256`、`rules_sha256`／部分 JSON-LD 指紋漂移，以及既有缺失證據；本次六頁沒有新增該類錯誤，未在本次任務大量覆寫歷史人工或機械欄位。
+- 內建瀏覽器無法連入隔離工作樹的本機預覽埠，故未完成實機手機截圖抽查；未 Commit、Push 或驗證 Pages 部署。

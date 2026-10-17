@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：206
+- 成功加入文字頁數：212
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -211,3 +211,9 @@
 | enema_use | 甘油浣腸六步驟：準備、側躺、置入、擠入、等待、排便 | https://liaoweihung.github.io/pteduimg/cards/enema_steps.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | enema_use | 硬便卡在出口：甘油浣腸何時可以幫忙？ | https://liaoweihung.github.io/pteduimg/cards/enema_clinical_cond.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | enema_use | 便祕用藥怎麼選？口服藥與甘油浣腸各有角色 | https://liaoweihung.github.io/pteduimg/cards/constipation_cate.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| silicone_scar_care | 除疤產品怎麼選？矽膠凝膠與貼片比較 | https://liaoweihung.github.io/pteduimg/cards/silicone_scar_gel_vs_sheet.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| silicone_scar_care | 傷口癒合後，什麼時候開始使用除疤矽膠？ | https://liaoweihung.github.io/pteduimg/cards/silicone_scar_when_to_start.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| silicone_scar_care | 矽膠凝膠怎麼擦？四步驟正確使用 | https://liaoweihung.github.io/pteduimg/cards/silicone_scar_gel_steps.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| silicone_scar_care | 矽膠貼片怎麼貼？四步驟正確使用 | https://liaoweihung.github.io/pteduimg/cards/silicone_scar_sheet_steps.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| silicone_scar_care | 矽膠除疤要用多久？使用時間與保養 | https://liaoweihung.github.io/pteduimg/cards/silicone_scar_duration_care.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| silicone_scar_care | 矽膠除疤要注意什麼？常見錯誤與就醫警訊 | https://liaoweihung.github.io/pteduimg/cards/silicone_scar_errors_alerts.html | 是 | 是 | 是 | 是 | 是 | 無 |

@@ -2906,6 +2906,54 @@
       "stretch_marks_care"
     ]
   },
+  "silicone_scar_care": {
+    "title": "除疤凝膠和貼片如何使用",
+    "category": "public_education",
+    "topics": [
+      "skin_wound"
+    ],
+    "order": 3.25,
+    "hidden": false,
+    "icon": "🩹",
+    "showFooter": true,
+    "tags": [
+      "疤痕",
+      "除疤",
+      "除疤凝膠",
+      "矽膠凝膠",
+      "矽膠貼片",
+      "矽膠片",
+      "肥厚性疤痕",
+      "蟹足腫",
+      "手術疤痕",
+      "燒傷疤痕",
+      "疤痕照護",
+      "矽膠凝膠怎麼擦",
+      "矽膠貼片怎麼貼",
+      "除疤產品"
+    ],
+    "texts": [
+      "除疤產品怎麼選？矽膠凝膠與貼片比較",
+      "傷口癒合後，什麼時候開始使用除疤矽膠？",
+      "矽膠凝膠怎麼擦？四步驟正確使用",
+      "矽膠貼片怎麼貼？四步驟正確使用",
+      "矽膠除疤要用多久？使用時間與保養",
+      "矽膠除疤要注意什麼？常見錯誤與就醫警訊"
+    ],
+    "steps": [
+      "img/silicone_scar_gel_vs_sheet.webp",
+      "img/silicone_scar_when_to_start.webp",
+      "img/silicone_scar_gel_steps.webp",
+      "img/silicone_scar_sheet_steps.webp",
+      "img/silicone_scar_duration_care.webp",
+      "img/silicone_scar_errors_alerts.webp"
+    ],
+    "related_series": [
+      "scar_care",
+      "postoperative_wound",
+      "burn_first_aid"
+    ]
+  },
   "bruise_care": {
     "title": "瘀青怎麼處理？",
     "category": "public_education",

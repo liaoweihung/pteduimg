@@ -433,3 +433,10 @@ REL-e7b287fb7e5293b7,series:knee_brace_use,has_card,page:knee_brace_wrap_steps_1
 REL-5f4fa4f530171343,series:knee_brace_use,has_card,page:knee_brace_wrap_steps_3_4,source_observed,series_membership,cards.json,依原始系列 steps；使用者聲明內容已人工審核但未提供可追溯審核者資料
 REL-044912bd0d16ac90,series:knee_brace_use,has_card,page:knee_brace_tightness,source_observed,series_membership,cards.json,依原始系列 steps；使用者聲明內容已人工審核但未提供可追溯審核者資料
 REL-a14856e6ea2cbdfc,series:knee_brace_use,has_card,page:knee_brace_safety,source_observed,series_membership,cards.json,依原始系列 steps；使用者聲明內容已人工審核但未提供可追溯審核者資料
+REL-1f3f20c81a5b6e41,subtopic:wound-care:scar,contains_series,series:silicone_scar_care,management_mapping,management,cards.json,CR-2026-030 疤痕照護集合；不代表人工醫療複核
+REL-29d1f5df0bb3a972,series:silicone_scar_care,has_card,page:silicone_scar_gel_vs_sheet,source_observed,series_membership,cards.json,依原始系列 steps；待人工醫療複核
+REL-9d9e42753bc0db54,series:silicone_scar_care,has_card,page:silicone_scar_when_to_start,source_observed,series_membership,cards.json,依原始系列 steps；待人工醫療複核
+REL-78da82bb0d94e301,series:silicone_scar_care,has_card,page:silicone_scar_gel_steps,source_observed,series_membership,cards.json,依原始系列 steps；待人工醫療複核
+REL-0a53489ecc2ce27e,series:silicone_scar_care,has_card,page:silicone_scar_sheet_steps,source_observed,series_membership,cards.json,依原始系列 steps；待人工醫療複核
+REL-b916032b0570c76b,series:silicone_scar_care,has_card,page:silicone_scar_duration_care,source_observed,series_membership,cards.json,依原始系列 steps；待人工醫療複核
+REL-cdf18f352ee2f8aa,series:silicone_scar_care,has_card,page:silicone_scar_errors_alerts,source_observed,series_membership,cards.json,依原始系列 steps；待人工醫療複核

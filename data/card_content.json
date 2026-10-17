@@ -7683,5 +7683,259 @@
       }
     ],
     "revisionCredit": "AI 協助整理"
+  },
+  {
+    "cardId": "silicone_scar_care",
+    "title": "除疤產品怎麼選？矽膠凝膠與貼片比較",
+    "image": "img/silicone_scar_gel_vs_sheet.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/silicone_scar_gel_vs_sheet.html",
+    "summary": "依疤痕位置、皮膚耐受度與產品說明，選擇矽膠凝膠或矽膠貼片。",
+    "sections": [
+      {
+        "heading": "矽膠凝膠",
+        "text": "凝膠可薄擦於已癒合的疤痕表面，較適合臉部、關節或不容易固定貼片的位置；應等待形成薄膜後再接觸衣物或化妝品。"
+      },
+      {
+        "heading": "矽膠貼片",
+        "text": "貼片適合較平坦、可穩定貼附的位置。不同產品的貼附時數、清洗與是否可重複使用不同，應依包裝說明使用。"
+      },
+      {
+        "heading": "選擇原則",
+        "text": "兩者都是疤痕照護選項；目前研究不足以比較所有使用情況。實際選擇應依產品說明及醫療人員指示，不要自行把凝膠與貼片重疊使用。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "矽膠產品可協助改善部分肥厚性或蟹足腫疤痕的外觀與不適，效果因疤痕與產品而異。"
+      }
+    ],
+    "altText": "除疤產品怎麼選，矽膠凝膠與矽膠貼片比較衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "references": [
+      {
+        "title": "衛生福利部食品藥物管理署：撫平淡化傷痕，疤痕凝膠有用嗎？",
+        "url": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636779815081276843"
+      },
+      {
+        "title": "Cochrane：Silicone gel sheeting for preventing and treating hypertrophic and keloid scars",
+        "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003826.pub3/pdf/full"
+      }
+    ],
+    "revisionCredit": "依使用者提供圖卡文字與來源整理"
+  },
+  {
+    "cardId": "silicone_scar_care",
+    "title": "傷口癒合後，什麼時候開始使用除疤矽膠？",
+    "image": "img/silicone_scar_when_to_start.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/silicone_scar_when_to_start.html",
+    "summary": "確認傷口完全癒合、沒有滲液、出血、結痂或破皮後，才開始使用矽膠除疤產品。",
+    "sections": [
+      {
+        "heading": "先確認傷口已完全癒合",
+        "text": "矽膠凝膠與貼片用於已癒合的皮膚，不是開放性傷口敷料。開始前應確認皮膚已長好，沒有滲液、出血、結痂或破皮。"
+      },
+      {
+        "heading": "手術傷口依醫囑",
+        "text": "拆線不代表一定可立刻開始使用。若有特殊縫合、植皮或其他術後照護要求，應依手術醫師或醫療團隊指示。"
+      },
+      {
+        "heading": "先處理可能感染",
+        "text": "傷口紅腫擴大、發熱、流膿或疼痛加劇時，先接受醫療評估，不要直接用矽膠產品覆蓋。"
+      }
+    ],
+    "altText": "傷口癒合後何時可以開始使用除疤矽膠衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "references": [
+      {
+        "title": "衛生福利部食品藥物管理署：撫平淡化傷痕，疤痕凝膠有用嗎？",
+        "url": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636779815081276843"
+      },
+      {
+        "title": "Gateshead Health：Silicone Gel Sheet",
+        "url": "https://www.gatesheadhealth.nhs.uk/resources/silicone-gel-sheet/"
+      }
+    ],
+    "revisionCredit": "依使用者提供圖卡文字與來源整理"
+  },
+  {
+    "cardId": "silicone_scar_care",
+    "title": "矽膠凝膠怎麼擦？四步驟正確使用",
+    "image": "img/silicone_scar_gel_steps.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/silicone_scar_gel_steps.html",
+    "summary": "清潔並擦乾皮膚後，取少量矽膠凝膠均勻薄擦，等待乾燥再穿衣或依說明使用其他產品。",
+    "sections": [
+      {
+        "heading": "1 清潔、擦乾",
+        "text": "先洗手，清潔疤痕及周圍皮膚並擦乾；不要用於開放性傷口、滲液處、眼睛或黏膜。"
+      },
+      {
+        "heading": "2 少量、均勻薄擦",
+        "text": "依產品說明取適量，薄薄覆蓋疤痕表面即可，不需要厚擦或用力搓揉。"
+      },
+      {
+        "heading": "3 等待乾燥",
+        "text": "常見矽膠凝膠約需 3 至 5 分鐘乾燥；若長時間不乾，可能是塗得過厚，應依產品說明移除多餘凝膠。"
+      },
+      {
+        "heading": "4 使用頻率依標示",
+        "text": "部分產品建議每天兩次，但產品配方與標示不同，應以個別產品說明或醫療人員指示為準。"
+      }
+    ],
+    "altText": "矽膠凝膠清潔、薄擦與等待乾燥的四步驟衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "references": [
+      {
+        "title": "Leeds Teaching Hospitals NHS Trust：Silicone Gel Liquid",
+        "url": "https://www.leedsth.nhs.uk/patients/resources/silicone-gel-liquid-2/"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：撫平淡化傷痕，疤痕凝膠有用嗎？",
+        "url": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636779815081276843"
+      }
+    ],
+    "revisionCredit": "依使用者提供圖卡文字與來源整理"
+  },
+  {
+    "cardId": "silicone_scar_care",
+    "title": "矽膠貼片怎麼貼？四步驟正確使用",
+    "image": "img/silicone_scar_sheet_steps.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/silicone_scar_sheet_steps.html",
+    "summary": "在乾淨乾燥的已癒合皮膚上，依產品說明裁剪、貼平矽膠貼片並確認貼合情況。",
+    "sections": [
+      {
+        "heading": "1 清潔、擦乾",
+        "text": "貼附前先清潔疤痕及周圍皮膚並完全擦乾。乳液或油膏殘留可能影響貼片附著。"
+      },
+      {
+        "heading": "2 依說明裁剪",
+        "text": "可裁剪的矽膠片，依產品說明修剪至完整覆蓋疤痕。部分院所衛教建議可比疤痕範圍略大約 1 至 2 公分，仍應依產品與皮膚狀況調整。"
+      },
+      {
+        "heading": "3 平整貼附",
+        "text": "撕除保護膜後，將指定的貼附面覆蓋疤痕，輕壓固定，避免明顯皺褶、翹起或過度拉扯皮膚。"
+      },
+      {
+        "heading": "4 清潔、更換看產品類型",
+        "text": "有些矽膠片可清洗後重複使用，有些薄型敷料則設計為連續貼附數天；不要把同一種清洗或更換方式套用到所有產品。"
+      }
+    ],
+    "altText": "矽膠貼片清潔、裁剪、貼附與確認貼合的四步驟衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "references": [
+      {
+        "title": "臺北醫學大學附設醫院：疤痕照護—如何使用矽膠片",
+        "url": "https://www.tmuh.org.tw/UploadFile/HE/P041.pdf"
+      },
+      {
+        "title": "Gateshead Health：Silicone Gel Sheet",
+        "url": "https://www.gatesheadhealth.nhs.uk/resources/silicone-gel-sheet/"
+      }
+    ],
+    "revisionCredit": "依使用者提供圖卡文字與來源整理"
+  },
+  {
+    "cardId": "silicone_scar_care",
+    "title": "矽膠除疤要用多久？使用時間與保養",
+    "image": "img/silicone_scar_duration_care.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/silicone_scar_duration_care.html",
+    "summary": "矽膠凝膠與貼片的使用頻率、每日時數、清潔方式與療程長度要依產品說明調整。",
+    "sections": [
+      {
+        "heading": "凝膠與貼片的時數不同",
+        "text": "部分矽膠凝膠建議每天使用兩次；貼片可先從較短時間開始，依皮膚耐受度與產品說明逐步增加。不要把單一時數當成所有產品的通則。"
+      },
+      {
+        "heading": "持續使用需要時間",
+        "text": "疤痕照護通常需要持續數月。部分院所資料建議矽膠片每天使用 8 小時以上並持續 6 個月以上；實際療程仍要依產品、疤痕與醫療建議調整。"
+      },
+      {
+        "heading": "可重複使用的貼片",
+        "text": "只有標示可重複使用的貼片才依說明清洗、晾乾後再使用；若已破損、變質或無法正常貼附，依產品說明更換。"
+      },
+      {
+        "heading": "防曬與其他用品",
+        "text": "凝膠乾燥後是否可使用防曬或其他產品，應以個別產品說明為準。不要把乳液、油膏與凝膠直接混用，或貼在尚有乳液、油膏殘留的皮膚上。"
+      }
+    ],
+    "altText": "矽膠除疤的使用時間、清潔保養與防曬注意事項衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "references": [
+      {
+        "title": "臺北醫學大學附設醫院：疤痕照護—如何使用矽膠片",
+        "url": "https://www.tmuh.org.tw/UploadFile/HE/P041.pdf"
+      },
+      {
+        "title": "Gateshead Health：Silicone Gel Sheet",
+        "url": "https://www.gatesheadhealth.nhs.uk/resources/silicone-gel-sheet/"
+      }
+    ],
+    "revisionCredit": "依使用者提供圖卡文字與來源整理"
+  },
+  {
+    "cardId": "silicone_scar_care",
+    "title": "矽膠除疤要注意什麼？常見錯誤與就醫警訊",
+    "image": "img/silicone_scar_errors_alerts.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/silicone_scar_errors_alerts.html",
+    "summary": "避免厚擦、貼片皺摺或在潮濕皮膚使用；出現刺激或感染警訊時，先停用並接受評估。",
+    "sections": [
+      {
+        "heading": "常見使用錯誤",
+        "text": "凝膠擦太厚不會更有效，反而不易乾燥；貼片皺摺、翹起或貼在潮濕皮膚上，會影響貼合並可能增加刺激。"
+      },
+      {
+        "heading": "出現刺激先停用",
+        "text": "紅疹、明顯搔癢、水泡、破皮或皮膚浸潤發白不適時，先停止使用並向醫療人員諮詢。"
+      },
+      {
+        "heading": "需要專科評估的疤痕",
+        "text": "疤痕持續增厚、擴大超出原傷口、疼痛或搔癢明顯，或影響關節活動時，應安排皮膚科或整形外科評估。"
+      },
+      {
+        "heading": "感染警訊",
+        "text": "局部紅腫熱痛惡化、流膿或發燒時，應儘速就醫，排除傷口或皮膚感染。"
+      }
+    ],
+    "altText": "矽膠除疤常見錯誤、停用情況與就醫警訊衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "sources_checked_not_clinician_approval",
+    "sourceCheckedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "references": [
+      {
+        "title": "Gateshead Health：Silicone Gel Sheet",
+        "url": "https://www.gatesheadhealth.nhs.uk/resources/silicone-gel-sheet/"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：撫平淡化傷痕，疤痕凝膠有用嗎？",
+        "url": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f636779815081276843"
+      }
+    ],
+    "revisionCredit": "依使用者提供圖卡文字與來源整理"
   }
 ]

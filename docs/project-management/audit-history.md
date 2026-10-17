@@ -495,3 +495,10 @@
 - 增量 `--propose` 先提出七筆新增，合併後為零差異、零移除、零來源錯誤；原清冊人工欄位未覆蓋。
 - 既有 CR-2026-023 字詞比對差異仍未解，AUD-007 的 conflict 保留；機械通過不代表正式醫療複核、全站 AEO 或搜尋成效。
 - Commit、Push、Pages 部署均未執行；最終測試記錄補於任務證據與 validation-report。
+
+## 2026-10-17｜CR-2026-030 新增除疤凝膠和貼片如何使用
+
+- 範圍：`series:silicone_scar_care` 的六個新頁，以及公開入口、索引、PWA 與管理投影；重用既有 `subtopic:wound-care:scar`，未改既有圖卡正文或人工醫療欄位。
+- 六頁均保留 `needsMedicalReview=true`，頁面清冊的正式醫療狀態維持 `unknown`；來源核對與技術驗證不等於人工醫療複核。
+- AUD-007 由既有 Git 版本 `9f46339` 的 206 成功、0 失敗更新為本機 212 成功、0 失敗；不另建重複快照，前版可由該 Commit 追溯。新 SHA-256：`94b4661874bf50edb2abd3c57aa1cf2267e546aa7018f8195607ae04e4740746`。
+- `--propose` 先提出六筆新增，合併後應為零差異、零移除、零來源錯誤；最終固定驗證結果另記於 validation-report。Commit、Push、Pages 部署均未執行。
