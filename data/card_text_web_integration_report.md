@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：212
+- 成功加入文字頁數：215
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -217,3 +217,6 @@
 | silicone_scar_care | 矽膠貼片怎麼貼？四步驟正確使用 | https://liaoweihung.github.io/pteduimg/cards/silicone_scar_sheet_steps.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | silicone_scar_care | 矽膠除疤要用多久？使用時間與保養 | https://liaoweihung.github.io/pteduimg/cards/silicone_scar_duration_care.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | silicone_scar_care | 矽膠除疤要注意什麼？常見錯誤與就醫警訊 | https://liaoweihung.github.io/pteduimg/cards/silicone_scar_errors_alerts.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| pediatric_cold_syrup | 鼻福糖漿怎麼吃？兒童劑量、成分與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_peace_syrup.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| pediatric_cold_syrup | 咳酚糖漿是什麼？兒童化痰藥水劑量與用法 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_guaphen_syrup.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| pediatric_cold_syrup | 喘解液兒童劑量：依年齡、體重換算與副作用 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_exdila_liquid.html | 是 | 是 | 是 | 是 | 是 | 無 |

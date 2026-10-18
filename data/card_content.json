@@ -7931,5 +7931,131 @@
       }
     ],
     "revisionCredit": "依使用者提供圖卡文字與來源整理"
+  },
+  {
+    "cardId": "pediatric_cold_syrup",
+    "title": "鼻福糖漿怎麼吃？兒童劑量、成分與注意事項",
+    "image": "img/ped_cold_peace_syrup.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_peace_syrup.html",
+    "summary": "鼻福糖漿含 Pseudoephedrine 與 Triprolidine，用於緩解感冒或鼻炎相關的鼻塞、流鼻水等症狀；兒童應依處方使用。",
+    "sections": [
+      {
+        "heading": "成分與適應症",
+        "text": "每 1 mL 含 Pseudoephedrine HCl 6 mg 與 Triprolidine HCl 0.25 mg。適應症為緩解感冒或鼻炎引起的鼻黏膜充血，包括鼻塞等症狀。"
+      },
+      {
+        "heading": "兒童用量要看年齡與處方",
+        "text": "仿單列示：12 歲以上每次 10 mL；6 至未滿 12 歲每次 5 mL；2 至未滿 6 歲每次 2.5 mL；6 個月至未滿 2 歲每次 1.25 mL。成人及 12 歲以上仿單列為每日 3 次；較小年齡組的服用頻次須依醫師處方確認。"
+      },
+      {
+        "heading": "6 歲以下先由醫師評估",
+        "text": "6 歲以下兒童不可由家長自行依表給藥，應先由醫師評估。本品為處方藥，請依醫師指示使用。"
+      },
+      {
+        "heading": "用藥注意事項",
+        "text": "可能出現嗜睡、口乾，也可能有躁動或興奮。本品不宜與其他含 Pseudoephedrine 或抗組織胺的感冒藥重複服用；有高血壓、心臟疾病或腎功能異常時，應先告知醫師。"
+      }
+    ],
+    "altText": "鼻福糖漿的成分、兒童年齡分組用量與使用注意事項衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-10-18",
+    "updatedAt": "2026-10-18",
+    "references": [
+      {
+        "title": "永信藥品：鼻福糖漿 Peace Syrup 產品資料",
+        "url": "https://www.ysp.com.tw/tw/product"
+      },
+      {
+        "title": "奇美醫院：鼻福糖漿仿單",
+        "url": "https://www.chimei.org.tw/main/cmh_department/55500/Dinfo/data/23P168.pdf"
+      }
+    ],
+    "revisionCredit": "使用者提供圖卡文字；AI進行網站文字整理與來源連結核對"
+  },
+  {
+    "cardId": "pediatric_cold_syrup",
+    "title": "咳酚糖漿是什麼？兒童化痰藥水劑量與用法",
+    "image": "img/ped_cold_guaphen_syrup.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_guaphen_syrup.html",
+    "summary": "咳酚糖漿的成分為 Guaifenesin，是幫助痰液排出的祛痰藥水；兒童應依產品仿單與醫師、藥師指示使用。",
+    "sections": [
+      {
+        "heading": "成分與用途",
+        "text": "每 1 mL 含 Guaifenesin 20 mg；每 5 mL 含 100 mg。用途為祛痰，協助呼吸道痰液較容易排出，並不是單純抑制咳嗽的藥物。"
+      },
+      {
+        "heading": "兒童年齡分組用量",
+        "text": "依本產品核准仿單：12 歲以上每次 10 mL；6 至未滿 12 歲每次 5 mL；3 至未滿 6 歲每次 2.5 mL；未滿 3 歲請先由醫師診治。"
+      },
+      {
+        "heading": "服用頻率與量取方式",
+        "text": "每日可服用 4 至 6 次，每次至少間隔 4 小時；每日最多 6 次並不是建議一定要服用 6 次。使用前應搖勻，並使用量器量取藥水。"
+      },
+      {
+        "heading": "需要留意的情況",
+        "text": "本品含 Aspartame，苯酮尿症患者不可使用。若咳嗽持續超過一週，或伴隨高燒、皮疹、持續頭痛，應就醫評估。"
+      }
+    ],
+    "altText": "咳酚糖漿的 Guaifenesin 成分、兒童分齡用量與使用注意事項衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-10-18",
+    "updatedAt": "2026-10-18",
+    "references": [
+      {
+        "title": "咳酚糖漿 20 毫克／毫升仿單",
+        "url": "https://www.cth.org.tw/public/medi_news/4617047b823a6f296d0a7e9cbab06788.pdf"
+      },
+      {
+        "title": "中國醫藥大學附設醫院：Guaifenesin 用藥指導",
+        "url": "https://www.cmuh.cmu.edu.tw/HealthEdus/Detail?no=7097"
+      }
+    ],
+    "revisionCredit": "使用者提供圖卡文字；AI進行網站文字整理與來源連結核對"
+  },
+  {
+    "cardId": "pediatric_cold_syrup",
+    "title": "喘解液兒童劑量：依年齡、體重換算與副作用",
+    "image": "img/ped_cold_exdila_liquid.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_exdila_liquid.html",
+    "summary": "喘解液含 Procaterol，為支氣管擴張藥水；未滿 6 歲的用量需依體重與醫師處方調整。",
+    "sections": [
+      {
+        "heading": "成分與適應症",
+        "text": "每 1 mL 含 Procaterol Hydrochloride Hemihydrate 5 μg；每 5 mL 含 25 μg。適應症為支氣管氣喘等疾病引起的氣道阻塞。"
+      },
+      {
+        "heading": "年齡與體重換算",
+        "text": "6 歲以上每次 5 mL，可每日 1 次於睡前服用，或早晚各 1 次。未滿 6 歲的仿單參考用量為每次 0.25 mL/kg、每日 2 至 3 次，實際用量仍須以處方為準。"
+      },
+      {
+        "heading": "體重換算範例",
+        "text": "例如體重 12 公斤，依 0.25 mL/kg 計算為每次 3 mL。仿單未列出適用於所有兒童的統一每日最大劑量，因此不另設定通用上限。"
+      },
+      {
+        "heading": "副作用與就醫警訊",
+        "text": "可能出現心悸、手抖或頭痛，不能自行增加劑量。若兒童呼吸困難加劇、說話困難、嘴唇發紫或精神狀態異常，應立即就醫；喘解液不能取代急性氣喘發作時依醫師指示使用的急救吸入藥物。"
+      }
+    ],
+    "altText": "喘解液的 Procaterol 成分、兒童分齡與體重換算用量及副作用衛教圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-10-18",
+    "updatedAt": "2026-10-18",
+    "references": [
+      {
+        "title": "光田綜合醫院：Procaterol（喘解液）用藥指導",
+        "url": "https://www.ktgh.com.tw/ktgh/Home/GenerateGuideLeaflet/AA6D81CBD02462D59DF5929173D039C7"
+      },
+      {
+        "title": "中國醫藥大學附設醫院：Procaterol 用藥指導",
+        "url": "https://cmuh.cmu.edu.tw/HealthEdus/Detail?no=5961"
+      }
+    ],
+    "revisionCredit": "使用者提供圖卡文字；AI進行網站文字整理與來源連結核對"
   }
 ]

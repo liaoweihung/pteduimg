@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "captured_at": "2026-10-13",
+  "captured_at": "2026-10-18",
   "reports": [
     {
       "audit_id": "AUD-001",
@@ -114,22 +114,41 @@
     {
       "audit_id": "AUD-007",
       "path": "data/card_text_web_integration_report.md",
-      "audit_date": "2026-10-17",
-      "date_basis": "CR-2026-030 本機建置與輸出核對",
+      "audit_date": "2026-10-18",
+      "date_basis": "CR-2026-031 兒科感冒藥水三頁完成建置",
       "kind": "generated_report",
-      "scope": "212 頁靜態文字整合",
-      "recorded_result": "2026-10-17 重建報告記錄 212 成功、0 失敗；僅涵蓋 title/meta/h1/alt/text",
+      "scope": "215 張成功加入文字的圖卡頁",
+      "recorded_result": "2026-10-18 完整建置報告為 215 成功、0 失敗；新增三張兒科感冒藥水頁。",
       "known_issues": "本次另比較段落文字；09_australia_usa_china 字詞差異，原檢查未覆蓋",
       "followup_commits": [
         "333ed52512cfbaf2b0f900e76605bc0b5c8264cc"
       ],
       "validity": "conflict",
-      "current_interpretation": "新增六張除疤凝膠和貼片頁通過字串比對；舊頁 09_australia_usa_china 字詞差異仍保留 CR-2026-023，未視為修復或醫療複核",
-      "last_report_commit": "9f463398e73ec1c0c0611f981d72583ca899c5fa",
-      "last_report_commit_date": "2026-10-17T11:12:29+08:00",
+      "current_interpretation": "新增三張兒科感冒藥水頁具靜態文字、來源與雙日期；既有 09_australia_usa_china 字詞差異仍保留 CR-2026-023。",
+      "last_report_commit": "unknown",
+      "last_report_commit_date": "unknown",
       "working_tree_state": "modified_uncommitted",
-      "sha256": "94b4661874bf50edb2abd3c57aa1cf2267e546aa7018f8195607ae04e4740746",
+      "sha256": "d884212fc7a9cca0b426e90d9ebcca66e66f8695e14ceee023b48aead12cf520",
       "previous_versions": [
+        {
+          "audit_id": "AUD-007",
+          "path": "data/card_text_web_integration_report.md",
+          "audit_date": "2026-10-17",
+          "date_basis": "CR-2026-030 本機建置與輸出核對",
+          "kind": "generated_report",
+          "scope": "212 頁靜態文字整合",
+          "recorded_result": "2026-10-17 重建報告記錄 212 成功、0 失敗；僅涵蓋 title/meta/h1/alt/text",
+          "known_issues": "本次另比較段落文字；09_australia_usa_china 字詞差異，原檢查未覆蓋",
+          "followup_commits": [
+            "333ed52512cfbaf2b0f900e76605bc0b5c8264cc"
+          ],
+          "validity": "conflict",
+          "current_interpretation": "新增六張除疤凝膠和貼片頁通過字串比對；舊頁 09_australia_usa_china 字詞差異仍保留 CR-2026-023，未視為修復或醫療複核",
+          "last_report_commit": "9f463398e73ec1c0c0611f981d72583ca899c5fa",
+          "last_report_commit_date": "2026-10-17T11:12:29+08:00",
+          "working_tree_state": "modified_uncommitted",
+          "sha256": "94b4661874bf50edb2abd3c57aa1cf2267e546aa7018f8195607ae04e4740746"
+        },
         {
           "audit_id": "AUD-007",
           "path": "docs/project-management/evidence/card-text-integration-before-knee-brace-2026-10-16.md",

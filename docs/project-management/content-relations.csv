@@ -440,3 +440,6 @@ REL-78da82bb0d94e301,series:silicone_scar_care,has_card,page:silicone_scar_gel_s
 REL-0a53489ecc2ce27e,series:silicone_scar_care,has_card,page:silicone_scar_sheet_steps,source_observed,series_membership,cards.json,依原始系列 steps；待人工醫療複核
 REL-b916032b0570c76b,series:silicone_scar_care,has_card,page:silicone_scar_duration_care,source_observed,series_membership,cards.json,依原始系列 steps；待人工醫療複核
 REL-cdf18f352ee2f8aa,series:silicone_scar_care,has_card,page:silicone_scar_errors_alerts,source_observed,series_membership,cards.json,依原始系列 steps；待人工醫療複核
+REL-391d166531765944,series:pediatric_cold_syrup,has_card,page:ped_cold_peace_syrup,source_observed,series_membership,cards.json,沿用既有兒科感冒藥水系列；新增圖片與獨立靜態頁。
+REL-15c973aa18eb8e9c,series:pediatric_cold_syrup,has_card,page:ped_cold_guaphen_syrup,source_observed,series_membership,cards.json,沿用既有兒科感冒藥水系列；新增圖片與獨立靜態頁。
+REL-6ad9c83b980fc6b1,series:pediatric_cold_syrup,has_card,page:ped_cold_exdila_liquid,source_observed,series_membership,cards.json,沿用既有兒科感冒藥水系列；新增圖片與獨立靜態頁。

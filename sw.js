@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v202610171544';
+const CACHE_NAME = 'pwa-cache-v202610181145';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -340,6 +340,9 @@ const urlsToCache = [
   "./img/paste_prep_4.webp",
   "./img/ped_cold_cetirizine.webp",
   "./img/ped_cold_cypromin.webp",
+  "./img/ped_cold_exdila_liquid.webp",
+  "./img/ped_cold_guaphen_syrup.webp",
+  "./img/ped_cold_peace_syrup.webp",
   "./img/ped_cold_secorine.webp",
   "./img/postoperative_wound.webp",
   "./img/pregnancy_minor_constipation.webp",
@@ -666,6 +669,9 @@ const urlsToCache = [
   "./cards/ped_cold_cypromin.html",
   "./cards/ped_cold_cetirizine.html",
   "./cards/ped_cold_secorine.html",
+  "./cards/ped_cold_peace_syrup.html",
+  "./cards/ped_cold_guaphen_syrup.html",
+  "./cards/ped_cold_exdila_liquid.html",
   "./cards/enema_step_1.html",
   "./cards/enema_step_2.html",
   "./cards/enema_step_3.html",

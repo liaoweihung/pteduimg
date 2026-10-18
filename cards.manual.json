@@ -1264,6 +1264,7 @@
   "pediatric_cold_syrup": {
     "title": "兒科感冒藥水",
     "category": "pharmacist_product",
+    "showFooter": true,
     "departments": [
       "pediatrics"
     ],
@@ -1281,17 +1282,53 @@
       "抗組織胺",
       "綜合感冒藥水",
       "第一代抗組織胺",
-      "第二代抗組織胺"
+      "第二代抗組織胺",
+      "鼻福糖漿",
+      "鼻福藥水",
+      "Peace Syrup",
+      "Pseudoephedrine",
+      "Triprolidine",
+      "兒童鼻塞藥水",
+      "兒童流鼻水藥水",
+      "兒童鼻炎藥水",
+      "鼻福糖漿劑量",
+      "鼻福糖漿副作用",
+      "咳酚糖漿",
+      "咳酚藥水",
+      "Guaphen Syrup",
+      "Guaifenesin",
+      "兒童化痰藥水",
+      "兒童祛痰藥",
+      "小兒化痰藥",
+      "咳酚糖漿劑量",
+      "咳酚糖漿副作用",
+      "小孩有痰",
+      "喘解液",
+      "喘解藥水",
+      "Exdila Liquid",
+      "Procaterol",
+      "兒童支氣管擴張劑",
+      "兒童氣喘藥水",
+      "小兒喘鳴",
+      "喘解液劑量",
+      "喘解液體重換算",
+      "喘解液副作用"
     ],
     "texts": [
       "希普利敏",
       "勝克敏液",
-      "息咳寧糖漿"
+      "息咳寧糖漿",
+      "鼻福糖漿怎麼吃？兒童劑量、成分與注意事項",
+      "咳酚糖漿是什麼？兒童化痰藥水劑量與用法",
+      "喘解液兒童劑量：依年齡、體重換算與副作用"
     ],
     "steps": [
       "img/ped_cold_cypromin.webp",
       "img/ped_cold_cetirizine.webp",
-      "img/ped_cold_secorine.webp"
+      "img/ped_cold_secorine.webp",
+      "img/ped_cold_peace_syrup.webp",
+      "img/ped_cold_guaphen_syrup.webp",
+      "img/ped_cold_exdila_liquid.webp"
     ]
   },
   "enema_use": {
