@@ -8057,5 +8057,77 @@
       }
     ],
     "revisionCredit": "使用者提供圖卡文字；AI進行網站文字整理與來源連結核對"
+  },
+  {
+    "cardId": "pediatric_cold_syrup",
+    "title": "敏達糖漿怎麼吃？兒童過敏性鼻炎用量與注意事項",
+    "image": "img/ped_cold_mintapp_syrup.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_mintapp_syrup.html",
+    "summary": "敏達糖漿含 Loratadine，每 1 mL 含 1 mg；兒童劑量依年齡與體重分組，每日一次。",
+    "sections": [
+      {"heading": "成分與用途", "text": "「杏輝」敏達糖漿（MINTAPP SYRUP）是處方藥，每 1 mL 含 Loratadine 1 mg，每 5 mL 含 5 mg。用於緩解過敏性鼻炎的流鼻水、鼻塞、搔癢及眼部過敏症狀。"},
+      {"heading": "兒童分齡與體重用量", "text": "12 歲以上每日 10 mL；2 至未滿 12 歲且體重超過 30 公斤者每日 10 mL，體重不超過 30 公斤者每日 5 mL，均為每日一次。未滿 2 歲沒有供家長自行使用的常規劑量，須由醫師評估。"},
+      {"heading": "用藥提醒", "text": "Loratadine 為第二代抗組織胺，通常較不容易嗜睡，但仍可能發生。不可自行增加每日劑量；敏達與勝克敏液的有效成分不同，不可直接互換劑量。"}
+    ],
+    "altText": "敏達糖漿 Loratadine 成分、兒童依年齡與體重分組的每日用量及用藥提醒圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-10-19",
+    "updatedAt": "2026-10-19",
+    "references": [
+      {"title": "杏輝藥品：敏達糖漿產品資料與藥證入口", "url": "https://www.sinphar.store/products/%E6%95%8F%E9%81%94%E7%B3%96%E6%BC%BF"},
+      {"title": "衛生福利部中央健康保險署：MINTAPP SYRUP 成分與規格資料", "url": "https://www.nhi.gov.tw/ch/dl-39135-3a64247039a84bb984fd77cfe87b42e4-1.pdf"},
+      {"title": "KingNet 國家網路醫藥：謝元富醫師答覆敏達糖漿與希普利敏的劑量差異", "url": "https://www.kingnet.com.tw/inquiry/single?accessKey=662f73e6d1e50d9f1aba1b6a8cde9727&inquiryId=193940"}
+    ],
+    "revisionCredit": "使用者提供圖卡文字；AI進行網站文字整理與來源連結核對"
+  },
+  {
+    "cardId": "pediatric_cold_syrup",
+    "title": "美舒咳液怎麼吃？兒童祛痰藥水用量與注意事項",
+    "image": "img/ped_cold_musco_solution.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_musco_solution.html",
+    "summary": "美舒咳液含 Ambroxol Hydrochloride，每 1 mL 含 3 mg，是幫助痰液排出的祛痰藥物。",
+    "sections": [
+      {"heading": "成分與用途", "text": "「生達」美舒咳液（MUSCO SOLUTION 3MG/ML）是處方藥，每 1 mL 含 Ambroxol Hydrochloride 3 mg，每 5 mL 含 15 mg。適應症為祛痰，不是直接抑制咳嗽反射的鎮咳藥。"},
+      {"heading": "兒童年齡分組用量", "text": "依產品標示：10 歲以上每次 10 mL、每日 3 次；5 至未滿 10 歲每次 5 mL、每日 3 次；2 至未滿 5 歲每次 2.5 mL、每日 3 次。未滿 2 歲雖列每次 2.5 mL、每日 2 次，仍須由醫師依體重及病情評估，不可自行照表給藥。"},
+      {"heading": "體重換算只是參考", "text": "醫院藥品資料對未滿 2 歲列出每日 1.2 至 1.6 mg/kg 的參考範圍；依每 1 mL 含 3 mg 換算，每日總量為體重乘 1.2 至 1.6 再除以 3 mL。這是計算方式，不可取代個別處方，也不是各年齡通用的最大安全劑量。"},
+      {"heading": "副作用與警訊", "text": "可能有胃部不適、噁心或過敏反應。若出現皮疹、皮膚水泡或黏膜破損，應停藥並立即就醫。使用量器量取，實際劑量依醫師處方。"}
+    ],
+    "altText": "美舒咳液 Ambroxol 成分、兒童分齡用量及未滿兩歲用藥提醒圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-10-19",
+    "updatedAt": "2026-10-19",
+    "references": [
+      {"title": "生達化學製藥：美舒咳液產品資料與兒童分齡用量", "url": "https://www.standard.com.tw/product-info.php?c1=1&c2=75&c3=100&i=260"},
+      {"title": "耕莘醫院藥劑部：美舒咳液 3mg/mL 用藥資料與仿單", "url": "https://www.cth.org.tw/?aid=606&iid=1719&page_name=detail&pid=40"},
+      {"title": "耕莘醫院藥劑部：美舒咳液仿單", "url": "https://www.cth.org.tw/public/medi_news/57633e7140fd5a669e6cd9845d26299b.pdf"}
+    ],
+    "revisionCredit": "使用者提供圖卡文字；AI進行網站文字整理與來源連結核對"
+  },
+  {
+    "cardId": "pediatric_cold_syrup",
+    "title": "可克嗽糖漿怎麼吃？兒童止咳化痰藥水用量與注意事項",
+    "image": "img/ped_cold_koko_sou_syrup.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_koko_sou_syrup.html",
+    "summary": "可克嗽糖漿含鎮咳、支氣管擴張與祛痰成分；6 歲以下須先由醫師診治，不宜自行使用。",
+    "sections": [
+      {"heading": "成分與用途", "text": "每 1 mL 含 Dextromethorphan HBr 0.75 mg、dl-Methylephedrine HCl 1 mg、Potassium Guaiacol Sulfonate 4.1667 mg。用於緩解感冒相關咳嗽與喀痰，與單一成分 Guaifenesin 的咳酚糖漿不同。"},
+      {"heading": "兒童年齡分組用量", "text": "依食藥署仿單，12 歲以上每次 20 mL，9 至未滿 12 歲每次 10 mL，6 至未滿 9 歲每次 7 mL，均為每日 3 次。6 歲以下請先由醫師診治；仿單沒有統一的兒童 mg/kg 公式，不可自行換算給藥。"},
+      {"heading": "每日總量與使用時間", "text": "按仿單頻次計算，6 至未滿 9 歲每日 21 mL、9 至未滿 12 歲每日 30 mL、12 歲以上每日 60 mL；這不是可自行增加用量的上限。不要服用超過 7 日，也不要與其他止咳或感冒藥重複服用。"},
+      {"heading": "交互作用與就醫提醒", "text": "服用 MAOI 或 SSRI 類抗憂鬱藥的人不可使用本品；心臟病患者應先就醫評估，也應避免過量攝取咖啡因。若出現心悸、頭暈等不適，或咳嗽超過一週、伴高燒及呼吸困難，應停藥並就醫。"}
+    ],
+    "altText": "可克嗽糖漿三種成分、兒童分齡用量、交互作用與使用警訊圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-10-19",
+    "updatedAt": "2026-10-19",
+    "references": [
+      {"title": "衛生福利部食品藥物管理署：可克嗽糖漿核准仿單（衛署藥製字第033192號）", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC033192%E8%99%9F?export=opendata"}
+    ],
+    "revisionCredit": "使用者提供圖卡文字；AI進行網站文字整理與來源連結核對"
   }
 ]
