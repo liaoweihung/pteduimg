@@ -64,3 +64,6 @@
 - 截圖、製圖prompt與output製作暫存只在必要報告中引用；未逐檔盤點、未納入公開内容。未追蹤的POC資料已在報告層記錄，未宣稱產品已核准／發布。
 
 本頁是人工專案判斷與下一步，不再作為Git HEAD或檔案差異的唯一來源。技術現況直接調用 `scripts/project_change_tracker.py`；清冊仍依受影響頁增量維護，不另產生全站醫療審查報告。
+
+## Dashboard 發布整合（2026-10-21）
+CR-2026-037：手機介面與機械統計接入 main 分支發布。workflow 自動產生並只提交 dashboard/，明確要求 Pages build。人工欄位與既有差異保留。見 [dashboard說明](dashboard.md)。

@@ -23,14 +23,14 @@ MANAGEMENT_FILES = {
     "scripts/project_change_tracker.py", "scripts/test_project_change_tracker.py",
     ".github/workflows/project-management-check.yml",
 }
-SITE_PREFIXES = ("cards/", "img/", "css/", "js/", "assets/", "templates/", "topics/", "web/", "calc/")
+SITE_PREFIXES = ("cards/", "img/", "css/", "js/", "assets/", "templates/", "topics/", "web/", "calc/", "dashboard/")
 SITE_FILES = {
     "404.html", "all-cards.html", "build.py", "cards.json", "cards.manual.json",
     "cards.retired.json", "index.html", "public.html", "manifest.json", "robots.txt",
     "seo.json", "sitemap.xml", "sitemap-main.xml", "retired-cards.html", "sw.js",
     "data/card_content.json", "data/acne_navigation.json",
 }
-GENERATED_ONLY_FILES = {"sw.js"}
+GENERATED_ONLY_FILES = {"sw.js", "dashboard/index.html", "dashboard/status.json"}
 
 
 class GitError(RuntimeError):
@@ -93,7 +93,7 @@ def classify_areas(files: set[str]) -> list[str]:
             areas.add("PWA／快取")
         if path.startswith("topics/") or path == "data/acne_navigation.json":
             areas.add("疾病主題")
-        if path.startswith(("web/", "calc/")) or (
+        if path.startswith(("web/", "calc/", "dashboard/")) or (
             path.startswith("data/") and path not in {"data/card_content.json", "data/acne_navigation.json"}
         ):
             areas.add("工具／資料庫")

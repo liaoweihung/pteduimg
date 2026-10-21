@@ -15,6 +15,11 @@ SPEC.loader.exec_module(tracker)
 
 
 class ProjectChangeTrackerTests(unittest.TestCase):
+    def test_dashboard_outputs_are_tracked(self):
+        self.assertTrue(tracker.is_site_path("dashboard/index.html"))
+        self.assertTrue(tracker.is_site_path("dashboard/status.json"))
+        self.assertNotIn("dashboard/custom.html", tracker.GENERATED_ONLY_FILES)
+
     def test_normalize_windows_path(self):
         self.assertEqual(tracker.normalize(r"cards\example.html"), "cards/example.html")
 

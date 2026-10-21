@@ -1,0 +1,48 @@
+name: Update dashboard and publish Pages
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'dashboard/**'
+  workflow_dispatch:
+  workflow_run:
+    workflows: ['自動更新 PWA 快取與版本號', 'Scheduled card publish']
+    types: [completed]
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: dashboard-publish
+  cancel-in-progress: false
+jobs:
+  update:
+    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Generate dashboard from latest source and save only its outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python -B scripts/build_dashboard.py
+            git add -- dashboard/index.html dashboard/status.json
+            if git diff --cached --quiet; then break; fi
+            git commit -m '自動化: Update website dashboard snapshot'
+            if git push origin HEAD:main; then break; fi
+            if [ "$attempt" = 3 ]; then exit 1; fi
+          done
+      - name: Request branch-based Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds"
