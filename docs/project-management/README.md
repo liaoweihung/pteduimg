@@ -2,6 +2,8 @@
 
 建立日期：2026-10-13。這是本機管理層，不是另一套圖卡內容資料庫，也不會被網站載入。從 [總控台](project-dashboard.md) 看下一步，先查 [需求登記](change-requests.csv)，再用 [頁面主清冊](page-inventory.csv) 找受影響頁及既有證據。
 
+搜尋與AI可見度追蹤另依 [搜尋追蹤流程](search-tracking.md) 維護 [Search Console歷史資料](search-console-history.json)：逐筆提交與每次觀測都附證據並累積保存；資料取得日、報表日、比較窗及檢索日分開。此授權不包含自動提交索引、修改網站或發布。
+
 本次只建立文件、管理資料與獨立唯讀驗證工具。沒有執行 build.py、沒有重讀全站圖片或外部醫療文獻、沒有修改網站及既有報告、沒有 Commit/Push。工作開始前已有未提交網站修改，狀態是「本機工作目錄」而非可宣稱已部署的版本。
 
 ## 權威來源與責任邊界
@@ -88,6 +90,27 @@
 
 新作者授權、藥師簽核等證據可新增在本目錄的 `evidence/`，用實際紀錄檔名引用；本輪沒有虛構範例簽核或建立空白授權檔。需求範圍可用 related_ids 精確定位；`description` 保存待改連結及揭露要求。完成時 `validation_result` 應含可重現命令與證據，不填籠統「OK」。
 
+## 網站變更自動追蹤
+
+網站檔案的技術變更不再依賴人工把 Git 狀態抄到總控台。`scripts/project_change_tracker.py` 直接讀取管理系統 v1 建立後的 Git 歷史與目前工作目錄，列出受影響檔案、圖卡頁面、系列及對應 CR；因此已提交與尚未提交的變更都能在需要時重新查詢。總控台保留專案判斷與下一步，Git 事實以此工具的即時結果為準。
+
+常用查詢：
+
+```powershell
+python -B scripts/project_change_tracker.py
+python -B scripts/project_change_tracker.py --page comedo
+python -B scripts/project_change_tracker.py --series pediatric_cold_syrup
+python -B scripts/project_change_tracker.py --request CR-2026-032
+python -B scripts/project_change_tracker.py --json
+python -B scripts/project_change_tracker.py --check
+```
+
+`--check` 在網站變更沒有連結 CR 時回傳失敗；純 `sw.js` 自動更新會標為自動產生後續。新 CR 與網站變更放在同一次提交時，`git_commit` 可填 `same_commit`，工具會由該次 CSV 差異解析實際 Commit，不再要求事後手抄 SHA。歷史補登則填實際 SHA，必要時以 `|` 保存同一需求的多個 Commit。
+
+GitHub 的 `.github/workflows/project-management-check.yml` 會對 Push／Pull Request 執行相同唯讀檢查。它不修改網站、不自動核准需求、不更改醫療狀態，也不 Commit 或 Push。工作目錄中尚未提交的變更可即時查詢；只有真正進入 Git 的內容才會成為永久歷史。
+
+自動追蹤只負責可由檔案與 Git 證明的事實。藥師複核、作者授權、商業揭露、Search Console 實際操作與成效仍需真實證據，不會由工具自動判定。
+
 ## 唯讀工具
 
 在 repository 根目錄執行（Python 3.10+，只用標準函式庫）：
@@ -97,6 +120,8 @@ python -B scripts/check_project_management.py
 python -B scripts/check_project_management.py --propose
 python -B scripts/check_project_management.py --propose --page comedo
 python -B scripts/test_project_management.py
+python -B scripts/project_change_tracker.py --check
+python -B scripts/test_project_change_tracker.py
 ```
 
 預設驗證全份管理資料的一致性；這是幾秒內的機械讀取，**不是全站醫療盤點**。`--propose` 只將新增／變動頁的自動欄位與移除 ID 提示列在 stdout，沒有 write/fix/sync 模式。`--page` 可重複使用，僅篩選提案；最後仍需完整一致性驗證。這個設計讓人先看清差異，且程式沒有覆蓋人工結果的入口。
@@ -109,4 +134,4 @@ python -B scripts/test_project_management.py
 
 處理一頁時，先回答「已有哪個報告、證據是哪個版本、這次哪些欄位真的變了」。若只因報告變老而無新變更，不重新看全部圖片；若某筆簽核內容指紋不同，保留舊簽核作歷史，針對差異另開待審。歷史 `high`、PASS、ready_for_site、目前有文字或已能生成都不是臨床批准。
 
-本輪不自動增加 AGENTS 規則、CI、排程或自動 Commit。建議下一次日常任務先由使用者確認採用此入口，連續試用「單頁修訂」與「新增圖卡」各一次；確認人工欄位保留與關聯增量流程後，再另案考慮加入文件連結及 CI 唯讀檢查。
+自 2026-10-21 起，AGENTS 與圖卡技能都把變更追蹤列為收尾必做項目，GitHub 另有唯讀檢查。這些機制只補上追溯閉環；仍只更新本次受影響資料，不重做全站醫療盤點。

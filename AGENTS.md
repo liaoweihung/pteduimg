@@ -380,3 +380,19 @@ For pending cards, publication additionally requires the due-card publisher to a
 
 如果任務只是修改內容、連結、樣式或修 bug，不要順便重構這個版型。
 若未來使用者明確要求改版，可以正常修改規格，不需要把目前 v1.0 視為不可變動。
+
+## Website Change Tracking
+
+所有會影響公開網站、生成頁、圖片、樣式、JavaScript、公開資料、SEO、PWA 或建置／發布流程的工作，結束前都必須更新或沿用對應 CR，並執行：
+
+```powershell
+python -B scripts/project_change_tracker.py --check
+```
+
+需要查詢時可直接執行 `python -B scripts/project_change_tracker.py`，或用 `--page PAGE_ID`、`--series SERIES_ID`、`--request CR-ID` 精確篩選。工具直接讀 Git 歷史及目前工作目錄，技術變更不再靠人工抄寫總控台；總控台保存專案判斷與下一步。新 CR 與網站變更同次提交時 `git_commit` 可填 `same_commit`，歷史補登填實際 SHA。若檢查顯示「缺少管理連結」或「有管理檔但未連結需求」，不得宣稱管理紀錄已同步。
+
+此工具與 GitHub 檢查都是唯讀，不會修改網站或人工欄位。`medical_review_status`、審閱者、審閱日期、作者授權、商業揭露及 Search Console 實際結果仍只依真實證據人工記錄。沒有 Commit／Push 授權時仍停在本機驗證完成。
+
+## Search Performance Tracking
+
+每次執行搜尋成效、索引、手動提交或 AI 可見度追蹤，先讀 `docs/project-management/search-tracking.md` 與 `search-console-history.json`。使用者已授權將實際取得的提交結果及觀測持續追加到管理紀錄，附日期與可核對證據並同步總控台，不得只回報在對話中。保留歷史基準，缺資料不填零；提交日期、觀測收錄日期與上次檢索日期分開。此紀錄授權不包含自動提交索引、修改網站或 Commit/Push。

@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "property_url": "https://liaoweihung.github.io/",
+  "recorded_on": "2026-10-16",
+  "date_timezone": "Asia/Taipei",
+  "evidence_file": "evidence/search-console-history-2026-10-16.md",
+  "rules": {
+    "history": "Append observations; preserve original submissions and baseline periods. Corrections require a reason and evidence.",
+    "missing_data": "null means not obtained or not verified; never replace missing data with zero.",
+    "index_dates": "Observation dates and last crawl dates are not exact first indexing dates.",
+    "absence": "Absence from a report or example list is not a per-URL not-indexed determination.",
+    "scope": "Observation and records only; no automatic website changes, builds, indexing submissions, commits or pushes."
+  },
+  "cohorts": [
+    {"id": "manual-2026-08-29", "description": "5 pages manually requested for indexing; part of the original 26 text-updated pages", "submitted_date": "2026-08-29"},
+    {"id": "manual-acne-2026-09-06", "description": "6 acne pages manually requested for indexing; separate from the original 26-page experiment", "submitted_date": "2026-09-06"},
+    {"id": "natural-text-2026-08-22", "description": "21 original text-updated pages without a recorded manual submission in this experiment; not proof they were never submitted by anyone"},
+    {"id": "manual-cold-syrups-2026-10-19", "description": "Three new pediatric medicine pages; individually requested for indexing with explicit user authorization on 2026-10-19. Separate from original 26 and JSON-LD cohorts 1/2/3.", "submitted_date": "2026-10-19", "urls": ["https://liaoweihung.github.io/pteduimg/cards/ped_cold_peace_syrup.html", "https://liaoweihung.github.io/pteduimg/cards/ped_cold_guaphen_syrup.html", "https://liaoweihung.github.io/pteduimg/cards/ped_cold_exdila_liquid.html"], "deployment_date": null, "observed_content_date": "2026-10-18", "evidence_file": "evidence/cold-syrups-search-2026-10-19.md"}
+  ],
+  "manual_submissions": [
+    {"id": "SUB-0829-01", "cohort": "manual-2026-08-29", "url": "https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_8.html", "submitted_date": "2026-08-29", "submitted_at": null, "pre_submit_status": "URL not on Google", "result": "indexing_requested", "evidence_id": "H0829"},
+    {"id": "SUB-0829-02", "cohort": "manual-2026-08-29", "url": "https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_08.html", "submitted_date": "2026-08-29", "submitted_at": null, "pre_submit_status": "URL not on Google", "result": "indexing_requested", "evidence_id": "H0829"},
+    {"id": "SUB-0829-03", "cohort": "manual-2026-08-29", "url": "https://liaoweihung.github.io/pteduimg/cards/over_one_oint_01.html", "submitted_date": "2026-08-29", "submitted_at": null, "pre_submit_status": "URL not on Google", "result": "indexing_requested", "evidence_id": "H0829"},
+    {"id": "SUB-0829-04", "cohort": "manual-2026-08-29", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_cetirizine.html", "submitted_date": "2026-08-29", "submitted_at": null, "pre_submit_status": "URL not on Google", "result": "indexing_requested", "evidence_id": "H0829"},
+    {"id": "SUB-0829-05", "cohort": "manual-2026-08-29", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html", "submitted_date": "2026-08-29", "submitted_at": null, "pre_submit_status": "URL not on Google", "result": "indexing_requested", "evidence_id": "H0829"},
+    {"id": "SUB-0906-01", "cohort": "manual-acne-2026-09-06", "url": "https://liaoweihung.github.io/pteduimg/cards/acne_stage.html", "submitted_date": "2026-09-06", "submitted_at": "2026-09-06T02:44:33.572Z", "timestamp_kind": "confirmation_observed_at", "pre_submit_status": "URL not on Google", "result": "indexing_requested", "evidence_id": "H0906-01"},
+    {"id": "SUB-0906-02", "cohort": "manual-acne-2026-09-06", "url": "https://liaoweihung.github.io/pteduimg/cards/acne_dailycare.html", "submitted_date": "2026-09-06", "submitted_at": "2026-09-06T02:46:51.350Z", "timestamp_kind": "confirmation_observed_at", "pre_submit_status": "URL not on Google", "result": "indexing_requested", "evidence_id": "H0906-02"},
+    {"id": "SUB-0906-03", "cohort": "manual-acne-2026-09-06", "url": "https://liaoweihung.github.io/pteduimg/cards/acne_dailycare_2.html", "submitted_date": "2026-09-06", "submitted_at": "2026-09-06T02:48:30.481Z", "timestamp_kind": "confirmation_observed_at", "pre_submit_status": "URL not on Google", "result": "indexing_requested", "evidence_id": "H0906-03"},
+    {"id": "SUB-0906-04", "cohort": "manual-acne-2026-09-06", "url": "https://liaoweihung.github.io/pteduimg/cards/acne.html", "submitted_date": "2026-09-06", "submitted_at": "2026-09-06T02:50:12.601Z", "timestamp_kind": "confirmation_observed_at", "pre_submit_status": "URL not on Google", "result": "indexing_requested", "evidence_id": "H0906-04"},
+    {"id": "SUB-0906-05", "cohort": "manual-acne-2026-09-06", "url": "https://liaoweihung.github.io/pteduimg/cards/acne_patch_when_to_use.html", "submitted_date": "2026-09-06", "submitted_at": "2026-09-06T02:51:50.208Z", "timestamp_kind": "confirmation_observed_at", "pre_submit_status": "URL not on Google", "result": "indexing_requested", "evidence_id": "H0906-05"},
+    {"id": "SUB-0906-06", "cohort": "manual-acne-2026-09-06", "url": "https://liaoweihung.github.io/pteduimg/cards/acne_patch_how_to_use.html", "submitted_date": "2026-09-06", "submitted_at": "2026-09-06T02:53:35.647Z", "timestamp_kind": "confirmation_observed_at", "pre_submit_status": "URL not on Google", "result": "indexing_requested", "evidence_id": "H0906-06"},
+    {"id": "SUB-1019-01", "cohort": "manual-cold-syrups-2026-10-19", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_peace_syrup.html", "submitted_date": "2026-10-19", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown to Google", "result": "indexing_requested", "evidence_id": "S1019-peace", "evidence_file": "evidence/cold-syrups-search-2026-10-19.md"},
+    {"id": "SUB-1019-02", "cohort": "manual-cold-syrups-2026-10-19", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_guaphen_syrup.html", "submitted_date": "2026-10-19", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown to Google", "result": "indexing_requested", "evidence_id": "S1019-guaphen", "evidence_file": "evidence/cold-syrups-search-2026-10-19.md"},
+    {"id": "SUB-1019-03", "cohort": "manual-cold-syrups-2026-10-19", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_exdila_liquid.html", "submitted_date": "2026-10-19", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown to Google", "result": "indexing_requested", "evidence_id": "S1019-exdila", "evidence_file": "evidence/cold-syrups-search-2026-10-19.md"}
+  ],
+  "observations": [
+    {
+      "id": "OBS-2026-09-06-original-manual-group",
+      "observed_at": "2026-09-06T02:30:07.098Z",
+      "kind": "historical_group_index_observation",
+      "cohort": "manual-2026-08-29",
+      "indexed_submission_ids": ["SUB-0829-01", "SUB-0829-02", "SUB-0829-03", "SUB-0829-04", "SUB-0829-05"],
+      "index_status": "indexed_reported_in_historical_check",
+      "evidence_id": "H0906-original-group",
+      "notes": "All five were reported indexed by this observation; exact first indexing dates are not established."
+    },
+    {
+      "id": "OBS-2026-09-09-acne",
+      "kind": "historical_url_inspection",
+      "cohort": "manual-acne-2026-09-06",
+      "evidence_id": "H0909-group",
+      "pages": [
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/acne_stage.html", "observed_at": "2026-09-09T01:51:23.341Z", "index_status": "indexed", "evidence_id": "H0909-01"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/acne_dailycare.html", "observed_at": "2026-09-09T01:51:38.438Z", "index_status": "indexed", "evidence_id": "H0909-02"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/acne_dailycare_2.html", "observed_at": "2026-09-09T01:52:36.188Z", "index_status": "indexed", "evidence_id": "H0909-03"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/acne.html", "observed_at": "2026-09-09T01:53:21.309Z", "index_status": "indexed", "evidence_id": "H0909-04"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/acne_patch_when_to_use.html", "observed_at": "2026-09-09T01:53:56.058Z", "index_status": "indexed", "evidence_id": "H0909-05"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/acne_patch_how_to_use.html", "observed_at": "2026-09-09T01:54:58.473Z", "index_status": "indexed", "evidence_id": "H0909-06"}
+      ],
+      "notes": "Observed indexed on September 9, not proof of first indexing on that date."
+    },
+    {
+      "id": "OBS-2026-10-16-index",
+      "kind": "page_indexing_report",
+      "observed_at": "2026-10-16T02:48:56.567Z",
+      "data_updated_date": "2026-10-12",
+      "indexed_total": 24,
+      "not_indexed_total": 1,
+      "validation_404": "passed",
+      "validation_404_reported_pages": 1,
+      "evidence_id": "O1016-index",
+      "pages": [
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/acne_stage.html", "last_crawled_date": "2026-10-10"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/adult_diaper_2.html", "last_crawled_date": "2026-10-07"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/wound_cover.html", "last_crawled_date": "2026-09-21"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_01.html", "last_crawled_date": "2026-09-16"},
+        {"url": "https://liaoweihung.github.io/pteduimg/public.html", "last_crawled_date": "2026-09-14"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_how_to_use.html", "last_crawled_date": "2026-09-10"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/wound_when_to_seek_care.html", "last_crawled_date": "2026-09-10"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/wound_healing_signs.html", "last_crawled_date": "2026-09-10"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/wound_tetanus.html", "last_crawled_date": "2026-09-10"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/acne_patch_when_to_use.html", "last_crawled_date": "2026-09-06"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/acne.html", "last_crawled_date": "2026-09-06"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/acne_dailycare_2.html", "last_crawled_date": "2026-09-06"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/acne_patch_how_to_use.html", "last_crawled_date": "2026-09-06"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/acne_dailycare.html", "last_crawled_date": "2026-09-06"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_08.html", "last_crawled_date": "2026-08-29"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/over_one_oint_01.html", "last_crawled_date": "2026-08-29"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html", "last_crawled_date": "2026-08-29"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_8.html", "last_crawled_date": "2026-08-29"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_cetirizine.html", "last_crawled_date": "2026-08-29"},
+        {"url": "https://liaoweihung.github.io/pteduimg/", "last_crawled_date": "2026-08-25"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_1.html", "last_crawled_date": "2026-08-23"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/antiphen.html", "last_crawled_date": "2026-08-23"},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ibuprofen_sol.html", "last_crawled_date": "2026-08-23"},
+        {"url": "https://liaoweihung.github.io/pteduimg/index.html", "last_crawled_date": "2026-07-04"}
+      ],
+      "notes": "Rows transcribed from the indexed examples list. A listed last crawl date is not first indexing. Prior canonical exclusions are historical and are not substituted for this report."
+    },
+    {
+      "id": "OBS-2026-10-16-performance",
+      "kind": "gsc_web_search_28_day_comparison",
+      "observed_at": "2026-10-16T02:47:57.276Z",
+      "data_cutoff": "2026-10-13",
+      "report_timezone": null,
+      "filters": {"search_type": "web", "country": "all", "device": "all", "property": "https://liaoweihung.github.io/"},
+      "evidence_id": "O1016-performance",
+      "current": {"start": "2026-09-16", "end": "2026-10-13", "days": 28, "impressions": 118, "clicks": 5, "reported_ctr_percent": 4.2, "average_position": 20.6},
+      "previous": {"start": "2026-08-19", "end": "2026-09-15", "days": 28, "impressions": 93, "clicks": 4, "reported_ctr_percent": 4.3, "average_position": 26.0},
+      "page_rows_columns": ["url", "current_clicks", "previous_clicks", "current_impressions", "previous_impressions"],
+      "page_rows": [
+        ["https://liaoweihung.github.io/pteduimg/", 3, 2, 5, 14],
+        ["https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html", 2, 0, 24, 21],
+        ["https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_how_to_use.html", 0, 0, 49, 3],
+        ["https://liaoweihung.github.io/pteduimg/cards/acne_patch_how_to_use.html", 0, 0, 12, 2],
+        ["https://liaoweihung.github.io/pteduimg/cards/over_one_oint_01.html", 0, 0, 7, 15],
+        ["https://liaoweihung.github.io/pteduimg/cards/ped_cold_cetirizine.html", 0, 0, 7, 14],
+        ["https://liaoweihung.github.io/pteduimg/cards/wound_healing_signs.html", 0, 0, 5, 0],
+        ["https://liaoweihung.github.io/pteduimg/cards/acne_stage.html", 0, 1, 4, 3],
+        ["https://liaoweihung.github.io/pteduimg/cards/acne_patch_when_to_use.html", 0, 0, 4, 3],
+        ["https://liaoweihung.github.io/pteduimg/cards/antiphen.html", 0, 0, 3, 6],
+        ["https://liaoweihung.github.io/pteduimg/cards/ibuprofen_sol.html", 0, 0, 3, 4],
+        ["https://liaoweihung.github.io/pteduimg/cards/wound_tetanus.html", 0, 0, 3, 0],
+        ["https://liaoweihung.github.io/pteduimg/public.html", 0, 0, 2, 4],
+        ["https://liaoweihung.github.io/pteduimg/cards/wound_when_to_seek_care.html", 0, 0, 2, 1],
+        ["https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_8.html", 0, 0, 2, 1],
+        ["https://liaoweihung.github.io/pteduimg/cards/adult_diaper_2.html", 0, 0, 2, 8],
+        ["https://liaoweihung.github.io/pteduimg/cards/acne.html", 0, 1, 1, 1],
+        ["https://liaoweihung.github.io/pteduimg/cards/acne_dailycare_2.html", 0, 0, 1, 1],
+        ["https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_08.html", 0, 0, 1, 1],
+        ["https://liaoweihung.github.io/pteduimg/cards/acne_dailycare.html", 0, 0, 1, 1],
+        ["https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_1.html", 0, 0, 0, 1],
+        ["https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_01.html", 0, 0, 0, 1],
+        ["https://liaoweihung.github.io/pteduimg/cards/wound_cover.html", 0, 0, 0, 1]
+      ],
+      "current_queries_columns": ["query", "clicks", "impressions"],
+      "current_queries_visible_sample": [["藥局止咳", 1, 1], ["痘痘貼貼多久", 0, 7], ["人工皮貼多久", 0, 6], ["人工皮多久換", 0, 4], ["人工皮可以貼多久", 0, 4], ["人工皮怎麼撕", 0, 4], ["人工皮什麼時候換", 0, 3]],
+      "per_page_average_position": null,
+      "per_page_queries": null,
+      "notes": "Page rows and property totals use different aggregation and must not be forced to match. Visible query sample is incomplete; hidden queries and absent rows are not zero. This window is not the JSON-LD deployment before/after experiment."
+    },
+    {
+      "id": "OBS-2026-10-16-sitemap",
+      "kind": "sitemap_report_and_public_dom",
+      "observed_date": "2026-10-16",
+      "evidence_id": "O1016-sitemap",
+      "root_sitemap": {"url": "https://liaoweihung.github.io/sitemap.xml", "report_status": "could_not_fetch", "last_read_date_reported": "2026-08-09", "type_in_public_dom": "sitemapindex", "child": "https://liaoweihung.github.io/pteduimg/sitemap-main.xml"},
+      "main_sitemap": {"url": "https://liaoweihung.github.io/pteduimg/sitemap-main.xml", "report_status": "could_not_fetch", "public_dom_url_count": 377, "original_26_urls_present": 26, "information_pages_present": ["about.html", "author.html", "editorial-policy.html", "topics/acne.html"]},
+      "root_robots": {"url": "https://liaoweihung.github.io/robots.txt", "observed_directives": ["User-agent: *", "Allow: /", "Sitemap: https://liaoweihung.github.io/sitemap.xml"]},
+      "http_status_codes": null,
+      "notes": "Browser DOM confirmed files load; HTTP response codes were not independently obtained in this observation."
+    },
+    {
+      "id": "OBS-2026-10-16-live-fetch",
+      "kind": "gsc_live_url_test",
+      "observed_date": "2026-10-16",
+      "evidence_id": "O1016-live",
+      "urls": [
+        {"url": "https://liaoweihung.github.io/sitemap.xml", "tested_at": "2026-10-16T10:53:13+08:00", "crawl_allowed": true, "page_fetch": "successful"},
+        {"url": "https://liaoweihung.github.io/pteduimg/sitemap-main.xml", "tested_at": "2026-10-16T10:53:48+08:00", "crawl_allowed": true, "page_fetch": "successful"}
+      ],
+      "agent": "Google Inspection Tool (smartphone)",
+      "notes": "Live fetch success does not establish successful sitemap processing by the sitemap crawler, indexing, or resubmission. Neither sitemap was resubmitted in this check."
+    },
+    {
+      "id": "OBS-2026-10-16-ai-report",
+      "kind": "gsc_generative_ai_features_beta",
+      "observed_at": "2026-10-16T02:49:36.732Z",
+      "evidence_id": "O1016-ai",
+      "current": {"start": "2026-09-16", "end": "2026-10-13", "impressions": 13},
+      "previous": {"start": "2026-08-19", "end": "2026-09-15", "impressions": 7},
+      "page_rows_columns": ["url", "current_impressions", "previous_impressions"],
+      "page_rows": [
+        ["https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html", 7, 2],
+        ["https://liaoweihung.github.io/pteduimg/cards/over_one_oint_01.html", 2, 0],
+        ["https://liaoweihung.github.io/pteduimg/", 1, 0],
+        ["https://liaoweihung.github.io/pteduimg/cards/acne_patch_how_to_use.html", 1, 0],
+        ["https://liaoweihung.github.io/pteduimg/cards/acne_stage.html", 1, 2],
+        ["https://liaoweihung.github.io/pteduimg/cards/ped_cold_cetirizine.html", 1, 1],
+        ["https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_1.html", 0, 1],
+        ["https://liaoweihung.github.io/pteduimg/cards/adult_diaper_2.html", 0, 1]
+      ],
+      "chatgpt_search_found": null,
+      "explicit_ai_citations": null,
+      "notes": "Records the observed GSC report label and counts only; not a verified ChatGPT citation or proof of JSON-LD causality."
+    },
+    {
+      "id": "OBS-2026-10-19-cold-baseline",
+      "kind": "pre_submission_url_inspection_and_public_page_check",
+      "observed_date": "2026-10-19",
+      "cohort": "manual-cold-syrups-2026-10-19",
+      "evidence_id": "O1019-technical",
+      "evidence_file": "evidence/cold-syrups-search-2026-10-19.md",
+      "pages": [
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_peace_syrup.html", "name": "鼻福糖漿", "index_status": "not_indexed_url_unknown", "last_crawled_date": null, "submission_id": "SUB-1019-01", "public_page_loaded": true, "http_status": null, "json_ld_valid_in_head": true, "canonical_matches_url": true, "sitemap_present_after_reload": true, "impressions": null, "clicks": null, "ctr": null, "average_position": null, "queries": null, "ai_found": null, "ai_cited": null},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_guaphen_syrup.html", "name": "咳酚糖漿", "index_status": "not_indexed_url_unknown", "last_crawled_date": null, "submission_id": "SUB-1019-02", "public_page_loaded": true, "http_status": null, "json_ld_valid_in_head": true, "canonical_matches_url": true, "sitemap_present_after_reload": true, "impressions": null, "clicks": null, "ctr": null, "average_position": null, "queries": null, "ai_found": null, "ai_cited": null},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_exdila_liquid.html", "name": "喘解液", "index_status": "not_indexed_url_unknown", "last_crawled_date": null, "submission_id": "SUB-1019-03", "public_page_loaded": true, "http_status": null, "json_ld_valid_in_head": true, "canonical_matches_url": true, "sitemap_present_after_reload": true, "impressions": null, "clicks": null, "ctr": null, "average_position": null, "queries": null, "ai_found": null, "ai_cited": null}
+      ],
+      "root_robots": ["User-agent: *", "Allow: /", "Sitemap: https://liaoweihung.github.io/sitemap.xml"],
+      "sitemap_url_count_after_reload": 393,
+      "notes": "All three had URL unknown status before submission and successful request confirmations, not confirmed indexing. Report cutoff October 16 precedes displayed content date October 18, so new-page performance is unavailable, not zero. First browser sitemap load showed 377 old URLs; intentional reload showed 393 including all three. No publication date inferred from dateModified. Shell DNS failure prevented independent HTTP status measurement; public browser pages loaded."
+    },
+    {
+      "id": "OBS-2026-10-19-performance-reference",
+      "kind": "gsc_web_search_28_day_reference",
+      "observed_date": "2026-10-19",
+      "evidence_id": "O1019-performance",
+      "evidence_file": "evidence/cold-syrups-search-2026-10-19.md",
+      "period": {"start": "2026-09-19", "end": "2026-10-16", "days": 28},
+      "data_cutoff": "2026-10-16",
+      "report_timezone": null,
+      "filters": {"search_type": "web", "country": "all", "device": "all", "property": "https://liaoweihung.github.io/"},
+      "property_totals": {"impressions": 147, "clicks": 5, "reported_ctr_percent": 3.4, "average_position": 20.7},
+      "reference_pages": [
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html", "impressions": 28, "clicks": 2, "weekly_impression_rate": 7},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_cetirizine.html", "impressions": 7, "clicks": 0, "weekly_impression_rate": 1.75},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/antiphen.html", "impressions": 3, "clicks": 0, "weekly_impression_rate": 0.75},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ibuprofen_sol.html", "impressions": 3, "clicks": 0, "weekly_impression_rate": 0.75}
+      ],
+      "notes": "Descriptive forecast anchors, not matched controls. Overlaps the October 16 observation window and must not be called an independent before/after comparison. Current visible table had 21 rows; no new-three rows."
+    },
+    {
+      "id": "OBS-2026-10-19-trends",
+      "kind": "google_trends_sampled_relative_interest",
+      "observed_date": "2026-10-19",
+      "evidence_id": "O1019-trends",
+      "evidence_file": "evidence/cold-syrups-search-2026-10-19.md",
+      "geo": "TW",
+      "search_type": "web",
+      "category": "all",
+      "comparisons": [
+        {"time_label": "past 12 months", "terms": ["鼻福糖漿", "咳酚糖漿", "喘解液"], "displayed_mean_indices": [0, 2, 2]},
+        {"time_label": "past 90 days", "displayed_first_date": "2026-07-18", "displayed_last_date": "2026-10-18", "terms": ["鼻福糖漿", "咳酚糖漿", "喘解液"], "displayed_mean_indices": [0, 1, 1]},
+        {"time_label": "past 90 days", "terms": ["鼻福", "咳酚糖漿", "喘解液", "化痰藥"], "displayed_mean_indices": [3, 1, 1, 4]}
+      ],
+      "monthly_search_volumes": null,
+      "notes": "Rounded, normalized 0-100 sampled indices; not search counts or market share. Sparse data, threshold zeros and possible statistical noise prevent reliable absolute volumes or precise demand ratios. Short nasal brand term differs from full syrup term and can include other formulations. Do not compare numbers across different normalization requests as growth. Generic expectorant term has broader intent than pediatric syrup."
+    }
+    ,
+    {
+      "id": "OBS-2026-10-21-cold-index",
+      "kind": "gsc_url_inspection",
+      "observed_date": "2026-10-21",
+      "cohort": "manual-cold-syrups-2026-10-19",
+      "evidence_file": "evidence/search-console-2026-10-21.md",
+      "pages": [
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_peace_syrup.html", "index_status": "indexed", "last_crawled_display": "2026年10月19日 凌晨12:38:55", "inspection_url": "https://search.google.com/search-console/inspect?resource_id=https%3A%2F%2Fliaoweihung.github.io%2F&id=7JL86mqyVBw9s8l4k9KwaA", "impressions": null, "clicks": null},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_guaphen_syrup.html", "index_status": "indexed", "last_crawled_display": "2026年10月19日 凌晨1:07:21", "inspection_url": "https://search.google.com/search-console/inspect?resource_id=https%3A%2F%2Fliaoweihung.github.io%2F&id=MKUadFCX9y1YD4gJXhF2fw", "impressions": null, "clicks": null},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_exdila_liquid.html", "index_status": "indexed", "last_crawled_display": "2026年10月19日 凌晨1:08:49", "inspection_url": "https://search.google.com/search-console/inspect?resource_id=https%3A%2F%2Fliaoweihung.github.io%2F&id=TroPgUyAehdejVQW7m4CCw", "impressions": null, "clicks": null}
+      ],
+      "notes": "All three showed URL on Google and page indexed, Googlebot smartphone, successful fetch, crawl and indexing allowed, inspected URL selected as canonical. This is the first observed indexed date, not the true first indexing day or evidence that manual submissions caused indexing. Report data ended October 18, so page performance is unavailable, not zero."
+    },
+    {
+      "id": "OBS-2026-10-21-original26-and-information",
+      "kind": "gsc_url_inspection",
+      "observed_date": "2026-10-21",
+      "evidence_file": "evidence/search-console-2026-10-21.md",
+      "original_26_url_prefix": "https://liaoweihung.github.io/pteduimg/cards/",
+      "manual_group": {"cohort": "manual-2026-08-29", "indexed": ["Ped_abx_susp_8.html", "oral_hygiene_08.html", "over_one_oint_01.html", "ped_cold_cetirizine.html", "ped_cold_secorine.html"], "not_indexed_url_unknown": []},
+      "natural_group": {"cohort": "natural-text-2026-08-22", "indexed": ["wound_cover.html", "Ped_abx_susp_1.html", "antiphen.html", "ibuprofen_sol.html", "oral_hygiene_01.html", "adult_diaper_2.html"], "not_indexed_url_unknown": ["Ped_abx_susp_2.html", "Ped_abx_susp_3.html", "Ped_abx_susp_4.html", "Ped_abx_susp_5.html", "Ped_abx_susp_6.html", "Ped_abx_susp_7.html", "oral_hygiene_02.html", "oral_hygiene_03.html", "oral_hygiene_04.html", "oral_hygiene_05.html", "oral_hygiene_06.html", "oral_hygiene_07.html", "over_one_oint_02.html", "over_one_oint_03.html", "ped_cold_cypromin.html"]},
+      "information_pages": [
+        {"url": "https://liaoweihung.github.io/pteduimg/about.html", "index_status": "not_indexed_url_unknown", "impressions": null, "clicks": null},
+        {"url": "https://liaoweihung.github.io/pteduimg/author.html", "index_status": "not_indexed_url_unknown", "impressions": null, "clicks": null},
+        {"url": "https://liaoweihung.github.io/pteduimg/editorial-policy.html", "index_status": "not_indexed_url_unknown", "impressions": null, "clicks": null}
+      ],
+      "notes": "Individual URL inspections: original manual group 5/5 indexed, natural group 6/21 indexed and 15 URL unknown. This is descriptive, not causal proof of manual submission. Three information pages were URL unknown. All 29 were HTTP 200, self-canonical and in sitemap. Missing performance rows through October 18 are not zero."
+    },
+    {
+      "id": "OBS-2026-10-21-performance-ai-technical",
+      "kind": "gsc_reports_and_public_http",
+      "observed_date": "2026-10-21",
+      "evidence_file": "evidence/search-console-2026-10-21.md",
+      "filters": {"property": "https://liaoweihung.github.io/", "search_type": "web", "country": "all", "device": "all"},
+      "period": {"start": "2026-09-21", "end": "2026-10-18", "days": 28, "report_timezone": null},
+      "property_totals": {"impressions": 159, "clicks": 5, "reported_ctr_percent": 3.1, "average_position": 20.5},
+      "performance_page_rows_columns": ["url", "clicks", "impressions", "reported_ctr_percent", "average_position"],
+      "performance_page_rows": [
+        ["https://liaoweihung.github.io/pteduimg/", 3, 6, 50, 3.0],
+        ["https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html", 2, 27, 7.4, 17.0],
+        ["https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_how_to_use.html", 0, 77, 0, 26.0],
+        ["https://liaoweihung.github.io/pteduimg/cards/over_one_oint_01.html", 0, 13, 0, 5.1],
+        ["https://liaoweihung.github.io/pteduimg/cards/acne_patch_how_to_use.html", 0, 12, 0, 8.5],
+        ["https://liaoweihung.github.io/pteduimg/cards/ped_cold_cetirizine.html", 0, 7, 0, 19.1],
+        ["https://liaoweihung.github.io/pteduimg/cards/acne_patch_when_to_use.html", 0, 7, 0, 22.7],
+        ["https://liaoweihung.github.io/pteduimg/cards/acne_stage.html", 0, 5, 0, 9.6],
+        ["https://liaoweihung.github.io/pteduimg/cards/wound_healing_signs.html", 0, 5, 0, 33.8],
+        ["https://liaoweihung.github.io/pteduimg/cards/wound_when_to_seek_care.html", 0, 4, 0, 4.3],
+        ["https://liaoweihung.github.io/pteduimg/cards/wound_tetanus.html", 0, 4, 0, 10.0],
+        ["https://liaoweihung.github.io/pteduimg/cards/adult_diaper_2.html", 0, 4, 0, 30.0],
+        ["https://liaoweihung.github.io/pteduimg/public.html", 0, 3, 0, 2.3],
+        ["https://liaoweihung.github.io/pteduimg/cards/antiphen.html", 0, 3, 0, 3.7],
+        ["https://liaoweihung.github.io/pteduimg/cards/ibuprofen_sol.html", 0, 3, 0, 8.3],
+        ["https://liaoweihung.github.io/pteduimg/cards/acne_dailycare_2.html", 0, 2, 0, 4.5],
+        ["https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_8.html", 0, 2, 0, 5.5],
+        ["https://liaoweihung.github.io/pteduimg/cards/acne.html", 0, 1, 0, 3.0],
+        ["https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_08.html", 0, 1, 0, 7.0],
+        ["https://liaoweihung.github.io/pteduimg/cards/acne_dailycare.html", 0, 1, 0, 10.0],
+        ["https://liaoweihung.github.io/pteduimg/cards/wound_cover.html", 0, 1, 0, 10.0]
+      ],
+      "gsc_ai_report": {"impressions": 15, "page_rows": [["over_one_oint_01.html", 6], ["ped_cold_secorine.html", 5], ["https://liaoweihung.github.io/pteduimg/", 1], ["acne_patch_how_to_use.html", 1], ["acne_stage.html", 1], ["ped_cold_cetirizine.html", 1]], "explicit_citations": null, "chatgpt_search_found": null},
+      "public_http": {"root": 200, "robots_txt": 200, "root_sitemap": 200, "main_sitemap": 200, "target_pages_200": {"original26": 26, "json_ld_second25": 25, "new_syrups3": 3, "information3": 3}, "root_points_to": "https://liaoweihung.github.io/pteduimg/", "root_sitemap_type": "sitemapindex", "root_sitemap_child": "https://liaoweihung.github.io/pteduimg/sitemap-main.xml", "main_sitemap_url_count": 396, "second25_valid_matching_json_ld_in_head": 25},
+      "gsc_sitemap_report": {"root_sitemap": "could_not_fetch", "main_sitemap": "could_not_fetch", "project_sitemap": "could_not_fetch"},
+      "gsc_page_index_report": {"data_updated_date": "2026-10-12", "indexed_total": 24, "not_indexed_total": 1, "validation_404": "passed"},
+      "notes": "AI report counts are not explicit AI citations. Overlapping October 19 28-day window does not constitute an independent before/after comparison. The stale October 12 overview is not current per-URL status. Public HTTP 200 and October 16 live fetch success do not imply GSC sitemap processing success. Three older pediatric cold pages have Article headline different from page title. No site changes or new indexing submissions."
+    }
+  ],
+  "forecasts": [
+    {
+      "id": "FORECAST-2026-10-19-cold-7d",
+      "created_on": "2026-10-19",
+      "cohort": "manual-cold-syrups-2026-10-19",
+      "evidence_file": "evidence/cold-syrups-search-2026-10-19.md",
+      "method": "Low-confidence analyst scenario anchored to observed same-site medicine page rates, with indexing delay. Not a fitted statistical model or calibrated confidence interval; not derived from monthly search volumes.",
+      "period": {"start": "2026-10-20", "end": "2026-10-26", "days": 7, "basis": "GSC daily date labels; submission date October 19 excluded; UI report timezone not independently verified"},
+      "assumptions": ["No material content, title, internal-link or promotion changes during window", "Pages remain publicly available", "Indexing can be delayed beyond the window", "Small differences between page ranges are hypotheses, not proven demand ranking"],
+      "pages": [
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_peace_syrup.html", "impressions_range": [0, 8], "clicks_range": [0, 1], "actual_impressions": null, "actual_clicks": null, "average_position_prediction": null},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_guaphen_syrup.html", "impressions_range": [0, 5], "clicks_range": [0, 1], "actual_impressions": null, "actual_clicks": null, "average_position_prediction": null},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_exdila_liquid.html", "impressions_range": [0, 8], "clicks_range": [0, 1], "actual_impressions": null, "actual_clicks": null, "average_position_prediction": null}
+      ],
+      "combined_impressions_range": [0, 21],
+      "combined_clicks_most_plausible_range": [0, 2],
+      "most_likely_click_count": 0,
+      "indexing_expectation": "1-3 pages observed indexed within seven days is a low-confidence working expectation; zero remains possible and is not proof of content failure.",
+      "evaluate_not_before": "2026-10-29",
+      "evaluation_rule": "Wait for GSC data through October 26 to be complete; append actual per-page indexing, crawl date, impressions, clicks, CTR, position and queries. Preserve this forecast unchanged, then report errors and contextual changes. Lower/upper bounds are planning scenarios, not hard limits. Individual click upper bounds do not imply all pages peak together.",
+      "status": "awaiting_observation"
+    }
+  ],
+  "not_submitted_by_this_work": ["https://liaoweihung.github.io/pteduimg/topics/acne.html", "https://liaoweihung.github.io/pteduimg/author.html"],
+  "notes": "These proposed pages were not submitted in this work. This is not a statement that no owner has ever submitted them. JSON-LD cohorts 1/2/3 and the about/author/editorial-policy intervention retain their separate deployment windows in the automation instructions."
+}

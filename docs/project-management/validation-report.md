@@ -147,3 +147,12 @@ git diff --check
 - 六頁 `--propose` 為零機械差異、零移除、零來源錯誤；新頁的文字、雙日期、參考連結、SEO、JSON-LD、圖下翻頁與共用頁尾均為 `machine_pass`。
 - `check_project_management.py` 與其 18 項測試未全數通過，原因是既有全站清冊的舊頁 `source_sha256`、`rules_sha256`／部分 JSON-LD 指紋漂移，以及既有缺失證據；本次六頁沒有新增該類錯誤，未在本次任務大量覆寫歷史人工或機械欄位。
 - 內建瀏覽器無法連入隔離工作樹的本機預覽埠，故未完成實機手機截圖抽查；未 Commit、Push 或驗證 Pages 部署。
+## 2026-10-21｜網站變更自動追蹤修正
+
+- 基準：`origin/main` `ba6ef297be8aeb43b31cdaf1399b0eb1999801fa`；在隔離工作樹實作，未修改公開網站檔案，未Commit／Push。
+- `python -B scripts/project_change_tracker.py --check --limit 0`：通過；管理系統v1後20筆網站相關Commit均有CR連結或明確的`sw.js`自動產生後續，缺少管理連結0。
+- 依頁面、系列、CR查詢：`ped_cold_mintapp_syrup`、`compression_stockings`、`CR-2026-034`皆能取得正確歷史。
+- `python -B scripts/test_project_change_tracker.py`：9項通過。
+- `search-console-history.json`：JSON語法有效；三份引用證據存在。
+- 既有`scripts/test_project_management.py`：18項中16項通過，2項current-snapshot斷言失敗；原因是遠端基準本來就有413筆舊規則指紋／缺證據漂移，本次不以全站覆寫掩蓋。這與新變更追蹤的20／20通過分開記錄。
+- `git diff --check`：通過；變更範圍只有管理文件、規則、唯讀工具、測試與GitHub唯讀檢查。

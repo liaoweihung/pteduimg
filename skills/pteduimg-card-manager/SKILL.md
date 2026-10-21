@@ -123,9 +123,13 @@ python -B scripts/check_site.py
 python -B scripts/check_project_management.py
 python -B scripts/check_project_management.py --propose --page new_page_1 --page new_page_2
 python -B scripts/test_project_management.py
+python -B scripts/project_change_tracker.py --check
+python -B scripts/test_project_change_tracker.py
 ```
 
 Also perform the relevant desktop/mobile and page-flow checks below. Record the actual command outcomes in the CR/evidence and final response; do not convert a structural pass into a medical signoff.
+
+The Git-based tracker derives the changed pages and series automatically. Reuse or update the applicable CR before the final check. If a new CR is committed together with the card changes, use `same_commit` in its `git_commit` field; do not leave a completed request at `unknown`. A missing management link is a failed workflow even when the site tests pass.
 
 ## Adding Images To An Existing Card
 
