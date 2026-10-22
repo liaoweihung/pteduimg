@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-21T22:56:58+08:00",
-  "baseline": "21965a3e0c941c60ccc540a96bbfe3919cd6d3f8",
-  "scope": "網站來源快照；版本 21965a3e",
+  "generatedAt": "2026-10-23T00:31:53+08:00",
+  "baseline": "df9a32766d3fac81c8ae3e49c991da139dbafa5b",
+  "scope": "網站來源快照；版本 df9a3276",
   "counts": {
-    "cards": 376,
-    "series": 84,
-    "allSeries": 88,
+    "cards": 377,
+    "series": 85,
+    "allSeries": 89,
     "hidden": 4,
     "retired": 4,
     "areas": 15,
@@ -590,6 +590,16 @@
       "id": "pediatric_cold_syrup",
       "title": "兒科感冒藥水",
       "count": 9,
+      "hidden": false,
+      "areas": [],
+      "departments": [
+        "pediatrics"
+      ]
+    },
+    {
+      "id": "pediatric_gi_syrup",
+      "title": "兒科腸胃藥水",
+      "count": 1,
       "hidden": false,
       "areas": [],
       "departments": [
@@ -4093,25 +4103,25 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 217,
+      "machine_pass": 218,
       "partial": 1,
       "missing": 158
     },
     "reference_status": {
       "missing": 243,
-      "machine_pass": 133
+      "machine_pass": 134
     },
     "date_status": {
       "missing": 243,
-      "machine_pass": 112,
+      "machine_pass": 113,
       "partial": 21
     },
     "footer_status": {
       "missing": 278,
-      "machine_pass": 98
+      "machine_pass": 99
     },
     "jsonld_status": {
-      "machine_pass": 174,
+      "machine_pass": 175,
       "missing": 202
     }
   },
