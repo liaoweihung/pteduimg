@@ -8129,5 +8129,32 @@
       {"title": "衛生福利部食品藥物管理署：可克嗽糖漿核准仿單（衛署藥製字第033192號）", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC033192%E8%99%9F?export=opendata"}
     ],
     "revisionCredit": "使用者提供圖卡文字；AI進行網站文字整理與來源連結核對"
+  },
+  {
+    "cardId": "pediatric_gi_syrup",
+    "title": "胃利空懸液怎麼吃？兒童劑量、用途與副作用",
+    "image": "img/wempty_suspension.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/wempty_suspension.html",
+    "summary": "胃利空懸液（Wempty Suspension）含 Domperidone 1 mg/mL，用於噁心、嘔吐等症狀。整理兒童體重劑量、每次 mL 換算、服用時間、副作用及心律不整注意事項。處方藥須依醫師指示使用。",
+    "sections": [
+      {"heading": "胃利空懸液是什麼？", "text": "「晟德」胃利空懸液劑（Wempty Suspension；衛署藥製字第046242號）是處方藥，成分 Domperidone 為多巴胺 D2 受體拮抗劑，具有止吐及促進上消化道蠕動的作用。適應症包括噁心、嘔吐的症狀治療，以及糖尿病引起的胃腸蠕動異常。兒童嘔吐應先由醫師確認原因及脫水情形。"},
+      {"heading": "濃度與胃利空兒童劑量怎麼算？", "text": "本品每 1 mL 含 Domperidone 1 mg，每 5 mL 含 5 mg。依食藥署修訂用量，12 歲以下兒童及 12 歲以上、體重低於 35 公斤的青少年，每次 0.25 mg/kg，相當於本品每次 0.25 mL/kg，每日最多 3 次。10、15、20、25、30 公斤換算每次分別為 2.5、3.75、5、6.25、7.5 mL。這些只是換算示例，不可由家長自行給藥。不同廠牌口服液濃度可能不同，不能沿用同一 mL 用量。"},
+      {"heading": "成人與較大青少年用量", "text": "成人及 12 歲以上且體重超過 35 公斤的青少年，每次 10 mg，相當於本品 10 mL，每日最多 3 次；按此換算每日最多 30 mg（30 mL）。公告對恰好 35 公斤的分組未明確說明，應由醫師確認；不可把成人每日最高量直接套用在所有兒童。實際用量以處方及最新核准仿單為準。"},
+      {"heading": "胃利空什麼時候吃？", "text": "產品仿單建議在飯前及睡前 15 至 30 分鐘服用；實際服藥時間依醫師指示。本品為懸液劑，使用前依產品標示搖勻，以口服量筒或口服針筒量取，避免用家用湯匙。"},
+      {"heading": "胃利空有哪些副作用？", "text": "可能出現口乾、頭痛、腹瀉等不適；少數患者可能有泌乳素升高相關反應。Domperidone 與 QT 間期延長及嚴重心律不整風險有關。有心臟疾病、心律異常、明顯電解質失衡，或正在使用會延長 QT 間期或影響其代謝的藥物者，應先由醫師或藥師評估。若服藥後心悸或暈厥，應立即就醫。"},
+      {"heading": "兒童嘔吐何時就醫？", "text": "不是所有嘔吐都需要止吐藥。持續嘔吐、無法補充水分、尿量明顯減少、精神活動力下降、綠色膽汁性嘔吐或嚴重腹痛，應儘速就醫。"},
+      {"heading": "常見問題 Q&A", "text": "胃利空主要是止吐及促進上消化道蠕動的藥物，不是中和胃酸的制酸劑。小朋友不可自行按體重公式服用，也不可自行併用其他止吐藥。服藥後又吐出來，不建議自行補服，因無法確定已吸收的藥量；請向醫師或藥師確認。"}
+    ],
+    "altText": "胃利空懸液 Domperidone 兒童體重劑量與用藥注意事項",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-10-23",
+    "updatedAt": "2026-10-22",
+    "references": [
+      {"title": "光田綜合醫院：晟德胃利空懸液劑 1 mg/mL 產品仿單（衛署藥製字第046242號）", "url": "https://admincp.ktgh.com.tw/Upload/Medicine/251216030322636690JLAVB.pdf"},
+      {"title": "衛生福利部食品藥物管理署：Domperidone 安全性及療效再評估結果、修訂用法用量（2014-11-12）", "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&id=11783"}
+    ],
+    "revisionCredit": "使用者提供並確認圖卡文字；AI整理網站文字及核對來源"
   }
 ]

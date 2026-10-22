@@ -1340,6 +1340,18 @@
       "img/ped_cold_koko_sou_syrup.webp"
     ]
   },
+  "pediatric_gi_syrup": {
+    "title": "兒科腸胃藥水",
+    "category": "pharmacist_product",
+    "showFooter": true,
+    "departments": ["pediatrics"],
+    "order": 17.5,
+    "hidden": false,
+    "icon": "🥄",
+    "tags": ["胃利空", "胃利空懸液", "胃利空懸液劑", "Wempty Suspension", "Domperidone", "Domperidone 1mg/mL", "胃利空兒童劑量", "胃利空用法用量", "胃利空副作用", "兒童止吐藥", "止吐藥水", "胃利空體重劑量", "胃利空飯前吃", "Domperidone心律不整"],
+    "texts": ["胃利空懸液劑：兒童劑量、用途與注意事項"],
+    "steps": ["img/wempty_suspension.webp"]
+  },
   "enema_use": {
     "title": "浣腸使用",
     "category": "pharmacist_general",

@@ -446,3 +446,4 @@ REL-6ad9c83b980fc6b1,series:pediatric_cold_syrup,has_card,page:ped_cold_exdila_l
 REL-8f0355cd0cb0bbd2,series:pediatric_cold_syrup,has_card,page:ped_cold_mintapp_syrup,source_observed,series_membership,cards.json,沿用既有兒科感冒藥水系列；新增圖片與獨立靜態頁。
 REL-2bc5ffeb8337fb6f,series:pediatric_cold_syrup,has_card,page:ped_cold_musco_solution,source_observed,series_membership,cards.json,沿用既有兒科感冒藥水系列；新增圖片與獨立靜態頁。
 REL-1a46c55653160ab9,series:pediatric_cold_syrup,has_card,page:ped_cold_koko_sou_syrup,source_observed,series_membership,cards.json,沿用既有兒科感冒藥水系列；新增圖片與獨立靜態頁。
+REL-09bb7d22f897a6bd,series:pediatric_gi_syrup,has_card,page:wempty_suspension,source_observed,series_membership,cards.json,新增兒科腸胃藥水系列單張圖卡；不複製其他頁面。
