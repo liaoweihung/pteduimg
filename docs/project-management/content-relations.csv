@@ -448,3 +448,6 @@ REL-2bc5ffeb8337fb6f,series:pediatric_cold_syrup,has_card,page:ped_cold_musco_so
 REL-1a46c55653160ab9,series:pediatric_cold_syrup,has_card,page:ped_cold_koko_sou_syrup,source_observed,series_membership,cards.json,沿用既有兒科感冒藥水系列；新增圖片與獨立靜態頁。
 REL-09bb7d22f897a6bd,series:pediatric_gi_syrup,has_card,page:wempty_suspension,source_observed,series_membership,cards.json,新增兒科腸胃藥水系列單張圖卡；不複製其他頁面。
 REL-e27305bb7de11589,series:pediatric_cold_syrup,has_card,page:ped_cold_cough_mixture,source_observed,series_membership,cards.json,沿用兒科感冒藥水系列；新增圖片及獨立靜態文字頁。
+REL-20a5c0e7b8732847,series:smecta_diarrhea,has_card,page:smecta_1,source_observed,series_membership,cards.json,新增舒腹達與腹瀉系列三張圖卡；每張有獨立靜態文字頁。
+REL-a5c9617d2e70e290,series:smecta_diarrhea,has_card,page:smecta_2,source_observed,series_membership,cards.json,新增舒腹達與腹瀉系列三張圖卡；每張有獨立靜態文字頁。
+REL-bd2b5f6147f90d5d,series:smecta_diarrhea,has_card,page:smecta_3,source_observed,series_membership,cards.json,新增舒腹達與腹瀉系列三張圖卡；每張有獨立靜態文字頁。

@@ -1869,6 +1869,18 @@
     "texts": ["胃利空懸液劑：兒童劑量、用途與注意事項"],
     "steps": ["img/wempty_suspension.webp"]
   },
+  "smecta_diarrhea": {
+    "title": "舒腹達與腹瀉",
+    "category": "pharmacist_product",
+    "showFooter": true,
+    "departments": ["pediatrics", "pharmacy_general"],
+    "order": 17.6,
+    "hidden": false,
+    "icon": "💧",
+    "tags": ["舒腹達", "舒腹達口服懸液用粉劑", "Smecta", "Diosmectite", "Dioctahedral Smectite", "舒腹達兒童劑量", "舒腹達怎麼吃", "舒腹達怎麼泡", "舒腹達副作用", "舒腹達一天幾包", "兒童腹瀉", "兒童拉肚子", "口服補液鹽", "ORS", "舒腹達兩歲以下"],
+    "texts": ["舒腹達是什麼？用途與兒童劑量", "舒腹達怎麼泡？正確使用 4 步驟", "兒童腹瀉怎麼辦？補水與舒腹達注意事項"],
+    "steps": ["img/smecta_1.webp", "img/smecta_2.webp", "img/smecta_3.webp"]
+  },
   "enema_use": {
     "title": "浣腸使用",
     "category": "pharmacist_general",

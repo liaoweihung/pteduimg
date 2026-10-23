@@ -8189,5 +8189,78 @@
       {"title": "Dr. Jaden Health：鎮咳藥水－鎮咳祛痰液（2024-01-13）", "url": "https://www.drjadenhealth.com/l/cough-mixture/"}
     ],
     "revisionCredit": "本站依使用者提供內容整理"
+  },
+  {
+    "cardId": "smecta_diarrhea",
+    "title": "舒腹達是什麼？用途與兒童劑量",
+    "image": "img/smecta_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/smecta_1.html",
+    "summary": "舒腹達（Smecta）是含 Dioctahedral Smectite 3 g／包的處方口服懸液用粉劑。用於 2 歲以上兒童及成人急性腹瀉；兒童須併用口服補液鹽（ORS）。",
+    "sections": [
+      {"heading": "成分與作用", "text": "舒腹達口服懸液用粉劑（SMECTA, POWDER FOR ORAL SUSPENSION；衛署藥輸字第023349號；健保代碼 BC23349116）每包含 Dioctahedral Smectite（Diosmectite）3 g。它是腸道吸附劑，具黏膜覆蓋特性，主要作用於腸道內，不被人體吸收並隨糞便排出。舒腹達不是抗生素，也不是口服補液鹽。"},
+      {"heading": "核准適應症與年齡界線", "text": "適應症是治療 2 歲（含）以上兒童的急性腹瀉（須併用口服補液鹽）、成人急性腹瀉，以及症狀性治療成人慢性功能性腹瀉。未滿 2 歲兒童應避免使用；成人慢性功能性腹瀉的適應症不能套用到兒童。"},
+      {"heading": "兒童與成人用量", "text": "2 歲（含）以上兒童每日 2～3 包，每日總劑量分 3 次服用；每天 2 包是全天總量，不是每次 2 包。成人急性腹瀉一般每日 3 包、分 3 次；仿單記載治療初期每日劑量可加倍，應依醫師處方。成人慢性功能性腹瀉每日 3 包、分 3 次。仿單沒有兒童 mg/kg 體重公式，不可自行換算或增加包數。"},
+      {"heading": "補水提醒", "text": "兒童急性腹瀉使用舒腹達時，應同時使用口服補液鹽（ORS）以避免脫水。藥品的腸道吸附與黏膜保護作用不能取代水分及電解質補充；實際用法用量依處方及最新核准仿單。"}
+    ],
+    "altText": "舒腹達 Smecta 每包 3 g 的成分、2 歲以上兒童與成人腹瀉適應症、每日用量及搭配 ORS 的圖解",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "references": [
+      {"title": "舒腹達口服懸液用粉劑核准仿單（衛署藥輸字第023349號；版本日期 2023-06-07）", "url": "https://www1.ndmctsgh.edu.tw/pharm/pic/medinsert/005SME01.pdf"},
+      {"title": "臺安醫院：舒腹達口服懸液用粉劑藥品資料（DIOC）", "url": "https://reg.tai-an.com.tw/tw/medicine_search/show.aspx?code=DIOC&page=7"}
+    ],
+    "revisionCredit": "使用者提供並聲明圖卡與文字已經人工檢核；本站整理逐頁文字並核對來源"
+  },
+  {
+    "cardId": "smecta_diarrhea",
+    "title": "舒腹達怎麼泡？正確使用 4 步驟",
+    "image": "img/smecta_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/smecta_2.html",
+    "summary": "舒腹達口服懸液用粉劑應在服用前混合。兒童每包可加入約 50 mL 水，或混入適合年齡的半流質食物；每日處方總量分次服用。",
+    "sections": [
+      {"heading": "步驟 1：確認處方藥粉量", "text": "先依醫師處方取出本次應使用的藥粉。2 歲（含）以上兒童的核准總量是每日 2～3 包、分 3 次服用；仿單沒有以 mg/kg 計算的兒童公式。不要把一天總包數誤當成每次用量，也不要自行增加每日包數。"},
+      {"heading": "步驟 2：服用前混合", "text": "兒童可將每包藥粉加入約 50 mL 水中混合，並於一天內分次給予。成人可將藥粉加入約半杯水中混合。這些是仿單的調製方式；實際取用與分次仍依處方。"},
+      {"heading": "步驟 3：可選適合年齡的半流質食物", "text": "仿單另列可與肉湯、果泥、菜泥等半流質食物混合。食物應適合兒童年齡。仿單未提供直接加入牛奶的標準調製方式；若想混入奶類飲品，先請藥師確認。"},
+      {"heading": "步驟 4：攪勻並分次服用", "text": "混合後充分攪拌；藥粉沉降時，服用前再次攪勻。依處方量取並分次給藥。舒腹達不是 ORS，不能用它取代腹瀉時的補水與電解質補充。"}
+    ],
+    "altText": "舒腹達粉劑正確使用四步驟：按處方取藥、兒童加入約 50 mL 水或半流質食物、攪勻及分次服用",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "references": [
+      {"title": "舒腹達口服懸液用粉劑核准仿單（衛署藥輸字第023349號；版本日期 2023-06-07）", "url": "https://www1.ndmctsgh.edu.tw/pharm/pic/medinsert/005SME01.pdf"}
+    ],
+    "revisionCredit": "使用者提供並聲明圖卡與文字已經人工檢核；本站整理逐頁文字並核對來源"
+  },
+  {
+    "cardId": "smecta_diarrhea",
+    "title": "兒童腹瀉怎麼辦？補水與舒腹達注意事項",
+    "image": "img/smecta_3.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/smecta_3.html",
+    "summary": "兒童急性腹瀉時，舒腹達不能取代口服補液鹽（ORS）。使用時須留意與其他口服藥的間隔、便秘副作用及脫水或其他就醫警訊。",
+    "sections": [
+      {"heading": "腹瀉時先注意補水", "text": "腹瀉會流失水分與電解質。2 歲（含）以上兒童急性腹瀉使用舒腹達時，治療初期須併用口服補液鹽（ORS）以避免脫水；未滿 2 歲兒童應避免使用舒腹達。舒腹達的腸道吸附與黏膜保護作用不能取代 ORS。"},
+      {"heading": "與其他口服藥盡可能間隔 2 小時", "text": "舒腹達的吸附性質可能影響其他藥物的吸收時間或速率。核准仿單建議避免同時服用其他口服藥，盡可能間隔 2 小時以上；使用多種藥物時請藥師協助安排。仿單亦提醒不宜與 Quinidine、Disopyramide 等藥物併用，應由醫師評估。"},
+      {"heading": "便秘與其他副作用", "text": "便秘是最常通報的不良反應，仿單臨床試驗資料約為成人 7%、兒童 1%。發生便秘應停用，並向醫師或藥師諮詢是否重新給藥及調整劑量；有嚴重慢性便秘病史者應謹慎使用。其他可能反應包括嘔吐、皮疹、蕁麻疹、搔癢或過敏。"},
+      {"heading": "使用前的特殊注意", "text": "對 Diosmectite 或賦形劑過敏者不可使用。柳橙香草與草莓口味含不同糖類或賦形劑，遺傳性糖類不耐受或吸收不良者應依實際口味核對仿單。懷孕及哺乳期間因資料有限，核准仿單不建議使用。兒童應避免長期使用。"},
+      {"heading": "出現警訊應就醫", "text": "血便或黑便、嚴重或持續腹痛、持續高燒、無法飲水或持續嘔吐、尿量減少、口乾、哭泣少淚、眼眶凹陷、嗜睡或活動力下降，以及腹瀉持續未改善或反覆發作，都應儘速就醫。意識不清、無法喚醒或休克徵象應立即就醫。"}
+    ],
+    "altText": "兒童腹瀉使用舒腹達時搭配 ORS、與其他口服藥間隔 2 小時、留意便秘和脫水就醫警訊的圖解",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "references": [
+      {"title": "舒腹達口服懸液用粉劑核准仿單（衛署藥輸字第023349號；版本日期 2023-06-07）", "url": "https://www1.ndmctsgh.edu.tw/pharm/pic/medinsert/005SME01.pdf"},
+      {"title": "臺安醫院：舒腹達口服懸液用粉劑藥品資料（DIOC）", "url": "https://reg.tai-an.com.tw/tw/medicine_search/show.aspx?code=DIOC&page=7"},
+      {"title": "Oxford University Hospitals：Gastroenteritis – Information for Parents or Carers（兒童腹瀉脫水與就醫警訊）", "url": "https://www.ouh.nhs.uk/media/f55nduw2/91882gastroenteritis.pdf"}
+    ],
+    "revisionCredit": "使用者提供並聲明圖卡與文字已經人工檢核；本站整理逐頁文字並核對來源"
   }
 ]
