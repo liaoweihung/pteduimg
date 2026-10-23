@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-23T16:53:50+08:00",
-  "baseline": "b5939681f609cc470391031ee6a8b127ebc6e8da",
-  "scope": "網站來源快照；版本 b5939681",
+  "generatedAt": "2026-10-23T21:03:27+08:00",
+  "baseline": "7eeef527343e56ab0fa0f7bc1ef7150f7484f976",
+  "scope": "網站來源快照；版本 7eeef527",
   "counts": {
-    "cards": 377,
+    "cards": 378,
     "series": 85,
     "allSeries": 89,
     "hidden": 4,
@@ -589,7 +589,7 @@
     {
       "id": "pediatric_cold_syrup",
       "title": "兒科感冒藥水",
-      "count": 9,
+      "count": 10,
       "hidden": false,
       "areas": [],
       "departments": [
@@ -4103,25 +4103,25 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 218,
+      "machine_pass": 219,
       "partial": 1,
       "missing": 158
     },
     "reference_status": {
       "missing": 243,
-      "machine_pass": 134
+      "machine_pass": 135
     },
     "date_status": {
       "missing": 243,
-      "machine_pass": 113,
+      "machine_pass": 114,
       "partial": 21
     },
     "footer_status": {
       "missing": 278,
-      "machine_pass": 99
+      "machine_pass": 100
     },
     "jsonld_status": {
-      "machine_pass": 175,
+      "machine_pass": 176,
       "missing": 202
     }
   },
