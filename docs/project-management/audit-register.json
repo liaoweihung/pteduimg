@@ -125,9 +125,9 @@
       ],
       "validity": "conflict",
       "current_interpretation": "新頁具靜態文字、來源與雙日期；兒童體重劑量為醫院及醫師參考建議，並非仿單核准固定劑量；既有 09_australia_usa_china 字詞差異仍保留 CR-2026-023。",
-      "last_report_commit": "unknown",
-      "last_report_commit_date": "unknown",
-      "working_tree_state": "modified_uncommitted",
+      "last_report_commit": "a9295bfba52ed3288298ce9a0b9acd70dd6521be",
+      "last_report_commit_date": "2026-10-23T21:02:40+08:00",
+      "working_tree_state": "tracked",
       "sha256": "7c97431a762078b81b79427b2d0802cc7d0e81dfbfb79c89c131439a20a48bb4",
       "previous_versions": [
         {

@@ -9,9 +9,14 @@
 - `python -B scripts/check_project_management.py` 仍有 401 筆歷史指紋或缺證據錯誤；沒有本次兒科感冒藥水頁、CR-2026-039 或 AUD-007 錯誤。`python -B scripts/test_project_management.py` 18 項中 16 項通過，兩項當前快照測試受上述舊錯誤影響而失敗。
 - 嘗試以本機 HTTP 預覽在 Codex 瀏覽器檢查桌機／手機畫面，瀏覽器對 `127.0.0.1` 回傳 `net::ERR_FAILED`；實際視覺與點擊操作未測試。沒有 Commit、Push 或部署。
 
-## 本次 GitHub Desktop 檔案清單
+## 本次發布檔案清單
 
 - 來源：`cards.json`、`cards.manual.json`、`data/card_content.json`、`img/ped_cold_cough_mixture.webp`。
 - 生成頁：`cards/ped_cold_cough_mixture.html`；同系列既有頁 `cards/ped_cold_cypromin.html`、`cards/ped_cold_cetirizine.html`、`cards/ped_cold_secorine.html`、`cards/ped_cold_peace_syrup.html`、`cards/ped_cold_guaphen_syrup.html`、`cards/ped_cold_exdila_liquid.html`、`cards/ped_cold_mintapp_syrup.html`、`cards/ped_cold_musco_solution.html`、`cards/ped_cold_koko_sou_syrup.html`。
 - 全域生成產物：`all-cards.html`、`seo.json`、`sitemap.xml`、`sitemap-main.xml`、`sw.js`、`data/card_text_web_integration_report.md`。
 - 管理紀錄：`docs/project-management/page-inventory.csv`、`docs/project-management/content-relations.csv`、`docs/project-management/change-requests.csv`、`docs/project-management/project-dashboard.md`、`docs/project-management/audit-register.json`、`docs/project-management/audit-history.md`、`docs/project-management/evidence/cough-mixture-2026-10-23.md`。
+
+## 2026-10-23 發布追記
+
+- 上述「沒有 Commit、Push」描述的是本機驗證當下。其後以 27 個明列檔案建立圖卡內容 Commit `a9295bfba52ed3288298ce9a0b9acd70dd6521be`，並推送至 `origin/main`；`git ls-remote` 曾核對遠端包含該 Commit。
+- 推送後的自動化更新了 dashboard 與 `sw.js`。新卡圖片、頁面路徑仍在 worker 清單中；後續發布紀錄保留較新的 `pwa-cache-v202610231723` 版本。Push 不等於 Pages 部署完成；目前尚未查證部署。

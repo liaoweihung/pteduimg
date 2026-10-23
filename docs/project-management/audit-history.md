@@ -542,4 +542,4 @@
 - AUD-007 建置前 Git `df9a32766d3fac81c8ae3e49c991da139dbafa5b` 版本為 219 成功、0 失敗，SHA-256：`b9fabcf5dff09425a29950a6186443bc114589e0b7bf85f2d73cfee1d1b7c0f6`；可由該 Commit 還原。先前登記的 215 頁版本保留於 `previous_versions`。
 - 本次建置報告為 220 成功、0 失敗，SHA-256：`7c97431a762078b81b79427b2d0802cc7d0e81dfbfb79c89c131439a20a48bb4`。新頁核對生達產品頁、產品仿單、耕莘醫院與傑登醫師文章；兒童體重換算僅是後兩者的參考建議，仿單只載「兒童酌減」。
 - 新頁 `needsMedicalReview=true`，清冊正式醫療狀態 `unknown`；來源查核及機械驗證不構成人工醫療複核。AUD-007 原有 `09_australia_usa_china` 字詞差異仍為 conflict，未宣稱修復。
-- 其他舊清冊指紋／缺證據錯誤保持獨立，沒有重做全站醫療盤點；本次未 Commit、Push 或查證 Pages 部署。
+- 其他舊清冊指紋／缺證據錯誤保持獨立，沒有重做全站醫療盤點；本機驗證時尚未 Commit、Push 或查證 Pages 部署。其後圖卡內容以 `a9295bf` 推送至 `origin/main`；Pages 部署仍待查。
