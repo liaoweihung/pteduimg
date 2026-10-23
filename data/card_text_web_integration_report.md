@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：223
+- 成功加入文字頁數：224
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -228,3 +228,4 @@
 | smecta_diarrhea | 舒腹達是什麼？用途與兒童劑量 | https://liaoweihung.github.io/pteduimg/cards/smecta_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | smecta_diarrhea | 舒腹達怎麼泡？正確使用 4 步驟 | https://liaoweihung.github.io/pteduimg/cards/smecta_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | smecta_diarrhea | 兒童腹瀉怎麼辦？補水與舒腹達注意事項 | https://liaoweihung.github.io/pteduimg/cards/smecta_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| kidsolone_oral_solution | 必爾生口服液：兒童類固醇的用途、劑量與副作用 | https://liaoweihung.github.io/pteduimg/cards/kidsolone_oral_solution.html | 是 | 是 | 是 | 是 | 是 | 無 |

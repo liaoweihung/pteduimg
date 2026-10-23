@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v4a867c4c83b782f054662672';
+const CACHE_NAME = 'pwa-cache-vff9d880b294afb624ddbc7c5';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -277,6 +277,7 @@ const urlsToCache = [
   "./img/jin_huang_san.webp",
   "./img/jinchuang_ointment.webp",
   "./img/kidney_nutrition_formula.webp",
+  "./img/kidsolone_oral_solution.webp",
   "./img/knee_brace_1.webp",
   "./img/knee_brace_2.webp",
   "./img/knee_brace_3.webp",
@@ -688,6 +689,7 @@ const urlsToCache = [
   "./cards/smecta_1.html",
   "./cards/smecta_2.html",
   "./cards/smecta_3.html",
+  "./cards/kidsolone_oral_solution.html",
   "./cards/enema_step_1.html",
   "./cards/enema_step_2.html",
   "./cards/enema_step_3.html",

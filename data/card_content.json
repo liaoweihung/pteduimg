@@ -8262,5 +8262,36 @@
       {"title": "Oxford University Hospitals：Gastroenteritis – Information for Parents or Carers（兒童腹瀉脫水與就醫警訊）", "url": "https://www.ouh.nhs.uk/media/f55nduw2/91882gastroenteritis.pdf"}
     ],
     "revisionCredit": "使用者提供並聲明圖卡與文字已經人工檢核；本站整理逐頁文字並核對來源"
+  },
+  {
+    "cardId": "kidsolone_oral_solution",
+    "title": "必爾生口服液：兒童類固醇的用途、劑量與副作用",
+    "image": "img/kidsolone_oral_solution.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/kidsolone_oral_solution.html",
+    "summary": "必爾生口服液（Kidsolone）含 Prednisolone，屬全身性類固醇；每 1 mL 相當於 Prednisolone 1 mg。兒童起始日劑量依仿單為 0.14～2 mg/kg/day，分 3～4 次服用，實際劑量及療程須由醫師依疾病決定，不可自行調整或突然停藥。",
+    "sections": [
+      {"heading": "必爾生是什麼藥？", "text": "必爾生口服液含 Prednisolone，屬於全身性糖皮質類固醇（Glucocorticoid），具有抗發炎及免疫調節作用，可減少部分疾病引起的發炎反應。臨床上可能用於支氣管氣喘、某些嚴重過敏反應、免疫相關疾病及其他發炎性疾病；它不是一般止咳藥，也不是抗生素。"},
+      {"heading": "主要成分與濃度", "text": "每 1 mL 含 Prednisolone Sodium Phosphate 1.344 mg，相當於 Prednisolone 1 mg；每 5 mL 相當於 Prednisolone 5 mg。兩種成分標示的重量不同，計算臨床劑量時應使用 Prednisolone 當量。本品每 1 mL 相當於 Prednisolone 1 mg，不同類固醇藥水的毫升數不可直接互換。"},
+      {"heading": "核准適應症", "text": "依產品仿單，核准適應症包括風濕性關節炎、支氣管氣喘、潰瘍性結腸炎及過敏性疾病。實際是否需要使用類固醇，仍應由醫師依診斷與病情決定。"},
+      {"heading": "必爾生兒童劑量怎麼計算？", "text": "產品仿單的兒童起始劑量為每日 0.14～2 mg/kg/day（Prednisolone 當量），分 3～4 次服用，視疾病而定。因本品每 1 mL 相當於 Prednisolone 1 mg，數值換算為每日總藥水量 0.14～2 mL/kg。實際服用次數與劑量依醫師處方；這是仿單的寬廣起始範圍，不是家長自行給藥的體重公式，因此不提供固定的每次毫升對照表。"},
+      {"heading": "兒童最高劑量、年齡與成人用量", "text": "所核對產品仿單未提供適用於所有兒童的統一最高日劑量，用法用量欄也未列固定最低年齡；須依疾病、治療方案及醫師處方確認。成人起始劑量依仿單為每日 5～60 mg，相當於本品每日 5～60 mL，視疾病而定；並非所有疾病都需要使用此範圍的最高劑量。"},
+      {"heading": "依處方使用，不自行停藥或延長療程", "text": "不要自行調整每日總量、服藥次數或療程。長期使用或較高劑量治療後突然停藥，可能引起腎上腺功能不足或疾病反彈；是否需要逐漸減量，應依劑量、療程及醫師指示決定。短期療程也不可自行延長。"},
+      {"heading": "感染、腸胃與長期追蹤", "text": "類固醇可能抑制免疫反應並掩蓋感染症狀；有嚴重感染或接觸水痘、麻疹患者時，應主動告知醫師。可能出現食慾增加、胃部不適、情緒變化、躁動或睡眠障礙；若醫師沒有其他指示，可詢問藥師是否適合隨餐或飯後服用。長期或反覆接受全身性類固醇治療的兒童，醫師可能需要追蹤生長發育、血壓、血糖及其他風險。"},
+      {"heading": "必爾生有哪些副作用？", "text": "短期使用可能出現食慾增加、腸胃不適、睡眠障礙、情緒或行為變化及血糖上升。長期或高劑量使用可能增加感染、腎上腺功能抑制、骨質流失、兒童生長受影響及類固醇相關外觀與代謝變化的風險。風險與劑量、療程及個別狀況有關，不代表每位使用者都會發生。"},
+      {"heading": "常見問題：必爾生是止咳藥或氣喘急救藥嗎？", "text": "不是。必爾生是全身性類固醇，透過抗發炎作用治療特定疾病，並非一般鎮咳藥，也不是立即緩解支氣管痙攣的急救藥。口服類固醇可能是急性氣喘惡化治療的一部分，但不能取代醫師指示的急救吸入藥物。"},
+      {"heading": "常見問題：兒童使用會影響生長嗎？", "text": "長期或反覆使用全身性類固醇可能影響兒童生長；短期處方與長期治療的風險不同，應由醫師衡量治療效益及副作用。"},
+      {"heading": "常見問題：可以突然停藥嗎？", "text": "不能一概而論。短期療程不一定需要逐步減量；長期或高劑量使用後可能須漸進停藥。請依處方完成療程，不自行改變。"}
+    ],
+    "altText": "必爾生口服液 Kidsolone 兒童類固醇藥水圖卡，說明 Prednisolone 1 mg/mL、適應症、仿單兒童起始劑量及停藥警語",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "references": [
+      {"title": "晟德必爾生口服液 Kidsolone Oral Solution 核准仿單（衛署藥製字第046614號）", "url": "https://www.tai-an.com.tw/upload/DrugInfo/Drug/Instructions/PREDS.pdf"},
+      {"title": "光田綜合醫院：必爾生口服液藥品資料（Kidsolone Oral Solution 1 mg/mL）", "url": "https://www.ktgh.com.tw/ktgh/Home/WesternMedDetail?CatID=65&NewsID=821&Ordid=26013"}
+    ],
+    "revisionCredit": "使用者提供並人工確認圖卡與文字，並同意依仿單修正服用次數；本站整理靜態文字及核對直接來源"
   }
 ]

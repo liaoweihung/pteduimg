@@ -1367,6 +1367,18 @@
     "texts": ["舒腹達是什麼？用途與兒童劑量", "舒腹達怎麼泡？正確使用 4 步驟", "兒童腹瀉怎麼辦？補水與舒腹達注意事項"],
     "steps": ["img/smecta_1.webp", "img/smecta_2.webp", "img/smecta_3.webp"]
   },
+  "kidsolone_oral_solution": {
+    "title": "必爾生口服液",
+    "category": "pharmacist_product",
+    "showFooter": true,
+    "departments": ["pediatrics", "pharmacy_general"],
+    "order": 17.7,
+    "hidden": false,
+    "icon": "💊",
+    "tags": ["必爾生", "必爾生口服液", "Kidsolone", "Kidsolone Oral Solution", "Prednisolone", "Prednisolone Sodium Phosphate", "兒童類固醇藥水", "必爾生兒童劑量", "必爾生用法用量", "必爾生副作用", "必爾生停藥", "兒童氣喘類固醇", "Prednisolone 1mg/mL"],
+    "texts": ["必爾生口服液：兒童類固醇的用途、劑量與副作用"],
+    "steps": ["img/kidsolone_oral_solution.webp"]
+  },
   "enema_use": {
     "title": "浣腸使用",
     "category": "pharmacist_general",
