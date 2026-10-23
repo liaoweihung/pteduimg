@@ -114,22 +114,60 @@
     {
       "audit_id": "AUD-007",
       "path": "data/card_text_web_integration_report.md",
-      "audit_date": "2026-10-18",
-      "date_basis": "CR-2026-031 兒科感冒藥水三頁完成建置",
+      "audit_date": "2026-10-23",
+      "date_basis": "CR-2026-039 生達鎮咳袪痰液本機建置",
       "kind": "generated_report",
-      "scope": "215 張成功加入文字的圖卡頁",
-      "recorded_result": "2026-10-18 完整建置報告為 215 成功、0 失敗；新增三張兒科感冒藥水頁。",
+      "scope": "220 張成功加入文字的圖卡頁",
+      "recorded_result": "2026-10-23 完整建置報告為 220 成功、0 失敗；新增一張生達鎮咳袪痰液頁。",
       "known_issues": "本次另比較段落文字；09_australia_usa_china 字詞差異，原檢查未覆蓋",
       "followup_commits": [
         "333ed52512cfbaf2b0f900e76605bc0b5c8264cc"
       ],
       "validity": "conflict",
-      "current_interpretation": "新增三張兒科感冒藥水頁具靜態文字、來源與雙日期；既有 09_australia_usa_china 字詞差異仍保留 CR-2026-023。",
+      "current_interpretation": "新頁具靜態文字、來源與雙日期；兒童體重劑量為醫院及醫師參考建議，並非仿單核准固定劑量；既有 09_australia_usa_china 字詞差異仍保留 CR-2026-023。",
       "last_report_commit": "unknown",
       "last_report_commit_date": "unknown",
       "working_tree_state": "modified_uncommitted",
-      "sha256": "d884212fc7a9cca0b426e90d9ebcca66e66f8695e14ceee023b48aead12cf520",
+      "sha256": "7c97431a762078b81b79427b2d0802cc7d0e81dfbfb79c89c131439a20a48bb4",
       "previous_versions": [
+        {
+          "audit_id": "AUD-007",
+          "path": "data/card_text_web_integration_report.md",
+          "audit_date": "2026-10-23",
+          "date_basis": "CR-2026-038 已提交報告；Git df9a32766d3fac81c8ae3e49c991da139dbafa5b",
+          "kind": "generated_report",
+          "scope": "219 張成功加入文字的圖卡頁",
+          "recorded_result": "2026-10-23 已提交報告為 219 成功、0 失敗。",
+          "known_issues": "本次另比較段落文字；09_australia_usa_china 字詞差異，原檢查未覆蓋",
+          "followup_commits": [
+            "df9a32766d3fac81c8ae3e49c991da139dbafa5b"
+          ],
+          "validity": "conflict",
+          "current_interpretation": "前版整合報告可由 Git Commit 核對；靜態字串比對不代表醫療複核。",
+          "last_report_commit": "df9a32766d3fac81c8ae3e49c991da139dbafa5b",
+          "last_report_commit_date": "2026-10-23T00:31:10+08:00",
+          "working_tree_state": "tracked",
+          "sha256": "b9fabcf5dff09425a29950a6186443bc114589e0b7bf85f2d73cfee1d1b7c0f6"
+        },
+        {
+          "audit_id": "AUD-007",
+          "path": "data/card_text_web_integration_report.md",
+          "audit_date": "2026-10-18",
+          "date_basis": "CR-2026-031 兒科感冒藥水三頁完成建置",
+          "kind": "generated_report",
+          "scope": "215 張成功加入文字的圖卡頁",
+          "recorded_result": "2026-10-18 完整建置報告為 215 成功、0 失敗；新增三張兒科感冒藥水頁。",
+          "known_issues": "本次另比較段落文字；09_australia_usa_china 字詞差異，原檢查未覆蓋",
+          "followup_commits": [
+            "333ed52512cfbaf2b0f900e76605bc0b5c8264cc"
+          ],
+          "validity": "conflict",
+          "current_interpretation": "新增三張兒科感冒藥水頁具靜態文字、來源與雙日期；既有 09_australia_usa_china 字詞差異仍保留 CR-2026-023。",
+          "last_report_commit": "unknown",
+          "last_report_commit_date": "unknown",
+          "working_tree_state": "modified_uncommitted",
+          "sha256": "d884212fc7a9cca0b426e90d9ebcca66e66f8695e14ceee023b48aead12cf520"
+        },
         {
           "audit_id": "AUD-007",
           "path": "data/card_text_web_integration_report.md",

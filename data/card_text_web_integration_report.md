@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：219
+- 成功加入文字頁數：220
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -224,3 +224,4 @@
 | pediatric_cold_syrup | 美舒咳液怎麼吃？兒童祛痰藥水用量與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_musco_solution.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | pediatric_cold_syrup | 可克嗽糖漿怎麼吃？兒童止咳化痰藥水用量與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_koko_sou_syrup.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | pediatric_gi_syrup | 胃利空懸液怎麼吃？兒童劑量、用途與副作用 | https://liaoweihung.github.io/pteduimg/cards/wempty_suspension.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| pediatric_cold_syrup | 生達鎮咳袪痰液怎麼用？兒童參考劑量與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_cough_mixture.html | 是 | 是 | 是 | 是 | 是 | 無 |

@@ -1315,7 +1315,8 @@
       "喘解液副作用",
       "敏達糖漿", "Mintapp Syrup", "Loratadine", "兒童過敏性鼻炎藥水", "敏達糖漿劑量",
       "美舒咳液", "Musco Solution", "Ambroxol", "兒童祛痰藥水", "美舒咳液劑量",
-      "可克嗽糖漿", "Koko Sou Syrup", "Dextromethorphan", "兒童止咳藥水", "可克嗽糖漿劑量"
+      "可克嗽糖漿", "Koko Sou Syrup", "Dextromethorphan", "兒童止咳藥水", "可克嗽糖漿劑量",
+      "生達", "鎮咳袪痰液", "Cough Mixture", "桔梗流浸膏", "兒科感冒藥水", "咳嗽", "袪痰"
     ],
     "texts": [
       "希普利敏",
@@ -1326,7 +1327,8 @@
       "喘解液兒童劑量：依年齡、體重換算與副作用",
       "敏達糖漿怎麼吃？兒童過敏性鼻炎用量與注意事項",
       "美舒咳液怎麼吃？兒童祛痰藥水用量與注意事項",
-      "可克嗽糖漿怎麼吃？兒童止咳化痰藥水用量與注意事項"
+      "可克嗽糖漿怎麼吃？兒童止咳化痰藥水用量與注意事項",
+      "生達鎮咳袪痰液怎麼用？兒童參考劑量與注意事項"
     ],
     "steps": [
       "img/ped_cold_cypromin.webp",
@@ -1337,7 +1339,8 @@
       "img/ped_cold_exdila_liquid.webp",
       "img/ped_cold_mintapp_syrup.webp",
       "img/ped_cold_musco_solution.webp",
-      "img/ped_cold_koko_sou_syrup.webp"
+      "img/ped_cold_koko_sou_syrup.webp",
+      "img/ped_cold_cough_mixture.webp"
     ]
   },
   "pediatric_gi_syrup": {

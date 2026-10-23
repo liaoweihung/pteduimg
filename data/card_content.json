@@ -8156,5 +8156,38 @@
       {"title": "衛生福利部食品藥物管理署：Domperidone 安全性及療效再評估結果、修訂用法用量（2014-11-12）", "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&id=11783"}
     ],
     "revisionCredit": "使用者提供並確認圖卡文字；AI整理網站文字及核對來源"
+  },
+  {
+    "cardId": "pediatric_cold_syrup",
+    "title": "生達鎮咳袪痰液怎麼用？兒童參考劑量與注意事項",
+    "image": "img/ped_cold_cough_mixture.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_cough_mixture.html",
+    "summary": "「生達」鎮咳袪痰液 Cough Mixture 含桔梗流浸膏，每 1 mL 含 0.2 mL；核准適應症為鎮咳、袪痰。仿單的兒童用量僅寫「兒童酌減」；醫院及醫師提供的體重換算是參考建議，兒童實際用量須由醫師或藥師確認。",
+    "sections": [
+      {"heading": "產品、成分與適應症", "text": "許可證字號為衛署藥製字第030862號，健保代碼 A030862157，屬醫師、藥師、藥劑生指示藥品。主要成分 Platycodon Fluidextract（桔梗流浸膏）每 1 mL 藥液含 0.2 mL，每 5 mL 含 1 mL。核准適應症為鎮咳、袪痰；成分表未列 Codeine 或 Dextromethorphan，與含這些成分的鎮咳藥不同。"},
+      {"heading": "成人用法用量", "text": "產品仿單標示成人每次 5～15 mL，每日 3 次；依標示換算每日總量為 15～45 mL。不可自行增加每次用量或服藥次數。"},
+      {"heading": "兒童體重劑量的來源與界線", "text": "產品核准仿單只寫「兒童酌減」，未列明確的體重公式、最低適用年齡或兒童每日最高劑量。耕莘醫院藥品資訊提供每次 0.25 mL/kg、每日 3 次；Dr. Jaden Health 提供每次體重（kg）÷ 4（mL）、每日 3 次。兩種算法相同，但均屬醫療資訊來源的參考建議，並非仿單核准的固定兒童劑量，也不能視為所有年齡通用的標準。兒童實際用量應由醫師或藥師依年齡、症狀及個別情況評估；家長不宜自行按公式給藥。"},
+      {"heading": "兒童每次參考用量換算", "text": "按每次 0.25 mL/kg 換算：10 公斤為 2.5 mL、15 公斤為 3.75 mL、20 公斤為 5 mL、25 公斤為 6.25 mL、30 公斤為 7.5 mL。這些數字只示範醫院及醫師提供的換算方式；實際處方仍須由醫師或藥師確認。"},
+      {"heading": "使用前搖勻並正確量取", "text": "仿單指出本品含桔梗成分，可能產生細微沉澱。使用前應充分搖勻，並使用所附或適當量器量取藥液。若藥液明顯變質、產生異味或超過保存期限，不應使用。"},
+      {"heading": "避免酒精與自行加量", "text": "產品仿單提醒不得與含酒精飲料併用，且勿超過建議使用量。兒童應依醫師或藥師指示，不可自行調整每次劑量或服藥次數。"},
+      {"heading": "可能的副作用與過敏", "text": "仿單列出食慾不振、腸胃不適；耕莘醫院藥品資訊另列噁心，Dr. Jaden Health 提及皮膚出疹等可能的藥物過敏。若出現明顯皮疹或其他疑似過敏症狀，應停止使用並尋求醫療評估。曾對本品成分過敏者不可使用。"},
+      {"heading": "咳嗽與痰液何時需要評估", "text": "若痰液很多、排痰困難、咳嗽持續加重，應重新評估原因，不宜只靠鎮咳藥物處理。咳嗽持續超過一週或反覆發作，或伴高燒、持續頭痛、皮疹，應就醫。若出現喘鳴、呼吸急促或呼吸困難，尤其明顯呼吸困難時，應立即就醫。"},
+      {"heading": "常見問題：止咳藥還是化痰藥？", "text": "本品核准適應症同時包含鎮咳與袪痰，主要成分為桔梗流浸膏；與 Ambroxol、Bromhexine 等其他成分的祛痰藥不同。痰液很多或排痰困難時，須由醫療人員評估咳嗽原因及用藥。"},
+      {"heading": "常見問題：能直接用體重除以四嗎？", "text": "耕莘醫院及 Dr. Jaden Health 的參考方式相當於每次 0.25 mL/kg、每日 3 次，但仿單只標示「兒童酌減」。使用前仍須由醫師或藥師確認，不應由家長自行套用。"},
+      {"heading": "衛教提醒", "text": "本頁提供一般用藥知識。兒童體重換算表來自醫療機構及醫師的參考建議，並非產品仿單核准的固定兒童劑量；實際用藥應依醫師或藥師指示。"}
+    ],
+    "altText": "生達鎮咳袪痰液圖卡，說明桔梗流浸膏成分、成人用量、兒童參考體重換算與搖勻、避酒精及就醫提醒",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "references": [
+      {"title": "生達化學製藥：鎮咳袪痰液 Cough Mixture 產品資料（衛署藥製字第030862號）", "url": "https://www.standard.com.tw/product-info.php?c1=1&c2=4&c3=37&i=123"},
+      {"title": "生達化學製藥：鎮咳袪痰液產品仿單（文件標示 2017-08-01；耕莘醫院收錄）", "url": "https://www.cth.org.tw/public/medi_news/01832855f81982955529d0a68ed0e9bd.pdf"},
+      {"title": "耕莘醫院：Cough Mixture 藥品資訊（成人與兒童常用劑量）", "url": "https://www.cth.org.tw/?aid=606&iid=1181&page_name=detail&pid=0"},
+      {"title": "Dr. Jaden Health：鎮咳藥水－鎮咳祛痰液（2024-01-13）", "url": "https://www.drjadenhealth.com/l/cough-mixture/"}
+    ],
+    "revisionCredit": "本站依使用者提供內容整理"
   }
 ]
