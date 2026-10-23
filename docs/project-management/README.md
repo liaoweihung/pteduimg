@@ -117,14 +117,19 @@ GitHub 的 `.github/workflows/project-management-check.yml` 會對 Push／Pull R
 
 ```powershell
 python -B scripts/check_project_management.py
+python -B scripts/check_project_management.py --summary --report-file outputs/management-check-latest.json
+python -B scripts/check_project_management.py --summary --baseline-file PATH_TO_REVIEWED_REPORT
 python -B scripts/check_project_management.py --propose
 python -B scripts/check_project_management.py --propose --page comedo
 python -B scripts/test_project_management.py
+python -B scripts/test_management_output.py
 python -B scripts/project_change_tracker.py --check
 python -B scripts/test_project_change_tracker.py
 ```
 
 預設驗證全份管理資料的一致性；這是幾秒內的機械讀取，**不是全站醫療盤點**。`--propose` 只將新增／變動頁的自動欄位與移除 ID 提示列在 stdout，沒有 write/fix/sync 模式。`--page` 可重複使用，僅篩選提案；最後仍需完整一致性驗證。這個設計讓人先看清差異，且程式沒有覆蓋人工結果的入口。
+
+`--summary` 執行相同的完整驗證，只在終端顯示總數、分類與必要差異；原命令仍保留逐筆完整輸出及相同退出碼。`--report-file PATH` 會在指定路徑寫入完整 JSON 診斷（含原始錯誤與警告），僅在明確指定時產生；`outputs/` 已被 Git 忽略。`--baseline-file PATH` 只接受此工具產生、內容自洽且經人工確認可信的完整報告，以穩定的錯誤範圍／類型識別比較新增、已解決、惡化與仍存在的問題；未知類型一律顯示。沒有可信基準時只能報目前總數，不能宣稱「新增錯誤為零」。摘要模式不減少任何檢查，也不把失敗改判為成功。`--page` 僅限制提案，不限制完整驗證；CI 既有執行範圍維持不變。
 
 指紋可找出圖片、文字、實際HTML或同系列導覽的相關變動，即使尚未 Commit 也能發現；不依賴不可靠的檔案 mtime。共用规则變動會觸發技術欄位提案，絕不自動改 medical_review_status。報告雜湊改變會要求追加歷史說明；來源查核日期不跟著提案更新。
 

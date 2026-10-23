@@ -64,6 +64,8 @@ Required record fields with the current renderer:
 
 Read and verify the medical sources. AI output, conversation IDs, search snippets, or institution homepages alone are not supporting medical references. Preserve truthful provenance and review status; do not mark `needsMedicalReview: false` solely because AI generated or checked the text. Missing facts, dates, sources, or attribution must be resolved or reported as incomplete, never invented.
 
+When the user supplies cards and text that have already undergone human review, start with the supplied images, per-card text, direct sources, dates, and review provenance. Check image/text matching, source support, and integration completeness without automatically restarting broad medical research. A review claim alone does not create a documented pharmacist signoff or waive the direct-source and source-check requirements. If a claim conflicts with its image or source, a required source is missing, or a safety concern appears, perform the necessary focused source check and stop unsafe publication until resolved.
+
 Each new card page must contain static, readable HTML for its text, update date, source-check date, and real source links. Series may reuse genuinely applicable sources, but each page must display them. Prepare these records before scheduling a release, even though scheduled hidden pages are not generated until publication.
 
 This rule applies prospectively. Do not backfill or rebuild existing cards merely to update these instructions; documentation-only changes do not require running `build.py`.
@@ -126,18 +128,19 @@ Review the JSON printed to stdout and merge by exact `page_id` into `docs/projec
 
 Add the stable `series:<id> -> page:<id>` `has_card` rows to `content-relations.csv`. Add topic/subtopic relations only when they are within the authorized scope, and reference the same page from multiple topics instead of duplicating content. If the work introduces an authorized topic node, update `content-topics.json` with its truthful `formal_page`, `planned`, or `collection_only` state; do not create a public topic page implicitly. Update the applicable CR status, evidence, validation result and completion date, and the counts, progress and unresolved items in `project-dashboard.md`; add a focused evidence record under `docs/project-management/evidence/` when useful. Update `audit-history.md` or `audit-register.json` only when an audit conclusion or evidence version actually changes.
 
-Run the targeted proposal again after the merge. It should report no machine-field proposals, no unexpected removed IDs, and no source errors for the affected pages. `--propose` never writes files and cannot approve content or overwrite manual review decisions.
+After actual inventory or source changes, run the targeted proposal to verify the affected pages. Before finishing, it should report no machine-field proposals, no unexpected removed IDs, and no source errors. Rerun it when a correction changes its inputs; do not repeat an unchanged proposal merely to reach a fixed count. `--propose` never writes files and cannot approve content or overwrite manual review decisions.
 
-For every new-card workflow, finish with the full management checks as well as the site checks:
+During integration, prefer checks targeted to the changed page IDs and series. After content and management data are settled, finish with the full website and management checks. Use summary output for the full management validator and save complete diagnostics under ignored `outputs/` when needed:
 
 ```powershell
 python -B scripts/check_site.py
-python -B scripts/check_project_management.py
-python -B scripts/check_project_management.py --propose --page new_page_1 --page new_page_2
+python -B scripts/check_project_management.py --summary --report-file outputs/management-check-latest.json
 python -B scripts/test_project_management.py
 python -B scripts/project_change_tracker.py --check
 python -B scripts/test_project_change_tracker.py
 ```
+
+When a reviewed baseline report exists, add `--baseline-file PATH` to distinguish new, resolved, worsened, and persistent issues by stable IDs. Without one, the summary cannot establish whether new errors are absent; inspect the complete report for relevant failures. The summary keeps the full validator's failure exit code. Do not use a fresh report as an automatically approved baseline or suppress new, worsened, or unclassified errors. Run the targeted `--propose` whenever management data changes, including after corrections; additional tests are appropriate when a new change, result, or diagnostic question requires them. Avoid rerunning identical checks when nothing relevant changed.
 
 The Git-based tracker derives changed pages and series. Reuse or update the applicable CR before the final check. A new CR committed with the card changes may use `same_commit`; a missing management link is not a completed workflow.
 

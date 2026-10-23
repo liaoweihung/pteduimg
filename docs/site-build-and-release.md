@@ -271,6 +271,7 @@ python -m json.tool data/card_content.json
 - 圖片、文字、來源一致；修訂歸屬與審閱狀態真實；日期不是自動刷新的建置時間。
 - pending 卡先檢查來源完整，發布後才檢查生成 HTML；不能用缺頁誤報為理由提前發布、降低配對信心或刪文字。
 - 增量或完整建置後檢查兩份 sitemap、`all-cards.html`、`seo.json`、`sw.js` 的預期條目，並確認 active／pending／retired 的實際結果。
+- 管理資料合併期間先用 `check_project_management.py --propose --page PAGE_ID` 核對受影響頁面；內容定稿後仍執行完整管理驗證。可用 `--summary --report-file outputs/management-check-latest.json` 減少終端輸出，必要時以經確認的 `--baseline-file PATH` 對照歷史問題。摘要不改檢查規則或失敗退出碼；沒有基準時不可判定新問題為零。詳細用法見[專案管理 SOP](project-management/README.md#唯讀工具)。
 - 前端行為、版面、生成頁或首頁精選清單有變更時，依範圍做桌機／手機瀏覽器檢查；靜態驗證不代替目視與操作測試。
 
 ## 網站變更追蹤

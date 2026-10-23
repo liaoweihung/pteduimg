@@ -1,8 +1,9 @@
 """Read-only project-management checks. Stdlib only; never imports build.py.
 
-Default: verify the complete management snapshot. --propose prints ONLY machine
-fields for changed/new pages, for a human-reviewed merge. No mode writes files,
-approves requests, clears issues, or changes clinical review decisions.
+Default: verify the complete management snapshot with full diagnostics. --propose
+prints ONLY machine fields for changed/new pages, for a human-reviewed merge.
+Validation never changes project sources or clinical review decisions. An explicit
+--report-file writes a full diagnostic report to the requested path.
 """
 from __future__ import annotations
 
@@ -395,12 +396,104 @@ def validate(root, model, live):
     return errors, warnings
 
 
+DIAGNOSTIC_SCHEMA = 1
+DIAGNOSTIC_PATTERNS = (
+    (re.compile(r"^([^:]+): machine field drift: ([a-z0-9_]+)$"), "machine_field_drift"),
+    (re.compile(r"^([^:]+): evidence path missing: (.+)$"), "evidence_path_missing"),
+    (re.compile(r"^([^:]+): report changed; append history and reassess affected claims$"), "report_changed"),
+)
+
+
+def diagnostic_identity(message):
+    """Use issue scope and type, not the changing number of total errors."""
+    for pattern, category in DIAGNOSTIC_PATTERNS:
+        match = pattern.fullmatch(message)
+        if match:
+            return category, "|".join((category, *match.groups()))
+    # An unfamiliar error must remain visible, even if it was in the baseline.
+    return "unclassified", "unclassified|" + hashlib.sha256(message.encode("utf-8")).hexdigest()
+
+
+def diagnostics_from_errors(errors):
+    grouped = {}
+    for message in errors:
+        category, identity = diagnostic_identity(message)
+        item = grouped.setdefault(identity, {"id": identity, "category": category,
+                                             "message": message, "count": 0})
+        if item["message"] != message:
+            # Never conflate changed wording under the same stable issue ID.
+            identity += "|" + hashlib.sha256(message.encode("utf-8")).hexdigest()
+            item = grouped.setdefault(identity, {"id": identity, "category": category,
+                                                 "message": message, "count": 0})
+        item["count"] += 1
+    return sorted(grouped.values(), key=lambda item: item["id"])
+
+
+def load_baseline(path):
+    data = json.loads(path.read_text(encoding="utf-8-sig"))
+    if not isinstance(data, dict):
+        raise ValueError(f"{path}: invalid management diagnostic baseline")
+    if data.get("validator") != "check_project_management" or data.get("schema_version") != DIAGNOSTIC_SCHEMA:
+        raise ValueError(f"{path}: incompatible management diagnostic baseline")
+    items = data.get("diagnostics")
+    raw_errors = data.get("errors")
+    if (not isinstance(raw_errors, list) or
+        any(not isinstance(message, str) for message in raw_errors) or
+        data.get("error_count") != len(raw_errors) or
+        items != diagnostics_from_errors(raw_errors)):
+        raise ValueError(f"{path}: inconsistent diagnostic baseline")
+    return items
+
+
+def compare_diagnostics(current, baseline):
+    now = {item["id"]: item for item in current}
+    old = {item["id"]: item for item in baseline}
+    added = [now[key] for key in sorted(now.keys() - old.keys())]
+    resolved = [old[key] for key in sorted(old.keys() - now.keys())]
+    worsened = [now[key] for key in sorted(now.keys() & old.keys())
+                if now[key]["count"] > old[key]["count"] or
+                now[key]["message"] != old[key]["message"] or
+                now[key]["category"] != old[key]["category"]]
+    persistent = [now[key] for key in sorted(now.keys() & old.keys())]
+    return {"new": added, "resolved": resolved, "worsened": worsened,
+            "persistent": persistent}
+
+
+def print_summary(errors, warnings, diagnostics, comparison, report_file):
+    categories = Counter()
+    for item in diagnostics:
+        categories[item["category"]] += item["count"]
+    print(f"Management errors: {len(errors)}; warnings: {len(warnings)}; "
+          f"status: {'FAIL' if errors else 'PASS'} (exit code unchanged).")
+    print("Categories: " + (", ".join(f"{key}={value}" for key, value in sorted(categories.items())) or "none"))
+    if comparison is None:
+        print("Baseline: none supplied; new and resolved errors cannot be determined.")
+    else:
+        print("Baseline difference: " + ", ".join(
+            f"{key}={len(comparison[key])}" for key in ("new", "resolved", "worsened", "persistent")))
+        for label in ("new", "worsened", "resolved"):
+            for item in comparison[label]:
+                print(f"{label.upper()}: {item['id']} ({item['count']}): {item['message']}")
+    for item in diagnostics:
+        if item["category"] == "unclassified":
+            print(f"UNCLASSIFIED: {item['id']} ({item['count']}): {item['message']}")
+    print(f"Full diagnostics: {report_file}" if report_file else
+          "Full diagnostics: rerun without --summary or supply --report-file PATH.")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--propose", action="store_true", help="print machine-only delta JSON to stdout; never overwrite manual columns")
     parser.add_argument("--page", action="append", default=[], help="filter proposal by exact page ID; repeatable")
+    parser.add_argument("--summary", action="store_true", help="summarize full validation errors without listing known errors")
+    parser.add_argument("--report-file", type=Path, help="write complete JSON diagnostics to an explicitly chosen path")
+    parser.add_argument("--baseline-file", type=Path, help="compare stable issue IDs with an explicitly supplied, reviewed report")
     args = parser.parse_args()
+    if args.propose and (args.summary or args.report_file or args.baseline_file):
+        parser.error("--propose cannot be combined with full-validation output options")
+    if args.report_file and args.baseline_file and args.report_file.resolve() == args.baseline_file.resolve():
+        parser.error("--report-file must not overwrite --baseline-file")
     root = args.root.resolve()
     from datetime import datetime
     from zoneinfo import ZoneInfo
@@ -426,14 +519,31 @@ def main():
             return bool(source_errors)
         errors, warnings = validate(root, model, live)
         errors = source_errors + errors
+        diagnostics = diagnostics_from_errors(errors)
+        baseline = load_baseline(args.baseline_file) if args.baseline_file else None
+        comparison = compare_diagnostics(diagnostics, baseline) if baseline is not None else None
         counts = Counter(r["visibility"] for r in live)
-        print(f"Inventory: {len(live)} unique pages; visibility={dict(counts)}")
-        print(f"Relations: {len(model['relations'])}; reports: {len(model['audits']['reports'])}; requests: {len(model['requests'])}")
-        for warning in warnings:
-            print("NOTE:", warning)
-        for error in errors:
-            print("ERROR:", error)
-        print(f"{'FAIL' if errors else 'PASS'}: {len(errors)} management validation errors. Read-only; no files written.")
+        if args.report_file:
+            report = {"validator": "check_project_management", "schema_version": DIAGNOSTIC_SCHEMA,
+                      "checked_at": now.isoformat(), "inventory_count": len(live),
+                      "visibility": dict(counts), "relations_count": len(model["relations"]),
+                      "reports_count": len(model["audits"]["reports"]),
+                      "requests_count": len(model["requests"]), "error_count": len(errors),
+                      "errors": errors, "warnings": warnings, "diagnostics": diagnostics,
+                      "baseline_difference": comparison}
+            args.report_file.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        if args.summary:
+            print_summary(errors, warnings, diagnostics, comparison, args.report_file)
+        else:
+            print(f"Inventory: {len(live)} unique pages; visibility={dict(counts)}")
+            print(f"Relations: {len(model['relations'])}; reports: {len(model['audits']['reports'])}; requests: {len(model['requests'])}")
+            for warning in warnings:
+                print("NOTE:", warning)
+            for error in errors:
+                print("ERROR:", error)
+            suffix = (f"Diagnostic report written: {args.report_file}." if args.report_file else
+                      "Read-only; no files written.")
+            print(f"{'FAIL' if errors else 'PASS'}: {len(errors)} management validation errors. {suffix}")
         return bool(errors)
     except (OSError, ValueError, KeyError, TypeError) as exc:
         print(f"FAIL: invalid or missing input: {exc}", file=sys.stderr)

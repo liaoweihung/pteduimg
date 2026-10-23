@@ -23,11 +23,14 @@ class ManagementValidationTests(unittest.TestCase):
         model = copy.deepcopy(self.model)
         mutate(model)
         errors, _ = pm.validate(self.root, model, self.live)
-        self.assertTrue(any(expected in e for e in errors), errors)
+        self.assertTrue(any(expected in e for e in errors),
+                        f"Expected {expected!r}; {len(errors)} errors; first five: {errors[:5]}")
 
     def test_current_snapshot(self):
         errors, _ = pm.validate(self.root, self.model, self.live)
-        self.assertEqual(self.source_errors + errors, [])
+        found = self.source_errors + errors
+        if found:
+            self.fail(f"{len(found)} snapshot errors; first five: {found[:5]}")
 
     def test_duplicate_page(self):
         self.corrupt(lambda m: m["inventory"].append(m["inventory"][0].copy()), "inventory: duplicate")
@@ -99,8 +102,11 @@ class ManagementValidationTests(unittest.TestCase):
 
         with patch.object(Path, "open", read_only_open):
             live, errors = pm.machine_snapshot(self.root, "2026-10-13")
-            self.assertFalse(errors)
-            self.assertFalse(pm.validate(self.root, self.model, live)[0])
+            if errors:
+                self.fail(f"{len(errors)} source errors; first five: {errors[:5]}")
+            validation_errors, _ = pm.validate(self.root, self.model, live)
+            if validation_errors:
+                self.fail(f"{len(validation_errors)} snapshot errors; first five: {validation_errors[:5]}")
         self.assertEqual(self.model, before)
         self.assertTrue(all(set(r) == set(pm.MACHINE_FIELDS) for r in live))
         self.assertTrue(set(pm.MACHINE_FIELDS).isdisjoint(pm.MANUAL_FIELDS))
