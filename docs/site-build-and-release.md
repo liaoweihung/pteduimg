@@ -38,10 +38,45 @@ python build.py
 
 Choose the build scope before running:
 
-- Full build: required when adding/removing cards, changing series membership/order, visibility, retirement, or shared templates/site indexes. It clears and regenerates `cards/*.html`, then restores retirement pages; inspect the resulting diff rather than assuming only the requested page changed.
+- Full build: `python build.py` remains required for removal, regrouping/reordering existing steps, visibility/scheduling, retirement, shared templates and structural changes. It clears and regenerates `cards/*.html`, then restores retirement pages; inspect the resulting diff rather than assuming only the requested page changed.
 - Selected-page build: `python build.py --only IMAGE_ID [IMAGE_ID ...]` can regenerate existing individual pages when their URLs, series/navigation, and publication state are unchanged. `IMAGE_ID` is the image filename stem. This does not update `seo.json`, indexes, sitemaps, retirement pages, the integration report, or `sw.js`; if any of these are affected, it is only a preview/intermediate step, not a complete release. It also does not trigger a new service-worker version/update pill.
-- If a task prohibits bulk regeneration but requires changes to global generated outputs, explain the scope conflict before claiming completion; do not silently use a full build.
-- Documentation-only edits do not require either build mode.
+- Incremental build: `python build.py --incremental IMAGE_ID [IMAGE_ID ...]` supports new visible series, appending images at the end of a series, and scoped content/metadata/SEO updates. It updates dependent pages and complete global indexes without deleting the card directory. See the safety boundaries below.
+- If incremental mode rejects an operation and the task prohibits bulk regeneration, explain the concrete conflict; do not silently fall back to a full build.
+- Documentation-only edits do not require a build.
+
+### Incremental build scope and safety
+
+```powershell
+# Add one page to a new series or append to an existing series:
+python -B build.py --incremental new_image
+# Multiple changed series or individually changed content/SEO records:
+python -B build.py --incremental new_image another_image
+```
+
+IDs are image filename stems, preserving case. Supply each newly added or edited image; for series metadata edits, supply at least one image in each changed series. The builder compares source data with its baseline and refuses omitted changed series/content/SEO. It expands the selected scope using series membership, all sibling SEO entries and reverse related-series links. Adding a seventh image therefore updates the six existing pages as needed, including counts, previous/next, related-card titles and links. Existing URLs and favorite keys remain stable. Unchanged dependencies are not rendered or written.
+
+The baseline is the last successful local full/incremental build in ignored `outputs/incremental-build/state.json`; when no matching local baseline exists, the builder reads committed sources from Git HEAD. It does not use file modification times and does not create commits. The local baseline is not a publication artifact and must not be manually fabricated to bypass safety checks. A normal checkout containing this implementation can start incrementally without regenerating legacy HTML. During generator development, changed build rules correctly require a full build **in an isolated test copy**; do not bypass this check in production.
+
+Affected existing HTML is merged against old and new renders with `git merge-file`, retaining non-conflicting manual/legacy differences, including unrelated old template differences. A conflicting manual edit stops the build before any public output is written; reconcile the specific page and its source before retrying. Do not resolve this by blindly running a full build and losing the edit. Unrelated HTML stays byte-for-byte untouched. Git is required for the initial HEAD baseline and three-way merges; a successful local baseline also supports a non-Git copy when no merge is needed.
+
+All active pages, not just selected IDs, feed `seo.json`, `all-cards.html`, both sitemaps and the service-worker inventory. The integration report reads the resulting entire card collection. Homepages already read `cards.json` at runtime; unchanged homepage footers, 404 pages and retirement pages are preserved. Shared-source changes require a full build instead. Identical outputs are not written; an index export date alone does not cause a rewrite. Medical `updatedAt`, `imageUpdatedAt` and `sourceCheckedAt` remain source-owned.
+
+PWA cache versions now use a content fingerprint of public assets and worker logic instead of the current minute. Changes to card HTML, images, homepage data, CSS/JS and referenced runtime assets produce a new version even within the same minute; repeating an unchanged build keeps the version. This changes only version calculation: cache-first, runtime cache, `coreUrlsToCache`, background updates and the user-click update prompt remain unchanged. The first substantive build after adopting the new version scheme migrates the old timestamp version once.
+
+Incremental mode refuses removal, retirement/replacement changes, hidden/publish_at changes, pending additions, series order changes, insertion/reordering/regrouping existing steps, primary-series ownership changes, favorite-key changes, image stem collisions, missing baseline pages/images, shared build/template/footer/Pilot/author changes and manual conflicts. Use a reviewed full build for structural changes. A missing/invalid baseline requires a full build; a mistyped ID, omitted changed series, or manual conflict should be corrected before retrying. It never silently skips a necessary dependency or automatically runs a full build.
+
+Preparation and merging occur in an ignored temporary directory under `outputs/`. Inputs are checked again before writing. Ordinary write failures trigger rollback; a process crash or power loss is not a transactional filesystem guarantee—inspect the diff and retry after such an interruption. Build modes are mutually exclusive. `--only` retains its existing scope and does not establish a new global baseline.
+
+Regression commands (all fixture builds are isolated):
+
+```powershell
+python -B -m unittest discover -s tests -p test_incremental_build.py
+python -B -m unittest discover -s tests -p test_build_dates.py
+python -B tests/verify_incremental_repository.py
+python -B scripts/check_site.py
+```
+
+The opt-in repository test copies tracked files, exercises synthetic additions using copied existing content/images, checks all active global entries and legacy HTML hashes/mtimes, then runs `check_site.py` in that copy. Fixtures are not medical content for publication. Content/source verification, human review, management records, targeted proposals and UI checks in Card Manager remain mandatory; a build pass does not replace them.
 
 A full `build.py` run generates/updates:
 
@@ -61,7 +96,7 @@ Generated card pages must keep static Open Graph tags in the HTML head. Do not r
 
 ## Static All Cards Index
 
-`build.py` also generates `all-cards.html`, a plain static HTML index of every public card page. This page is part of the SEO crawl surface and must stay updated whenever cards are added, removed, hidden, published, or reordered. Do not edit `all-cards.html` by hand; run:
+`build.py` also generates `all-cards.html`, a plain static HTML index of every public card page. This page is part of the SEO crawl surface and must stay updated whenever cards are added, removed, hidden, published, or reordered. Safe additions use `--incremental` as above; structural/visibility changes use a full build. Do not edit `all-cards.html` by hand:
 
 ```bash
 python build.py
@@ -219,7 +254,7 @@ For pending cards, publication additionally requires the due-card publisher to a
 
 - 使用者提供未註明時區的台灣時間時，以 `+08:00` 轉成 ISO 8601。圖片仍需存在於 `img/` 並列於 `steps`。
 - pending 卡排除於 SEO 與公開生成輸出；不得自行加入首頁精選／熱門清單。若使用者要求發布時加入手工精選清單，發布時另做已授權的入口更新。
-- 已授權本機發布時，先執行 `python scripts/publish_scheduled_cards.py`，再完整建置及檢查三份 JSON、網站與相關管理資料；沒有到期卡且沒有其他建置必要時，跳過完整建置，避免無意義的 worker 版本變更。
+- 已授權本機發布時，先執行 `python scripts/publish_scheduled_cards.py`，再完整建置及檢查三份 JSON、網站與相關管理資料；沒有到期卡且沒有其他建置必要時，跳過完整建置，避免不必要的全站重建。
 
 ## 新卡發布前的額外檢查
 
@@ -235,7 +270,7 @@ python -m json.tool data/card_content.json
 - 實際生成 HTML 含摘要、分段重點、內容更新日期、資料查核日期與直接來源連結。原生 `<details>` 可接受，不可依賴 JavaScript 載入正文。
 - 圖片、文字、來源一致；修訂歸屬與審閱狀態真實；日期不是自動刷新的建置時間。
 - pending 卡先檢查來源完整，發布後才檢查生成 HTML；不能用缺頁誤報為理由提前發布、降低配對信心或刪文字。
-- 完整建置後檢查兩份 sitemap、`all-cards.html`、`seo.json`、`sw.js` 的預期條目，並確認 active／pending／retired 的實際結果。
+- 增量或完整建置後檢查兩份 sitemap、`all-cards.html`、`seo.json`、`sw.js` 的預期條目，並確認 active／pending／retired 的實際結果。
 - 前端行為、版面、生成頁或首頁精選清單有變更時，依範圍做桌機／手機瀏覽器檢查；靜態驗證不代替目視與操作測試。
 
 ## 網站變更追蹤

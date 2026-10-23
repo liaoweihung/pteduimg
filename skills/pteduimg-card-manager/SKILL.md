@@ -42,7 +42,7 @@ If these files are not present, first confirm you are in the correct repository.
 - Public education cards use `category: "public_education"` and appear on `public.html`.
 - Pharmacist cards usually use `category: "pharmacist_general"` or `category: "pharmacist_product"` and appear on `index.html`.
 - Scheduled releases use `hidden: true` plus `publish_at`.
-- Do not hand-create `cards/*.html` pages. Choose a full or selected-page build in [網站建置與發布](../../docs/site-build-and-release.md).
+- Do not hand-create `cards/*.html` pages. Choose a full, selected-page, or safe incremental build in [網站建置與發布](../../docs/site-build-and-release.md).
 - Prefer WebP images in `img/`.
 - Do not include Python cache files in the final file list.
 - Every newly added image/card must meet the text, dates, and source requirements below, including additions to existing series and scheduled releases. Also follow the repository's `AGENTS.md`.
@@ -103,7 +103,7 @@ For a request to add cards, add a series, or append images, complete the whole l
 2. Process the images under `img/`: use stable lowercase English names when possible, convert suitable PNG/JPG/JPEG inputs to WebP, and keep every filename stem unique. Do not reuse retired IDs or change unrelated favorite identities.
 3. Update the matching series metadata in both `cards.json` and `cards.manual.json`. The current homepage lists are data driven, so category, filters, and `order` normally place the series; edit a hand-maintained featured/navigation list only when the requested placement actually depends on one.
 4. Add exactly one correctly matched `data/card_content.json` record per image with title, summary, sections, alt text, direct references, real content/source-check dates, and truthful revision attribution. Leave `needsMedicalReview: true` for new material unless traceable human medical-review evidence says otherwise. Missing facts remain unresolved; never invent a date, source, author, reviewer, authorization, or commercial disclosure.
-5. Run the appropriate existing `build.py` mode. A new image, series, order, or visibility change requires one full build because global indexes, SEO, sitemaps, and PWA outputs change. This technical regeneration is not a full-site medical audit. Do not redesign the header/footer or modify unrelated databases, calculators, or card series. Compare the before/after diff and isolate unexpected effects from pre-existing working-tree changes.
+5. Run the appropriate `build.py` mode. For a new visible series, appending images at the end of a series, or scoped content/SEO updates, use `python -B build.py --incremental IMAGE_ID [IMAGE_ID ...]`; supply new/edited image stems and at least one image from each metadata-changed series. The builder expands affected navigation and updates complete global indexes, SEO, sitemaps, the integration report and PWA data. Removal, retirement, visibility/scheduling, regrouping/reordering, shared templates or unsafe baseline changes require a reviewed full build. `--only` still rebuilds selected pages without global outputs and is not a complete new-card release. Follow the safety/rejection rules in the build SOP; never force a full build to erase conflicting manual edits. This technical regeneration is not a full-site medical audit. Do not redesign the header/footer or modify unrelated databases, calculators, or card series. Compare the before/after diff and isolate unexpected effects from pre-existing working-tree changes.
 6. Synchronize the project-management layer using the incremental procedure below, then run source, site, management, and relevant UI checks. Report new page/record counts, tests, unresolved items, and medical-review status. Stop before Commit, Push, or publication unless the user separately authorized them.
 
 ### Incremental project-management update
@@ -147,7 +147,7 @@ Also perform the relevant desktop/mobile and page-flow checks below. Record the 
 
 兩者都依上述完整新增流程，不維護第二套簡化 SOP。追加圖片要寫入正確 `steps`，同步已存在的 manual 系列；若 manual 項目省略 `steps`，依該檔附近資料慣例保持一致，不猜測缺少資料。新系列 schema 與分類 ID 見 [圖卡資料模型](references/card-data.md)。
 
-轉檔後每個圖片 stem 都必須唯一、保留穩定 URL／收藏識別。可見新圖必須有對應 `cards/{stem}.html`；加入圖片／系列需要 full build，不能只跑 selected-page。完整建置後核對實際文字、雙日期、來源、兩份 sitemap、靜態索引、SEO 與 worker 清單；pending 卡則先驗證來源完整與公開輸出排除。
+轉檔後每個圖片 stem 都必須唯一、保留穩定 URL／收藏識別。可見新圖必須有對應 `cards/{stem}.html`；新增可見系列或在系列末尾追加圖片可用安全增量模式，不能只跑 `--only`。增量／完整建置後均須核對實際文字、雙日期、來源、兩份 sitemap、靜態索引、SEO 與 worker 清單，以及受影響舊頁的翻頁／張數。pending／可見性與退出變更使用完整建置；pending 卡先驗證來源完整與公開輸出排除。增量機制只縮小網站生成範圍，不省略醫療資料核對、圖文一致性、人工複核、管理更新或發布授權。
 
 ## Scheduling And Retirement
 

@@ -7,6 +7,7 @@ import re
 import warnings
 from pathlib import Path
 from urllib.parse import quote
+from scripts.incremental_build import write_if_changed, run_incremental, save_baseline, worker_version
 
 from scripts.card_archive import read_retired_cards, write_retired_pages
 from scripts.acne_pilot import load_navigation, render_navigation, STYLES as ACNE_PILOT_STYLES
@@ -198,8 +199,8 @@ def apply_card_content_seo(seo, card_content):
     return seo
 
 
-def build_seo_index(cards, card_content_index, write_output=True):
-    existing_seo = read_seo()
+def build_seo_index(cards, card_content_index, write_output=True, existing_seo=None):
+    existing_seo = read_seo() if existing_seo is None else existing_seo
     seo_index = {}
     used_ids = set()
 
@@ -222,7 +223,7 @@ def build_seo_index(cards, card_content_index, write_output=True):
             seo_index[page_path] = apply_card_content_seo(seo, card_content)
 
     if write_output:
-        SEO_JSON.write_text(
+        write_if_changed(SEO_JSON,
             json.dumps(seo_index, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
             newline="\n",
@@ -1128,10 +1129,11 @@ def render_all_cards_page(cards, seo_index):
 """
 
 
-def generate_card_pages(cards, seo_index, card_content_index, only_image_ids=None):
+def generate_card_pages(cards, seo_index, card_content_index, only_image_ids=None, render_only=False):
     pilot_pages = load_navigation(ROOT)
-    CARDS_DIR.mkdir(exist_ok=True)
-    if only_image_ids is None:
+    if not render_only:
+        CARDS_DIR.mkdir(exist_ok=True)
+    if only_image_ids is None and not render_only:
         for old_page in CARDS_DIR.glob("*.html"):
             try:
                 old_page.unlink()
@@ -1141,6 +1143,7 @@ def generate_card_pages(cards, seo_index, card_content_index, only_image_ids=Non
                 pass
 
     generated_pages = []
+    rendered = {}
     used_ids = set()
 
     for card_id, card in cards.items():
@@ -1166,17 +1169,15 @@ def generate_card_pages(cards, seo_index, card_content_index, only_image_ids=Non
                 page_html = page_html.replace("  </style>", ACNE_PILOT_STYLES + footer_styles(ROOT) + "\n  </style>", 1)
             elif show_shared_footer(card_id, card):
                 page_html = page_html.replace("  </style>", footer_styles(ROOT) + "\n  </style>", 1)
-            (ROOT / page_path).write_text(
-                page_html,
-                encoding="utf-8",
-                newline="\n",
-            )
+            rendered[page_path] = page_html
+            if not render_only:
+                write_if_changed(ROOT / page_path, page_html)
             generated_pages.append(page_path)
 
-    if only_image_ids is None:
-        (CARDS_DIR / "404.html").write_text(render_404_page(), encoding="utf-8", newline="\n")
-        (ROOT / "404.html").write_text(render_404_page(), encoding="utf-8", newline="\n")
-    return generated_pages
+    if only_image_ids is None and not render_only:
+        write_if_changed(CARDS_DIR / "404.html", render_404_page())
+        write_if_changed(ROOT / "404.html", render_404_page())
+    return rendered if render_only else generated_pages
 
 
 def render_series_links(card, cards):
@@ -1287,11 +1288,11 @@ def build_card_text_integration_report(card_content_index):
         *rows,
         "",
     ]
-    CARD_TEXT_REPORT.write_text("\n".join(report), encoding="utf-8", newline="\n")
+    write_if_changed(CARD_TEXT_REPORT, "\n".join(report))
     return success_count, failure_count
 
 
-def update_service_worker(cards, generated_pages, retired_pages=()):
+def update_service_worker(cards, generated_pages, retired_pages=(), source_root=None):
     sw_path = ROOT / "sw.js"
     if not sw_path.exists():
         return
@@ -1376,8 +1377,6 @@ def update_service_worker(cards, generated_pages, retired_pages=()):
     ]
     core_cache_array = ",\n  ".join(json.dumps(item, ensure_ascii=False) for item in core_cache_items)
 
-    now = datetime.datetime.now()
-    new_version = f"pwa-cache-v{now.strftime('%Y%m%d%H%M')}"
     sw_content = sw_path.read_text(encoding="utf-8")
     revised_images = [
         "./" + image for image, record in read_card_content().items()
@@ -1390,7 +1389,6 @@ def update_service_worker(cards, generated_pages, retired_pages=()):
         sw_content,
         flags=re.DOTALL,
     )
-    sw_content = re.sub(r"const CACHE_NAME = '.*?';", f"const CACHE_NAME = '{new_version}';", sw_content)
     sw_content = re.sub(
         r"const urlsToCache = \[.*?\];",
         f"const urlsToCache = [\n  {cache_array}\n];",
@@ -1403,7 +1401,9 @@ def update_service_worker(cards, generated_pages, retired_pages=()):
         sw_content,
         flags=re.DOTALL,
     )
-    sw_path.write_text(sw_content, encoding="utf-8", newline="\n")
+    new_version = worker_version(source_root or ROOT, ROOT, sw_content, cache_items + core_cache_items)
+    sw_content = re.sub(r"const CACHE_NAME = '.*?';", f"const CACHE_NAME = '{new_version}';", sw_content)
+    write_if_changed(sw_path, sw_content)
 
 
 def update_sitemap(generated_pages, card_content_index):
@@ -1451,8 +1451,8 @@ def update_sitemap(generated_pages, card_content_index):
 {chr(10).join(urls)}
 </urlset>
 """
-    (ROOT / "sitemap.xml").write_text(sitemap, encoding="utf-8", newline="\n")
-    (ROOT / "sitemap-main.xml").write_text(sitemap, encoding="utf-8", newline="\n")
+    write_if_changed(ROOT / "sitemap.xml", sitemap)
+    write_if_changed(ROOT / "sitemap-main.xml", sitemap)
 
 
 def update_robots():
@@ -1461,18 +1461,28 @@ Allow: /
 
 Sitemap: {abs_url("sitemap-main.xml")}
 """
-    (ROOT / "robots.txt").write_text(robots, encoding="utf-8", newline="\n")
+    write_if_changed(ROOT / "robots.txt", robots)
 
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Build static pteduimg card pages.")
-    parser.add_argument(
+    modes = parser.add_mutually_exclusive_group()
+    modes.add_argument(
         "--only",
         nargs="+",
         metavar="IMAGE_ID",
         help="Regenerate only the listed card image IDs without updating site indexes.",
     )
+    modes.add_argument("--incremental", nargs="+", metavar="IMAGE_ID",
+                       help="Build affected pages and complete indexes; reject unsafe changes.")
     args = parser.parse_args(argv)
+    if args.incremental:
+        import sys
+        try:
+            run_incremental(sys.modules[__name__], {Path(value).stem for value in args.incremental})
+        except (ValueError, OSError) as error:
+            parser.error(str(error))
+        return
     only_image_ids = {Path(value).stem for value in args.only} if args.only else None
 
     cards = read_cards()
@@ -1491,11 +1501,12 @@ def main(argv=None):
     for homepage in ('index.html', 'public.html'):
         sync_footer(ROOT, write=True, page=homepage)
     write_retired_pages(ROOT, retired, BASE_URL)
-    (ROOT / "all-cards.html").write_text(render_all_cards_page(cards, seo_index), encoding="utf-8", newline="\n")
+    write_if_changed(ROOT / "all-cards.html", render_all_cards_page(cards, seo_index), preserve_index_date=True)
     text_success, text_failures = build_card_text_integration_report(card_content_index)
-    update_service_worker(cards, generated_pages, [entry['page'] for entry in retired])
     update_sitemap(generated_pages, card_content_index)
     update_robots()
+    update_service_worker(cards, generated_pages, [entry['page'] for entry in retired])
+    save_baseline(ROOT)
     print(f"Generated {len(generated_pages)} static card pages.")
     print(f"Preserved {len(retired)} retired URLs and updated retired-cards.html.")
     print(f"Integrated static text for {text_success} card pages ({text_failures} failures).")

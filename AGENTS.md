@@ -45,7 +45,7 @@
 
 ## 建置、可見性與驗證
 
-- `cards/*.html`、`all-cards.html` 等由既有產生器維護，不手寫生成頁。新增／移除圖片或系列、系列歸屬／排序、可見性、退出、共用模板或全域索引變更需 full build：`python build.py`。它會清除重建圖卡 HTML 並恢復退出頁，建置前後必須檢查 diff。
+- `cards/*.html`、`all-cards.html` 等由既有產生器維護，不手寫生成頁。新增可見系列、系列末尾追加或安全局部更新可用 `python build.py --incremental IMAGE_ID [IMAGE_ID ...]`，自動擴展相依頁並更新完整全域索引；限制依建置文件。移除、系列重組／排序、可見性、退出、共用模板或結構變更仍需 full build：`python build.py`；它會清除重建圖卡 HTML 並恢復退出頁，建置前後必須檢查 diff。
 - 既有單頁且 URL、導覽及發布狀態不變，才可用 `python build.py --only IMAGE_ID [IMAGE_ID ...]`；ID 為圖片檔名 stem。它不更新全域 SEO、索引、sitemap、退出頁、整合報告或 worker 版本，不能當成影響這些輸出的完整發布。禁止批次重建與全域更新需求衝突時，先說明範圍衝突。
 - `hidden: true` 加上 `publish_at` 才是 pending 排除條件；hidden 單獨存在不保證排除 HTML／索引／sitemap。兩者都不是存取控制，公開 repository 中的檔案不能稱為私密。
 - 排程採帶時區 ISO 8601，台灣優先 `+08:00`，兩份 JSON 同步。`publish_at` 只設定到期門檻，必須真正執行 publisher 才會切換 visible；目前 workflow 僅手動觸發，不得承諾時間到自動發布或擅自加排程。設定前先備齊文字、日期及來源。
