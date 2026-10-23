@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-23T21:06:39+08:00",
-  "baseline": "7c201523d1ab7242f6d5453b92f659f28cfa0b39",
-  "scope": "網站來源快照；版本 7c201523",
+  "generatedAt": "2026-10-23T21:44:48+08:00",
+  "baseline": "872c7a28b1edab2dff78856fdf7acbe67e3bfdf3",
+  "scope": "網站來源快照；版本 872c7a28",
   "counts": {
     "cards": 378,
     "series": 85,
@@ -4126,8 +4126,8 @@
     }
   },
   "sync": {
-    "pages": 369,
-    "fields": 375,
+    "pages": 386,
+    "fields": 392,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -5882,6 +5882,66 @@
         ]
       },
       {
+        "page": "ped_cold_cetirizine",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_cough_mixture",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_cypromin",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_exdila_liquid",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_guaphen_syrup",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_koko_sou_syrup",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_mintapp_syrup",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_musco_solution",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_peace_syrup",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_secorine",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
         "page": "postoperative_wound",
         "fields": [
           "rules_sha256"
@@ -6057,6 +6117,42 @@
       },
       {
         "page": "scar_remove_detail",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "silicone_scar_duration_care",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "silicone_scar_errors_alerts",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "silicone_scar_gel_steps",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "silicone_scar_gel_vs_sheet",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "silicone_scar_sheet_steps",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "silicone_scar_when_to_start",
         "fields": [
           "rules_sha256"
         ]
@@ -6285,6 +6381,12 @@
       },
       {
         "page": "wart",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "wempty_suspension",
         "fields": [
           "rules_sha256"
         ]
