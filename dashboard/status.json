@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-23T21:44:48+08:00",
-  "baseline": "872c7a28b1edab2dff78856fdf7acbe67e3bfdf3",
-  "scope": "網站來源快照；版本 872c7a28",
+  "generatedAt": "2026-10-23T22:29:48+08:00",
+  "baseline": "6c242a62b8c3d3318e1ee3c23859f4f7fbd9bb9a",
+  "scope": "網站來源快照；版本 6c242a62",
   "counts": {
-    "cards": 378,
-    "series": 85,
-    "allSeries": 89,
+    "cards": 381,
+    "series": 86,
+    "allSeries": 90,
     "hidden": 4,
     "retired": 4,
     "areas": 15,
@@ -604,6 +604,17 @@
       "areas": [],
       "departments": [
         "pediatrics"
+      ]
+    },
+    {
+      "id": "smecta_diarrhea",
+      "title": "舒腹達與腹瀉",
+      "count": 3,
+      "hidden": false,
+      "areas": [],
+      "departments": [
+        "pediatrics",
+        "pharmacy_general"
       ]
     },
     {
@@ -4103,25 +4114,25 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 219,
+      "machine_pass": 222,
       "partial": 1,
       "missing": 158
     },
     "reference_status": {
       "missing": 243,
-      "machine_pass": 135
+      "machine_pass": 138
     },
     "date_status": {
       "missing": 243,
-      "machine_pass": 114,
+      "machine_pass": 117,
       "partial": 21
     },
     "footer_status": {
       "missing": 278,
-      "machine_pass": 100
+      "machine_pass": 103
     },
     "jsonld_status": {
-      "machine_pass": 176,
+      "machine_pass": 179,
       "missing": 202
     }
   },
