@@ -1,0 +1,38 @@
+{
+  "status": "preliminary_not_signed_off",
+  "assets": [
+    {
+      "source": "logo_primary_color_original.png",
+      "derived": "logo_primary_transparent.png",
+      "status": "derivative_pending_visual_approval",
+      "size": [
+        1070,
+        554
+      ],
+      "sha256": "67c8092f2a573d2f412eddde335938aa3f7ece6672d15c5b72e49ad6867a8a9b",
+      "foreground_pixel_count": 225441
+    },
+    {
+      "source": "logo_monochrome_black_light_background.png",
+      "derived": "logo_black_transparent.png",
+      "status": "derivative_pending_visual_approval",
+      "size": [
+        1162,
+        614
+      ],
+      "sha256": "effd9fa0122acfb4e8de1d621b3c739c8fc7d3a5f9dfeb46067b0a57e106f0a0",
+      "foreground_pixel_count": 180683
+    },
+    {
+      "source": "logo_monochrome_white_dark_background.png",
+      "derived": "logo_white_transparent.png",
+      "status": "derivative_pending_visual_approval",
+      "size": [
+        1004,
+        533
+      ],
+      "sha256": "78c3d4f1571269607263a6a83ad06d1dd79321605c184c19b3113f21b8b43d51",
+      "foreground_pixel_count": 130457
+    }
+  ]
+}

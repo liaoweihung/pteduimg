@@ -1,0 +1,146 @@
+{
+  "integrated_on": "2026-10-23",
+  "source_archive": "Brand_Guide_v2.3.zip",
+  "archive_sha256": "4215d0c015f3e3240b5d4082efd5c93023ae6f9e52c5ee1ee7dfc70827124329",
+  "method": "Original ZIP members copied byte-for-byte; no image regeneration or modification.",
+  "files": [
+    {
+      "file": "BRAND_GUIDE_v2.3.md",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/BRAND_GUIDE_v2.3.md",
+      "bytes": 3081,
+      "sha256": "ef351916bfb9ea37bfdde1f09c13743541a24ac8a932e42aa7a9530b6682f40e"
+    },
+    {
+      "file": "透明Logo_三色三背景對照.png",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/透明Logo_三色三背景對照.png",
+      "bytes": 196139,
+      "sha256": "4bf5fc4015bc0f3ee8ae761482d2d4cb1160c9856efccfb3ea3848e3dd351dcc"
+    },
+    {
+      "file": "BRAND_GUIDE_v2.2.md",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/BRAND_GUIDE_v2.2.md",
+      "bytes": 5695,
+      "sha256": "dd31237d9a1336127663f7cb5d15aa16aba7efa92a4dd06a0a1f7e7edc1b7aae"
+    },
+    {
+      "file": "BRAND_GUIDE_AI.md",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/BRAND_GUIDE_AI.md",
+      "bytes": 1619,
+      "sha256": "2528b244789f72c0d62b5e0a4fab8ba58d896cea05045282f65e587907483414"
+    },
+    {
+      "file": "data/refined_vector_report_v2.2.json",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/data/refined_vector_report_v2.2.json",
+      "bytes": 176,
+      "sha256": "c232d7a464f8d2e951bd6f4fb22a819ae5abbbc8558bcbe7d56f32166e428f50"
+    },
+    {
+      "file": "data/brand_colors_v2.1.json",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/data/brand_colors_v2.1.json",
+      "bytes": 1048,
+      "sha256": "7e158256d34e0ef480143a0d7799b0eb309ca43965f894b9971ebdacfb813259"
+    },
+    {
+      "file": "data/watermark_status.json",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/data/watermark_status.json",
+      "bytes": 266,
+      "sha256": "41574fb392f3f61953147b5e4b7f0184be6b633f541ae6737007ae199735d7ea"
+    },
+    {
+      "file": "data/asset_manifest.json",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/data/asset_manifest.json",
+      "bytes": 1619,
+      "sha256": "0c71069cdc1a872971e3e76b466360128d5c3731158ad49086d237496043a0db"
+    },
+    {
+      "file": "data/transparent_asset_manifest_v2.3.json",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/data/transparent_asset_manifest_v2.3.json",
+      "bytes": 1102,
+      "sha256": "fc38b57d5298b8187d5b83262a77c2d7e4c1957960a77da6aca680bec78c91ac"
+    },
+    {
+      "file": "data/geometry.json",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/data/geometry.json",
+      "bytes": 436,
+      "sha256": "95c6f0ee71573e77fcbcbe0908a601473cd31a5800582b0a4442b47cb26847c7"
+    },
+    {
+      "file": "assets/logo_vector_refined_draft_v2.2.svg",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/assets/logo_vector_refined_draft_v2.2.svg",
+      "bytes": 6745,
+      "sha256": "db8313f112a3dd8c44ad8a84ba3d38c41bbd56676da75ae8d88ca451301fd0f7"
+    },
+    {
+      "file": "assets/logo_vector_refined_preview_v2.2.png",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/assets/logo_vector_refined_preview_v2.2.png",
+      "bytes": 17288,
+      "sha256": "5e484ea130a16ffffb7fc0302ab2233389d5ddae776c7f5d288641d21ebcef30"
+    },
+    {
+      "file": "assets/logo_monochrome_black_light_background.png",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/assets/logo_monochrome_black_light_background.png",
+      "bytes": 998477,
+      "sha256": "17afe7b487c10bb34aa2edfe88513553e0ab87907e6b27ed65b7a8e5d3c89a87"
+    },
+    {
+      "file": "assets/logo_vector_autotrace_reference_only.svg",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/assets/logo_vector_autotrace_reference_only.svg",
+      "bytes": 17327,
+      "sha256": "3cfea62ddc2c903057e13889aa3094cdf870a3002b7e692720e5ebe479b988c3"
+    },
+    {
+      "file": "assets/logo_geometry_annotation_v1.png",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/assets/logo_geometry_annotation_v1.png",
+      "bytes": 854596,
+      "sha256": "22ead53ea9cf1866382086a048404fe8bcedda7d4e867a545d01662ec7099a58"
+    },
+    {
+      "file": "assets/logo_primary_transparent.png",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/assets/logo_primary_transparent.png",
+      "bytes": 40636,
+      "sha256": "67c8092f2a573d2f412eddde335938aa3f7ece6672d15c5b72e49ad6867a8a9b"
+    },
+    {
+      "file": "assets/logo_primary_color_original.png",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/assets/logo_primary_color_original.png",
+      "bytes": 1188809,
+      "sha256": "c6e89192cf4e875fe69473e7aa453447c558419aa703d822c1e64bd1d71c6237"
+    },
+    {
+      "file": "assets/logo_primary_color_cropped_v1.png",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/assets/logo_primary_color_cropped_v1.png",
+      "bytes": 447172,
+      "sha256": "81c7792d821ec5ebd52e279b8d48be35dd5d6aba87851852300f9407fcd7b2a3"
+    },
+    {
+      "file": "assets/logo_monochrome_white_dark_background.png",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/assets/logo_monochrome_white_dark_background.png",
+      "bytes": 1266485,
+      "sha256": "df767bdaf130614fc795eef77122895f653210dca84dfe3824bc302ad9e71387"
+    },
+    {
+      "file": "assets/logo_white_transparent.png",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/assets/logo_white_transparent.png",
+      "bytes": 50603,
+      "sha256": "78c3d4f1571269607263a6a83ad06d1dd79321605c184c19b3113f21b8b43d51"
+    },
+    {
+      "file": "assets/logo_black_transparent.png",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/assets/logo_black_transparent.png",
+      "bytes": 62542,
+      "sha256": "effd9fa0122acfb4e8de1d621b3c739c8fc7d3a5f9dfeb46067b0a57e106f0a0"
+    },
+    {
+      "file": "docs/REFINED_SVG_NOTES_v2.2.md",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/docs/REFINED_SVG_NOTES_v2.2.md",
+      "bytes": 1440,
+      "sha256": "d088b019791915f8af293b834f9b1c3559ab9a5f9f349c5823c9c474a2d5af54"
+    },
+    {
+      "file": "docs/logo_color_analysis_v2.1.md",
+      "zip_entry": "藥局衛教助手_Brand_Guide_v2.3/docs/logo_color_analysis_v2.1.md",
+      "bytes": 726,
+      "sha256": "7a4bb901aff12c779d898b861ea7b14e08b5b2d2c3713c70b2178650b7884f90"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-23",
+  "original_zip_members_sha256_verified": 23,
+  "png_files": [
+    {
+      "file": "透明Logo_三色三背景對照.png",
+      "size": [
+        1800,
+        815
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "assets/logo_vector_refined_preview_v2.2.png",
+      "size": [
+        2048,
+        684
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "assets/logo_monochrome_black_light_background.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "assets/logo_geometry_annotation_v1.png",
+      "size": [
+        2169,
+        725
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "assets/logo_primary_transparent.png",
+      "size": [
+        1070,
+        554
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/logo_primary_color_original.png",
+      "size": [
+        2048,
+        684
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/logo_primary_color_cropped_v1.png",
+      "size": [
+        1120,
+        574
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "assets/logo_monochrome_white_dark_background.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "assets/logo_white_transparent.png",
+      "size": [
+        1004,
+        533
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/logo_black_transparent.png",
+      "size": [
+        1162,
+        614
+      ],
+      "mode": "RGBA"
+    }
+  ],
+  "source_json_files_valid": 6,
+  "svg_xml_valid": 2,
+  "local_markdown_links_checked": 42,
+  "original_asset_manifest_hashes_dimensions": "passed",
+  "transparent_asset_manifest_hashes_dimensions_alpha": "passed",
+  "brand_colors": "passed",
+  "AGENTS_original_text_preserved": true,
+  "AGENTS_comparison_basis": "HEAD plus pre-existing Search Performance Tracking text inspected at task start; original 27041 UTF-8 bytes preserved",
+  "git_diff_check": "passed",
+  "visual_inspection": "Original PNG and supplied three-color/background contact sheet viewed; not human sign-off",
+  "runtime_AI_loading_tested": false,
+  "human_transparent_asset_approval": "pending",
+  "build_run": false,
+  "commit_push_run": false
+}

@@ -1,0 +1,50 @@
+{
+  "version": "2.0.0",
+  "assets": [
+    {
+      "file": "assets/logo_primary_color_original.png",
+      "sha256": "c6e89192cf4e875fe69473e7aa453447c558419aa703d822c1e64bd1d71c6237",
+      "source_name": "衛教助手logo_v1.png",
+      "width": 2048,
+      "height": 684,
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/logo_primary_color_cropped_v1.png",
+      "sha256": "81c7792d821ec5ebd52e279b8d48be35dd5d6aba87851852300f9407fcd7b2a3",
+      "source_name": "Logo_定稿原圖裁切.png",
+      "width": 1120,
+      "height": 574,
+      "mode": "RGB"
+    },
+    {
+      "file": "assets/logo_monochrome_black_light_background.png",
+      "sha256": "17afe7b487c10bb34aa2edfe88513553e0ab87907e6b27ed65b7a8e5d3c89a87",
+      "source_name": "淺色背景黑色助手標誌.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "file": "assets/logo_monochrome_white_dark_background.png",
+      "sha256": "df767bdaf130614fc795eef77122895f653210dca84dfe3824bc302ad9e71387",
+      "source_name": "深藍背景白色助手標誌.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "file": "assets/logo_vector_autotrace_reference_only.svg",
+      "sha256": "3cfea62ddc2c903057e13889aa3094cdf870a3002b7e692720e5ebe479b988c3",
+      "source_name": "Logo_描摹母版.svg"
+    },
+    {
+      "file": "assets/logo_geometry_annotation_v1.png",
+      "sha256": "22ead53ea9cf1866382086a048404fe8bcedda7d4e867a545d01662ec7099a58",
+      "source_name": "Logo_幾何量測標註.png",
+      "width": 2169,
+      "height": 725,
+      "mode": "RGB"
+    }
+  ]
+}

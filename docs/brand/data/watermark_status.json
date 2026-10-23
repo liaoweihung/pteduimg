@@ -1,0 +1,9 @@
+{
+  "status": "pending_user_approval",
+  "version": "v2.1",
+  "notes": [
+    "Watermark rules are not finalized.",
+    "Prior tests explored lower-right placement and a 70–90% opacity white gradient backdrop.",
+    "No default batch application is approved."
+  ]
+}

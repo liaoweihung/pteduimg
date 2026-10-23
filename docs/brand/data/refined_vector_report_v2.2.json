@@ -1,0 +1,14 @@
+{
+  "red": {
+    "components": 2,
+    "pixels": 90369
+  },
+  "black": {
+    "components": 4,
+    "pixels": 94961
+  },
+  "blue": {
+    "components": 2,
+    "pixels": 32746
+  }
+}

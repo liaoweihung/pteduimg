@@ -1,0 +1,48 @@
+{
+  "status": "approved",
+  "approved_on": "2026-10-22",
+  "source": "Pixel sampling from approved full-color logo PNG",
+  "colors": {
+    "brand_red": {
+      "hex": "#FD2828",
+      "rgb": [
+        253,
+        40,
+        40
+      ],
+      "usage": "face"
+    },
+    "brand_black": {
+      "hex": "#101010",
+      "rgb": [
+        16,
+        16,
+        16
+      ],
+      "usage": "beard, facial lines, monochrome-on-light"
+    },
+    "brand_blue": {
+      "hex": "#013E9C",
+      "rgb": [
+        1,
+        62,
+        156
+      ],
+      "usage": "handwritten 助手"
+    },
+    "brand_white": {
+      "hex": "#FFFFFF",
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "usage": "background and monochrome-on-dark"
+    }
+  },
+  "notes": [
+    "These approved values supersede the earlier temporary color suggestions in v2.0.",
+    "Monochrome variants remain approved as visual assets; their use does not imply transparent overlay masters.",
+    "Watermark rules remain pending and are not finalized in this version."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "basis": "H = visible face height",
+  "source": "v1 raster approximation; not verified vector control points",
+  "face_width_H": 0.994,
+  "face_height_H": 1.0,
+  "wordmark_width_H": 0.913,
+  "wordmark_height_H": 0.54,
+  "face_wordmark_gap_H": 0.106,
+  "wordmark_bottom_offset_H": -0.05,
+  "clear_space_min_H": 0.25,
+  "angle_design_intent_clockwise_deg": 8,
+  "all_numeric_dimensions_status": "approximate_reference_not_enforced"
+}
