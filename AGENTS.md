@@ -1,398 +1,82 @@
-# pteduimg Codex Instructions
-
-This repository is a static GitHub Pages site for pharmacy/public education image cards.
-
-Project skill: for card additions, scheduled card releases, image conversion, and generated-page verification, also consult `skills/pteduimg-card-manager/SKILL.md`.
-
-## Card Data Model
-
-- `cards.json` is the main runtime data source.
-- `cards.manual.json` is a human-maintained companion source. When adding a new card or changing card metadata, keep both files in sync unless the user explicitly says otherwise.
-- Card image paths live under each card's `steps` array.
-- Card series should include useful search keywords or tags when available. If the user asks to add a new card/card series and does not provide keywords or tags, ask what search keywords or labels they want to use before finalizing the metadata.
-- Public education cards use:
-  - `category`: `public_education`
-  - public page: `public.html`
-  - a non-empty `topics` array so the card appears in one or more public-page topic filters. Without `topics`, the card appears only in `全部圖卡`.
-- Use one or more of these public-card topic IDs in `topics`:
-  - `skin_wound`
-  - `eyes`
-  - `oral_health`
-  - `throat`
-  - `infectious_diseases`
-  - `heat_illness`
-  - `insect_repellent`
-  - `gastrointestinal`
-  - `elimination_care`
-  - `growth`
-  - `chronic_conditions`
-  - `sleep`
-  - `pregnancy`
-  - `travel_medication`
-- When adding a public education card, add the same `topics` metadata to both `cards.json` and `cards.manual.json`. Use multiple topic IDs when the card genuinely belongs to more than one topic.
-- Pharmacist cards generally use:
-  - `category`: `pharmacist_general` or `pharmacist_product`
-  - pharmacist page: `index.html`
-  - a non-empty `departments` array so the card appears in the `index.html` horizontal “依科別瀏覽” navigation. Use one or more applicable IDs:
-    - `ophthalmology`
-    - `ent`
-    - `dermatology`
-    - `plastic_surgery`
-    - `colorectal_surgery`
-    - `dentistry`
-    - `obstetrics_gynecology`
-    - `pediatrics`
-    - `chest_medicine_smoking_cessation`
-    - `cardiology`
-    - `chinese_medicine`
-    - `pharmacy_general`
-- When adding a pharmacist card, add the same `departments` metadata to both `cards.json` and `cards.manual.json` when the card exists in both files. Use multiple IDs when the card genuinely belongs to more than one department. Without `departments`, the card appears only under `全部圖卡`.
-
-## 新增圖卡的文字與可信度要求
-
-自本規則建立起，未來新增的每張衛教圖卡（包含新系列、既有系列追加圖片及排程發布圖卡）都必須具備以下資訊，不能只上傳圖片：
-
-- **文字版重點**：與該張圖卡相符的簡短摘要及分段重點，保留重要操作步驟、適用條件與注意事項。以可直接閱讀的靜態 HTML 文字呈現在該張圖卡頁，不得只存在圖片、alt、metadata 或由 JavaScript 動態載入。
-- **內容更新日期**：標示該張內容實際建立或實質修訂的日期，格式為 `YYYY-MM-DD`。初次發布可使用內容完成日期；不得把每次建置、部署或排版調整的日期當成醫療內容更新日期。
-- **資料來源**：列出實際閱讀、核對且能支持該張重點的來源名稱與直接連結，優先採用官方資料、核准仿單、專業學會／診療指引及適當醫學研究。標題宜包含發布單位與文件名稱，版本或發布日期已知時一併註明；不可只列機構首頁、搜尋結果、AI 回答或對話紀錄。
-- **資料查核日期**：標示實際核對上述資料的日期，與內容更新日期分開記錄。不得虛構引用、查核日期、作者資格或審閱狀態；AI 可協助整理，但不能作為醫療證據來源。
-
-依現有 `data/card_content.json` 與 `build.py` 機制保存及產生上述資訊，欄位與驗證步驟見 `skills/pteduimg-card-manager/SKILL.md`。系列可共用確實適用的來源，但每張圖卡頁都必須能看到自己的文字重點、日期與來源連結。
-
-資料不足時，先查找可查證來源；仍無法確認的內容應列明缺項並向使用者釐清，不得用猜測或占位資料宣稱完成。完成上述資訊並驗證頁面後，才可將新增圖卡視為可發布；排程圖卡也須於設定發布前備齊。
-
-本規則不要求自動回補或批次重建既有圖卡。僅修改製作規則時，不執行 `build.py`；未經要求不擴大至舊卡內容改寫。資料選用原則應與 `editorial-policy.html` 一致。
-
-## 新增衛教圖卡標準作業流程
-
-使用者要求「新增圖卡」、「新增圖卡系列」或在既有系列追加圖片時，視為授權完成該次新增工作的完整本機流程；依序處理來源資料、必要建置、管理紀錄與驗證，不要只完成圖片或 `cards.json`。若使用者另有限定範圍，以該範圍為準；未另外授權 Commit、Push 或發布時，到本機驗證完成即停止。
-
-1. **先查現況與需求**：執行 `git status --short`，檢查目標系列、相近系列、`docs/project-management/change-requests.csv`、`page-inventory.csv`、`content-relations.csv` 與總控台。以需求名稱、說明、範圍及 `related_ids` 搜尋既有 CR；同一需求沿用原編號，只有沒有涵蓋本次範圍的紀錄時才新增下一個 `CR-YYYY-NNN`。需求登記不等於核准，但使用者在目前任務的明確新增指示可如實記為該範圍的執行授權。
-2. **確認最小新增範圍**：確認系列 ID、分類、topics/departments、排序、標籤、圖數、頁面 ID 與公開／排程狀態。資料不足時先查證或列為待確認；不得猜測醫療內容、作者／審閱者、授權、商業揭露或日期。不要順帶修改其他系列、藥品資料庫或計算器。
-3. **處理圖片**：依本檔命名及 WebP 規則處理格式、檔名與 `img/` 路徑，保留穩定的頁面 ID、URL 及收藏識別，不重用已退出頁的 ID。
-4. **同步系列與逐頁內容**：同步更新 `cards.json` 與 `cards.manual.json`，並為每張新圖在 `data/card_content.json` 建立唯一、正確配對的紀錄。內容須包含標題、摘要、分段、替代文字、直接來源、真實 `updatedAt`、真實 `sourceCheckedAt` 與修訂歸屬；新內容預設 `needsMedicalReview: true`，除非已有可追溯的人工醫療複核證據。
-5. **加入正確入口與順序**：依 `category`、`topics`／`departments` 及 `order` 使系列出現在 `public.html` 或 `index.html` 的指定位置。首頁清單目前由圖卡資料驅動時，優先修改權威 metadata；只有另有手工精選／導覽清單且本次明確需要時，才最小修改對應 HTML。不要重新設計既有頁首、頁尾或導覽。
-6. **使用既有產生器**：不要手寫 `cards/*.html`。新增圖片、系列或排序會影響全域索引，依本檔的 Full build 規則執行一次 `python build.py`，沿用現有頁首、頁尾、SEO、JSON-LD、sitemap 與 PWA 規則。完整建置是必要的技術輸出更新，不是重新進行全站醫療審核；建置前後檢查 Git diff，避免把無關工作目錄修改混入本次成果。
-7. **增量更新管理系統**：先以 `python -B scripts/check_project_management.py --propose --page PAGE_ID`（每個新 `page_id` 可重複傳入 `--page`）取得新頁機械欄位。人工檢視 stdout 後，按 `page_id` 合併到 `page-inventory.csv`；只更新提案中的機械欄位，新頁人工欄位填 `unknown` 或有真實證據的狀態。不得整列覆蓋既有頁、清掉 `known_issue_ids`、改寫人工簽核或把 `needsMedicalReview` 當成藥師已複核。
-8. **補齊關聯與工作紀錄**：在 `content-relations.csv` 加入每個 `series:<id> -> page:<id>` 的 `has_card` 關聯；只有本次確有主題範圍時才增補主題／子題關聯，不複製圖卡內容。更新該 CR 的狀態、證據、驗證結果及完成日期，並更新 `project-dashboard.md` 的數量、進度與待確認事項；需要保存一次性證據時放在 `docs/project-management/evidence/`。只有既有盤點結論或證據版本真的改變時才追加 `audit-history.md`／`audit-register.json`，不可為新增卡重寫舊報告。
-9. **驗證並收斂提案**：至少執行三份 JSON 語法檢查、`python -B scripts/check_site.py`、`python -B scripts/check_project_management.py`、針對新頁的 `--propose`，以及 `python -B scripts/test_project_management.py`。完成合併後，目標頁 `--propose` 應為零差異；並依變更範圍檢查新頁的文字、雙日期、來源、翻頁、返回入口、收藏、分享、桌機／手機版面及全域輸出。
-10. **完成回報與發布界線**：回報新增系列／頁面數、CR、清冊與關聯變更、建置／測試結果、未完成項目及人工醫療待確認狀態。除非使用者明確要求發布，不自動 Commit、Push 或宣稱 GitHub Pages 已部署。
-
-`--propose` 只提供唯讀機械差異，不會更新 CSV。完整欄位責任、穩定 ID、人工欄位與增量合併規則以 `docs/project-management/README.md` 為準。任何自動化都不得覆蓋 `medical_review_status`、reviewer、review_date、歷史證據、已知問題或其他人工欄位。
-
-## Static Card Pages
-
-This site uses Route B static card share pages.
-
-Every active image listed in a card's `steps` should have a generated page, except pending cards with both `hidden: true` and `publish_at`:
-
-```text
-cards/{image_filename_without_extension}.html
-```
-
-Example:
-
-```text
-img/oral_hygiene_01.webp
-cards/oral_hygiene_01.html
-```
-
-Do not create these HTML files by hand. For a full build, run:
-
-```bash
-python build.py
-```
+# pteduimg AI 專案指令
 
-Choose the build scope before running:
+本 repository 是藥局／公共衛教圖卡的靜態 GitHub Pages 網站。本檔是三種 AI 工具的共同入口，詳細規範依任務讀取。
 
-- Full build: required when adding/removing cards, changing series membership/order, visibility, retirement, or shared templates/site indexes. It clears and regenerates `cards/*.html`, then restores retirement pages; inspect the resulting diff rather than assuming only the requested page changed.
-- Selected-page build: `python build.py --only IMAGE_ID [IMAGE_ID ...]` can regenerate existing individual pages when their URLs, series/navigation, and publication state are unchanged. `IMAGE_ID` is the image filename stem. This does not update `seo.json`, indexes, sitemaps, retirement pages, the integration report, or `sw.js`; if any of these are affected, it is only a preview/intermediate step, not a complete release. It also does not trigger a new service-worker version/update pill.
-- If a task prohibits bulk regeneration but requires changes to global generated outputs, explain the scope conflict before claiming completion; do not silently use a full build.
-- Documentation-only edits do not require either build mode.
+## 工作範圍與規範讀取
 
-A full `build.py` run generates/updates:
+1. 開工先執行 `git status --short`，辨認既有修改與本次授權範圍；保留無關 dirty／untracked 工作。唯讀、計畫或預覽不授權正式修改／發布。
+2. 先以檔案工具讀下表適用文件，再動手修改。Markdown 連結是導覽，不使用大量 inline include、複製全文或調高全域限制。
+3. 以專案版 SOP／Skill 為準；全域同名 Skill 若過舊，仍須讀專案版，不得省略醫療證據與管理流程。不自動同步全域設定。
+4. 文件與程式不一致時核對範圍、版本及輸出並回報，不放寬醫療、簽核與發布限制。歷史報告、範例與待辦不是新授權。
 
-- `cards/*.html`
-- root `404.html`
-- `cards/404.html`
-- `sitemap.xml`
-- `sitemap-main.xml`
-- `all-cards.html`
-- `retired-cards.html` and retired URL notice pages from `cards.retired.json`
-- `data/card_text_web_integration_report.md`
-- `seo.json`
-- `robots.txt`
-- `sw.js`
-
-Generated card pages must keep static Open Graph tags in the HTML head. Do not rely on JavaScript to inject OG tags.
-
-## Static All Cards Index
-
-`build.py` also generates `all-cards.html`, a plain static HTML index of every public card page. This page is part of the SEO crawl surface and must stay updated whenever cards are added, removed, hidden, published, or reordered. Do not edit `all-cards.html` by hand; run:
-
-```bash
-python build.py
-```
+| 任務 | 操作前必讀的詳細規範 |
+|---|---|
+| 新增圖卡／系列、追加圖片、修改圖卡資料 | [專案 Card Manager Skill](skills/pteduimg-card-manager/SKILL.md)；metadata 分類與範例見 [圖卡資料模型](skills/pteduimg-card-manager/references/card-data.md) |
+| 建置、生成頁、排程發布、退出、SEO、快取、Git 發布 | [網站建置、驗證與發布](docs/site-build-and-release.md) 的對應章節 |
+| 清冊、需求、關聯、人工簽核及增量同步 | [專案管理 SOP](docs/project-management/README.md)；從 [總控台](docs/project-management/project-dashboard.md) 查現況 |
+| 品牌、Logo、品牌色、素材 | [品牌入口](docs/brand/README.md)、[Brand Guide v2.3](docs/brand/BRAND_GUIDE_v2.3.md)、[AI 品牌約束](docs/brand/BRAND_GUIDE_AI.md) |
+| 藥局工作工具及其導覽 | [工具與 Hub 維護](docs/pharmacy-tools-maintenance.md)，並核對 Hub repository 的規則 |
+| 青春痘 Pilot／相關產生器／手機版面 | [Pilot 規格](docs/acne-pilot-spec.md) 與本檔「品牌與特殊頁面」的手機規則 |
+| 搜尋成效、索引、手動提交、AI 可見度 | [搜尋追蹤流程](docs/project-management/search-tracking.md) 與 [逐筆歷史](docs/project-management/search-console-history.json) |
 
-After changes, verify that `all-cards.html` links to the expected generated `cards/*.html` pages and that `sitemap.xml` / `sitemap-main.xml` include `all-cards.html`.
-
-Current visibility limitation: the generator excludes cards only when BOTH `hidden: true` and `publish_at` are present. `hidden: true` alone is not a guarantee that the HTML, static index, or sitemap will exclude a card. Neither flag provides access control for files committed to the public repository. Check the actual generated outputs when changing visibility; do not describe unpublished files as private.
+命令／資料路徑以 repository 根目錄為準；品牌包的 `assets/`、`data/` 以 `docs/brand/` 為根目錄。Markdown 連結相對於所在文件。
 
-## Adding A New Image To An Existing Card
+## 醫療內容與人工簽核底線
 
-1. Put the image in `img/`.
-2. Prefer `.webp`. If the user gives PNG/JPG files, convert them to WebP first unless they ask not to.
-3. Add the `img/...webp` path to the correct card's `steps` array in `cards.json`.
-4. If the same card exists in `cards.manual.json`, update that file too. Some manual entries omit `steps`; when in doubt, keep metadata consistent and ask only if needed.
-5. Add one correctly matched record per new image to `data/card_content.json`, including text highlights, actual content update date, source-check date, verified direct references, and truthful revision attribution as specified in the project skill.
-6. Run the full build (new images affect site indexes):
+- 每張新衛教圖卡，包括既有系列追加與排程卡，都須具備與該圖相符的文字摘要／分段重點、真實內容更新日期、實際閱讀核對的直接來源及獨立資料查核日期。這些資訊必須顯示為靜態 HTML，不能只放在圖片、alt、metadata 或由 JavaScript 載入。
+- 依 [編輯與來源政策](editorial-policy.html) 使用官方資料、核准仿單、專業學會／指引及適當研究。來源名稱宜含發布單位、文件名稱與已知版本／日期；機構首頁、搜尋結果、AI 回答或對話紀錄不能當成醫療證據。
+- `updatedAt` 是內容建立或實質修訂日；`sourceCheckedAt` 是實際查核日，格式均為 `YYYY-MM-DD`。不因建置、部署或純排版刷新醫療日期。系列可共用確實適用來源，但每張頁面都要有自己的文字、日期與來源連結。
+- 保存於 `data/card_content.json`，依 Skill 的欄位規則提供真實 `revisionCredit`。不得猜測或虛構來源、日期、作者資格、審閱者、授權或商業揭露；先查證，不足仍須明列缺項，不能用占位資料宣稱可發布。
+- 新內容預設 `needsMedicalReview: true`，只有可追溯的人工醫療複核證據可改。`matchConfidence: high` 只表示圖文配對，不是來源品質或藥師複核；AI 校對、Logo、建置成功或測試通過都不等於醫療簽核。
+- 自動化不得覆蓋 `medical_review_status`、reviewer、review_date、人工確認、既有證據、歷史簽核與已知問題。沒有真實簽核，不得標記 `pharmacist_reviewed`；新頁人工欄位填 `unknown` 或有證據的狀態。
+- 新卡要求不構成回補所有舊卡的授權。純文件或規則整理不改衛教正文、不重審全站、不執行 `build.py`；已授權的新卡完整建置只是技術輸出更新。
 
-```bash
-python build.py
-```
+## 圖卡工作與資料責任
 
-7. Verify:
+`cards.json` 是 runtime 系列來源，`cards.manual.json` 是人工伴隨來源；新增或改 metadata 時同步兩者，除非使用者明示例外。圖片路徑位於 `steps`。既有 manual 缺項／省略 steps 的處理依 Skill 與當地資料慣例，不擅自補全無關系列。
 
-```bash
-python -m json.tool cards.json
-python -m json.tool cards.manual.json
-python -m json.tool data/card_content.json
-python scripts/check_site.py
-```
+民眾卡使用 `public_education`、入口 `public.html`，需要非空 `topics`；藥師卡通常使用 `pharmacist_general`／`pharmacist_product`、入口 `index.html`，需要非空 `departments`。合法 ID 見資料模型文件；可有多個真實適用分類。缺少分類只會出現在全部圖卡，不能當作已完成篩選入口。
 
-8. For a non-pending card, check that the generated page exists, for example:
+使用者新增圖卡／系列或追加圖片的指示，授權該次完整本機流程：查現況與既有 CR → 確認最小範圍 → 圖片處理 → 同步系列與逐頁文字 → 正確入口／排序 → 必要建置 → 清冊及關聯增量更新 → 驗證與回報。若使用者限定範圍，以限定為準；不能只上傳圖片或只改一份 JSON 就宣稱完成。
 
-```text
-cards/wound_4_soln.html
-```
+新增卡／系列未提供搜尋關鍵字或標籤時，定稿 metadata 前須詢問。保留穩定系列 ID、頁面 ID、URL、收藏識別；不重用退休頁 ID。一般圖卡 PNG/JPG 優先轉 WebP，除非使用者要求保留格式；正式 Logo 遵守品牌 PNG 母版規則，不能套用圖卡轉檔流程覆寫它。
 
-9. Check the page's static text, visible update/check dates and source links, and the corresponding entries in both sitemaps, `all-cards.html`, `seo.json`, and the `sw.js` generated asset list. For pending cards, verify source completeness and exclusion from public generated outputs instead; see scheduled-check limitations below.
+需求依名稱、說明、範圍與 `related_ids` 搜尋，涵蓋同一需求就沿用 CR；沒有才新增下一個 `CR-YYYY-NNN`。登記不等於核准，明確授權可如實記錄。不得順帶改其他系列、藥品資料庫、計算器或重設頁首／頁尾。
 
-## Adding A New Card Series
+## 建置、可見性與驗證
 
-Add a new top-level key to `cards.json`, for example:
+- `cards/*.html`、`all-cards.html` 等由既有產生器維護，不手寫生成頁。新增／移除圖片或系列、系列歸屬／排序、可見性、退出、共用模板或全域索引變更需 full build：`python build.py`。它會清除重建圖卡 HTML 並恢復退出頁，建置前後必須檢查 diff。
+- 既有單頁且 URL、導覽及發布狀態不變，才可用 `python build.py --only IMAGE_ID [IMAGE_ID ...]`；ID 為圖片檔名 stem。它不更新全域 SEO、索引、sitemap、退出頁、整合報告或 worker 版本，不能當成影響這些輸出的完整發布。禁止批次重建與全域更新需求衝突時，先說明範圍衝突。
+- `hidden: true` 加上 `publish_at` 才是 pending 排除條件；hidden 單獨存在不保證排除 HTML／索引／sitemap。兩者都不是存取控制，公開 repository 中的檔案不能稱為私密。
+- 排程採帶時區 ISO 8601，台灣優先 `+08:00`，兩份 JSON 同步。`publish_at` 只設定到期門檻，必須真正執行 publisher 才會切換 visible；目前 workflow 僅手動觸發，不得承諾時間到自動發布或擅自加排程。設定前先備齊文字、日期及來源。
+- 退出時保留原圖、ID、URL 與來源歸屬，從 active steps 移除並登記 `cards.retired.json`；不直接刪舊頁、不捏造替代頁。完整 schema、`noindex`、替代連結與索引檢查依建置文件。
+- 修改首頁行為、圖卡版面／生成頁、快取、analytics、`build.py` 或工具導覽後，執行 `python -B scripts/check_site.py`；靜態 OG 必須留在 HTML head。此檢查不認證醫療正確性，也不取代新卡逐項完整性與桌機／手機操作驗證。
+- pending 的 high-confidence 文字仍可能被現有檢查器要求生成頁，整合報告亦可能受影響。必須區分這項已知限制與真實公開頁錯誤，不降信心、不刪文字、不提前發布來使檢查通過；修正不在範圍時回報未解限制與定點結果。
 
-```json
-"bugspray": {
-  "title": "防蚊液",
-  "category": "public_education",
-  "order": 8,
-  "hidden": false,
-  "icon": "🦟",
-  "topics": ["insect_repellent"],
-  "tags": ["防蚊", "蚊蟲叮咬"],
-  "steps": [
-    "img/bugspray_1.webp",
-    "img/bugspray_2.webp",
-    "img/bugspray_3.webp"
-  ]
-}
-```
+## 管理紀錄與完成標準
 
-Then mirror the appropriate metadata in `cards.manual.json`, prepare the required per-image records in `data/card_content.json`, and follow the full build and verification steps above. Example tags are illustrative; follow the keyword clarification rule for the actual request. Pharmacist series must use suitable `departments` instead of public-card `topics`.
+新頁建置後用 `python -B scripts/check_project_management.py --propose --page PAGE_ID` 取得唯讀提案（多頁重複 `--page`）；檢視 stdout 後按 `page_id` 合併機械欄位，不整列／整份覆蓋 CSV，不清空 `known_issue_ids` 或改人工欄位。`--propose` 本身不會更新 CSV。
 
-## Retiring Or Replacing Cards
+加入每頁的 `series:<id> -> page:<id>` `has_card` 關聯；只有本次確有主題範圍才新增主題關聯，多主題共用原頁而不複製正文。更新 CR 狀態／證據／驗證結果／完成日期及總控台數量、進度、待確認項目。一次性證據放既有 evidence 目錄；只有盤點結論或證據版本真的改變才追加 audit-history／audit-register，不重寫舊報告。
 
-- For an intentional retirement, remove the image from active `steps` in both card sources where present, and add its record to `cards.retired.json`; do not simply delete its image or old URL.
-- Follow the schema validated by `scripts/card_archive.py`: `image`, `page`, `title`, `retired_at` (`YYYY-MM-DD`), `reason`, and non-empty `replacements`. Preserve the old image and URL; replacement `page` values must refer to active cards. Inspect existing records for the full replacement shape. If no suitable replacement exists, report the current schema limitation instead of inventing one.
-- Preserve existing text provenance and unrelated image/favorite identities. Do not reuse a retired URL for unrelated content.
-- Run a full build to generate the old URL notice with `noindex`, replacement links, and `retired-cards.html`. Verify removal from active indexes, availability of the old URL and image, the archive entry, and working replacement links with `python scripts/check_site.py` plus targeted inspection.
+新卡須檢查三份 JSON，執行 `python -B scripts/check_site.py`、`python -B scripts/check_project_management.py`、目標頁 `--propose`、`python -B scripts/test_project_management.py`。合併後目標提案應零差異；實際錯誤不能隱去。依範圍檢查雙日期、來源、翻頁、返回、收藏、QR／分享、手機／桌機與全域輸出。
 
-## Scheduled Card Publishing
+## 品牌與特殊頁面
 
-Prepared card series can be committed before they are visible on the site.
+品牌色固定為 `#FD2828`、`#101010`、`#013E9C`。正式外觀母版是 [定稿 PNG](docs/brand/assets/logo_primary_color_original.png)；禁止 AI 重製、重畫、改形、改手寫字或覆寫，保留原始比例、構圖與方向。三種透明 Logo 待人工視覺驗收；SVG 不是正式母版且精修暫停；浮水印未定稿，不得自動批次套用。品牌文件不能取代醫療與人工簽核規則。
 
-Use:
+青春痘維持「圖卡 → 上一張／下一張 → 文字版重點 → 你可能想知道 → 查看青春痘完整主題 → 頁尾」。翻頁列在圖卡下方正常文件流，不固定於螢幕底部。手機樣式／共用頁尾套用不擴大四頁 Pilot 問題導覽名單；內容、連結、樣式或 bug 修正不順帶重構；明確要求改版時可修訂 v1.0。
 
-```json
-"hidden": true,
-"publish_at": "2026-06-01T09:00:00+08:00"
-```
+藥局工具增刪改名、搬移或退出須依 Hub 規範查工具目錄、首頁入口、目的 URL 與返回導覽；無需修改也須回報已查且一致。Hub 是另一個 repository，不把 `output/hub` 放進 pteduimg 提交；未公開原型不自行列入工具目錄。
 
-Rules:
+## 快取、發布與證據界線
 
-- Add `publish_at` to both `cards.json` and `cards.manual.json`.
-- Keep `hidden: true` until publication time.
-- Use an ISO 8601 date-time with timezone. Prefer Taiwan time with `+08:00`.
-- The current `.github/workflows/scheduled-card-publish.yml` has only `workflow_dispatch` (manual trigger), not an hourly schedule. `publish_at` is a due-time threshold; reaching it alone does not publish anything. State the actual trigger mechanism when preparing a release, and do not enable recurring publication merely to match old documentation.
-- Prepare the required text, dates, and verified sources before scheduling. Validate source records while pending and rendered pages upon publication.
-- While a card has both `hidden: true` and `publish_at`, `build.py` treats it as pending:
-  - it is not included in generated `cards/*.html`
-  - it is not included in `sitemap.xml`
-  - its images are excluded from the generated service-worker asset list (which is distinct from the smaller install-time core pre-cache)
-- When the workflow is manually triggered and `publish_at` has arrived, it:
-  - changes `hidden` to `false` in both JSON files
-  - updates `CHANGELOG.md`
-  - runs `python build.py`
-  - runs JSON checks and `python scripts/check_site.py`
-  - commits the files explicitly listed in its `git add` command
-- If no scheduled cards are due, the workflow makes no commit.
+維持 cache-first、背景抓更新與穩定 runtime cache；不擅改 network-first 或加 cache-busting 參數。只有 `coreUrlsToCache` 在安裝時預快取，較大的生成清單不等於全部已下載。兩首頁保留 `#update-light`；`skipWaiting()`／`clients.claim()` 的 worker 接管不等於頁面重載，使用者點擊提示才重新整理，不強制刷新或順帶重設啟動策略。
 
-Current workflow limitation: that commit list omits some full-build outputs, including `all-cards.html`, `sitemap-main.xml`, `retired-cards.html`, and the integration report. Before using it for a release, address this within the authorized publishing task or use a verified local build/commit that includes all affected outputs. Do not report a fully synchronized publication merely because the workflow succeeded.
+未經使用者明確授權，不 Commit、Push 或部署；完成後列出本次來源、管理紀錄及必要生成產物供審核／GitHub Desktop 使用。已授權發布也只納入相關檔案，不 `git add .`、不清除無關改動、不強制推送；排除 Python cache 與巢狀 Hub repository。成功 Push 不是 Pages 部署完成證據。
 
-Manual local test:
+發布前依建置文件核對完整產物清單：現有 `auto-build.yml` 只在 `index.html`／`img/**` 變更時觸發且僅提交 `sw.js`；手動排程 workflow 的提交清單亦有缺漏。不能僅憑 workflow 成功宣稱完整同步，也不能為配合舊文件擅改 CI。
 
-```bash
-python scripts/publish_scheduled_cards.py --dry-run
-python scripts/publish_scheduled_cards.py --now 2026-06-01T09:00:00+08:00 --dry-run
-```
+搜尋追蹤先讀流程與完整歷史路徑。使用者已授權將實際取得的提交結果／觀測附日期、可核對證據持續追加並同步總控台；保留基準，缺資料不填零，提交日、觀測收錄日與上次檢索日分開。此落檔授權不含自動提交索引、改網站或 Commit／Push。
 
-## Image Conversion
-
-Use Pillow when available:
-
-```python
-from PIL import Image
-
-with Image.open(src) as image:
-    image.save(dst, "WEBP", quality=90, method=6)
-```
-
-Keep filenames lowercase English when possible, with underscores and numeric suffixes:
-
-```text
-img/bugspray_1.webp
-img/bugspray_2.webp
-img/bugspray_3.webp
-```
-
-## Local Testing
-
-After running `build.py`, test:
-
-- `public.html` for public education cards.
-- `index.html` for pharmacist cards.
-- The generated card page under `cards/`.
-
-For card pages, verify:
-
-- Image appears below the top toolbar.
-- Previous/next arrows work within the same series.
-- `返回首頁` returns to `public.html` for `public_education` cards and `index.html` for other cards.
-- QR uses the `/cards/xxx.html` URL.
-- Share uses the `/cards/xxx.html` URL.
-- Favorite uses the existing `favImages` localStorage format.
-
-## Offline Cache and Update Experience
-
-The site intentionally uses a cache-first service-worker strategy for HTML, scripts, and data. Serve the cached page immediately for a fast, reliable offline-friendly experience, while fetching a newer version in the background. Do not change this to network-first or add cache-busting query parameters unless the user explicitly requests it.
-
-Only `coreUrlsToCache` is pre-cached during installation. The larger generated `urlsToCache` list is not proof that all images/pages have been downloaded; non-core assets are generally cached when fetched. Preserve the stable runtime cache for previously viewed content.
-
-Keep the existing update pill (`#update-light`) on both `index.html` and `public.html`. When a new service worker has installed while an older one controls the current page, the pill must appear. The current worker uses `skipWaiting()` and `clients.claim()` to activate/take control automatically; this is distinct from reloading the displayed document. Users choose when to reload via the pill. Do not force reloads or silently replace the displayed page, and do not redesign worker activation as part of unrelated edits.
-
-## Regression Check
-
-After changing homepage behavior, card page layout, service worker caching,
-analytics, generated card pages, or `build.py`, run:
-
-```bash
-python scripts/check_site.py
-```
-
-This checks key site invariants, including:
-
-- `cards.json` and `cards.manual.json` are valid JSON.
-- Referenced images and generated `cards/*.html` pages exist.
-- Homepage viewer keeps both transparent side-tap navigation and visible bottom navigation buttons.
-- Homepage card data loading does not bypass cache.
-- Service-worker fresh assets remain cache-first, with background updates.
-- The update pill remains available for user-initiated version updates.
-- Static card pages register the service worker.
-- Static card pages keep side navigation and bottom page navigation.
-- Static card page titles do not include redundant step-number suffixes.
-- Local/private-network previews do not load GA unconditionally.
-- `sw.js` keeps the stable runtime cache for previously viewed pages/images.
-
-These checks do not certify medical accuracy or universally require sources/update dates for new cards. Explicitly verify the new-card checklist in the project skill as well.
-
-Current pending-card limitation: `check_static_card_text_content` includes all non-retired `matchConfidence: "high"` records, even for scheduled hidden cards whose pages are intentionally not generated. This can cause a missing-page failure; other pending records may also affect the integration report. Diagnose and report this separately from actual published-page failures. Do not lower matching confidence, remove required text, or publish early to make a check pass. Fix the check when that work is in scope; otherwise report the unresolved limitation and targeted checks performed, not an all-pass result.
-
-## Pharmacy Tool Pages and Hub Synchronization
-
-Whenever adding, modifying, renaming, moving, retiring, or removing a pharmacy work tool page, check the corresponding hub pages as part of the same task and update them when needed.
-
-- The tool directory is a separate page: `https://liaoweihung.github.io/hub/pharmacy-tools.html`.
-- `https://liaoweihung.github.io/hub/index.html` contains only the directory entry. Keep `藥局工作用工具` as the last entry, immediately after `藥師自我學資料分享`; do not embed the tool list in the hub homepage.
-- Tool implementations and their assets may remain in `/pteduimg/`. Hub tool links must point to their correct published URLs, including any nested paths such as `/pteduimg/web/`.
-- For new public pharmacy work tools, add an entry to `hub/pharmacy-tools.html`. For existing tools, check the displayed name, description, URL, ordering, and availability; update affected entries and any displayed tool count. Do not automatically list unpublished prototypes or hidden tools.
-- Tool return links, including links rendered by shared JavaScript shells, should lead to `https://liaoweihung.github.io/hub/pharmacy-tools.html`. Check the directory link in `pteduimg/calc.html` as well.
-- Verify the hub homepage entry, the complete tool directory, tool destinations, and return navigation. If a tool change does not require a hub edit, explicitly report that the hub was checked and remains consistent.
-- `hub` and `pteduimg` are separate Git repositories. Locate the hub checkout and verify its remote is `https://github.com/liaoweihung/hub.git` before editing. A checkout may exist at `output/hub/`, but this is a local working location, not the published URL. Never stage the nested hub repository as part of a pteduimg commit.
-- If hub source is unavailable, obtain the repository or report the missing synchronization work; do not silently mark the task complete. When publishing is requested, commit/push each affected repository separately and identify both results. Publish a new hub directory page before links that depend on it.
-- Changes to tool navigation must preserve the existing cache-first strategy and user-initiated update experience. Run `python scripts/check_site.py` after changes to tool navigation or shared tool shells.
-
-## Git / Publishing
-
-The user often publishes with GitHub Desktop.
-
-After verification, inspect the diff and identify all files affected by this task. Include only changed, relevant sources and generated outputs; the following is a checklist, not a command to stage everything:
-
-- changed image files under `img/`
-- changed `cards.json`
-- changed `cards.manual.json` when applicable
-- `data/card_content.json`
-- `cards.retired.json` when retiring cards
-- generated `cards/*.html`
-- `sitemap.xml`
-- `sitemap-main.xml`
-- `all-cards.html`
-- `retired-cards.html`
-- root `404.html` and `cards/404.html`
-- `data/card_text_web_integration_report.md`
-- `CHANGELOG.md` when updated
-- `seo.json`
-- `robots.txt`
-- `sw.js`
-- any source/template files changed, especially `build.py`
-
-If commit/push is requested, perform it within the authorized scope; otherwise tell the user which files to publish through GitHub Desktop. Keep unrelated untracked work and the nested hub repository out of the commit. A successful push is not proof of a completed Pages deployment.
-
-The current `auto-build.yml` triggers only on `index.html` or `img/**` changes and commits only `sw.js`, despite running a full build. Do not rely on it to publish all generated changes or to update the worker for every kind of edit; prepare and verify the complete release locally or address the workflow explicitly when in scope.
-
-Do not include Python cache files. `.gitignore` already ignores:
-
-```text
-__pycache__/
-.codex_index_*
-```
-
-## Important Rule
-
-Uploading an image to `img/` is not enough. A card appears on the site only after:
-
-```text
-image exists -> synchronized series metadata -> per-image text, dates and verified sources -> appropriate build and checks -> relevant changes committed/pushed -> Pages deployment completes
-```
-
-For pending cards, publication additionally requires the due-card publisher to actually run and switch the card to visible; saving `publish_at` alone is insufficient.
-
-## Acne Topic Pilot
-
-青春痘 Pilot 的版型規格以 `docs/acne-pilot-spec.md` 為準。
-修改青春痘 Pilot 頁面或相關生成程式前，先閱讀該規格。
-
-青春痘主題全部系列的手機圖卡、翻頁列與共用頁尾套用規則見 `docs/acne-mobile-card-rollout.md`。使用者已確認三張示範頁，後續套用時遵循該文件的範圍與驗收要求；翻頁按鈕排在圖卡下方的正常文件流中，不固定於螢幕底部。此套用不擴大四頁 Pilot 的問題導覽名單。
-
-未經使用者明確要求，不要自行改變以下基本順序：
-
-圖卡 → 上一張／下一張 → 文字版重點 → 你可能想知道 → 查看青春痘完整主題 → 頁尾
-
-如果任務只是修改內容、連結、樣式或修 bug，不要順便重構這個版型。
-若未來使用者明確要求改版，可以正常修改規格，不需要把目前 v1.0 視為不可變動。
-
-## Website Change Tracking
-
-所有會影響公開網站、生成頁、圖片、樣式、JavaScript、公開資料、SEO、PWA 或建置／發布流程的工作，結束前都必須更新或沿用對應 CR，並執行：
-
-```powershell
-python -B scripts/project_change_tracker.py --check
-```
-
-需要查詢時可直接執行 `python -B scripts/project_change_tracker.py`，或用 `--page PAGE_ID`、`--series SERIES_ID`、`--request CR-ID` 精確篩選。工具直接讀 Git 歷史及目前工作目錄，技術變更不再靠人工抄寫總控台；總控台保存專案判斷與下一步。新 CR 與網站變更同次提交時 `git_commit` 可填 `same_commit`，歷史補登填實際 SHA。若檢查顯示「缺少管理連結」或「有管理檔但未連結需求」，不得宣稱管理紀錄已同步。
-
-此工具與 GitHub 檢查都是唯讀，不會修改網站或人工欄位。`medical_review_status`、審閱者、審閱日期、作者授權、商業揭露及 Search Console 實際結果仍只依真實證據人工記錄。沒有 Commit／Push 授權時仍停在本機驗證完成。
-
-## Search Performance Tracking
-
-每次執行搜尋成效、索引、手動提交或 AI 可見度追蹤，先讀 `docs/project-management/search-tracking.md` 與 `search-console-history.json`。使用者已授權將實際取得的提交結果及觀測持續追加到管理紀錄，附日期與可核對證據並同步總控台，不得只回報在對話中。保留歷史基準，缺資料不填零；提交日期、觀測收錄日期與上次檢索日期分開。此紀錄授權不包含自動提交索引、修改網站或 Commit/Push。
+既有 Gemini review 只在使用者明確要求時使用；相關 [Skill](skills/gemini-review/SKILL.md) 與合約不因這張導覽表自動啟用。Live 的 `BLOCKED / ISOLATION_UNVERIFIED` 封鎖維持，不繞過執行器；提示文字不是技術隔離，AI 意見不是藥師複核。無法啟動的 AI 載入測試標記「未測試」，不把路徑檢查或模擬結果當成實際模型通過。
