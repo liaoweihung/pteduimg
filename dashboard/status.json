@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-23T23:35:42+08:00",
-  "baseline": "2748d773867a4d16942351578919d89a77f1774d",
-  "scope": "網站來源快照；版本 2748d773",
+  "generatedAt": "2026-10-24T00:08:50+08:00",
+  "baseline": "e7bd10dcb6e0ef4391105126ccee76a596b706eb",
+  "scope": "網站來源快照；版本 e7bd10dc",
   "counts": {
-    "cards": 381,
-    "series": 86,
-    "allSeries": 90,
+    "cards": 382,
+    "series": 87,
+    "allSeries": 91,
     "hidden": 4,
     "retired": 4,
     "areas": 15,
@@ -610,6 +610,17 @@
       "id": "smecta_diarrhea",
       "title": "舒腹達與腹瀉",
       "count": 3,
+      "hidden": false,
+      "areas": [],
+      "departments": [
+        "pediatrics",
+        "pharmacy_general"
+      ]
+    },
+    {
+      "id": "kidsolone_oral_solution",
+      "title": "必爾生口服液",
+      "count": 1,
       "hidden": false,
       "areas": [],
       "departments": [
@@ -4114,25 +4125,25 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 222,
+      "machine_pass": 223,
       "partial": 1,
       "missing": 158
     },
     "reference_status": {
       "missing": 243,
-      "machine_pass": 138
+      "machine_pass": 139
     },
     "date_status": {
       "missing": 243,
-      "machine_pass": 117,
+      "machine_pass": 118,
       "partial": 21
     },
     "footer_status": {
       "missing": 278,
-      "machine_pass": 103
+      "machine_pass": 104
     },
     "jsonld_status": {
-      "machine_pass": 179,
+      "machine_pass": 180,
       "missing": 202
     }
   },
