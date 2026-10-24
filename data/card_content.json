@@ -2410,6 +2410,34 @@
     "needsMedicalReview": true
   },
   {
+    "cardId": "ped_fever_reducer",
+    "title": "舒抑痛口服懸液：兒童退燒劑量與使用注意事項",
+    "image": "img/idofen_suspension.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/idofen_suspension.html",
+    "summary": "舒抑痛口服懸液（Idofen Suspension）每 1 mL 含 Ibuprofen 20 mg，屬非類固醇消炎止痛藥；核准適應症為消炎、鎮痛及解熱。6 個月至 12 歲兒童的給藥量須依體重、症狀與醫師處方確認。",
+    "sections": [
+      {"heading": "舒抑痛是什麼藥？", "text": "「生達」舒抑痛口服懸液 20 毫克／毫升（異布洛芬），英文品名 IDOFEN SUSPENSION 20MG/ML \"STANDARD\" (IBUPROFEN)，許可證字號衛署藥製字第045438號。本品每 1 mL 含 Ibuprofen 20 mg，每 5 mL 含 100 mg，屬 NSAIDs（非類固醇消炎止痛藥）。核准適應症為消炎、鎮痛及解熱。"},
+      {"heading": "舒抑痛兒童劑量怎麼計算？", "text": "核准仿單對 6 個月至 12 歲兒童的解熱用量，依體溫建議每次 0.25 或 0.5 mL/kg；換算為 Ibuprofen 每次 5 或 10 mg/kg。兒童止痛建議每次 0.5 mL/kg。每日最高建議量為 2 mL/kg（40 mg/kg）。下列僅為每次體重換算示例：10 kg 對應 2.5 或 5 mL；15 kg 對應 3.75 或 7.5 mL；20 kg 對應 5 或 10 mL。實際選用哪一劑量，須依症狀及醫師處方，不應由家長自行套用換算表。"},
+      {"heading": "舒抑痛多久可以吃一次？", "text": "仿單記載兒童解熱作用一般維持 6～8 小時，兒童輕至中度疼痛的建議用藥間隔為每 6～8 小時一次。請依處方間隔使用，不要自行縮短或超過每日最高用量。6 個月以下嬰兒應先由醫師評估，不宜自行使用。"},
+      {"heading": "使用時要注意什麼？", "text": "使用前先搖勻，以口服針筒或量杯量取，不使用一般湯匙。同時服用感冒藥或止痛藥時，先確認是否重複含退燒止痛成分。曾對 Ibuprofen、Aspirin 或其他 NSAIDs 出現過敏、氣喘或蕁麻疹反應者，避免使用並詢問醫師或藥師。"},
+      {"heading": "舒抑痛有哪些副作用？", "text": "醫院藥品資料列出胃腸不適、頭昏、紅疹與耳鳴等可能副作用。若用藥後出現喘、臉部腫脹、嚴重嘔吐、黑便、血便或活動力明顯下降，應立即就醫。"},
+      {"heading": "舒抑痛和依普芬有什麼不同？", "text": "舒抑痛與依普芬都是含 Ibuprofen 的兒童退燒止痛藥水。成大醫院藥劑部的產品替換公告記載兩品項均為 20 mg/mL，但製造廠及許可證不同；使用時仍須核對手上產品的濃度、核准用法及處方，不能只依商品名稱互換用量。本系列上一張圖卡是依普芬。"},
+      {"heading": "常見問題", "text": "舒抑痛可用於解熱、鎮痛及消炎；安佳熱常見成分為 Acetaminophen，和本品的 Ibuprofen 不同。若孩子服藥後吐了，是否補服取決於時間及實際吸收情況，應詢問醫師或藥師，不自行重複給藥。"}
+    ],
+    "altText": "舒抑痛口服懸液 Idofen 兒童 Ibuprofen 退燒藥水成分、體重劑量、給藥間隔與注意事項圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-10-24",
+    "sourceCheckedAt": "2026-10-24",
+    "references": [
+      {"title": "舒抑痛口服懸液核准仿單（衛署藥製字第045438號；版本日期 2024-06-25）", "url": "https://wwwhf.vghks.gov.tw/DIIdentify/KH/drugpdf/09076.pdf"},
+      {"title": "國軍高雄總醫院：舒抑痛口服懸液 20 mg/mL 藥品資料", "url": "https://reg.802.mnd.gov.tw/Med/PharmaBooks/Keyword_Detail/4Xvy9yw89n-2Gt4ZC2JO4MW22Q62vELb20KhVwTViaQ="},
+      {"title": "國立成功大學醫學院附設醫院藥劑部：舒抑痛與依普芬品項替換公告（2025-07-15）", "url": "https://nckuhpharmacy.hosp.ncku.edu.tw/var/file/72/1072/img/745/894667448.pdf"}
+    ],
+    "revisionCredit": "使用者提供圖卡與文字並聲明已人工審核；本站整理靜態文字及核對直接來源"
+  },
+  {
     "cardId": "oral_hygiene",
     "title": "口腔清潔",
     "summary": "漱口水應依防蛀、抗菌或清新口氣等需求選擇，且不能取代刷牙與牙線。",

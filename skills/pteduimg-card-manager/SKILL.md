@@ -135,10 +135,10 @@ During integration, prefer checks targeted to the changed page IDs and series. A
 ```powershell
 python -B scripts/check_site.py
 python -B scripts/check_project_management.py --summary --report-file outputs/management-check-latest.json
-python -B scripts/test_project_management.py
 python -B scripts/project_change_tracker.py --check
-python -B scripts/test_project_change_tracker.py
 ```
+
+For ordinary changes limited to card images, JSON, CSV, and text data, do not run `scripts/test_project_management.py` or `scripts/test_project_change_tracker.py` by default. When the corresponding Python scripts or validation logic change, or an anomaly needs investigation, run the relevant unit test(s). This does not replace the site and management checks above or the required targeted `--propose`.
 
 When a reviewed baseline report exists, add `--baseline-file PATH` to distinguish new, resolved, worsened, and persistent issues by stable IDs. Without one, the summary cannot establish whether new errors are absent; inspect the complete report for relevant failures. The summary keeps the full validator's failure exit code. Do not use a fresh report as an automatically approved baseline or suppress new, worsened, or unclassified errors. Run the targeted `--propose` whenever management data changes, including after corrections; additional tests are appropriate when a new change, result, or diagnostic question requires them. Avoid rerunning identical checks when nothing relevant changed.
 

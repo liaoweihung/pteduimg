@@ -3279,6 +3279,19 @@
     "twitter_card": "summary_large_image",
     "tracking_title": "依普芬｜藥局衛教助手"
   },
+  "cards/idofen_suspension.html": {
+    "page_title": "舒抑痛口服懸液：兒童退燒劑量與使用注意事項｜藥局衛教助手",
+    "meta_description": "舒抑痛口服懸液（Idofen Suspension）每 1 mL 含 Ibuprofen 20 mg，屬非類固醇消炎止痛藥；核准適應症為消炎、鎮痛及解熱。6 個月至 12 歲兒童的給藥量須依體重、症狀與醫師處方確認。",
+    "h1": "舒抑痛口服懸液：兒童退燒劑量與使用注意事項",
+    "image_alt": "舒抑痛口服懸液 Idofen 兒童 Ibuprofen 退燒藥水成分、體重劑量、給藥間隔與注意事項圖卡",
+    "keywords": "舒抑痛, 舒抑痛口服懸液, 生達舒抑痛, Idofen, Idofen Suspension, Ibuprofen, Ibuprofen 20mg/mL, 異布洛芬, 舒抑痛兒童劑量, 舒抑痛怎麼吃, 舒抑痛退燒, 舒抑痛副作用, 舒抑痛幾小時吃一次, 兒童退燒藥水, 退燒藥水體重劑量",
+    "og_title": "舒抑痛口服懸液：兒童退燒劑量與使用注意事項｜藥局衛教助手",
+    "og_description": "舒抑痛口服懸液（Idofen Suspension）每 1 mL 含 Ibuprofen 20 mg，屬非類固醇消炎止痛藥；核准適應症為消炎、鎮痛及解熱。6 個月至 12 歲兒童的給藥量須依體重、症狀與醫師處方確認。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/idofen_suspension.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/idofen_suspension.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/idofen_suspension.html",
+    "twitter_card": "summary_large_image"
+  },
   "cards/notice_ped_fever_reducer.html": {
     "page_title": "小兒發燒注意事項｜兒科退燒藥水｜藥局衛教助手",
     "meta_description": "這張圖卡整理「小兒發燒注意事項」重點，幫助民眾了解兒科退燒藥水相關衛教資訊，方便就醫或諮詢藥師時參考。",

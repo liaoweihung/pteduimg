@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：224
+- 成功加入文字頁數：225
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -68,6 +68,7 @@
 | Ped_abx_susp | 整合全部的步驟 | https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_8.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | ped_fever_reducer | 安佳熱 | https://liaoweihung.github.io/pteduimg/cards/antiphen.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | ped_fever_reducer | 依普芬 | https://liaoweihung.github.io/pteduimg/cards/ibuprofen_sol.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_fever_reducer | 舒抑痛口服懸液：兒童退燒劑量與使用注意事項 | https://liaoweihung.github.io/pteduimg/cards/idofen_suspension.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | oral_hygiene | 口腔清潔 | https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | oral_hygiene | 口腔清潔 | https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | oral_hygiene | 口腔清潔 | https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_03.html | 是 | 是 | 是 | 是 | 是 | 無 |
