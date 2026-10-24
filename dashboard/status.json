@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-24T00:08:50+08:00",
-  "baseline": "e7bd10dcb6e0ef4391105126ccee76a596b706eb",
-  "scope": "網站來源快照；版本 e7bd10dc",
+  "generatedAt": "2026-10-24T10:39:19+08:00",
+  "baseline": "15ab94ab38132383f7c9cd9582d21c36d36e851c",
+  "scope": "網站來源快照；版本 15ab94ab",
   "counts": {
-    "cards": 382,
+    "cards": 383,
     "series": 87,
     "allSeries": 91,
     "hidden": 4,
@@ -579,7 +579,7 @@
     {
       "id": "ped_fever_reducer",
       "title": "兒科退燒藥水",
-      "count": 3,
+      "count": 4,
       "hidden": false,
       "areas": [],
       "departments": [
@@ -1744,8 +1744,7 @@
       "issues": [
         "reference_status",
         "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
@@ -2671,8 +2670,15 @@
       "issues": [
         "reference_status",
         "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
+      ]
+    },
+    {
+      "title": "舒抑痛口服懸液：兒童退燒劑量與使用注意事項",
+      "path": "cards/idofen_suspension.html",
+      "series": "ped_fever_reducer",
+      "issues": [
+        "footer_status"
       ]
     },
     {
@@ -2952,8 +2958,7 @@
         "text_status",
         "reference_status",
         "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
@@ -4125,31 +4130,31 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 223,
+      "machine_pass": 224,
       "partial": 1,
       "missing": 158
     },
     "reference_status": {
       "missing": 243,
-      "machine_pass": 139
+      "machine_pass": 140
     },
     "date_status": {
       "missing": 243,
-      "machine_pass": 118,
+      "machine_pass": 119,
       "partial": 21
     },
     "footer_status": {
-      "missing": 278,
+      "missing": 279,
       "machine_pass": 104
     },
     "jsonld_status": {
-      "machine_pass": 180,
-      "missing": 202
+      "machine_pass": 184,
+      "missing": 199
     }
   },
   "sync": {
-    "pages": 386,
-    "fields": 392,
+    "pages": 383,
+    "fields": 389,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4766,12 +4771,6 @@
       },
       {
         "page": "angular_cheilitis_03",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "antiphen",
         "fields": [
           "rules_sha256"
         ]
@@ -5506,12 +5505,6 @@
         ]
       },
       {
-        "page": "ibuprofen_sol",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
         "page": "japan_otc_drug_classification",
         "fields": [
           "rules_sha256"
@@ -5729,12 +5722,6 @@
       },
       {
         "page": "nasal_rinse_6",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "notice_ped_fever_reducer",
         "fields": [
           "rules_sha256"
         ]
