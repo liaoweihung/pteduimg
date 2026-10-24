@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v2a590025a08397c95031198e';
+const CACHE_NAME = 'pwa-cache-v1894f8b02579a7b3049c57bb';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -297,6 +297,7 @@ const urlsToCache = [
   "./img/lan_3.webp",
   "./img/lan_4.webp",
   "./img/lan_5.webp",
+  "./img/macsafe_suspension.webp",
   "./img/methodology_of_exam_Hp.webp",
   "./img/motion_sickness_meds_1.webp",
   "./img/motion_sickness_meds_2.webp",
@@ -676,6 +677,7 @@ const urlsToCache = [
   "./cards/antiphen.html",
   "./cards/ibuprofen_sol.html",
   "./cards/idofen_suspension.html",
+  "./cards/macsafe_suspension.html",
   "./cards/notice_ped_fever_reducer.html",
   "./cards/ped_cold_cypromin.html",
   "./cards/ped_cold_cetirizine.html",

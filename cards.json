@@ -1759,6 +1759,7 @@
       "ped_fever_reducer-0",
       "ped_fever_reducer-1",
       "ped_fever_reducer-3",
+      "ped_fever_reducer-4",
       "ped_fever_reducer-2"
     ],
     "tags": [
@@ -1767,7 +1768,17 @@
       "依普芬",
       "舒抑痛",
       "Idofen",
+      "馬蓋先",
+      "馬蓋先口服懸濁液",
+      "MacSafe",
+      "Mac Safe",
       "Ibuprofen",
+      "Ibuprofen 20mg/mL",
+      "馬蓋先兒童劑量",
+      "馬蓋先怎麼吃",
+      "馬蓋先退燒",
+      "馬蓋先副作用",
+      "馬蓋先體重劑量",
       "舒抑痛兒童劑量",
       "舒抑痛副作用",
       "發燒",
@@ -1779,12 +1790,14 @@
       "安佳熱",
       "依普芬",
       "舒抑痛",
+      "馬蓋先",
       "小兒發燒注意事項"
     ],
     "steps": [
       "img/antiphen.webp",
       "img/ibuprofen_sol.webp",
       "img/idofen_suspension.webp",
+      "img/macsafe_suspension.webp",
       "img/notice_ped_fever_reducer.webp"
     ]
   },

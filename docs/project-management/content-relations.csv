@@ -453,3 +453,4 @@ REL-a5c9617d2e70e290,series:smecta_diarrhea,has_card,page:smecta_2,source_observ
 REL-bd2b5f6147f90d5d,series:smecta_diarrhea,has_card,page:smecta_3,source_observed,series_membership,cards.json,新增舒腹達與腹瀉系列三張圖卡；每張有獨立靜態文字頁。
 REL-4639f504272f0b61,series:kidsolone_oral_solution,has_card,page:kidsolone_oral_solution,source_observed,series_membership,cards.json,新增必爾生口服液系列單張圖卡；圖文與核准仿單分次一致。
 REL-fa930c19a060f56e,series:ped_fever_reducer,has_card,page:idofen_suspension,source_observed,series_membership,cards.json,新增舒抑痛；依普芬後、發燒注意事項前
+REL-8387adcd11911209,series:ped_fever_reducer,has_card,page:macsafe_suspension,source_observed,series_membership,cards.json,新增馬蓋先；舒抑痛後、發燒注意事項前
