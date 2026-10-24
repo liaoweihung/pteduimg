@@ -6,6 +6,8 @@
 
 品牌工作先讀 [Brand Guide v2.3](BRAND_GUIDE_v2.3.md) 與 [AI 品牌約束](BRAND_GUIDE_AI.md)。本目錄是共同來源，不要在各 AI 設定複製整份規範。
 
+製作新衛教圖卡時，另讀 [圖卡視覺設計規範 v1.0](CARD_DESIGN_GUIDE_v1.0.md)：標題、內容布局、Logo 位置與資料來源配置以此為指引；品牌識別及素材使用仍依上述兩份文件。
+
 - 正式品牌色固定為紅 `#FD2828`、黑 `#101010`、藍 `#013E9C`；白 `#FFFFFF` 為背景及白色單色用途。權威資料為 [正式色碼 JSON](data/brand_colors_v2.1.json)，檔名沿用素材包版本，不代表規範退回 v2.1。
 - 正式 Logo 外觀以[定稿 PNG](assets/logo_primary_color_original.png) 為準。禁止 AI 重新生成、重畫、改形、替換手寫字或覆寫原圖；保持比例、構圖與原有方向。不得為符合色碼而重新上色原 PNG。
 - SVG 精修暫停；包內 SVG 均為非正式草稿，只保留供歷史查考。

@@ -16,6 +16,7 @@ Use this skill for the `pteduimg` static GitHub Pages site when the user asks to
 - 建置、排程、退出、頁面驗證或發布：操作前讀 [網站建置與發布](../../docs/site-build-and-release.md) 的對應章節；範圍與完整輸出以該文件為準。
 - 清冊／關聯／人工欄位：讀 [專案管理 SOP](../../docs/project-management/README.md)。
 - 品牌或 Logo：先讀 [品牌入口](../../docs/brand/README.md)；一般圖卡轉 WebP 的建議不適用於覆寫正式 Logo PNG。
+- 新圖卡視覺布局：讀 [圖卡視覺設計規範 v1.0](../../docs/brand/CARD_DESIGN_GUIDE_v1.0.md)；品牌素材限制仍依品牌入口。
 
 命令與資料路徑均以 repository 根目錄為準；Markdown 連結相對於本檔。
 
