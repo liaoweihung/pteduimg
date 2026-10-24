@@ -1241,10 +1241,21 @@
     "order": 16,
     "hidden": false,
     "icon": "🌡️",
+    "favorite_keys": [
+      "ped_fever_reducer-0",
+      "ped_fever_reducer-1",
+      "ped_fever_reducer-3",
+      "ped_fever_reducer-2"
+    ],
     "tags": [
       "退燒藥水",
       "安佳熱",
       "依普芬",
+      "舒抑痛",
+      "Idofen",
+      "Ibuprofen",
+      "舒抑痛兒童劑量",
+      "舒抑痛副作用",
       "發燒",
       "退燒",
       "小朋友",
@@ -1253,11 +1264,13 @@
     "texts": [
       "安佳熱",
       "依普芬",
+      "舒抑痛",
       "小兒發燒注意事項"
     ],
     "steps": [
       "img/antiphen.webp",
       "img/ibuprofen_sol.webp",
+      "img/idofen_suspension.webp",
       "img/notice_ped_fever_reducer.webp"
     ]
   },

@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-vff9d880b294afb624ddbc7c5';
+const CACHE_NAME = 'pwa-cache-v2a590025a08397c95031198e';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -273,6 +273,7 @@ const urlsToCache = [
   "./img/hydrocolloid_change_steps.webp",
   "./img/hydrocolloid_how_to_use.webp",
   "./img/ibuprofen_sol.webp",
+  "./img/idofen_suspension.webp",
   "./img/japan_otc_drug_classification.webp",
   "./img/jin_huang_san.webp",
   "./img/jinchuang_ointment.webp",
@@ -674,6 +675,7 @@ const urlsToCache = [
   "./cards/Ped_abx_susp_8.html",
   "./cards/antiphen.html",
   "./cards/ibuprofen_sol.html",
+  "./cards/idofen_suspension.html",
   "./cards/notice_ped_fever_reducer.html",
   "./cards/ped_cold_cypromin.html",
   "./cards/ped_cold_cetirizine.html",
