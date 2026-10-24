@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-24T23:51:59+08:00",
-  "baseline": "235898239819e87fc475547c67306c5e7049db9d",
-  "scope": "網站來源快照；版本 23589823",
+  "generatedAt": "2026-10-25T00:37:14+08:00",
+  "baseline": "e4f590ee8e4b5f4d76080c697708ba838ac50093",
+  "scope": "網站來源快照；版本 e4f590ee",
   "counts": {
-    "cards": 383,
+    "cards": 384,
     "series": 87,
     "allSeries": 91,
     "hidden": 4,
@@ -579,7 +579,7 @@
     {
       "id": "ped_fever_reducer",
       "title": "兒科退燒藥水",
-      "count": 4,
+      "count": 5,
       "hidden": false,
       "areas": [],
       "departments": [
@@ -2847,6 +2847,14 @@
       ]
     },
     {
+      "title": "馬蓋先口服懸濁液：兒童退燒劑量與使用注意事項",
+      "path": "cards/macsafe_suspension.html",
+      "series": "ped_fever_reducer",
+      "issues": [
+        "footer_status"
+      ]
+    },
+    {
       "title": "胃幽門螺旋桿菌檢查",
       "path": "cards/methodology_of_exam_Hp.html",
       "series": "Hpylori_exam",
@@ -4130,25 +4138,25 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 224,
+      "machine_pass": 225,
       "partial": 1,
       "missing": 158
     },
     "reference_status": {
       "missing": 243,
-      "machine_pass": 140
+      "machine_pass": 141
     },
     "date_status": {
       "missing": 243,
-      "machine_pass": 119,
+      "machine_pass": 120,
       "partial": 21
     },
     "footer_status": {
-      "missing": 279,
+      "missing": 280,
       "machine_pass": 104
     },
     "jsonld_status": {
-      "machine_pass": 184,
+      "machine_pass": 185,
       "missing": 199
     }
   },
