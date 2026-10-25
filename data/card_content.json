@@ -8350,5 +8350,35 @@
       {"title": "光田綜合醫院：必爾生口服液藥品資料（Kidsolone Oral Solution 1 mg/mL）", "url": "https://www.ktgh.com.tw/ktgh/Home/WesternMedDetail?CatID=65&NewsID=821&Ordid=26013"}
     ],
     "revisionCredit": "使用者提供並人工確認圖卡與文字，並同意依仿單修正服用次數；本站整理靜態文字及核對直接來源"
+  },
+  {
+    "cardId": "pediatric_cold_syrup",
+    "title": "勝克敏液：兒童過敏用藥與分齡劑量",
+    "image": "img/ped_cold_cetirizine.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_cetirizine.html",
+    "summary": "勝克敏液每 1 mL 含 Cetirizine Dihydrochloride 1 mg，用於鼻炎、結膜炎、蕁麻疹及過敏性搔癢等過敏現象。核准仿單列出 3 歲以上的分齡用量；未滿 3 歲不應自行依表給藥。",
+    "sections": [
+      {"heading": "藥品基本資料", "text": "「晟德」勝克敏液（CETIRIZINE ORAL SOLUTION 1MG/ML \"CENTER\"）為處方藥，許可證為衛署藥製字第044023號。每 1 mL 含 Cetirizine Dihydrochloride 1 mg；2.5 mL、5 mL、10 mL 分別含 2.5 mg、5 mg、10 mg。"},
+      {"heading": "作用與核准適應症", "text": "Cetirizine 為第二代 H1 抗組織胺。核准適應症包括季節性鼻炎、過敏性鼻炎、結膜炎、蕁麻疹與過敏性搔癢等過敏現象，可減輕流鼻水、打噴嚏、鼻癢、眼癢及皮膚搔癢等症狀。本品不是抗生素，也不是直接治療感冒病毒的藥物。"},
+      {"heading": "勝克敏液兒童劑量怎麼看？", "text": "依本品台灣核准仿單，成人及 6 歲以上兒童每次 10 mg（10 mL），每日一次；3 歲至未滿 6 歲兒童可每次 5 mg（5 mL）、每日一次，或早晚各 2.5 mg（2.5 mL），每日總量均為 5 mg。未滿 3 歲沒有本品核准的常規分齡劑量，不建議家長自行按表給藥，須由醫師評估。上述為一般腎功能狀況下的仿單用量，不是所有兒童適用的最大安全劑量。"},
+      {"heading": "需要依體重計算嗎？", "text": "本品核准仿單以年齡分組，未提供統一的 mg/kg/day 公式。臨床醫師可能依體重、腎功能及症狀調整；請以處方及藥袋為準，不自行套用其他 Cetirizine 產品或國外仿單的嬰幼兒劑量。"},
+      {"heading": "如何正確服用？", "text": "可於飯前或飯後服用；每日一次的處方可依仿單於晚餐時服用。請用有刻度的口服餵藥器或量杯量取，不用一般家用湯匙估算；2.5 mL 等小劑量以口服餵藥器較易準確測量。忘記服藥時，想起可補服；若已接近下一次服藥時間，跳過該次，不可補服雙倍劑量。"},
+      {"heading": "注意事項與副作用", "text": "可能有嗜睡、疲倦、口乾、頭痛、頭暈或胃腸不適。第二代抗組織胺通常較第一代不易嗜睡，但部分使用者仍可能受影響。不可自行增加劑量或與其他抗組織胺重複服用；與鎮靜藥併用須謹慎，服藥期間應避免飲酒。腎功能不全者可能須調整劑量，應由醫師依個別情況決定。"},
+      {"heading": "長期服用與停藥", "text": "少數長期使用 Cetirizine 數月至數年的使用者，在停藥後數天內可能出現新發作、較廣泛或較嚴重的搔癢。若停藥後明顯搔癢，請諮詢醫師，不自行反覆停藥或增加劑量；這不表示短期使用者一定會發生。"},
+      {"heading": "保存方式", "text": "依本品仿單，密封保存於 25°C 以下，不需冷藏，避免陽光直射，並放在兒童無法自行取得的位置。開封後保存期限應依產品標示或藥師指示確認。"}
+    ],
+    "altText": "勝克敏液兒童過敏用藥圖卡，說明 Cetirizine 1 mg/mL、過敏適應症、3 歲以上分齡劑量及嗜睡與腎功能注意事項",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "references": [
+      {"title": "衛生福利部食品藥物管理署：「晟德」勝克敏液 1 毫克/毫升核准藥品資料（衛署藥製字第044023號）", "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第044023號"},
+      {"title": "「晟德」勝克敏液 1 毫克/毫升核准仿單（版本日期 2026-03-31）", "url": "https://www1.ndmctsgh.edu.tw/pharm/Home/GetInsertCFile?id=005CET03"},
+      {"title": "臺北市立聯合醫院藥劑科：勝克敏液 1 毫克/毫升用藥指導單張（TPE202603）", "url": "https://www-ws.gov.taipei/Download.ashx?icon=..pdf&n=MjAyNS0xNTRfQ2V0aXJpemluZeWPo%2Bacjea2si5wZGY%3D&u=LzAwMS9VcGxvYWQvNDQ2L3JlbGZpbGUvMjIwNTUvOTU1MDA5OS80NGJjZTNkZC0xOTU2LTQxYTQtOGI1NC1mMWIwMGQwZDEzMzEucGRm"},
+      {"title": "臺北醫學大學附設醫院：Cetirizine 勝克敏液藥品使用指導單（2022-11）", "url": "https://www.tmuh.org.tw/UploadFile/files/%E8%97%A5%E5%8A%91%E9%83%A8/%E7%94%A8%E8%97%A5%E8%AB%AE%E8%A9%A2%E4%B8%AD%E5%BF%83-%E8%A1%9B%E6%95%99%E5%96%AE%E5%BC%B5/202211/%E6%B0%B4%E5%8A%91/8013-Cetirizine%20%E5%8B%9D%E5%85%8B%E6%95%8F%E6%B6%B2(Cetirizine).pdf"}
+    ],
+    "revisionCredit": "使用者提供新版圖卡與文字；本站整理靜態文字並核對核准仿單及醫院用藥指導資料"
   }
 ]
