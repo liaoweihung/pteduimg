@@ -171,7 +171,13 @@ def request_links_commit(root: Path, row: dict[str, str], sha: str) -> bool:
 
 
 def changed_files_for_commit(root: Path, sha: str) -> set[str]:
-    raw = git(root, "show", "--first-parent", "--pretty=format:", "--name-only", sha)
+    parents = git(root, "rev-list", "--parents", "-n", "1", sha).split()
+    if len(parents) > 2:
+        # A merge only adds paths that differ from every parent. Paths copied
+        # from another parent are already accounted for by that commit.
+        raw = git(root, "diff-tree", "--no-commit-id", "--name-only", "-r", "-c", sha)
+    else:
+        raw = git(root, "show", "--first-parent", "--pretty=format:", "--name-only", sha)
     return {normalize(line) for line in raw.splitlines() if normalize(line)}
 
 
