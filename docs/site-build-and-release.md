@@ -129,21 +129,17 @@ Rules:
 - Add `publish_at` to both `cards.json` and `cards.manual.json`.
 - Keep `hidden: true` until publication time.
 - Use an ISO 8601 date-time with timezone. Prefer Taiwan time with `+08:00`.
-- The current `.github/workflows/scheduled-card-publish.yml` has only `workflow_dispatch` (manual trigger), not an hourly schedule. `publish_at` is a due-time threshold; reaching it alone does not publish anything. State the actual trigger mechanism when preparing a release, and do not enable recurring publication merely to match old documentation.
+- The GitHub `Scheduled card publish` workflow was retired on 2026-10-25. There is no scheduled or manually dispatched GitHub publisher. `publish_at` is a due-time threshold; reaching it alone does not publish anything. The local `scripts/publish_scheduled_cards.py` remains available only within an explicitly authorized publication task.
 - Prepare the required text, dates, and verified sources before scheduling. Validate source records while pending and rendered pages upon publication.
 - While a card has both `hidden: true` and `publish_at`, `build.py` treats it as pending:
   - it is not included in generated `cards/*.html`
   - it is not included in `sitemap.xml`
   - its images are excluded from the generated service-worker asset list (which is distinct from the smaller install-time core pre-cache)
-- When the workflow is manually triggered and `publish_at` has arrived, it:
-  - changes `hidden` to `false` in both JSON files
-  - updates `CHANGELOG.md`
-  - runs `python build.py`
-  - runs JSON checks and `python scripts/check_site.py`
-  - commits the files explicitly listed in its `git add` command
-- If no scheduled cards are due, the workflow makes no commit.
+- For an explicitly authorized local publication, inspect the dry-run first. The publisher switches due cards to visible in both JSON files and updates `CHANGELOG.md`; it does not build, verify, commit or push.
+- After an actual visibility change, run the required full build, inspect its complete output diff, synchronize the affected management records and CR, and run the source/site/management checks. Commit and Push still require explicit authorization and must include all affected outputs from the publishing checklist.
+- If no scheduled cards are due, the publisher changes nothing. Do not run a full build merely to replace the retired workflow.
 
-Current workflow limitation: that commit list omits some full-build outputs, including `all-cards.html`, `sitemap-main.xml`, `retired-cards.html`, and the integration report. Before using it for a release, address this within the authorized publishing task or use a verified local build/commit that includes all affected outputs. Do not report a fully synchronized publication merely because the workflow succeeded.
+The existing pending-card checker limitation remains; retiring the workflow does not fix or waive it.
 
 Manual local test:
 
@@ -230,7 +226,9 @@ After verification, inspect the diff and identify all files affected by this tas
 
 If commit/push is requested, perform it within the authorized scope; otherwise tell the user which files to publish through GitHub Desktop. Keep unrelated untracked work and the nested hub repository out of the commit. A successful push is not proof of a completed Pages deployment.
 
-The current `auto-build.yml` triggers only on `index.html` or `img/**` changes and commits only `sw.js`, despite running a full build. Do not rely on it to publish all generated changes or to update the worker for every kind of edit; prepare and verify the complete release locally or address the workflow explicitly when in scope.
+The old PWA auto-build and scheduled-publication workflows were retired on 2026-10-25. Full/incremental local builds own the website outputs and `sw.js`; GitHub no longer rebuilds cards or commits a replacement worker after a push. Prepare and verify all affected outputs before publication.
+
+GitHub retains the read-only project-management link check and `dashboard-publish.yml`. The dashboard workflow runs on relevant site/management inputs or manual dispatch, commits only its two dashboard outputs, and requests a Pages build. General Markdown documentation, test-only edits and dashboard-only output changes do not trigger it; see [Dashboard maintenance](project-management/dashboard.md). Management verification and Pages deployment remain independent; this cleanup does not introduce a deployment gate.
 
 Do not include Python cache files. `.gitignore` already ignores:
 

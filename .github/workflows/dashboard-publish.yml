@@ -2,12 +2,31 @@ name: Update dashboard and publish Pages
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - 'dashboard/**'
+    # Site inputs and machine-readable management data; prose-only edits can use manual dispatch.
+    paths:
+      - '*.html'
+      - '*.json'
+      - 'cards/**'
+      - 'img/**'
+      - 'assets/**'
+      - 'css/**'
+      - 'js/**'
+      - 'data/**'
+      - 'topics/**'
+      - 'web/**'
+      - 'calc/**'
+      - 'templates/**'
+      - 'build.py'
+      - 'scripts/build_dashboard.py'
+      - 'scripts/check_project_management.py'
+      - 'scripts/site_footer.py'
+      - 'scripts/site_header.py'
+      - 'scripts/acne_pilot.py'
+      - 'docs/project-management/*.csv'
+      - 'docs/project-management/content-topics.json'
+      - 'docs/project-management/audit-register.json'
+      - '.github/workflows/dashboard-publish.yml'
   workflow_dispatch:
-  workflow_run:
-    workflows: ['自動更新 PWA 快取與版本號', 'Scheduled card publish']
-    types: [completed]
 permissions:
   contents: write
   pages: write
@@ -16,7 +35,6 @@ concurrency:
   cancel-in-progress: false
 jobs:
   update:
-    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

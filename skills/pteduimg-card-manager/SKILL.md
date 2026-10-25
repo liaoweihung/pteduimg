@@ -155,7 +155,7 @@ Also perform the relevant desktop/mobile and page-flow checks below. Record the 
 
 ## Scheduling And Retirement
 
-排程前讀 [Scheduled Card Publishing](../../docs/site-build-and-release.md#scheduled-card-publishing) 與同檔「排程的補充操作」。手動觸發、時區、完整來源、pending 生成排除、workflow 提交漏項及既有檢查器限制都仍適用。
+排程前讀 [Scheduled Card Publishing](../../docs/site-build-and-release.md#scheduled-card-publishing) 與同檔「排程的補充操作」。GitHub 排程發布 workflow 已退役；本機 publisher 須明確授權，並完成完整建置、管理同步與驗證。時區、完整來源、pending 生成排除及既有檢查器限制仍適用。
 
 退出／替代前讀 [Retiring Or Replacing Cards](../../docs/site-build-and-release.md#retiring-or-replacing-cards) 與 `scripts/card_archive.py` 的實際 schema；保留舊圖、ID／URL 與修訂歸屬，不發明替代頁。
 

@@ -48,7 +48,7 @@
 - `cards/*.html`、`all-cards.html` 等由既有產生器維護，不手寫生成頁。新增可見系列、系列末尾追加或安全局部更新可用 `python build.py --incremental IMAGE_ID [IMAGE_ID ...]`，自動擴展相依頁並更新完整全域索引；限制依建置文件。移除、系列重組／排序、可見性、退出、共用模板或結構變更仍需 full build：`python build.py`；它會清除重建圖卡 HTML 並恢復退出頁，建置前後必須檢查 diff。
 - 既有單頁且 URL、導覽及發布狀態不變，才可用 `python build.py --only IMAGE_ID [IMAGE_ID ...]`；ID 為圖片檔名 stem。它不更新全域 SEO、索引、sitemap、退出頁、整合報告或 worker 版本，不能當成影響這些輸出的完整發布。禁止批次重建與全域更新需求衝突時，先說明範圍衝突。
 - `hidden: true` 加上 `publish_at` 才是 pending 排除條件；hidden 單獨存在不保證排除 HTML／索引／sitemap。兩者都不是存取控制，公開 repository 中的檔案不能稱為私密。
-- 排程採帶時區 ISO 8601，台灣優先 `+08:00`，兩份 JSON 同步。`publish_at` 只設定到期門檻，必須真正執行 publisher 才會切換 visible；目前 workflow 僅手動觸發，不得承諾時間到自動發布或擅自加排程。設定前先備齊文字、日期及來源。
+- 排程採帶時區 ISO 8601，台灣優先 `+08:00`，兩份 JSON 同步。`publish_at` 只設定到期門檻，必須真正執行 publisher 才會切換 visible；GitHub 排程發布 workflow 已退役，僅在明確授權的本機發布流程執行 publisher、完整建置與驗證，不得承諾時間到自動發布或擅自加排程。設定前先備齊文字、日期及來源。
 - 退出時保留原圖、ID、URL 與來源歸屬，從 active steps 移除並登記 `cards.retired.json`；不直接刪舊頁、不捏造替代頁。完整 schema、`noindex`、替代連結與索引檢查依建置文件。
 - 修改首頁行為、圖卡版面／生成頁、快取、analytics、`build.py` 或工具導覽後，執行 `python -B scripts/check_site.py`；靜態 OG 必須留在 HTML head。此檢查不認證醫療正確性，也不取代新卡逐項完整性與桌機／手機操作驗證。
 - pending 的 high-confidence 文字仍可能被現有檢查器要求生成頁，整合報告亦可能受影響。必須區分這項已知限制與真實公開頁錯誤，不降信心、不刪文字、不提前發布來使檢查通過；修正不在範圍時回報未解限制與定點結果。
@@ -75,7 +75,7 @@
 
 未經使用者明確授權，不 Commit、Push 或部署；完成後列出本次來源、管理紀錄及必要生成產物供審核／GitHub Desktop 使用。已授權發布也只納入相關檔案，不 `git add .`、不清除無關改動、不強制推送；排除 Python cache 與巢狀 Hub repository。成功 Push 不是 Pages 部署完成證據。
 
-發布前依建置文件核對完整產物清單：現有 `auto-build.yml` 只在 `index.html`／`img/**` 變更時觸發且僅提交 `sw.js`；手動排程 workflow 的提交清單亦有缺漏。不能僅憑 workflow 成功宣稱完整同步，也不能為配合舊文件擅改 CI。
+發布前依建置文件核對完整產物清單；舊 PWA 自動建置與排程發布 workflow 已退役，網站與 `sw.js` 必須在授權的本機建置／驗證流程備齊。GitHub 保留管理連結驗證、Dashboard 更新及 Pages 部署；Dashboard 不代替圖卡建置。不能僅憑 workflow 成功宣稱完整同步，也不能為配合舊文件擅改 CI。
 
 搜尋追蹤先讀流程與完整歷史路徑。使用者已授權將實際取得的提交結果／觀測附日期、可核對證據持續追加並同步總控台；保留基準，缺資料不填零，提交日、觀測收錄日與上次檢索日分開。此落檔授權不含自動提交索引、改網站或 Commit／Push。
 

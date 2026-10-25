@@ -50,7 +50,11 @@ def git(root: Path, *args: str, check: bool = True) -> str:
 
 
 def normalize(path: str) -> str:
-    return path.strip().replace("\\", "/").lstrip("./")
+    path = path.strip().replace("\\", "/")
+    # Remove relative-directory prefixes, not dots belonging to directory names.
+    while path.startswith("./"):
+        path = path[2:]
+    return path
 
 
 def is_management_path(path: str) -> bool:

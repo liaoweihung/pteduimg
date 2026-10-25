@@ -61,6 +61,35 @@ class ProjectChangeTrackerTests(unittest.TestCase):
     def test_normalize_windows_path(self):
         self.assertEqual(tracker.normalize(r"cards\example.html"), "cards/example.html")
 
+    def test_normalize_preserves_dot_directories(self):
+        for path in (".github/workflows/example.yml", "./.github/workflows/example.yml",
+                     "././.github/workflows/example.yml", r".\.github\workflows\example.yml"):
+            with self.subTest(path=path):
+                self.assertEqual(tracker.normalize(path), ".github/workflows/example.yml")
+                self.assertTrue(tracker.is_site_path(path))
+        self.assertEqual(tracker.normalize("./cards/example.html"), "cards/example.html")
+        self.assertEqual(tracker.normalize("../example.html"), "../example.html")
+
+    def test_dot_directory_exclusions_remain_in_effect(self):
+        path = ".github/workflows/project-management-check.yml"
+        self.assertTrue(tracker.is_management_path(path))
+        self.assertFalse(tracker.is_site_path(path))
+        for path in (".codex/example.html", ".agents/example.html"):
+            self.assertFalse(tracker.is_site_path(path))
+
+    def test_workflow_changes_require_cr_in_worktree(self):
+        workflow = ".github/workflows/dashboard-publish.yml"
+        def fake_git(_root, *args, **kwargs):
+            if args in (("diff", "--name-only"), ("ls-files",)):
+                return workflow + "\n"
+            return ""
+        with patch.object(tracker, "git", side_effect=fake_git), \
+                patch.object(tracker, "json_worktree", return_value=None), \
+                patch.object(tracker, "requests_worktree", return_value={}):
+            working = tracker.current_worktree(ROOT)
+        self.assertEqual(working["files"], [workflow])
+        self.assertEqual(working["coverage"], "缺少管理連結")
+
     def test_management_paths_are_not_site_changes(self):
         self.assertTrue(tracker.is_management_path("docs/project-management/project-dashboard.md"))
         self.assertFalse(tracker.is_site_path("docs/project-management/project-dashboard.md"))
