@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-25T23:39:07+08:00",
-  "baseline": "28df1f9c9322a2f3a87b65ecd7c4d047d2d6a227",
-  "scope": "網站來源快照；版本 28df1f9c",
+  "generatedAt": "2026-10-26T13:14:37+08:00",
+  "baseline": "0967dbb9043bd7346c1baf787aee5b2ae1c43d00",
+  "scope": "網站來源快照；版本 0967dbb9",
   "counts": {
-    "cards": 384,
-    "series": 87,
-    "allSeries": 91,
+    "cards": 391,
+    "series": 88,
+    "allSeries": 92,
     "hidden": 4,
     "retired": 4,
-    "areas": 15,
+    "areas": 16,
     "topics": 1,
     "tools": 5
   },
@@ -27,7 +27,8 @@
     "throat": 1,
     "sleep": 1,
     "travel_medication": 3,
-    "pregnancy": 2
+    "pregnancy": 2,
+    "infant_care": 1
   },
   "series": [
     {
@@ -941,6 +942,16 @@
       "hidden": false,
       "areas": [
         "elimination_care"
+      ],
+      "departments": []
+    },
+    {
+      "id": "baby_nasal_aspirator",
+      "title": "使用吸鼻器與注意事項",
+      "count": 7,
+      "hidden": false,
+      "areas": [
+        "infant_care"
       ],
       "departments": []
     }
@@ -4128,25 +4139,25 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 226,
+      "machine_pass": 233,
       "partial": 1,
       "missing": 157
     },
     "reference_status": {
       "missing": 242,
-      "machine_pass": 142
+      "machine_pass": 149
     },
     "date_status": {
       "missing": 242,
-      "machine_pass": 121,
+      "machine_pass": 128,
       "partial": 21
     },
     "footer_status": {
       "missing": 280,
-      "machine_pass": 104
+      "machine_pass": 111
     },
     "jsonld_status": {
-      "machine_pass": 185,
+      "machine_pass": 192,
       "missing": 199
     }
   },
