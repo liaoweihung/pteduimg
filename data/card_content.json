@@ -8380,5 +8380,154 @@
       {"title": "臺北醫學大學附設醫院：Cetirizine 勝克敏液藥品使用指導單（2022-11）", "url": "https://www.tmuh.org.tw/UploadFile/files/%E8%97%A5%E5%8A%91%E9%83%A8/%E7%94%A8%E8%97%A5%E8%AB%AE%E8%A9%A2%E4%B8%AD%E5%BF%83-%E8%A1%9B%E6%95%99%E5%96%AE%E5%BC%B5/202211/%E6%B0%B4%E5%8A%91/8013-Cetirizine%20%E5%8B%9D%E5%85%8B%E6%95%8F%E6%B6%B2(Cetirizine).pdf"}
     ],
     "revisionCredit": "使用者提供新版圖卡與文字；本站整理靜態文字並核對核准仿單及醫院用藥指導資料"
+  },
+  {
+    "cardId": "baby_nasal_aspirator",
+    "title": "寶寶鼻塞怎麼辦？認識吸鼻器的作用與使用觀念",
+    "image": "img/baby_nasal_aspirator_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/baby_nasal_aspirator_1.html",
+    "summary": "吸鼻器利用負壓，協助還不會擤鼻涕的嬰幼兒清除可吸取的分泌物；鼻涕堆積影響呼吸、喝奶或睡眠時可考慮使用，但不需把鼻腔吸到完全乾淨。",
+    "sections": [
+      {"heading": "吸鼻器是什麼？", "text": "吸鼻器（Nasal Aspirator）利用負壓吸引，將鼻腔內可吸取的鼻涕與分泌物收集於器具內。適度清除堆積的鼻涕，可能減少鼻塞造成的喝奶或睡眠不適。"},
+      {"heading": "先記住兩件事", "text": "不是吸力越強越好；過強吸力可能刺激鼻黏膜。也不需要把鼻涕吸得一乾二淨，鼻涕已清除、呼吸較順暢時即可停止。若鼻塞主要來自鼻黏膜腫脹，吸鼻器的幫助可能有限。"},
+      {"heading": "吸鼻器的用途界線", "text": "吸鼻器協助清除鼻腔分泌物，不能直接治療感冒病毒、過敏性鼻炎或鼻黏膜腫脹；它與利用生理食鹽水沖洗鼻腔的洗鼻器，使用方式不同。"}
+    ],
+    "altText": "寶寶鼻塞與吸鼻器圖卡，說明負壓吸出鼻涕、喝奶與睡眠不適，以及避免過強吸力與反覆吸到完全無鼻涕",
+    "sourceType": "source_checked_revision", "matchConfidence": "high", "needsMedicalReview": true,
+    "updatedAt": "2026-10-26", "sourceCheckedAt": "2026-10-26",
+    "references": [
+      {"title": "美國兒科醫學會 HealthyChildren：My baby has a stuffy nose. How can I help them sleep safely?（2025-12-16）", "url": "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/my-baby-has-a-stuffy-nose-how-can-i-help-them-sleep-safely.aspx"},
+      {"title": "Nationwide Children's Hospital：Suctioning the Nose with a Bulb Syringe（2022 修訂）", "url": "https://www.nationwidechildrens.org/family-resources-education/health-wellness-and-safety-resources/helping-hands/suctioning-the-nose-with-a-bulb-syringe"}
+    ],
+    "revisionCredit": "使用者提供圖卡與文字並表示已人工核審；本站整理逐頁靜態文字並核對直接來源"
+  },
+  {
+    "cardId": "baby_nasal_aspirator",
+    "title": "吸鼻器有哪些種類？手動、口吸、活塞與電動式比較",
+    "image": "img/baby_nasal_aspirator_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/baby_nasal_aspirator_2.html",
+    "summary": "吸鼻器包括球型按壓式、口吸式、手拉活塞式與電動式。選擇時應確認吸頭適齡、零件便於清潔乾燥，以及產品的醫療器材許可證或登錄字號。",
+    "sections": [
+      {"heading": "四類吸鼻器的原理", "text": "球型按壓式以球體回彈產生吸力；口吸式由照顧者透過軟管吸氣；手拉活塞式以拉動活塞產生負壓；電動式由幫浦提供吸力。不同機型的操作與配件不同，應依實際產品說明書使用。"},
+      {"heading": "各類型的取捨", "text": "球型式便於攜帶，但部分產品內部不易清潔與乾燥；口吸式可調整吸力，須注意防逆流與濾材；手拉活塞式不需電力，但零件較多；電動式操作方便，仍須注意吸力設定、噪音與電源。"},
+      {"heading": "選購時確認", "text": "選擇適合寶寶年齡與鼻孔大小的吸頭，確認吸頭、集液杯與管路可依說明書拆洗及乾燥。購買醫療器材時，查看外包裝的許可證或登錄字號，使用前詳閱產品說明書。"},
+      {"heading": "常見品牌搜尋名稱", "text": "知母時吸鼻器、貝舒樂吸鼻器、貝親吸鼻器是不同品牌或型號的產品搜尋名稱。本頁說明通用的吸鼻器種類與選購重點，未比較個別產品的效果；實際操作、清潔與適用年齡應依所購產品的標示及說明書。"}
+    ],
+    "altText": "比較球型按壓、口吸、手拉活塞與電動吸鼻器的原理、優缺點和吸頭清潔選購重點",
+    "sourceType": "source_checked_revision", "matchConfidence": "high", "needsMedicalReview": true,
+    "updatedAt": "2026-10-26", "sourceCheckedAt": "2026-10-26",
+    "references": [
+      {"title": "美國兒科醫學會 HealthyChildren：嬰兒鼻塞與吸鼻器居家照護（2025-12-16）", "url": "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/my-baby-has-a-stuffy-nose-how-can-i-help-them-sleep-safely.aspx"},
+      {"title": "衛生福利部食品藥物管理署：你知道這些商品是醫療器材嗎？（2025-02-02）", "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=4&id=t623395"},
+      {"title": "知母時 CHIBOJI：吸鼻器產品資訊", "url": "https://chiboji.com.tw/products/"},
+      {"title": "品嘉醫療：貝舒樂 NS-13 電動吸鼻器產品資訊", "url": "https://www.pj-med.com/products-view.php?ID=32"},
+      {"title": "Pigeon 貝親：吸鼻器產品資訊", "url": "https://www.pigeonbaby.com.tw/product_detail.asp?prod=2247"}
+    ],
+    "revisionCredit": "使用者提供圖卡與文字並表示已人工核審；本站整理逐頁靜態文字並核對直接來源"
+  },
+  {
+    "cardId": "baby_nasal_aspirator",
+    "title": "什麼時候需要使用吸鼻器？寶寶鼻塞與就醫提醒",
+    "image": "img/baby_nasal_aspirator_3.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/baby_nasal_aspirator_3.html",
+    "summary": "鼻涕堆積影響寶寶喝奶、睡眠或呼吸舒適時，可視需要輕柔吸鼻；只有少量鼻水且活動正常時，不必固定每天吸。呼吸費力或未滿 3 個月發燒達 38°C 應儘速就醫。",
+    "sections": [
+      {"heading": "可考慮使用的情況", "text": "鼻涕太多而影響吸吮、喝奶或睡眠，或分泌物黏稠且寶寶無法自行排出時，可考慮依需要使用吸鼻器。較常在喝奶前或睡前協助清除堆積的鼻涕。"},
+      {"heading": "不一定需要吸鼻", "text": "若只有少量清澈鼻水，寶寶呼吸、喝奶、睡眠與活動都正常，可以先觀察。鼻塞主要由鼻黏膜腫脹造成時，反覆吸鼻可能幫助有限；不必為了預防鼻塞而固定每天使用。"},
+      {"heading": "出現警訊應就醫", "text": "呼吸費力、胸口或肋骨間凹陷、呼吸暫停、嘴唇或舌頭發紫、精神反應明顯變差或難以喚醒，應立即就醫。無法正常喝奶、尿量明顯減少、病情持續惡化，或未滿 3 個月嬰兒體溫達 38°C 以上，也應儘速接受醫療評估。"}
+    ],
+    "altText": "寶寶吸鼻器使用時機圖卡，對照鼻涕影響喝奶與睡眠、可先觀察的情況，以及呼吸困難和未滿三個月發燒 38°C 的就醫警訊",
+    "sourceType": "source_checked_revision", "matchConfidence": "high", "needsMedicalReview": true,
+    "updatedAt": "2026-10-26", "sourceCheckedAt": "2026-10-26",
+    "references": [
+      {"title": "美國兒科醫學會 HealthyChildren：嬰兒鼻塞與安全居家照護（2025-12-16）", "url": "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/my-baby-has-a-stuffy-nose-how-can-i-help-them-sleep-safely.aspx"},
+      {"title": "英國 NHS：When to get urgent medical help for babies and children under 5", "url": "https://www.nhs.uk/baby/health/when-to-get-urgent-medical-help-for-babies-and-children-under-5/"}
+    ],
+    "revisionCredit": "使用者提供圖卡與文字並表示已人工核審；本站整理逐頁靜態文字並核對直接來源"
+  },
+  {
+    "cardId": "baby_nasal_aspirator",
+    "title": "吸鼻器怎麼用？嬰兒吸鼻四步驟與操作注意",
+    "image": "img/baby_nasal_aspirator_4.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/baby_nasal_aspirator_4.html",
+    "summary": "吸鼻前洗手並備妥乾淨器具；鼻涕濃稠時可依產品指示先用嬰幼兒適用生理食鹽水。吸頭輕放鼻孔入口、短暫吸取，呼吸改善即可停止。",
+    "sections": [
+      {"heading": "第一步：洗手與準備用品", "text": "清潔雙手，備妥乾淨且吸頭尺寸合適的吸鼻器。有需要時準備嬰幼兒適用的無菌 0.9% 生理食鹽水鼻滴劑。"},
+      {"heading": "第二步：鼻涕黏稠時先軟化", "text": "若鼻涕較濃稠或乾燥，可依產品說明使用適量生理食鹽水，讓分泌物較容易清除；不必每次固定先滴。圖卡以等待約 1 分鐘作為示意，實際使用量與等待時間仍依產品說明或醫療人員指示調整。"},
+      {"heading": "第三步：輕放吸頭、短暫吸取", "text": "輕柔固定寶寶頭部，將吸頭放在鼻孔入口，不強行深入鼻腔。使用適合的吸力短暫吸取；各種機型操作不同，應依各自說明書。"},
+      {"heading": "第四步：觀察改善後停止", "text": "一側完成後依產品指示處理另一側。鼻涕已清除、呼吸較順暢時即可停止，不需反覆吸到完全沒有分泌物。優先在喝奶前操作，避免喝奶後立即吸鼻引起嘔吐。"}
+    ],
+    "altText": "嬰兒吸鼻器四步驟：洗手、視需要用生理食鹽水軟化鼻涕、吸頭輕放鼻孔入口短暫吸取、呼吸改善後停止",
+    "sourceType": "source_checked_revision", "matchConfidence": "high", "needsMedicalReview": true,
+    "updatedAt": "2026-10-26", "sourceCheckedAt": "2026-10-26",
+    "references": [
+      {"title": "Nationwide Children's Hospital：Suctioning the Nose with a Bulb Syringe（2022 修訂）", "url": "https://www.nationwidechildrens.org/family-resources-education/health-wellness-and-safety-resources/helping-hands/suctioning-the-nose-with-a-bulb-syringe"},
+      {"title": "美國兒科醫學會 HealthyChildren：嬰兒鼻塞與吸鼻器居家照護（2025-12-16）", "url": "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/my-baby-has-a-stuffy-nose-how-can-i-help-them-sleep-safely.aspx"}
+    ],
+    "revisionCredit": "使用者提供圖卡與文字並表示已人工核審；本站整理逐頁靜態文字並核對直接來源"
+  },
+  {
+    "cardId": "baby_nasal_aspirator",
+    "title": "吸鼻器用完怎麼清潔？拆洗、晾乾與保存方式",
+    "image": "img/baby_nasal_aspirator_5.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/baby_nasal_aspirator_5.html",
+    "summary": "每次吸鼻後，依產品說明倒掉鼻涕、拆洗可清潔的零件、充分沖淨並完全乾燥。電動主機不可任意沖水或浸泡，是否能煮沸或蒸氣消毒應依說明書。",
+    "sections": [
+      {"heading": "每次使用後的清潔順序", "text": "倒掉集液杯的分泌物，依說明書拆下可清洗的吸頭、集液杯與管路。以產品允許的方式使用溫水和中性清潔劑清洗、充分沖淨，置於乾淨通風處完全乾燥，再組裝或收納。"},
+      {"heading": "不同機型注意事項", "text": "電動主機不可任意沖水或浸泡。是否可煮沸、蒸氣消毒或放入消毒鍋，須依產品說明書；有濾材的機型應依原廠規定更換。避免多人共用接觸鼻腔的吸頭。"},
+      {"heading": "何時更換零件？", "text": "吸頭出現裂痕、破損、變形或泛黃，管路發霉、有異味或無法清潔，密封圈老化或吸力異常時，應依原廠建議檢查並更換。收納前確認零件完全乾燥。"}
+    ],
+    "altText": "吸鼻器清潔收納圖卡，依序倒掉鼻涕、拆洗零件、沖淨晾乾，並提醒電動主機不可浸水及消毒方式以說明書為準",
+    "sourceType": "source_checked_revision", "matchConfidence": "high", "needsMedicalReview": true,
+    "updatedAt": "2026-10-26", "sourceCheckedAt": "2026-10-26",
+    "references": [
+      {"title": "Nationwide Children's Hospital：Suctioning the Nose with a Bulb Syringe（2022 修訂；使用後清潔）", "url": "https://www.nationwidechildrens.org/family-resources-education/health-wellness-and-safety-resources/helping-hands/suctioning-the-nose-with-a-bulb-syringe"},
+      {"title": "衛生福利部食品藥物管理署：你知道這些商品是醫療器材嗎？（2025-02-02；使用前詳閱說明書）", "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=4&id=t623395"}
+    ],
+    "revisionCredit": "使用者提供圖卡與文字並表示已人工核審；本站整理逐頁靜態文字並核對直接來源"
+  },
+  {
+    "cardId": "baby_nasal_aspirator",
+    "title": "吸鼻器常見錯誤與就醫警訊：嬰兒鼻塞安全提醒",
+    "image": "img/baby_nasal_aspirator_6.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/baby_nasal_aspirator_6.html",
+    "summary": "吸鼻時避免過強吸力、吸頭深入、反覆吸到完全無鼻涕或共用未清潔的吸頭。若寶寶呼吸費力、發紫、反應變差，或未滿 3 個月發燒達 38°C，應立即就醫。",
+    "sections": [
+      {"heading": "四種常見錯誤", "text": "吸力不是越強越好，過強負壓可能刺激鼻黏膜。吸頭不應強行深入鼻腔；鼻涕已清除、呼吸改善即可停止，不必反覆抽吸到完全無分泌物。避免多人共用未清潔的吸頭，以免增加交叉污染風險。"},
+      {"heading": "需要立即就醫的情況", "text": "寶寶呼吸費力、胸口或肋骨間明顯凹陷，呼吸暫停，嘴唇或舌頭發紫，精神反應明顯變差、難以喚醒，或未滿 3 個月嬰兒體溫達 38°C 以上，應立即就醫。"},
+      {"heading": "其他應儘速接受評估的情況", "text": "鼻塞嚴重而無法正常喝奶、尿量明顯減少、持續鼻出血或吸鼻時明顯疼痛、病情惡化，或鼻涕超過 10 天仍無改善並有發燒等其他異常，應尋求醫療評估。"},
+      {"heading": "日常使用提醒", "text": "依實際需要使用，不必每天固定吸鼻。可優先在喝奶前處理，以免喝奶後立即吸鼻增加嘔吐機會。使用後依產品說明充分清潔、乾燥與收納。"}
+    ],
+    "altText": "吸鼻器常見錯誤與就醫警訊圖卡，提醒避免過強吸力與吸頭深入，並列出呼吸困難、發紫及未滿三個月發燒 38°C 等警訊",
+    "sourceType": "source_checked_revision", "matchConfidence": "high", "needsMedicalReview": true,
+    "updatedAt": "2026-10-26", "sourceCheckedAt": "2026-10-26",
+    "references": [
+      {"title": "英國 NHS：When to get urgent medical help for babies and children under 5", "url": "https://www.nhs.uk/baby/health/when-to-get-urgent-medical-help-for-babies-and-children-under-5/"},
+      {"title": "Nationwide Children's Hospital：Suctioning the Nose with a Bulb Syringe（2022 修訂）", "url": "https://www.nationwidechildrens.org/family-resources-education/health-wellness-and-safety-resources/helping-hands/suctioning-the-nose-with-a-bulb-syringe"},
+      {"title": "美國兒科醫學會 HealthyChildren：Difference Between a Sinus Infection and a Cold（2025-01-24；症狀超過 10 天）", "url": "https://www.healthychildren.org/English/health-issues/conditions/ear-nose-throat/Pages/The-Difference-Between-Sinusitis-and-a-Cold.aspx"}
+    ],
+    "revisionCredit": "使用者提供圖卡與文字並表示已人工核審；本站整理逐頁靜態文字並核對直接來源"
+  },
+  {
+    "cardId": "baby_nasal_aspirator",
+    "title": "吸鼻器常見問題 Q&A：次數、生理食鹽水與鼻塞",
+    "image": "img/baby_nasal_aspirator_7.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/baby_nasal_aspirator_7.html",
+    "summary": "吸鼻器依寶寶實際需要使用，不必每天固定吸鼻；球型吸鼻器可參考一天不超過 4 次。鼻涕濃稠時可用適合嬰幼兒的無菌生理食鹽水，吸鼻要輕柔、短暫且不深入鼻腔。",
+    "sections": [
+      {"heading": "每天可以用幾次？", "text": "依寶寶實際需要使用，不必每天固定吸鼻，也不是吸得越多越好。球型吸鼻器可參考一天不超過 4 次的保守建議，以避免刺激鼻黏膜；其他機型應依產品說明及醫療人員指示操作。"},
+      {"heading": "一定要先滴生理食鹽水嗎？", "text": "不一定。鼻涕較濃稠、乾燥或不易吸出時，可依產品說明使用適合嬰幼兒的無菌生理食鹽水鼻滴劑，幫助分泌物軟化；若鼻涕容易清除，不必每次都先滴。"},
+      {"heading": "會傷鼻子嗎？寶寶抗拒怎麼辦？", "text": "正確、輕柔使用通常安全，但過強吸力、吸頭深入或操作過於頻繁，仍可能刺激或傷害鼻黏膜。選擇寶寶較平靜時操作，輕柔安撫並短暫吸取；若劇烈掙扎，不要強行固定或反覆操作。"},
+      {"heading": "吸完鼻涕仍鼻塞？", "text": "鼻塞可能由鼻黏膜腫脹造成，不一定只是鼻涕太多。若沒有明顯鼻涕，不要持續反覆抽吸；若鼻塞持續影響呼吸、喝奶或睡眠，應就醫評估。呼吸費力、發紫、反應變差，或未滿 3 個月發燒達 38°C 以上，應立即就醫。"}
+    ],
+    "altText": "吸鼻器常見問題圖卡，說明球型吸鼻器一天不超過四次、生理食鹽水依需要使用、輕柔吸鼻與鼻塞持續時就醫",
+    "sourceType": "source_checked_revision", "matchConfidence": "high", "needsMedicalReview": true,
+    "updatedAt": "2026-10-26", "sourceCheckedAt": "2026-10-26",
+    "references": [
+      {"title": "Nationwide Children's Hospital：Suctioning the Nose with a Bulb Syringe（2022 修訂；每日次數）", "url": "https://www.nationwidechildrens.org/family-resources-education/health-wellness-and-safety-resources/helping-hands/suctioning-the-nose-with-a-bulb-syringe"},
+      {"title": "美國兒科醫學會 HealthyChildren：嬰兒鼻塞與安全居家照護（2025-12-16）", "url": "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/my-baby-has-a-stuffy-nose-how-can-i-help-them-sleep-safely.aspx"},
+      {"title": "英國 NHS：When to get urgent medical help for babies and children under 5", "url": "https://www.nhs.uk/baby/health/when-to-get-urgent-medical-help-for-babies-and-children-under-5/"}
+    ],
+    "revisionCredit": "使用者提供圖卡與文字並表示已人工核審；本站整理逐頁靜態文字並核對直接來源"
   }
 ]

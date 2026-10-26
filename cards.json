@@ -3443,5 +3443,18 @@
       "adult_diaper_pants_last-0",
       "adult_diaper_pants_overview-0"
     ]
+  },
+  "baby_nasal_aspirator": {
+    "title": "使用吸鼻器與注意事項",
+    "category": "public_education",
+    "showFooter": true,
+    "topics": ["infant_care"],
+    "order": 35,
+    "hidden": false,
+    "icon": "👶",
+    "tags": ["吸鼻器", "嬰兒吸鼻器", "寶寶吸鼻器", "寶寶鼻塞", "吸鼻器怎麼用", "手動吸鼻器", "電動吸鼻器", "吸鼻器清潔", "嬰幼兒照護", "知母時吸鼻器", "貝舒樂吸鼻器", "貝親吸鼻器"],
+    "texts": ["寶寶鼻塞怎麼辦？吸鼻器可以幫忙", "吸鼻器有哪些種類？", "什麼時候需要使用吸鼻器？", "吸鼻器怎麼用？四步驟教學", "吸鼻器用完怎麼清潔？", "吸鼻器常見錯誤與就醫警訊", "吸鼻器常見問題 Q&A"],
+    "steps": ["img/baby_nasal_aspirator_1.webp", "img/baby_nasal_aspirator_2.webp", "img/baby_nasal_aspirator_3.webp", "img/baby_nasal_aspirator_4.webp", "img/baby_nasal_aspirator_5.webp", "img/baby_nasal_aspirator_6.webp", "img/baby_nasal_aspirator_7.webp"],
+    "favorite_keys": ["baby_nasal_aspirator-0", "baby_nasal_aspirator-1", "baby_nasal_aspirator-2", "baby_nasal_aspirator-3", "baby_nasal_aspirator-4", "baby_nasal_aspirator-5", "baby_nasal_aspirator-6"]
   }
 }

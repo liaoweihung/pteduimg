@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v535ee7bce2005900a5a8d6a4';
+const CACHE_NAME = 'pwa-cache-vaa315e5592300573ba85b0b1';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -159,6 +159,13 @@ const urlsToCache = [
   "./img/artificial_tears_3.webp",
   "./img/artificial_tears_4.webp",
   "./img/atopic_dermatitis_care.webp",
+  "./img/baby_nasal_aspirator_1.webp",
+  "./img/baby_nasal_aspirator_2.webp",
+  "./img/baby_nasal_aspirator_3.webp",
+  "./img/baby_nasal_aspirator_4.webp",
+  "./img/baby_nasal_aspirator_5.webp",
+  "./img/baby_nasal_aspirator_6.webp",
+  "./img/baby_nasal_aspirator_7.webp",
   "./img/balanced_nutrition_supplement.webp",
   "./img/boyBMI.webp",
   "./img/boy_height2.webp",
@@ -827,6 +834,13 @@ const urlsToCache = [
   "./cards/adult_diaper_pants_first.html",
   "./cards/adult_diaper_pants_last.html",
   "./cards/adult_diaper_pants_overview.html",
+  "./cards/baby_nasal_aspirator_1.html",
+  "./cards/baby_nasal_aspirator_2.html",
+  "./cards/baby_nasal_aspirator_3.html",
+  "./cards/baby_nasal_aspirator_4.html",
+  "./cards/baby_nasal_aspirator_5.html",
+  "./cards/baby_nasal_aspirator_6.html",
+  "./cards/baby_nasal_aspirator_7.html",
   "./cards/acne.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare_2.html",

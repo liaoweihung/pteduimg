@@ -9,6 +9,15 @@
   },
   "nodes": [
     {
+      "id": "topic:infant-care",
+      "title": "嬰幼兒照護",
+      "kind": "topic",
+      "status": "collection_only",
+      "page_path": "",
+      "evidence": "cards.json|public.html",
+      "note": "CR-2026-046；public.html 篩選分類，未建立獨立主題頁；使用者聲明圖文已人工核審但未提供具名醫療簽核證據"
+    },
+    {
       "id": "topic:knee-support",
       "title": "膝關節護具",
       "kind": "topic",

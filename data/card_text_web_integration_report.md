@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：227
+- 成功加入文字頁數：234
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -232,3 +232,10 @@
 | smecta_diarrhea | 兒童腹瀉怎麼辦？補水與舒腹達注意事項 | https://liaoweihung.github.io/pteduimg/cards/smecta_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | kidsolone_oral_solution | 必爾生口服液：兒童類固醇的用途、劑量與副作用 | https://liaoweihung.github.io/pteduimg/cards/kidsolone_oral_solution.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | pediatric_cold_syrup | 勝克敏液：兒童過敏用藥與分齡劑量 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_cetirizine.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| baby_nasal_aspirator | 寶寶鼻塞怎麼辦？認識吸鼻器的作用與使用觀念 | https://liaoweihung.github.io/pteduimg/cards/baby_nasal_aspirator_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| baby_nasal_aspirator | 吸鼻器有哪些種類？手動、口吸、活塞與電動式比較 | https://liaoweihung.github.io/pteduimg/cards/baby_nasal_aspirator_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| baby_nasal_aspirator | 什麼時候需要使用吸鼻器？寶寶鼻塞與就醫提醒 | https://liaoweihung.github.io/pteduimg/cards/baby_nasal_aspirator_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| baby_nasal_aspirator | 吸鼻器怎麼用？嬰兒吸鼻四步驟與操作注意 | https://liaoweihung.github.io/pteduimg/cards/baby_nasal_aspirator_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| baby_nasal_aspirator | 吸鼻器用完怎麼清潔？拆洗、晾乾與保存方式 | https://liaoweihung.github.io/pteduimg/cards/baby_nasal_aspirator_5.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| baby_nasal_aspirator | 吸鼻器常見錯誤與就醫警訊：嬰兒鼻塞安全提醒 | https://liaoweihung.github.io/pteduimg/cards/baby_nasal_aspirator_6.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| baby_nasal_aspirator | 吸鼻器常見問題 Q&A：次數、生理食鹽水與鼻塞 | https://liaoweihung.github.io/pteduimg/cards/baby_nasal_aspirator_7.html | 是 | 是 | 是 | 是 | 是 | 無 |

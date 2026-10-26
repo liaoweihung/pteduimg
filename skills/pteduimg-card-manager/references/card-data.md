@@ -22,6 +22,7 @@
   - `insect_repellent`
   - `gastrointestinal`
   - `elimination_care`
+  - `infant_care`
   - `growth`
   - `chronic_conditions`
   - `sleep`

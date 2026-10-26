@@ -454,3 +454,17 @@ REL-bd2b5f6147f90d5d,series:smecta_diarrhea,has_card,page:smecta_3,source_observ
 REL-4639f504272f0b61,series:kidsolone_oral_solution,has_card,page:kidsolone_oral_solution,source_observed,series_membership,cards.json,新增必爾生口服液系列單張圖卡；圖文與核准仿單分次一致。
 REL-fa930c19a060f56e,series:ped_fever_reducer,has_card,page:idofen_suspension,source_observed,series_membership,cards.json,新增舒抑痛；依普芬後、發燒注意事項前
 REL-8387adcd11911209,series:ped_fever_reducer,has_card,page:macsafe_suspension,source_observed,series_membership,cards.json,新增馬蓋先；舒抑痛後、發燒注意事項前
+REL-c3be5122804c03bf,series:baby_nasal_aspirator,has_card,page:baby_nasal_aspirator_1,source_observed,series_membership,cards.json,CR-2026-046；新系列第 1 張
+REL-aaa3ed642ec6b6f3,series:baby_nasal_aspirator,has_card,page:baby_nasal_aspirator_2,source_observed,series_membership,cards.json,CR-2026-046；新系列第 2 張
+REL-c98a55869e310c7f,series:baby_nasal_aspirator,has_card,page:baby_nasal_aspirator_3,source_observed,series_membership,cards.json,CR-2026-046；新系列第 3 張
+REL-884a55d15af269bc,series:baby_nasal_aspirator,has_card,page:baby_nasal_aspirator_4,source_observed,series_membership,cards.json,CR-2026-046；新系列第 4 張
+REL-2161887103fc37b7,series:baby_nasal_aspirator,has_card,page:baby_nasal_aspirator_5,source_observed,series_membership,cards.json,CR-2026-046；新系列第 5 張
+REL-ab491e534a52c7f2,series:baby_nasal_aspirator,has_card,page:baby_nasal_aspirator_6,source_observed,series_membership,cards.json,CR-2026-046；新系列第 6 張
+REL-a925f75fda11ec74,series:baby_nasal_aspirator,has_card,page:baby_nasal_aspirator_7,source_observed,series_membership,cards.json,CR-2026-046；新系列第 7 張
+REL-599d2c27da62816a,topic:infant-care,shares_card,page:baby_nasal_aspirator_1,management_mapping,management,cards.json|public.html,CR-2026-046；嬰幼兒照護篩選集合
+REL-82fa4dd52b7d61bc,topic:infant-care,shares_card,page:baby_nasal_aspirator_2,management_mapping,management,cards.json|public.html,CR-2026-046；嬰幼兒照護篩選集合
+REL-90187fa8d43672d6,topic:infant-care,shares_card,page:baby_nasal_aspirator_3,management_mapping,management,cards.json|public.html,CR-2026-046；嬰幼兒照護篩選集合
+REL-89085655686025d9,topic:infant-care,shares_card,page:baby_nasal_aspirator_4,management_mapping,management,cards.json|public.html,CR-2026-046；嬰幼兒照護篩選集合
+REL-fdba09d53ab9c764,topic:infant-care,shares_card,page:baby_nasal_aspirator_5,management_mapping,management,cards.json|public.html,CR-2026-046；嬰幼兒照護篩選集合
+REL-32cb001dd4b21ef8,topic:infant-care,shares_card,page:baby_nasal_aspirator_6,management_mapping,management,cards.json|public.html,CR-2026-046；嬰幼兒照護篩選集合
+REL-4d0c6c1fe24df27c,topic:infant-care,shares_card,page:baby_nasal_aspirator_7,management_mapping,management,cards.json|public.html,CR-2026-046；嬰幼兒照護篩選集合
