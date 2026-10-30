@@ -303,6 +303,138 @@
       "gsc_page_index_report": {"data_updated_date": "2026-10-12", "indexed_total": 24, "not_indexed_total": 1, "validation_404": "passed"},
       "notes": "AI report counts are not explicit AI citations. Overlapping October 19 28-day window does not constitute an independent before/after comparison. The stale October 12 overview is not current per-URL status. Public HTTP 200 and October 16 live fetch success do not imply GSC sitemap processing success. Three older pediatric cold pages have Article headline different from page title. No site changes or new indexing submissions."
     }
+    ,
+    {
+      "id": "OBS-2026-10-26-performance-comparison",
+      "kind": "gsc_performance_comparison",
+      "observed_date": "2026-10-26",
+      "evidence_file": "evidence/search-console-2026-10-26.md",
+      "source": "Authenticated visible GSC UI, not an export; date modal verified; all 25 page comparison rows read",
+      "filters": {"property": "https://liaoweihung.github.io/", "search_type": "web", "country": "all", "device": "all"},
+      "current_period": {"start": "2026-09-27", "end": "2026-10-24", "days": 28},
+      "previous_period": {"start": "2026-08-30", "end": "2026-09-26", "days": 28},
+      "report_timezone": null,
+      "report_updated_display": "3 hours ago",
+      "property_totals": {
+        "current": {"impressions": 382, "clicks": 10, "reported_ctr_percent": 2.6, "average_position": 14.7},
+        "previous": {"impressions": 106, "clicks": 3, "reported_ctr_percent": 2.8, "average_position": 23.4}
+      },
+      "page_url_prefix": "https://liaoweihung.github.io/pteduimg/",
+      "page_rows_columns": ["relative_url", "current_clicks", "previous_clicks", "current_impressions", "previous_impressions"],
+      "page_rows": [
+        ["", 4, 0, 7, 4],
+        ["cards/ped_cold_secorine.html", 3, 1, 111, 37],
+        ["cards/ped_cold_exdila_liquid.html", 2, 0, 19, 0],
+        ["cards/ped_cold_guaphen_syrup.html", 1, 0, 50, 0],
+        ["cards/hydrocolloid_how_to_use.html", 0, 0, 106, 9],
+        ["cards/ped_cold_peace_syrup.html", 0, 0, 20, 0],
+        ["cards/acne_patch_how_to_use.html", 0, 0, 19, 3],
+        ["cards/over_one_oint_01.html", 0, 0, 11, 17],
+        ["cards/ped_cold_cetirizine.html", 0, 0, 11, 15],
+        ["cards/acne_patch_when_to_use.html", 0, 0, 11, 3],
+        ["cards/wound_healing_signs.html", 0, 0, 7, 0],
+        ["cards/wound_when_to_seek_care.html", 0, 0, 6, 1],
+        ["cards/acne_stage.html", 0, 1, 4, 4],
+        ["cards/adult_diaper_2.html", 0, 0, 4, 6],
+        ["public.html", 0, 0, 3, 2],
+        ["cards/antiphen.html", 0, 0, 3, 3],
+        ["cards/wound_tetanus.html", 0, 0, 3, 1],
+        ["cards/wound_cover.html", 0, 0, 3, 0],
+        ["cards/ibuprofen_sol.html", 0, 0, 3, 4],
+        ["cards/acne.html", 0, 1, 2, 1],
+        ["cards/acne_dailycare_2.html", 0, 0, 2, 1],
+        ["cards/Ped_abx_susp_8.html", 0, 0, 2, 2],
+        ["cards/Ped_abx_susp_1.html", 0, 0, 2, 1],
+        ["cards/oral_hygiene_08.html", 0, 0, 1, 1],
+        ["cards/acne_dailycare.html", 0, 0, 1, 1]
+      ],
+      "query_rows_columns": ["query", "current_clicks", "previous_clicks", "current_impressions", "previous_impressions"],
+      "query_rows_partial": [
+        ["息咳寧 劑量", 1, 0, 41, 1],
+        ["藥局止咳", 1, 0, 1, 0],
+        ["人工皮貼多久", 0, 0, 12, 1],
+        ["人工皮什麼時候不用貼", 0, 0, 10, 0],
+        ["人工皮什麼時候換", 0, 0, 10, 1],
+        ["咳酚糖漿兒童劑量", 0, 0, 9, 0],
+        ["人工皮關節貼法", 0, 0, 9, 0],
+        ["息咳寧劑量計算", 0, 0, 8, 0],
+        ["人工皮什麼時候貼", 0, 0, 8, 0],
+        ["痘痘貼貼多久", 0, 0, 7, 0]
+      ],
+      "original_manual5": {"current_page_impressions_sum": 136, "previous_page_impressions_sum": 72, "current_clicks_sum": 3, "previous_clicks_sum": 1, "indexed_current": null, "historical_index_observation": "OBS-2026-10-21-original26-and-information"},
+      "original_natural21": {"visible_pages": 5, "absent_pages": 16, "current_visible_page_impressions_sum": 15, "previous_visible_page_impressions_sum": 14, "current_visible_clicks_sum": 0, "previous_visible_clicks_sum": 0, "indexed_current": null, "historical_index_observation": "OBS-2026-10-21-original26-and-information"},
+      "information_pages": {"visible_rows": 0, "impressions": null, "clicks": null, "index_status_current": null},
+      "json_ld_cohorts": {"first": "not evaluated as a complete cohort", "second": "25-page cohort retained separately; visible acne_stage and acne_dailycare rows above; fixed post window through October 29 incomplete", "third": "not evaluated as a complete cohort"},
+      "notes": "Both 28-day periods are after the August 29 submissions, not a causal pre/post test. Growth is concentrated, with two manual pages declining and two flat. Absent page rows are unknown, not zero. Property and page impression sums have different aggregation; do not force equality. Query table showed 72 rows; only first ten recorded. Comparison chart AX label had Invalid Date/1970, so dates were confirmed in the date modal. GA4, technical status and all-site indexing were not rechecked. No new submissions or automation restart."
+    },
+    {
+      "id": "OBS-2026-10-26-cold-partial-performance-index",
+      "kind": "gsc_performance_and_url_inspection",
+      "observed_date": "2026-10-26",
+      "cohort": "manual-cold-syrups-2026-10-19",
+      "evidence_file": "evidence/search-console-2026-10-26.md",
+      "period": {"start": "2026-10-20", "end": "2026-10-24", "days": 5, "report_timezone": null},
+      "filters": {"property": "https://liaoweihung.github.io/", "search_type": "web", "country": "all", "device": "all", "page_match": "exact URL for individual query tables"},
+      "property_totals_same_period": {"impressions": 226, "clicks": 5, "reported_ctr_percent": 2.2, "average_position": 10.7},
+      "query_columns": ["query", "clicks", "impressions", "reported_ctr_percent", "average_position"],
+      "pages": [
+        {
+          "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_peace_syrup.html",
+          "index_status": "indexed", "first_observed_indexed_date": "2026-10-21", "last_crawled_display": "2026年10月19日 凌晨12:38:55",
+          "impressions": 20, "clicks": 0, "reported_ctr_percent": 0, "average_position": 8.1,
+          "queries": [["5歲", 0, 1, 0, 1.0], ["安咳糖漿兒童", 0, 1, 0, 48.0]],
+          "chatgpt_found": null, "explicit_ai_citation": null
+        },
+        {
+          "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_guaphen_syrup.html",
+          "index_status": "indexed", "first_observed_indexed_date": "2026-10-21", "last_crawled_display": "2026年10月19日 凌晨1:07:21",
+          "impressions": 45, "clicks": 1, "reported_ctr_percent": 2.2, "average_position": 5.4,
+          "queries": [["咳酚糖漿兒童劑量", 0, 8, 0, 4.9], ["咳酚糖漿劑量", 0, 2, 0, 1.0], ["咳酚糖漿嬰兒劑量", 0, 2, 0, 5.0], ["大人使用", 0, 1, 0, 4.0], ["咳酚", 0, 1, 0, 17.0], ["這是什麼藥", 0, 1, 0, 20.0]],
+          "chatgpt_found": null, "explicit_ai_citation": null
+        },
+        {
+          "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_exdila_liquid.html",
+          "index_status": "indexed", "first_observed_indexed_date": "2026-10-21", "last_crawled_display": "2026年10月19日 凌晨1:08:49",
+          "impressions": 18, "clicks": 2, "reported_ctr_percent": 11.1, "average_position": 8.4,
+          "queries": [["喘解液 劑量", 0, 1, 0, 1.0], ["喘解液用量", 0, 1, 0, 1.0], ["喝多少", 0, 1, 0, 2.0], ["喘解液", 0, 1, 0, 29.0]],
+          "chatgpt_found": null, "explicit_ai_citation": null
+        }
+      ],
+      "combined": {"page_impressions_sum": 83, "clicks_sum": 3, "computed_ctr_percent": 3.6144578313253013},
+      "inspection_common": {"crawl_agent": "Googlebot smartphone", "crawl_allowed": true, "index_allowed": true, "fetch": "successful", "canonical": "self, Google selected inspected URL", "sitemap_reference": "not detected", "referring_page": "not detected"},
+      "forecast_reference": "FORECAST-2026-10-19-cold-7d",
+      "forecast_evaluation": "partial_only; five-day counts exceed the original low-confidence seven-day scenario but final evaluation still awaits October 29 and complete data through October 26",
+      "notes": "Original forecast preserved unchanged. Three observed clicks cannot be assigned to the visible queries, all of whose displayed clicks are zero. Missing queries do not mean no demand. Earlier crawl timestamps are not first indexed timestamps or evidence of request causation. UI inspection was read-only; no live test or index request."
+    },
+    {
+      "id": "OBS-2026-10-26-ai-comparison",
+      "kind": "gsc_generative_ai_beta_report",
+      "observed_date": "2026-10-26",
+      "evidence_file": "evidence/search-console-2026-10-26.md",
+      "filters": {"property": "https://liaoweihung.github.io/", "search_type": "web", "country": "all", "device": "all"},
+      "current_period": {"start": "2026-09-27", "end": "2026-10-24", "days": 28},
+      "previous_period": {"start": "2026-08-30", "end": "2026-09-26", "days": 28},
+      "report_timezone": null,
+      "current_impressions": 57, "previous_impressions": 12,
+      "page_url_prefix": "https://liaoweihung.github.io/pteduimg/",
+      "page_rows_columns": ["relative_url", "current_impressions", "previous_impressions"],
+      "page_rows": [
+        ["cards/ped_cold_guaphen_syrup.html", 26, 0],
+        ["cards/ped_cold_secorine.html", 11, 6],
+        ["cards/over_one_oint_01.html", 5, 1],
+        ["cards/ped_cold_exdila_liquid.html", 5, 0],
+        ["cards/ped_cold_peace_syrup.html", 4, 0],
+        ["cards/ped_cold_cetirizine.html", 2, 1],
+        ["", 1, 0],
+        ["cards/acne.html", 1, 0],
+        ["cards/acne_patch_how_to_use.html", 1, 0],
+        ["cards/acne_stage.html", 1, 2],
+        ["cards/Ped_abx_susp_1.html", 0, 1],
+        ["cards/adult_diaper_2.html", 0, 1]
+      ],
+      "explicit_citations": null, "chatgpt_search_found": null,
+      "notes": "All 12 visible rows captured; dates confirmed in modal. These are GSC report exposures, not independently observed answer citations. Do not add to Web totals as disjoint traffic or attribute growth to JSON-LD."
+    }
   ],
   "forecasts": [
     {

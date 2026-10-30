@@ -114,21 +114,21 @@
     {
       "audit_id": "AUD-007",
       "path": "data/card_text_web_integration_report.md",
-      "audit_date": "2026-10-23",
-      "date_basis": "CR-2026-039 生達鎮咳袪痰液本機建置",
+      "audit_date": "2026-10-30",
+      "date_basis": "CR-2026-049 滅喘淨液插入第四張，本機完整建置",
       "kind": "generated_report",
-      "scope": "220 張成功加入文字的圖卡頁",
-      "recorded_result": "2026-10-23 完整建置報告為 220 成功、0 失敗；新增一張生達鎮咳袪痰液頁。",
+      "scope": "235 張成功加入文字的圖卡頁",
+      "recorded_result": "本次整合報告235成功、0失敗；新增滅喘淨液一頁。",
       "known_issues": "本次另比較段落文字；09_australia_usa_china 字詞差異，原檢查未覆蓋",
       "followup_commits": [
         "333ed52512cfbaf2b0f900e76605bc0b5c8264cc"
       ],
       "validity": "conflict",
-      "current_interpretation": "新頁具靜態文字、來源與雙日期；兒童體重劑量為醫院及醫師參考建議，並非仿單核准固定劑量；既有 09_australia_usa_china 字詞差異仍保留 CR-2026-023。",
-      "last_report_commit": "a9295bfba52ed3288298ce9a0b9acd70dd6521be",
-      "last_report_commit_date": "2026-10-23T21:02:40+08:00",
-      "working_tree_state": "tracked",
-      "sha256": "7c97431a762078b81b79427b2d0802cc7d0e81dfbfb79c89c131439a20a48bb4",
+      "current_interpretation": "本次新頁具靜態文字、來源與雙日期；保留既有 conflict 與已知問題，機械整合不是醫療簽核。建置前234頁版本可由 Git b9d57269d86e24cd0bfb58e4e06dda86438c2be7 取得。",
+      "last_report_commit": "unknown",
+      "last_report_commit_date": "unknown",
+      "working_tree_state": "modified",
+      "sha256": "7f64a99d7ed3e6c2ab987c61ea097ede0a35d96bcf593f57ada5d42da2a181af",
       "previous_versions": [
         {
           "audit_id": "AUD-007",
@@ -262,6 +262,25 @@
           "last_report_commit_date": "2026-10-13T00:23:33+08:00",
           "working_tree_state": "tracked",
           "sha256": "216c6f181c80ccaba29a07d695366ede86b3b3a93a543d853c5ad03e620cec9e"
+        },
+        {
+          "audit_id": "AUD-007",
+          "path": "data/card_text_web_integration_report.md",
+          "audit_date": "2026-10-23",
+          "date_basis": "CR-2026-039 生達鎮咳袪痰液本機建置",
+          "kind": "generated_report",
+          "scope": "220 張成功加入文字的圖卡頁",
+          "recorded_result": "2026-10-23 完整建置報告為 220 成功、0 失敗；新增一張生達鎮咳袪痰液頁。",
+          "known_issues": "本次另比較段落文字；09_australia_usa_china 字詞差異，原檢查未覆蓋",
+          "followup_commits": [
+            "333ed52512cfbaf2b0f900e76605bc0b5c8264cc"
+          ],
+          "validity": "conflict",
+          "current_interpretation": "新頁具靜態文字、來源與雙日期；兒童體重劑量為醫院及醫師參考建議，並非仿單核准固定劑量；既有 09_australia_usa_china 字詞差異仍保留 CR-2026-023。",
+          "last_report_commit": "a9295bfba52ed3288298ce9a0b9acd70dd6521be",
+          "last_report_commit_date": "2026-10-23T21:02:40+08:00",
+          "working_tree_state": "tracked",
+          "sha256": "7c97431a762078b81b79427b2d0802cc7d0e81dfbfb79c89c131439a20a48bb4"
         }
       ]
     },
