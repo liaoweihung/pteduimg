@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-30T10:45:16+08:00",
-  "baseline": "b9d57269d86e24cd0bfb58e4e06dda86438c2be7",
-  "scope": "網站來源快照；版本 b9d57269",
+  "generatedAt": "2026-10-30T10:56:43+08:00",
+  "baseline": "7e8ad56c6bd024b9bcd1b1ae447a126ffc8e2d2f",
+  "scope": "網站來源快照；版本 7e8ad56c",
   "counts": {
-    "cards": 391,
+    "cards": 392,
     "series": 88,
     "allSeries": 92,
     "hidden": 4,
@@ -590,7 +590,7 @@
     {
       "id": "pediatric_cold_syrup",
       "title": "兒科感冒藥水",
-      "count": 10,
+      "count": 11,
       "hidden": false,
       "areas": [],
       "departments": [
@@ -4136,31 +4136,31 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 233,
+      "machine_pass": 234,
       "partial": 1,
       "missing": 157
     },
     "reference_status": {
       "missing": 242,
-      "machine_pass": 149
+      "machine_pass": 150
     },
     "date_status": {
       "missing": 242,
-      "machine_pass": 128,
+      "machine_pass": 129,
       "partial": 21
     },
     "footer_status": {
       "missing": 277,
-      "machine_pass": 114
+      "machine_pass": 115
     },
     "jsonld_status": {
-      "machine_pass": 192,
+      "machine_pass": 193,
       "missing": 199
     }
   },
   "sync": {
-    "pages": 378,
-    "fields": 393,
+    "pages": 369,
+    "fields": 375,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -5875,69 +5875,6 @@
       {
         "page": "paste_prep_4",
         "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "ped_cold_cough_mixture",
-        "fields": [
-          "source_sha256",
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "ped_cold_cypromin",
-        "fields": [
-          "source_sha256",
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "ped_cold_exdila_liquid",
-        "fields": [
-          "source_sha256",
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "ped_cold_guaphen_syrup",
-        "fields": [
-          "source_sha256",
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "ped_cold_koko_sou_syrup",
-        "fields": [
-          "source_sha256",
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "ped_cold_mintapp_syrup",
-        "fields": [
-          "source_sha256",
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "ped_cold_musco_solution",
-        "fields": [
-          "source_sha256",
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "ped_cold_peace_syrup",
-        "fields": [
-          "source_sha256",
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "ped_cold_secorine",
-        "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
