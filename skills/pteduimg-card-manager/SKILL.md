@@ -17,6 +17,7 @@ Use this skill for the `pteduimg` static GitHub Pages site when the user asks to
 - 清冊／關聯／人工欄位：讀 [專案管理 SOP](../../docs/project-management/README.md)。
 - 品牌或 Logo：先讀 [品牌入口](../../docs/brand/README.md)；一般圖卡轉 WebP 的建議不適用於覆寫正式 Logo PNG。
 - 新圖卡視覺布局：讀 [圖卡視覺設計規範 v1.0](../../docs/brand/CARD_DESIGN_GUIDE_v1.0.md)；品牌素材限制仍依品牌入口。
+- 圖卡與網頁文字產稿／跨 AI 交接包（handoff JSON）：讀 [圖卡與網頁文字交接規範 v1.0](../../docs/card-content-handoff-v1.md)；產稿使用單一合法 JSON 內容包，接收時保留定稿文字並依欄位合併至現有網站資料。
 
 命令與資料路徑均以 repository 根目錄為準；Markdown 連結相對於本檔。
 
@@ -66,6 +67,8 @@ Required record fields with the current renderer:
 Read and verify the medical sources. AI output, conversation IDs, search snippets, or institution homepages alone are not supporting medical references. Preserve truthful provenance and review status; do not mark `needsMedicalReview: false` solely because AI generated or checked the text. Missing facts, dates, sources, or attribution must be resolved or reported as incomplete, never invented.
 
 When the user supplies cards and text that have already undergone human review, start with the supplied images, per-card text, direct sources, dates, and review provenance. Check image/text matching, source support, and integration completeness without automatically restarting broad medical research. A review claim alone does not create a documented pharmacist signoff or waive the direct-source and source-check requirements. If a claim conflicts with its image or source, a required source is missing, or a safety concern appears, perform the necessary focused source check and stop unsafe publication until resolved.
+
+When preparing a content handoff or integrating a supplied `<series_id>.handoff.json`, follow [圖卡與網頁文字交接規範 v1.0](../../docs/card-content-handoff-v1.md): keep finalized wording verbatim, merge only `series.metadata` (into `cards.json` and `cards.manual.json`) and `pages[].contentRecord` (into `data/card_content.json` matched by `image`, preserving existing extra fields when updating), never write outer handoff wrapper keys into website JSONs, and set `matchConfidence: "high"` only after verifying the actual generated image.
 
 Each new card page must contain static, readable HTML for its text, update date, source-check date, and real source links. Series may reuse genuinely applicable sources, but each page must display them. Prepare these records before scheduling a release, even though scheduled hidden pages are not generated until publication.
 

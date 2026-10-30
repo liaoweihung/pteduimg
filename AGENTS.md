@@ -12,6 +12,7 @@
 | 任務 | 操作前必讀的詳細規範 |
 |---|---|
 | 新增圖卡／系列、追加圖片、修改圖卡資料 | [專案 Card Manager Skill](skills/pteduimg-card-manager/SKILL.md)；metadata 分類與範例見 [圖卡資料模型](skills/pteduimg-card-manager/references/card-data.md) |
+| 圖卡與網頁文字產稿、跨 AI 交接包（handoff JSON）、製圖與整合 | [圖卡與網頁文字交接規範 v1.0](docs/card-content-handoff-v1.md)；製圖讀 [圖卡製作 Skill](.agents/skills/create-pharmacy-card/SKILL.md) 與 [圖卡視覺設計規範 v1.0](docs/brand/CARD_DESIGN_GUIDE_v1.0.md) |
 | 建置、生成頁、排程發布、退出、SEO、快取、Git 發布 | [網站建置、驗證與發布](docs/site-build-and-release.md) 的對應章節 |
 | 清冊、需求、關聯、人工簽核及增量同步 | [專案管理 SOP](docs/project-management/README.md)；從 [總控台](docs/project-management/project-dashboard.md) 查現況 |
 | 品牌、Logo、品牌色、素材 | [品牌入口](docs/brand/README.md)、[Brand Guide v2.3](docs/brand/BRAND_GUIDE_v2.3.md)、[AI 品牌約束](docs/brand/BRAND_GUIDE_AI.md) |
@@ -33,7 +34,7 @@
 
 ## 圖卡工作與資料責任
 
-`cards.json` 是 runtime 系列來源，`cards.manual.json` 是人工伴隨來源；新增或改 metadata 時同步兩者，除非使用者明示例外。圖片路徑位於 `steps`。既有 manual 缺項／省略 steps 的處理依 Skill 與當地資料慣例，不擅自補全無關系列。
+`cards.json` 是 runtime 系列來源，`cards.manual.json` 是人工伴隨來源；新增或改 metadata 時同步兩者，除非使用者明示例外。圖片路徑位於 `steps`。既有 manual 缺項／省略 steps 的處理依 Skill 與當地資料慣例，不擅自補全無關系列。跨 AI 產稿使用 [圖卡與網頁文字交接規範 v1.0](docs/card-content-handoff-v1.md) 的 JSON 內容包（`<series_id>.handoff.json`），SEO／AEO 共用 `contentRecord` 正文欄位；接收時保留定稿文字，僅將 `series.metadata` 與 `pages[].contentRecord` 依欄位合併至現有網站資料（不將交接外層欄位寫入網站 JSON），並於實際核對成圖後才設 `matchConfidence: "high"`。
 
 民眾卡使用 `public_education`、入口 `public.html`，需要非空 `topics`；藥師卡通常使用 `pharmacist_general`／`pharmacist_product`、入口 `index.html`，需要非空 `departments`。合法 ID 見資料模型文件；可有多個真實適用分類。缺少分類只會出現在全部圖卡，不能當作已完成篩選入口。
 

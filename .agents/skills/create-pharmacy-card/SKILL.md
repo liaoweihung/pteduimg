@@ -1,17 +1,18 @@
 ---
 name: create-pharmacy-card
-description: 根據使用者提供的圖卡定稿文字、網頁版文字重點及 SEO/AEO 建議，製作符合藥局衛教助手品牌規範的繁體中文衛教圖卡，加入正式 Logo 並檢查成品。適用於製作圖卡、修改圖卡、放大文字及加入 Logo。
+description: 根據圖卡與網頁文字交接規範（handoff.json 內容包）或使用者提供的圖卡定稿文字，製作符合藥局衛教助手品牌規範的繁體中文衛教圖卡，加入正式 Logo 並檢查成品。適用於製作圖卡、修改圖卡、放大文字及加入 Logo。
 ---
 
 # 製作藥局衛教助手圖卡（create-pharmacy-card）
 
-本技能用於根據使用者提供的定稿內容製作、修改繁體中文衛教圖卡、放大文字、合成正式品牌 Logo 並執行成品檢查。
+本技能用於根據交接內容包或使用者提供的定稿內容製作、修改繁體中文衛教圖卡、放大文字、合成正式品牌 Logo 並執行成品檢查。
 
 ## 規範引用與路徑基準
 
 執行前須先讀取並遵循專案共同規範，不在此複製整份品牌規範或網站 SOP：
 
 - 專案共同入口與醫療／簽核底線：[AGENTS.md](../../../AGENTS.md)、[GEMINI.md](../../../GEMINI.md)、[編輯與來源政策](../../../editorial-policy.html)
+- 圖卡與網頁文字交接規範（JSON 內容包）：[docs/card-content-handoff-v1.md](../../../docs/card-content-handoff-v1.md)
 - 品牌規範共同入口：[docs/brand/README.md](../../../docs/brand/README.md)
 - 圖卡視覺布局規範：[docs/brand/CARD_DESIGN_GUIDE_v1.0.md](../../../docs/brand/CARD_DESIGN_GUIDE_v1.0.md)
 - 正式品牌識別與母版規範：[docs/brand/BRAND_GUIDE_v2.3.md](../../../docs/brand/BRAND_GUIDE_v2.3.md)
@@ -28,15 +29,14 @@ description: 根據使用者提供的圖卡定稿文字、網頁版文字重點�
 
 ### 1. 輸入與內容
 
-使用者通常提供以下三類資料：
-- **A. 圖卡文字內容**：作為圖片上的主要定稿。
-- **B. 網頁版文字重點**：作為內容脈絡與圖文一致性檢查依據。
-- **C. SEO/AEO 建議**：作為檔名、`alt`、網頁標題與問答結構的參考。
+往後產稿與跨 AI 交接使用 [圖卡與網頁文字交接規範 v1.0](../../../docs/card-content-handoff-v1.md) 的 JSON 內容包（`<series_id>.handoff.json`，`schemaVersion: "pteduimg-handoff/1.0"`）：
+- **`pages[].cardCopy`**（`title`、`blocks` 的 `text`／`table`、`footer`）：作為圖片上的精確定稿文案與製圖資訊。
+- **`pages[].contentRecord`**：作為逐張網頁正文與 SEO／AEO 的唯一來源（`title`、`summary`、`sections`、`altText` 等），用於內容脈絡與圖文一致性檢查；不再另維護與正文不同的 SEO／AEO 標題或摘要。
+- 若使用者直接提供分段定稿文字，亦依相同分工區分圖片文案與網頁正文。
 
 **處理原則：**
-- 三份資料用途不同，**不把所有網頁文字、關鍵字和 FAQ 塞進圖片**。
-- 資料已足夠時直接製作，不重複要求確認。
-- 未提供非必要欄位時，先完成可做部分，不為了填滿欄位編造資料。
+- 依交接規範第 8 節先檢查 `schemaVersion` 與必要欄位；已定稿文字逐欄保留，不再次摘要、潤飾或另寫醫療內容，**不把所有網頁文字、關鍵字和 FAQ 塞進圖片**。
+- 缺項集中列一次，資料已足夠時直接製作，不逐欄反覆詢問，也不為填滿欄位編造資料。
 
 ### 2. 醫療內容
 
@@ -101,9 +101,9 @@ description: 根據使用者提供的圖卡定稿文字、網頁版文字重點�
   4. **版面完整性**：確認沒有截字、重疊、過小文字或遺漏警語。
   5. **手機可讀性**：縮至手機顯示寬度檢視仍可清晰閱讀。
   6. **Logo 合成品質**：確認正式 Logo 原檔已合成且維持原比例與原方向、未變形、未遮擋文字／來源／插圖。
-  7. **圖文一致性**：確認圖片內容與網頁版文字重點一致。
+  7. **圖文一致性**：確認圖片內容與網頁版文字重點一致；成圖實際檢查無誤後，若本次授權包含網站整合，才可將對應 `contentRecord.matchConfidence` 設為 `"high"`。
 - **修正與回報底線**：
   - 發現錯字或版面問題先修正；未解決項目明列，**不宣稱全部通過**。
 - **網站修改界線與流程銜接**：
   - **只要求製作圖卡時，不自動修改網站**（不變更 `cards.json`、`cards.manual.json`、`data/card_content.json`，不執行 `build.py`，不執行 Commit、Push 或部署）。
-  - 使用者另要求將圖卡加入網站時，銜接既有 [skills/pteduimg-card-manager/SKILL.md](../../../skills/pteduimg-card-manager/SKILL.md)，沿用現行建置、逐頁文字／日期／直接來源與專案管理流程，不另創一套。
+  - 使用者另要求將圖卡加入網站時，銜接 [圖卡與網頁文字交接規範 v1.0](../../../docs/card-content-handoff-v1.md) 與既有 [skills/pteduimg-card-manager/SKILL.md](../../../skills/pteduimg-card-manager/SKILL.md)，保留定稿文字，僅取 `series.metadata` 與 `pages[].contentRecord` 依欄位合併至現有網站資料（不將交接外層欄位寫入網站 JSON），並沿用現行建置與專案管理流程。
