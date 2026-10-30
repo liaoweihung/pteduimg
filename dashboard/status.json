@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-26T13:14:37+08:00",
-  "baseline": "0967dbb9043bd7346c1baf787aee5b2ae1c43d00",
-  "scope": "網站來源快照；版本 0967dbb9",
+  "generatedAt": "2026-10-30T00:47:51+08:00",
+  "baseline": "fc3c7726983943f4dce6abf78cbe915576e8b09d",
+  "scope": "網站來源快照；版本 fc3c7726",
   "counts": {
     "cards": 391,
     "series": 88,
@@ -1720,7 +1720,6 @@
         "text_status",
         "reference_status",
         "date_status",
-        "footer_status",
         "jsonld_status"
       ]
     },
@@ -1732,7 +1731,6 @@
         "text_status",
         "reference_status",
         "date_status",
-        "footer_status",
         "jsonld_status"
       ]
     },
@@ -1744,7 +1742,6 @@
         "text_status",
         "reference_status",
         "date_status",
-        "footer_status",
         "jsonld_status"
       ]
     },
@@ -4153,8 +4150,8 @@
       "partial": 21
     },
     "footer_status": {
-      "missing": 280,
-      "machine_pass": 111
+      "missing": 277,
+      "machine_pass": 114
     },
     "jsonld_status": {
       "machine_pass": 192,
@@ -4162,8 +4159,8 @@
     }
   },
   "sync": {
-    "pages": 382,
-    "fields": 397,
+    "pages": 379,
+    "fields": 394,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4762,24 +4759,6 @@
       },
       {
         "page": "amorolfine",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "angular_cheilitis_01",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "angular_cheilitis_02",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "angular_cheilitis_03",
         "fields": [
           "rules_sha256"
         ]
