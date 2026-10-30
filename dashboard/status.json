@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-30T00:47:51+08:00",
-  "baseline": "fc3c7726983943f4dce6abf78cbe915576e8b09d",
-  "scope": "網站來源快照；版本 fc3c7726",
+  "generatedAt": "2026-10-30T10:45:16+08:00",
+  "baseline": "b9d57269d86e24cd0bfb58e4e06dda86438c2be7",
+  "scope": "網站來源快照；版本 b9d57269",
   "counts": {
     "cards": 391,
     "series": 88,
@@ -4159,8 +4159,8 @@
     }
   },
   "sync": {
-    "pages": 379,
-    "fields": 394,
+    "pages": 378,
+    "fields": 393,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -6141,12 +6141,6 @@
       },
       {
         "page": "silicone_scar_gel_vs_sheet",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "silicone_scar_sheet_steps",
         "fields": [
           "rules_sha256"
         ]
