@@ -115,20 +115,20 @@
       "audit_id": "AUD-007",
       "path": "data/card_text_web_integration_report.md",
       "audit_date": "2026-10-30",
-      "date_basis": "CR-2026-049 滅喘淨液插入第四張，本機完整建置",
+      "date_basis": "CR-2026-050 安咳糖漿追加於兒科感冒藥水第12張，本機增量建置",
       "kind": "generated_report",
-      "scope": "235 張成功加入文字的圖卡頁",
-      "recorded_result": "本次整合報告235成功、0失敗；新增滅喘淨液一頁。",
+      "scope": "236 張成功加入文字的圖卡頁",
+      "recorded_result": "本次整合報告236成功、0失敗；新增「杏輝」安咳糖漿一頁。",
       "known_issues": "本次另比較段落文字；09_australia_usa_china 字詞差異，原檢查未覆蓋",
       "followup_commits": [
         "333ed52512cfbaf2b0f900e76605bc0b5c8264cc"
       ],
       "validity": "conflict",
-      "current_interpretation": "本次新頁具靜態文字、來源與雙日期；保留既有 conflict 與已知問題，機械整合不是醫療簽核。建置前234頁版本可由 Git b9d57269d86e24cd0bfb58e4e06dda86438c2be7 取得。",
+      "current_interpretation": "本次新頁具靜態文字、來源與雙日期；保留既有 conflict 與已知問題，機械整合不是醫療簽核。建置前235頁版本保留於 previous_versions。",
       "last_report_commit": "unknown",
       "last_report_commit_date": "unknown",
       "working_tree_state": "modified",
-      "sha256": "7f64a99d7ed3e6c2ab987c61ea097ede0a35d96bcf593f57ada5d42da2a181af",
+      "sha256": "65188d8fca7f104f4aa479c158e323fff1e29758423502d96c757b9bc63b0d91",
       "previous_versions": [
         {
           "audit_id": "AUD-007",
@@ -281,6 +281,25 @@
           "last_report_commit_date": "2026-10-23T21:02:40+08:00",
           "working_tree_state": "tracked",
           "sha256": "7c97431a762078b81b79427b2d0802cc7d0e81dfbfb79c89c131439a20a48bb4"
+        },
+        {
+          "audit_id": "AUD-007",
+          "path": "data/card_text_web_integration_report.md",
+          "audit_date": "2026-10-30",
+          "date_basis": "CR-2026-049 滅喘淨液插入第四張，本機完整建置",
+          "kind": "generated_report",
+          "scope": "235 張成功加入文字的圖卡頁",
+          "recorded_result": "本次整合報告235成功、0失敗；新增滅喘淨液一頁。",
+          "known_issues": "本次另比較段落文字；09_australia_usa_china 字詞差異，原檢查未覆蓋",
+          "followup_commits": [
+            "333ed52512cfbaf2b0f900e76605bc0b5c8264cc"
+          ],
+          "validity": "conflict",
+          "current_interpretation": "本次新頁具靜態文字、來源與雙日期；保留既有 conflict 與已知問題，機械整合不是醫療簽核。建置前234頁版本可由 Git b9d57269d86e24cd0bfb58e4e06dda86438c2be7 取得。",
+          "last_report_commit": "unknown",
+          "last_report_commit_date": "unknown",
+          "working_tree_state": "modified",
+          "sha256": "7f64a99d7ed3e6c2ab987c61ea097ede0a35d96bcf593f57ada5d42da2a181af"
         }
       ]
     },

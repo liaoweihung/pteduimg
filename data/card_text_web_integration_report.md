@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：235
+- 成功加入文字頁數：236
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -240,3 +240,4 @@
 | baby_nasal_aspirator | 吸鼻器常見錯誤與就醫警訊：嬰兒鼻塞安全提醒 | https://liaoweihung.github.io/pteduimg/cards/baby_nasal_aspirator_6.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | baby_nasal_aspirator | 吸鼻器常見問題 Q&A：次數、生理食鹽水與鼻塞 | https://liaoweihung.github.io/pteduimg/cards/baby_nasal_aspirator_7.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | pediatric_cold_syrup | 滅喘淨液（Meptin Liquid）兒童用藥指南 | https://liaoweihung.github.io/pteduimg/cards/ped_asthma_meptin_liquid.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| pediatric_cold_syrup | 「杏輝」安咳糖漿（Nocough Syrup）兒童用藥指南 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_nocough_syrup.html | 是 | 是 | 是 | 是 | 是 | 無 |

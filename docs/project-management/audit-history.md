@@ -549,3 +549,9 @@
 - AUD-007 建置前實際版本：Git `b9d57269d86e24cd0bfb58e4e06dda86438c2be7`，234 頁成功、0 失敗，SHA-256 `6ddefae4518c08b5ff53faa784295b810c81f9a961a53cb0b2557112f4132b0c`；先前登記的220頁版本保留於 previous_versions。
 - 本次生成報告235頁成功、0失敗，SHA-256 `7f64a99d7ed3e6c2ab987c61ea097ede0a35d96bcf593f57ada5d42da2a181af`。只保留本次系列導覽與必要全域輸出，撤回無關舊頁模板差異。
 - 保留原 conflict 與已知問題；未重審全站醫療內容，未將使用者人工審核聲明轉為具名藥師簽核。詳見 [本次證據](evidence/meptin-liquid-2026-10-30.md)。
+
+## 2026-10-30｜CR-2026-050 「杏輝」安咳糖漿新增
+
+- AUD-007 建置前版本：235 頁成功、0 失敗，SHA-256 `7f64a99d7ed3e6c2ab987c61ea097ede0a35d96bcf593f57ada5d42da2a181af`，保留於 `previous_versions`。
+- 本次增量建置生成報告 236 頁成功、0 失敗，SHA-256 `65188d8fca7f104f4aa479c158e323fff1e29758423502d96c757b9bc63b0d91`。
+- 保留原 conflict 與已知問題；未重審全站醫療內容，新頁 `needsMedicalReview: true`、管理清冊人工欄位維持 `unknown`。詳見 [本次證據](evidence/nocough-syrup-2026-10-30.md)。

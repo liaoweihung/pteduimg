@@ -1897,7 +1897,20 @@
       "滅喘淨液副作用有哪些",
       "滅喘淨液可以自己加量嗎",
       "Meptin liquid dosage child",
-      "Procaterol syrup for children"
+      "Procaterol syrup for children",
+      "安咳糖漿",
+      "杏輝安咳糖漿",
+      "Nocough Syrup",
+      "兒童複方感冒藥水",
+      "Glyceryl Guaiacolate",
+      "Phenylephrine",
+      "Chlorpheniramine",
+      "安咳糖漿劑量",
+      "安咳糖漿兒童",
+      "安咳糖漿副作用",
+      "安咳糖漿怎麼喝",
+      "安咳糖漿與安咳液不同",
+      "衛署藥製字第029634號"
     ],
     "texts": [
       "希普利敏",
@@ -1910,7 +1923,8 @@
       "敏達糖漿怎麼吃？兒童過敏性鼻炎用量與注意事項",
       "美舒咳液怎麼吃？兒童祛痰藥水用量與注意事項",
       "可克嗽糖漿怎麼吃？兒童止咳化痰藥水用量與注意事項",
-      "生達鎮咳袪痰液怎麼用？兒童參考劑量與注意事項"
+      "生達鎮咳袪痰液怎麼用？兒童參考劑量與注意事項",
+      "「杏輝」安咳糖漿（Nocough Syrup）兒童用藥指南"
     ],
     "steps": [
       "img/ped_cold_cypromin.webp",
@@ -1923,7 +1937,8 @@
       "img/ped_cold_mintapp_syrup.webp",
       "img/ped_cold_musco_solution.webp",
       "img/ped_cold_koko_sou_syrup.webp",
-      "img/ped_cold_cough_mixture.webp"
+      "img/ped_cold_cough_mixture.webp",
+      "img/ped_cold_nocough_syrup.webp"
     ],
     "favorite_keys": [
       "pediatric_cold_syrup-0",
@@ -1936,7 +1951,8 @@
       "pediatric_cold_syrup-6",
       "pediatric_cold_syrup-7",
       "pediatric_cold_syrup-8",
-      "pediatric_cold_syrup-9"
+      "pediatric_cold_syrup-9",
+      "pediatric_cold_syrup-11"
     ]
   },
   "pediatric_gi_syrup": {

@@ -8636,5 +8636,88 @@
       "url": "https://www.cth.org.tw/?aid=606&iid=1155&page_name=detail&pid=0"
     }
   ]
+},
+{
+  "cardId": "pediatric_cold_syrup",
+  "title": "「杏輝」安咳糖漿（Nocough Syrup）兒童用藥指南",
+  "image": "img/ped_cold_nocough_syrup.webp",
+  "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_nocough_syrup.html",
+  "summary": "「杏輝」安咳糖漿（Nocough Syrup）是一款含有四種有效成分（Dextromethorphan HBr、Glyceryl Guaiacolate、Phenylephrine HCl、Chlorpheniramine Maleate）的兒童複方感冒藥水，用於緩解感冒引起的咳嗽、鼻塞、喀痰、流鼻水及打噴嚏。整理 TFDA 核准仿單之兒童年齡分組用法用量、禁用對象（含 MAOI/SSRI 抗憂鬱藥禁忌）、副作用與常見問題。",
+  "sections": [
+    {
+      "heading": "藥品基本資料",
+      "text": "中文品名：「杏輝」安咳糖漿（英文品名：NOCOUGH SYRUP \"SINPHAR\"）。許可證字號：衛署藥製字第029634號。藥品類別：醫師藥師藥劑生指示藥品。劑型：糖漿劑。核准適應症：緩解感冒之各種症狀（咳嗽、鼻塞、喀痰、流鼻水、打噴嚏）。藥證有效日期：2029/05/25。製造限制：國產，未列「不得製造」。"
+    },
+    {
+      "heading": "安咳糖漿是什麼藥？",
+      "text": "安咳糖漿（Nocough Syrup）是一款含有四種有效成分的複方感冒藥水。依產品核准仿單，本品用於緩解感冒引起的咳嗽、鼻塞、喀痰、流鼻水及打噴嚏。"
+    },
+    {
+      "heading": "1. 主要成分與作用",
+      "text": "每 1 mL 含 Dextromethorphan HBr 1 mg（每 5 mL 含 5 mg，主要作用：鎮咳）、Glyceryl Guaiacolate 5 mg（每 5 mL 含 25 mg，主要作用：袪痰）、Phenylephrine HCl 1 mg（每 5 mL 含 5 mg，主要作用：緩解鼻黏膜充血）、Chlorpheniramine Maleate 0.2 mg（每 5 mL 含 1 mg，主要作用：抗組織胺，緩解流鼻水、打噴嚏）。以上每 5 mL 含量由仿單每毫升濃度換算。這款藥水同時具有鎮咳、袪痰、緩解鼻塞及抗組織胺作用，並非單一成分的止咳藥。"
+    },
+    {
+      "heading": "2. 兒童核准用法用量",
+      "text": "依 TFDA 官方仿單：6～未滿 9 歲每次用量 3 mL，每日 3～4 次（依頻次計算的每日總量 9～12 mL）；9～未滿 12 歲每次用量 5 mL，每日 3～4 次（依頻次計算的每日總量 15～20 mL）；12 歲以上每次用量 10 mL，每日 3～4 次（依頻次計算的每日總量 30～40 mL）。每日總量為依仿單每次用量與頻次計算的結果，並非仿單另訂的獨立最高日劑量。6 歲以下兒童：請洽醫師診治，不宜自行使用。"
+    },
+    {
+      "heading": "3. 可以依體重計算劑量嗎？",
+      "text": "本品仿單採年齡分組，沒有提供兒童 mg/kg 劑量公式。因此不建議自行使用其他 Dextromethorphan 或 Phenylephrine 製劑的體重公式換算本品用量。"
+    },
+    {
+      "heading": "4. 最大每日劑量",
+      "text": "仿單列出每日服用 3～4 次，並提醒不得超過建議使用量。未另外列出以 mg/kg 表示的兒童最高日劑量。"
+    },
+    {
+      "heading": "5. 哪些人不可使用？",
+      "text": "依仿單第 3.1 節，以下情況不可使用：對本品成分曾發生過敏反應者；正在服用單胺氧化酶抑制劑（MAOI）或選擇性血清素再回收抑制劑（SSRI）類抗憂鬱藥者；服用 MAOI 期間或停用 MAOI 未滿兩星期者。本品含 Dextromethorphan，與部分影響血清素的藥物併用可能增加嚴重不良反應風險。"
+    },
+    {
+      "heading": "6. 哪些情況使用前應先就醫？",
+      "text": "依仿單，以下情況應先由醫師評估：6 歲以下兒童；有肝、腎疾病或其他重大疾病者；有心臟病、高血壓、糖尿病或甲狀腺機能亢進者；有氣喘、慢性肺部疾病、呼吸急促或呼吸困難者；有青光眼或排尿困難者。"
+    },
+    {
+      "heading": "7. 可能有哪些副作用？",
+      "text": "依仿單，可能發生：皮膚（發疹、發紅）、消化系統（噁心、嘔吐、食慾不振）、神經系統（頭暈、耳鳴）、其他（喉嚨疼痛、心跳加速、排尿困難、視覺模糊）。本品也可能引起嗜睡。若服藥後出現不適，應停止使用並諮詢醫師或藥師。"
+    },
+    {
+      "heading": "8. 使用方法與保存",
+      "text": "依仿單：使用前須振搖均勻；使用廠商所附量器量取；不得與酒精性飲料併用；不要服用本藥超過七日；避免陽光直射；室溫 15～30°C 保存。本品仿單列有葡萄及鳳梨優格口味的賦形劑配方。"
+    },
+    {
+      "heading": "Q1：安咳糖漿與安咳液有什麼不同？",
+      "text": "兩者都含有 Dextromethorphan，但不是相同配方。安咳液含 Dextromethorphan 與 Potassium Guaiacolsulfonate 兩種有效成分。安咳糖漿則含四種有效成分，另外包含 Phenylephrine 與 Chlorpheniramine。兩者的濃度及核准用法用量不同，不能直接互換相同毫升數。"
+    },
+    {
+      "heading": "Q2：安咳糖漿可以和其他感冒藥水一起服用嗎？",
+      "text": "應先確認有效成分。部分綜合感冒藥、止咳化痰藥及抗過敏藥可能含有相同成分，併用可能增加重複用藥與副作用風險。"
+    },
+    {
+      "heading": "Q3：為什麼服用抗憂鬱藥要特別注意？",
+      "text": "安咳糖漿含 Dextromethorphan。依產品仿單，正在服用 MAOI 或 SSRI 類抗憂鬱藥者不可使用。"
+    },
+    {
+      "heading": "Q4：六歲以下兒童可以使用嗎？",
+      "text": "仿單規定六歲以下應洽醫師診治，不宜自行使用。不能直接將六歲以上兒童的劑量減半後使用。"
+    },
+    {
+      "heading": "Q5：咳嗽超過一星期還能繼續喝嗎？",
+      "text": "不建議自行持續使用。仿單提醒，若咳嗽持續一星期以上，或伴隨高燒、膿痰、皮疹及持續性頭痛，應停止自行用藥並就醫。"
+    }
+  ],
+  "altText": "「杏輝」安咳糖漿 Nocough Syrup 兒童複方感冒藥水衛教圖卡，含四種有效成分每 1 mL 含量、核准適應症、兒童年齡分組用法用量與 MAOI/SSRI 抗憂鬱藥禁用提醒",
+  "sourceType": "source_checked_revision",
+  "matchConfidence": "high",
+  "needsMedicalReview": true,
+  "updatedAt": "2026-10-30",
+  "sourceCheckedAt": "2026-10-30",
+  "revisionCredit": "使用者提供查核完畢之仿單重點文字並確認圖卡；本站製作衛教圖卡、整理逐頁靜態文字並核對 TFDA 核准電子仿單直接來源",
+  "showEditorialDetails": false,
+  "references": [
+    {
+      "title": "衛生福利部食品藥物管理署：「杏輝」安咳糖漿核准電子仿單（衛署藥製字第029634號）",
+      "url": "https://mcp.fda.gov.tw/exportpdf/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC029634%E8%99%9F"
+    }
+  ]
 }
 ]
