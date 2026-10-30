@@ -1959,37 +1959,124 @@
     "title": "兒科腸胃藥水",
     "category": "pharmacist_product",
     "showFooter": true,
-    "departments": ["pediatrics"],
+    "departments": [
+      "pediatrics"
+    ],
     "order": 17.5,
     "hidden": false,
     "icon": "🥄",
-    "tags": ["胃利空", "胃利空懸液", "胃利空懸液劑", "Wempty Suspension", "Domperidone", "Domperidone 1mg/mL", "胃利空兒童劑量", "胃利空用法用量", "胃利空副作用", "兒童止吐藥", "止吐藥水", "胃利空體重劑量", "胃利空飯前吃", "Domperidone心律不整"],
-    "texts": ["胃利空懸液劑：兒童劑量、用途與注意事項"],
-    "steps": ["img/wempty_suspension.webp"]
+    "tags": [
+      "胃利空",
+      "胃利空懸液",
+      "胃利空懸液劑",
+      "Wempty Suspension",
+      "Domperidone",
+      "Domperidone 1mg/mL",
+      "胃利空兒童劑量",
+      "胃利空用法用量",
+      "胃利空副作用",
+      "兒童止吐藥",
+      "止吐藥水",
+      "胃利空體重劑量",
+      "胃利空飯前吃",
+      "Domperidone心律不整",
+      "乳果糖",
+      "Lactulose",
+      "乳果糖藥水",
+      "杜化液",
+      "樂多糖漿",
+      "便祕藥水",
+      "杜化液怎麼吃",
+      "樂多糖漿劑量",
+      "乳果糖多久有效",
+      "乳果糖副作用",
+      "乳果糖兒童劑量",
+      "便祕軟便藥",
+      "Lactul",
+      "Duphalac",
+      "乳果糖孕婦",
+      "乳果糖糖尿病"
+    ],
+    "texts": [
+      "胃利空懸液劑：兒童劑量、用途與注意事項",
+      "乳果糖藥水怎麼吃？杜化液、樂多差異與便祕用藥指南"
+    ],
+    "steps": [
+      "img/wempty_suspension.webp",
+      "img/lactulose_constipation.webp"
+    ]
   },
   "smecta_diarrhea": {
     "title": "舒腹達與腹瀉",
     "category": "pharmacist_product",
     "showFooter": true,
-    "departments": ["pediatrics", "pharmacy_general"],
+    "departments": [
+      "pediatrics",
+      "pharmacy_general"
+    ],
     "order": 17.6,
     "hidden": false,
     "icon": "💧",
-    "tags": ["舒腹達", "舒腹達口服懸液用粉劑", "Smecta", "Diosmectite", "Dioctahedral Smectite", "舒腹達兒童劑量", "舒腹達怎麼吃", "舒腹達怎麼泡", "舒腹達副作用", "舒腹達一天幾包", "兒童腹瀉", "兒童拉肚子", "口服補液鹽", "ORS", "舒腹達兩歲以下"],
-    "texts": ["舒腹達是什麼？用途與兒童劑量", "舒腹達怎麼泡？正確使用 4 步驟", "兒童腹瀉怎麼辦？補水與舒腹達注意事項"],
-    "steps": ["img/smecta_1.webp", "img/smecta_2.webp", "img/smecta_3.webp"]
+    "tags": [
+      "舒腹達",
+      "舒腹達口服懸液用粉劑",
+      "Smecta",
+      "Diosmectite",
+      "Dioctahedral Smectite",
+      "舒腹達兒童劑量",
+      "舒腹達怎麼吃",
+      "舒腹達怎麼泡",
+      "舒腹達副作用",
+      "舒腹達一天幾包",
+      "兒童腹瀉",
+      "兒童拉肚子",
+      "口服補液鹽",
+      "ORS",
+      "舒腹達兩歲以下"
+    ],
+    "texts": [
+      "舒腹達是什麼？用途與兒童劑量",
+      "舒腹達怎麼泡？正確使用 4 步驟",
+      "兒童腹瀉怎麼辦？補水與舒腹達注意事項"
+    ],
+    "steps": [
+      "img/smecta_1.webp",
+      "img/smecta_2.webp",
+      "img/smecta_3.webp"
+    ]
   },
   "kidsolone_oral_solution": {
     "title": "必爾生口服液",
     "category": "pharmacist_product",
     "showFooter": true,
-    "departments": ["pediatrics", "pharmacy_general"],
+    "departments": [
+      "pediatrics",
+      "pharmacy_general"
+    ],
     "order": 17.7,
     "hidden": false,
     "icon": "💊",
-    "tags": ["必爾生", "必爾生口服液", "Kidsolone", "Kidsolone Oral Solution", "Prednisolone", "Prednisolone Sodium Phosphate", "兒童類固醇藥水", "必爾生兒童劑量", "必爾生用法用量", "必爾生副作用", "必爾生停藥", "兒童氣喘類固醇", "Prednisolone 1mg/mL"],
-    "texts": ["必爾生口服液：兒童類固醇的用途、劑量與副作用"],
-    "steps": ["img/kidsolone_oral_solution.webp"]
+    "tags": [
+      "必爾生",
+      "必爾生口服液",
+      "Kidsolone",
+      "Kidsolone Oral Solution",
+      "Prednisolone",
+      "Prednisolone Sodium Phosphate",
+      "兒童類固醇藥水",
+      "必爾生兒童劑量",
+      "必爾生用法用量",
+      "必爾生副作用",
+      "必爾生停藥",
+      "兒童氣喘類固醇",
+      "Prednisolone 1mg/mL"
+    ],
+    "texts": [
+      "必爾生口服液：兒童類固醇的用途、劑量與副作用"
+    ],
+    "steps": [
+      "img/kidsolone_oral_solution.webp"
+    ]
   },
   "enema_use": {
     "title": "浣腸使用",
@@ -3521,13 +3608,52 @@
     "title": "使用吸鼻器與注意事項",
     "category": "public_education",
     "showFooter": true,
-    "topics": ["infant_care"],
+    "topics": [
+      "infant_care"
+    ],
     "order": 35,
     "hidden": false,
     "icon": "👶",
-    "tags": ["吸鼻器", "嬰兒吸鼻器", "寶寶吸鼻器", "寶寶鼻塞", "吸鼻器怎麼用", "手動吸鼻器", "電動吸鼻器", "吸鼻器清潔", "嬰幼兒照護", "知母時吸鼻器", "貝舒樂吸鼻器", "貝親吸鼻器"],
-    "texts": ["寶寶鼻塞怎麼辦？吸鼻器可以幫忙", "吸鼻器有哪些種類？", "什麼時候需要使用吸鼻器？", "吸鼻器怎麼用？四步驟教學", "吸鼻器用完怎麼清潔？", "吸鼻器常見錯誤與就醫警訊", "吸鼻器常見問題 Q&A"],
-    "steps": ["img/baby_nasal_aspirator_1.webp", "img/baby_nasal_aspirator_2.webp", "img/baby_nasal_aspirator_3.webp", "img/baby_nasal_aspirator_4.webp", "img/baby_nasal_aspirator_5.webp", "img/baby_nasal_aspirator_6.webp", "img/baby_nasal_aspirator_7.webp"],
-    "favorite_keys": ["baby_nasal_aspirator-0", "baby_nasal_aspirator-1", "baby_nasal_aspirator-2", "baby_nasal_aspirator-3", "baby_nasal_aspirator-4", "baby_nasal_aspirator-5", "baby_nasal_aspirator-6"]
+    "tags": [
+      "吸鼻器",
+      "嬰兒吸鼻器",
+      "寶寶吸鼻器",
+      "寶寶鼻塞",
+      "吸鼻器怎麼用",
+      "手動吸鼻器",
+      "電動吸鼻器",
+      "吸鼻器清潔",
+      "嬰幼兒照護",
+      "知母時吸鼻器",
+      "貝舒樂吸鼻器",
+      "貝親吸鼻器"
+    ],
+    "texts": [
+      "寶寶鼻塞怎麼辦？吸鼻器可以幫忙",
+      "吸鼻器有哪些種類？",
+      "什麼時候需要使用吸鼻器？",
+      "吸鼻器怎麼用？四步驟教學",
+      "吸鼻器用完怎麼清潔？",
+      "吸鼻器常見錯誤與就醫警訊",
+      "吸鼻器常見問題 Q&A"
+    ],
+    "steps": [
+      "img/baby_nasal_aspirator_1.webp",
+      "img/baby_nasal_aspirator_2.webp",
+      "img/baby_nasal_aspirator_3.webp",
+      "img/baby_nasal_aspirator_4.webp",
+      "img/baby_nasal_aspirator_5.webp",
+      "img/baby_nasal_aspirator_6.webp",
+      "img/baby_nasal_aspirator_7.webp"
+    ],
+    "favorite_keys": [
+      "baby_nasal_aspirator-0",
+      "baby_nasal_aspirator-1",
+      "baby_nasal_aspirator-2",
+      "baby_nasal_aspirator-3",
+      "baby_nasal_aspirator-4",
+      "baby_nasal_aspirator-5",
+      "baby_nasal_aspirator-6"
+    ]
   }
 }

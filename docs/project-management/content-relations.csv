@@ -470,3 +470,4 @@ REL-32cb001dd4b21ef8,topic:infant-care,shares_card,page:baby_nasal_aspirator_6,m
 REL-4d0c6c1fe24df27c,topic:infant-care,shares_card,page:baby_nasal_aspirator_7,management_mapping,management,cards.json|public.html,CR-2026-046；嬰幼兒照護篩選集合
 REL-b9fb65a835269610,series:pediatric_cold_syrup,has_card,page:ped_asthma_meptin_liquid,source_observed,series_membership,cards.json,CR-2026-049：插入兒科感冒藥水第四張；保留既有頁面與收藏識別
 REL-5bca189bb1d8b137,series:pediatric_cold_syrup,has_card,page:ped_cold_nocough_syrup,source_observed,series_membership,cards.json,CR-2026-050：兒科感冒藥水系列末尾追加第 12 張「杏輝」安咳糖漿；保留既有頁面與收藏識別
+REL-181de2e5110e6566,series:pediatric_gi_syrup,has_card,page:lactulose_constipation,source_observed,series_membership,cards.json,CR-2026-051：兒科腸胃藥水追加第2張乳果糖藥水；保留同系列及關聯
