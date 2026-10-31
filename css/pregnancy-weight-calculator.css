@@ -61,8 +61,19 @@ body.gwg-page header { background:#e8f7f1; color:#1f5b49; }
 .conclusion.tone-yellow { border-color:#d99a00; background:#fff8e6; } .tone-yellow .conclusion-title { color:#8a5a00; } .tone-yellow .conclusion-title::before { content:"!"; }
 .conclusion.tone-red { border-color:#c0392b; background:#fdeeee; } .tone-red .conclusion-title { color:#a12a1e; } .tone-red .conclusion-title::before { content:"‼"; }
 .conclusion.tone-neutral .conclusion-title { color:#4b635b; } .tone-neutral .conclusion-title::before { content:"ⓘ"; }
-.advice { margin-top:12px; border-top:1px dashed rgba(0,0,0,.15); padding-top:10px; }
-.advice summary { color:#1f5b49; cursor:pointer; font-size:.95rem; font-weight:900; }
+.advice { margin-top:12px; }
+.advice summary { display:flex; align-items:center; justify-content:space-between; gap:10px; min-height:48px; box-sizing:border-box; padding:11px 14px; border-radius:10px; background:#1f5b49; color:#fff; cursor:pointer; font-size:1rem; font-weight:900; list-style:none; box-shadow:0 3px 8px rgba(0,0,0,.12); }
+.advice summary::-webkit-details-marker { display:none; }
+.advice summary::before { content:"💡"; margin-right:2px; }
+.advice summary .advice-label { flex:1; }
+.advice summary::after { content:"點開 ⌄"; font-size:.85rem; font-weight:800; opacity:.9; white-space:nowrap; }
+.advice[open] summary::after { content:"收合 ⌃"; }
+.advice summary:hover { filter:brightness(1.08); }
+.advice summary:focus-visible { outline:3px solid #f2b705; outline-offset:2px; }
+.tone-red .advice summary { background:#a12a1e; }
+.tone-yellow .advice summary { background:#8a5a00; }
+.tone-green .advice summary { background:#1d6b40; }
+.advice[open] .advice-list:not([hidden]) { margin-top:12px; }
 .advice-list { margin:8px 0 0; padding-left:20px; color:#33433d; font-size:.92rem; line-height:1.65; }
 .advice-list li + li { margin-top:4px; }
 .advice-source { margin-top:8px !important; color:#6b7b76; font-size:.85rem; line-height:1.5; }
