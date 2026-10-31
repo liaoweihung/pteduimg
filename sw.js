@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-vc16ea480eac2a7c44585d509';
+const CACHE_NAME = 'pwa-cache-vad33b7f2664ea34cc9eb07a0';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -38,6 +38,7 @@ const urlsToCache = [
   "./cancer-marker-calculator.html",
   "./growth-calculator.html",
   "./menstrual-calculator.html",
+  "./pregnancy-weight-calculator.html",
   "./10-yr-cv-risk.html",
   "./rx-refillable-date.html",
   "./taiwan_child_growth_data.json",
@@ -46,6 +47,8 @@ const urlsToCache = [
   "./css/growth-calculator.css",
   "./css/menstrual-calculator.css",
   "./js/menstrual-calculator.js",
+  "./css/pregnancy-weight-calculator.css",
+  "./js/pregnancy-weight-calculator.js",
   "./css/rx-refillable-date.css",
   "./icon.png",
   "./404.html",
