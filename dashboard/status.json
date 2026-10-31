@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-01T02:01:51+08:00",
-  "baseline": "519dc6c5a7ba3044cc2461a27fbf01f4d42d7436",
-  "scope": "網站來源快照；版本 519dc6c5",
+  "generatedAt": "2026-11-01T02:20:09+08:00",
+  "baseline": "5739f18ed8c6c712ea8409566000e5e1e1ed019a",
+  "scope": "網站來源快照；版本 5739f18e",
   "counts": {
-    "cards": 395,
-    "series": 88,
-    "allSeries": 92,
+    "cards": 402,
+    "series": 89,
+    "allSeries": 93,
     "hidden": 4,
     "retired": 4,
     "areas": 16,
@@ -19,7 +19,7 @@
     "growth": 1,
     "infectious_diseases": 3,
     "eyes": 3,
-    "gastrointestinal": 2,
+    "gastrointestinal": 3,
     "oral_health": 4,
     "insect_repellent": 1,
     "elimination_care": 3,
@@ -952,6 +952,16 @@
       "hidden": false,
       "areas": [
         "infant_care"
+      ],
+      "departments": []
+    },
+    {
+      "id": "stomach_medicine",
+      "title": "胃藥怎麼吃？",
+      "count": 7,
+      "hidden": false,
+      "areas": [
+        "gastrointestinal"
       ],
       "departments": []
     }
@@ -4052,25 +4062,25 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 244,
+      "machine_pass": 251,
       "partial": 1,
       "missing": 150
     },
     "reference_status": {
       "missing": 235,
-      "machine_pass": 160
+      "machine_pass": 167
     },
     "date_status": {
       "missing": 235,
-      "machine_pass": 139,
+      "machine_pass": 146,
       "partial": 21
     },
     "footer_status": {
       "missing": 270,
-      "machine_pass": 125
+      "machine_pass": 132
     },
     "jsonld_status": {
-      "machine_pass": 203,
+      "machine_pass": 210,
       "missing": 192
     }
   },
