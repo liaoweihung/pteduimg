@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-31T13:24:54+08:00",
-  "baseline": "9ce38a070584ff9a6720326674d5cb20ab3aff9f",
-  "scope": "網站來源快照；版本 9ce38a07",
+  "generatedAt": "2026-11-01T00:07:01+08:00",
+  "baseline": "44ff57e631a859e7e127818af8227337cfdc1027",
+  "scope": "網站來源快照；版本 44ff57e6",
   "counts": {
     "cards": 395,
     "series": 88,
@@ -1243,30 +1243,6 @@
       ]
     },
     {
-      "title": "NTG 舌下錠怎麼用？先坐下，再放在舌下溶解",
-      "path": "cards/NTG_1.html",
-      "series": "NTG",
-      "issues": [
-        "footer_status"
-      ]
-    },
-    {
-      "title": "NTG 含服後仍胸痛怎麼辦？5 分鐘未改善就求救",
-      "path": "cards/NTG_2.html",
-      "series": "NTG",
-      "issues": [
-        "footer_status"
-      ]
-    },
-    {
-      "title": "NTG 舌下錠如何保存？原瓶密閉、避熱並記錄開封日",
-      "path": "cards/NTG_3.html",
-      "series": "NTG",
-      "issues": [
-        "footer_status"
-      ]
-    },
-    {
       "title": "拔牙前告知骨鬆用藥，評估顎骨風險",
       "path": "cards/Osteo_tooth_01.html",
       "series": "Osteo_tooth",
@@ -2103,22 +2079,6 @@
       ]
     },
     {
-      "title": "事前避孕藥怎麼吃？複方口服避孕藥的開始與接續方式",
-      "path": "cards/contraceptive_pills_how_to_take.html",
-      "series": "contraceptive_pills",
-      "issues": [
-        "footer_status"
-      ]
-    },
-    {
-      "title": "複方避孕藥漏吃怎麼辦？依漏服顆數與 48 小時分界處理",
-      "path": "cards/contraceptive_pills_missed_dose.html",
-      "series": "contraceptive_pills",
-      "issues": [
-        "footer_status"
-      ]
-    },
-    {
       "title": "糖尿病足：腳有傷口，不痛也要處理",
       "path": "cards/diabetic_foot.html",
       "series": "diabetic_foot",
@@ -2268,22 +2228,6 @@
         "date_status",
         "footer_status",
         "jsonld_status"
-      ]
-    },
-    {
-      "title": "事後避孕藥怎麼吃？先辨認 LNG 或 UPA，儘早處理",
-      "path": "cards/emergency_contraceptive_pills_how_to_take.html",
-      "series": "contraceptive_pills",
-      "issues": [
-        "footer_status"
-      ]
-    },
-    {
-      "title": "吃完事後避孕藥要注意什麼？嘔吐、後續避孕與驗孕",
-      "path": "cards/emergency_contraceptive_pills_notice.html",
-      "series": "contraceptive_pills",
-      "issues": [
-        "footer_status"
       ]
     },
     {
@@ -4122,8 +4066,8 @@
       "partial": 21
     },
     "footer_status": {
-      "missing": 277,
-      "machine_pass": 118
+      "missing": 270,
+      "machine_pass": 125
     },
     "jsonld_status": {
       "machine_pass": 203,
