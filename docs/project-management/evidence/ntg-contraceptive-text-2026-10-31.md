@@ -40,3 +40,15 @@
 - `docs/project-management/change-requests.csv`
 - `docs/project-management/project-dashboard.md`
 - `docs/project-management/evidence/ntg-contraceptive-text-2026-10-31.md`
+
+## 共用頁尾補正
+
+- 使用者回報七頁沒有頁尾；確認 build.py 的 show_shared_footer 僅對 showFooter 或青春痘主題啟用，兩系列原未設定。
+- cards.json 與 cards.manual.json 的 NTG、contraceptive_pills 同步新增 showFooter=true；未修改共用模板、醫療文字或圖片。
+- 增量建置成功，僅重寫目標七頁與 sw.js；七頁 HTML 各新增 27 行頁尾與樣式，沒有刪除既有 HTML。
+- check_site.py 通過；七頁頁尾逐一與 render_footer 輸出比對完全一致，且每頁恰好一個頁尾。
+- 清冊只同步七頁 footer_status、source_sha256、checked_at；定點 --propose 零提案、零移除、零來源錯誤。
+- 完整管理驗證仍 FAIL：394 errors、19 warnings（evidence_path_missing=14、machine_field_drift=367、report_changed=13）；未提供已核准基準，不能判定新舊錯誤。完整結果位於 outputs/footer-management-check.json，未擴大處理無關清冊。
+- 瀏覽器拒絕 file:// 本機頁面預覽，因此未完成本次桌機／手機目視驗收，未以靜態檢查冒稱瀏覽器驗收。
+- 本次未 Commit、Push 或部署。
+- project_change_tracker.py --check：本次 10 個網站改動皆連至 CR-2026-056；全域退出碼 1 源於歷史提交 7c201523、c31b99ca、a99f389a 缺少管理連結，未改歷史資料。

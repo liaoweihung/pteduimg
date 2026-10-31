@@ -1053,6 +1053,7 @@
     "icon": "🩹"
   },
   "NTG": {
+    "showFooter": true,
     "title": "NTG 舌下錠",
     "category": "pharmacist_general",
     "departments": [
@@ -1068,6 +1069,7 @@
     ]
   },
   "contraceptive_pills": {
+    "showFooter": true,
     "title": "避孕藥",
     "category": "pharmacist_general",
     "departments": [
