@@ -61,3 +61,8 @@ body.gwg-page header { background:#e8f7f1; color:#1f5b49; }
 .conclusion.tone-yellow { border-color:#d99a00; background:#fff8e6; } .tone-yellow .conclusion-title { color:#8a5a00; } .tone-yellow .conclusion-title::before { content:"!"; }
 .conclusion.tone-red { border-color:#c0392b; background:#fdeeee; } .tone-red .conclusion-title { color:#a12a1e; } .tone-red .conclusion-title::before { content:"‼"; }
 .conclusion.tone-neutral .conclusion-title { color:#4b635b; } .tone-neutral .conclusion-title::before { content:"ⓘ"; }
+.advice { margin-top:12px; border-top:1px dashed rgba(0,0,0,.15); padding-top:10px; }
+.advice summary { color:#1f5b49; cursor:pointer; font-size:.95rem; font-weight:900; }
+.advice-list { margin:8px 0 0; padding-left:20px; color:#33433d; font-size:.92rem; line-height:1.65; }
+.advice-list li + li { margin-top:4px; }
+.advice-source { margin-top:8px !important; color:#6b7b76; font-size:.85rem; line-height:1.5; }

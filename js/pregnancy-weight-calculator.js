@@ -39,6 +39,8 @@
     return { code: 'proj_within', tone: 'green', ...base };
   }
 
+  const ADVICE_TYPE = { over_max: 'over', proj_over: 'over', proj_under: 'under', below_pre: 'under', proj_within: 'general', first_trimester: 'general', twin_no_weekly: 'general', no_range: 'general' };
+
   // 純計算函式：輸入字串／數字，回傳結果物件或 { error }
   function compute(input, todayDate) {
     const height = num(input.height, 120, 200);
@@ -84,6 +86,7 @@
       result.reference = round1(row.weekly * (days - SECOND_TRIMESTER_START_DAYS) / 7);
     }
     result.conclusion = conclude(result, range, row.weekly, days, input.fetus);
+    result.conclusion.advice = ADVICE_TYPE[result.conclusion.code];
     return result;
   }
 
@@ -142,6 +145,8 @@
     box.className = `conclusion tone-${c.tone}`;
     $('conclusion-title').textContent = texts[0];
     $('conclusion-text').textContent = texts[1];
+    document.querySelectorAll('[data-advice]').forEach(ul => { ul.hidden = ul.dataset.advice !== c.advice; });
+    $('gwg-advice').open = false;
     resultCard.hidden = false;
     const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     resultCard.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
@@ -155,6 +160,11 @@
     track('conclusion_link_click', { target: a.dataset.jump });
     if (a.dataset.jump === 'faq') { const q = document.querySelector('[data-faq="q1"]'); if (q) q.open = true; }
   }));
+  $('gwg-advice').addEventListener('toggle', () => {
+    if (!$('gwg-advice').open) return;
+    const shown = document.querySelector('[data-advice]:not([hidden])');
+    track('advice_open', { type: shown ? shown.dataset.advice : 'none' });
+  });
   document.querySelectorAll('.faq-item').forEach(item => item.addEventListener('toggle', () => { if (item.open) track('faq_open', { question: item.dataset.faq }); }));
   document.querySelectorAll('[data-track-source]').forEach(a => a.addEventListener('click', () => track('source_link_click', { source: a.dataset.trackSource })));
   document.querySelectorAll('[data-track-link]').forEach(a => a.addEventListener('click', () => track('related_link_click', { target: a.dataset.trackLink })));

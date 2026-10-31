@@ -38,6 +38,8 @@
 
 2026-11-01 孕期體重增加計算器加入快速結論（CR-2026-058）：推估到 40 週總增重對照國健署建議範圍，已超過上限顯示紅色、推估超過／低於與體重低於孕前顯示黃色；醫療複核未完成。證據見 [evidence](evidence/pregnancy-weight-calculator-conclusion-2026-11-01.md)。
 
+2026-11-01 孕期體重增加計算器加入「可以怎麼做」建議（CR-2026-059）：增重偏多／偏少各一組、預設收合，文字取自國健署孕婦衛教手冊並經使用者確認；醫療複核未完成。證據見 [evidence](evidence/pregnancy-weight-calculator-advice-2026-11-01.md)。
+
 先讀 [增量維護說明](README.md)，工作前查 [需求登記](change-requests.csv)、[頁面清冊](page-inventory.csv) 與 [歷史證據](audit-history.md)。登記不等於已批准執行。P0–P3 是待辦順序；CR-2026-025 至 CR-2026-036 的管理建置與新增／追加圖卡工作依各次明確指示獲授權，其他原登記需求未因本次試行而自動核准。
 
 ## 實際管理範圍
