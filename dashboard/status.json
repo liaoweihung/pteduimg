@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-31T10:31:09+08:00",
-  "baseline": "665b385f9b8cc64ea94d13056c6ed30da63a4202",
-  "scope": "網站來源快照；版本 665b385f",
+  "generatedAt": "2026-10-31T13:22:01+08:00",
+  "baseline": "8b1e23fba7a1f26ea3d479a7ed1a768905939fa7",
+  "scope": "網站來源快照；版本 8b1e23fb",
   "counts": {
     "cards": 395,
     "series": 88,
@@ -1243,39 +1243,27 @@
       ]
     },
     {
-      "title": "胸痛時先坐下，將 NTG 放在舌下含服",
+      "title": "NTG 舌下錠怎麼用？先坐下，再放在舌下溶解",
       "path": "cards/NTG_1.html",
       "series": "NTG",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
-      "title": "含服 NTG 後觀察症狀，未緩解立即求救",
+      "title": "NTG 含服後仍胸痛怎麼辦？5 分鐘未改善就求救",
       "path": "cards/NTG_2.html",
       "series": "NTG",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
-      "title": "NTG 原瓶避光保存，定期檢查效期",
+      "title": "NTG 舌下錠如何保存？原瓶密閉、避熱並記錄開封日",
       "path": "cards/NTG_3.html",
       "series": "NTG",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
@@ -2115,27 +2103,19 @@
       ]
     },
     {
-      "title": "避孕藥",
+      "title": "事前避孕藥怎麼吃？複方口服避孕藥的開始與接續方式",
       "path": "cards/contraceptive_pills_how_to_take.html",
       "series": "contraceptive_pills",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
-      "title": "避孕藥",
+      "title": "複方避孕藥漏吃怎麼辦？依漏服顆數與 48 小時分界處理",
       "path": "cards/contraceptive_pills_missed_dose.html",
       "series": "contraceptive_pills",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
@@ -2291,27 +2271,19 @@
       ]
     },
     {
-      "title": "避孕藥",
+      "title": "事後避孕藥怎麼吃？先辨認 LNG 或 UPA，儘早處理",
       "path": "cards/emergency_contraceptive_pills_how_to_take.html",
       "series": "contraceptive_pills",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
-      "title": "避孕藥",
+      "title": "吃完事後避孕藥要注意什麼？嘔吐、後續避孕與驗孕",
       "path": "cards/emergency_contraceptive_pills_notice.html",
       "series": "contraceptive_pills",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
@@ -4136,17 +4108,17 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 237,
+      "machine_pass": 244,
       "partial": 1,
-      "missing": 157
+      "missing": 150
     },
     "reference_status": {
-      "missing": 242,
-      "machine_pass": 153
+      "missing": 235,
+      "machine_pass": 160
     },
     "date_status": {
-      "missing": 242,
-      "machine_pass": 132,
+      "missing": 235,
+      "machine_pass": 139,
       "partial": 21
     },
     "footer_status": {
@@ -4154,13 +4126,13 @@
       "machine_pass": 118
     },
     "jsonld_status": {
-      "machine_pass": 196,
-      "missing": 199
+      "machine_pass": 203,
+      "missing": 192
     }
   },
   "sync": {
-    "pages": 368,
-    "fields": 374,
+    "pages": 361,
+    "fields": 367,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4314,24 +4286,6 @@
       },
       {
         "page": "MDI_7",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "NTG_1",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "NTG_2",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "NTG_3",
         "fields": [
           "rules_sha256"
         ]
@@ -5040,18 +4994,6 @@
         ]
       },
       {
-        "page": "contraceptive_pills_how_to_take",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "contraceptive_pills_missed_dose",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
         "page": "diabetes_nutrition_formula",
         "fields": [
           "rules_sha256"
@@ -5161,18 +5103,6 @@
       },
       {
         "page": "elderly_skin_tear",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "emergency_contraceptive_pills_how_to_take",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "emergency_contraceptive_pills_notice",
         "fields": [
           "rules_sha256"
         ]
