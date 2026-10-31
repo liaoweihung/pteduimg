@@ -36,6 +36,8 @@
 
 2026-11-01 新增「孕期體重增加計算器」獨立頁（CR-2026-057）：依國健署《孕媽咪衛教手冊》孕媽咪體重增加建議表，入口在 `calc.html`；不判斷增重正常與否，醫療複核未完成。增量建置因 `build.py` 變更被拒，正式 repo 僅套用 sitemap 兩份與 `sw.js` 新條目；隔離完整建置另顯示 327 檔既有產生器落差，留待下次完整建置。證據見 [evidence](evidence/pregnancy-weight-calculator-2026-11-01.md)。尚未 Commit／Push。
 
+2026-11-01 孕期體重增加計算器加入快速結論（CR-2026-058）：推估到 40 週總增重對照國健署建議範圍，已超過上限顯示紅色、推估超過／低於與體重低於孕前顯示黃色；醫療複核未完成。證據見 [evidence](evidence/pregnancy-weight-calculator-conclusion-2026-11-01.md)。
+
 先讀 [增量維護說明](README.md)，工作前查 [需求登記](change-requests.csv)、[頁面清冊](page-inventory.csv) 與 [歷史證據](audit-history.md)。登記不等於已批准執行。P0–P3 是待辦順序；CR-2026-025 至 CR-2026-036 的管理建置與新增／追加圖卡工作依各次明確指示獲授權，其他原登記需求未因本次試行而自動核准。
 
 ## 實際管理範圍
