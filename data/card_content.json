@@ -9684,5 +9684,400 @@
     ],
     "matchConfidence": "high",
     "needsMedicalReview": true
+  },
+  {
+    "cardId": "stomach_medicine",
+    "image": "img/stomach_medicine_guide.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_guide.html",
+    "title": "胃藥怎麼吃？飯前、飯後、睡前一次看懂",
+    "summary": "胃藥服用時間依種類而異。PPI通常飯前30–60分鐘，海藻酸鹽常在飯後及睡前，Sucralfate通常空腹服用；H2阻斷劑與制酸劑則需依產品及處方安排。",
+    "sections": [
+      {
+        "heading": "五類常見胃藥服用重點",
+        "text": "PPI（質子幫浦抑制劑）主要作用為強效抑制胃酸，常見服用時間通常為餐前30–60分鐘；H2阻斷劑主要減少胃酸分泌，可依處方安排在飯前、飯後或睡前；鎂、鋁鹽制酸劑主要中和胃酸，一般制酸劑常見飯後或症狀出現時使用，但部分含局部麻醉成分之複方須飯前服用；海藻酸鹽主要形成防逆流凝膠屏障，通常於飯後與睡前服用；Sucralfate主要保護受損黏膜，通常需空腹、餐前1小時服用。"
+      },
+      {
+        "heading": "胃藥一定要固定吃嗎？",
+        "text": "不一定。治療胃潰瘍、十二指腸潰瘍或逆流性食道炎時，部分藥物需要按療程規律服用，例如PPI與Sucralfate。制酸劑、海藻酸鹽及部分H2阻斷劑，則可能依症狀需要時使用，也可能由醫師安排固定療程。最重要的是依照藥袋與產品仿單服用，不要自行改變用法。"
+      },
+      {
+        "heading": "胃藥可以一起吃嗎？",
+        "text": "不同胃藥有時會合併使用，但不代表可以全部同時服用。部分制酸劑與Sucralfate會影響其他藥物的吸收，須留意服用間隔。若有併用其他藥品，應由醫師或藥師協助評估各藥物的先後順序與間隔時間。"
+      },
+      {
+        "heading": "常見問題：胃藥都是胃痛才吃嗎？",
+        "text": "不是。部分胃藥需要規律服用一段時間才能達到治療效果，例如抑制胃酸分泌的PPI或修復潰瘍黏膜的Sucralfate，不能當成立即止痛藥。"
+      },
+      {
+        "heading": "常見問題：胃藥可以全部改成飯後吃嗎？",
+        "text": "不可以。PPI通常建議飯前使用，海藻酸鹽常在飯後使用，Sucralfate則通常需要空腹服用。不同機轉的藥物在胃內的最佳作用環境各不相同。"
+      },
+      {
+        "heading": "常見問題：胃不舒服一直吃胃藥就好嗎？",
+        "text": "不建議。若症狀持續、反覆發作，或出現吐血、黑便、吞嚥困難、非預期體重下降等危險警訊，應儘速就醫進一步檢查與評估原因，切勿自行長期依賴胃藥壓制症狀。"
+      }
+    ],
+    "altText": "胃藥怎麼吃衛教圖卡，說明五類常見胃藥：PPI、H2阻斷劑、鎂鋁鹽制酸劑、海藻酸鹽類與Sucralfate硫糖鋁的作用原理與服藥時間指引。",
+    "updatedAt": "2026-11-01",
+    "sourceCheckedAt": "2026-11-01",
+    "revisionCredit": "使用者提供文案；本站依定稿與官方/學會直接來源核對整理",
+    "references": [
+      {
+        "title": "中國醫藥大學附設醫院藥劑部：胃藥怎麼吃才對？（江羽柔藥師）",
+        "url": "https://www.cmuh.cmu.edu.tw/NewsInfo/NewsArticle?no=4389"
+      },
+      {
+        "title": "臺大醫院健康教育資訊網：胃食道逆流用藥簡介（劉怡秀藥師修訂）",
+        "url": "https://health3.ntuh.gov.tw/News_PDF_Content/136/1433"
+      },
+      {
+        "title": "美國胃腸病學會（ACG）：胃食道逆流疾病診斷與管理指引（2022年更新）",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8754510/"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "stomach_medicine",
+    "image": "img/stomach_medicine_ppi.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_ppi.html",
+    "title": "PPI怎麼吃？耐適恩、泰克胃通服用時間說明",
+    "summary": "一般PPI在餐前30–60分鐘服用，可配合進食後胃酸分泌幫浦活化，改善抑酸效果。部分特殊劑型則有不同的服藥規定。",
+    "sections": [
+      {
+        "heading": "認識常見PPI藥品與作用機轉",
+        "text": "PPI（質子幫浦抑制劑）是抑制胃酸分泌最強效的藥物類別，能直接阻斷胃壁細胞製造胃酸的氫鉀幫浦。台灣臨床常見成分與商品包括：耐適恩（Esomeprazole）、泰克胃通（Lansoprazole）、百抑潰（Rabeprazole）及得喜胃通（Dexlansoprazole）。常用於嚴重胃食道逆流、糜爛性食道炎與消化性潰瘍治療。"
+      },
+      {
+        "heading": "PPI什麼時候吃效果最好？",
+        "text": "一般PPI通常建議在餐前30–60分鐘服用（早晨進食前胃壁細胞新合成的幫浦最多）。若為每日一次處方，常安排在早餐前；若為每日兩次處方，通常安排在早餐前及晚餐前服用。部分具雙重延遲釋放等特殊劑型產品（如得喜胃通）受食物影響較小，但實際仍應遵循藥袋與仿單指示。"
+      },
+      {
+        "heading": "PPI一定要固定每天吃嗎？",
+        "text": "治療胃潰瘍或逆流性食道炎時，通常需要按照療程規律服藥，讓受損的胃或食道黏膜有充分時間癒合。PPI不是立即止痛藥，無法在服藥後數分鐘內瞬間止痛。部分非糜爛性胃食道逆流患者在症狀獲得穩定控制後，醫師可能評估改為需要時使用或間歇療法。"
+      },
+      {
+        "heading": "腸溶錠與特殊劑型可以磨粉或咬碎嗎？",
+        "text": "多數PPI在強酸環境下易被破壞，因此製成特殊腸溶錠或微粒膠囊，通常不可咬碎、嚼碎或直接研磨成粉。百抑潰腸溶膜衣錠應整粒吞服不可磨粉；耐適恩錠若無法直接吞服，可置於冷開水中攪拌崩散（小藥球不可壓碎）於30分鐘內喝完；泰克胃通口溶錠可置於舌上待唾液崩散後吞服；吞嚥困難者應主動諮詢藥師選擇合適劑型。"
+      },
+      {
+        "heading": "常見問題：耐適恩可以飯後吃嗎？",
+        "text": "一般建議依藥袋指示於餐前服用，常見安排在早餐前30–60分鐘，抑酸效果最為理想。若是特殊劑型或醫師有個別處方指示，請以當次處方為準。"
+      },
+      {
+        "heading": "常見問題：PPI忘記飯前吃怎麼辦？",
+        "text": "若想起時距離用餐時間不久，可儘速補服；若已接近下一次服藥時間，請跳過該次漏服劑量，按照原定時間服用下一次劑量，切勿自行一次服用雙倍劑量。"
+      },
+      {
+        "heading": "常見問題：PPI可以長期吃嗎？",
+        "text": "部分嚴重逆流性食道炎或特定潰瘍患者確實需要長期維持治療，但長期使用（如超過1年）應由醫師定期評估適應症與最低有效劑量，並注意骨質健康與血鎂狀況，不建議自行無期限長期服用或突然中斷處方。"
+      }
+    ],
+    "altText": "PPI怎麼吃用藥重點圖解圖卡，說明耐適恩、泰克胃通、百抑潰等常見藥品，餐前30至60分鐘服用、治療期間規律服用以及腸溶製劑不可咬碎之特別提醒。",
+    "updatedAt": "2026-11-01",
+    "sourceCheckedAt": "2026-11-01",
+    "revisionCredit": "使用者提供文案；本站依定稿與官方/學會直接來源核對整理",
+    "references": [
+      {
+        "title": "臺大醫院健康教育資訊網：胃食道逆流用藥簡介（PPI服用時間與特殊劑型說明）",
+        "url": "https://health3.ntuh.gov.tw/News_PDF_Content/136/1433"
+      },
+      {
+        "title": "中國醫藥大學附設醫院藥劑部：胃藥怎麼吃才對？（氫離子幫浦抑制劑使用指引）",
+        "url": "https://www.cmuh.cmu.edu.tw/NewsInfo/NewsArticle?no=4389"
+      },
+      {
+        "title": "美國胃腸病學會（ACG）：GERD診斷與治療指引（PPI餐前給藥與維持療法）",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8754510/"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "stomach_medicine",
+    "image": "img/stomach_medicine_h2_blocker.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_h2_blocker.html",
+    "title": "H2阻斷劑怎麼吃？發馬Famotidine服用時間",
+    "summary": "Famotidine可依處方於飯前、飯後或睡前服用。睡前是控制夜間胃酸的一種常見安排，但並非所有患者都適用。",
+    "sections": [
+      {
+        "heading": "認識H2阻斷劑與台灣常見藥品",
+        "text": "H2受體拮抗劑（H2-receptor antagonists）透過阻斷胃壁細胞上的組織胺受體，減少胃酸分泌，藥效強度屬中等，通常可維持約6–12小時。台灣臨床常見成分為Famotidine（法莫替丁），常見商品名包括發馬膜衣錠（Famo 20mg，信東生技）與法瑪鎮膜衣錠（Famotidine F.C. 20mg，十全實業等）。常用於胃潰瘍、十二指腸潰瘍、胃食道逆流與胃酸過多引起的火燒心不適。"
+      },
+      {
+        "heading": "H2阻斷劑什麼時候吃？",
+        "text": "Famotidine的服用時間相對彈性，依處方安排在飯前、飯後或睡前均屬常見。例如成人口服常見用法為每日2次（早餐後與晚餐後，或早餐後與睡前）；若主要為抑制夜間胃酸分泌過多，醫師常安排在睡前單次服用。因此不必自行統一改成睡前吃，請依藥袋指示時段服用。"
+      },
+      {
+        "heading": "需要每天固定吃，還是胃痛才吃？",
+        "text": "若是用於治療活動性胃潰瘍或十二指腸潰瘍，通常需要完成數週的固定療程，按時規律服藥以利黏膜癒合。若是針對偶發性、輕度的胃灼熱或消化不良，則可能依指示在症狀出現前或需要時短期使用。"
+      },
+      {
+        "heading": "服用Famotidine的特別提醒",
+        "text": "高齡患者或腎功能不全者代謝速率較慢，醫師通常會根據肌酸酐清除率調降劑量或延長服藥間隔；老年族群服用時應留意極少數可能出現的神智混亂或譫妄風險；不可因夜間胃酸不舒服而自行連續倍增劑量；若與制酸劑併用，建議至少錯開1小時。"
+      },
+      {
+        "heading": "常見問題：發馬一定要睡前吃嗎？",
+        "text": "不一定。Famotidine可依個別處方於早晚飯後或睡前服用。睡前服用主要是針對夜間胃酸逆流或夜間胃痛的患者，並非所有人都必須睡前吃。"
+      },
+      {
+        "heading": "常見問題：發馬和耐適恩一樣嗎？",
+        "text": "不一樣。發馬屬於H2阻斷劑，耐適恩屬於PPI（質子幫浦抑制劑）。PPI的抑酸強度比H2阻斷劑更強，作用機轉與臨床適用嚴重程度亦有差異。"
+      },
+      {
+        "heading": "常見問題：發馬可以胃不舒服才吃嗎？",
+        "text": "部分輕度、偶發胃灼熱情況可在需要時使用；但若是醫師開立針對潰瘍或食道發炎的治療療程，應按時規律服滿療程，不應擅自改為痛才吃。"
+      }
+    ],
+    "altText": "H2阻斷劑怎麼吃衛教圖卡，說明發馬與法瑪鎮等Famotidine胃藥之服用時間彈性（飯前、飯後或睡前）、固定或需要時使用之差異與腎功能劑量調整等提醒。",
+    "updatedAt": "2026-11-01",
+    "sourceCheckedAt": "2026-11-01",
+    "revisionCredit": "使用者提供文案；本站依定稿與官方/學會直接來源核對整理",
+    "references": [
+      {
+        "title": "高雄市立凱旋醫院藥品資訊：發馬膜衣錠 Famo 20mg 仿單與使用須知",
+        "url": "https://ksph.kcg.gov.tw/7/dfiles/Famo.htm"
+      },
+      {
+        "title": "中國醫藥大學附設醫院藥劑部：胃藥怎麼吃才對？（法瑪鎮膜衣錠用藥提醒）",
+        "url": "https://www.cmuh.cmu.edu.tw/NewsInfo/NewsArticle?no=4389"
+      },
+      {
+        "title": "美國國家醫學圖書館 MedlinePlus：Famotidine 藥品詳細指引",
+        "url": "https://medlineplus.gov/druginfo/meds/a687011.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "stomach_medicine",
+    "image": "img/stomach_medicine_antacid.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_antacid.html",
+    "title": "制酸劑怎麼吃？氧化鎂、息痛佳音服用時間與注意事項",
+    "summary": "一般制酸劑常在飯後或症狀出現時使用，但部分含Oxethazaine的複方胃藥，例如息痛佳音及胃立舒泰，可能安排飯前服用。應依產品指示區分。",
+    "sections": [
+      {
+        "heading": "認識制酸劑與台灣常見藥品",
+        "text": "鎂、鋁鹽制酸劑能直接中和胃內既存的胃酸，快速緩解胃酸過多或胃灼熱不適。台灣常見單方與複方藥品包括：氧化鎂錠（Magnesium oxide，具制酸與軟便雙重用途）、息痛佳音錠（Strocain，含鋁、鎂、碳酸鈣及局部麻醉劑Oxethazaine之複方）、胃立舒泰懸濁液（Ulstal，含氫氧化鋁、氫氧化鎂及Oxethazaine之懸浮劑型）。"
+      },
+      {
+        "heading": "制酸劑什麼時候吃？飯前還是飯後？",
+        "text": "一般單純制酸劑常見於飯後1小時、睡前或胃酸不適發作時服用，在飯後胃內有食物時藥效中和時間較長。然而，含有局部麻醉成分Oxethazaine的複方胃藥（如息痛佳音、胃立舒泰），台灣醫院用藥指引建議於「飯前」服用，以發揮胃黏膜表面麻醉止痛作用。因此切勿自行將所有制酸劑統一在飯後吃，務必核對個別藥品名稱與藥袋指示。"
+      },
+      {
+        "heading": "氧化鎂是胃藥還是便祕藥？",
+        "text": "氧化鎂（MgO）兩種用途皆有。用於中和胃酸時多於飯後或症狀時使用；但若醫師開立氧化鎂是利用其滲透壓特性軟化糞便以改善便祕，其處方劑量、服用次數與服用時間可能不同。拿到藥袋時應確認處方的主要用途。"
+      },
+      {
+        "heading": "制酸劑服用與劑型注意事項",
+        "text": "鎂鹽成分易引起腹瀉，鋁鹽與鈣鹽易造成便祕；腎功能不佳者排泄金屬離子能力下降，長期大量使用易發生高血鎂或鋁蓄積風險；息痛佳音因含局部麻醉成分，務必配水整粒吞服，切勿咬碎或咀嚼，以免引起舌頭與口腔麻木感；胃立舒泰為懸濁液，每次服用前應先充分上下搖勻；含碳酸鹽之制酸劑可能產生二氧化碳而引起腹脹打嗝。"
+      },
+      {
+        "heading": "制酸劑與其他藥物的交互作用",
+        "text": "鎂、鋁、鈣離子會與多種口服藥物產生螯合作用或因提高胃內pH值影響藥物溶解吸收，例如四環黴素類抗生素、喹諾酮類抗生素（Fluoroquinolone）、鐵劑及甲狀腺素（Levothyroxine）。若同時服用其他藥品，一般應至少間隔2小時以上，請由藥師評估具體間隔時程。"
+      },
+      {
+        "heading": "常見問題：氧化鎂要飯前還是飯後吃？",
+        "text": "需先確認醫師開立的目的。若是用於中和胃酸通常於飯後或不適時服用；若是用於軟便改善便祕，則依藥袋指定時間或睡前服用並應多補充水分。"
+      },
+      {
+        "heading": "常見問題：息痛佳音可以咬碎吃或飯後吃嗎？",
+        "text": "不可以咬碎，且不應隨意改為飯後。息痛佳音含麻醉成分咬碎會麻痺口腔黏膜；台灣各大醫院指引建議於飯前整顆吞服。"
+      }
+    ],
+    "altText": "鎂鋁鹽類制酸劑用藥指南圖卡，說明氧化鎂、息痛佳音、胃立舒泰之服用時間差異（一般制酸劑常見飯後，含Oxethazaine複方建議飯前）、軟便與制酸用途區分及藥物間隔注意事項。",
+    "updatedAt": "2026-11-01",
+    "sourceCheckedAt": "2026-11-01",
+    "revisionCredit": "使用者提供文案；本站依定稿與官方/學會直接來源核對整理",
+    "references": [
+      {
+        "title": "中國醫藥大學附設醫院藥劑部：胃藥怎麼吃才對？（息痛佳音與胃立舒泰飯前服用與注意事項）",
+        "url": "https://www.cmuh.cmu.edu.tw/NewsInfo/NewsArticle?no=4389"
+      },
+      {
+        "title": "臺大醫院健康教育資訊網：胃食道逆流用藥簡介（制酸劑種類與副作用說明）",
+        "url": "https://health3.ntuh.gov.tw/News_PDF_Content/136/1433"
+      },
+      {
+        "title": "英國國民健保署（NHS）：制酸劑使用說明與交互作用（Antacids）",
+        "url": "https://www.nhs.uk/medicines/antacids/"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "stomach_medicine",
+    "image": "img/stomach_medicine_alginate.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_alginate.html",
+    "title": "海藻酸鹽類怎麼吃？胃逆舒、艾胃逆服服用時間",
+    "summary": "海藻酸鹽在胃內容物上形成凝膠屏障，減少胃內容物向食道逆流，因此這類製劑通常安排飯後及睡前使用。",
+    "sections": [
+      {
+        "heading": "認識海藻酸鹽與防逆流機轉",
+        "text": "海藻酸鹽（Alginates）類藥物與抑制胃酸分泌的藥品機轉不同。當海藻酸接觸胃酸時，會迅速反應形成一層低密度、中性的黏稠泡沫凝膠屏障（Raft），物理性地浮在胃內容物上方，有效阻擋胃酸、胃蛋白酶甚至膽汁向食道逆流，緩解火燒心與胸口灼熱感。"
+      },
+      {
+        "heading": "台灣常見藥品品項",
+        "text": "台灣臨床常見海藻酸鹽製劑包括：胃逆舒口服懸浮液（Alginos Oral Suspension，含 Sodium alginate 複方）、艾胃逆服咀嚼錠（Algitab Chewable Tablets，含 Alginic acid 複方）。部分產品同時添加碳酸鈣或碳酸氫鈉，可藉反應產生的二氧化碳使凝膠層浮起，並兼具部分中和胃酸作用。"
+      },
+      {
+        "heading": "海藻酸鹽什麼時候吃？",
+        "text": "海藻酸鹽製劑通常安排在「飯後」與「睡前」服用。飯後進食使胃內有胃內容物與胃酸，此時服藥能讓凝膠屏障精確浮在食物表面以發揮物理性阻隔逆流的效果；睡前服用則有助於防範平躺時發生的夜間胃酸逆流。"
+      },
+      {
+        "heading": "懸浮液與咀嚼錠的正確使用方式",
+        "text": "不同劑型有嚴格的服用規定：口服懸浮液（如胃逆舒）服用前應依仿單先充分搖勻，並以量杯或專用藥包準確量取；咀嚼錠（如艾胃逆服）務必在口中充分嚼碎後再配水吞服，不可直接整粒吞下，否則難以在胃內迅速形成均勻的泡沫屏障。"
+      },
+      {
+        "heading": "使用注意事項與族群提醒",
+        "text": "部分海藻酸鹽複方含有較高含量的鈉離子，需嚴格限制鈉攝取的高血壓、充血性心衰竭或腎功能不全患者應特別注意產品成分；部分複方含鈣或鎂成分，腎臟病患者應諮詢醫師；由於凝膠屏障可能影響其他口服藥物的吸收，建議與其他藥物間隔至少2小時。"
+      },
+      {
+        "heading": "常見問題：胃逆舒可以飯前吃嗎？",
+        "text": "一般不建議飯前吃。海藻酸鹽需要在胃內已有食物時浮於表面形成防逆流屏障，若空腹或飯前吃，藥物可能隨食物攪拌而失去阻隔逆流的最佳物理效果。"
+      },
+      {
+        "heading": "常見問題：海藻酸鹽可以和PPI一起使用嗎？",
+        "text": "臨床上有時會針對頑固性逆流症狀聯合使用，但兩者角色不同：PPI負責強效抑制胃酸分泌（多在早餐前服用），海藻酸鹽負責物理阻隔（在餐後或睡前使用），應遵照醫師或藥師安排之時間分別服用。"
+      }
+    ],
+    "altText": "海藻酸鹽類怎麼吃衛教圖卡，說明胃逆舒口服懸浮液與艾胃逆服咀嚼錠，通常飯後及睡前使用、形成凝膠屏障減少胃酸逆流，以及咀嚼錠須嚼碎、懸浮液須搖勻等特別提醒。",
+    "updatedAt": "2026-11-01",
+    "sourceCheckedAt": "2026-11-01",
+    "revisionCredit": "使用者提供文案；本站依定稿與官方/學會直接來源核對整理",
+    "references": [
+      {
+        "title": "英國國民健保署（NHS）：Gaviscon海藻酸鹽複方服用時機與指引",
+        "url": "https://www.nhs.uk/medicines/gaviscon/how-and-when-to-take-gaviscon/"
+      },
+      {
+        "title": "臺大醫院健康教育資訊網：胃食道逆流用藥簡介（黏膜保護劑與艾胃逆服使用說明）",
+        "url": "https://health3.ntuh.gov.tw/News_PDF_Content/136/1433"
+      },
+      {
+        "title": "中國醫藥大學附設醫院藥劑部：胃藥怎麼吃才對？（艾胃逆服與胃逆舒注意事項）",
+        "url": "https://www.cmuh.cmu.edu.tw/NewsInfo/NewsArticle?no=4389"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "stomach_medicine",
+    "image": "img/stomach_medicine_sucralfate.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_sucralfate.html",
+    "title": "Sucralfate怎麼吃？保胃懸乳液、安胃寧服藥指引",
+    "summary": "Sucralfate可附著於潰瘍表面形成保護層，通常建議空腹服用，常見安排是餐前1小時。治療潰瘍時通常需要規律服藥，而不是胃痛才吃。",
+    "sections": [
+      {
+        "heading": "認識Sucralfate黏膜保護劑",
+        "text": "Sucralfate（硫糖鋁）為蔗糖硫酸酯與鹼性鋁鹽的複合物，主要作用為胃腸黏膜保護劑。在胃部強酸環境下，Sucralfate會解離並聚合成帶負電的高黏著性膠狀聚合物，能高度選擇性地與受損或潰瘍黏膜處帶正電的組織蛋白質牢固結合，形成一層人工保護屏障，阻斷胃酸、胃蛋白酶、膽鹽及酒精的再度侵蝕，利於潰瘍組織癒合。"
+      },
+      {
+        "heading": "台灣常見藥品品項",
+        "text": "台灣臨床常見Sucralfate產品包括：保胃懸乳液（Scrat Suspension 100mg/mL，生達化學製藥，衛署藥製字第043945號）、安胃寧錠（Anwenin Tablets 500mg，嘉林藥品，衛署藥製字第036480號）、益胃錠（Bigast Tablets 1000mg，元宙化學製藥，衛署藥製字第035065號）。"
+      },
+      {
+        "heading": "Sucralfate什麼時候吃？為什麼要空腹？",
+        "text": "通常必須「空腹服用」，常見安排在餐前1小時（或餐後2小時）以及睡前。必須空腹的原因在於：藥物需要酸性胃環境進行活化以形成黏性保護膜；若在飯後服用，藥物會與食物混雜，降低附著於潰瘍部位的專一性與保護效果。常見劑量為每日四次（三餐前及睡前），每次1公克。"
+      },
+      {
+        "heading": "需要固定吃還是胃痛才吃？",
+        "text": "治療消化性潰瘍時，通常需要連續規律服用數週以利傷口完整癒合。Sucralfate並非中樞或局部立即止痛藥，不能自行改為痛才吃；即使服藥幾天後胃部不適症狀緩解，仍應遵從醫囑完成完整治療療程。"
+      },
+      {
+        "heading": "與制酸劑及其他藥物的服用間隔",
+        "text": "Sucralfate需要酸性環境活化，若同時使用制酸劑（胃乳片等），兩者應至少間隔30–60分鐘；此外，Sucralfate會與多種口服藥物結合而降低其吸收，與多數藥物（如抗生素、心臟用藥）應至少間隔2小時；針對甲狀腺素（Levothyroxine），研究與仿單建議應至少間隔4小時以上。"
+      },
+      {
+        "heading": "特別提醒與副作用",
+        "text": "因成分含有鋁鹽，最常見的輕微副作用為便祕，服藥期間宜多補充水分與纖維；慢性腎衰竭或長期洗腎患者因體內排除鋁的能力低下，長期使用有鋁蓄積及透析性骨病變風險，應遵醫囑慎用；若為懸乳液劑型，服用前請輕輕搖勻。"
+      },
+      {
+        "heading": "常見問題：Sucralfate可以飯後吃嗎？",
+        "text": "不建議。飯後胃內充滿食物，會阻礙藥物均勻黏附於受損黏膜傷口表面，嚴重影響治療效益。請盡量在餐前1小時或空腹時服用。"
+      }
+    ],
+    "altText": "Sucralfate怎麼吃用藥指南圖卡，說明保胃懸乳液、安胃寧錠等藥品，強調空腹吃（餐前1小時）、形成保護層幫助潰瘍癒合、與制酸劑間隔30分鐘、其他藥物間隔2小時以上及便祕等提醒。",
+    "updatedAt": "2026-11-01",
+    "sourceCheckedAt": "2026-11-01",
+    "revisionCredit": "使用者提供文案；本站依定稿與官方/學會直接來源核對整理",
+    "references": [
+      {
+        "title": "美國國家醫學圖書館 MedlinePlus：Sucralfate 硫糖鋁用藥指引",
+        "url": "https://medlineplus.gov/druginfo/meds/a681049.html"
+      },
+      {
+        "title": "國軍台中總醫院藥劑科：保胃懸乳液 Scrat Suspension 仿單指引與用藥說明",
+        "url": "https://web-reg-server.803.org.tw/PhC/images/drug/ROSCRAT/Guide1.pdf?20261027081807"
+      },
+      {
+        "title": "耕莘醫院藥品資訊：安胃寧錠 Anwenin Tab 500mg 用藥須知",
+        "url": "https://www.cth.org.tw/?aid=606&pid=0&page_name=detail&iid=1841"
+      },
+      {
+        "title": "元宙化學製藥：益胃錠 Bigast Tablets 1000mg 產品與仿單資訊",
+        "url": "https://yuanchou.com.tw/%E7%94%A2%E5%93%81%E4%BB%8B%E7%B4%B9/%E7%9B%8A%20%E8%83%83%20%E9%8C%A0/1?lang=zh-TW"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "stomach_medicine",
+    "image": "img/stomach_medicine_timing_summary.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_timing_summary.html",
+    "title": "胃藥服用時間總整理：五類胃藥怎麼吃？",
+    "summary": "PPI通常餐前30–60分鐘；H2阻斷劑依處方；一般制酸劑常見飯後，但部分複方需飯前；海藻酸鹽常在飯後及睡前；Sucralfate通常空腹、餐前1小時。是否固定服用則依治療目的決定。",
+    "sections": [
+      {
+        "heading": "五類常見胃藥服用時機對照",
+        "text": "不同胃藥的抑酸或保護機轉各異，服藥時間不可混淆：PPI（耐適恩、泰克胃通、百抑潰）通常於餐前30–60分鐘服用，治療期間通常需每日規律使用；H2阻斷劑（發馬、法瑪鎮）可依處方安排在飯前、飯後或睡前，可固定服用亦可依症狀使用；鎂鋁鹽制酸劑（氧化鎂、息痛佳音）中，一般單純制酸劑常見飯後或症狀時使用，但含Oxethazaine局部麻醉複方則需飯前服用；海藻酸鹽類（胃逆舒、艾胃逆服）通常在飯後與睡前使用以防逆流，可依症狀需要或短期規律使用；Sucralfate（保胃懸乳液、安胃寧、益胃錠）通常需空腹、餐前1小時及睡前服用，潰瘍治療期間通常需規律使用。"
+      },
+      {
+        "heading": "常見藥名快速對照",
+        "text": "民眾拿到藥袋時可對照成分與藥品類別：PPI類常見藥品有耐適恩（Esomeprazole）、泰克胃通（Lansoprazole）、百抑潰（Rabeprazole）；H2阻斷劑常見藥品有發馬（Famotidine）、法瑪鎮（Famotidine）；制酸劑常見有氧化鎂錠、息痛佳音錠、胃立舒泰懸濁液；海藻酸鹽類常見有胃逆舒口服懸浮液、艾胃逆服咀嚼錠；黏膜保護劑常見有保胃懸乳液、安胃寧錠、益胃錠。"
+      },
+      {
+        "heading": "服藥三大關鍵觀念",
+        "text": "第一：飯前飯後不能隨意交換。PPI需要餐前活化幫浦，海藻酸鹽需要飯後浮於食物表面，Sucralfate需要空腹接觸黏膜，交換時間將使藥效大幅降低。第二：不是所有胃藥都能胃痛才吃。潰瘍治療藥物（如PPI與Sucralfate）需按時服滿療程以促成組織修復。第三：多種藥物併服務必確認間隔時間。制酸劑與Sucralfate易與其他抗生素、心血管藥物或甲狀腺素產生交互作用，應由藥師協助規劃服藥間隔。"
+      },
+      {
+        "heading": "常見問題：胃藥一定要飯後吃嗎？",
+        "text": "不一定。一般PPI常安排飯前30–60分鐘，Sucralfate通常空腹服用，海藻酸鹽則常在飯後及睡前使用。民間常有所有胃藥皆飯後吃的誤解，應依各藥物特性區分。"
+      },
+      {
+        "heading": "常見問題：胃藥可以跟其他藥一起吞嗎？",
+        "text": "不建議同時吞服。部分胃藥（特別是含金屬離子制酸劑與Sucralfate）會大幅降低其他藥物的吸收率，通常應間隔至少2小時。"
+      },
+      {
+        "heading": "常見問題：胃不舒服很久了，可以一直吃胃藥嗎？",
+        "text": "若症狀持續或頻繁復發，或伴隨吞嚥困難、吐血、黑便、非預期體重減輕或劇烈腹痛，應立即尋求腸胃專科醫師診治，切勿自行長期服用成藥延誤診斷。"
+      }
+    ],
+    "altText": "五類胃藥服用時間總整理圖卡，比較PPI、H2阻斷劑、鎂鋁鹽制酸劑、海藻酸鹽類與Sucralfate之常見服用時間（飯前、飯後、空腹、睡前）與固定或需要時服用說明。",
+    "updatedAt": "2026-11-01",
+    "sourceCheckedAt": "2026-11-01",
+    "revisionCredit": "使用者提供文案；本站依定稿與官方/學會直接來源核對整理",
+    "references": [
+      {
+        "title": "中國醫藥大學附設醫院藥劑部：胃藥怎麼吃才對？（五類胃藥功效與答客問）",
+        "url": "https://www.cmuh.cmu.edu.tw/NewsInfo/NewsArticle?no=4389"
+      },
+      {
+        "title": "臺大醫院健康教育資訊網：胃食道逆流用藥簡介（胃藥服用原則與藥物交互作用）",
+        "url": "https://health3.ntuh.gov.tw/News_PDF_Content/136/1433"
+      },
+      {
+        "title": "美國胃腸病學會（ACG）：胃食道逆流指引（臨床用藥原則）",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8754510/"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
   }
 ]

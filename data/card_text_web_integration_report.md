@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：245
+- 成功加入文字頁數：252
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -250,3 +250,10 @@
 | contraceptive_pills | 複方避孕藥漏吃怎麼辦？依漏服顆數與 48 小時分界處理 | https://liaoweihung.github.io/pteduimg/cards/contraceptive_pills_missed_dose.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | contraceptive_pills | 事後避孕藥怎麼吃？先辨認 LNG 或 UPA，儘早處理 | https://liaoweihung.github.io/pteduimg/cards/emergency_contraceptive_pills_how_to_take.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | contraceptive_pills | 吃完事後避孕藥要注意什麼？嘔吐、後續避孕與驗孕 | https://liaoweihung.github.io/pteduimg/cards/emergency_contraceptive_pills_notice.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| stomach_medicine | 胃藥怎麼吃？飯前、飯後、睡前一次看懂 | https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_guide.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| stomach_medicine | PPI怎麼吃？耐適恩、泰克胃通服用時間說明 | https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_ppi.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| stomach_medicine | H2阻斷劑怎麼吃？發馬Famotidine服用時間 | https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_h2_blocker.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| stomach_medicine | 制酸劑怎麼吃？氧化鎂、息痛佳音服用時間與注意事項 | https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_antacid.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| stomach_medicine | 海藻酸鹽類怎麼吃？胃逆舒、艾胃逆服服用時間 | https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_alginate.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| stomach_medicine | Sucralfate怎麼吃？保胃懸乳液、安胃寧服藥指引 | https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_sucralfate.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| stomach_medicine | 胃藥服用時間總整理：五類胃藥怎麼吃？ | https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_timing_summary.html | 是 | 是 | 是 | 是 | 是 | 無 |

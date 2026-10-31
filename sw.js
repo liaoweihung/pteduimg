@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-vc16ea480eac2a7c44585d509';
+const CACHE_NAME = 'pwa-cache-v2c13180d130ae9669269602a';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -407,6 +407,13 @@ const urlsToCache = [
   "./img/sore_throat_causes.webp",
   "./img/sore_throat_otc_choice.webp",
   "./img/sore_throat_red_flags.webp",
+  "./img/stomach_medicine_alginate.webp",
+  "./img/stomach_medicine_antacid.webp",
+  "./img/stomach_medicine_guide.webp",
+  "./img/stomach_medicine_h2_blocker.webp",
+  "./img/stomach_medicine_ppi.webp",
+  "./img/stomach_medicine_sucralfate.webp",
+  "./img/stomach_medicine_timing_summary.webp",
   "./img/stretch_marks.webp",
   "./img/terbinafine_7_days.webp",
   "./img/terbinafine_daily_cream.webp",
@@ -849,6 +856,13 @@ const urlsToCache = [
   "./cards/baby_nasal_aspirator_5.html",
   "./cards/baby_nasal_aspirator_6.html",
   "./cards/baby_nasal_aspirator_7.html",
+  "./cards/stomach_medicine_guide.html",
+  "./cards/stomach_medicine_ppi.html",
+  "./cards/stomach_medicine_h2_blocker.html",
+  "./cards/stomach_medicine_antacid.html",
+  "./cards/stomach_medicine_alginate.html",
+  "./cards/stomach_medicine_sucralfate.html",
+  "./cards/stomach_medicine_timing_summary.html",
   "./cards/acne.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare_2.html",

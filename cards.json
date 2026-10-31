@@ -3674,5 +3674,59 @@
       "baby_nasal_aspirator-5",
       "baby_nasal_aspirator-6"
     ]
+  },
+  "stomach_medicine": {
+    "title": "胃藥怎麼吃？",
+    "category": "public_education",
+    "showFooter": true,
+    "topics": [
+      "gastrointestinal"
+    ],
+    "order": 21.1,
+    "hidden": false,
+    "icon": "💊",
+    "tags": [
+      "胃藥怎麼吃",
+      "胃藥飯前飯後",
+      "胃藥睡前吃",
+      "胃藥種類",
+      "胃藥要固定吃嗎",
+      "PPI",
+      "耐適恩",
+      "泰克胃通",
+      "百抑潰",
+      "H2阻斷劑",
+      "發馬",
+      "Famotidine",
+      "制酸劑",
+      "氧化鎂",
+      "息痛佳音",
+      "海藻酸鹽",
+      "胃逆舒",
+      "艾胃逆服",
+      "Sucralfate",
+      "保胃懸乳液",
+      "安胃寧",
+      "胃黏膜保護劑",
+      "胃藥時間表"
+    ],
+    "steps": [
+      "img/stomach_medicine_guide.webp",
+      "img/stomach_medicine_ppi.webp",
+      "img/stomach_medicine_h2_blocker.webp",
+      "img/stomach_medicine_antacid.webp",
+      "img/stomach_medicine_alginate.webp",
+      "img/stomach_medicine_sucralfate.webp",
+      "img/stomach_medicine_timing_summary.webp"
+    ],
+    "favorite_keys": [
+      "stomach_medicine-0",
+      "stomach_medicine-1",
+      "stomach_medicine-2",
+      "stomach_medicine-3",
+      "stomach_medicine-4",
+      "stomach_medicine-5",
+      "stomach_medicine-6"
+    ]
   }
 }
