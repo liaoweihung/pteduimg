@@ -130,37 +130,6 @@
     box-shadow: 0 10px 25px rgba(0,0,0,0.3); /* 加深陰影 */
 }
 
-.reset-main-order-wrap {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin: 22px 0 14px;
-}
-
-.reset-main-order-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 42vw;
-    max-width: 210px;
-    min-height: 76px;
-    border: 2px solid #3498db;
-    border-radius: 12px;
-    background: #ffffff;
-    color: #2c3e50;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.35;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-    text-decoration: none;
-}
-
-.site-footer .reset-main-order-btn {
-    color: #2c3e50;
-}
-
 .card-search-wrap {
     max-width: 720px;
     margin: 16px auto 6px;
@@ -276,10 +245,53 @@
     text-decoration: none;
 }
 
-.reset-main-order-btn:active {
-    transform: translateY(1px);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.16);
+
+/* === 民眾頁版面調整（寫在頁內，讓 HTML 與樣式一起更新）=== */
+/* 主題分類：直接顯示的橫向標籤列，右側漸層提示可左右滑動 */
+body.public-page .topic-filter-section { margin: 18px 0 8px; }
+body.public-page .topic-filter-title { margin: 0 0 10px; font-size: 1.05rem; color: #203b48; }
+.topic-filter-scroll { position: relative; margin: 0 -16px; }
+.topic-filter-scroll::after {
+    content: ""; position: absolute; top: 0; right: 0; bottom: 8px; width: 36px;
+    background: linear-gradient(to right, rgba(247,250,251,0), #f7fafb);
+    pointer-events: none;
 }
+body.public-page .topic-filter-list {
+    display: flex; flex-wrap: nowrap; gap: 8px;
+    overflow-x: auto; scroll-behavior: smooth;
+    padding: 2px 40px 10px 16px;
+}
+body.public-page .topic-filter-btn {
+    flex: 0 0 auto; min-height: 44px; padding: 9px 16px;
+    border-radius: 999px; font-size: 1rem;
+}
+
+/* 寬螢幕空間足夠：標籤自動換行全部顯示，不需要左右滑 */
+@media (min-width: 720px) {
+    .topic-filter-scroll { margin: 0; }
+    .topic-filter-scroll::after { display: none; }
+    body.public-page .topic-filter-list { flex-wrap: wrap; overflow-x: visible; padding: 2px 0 10px; }
+}
+
+/* 醫藥計算器入口：與「顯示更多」同一套外觀 */
+.tool-link-btn {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 52px; margin: 16px 0 0; padding: 12px 16px;
+    border: 1px solid #537e8b; border-radius: 12px; background: #fff;
+    color: #245b73; font-size: 1rem; font-weight: 700; text-decoration: none;
+}
+.tool-link-btn:active { background: #f0f6f8; }
+
+/* 字級：次要文字至少約 15px，方便長輩閱讀 */
+body.public-page .brand-header .brand-edition { font-size: 14px; }
+body.public-page .search-hint { font-size: .95rem; }
+body.public-page #result-count,
+body.public-page #clear-filters { font-size: .95rem; }
+body.public-page .series-link small { font-size: .9rem; }
+body.public-page .series-directory summary { font-size: .95rem; }
+body.public-page .matching-links small { font-size: .9rem; }
+body.public-page .related-navigation-title { font-size: .95rem; }
+body.public-page .site-footer { font-size: .95rem; }
 </style>
 
     <link rel="stylesheet" href="./css/brand-header.css">
@@ -304,11 +316,11 @@
     <input id="card-search" class="card-search-input" type="search" placeholder="輸入關鍵字，例如：傷口、睡眠、出國" autocomplete="off" enterkeyhint="search" aria-controls="category-sections">
     <p class="search-hint">搜尋標題與關鍵字，或從下方選擇主題。</p>
 </div>
-<section class="topic-filter-section" aria-label="依主題瀏覽">
-    <details id="topic-picker">
-        <summary id="topic-filter-title">依主題瀏覽：全部圖卡</summary>
+<section class="topic-filter-section" aria-labelledby="topic-filter-title">
+    <h2 class="topic-filter-title" id="topic-filter-title">依主題瀏覽</h2>
+    <div class="topic-filter-scroll">
         <div class="topic-filter-list" id="topic-filter-list" role="group" aria-label="圖卡主題篩選"></div>
-    </details>
+    </div>
 </section>
 <details id="fav-section" style="display:none;">
     <summary>⭐ 我的收藏 <span id="fav-count"></span></summary>
@@ -335,10 +347,10 @@
     <h2 class="section-title" id="featured-title">精選圖卡</h2>
     <div class="featured-carousel" id="featured-carousel"></div>
 </section>
+<a class="tool-link-btn" href="./calc.html"><span aria-hidden="true">🧮</span>醫藥計算器</a>
 <details class="professional-tools" id="professional-tools">
     <summary>藥品使用說明與其他工具</summary>
     <section class="related-navigation" id="related-pharmacist-navigation" aria-live="polite"></section>
-    <a href="./calc.html">醫藥計算器</a>
     <a href="./retired-cards.html">退出圖卡紀錄</a>
 </details>
 <noscript><p>請前往<a href="./all-cards.html">完整圖卡目錄</a>瀏覽所有圖卡。</p></noscript>
@@ -841,15 +853,20 @@
                     aria-pressed="${topic.id === activePublicTopic}">
                 ${topic.title}
             </button>`).join('');
+        // 讓目前選取的主題出現在可視範圍內（只水平捲動，不影響頁面上下位置）
+        const active = filterRoot.querySelector('[aria-pressed="true"]');
+        if (active && activePublicTopic !== 'all') {
+            filterRoot.scrollLeft = Math.max(0, active.offsetLeft - (filterRoot.clientWidth - active.offsetWidth) / 2);
+        }
     }
 
     function selectPublicTopic(topicId) {
         if (!publicTopicMeta.some(topic => topic.id === topicId)) return;
         activePublicTopic = topicId;
         visibleSeriesLimit = 12;
-        document.getElementById('topic-picker').open = false;
         renderHome();
-        document.getElementById('topic-filter-title').focus();
+        // 重新繪製後把焦點還給目前選取的主題，鍵盤與螢幕報讀使用者不會迷路
+        document.querySelector(`.topic-filter-btn[data-topic="${topicId}"]`)?.focus({ preventScroll: true });
     }
 
     function applyPublicTopicFromUrl() {
@@ -863,7 +880,7 @@
         const root = document.getElementById('related-pharmacist-navigation');
         const departments = publicTopicRelatedDepartments[activePublicTopic]
             || Object.keys(pharmacistDepartmentTitles);
-        root.innerHTML = `<h2 class="related-navigation-title">💊 給藥師的相關衛教</h2><div class="related-navigation-list">${departments.map(departmentId =>
+        root.innerHTML = `<h2 class="related-navigation-title">💊 藥品使用說明（依科別）</h2><div class="related-navigation-list">${departments.map(departmentId =>
             `<a class="related-navigation-link" href="./index.html?department=${encodeURIComponent(departmentId)}">${pharmacistDepartmentTitles[departmentId]}</a>`
         ).join('')}</div>`;
     }
@@ -937,7 +954,6 @@
         document.getElementById('acne-hub-entry').hidden = !!cardSearchTerm || !['all', 'acne'].includes(activePublicTopic);
         const total = Object.values(categories).reduce((count, items) => count + items.length, 0);
         document.getElementById('result-count').textContent = `${getActivePublicTopicTitle()} · ${total} 個系列${cardSearchTerm ? '符合搜尋' : ''}`;
-        document.getElementById('topic-filter-title').textContent = `依主題瀏覽：${getActivePublicTopicTitle()}`;
         document.getElementById('clear-filters').hidden = !cardSearchTerm && activePublicTopic === 'all';
         document.querySelector('.featured-section').hidden = !!cardSearchTerm || activePublicTopic !== 'all';
         document.getElementById('show-more').hidden = total <= visibleSeriesLimit;
@@ -1329,9 +1345,6 @@ function updateContent() {
     // 👆 貼到這裡為止 👆
     
 </script>
-  <div class="reset-main-order-wrap">
-    <a class="reset-main-order-btn" href="./calc.html">🧮<br>醫藥計算器</a>
-  </div>
 <footer class="site-footer">
   <p style="margin: 0 0 8px 0;">圖卡提供一般衛教資訊；個人用藥與照護問題，請諮詢醫師或藥師。</p>
   <p style="margin: 0;">
