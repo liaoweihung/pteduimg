@@ -9377,5 +9377,312 @@
       }
     ],
     "revisionCredit": "使用者提供並確認圖卡文字；AI整理網站文字及核對來源"
+  },
+  {
+    "cardId": "NTG",
+    "image": "img/NTG_1.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/NTG_1.html",
+    "title": "NTG 舌下錠怎麼用？先坐下，再放在舌下溶解",
+    "summary": "依醫師處方使用 NTG（硝酸甘油）舌下錠時，先坐下休息，再將藥錠放在舌下自然溶解；不要咬碎或直接吞服。口中有沒有刺痛感，都不能用來判斷藥效。",
+    "sections": [
+      {
+        "heading": "先坐下再含服",
+        "text": "NTG 會擴張血管，可能使血壓下降而頭暈。請坐穩後含服，起身時放慢動作，避免跌倒。"
+      },
+      {
+        "heading": "放在舌頭下方",
+        "text": "依處方將一錠放在舌下，等待溶解，不要嚼碎或整錠吞下。本說明適用於醫師開立的 NTG 舌下錠，不代表所有胸痛都適合自行使用。"
+      },
+      {
+        "heading": "沒有刺痛感，就是失效嗎？",
+        "text": "不是。含服時可能有輕微灼熱或刺痛，但有無這種感覺都不能可靠判斷藥錠效力；不要為了測試藥效而自行試含或加量。"
+      },
+      {
+        "heading": "胸痛沒有改善怎麼辦？",
+        "text": "第一錠含服 5 分鐘後仍未改善，應立即撥打 119，不要等三錠都用完才求救。疼痛若與平常不同或持續惡化，應立即求助。"
+      }
+    ],
+    "altText": "NTG 舌下錠坐姿含服及舌下放置位置示意圖。",
+    "updatedAt": "2026-10-31",
+    "sourceCheckedAt": "2026-10-31",
+    "revisionCredit": "AI 整理，待藥師複核",
+    "references": [
+      {
+        "title": "DailyMed／Viatris｜NITROSTAT 美國處方資訊及病人用藥資訊（2023-02 修訂）",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9a52da75-d0af-4237-96c0-0b12adfa8636&type=display"
+      },
+      {
+        "title": "臺大醫院藥劑部｜常見用藥 Q&A：耐絞寧舌下錠（2022-11）",
+        "url": "https://epaper.ntuh.gov.tw/health/202211/health_4.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "NTG",
+    "image": "img/NTG_2.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/NTG_2.html",
+    "title": "NTG 含服後仍胸痛怎麼辦？5 分鐘未改善就求救",
+    "summary": "第一錠 NTG 含服 5 分鐘後，胸痛仍未改善，應立即撥打 119。等待救援時依醫囑使用後續劑量，不要為了等滿三錠而延誤送醫。",
+    "sections": [
+      {
+        "heading": "發作時先休息",
+        "text": "已有醫師處方的病人，發作時先坐下，依指示含服一錠。若疼痛與平常不同或持續惡化，立即求救，不自行開車就醫。"
+      },
+      {
+        "heading": "每次間隔與總量",
+        "text": "第一錠後 5 分鐘仍痛，求救同時可依醫囑含第二錠；再隔 5 分鐘仍痛，可依醫囑含第三錠。15 分鐘內總共不得超過三錠，且不要反覆自行加量。"
+      },
+      {
+        "heading": "哪些藥不能併用？",
+        "text": "NTG 不可與 sildenafil、tadalafil、vardenafil 等 PDE5 抑制劑或 riociguat 併用，以免嚴重低血壓。近期用過這些藥，發生胸痛時應立即求救，告知藥名與最後服藥時間，勿自行含 NTG。"
+      }
+    ],
+    "altText": "NTG 發作時含服、5 分鐘未改善求救及交互作用警語圖。",
+    "updatedAt": "2026-10-31",
+    "sourceCheckedAt": "2026-10-31",
+    "revisionCredit": "AI 整理，待藥師複核",
+    "references": [
+      {
+        "title": "臺大醫院藥劑部｜常見用藥 Q&A：耐絞寧舌下錠（2022-11）",
+        "url": "https://epaper.ntuh.gov.tw/health/202211/health_4.html"
+      },
+      {
+        "title": "DailyMed／Viatris｜NITROSTAT 美國處方資訊及病人用藥資訊（2023-02 修訂）",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9a52da75-d0af-4237-96c0-0b12adfa8636&type=display"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "NTG",
+    "image": "img/NTG_3.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/NTG_3.html",
+    "title": "NTG 舌下錠如何保存？原瓶密閉、避熱並記錄開封日",
+    "summary": "NTG 舌下錠應留在原玻璃瓶內，取藥後立即蓋緊，避免高溫、潮濕及日照。開封後使用期限應依實際產品及調劑藥局指示確認。",
+    "sections": [
+      {
+        "heading": "保留原瓶，不分裝",
+        "text": "不要倒入每週藥盒、塑膠袋或其他容器；保留原標籤及效期，方便緊急使用與核對。"
+      },
+      {
+        "heading": "攜帶時避免受熱",
+        "text": "把原瓶放在容易取用且不易受熱的位置，避免日照、高溫及潮濕，勿長時間放在高溫車內。美國 NITROSTAT 仿單標示室溫 20–25°C 保存；實際產品以標示為準。"
+      },
+      {
+        "heading": "開封後多久更換？",
+        "text": "在瓶身記錄開封日。臺大醫院的耐絞寧衛教建議開封後 6 個月丟棄剩餘藥錠；這不是所有硝酸甘油產品一律適用的期限，應依藥袋、仿單及藥師指示，且不得超過原有效期限。"
+      },
+      {
+        "heading": "不要靠刺痛感測試效力",
+        "text": "發現藥品過期、變色或受潮，應請藥師協助更換。即使外觀正常，也不能靠含服時是否刺痛來證明仍有效。"
+      }
+    ],
+    "altText": "NTG 原瓶密閉、避免受熱與定期更換示意圖。",
+    "updatedAt": "2026-10-31",
+    "sourceCheckedAt": "2026-10-31",
+    "revisionCredit": "AI 整理，待藥師複核",
+    "references": [
+      {
+        "title": "臺大醫院藥劑部｜常見用藥 Q&A：耐絞寧舌下錠（2022-11）",
+        "url": "https://epaper.ntuh.gov.tw/health/202211/health_4.html"
+      },
+      {
+        "title": "DailyMed／Viatris｜NITROSTAT 美國處方資訊及病人用藥資訊（2023-02 修訂）",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9a52da75-d0af-4237-96c0-0b12adfa8636&type=display"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "contraceptive_pills",
+    "image": "img/contraceptive_pills_how_to_take.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/contraceptive_pills_how_to_take.html",
+    "title": "事前避孕藥怎麼吃？複方口服避孕藥的開始與接續方式",
+    "summary": "複方口服避孕藥應每天按順序服用，下一盒要準時接續。21 顆裝與 28 顆裝的停藥或安慰劑安排不同，請先確認品牌與藥盒說明。",
+    "sections": [
+      {
+        "heading": "先確認是哪一種藥",
+        "text": "本頁說明含雌激素及黃體素的複方口服避孕藥；單方黃體素及特殊多相製劑，不能直接套用相同規則。"
+      },
+      {
+        "heading": "第一次何時開始？",
+        "text": "一般複方製劑在月經開始第 1–5 天啟用，通常不需額外避孕；第 5 天後開始，須先合理排除懷孕，並在前 7 天使用保險套或避免性行為。部分品牌有不同規則，依該產品仿單與醫藥人員指示。"
+      },
+      {
+        "heading": "常見 21 顆裝",
+        "text": "每天一顆，連續服完 21 顆含藥錠，再依處方停藥 7 天，第 8 天開始新盒，不因仍在出血而延後。此為一般 21／7 療程，其他療程依處方。"
+      },
+      {
+        "heading": "常見 28 顆裝",
+        "text": "每天依包裝順序服用，整盒吃完隔天接新盒，不另加停藥天數。不同品牌的含藥錠與安慰劑數量不同，不要只靠顏色猜。"
+      },
+      {
+        "heading": "規律服藥與保護範圍",
+        "text": "設定每日提醒，避免漏服或自行延長停藥。避孕藥不能預防性傳染病，有相關風險時仍需正確使用保險套。"
+      }
+    ],
+    "altText": "事前避孕藥開始時間、21 顆與 28 顆包裝的服用示意圖。",
+    "updatedAt": "2026-10-31",
+    "sourceCheckedAt": "2026-10-31",
+    "revisionCredit": "AI 整理，待藥師複核",
+    "references": [
+      {
+        "title": "英國 NHS｜How to take the combined pill（2024-02-15 審閱）",
+        "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/how-to-take-it/"
+      },
+      {
+        "title": "美國 CDC｜U.S. SPR 2024：Combined Hormonal Contraceptives（2024-11-19）",
+        "url": "https://www.cdc.gov/contraception/hcp/usspr/combined-hormonal-contraceptives.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "contraceptive_pills",
+    "image": "img/contraceptive_pills_missed_dose.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/contraceptive_pills_missed_dose.html",
+    "title": "複方避孕藥漏吃怎麼辦？依漏服顆數與 48 小時分界處理",
+    "summary": "一般複方口服避孕藥漏服含藥錠時，從原本應服藥時間計算延誤。未滿 48 小時與達 48 小時的處理不同；安慰劑、單方黃體素及特殊製劑另依仿單。",
+    "sections": [
+      {
+        "heading": "晚服或漏一顆：未滿 48 小時",
+        "text": "儘快補服該顆，下一顆按原定時間服用，即使同一天需服兩顆。通常不需額外避孕；若本週期或前盒末段還有其他漏服，應另請藥師評估。"
+      },
+      {
+        "heading": "連續漏兩顆以上：達 48 小時",
+        "text": "儘快補服最近漏掉的一顆，更早漏掉的不用補，之後按原時間服藥。直到連續服用含藥錠滿 7 天前，使用保險套或避免性行為。"
+      },
+      {
+        "heading": "漏在含藥錠最後一週",
+        "text": "若連續漏兩顆以上發生在含藥錠最後一週，吃完本盒剩餘含藥錠後，隔天直接接新盒，略過停藥期或安慰劑。無法立即接新盒時，持續額外避孕至新盒含藥錠連服滿 7 天。"
+      },
+      {
+        "heading": "第一週漏服，且最近有無保護性行為",
+        "text": "若第一週連續漏兩顆以上，且過去 5 天有無保護性行為，應當天洽醫師或藥師評估緊急避孕。不要自行將 UPA 與原避孕藥接續使用，兩者可能互相影響。"
+      }
+    ],
+    "altText": "避孕藥漏服時間、補服與額外避孕處理示意圖。",
+    "updatedAt": "2026-10-31",
+    "sourceCheckedAt": "2026-10-31",
+    "revisionCredit": "AI 整理，待藥師複核",
+    "references": [
+      {
+        "title": "美國 CDC｜U.S. SPR 2024：Combined Hormonal Contraceptives（2024-11-19）",
+        "url": "https://www.cdc.gov/contraception/hcp/usspr/combined-hormonal-contraceptives.html"
+      },
+      {
+        "title": "美國 CDC｜U.S. SPR 2024：Emergency Contraception（2024-11-19）",
+        "url": "https://www.cdc.gov/contraception/hcp/usspr/emergency-contraception.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "contraceptive_pills",
+    "image": "img/emergency_contraceptive_pills_how_to_take.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/emergency_contraceptive_pills_how_to_take.html",
+    "title": "事後避孕藥怎麼吃？先辨認 LNG 或 UPA，儘早處理",
+    "summary": "無保護性行為或避孕失敗後，應儘快詢問醫師或藥師。常見 LNG 事後避孕藥標示於 72 小時內使用，UPA 則為 120 小時內；越早處理越好，不要等到期限才用。",
+    "sections": [
+      {
+        "heading": "哪些情況需要評估？",
+        "text": "保險套破裂或滑落、未使用避孕措施，或事前避孕藥漏服而失去保護時，都應儘早評估緊急避孕。"
+      },
+      {
+        "heading": "Levonorgestrel（LNG）",
+        "text": "常見產品為單次 1.5 mg；依實際藥品的劑量與用法服用，不單憑「一顆」推定劑量。常見標示是性行為後 72 小時內，超過 72 小時仍應立即就醫評估其他選擇，不要自行認定已無補救方式。"
+      },
+      {
+        "heading": "Ulipristal acetate（UPA）",
+        "text": "單次 30 mg，於性行為後 120 小時內使用。第 3–5 天時，UPA 的效果通常優於 LNG；醫療人員也可評估含銅子宮內避孕器。"
+      },
+      {
+        "heading": "服用後仍要避孕",
+        "text": "事後避孕藥主要藉由延遲或抑制排卵降低懷孕機會，不是終止妊娠的藥物，也不保護之後的性行為。後續避孕藥的開始時間須依 LNG 或 UPA 分別安排。"
+      }
+    ],
+    "altText": "LNG 與 UPA 事後避孕藥的使用時間及適用情境圖。",
+    "updatedAt": "2026-10-31",
+    "sourceCheckedAt": "2026-10-31",
+    "revisionCredit": "AI 整理，待藥師複核",
+    "references": [
+      {
+        "title": "英國 NHS｜How to take the emergency contraceptive pill（2024-02-09 審閱）",
+        "url": "https://www.nhs.uk/contraception/methods-of-contraception/emergency-contraceptive-pill-morning-after-pill/how-to-take-it/"
+      },
+      {
+        "title": "美國 CDC｜U.S. SPR 2024：Emergency Contraception（2024-11-19）",
+        "url": "https://www.cdc.gov/contraception/hcp/usspr/emergency-contraception.html"
+      },
+      {
+        "title": "世界衛生組織 WHO｜Emergency contraception（2021-11-09）",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/emergency-contraception"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "contraceptive_pills",
+    "image": "img/emergency_contraceptive_pills_notice.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/emergency_contraceptive_pills_notice.html",
+    "title": "吃完事後避孕藥要注意什麼？嘔吐、後續避孕與驗孕",
+    "summary": "服藥後可能有噁心、頭痛、疲倦或月經時間改變，且下一次性行為仍有懷孕風險。出現嘔吐、月經延遲或明顯腹痛時，要依情況補救或就醫。",
+    "sections": [
+      {
+        "heading": "服藥後嘔吐怎麼辦？",
+        "text": "服藥後 3 小時內嘔吐，應立即聯絡醫師或藥師，確認是否儘快補服一劑；不同產品仿單可能使用 2 或 3 小時的判斷點。不要自行認為已吸收，也不要任意混吃另一種事後避孕藥。"
+      },
+      {
+        "heading": "如何接續事前避孕藥？",
+        "text": "LNG 後可立即開始或恢復原避孕藥，並加用保險套 7 天。UPA 後須等滿 5 天，第 6 天才開始或恢復荷爾蒙避孕藥；等待期間及重新服藥後 7 天，使用保險套或避免性行為。"
+      },
+      {
+        "heading": "何時驗孕？",
+        "text": "月經比預期晚超過 7 天，或服藥後 3 週仍未出現預期出血，應驗孕。陰性但持續未來或仍有症狀，請就醫評估。"
+      },
+      {
+        "heading": "哪些症狀不能只當成副作用？",
+        "text": "嚴重或單側下腹痛、肩尖痛、異常出血，尤其合併頭暈、虛弱或昏倒，須儘速就醫排除子宮外孕等急症。劇烈腹痛或昏倒時立即撥打 119。"
+      },
+      {
+        "heading": "一年只能用兩次嗎？",
+        "text": "沒有「一年最多兩次」的通用醫學限制。反覆使用可能增加月經不規則，且不如穩定的日常避孕可靠；若再次發生風險，仍應儘快評估緊急避孕及後續長期方式。"
+      }
+    ],
+    "altText": "事後避孕藥的副作用、後續避孕、驗孕及就醫警訊圖。",
+    "updatedAt": "2026-10-31",
+    "sourceCheckedAt": "2026-10-31",
+    "revisionCredit": "AI 整理，待藥師複核",
+    "references": [
+      {
+        "title": "美國 CDC｜U.S. SPR 2024：Emergency Contraception（2024-11-19）",
+        "url": "https://www.cdc.gov/contraception/hcp/usspr/emergency-contraception.html"
+      },
+      {
+        "title": "世界衛生組織 WHO｜Emergency contraception（2021-11-09）",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/emergency-contraception"
+      },
+      {
+        "title": "英國 NHS｜Ectopic pregnancy：Symptoms（2022-08-23 審閱）",
+        "url": "https://www.nhs.uk/conditions/ectopic-pregnancy/symptoms/"
+      },
+      {
+        "title": "英國 NHS｜How to take the emergency contraceptive pill（2024-02-09 審閱）",
+        "url": "https://www.nhs.uk/contraception/methods-of-contraception/emergency-contraceptive-pill-morning-after-pill/how-to-take-it/"
+      },
+      {
+        "title": "馬爾他政府 Sexual Health Malta｜Emergency Contraception（副作用、月經延遲與驗孕）",
+        "url": "https://sexualhealth.gov.mt/sexual-health-topic/contraception/emergency-contraception/"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
   }
 ]

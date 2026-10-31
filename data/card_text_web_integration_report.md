@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：238
+- 成功加入文字頁數：245
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -243,3 +243,10 @@
 | pediatric_cold_syrup | 「杏輝」安咳糖漿（Nocough Syrup）兒童用藥指南 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_nocough_syrup.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | pediatric_gi_syrup | 乳果糖藥水怎麼吃？杜化液、樂多差異與便祕用藥指南 | https://liaoweihung.github.io/pteduimg/cards/lactulose_constipation.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | pediatric_gi_syrup | 瀉必寧 Hidrasec 怎麼吃？兒童劑量、服用方法與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_diarrhea_hidrasec.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| NTG | NTG 舌下錠怎麼用？先坐下，再放在舌下溶解 | https://liaoweihung.github.io/pteduimg/cards/NTG_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| NTG | NTG 含服後仍胸痛怎麼辦？5 分鐘未改善就求救 | https://liaoweihung.github.io/pteduimg/cards/NTG_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| NTG | NTG 舌下錠如何保存？原瓶密閉、避熱並記錄開封日 | https://liaoweihung.github.io/pteduimg/cards/NTG_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| contraceptive_pills | 事前避孕藥怎麼吃？複方口服避孕藥的開始與接續方式 | https://liaoweihung.github.io/pteduimg/cards/contraceptive_pills_how_to_take.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| contraceptive_pills | 複方避孕藥漏吃怎麼辦？依漏服顆數與 48 小時分界處理 | https://liaoweihung.github.io/pteduimg/cards/contraceptive_pills_missed_dose.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| contraceptive_pills | 事後避孕藥怎麼吃？先辨認 LNG 或 UPA，儘早處理 | https://liaoweihung.github.io/pteduimg/cards/emergency_contraceptive_pills_how_to_take.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| contraceptive_pills | 吃完事後避孕藥要注意什麼？嘔吐、後續避孕與驗孕 | https://liaoweihung.github.io/pteduimg/cards/emergency_contraceptive_pills_notice.html | 是 | 是 | 是 | 是 | 是 | 無 |
