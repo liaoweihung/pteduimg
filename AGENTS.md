@@ -17,6 +17,7 @@
 | 清冊、需求、關聯、人工簽核及增量同步 | [專案管理 SOP](docs/project-management/README.md)；從 [總控台](docs/project-management/project-dashboard.md) 查現況 |
 | 品牌、Logo、品牌色、素材 | [品牌入口](docs/brand/README.md)、[Brand Guide v2.3](docs/brand/BRAND_GUIDE_v2.3.md)、[AI 品牌約束](docs/brand/BRAND_GUIDE_AI.md) |
 | 藥局工作工具及其導覽 | [工具與 Hub 維護](docs/pharmacy-tools-maintenance.md)，並核對 Hub repository 的規則 |
+| 醫藥計算器新增、公式／判讀修改、版面修改、計算器交接包 | [醫藥計算器工作規範 v1.0](docs/medical-calculator-guide-v1.md)；入口與 Hub 另依工具維護規範 |
 | 青春痘 Pilot／相關產生器／手機版面 | [Pilot 規格](docs/acne-pilot-spec.md) 與本檔「品牌與特殊頁面」的手機規則 |
 | 搜尋成效、索引、手動提交、AI 可見度 | [搜尋追蹤流程](docs/project-management/search-tracking.md) 與 [逐筆歷史](docs/project-management/search-console-history.json) |
 

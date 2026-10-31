@@ -1481,15 +1481,32 @@
       "Lactul",
       "Duphalac",
       "乳果糖孕婦",
-      "乳果糖糖尿病"
+      "乳果糖糖尿病",
+      "瀉必寧",
+      "Hidrasec",
+      "Racecadotril",
+      "瀉必寧怎麼吃",
+      "瀉必寧劑量",
+      "兒童腹瀉藥",
+      "瀉必寧10mg",
+      "瀉必寧30mg",
+      "瀉必寧顆粒怎麼泡",
+      "瀉必寧一天吃幾次",
+      "瀉必寧吃幾天",
+      "瀉必寧副作用",
+      "小朋友拉肚子止瀉藥",
+      "Racecadotril 兒童劑量",
+      "Hidrasec granules"
     ],
     "texts": [
       "胃利空懸液劑：兒童劑量、用途與注意事項",
-      "乳果糖藥水怎麼吃？杜化液、樂多差異與便祕用藥指南"
+      "乳果糖藥水怎麼吃？杜化液、樂多差異與便祕用藥指南",
+      "瀉必寧 Hidrasec 怎麼吃？兒童劑量、服用方法與注意事項"
     ],
     "steps": [
       "img/wempty_suspension.webp",
-      "img/lactulose_constipation.webp"
+      "img/lactulose_constipation.webp",
+      "img/ped_diarrhea_hidrasec.webp"
     ]
   },
   "smecta_diarrhea": {

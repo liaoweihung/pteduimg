@@ -1,6 +1,6 @@
 # 藥局工具與 Hub 維護規範
 
-新增、修改、更名、移動、退出或移除藥局工作工具時，操作前讀完本檔。所有本機路徑以 pteduimg 根目錄為準；Hub 的實際 checkout 仍須另外核對。技術與 Git 規範見 [建置與發布](site-build-and-release.md)，管理紀錄見 [專案管理 SOP](project-management/README.md)。
+新增、修改、更名、移動、退出或移除藥局工作工具時，操作前讀完本檔。醫藥計算器及含計算或判讀邏輯的工具，另依 [醫藥計算器工作規範 v1.0](medical-calculator-guide-v1.md) 處理醫療來源、交接包、驗證與手機版面。所有本機路徑以 pteduimg 根目錄為準；Hub 的實際 checkout 仍須另外核對。技術與 Git 規範見 [建置與發布](site-build-and-release.md)，管理紀錄見 [專案管理 SOP](project-management/README.md)。
 
 ## Pharmacy Tool Pages and Hub Synchronization
 
