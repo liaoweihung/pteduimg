@@ -34,7 +34,10 @@
 
 2026-10-31 補齊「NTG 舌下錠」（3 頁）與「避孕藥」（4 頁）共 7 頁靜態文字並同步修正圖卡（CR-2026-056）：依交接包補齊 7 頁靜態文字、直接查核來源與雙日期，並最小必要修正 6 張圖卡之錯漏字、跨卡殘影與醫療細節（保留 NTG 藥袋／藥師指示與原效期限制、不新增 3～6 個月說法；保留 UPA 等滿 5 天第 6 天恢復荷爾蒙避孕藥及等待期與重新服藥後 7 天保險套說明）。核對圖文一致後設 `matchConfidence: "high"`，完成增量建置與清冊機械欄位同步；7 頁 `--propose` 零差異，`check_site.py` 通過；保留 `needsMedicalReview: true`，人工醫療複核狀態維持 unknown。尚未 Commit／Push。詳見[定點證據](evidence/ntg-contraceptive-text-2026-10-31.md)。
 
-2026-11-01 新增「胃藥怎麼吃？」七張衛教圖卡與定稿文字整合（CR-2026-057）：依 Antigravity 接手指令與定稿文字包新增 `stomach_medicine` 系列（開頭總覽、PPI、H2阻斷劑、制酸劑、海藻酸鹽、Sucralfate、服用時間總整理共 7 頁），轉為 WebP 並啟用 showFooter；逐頁建立靜態文字、雙日期與醫院/學會/仿單直接查核來源；安全增量建置更新同系列 7 頁導覽、SEO、兩份 sitemap、PWA 與整合報告（文字整合 252 成功 0 失敗）；目標 7 頁 `--propose` 零差異，`check_site.py` 通過；具名臨床審核證據未提供，人工狀態維持 unknown。尚未 Commit／Push。詳見[定點證據](evidence/stomach-medicine-2026-11-01.md)。
+2026-11-01 新增「孕期體重增加計算器」獨立頁（CR-2026-057）：依國健署《孕媽咪衛教手冊》孕媽咪體重增加建議表，入口在 `calc.html`；不判斷增重正常與否，醫療複核未完成。增量建置因 `build.py` 變更被拒，正式 repo 僅套用 sitemap 兩份與 `sw.js` 新條目；隔離完整建置另顯示 327 檔既有產生器落差，留待下次完整建置。證據見 [evidence](evidence/pregnancy-weight-calculator-2026-11-01.md)。尚未 Commit／Push。
+2026-11-01 孕期體重增加計算器加入快速結論（CR-2026-058）：推估到 40 週總增重對照國健署建議範圍，已超過上限顯示紅色、推估超過／低於與體重低於孕前顯示黃色；醫療複核未完成。證據見 [evidence](evidence/pregnancy-weight-calculator-conclusion-2026-11-01.md)。
+2026-11-01 孕期體重增加計算器加入「可以怎麼做」建議（CR-2026-059）：增重偏多／偏少各一組、預設收合，文字取自國健署孕婦衛教手冊並經使用者確認；醫療複核未完成。證據見 [evidence](evidence/pregnancy-weight-calculator-advice-2026-11-01.md)。
+2026-11-01 新增「胃藥怎麼吃？」七張衛教圖卡與定稿文字整合（CR-2026-060）：依 Antigravity 接手指令與定稿文字包新增 `stomach_medicine` 系列（開頭總覽、PPI、H2阻斷劑、制酸劑、海藻酸鹽、Sucralfate、服用時間總整理共 7 頁），轉為 WebP 並啟用 showFooter；逐頁建立靜態文字、雙日期與醫院/學會/仿單直接查核來源；安全增量建置更新同系列 7 頁導覽、SEO、兩份 sitemap、PWA 與整合報告（文字整合 252 成功 0 失敗）；目標 7 頁 `--propose` 零差異，`check_site.py` 通過；具名臨床審核證據未提供，人工狀態維持 unknown。尚未 Commit／Push。詳見[定點證據](evidence/stomach-medicine-2026-11-01.md)。
 
 先讀 [增量維護說明](README.md)，工作前查 [需求登記](change-requests.csv)、[頁面清冊](page-inventory.csv) 與 [歷史證據](audit-history.md)。登記不等於已批准執行。P0–P3 是待辦順序；CR-2026-025 至 CR-2026-036 的管理建置與新增／追加圖卡工作依各次明確指示獲授權，其他原登記需求未因本次試行而自動核准。
 

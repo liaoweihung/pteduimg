@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v2c13180d130ae9669269602a';
+const CACHE_NAME = 'pwa-cache-v359d401b3171f60caba4c973';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -38,6 +38,7 @@ const urlsToCache = [
   "./cancer-marker-calculator.html",
   "./growth-calculator.html",
   "./menstrual-calculator.html",
+  "./pregnancy-weight-calculator.html",
   "./10-yr-cv-risk.html",
   "./rx-refillable-date.html",
   "./taiwan_child_growth_data.json",
@@ -46,6 +47,8 @@ const urlsToCache = [
   "./css/growth-calculator.css",
   "./css/menstrual-calculator.css",
   "./js/menstrual-calculator.js",
+  "./css/pregnancy-weight-calculator.css",
+  "./js/pregnancy-weight-calculator.js",
   "./css/rx-refillable-date.css",
   "./icon.png",
   "./404.html",
@@ -632,6 +635,10 @@ const urlsToCache = [
   "./cards/DM_damage.html",
   "./cards/Neupro.html",
   "./cards/Ps_hair_wash.html",
+  "./cards/over_one_oint_01.html",
+  "./cards/over_one_oint_02.html",
+  "./cards/over_one_oint_03.html",
+  "./cards/over_one_oint_04.html",
   "./cards/nasal_1.html",
   "./cards/nasal_2.html",
   "./cards/nasal_3.html",

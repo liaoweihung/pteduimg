@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-01T00:07:01+08:00",
-  "baseline": "44ff57e631a859e7e127818af8227337cfdc1027",
-  "scope": "網站來源快照；版本 44ff57e6",
+  "generatedAt": "2026-11-01T02:01:51+08:00",
+  "baseline": "519dc6c5a7ba3044cc2461a27fbf01f4d42d7436",
+  "scope": "網站來源快照；版本 519dc6c5",
   "counts": {
     "cards": 395,
     "series": 88,
@@ -10,7 +10,7 @@
     "retired": 4,
     "areas": 16,
     "topics": 1,
-    "tools": 5
+    "tools": 6
   },
   "areas": {
     "chronic_conditions": 7,
@@ -4075,8 +4075,8 @@
     }
   },
   "sync": {
-    "pages": 361,
-    "fields": 367,
+    "pages": 403,
+    "fields": 409,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4230,6 +4230,24 @@
       },
       {
         "page": "MDI_7",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "NTG_1",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "NTG_2",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "NTG_3",
         "fields": [
           "rules_sha256"
         ]
@@ -4662,6 +4680,30 @@
         ]
       },
       {
+        "page": "angular_cheilitis_01",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "angular_cheilitis_02",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "angular_cheilitis_03",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "antiphen",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
         "page": "artficial_vs_paraffin",
         "fields": [
           "rules_sha256"
@@ -4693,6 +4735,48 @@
       },
       {
         "page": "atopic_dermatitis_care",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "baby_nasal_aspirator_1",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "baby_nasal_aspirator_2",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "baby_nasal_aspirator_3",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "baby_nasal_aspirator_4",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "baby_nasal_aspirator_5",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "baby_nasal_aspirator_6",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "baby_nasal_aspirator_7",
         "fields": [
           "rules_sha256"
         ]
@@ -4938,6 +5022,18 @@
         ]
       },
       {
+        "page": "contraceptive_pills_how_to_take",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "contraceptive_pills_missed_dose",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
         "page": "diabetes_nutrition_formula",
         "fields": [
           "rules_sha256"
@@ -5047,6 +5143,18 @@
       },
       {
         "page": "elderly_skin_tear",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "emergency_contraceptive_pills_how_to_take",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "emergency_contraceptive_pills_notice",
         "fields": [
           "rules_sha256"
         ]
@@ -5367,6 +5475,18 @@
         ]
       },
       {
+        "page": "ibuprofen_sol",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "idofen_suspension",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
         "page": "japan_otc_drug_classification",
         "fields": [
           "rules_sha256"
@@ -5386,6 +5506,12 @@
       },
       {
         "page": "kidney_nutrition_formula",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "kidsolone_oral_solution",
         "fields": [
           "rules_sha256"
         ]
@@ -5469,6 +5595,12 @@
         ]
       },
       {
+        "page": "lactulose_constipation",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
         "page": "lan_1",
         "fields": [
           "rules_sha256"
@@ -5494,6 +5626,12 @@
       },
       {
         "page": "lan_5",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "macsafe_suspension",
         "fields": [
           "rules_sha256"
         ]
@@ -5584,6 +5722,12 @@
       },
       {
         "page": "nasal_rinse_6",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "notice_ped_fever_reducer",
         "fields": [
           "rules_sha256"
         ]
@@ -5748,6 +5892,84 @@
       },
       {
         "page": "paste_prep_4",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_asthma_meptin_liquid",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_cetirizine",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_cough_mixture",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_cypromin",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_exdila_liquid",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_guaphen_syrup",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_koko_sou_syrup",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_mintapp_syrup",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_musco_solution",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_nocough_syrup",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_peace_syrup",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_secorine",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_diarrhea_hidrasec",
         "fields": [
           "rules_sha256"
         ]
@@ -5957,6 +6179,12 @@
         ]
       },
       {
+        "page": "silicone_scar_sheet_steps",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
         "page": "silicone_scar_when_to_start",
         "fields": [
           "rules_sha256"
@@ -5976,6 +6204,24 @@
       },
       {
         "page": "slipped_fall_wound",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "smecta_1",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "smecta_2",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "smecta_3",
         "fields": [
           "rules_sha256"
         ]
@@ -6191,6 +6437,12 @@
         ]
       },
       {
+        "page": "wempty_suspension",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
         "page": "wound_4_soln",
         "fields": [
           "rules_sha256"
@@ -6275,6 +6527,10 @@
     {
       "title": "經期、排卵與預產期計算器",
       "path": "menstrual-calculator.html"
+    },
+    {
+      "title": "孕期體重增加計算器",
+      "path": "pregnancy-weight-calculator.html"
     },
     {
       "title": " 10 年心血管風險評估",

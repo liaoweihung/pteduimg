@@ -472,10 +472,10 @@ REL-b9fb65a835269610,series:pediatric_cold_syrup,has_card,page:ped_asthma_meptin
 REL-5bca189bb1d8b137,series:pediatric_cold_syrup,has_card,page:ped_cold_nocough_syrup,source_observed,series_membership,cards.json,CR-2026-050：兒科感冒藥水系列末尾追加第 12 張「杏輝」安咳糖漿；保留既有頁面與收藏識別
 REL-181de2e5110e6566,series:pediatric_gi_syrup,has_card,page:lactulose_constipation,source_observed,series_membership,cards.json,CR-2026-051：兒科腸胃藥水追加第2張乳果糖藥水；保留同系列及關聯
 REL-73c0a4ecb22d0a6d,series:pediatric_gi_syrup,has_card,page:ped_diarrhea_hidrasec,source_observed,series_membership,cards.json,CR-2026-055：兒科腸胃藥水追加第3張瀉必寧懸浮液用顆粒劑；保留同系列及關聯
-REL-fe5dc0af706aea3a,series:stomach_medicine,has_card,page:stomach_medicine_guide,source_observed,series_membership,cards.json,CR-2026-057；新系列第 1 張：總入口
-REL-1a28c1d112f5b5ab,series:stomach_medicine,has_card,page:stomach_medicine_ppi,source_observed,series_membership,cards.json,CR-2026-057；新系列第 2 張：PPI
-REL-5b8d95e4ad796504,series:stomach_medicine,has_card,page:stomach_medicine_h2_blocker,source_observed,series_membership,cards.json,CR-2026-057；新系列第 3 張：H2阻斷劑
-REL-d2a770845595c2ae,series:stomach_medicine,has_card,page:stomach_medicine_antacid,source_observed,series_membership,cards.json,CR-2026-057；新系列第 4 張：制酸劑
-REL-0b49762fc9cfa083,series:stomach_medicine,has_card,page:stomach_medicine_alginate,source_observed,series_membership,cards.json,CR-2026-057；新系列第 5 張：海藻酸鹽
-REL-34f1b1f9ba001619,series:stomach_medicine,has_card,page:stomach_medicine_sucralfate,source_observed,series_membership,cards.json,CR-2026-057；新系列第 6 張：Sucralfate
-REL-57d520b6c65ad1bb,series:stomach_medicine,has_card,page:stomach_medicine_timing_summary,source_observed,series_membership,cards.json,CR-2026-057；新系列第 7 張：總整理
+REL-fe5dc0af706aea3a,series:stomach_medicine,has_card,page:stomach_medicine_guide,source_observed,series_membership,cards.json,CR-2026-060；新系列第 1 張：總入口
+REL-1a28c1d112f5b5ab,series:stomach_medicine,has_card,page:stomach_medicine_ppi,source_observed,series_membership,cards.json,CR-2026-060；新系列第 2 張：PPI
+REL-5b8d95e4ad796504,series:stomach_medicine,has_card,page:stomach_medicine_h2_blocker,source_observed,series_membership,cards.json,CR-2026-060；新系列第 3 張：H2阻斷劑
+REL-d2a770845595c2ae,series:stomach_medicine,has_card,page:stomach_medicine_antacid,source_observed,series_membership,cards.json,CR-2026-060；新系列第 4 張：制酸劑
+REL-0b49762fc9cfa083,series:stomach_medicine,has_card,page:stomach_medicine_alginate,source_observed,series_membership,cards.json,CR-2026-060；新系列第 5 張：海藻酸鹽
+REL-34f1b1f9ba001619,series:stomach_medicine,has_card,page:stomach_medicine_sucralfate,source_observed,series_membership,cards.json,CR-2026-060；新系列第 6 張：Sucralfate
+REL-57d520b6c65ad1bb,series:stomach_medicine,has_card,page:stomach_medicine_timing_summary,source_observed,series_membership,cards.json,CR-2026-060；新系列第 7 張：總整理

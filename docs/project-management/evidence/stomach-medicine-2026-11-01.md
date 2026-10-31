@@ -1,4 +1,4 @@
-# CR-2026-057 胃藥怎麼吃？七張圖卡系列與定稿文字整合證據（2026-11-01）
+# CR-2026-060 胃藥怎麼吃？七張圖卡系列與定稿文字整合證據（2026-11-01）
 
 ## 1. 任務與授權背景
 - 使用者指示依據 `C:\Users\liaow\.codex\visualizations\2026\10\30\01a18d9e-3bc9-7891-9781-008b81cce2c9\stomach_medicine_antigravity_20261101` 資料夾內之「Antigravity接手指令.md」，將七張胃藥圖卡與定稿文字整合至本機 `pteduimg` 專案。
@@ -50,7 +50,7 @@
 - 網站迴歸檢查：`python -B scripts/check_site.py` 完整通過（Site check passed）。
 - 專案管理定點提案：執行 `python -B scripts/check_project_management.py --propose` 七頁回報零差異、零移除、零來源錯誤。
 - 專案管理關聯：於 `docs/project-management/content-relations.csv` 登記七筆 `series:stomach_medicine -> page:stomach_medicine_*`（`has_card`）。
-- 需求登記：於 `docs/project-management/change-requests.csv` 登記 `CR-2026-057`。
+- 需求登記：於 `docs/project-management/change-requests.csv` 登記 `CR-2026-060`。
 - 變更追蹤驗證：執行 `python -B scripts/project_change_tracker.py --check` 通過。
 
 ## 6. 本次變更檔案清單（供 GitHub Desktop 審核）
