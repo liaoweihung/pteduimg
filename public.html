@@ -318,7 +318,7 @@
     <p id="result-count" role="status" aria-live="polite"></p>
     <button type="button" id="clear-filters" onclick="clearPublicFilters()" hidden>清除篩選</button>
 </div>
-<p id="ranking-note" class="search-hint">依台灣近一年關鍵字搜尋熱度排序；青春痘相關系列列於最後 · 2026/09 更新</p>
+<p id="ranking-note" class="search-hint">依民眾近一年搜尋熱度排序 · 2026/09 更新</p>
 <div id="home-loading" class="home-loading" role="status" aria-live="polite">正在載入圖卡...</div>
 <section id="acne-hub-entry" class="acne-hub-entry" aria-label="青春痘完整主題" hidden>
     <article class="series-card">
@@ -371,17 +371,6 @@
     </div>
 </div>
 
-<div id="reset-order-modal">
-    <div class="reset-order-box">
-        <h3 class="reset-order-title">恢復圖卡預設排列</h3>
-        <p class="reset-order-message">確定要恢復圖卡預設排列嗎？目前手動調整的圖卡順序會被清除。</p>
-        <div class="reset-order-modal-actions">
-            <button type="button" class="reset-confirm-btn" onclick="confirmResetMainCardOrder()">確定恢復預設排列</button>
-            <button type="button" class="reset-cancel-btn" onclick="closeResetMainCardOrder()">取消</button>
-        </div>
-    </div>
-</div>
-
 <div id="viewer">
     <div class="viewer-header">
         <span id="v-title" style="font-size:1.2rem; font-weight:bold;">&#27161;&#38988;</span>
@@ -415,7 +404,6 @@
 
     const EDUCATION_DATA_CACHE_KEY = 'pteduimg:cardsData:v1';
     const SEO_DATA_CACHE_KEY = 'pteduimg:seoData:v1';
-    const MAIN_ORDER_STORAGE_KEY = `mainCardOrder:${PAGE_TYPE}`;
     let cardSearchTerm = '';
     let activePublicTopic = 'all';
     let visibleSeriesLimit = 12;
@@ -562,7 +550,6 @@
     }
 
     let favoriteImages = JSON.parse(localStorage.getItem('favImages')) || [];
-    let mainCardOrder = JSON.parse(localStorage.getItem(MAIN_ORDER_STORAGE_KEY)) || {};
 
     // Preserve saved image identities when a series is regrouped.
     function getCardFavoriteKey(type, idx) {
@@ -582,10 +569,6 @@
 
     function saveFavorites() {
         localStorage.setItem('favImages', JSON.stringify(favoriteImages));
-    }
-
-    function saveMainCardOrder() {
-        localStorage.setItem(MAIN_ORDER_STORAGE_KEY, JSON.stringify(mainCardOrder));
     }
 
     let favoriteToastTimer = null;
@@ -608,25 +591,6 @@
         document.getElementById('home-loading')?.setAttribute('hidden', '');
     }
 
-    function requestResetMainCardOrder() {
-        document.getElementById('reset-order-modal').style.display = 'flex';
-    }
-
-    function closeResetMainCardOrder() {
-        document.getElementById('reset-order-modal').style.display = 'none';
-    }
-
-    function confirmResetMainCardOrder() {
-        mainCardOrder = {};
-        localStorage.removeItem(MAIN_ORDER_STORAGE_KEY);
-        closeResetMainCardOrder();
-        renderHome();
-    }
-
-    function resetMainCardOrder() {
-        requestResetMainCardOrder();
-    }
-
     let currentType = '', currentIdx = 0;
 
     // === 我的最愛：長按拖曳排序 ===
@@ -637,15 +601,7 @@
     let dragStarted = false;
     let favPressStartX = 0;
     let favPressStartY = 0;
-    let mainPressTimer = null;
-    let mainPressStartX = 0;
-    let mainPressStartY = 0;
-    let draggedMainKey = null;
-    let draggedMainCategory = null;
-    let mainDragGhost = null;
-    let mainDragActive = false;
-    let mainDragStarted = false;
-    const MAIN_DRAG_MOVE_TOLERANCE = 10;
+    const DRAG_MOVE_TOLERANCE = 10;
 
     function initFavoriteSorting() {
         document.querySelectorAll('.sortable-fav').forEach(el => {
@@ -655,163 +611,17 @@
     }
 
 
-    function initMainSorting() {
-        document.querySelectorAll('.sortable-main').forEach(el => {
-            const grip = el.querySelector('.main-drag-grip');
-            if (!grip) return;
-            grip.addEventListener('pointerdown', mainPointerDown);
-            grip.addEventListener('click', event => {
-                event.preventDefault();
-                event.stopPropagation();
-            });
-        });
-    }
-
-    function handleMainCardClick(event, key) {
-        if (mainDragStarted) {
-            event.preventDefault();
-            event.stopPropagation();
-            return;
-        }
-
-        navigateToCardPage(key, 0);
-    }
-
     function getDefaultSortedItems(items) {
         return [...items].sort((a, b) => (a.item.order ?? 999) - (b.item.order ?? 999) || a.item.title.localeCompare(b.item.title, 'zh-Hant'));
     }
 
     function getOrderedCategoryItems(cat, items) {
-        const defaultItems = getDefaultSortedItems(items);
-        // Public browsing follows the curated search-interest order, including returning visitors.
-        if (cat === 'public_education') return defaultItems;
-        const savedKeys = Array.isArray(mainCardOrder[cat]) ? mainCardOrder[cat] : [];
-        const byKey = new Map(defaultItems.map(entry => [entry.key, entry]));
-        const ordered = [];
-
-        savedKeys.forEach(key => {
-            if (byKey.has(key)) {
-                ordered.push(byKey.get(key));
-                byKey.delete(key);
-            }
-        });
-
-        return ordered.concat([...byKey.values()]);
+        // 民眾頁固定依搜尋熱度的預設順序排列，不提供手動排序。
+        return getDefaultSortedItems(items);
     }
 
     function isAcneRelatedSeries(entry) {
         return entry.key === 'rosacea_care' || (Array.isArray(entry.item.topics) && entry.item.topics.includes('acne'));
-    }
-
-    function mainPointerDown(event) {
-        const el = event.currentTarget.closest('.sortable-main');
-        if (!el) return;
-        if (event.pointerType === 'mouse' && event.button !== 0) return;
-
-        clearTimeout(mainPressTimer);
-        mainDragStarted = false;
-        mainPressStartX = event.clientX;
-        mainPressStartY = event.clientY;
-
-        mainPressTimer = setTimeout(() => {
-            startMainDrag(el, event.clientX, event.clientY);
-        }, 520);
-
-        document.addEventListener('pointermove', mainPendingPointerMove, { passive: true });
-        document.addEventListener('pointerup', mainPointerUp, { once: true });
-        document.addEventListener('pointercancel', mainPointerUp, { once: true });
-    }
-
-    function mainPendingPointerMove(event) {
-        const movedX = Math.abs(event.clientX - mainPressStartX);
-        const movedY = Math.abs(event.clientY - mainPressStartY);
-        if (movedX > MAIN_DRAG_MOVE_TOLERANCE || movedY > MAIN_DRAG_MOVE_TOLERANCE) {
-            clearTimeout(mainPressTimer);
-            mainPressTimer = null;
-        }
-    }
-
-    function mainPointerMove(event) {
-        if (!mainDragActive || !mainDragGhost) return;
-
-        if (event.cancelable) event.preventDefault();
-
-        mainDragGhost.style.left = `${event.clientX}px`;
-        mainDragGhost.style.top = `${event.clientY}px`;
-
-        const target = document.elementFromPoint(event.clientX, event.clientY)?.closest('.sortable-main');
-        if (target && target.dataset.cardKey && target.dataset.category === draggedMainCategory && target.dataset.cardKey !== draggedMainKey) {
-            moveMainCardBefore(draggedMainKey, target.dataset.cardKey, target.dataset.category);
-            saveMainCardOrder();
-            renderHome();
-
-            if (mainDragGhost && !document.body.contains(mainDragGhost)) {
-                document.body.appendChild(mainDragGhost);
-            }
-        }
-    }
-
-    function mainPointerUp() {
-        clearTimeout(mainPressTimer);
-        mainPressTimer = null;
-
-        document.removeEventListener('pointermove', mainPendingPointerMove);
-        document.removeEventListener('pointermove', mainPointerMove);
-
-        if (mainDragGhost) {
-            mainDragGhost.remove();
-            mainDragGhost = null;
-        }
-
-        if (mainDragActive) {
-            saveMainCardOrder();
-        }
-
-        mainDragActive = false;
-        draggedMainKey = null;
-        draggedMainCategory = null;
-        document.body.classList.remove('main-dragging');
-        document.querySelectorAll('.main-drag-source').forEach(el => el.classList.remove('main-drag-source'));
-
-        setTimeout(() => {
-            mainDragStarted = false;
-        }, 120);
-    }
-
-    function startMainDrag(el, x, y) {
-        document.removeEventListener('pointermove', mainPendingPointerMove);
-        document.addEventListener('pointermove', mainPointerMove, { passive: false });
-
-        draggedMainKey = el.dataset.cardKey;
-        draggedMainCategory = el.dataset.category;
-        mainDragActive = true;
-        mainDragStarted = true;
-        document.body.classList.add('main-dragging');
-        el.classList.add('main-drag-source');
-
-        mainDragGhost = el.cloneNode(true);
-        mainDragGhost.classList.add('main-drag-ghost');
-        mainDragGhost.style.left = `${x}px`;
-        mainDragGhost.style.top = `${y}px`;
-        document.body.appendChild(mainDragGhost);
-    }
-
-    function moveMainCardBefore(fromKey, toKey, cat) {
-        if (!cat) return;
-
-        const currentItems = Array.from(document.querySelectorAll(`.sortable-main[data-category="${cat}"]`)).map(el => el.dataset.cardKey);
-        let keys = currentItems.length ? currentItems : (mainCardOrder[cat] || []);
-        const fromIndex = keys.indexOf(fromKey);
-        const toIndex = keys.indexOf(toKey);
-
-        if (fromIndex === -1 || toIndex === -1 || fromIndex === toIndex) return;
-
-        const moved = keys.splice(fromIndex, 1)[0];
-        let insertIndex = keys.indexOf(toKey);
-        if (fromIndex < toIndex) insertIndex += 1;
-        keys.splice(insertIndex, 0, moved);
-
-        mainCardOrder[cat] = keys;
     }
 
     function handleFavClick(event) {
@@ -847,7 +657,7 @@
         if (!dragActive) {
             const dx = Math.abs(event.clientX - favPressStartX);
             const dy = Math.abs(event.clientY - favPressStartY);
-            if (dx > MAIN_DRAG_MOVE_TOLERANCE || dy > MAIN_DRAG_MOVE_TOLERANCE) {
+            if (dx > DRAG_MOVE_TOLERANCE || dy > DRAG_MOVE_TOLERANCE) {
                 clearTimeout(favPressTimer);
                 favPressTimer = null;
                 document.removeEventListener('pointermove', favPointerMove);
@@ -950,15 +760,17 @@
             return;
         }
 
-        carousel.innerHTML = featuredCards.map(({ key, item, step, index }) => `
+        carousel.innerHTML = featuredCards.map(({ key, item, step, index }) => {
+            const cardTitle = escapeCardText(getStepTitle(item, index));
+            return `
             <button type="button"
                     class="featured-card"
                     onclick="openFeaturedTopic('${key}', ${index})"
-                    aria-label="開啟${item.title}第 ${index + 1} 張">
-                <img class="featured-card-img" loading="lazy" src="${step}" alt="${item.title}第 ${index + 1} 張">
-                <div class="featured-card-title">${item.title}</div>
-            </button>
-        `).join('');
+                    aria-label="開啟圖卡：${cardTitle}">
+                <img class="featured-card-img" loading="lazy" src="${step}" alt="${cardTitle}">
+                <div class="featured-card-title">${cardTitle}</div>
+            </button>`;
+        }).join('');
     }
 
     function openFeaturedTopic(cardId, stepIndex) {
@@ -1518,7 +1330,6 @@ function updateContent() {
     
 </script>
   <div class="reset-main-order-wrap">
-    <button type="button" class="reset-main-order-btn" onclick="resetMainCardOrder()">↻<br>恢復圖卡預設排列</button>
     <a class="reset-main-order-btn" href="./calc.html">🧮<br>醫藥計算器</a>
   </div>
 <footer class="site-footer">
@@ -1537,7 +1348,6 @@ function updateContent() {
     <div id="update-light" onclick="window.location.reload()" title="點擊更新至最新版">
     <span class="pulse-dot"></span>
     <span class="light-text">有新圖卡，按這裡更新</span>
-</div>
 </div>
 </body>
 </html>
