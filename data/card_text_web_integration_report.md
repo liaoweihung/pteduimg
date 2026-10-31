@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：237
+- 成功加入文字頁數：238
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -242,3 +242,4 @@
 | pediatric_cold_syrup | 滅喘淨液（Meptin Liquid）兒童用藥指南 | https://liaoweihung.github.io/pteduimg/cards/ped_asthma_meptin_liquid.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | pediatric_cold_syrup | 「杏輝」安咳糖漿（Nocough Syrup）兒童用藥指南 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_nocough_syrup.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | pediatric_gi_syrup | 乳果糖藥水怎麼吃？杜化液、樂多差異與便祕用藥指南 | https://liaoweihung.github.io/pteduimg/cards/lactulose_constipation.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| pediatric_gi_syrup | 瀉必寧 Hidrasec 怎麼吃？兒童劑量、服用方法與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_diarrhea_hidrasec.html | 是 | 是 | 是 | 是 | 是 | 無 |
