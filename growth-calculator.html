@@ -2,7 +2,7 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="./icon.png?v=3">
     <title>台灣小朋友生長狀況百分位計算器</title>
@@ -48,7 +48,7 @@
       }
     </script>
     <link rel="stylesheet" href="./css/base.css?v=6">
-    <link rel="stylesheet" href="./css/growth-calculator.css?v=3">
+    <link rel="stylesheet" href="./css/growth-calculator.css?v=4">
     <script src="./taiwan_child_growth_data.js?v=1"></script>
 </head>
 <body class="growth-page">
@@ -86,7 +86,7 @@
                 </div>
 
                 <div class="field-grid">
-                    <label class="field">
+                    <label class="field field-wide">
                         <span>出生年月日</span>
                         <input id="birth-date" type="date" required>
                     </label>
@@ -136,8 +136,8 @@
                         <h2>身高區間</h2>
                         <span id="height-value">--</span>
                     </div>
-                    <div id="height-bar" class="segment-bar" aria-hidden="true"></div>
                     <div class="metric-result" id="height-result">--</div>
+                    <div id="height-bar" class="segment-bar" aria-hidden="true"></div>
                 </article>
 
                 <article class="metric-card" id="weight-card">
@@ -145,8 +145,8 @@
                         <h2>體重區間</h2>
                         <span id="weight-value">--</span>
                     </div>
-                    <div id="weight-bar" class="segment-bar" aria-hidden="true"></div>
                     <div class="metric-result" id="weight-result">--</div>
+                    <div id="weight-bar" class="segment-bar" aria-hidden="true"></div>
                 </article>
 
                 <article class="metric-card" id="bmi-card">
@@ -154,8 +154,8 @@
                         <h2>BMI 區間</h2>
                         <span id="bmi-value">--</span>
                     </div>
-                    <div id="bmi-bar" class="segment-bar bmi-bar" aria-hidden="true"></div>
                     <div class="metric-result" id="bmi-interval-result">--</div>
+                    <div id="bmi-bar" class="segment-bar bmi-bar" aria-hidden="true"></div>
                 </article>
             </div>
 
@@ -206,6 +206,20 @@
             </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+      <p style="margin: 0 0 8px 0;">本工具圖文僅供藥師衛教參考，非專業人士務必諮詢藥師建議。</p>
+      <p style="margin: 0;">
+        <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a>
+        &nbsp;|&nbsp;
+       <a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" onclick="if (typeof trackFeedbackClick === 'function') trackFeedbackClick()">💬 意見回饋</a>
+      </p>
+      <p style="margin: 0 0 8px 0;">
+        <a href="./about.html">關於本站</a> &nbsp;|&nbsp;
+        <a href="./author.html">作者資訊</a> &nbsp;|&nbsp;
+        <a href="./editorial-policy.html">編輯與資料來源政策</a>
+      </p>
+    </footer>
 
     <script>
         const DATA_URL = './taiwan_child_growth_data.json';
@@ -370,7 +384,18 @@
             `).join('');
         }
 
-        function renderHeightRangeList(target, percentiles) {
+        function setResultText(id, segment) {
+            const target = document.getElementById(id);
+            target.textContent = segment ? segment.result : '';
+            target.dataset.tone = segment ? segment.tone : '';
+        }
+
+        function scrollToResult(target) {
+            const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+        }
+
+        function renderHeightRangeList(target, percentiles, activeLabel = '') {
             const rows = [
                 ['≤3%', `≤ ${percentiles.p3} cm`, 'red'],
                 ['3%~15%', `${percentiles.p3} - ${percentiles.p15} cm`, 'yellow'],
@@ -382,12 +407,15 @@
                 ['≥97%', `≥ ${percentiles.p97} cm`, 'red']
             ];
 
-            target.innerHTML = rows.map(([label, range, tone]) => `
-                <div class="range-item range-${tone}">
-                    <span>${label}</span>
+            target.innerHTML = rows.map(([label, range, tone]) => {
+                const isActive = label === activeLabel;
+                return `
+                <div class="range-item range-${tone} ${isActive ? 'active' : ''}">
+                    <span>${label}${isActive ? '<em class="range-marker">目前身高</em>' : ''}</span>
                     <strong>${range}</strong>
                 </div>
-            `).join('');
+            `;
+            }).join('');
         }
 
         function getOptionalNumber(inputId) {
@@ -428,6 +456,7 @@
                 `${predictedHeight.toFixed(1)} cm（約 ${lowerBound.toFixed(1)} - ${upperBound.toFixed(1)} cm）`;
             document.getElementById('prediction-formula').textContent =
                 `${sexLabel}公式：（爸爸 ${fatherHeight.toFixed(1)} + 媽媽 ${motherHeight.toFixed(1)} ${operator}）÷ 2`;
+            scrollToResult(predictionResult);
         }
 
         function validateInputs(birthDate, height, weight) {
@@ -501,19 +530,23 @@
             document.getElementById('height-guide-age').textContent = formatAgePoint(heightRow);
             document.getElementById('age-note').textContent =
                 `採用最接近的資料年齡點：${formatAgePoint(heightRow)}；不使用內插推估。`;
-            renderHeightRangeList(document.getElementById('height-range-list'), heightRow.percentiles);
+            const heightClass = hasHeight ? classifyPercentile(height, heightRow.percentiles) : null;
+            renderHeightRangeList(
+                document.getElementById('height-range-list'),
+                heightRow.percentiles,
+                heightClass ? heightClass.label : ''
+            );
 
             if (hasHeight) {
-                const heightClass = classifyPercentile(height, heightRow.percentiles);
                 document.getElementById('height-value').textContent = `${height.toFixed(1)} cm`;
-                document.getElementById('height-result').textContent = heightClass.result;
+                setResultText('height-result', heightClass);
                 renderSegmentBar(document.getElementById('height-bar'), percentileSegments, heightClass.id);
             }
 
             if (showWeight) {
                 const weightClass = classifyPercentile(weight, weightRow.percentiles);
                 document.getElementById('weight-value').textContent = `${weight.toFixed(1)} kg`;
-                document.getElementById('weight-result').textContent = weightClass.result;
+                setResultText('weight-result', weightClass);
                 renderSegmentBar(document.getElementById('weight-bar'), percentileSegments, weightClass.id);
             }
 
@@ -528,13 +561,16 @@
 
                 if (bmiRow) {
                     const bmiClass = classifyBmi(bmi, bmiRow.thresholds);
-                    document.getElementById('bmi-interval-result').textContent = bmiClass.result;
+                    setResultText('bmi-interval-result', bmiClass);
                     renderSegmentBar(document.getElementById('bmi-bar'), bmiSegments, bmiClass.id);
                 } else {
+                    setResultText('bmi-interval-result', null);
                     document.getElementById('bmi-interval-result').textContent = '未滿2歲，資料表未提供 BMI 區間判讀';
                     renderSegmentBar(document.getElementById('bmi-bar'), bmiSegments, '');
                 }
             }
+
+            scrollToResult(resultCard);
         }
 
         setDefaultBirthDate();
