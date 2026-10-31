@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-31T09:40:20+08:00",
-  "baseline": "10e0aa2576aea38bbf594b898c71e555ef28c371",
-  "scope": "網站來源快照；版本 10e0aa25",
+  "generatedAt": "2026-10-31T10:23:31+08:00",
+  "baseline": "6f0b61b2b8412e62bea15cb35171759ca22fe83a",
+  "scope": "網站來源快照；版本 6f0b61b2",
   "counts": {
-    "cards": 394,
+    "cards": 395,
     "series": 88,
     "allSeries": 92,
     "hidden": 4,
@@ -600,7 +600,7 @@
     {
       "id": "pediatric_gi_syrup",
       "title": "兒科腸胃藥水",
-      "count": 2,
+      "count": 3,
       "hidden": false,
       "areas": [],
       "departments": [
@@ -4136,25 +4136,25 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 236,
+      "machine_pass": 237,
       "partial": 1,
       "missing": 157
     },
     "reference_status": {
       "missing": 242,
-      "machine_pass": 152
+      "machine_pass": 153
     },
     "date_status": {
       "missing": 242,
-      "machine_pass": 131,
+      "machine_pass": 132,
       "partial": 21
     },
     "footer_status": {
       "missing": 277,
-      "machine_pass": 117
+      "machine_pass": 118
     },
     "jsonld_status": {
-      "machine_pass": 195,
+      "machine_pass": 196,
       "missing": 199
     }
   },
