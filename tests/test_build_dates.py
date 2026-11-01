@@ -119,7 +119,16 @@ class SitemapDatesTest(unittest.TestCase):
         xml = self.generate()
         self.assertEqual(xml, (self.root / "sitemap-main.xml").read_bytes())
         rows = {row.findtext("s:loc", namespaces=NS): row for row in ET.fromstring(xml)}
-        self.assertEqual(len(rows), 16 + len(self.pages))
+        # Independent public-entry contract: do not derive expectations from generated XML.
+        static_entries = {
+            "", "index.html", "public.html", "about.html", "author.html",
+            "editorial-policy.html", "topics/acne.html", "all-cards.html",
+            "retired-cards.html", "calc.html", "health-check-calculator.html",
+            "cancer-marker-calculator.html", "growth-calculator.html",
+            "menstrual-calculator.html", "pregnancy-weight-calculator.html",
+            "10-yr-cv-risk.html", "rx-refillable-date.html",
+        }
+        self.assertEqual(set(rows), {build.abs_url(path) for path in static_entries | set(self.pages)})
         self.assertNotIn(build.abs_url("cards/not_generated.html"), rows)
         for page, expected in (("cards/dated.html", "2026-09-27"), ("cards/image.html", "2026-09-28"), ("cards/checked.html", None), ("cards/missing.html", None), ("", None), ("about.html", None)):
             with self.subTest(page=page):
