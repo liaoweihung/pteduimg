@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-01T13:12:14+08:00",
-  "baseline": "f457ad7fa2ca5382fdc72fcca2c334b2f15b1d1b",
-  "scope": "網站來源快照；版本 f457ad7f",
+  "generatedAt": "2026-11-02T01:04:26+08:00",
+  "baseline": "44f45191e621016ab6f1db21c58511dc3779099c",
+  "scope": "網站來源快照；版本 44f45191",
   "counts": {
     "cards": 402,
     "series": 89,
@@ -4021,8 +4021,8 @@
     }
   },
   "sync": {
-    "pages": 396,
-    "fields": 399,
+    "pages": 406,
+    "fields": 409,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4331,19 +4331,7 @@
         ]
       },
       {
-        "page": "acne",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
         "page": "acne_dailycare",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "acne_dailycare_2",
         "fields": [
           "rules_sha256"
         ]
@@ -4734,6 +4722,18 @@
         ]
       },
       {
+        "page": "boyBMI",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "boy_height2",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
         "page": "bruise_be_gone",
         "fields": [
           "rules_sha256"
@@ -4837,12 +4837,6 @@
       },
       {
         "page": "comedo",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "comedo_dailycare",
         "fields": [
           "rules_sha256"
         ]
@@ -5100,12 +5094,6 @@
         ]
       },
       {
-        "page": "enema_comp",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
         "page": "enema_step_1",
         "fields": [
           "rules_sha256"
@@ -5262,6 +5250,18 @@
         ]
       },
       {
+        "page": "girlBMI",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "girl_height2",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
         "page": "hand_eczema_handwashing_gloves",
         "fields": [
           "rules_sha256"
@@ -5293,6 +5293,18 @@
       },
       {
         "page": "heat_exhaustion_water_vs_electrolytes",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "height_prediction",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "height_tips",
         "fields": [
           "rules_sha256"
         ]
@@ -5389,6 +5401,12 @@
       },
       {
         "page": "idofen_suspension",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "japan_otc_drug_classification",
         "fields": [
           "rules_sha256"
         ]
@@ -6141,6 +6159,48 @@
       },
       {
         "page": "sore_throat_red_flags",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "stomach_medicine_alginate",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "stomach_medicine_antacid",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "stomach_medicine_guide",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "stomach_medicine_h2_blocker",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "stomach_medicine_ppi",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "stomach_medicine_sucralfate",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "stomach_medicine_timing_summary",
         "fields": [
           "rules_sha256"
         ]
