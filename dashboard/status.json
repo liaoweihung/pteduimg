@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-01T02:20:09+08:00",
-  "baseline": "5739f18ed8c6c712ea8409566000e5e1e1ed019a",
-  "scope": "網站來源快照；版本 5739f18e",
+  "generatedAt": "2026-11-01T11:41:28+08:00",
+  "baseline": "e28d70dadf7c4ec7d5380fa7ea5f4ddeb96c3b3b",
+  "scope": "網站來源快照；版本 e28d70da",
   "counts": {
     "cards": 402,
     "series": 89,
@@ -6531,7 +6531,7 @@
       "path": "cancer-marker-calculator.html"
     },
     {
-      "title": "台灣小朋友生長狀況百分位計算器",
+      "title": "兒童身高體重百分位計算器",
       "path": "growth-calculator.html"
     },
     {
