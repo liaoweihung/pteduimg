@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-01T13:02:34+08:00",
-  "baseline": "8b142d384fbb0ea530bc90dbaac4a3b48f395aea",
-  "scope": "網站來源快照；版本 8b142d38",
+  "generatedAt": "2026-11-01T13:12:14+08:00",
+  "baseline": "f457ad7fa2ca5382fdc72fcca2c334b2f15b1d1b",
+  "scope": "網站來源快照；版本 f457ad7f",
   "counts": {
     "cards": 402,
     "series": 89,
@@ -1789,21 +1789,7 @@
       "issues": [
         "text_status",
         "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
-      ]
-    },
-    {
-      "title": "小孩身高體重",
-      "path": "cards/boy_height2.html",
-      "series": "child_height_weight",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "date_status"
       ]
     },
     {
@@ -2381,30 +2367,6 @@
       ]
     },
     {
-      "title": "小孩身高體重",
-      "path": "cards/girlBMI.html",
-      "series": "child_height_weight",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
-      ]
-    },
-    {
-      "title": "小孩身高體重",
-      "path": "cards/girl_height2.html",
-      "series": "child_height_weight",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
-      ]
-    },
-    {
       "title": "中暑",
       "path": "cards/heat_exhaustion.html",
       "series": "heat_exhaustion",
@@ -2435,21 +2397,7 @@
       "issues": [
         "text_status",
         "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
-      ]
-    },
-    {
-      "title": "小孩身高體重",
-      "path": "cards/height_tips.html",
-      "series": "child_height_weight",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "date_status"
       ]
     },
     {
@@ -4050,31 +3998,31 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 252,
+      "machine_pass": 256,
       "partial": 1,
-      "missing": 149
+      "missing": 145
     },
     "reference_status": {
-      "missing": 234,
-      "machine_pass": 168
+      "missing": 230,
+      "machine_pass": 172
     },
     "date_status": {
-      "missing": 234,
-      "machine_pass": 147,
+      "missing": 230,
+      "machine_pass": 151,
       "partial": 21
     },
     "footer_status": {
-      "missing": 269,
-      "machine_pass": 133
+      "missing": 263,
+      "machine_pass": 139
     },
     "jsonld_status": {
-      "machine_pass": 211,
-      "missing": 191
+      "machine_pass": 217,
+      "missing": 185
     }
   },
   "sync": {
-    "pages": 402,
-    "fields": 408,
+    "pages": 396,
+    "fields": 399,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4786,18 +4734,6 @@
         ]
       },
       {
-        "page": "boyBMI",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "boy_height2",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
         "page": "bruise_be_gone",
         "fields": [
           "rules_sha256"
@@ -5326,18 +5262,6 @@
         ]
       },
       {
-        "page": "girlBMI",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "girl_height2",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
         "page": "hand_eczema_handwashing_gloves",
         "fields": [
           "rules_sha256"
@@ -5369,21 +5293,6 @@
       },
       {
         "page": "heat_exhaustion_water_vs_electrolytes",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "height_prediction",
-        "fields": [
-          "jsonld_status",
-          "footer_status",
-          "source_sha256",
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "height_tips",
         "fields": [
           "rules_sha256"
         ]
