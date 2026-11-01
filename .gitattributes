@@ -19,4 +19,4 @@
 *.ico binary
 
 # Preserve byte-exact historical audit snapshots.
-docs/project-management/evidence/report-versions/*.raw -text
+docs/project-management/evidence/report-versions/*.raw binary
