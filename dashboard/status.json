@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-02T01:04:26+08:00",
-  "baseline": "44f45191e621016ab6f1db21c58511dc3779099c",
-  "scope": "網站來源快照；版本 44f45191",
+  "generatedAt": "2026-11-02T01:17:18+08:00",
+  "baseline": "e58959201c25ed713419470eaabf63421e098c4e",
+  "scope": "網站來源快照；版本 e5895920",
   "counts": {
     "cards": 402,
     "series": 89,
@@ -2874,8 +2874,7 @@
       "series": "oral_hygiene",
       "issues": [
         "reference_status",
-        "date_status",
-        "footer_status"
+        "date_status"
       ]
     },
     {
@@ -2885,7 +2884,6 @@
       "issues": [
         "reference_status",
         "date_status",
-        "footer_status",
         "jsonld_status"
       ]
     },
@@ -2896,7 +2894,6 @@
       "issues": [
         "reference_status",
         "date_status",
-        "footer_status",
         "jsonld_status"
       ]
     },
@@ -2907,7 +2904,6 @@
       "issues": [
         "reference_status",
         "date_status",
-        "footer_status",
         "jsonld_status"
       ]
     },
@@ -2918,7 +2914,6 @@
       "issues": [
         "reference_status",
         "date_status",
-        "footer_status",
         "jsonld_status"
       ]
     },
@@ -2929,7 +2924,6 @@
       "issues": [
         "reference_status",
         "date_status",
-        "footer_status",
         "jsonld_status"
       ]
     },
@@ -2940,7 +2934,6 @@
       "issues": [
         "reference_status",
         "date_status",
-        "footer_status",
         "jsonld_status"
       ]
     },
@@ -2951,7 +2944,6 @@
       "issues": [
         "reference_status",
         "date_status",
-        "footer_status",
         "jsonld_status"
       ]
     },
@@ -4012,8 +4004,8 @@
       "partial": 21
     },
     "footer_status": {
-      "missing": 263,
-      "machine_pass": 139
+      "missing": 255,
+      "machine_pass": 147
     },
     "jsonld_status": {
       "machine_pass": 217,
@@ -4022,7 +4014,7 @@
   },
   "sync": {
     "pages": 406,
-    "fields": 409,
+    "fields": 406,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4447,7 +4439,6 @@
       {
         "page": "acne_topicals_02_retinoids",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5672,8 +5663,6 @@
       {
         "page": "oral_hygiene_01",
         "fields": [
-          "footer_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
