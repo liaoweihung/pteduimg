@@ -820,3 +820,94 @@ body.growth-page[data-sex="girls"] .medical-note { border-color: #f5dce8; }
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
+
+/* 結果：白底淺框＋右側實心色塊 */
+.metric-result,
+.metric-result[data-tone="green"],
+.metric-result[data-tone="yellow"],
+.metric-result[data-tone="red"] {
+    background: #ffffff;
+    border: 1px solid #e3e8e6;
+    border-radius: 10px;
+    color: #22313f;
+    align-items: center;
+}
+
+.metric-result[data-tone]::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    margin-left: 4px;
+    align-self: center;
+}
+
+.metric-result[data-tone=""]::after { display: none; }
+.metric-result[data-tone="green"]::after { background: #34a96f; }
+.metric-result[data-tone="yellow"]::after { background: #f0b922; }
+.metric-result[data-tone="red"]::after { background: #e0483e; }
+
+.range-item,
+.range-green,
+.range-yellow,
+.range-red {
+    background: #ffffff;
+    border: 1px solid #e3e8e6;
+}
+
+.range-item strong {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.range-item strong::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    flex: 0 0 auto;
+}
+
+.range-green strong::after { background: #34a96f; }
+.range-yellow strong::after { background: #f0b922; }
+.range-red strong::after { background: #e0483e; }
+
+@media (min-width: 400px) {
+    .range-item > span {
+        white-space: nowrap;
+    }
+}
+
+.range-item strong {
+    gap: 8px;
+}
+
+/* 百分位位置：只把孩子所在的格子上色 */
+.segment,
+.segment-green,
+.segment-yellow,
+.segment-red {
+    background: #ffffff;
+    color: #8a9792;
+    box-shadow: inset 0 0 0 1px #e3e8e6;
+}
+
+.segment-bar,
+.bmi-bar {
+    background: #ffffff;
+}
+
+.segment.active {
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.segment.active::after {
+    background: #ffffff;
+}
+
+.segment-green.active { background: #34a96f; }
+.segment-yellow.active { background: #f0b922; color: #3d2f00; }
+.segment-yellow.active::after { background: #3d2f00; }
+.segment-red.active { background: #e0483e; }
