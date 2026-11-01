@@ -335,7 +335,7 @@ def render_related_cards(series_steps, current_step, seo_index):
     return "\n".join(items)
 
 
-def render_card_text_content(card_content, h1, category_label, step_number, total):
+def render_card_text_content(card_content, h1, category_label, step_number, total, header_link=""):
     if not card_content:
         return ""
     summary = clean_seo_text(card_content.get("summary"))
@@ -379,9 +379,22 @@ def render_card_text_content(card_content, h1, category_label, step_number, tota
                 editorial_parts.append(f"{label}：{value}")
         editorial = '\n        <p class="meta">' + esc(" ｜ ".join(editorial_parts)) + '</p>'
     details_open = " open" if card_content.get("expandText") else ""
+    heading = (
+        f"<h1>{esc(h1)}</h1>\n"
+        f"        <p class=\"meta\">{esc(category_label)} · {step_number}/{total}</p>"
+    )
+    if header_link:
+        heading = (
+            "<div class=\"info-header\">\n"
+            "          <div class=\"info-title\">\n"
+            f"            <h1>{esc(h1)}</h1>\n"
+            f"            <p class=\"meta\">{esc(category_label)} · {step_number}/{total}</p>\n"
+            "          </div>\n"
+            f"          {header_link}\n"
+            "        </div>"
+        )
     return f"""      <article class="card-text-content">
-        <h1>{esc(h1)}</h1>
-        <p class="meta">{esc(category_label)} · {step_number}/{total}</p>{editorial}
+        {heading}{editorial}
         <details class="card-text-details"{details_open}>
           <summary>文字版重點</summary>
           <div class="card-text-body">
@@ -537,12 +550,18 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
       background:rgba(0,123,131,.06);
     }
 """
-        info_heading = f"""      <div class="info-header">
+        calculator_link = '<a class="calculator-link" href="../growth-calculator.html">直接計算</a>'
+        if card_content:
+            info_heading = render_card_text_content(
+                card_content, h1, category_label, step_number, total, header_link=calculator_link
+            )
+        else:
+            info_heading = f"""      <div class="info-header">
         <div class="info-title">
           <h1>{esc(h1)}</h1>
           <p class="meta">{esc(category_label)} · {step_number}/{total}</p>
         </div>
-        <a class="calculator-link" href="../growth-calculator.html">直接計算</a>
+        {calculator_link}
       </div>"""
 
     return f"""<!DOCTYPE html>

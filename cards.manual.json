@@ -364,6 +364,7 @@
   "child_height_weight": {
     "title": "小孩身高體重",
     "category": "public_education",
+    "showFooter": true,
     "topics": [
       "growth"
     ],
@@ -387,7 +388,13 @@
       "孩童BMI",
       "成長",
       "發育",
-      "兒童身長發育"
+      "兒童身長發育",
+      "兒童身高體重對照表",
+      "小孩身高標準",
+      "兒童生長曲線",
+      "身高百分位",
+      "兒童BMI標準",
+      "遺傳身高"
     ]
   },
   "Prevent_Enterovirus": {

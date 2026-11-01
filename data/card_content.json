@@ -10121,5 +10121,213 @@
       }
     ],
     "revisionCredit": "本站整理靜態文字、法規重點及核對官方來源"
+  },
+  {
+    "cardId": "child_height_weight",
+    "image": "img/boy_height2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/boy_height2.html",
+    "title": "台灣男生身高標準對照表：9～15 歲身高百分位",
+    "summary": "依台灣兒童生長曲線，9 歲男生身高中位數約 132 公分、11 歲約 142 公分、13 歲約 157 公分、15 歲約 168 公分。身高在第 3 百分位以下，建議諮詢小兒科或成長門診。",
+    "sections": [
+      {
+        "heading": "百分位怎麼看？",
+        "text": "百分位是和同年齡、同性別的孩子比較的位置。例如第 25 百分位，就是 100 個同年齡、同性別的孩子從矮排到高，大約排第 25 位；第 50 百分位就是中間值（中位數）。"
+      },
+      {
+        "heading": "9 歲男生身高參考",
+        "text": "9 歲男生：第 3 百分位約 122 公分、第 25 百分位約 128 公分、中位數（第 50 百分位）約 132 公分。"
+      },
+      {
+        "heading": "11 歲男生身高參考",
+        "text": "11 歲男生：第 3 百分位約 131 公分、第 25 百分位約 138 公分、中位數（第 50 百分位）約 142 公分。"
+      },
+      {
+        "heading": "13 歲男生身高參考",
+        "text": "13 歲男生：第 3 百分位約 142 公分、第 25 百分位約 152 公分、中位數（第 50 百分位）約 157 公分。"
+      },
+      {
+        "heading": "15 歲男生身高參考",
+        "text": "15 歲男生：第 3 百分位約 156 公分、第 25 百分位約 164 公分、中位數（第 50 百分位）約 168 公分。"
+      },
+      {
+        "heading": "什麼時候要諮詢醫師？",
+        "text": "若身高在第 3 百分位以下，建議諮詢小兒科或成長門診。每個孩子不同，單次量測只能看目前位置，持續記錄、觀察成長速度更重要。"
+      },
+      {
+        "heading": "想查其他年齡？",
+        "text": "想查其他年齡或同時看體重、BMI，可以使用本站的「兒童身高體重百分位計算器」，輸入生日與身高體重即可對照。"
+      }
+    ],
+    "altText": "台灣男生身高參考表圖卡：9、11、13、15 歲男生身高的第 3、25、50 百分位數值（公分），資料依台灣兒童青少年生長曲線研究。",
+    "updatedAt": "2026-11-01",
+    "sourceCheckedAt": "2026-11-01",
+    "revisionCredit": "AI 整理，待藥師複核",
+    "references": [
+      {
+        "title": "Chen W, Chang MH. New growth charts for Taiwanese children and adolescents based on World Health Organization standards and health-related physical fitness. Pediatr Neonatol. 2010;51(2):69-79.",
+        "url": "https://doi.org/10.1016/S1875-9572(10)60014-9"
+      },
+      {
+        "title": "衛生福利部國民健康署：兒童衛教指導（新版兒童生長曲線說明，5–7 歲依陳偉德、張美惠 2010 年研究）",
+        "url": "https://www.hpa.gov.tw/Pages/List.aspx?nodeid=1598"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "child_height_weight",
+    "image": "img/girl_height2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/girl_height2.html",
+    "title": "台灣女生身高標準對照表：8～14 歲身高百分位",
+    "summary": "依台灣兒童生長曲線，8 歲女生身高中位數約 126 公分、10 歲約 138 公分、12 歲約 151 公分、14 歲約 157 公分。身高在第 3 百分位以下，建議諮詢小兒科或成長門診。",
+    "sections": [
+      {
+        "heading": "百分位怎麼看？",
+        "text": "百分位是和同年齡、同性別的孩子比較的位置。例如第 25 百分位，就是 100 個同年齡、同性別的孩子從矮排到高，大約排第 25 位；第 50 百分位就是中間值（中位數）。"
+      },
+      {
+        "heading": "8 歲女生身高參考",
+        "text": "8 歲女生：第 3 百分位約 116 公分、第 25 百分位約 122 公分、中位數（第 50 百分位）約 126 公分。"
+      },
+      {
+        "heading": "10 歲女生身高參考",
+        "text": "10 歲女生：第 3 百分位約 126 公分、第 25 百分位約 133 公分、中位數（第 50 百分位）約 138 公分。"
+      },
+      {
+        "heading": "12 歲女生身高參考",
+        "text": "12 歲女生：第 3 百分位約 138 公分、第 25 百分位約 146 公分、中位數（第 50 百分位）約 151 公分。"
+      },
+      {
+        "heading": "14 歲女生身高參考",
+        "text": "14 歲女生：第 3 百分位約 147 公分、第 25 百分位約 153 公分、中位數（第 50 百分位）約 157 公分。"
+      },
+      {
+        "heading": "什麼時候要諮詢醫師？",
+        "text": "若身高在第 3 百分位以下，建議諮詢小兒科或成長門診。每個孩子不同，單次量測只能看目前位置，持續記錄、觀察成長速度更重要。"
+      },
+      {
+        "heading": "想查其他年齡？",
+        "text": "想查其他年齡或同時看體重、BMI，可以使用本站的「兒童身高體重百分位計算器」，輸入生日與身高體重即可對照。"
+      }
+    ],
+    "altText": "台灣女生身高參考表圖卡：8、10、12、14 歲女生身高的第 3、25、50 百分位數值（公分），資料依台灣兒童青少年生長曲線研究。",
+    "updatedAt": "2026-11-01",
+    "sourceCheckedAt": "2026-11-01",
+    "revisionCredit": "AI 整理，待藥師複核",
+    "references": [
+      {
+        "title": "Chen W, Chang MH. New growth charts for Taiwanese children and adolescents based on World Health Organization standards and health-related physical fitness. Pediatr Neonatol. 2010;51(2):69-79.",
+        "url": "https://doi.org/10.1016/S1875-9572(10)60014-9"
+      },
+      {
+        "title": "衛生福利部國民健康署：兒童衛教指導（新版兒童生長曲線說明，5–7 歲依陳偉德、張美惠 2010 年研究）",
+        "url": "https://www.hpa.gov.tw/Pages/List.aspx?nodeid=1598"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "child_height_weight",
+    "image": "img/girlBMI.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/girlBMI.html",
+    "title": "女生 BMI 正常範圍：6～12 歲兒童 BMI 對照表",
+    "summary": "兒童要用兒童標準，不適用大人的。BMI 算法和大人一樣（體重公斤 ÷ 身高公尺的平方），但要依年齡與性別對照衛福部兒童及青少年 BMI 建議值，例如 8 歲女生 BMI 13.8 以上、未滿 18.4 為正常範圍。",
+    "sections": [
+      {
+        "heading": "BMI 怎麼算？",
+        "text": "BMI = 體重（公斤）÷ 身高（公尺）的平方，身高公尺 = 身高公分 ÷ 100。例如身高 140 公分、體重 35 公斤：35 ÷（1.4 × 1.4）≈ 17.9。"
+      },
+      {
+        "heading": "6 歲女生 BMI 範圍",
+        "text": "6 歲女生：BMI 低於 13.1 為過輕，13.1 以上、未滿 17.2 為正常，17.2 以上為過重，18.8 以上為肥胖。"
+      },
+      {
+        "heading": "8 歲女生 BMI 範圍",
+        "text": "8 歲女生：BMI 低於 13.8 為過輕，13.8 以上、未滿 18.4 為正常，18.4 以上為過重，20.7 以上為肥胖。"
+      },
+      {
+        "heading": "10 歲女生 BMI 範圍",
+        "text": "10 歲女生：BMI 低於 14.3 為過輕，14.3 以上、未滿 19.7 為正常，19.7 以上為過重，22.0 以上為肥胖。"
+      },
+      {
+        "heading": "12 歲女生 BMI 範圍",
+        "text": "12 歲女生：BMI 低於 15.2 為過輕，15.2 以上、未滿 21.3 為正常，21.3 以上為過重，23.5 以上為肥胖。"
+      },
+      {
+        "heading": "可以用大人的 BMI 標準嗎？",
+        "text": "兒童要用兒童標準，不適用大人的。孩子的 BMI 會隨年齡變化，要依年齡與性別對照衛福部「兒童及青少年生長身體質量指數（BMI）建議值」判讀。"
+      },
+      {
+        "heading": "想查其他年齡？",
+        "text": "可以使用本站的「兒童身高體重百分位計算器」，輸入生日、身高與體重，就會算出 BMI 並對照同年齡、同性別的範圍。"
+      }
+    ],
+    "altText": "女孩體重正常嗎？BMI 計算圖卡：BMI 公式與計算範例，以及 6、8、10、12 歲女生過輕、正常、過重、肥胖的 BMI 範圍。",
+    "updatedAt": "2026-11-01",
+    "sourceCheckedAt": "2026-11-01",
+    "revisionCredit": "AI 整理，待藥師複核",
+    "references": [
+      {
+        "title": "衛生福利部：兒童及青少年生長身體質量指數（BMI）建議值（102 年 6 月 11 日公布）",
+        "url": "https://mohw.gov.tw/dl-45710-f8524dd8-30a7-46bb-929d-84a8353a68b6.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "child_height_weight",
+    "image": "img/height_tips.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/height_tips.html",
+    "title": "孩子想長高怎麼做？睡眠、營養、運動與何時看成長門診",
+    "summary": "長高不是靠補品，是靠生活習慣：充足睡眠、均衡營養、規律運動與適度日曬。每個孩子不同，持續觀察成長速度最重要；若擔心偏矮或長高變慢，建議諮詢成長門診。",
+    "sections": [
+      {
+        "heading": "充足睡眠",
+        "text": "生長激素在睡眠時分泌，入睡後才開始分泌，所以建議早睡（晚上 11 點前）、睡眠時間要足夠，並養成規律作息、避免晚睡熬夜。"
+      },
+      {
+        "heading": "均衡營養",
+        "text": "攝取足夠蛋白質（肉、蛋、豆）、鈣質（牛奶、小魚乾）與維生素 D。少喝含糖飲料、少吃甜食，國民健康署鼓勵以白開水取代含糖飲料。"
+      },
+      {
+        "heading": "規律運動",
+        "text": "跳繩、籃球、伸展等運動，每週至少 3 次。國民健康署建議 6～17 歲兒童及青少年每天 60 分鐘以上中度至費力的身體活動，每週至少 3 天費力有氧運動。"
+      },
+      {
+        "heading": "適度日曬",
+        "text": "適度曬太陽可以幫助身體生成維生素 D，促進骨骼發育。"
+      },
+      {
+        "heading": "哪些因素會影響長高？",
+        "text": "熬夜晚睡會讓生長激素分泌不足；偏食、營養不良或攝取過多糖分（飲料、甜食）會影響營養吸收與骨骼發育；久坐、滑手機、缺乏運動會讓骨骼刺激不足；慢性疾病或荷爾蒙問題會影響生長速度，需要專業評估。"
+      },
+      {
+        "heading": "什麼時候要看成長門診？",
+        "text": "每個孩子不同，持續觀察成長速度最重要。若對孩子身高有疑慮，例如偏矮或長高變慢，建議諮詢成長門診。也可以先用本站「兒童身高體重百分位計算器」看看孩子目前的百分位。"
+      }
+    ],
+    "altText": "想長高做對很重要圖卡：左欄幫助長高的習慣（充足睡眠、均衡營養、規律運動、適度日曬），右欄影響長高的因素（熬夜晚睡、偏食與營養不良、缺乏運動、慢性疾病或荷爾蒙問題），底部提醒持續觀察成長速度、有疑慮諮詢成長門診。",
+    "updatedAt": "2026-11-01",
+    "sourceCheckedAt": "2026-11-01",
+    "revisionCredit": "AI 整理，待藥師複核",
+    "references": [
+      {
+        "title": "黃瑽寧（馬偕兒童醫院小兒科主治醫師）：兒科醫師破解長高關鍵（早安健康，2017-12-12；生長激素於入睡後分泌、曬太陽獲得維生素 D）",
+        "url": "https://www.edh.tw/article/17294"
+      },
+      {
+        "title": "衛生福利部國民健康署：小學生喝開水創意小撇步圖文競賽（102 年 12 月 6 日，以白開水取代含糖飲料）",
+        "url": "https://www.mohw.gov.tw/fp-3219-22683-1.html"
+      },
+      {
+        "title": "衛生福利部國民健康署：您的孩子今天運動了嗎？談兒童與青少年運動",
+        "url": "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=571&pid=14174"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
   }
 ]
