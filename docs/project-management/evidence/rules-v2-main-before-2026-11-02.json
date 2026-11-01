@@ -1,0 +1,3097 @@
+{
+  "validator": "check_project_management",
+  "schema_version": 1,
+  "error_count": 438,
+  "errors": [
+    "01_can_i_bring_medicine: machine field drift: rules_sha256",
+    "02_how_much_medicine: machine field drift: rules_sha256",
+    "03_prescription_documents: machine field drift: rules_sha256",
+    "04_controlled_medicines: machine field drift: rules_sha256",
+    "05_carry_on_or_checked: machine field drift: rules_sha256",
+    "06_liquid_insulin_needles: machine field drift: rules_sha256",
+    "07_packaging_and_labels: machine field drift: rules_sha256",
+    "08_japan_korea_singapore: machine field drift: rules_sha256",
+    "09_australia_usa_china: machine field drift: rules_sha256",
+    "10_common_questions: machine field drift: rules_sha256",
+    "5_ways_stomatch: machine field drift: rules_sha256",
+    "AugmentinSyrup: machine field drift: rules_sha256",
+    "Champix: machine field drift: rules_sha256",
+    "DM_damage: machine field drift: rules_sha256",
+    "EnteroVirus_vaccine: machine field drift: rules_sha256",
+    "Exame_Hpylore: machine field drift: rules_sha256",
+    "Hantaviridae_01: machine field drift: rules_sha256",
+    "Hantaviridae_02: machine field drift: rules_sha256",
+    "Lidopat_1: machine field drift: rules_sha256",
+    "MDI_1: machine field drift: rules_sha256",
+    "MDI_2: machine field drift: rules_sha256",
+    "MDI_3: machine field drift: rules_sha256",
+    "MDI_4: machine field drift: rules_sha256",
+    "MDI_5: machine field drift: rules_sha256",
+    "MDI_6: machine field drift: rules_sha256",
+    "MDI_7: machine field drift: rules_sha256",
+    "NTG_1: machine field drift: rules_sha256",
+    "NTG_2: machine field drift: rules_sha256",
+    "NTG_3: machine field drift: rules_sha256",
+    "Neupro: machine field drift: rules_sha256",
+    "Nicotine_1: machine field drift: rules_sha256",
+    "Osteo_tooth_01: machine field drift: rules_sha256",
+    "Osteo_tooth_03: machine field drift: rules_sha256",
+    "Osteo_tooth_04: machine field drift: rules_sha256",
+    "Ped_abx_susp_1: machine field drift: rules_sha256",
+    "Ped_abx_susp_2: machine field drift: rules_sha256",
+    "Ped_abx_susp_3: machine field drift: rules_sha256",
+    "Ped_abx_susp_4: machine field drift: rules_sha256",
+    "Ped_abx_susp_5: machine field drift: rules_sha256",
+    "Ped_abx_susp_6: machine field drift: rules_sha256",
+    "Ped_abx_susp_7: machine field drift: rules_sha256",
+    "Ped_abx_susp_8: machine field drift: rules_sha256",
+    "Prevent_Enterovirus: machine field drift: rules_sha256",
+    "Ps_hair_wash: machine field drift: rules_sha256",
+    "Res3_ABCovid_1: machine field drift: rules_sha256",
+    "Res3_ABCovid_2: machine field drift: rules_sha256",
+    "Res3_ABCovid_3: machine field drift: rules_sha256",
+    "Res3_ABCovid_4: machine field drift: rules_sha256",
+    "Wash_hands_five_steps: machine field drift: rules_sha256",
+    "Wet_Wrap: machine field drift: rules_sha256",
+    "ZithromaxPOS: machine field drift: rules_sha256",
+    "acne: machine field drift: rules_sha256",
+    "acne_dailycare: machine field drift: rules_sha256",
+    "acne_dailycare_2: machine field drift: rules_sha256",
+    "acne_face_wash_01: machine field drift: rules_sha256",
+    "acne_face_wash_02: machine field drift: rules_sha256",
+    "acne_face_wash_03: machine field drift: rules_sha256",
+    "acne_face_wash_04: machine field drift: rules_sha256",
+    "acne_face_wash_05: machine field drift: rules_sha256",
+    "acne_face_wash_06: machine field drift: rules_sha256",
+    "acne_face_wash_07: machine field drift: rules_sha256",
+    "acne_face_wash_08: machine field drift: rules_sha256",
+    "acne_face_wash_09: machine field drift: rules_sha256",
+    "acne_face_wash_10: machine field drift: rules_sha256",
+    "acne_face_wash_qa_1: machine field drift: rules_sha256",
+    "acne_face_wash_qa_2: machine field drift: rules_sha256",
+    "acne_face_wash_qa_3: machine field drift: rules_sha256",
+    "acne_patch_broken_skin: machine field drift: rules_sha256",
+    "acne_patch_how_to_use: machine field drift: rules_sha256",
+    "acne_patch_when_to_use: machine field drift: rules_sha256",
+    "acne_stage: machine field drift: rules_sha256",
+    "acne_topicals_01_basics: machine field drift: rules_sha256",
+    "acne_topicals_02_retinoids: machine field drift: source_sha256",
+    "acne_topicals_02_retinoids: machine field drift: rules_sha256",
+    "acne_topicals_03_azelaic: machine field drift: rules_sha256",
+    "acne_topicals_04_bpo: machine field drift: rules_sha256",
+    "acne_topicals_05_clindamycin: machine field drift: rules_sha256",
+    "acne_topicals_06_erythromycin: machine field drift: rules_sha256",
+    "acne_topicals_07_metronidazole: machine field drift: rules_sha256",
+    "acne_topicals_08_salicylic: machine field drift: rules_sha256",
+    "acne_topicals_09_combinations: machine field drift: rules_sha256",
+    "acne_topicals_10_pairing: machine field drift: rules_sha256",
+    "acne_topicals_11_routine: machine field drift: rules_sha256",
+    "acne_topicals_12_irritation: machine field drift: rules_sha256",
+    "add_to_desktop_android: machine field drift: rules_sha256",
+    "add_to_desktop_ios: machine field drift: rules_sha256",
+    "adult_diaper_1: machine field drift: rules_sha256",
+    "adult_diaper_2: machine field drift: rules_sha256",
+    "adult_diaper_3: machine field drift: rules_sha256",
+    "adult_diaper_4: machine field drift: rules_sha256",
+    "adult_diaper_bed_overview: machine field drift: rules_sha256",
+    "adult_diaper_clean_1: machine field drift: rules_sha256",
+    "adult_diaper_clean_2: machine field drift: rules_sha256",
+    "adult_diaper_clean_3: machine field drift: rules_sha256",
+    "adult_diaper_fit_1: machine field drift: rules_sha256",
+    "adult_diaper_fit_2: machine field drift: rules_sha256",
+    "adult_diaper_fit_3: machine field drift: rules_sha256",
+    "adult_diaper_pants_first: machine field drift: rules_sha256",
+    "adult_diaper_pants_last: machine field drift: rules_sha256",
+    "adult_diaper_pants_overview: machine field drift: rules_sha256",
+    "amorolfine: machine field drift: rules_sha256",
+    "angular_cheilitis_01: machine field drift: rules_sha256",
+    "angular_cheilitis_02: machine field drift: rules_sha256",
+    "angular_cheilitis_03: machine field drift: rules_sha256",
+    "antiphen: machine field drift: rules_sha256",
+    "artficial_vs_paraffin: machine field drift: rules_sha256",
+    "artificial_tears_1: machine field drift: rules_sha256",
+    "artificial_tears_2: machine field drift: rules_sha256",
+    "artificial_tears_3: machine field drift: rules_sha256",
+    "artificial_tears_4: machine field drift: rules_sha256",
+    "atopic_dermatitis_care: machine field drift: rules_sha256",
+    "bruise_be_gone: machine field drift: rules_sha256",
+    "bruising_care_1: machine field drift: rules_sha256",
+    "bruising_care_2: machine field drift: rules_sha256",
+    "bruising_care_3: machine field drift: rules_sha256",
+    "bruising_care_4: machine field drift: rules_sha256",
+    "bug_bite: machine field drift: rules_sha256",
+    "bugspray_1: machine field drift: rules_sha256",
+    "bugspray_2: machine field drift: rules_sha256",
+    "bugspray_3: machine field drift: rules_sha256",
+    "burn_first_aid_01: machine field drift: rules_sha256",
+    "burn_first_aid_02: machine field drift: rules_sha256",
+    "burn_first_aid_03: machine field drift: rules_sha256",
+    "burn_first_aid_04: machine field drift: rules_sha256",
+    "burn_first_aid_05: machine field drift: rules_sha256",
+    "burn_first_aid_06: machine field drift: rules_sha256",
+    "bzd_z_sleep_aids: machine field drift: rules_sha256",
+    "chomolyn_cromolyn_eye_drops: machine field drift: rules_sha256",
+    "comedo: machine field drift: rules_sha256",
+    "comedo_dailycare: machine field drift: rules_sha256",
+    "common_skin_redness_causes: machine field drift: rules_sha256",
+    "condom_after_use: machine field drift: rules_sha256",
+    "condom_check_before_use: machine field drift: rules_sha256",
+    "condom_common_mistakes: machine field drift: rules_sha256",
+    "condom_faq: machine field drift: rules_sha256",
+    "condom_lubricant_use: machine field drift: rules_sha256",
+    "condom_wearing_steps_1: machine field drift: rules_sha256",
+    "constipation_cate: machine field drift: rules_sha256",
+    "contact_lens_eye_drops_1: machine field drift: rules_sha256",
+    "contact_lens_eye_drops_2: machine field drift: rules_sha256",
+    "contraceptive_pills_how_to_take: machine field drift: rules_sha256",
+    "contraceptive_pills_missed_dose: machine field drift: rules_sha256",
+    "diabetic_foot: machine field drift: rules_sha256",
+    "diosmin_use: machine field drift: rules_sha256",
+    "dry_eye_comp: machine field drift: rules_sha256",
+    "dry_eye_dailycare: machine field drift: rules_sha256",
+    "dry_eye_tx: machine field drift: rules_sha256",
+    "ear_1: machine field drift: rules_sha256",
+    "ear_2: machine field drift: rules_sha256",
+    "ear_3: machine field drift: rules_sha256",
+    "ear_4: machine field drift: rules_sha256",
+    "ear_5: machine field drift: rules_sha256",
+    "ear_6: machine field drift: rules_sha256",
+    "eczema_s: machine field drift: rules_sha256",
+    "elderly_skin_tear: machine field drift: rules_sha256",
+    "emergency_contraceptive_pills_how_to_take: machine field drift: rules_sha256",
+    "emergency_contraceptive_pills_notice: machine field drift: rules_sha256",
+    "enema_clinical_cond: machine field drift: rules_sha256",
+    "enema_comp: machine field drift: rules_sha256",
+    "enema_step_1: machine field drift: rules_sha256",
+    "enema_step_2: machine field drift: rules_sha256",
+    "enema_step_3: machine field drift: rules_sha256",
+    "enema_step_4: machine field drift: rules_sha256",
+    "enema_step_5: machine field drift: rules_sha256",
+    "enema_step_6: machine field drift: rules_sha256",
+    "enema_step_7: machine field drift: rules_sha256",
+    "enema_steps: machine field drift: rules_sha256",
+    "excilor: machine field drift: rules_sha256",
+    "eye_1: machine field drift: rules_sha256",
+    "eye_2: machine field drift: rules_sha256",
+    "eye_3: machine field drift: rules_sha256",
+    "eye_4: machine field drift: rules_sha256",
+    "eye_5: machine field drift: rules_sha256",
+    "eye_6: machine field drift: rules_sha256",
+    "eye_wash_pour_solution: machine field drift: rules_sha256",
+    "eye_wash_precautions: machine field drift: rules_sha256",
+    "eye_wash_prepare: machine field drift: rules_sha256",
+    "eye_wash_rinse_steps: machine field drift: rules_sha256",
+    "fungal_nail: machine field drift: rules_sha256",
+    "hand_eczema_handwashing_gloves: machine field drift: rules_sha256",
+    "hand_eczema_moisturizers: machine field drift: rules_sha256",
+    "hand_eczema_symptoms: machine field drift: rules_sha256",
+    "hand_eczema_treatment: machine field drift: rules_sha256",
+    "heat_exhaustion: machine field drift: rules_sha256",
+    "heat_exhaustion_water_vs_electrolytes: machine field drift: rules_sha256",
+    "hem_oint_1: machine field drift: rules_sha256",
+    "hem_oint_2: machine field drift: rules_sha256",
+    "hem_oint_3: machine field drift: rules_sha256",
+    "hem_oint_4: machine field drift: rules_sha256",
+    "hem_oint_5: machine field drift: rules_sha256",
+    "hem_oint_6: machine field drift: rules_sha256",
+    "hemorr_sitbath_1: machine field drift: rules_sha256",
+    "hemorr_sitbath_2: machine field drift: rules_sha256",
+    "hives_s: machine field drift: rules_sha256",
+    "hk_foot: machine field drift: rules_sha256",
+    "hydrocolloid_apply_steps: machine field drift: rules_sha256",
+    "hydrocolloid_change_steps: machine field drift: rules_sha256",
+    "hydrocolloid_how_to_use: machine field drift: rules_sha256",
+    "ibuprofen_sol: machine field drift: rules_sha256",
+    "idofen_suspension: machine field drift: rules_sha256",
+    "jin_huang_san: machine field drift: rules_sha256",
+    "jinchuang_ointment: machine field drift: rules_sha256",
+    "knee_brace_1: machine field drift: rules_sha256",
+    "knee_brace_2: machine field drift: rules_sha256",
+    "knee_brace_3: machine field drift: rules_sha256",
+    "knee_brace_4: machine field drift: rules_sha256",
+    "knee_brace_5: machine field drift: rules_sha256",
+    "kwangdong_mu_yao_fen: machine field drift: rules_sha256",
+    "lan_1: machine field drift: rules_sha256",
+    "lan_2: machine field drift: rules_sha256",
+    "lan_3: machine field drift: rules_sha256",
+    "lan_4: machine field drift: rules_sha256",
+    "lan_5: machine field drift: rules_sha256",
+    "methodology_of_exam_Hp: machine field drift: rules_sha256",
+    "motion_sickness_meds_1: machine field drift: rules_sha256",
+    "motion_sickness_meds_2: machine field drift: rules_sha256",
+    "mpff_use: machine field drift: rules_sha256",
+    "nasal_1: machine field drift: rules_sha256",
+    "nasal_2: machine field drift: rules_sha256",
+    "nasal_3: machine field drift: rules_sha256",
+    "nasal_4: machine field drift: rules_sha256",
+    "nasal_5: machine field drift: rules_sha256",
+    "nasal_rinse_1: machine field drift: rules_sha256",
+    "nasal_rinse_2: machine field drift: rules_sha256",
+    "nasal_rinse_3: machine field drift: rules_sha256",
+    "nasal_rinse_4: machine field drift: rules_sha256",
+    "nasal_rinse_5: machine field drift: rules_sha256",
+    "nasal_rinse_6: machine field drift: rules_sha256",
+    "notice_ped_fever_reducer: machine field drift: rules_sha256",
+    "oint_choose: machine field drift: rules_sha256",
+    "oneFTU: machine field drift: rules_sha256",
+    "orabase: machine field drift: rules_sha256",
+    "oral_hygiene_01: machine field drift: footer_status",
+    "oral_hygiene_01: machine field drift: source_sha256",
+    "oral_hygiene_01: machine field drift: rules_sha256",
+    "oral_hygiene_02: machine field drift: rules_sha256",
+    "oral_hygiene_03: machine field drift: rules_sha256",
+    "oral_hygiene_04: machine field drift: rules_sha256",
+    "oral_hygiene_05: machine field drift: rules_sha256",
+    "oral_hygiene_06: machine field drift: rules_sha256",
+    "oral_hygiene_07: machine field drift: rules_sha256",
+    "oral_hygiene_08: machine field drift: rules_sha256",
+    "oral_patch_use: machine field drift: rules_sha256",
+    "oral_patch_use_2: machine field drift: rules_sha256",
+    "oral_patch_use_3: machine field drift: rules_sha256",
+    "otc_anti_allergy_eye_drops: machine field drift: rules_sha256",
+    "otc_antibiotic_eye_drops: machine field drift: rules_sha256",
+    "otc_cooling_eye_drops: machine field drift: rules_sha256",
+    "otc_eye_fatigue_drops: machine field drift: rules_sha256",
+    "otc_redness_relief_eye_drops: machine field drift: rules_sha256",
+    "over_one_oint_01: machine field drift: rules_sha256",
+    "over_one_oint_02: machine field drift: rules_sha256",
+    "over_one_oint_03: machine field drift: rules_sha256",
+    "over_one_oint_04: machine field drift: rules_sha256",
+    "paste_prep_1: machine field drift: rules_sha256",
+    "paste_prep_2: machine field drift: rules_sha256",
+    "paste_prep_3: machine field drift: rules_sha256",
+    "paste_prep_4: machine field drift: rules_sha256",
+    "ped_cold_cetirizine: machine field drift: rules_sha256",
+    "ped_cold_cypromin: machine field drift: rules_sha256",
+    "ped_cold_secorine: machine field drift: rules_sha256",
+    "postoperative_wound: machine field drift: rules_sha256",
+    "pregnancy_minor_constipation: machine field drift: rules_sha256",
+    "pregnancy_minor_cough: machine field drift: rules_sha256",
+    "pregnancy_minor_diarrhea: machine field drift: rules_sha256",
+    "pregnancy_minor_fever_pain: machine field drift: rules_sha256",
+    "pregnancy_minor_insomnia: machine field drift: rules_sha256",
+    "pregnancy_minor_itch: machine field drift: rules_sha256",
+    "pregnancy_minor_nausea: machine field drift: rules_sha256",
+    "pregnancy_minor_rhinitis: machine field drift: rules_sha256",
+    "pregnancy_test_faq: machine field drift: rules_sha256",
+    "pregnancy_test_result_reading: machine field drift: rules_sha256",
+    "pregnancy_test_steps_1_2: machine field drift: rules_sha256",
+    "pregnancy_test_steps_3_4: machine field drift: rules_sha256",
+    "pregnancy_test_timing: machine field drift: rules_sha256",
+    "prevent_scar: machine field drift: rules_sha256",
+    "psoriasis_s: machine field drift: rules_sha256",
+    "pus_s: machine field drift: rules_sha256",
+    "qili_san: machine field drift: rules_sha256",
+    "rec_1: machine field drift: rules_sha256",
+    "rec_2: machine field drift: rules_sha256",
+    "rec_3: machine field drift: rules_sha256",
+    "rec_4: machine field drift: rules_sha256",
+    "rec_5: machine field drift: rules_sha256",
+    "rec_6: machine field drift: rules_sha256",
+    "rec_7: machine field drift: rules_sha256",
+    "rec_8: machine field drift: rules_sha256",
+    "rosacea_skin_care: machine field drift: rules_sha256",
+    "rosacea_vs_acne_clues: machine field drift: rules_sha256",
+    "scar_remove: machine field drift: rules_sha256",
+    "scar_remove_detail: machine field drift: rules_sha256",
+    "site_instruction_01: machine field drift: rules_sha256",
+    "site_instruction_02: machine field drift: rules_sha256",
+    "slipped_fall_wound: machine field drift: rules_sha256",
+    "sore_throat_causes: machine field drift: rules_sha256",
+    "sore_throat_otc_choice: machine field drift: rules_sha256",
+    "sore_throat_red_flags: machine field drift: rules_sha256",
+    "stretch_marks: machine field drift: rules_sha256",
+    "terbinafine_7_days: machine field drift: rules_sha256",
+    "terbinafine_daily_cream: machine field drift: rules_sha256",
+    "terbinafine_once_treatment: machine field drift: rules_sha256",
+    "thin_skin_part: machine field drift: rules_sha256",
+    "throat_spray_precautions: machine field drift: rules_sha256",
+    "throat_spray_step_1: machine field drift: rules_sha256",
+    "throat_spray_step_2: machine field drift: rules_sha256",
+    "throat_spray_step_3: machine field drift: rules_sha256",
+    "throat_spray_step_4: machine field drift: rules_sha256",
+    "throat_spray_step_5: machine field drift: rules_sha256",
+    "tinea_s: machine field drift: rules_sha256",
+    "tooth_extraction_aftercare_1: machine field drift: rules_sha256",
+    "tooth_extraction_antibiotics: machine field drift: rules_sha256",
+    "tooth_extraction_day_0: machine field drift: rules_sha256",
+    "tooth_extraction_days_1_3: machine field drift: rules_sha256",
+    "tooth_extraction_days_3_7: machine field drift: rules_sha256",
+    "tooth_extraction_normal_vs_warning: machine field drift: rules_sha256",
+    "tooth_extraction_pain_meds: machine field drift: rules_sha256",
+    "tooth_extraction_weeks_1_2: machine field drift: rules_sha256",
+    "treatment_of_Hpylore: machine field drift: rules_sha256",
+    "vag_1: machine field drift: rules_sha256",
+    "vag_2: machine field drift: rules_sha256",
+    "vag_3: machine field drift: rules_sha256",
+    "vag_4: machine field drift: rules_sha256",
+    "vag_oint_1: machine field drift: rules_sha256",
+    "vag_oint_2: machine field drift: rules_sha256",
+    "vag_oint_3: machine field drift: rules_sha256",
+    "vag_oint_4: machine field drift: rules_sha256",
+    "vag_oint_5: machine field drift: rules_sha256",
+    "vag_oint_6: machine field drift: rules_sha256",
+    "wart: machine field drift: rules_sha256",
+    "wound_4_soln: machine field drift: rules_sha256",
+    "wound_care: machine field drift: rules_sha256",
+    "wound_cover: machine field drift: rules_sha256",
+    "wound_healing_signs: machine field drift: rules_sha256",
+    "wound_oint: machine field drift: rules_sha256",
+    "wound_tetanus: machine field drift: rules_sha256",
+    "wound_when_to_seek_care: machine field drift: rules_sha256",
+    "yunnan_baiyao: machine field drift: rules_sha256",
+    "zheng_gu_shui: machine field drift: rules_sha256",
+    "zi_yun_gao: machine field drift: rules_sha256",
+    "compression_stockings_benefits: machine field drift: rules_sha256",
+    "compression_stockings_care: machine field drift: rules_sha256",
+    "compression_stockings_measurement: machine field drift: rules_sha256",
+    "compression_stockings_pressure: machine field drift: rules_sha256",
+    "compression_stockings_safety: machine field drift: rules_sha256",
+    "compression_stockings_wear_1: machine field drift: rules_sha256",
+    "compression_stockings_wear_2: machine field drift: rules_sha256",
+    "compression_stockings_wear_3: machine field drift: rules_sha256",
+    "balanced_nutrition_supplement: machine field drift: rules_sha256",
+    "diabetes_nutrition_formula: machine field drift: rules_sha256",
+    "elderly_appetite_causes: machine field drift: rules_sha256",
+    "elderly_appetite_meal_tips: machine field drift: rules_sha256",
+    "elderly_appetite_medical_alerts: machine field drift: rules_sha256",
+    "elderly_nutrition_supplements_choose: machine field drift: rules_sha256",
+    "elderly_protein_needs: machine field drift: rules_sha256",
+    "high_protein_supplement: machine field drift: rules_sha256",
+    "kidney_nutrition_formula: machine field drift: rules_sha256",
+    "facial_spots_brightening_ingredients: machine field drift: rules_sha256",
+    "facial_spots_skincare_routine: machine field drift: rules_sha256",
+    "facial_spots_sun_protection: machine field drift: rules_sha256",
+    "facial_spots_types_melasma_acne_marks: machine field drift: rules_sha256",
+    "facial_spots_types_sun_freckles: machine field drift: rules_sha256",
+    "facial_spots_when_to_see_dermatologist: machine field drift: rules_sha256",
+    "knee_brace_fit: machine field drift: rules_sha256",
+    "knee_brace_safety: machine field drift: rules_sha256",
+    "knee_brace_sleeve_steps_1_2: machine field drift: rules_sha256",
+    "knee_brace_sleeve_steps_3_4: machine field drift: rules_sha256",
+    "knee_brace_tightness: machine field drift: rules_sha256",
+    "knee_brace_wrap_steps_1_2: machine field drift: rules_sha256",
+    "knee_brace_wrap_steps_3_4: machine field drift: rules_sha256",
+    "silicone_scar_duration_care: machine field drift: rules_sha256",
+    "silicone_scar_errors_alerts: machine field drift: rules_sha256",
+    "silicone_scar_gel_steps: machine field drift: rules_sha256",
+    "silicone_scar_gel_vs_sheet: machine field drift: rules_sha256",
+    "silicone_scar_sheet_steps: machine field drift: rules_sha256",
+    "silicone_scar_when_to_start: machine field drift: rules_sha256",
+    "ped_cold_peace_syrup: machine field drift: rules_sha256",
+    "ped_cold_guaphen_syrup: machine field drift: rules_sha256",
+    "ped_cold_exdila_liquid: machine field drift: rules_sha256",
+    "ped_cold_mintapp_syrup: machine field drift: rules_sha256",
+    "ped_cold_musco_solution: machine field drift: rules_sha256",
+    "ped_cold_koko_sou_syrup: machine field drift: rules_sha256",
+    "wempty_suspension: machine field drift: rules_sha256",
+    "ped_cold_cough_mixture: machine field drift: rules_sha256",
+    "smecta_1: machine field drift: rules_sha256",
+    "smecta_2: machine field drift: rules_sha256",
+    "smecta_3: machine field drift: rules_sha256",
+    "kidsolone_oral_solution: machine field drift: rules_sha256",
+    "macsafe_suspension: machine field drift: rules_sha256",
+    "baby_nasal_aspirator_1: machine field drift: rules_sha256",
+    "baby_nasal_aspirator_2: machine field drift: rules_sha256",
+    "baby_nasal_aspirator_3: machine field drift: rules_sha256",
+    "baby_nasal_aspirator_4: machine field drift: rules_sha256",
+    "baby_nasal_aspirator_5: machine field drift: rules_sha256",
+    "baby_nasal_aspirator_6: machine field drift: rules_sha256",
+    "baby_nasal_aspirator_7: machine field drift: rules_sha256",
+    "ped_asthma_meptin_liquid: machine field drift: rules_sha256",
+    "ped_cold_nocough_syrup: machine field drift: rules_sha256",
+    "lactulose_constipation: machine field drift: rules_sha256",
+    "ped_diarrhea_hidrasec: machine field drift: rules_sha256",
+    "CR-2026-015: evidence path missing: data/tcm_syndrome_poc_20260819/data_quality_report.md",
+    "CR-2026-015: evidence path missing: data/tcm_syndrome_poc_20260819/stress_test_20260819/validation_report.md",
+    "CR-2026-016: evidence path missing: data/cough_real_case_validation_report.md",
+    "CR-2026-062: invalid request type",
+    "AUD-002: evidence path missing: data/card_content_match_summary.md",
+    "AUD-002: report changed; append history and reassess affected claims",
+    "AUD-003: evidence path missing: data/card_content_recovery_report.md",
+    "AUD-003: report changed; append history and reassess affected claims",
+    "AUD-004: evidence path missing: data/medium_review_report.md",
+    "AUD-004: report changed; append history and reassess affected claims",
+    "AUD-005: evidence path missing: data/card_text_batch2_report.md",
+    "AUD-005: report changed; append history and reassess affected claims",
+    "AUD-006: evidence path missing: data/card_text_recovery_round3_report.md",
+    "AUD-006: report changed; append history and reassess affected claims",
+    "AUD-007: report changed; append history and reassess affected claims",
+    "AUD-012: report changed; append history and reassess affected claims",
+    "AUD-013: evidence path missing: docs/acne-mobile-card-rollout.md",
+    "AUD-013: report changed; append history and reassess affected claims",
+    "AUD-018: report changed; append history and reassess affected claims",
+    "AUD-019: report changed; append history and reassess affected claims",
+    "AUD-020: report changed; append history and reassess affected claims",
+    "AUD-021: report changed; append history and reassess affected claims",
+    "AUD-022: report changed; append history and reassess affected claims",
+    "AUD-023: report changed; append history and reassess affected claims",
+    "AUD-024: report changed; append history and reassess affected claims",
+    "AUD-026: report changed; append history and reassess affected claims",
+    "AUD-027: report changed; append history and reassess affected claims",
+    "AUD-028: report changed; append history and reassess affected claims",
+    "AUD-029: report changed; append history and reassess affected claims",
+    "AUD-033: evidence path missing: data/tcm_syndrome_poc_20260819/data_quality_report.md",
+    "AUD-033: report changed; append history and reassess affected claims",
+    "AUD-034: evidence path missing: data/tcm_syndrome_poc_20260819/stress_test_20260819/validation_report.md",
+    "AUD-034: report changed; append history and reassess affected claims",
+    "AUD-035: evidence path missing: data/cough_poc_test_report.md",
+    "AUD-035: report changed; append history and reassess affected claims",
+    "AUD-036: evidence path missing: data/cough_adversarial_test_report.md",
+    "AUD-036: report changed; append history and reassess affected claims",
+    "AUD-037: evidence path missing: data/cough_real_case_validation_report.md",
+    "AUD-037: report changed; append history and reassess affected claims"
+  ],
+  "warnings": [
+    "AUD-002: audit date unknown (not inferred from filesystem date)",
+    "AUD-003: audit date unknown (not inferred from filesystem date)",
+    "AUD-004: audit date unknown (not inferred from filesystem date)",
+    "AUD-005: audit date unknown (not inferred from filesystem date)",
+    "AUD-006: audit date unknown (not inferred from filesystem date)",
+    "AUD-017: audit date unknown (not inferred from filesystem date)",
+    "AUD-021: audit date unknown (not inferred from filesystem date)",
+    "AUD-022: audit date unknown (not inferred from filesystem date)",
+    "AUD-023: audit date unknown (not inferred from filesystem date)",
+    "AUD-024: audit date unknown (not inferred from filesystem date)",
+    "AUD-025: audit date unknown (not inferred from filesystem date)",
+    "AUD-026: audit date unknown (not inferred from filesystem date)",
+    "AUD-027: audit date unknown (not inferred from filesystem date)",
+    "AUD-028: audit date unknown (not inferred from filesystem date)",
+    "AUD-029: audit date unknown (not inferred from filesystem date)",
+    "AUD-031: audit date unknown (not inferred from filesystem date)",
+    "AUD-032: audit date unknown (not inferred from filesystem date)",
+    "AUD-034: audit date unknown (not inferred from filesystem date)",
+    "Clinical signoff is incomplete/unknown; structural checks do not certify medical accuracy."
+  ],
+  "diagnostics": [
+    {
+      "id": "evidence_path_missing|AUD-002|data/card_content_match_summary.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-002: evidence path missing: data/card_content_match_summary.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-003|data/card_content_recovery_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-003: evidence path missing: data/card_content_recovery_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-004|data/medium_review_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-004: evidence path missing: data/medium_review_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-005|data/card_text_batch2_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-005: evidence path missing: data/card_text_batch2_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-006|data/card_text_recovery_round3_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-006: evidence path missing: data/card_text_recovery_round3_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-013|docs/acne-mobile-card-rollout.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-013: evidence path missing: docs/acne-mobile-card-rollout.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-033|data/tcm_syndrome_poc_20260819/data_quality_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-033: evidence path missing: data/tcm_syndrome_poc_20260819/data_quality_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-034|data/tcm_syndrome_poc_20260819/stress_test_20260819/validation_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-034: evidence path missing: data/tcm_syndrome_poc_20260819/stress_test_20260819/validation_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-035|data/cough_poc_test_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-035: evidence path missing: data/cough_poc_test_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-036|data/cough_adversarial_test_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-036: evidence path missing: data/cough_adversarial_test_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-037|data/cough_real_case_validation_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-037: evidence path missing: data/cough_real_case_validation_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|CR-2026-015|data/tcm_syndrome_poc_20260819/data_quality_report.md",
+      "category": "evidence_path_missing",
+      "message": "CR-2026-015: evidence path missing: data/tcm_syndrome_poc_20260819/data_quality_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|CR-2026-015|data/tcm_syndrome_poc_20260819/stress_test_20260819/validation_report.md",
+      "category": "evidence_path_missing",
+      "message": "CR-2026-015: evidence path missing: data/tcm_syndrome_poc_20260819/stress_test_20260819/validation_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|CR-2026-016|data/cough_real_case_validation_report.md",
+      "category": "evidence_path_missing",
+      "message": "CR-2026-016: evidence path missing: data/cough_real_case_validation_report.md",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|01_can_i_bring_medicine|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "01_can_i_bring_medicine: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|02_how_much_medicine|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "02_how_much_medicine: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|03_prescription_documents|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "03_prescription_documents: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|04_controlled_medicines|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "04_controlled_medicines: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|05_carry_on_or_checked|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "05_carry_on_or_checked: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|06_liquid_insulin_needles|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "06_liquid_insulin_needles: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|07_packaging_and_labels|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "07_packaging_and_labels: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|08_japan_korea_singapore|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "08_japan_korea_singapore: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|09_australia_usa_china|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "09_australia_usa_china: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|10_common_questions|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "10_common_questions: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|5_ways_stomatch|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "5_ways_stomatch: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|AugmentinSyrup|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "AugmentinSyrup: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Champix|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Champix: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|DM_damage|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "DM_damage: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|EnteroVirus_vaccine|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "EnteroVirus_vaccine: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Exame_Hpylore|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Exame_Hpylore: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Hantaviridae_01|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Hantaviridae_01: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Hantaviridae_02|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Hantaviridae_02: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Lidopat_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Lidopat_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|MDI_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "MDI_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|MDI_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "MDI_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|MDI_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "MDI_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|MDI_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "MDI_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|MDI_5|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "MDI_5: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|MDI_6|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "MDI_6: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|MDI_7|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "MDI_7: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|NTG_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "NTG_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|NTG_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "NTG_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|NTG_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "NTG_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Neupro|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Neupro: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Nicotine_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Nicotine_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Osteo_tooth_01|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Osteo_tooth_01: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Osteo_tooth_03|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Osteo_tooth_03: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Osteo_tooth_04|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Osteo_tooth_04: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Ped_abx_susp_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Ped_abx_susp_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Ped_abx_susp_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Ped_abx_susp_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Ped_abx_susp_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Ped_abx_susp_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Ped_abx_susp_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Ped_abx_susp_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Ped_abx_susp_5|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Ped_abx_susp_5: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Ped_abx_susp_6|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Ped_abx_susp_6: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Ped_abx_susp_7|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Ped_abx_susp_7: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Ped_abx_susp_8|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Ped_abx_susp_8: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Prevent_Enterovirus|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Prevent_Enterovirus: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Ps_hair_wash|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Ps_hair_wash: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Res3_ABCovid_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Res3_ABCovid_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Res3_ABCovid_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Res3_ABCovid_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Res3_ABCovid_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Res3_ABCovid_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Res3_ABCovid_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Res3_ABCovid_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Wash_hands_five_steps|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Wash_hands_five_steps: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|Wet_Wrap|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "Wet_Wrap: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ZithromaxPOS|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ZithromaxPOS: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_dailycare_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_dailycare_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_dailycare|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_dailycare: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_face_wash_01|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_face_wash_01: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_face_wash_02|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_face_wash_02: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_face_wash_03|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_face_wash_03: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_face_wash_04|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_face_wash_04: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_face_wash_05|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_face_wash_05: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_face_wash_06|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_face_wash_06: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_face_wash_07|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_face_wash_07: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_face_wash_08|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_face_wash_08: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_face_wash_09|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_face_wash_09: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_face_wash_10|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_face_wash_10: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_face_wash_qa_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_face_wash_qa_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_face_wash_qa_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_face_wash_qa_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_face_wash_qa_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_face_wash_qa_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_patch_broken_skin|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_patch_broken_skin: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_patch_how_to_use|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_patch_how_to_use: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_patch_when_to_use|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_patch_when_to_use: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_stage|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_stage: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_topicals_01_basics|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_topicals_01_basics: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_topicals_02_retinoids|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_topicals_02_retinoids: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_topicals_02_retinoids|source_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_topicals_02_retinoids: machine field drift: source_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_topicals_03_azelaic|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_topicals_03_azelaic: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_topicals_04_bpo|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_topicals_04_bpo: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_topicals_05_clindamycin|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_topicals_05_clindamycin: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_topicals_06_erythromycin|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_topicals_06_erythromycin: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_topicals_07_metronidazole|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_topicals_07_metronidazole: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_topicals_08_salicylic|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_topicals_08_salicylic: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_topicals_09_combinations|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_topicals_09_combinations: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_topicals_10_pairing|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_topicals_10_pairing: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_topicals_11_routine|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_topicals_11_routine: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_topicals_12_irritation|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_topicals_12_irritation: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "acne: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|add_to_desktop_android|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "add_to_desktop_android: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|add_to_desktop_ios|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "add_to_desktop_ios: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|adult_diaper_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "adult_diaper_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|adult_diaper_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "adult_diaper_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|adult_diaper_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "adult_diaper_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|adult_diaper_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "adult_diaper_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|adult_diaper_bed_overview|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "adult_diaper_bed_overview: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|adult_diaper_clean_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "adult_diaper_clean_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|adult_diaper_clean_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "adult_diaper_clean_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|adult_diaper_clean_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "adult_diaper_clean_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|adult_diaper_fit_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "adult_diaper_fit_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|adult_diaper_fit_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "adult_diaper_fit_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|adult_diaper_fit_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "adult_diaper_fit_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|adult_diaper_pants_first|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "adult_diaper_pants_first: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|adult_diaper_pants_last|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "adult_diaper_pants_last: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|adult_diaper_pants_overview|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "adult_diaper_pants_overview: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|amorolfine|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "amorolfine: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|angular_cheilitis_01|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "angular_cheilitis_01: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|angular_cheilitis_02|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "angular_cheilitis_02: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|angular_cheilitis_03|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "angular_cheilitis_03: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|antiphen|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "antiphen: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|artficial_vs_paraffin|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "artficial_vs_paraffin: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|artificial_tears_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "artificial_tears_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|artificial_tears_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "artificial_tears_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|artificial_tears_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "artificial_tears_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|artificial_tears_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "artificial_tears_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|atopic_dermatitis_care|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "atopic_dermatitis_care: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|baby_nasal_aspirator_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "baby_nasal_aspirator_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|baby_nasal_aspirator_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "baby_nasal_aspirator_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|baby_nasal_aspirator_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "baby_nasal_aspirator_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|baby_nasal_aspirator_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "baby_nasal_aspirator_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|baby_nasal_aspirator_5|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "baby_nasal_aspirator_5: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|baby_nasal_aspirator_6|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "baby_nasal_aspirator_6: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|baby_nasal_aspirator_7|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "baby_nasal_aspirator_7: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|balanced_nutrition_supplement|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "balanced_nutrition_supplement: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|bruise_be_gone|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "bruise_be_gone: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|bruising_care_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "bruising_care_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|bruising_care_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "bruising_care_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|bruising_care_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "bruising_care_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|bruising_care_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "bruising_care_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|bug_bite|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "bug_bite: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|bugspray_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "bugspray_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|bugspray_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "bugspray_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|bugspray_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "bugspray_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|burn_first_aid_01|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "burn_first_aid_01: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|burn_first_aid_02|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "burn_first_aid_02: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|burn_first_aid_03|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "burn_first_aid_03: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|burn_first_aid_04|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "burn_first_aid_04: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|burn_first_aid_05|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "burn_first_aid_05: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|burn_first_aid_06|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "burn_first_aid_06: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|bzd_z_sleep_aids|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "bzd_z_sleep_aids: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|chomolyn_cromolyn_eye_drops|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "chomolyn_cromolyn_eye_drops: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|comedo_dailycare|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "comedo_dailycare: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|comedo|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "comedo: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|common_skin_redness_causes|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "common_skin_redness_causes: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|compression_stockings_benefits|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "compression_stockings_benefits: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|compression_stockings_care|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "compression_stockings_care: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|compression_stockings_measurement|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "compression_stockings_measurement: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|compression_stockings_pressure|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "compression_stockings_pressure: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|compression_stockings_safety|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "compression_stockings_safety: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|compression_stockings_wear_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "compression_stockings_wear_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|compression_stockings_wear_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "compression_stockings_wear_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|compression_stockings_wear_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "compression_stockings_wear_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|condom_after_use|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "condom_after_use: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|condom_check_before_use|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "condom_check_before_use: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|condom_common_mistakes|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "condom_common_mistakes: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|condom_faq|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "condom_faq: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|condom_lubricant_use|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "condom_lubricant_use: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|condom_wearing_steps_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "condom_wearing_steps_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|constipation_cate|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "constipation_cate: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|contact_lens_eye_drops_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "contact_lens_eye_drops_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|contact_lens_eye_drops_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "contact_lens_eye_drops_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|contraceptive_pills_how_to_take|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "contraceptive_pills_how_to_take: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|contraceptive_pills_missed_dose|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "contraceptive_pills_missed_dose: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|diabetes_nutrition_formula|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "diabetes_nutrition_formula: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|diabetic_foot|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "diabetic_foot: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|diosmin_use|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "diosmin_use: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|dry_eye_comp|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "dry_eye_comp: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|dry_eye_dailycare|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "dry_eye_dailycare: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|dry_eye_tx|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "dry_eye_tx: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ear_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ear_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ear_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ear_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ear_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ear_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ear_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ear_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ear_5|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ear_5: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ear_6|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ear_6: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|eczema_s|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "eczema_s: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|elderly_appetite_causes|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "elderly_appetite_causes: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|elderly_appetite_meal_tips|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "elderly_appetite_meal_tips: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|elderly_appetite_medical_alerts|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "elderly_appetite_medical_alerts: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|elderly_nutrition_supplements_choose|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "elderly_nutrition_supplements_choose: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|elderly_protein_needs|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "elderly_protein_needs: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|elderly_skin_tear|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "elderly_skin_tear: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|emergency_contraceptive_pills_how_to_take|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "emergency_contraceptive_pills_how_to_take: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|emergency_contraceptive_pills_notice|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "emergency_contraceptive_pills_notice: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|enema_clinical_cond|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "enema_clinical_cond: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|enema_comp|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "enema_comp: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|enema_step_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "enema_step_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|enema_step_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "enema_step_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|enema_step_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "enema_step_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|enema_step_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "enema_step_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|enema_step_5|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "enema_step_5: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|enema_step_6|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "enema_step_6: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|enema_step_7|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "enema_step_7: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|enema_steps|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "enema_steps: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|excilor|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "excilor: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|eye_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "eye_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|eye_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "eye_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|eye_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "eye_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|eye_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "eye_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|eye_5|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "eye_5: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|eye_6|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "eye_6: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|eye_wash_pour_solution|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "eye_wash_pour_solution: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|eye_wash_precautions|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "eye_wash_precautions: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|eye_wash_prepare|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "eye_wash_prepare: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|eye_wash_rinse_steps|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "eye_wash_rinse_steps: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|facial_spots_brightening_ingredients|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "facial_spots_brightening_ingredients: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|facial_spots_skincare_routine|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "facial_spots_skincare_routine: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|facial_spots_sun_protection|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "facial_spots_sun_protection: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|facial_spots_types_melasma_acne_marks|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "facial_spots_types_melasma_acne_marks: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|facial_spots_types_sun_freckles|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "facial_spots_types_sun_freckles: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|facial_spots_when_to_see_dermatologist|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "facial_spots_when_to_see_dermatologist: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|fungal_nail|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "fungal_nail: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hand_eczema_handwashing_gloves|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hand_eczema_handwashing_gloves: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hand_eczema_moisturizers|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hand_eczema_moisturizers: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hand_eczema_symptoms|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hand_eczema_symptoms: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hand_eczema_treatment|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hand_eczema_treatment: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|heat_exhaustion_water_vs_electrolytes|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "heat_exhaustion_water_vs_electrolytes: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|heat_exhaustion|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "heat_exhaustion: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hem_oint_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hem_oint_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hem_oint_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hem_oint_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hem_oint_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hem_oint_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hem_oint_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hem_oint_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hem_oint_5|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hem_oint_5: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hem_oint_6|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hem_oint_6: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hemorr_sitbath_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hemorr_sitbath_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hemorr_sitbath_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hemorr_sitbath_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|high_protein_supplement|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "high_protein_supplement: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hives_s|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hives_s: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hk_foot|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hk_foot: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hydrocolloid_apply_steps|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hydrocolloid_apply_steps: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hydrocolloid_change_steps|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hydrocolloid_change_steps: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|hydrocolloid_how_to_use|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "hydrocolloid_how_to_use: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ibuprofen_sol|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ibuprofen_sol: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|idofen_suspension|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "idofen_suspension: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|jin_huang_san|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "jin_huang_san: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|jinchuang_ointment|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "jinchuang_ointment: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|kidney_nutrition_formula|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "kidney_nutrition_formula: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|kidsolone_oral_solution|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "kidsolone_oral_solution: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|knee_brace_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "knee_brace_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|knee_brace_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "knee_brace_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|knee_brace_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "knee_brace_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|knee_brace_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "knee_brace_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|knee_brace_5|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "knee_brace_5: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|knee_brace_fit|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "knee_brace_fit: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|knee_brace_safety|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "knee_brace_safety: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|knee_brace_sleeve_steps_1_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "knee_brace_sleeve_steps_1_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|knee_brace_sleeve_steps_3_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "knee_brace_sleeve_steps_3_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|knee_brace_tightness|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "knee_brace_tightness: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|knee_brace_wrap_steps_1_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "knee_brace_wrap_steps_1_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|knee_brace_wrap_steps_3_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "knee_brace_wrap_steps_3_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|kwangdong_mu_yao_fen|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "kwangdong_mu_yao_fen: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|lactulose_constipation|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "lactulose_constipation: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|lan_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "lan_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|lan_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "lan_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|lan_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "lan_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|lan_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "lan_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|lan_5|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "lan_5: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|macsafe_suspension|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "macsafe_suspension: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|methodology_of_exam_Hp|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "methodology_of_exam_Hp: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|motion_sickness_meds_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "motion_sickness_meds_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|motion_sickness_meds_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "motion_sickness_meds_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|mpff_use|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "mpff_use: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|nasal_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "nasal_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|nasal_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "nasal_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|nasal_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "nasal_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|nasal_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "nasal_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|nasal_5|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "nasal_5: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|nasal_rinse_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "nasal_rinse_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|nasal_rinse_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "nasal_rinse_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|nasal_rinse_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "nasal_rinse_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|nasal_rinse_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "nasal_rinse_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|nasal_rinse_5|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "nasal_rinse_5: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|nasal_rinse_6|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "nasal_rinse_6: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|notice_ped_fever_reducer|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "notice_ped_fever_reducer: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oint_choose|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "oint_choose: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oneFTU|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "oneFTU: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|orabase|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "orabase: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oral_hygiene_01|footer_status",
+      "category": "machine_field_drift",
+      "message": "oral_hygiene_01: machine field drift: footer_status",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oral_hygiene_01|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "oral_hygiene_01: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oral_hygiene_01|source_sha256",
+      "category": "machine_field_drift",
+      "message": "oral_hygiene_01: machine field drift: source_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oral_hygiene_02|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "oral_hygiene_02: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oral_hygiene_03|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "oral_hygiene_03: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oral_hygiene_04|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "oral_hygiene_04: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oral_hygiene_05|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "oral_hygiene_05: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oral_hygiene_06|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "oral_hygiene_06: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oral_hygiene_07|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "oral_hygiene_07: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oral_hygiene_08|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "oral_hygiene_08: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oral_patch_use_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "oral_patch_use_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oral_patch_use_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "oral_patch_use_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oral_patch_use|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "oral_patch_use: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|otc_anti_allergy_eye_drops|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "otc_anti_allergy_eye_drops: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|otc_antibiotic_eye_drops|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "otc_antibiotic_eye_drops: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|otc_cooling_eye_drops|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "otc_cooling_eye_drops: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|otc_eye_fatigue_drops|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "otc_eye_fatigue_drops: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|otc_redness_relief_eye_drops|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "otc_redness_relief_eye_drops: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|over_one_oint_01|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "over_one_oint_01: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|over_one_oint_02|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "over_one_oint_02: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|over_one_oint_03|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "over_one_oint_03: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|over_one_oint_04|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "over_one_oint_04: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|paste_prep_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "paste_prep_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|paste_prep_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "paste_prep_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|paste_prep_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "paste_prep_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|paste_prep_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "paste_prep_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ped_asthma_meptin_liquid|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ped_asthma_meptin_liquid: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ped_cold_cetirizine|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ped_cold_cetirizine: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ped_cold_cough_mixture|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ped_cold_cough_mixture: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ped_cold_cypromin|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ped_cold_cypromin: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ped_cold_exdila_liquid|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ped_cold_exdila_liquid: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ped_cold_guaphen_syrup|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ped_cold_guaphen_syrup: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ped_cold_koko_sou_syrup|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ped_cold_koko_sou_syrup: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ped_cold_mintapp_syrup|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ped_cold_mintapp_syrup: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ped_cold_musco_solution|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ped_cold_musco_solution: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ped_cold_nocough_syrup|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ped_cold_nocough_syrup: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ped_cold_peace_syrup|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ped_cold_peace_syrup: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ped_cold_secorine|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ped_cold_secorine: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|ped_diarrhea_hidrasec|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "ped_diarrhea_hidrasec: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|postoperative_wound|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "postoperative_wound: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|pregnancy_minor_constipation|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "pregnancy_minor_constipation: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|pregnancy_minor_cough|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "pregnancy_minor_cough: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|pregnancy_minor_diarrhea|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "pregnancy_minor_diarrhea: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|pregnancy_minor_fever_pain|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "pregnancy_minor_fever_pain: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|pregnancy_minor_insomnia|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "pregnancy_minor_insomnia: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|pregnancy_minor_itch|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "pregnancy_minor_itch: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|pregnancy_minor_nausea|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "pregnancy_minor_nausea: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|pregnancy_minor_rhinitis|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "pregnancy_minor_rhinitis: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|pregnancy_test_faq|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "pregnancy_test_faq: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|pregnancy_test_result_reading|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "pregnancy_test_result_reading: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|pregnancy_test_steps_1_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "pregnancy_test_steps_1_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|pregnancy_test_steps_3_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "pregnancy_test_steps_3_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|pregnancy_test_timing|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "pregnancy_test_timing: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|prevent_scar|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "prevent_scar: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|psoriasis_s|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "psoriasis_s: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|pus_s|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "pus_s: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|qili_san|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "qili_san: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|rec_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "rec_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|rec_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "rec_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|rec_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "rec_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|rec_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "rec_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|rec_5|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "rec_5: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|rec_6|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "rec_6: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|rec_7|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "rec_7: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|rec_8|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "rec_8: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|rosacea_skin_care|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "rosacea_skin_care: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|rosacea_vs_acne_clues|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "rosacea_vs_acne_clues: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|scar_remove_detail|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "scar_remove_detail: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|scar_remove|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "scar_remove: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|silicone_scar_duration_care|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "silicone_scar_duration_care: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|silicone_scar_errors_alerts|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "silicone_scar_errors_alerts: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|silicone_scar_gel_steps|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "silicone_scar_gel_steps: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|silicone_scar_gel_vs_sheet|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "silicone_scar_gel_vs_sheet: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|silicone_scar_sheet_steps|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "silicone_scar_sheet_steps: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|silicone_scar_when_to_start|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "silicone_scar_when_to_start: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|site_instruction_01|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "site_instruction_01: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|site_instruction_02|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "site_instruction_02: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|slipped_fall_wound|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "slipped_fall_wound: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|smecta_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "smecta_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|smecta_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "smecta_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|smecta_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "smecta_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|sore_throat_causes|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "sore_throat_causes: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|sore_throat_otc_choice|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "sore_throat_otc_choice: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|sore_throat_red_flags|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "sore_throat_red_flags: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|stretch_marks|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "stretch_marks: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|terbinafine_7_days|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "terbinafine_7_days: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|terbinafine_daily_cream|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "terbinafine_daily_cream: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|terbinafine_once_treatment|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "terbinafine_once_treatment: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|thin_skin_part|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "thin_skin_part: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|throat_spray_precautions|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "throat_spray_precautions: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|throat_spray_step_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "throat_spray_step_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|throat_spray_step_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "throat_spray_step_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|throat_spray_step_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "throat_spray_step_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|throat_spray_step_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "throat_spray_step_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|throat_spray_step_5|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "throat_spray_step_5: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|tinea_s|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "tinea_s: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|tooth_extraction_aftercare_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "tooth_extraction_aftercare_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|tooth_extraction_antibiotics|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "tooth_extraction_antibiotics: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|tooth_extraction_day_0|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "tooth_extraction_day_0: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|tooth_extraction_days_1_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "tooth_extraction_days_1_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|tooth_extraction_days_3_7|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "tooth_extraction_days_3_7: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|tooth_extraction_normal_vs_warning|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "tooth_extraction_normal_vs_warning: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|tooth_extraction_pain_meds|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "tooth_extraction_pain_meds: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|tooth_extraction_weeks_1_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "tooth_extraction_weeks_1_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|treatment_of_Hpylore|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "treatment_of_Hpylore: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|vag_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "vag_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|vag_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "vag_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|vag_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "vag_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|vag_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "vag_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|vag_oint_1|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "vag_oint_1: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|vag_oint_2|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "vag_oint_2: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|vag_oint_3|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "vag_oint_3: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|vag_oint_4|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "vag_oint_4: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|vag_oint_5|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "vag_oint_5: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|vag_oint_6|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "vag_oint_6: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|wart|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "wart: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|wempty_suspension|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "wempty_suspension: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|wound_4_soln|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "wound_4_soln: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|wound_care|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "wound_care: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|wound_cover|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "wound_cover: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|wound_healing_signs|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "wound_healing_signs: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|wound_oint|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "wound_oint: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|wound_tetanus|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "wound_tetanus: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|wound_when_to_seek_care|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "wound_when_to_seek_care: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|yunnan_baiyao|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "yunnan_baiyao: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|zheng_gu_shui|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "zheng_gu_shui: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|zi_yun_gao|rules_sha256",
+      "category": "machine_field_drift",
+      "message": "zi_yun_gao: machine field drift: rules_sha256",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-002",
+      "category": "report_changed",
+      "message": "AUD-002: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-003",
+      "category": "report_changed",
+      "message": "AUD-003: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-004",
+      "category": "report_changed",
+      "message": "AUD-004: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-005",
+      "category": "report_changed",
+      "message": "AUD-005: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-006",
+      "category": "report_changed",
+      "message": "AUD-006: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-007",
+      "category": "report_changed",
+      "message": "AUD-007: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-012",
+      "category": "report_changed",
+      "message": "AUD-012: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-013",
+      "category": "report_changed",
+      "message": "AUD-013: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-018",
+      "category": "report_changed",
+      "message": "AUD-018: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-019",
+      "category": "report_changed",
+      "message": "AUD-019: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-020",
+      "category": "report_changed",
+      "message": "AUD-020: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-021",
+      "category": "report_changed",
+      "message": "AUD-021: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-022",
+      "category": "report_changed",
+      "message": "AUD-022: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-023",
+      "category": "report_changed",
+      "message": "AUD-023: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-024",
+      "category": "report_changed",
+      "message": "AUD-024: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-026",
+      "category": "report_changed",
+      "message": "AUD-026: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-027",
+      "category": "report_changed",
+      "message": "AUD-027: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-028",
+      "category": "report_changed",
+      "message": "AUD-028: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-029",
+      "category": "report_changed",
+      "message": "AUD-029: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-033",
+      "category": "report_changed",
+      "message": "AUD-033: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-034",
+      "category": "report_changed",
+      "message": "AUD-034: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-035",
+      "category": "report_changed",
+      "message": "AUD-035: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-036",
+      "category": "report_changed",
+      "message": "AUD-036: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-037",
+      "category": "report_changed",
+      "message": "AUD-037: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "unclassified|7490fce9ac917a3220028bc7cd59c6e53889d855868f8cb904d94b1690adf40e",
+      "category": "unclassified",
+      "message": "CR-2026-062: invalid request type",
+      "count": 1
+    }
+  ],
+  "source_revision": "c2b4e5c780a306a942883d8e61473dc0c30d9e18"
+}

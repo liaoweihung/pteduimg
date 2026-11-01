@@ -1,0 +1,20 @@
+{
+  "source_main": "c2b4e5c780a306a942883d8e61473dc0c30d9e18",
+  "before": 438,
+  "after": 42,
+  "resolved_rule_drifts": 396,
+  "new": 0,
+  "worsened": 0,
+  "all_410_latest_non_rule_rows_preserved": true,
+  "protected_outputs_equal_latest_main": true,
+  "tests": {
+    "scoped": 0,
+    "incremental": 0,
+    "guards": 0,
+    "management-output": 0,
+    "site": 0,
+    "management-suite": 1,
+    "dates": 0
+  },
+  "integration_test_exit": 0
+}

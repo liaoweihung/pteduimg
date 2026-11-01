@@ -1,0 +1,356 @@
+{
+  "validator": "check_project_management",
+  "schema_version": 1,
+  "checked_at": "2026-11-02T00:54:45.208917+08:00",
+  "inventory_count": 410,
+  "visibility": {
+    "current": 402,
+    "hidden": 4,
+    "retired": 4
+  },
+  "relations_count": 480,
+  "reports_count": 37,
+  "requests_count": 63,
+  "error_count": 45,
+  "errors": [
+    "acne_topicals_02_retinoids: machine field drift: source_sha256",
+    "height_prediction: machine field drift: jsonld_status",
+    "height_prediction: machine field drift: footer_status",
+    "height_prediction: machine field drift: source_sha256",
+    "oral_hygiene_01: machine field drift: footer_status",
+    "oral_hygiene_01: machine field drift: source_sha256",
+    "CR-2026-015: evidence path missing: data/tcm_syndrome_poc_20260819/data_quality_report.md",
+    "CR-2026-015: evidence path missing: data/tcm_syndrome_poc_20260819/stress_test_20260819/validation_report.md",
+    "CR-2026-016: evidence path missing: data/cough_real_case_validation_report.md",
+    "CR-2026-062: invalid request type",
+    "AUD-002: evidence path missing: data/card_content_match_summary.md",
+    "AUD-002: report changed; append history and reassess affected claims",
+    "AUD-003: evidence path missing: data/card_content_recovery_report.md",
+    "AUD-003: report changed; append history and reassess affected claims",
+    "AUD-004: evidence path missing: data/medium_review_report.md",
+    "AUD-004: report changed; append history and reassess affected claims",
+    "AUD-005: evidence path missing: data/card_text_batch2_report.md",
+    "AUD-005: report changed; append history and reassess affected claims",
+    "AUD-006: evidence path missing: data/card_text_recovery_round3_report.md",
+    "AUD-006: report changed; append history and reassess affected claims",
+    "AUD-007: report changed; append history and reassess affected claims",
+    "AUD-012: report changed; append history and reassess affected claims",
+    "AUD-013: evidence path missing: docs/acne-mobile-card-rollout.md",
+    "AUD-013: report changed; append history and reassess affected claims",
+    "AUD-018: report changed; append history and reassess affected claims",
+    "AUD-019: report changed; append history and reassess affected claims",
+    "AUD-020: report changed; append history and reassess affected claims",
+    "AUD-021: report changed; append history and reassess affected claims",
+    "AUD-022: report changed; append history and reassess affected claims",
+    "AUD-023: report changed; append history and reassess affected claims",
+    "AUD-024: report changed; append history and reassess affected claims",
+    "AUD-026: report changed; append history and reassess affected claims",
+    "AUD-027: report changed; append history and reassess affected claims",
+    "AUD-028: report changed; append history and reassess affected claims",
+    "AUD-029: report changed; append history and reassess affected claims",
+    "AUD-033: evidence path missing: data/tcm_syndrome_poc_20260819/data_quality_report.md",
+    "AUD-033: report changed; append history and reassess affected claims",
+    "AUD-034: evidence path missing: data/tcm_syndrome_poc_20260819/stress_test_20260819/validation_report.md",
+    "AUD-034: report changed; append history and reassess affected claims",
+    "AUD-035: evidence path missing: data/cough_poc_test_report.md",
+    "AUD-035: report changed; append history and reassess affected claims",
+    "AUD-036: evidence path missing: data/cough_adversarial_test_report.md",
+    "AUD-036: report changed; append history and reassess affected claims",
+    "AUD-037: evidence path missing: data/cough_real_case_validation_report.md",
+    "AUD-037: report changed; append history and reassess affected claims"
+  ],
+  "warnings": [
+    "AUD-002: audit date unknown (not inferred from filesystem date)",
+    "AUD-003: audit date unknown (not inferred from filesystem date)",
+    "AUD-004: audit date unknown (not inferred from filesystem date)",
+    "AUD-005: audit date unknown (not inferred from filesystem date)",
+    "AUD-006: audit date unknown (not inferred from filesystem date)",
+    "AUD-017: audit date unknown (not inferred from filesystem date)",
+    "AUD-021: audit date unknown (not inferred from filesystem date)",
+    "AUD-022: audit date unknown (not inferred from filesystem date)",
+    "AUD-023: audit date unknown (not inferred from filesystem date)",
+    "AUD-024: audit date unknown (not inferred from filesystem date)",
+    "AUD-025: audit date unknown (not inferred from filesystem date)",
+    "AUD-026: audit date unknown (not inferred from filesystem date)",
+    "AUD-027: audit date unknown (not inferred from filesystem date)",
+    "AUD-028: audit date unknown (not inferred from filesystem date)",
+    "AUD-029: audit date unknown (not inferred from filesystem date)",
+    "AUD-031: audit date unknown (not inferred from filesystem date)",
+    "AUD-032: audit date unknown (not inferred from filesystem date)",
+    "AUD-034: audit date unknown (not inferred from filesystem date)",
+    "Clinical signoff is incomplete/unknown; structural checks do not certify medical accuracy."
+  ],
+  "diagnostics": [
+    {
+      "id": "evidence_path_missing|AUD-002|data/card_content_match_summary.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-002: evidence path missing: data/card_content_match_summary.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-003|data/card_content_recovery_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-003: evidence path missing: data/card_content_recovery_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-004|data/medium_review_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-004: evidence path missing: data/medium_review_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-005|data/card_text_batch2_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-005: evidence path missing: data/card_text_batch2_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-006|data/card_text_recovery_round3_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-006: evidence path missing: data/card_text_recovery_round3_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-013|docs/acne-mobile-card-rollout.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-013: evidence path missing: docs/acne-mobile-card-rollout.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-033|data/tcm_syndrome_poc_20260819/data_quality_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-033: evidence path missing: data/tcm_syndrome_poc_20260819/data_quality_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-034|data/tcm_syndrome_poc_20260819/stress_test_20260819/validation_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-034: evidence path missing: data/tcm_syndrome_poc_20260819/stress_test_20260819/validation_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-035|data/cough_poc_test_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-035: evidence path missing: data/cough_poc_test_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-036|data/cough_adversarial_test_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-036: evidence path missing: data/cough_adversarial_test_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|AUD-037|data/cough_real_case_validation_report.md",
+      "category": "evidence_path_missing",
+      "message": "AUD-037: evidence path missing: data/cough_real_case_validation_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|CR-2026-015|data/tcm_syndrome_poc_20260819/data_quality_report.md",
+      "category": "evidence_path_missing",
+      "message": "CR-2026-015: evidence path missing: data/tcm_syndrome_poc_20260819/data_quality_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|CR-2026-015|data/tcm_syndrome_poc_20260819/stress_test_20260819/validation_report.md",
+      "category": "evidence_path_missing",
+      "message": "CR-2026-015: evidence path missing: data/tcm_syndrome_poc_20260819/stress_test_20260819/validation_report.md",
+      "count": 1
+    },
+    {
+      "id": "evidence_path_missing|CR-2026-016|data/cough_real_case_validation_report.md",
+      "category": "evidence_path_missing",
+      "message": "CR-2026-016: evidence path missing: data/cough_real_case_validation_report.md",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|acne_topicals_02_retinoids|source_sha256",
+      "category": "machine_field_drift",
+      "message": "acne_topicals_02_retinoids: machine field drift: source_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|height_prediction|footer_status",
+      "category": "machine_field_drift",
+      "message": "height_prediction: machine field drift: footer_status",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|height_prediction|jsonld_status",
+      "category": "machine_field_drift",
+      "message": "height_prediction: machine field drift: jsonld_status",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|height_prediction|source_sha256",
+      "category": "machine_field_drift",
+      "message": "height_prediction: machine field drift: source_sha256",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oral_hygiene_01|footer_status",
+      "category": "machine_field_drift",
+      "message": "oral_hygiene_01: machine field drift: footer_status",
+      "count": 1
+    },
+    {
+      "id": "machine_field_drift|oral_hygiene_01|source_sha256",
+      "category": "machine_field_drift",
+      "message": "oral_hygiene_01: machine field drift: source_sha256",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-002",
+      "category": "report_changed",
+      "message": "AUD-002: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-003",
+      "category": "report_changed",
+      "message": "AUD-003: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-004",
+      "category": "report_changed",
+      "message": "AUD-004: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-005",
+      "category": "report_changed",
+      "message": "AUD-005: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-006",
+      "category": "report_changed",
+      "message": "AUD-006: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-007",
+      "category": "report_changed",
+      "message": "AUD-007: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-012",
+      "category": "report_changed",
+      "message": "AUD-012: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-013",
+      "category": "report_changed",
+      "message": "AUD-013: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-018",
+      "category": "report_changed",
+      "message": "AUD-018: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-019",
+      "category": "report_changed",
+      "message": "AUD-019: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-020",
+      "category": "report_changed",
+      "message": "AUD-020: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-021",
+      "category": "report_changed",
+      "message": "AUD-021: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-022",
+      "category": "report_changed",
+      "message": "AUD-022: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-023",
+      "category": "report_changed",
+      "message": "AUD-023: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-024",
+      "category": "report_changed",
+      "message": "AUD-024: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-026",
+      "category": "report_changed",
+      "message": "AUD-026: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-027",
+      "category": "report_changed",
+      "message": "AUD-027: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-028",
+      "category": "report_changed",
+      "message": "AUD-028: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-029",
+      "category": "report_changed",
+      "message": "AUD-029: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-033",
+      "category": "report_changed",
+      "message": "AUD-033: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-034",
+      "category": "report_changed",
+      "message": "AUD-034: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-035",
+      "category": "report_changed",
+      "message": "AUD-035: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-036",
+      "category": "report_changed",
+      "message": "AUD-036: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "report_changed|AUD-037",
+      "category": "report_changed",
+      "message": "AUD-037: report changed; append history and reassess affected claims",
+      "count": 1
+    },
+    {
+      "id": "unclassified|7490fce9ac917a3220028bc7cd59c6e53889d855868f8cb904d94b1690adf40e",
+      "category": "unclassified",
+      "message": "CR-2026-062: invalid request type",
+      "count": 1
+    }
+  ],
+  "baseline_difference": null
+}

@@ -20,6 +20,11 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import quote, urlparse
 
+try:
+    from scripts import rule_fingerprints as rules_v2
+except ImportError:
+    import rule_fingerprints as rules_v2
+
 ROOT = Path(__file__).resolve().parents[1]
 PM = "docs/project-management"
 BASE = "https://liaoweihung.github.io/pteduimg/"
@@ -34,7 +39,7 @@ MACHINE_FIELDS = ["page_id", "page_path", "url", "title", "primary_series_id",
                   "generated_state", "text_status", "reference_status", "date_status",
                   "seo_basic_status", "jsonld_status", "footer_status",
                   "source_needs_medical_review", "content_sha256", "source_sha256",
-                  "rules_sha256", "checked_at", "evidence_sources"]
+                  "rules_sha256", "rules_version", "rules_v1_sha256", "checked_at", "evidence_sources"]
 MACHINE_STATES = {"machine_pass", "missing", "partial", "invalid", "unknown", "not_applicable"}
 REL_TYPES = {
     "has_subtopic": ({"topic"}, {"subtopic"}),
@@ -114,7 +119,11 @@ def machine_snapshot(root, checked_at):
     retired_by_id = {Path(x["page"]).stem: x for x in retired}
     if len(retired_by_id) != len(retired):
         errors.append("duplicate retired page IDs")
+    v2 = (root / rules_v2.MANIFEST).is_file()
     rules_hash = digest({p: file_hash(root, p) for p in RULE_FILES})
+    rule_values = rules_v2.domains(root) if v2 else None
+    registry = read_json(root, rules_v2.MANIFEST) if v2 else None
+    navigation = read_json(root, "data/acne_navigation.json")
     rows = []
     for pid in sorted(set(members) | set(retired_by_id)):
         group = members.get(pid, [])
@@ -207,6 +216,10 @@ def machine_snapshot(root, checked_at):
         if old or not expected_page:
             for field in ["text_status", "reference_status", "date_status", "seo_basic_status", "jsonld_status", "footer_status"]:
                 row[field] = "not_applicable"
+        row["rules_version"] = "2" if v2 else "1"
+        row["rules_v1_sha256"] = registry["v1_by_page"].get(pid, "unknown") if v2 else "unknown"
+        if v2:
+            row["rules_sha256"] = rules_v2.page_hash(row, cards, navigation, root, rule_values)
         rows.append(row)
     expected = {r["page_path"] for r in rows if r["generated_state"] != "pending"}
     actual = {p.relative_to(root).as_posix() for p in (root / "cards").glob("*.html") if p.name != "404.html"}
@@ -267,11 +280,20 @@ def validate(root, model, live):
     demand(set(current) == set(stored), f"inventory IDs differ: missing={sorted(set(current)-set(stored))}; extra={sorted(set(stored)-set(current))}")
     request_ids = {r["request_id"] for r in requests}
     audit_ids = {a["audit_id"] for a in audits}
+    if (root / rules_v2.MANIFEST).is_file():
+        registry = read_json(root, rules_v2.MANIFEST)
+        demand(registry.get("version") == 2, "rules-v2: invalid version")
+        demand(set(registry["v1_by_page"]) == set(stored), "rules-v2: historical page IDs differ")
+        demand(digest(registry["v1_by_page"]) == registry["v1_mapping_sha256"], "rules-v2: historical mapping changed")
+        for domain, value in rules_v2.domains(root).items():
+            demand(registry["domains"].get(domain) == value, f"rules-v2: domain drift: {domain}")
     for row in inv:
         pid = row["page_id"]
-        demand(set(row) == set(MACHINE_FIELDS + MANUAL_FIELDS), f"{pid}: inventory columns differ")
+        legacy = not (root / rules_v2.MANIFEST).is_file() and "rules_version" not in row
+        expected_fields = set(MACHINE_FIELDS + MANUAL_FIELDS) - ({"rules_version", "rules_v1_sha256"} if legacy else set())
+        demand(set(row) == expected_fields, f"{pid}: inventory columns differ")
         for field in MACHINE_FIELDS:
-            if field != "checked_at" and pid in current:
+            if field != "checked_at" and pid in current and not (legacy and field in {"rules_version", "rules_v1_sha256"}):
                 demand(row.get(field) == current[pid][field], f"{pid}: machine field drift: {field}")
         demand(valid_date(row.get("checked_at", "")), f"{pid}: invalid checked_at")
         demand(valid_date(row.get("last_human_confirmed_at", ""), True), f"{pid}: invalid last_human_confirmed_at")
