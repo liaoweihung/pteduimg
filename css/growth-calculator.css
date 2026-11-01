@@ -680,20 +680,39 @@ body.growth-page[data-sex="girls"] .prediction-result {
 
 .level-list li {
     display: grid;
-    gap: 2px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 12px;
+    row-gap: 2px;
+    align-items: center;
+    border: 1px solid #e3e8e6;
     border-radius: 10px;
+    background: #ffffff;
     padding: 9px 12px;
     font-size: 0.9rem;
     line-height: 1.5;
+}
+
+.level-list strong,
+.level-list span {
+    grid-column: 1;
 }
 
 .level-list strong {
     color: #22313f;
 }
 
-.level-list .level-green { background: #ddf7e8; }
-.level-list .level-yellow { background: #fff4c7; }
-.level-list .level-red { background: #ffe1df; }
+.level-list li::after {
+    content: "";
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+}
+
+.level-list .level-green::after { background: #34a96f; }
+.level-list .level-yellow::after { background: #f0b922; }
+.level-list .level-red::after { background: #e0483e; }
 
 .card-links li {
     display: grid;
