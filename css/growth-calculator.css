@@ -550,6 +550,203 @@ body.growth-page[data-sex="girls"] .prediction-result {
     margin-top: 0.9rem;
 }
 
+.lead-q {
+    margin: 6px 0 0 !important;
+    color: #1f5b49 !important;
+    font-weight: 900;
+    font-size: 1rem !important;
+}
+
+.percentile-tip {
+    border-radius: 10px;
+    background: #f1fbf7;
+    padding: 8px 10px;
+}
+
+.percentile-tip strong {
+    color: #1f5b49;
+}
+
+.privacy-note {
+    margin: 10px 0 0;
+    color: #6b7b76;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.metric-result {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 2px 10px;
+}
+
+.metric-result .result-level {
+    font-size: 1.2rem;
+}
+
+.metric-result .result-pct {
+    font-size: 0.9rem;
+    font-weight: 800;
+    opacity: 0.85;
+}
+
+.metric-advice {
+    margin: -4px 0 12px;
+    color: #3d4f49;
+    font-size: 0.95rem;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.metric-advice[hidden],
+.suggest-box[hidden] {
+    display: none;
+}
+
+.bar-caption {
+    margin: 0 0 6px;
+    color: #6b7b76;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.bmi-bar + .bar-caption {
+    margin: 8px 0 0;
+}
+
+.suggest-box {
+    margin-top: 14px;
+    border-radius: 12px;
+    background: #f8fbfa;
+    border: 1px solid #e3efea;
+    padding: 12px 14px;
+}
+
+.suggest-box strong {
+    color: #1f5b49;
+}
+
+.suggest-box ul {
+    margin: 6px 0 0;
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.suggest-box a,
+.inline-link a,
+.card-links a,
+.source-list a {
+    color: #1f5b49;
+    font-weight: 800;
+}
+
+.medical-note {
+    margin-top: 16px;
+    padding: 18px;
+    background: #ffffff;
+    border: 1px solid #e3efea;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(32, 88, 71, 0.08);
+}
+
+.medical-note h2 {
+    margin: 0 0 12px;
+    color: #1f5b49;
+    font-size: 1.08rem;
+}
+
+.medical-note h3 {
+    margin: 16px 0 6px;
+    color: #1f5b49;
+    font-size: 0.95rem;
+}
+
+.medical-note p {
+    margin: 0 0 10px;
+    color: #4f5f59;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.level-list,
+.card-links {
+    list-style: none;
+    margin: 0 0 12px;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+}
+
+.level-list li {
+    display: grid;
+    gap: 2px;
+    border-radius: 10px;
+    padding: 9px 12px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.level-list strong {
+    color: #22313f;
+}
+
+.level-list .level-green { background: #ddf7e8; }
+.level-list .level-yellow { background: #fff4c7; }
+.level-list .level-red { background: #ffe1df; }
+
+.card-links li {
+    display: grid;
+    gap: 2px;
+    border-bottom: 1px solid #edf3f0;
+    padding-bottom: 8px;
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.card-links span {
+    color: #6b7b76;
+    font-size: 0.85rem;
+}
+
+.faq-item {
+    border-top: 1px solid #e3efea;
+    padding: 12px 0 0;
+}
+
+.faq-item + .faq-item {
+    margin-top: 12px;
+}
+
+.faq-item summary {
+    color: #1f5b49;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.faq-item p {
+    margin: 8px 0 0;
+}
+
+.source-list {
+    margin: 0 0 10px;
+    padding-left: 20px;
+    color: #4f5f59;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.checked-date {
+    color: #6b7b76;
+    font-size: 0.85rem !important;
+}
+
+body.growth-page[data-sex="boys"] .medical-note { border-color: #d9ebfb; }
+body.growth-page[data-sex="girls"] .medical-note { border-color: #f5dce8; }
+
 @media (min-width: 720px) {
     body.growth-page header {
         justify-content: center;
@@ -574,7 +771,8 @@ body.growth-page[data-sex="girls"] .prediction-result {
 
     .form-card,
     .result-card,
-    .intro-card {
+    .intro-card,
+    .medical-note {
         padding: 22px;
     }
 
