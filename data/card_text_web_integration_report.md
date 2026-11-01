@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：256
+- 成功加入文字頁數：257
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -257,6 +257,7 @@
 | stomach_medicine | 海藻酸鹽類怎麼吃？胃逆舒、艾胃逆服服用時間 | https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_alginate.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | stomach_medicine | Sucralfate怎麼吃？保胃懸乳液、安胃寧服藥指引 | https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_sucralfate.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | stomach_medicine | 胃藥服用時間總整理：五類胃藥怎麼吃？ | https://liaoweihung.github.io/pteduimg/cards/stomach_medicine_timing_summary.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| japan_otc_drug_classification | 日本成藥的分級 | https://liaoweihung.github.io/pteduimg/cards/japan_otc_drug_classification.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | child_height_weight | 台灣男生身高標準對照表：9～15 歲身高百分位 | https://liaoweihung.github.io/pteduimg/cards/boy_height2.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | child_height_weight | 台灣女生身高標準對照表：8～14 歲身高百分位 | https://liaoweihung.github.io/pteduimg/cards/girl_height2.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | child_height_weight | 女生 BMI 正常範圍：6～12 歲兒童 BMI 對照表 | https://liaoweihung.github.io/pteduimg/cards/girlBMI.html | 是 | 是 | 是 | 是 | 是 | 無 |

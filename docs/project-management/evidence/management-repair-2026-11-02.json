@@ -1,0 +1,331 @@
+{
+  "source_revision": "b8a93129c01a18213dae9b387adc12ee11377927",
+  "scope": "Verified non-clinical maintenance only",
+  "report_changes": [
+    {
+      "audit_id": "AUD-007",
+      "old_sha256": "65188d8fca7f104f4aa479c158e323fff1e29758423502d96c757b9bc63b0d91",
+      "new_sha256": "aa3efa88e4a1d32a6e91aee5e22c54c63555c0aae75c954f6b0b8b2d5dfb2556",
+      "reason": "Registered 236-page report preserved from Git 8855a33; current generated report has 257 pages, 0 failures."
+    },
+    {
+      "audit_id": "AUD-012",
+      "old_sha256": "2291b77879efa08f6f87ec7828559c7adcaf31ed5d5da89c2211fa84ff258922",
+      "new_sha256": "8d10d97a44c10b45491efab3267c4929bc92ee004ccc4ab4d13c09dc448da19f",
+      "reason": "Current spec matches committed ae690117 exactly after EOL normalization; initial uncommitted hash unavailable and retained in history."
+    },
+    {
+      "audit_id": "AUD-018",
+      "old_sha256": "c5a6f10ad1f5c16e9fc35303c00411932d630d71cf26e7a84c12beb3066a19f8",
+      "new_sha256": "82c3626a928f7774128a3d79f7f2a7758fb69f2c6ab6f3876799cd3288f40c81",
+      "reason": "Only LF/CRLF representation differs; report text and conclusions unchanged."
+    },
+    {
+      "audit_id": "AUD-019",
+      "old_sha256": "4b704cdb71818004acfae6d9f36f5e959616545ded2e0b0c6d6a5cc779b482be",
+      "new_sha256": "5ff26a9a59d42d2725fd230654b11ba945cc74314ce1850e3ca9389157e71228",
+      "reason": "Only LF/CRLF representation differs; report text and conclusions unchanged."
+    },
+    {
+      "audit_id": "AUD-020",
+      "old_sha256": "129af5b67f5a6f9ad88544e24eac8b59364e7e646f598206c6d207a2abf29e62",
+      "new_sha256": "b67fdc1f06a1b18813f218faf324cbeedd17d8d1bc4029e740b4e476d7128639",
+      "reason": "Only LF/CRLF representation differs; report text and conclusions unchanged."
+    },
+    {
+      "audit_id": "AUD-021",
+      "old_sha256": "14722462bef2e0a0a596942188a58a1f55d151424a0b20b18eb8c451c6f9054a",
+      "new_sha256": "86a924cce924de3dd75a7812c86da15c0c8a96bcd2e69709e2914df9d508d403",
+      "reason": "Only LF/CRLF representation differs; report text and conclusions unchanged."
+    },
+    {
+      "audit_id": "AUD-022",
+      "old_sha256": "053975b9e521fb88b45ccd9ed3deaf15bef66500473bd9234491193b31608635",
+      "new_sha256": "ac2e154f8285942c63835d881f06d5c52ece214857d1d7cd9dbff15d4feff3e4",
+      "reason": "Only LF/CRLF representation differs; report text and conclusions unchanged."
+    },
+    {
+      "audit_id": "AUD-023",
+      "old_sha256": "f3c6caa3397ab9f4498991a7139312edf03674bb91b5bc5acd3ea750b9f8c1f1",
+      "new_sha256": "635b6835b95f3f0fc3b52f309a71257190f12b7a17139a35214949b1d544e836",
+      "reason": "Only LF/CRLF representation differs; report text and conclusions unchanged."
+    },
+    {
+      "audit_id": "AUD-024",
+      "old_sha256": "d5d3bacfb369383d00c8dc9bb301393a97f49b4a42b65944f99b88d8c5404570",
+      "new_sha256": "55776f5b4f32ad6107eb1b79f9401bc445d04658c6f223a0653cc38f9d39d55f",
+      "reason": "Only LF/CRLF representation differs; report text and conclusions unchanged."
+    },
+    {
+      "audit_id": "AUD-026",
+      "old_sha256": "d0801a53306840a5c3a6a591c2ced97d78b333e502074de0c75c22897e0a4743",
+      "new_sha256": "584be7197b3e39418c2a53a248efa46a4554d5cdbd15b8f54c2936ac71a345bc",
+      "reason": "Only LF/CRLF representation differs; report text and conclusions unchanged."
+    },
+    {
+      "audit_id": "AUD-027",
+      "old_sha256": "2c5b48ef8d963b5cbd7e24c0b9e3b2905446ca007d8a294ac88d996d389308ec",
+      "new_sha256": "08cc36159cc6ad3cd3fead5fd08a5ec97be985aa9bac55e7621b63b3dced965c",
+      "reason": "Only LF/CRLF representation differs; report text and conclusions unchanged."
+    },
+    {
+      "audit_id": "AUD-028",
+      "old_sha256": "39c2527951fe390607aa926668605199bb2b1f741ad0ec12789aece92c899cf0",
+      "new_sha256": "a3c74b0e2b36afd35cec6677ffde28cc6bce5d4236ac5b5835f83c7182a045a1",
+      "reason": "Only LF/CRLF representation differs; report text and conclusions unchanged."
+    },
+    {
+      "audit_id": "AUD-029",
+      "old_sha256": "35bacb5982e3333f69ded191c3a339bb0798fe25b687c8f2a0fd44cb1be472b5",
+      "new_sha256": "cd2249bd35d6e37f1e62cf8362a72d52d54c6cf583b36bc57ce922159b465295",
+      "reason": "Only LF/CRLF representation differs; report text and conclusions unchanged."
+    }
+  ],
+  "inventory_cell_changes": [
+    {
+      "page": "acne_topicals_02_retinoids",
+      "field": "source_sha256",
+      "old": "6e2cf7ce0f11c1fbcafea5cbcce76a9292b87419cfbc9076fdd62fb470c6e046",
+      "new": "9a17e69537b0e8d54a6038f8177db455888c668c0a24276218a6da89f3b3c149"
+    },
+    {
+      "page": "acne_topicals_02_retinoids",
+      "field": "checked_at",
+      "old": "2026-10-13",
+      "new": "2026-11-02"
+    },
+    {
+      "page": "oral_hygiene_01",
+      "field": "source_sha256",
+      "old": "dd4c8976e104f7c7f560ed5cd1208ae2df5c8c699107f0e733a968ae641d2add",
+      "new": "a6b6d890a4860e48cd7f7a9d0227e3c32562afbf361a9f42567f84fb221a451c"
+    },
+    {
+      "page": "oral_hygiene_01",
+      "field": "rules_sha256",
+      "old": "b083654d8f94033e6961f72c8987710549c77a973134b471d817e433f3502a89",
+      "new": "4e5b59f23f4557ae720a0f15c906001c8b336789e78ba0a562cb57fffa630e0d"
+    },
+    {
+      "page": "oral_hygiene_01",
+      "field": "checked_at",
+      "old": "2026-10-13",
+      "new": "2026-11-02"
+    },
+    {
+      "page": "oral_hygiene_02",
+      "field": "footer_status",
+      "old": "missing",
+      "new": "machine_pass"
+    },
+    {
+      "page": "oral_hygiene_02",
+      "field": "source_sha256",
+      "old": "f2f8b888d46ecb0f0fa963f467f4e9e63c47435b73d9d6dd76a04ff612b30083",
+      "new": "c1a6207ffe386418029a7160c2a1732c3612014ab643184e1a95e3a2b68652b9"
+    },
+    {
+      "page": "oral_hygiene_02",
+      "field": "rules_sha256",
+      "old": "b083654d8f94033e6961f72c8987710549c77a973134b471d817e433f3502a89",
+      "new": "4e5b59f23f4557ae720a0f15c906001c8b336789e78ba0a562cb57fffa630e0d"
+    },
+    {
+      "page": "oral_hygiene_02",
+      "field": "checked_at",
+      "old": "2026-10-13",
+      "new": "2026-11-02"
+    },
+    {
+      "page": "oral_hygiene_03",
+      "field": "footer_status",
+      "old": "missing",
+      "new": "machine_pass"
+    },
+    {
+      "page": "oral_hygiene_03",
+      "field": "source_sha256",
+      "old": "18c5959bcc886f21bae5b4cbcd2dc261f2ed344219f178eb55eca7b291dd7aa3",
+      "new": "9a39b067c35acb71d053541691656955be6d01d08adc1e6f43c4b6c5ac5e6b72"
+    },
+    {
+      "page": "oral_hygiene_03",
+      "field": "rules_sha256",
+      "old": "b083654d8f94033e6961f72c8987710549c77a973134b471d817e433f3502a89",
+      "new": "4e5b59f23f4557ae720a0f15c906001c8b336789e78ba0a562cb57fffa630e0d"
+    },
+    {
+      "page": "oral_hygiene_03",
+      "field": "checked_at",
+      "old": "2026-10-13",
+      "new": "2026-11-02"
+    },
+    {
+      "page": "oral_hygiene_04",
+      "field": "footer_status",
+      "old": "missing",
+      "new": "machine_pass"
+    },
+    {
+      "page": "oral_hygiene_04",
+      "field": "source_sha256",
+      "old": "5cfe34ec273377492418f928c51a13db9bc33c1a02d03fe3080a733808102543",
+      "new": "12191848b38312c9b18940dd8cf05a192af0adcaed94c709f111641fa8bc4b8f"
+    },
+    {
+      "page": "oral_hygiene_04",
+      "field": "rules_sha256",
+      "old": "b083654d8f94033e6961f72c8987710549c77a973134b471d817e433f3502a89",
+      "new": "4e5b59f23f4557ae720a0f15c906001c8b336789e78ba0a562cb57fffa630e0d"
+    },
+    {
+      "page": "oral_hygiene_04",
+      "field": "checked_at",
+      "old": "2026-10-13",
+      "new": "2026-11-02"
+    },
+    {
+      "page": "oral_hygiene_05",
+      "field": "footer_status",
+      "old": "missing",
+      "new": "machine_pass"
+    },
+    {
+      "page": "oral_hygiene_05",
+      "field": "source_sha256",
+      "old": "3ad7c7f19a41b50bff74ae0d06347cc71db73e450b33c917485d47527314800a",
+      "new": "7ee6d6090285d80e3533c83976e0cf3c81e83a9e7b4df2c3252e63aa03b9a83c"
+    },
+    {
+      "page": "oral_hygiene_05",
+      "field": "rules_sha256",
+      "old": "b083654d8f94033e6961f72c8987710549c77a973134b471d817e433f3502a89",
+      "new": "4e5b59f23f4557ae720a0f15c906001c8b336789e78ba0a562cb57fffa630e0d"
+    },
+    {
+      "page": "oral_hygiene_05",
+      "field": "checked_at",
+      "old": "2026-10-13",
+      "new": "2026-11-02"
+    },
+    {
+      "page": "oral_hygiene_06",
+      "field": "footer_status",
+      "old": "missing",
+      "new": "machine_pass"
+    },
+    {
+      "page": "oral_hygiene_06",
+      "field": "source_sha256",
+      "old": "54e0c93ff2f143834203b369ae146f4c827bdd194c923bae1cfacbab46998522",
+      "new": "72f0607ad689fc7de4df0f8235ca7ba09c03287b698693f596d9d966289a3772"
+    },
+    {
+      "page": "oral_hygiene_06",
+      "field": "rules_sha256",
+      "old": "b083654d8f94033e6961f72c8987710549c77a973134b471d817e433f3502a89",
+      "new": "4e5b59f23f4557ae720a0f15c906001c8b336789e78ba0a562cb57fffa630e0d"
+    },
+    {
+      "page": "oral_hygiene_06",
+      "field": "checked_at",
+      "old": "2026-10-13",
+      "new": "2026-11-02"
+    },
+    {
+      "page": "oral_hygiene_07",
+      "field": "footer_status",
+      "old": "missing",
+      "new": "machine_pass"
+    },
+    {
+      "page": "oral_hygiene_07",
+      "field": "source_sha256",
+      "old": "ef9c27a9d772ecaa47ba68fe15341bc29d74a8d216e61fcdcab802e1ec49af6d",
+      "new": "5545c8643c39655db1dfd9aa1fdac88c7f493ad94cf718a37b7ca16ea54f49a7"
+    },
+    {
+      "page": "oral_hygiene_07",
+      "field": "rules_sha256",
+      "old": "b083654d8f94033e6961f72c8987710549c77a973134b471d817e433f3502a89",
+      "new": "4e5b59f23f4557ae720a0f15c906001c8b336789e78ba0a562cb57fffa630e0d"
+    },
+    {
+      "page": "oral_hygiene_07",
+      "field": "checked_at",
+      "old": "2026-10-13",
+      "new": "2026-11-02"
+    },
+    {
+      "page": "oral_hygiene_08",
+      "field": "footer_status",
+      "old": "missing",
+      "new": "machine_pass"
+    },
+    {
+      "page": "oral_hygiene_08",
+      "field": "source_sha256",
+      "old": "95c9e4a71c54b0f3f55b10e04cad5e28a0ce76e8df62dbf3ff8d2a20f6d390cb",
+      "new": "d440331bda9a5c55994a3867fec0035e3b91e5bf8e620543a53f731d129638b4"
+    },
+    {
+      "page": "oral_hygiene_08",
+      "field": "rules_sha256",
+      "old": "b083654d8f94033e6961f72c8987710549c77a973134b471d817e433f3502a89",
+      "new": "4e5b59f23f4557ae720a0f15c906001c8b336789e78ba0a562cb57fffa630e0d"
+    },
+    {
+      "page": "oral_hygiene_08",
+      "field": "checked_at",
+      "old": "2026-10-13",
+      "new": "2026-11-02"
+    }
+  ],
+  "unresolved_missing_evidence": [
+    "CR-2026-015: evidence path missing: data/tcm_syndrome_poc_20260819/data_quality_report.md",
+    "CR-2026-015: evidence path missing: data/tcm_syndrome_poc_20260819/stress_test_20260819/validation_report.md",
+    "CR-2026-016: evidence path missing: data/cough_real_case_validation_report.md",
+    "AUD-002: evidence path missing: data/card_content_match_summary.md",
+    "AUD-003: evidence path missing: data/card_content_recovery_report.md",
+    "AUD-004: evidence path missing: data/medium_review_report.md",
+    "AUD-005: evidence path missing: data/card_text_batch2_report.md",
+    "AUD-006: evidence path missing: data/card_text_recovery_round3_report.md",
+    "AUD-013: evidence path missing: docs/acne-mobile-card-rollout.md",
+    "AUD-033: evidence path missing: data/tcm_syndrome_poc_20260819/data_quality_report.md",
+    "AUD-034: evidence path missing: data/tcm_syndrome_poc_20260819/stress_test_20260819/validation_report.md",
+    "AUD-035: evidence path missing: data/cough_poc_test_report.md",
+    "AUD-036: evidence path missing: data/cough_adversarial_test_report.md",
+    "AUD-037: evidence path missing: data/cough_real_case_validation_report.md"
+  ],
+  "warnings": "18 historical audit dates unknown; clinical signoff incomplete. No fabricated dates or signoffs.",
+  "git_links": {
+    "CR-2026-039": "7c201523",
+    "CR-2026-066": [
+      "c31b99ca",
+      "a99f389a"
+    ]
+  },
+  "medical_content_unchanged": true,
+  "manual_inventory_fields_unchanged": true,
+  "clinical_content_fingerprints_unchanged": true,
+  "missing_original_AUD012_snapshot": "Original uncommitted hash retained under previous_versions; current committed spec is versioned separately.",
+  "before_errors": 42,
+  "after_errors": 25,
+  "resolved": 17,
+  "new_errors": 0,
+  "worsened_errors": 0,
+  "warnings_before": 19,
+  "warnings_after": 19,
+  "browser_validation": "Installed Chrome file:// rendering at widths 375/1024, oral pages 01/08: footer exactly once; no horizontal overflow or JS errors. HTTP localhost inaccessible.",
+  "target_proposals": "zero differences, zero removals, zero source errors",
+  "tests": {
+    "audit-hash": 0,
+    "v2": 0,
+    "management-output": 0,
+    "site": 0,
+    "management-suite": 1,
+    "tracker": 0
+  },
+  "audit_hash_negative_tests_passed": 3,
+  "historical_snapshot_hash_verification": "all preserved snapshots match original byte-exact SHA-256; tampering test fails as required"
+}

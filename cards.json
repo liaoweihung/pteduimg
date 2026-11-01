@@ -571,6 +571,7 @@
     ]
   },
   "oral_hygiene": {
+    "showFooter": true,
     "title": "口腔清潔",
     "category": "public_education",
     "topics": [

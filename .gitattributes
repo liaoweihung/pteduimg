@@ -17,3 +17,6 @@
 *.webp binary
 *.gif binary
 *.ico binary
+
+# Preserve byte-exact historical audit snapshots.
+docs/project-management/evidence/report-versions/*.raw -text

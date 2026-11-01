@@ -80,6 +80,21 @@ def file_hash(root, path):
     return hashlib.sha256(p.read_bytes()).hexdigest() if p.is_file() else "missing"
 
 
+
+def audit_report_hash(root, record):
+    """Explicit report-only EOL normalization; page and clinical hashes stay byte-exact."""
+    path = root / record["path"]
+    if not path.is_file():
+        return "missing"
+    data = path.read_bytes()
+    mode = record.get("sha256_normalization", "bytes")
+    if mode == "lf":
+        data = data.replace(b"\r\n", b"\n")
+    elif mode != "bytes":
+        return "invalid-normalization"
+    return hashlib.sha256(data).hexdigest()
+
+
 def compact(value):
     return json.dumps(value, ensure_ascii=False, separators=(",", ":"))
 
@@ -410,7 +425,14 @@ def validate(root, model, live):
         evidence(a["path"], a["audit_id"])
         demand(a["validity"] in {"historical_only", "partially_superseded", "current_structural", "conflict", "unknown"}, f"{a['audit_id']}: invalid validity")
         demand(valid_date(a["audit_date"], True), f"{a['audit_id']}: invalid audit_date")
-        demand(file_hash(root, a["path"]) == a["sha256"], f"{a['audit_id']}: report changed; append history and reassess affected claims")
+        demand(a.get("sha256_normalization", "bytes") in {"bytes", "lf"}, f"{a['audit_id']}: invalid hash normalization")
+        demand(audit_report_hash(root, a) == a["sha256"], f"{a['audit_id']}: report changed; append history and reassess affected claims")
+        for prior in a.get("previous_versions", []):
+            if prior.get("preserved_snapshot"):
+                snapshot = prior["preserved_snapshot"]
+                evidence(snapshot, a["audit_id"] + " historical snapshot")
+                demand(file_hash(root, snapshot) == prior["sha256"],
+                       f"{a['audit_id']}: historical snapshot hash mismatch")
         if a["audit_date"] == "unknown":
             warnings.append(f"{a['audit_id']}: audit date unknown (not inferred from filesystem date)")
     if any(r["medical_review_status"] != "pharmacist_reviewed" for r in inv if r["visibility"] != "retired"):

@@ -114,21 +114,21 @@
     {
       "audit_id": "AUD-007",
       "path": "data/card_text_web_integration_report.md",
-      "audit_date": "2026-10-30",
-      "date_basis": "CR-2026-050 安咳糖漿追加於兒科感冒藥水第12張，本機增量建置",
+      "audit_date": "2026-11-02",
+      "date_basis": "本次實際核對生成報告及網站結構檢查",
       "kind": "generated_report",
-      "scope": "236 張成功加入文字的圖卡頁",
-      "recorded_result": "本次整合報告236成功、0失敗；新增「杏輝」安咳糖漿一頁。",
+      "scope": "257張靜態文字頁的機械整合報告",
+      "recorded_result": "257成功、0失敗；機械整合不代表醫療簽核。",
       "known_issues": "本次另比較段落文字；09_australia_usa_china 字詞差異，原檢查未覆蓋",
       "followup_commits": [
         "333ed52512cfbaf2b0f900e76605bc0b5c8264cc"
       ],
       "validity": "conflict",
-      "current_interpretation": "本次新頁具靜態文字、來源與雙日期；保留既有 conflict 與已知問題，機械整合不是醫療簽核。建置前235頁版本保留於 previous_versions。",
+      "current_interpretation": "本次新頁具靜態文字、來源與雙日期；保留既有 conflict 與已知問題，機械整合不是醫療簽核。建置前235頁版本保留於 previous_versions。 2026-11-02：Registered 236-page report preserved from Git 8855a33; current generated report has 257 pages, 0 failures.",
       "last_report_commit": "unknown",
       "last_report_commit_date": "unknown",
-      "working_tree_state": "modified",
-      "sha256": "65188d8fca7f104f4aa479c158e323fff1e29758423502d96c757b9bc63b0d91",
+      "working_tree_state": "tracked",
+      "sha256": "aa3efa88e4a1d32a6e91aee5e22c54c63555c0aae75c954f6b0b8b2d5dfb2556",
       "previous_versions": [
         {
           "audit_id": "AUD-007",
@@ -300,8 +300,29 @@
           "last_report_commit_date": "unknown",
           "working_tree_state": "modified",
           "sha256": "7f64a99d7ed3e6c2ab987c61ea097ede0a35d96bcf593f57ada5d42da2a181af"
+        },
+        {
+          "audit_id": "AUD-007",
+          "path": "data/card_text_web_integration_report.md",
+          "audit_date": "2026-10-30",
+          "date_basis": "CR-2026-050 安咳糖漿追加於兒科感冒藥水第12張，本機增量建置",
+          "kind": "generated_report",
+          "scope": "236 張成功加入文字的圖卡頁",
+          "recorded_result": "本次整合報告236成功、0失敗；新增「杏輝」安咳糖漿一頁。",
+          "known_issues": "本次另比較段落文字；09_australia_usa_china 字詞差異，原檢查未覆蓋",
+          "followup_commits": [
+            "333ed52512cfbaf2b0f900e76605bc0b5c8264cc"
+          ],
+          "validity": "conflict",
+          "current_interpretation": "本次新頁具靜態文字、來源與雙日期；保留既有 conflict 與已知問題，機械整合不是醫療簽核。建置前235頁版本保留於 previous_versions。",
+          "last_report_commit": "unknown",
+          "last_report_commit_date": "unknown",
+          "working_tree_state": "modified",
+          "sha256": "65188d8fca7f104f4aa479c158e323fff1e29758423502d96c757b9bc63b0d91",
+          "preserved_snapshot": "docs/project-management/evidence/report-versions/AUD-007-registered.raw"
         }
-      ]
+      ],
+      "sha256_normalization": "lf"
     },
     {
       "audit_id": "AUD-008",
@@ -397,11 +418,36 @@
         "ae69011781335ab90f6cacc59a253d3744b21c58"
       ],
       "validity": "current_structural",
-      "current_interpretation": "本次沿用四頁清單；不擴大問題導覽",
+      "current_interpretation": "本次沿用四頁清單；不擴大問題導覽 2026-11-02：Current spec matches committed ae690117 exactly after EOL normalization; initial uncommitted hash unavailable and retained in history.",
       "last_report_commit": "ae69011781335ab90f6cacc59a253d3744b21c58",
       "last_report_commit_date": "2026-10-10T09:28:11+08:00",
-      "working_tree_state": "modified",
-      "sha256": "2291b77879efa08f6f87ec7828559c7adcaf31ed5d5da89c2211fa84ff258922"
+      "working_tree_state": "tracked",
+      "sha256": "8d10d97a44c10b45491efab3267c4929bc92ee004ccc4ab4d13c09dc448da19f",
+      "previous_versions": [
+        {
+          "audit_id": "AUD-012",
+          "path": "docs/acne-pilot-spec.md",
+          "audit_date": "2026-10-08",
+          "date_basis": "report_text",
+          "kind": "specification",
+          "scope": "四頁 Pilot v1.0；含 10-10 更新",
+          "recorded_result": "規範區塊順序、下一問來源與主題頁",
+          "known_issues": "規格不等於所有頁完成；本機有未提交修改",
+          "followup_commits": [
+            "dc60f74e8201f7edf6cb3cee8fd23e3ff5b035cd",
+            "ae69011781335ab90f6cacc59a253d3744b21c58"
+          ],
+          "validity": "current_structural",
+          "current_interpretation": "本次沿用四頁清單；不擴大問題導覽",
+          "last_report_commit": "ae69011781335ab90f6cacc59a253d3744b21c58",
+          "last_report_commit_date": "2026-10-10T09:28:11+08:00",
+          "working_tree_state": "modified",
+          "sha256": "2291b77879efa08f6f87ec7828559c7adcaf31ed5d5da89c2211fa84ff258922",
+          "snapshot_status": "registered uncommitted snapshot unavailable; original hash retained"
+        }
+      ],
+      "sha256_normalization": "lf",
+      "current_version_snapshot": "docs/project-management/evidence/report-versions/AUD-012-committed.raw"
     },
     {
       "audit_id": "AUD-013",
@@ -511,11 +557,32 @@
       "known_issues": "不是本站流量、疾病盛行或醫療優先；目前成效 unknown",
       "followup_commits": [],
       "validity": "historical_only",
-      "current_interpretation": "後續新增與分組不可直接沿用舊排名",
+      "current_interpretation": "後續新增與分組不可直接沿用舊排名 2026-11-02：Only LF/CRLF representation differs; report text and conclusions unchanged.",
       "last_report_commit": "4443bd2f6dfcae19d3f2a7f51e0615e8a30c5af9",
       "last_report_commit_date": "2026-09-07T00:14:19+08:00",
       "working_tree_state": "tracked",
-      "sha256": "c5a6f10ad1f5c16e9fc35303c00411932d630d71cf26e7a84c12beb3066a19f8"
+      "sha256": "82c3626a928f7774128a3d79f7f2a7758fb69f2c6ab6f3876799cd3288f40c81",
+      "previous_versions": [
+        {
+          "audit_id": "AUD-018",
+          "path": "data/public_search_popularity_20260906.md",
+          "audit_date": "2026-09-06",
+          "date_basis": "report_text",
+          "kind": "audit",
+          "scope": "民眾系列關鍵字代理排序",
+          "recorded_result": "Google Trends 臺灣過去12個月，乾眼症近似校準",
+          "known_issues": "不是本站流量、疾病盛行或醫療優先；目前成效 unknown",
+          "followup_commits": [],
+          "validity": "historical_only",
+          "current_interpretation": "後續新增與分組不可直接沿用舊排名",
+          "last_report_commit": "4443bd2f6dfcae19d3f2a7f51e0615e8a30c5af9",
+          "last_report_commit_date": "2026-09-07T00:14:19+08:00",
+          "working_tree_state": "tracked",
+          "sha256": "c5a6f10ad1f5c16e9fc35303c00411932d630d71cf26e7a84c12beb3066a19f8",
+          "preserved_snapshot": "docs/project-management/evidence/report-versions/AUD-018-registered.raw"
+        }
+      ],
+      "sha256_normalization": "lf"
     },
     {
       "audit_id": "AUD-019",
@@ -530,11 +597,34 @@
         "a0f4676e3e6c01762b68e5c53677509da360dfd8"
       ],
       "validity": "historical_only",
-      "current_interpretation": "網站配置仍指向 final JSON；未重新審查藥證",
+      "current_interpretation": "網站配置仍指向 final JSON；未重新審查藥證 2026-11-02：Only LF/CRLF representation differs; report text and conclusions unchanged.",
       "last_report_commit": "a0f4676e3e6c01762b68e5c53677509da360dfd8",
       "last_report_commit_date": "2026-07-14T01:50:45+08:00",
       "working_tree_state": "tracked",
-      "sha256": "4b704cdb71818004acfae6d9f36f5e959616545ded2e0b0c6d6a5cc779b482be"
+      "sha256": "5ff26a9a59d42d2725fd230654b11ba945cc74314ce1850e3ca9389157e71228",
+      "previous_versions": [
+        {
+          "audit_id": "AUD-019",
+          "path": "data/eye_meds_rebuild_20260711/final/data_quality_report.md",
+          "audit_date": "2026-07-14",
+          "date_basis": "report_text",
+          "kind": "audit",
+          "scope": "眼用藥 492 品項",
+          "recorded_result": "461 有 confirmed active、31 缺、50 unknown role 關聯",
+          "known_issues": "角色與缺失待複核；不是492品项均完成藥師簽核",
+          "followup_commits": [
+            "a0f4676e3e6c01762b68e5c53677509da360dfd8"
+          ],
+          "validity": "historical_only",
+          "current_interpretation": "網站配置仍指向 final JSON；未重新審查藥證",
+          "last_report_commit": "a0f4676e3e6c01762b68e5c53677509da360dfd8",
+          "last_report_commit_date": "2026-07-14T01:50:45+08:00",
+          "working_tree_state": "tracked",
+          "sha256": "4b704cdb71818004acfae6d9f36f5e959616545ded2e0b0c6d6a5cc779b482be",
+          "preserved_snapshot": "docs/project-management/evidence/report-versions/AUD-019-registered.raw"
+        }
+      ],
+      "sha256_normalization": "lf"
     },
     {
       "audit_id": "AUD-020",
@@ -549,11 +639,34 @@
         "a0f4676e3e6c01762b68e5c53677509da360dfd8"
       ],
       "validity": "historical_only",
-      "current_interpretation": "匯出與清單存在；原建置輸入完整性待處理",
+      "current_interpretation": "匯出與清單存在；原建置輸入完整性待處理 2026-11-02：Only LF/CRLF representation differs; report text and conclusions unchanged.",
       "last_report_commit": "a0f4676e3e6c01762b68e5c53677509da360dfd8",
       "last_report_commit_date": "2026-07-14T01:50:45+08:00",
       "working_tree_state": "tracked",
-      "sha256": "129af5b67f5a6f9ad88544e24eac8b59364e7e646f598206c6d207a2abf29e62"
+      "sha256": "b67fdc1f06a1b18813f218faf324cbeedd17d8d1bc4029e740b4e476d7128639",
+      "previous_versions": [
+        {
+          "audit_id": "AUD-020",
+          "path": "data/eye_meds_rebuild_20260711/final/final_build_summary.md",
+          "audit_date": "2026-07-14",
+          "date_basis": "report_text",
+          "kind": "build_report",
+          "scope": "眼用藥 final 匯出",
+          "recorded_result": "492 products、195 substances、476 manual-review rows",
+          "known_issues": "部分報告列出的來源 CSV 不在現有 checkout；不能推測可完整重建",
+          "followup_commits": [
+            "a0f4676e3e6c01762b68e5c53677509da360dfd8"
+          ],
+          "validity": "historical_only",
+          "current_interpretation": "匯出與清單存在；原建置輸入完整性待處理",
+          "last_report_commit": "a0f4676e3e6c01762b68e5c53677509da360dfd8",
+          "last_report_commit_date": "2026-07-14T01:50:45+08:00",
+          "working_tree_state": "tracked",
+          "sha256": "129af5b67f5a6f9ad88544e24eac8b59364e7e646f598206c6d207a2abf29e62",
+          "preserved_snapshot": "docs/project-management/evidence/report-versions/AUD-020-registered.raw"
+        }
+      ],
+      "sha256_normalization": "lf"
     },
     {
       "audit_id": "AUD-021",
@@ -568,11 +681,34 @@
         "935f9cd799b0843534d9e7df8b7a4fb1bf3f5814"
       ],
       "validity": "historical_only",
-      "current_interpretation": "現有網站配置 1034，未更新藥證現況",
+      "current_interpretation": "現有網站配置 1034，未更新藥證現況 2026-11-02：Only LF/CRLF representation differs; report text and conclusions unchanged.",
       "last_report_commit": "95ae78e2b6e735eb36a42ee444d07ab3805e6f76",
       "last_report_commit_date": "2026-07-14T17:47:19+08:00",
       "working_tree_state": "tracked",
-      "sha256": "14722462bef2e0a0a596942188a58a1f55d151424a0b20b18eb8c451c6f9054a"
+      "sha256": "86a924cce924de3dd75a7812c86da15c0c8a96bcd2e69709e2914df9d508d403",
+      "previous_versions": [
+        {
+          "audit_id": "AUD-021",
+          "path": "data/oral_liquid_meds_rebuild_20260714/build_summary.md",
+          "audit_date": "unknown",
+          "date_basis": "unknown",
+          "kind": "build_report",
+          "scope": "口服液劑 Phase 2",
+          "recorded_result": "905→1034；129納入、205排除、105未解",
+          "known_issues": "105未解；濃度不應猜測",
+          "followup_commits": [
+            "935f9cd799b0843534d9e7df8b7a4fb1bf3f5814"
+          ],
+          "validity": "historical_only",
+          "current_interpretation": "現有網站配置 1034，未更新藥證現況",
+          "last_report_commit": "95ae78e2b6e735eb36a42ee444d07ab3805e6f76",
+          "last_report_commit_date": "2026-07-14T17:47:19+08:00",
+          "working_tree_state": "tracked",
+          "sha256": "14722462bef2e0a0a596942188a58a1f55d151424a0b20b18eb8c451c6f9054a",
+          "preserved_snapshot": "docs/project-management/evidence/report-versions/AUD-021-registered.raw"
+        }
+      ],
+      "sha256_normalization": "lf"
     },
     {
       "audit_id": "AUD-022",
@@ -587,11 +723,34 @@
         "935f9cd799b0843534d9e7df8b7a4fb1bf3f5814"
       ],
       "validity": "historical_only",
-      "current_interpretation": "現有匯出可引用；ready_for_site 不是醫療簽核",
+      "current_interpretation": "現有匯出可引用；ready_for_site 不是醫療簽核 2026-11-02：Only LF/CRLF representation differs; report text and conclusions unchanged.",
       "last_report_commit": "95ae78e2b6e735eb36a42ee444d07ab3805e6f76",
       "last_report_commit_date": "2026-07-14T17:47:19+08:00",
       "working_tree_state": "tracked",
-      "sha256": "053975b9e521fb88b45ccd9ed3deaf15bef66500473bd9234491193b31608635"
+      "sha256": "ac2e154f8285942c63835d881f06d5c52ece214857d1d7cd9dbff15d4feff3e4",
+      "previous_versions": [
+        {
+          "audit_id": "AUD-022",
+          "path": "data/oral_liquid_meds_rebuild_20260714/data_quality_report.md",
+          "audit_date": "unknown",
+          "date_basis": "unknown",
+          "kind": "audit",
+          "scope": "口服液劑 1034",
+          "recorded_result": "954 display concentration、937 per-mL；88品項/140列濃度待核",
+          "known_issues": "105 候選未解與濃度待核佇列分開計數",
+          "followup_commits": [
+            "935f9cd799b0843534d9e7df8b7a4fb1bf3f5814"
+          ],
+          "validity": "historical_only",
+          "current_interpretation": "現有匯出可引用；ready_for_site 不是醫療簽核",
+          "last_report_commit": "95ae78e2b6e735eb36a42ee444d07ab3805e6f76",
+          "last_report_commit_date": "2026-07-14T17:47:19+08:00",
+          "working_tree_state": "tracked",
+          "sha256": "053975b9e521fb88b45ccd9ed3deaf15bef66500473bd9234491193b31608635",
+          "preserved_snapshot": "docs/project-management/evidence/report-versions/AUD-022-registered.raw"
+        }
+      ],
+      "sha256_normalization": "lf"
     },
     {
       "audit_id": "AUD-023",
@@ -606,11 +765,34 @@
         "935f9cd799b0843534d9e7df8b7a4fb1bf3f5814"
       ],
       "validity": "historical_only",
-      "current_interpretation": "保留 sample_validation.csv，不重跑醫療審查",
+      "current_interpretation": "保留 sample_validation.csv，不重跑醫療審查 2026-11-02：Only LF/CRLF representation differs; report text and conclusions unchanged.",
       "last_report_commit": "95ae78e2b6e735eb36a42ee444d07ab3805e6f76",
       "last_report_commit_date": "2026-07-14T17:47:19+08:00",
       "working_tree_state": "tracked",
-      "sha256": "f3c6caa3397ab9f4498991a7139312edf03674bb91b5bc5acd3ea750b9f8c1f1"
+      "sha256": "635b6835b95f3f0fc3b52f309a71257190f12b7a17139a35214949b1d544e836",
+      "previous_versions": [
+        {
+          "audit_id": "AUD-023",
+          "path": "data/oral_liquid_meds_rebuild_20260714/sample_validation.md",
+          "audit_date": "unknown",
+          "date_basis": "unknown",
+          "kind": "audit",
+          "scope": "30 筆規則驗證樣本",
+          "recorded_result": "依劑型及核准口服途徑選入",
+          "known_issues": "僅規則樣本，無全資料臨床複核",
+          "followup_commits": [
+            "935f9cd799b0843534d9e7df8b7a4fb1bf3f5814"
+          ],
+          "validity": "historical_only",
+          "current_interpretation": "保留 sample_validation.csv，不重跑醫療審查",
+          "last_report_commit": "95ae78e2b6e735eb36a42ee444d07ab3805e6f76",
+          "last_report_commit_date": "2026-07-14T17:47:19+08:00",
+          "working_tree_state": "tracked",
+          "sha256": "f3c6caa3397ab9f4498991a7139312edf03674bb91b5bc5acd3ea750b9f8c1f1",
+          "preserved_snapshot": "docs/project-management/evidence/report-versions/AUD-023-registered.raw"
+        }
+      ],
+      "sha256_normalization": "lf"
     },
     {
       "audit_id": "AUD-024",
@@ -625,11 +807,34 @@
         "935f9cd799b0843534d9e7df8b7a4fb1bf3f5814"
       ],
       "validity": "historical_only",
-      "current_interpretation": "現有配置141；ready_for_site僅核心欄位",
+      "current_interpretation": "現有配置141；ready_for_site僅核心欄位 2026-11-02：Only LF/CRLF representation differs; report text and conclusions unchanged.",
       "last_report_commit": "21a026a9576b2c89ff936e475b041d734370ae5d",
       "last_report_commit_date": "2026-07-14T11:45:56+08:00",
       "working_tree_state": "tracked",
-      "sha256": "d5d3bacfb369383d00c8dc9bb301393a97f49b4a42b65944f99b88d8c5404570"
+      "sha256": "55776f5b4f32ad6107eb1b79f9401bc445d04658c6f223a0653cc38f9d39d55f",
+      "previous_versions": [
+        {
+          "audit_id": "AUD-024",
+          "path": "data/spray_meds_rebuild_20260714/build_summary.md",
+          "audit_date": "unknown",
+          "date_basis": "unknown",
+          "kind": "build_report",
+          "scope": "18 噴劑候選",
+          "recorded_result": "1 納入、12 排除、5 unresolved",
+          "known_issues": "5 lidocaine sprays 不入正式統計",
+          "followup_commits": [
+            "935f9cd799b0843534d9e7df8b7a4fb1bf3f5814"
+          ],
+          "validity": "historical_only",
+          "current_interpretation": "現有配置141；ready_for_site僅核心欄位",
+          "last_report_commit": "21a026a9576b2c89ff936e475b041d734370ae5d",
+          "last_report_commit_date": "2026-07-14T11:45:56+08:00",
+          "working_tree_state": "tracked",
+          "sha256": "d5d3bacfb369383d00c8dc9bb301393a97f49b4a42b65944f99b88d8c5404570",
+          "preserved_snapshot": "docs/project-management/evidence/report-versions/AUD-024-registered.raw"
+        }
+      ],
+      "sha256_normalization": "lf"
     },
     {
       "audit_id": "AUD-025",
@@ -663,11 +868,34 @@
         "935f9cd799b0843534d9e7df8b7a4fb1bf3f5814"
       ],
       "validity": "historical_only",
-      "current_interpretation": "保留可追溯抽樣範圍",
+      "current_interpretation": "保留可追溯抽樣範圍 2026-11-02：Only LF/CRLF representation differs; report text and conclusions unchanged.",
       "last_report_commit": "21a026a9576b2c89ff936e475b041d734370ae5d",
       "last_report_commit_date": "2026-07-14T11:45:56+08:00",
       "working_tree_state": "tracked",
-      "sha256": "d0801a53306840a5c3a6a591c2ced97d78b333e502074de0c75c22897e0a4743"
+      "sha256": "584be7197b3e39418c2a53a248efa46a4554d5cdbd15b8f54c2936ac71a345bc",
+      "previous_versions": [
+        {
+          "audit_id": "AUD-026",
+          "path": "data/spray_meds_rebuild_20260714/sample_validation.md",
+          "audit_date": "unknown",
+          "date_basis": "unknown",
+          "kind": "audit",
+          "scope": "20 筆規則樣本",
+          "recorded_result": "含納入、排除、未解與零命中負向控制",
+          "known_issues": "無 bulk 仿單/OCR；不能外推臨床可靠度",
+          "followup_commits": [
+            "935f9cd799b0843534d9e7df8b7a4fb1bf3f5814"
+          ],
+          "validity": "historical_only",
+          "current_interpretation": "保留可追溯抽樣範圍",
+          "last_report_commit": "21a026a9576b2c89ff936e475b041d734370ae5d",
+          "last_report_commit_date": "2026-07-14T11:45:56+08:00",
+          "working_tree_state": "tracked",
+          "sha256": "d0801a53306840a5c3a6a591c2ced97d78b333e502074de0c75c22897e0a4743",
+          "preserved_snapshot": "docs/project-management/evidence/report-versions/AUD-026-registered.raw"
+        }
+      ],
+      "sha256_normalization": "lf"
     },
     {
       "audit_id": "AUD-027",
@@ -682,11 +910,34 @@
         "935f9cd799b0843534d9e7df8b7a4fb1bf3f5814"
       ],
       "validity": "historical_only",
-      "current_interpretation": "只資料成果，不是發布驗證",
+      "current_interpretation": "只資料成果，不是發布驗證 2026-11-02：Only LF/CRLF representation differs; report text and conclusions unchanged.",
       "last_report_commit": "27e82ef67145b9d5b6c5f74de9513caf4e4721b2",
       "last_report_commit_date": "2026-07-14T12:19:58+08:00",
       "working_tree_state": "tracked",
-      "sha256": "2c5b48ef8d963b5cbd7e24c0b9e3b2905446ca007d8a294ac88d996d389308ec"
+      "sha256": "08cc36159cc6ad3cd3fead5fd08a5ec97be985aa9bac55e7621b63b3dced965c",
+      "previous_versions": [
+        {
+          "audit_id": "AUD-027",
+          "path": "data/suppository_meds_rebuild_20260714/build_summary.md",
+          "audit_date": "unknown",
+          "date_basis": "unknown",
+          "kind": "build_report",
+          "scope": "塞劑 Phase 1",
+          "recorded_result": "基於既有快取的資料建置",
+          "known_issues": "optional detail 不補猜測",
+          "followup_commits": [
+            "935f9cd799b0843534d9e7df8b7a4fb1bf3f5814"
+          ],
+          "validity": "historical_only",
+          "current_interpretation": "只資料成果，不是發布驗證",
+          "last_report_commit": "27e82ef67145b9d5b6c5f74de9513caf4e4721b2",
+          "last_report_commit_date": "2026-07-14T12:19:58+08:00",
+          "working_tree_state": "tracked",
+          "sha256": "2c5b48ef8d963b5cbd7e24c0b9e3b2905446ca007d8a294ac88d996d389308ec",
+          "preserved_snapshot": "docs/project-management/evidence/report-versions/AUD-027-registered.raw"
+        }
+      ],
+      "sha256_normalization": "lf"
     },
     {
       "audit_id": "AUD-028",
@@ -701,11 +952,34 @@
         "935f9cd799b0843534d9e7df8b7a4fb1bf3f5814"
       ],
       "validity": "historical_only",
-      "current_interpretation": "正式匯出排除待核候選",
+      "current_interpretation": "正式匯出排除待核候選 2026-11-02：Only LF/CRLF representation differs; report text and conclusions unchanged.",
       "last_report_commit": "27e82ef67145b9d5b6c5f74de9513caf4e4721b2",
       "last_report_commit_date": "2026-07-14T12:19:58+08:00",
       "working_tree_state": "tracked",
-      "sha256": "39c2527951fe390607aa926668605199bb2b1f741ad0ec12789aece92c899cf0"
+      "sha256": "a3c74b0e2b36afd35cec6677ffde28cc6bce5d4236ac5b5835f83c7182a045a1",
+      "previous_versions": [
+        {
+          "audit_id": "AUD-028",
+          "path": "data/suppository_meds_rebuild_20260714/data_quality_report.md",
+          "audit_date": "unknown",
+          "date_basis": "unknown",
+          "kind": "audit",
+          "scope": "148 正式產品",
+          "recorded_result": "直腸85/陰道63，65 manual review，作用範圍32 unclear",
+          "known_issues": "65候選未解；選填0%",
+          "followup_commits": [
+            "935f9cd799b0843534d9e7df8b7a4fb1bf3f5814"
+          ],
+          "validity": "historical_only",
+          "current_interpretation": "正式匯出排除待核候選",
+          "last_report_commit": "27e82ef67145b9d5b6c5f74de9513caf4e4721b2",
+          "last_report_commit_date": "2026-07-14T12:19:58+08:00",
+          "working_tree_state": "tracked",
+          "sha256": "39c2527951fe390607aa926668605199bb2b1f741ad0ec12789aece92c899cf0",
+          "preserved_snapshot": "docs/project-management/evidence/report-versions/AUD-028-registered.raw"
+        }
+      ],
+      "sha256_normalization": "lf"
     },
     {
       "audit_id": "AUD-029",
@@ -720,11 +994,34 @@
         "935f9cd799b0843534d9e7df8b7a4fb1bf3f5814"
       ],
       "validity": "historical_only",
-      "current_interpretation": "保留CSV證據",
+      "current_interpretation": "保留CSV證據 2026-11-02：Only LF/CRLF representation differs; report text and conclusions unchanged.",
       "last_report_commit": "27e82ef67145b9d5b6c5f74de9513caf4e4721b2",
       "last_report_commit_date": "2026-07-14T12:19:58+08:00",
       "working_tree_state": "tracked",
-      "sha256": "35bacb5982e3333f69ded191c3a339bb0798fe25b687c8f2a0fd44cb1be472b5"
+      "sha256": "cd2249bd35d6e37f1e62cf8362a72d52d54c6cf583b36bc57ce922159b465295",
+      "previous_versions": [
+        {
+          "audit_id": "AUD-029",
+          "path": "data/suppository_meds_rebuild_20260714/sample_validation.md",
+          "audit_date": "unknown",
+          "date_basis": "unknown",
+          "kind": "audit",
+          "scope": "20 筆含正負向對照",
+          "recorded_result": "劑型/途徑/名稱規則通過文件記錄",
+          "known_issues": "非個別藥證當前效力查核",
+          "followup_commits": [
+            "935f9cd799b0843534d9e7df8b7a4fb1bf3f5814"
+          ],
+          "validity": "historical_only",
+          "current_interpretation": "保留CSV證據",
+          "last_report_commit": "27e82ef67145b9d5b6c5f74de9513caf4e4721b2",
+          "last_report_commit_date": "2026-07-14T12:19:58+08:00",
+          "working_tree_state": "tracked",
+          "sha256": "35bacb5982e3333f69ded191c3a339bb0798fe25b687c8f2a0fd44cb1be472b5",
+          "preserved_snapshot": "docs/project-management/evidence/report-versions/AUD-029-registered.raw"
+        }
+      ],
+      "sha256_normalization": "lf"
     },
     {
       "audit_id": "AUD-030",

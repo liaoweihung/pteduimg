@@ -169,3 +169,11 @@ python -B scripts/test_project_change_tracker.py
 content_sha256、source_sha256 或已知問題。更新全域值前須驗證索引、兩份 sitemap、
 PWA 與增量回歸；更新頁面領域前須驗證受影響頁與無關頁保護。
 manifest 不是錯誤忽略清單，歷史診斷仍保留原退出碼。
+
+### 報告雜湊的換行模式
+
+報告預設仍按原始 bytes 驗證。只有已核對為相同文字、並保存原始 SHA-256 與
+byte-exact 歷史快照的登記，才可明列 `sha256_normalization: lf`；此模式只將
+CRLF 轉 LF，不刪空白、不清理文字、不改醫療／圖卡的 content_sha256/source_sha256。
+實質文字異動仍失敗；檔案缺失仍同時回報缺證與報告不符。未知的模式會報錯。
+`evidence/report-versions/*.raw` 指定 -text，避免 Git 改寫已存證的原始 bytes。
