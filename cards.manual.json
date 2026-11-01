@@ -2555,6 +2555,7 @@
     "order": 28,
     "hidden": false,
     "icon": "🇯🇵",
+    "showFooter": true,
     "tags": [
       "日本成藥",
       "日本OTC藥品",

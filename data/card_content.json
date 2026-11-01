@@ -10079,5 +10079,47 @@
     ],
     "matchConfidence": "high",
     "needsMedicalReview": true
+  },
+  {
+    "cardId": "japan_otc_drug_classification",
+    "title": "日本成藥的分級",
+    "image": "img/japan_otc_drug_classification.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/japan_otc_drug_classification.html",
+    "summary": "日本成藥依風險分為第一類、第二類（含指定第二類）與第三類。第一類風險最高需藥劑師說明；第二與三類可由登錄販賣者販售。購買日本藥品與回台限量重點整理。",
+    "sections": [
+      {
+        "heading": "第一類醫藥品（風險最高）",
+        "text": "第一類醫藥品因副作用或藥物交互作用風險較高，日本法規規定必須由「藥劑師」面對面提供書面說明與諮詢後方可販售。若藥妝店當班無藥劑師駐店，則無法結帳購買。常見代表品項如：H2 阻斷劑胃藥（Gaster 10）、Loxoprofen 止痛藥（Loxonin S）、Minoxidil 生髮液等。"
+      },
+      {
+        "heading": "第二類與指定第二類醫藥品（風險中等）",
+        "text": "第二類醫藥品可由藥劑師或「登錄販賣者」販售。其中外盒標記「[2]」或「(2)」者為「指定第二類醫藥品」，通常含有鎮靜（如 Bromovalerylurea）、止咳（如 Dihydrocodeine）或類固醇等成分，孕婦、幼童及慢性病患者應特別注意使用禁忌與警語。常見品項包括綜合感冒藥、EVE 系列止痛藥、鼻炎噴劑等。"
+      },
+      {
+        "heading": "第三類醫藥品（風險相對較低）",
+        "text": "第三類醫藥品主要用於日常保健、輕微不適或缺乏症補充，副作用風險相對較低，藥劑師與登錄販賣者皆可販售。常見代表包括維生素 B 群（如合利他命 Alinamin 系列）、消化整腸益生菌（如欣表飛鳴）、外用止癢貼片及一般眼藥水等。"
+      },
+      {
+        "heading": "旅日買藥重要觀念與回台限量",
+        "text": "藥品分級代表的是副作用與相互作用之風險高低，而非藥效強弱排名。入境台灣旅客攜帶自用非處方藥，依衛生福利部與海關規定，每種至多 12 瓶（盒、罐、條、支），合計以不超過 36 瓶為限，且僅供個人自用，不得轉售或代購。"
+      }
+    ],
+    "altText": "日本成藥分級比較圖卡：第一類、第二類、指定第二類、第三類醫藥品之風險等級、販售人員資格（藥劑師與登錄販賣者）及旅日購藥注意事項",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-11-01",
+    "updatedAt": "2026-11-01",
+    "references": [
+      {
+        "title": "日本厚生勞動省（MHLW）：一般用醫藥品販賣制度與分級規範",
+        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000082514.html"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：國人出入境攜帶個人自用藥品限量規範",
+        "url": "https://www.fda.gov.tw/TC/siteContent.aspx?sid=3928"
+      }
+    ],
+    "revisionCredit": "本站整理靜態文字、法規重點及核對官方來源"
   }
 ]
