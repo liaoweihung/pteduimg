@@ -140,3 +140,32 @@ python -B scripts/test_project_change_tracker.py
 處理一頁時，先回答「已有哪個報告、證據是哪個版本、這次哪些欄位真的變了」。若只因報告變老而無新變更，不重新看全部圖片；若某筆簽核內容指紋不同，保留舊簽核作歷史，針對差異另開待審。歷史 `high`、PASS、ready_for_site、目前有文字或已能生成都不是臨床批准。
 
 自 2026-10-21 起，AGENTS 與圖卡技能都把變更追蹤列為收尾必做項目，GitHub 另有唯讀檢查。這些機制只補上追溯閉環；仍只更新本次受影響資料，不重做全站醫療盤點。
+
+## 規則指紋 v2（2026-11-02）
+
+`rules_version=2`；`rules_sha256` 是當頁適用規則領域的聚合值，
+`rules_v1_sha256` 保存遷移前清冊的原值，不重新計算或視為已通過。
+歷史映射、來源 Git revision、舊 CSV hash 及全域領域驗證值保存於
+`rules-v2.json`；逐頁前後對照與驗證結果見 evidence 的遷移紀錄。
+舊 checkout 沒有 manifest 時仍按 v1 六檔規則及舊欄位驗證。
+
+規則實作為 `scripts/rule_fingerprints.py`：
+
+- page：build.py 頁面生成、SEO、系列導覽函式的 AST 與遞迴本機相依，及共用頁首。
+- footer：頁尾程式、模板、base.css 的頁尾樣式；套用至產生器選用或現有 HTML 實際使用頁尾的頁面。
+- acne_topic：青春痘主題判定、主題返回導覽；只套用真實適用系列。
+- pilot：四頁 Pilot 導覽、樣式與 navigation 資料；只套用四頁。
+- retirement：退出頁產生器，只套用退出頁。
+- engine：指紋機制本身，變更時所有頁面須技術重驗。
+- global：完整建置器、增量執行器及其共用規則，涵蓋索引、sitemap、PWA 與全域生成。
+  此領域在 manifest 單獨檢查，不作為一般頁面的 rules_sha256 輸入。
+
+函式以 AST（不含位置與註解）追蹤傳遞相依；未解析的匯入保留 import 宣告，
+外部本機模組按上述領域另行納入。新增外部相依或動態載入時必須擴充領域及負向測試，
+不得只刷新 hash。全域規則變更仍會產生 domain drift 錯誤，並要求全域產物技術重驗。
+新頁需在 manifest 的歷史映射登記 `not_applicable:new-v2-page`，不得捏造 v1 hash。
+
+只有完成相應技術重驗才可更新領域值與適用頁指紋；不改人工簽核、醫療日期、
+content_sha256、source_sha256 或已知問題。更新全域值前須驗證索引、兩份 sitemap、
+PWA 與增量回歸；更新頁面領域前須驗證受影響頁與無關頁保護。
+manifest 不是錯誤忽略清單，歷史診斷仍保留原退出碼。

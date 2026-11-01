@@ -19,6 +19,8 @@ on:
       - 'build.py'
       - 'scripts/build_dashboard.py'
       - 'scripts/check_project_management.py'
+      - 'scripts/rule_fingerprints.py'
+      - 'docs/project-management/rules-v2.json'
       - 'scripts/site_footer.py'
       - 'scripts/site_header.py'
       - 'scripts/acne_pilot.py'
