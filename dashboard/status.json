@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-01T12:38:26+08:00",
-  "baseline": "29ac9b7fbb7a427c4bf78e3f7b349b4e3da60803",
-  "scope": "網站來源快照；版本 29ac9b7f",
+  "generatedAt": "2026-11-01T13:02:34+08:00",
+  "baseline": "8b142d384fbb0ea530bc90dbaac4a3b48f395aea",
+  "scope": "網站來源快照；版本 8b142d38",
   "counts": {
     "cards": 402,
     "series": 89,
@@ -2616,18 +2616,6 @@
       ]
     },
     {
-      "title": "日本成藥的分級",
-      "path": "cards/japan_otc_drug_classification.html",
-      "series": "japan_otc_drug_classification",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
-      ]
-    },
-    {
       "title": "常用外傷用中成藥",
       "path": "cards/jin_huang_san.html",
       "series": "common_trauma_tcm",
@@ -4062,31 +4050,31 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 251,
+      "machine_pass": 252,
       "partial": 1,
-      "missing": 150
+      "missing": 149
     },
     "reference_status": {
-      "missing": 235,
-      "machine_pass": 167
+      "missing": 234,
+      "machine_pass": 168
     },
     "date_status": {
-      "missing": 235,
-      "machine_pass": 146,
+      "missing": 234,
+      "machine_pass": 147,
       "partial": 21
     },
     "footer_status": {
-      "missing": 270,
-      "machine_pass": 132
+      "missing": 269,
+      "machine_pass": 133
     },
     "jsonld_status": {
-      "machine_pass": 210,
-      "missing": 192
+      "machine_pass": 211,
+      "missing": 191
     }
   },
   "sync": {
-    "pages": 403,
-    "fields": 409,
+    "pages": 402,
+    "fields": 408,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -5492,12 +5480,6 @@
       },
       {
         "page": "idofen_suspension",
-        "fields": [
-          "rules_sha256"
-        ]
-      },
-      {
-        "page": "japan_otc_drug_classification",
         "fields": [
           "rules_sha256"
         ]
