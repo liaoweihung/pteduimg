@@ -29,7 +29,7 @@ description: 根據圖卡與網頁文字交接規範（handoff.json 內容包）
 
 ### 1. 輸入與內容
 
-往後產稿與跨 AI 交接使用 [圖卡與網頁文字交接規範 v1.1](../../../docs/card-content-handoff-v1.md) 的 JSON 內容包（`<series_id>.handoff.json`，`schemaVersion: "pteduimg-handoff/1.1"`）：
+往後產稿與跨 AI 交接使用 [圖卡與網頁文字交接規範 v1.2](../../../docs/card-content-handoff-v1.md) 的 JSON 內容包（`<series_id>.handoff.json`，`schemaVersion: "pteduimg-handoff/1.2"`，仍接受 1.1）。**製圖前確認 `reviews` 已有獨立 AI 內容審核 `pass`，沒有就停止並告知使用者**：
 - **`pages[].cardCopy`**（`generationPrompt`、`title`、`blocks` 的 `text`／`table`、`footer`）：作為圖片上的精確定稿文案與製圖資訊。
 - **`pages[].contentRecord`**：作為逐張網頁正文與 SEO／AEO 的唯一來源（`title`、`summary`、`sections`、`altText` 等），用於內容脈絡與圖文一致性檢查；不再另維護與正文不同的 SEO／AEO 標題或摘要。
 - 若使用者直接提供分段定稿文字，亦依相同分工區分圖片文案與網頁正文。
@@ -97,7 +97,7 @@ description: 根據圖卡與網頁文字交接規範（handoff.json 內容包）
   - 交付實際圖卡，並保留可修改的工作檔（如未疊加 Logo 的底圖、合成腳本或中間素材）。
   - 需要網站使用時另輸出 WebP（如以 Pillow `quality=90, method=6` 轉換，**嚴禁覆寫品牌 PNG 母版**），並保留原始高品質圖片。
 - **逐項成品檢查**：
-  - 實際開啟含 Logo 合成及格式轉換後的最終圖片，必要時局部放大；無法讀圖時標示「圖文一致性未驗證」，不得設為 `high`。依交接規範第 8 節處理差異並沿用 evidence 留證，區分腳本同步、AI 圖文核對與人類醫療簽核。
+  - 實際開啟含 Logo 合成及格式轉換後的最終圖片，必要時局部放大；無法讀圖時標示「圖文一致性未驗證」，不得設為 `high`。依交接規範第 8 節處理差異並沿用 evidence 留證，區分腳本同步、AI 圖文核對與人類醫療簽核。本技能的自我檢查不能取代第 5 步：完成後須交由不同於製圖者的 AI 做圖文一致審核，結果記入 `reviews`。
   1. **圖片尺寸與比例**：確認為 9:16 比例（預設 1080×1920）或當次指定尺寸。
   2. **文字與醫療數值**：確認台灣繁體中文字、藥名、成分、濃度、數值、單位、年齡、頻次、步驟與警語與定稿完全一致。
   3. **表格配對**：確認表格列欄配對正確，未擅改劑量對應。
@@ -109,4 +109,4 @@ description: 根據圖卡與網頁文字交接規範（handoff.json 內容包）
   - 發現錯字或版面問題先修正；未解決項目明列，**不宣稱全部通過**。
 - **網站修改界線與流程銜接**：
   - **只要求製作圖卡時，不自動修改網站**（不變更 `cards.json`、`cards.manual.json`、`data/card_content.json`，不執行 `build.py`，不執行 Commit、Push 或部署）。
-  - 使用者另要求將圖卡加入網站時，銜接 [圖卡與網頁文字交接規範 v1.1](../../../docs/card-content-handoff-v1.md) 與既有 [skills/pteduimg-card-manager/SKILL.md](../../../skills/pteduimg-card-manager/SKILL.md)，保留定稿文字，僅取 `series.metadata` 與 `pages[].contentRecord` 依欄位合併至現有網站資料（不將交接外層欄位寫入網站 JSON），並沿用現行建置與專案管理流程。
+  - 使用者另要求將圖卡加入網站時，銜接 [圖卡與網頁文字交接規範 v1.2](../../../docs/card-content-handoff-v1.md) 與既有 [skills/pteduimg-card-manager/SKILL.md](../../../skills/pteduimg-card-manager/SKILL.md)，保留定稿文字，僅取 `series.metadata` 與 `pages[].contentRecord` 依欄位合併至現有網站資料（不將交接外層欄位寫入網站 JSON），並沿用現行建置與專案管理流程。
