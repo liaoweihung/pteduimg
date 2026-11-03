@@ -114,22 +114,42 @@
     {
       "audit_id": "AUD-007",
       "path": "data/card_text_web_integration_report.md",
-      "audit_date": "2026-11-02",
-      "date_basis": "本次實際核對生成報告及網站結構檢查",
+      "audit_date": "2026-11-04",
+      "date_basis": "CR-2026-067 瘀青藥膏系列隔離完整建置後實際核對生成報告",
       "kind": "generated_report",
-      "scope": "257張靜態文字頁的機械整合報告",
-      "recorded_result": "257成功、0失敗；機械整合不代表醫療簽核。",
+      "scope": "260張靜態文字頁的機械整合報告",
+      "recorded_result": "260成功、0失敗；機械整合不代表醫療簽核。",
       "known_issues": "本次另比較段落文字；09_australia_usa_china 字詞差異，原檢查未覆蓋",
       "followup_commits": [
         "333ed52512cfbaf2b0f900e76605bc0b5c8264cc"
       ],
       "validity": "conflict",
-      "current_interpretation": "本次新頁具靜態文字、來源與雙日期；保留既有 conflict 與已知問題，機械整合不是醫療簽核。建置前235頁版本保留於 previous_versions。 2026-11-02：Registered 236-page report preserved from Git 8855a33; current generated report has 257 pages, 0 failures.",
+      "current_interpretation": "CR-2026-067 新增 bruising_care_1、2、4 三頁靜態文字、來源與雙日期（共260頁）；保留既有 conflict 與已知問題，機械整合不是醫療簽核。前一版257頁報告由Git 359c13c保存於 previous_versions。",
       "last_report_commit": "unknown",
       "last_report_commit_date": "unknown",
       "working_tree_state": "tracked",
-      "sha256": "aa3efa88e4a1d32a6e91aee5e22c54c63555c0aae75c954f6b0b8b2d5dfb2556",
+      "sha256": "47435472006e42b5133d5b937b4cfdb551379dffabf19e10683c5369dd145904",
       "previous_versions": [
+        {
+          "audit_id": "AUD-007",
+          "path": "data/card_text_web_integration_report.md",
+          "audit_date": "2026-11-02",
+          "date_basis": "本次實際核對生成報告及網站結構檢查",
+          "kind": "generated_report",
+          "scope": "257張靜態文字頁的機械整合報告",
+          "recorded_result": "257成功、0失敗；機械整合不代表醫療簽核。",
+          "known_issues": "本次另比較段落文字；09_australia_usa_china 字詞差異，原檢查未覆蓋",
+          "followup_commits": [
+            "333ed52512cfbaf2b0f900e76605bc0b5c8264cc"
+          ],
+          "validity": "conflict",
+          "current_interpretation": "本次新頁具靜態文字、來源與雙日期；保留既有 conflict 與已知問題，機械整合不是醫療簽核。建置前235頁版本保留於 previous_versions。 2026-11-02：Registered 236-page report preserved from Git 8855a33; current generated report has 257 pages, 0 failures. 2026-11-04：此257頁版本由Git 359c13c保存。",
+          "last_report_commit": "359c13cf2934463252faf5bd6ec0df05b4750e09",
+          "last_report_commit_date": "2026-11-03T23:56:34+08:00",
+          "working_tree_state": "tracked",
+          "sha256": "aa3efa88e4a1d32a6e91aee5e22c54c63555c0aae75c954f6b0b8b2d5dfb2556",
+          "sha256_normalization": "lf"
+        },
         {
           "audit_id": "AUD-007",
           "path": "data/card_text_web_integration_report.md",

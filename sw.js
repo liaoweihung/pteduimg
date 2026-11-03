@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v8270c181fb409cc88b4f66ae';
+const CACHE_NAME = 'pwa-cache-v3b1c6ab5ad6f11c1196ac215';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -894,7 +894,11 @@ const coreUrlsToCache = [
 // === 摰??挾 ===
 // Generated from imageUpdatedAt in data/card_content.json.
 const revisedImageUrls = [
-  "./img/over_one_oint_01.webp"
+  "./img/over_one_oint_01.webp",
+  "./img/bruising_care_1.webp",
+  "./img/bruising_care_2.webp",
+  "./img/bruising_care_3.webp",
+  "./img/bruising_care_4.webp"
 ];
 
 self.addEventListener('install', (e) => {

@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：257
+- 成功加入文字頁數：260
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -162,7 +162,10 @@
 | wound_dressings | 人工皮怎麼換？先慢慢取下 | https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_change_steps.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | wound_dressings | 人工皮怎麼貼？一步一步做 | https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_apply_steps.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | fall_wound | 傷口正在變好，還是需要就醫？ | https://liaoweihung.github.io/pteduimg/cards/wound_healing_signs.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| bruising_care | 撞到瘀青，前 48 小時先冰敷 | https://liaoweihung.github.io/pteduimg/cards/bruising_care_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| bruising_care | 瘀青藥膏怎麼擦？薄薄一層就好 | https://liaoweihung.github.io/pteduimg/cards/bruising_care_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | bruising_care | 瘀青藥膏，別靠用力揉開 | https://liaoweihung.github.io/pteduimg/cards/bruising_care_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| bruising_care | 這些情況，別只擦藥膏 | https://liaoweihung.github.io/pteduimg/cards/bruising_care_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | postoperative_wound | 縫合／術後傷口，回家怎麼照顧？ | https://liaoweihung.github.io/pteduimg/cards/postoperative_wound.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | diabetic_foot | 糖尿病足：腳有傷口，不痛也要處理 | https://liaoweihung.github.io/pteduimg/cards/diabetic_foot.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | elderly_skin_tear | 長者皮膚撕裂傷，先保護掀起的皮 | https://liaoweihung.github.io/pteduimg/cards/elderly_skin_tear.html | 是 | 是 | 是 | 是 | 是 | 無 |

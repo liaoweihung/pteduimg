@@ -5503,6 +5503,110 @@
   },
   {
     "cardId": "bruising_care",
+    "title": "撞到瘀青，前 48 小時先冰敷",
+    "image": "img/bruising_care_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/bruising_care_1.html",
+    "summary": "撞到瘀青（黑青、淤青）怎麼辦？沒破皮的瘀青，受傷後 48 小時內先冰敷：冰袋包毛巾，每次 10–15 分鐘，一天數次。皮膚沒破可依說明書輕塗瘀青藥膏，不用等 48 小時；48–72 小時後不再腫、不再熱痛，才改熱敷。",
+    "sections": [
+      {
+        "heading": "冰敷怎麼做",
+        "text": "冰袋包毛巾，每次 10–15 分鐘，一天數次；不要直接貼皮膚。皮膚發紫、出現斑塊或過度麻木時立刻移開。"
+      },
+      {
+        "heading": "前期避免",
+        "text": "熱敷、用力揉、推拿、滾雞蛋。剛受傷時這些做法可能讓腫脹更明顯。"
+      },
+      {
+        "heading": "可以擦藥嗎",
+        "text": "皮膚沒破，可依說明書輕塗瘀青藥膏，不用等 48 小時；食藥署提醒外力造成的瘀青先冰敷後再上藥膏。"
+      },
+      {
+        "heading": "48–72 小時後",
+        "text": "不再腫、不再熱痛，才改熱敷。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "有傷口或破皮時，不要冰敷或擦瘀青藥膏在傷口上，請依傷口方式處理。"
+      }
+    ],
+    "altText": "瘀青照護衛教圖卡：撞到瘀青後 48 小時內先用毛巾包冰袋冰敷，每次 10–15 分鐘；避免熱敷、揉、推拿、滾雞蛋；皮膚沒破可輕塗瘀青藥膏；48–72 小時後不再腫才熱敷。",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱",
+    "updatedAt": "2026-11-04",
+    "sourceCheckedAt": "2026-11-04",
+    "revisionCredit": "藥師（網站作者）確認文案，AI 協助資料查核與網頁整理",
+    "references": [
+      {
+        "title": "Gloucestershire Hospitals NHS Foundation Trust：Ice and heat treatment（GHPI0659_02_25，Emergency Medicine，review due 2028-02）",
+        "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/ice-and-heat-treatment/"
+      },
+      {
+        "title": "TVBS 健康2.0：食藥署「藥博士 正藥說」說明瘀青藥膏成分與冰敷、熱敷時機（2023-09-07，轉述食藥署臉書）",
+        "url": "https://health.tvbs.com.tw/medical/341832"
+      },
+      {
+        "title": "MedlinePlus Medical Encyclopedia：Bruise（U.S. National Library of Medicine，review date 2025-04-01）",
+        "url": "https://medlineplus.gov/ency/article/007213.htm"
+      }
+    ],
+    "imageUpdatedAt": "2026-11-04"
+  },
+  {
+    "cardId": "bruising_care",
+    "title": "瘀青藥膏怎麼擦？薄薄一層就好",
+    "image": "img/bruising_care_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/bruising_care_2.html",
+    "summary": "瘀青藥膏怎麼擦？依瘀青大小取量、薄塗一層、輕輕抹開，不用力揉；一般一天 2–3 次依說明書，只擦沒破皮的地方，擦完洗手。台灣核准用於「鈍物創傷後血腫」的瘀青藥膏多含類肝素（MPS），例如喜療瘀凝膠。",
+    "sections": [
+      {
+        "heading": "取量",
+        "text": "依瘀青大小，小範圍少量即可；詳見包裝說明。"
+      },
+      {
+        "heading": "次數",
+        "text": "一般一天 2–3 次，依說明書，不自行加量。各產品上限不同（例如英國 Hirudoid 仿單為最多一天 4 次）。"
+      },
+      {
+        "heading": "手法",
+        "text": "薄塗、輕輕抹開，不用力揉。"
+      },
+      {
+        "heading": "重要提醒",
+        "text": "只擦在沒破皮的地方；擦完洗手。"
+      },
+      {
+        "heading": "補充：瘀青藥膏常見成分",
+        "text": "台灣核准用於「鈍物創傷後之血腫，淺層性靜脈炎之局部治療」的指示藥，主成分多為類肝素（heparinoid、MPS），例如喜療瘀凝膠（衛署藥輸字第025606號）。購買時可看盒上適應症是否寫「血腫」，不確定可問藥師。本頁不接受廠商贊助。"
+      }
+    ],
+    "altText": "瘀青藥膏薄塗三步驟衛教圖卡：取量依瘀青大小少量即可、一天 2–3 次依說明書、薄塗輕輕抹開不用力揉；只擦沒破皮處，擦完洗手。",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱",
+    "updatedAt": "2026-11-04",
+    "sourceCheckedAt": "2026-11-04",
+    "revisionCredit": "藥師（網站作者）確認文案，AI 協助資料查核與網頁整理",
+    "references": [
+      {
+        "title": "Hirudoid Gel（heparinoid 0.3%）Summary of Product Characteristics（emc，Thornton & Ross，2023-11-28 更新）",
+        "url": "https://www.medicines.org.uk/emc/product/1342/smpc"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署 西藥許可證：喜療瘀凝膠 Hirudoid Gel 300mg/100g（衛署藥輸字第025606號，指示藥，適應症：鈍物創傷後之血腫，淺層性靜脈炎之局部治療）",
+        "url": "https://lmspiq.fda.gov.tw/web/DRPIQ/DRPIQ1000Result?licId=02025606"
+      },
+      {
+        "title": "TVBS 健康2.0：食藥署「藥博士 正藥說」說明瘀青藥膏成分與冰敷、熱敷時機（2023-09-07，轉述食藥署臉書）",
+        "url": "https://health.tvbs.com.tw/medical/341832"
+      }
+    ],
+    "imageUpdatedAt": "2026-11-04"
+  },
+  {
+    "cardId": "bruising_care",
     "title": "瘀青藥膏，別靠用力揉開",
     "image": "img/bruising_care_3.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/bruising_care_3.html",
@@ -5529,7 +5633,7 @@
         "text": "不要塗在開放傷口、眼睛或黏膜；使用後洗手。"
       }
     ],
-    "altText": "瘀青藥膏，別靠用力揉開衛教圖卡",
+    "altText": "瘀青藥膏別靠用力揉開衛教圖卡：剛受傷避免用力按摩、依產品指示輕塗在完整皮膚、沿靜脈紅腫或單側腫脹要就醫、越痛越腫先求助；不要塗在傷口、眼睛或黏膜。",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
@@ -5549,7 +5653,64 @@
         "title": "NHS：Phlebitis",
         "url": "https://www.nhs.uk/conditions/phlebitis/"
       }
-    ]
+    ],
+    "imageUpdatedAt": "2026-11-04"
+  },
+  {
+    "cardId": "bruising_care",
+    "title": "這些情況，別只擦藥膏",
+    "image": "img/bruising_care_4.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/bruising_care_4.html",
+    "summary": "瘀青多久會好？什麼時候要就醫？傷口與黏膜不要擦瘀青藥膏；幼兒、孕婦或哺乳、對成分過敏先問藥師。劇痛或無法活動、撞到頭後頭痛嘔吐想睡、腫脹快速變大或麻木，以及吃抗凝血藥後瘀青擴大、沒撞到卻常瘀青、約 2 週沒變淡，都應就醫。",
+    "sections": [
+      {
+        "heading": "不要擦",
+        "text": "傷口、破皮、眼睛、口鼻等黏膜。"
+      },
+      {
+        "heading": "先問藥師",
+        "text": "幼兒、孕婦或哺乳、對成分過敏。"
+      },
+      {
+        "heading": "盡快就醫",
+        "text": "劇痛或無法活動、撞到頭後頭痛嘔吐想睡、腫脹快速變大或麻木。"
+      },
+      {
+        "heading": "吃抗凝血藥或常無故瘀青",
+        "text": "吃抗凝血藥後出現大片或擴大的瘀青；沒撞到卻常瘀青、牙齦流血、經血變多，應就醫評估。"
+      },
+      {
+        "heading": "一直沒有好轉",
+        "text": "約 2 週沒有變淡，或摸到越來越硬的腫塊，應就醫。"
+      },
+      {
+        "heading": "正常恢復",
+        "text": "瘀青會由紅紫→藍黑→綠→黃慢慢變淡，是正常恢復。"
+      }
+    ],
+    "altText": "這些情況別只擦藥膏衛教圖卡：傷口與黏膜不要擦；幼兒、孕婦哺乳、過敏先問藥師；劇痛、撞到頭、腫脹快速變大、吃抗凝血藥後瘀青擴大、常無故瘀青或 2 週沒變淡應就醫；瘀青由紅紫轉黃是正常恢復。",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "reviewStatus": "來源已查閱",
+    "updatedAt": "2026-11-04",
+    "sourceCheckedAt": "2026-11-04",
+    "revisionCredit": "藥師（網站作者）確認文案，AI 協助資料查核與網頁整理",
+    "references": [
+      {
+        "title": "MedlinePlus Medical Encyclopedia：Bruise（U.S. National Library of Medicine，review date 2025-04-01）",
+        "url": "https://medlineplus.gov/ency/article/007213.htm"
+      },
+      {
+        "title": "NHS：Head injury and concussion（When and where to get medical help）",
+        "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/"
+      },
+      {
+        "title": "Hirudoid Gel（heparinoid 0.3%）Summary of Product Characteristics（emc，Thornton & Ross，2023-11-28 更新）",
+        "url": "https://www.medicines.org.uk/emc/product/1342/smpc"
+      }
+    ],
+    "imageUpdatedAt": "2026-11-04"
   },
   {
     "cardId": "postoperative_wound",
