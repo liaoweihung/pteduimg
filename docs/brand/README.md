@@ -47,6 +47,6 @@
 | Antigravity | [GEMINI.md](../../GEMINI.md)／[AGENTS.md](../../AGENTS.md) | 使用根目錄規則，不另建重複品牌規範 |
 | GitHub Copilot | [copilot-instructions.md](../../.github/copilot-instructions.md) | 先讀 AGENTS，再依品牌入口讀共同文件 |
 
-2026-10-23 已將根目錄 `AGENTS.md` 精簡並拆分功能規範，各 AI 入口先讀根入口，再按任務讀取所需文件，不使用 inline include 展開全文。大小、原規範對照與載入驗證見 [AI 指令重構紀錄](../ai-instructions-refactor-2026-10-23.md)。未改動全域設定、權限、hook、模型或 Gemini review 執行器；既有 `ISOLATION_UNVERIFIED` 封鎖維持。
+2026-10-23 已將根目錄 `AGENTS.md` 精簡並拆分功能規範，各 AI 入口先讀根入口，再按任務讀取所需文件，不使用 inline include 展開全文。大小、原規範對照與載入驗證見 [AI 指令重構紀錄](../ai-instructions-refactor-2026-10-23.md)。當時未改動全域設定、權限、hook、模型或審核執行器。2026-11-03 已依使用者要求移除專案 Gemini／Claude 審核工具；前述重構紀錄僅保留當時的驗證結果。
 
 專案入口與引用的靜態檢查不代表各工具已在全新會話載入；實測與未測試狀態以重構紀錄為準，原匯入驗證 JSON 保留為當時快照。設定方式於 2026-10-23 核對官方文件：[Codex AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md)、[Gemini GEMINI.md](https://geminicli.com/docs/cli/gemini-md/)、[Antigravity Rules](https://www.antigravity.google/docs/rules/)、[GitHub Copilot custom instructions](https://docs.github.com/en/copilot/concepts/prompting-and-context/custom-instructions)。
