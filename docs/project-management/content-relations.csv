@@ -479,3 +479,23 @@ REL-d2a770845595c2ae,series:stomach_medicine,has_card,page:stomach_medicine_anta
 REL-0b49762fc9cfa083,series:stomach_medicine,has_card,page:stomach_medicine_alginate,source_observed,series_membership,cards.json,CR-2026-060；新系列第 5 張：海藻酸鹽
 REL-34f1b1f9ba001619,series:stomach_medicine,has_card,page:stomach_medicine_sucralfate,source_observed,series_membership,cards.json,CR-2026-060；新系列第 6 張：Sucralfate
 REL-57d520b6c65ad1bb,series:stomach_medicine,has_card,page:stomach_medicine_timing_summary,source_observed,series_membership,cards.json,CR-2026-060；新系列第 7 張：總整理
+REL-e1ffdaed21b64e62,series:constipation_medicines,has_card,page:constipation_types,source_observed,series_membership,cards.json,CR-2026-066：新系列第 1 張：便祕類型與就醫警訊
+REL-eaf2544f623dce12,series:constipation_medicines,has_card,page:laxative_stimulant,source_observed,series_membership,cards.json,CR-2026-066：新系列第 2 張：刺激性瀉劑
+REL-9fb917a38e360bd7,series:constipation_medicines,has_card,page:laxative_saline,source_observed,series_membership,cards.json,CR-2026-066：新系列第 3 張：鹽類瀉劑（氧化鎂）
+REL-50cce9516f7ca84b,series:constipation_medicines,has_card,page:laxative_bulk,source_observed,series_membership,cards.json,CR-2026-066：新系列第 4 張：膨脹性瀉劑（洋車前子殼）
+REL-abdd83b99eafc04a,series:constipation_medicines,has_card,page:laxative_osmotic,source_observed,series_membership,cards.json,CR-2026-066：新系列第 5 張：滲透性瀉劑（乳果糖、PEG）
+REL-10070ed1608482ef,series:constipation_medicines,has_card,page:laxative_duration,source_observed,series_membership,cards.json,CR-2026-066：新系列第 6 張：便祕藥可以吃多久
+REL-659c4198ac145f73,series:constipation_medicines,has_card,page:laxative_comparison,source_observed,series_membership,cards.json,CR-2026-066：新系列第 7 張：四大類瀉劑總覽比較
+REL-cd5344459f586e90,page:constipation_types,further_reading,page:pregnancy_minor_constipation,source_observed,management,data/card_content.json,懷孕期間便秘可以用什麼？
+REL-86d497999667783e,page:constipation_types,further_reading,page:constipation_cate,source_observed,management,data/card_content.json,便祕用藥怎麼選？口服藥與甘油浣腸各有角色
+REL-ec56fd279dbf18e9,page:constipation_types,further_reading,page:hemorr_sitbath_1,source_observed,management,data/card_content.json,便祕合併痔瘡，坐浴怎麼做？
+REL-b9861c7c6fdb2b78,page:laxative_stimulant,further_reading,page:rec_1,source_observed,management,data/card_content.json,肛門塞劑怎麼用？
+REL-af0bbf4d8ded266e,page:laxative_stimulant,further_reading,page:stomach_medicine_ppi,source_observed,management,data/card_content.json,PPI 胃藥怎麼吃？（PPI 會影響腸溶錠）
+REL-788fb3beaa0083bb,page:laxative_saline,further_reading,page:stomach_medicine_antacid,source_observed,management,data/card_content.json,氧化鎂是胃藥還是便祕藥？
+REL-c2a7547f52785cd5,page:laxative_bulk,further_reading,page:constipation_cate,source_observed,management,data/card_content.json,便祕用藥怎麼選？口服藥與甘油浣腸各有角色
+REL-cce5e20ce56e02bd,page:laxative_osmotic,further_reading,page:lactulose_constipation,source_observed,management,data/card_content.json,乳果糖藥水怎麼吃？杜化液、樂多差異
+REL-edb835b1b6c7718d,page:laxative_duration,further_reading,page:constipation_cate,source_observed,management,data/card_content.json,便祕用藥怎麼選？口服藥與甘油浣腸各有角色
+REL-08db60dec6704b69,page:laxative_duration,further_reading,page:enema_clinical_cond,source_observed,management,data/card_content.json,硬便卡在出口：甘油浣腸何時可以幫忙？
+REL-23d7e3ef2de966fb,page:laxative_comparison,further_reading,page:constipation_cate,source_observed,management,data/card_content.json,便祕用藥怎麼選？口服藥與甘油浣腸各有角色
+REL-e6cf7e7f18ba72ba,page:laxative_comparison,further_reading,page:stomach_medicine_antacid,source_observed,management,data/card_content.json,氧化鎂是胃藥還是便祕藥？
+REL-e248ea5f9f1c3065,page:laxative_comparison,further_reading,page:lactulose_constipation,source_observed,management,data/card_content.json,乳果糖藥水怎麼吃？杜化液、樂多差異

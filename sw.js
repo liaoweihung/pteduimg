@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v3b1c6ab5ad6f11c1196ac215';
+const CACHE_NAME = 'pwa-cache-v830390c549d87fefd1f08a4d';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -206,6 +206,7 @@ const urlsToCache = [
   "./img/condom_lubricant_use.webp",
   "./img/condom_wearing_steps_1.webp",
   "./img/constipation_cate.webp",
+  "./img/constipation_types.webp",
   "./img/contact_lens_eye_drops_1.webp",
   "./img/contact_lens_eye_drops_2.webp",
   "./img/contraceptive_pills_how_to_take.webp",
@@ -308,6 +309,12 @@ const urlsToCache = [
   "./img/lan_3.webp",
   "./img/lan_4.webp",
   "./img/lan_5.webp",
+  "./img/laxative_bulk.webp",
+  "./img/laxative_comparison.webp",
+  "./img/laxative_duration.webp",
+  "./img/laxative_osmotic.webp",
+  "./img/laxative_saline.webp",
+  "./img/laxative_stimulant.webp",
   "./img/macsafe_suspension.webp",
   "./img/methodology_of_exam_Hp.webp",
   "./img/motion_sickness_meds_1.webp",
@@ -866,6 +873,13 @@ const urlsToCache = [
   "./cards/stomach_medicine_alginate.html",
   "./cards/stomach_medicine_sucralfate.html",
   "./cards/stomach_medicine_timing_summary.html",
+  "./cards/constipation_types.html",
+  "./cards/laxative_stimulant.html",
+  "./cards/laxative_saline.html",
+  "./cards/laxative_bulk.html",
+  "./cards/laxative_osmotic.html",
+  "./cards/laxative_duration.html",
+  "./cards/laxative_comparison.html",
   "./cards/acne.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare_2.html",

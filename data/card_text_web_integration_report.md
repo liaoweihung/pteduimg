@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：260
+- 成功加入文字頁數：267
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -265,3 +265,10 @@
 | child_height_weight | 台灣女生身高標準對照表：8～14 歲身高百分位 | https://liaoweihung.github.io/pteduimg/cards/girl_height2.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | child_height_weight | 女生 BMI 正常範圍：6～12 歲兒童 BMI 對照表 | https://liaoweihung.github.io/pteduimg/cards/girlBMI.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | child_height_weight | 孩子想長高怎麼做？睡眠、營養、運動與何時看成長門診 | https://liaoweihung.github.io/pteduimg/cards/height_tips.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| constipation_medicines | 便祕有哪些類型？排便不順先分辨原因與就醫警訊 | https://liaoweihung.github.io/pteduimg/cards/constipation_types.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| constipation_medicines | 刺激性瀉劑怎麼吃？樂可舒、秘可泰、清立飄的服用時間與注意事項 | https://liaoweihung.github.io/pteduimg/cards/laxative_stimulant.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| constipation_medicines | 氧化鎂軟便怎麼吃？鹽類瀉劑的作用、腎功能與藥物間隔 | https://liaoweihung.github.io/pteduimg/cards/laxative_saline.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| constipation_medicines | 膨脹性瀉劑怎麼吃？洋車前子殼的喝水量、起效時間與使用限制 | https://liaoweihung.github.io/pteduimg/cards/laxative_bulk.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| constipation_medicines | 滲透性瀉劑怎麼用？乳果糖、PEG（腹樂疏）的起效時間與清腸劑差別 | https://liaoweihung.github.io/pteduimg/cards/laxative_osmotic.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| constipation_medicines | 便祕藥可以吃多久？哪些可長期使用、何時停藥與會不會依賴 | https://liaoweihung.github.io/pteduimg/cards/laxative_duration.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| constipation_medicines | 便祕藥怎麼選？四大類瀉劑比較、作用原理與挑選原則 | https://liaoweihung.github.io/pteduimg/cards/laxative_comparison.html | 是 | 是 | 是 | 是 | 是 | 無 |

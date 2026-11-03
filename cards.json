@@ -3743,5 +3743,55 @@
       "stomach_medicine-5",
       "stomach_medicine-6"
     ]
+  },
+  "constipation_medicines": {
+    "title": "排便不順，可以怎麼做？",
+    "category": "public_education",
+    "showFooter": true,
+    "topics": [
+      "gastrointestinal",
+      "elimination_care"
+    ],
+    "order": 0.05,
+    "hidden": false,
+    "icon": "🚽",
+    "tags": [
+      "便祕",
+      "瀉劑",
+      "軟便劑",
+      "排便不順",
+      "氧化鎂",
+      "樂可舒",
+      "乳果糖",
+      "洋車前子",
+      "四大類瀉劑",
+      "便祕藥吃多久"
+    ],
+    "steps": [
+      "img/constipation_types.webp",
+      "img/laxative_stimulant.webp",
+      "img/laxative_saline.webp",
+      "img/laxative_bulk.webp",
+      "img/laxative_osmotic.webp",
+      "img/laxative_duration.webp",
+      "img/laxative_comparison.webp"
+    ],
+    "favorite_keys": [
+      "constipation_medicines-0",
+      "constipation_medicines-1",
+      "constipation_medicines-2",
+      "constipation_medicines-3",
+      "constipation_medicines-4",
+      "constipation_medicines-5",
+      "constipation_medicines-6"
+    ],
+    "related_series": [
+      "stomach_medicine",
+      "enema_use",
+      "pediatric_gi_syrup",
+      "pregnancy_minor_ailments",
+      "hemorr_sitbath",
+      "rectal"
+    ]
   }
 }

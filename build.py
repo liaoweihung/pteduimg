@@ -1182,7 +1182,7 @@ def generate_card_pages(cards, seo_index, card_content_index, only_image_ids=Non
             seo = seo_index.get(page_path) or fallback_seo_for_card(card_id, card, step, index)
             card_content = card_content_index.get(step.replace("\\", "/"))
             page_html = render_card_page(card_id, card, step, index, seo, card_content,
-                                        render_series_links(card, cards), seo_index,
+                                        render_series_links(card, cards, card_content), seo_index,
                                         pilot=pilot_pages.get(image_id))
             if image_id in pilot_pages:
                 page_html = page_html.replace("  </style>", ACNE_PILOT_STYLES + footer_styles(ROOT) + "\n  </style>", 1)
@@ -1199,17 +1199,25 @@ def generate_card_pages(cards, seo_index, card_content_index, only_image_ids=Non
     return rendered if render_only else generated_pages
 
 
-def render_series_links(card, cards):
+def render_series_links(card, cards, card_content=None):
+    parts = []
+    note = card.get('image_numbering_note')
+    if note:
+        parts.append(f'<p class="meta">{esc(note)}</p>')
+    if card_content and card_content.get('related_links'):
+        page_links = []
+        for item in card_content['related_links']:
+            page_links.append(f'<li><a href="{esc(item["url"])}">{esc(item["title"])}</a></li>')
+        if page_links:
+            parts.append('<nav aria-label="推薦閱讀"><div class="section-title">推薦閱讀</div><ul style="line-height:2.4; margin:0; padding-left:20px;">' + ''.join(page_links) + '</ul></nav>')
     links = []
     for key in card.get('related_series', []):
         related = cards.get(key)
         if not related or related.get('hidden') or not related.get('steps'):
             continue
         links.append(f'<li><a href="../{esc(page_for_image(related["steps"][0]))}">{esc(related["title"])}</a></li>')
-    note = card.get('image_numbering_note')
-    parts = [f'<p class="meta">{esc(note)}</p>'] if note else []
     if links:
-        parts.append('<nav aria-label="相關系列"><h2 class="section-title">接著可以看</h2><ul style="line-height:2.4">' + ''.join(links) + '</ul></nav>')
+        parts.append('<nav aria-label="相關系列"><div class="section-title">相關系列</div><ul style="line-height:2.4; margin:0; padding-left:20px;">' + ''.join(links) + '</ul></nav>')
     return '\n      ' + '\n      '.join(parts) if parts else ''
 
 

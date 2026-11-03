@@ -10490,5 +10490,632 @@
     ],
     "matchConfidence": "high",
     "needsMedicalReview": true
+  },
+  {
+    "cardId": "constipation_medicines",
+    "image": "img/constipation_types.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/constipation_types.html",
+    "title": "便祕有哪些類型？排便不順先分辨原因與就醫警訊",
+    "summary": "便祕不只是排便次數少，糞便乾硬、排便費力或解不乾淨也算。常見原因包括糞便乾硬、腸道傳輸較慢和排便時肌肉無法放鬆，正在服用的藥物也可能造成便祕；若有血便、體重不明原因減輕、持續腹痛或嘔吐，應先就醫。",
+    "sections": [
+      {
+        "heading": "怎樣算是便祕？",
+        "text": "便祕的表現包括每週排便少於 3 次、糞便又乾又硬、排便很用力或會痛，以及排完仍覺得解不乾淨。每個人的排便頻率不同，一天 3 次到三天 1 次都可能是正常範圍，重點是和自己平常的狀況比較。"
+      },
+      {
+        "heading": "便祕常見的三種樣貌",
+        "text": "第一種是糞便乾硬，常和水分、膳食纖維攝取不足有關。第二種是腸道傳輸較慢，糞便在大腸停留太久，常好幾天都沒有便意。第三種是排便出口協調問題，有便意卻排不出來，排便時骨盆底肌肉沒有適當放鬆。三種情況可能同時存在。"
+      },
+      {
+        "heading": "有便意和沒便意，可以用來選藥嗎？",
+        "text": "不建議。有沒有便意只是初步觀察的線索，不能用來自行決定使用哪一類瀉劑。像排便出口協調問題，單靠瀉劑效果常有限，可能需要醫師安排檢查或排便訓練。反覆便祕或用藥效果不好時，請就醫找出原因。"
+      },
+      {
+        "heading": "哪些藥物可能造成便祕？",
+        "text": "可能讓便祕變嚴重的藥物包括：麻醉性止痛藥、鐵劑、含鋁或鈣的制酸劑（胃藥）、鈣離子阻斷劑等部分降血壓藥、利尿劑、抗膽鹼藥與解痙劑、抗癲癇藥、部分抗憂鬱藥，以及巴金森氏症藥物。若懷疑是藥物造成，請先和醫師或藥師討論，不要自行停藥或改藥。"
+      },
+      {
+        "heading": "生活中有哪些因素會影響排便？",
+        "text": "膳食纖維或水分攝取不足、活動量少、有便意卻常忍住、旅行或作息改變、懷孕、年紀增長，都可能讓排便變得不順。部分疾病也會影響排便，例如糖尿病、甲狀腺功能低下、巴金森氏症或腸道本身的問題。"
+      },
+      {
+        "heading": "瀉劑有哪幾類？",
+        "text": "常見的便祕藥物可分為四類：刺激性瀉劑，促進大腸蠕動；鹽類瀉劑，例如氧化鎂，利用鎂鹽把水留在腸道；膨脹性瀉劑，例如洋車前子殼，吸水增加糞便體積；滲透性瀉劑，例如乳果糖與 PEG，把水分留在腸內軟化糞便。各類的作用時間與注意事項不同，請參考本系列其他圖卡。"
+      },
+      {
+        "heading": "哪些情況要先就醫？",
+        "text": "便祕合併以下任一情況，應先就醫而不是自行用藥：血便或黑便、體重不明原因減輕、持續腹痛、無法排氣、嘔吐、發燒、下背痛，或便祕超過 3 週沒有改善。有大腸直腸癌家族史的人，若出現便祕也建議諮詢醫師。"
+      },
+      {
+        "heading": "常見問題：幾天沒大便才算便祕？",
+        "text": "不只看天數。每週排便少於 3 次算是便祕的表現之一，但即使每天都有排便，如果糞便乾硬、排得很辛苦或總覺得解不乾淨，也可能是便祕。"
+      },
+      {
+        "heading": "常見問題：有便意但排不出來怎麼辦？",
+        "text": "可能是糞便太硬，或排便時肌肉沒有放鬆。偶爾發生可先調整飲食、水分與如廁姿勢；若經常發生，請就醫評估，不要反覆自行加量使用瀉劑。"
+      },
+      {
+        "heading": "常見問題：吃藥會便祕，可以自己停藥嗎？",
+        "text": "不建議。很多造成便祕的藥物是治療必需的，請帶著藥袋詢問醫師或藥師，由專業人員評估是否調整藥物，或搭配合適的便祕處理方式。"
+      }
+    ],
+    "altText": "便祕類型衛教圖卡，說明便祕的定義、糞便乾硬、腸道傳輸慢與排便出口卡住三種樣貌，可能造成便祕的藥物，以及需要就醫的警訊。",
+    "updatedAt": "2026-11-03",
+    "sourceCheckedAt": "2026-11-03",
+    "revisionCredit": "AI 整理",
+    "references": [
+      {
+        "title": "美國國家糖尿病、消化與腎臟疾病研究所（NIDDK）：Symptoms & Causes of Constipation",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/constipation/symptoms-causes"
+      },
+      {
+        "title": "Mayo Clinic：Constipation — Symptoms and causes",
+        "url": "https://www.mayoclinic.org/diseases-conditions/constipation/symptoms-causes/syc-20354253"
+      },
+      {
+        "title": "AGA／ACG 臨床指引：成人慢性特發性便祕的藥物治療（2023）",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10542656/"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceType": "manual",
+    "expandText": null,
+    "related_links": [
+      {
+        "title": "懷孕期間便秘可以用什麼？",
+        "url": "../cards/pregnancy_minor_constipation.html"
+      },
+      {
+        "title": "便祕用藥怎麼選？口服藥與甘油浣腸各有角色",
+        "url": "../cards/constipation_cate.html"
+      },
+      {
+        "title": "便祕合併痔瘡，坐浴怎麼做？",
+        "url": "../cards/hemorr_sitbath_1.html"
+      }
+    ]
+  },
+  {
+    "cardId": "constipation_medicines",
+    "image": "img/laxative_stimulant.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/laxative_stimulant.html",
+    "title": "刺激性瀉劑怎麼吃？樂可舒、秘可泰、清立飄的服用時間與注意事項",
+    "summary": "刺激性瀉劑如 Bisacodyl（樂可舒、秘可泰）與 Sennoside（清立飄）會促進大腸蠕動，通常睡前服用、隔天早上排便，適合短期或偶發便祕使用。不宜長期每天使用；自行使用一星期仍無效，或出現劇烈腹痛、嘔吐、血便，應停藥就醫。",
+    "sections": [
+      {
+        "heading": "刺激性瀉劑怎麼作用？",
+        "text": "刺激性瀉劑會刺激大腸的神經與肌肉，增加腸道蠕動，並減少腸道吸收水分，幫助推動糞便排出。它作用比較直接，常用在偶發便祕，或其他方法效果不夠時的短期救急。"
+      },
+      {
+        "heading": "台灣常見的成分與商品",
+        "text": "Bisacodyl 的常見商品有樂可舒腸溶糖衣錠 5 毫克與秘可泰腸溶錠，兩者在台灣都是須由醫師處方使用的藥品。Sennoside A+B 的常見商品有清立飄糖衣錠，每錠 12.5 毫克，屬於醫師藥師藥劑生指示藥品。另有部分複方產品同時含有多種瀉劑成分，購買前請看清楚成分。"
+      },
+      {
+        "heading": "什麼時候吃？多久會排便？",
+        "text": "刺激性瀉劑通常在睡前服用，隔天早上排便。清立飄仿單建議成人每日 1 次、每次 1 錠、睡前服用，初次使用最小劑量；樂可舒等處方藥請依藥袋指示，不要自行加量。"
+      },
+      {
+        "heading": "Bisacodyl 腸溶錠為什麼不能和牛奶、胃藥一起吃？",
+        "text": "Bisacodyl 錠劑外層有腸溶衣，要到腸道才溶解。牛奶、制酸劑或部分抑制胃酸的藥會讓腸溶衣提早溶解，可能刺激胃部、引起不適。因此要整顆吞服，不可咬碎或剝半，並和牛奶、制酸劑錯開約 1 小時。"
+      },
+      {
+        "heading": "常見副作用",
+        "text": "常見的不適包括腹部絞痛和腹瀉。Sennoside 可能讓尿液顏色改變，酸性尿呈黃棕色、鹼性尿呈粉紅或紫紅色。過度使用可能造成脫水與電解質不平衡，例如低血鉀。"
+      },
+      {
+        "heading": "哪些人不要自行使用？",
+        "text": "疑似腸阻塞、腹部急症，或有劇烈腹痛、噁心嘔吐的人不要使用。12 歲以下兒童使用清立飄前應先洽醫師；孕婦、可能懷孕或哺乳的婦女，以及同時使用其他瀉劑的人，使用前請先諮詢醫師或藥師。"
+      },
+      {
+        "heading": "刺激性瀉劑可以用多久？",
+        "text": "刺激性瀉劑適合短期或救急使用。台灣仿單提醒不應長期使用，一旦排便正常就應停藥；自行使用一星期仍無效，應停藥就醫。需要較長期使用時，應由醫師評估原因與用藥方式。"
+      },
+      {
+        "heading": "常見問題：樂可舒吃了多久會想上廁所？",
+        "text": "樂可舒建議晚上服用，通常隔天早上排便。實際時間因人而異。"
+      },
+      {
+        "heading": "常見問題：刺激性瀉劑吃久了會不會讓腸子變懶？",
+        "text": "依建議劑量使用，目前沒有可靠證據顯示會傷害大腸；但長期使用的研究不足，自行使用仍以短期為原則，長期使用請由醫師評估。"
+      },
+      {
+        "heading": "常見問題：孕婦或小朋友可以吃嗎？",
+        "text": "請先問醫師。仿單建議孕婦、哺乳婦使用前先諮詢，12 歲以下兒童使用清立飄前應先洽醫師。"
+      }
+    ],
+    "altText": "刺激性瀉劑衛教圖卡，說明 Bisacodyl（樂可舒、秘可泰）與 Sennoside（清立飄）的作用、睡前服用隔天排便、腸溶錠不可與牛奶胃藥併服、常見副作用及停藥就醫時機。",
+    "updatedAt": "2026-11-03",
+    "sourceCheckedAt": "2026-11-03",
+    "revisionCredit": "AI 整理",
+    "references": [
+      {
+        "title": "食藥署藥品仿單：樂可舒腸溶糖衣錠 5 毫克（衛署藥輸字第025696號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥輸字第025696號"
+      },
+      {
+        "title": "食藥署藥品仿單：秘可泰腸溶錠（衛署藥製字第019522號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第019522號"
+      },
+      {
+        "title": "食藥署藥品仿單：清立飄糖衣錠（衛署藥製字第043488號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第043488號"
+      },
+      {
+        "title": "臺北市立聯合醫院藥劑科：Bisacodyl 用藥指導單張（2023）",
+        "url": "https://www-ws.gov.taipei/001/Upload/446/relfile/22055/9101903/42c7e3ac-d2e2-49cd-845a-4fd2da071de0.pdf"
+      },
+      {
+        "title": "AGA／ACG 臨床指引：成人慢性特發性便祕的藥物治療（2023）",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10542656/"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceType": "manual",
+    "expandText": null,
+    "related_links": [
+      {
+        "title": "肛門塞劑怎麼用？",
+        "url": "../cards/rec_1.html"
+      },
+      {
+        "title": "PPI 胃藥怎麼吃？（PPI 會影響腸溶錠）",
+        "url": "../cards/stomach_medicine_ppi.html"
+      }
+    ]
+  },
+  {
+    "cardId": "constipation_medicines",
+    "image": "img/laxative_saline.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/laxative_saline.html",
+    "title": "氧化鎂軟便怎麼吃？鹽類瀉劑的作用、腎功能與藥物間隔",
+    "summary": "氧化鎂是台灣常見的鹽類瀉劑，鎂鹽在腸道不易吸收，會把水分留在腸內讓糞便變軟。腎功能不好、洗腎或長期使用的長者要注意高血鎂，並避免和四環黴素類、喹諾酮類抗生素、口服骨鬆藥、鐵劑等同時服用。",
+    "sections": [
+      {
+        "heading": "鹽類瀉劑是什麼？",
+        "text": "鹽類瀉劑是含鎂等鹽類的瀉劑，在腸道不容易被吸收，會把水分留在腸腔內，使糞便變軟、較容易排出。它的作用原理屬於滲透作用，部分國外指引把氧化鎂歸在滲透性瀉劑。"
+      },
+      {
+        "heading": "氧化鎂是胃藥還是便祕藥？",
+        "text": "兩種用途都有。同樣是氧化鎂錠，可以用來中和胃酸，也可以用來軟便，劑量與服用時間可能不同。拿到藥時請看藥袋寫的用途，不確定時問藥師。"
+      },
+      {
+        "heading": "台灣常見的氧化鎂產品",
+        "text": "台灣有多家藥廠生產氧化鎂錠，常見含量為每錠 250 毫克。例如健喬氧化鎂錠（衛署藥製字第023521號）為醫師藥師藥劑生指示藥品，仿單適應症為「軟便」。"
+      },
+      {
+        "heading": "怎麼吃？",
+        "text": "醫師開立時請依藥袋指示。自行購買的指示藥，依仿單成人及 12 歲以上每次 1 至 2 錠，一日 1 至 2 次、一天以 2 次為限，兩次間隔 4 小時以上，空腹或隨餐服用；初次使用最小劑量，排便正常就停藥。3 歲以下及腎功能障礙者使用前應洽醫師。"
+      },
+      {
+        "heading": "其他鹽類瀉劑",
+        "text": "檸檬酸鎂、硫酸鎂、磷酸鈉等鹽類作用較強，多用於檢查前清腸或其他醫療處置，不建議自行當作一般便祕藥使用。例如大腸鏡清腸劑保可淨，就是溶解後形成檸檬酸鎂並搭配其他成分。"
+      },
+      {
+        "heading": "腎功能不好為什麼要小心？",
+        "text": "鎂主要由腎臟排出。腎功能不好、洗腎，或長期使用氧化鎂的長者，鎂可能在體內累積造成高血鎂，早期可能出現噁心、頭痛、頭暈、臉潮紅，嚴重時可能心跳異常甚至危及生命。日本主管機關建議長期使用或高齡者定期檢測血中鎂濃度。"
+      },
+      {
+        "heading": "氧化鎂和哪些藥要分開吃？",
+        "text": "鎂會和部分藥物結合，降低這些藥的吸收，包括四環黴素類與喹諾酮類抗生素、口服骨鬆藥（雙磷酸鹽類）、鐵劑、毛地黃、部分抗愛滋病毒藥等。美國 NIH 資料建議抗生素在含鎂產品前 2 小時或後 4 至 6 小時服用，骨鬆藥與含鎂產品至少間隔 2 小時。實際間隔請依藥師指示。"
+      },
+      {
+        "heading": "其他併用注意",
+        "text": "活性維生素 D3、鋰鹽與氧化鎂併用，可能增加高血鎂風險；大量喝牛奶或併用鈣片，可能引起乳鹼症候群。有在使用這些藥物的人，請告訴醫師或藥師。"
+      },
+      {
+        "heading": "什麼時候要停藥就醫？",
+        "text": "使用後出現噁心、嘔吐、嚴重腹痛或過敏症狀，請停藥並諮詢醫師藥師。腹瀉持續不止、有血便，或使用一星期後仍無效，請停藥就醫。"
+      },
+      {
+        "heading": "常見問題：氧化鎂可以每天吃嗎？",
+        "text": "自行購買的指示藥不應長期使用，排便正常就停藥。醫師處方長期使用時，請定期回診，必要時檢查腎功能與血中鎂濃度。"
+      },
+      {
+        "heading": "常見問題：洗腎或腎臟不好可以吃氧化鎂嗎？",
+        "text": "不要自行使用。腎功能不好的人排鎂能力下降，容易高血鎂，請由醫師評估是否使用及劑量。"
+      },
+      {
+        "heading": "常見問題：氧化鎂會上癮嗎？",
+        "text": "氧化鎂不刺激腸道神經，主要風險不是依賴，而是長期或過量使用造成的高血鎂、腹瀉與電解質問題。"
+      }
+    ],
+    "altText": "鹽類瀉劑衛教圖卡，說明氧化鎂把水留在腸道軟化糞便的作用、胃藥與軟便兩種用途、腎功能不佳者的高血鎂風險，以及需與抗生素、骨鬆藥、鐵劑等分開服用。",
+    "updatedAt": "2026-11-03",
+    "sourceCheckedAt": "2026-11-03",
+    "revisionCredit": "AI 整理",
+    "references": [
+      {
+        "title": "食藥署藥品仿單：健喬氧化鎂錠（衛署藥製字第023521號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第023521號"
+      },
+      {
+        "title": "日本 PMDA 醫療用醫藥品仿單：酸化マグネシウム錠（併用注意）",
+        "url": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/580591_2344002X1314_1_09"
+      },
+      {
+        "title": "美國 NIH 營養補充品辦公室：Magnesium Fact Sheet for Health Professionals（2026-01-06 檢閱）",
+        "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
+      },
+      {
+        "title": "Clinical features of hypermagnesemia in patients with functional constipation taking daily magnesium oxide（PMC6667383）",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6667383/"
+      },
+      {
+        "title": "臺北市立聯合醫院藥劑科：氧化鎂錠用藥指導單張（2023）",
+        "url": "https://www-ws.gov.taipei/001/Upload/446/relfile/22055/9101903/f6273197-10fb-419e-9bc9-5d039fe0ee49.pdf"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceType": "manual",
+    "expandText": null,
+    "related_links": [
+      {
+        "title": "氧化鎂是胃藥還是便祕藥？",
+        "url": "../cards/stomach_medicine_antacid.html"
+      }
+    ]
+  },
+  {
+    "cardId": "constipation_medicines",
+    "image": "img/laxative_bulk.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/laxative_bulk.html",
+    "title": "膨脹性瀉劑怎麼吃？洋車前子殼的喝水量、起效時間與使用限制",
+    "summary": "膨脹性瀉劑如洋車前子殼會在腸道吸水膨脹，增加糞便體積，約 12 小時到 3 天起效，適合纖維攝取不足的輕度便祕。每包都要配一大杯水立刻喝完、再多喝一杯水；吞嚥困難、腸道狹窄或需要限水的人不宜自行使用。",
+    "sections": [
+      {
+        "heading": "膨脹性瀉劑怎麼作用？",
+        "text": "膨脹性瀉劑的主要成分是纖維，在腸道吸水後膨脹，增加糞便的體積和含水量，讓糞便較軟、較容易推動。作用方式接近補充膳食纖維，比較溫和，但不是救急用的藥。"
+      },
+      {
+        "heading": "台灣常見的藥品",
+        "text": "藥品級的洋車前子殼（Psyllium husk）例如康纖散劑（衛部藥製字第060991號），在台灣為須由醫師處方使用的藥品，每包 6 公克。市面上很多標示「洋車前子」的產品是食品，不是藥品，兩者的管理與標示不同。"
+      },
+      {
+        "heading": "適合哪一種便祕？",
+        "text": "膨脹性瀉劑較適合日常纖維吃不夠、糞便乾硬的輕度便祕，也可在醫師建議下和其他瀉劑一起使用。若是腸道傳輸很慢或排便出口協調問題，單靠纖維效果可能有限，甚至讓腹脹更明顯，應請醫師評估。"
+      },
+      {
+        "heading": "怎麼泡、要喝多少水？",
+        "text": "每包倒入約 240 毫升的開水、果汁或湯中，攪拌均勻後立刻喝完，再多喝一杯水。不要事先泡好放著，也不要把粉末拌在果泥、稀飯等糊狀食物裡，或直接乾吞。國外曾有把洋車前子拌入蘋果泥後噎住致死的通報。"
+      },
+      {
+        "heading": "多久會有效？",
+        "text": "膨脹性瀉劑通常在服用後 12 小時到 3 天發揮效果，需要規律使用一段時間，不適合用來救急。"
+      },
+      {
+        "heading": "常見不適與減少脹氣的方法",
+        "text": "剛開始使用時可能脹氣、腹部不適。可以從較少量開始，再依排便情況慢慢增加，同時多喝水。"
+      },
+      {
+        "heading": "哪些人不適合自行使用？",
+        "text": "吞嚥困難、食道或腸道狹窄、腸道沾黏、疑似腸阻塞，以及心臟或腎臟疾病需要限制喝水的人，不宜自行使用，請先問醫師。服用後如果胸痛、嘔吐、吞嚥困難或呼吸不順，請立即就醫。"
+      },
+      {
+        "heading": "可以長期使用嗎？",
+        "text": "膨脹性瀉劑作用溫和，醫師可能建議規律使用一段時間；自行使用一星期仍無效應就醫。改善便祕仍以增加飲食纖維、喝足水分和規律運動為基礎。"
+      },
+      {
+        "heading": "常見問題：洋車前子要配多少水？",
+        "text": "每包至少配一大杯水（約 240 毫升），喝完後再喝一杯，詳細請依產品說明或藥袋指示。"
+      },
+      {
+        "heading": "常見問題：可以拌在優格或稀飯裡吃嗎？",
+        "text": "不建議。纖維吸水膨脹後可能在喉嚨或食道結塊，造成噎塞，請務必溶在足量液體中立刻喝完。"
+      },
+      {
+        "heading": "常見問題：吃了纖維反而更脹怎麼辦？",
+        "text": "剛開始脹氣很常見，可以先減量再慢慢增加。若脹氣、腹痛持續或越來越嚴重，請就醫評估。"
+      }
+    ],
+    "altText": "膨脹性瀉劑衛教圖卡，以四格步驟說明洋車前子殼粉加一大杯水攪勻立刻喝完再喝一杯水，並說明吸水膨脹作用、12 小時到 3 天起效，以及吞嚥困難、腸道狹窄等不宜自行使用的情況。",
+    "updatedAt": "2026-11-03",
+    "sourceCheckedAt": "2026-11-03",
+    "revisionCredit": "AI 整理",
+    "references": [
+      {
+        "title": "食藥署藥品許可證資料：國嘉康纖散劑（衛部藥製字第060991號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛部藥製字第060991號"
+      },
+      {
+        "title": "臺北市立聯合醫院藥劑科：康纖散劑用藥指導單張（2023）",
+        "url": "https://www-ws.gov.taipei/001/Upload/446/relfile/22055/9101903/12344acf-ee85-4b21-ae3d-c4875e05cc91.pdf"
+      },
+      {
+        "title": "ISMP Canada：How Much Water Do I Need to Take with Psyllium Fibre?（2025-07-16）",
+        "url": "https://safemedicationuse.ca/newsletter/medications-and-water.html"
+      },
+      {
+        "title": "AGA／ACG 臨床指引：成人慢性特發性便祕的藥物治療（2023）",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10542656/"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceType": "manual",
+    "expandText": null,
+    "related_links": [
+      {
+        "title": "便祕用藥怎麼選？口服藥與甘油浣腸各有角色",
+        "url": "../cards/constipation_cate.html"
+      }
+    ]
+  },
+  {
+    "cardId": "constipation_medicines",
+    "image": "img/laxative_osmotic.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/laxative_osmotic.html",
+    "title": "滲透性瀉劑怎麼用？乳果糖、PEG（腹樂疏）的起效時間與清腸劑差別",
+    "summary": "乳果糖（杜化液、樂多）與 PEG（腹樂疏、寶淨 10g）會把水分留在腸道讓糞便變軟，約 1 至 2 天見效，經醫師評估後可規律使用。大腸鏡前的清腸劑如保可淨、澄易見、定順腸是不同產品，不能拿來治療便祕。",
+    "sections": [
+      {
+        "heading": "滲透性瀉劑怎麼作用？",
+        "text": "滲透性瀉劑的成分不容易被腸道吸收，會把水分留在腸腔內，讓糞便變軟、變多，幫助恢復排便。它不直接刺激腸道神經，作用較溫和。"
+      },
+      {
+        "heading": "乳果糖：杜化液、樂多糖漿",
+        "text": "乳果糖（Lactulose）是合成的雙醣，台灣常見的有杜化液與樂多糖漿，為醫師處方藥。糖漿可直接喝，也可加開水、果汁或牛奶稀釋後立刻喝完，請用刻度藥杯量取。詳細劑量與兒童用法請參考本站乳果糖藥水專頁。"
+      },
+      {
+        "heading": "PEG：腹樂疏、寶淨 10g",
+        "text": "Macrogol 4000（聚乙二醇，PEG）在台灣常見的有腹樂疏口服懸液用粉劑（衛署藥輸字第023462號）與寶淨口服懸液用粉劑 10g（衛部藥製字第060864號），都是須由醫師處方使用的藥品。仿單用法為每天 1 至 2 包，最好早上服用，每包以 50 毫升開水溶解後立刻喝完，劑量依排便反應調整。"
+      },
+      {
+        "heading": "多久會有效？",
+        "text": "乳果糖與 PEG 通常需要 24 至 48 小時（約 1 到 2 天）才看到效果。服藥當天沒有排便不代表無效，不要自行加倍；連續使用幾天仍沒改善，請回診或詢問藥師。"
+      },
+      {
+        "heading": "常見副作用",
+        "text": "常見的不適包括脹氣、腸鳴、腹痛和腹瀉。治療目標是排出軟而成形的糞便，如果變成水瀉，請告訴醫師調整劑量。長者、腎功能或肝功能不好、使用利尿劑的人發生腹瀉時，要注意脫水與電解質問題。"
+      },
+      {
+        "heading": "哪些人使用前要特別注意？",
+        "text": "疑似腸阻塞、腸穿孔、嚴重發炎性腸道疾病，或原因不明的腹痛時不可使用。腹樂疏含山梨糖醇，有果糖不耐症的人不能服用；乳果糖對半乳糖血症者是禁忌。PEG 可能暫時降低其他藥物的吸收，例如毛地黃、抗癲癇藥、抗凝血藥與免疫抑制劑，建議與其他藥物間隔至少 2 小時。"
+      },
+      {
+        "heading": "可以長期使用嗎？兒童呢？",
+        "text": "國際指引對慢性便祕最推薦 PEG，研究顯示效果可維持 6 個月；乳果糖也是可選擇的藥物之一。是否長期使用、用多久，請由醫師評估並定期回診。腹樂疏與寶淨 10g 仿單適用於成人及 8 歲以上兒童，兒童療程不應超過 3 個月。"
+      },
+      {
+        "heading": "便祕藥和大腸鏡清腸劑有什麼不同？",
+        "text": "大腸鏡檢查前使用的清腸劑，例如保可淨、澄易見、定順腸，適應症是成人大腸鏡檢查前清腸。它們要在短時間內服用大量藥液並補充大量水分，目的是把腸道排空，會造成多次水瀉，嚴重腎功能不良者禁用。清腸劑不能拿來治療便祕，檢查剩下的藥也不要留著自己用。"
+      },
+      {
+        "heading": "常見問題：腹樂疏多久會有效？",
+        "text": "仿單記載服用後 24 至 48 小時可見效果。"
+      },
+      {
+        "heading": "常見問題：PEG 可以每天吃嗎？",
+        "text": "經醫師評估後，可以依處方規律使用一段時間；請定期回診，並配合飲食、水分與運動調整。"
+      },
+      {
+        "heading": "常見問題：大腸鏡剩下的清腸藥可以拿來治便祕嗎？",
+        "text": "不可以。清腸劑是為了在檢查前清空腸道，作用強烈，可能造成脫水與電解質失衡，不是一般便祕用藥。"
+      },
+      {
+        "heading": "常見問題：乳果糖和 PEG 哪個比較好？",
+        "text": "兩者都是滲透性瀉劑。國際指引對 PEG 的建議等級較高，但實際選擇要看年齡、病況與副作用，請依醫師處方。"
+      }
+    ],
+    "altText": "滲透性瀉劑衛教圖卡，對照乳果糖（杜化液、樂多）與 PEG（腹樂疏、寶淨 10g）的劑型與用法、約 1 至 2 天見效，並提醒大腸鏡清腸劑保可淨、澄易見、定順腸不是便祕藥。",
+    "updatedAt": "2026-11-03",
+    "sourceCheckedAt": "2026-11-03",
+    "revisionCredit": "AI 整理",
+    "references": [
+      {
+        "title": "食藥署藥品仿單：腹樂疏口服懸液用粉劑（衛署藥輸字第023462號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥輸字第023462號"
+      },
+      {
+        "title": "食藥署藥品仿單：國嘉寶淨口服懸液用粉劑 10g（衛部藥製字第060864號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛部藥製字第060864號"
+      },
+      {
+        "title": "食藥署藥品仿單：亞培杜化液（衛署藥輸字第025302號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥輸字第025302號"
+      },
+      {
+        "title": "食藥署藥品仿單：保可淨散劑（衛部藥製字第058792號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛部藥製字第058792號"
+      },
+      {
+        "title": "食藥署藥品仿單：定順腸口服溶液用散劑（衛部藥製字第061465號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛部藥製字第061465號"
+      },
+      {
+        "title": "臺北市立聯合醫院藥劑科：保可淨、澄易見用藥指導單張（2023）",
+        "url": "https://www-ws.gov.taipei/001/Upload/446/relfile/22055/9101903/74ba0e08-e5b5-4b39-9402-3497e3d7ddbc.pdf"
+      },
+      {
+        "title": "AGA／ACG 臨床指引：成人慢性特發性便祕的藥物治療（2023）",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10542656/"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceType": "manual",
+    "expandText": null,
+    "related_links": [
+      {
+        "title": "乳果糖藥水怎麼吃？杜化液、樂多差異",
+        "url": "../cards/lactulose_constipation.html"
+      }
+    ]
+  },
+  {
+    "cardId": "constipation_medicines",
+    "image": "img/laxative_duration.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/laxative_duration.html",
+    "title": "便祕藥可以吃多久？哪些可長期使用、何時停藥與會不會依賴",
+    "summary": "便祕藥的使用期間要分類看：刺激性瀉劑以短期、救急為主；PEG、乳果糖與纖維可在醫師評估下規律使用；氧化鎂長期使用要追蹤腎功能與血鎂。自行購買的便祕藥使用一星期仍無效應就醫，排便改善後請和醫師藥師討論減量或停藥。",
+    "sections": [
+      {
+        "heading": "哪些便祕藥以短期使用為主？",
+        "text": "刺激性瀉劑，例如 Bisacodyl（樂可舒、秘可泰）與 Sennoside（清立飄），適合偶發便祕或短期救急。台灣仿單提醒不應長期使用，排便正常就應停藥；國際指引也建議 Bisacodyl 作為短期或救援用藥。"
+      },
+      {
+        "heading": "哪些便祕藥可在醫師評估下規律使用？",
+        "text": "滲透性瀉劑 PEG（腹樂疏、寶淨 10g）與乳果糖（杜化液、樂多），以及纖維類瀉劑，可在醫師評估後規律使用一段時間。國際指引中，PEG 是美國非處方便祕藥裡唯一獲強烈建議可長期使用的成分，效果可維持 6 個月；在台灣則為醫師處方藥。兒童使用 PEG 的療程不應超過 3 個月。"
+      },
+      {
+        "heading": "氧化鎂可以長期使用嗎？",
+        "text": "自行購買的氧化鎂指示藥不應長期使用，排便正常就停藥。醫師處方長期使用時，因鎂可能在體內累積，特別是腎功能不好的人和長者，應定期回診，必要時檢查腎功能與血中鎂濃度。"
+      },
+      {
+        "heading": "排便改善後，怎麼停藥？",
+        "text": "先確認排便已恢復順暢，並檢查飲食、喝水、活動與如廁習慣是否已經調整好，再和醫師或藥師討論怎麼減量或停藥。醫師開立的便祕藥不要自行突然停用。"
+      },
+      {
+        "heading": "自己長期吃或一直加量有什麼風險？",
+        "text": "自行長期使用或反覆加量，可能造成脫水、腹瀉、低血鉀等電解質問題；使用含鎂瀉劑可能造成高血鎂。另外，靠藥物掩蓋症狀，可能延誤發現腸道疾病。藥量越用越多仍不見效時，請就醫找原因。"
+      },
+      {
+        "heading": "便祕藥會不會依賴、上癮？",
+        "text": "不同類別不能一概而論。滲透性瀉劑與纖維不直接刺激腸道神經，沒有成癮性；乳果糖仿單也記載不具成癮性。刺激性瀉劑常被說會讓腸子變懶，但依建議劑量使用，目前沒有可靠證據顯示會傷害大腸；只是長期使用的研究不足，自行使用仍以短期為原則。若沒吃藥就無法排便，請就醫評估原因與合適的長期治療。"
+      },
+      {
+        "heading": "改善便祕的生活習慣",
+        "text": "多吃蔬菜、水果、豆類和全穀類增加膳食纖維；沒有限水的人要喝足水；多活動、規律運動；選擇飯後固定時間如廁，有便意時不要忍住。這些習慣是所有便祕藥的基礎。"
+      },
+      {
+        "heading": "什麼時候要就醫？",
+        "text": "便祕超過 3 週沒有改善，或出現血便、黑便、體重不明原因減輕、持續腹痛、無法排氣、嘔吐、發燒等情況，請盡快就醫，不要只靠瀉劑處理。"
+      },
+      {
+        "heading": "常見問題：便祕藥吃久了會上癮嗎？",
+        "text": "滲透性瀉劑和纖維沒有成癮性；刺激性瀉劑依建議劑量使用沒有可靠證據會傷害大腸，但自行使用仍以短期為原則。"
+      },
+      {
+        "heading": "常見問題：便祕藥可以吃一輩子嗎？",
+        "text": "部分藥物在醫師評估下可以長期規律使用，但需要定期回診，並持續調整生活習慣，不要自行長期使用。"
+      },
+      {
+        "heading": "常見問題：排便正常了，可以直接停藥嗎？",
+        "text": "自行購買的瀉劑，排便正常就可以停。醫師開立的藥，請先和醫師或藥師討論減量方式。"
+      },
+      {
+        "heading": "常見問題：不吃藥就大不出來怎麼辦？",
+        "text": "這表示需要找出原因並調整治療，請就醫評估，不要自行一直加量或換用更強的瀉劑。"
+      }
+    ],
+    "altText": "便祕藥使用期間衛教圖卡，以三欄區分短期救急的刺激性瀉劑、醫師評估下可規律使用的 PEG、乳果糖與纖維、長期要追蹤的氧化鎂，並說明停藥三步驟、依賴迷思、生活習慣與就醫警訊。",
+    "updatedAt": "2026-11-03",
+    "sourceCheckedAt": "2026-11-03",
+    "revisionCredit": "AI 整理",
+    "references": [
+      {
+        "title": "AGA／ACG 臨床指引：成人慢性特發性便祕的藥物治療（2023）",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10542656/"
+      },
+      {
+        "title": "美國胃腸病學院 Evidence-Based GI：AGA-ACG 慢性便祕指引導讀（2023-06-13）",
+        "url": "https://gi.org/journals-publications/ebgi/schoenfeld2_june2023/"
+      },
+      {
+        "title": "IFFGD：Common Questions About Constipation — Myths and Misconceptions",
+        "url": "https://iffgd.org/wp-content/uploads/197-Common-Questions-About-Constipation-Myths-and-Misconceptions-1.pdf"
+      },
+      {
+        "title": "食藥署藥品仿單：健喬氧化鎂錠（衛署藥製字第023521號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第023521號"
+      },
+      {
+        "title": "食藥署藥品仿單：腹樂疏口服懸液用粉劑（衛署藥輸字第023462號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥輸字第023462號"
+      },
+      {
+        "title": "美國國家糖尿病、消化與腎臟疾病研究所（NIDDK）：Symptoms & Causes of Constipation",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/constipation/symptoms-causes"
+      },
+      {
+        "title": "Mayo Clinic：Constipation — Symptoms and causes",
+        "url": "https://www.mayoclinic.org/diseases-conditions/constipation/symptoms-causes/syc-20354253"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceType": "manual",
+    "expandText": null,
+    "related_links": [
+      {
+        "title": "便祕用藥怎麼選？口服藥與甘油浣腸各有角色",
+        "url": "../cards/constipation_cate.html"
+      },
+      {
+        "title": "硬便卡在出口：甘油浣腸何時可以幫忙？",
+        "url": "../cards/enema_clinical_cond.html"
+      }
+    ]
+  },
+  {
+    "cardId": "constipation_medicines",
+    "image": "img/laxative_comparison.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/laxative_comparison.html",
+    "title": "便祕藥怎麼選？四大類瀉劑比較、作用原理與挑選原則",
+    "summary": "便祕用藥不能一概而論。刺激性瀉劑促進腸道蠕動適合短期救急；鹽類瀉劑如氧化鎂與滲透性瀉劑把水分留在腸道軟化糞便；膨脹性瀉劑補充纖維增加糞便體積需多喝水。依症狀與個人健康狀況選擇合適藥品，使用前諮詢醫師或藥師。",
+    "sections": [
+      {
+        "heading": "常見四大類瀉劑有什麼差別？",
+        "text": "便祕用藥主要可分為四大類：刺激性瀉劑（如 Bisacodyl、Sennosides）刺激腸道神經與肌肉促進蠕動；鹽類瀉劑（如氧化鎂）利用滲透壓將水分保留在腸道軟化糞便；滲透性瀉劑（如乳果糖、PEG）同樣軟化糞便且作用溫和；膨脹性瀉劑（如洋車前子殼）吸水膨脹增加糞便體積。"
+      },
+      {
+        "heading": "想快速排便，通常用哪一類？",
+        "text": "刺激性瀉劑作用較迅速直接，常見於睡前服用後隔天清晨排便，適合偶發便祕或需要短期救援時使用。但不建議長期連續自行服用，避免腹絞痛或電解質不平衡。"
+      },
+      {
+        "heading": "糞便乾硬但不想太刺激，可以選什麼？",
+        "text": "鹽類瀉劑（氧化鎂）與滲透性瀉劑（乳果糖、聚乙二醇 PEG）主要著重在軟化糞便，不會直接強烈刺激腸道神經，適合糞便乾硬難解的族群。若為高齡長者或腎功能不良者，使用氧化鎂需特別注意鎂離子累積與血鎂追蹤。"
+      },
+      {
+        "heading": "平常蔬菜吃太少造成的輕微便祕，適合哪種？",
+        "text": "平時飲食缺乏膳食纖維者，可考慮膨脹性瀉劑（如洋車前子）。其作用溫和但起效較慢（約需 12 小時至 3 天），服用時務必搭配充足飲水量，吞嚥困難或腸道狹窄者不宜自行使用。"
+      },
+      {
+        "heading": "常見問題：四大類便祕藥可以自己混著吃嗎？",
+        "text": "不建議自行合併多種瀉劑。複方或合併使用可能增加腹瀉、腹痛或電解質紊亂風險。若單一藥品效果不佳，請帶著藥袋諮詢醫師或藥師以評估真實原因。"
+      },
+      {
+        "heading": "常見問題：排便順暢之後，應該怎麼做？",
+        "text": "排便恢復正常後即可依指示停藥或與醫師討論減量。根本改善便祕仍需建立良好生活型態，包括充足飲水、攝取高纖飲食、規律運動以及養成固定排便時間。"
+      }
+    ],
+    "altText": "四大類瀉劑比較圖卡，詳細對照刺激性瀉劑、鹽類瀉劑、膨脹性瀉劑與滲透性瀉劑的作用原理、常見成分、適用時機與注意事項。",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-11-04",
+    "sourceCheckedAt": "2026-11-04",
+    "revisionCredit": "AI 整理",
+    "expandText": null,
+    "references": [
+      {
+        "title": "AGA／ACG 臨床指引：成人慢性特發性便祕的藥物治療（2023）",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10542656/"
+      },
+      {
+        "title": "美國國家糖尿病、消化與腎臟疾病研究所（NIDDK）：Symptoms & Causes of Constipation",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/constipation/symptoms-causes"
+      },
+      {
+        "title": "Mayo Clinic：Constipation — Symptoms and causes",
+        "url": "https://www.mayoclinic.org/diseases-conditions/constipation/symptoms-causes/syc-20354253"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "便祕用藥怎麼選？口服藥與甘油浣腸各有角色",
+        "url": "../cards/constipation_cate.html"
+      },
+      {
+        "title": "氧化鎂是胃藥還是便祕藥？",
+        "url": "../cards/stomach_medicine_antacid.html"
+      },
+      {
+        "title": "乳果糖藥水怎麼吃？杜化液、樂多差異",
+        "url": "../cards/lactulose_constipation.html"
+      }
+    ]
   }
 ]
