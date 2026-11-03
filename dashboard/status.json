@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-02T01:17:18+08:00",
-  "baseline": "e58959201c25ed713419470eaabf63421e098c4e",
-  "scope": "網站來源快照；版本 e5895920",
+  "generatedAt": "2026-11-04T00:50:50+08:00",
+  "baseline": "0f76a6941e445813a20d11b721d01029bf78accc",
+  "scope": "網站來源快照；版本 0f76a694",
   "counts": {
     "cards": 402,
     "series": 89,
@@ -1803,27 +1803,19 @@
       ]
     },
     {
-      "title": "瘀青藥膏使用",
+      "title": "撞到瘀青，前 48 小時先冰敷",
       "path": "cards/bruising_care_1.html",
       "series": "bruising_care",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
-      "title": "瘀青藥膏使用",
+      "title": "瘀青藥膏怎麼擦？薄薄一層就好",
       "path": "cards/bruising_care_2.html",
       "series": "bruising_care",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
@@ -1832,20 +1824,15 @@
       "series": "bruising_care",
       "issues": [
         "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
-      "title": "瘀青藥膏使用",
+      "title": "這些情況，別只擦藥膏",
       "path": "cards/bruising_care_4.html",
       "series": "bruising_care",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
@@ -3990,17 +3977,17 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 256,
+      "machine_pass": 259,
       "partial": 1,
-      "missing": 145
+      "missing": 142
     },
     "reference_status": {
-      "missing": 230,
-      "machine_pass": 172
+      "missing": 227,
+      "machine_pass": 175
     },
     "date_status": {
-      "missing": 230,
-      "machine_pass": 151,
+      "missing": 227,
+      "machine_pass": 154,
       "partial": 21
     },
     "footer_status": {
@@ -4008,8 +3995,8 @@
       "machine_pass": 147
     },
     "jsonld_status": {
-      "machine_pass": 217,
-      "missing": 185
+      "machine_pass": 221,
+      "missing": 181
     }
   },
   "sync": {
