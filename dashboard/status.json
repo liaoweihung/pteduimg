@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-04T00:50:50+08:00",
-  "baseline": "0f76a6941e445813a20d11b721d01029bf78accc",
-  "scope": "網站來源快照；版本 0f76a694",
+  "generatedAt": "2026-11-04T01:01:18+08:00",
+  "baseline": "97269bc9086ca7f96dd720bee317253b87f1e186",
+  "scope": "網站來源快照；版本 97269bc9",
   "counts": {
-    "cards": 402,
-    "series": 89,
-    "allSeries": 93,
+    "cards": 409,
+    "series": 90,
+    "allSeries": 94,
     "hidden": 4,
     "retired": 4,
     "areas": 16,
@@ -19,10 +19,10 @@
     "growth": 1,
     "infectious_diseases": 3,
     "eyes": 3,
-    "gastrointestinal": 3,
+    "gastrointestinal": 4,
     "oral_health": 4,
     "insect_repellent": 1,
-    "elimination_care": 3,
+    "elimination_care": 4,
     "heat_illness": 1,
     "throat": 1,
     "sleep": 1,
@@ -962,6 +962,17 @@
       "hidden": false,
       "areas": [
         "gastrointestinal"
+      ],
+      "departments": []
+    },
+    {
+      "id": "constipation_medicines",
+      "title": "排便不順，可以怎麼做？",
+      "count": 7,
+      "hidden": false,
+      "areas": [
+        "gastrointestinal",
+        "elimination_care"
       ],
       "departments": []
     }
@@ -3977,31 +3988,31 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 259,
+      "machine_pass": 266,
       "partial": 1,
       "missing": 142
     },
     "reference_status": {
       "missing": 227,
-      "machine_pass": 175
+      "machine_pass": 182
     },
     "date_status": {
       "missing": 227,
-      "machine_pass": 154,
+      "machine_pass": 161,
       "partial": 21
     },
     "footer_status": {
       "missing": 255,
-      "machine_pass": 147
+      "machine_pass": 154
     },
     "jsonld_status": {
-      "machine_pass": 221,
+      "machine_pass": 228,
       "missing": 181
     }
   },
   "sync": {
-    "pages": 406,
-    "fields": 406,
+    "pages": 413,
+    "fields": 413,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4916,6 +4927,12 @@
         ]
       },
       {
+        "page": "constipation_types",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
         "page": "contact_lens_eye_drops_1",
         "fields": [
           "rules_sha256"
@@ -5523,6 +5540,42 @@
       },
       {
         "page": "lan_5",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "laxative_bulk",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "laxative_comparison",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "laxative_duration",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "laxative_osmotic",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "laxative_saline",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "laxative_stimulant",
         "fields": [
           "rules_sha256"
         ]
