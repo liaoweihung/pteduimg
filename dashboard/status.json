@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-04T09:02:46+08:00",
-  "baseline": "df0deb43e0b18034912eb25f68b08d546c844457",
-  "scope": "網站來源快照；版本 df0deb43",
+  "generatedAt": "2026-11-04T09:32:13+08:00",
+  "baseline": "85c5467911fbd4f498a0a6959117b69adcb1c647",
+  "scope": "網站來源快照；版本 85c54679",
   "counts": {
     "cards": 409,
     "series": 90,
@@ -1180,62 +1180,6 @@
       ]
     },
     {
-      "title": "MDI 吸入器怎麼用？7 步驟圖解（定量噴霧吸入器）",
-      "path": "cards/MDI_1.html",
-      "series": "MDI",
-      "issues": [
-        "footer_status"
-      ]
-    },
-    {
-      "title": "MDI 吸入器要搖嗎？每次使用前先搖勻",
-      "path": "cards/MDI_2.html",
-      "series": "MDI",
-      "issues": [
-        "footer_status"
-      ]
-    },
-    {
-      "title": "吸入器使用前要先吐氣：對旁邊慢慢把氣吐完",
-      "path": "cards/MDI_3.html",
-      "series": "MDI",
-      "issues": [
-        "footer_status"
-      ]
-    },
-    {
-      "title": "吸入器按壓和吸氣要同步：慢慢深吸、只按一下",
-      "path": "cards/MDI_4.html",
-      "series": "MDI",
-      "issues": [
-        "footer_status"
-      ]
-    },
-    {
-      "title": "吸完藥要閉氣多久？5～10 秒再慢慢吐氣",
-      "path": "cards/MDI_5.html",
-      "series": "MDI",
-      "issues": [
-        "footer_status"
-      ]
-    },
-    {
-      "title": "吸入器第二口要等多久？間隔 30–60 秒、再搖一次",
-      "path": "cards/MDI_6.html",
-      "series": "MDI",
-      "issues": [
-        "footer_status"
-      ]
-    },
-    {
-      "title": "MDI 吸入器最重要的 3 個動作：吐氣、同步吸、閉氣",
-      "path": "cards/MDI_7.html",
-      "series": "MDI",
-      "issues": [
-        "footer_status"
-      ]
-    },
-    {
       "title": "拔牙前告知骨鬆用藥，評估顎骨風險",
       "path": "cards/Osteo_tooth_01.html",
       "series": "Osteo_tooth",
@@ -1786,36 +1730,11 @@
       ]
     },
     {
-      "title": "撞到瘀青，前 48 小時先冰敷",
-      "path": "cards/bruising_care_1.html",
-      "series": "bruising_care",
-      "issues": [
-        "footer_status"
-      ]
-    },
-    {
-      "title": "瘀青藥膏怎麼擦？薄薄一層就好",
-      "path": "cards/bruising_care_2.html",
-      "series": "bruising_care",
-      "issues": [
-        "footer_status"
-      ]
-    },
-    {
       "title": "瘀青藥膏，別靠用力揉開",
       "path": "cards/bruising_care_3.html",
       "series": "bruising_care",
       "issues": [
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "這些情況，別只擦藥膏",
-      "path": "cards/bruising_care_4.html",
-      "series": "bruising_care",
-      "issues": [
-        "footer_status"
+        "date_status"
       ]
     },
     {
@@ -3974,8 +3893,8 @@
       "partial": 21
     },
     "footer_status": {
-      "missing": 255,
-      "machine_pass": 154
+      "missing": 244,
+      "machine_pass": 165
     },
     "jsonld_status": {
       "machine_pass": 235,
