@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：267
+- 成功加入文字頁數：274
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -272,3 +272,10 @@
 | constipation_medicines | 滲透性瀉劑怎麼用？乳果糖、PEG（腹樂疏）的起效時間與清腸劑差別 | https://liaoweihung.github.io/pteduimg/cards/laxative_osmotic.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | constipation_medicines | 便祕藥可以吃多久？哪些可長期使用、何時停藥與會不會依賴 | https://liaoweihung.github.io/pteduimg/cards/laxative_duration.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | constipation_medicines | 便祕藥怎麼選？四大類瀉劑比較、作用原理與挑選原則 | https://liaoweihung.github.io/pteduimg/cards/laxative_comparison.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| MDI | MDI 吸入器怎麼用？7 步驟圖解（定量噴霧吸入器） | https://liaoweihung.github.io/pteduimg/cards/MDI_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| MDI | MDI 吸入器要搖嗎？每次使用前先搖勻 | https://liaoweihung.github.io/pteduimg/cards/MDI_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| MDI | 吸入器使用前要先吐氣：對旁邊慢慢把氣吐完 | https://liaoweihung.github.io/pteduimg/cards/MDI_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| MDI | 吸入器按壓和吸氣要同步：慢慢深吸、只按一下 | https://liaoweihung.github.io/pteduimg/cards/MDI_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| MDI | 吸完藥要閉氣多久？5～10 秒再慢慢吐氣 | https://liaoweihung.github.io/pteduimg/cards/MDI_5.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| MDI | 吸入器第二口要等多久？間隔 30–60 秒、再搖一次 | https://liaoweihung.github.io/pteduimg/cards/MDI_6.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| MDI | MDI 吸入器最重要的 3 個動作：吐氣、同步吸、閉氣 | https://liaoweihung.github.io/pteduimg/cards/MDI_7.html | 是 | 是 | 是 | 是 | 是 | 無 |
