@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-04T01:01:18+08:00",
-  "baseline": "97269bc9086ca7f96dd720bee317253b87f1e186",
-  "scope": "網站來源快照；版本 97269bc9",
+  "generatedAt": "2026-11-04T09:02:46+08:00",
+  "baseline": "df0deb43e0b18034912eb25f68b08d546c844457",
+  "scope": "網站來源快照；版本 df0deb43",
   "counts": {
     "cards": 409,
     "series": 90,
@@ -1180,87 +1180,59 @@
       ]
     },
     {
-      "title": "步驟一：打開瓶蓋並檢查吸嘴",
+      "title": "MDI 吸入器怎麼用？7 步驟圖解（定量噴霧吸入器）",
       "path": "cards/MDI_1.html",
       "series": "MDI",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
-      "title": "步驟二：搖勻吸入器",
+      "title": "MDI 吸入器要搖嗎？每次使用前先搖勻",
       "path": "cards/MDI_2.html",
       "series": "MDI",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
-      "title": "步驟三：遠離吸入器吐氣",
+      "title": "吸入器使用前要先吐氣：對旁邊慢慢把氣吐完",
       "path": "cards/MDI_3.html",
       "series": "MDI",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
-      "title": "步驟四：按壓並緩慢深吸氣",
+      "title": "吸入器按壓和吸氣要同步：慢慢深吸、只按一下",
       "path": "cards/MDI_4.html",
       "series": "MDI",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
-      "title": "步驟五：移開吸入器並閉氣",
+      "title": "吸完藥要閉氣多久？5～10 秒再慢慢吐氣",
       "path": "cards/MDI_5.html",
       "series": "MDI",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
-      "title": "步驟六：恢復呼吸，等待下一口",
+      "title": "吸入器第二口要等多久？間隔 30–60 秒、再搖一次",
       "path": "cards/MDI_6.html",
       "series": "MDI",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
-      "title": "吸入器操作重點：吐氣、按壓吸入與閉氣",
+      "title": "MDI 吸入器最重要的 3 個動作：吐氣、同步吸、閉氣",
       "path": "cards/MDI_7.html",
       "series": "MDI",
       "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status",
-        "jsonld_status"
+        "footer_status"
       ]
     },
     {
@@ -3988,17 +3960,17 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 266,
+      "machine_pass": 273,
       "partial": 1,
-      "missing": 142
+      "missing": 135
     },
     "reference_status": {
-      "missing": 227,
-      "machine_pass": 182
+      "missing": 220,
+      "machine_pass": 189
     },
     "date_status": {
-      "missing": 227,
-      "machine_pass": 161,
+      "missing": 220,
+      "machine_pass": 168,
       "partial": 21
     },
     "footer_status": {
@@ -4006,8 +3978,8 @@
       "machine_pass": 154
     },
     "jsonld_status": {
-      "machine_pass": 228,
-      "missing": 181
+      "machine_pass": 235,
+      "missing": 174
     }
   },
   "sync": {
