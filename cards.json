@@ -676,6 +676,7 @@
     "order": 124,
     "hidden": false,
     "icon": "🟣",
+    "showFooter": true,
     "tags": [
       "瘀青",
       "瘀青處理",
@@ -1591,6 +1592,7 @@
     "order": 60,
     "hidden": false,
     "icon": "🌬️",
+    "showFooter": true,
     "steps": [
       "img/MDI_1.png",
       "img/MDI_2.png",

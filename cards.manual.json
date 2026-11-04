@@ -716,6 +716,7 @@
     "order": 124,
     "hidden": false,
     "icon": "🟣",
+    "showFooter": true,
     "tags": [
       "瘀青",
       "瘀青處理",
@@ -1146,6 +1147,7 @@
     "order": 60,
     "hidden": false,
     "icon": "🌬️",
+    "showFooter": true,
     "texts": [
       "步驟一：打開瓶蓋並檢查吸嘴",
       "步驟二：搖勻吸入器",
