@@ -1773,6 +1773,7 @@
     "order": 16,
     "hidden": false,
     "icon": "🌡️",
+    "showFooter": true,
     "favorite_keys": [
       "ped_fever_reducer-0",
       "ped_fever_reducer-1",

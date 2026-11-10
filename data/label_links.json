@@ -1,0 +1,169 @@
+{
+  "_note": "藥品介紹頁的食藥署仿單連結（顯示於「文字版重點」與「同系列圖卡」之間）。key 為圖片路徑；url 為 TFDA 藥品仿單查詢平台。",
+  "pages": {
+    "img/ped_cold_cypromin.webp": [
+      {
+        "name": "「晟德」希普利敏液 0.4 毫克/毫升",
+        "license": "衛署藥製字第043588號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC043588%E8%99%9F"
+      }
+    ],
+    "img/ped_cold_cetirizine.webp": [
+      {
+        "name": "「晟德」勝克敏液 1 毫克/毫升",
+        "license": "衛署藥製字第044023號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC044023%E8%99%9F"
+      }
+    ],
+    "img/ped_cold_secorine.webp": [
+      {
+        "name": "「晟德」息咳寧糖漿",
+        "license": "衛署藥製字第040833號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC040833%E8%99%9F"
+      }
+    ],
+    "img/ped_asthma_meptin_liquid.webp": [
+      {
+        "name": "滅喘淨液",
+        "license": "衛署藥製字第043122號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC043122%E8%99%9F"
+      }
+    ],
+    "img/ped_cold_peace_syrup.webp": [
+      {
+        "name": "「永信」鼻福糖漿",
+        "license": "衛署藥製字第027144號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC027144%E8%99%9F"
+      }
+    ],
+    "img/ped_cold_guaphen_syrup.webp": [
+      {
+        "name": "「晟德」咳酚糖漿 20 毫克/毫升",
+        "license": "衛署藥製字第036094號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC036094%E8%99%9F"
+      }
+    ],
+    "img/ped_cold_exdila_liquid.webp": [
+      {
+        "name": "「晟德」喘解液 5 微公克/公撮",
+        "license": "衛署藥製字第044482號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC044482%E8%99%9F"
+      }
+    ],
+    "img/ped_cold_mintapp_syrup.webp": [
+      {
+        "name": "「杏輝」敏達糖漿",
+        "license": "衛署藥製字第021652號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC021652%E8%99%9F"
+      }
+    ],
+    "img/ped_cold_musco_solution.webp": [
+      {
+        "name": "「生達」美舒咳液 3 公絲/公撮",
+        "license": "衛署藥製字第041236號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC041236%E8%99%9F"
+      }
+    ],
+    "img/ped_cold_koko_sou_syrup.webp": [
+      {
+        "name": "可克嗽糖漿",
+        "license": "衛署藥製字第033192號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC033192%E8%99%9F"
+      }
+    ],
+    "img/ped_cold_cough_mixture.webp": [
+      {
+        "name": "「生達」鎮咳袪痰液",
+        "license": "衛署藥製字第030862號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC030862%E8%99%9F"
+      }
+    ],
+    "img/ped_cold_nocough_syrup.webp": [
+      {
+        "name": "「杏輝」安咳糖漿",
+        "license": "衛署藥製字第029634號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC029634%E8%99%9F"
+      }
+    ],
+    "img/antiphen.webp": [
+      {
+        "name": "「晟德」安佳熱糖漿 24 毫克/毫升",
+        "license": "衛署藥製字第040164號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC040164%E8%99%9F"
+      }
+    ],
+    "img/ibuprofen_sol.webp": [
+      {
+        "name": "「晟德」依普芬口服懸液劑 20 毫克/毫升",
+        "license": "衛署藥製字第043152號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC043152%E8%99%9F"
+      }
+    ],
+    "img/idofen_suspension.webp": [
+      {
+        "name": "「生達」舒抑痛口服懸液 20 毫克/毫升",
+        "license": "衛署藥製字第045438號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC045438%E8%99%9F"
+      }
+    ],
+    "img/macsafe_suspension.webp": [
+      {
+        "name": "馬蓋先口服懸濁液 20 毫克/毫升",
+        "license": "衛署藥製字第034222號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC034222%E8%99%9F"
+      }
+    ],
+    "img/wempty_suspension.webp": [
+      {
+        "name": "「晟德」胃利空懸液劑 1 毫克/毫升",
+        "license": "衛署藥製字第046242號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC046242%E8%99%9F"
+      }
+    ],
+    "img/lactulose_constipation.webp": [
+      {
+        "name": "亞培杜化液",
+        "license": "衛署藥輸字第025302號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC025302%E8%99%9F"
+      },
+      {
+        "name": "「杏輝」樂多糖漿 666 毫克/毫升",
+        "license": "衛署藥製字第039701號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC039701%E8%99%9F"
+      }
+    ],
+    "img/ped_diarrhea_hidrasec.webp": [
+      {
+        "name": "瀉必寧 10 毫克懸浮液用顆粒劑",
+        "license": "衛部藥輸字第026651號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E9%83%A8%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC026651%E8%99%9F"
+      },
+      {
+        "name": "瀉必寧 30 毫克懸浮液用顆粒劑",
+        "license": "衛部藥輸字第026652號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E9%83%A8%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC026652%E8%99%9F"
+      }
+    ],
+    "img/smecta_1.webp": [
+      {
+        "name": "舒腹達口服懸液用粉劑",
+        "license": "衛署藥輸字第023349號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC023349%E8%99%9F"
+      }
+    ],
+    "img/smecta_2.webp": [
+      {
+        "name": "舒腹達口服懸液用粉劑",
+        "license": "衛署藥輸字第023349號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC023349%E8%99%9F"
+      }
+    ],
+    "img/smecta_3.webp": [
+      {
+        "name": "舒腹達口服懸液用粉劑",
+        "license": "衛署藥輸字第023349號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC023349%E8%99%9F"
+      }
+    ]
+  }
+}

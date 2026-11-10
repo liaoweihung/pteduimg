@@ -520,6 +520,72 @@
       .page-arrow { width:46px; height:46px; }
       .info { padding:14px 16px 36px; }
     }
+    .label-links {
+      margin:0 0 18px;
+    }
+    .label-link-list {
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:grid;
+      gap:8px;
+    }
+    .label-link {
+      display:flex;
+      align-items:stretch;
+      min-height:44px;
+      border:1px solid var(--line);
+      border-radius:10px;
+      background:#fff;
+      color:var(--ink);
+      text-decoration:none;
+      overflow:hidden;
+    }
+    .label-link-name {
+      flex:1 1 auto;
+      padding:10px 12px;
+      font-weight:700;
+      line-height:1.45;
+      color:var(--brand);
+      overflow-wrap:anywhere;
+    }
+    .label-link-license {
+      flex:0 0 auto;
+      display:flex;
+      align-items:center;
+      padding:8px 12px;
+      background:var(--brand);
+      color:#fff;
+      font-size:.82rem;
+      font-weight:700;
+      white-space:nowrap;
+    }
+    .label-link-license::after {
+      content:"↗";
+      margin-left:6px;
+    }
+    .label-link:hover,
+    .label-link:focus-visible {
+      border-color:var(--brand);
+    }
+    @media (max-width:420px) {
+      .label-link { flex-direction:column; }
+      .label-link-license { justify-content:space-between; }
+    }
+.site-footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #7f8c8d; /* 跟您的 Section Title 使用一樣的高級灰 */
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+.site-footer a {
+    color: #7f8c8d;
+    text-decoration: none;
+}
+.site-footer a:active {
+    color: #2c3e50;
+}
   </style>
 </head>
 <body>
@@ -595,6 +661,10 @@
           </div>
         </details>
       </article>
+      <section class="label-links" aria-label="食藥署藥品仿單">
+        <div class="section-title">食藥署藥品仿單</div>
+        <ul class="label-link-list"><li><a class="label-link" href="https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC034222%E8%99%9F" target="_blank" rel="noopener noreferrer"><span class="label-link-name">馬蓋先口服懸濁液 20 毫克/毫升</span><span class="label-link-license">衛署藥製字第034222號</span></a></li></ul>
+      </section>
       <div class="section-title">同系列圖卡</div>
       <ol class="related-list" aria-label="同系列圖卡">
         <li><a class="related-item" href="../cards/antiphen.html">安佳熱</a></li>
@@ -604,6 +674,19 @@
 <li><a class="related-item" href="../cards/notice_ped_fever_reducer.html">小兒發燒注意事項｜兒科退燒藥水</a></li>
       </ol>
     </section>
+<footer class="site-footer">
+  <p style="margin: 0 0 8px 0;">本工具圖文僅供藥師衛教參考，非專業人士務必諮詢藥師建議。</p>
+  <p style="margin: 0;">
+    <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a>
+    &nbsp;|&nbsp;
+   <a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" onclick="if (typeof trackFeedbackClick === 'function') trackFeedbackClick()">💬 意見回饋</a>
+  </p>
+  <p style="margin: 0 0 8px 0;">
+    <a href="../about.html">關於本站</a> &nbsp;|&nbsp;
+    <a href="../author.html">作者資訊</a> &nbsp;|&nbsp;
+    <a href="../editorial-policy.html">編輯與資料來源政策</a>
+  </p>
+</footer>
     <div class="qr-modal" id="qr-modal" hidden>
       <div class="qr-box" role="dialog" aria-modal="true" aria-label="圖卡 QR code">
         <div class="qr-title">請患者掃描開啟這張圖卡</div>

@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parent
 CARDS_JSON = ROOT / "cards.json"
 SEO_JSON = ROOT / "seo.json"
 CARD_CONTENT_JSON = ROOT / "data" / "card_content.json"
+LABEL_LINKS_JSON = ROOT / "data" / "label_links.json"
 CARD_TEXT_REPORT = ROOT / "data" / "card_text_web_integration_report.md"
 CARDS_DIR = ROOT / "cards"
 SITE_TITLE = "藥局衛教助手"
@@ -335,6 +336,102 @@ def render_related_cards(series_steps, current_step, seo_index):
     return "\n".join(items)
 
 
+_LABEL_LINKS = None
+
+
+def read_label_links():
+    global _LABEL_LINKS
+    if _LABEL_LINKS is None:
+        _LABEL_LINKS = {}
+        if LABEL_LINKS_JSON.exists():
+            with LABEL_LINKS_JSON.open("r", encoding="utf-8") as file:
+                data = json.load(file)
+            pages = data.get("pages") if isinstance(data, dict) else None
+            if isinstance(pages, dict):
+                _LABEL_LINKS = {key.replace("\\", "/"): value for key, value in pages.items() if isinstance(value, list)}
+    return _LABEL_LINKS
+
+
+def render_label_links(step):
+    items = []
+    for entry in read_label_links().get(step.replace("\\", "/"), []):
+        if not isinstance(entry, dict):
+            continue
+        url = entry.get("url", "")
+        name = clean_seo_text(entry.get("name"))
+        license_number = clean_seo_text(entry.get("license"))
+        if not (isinstance(url, str) and url.startswith("https://mcp.fda.gov.tw/") and name):
+            continue
+        license_html = f'<span class="label-link-license">{esc(license_number)}</span>' if license_number else ""
+        items.append(
+            f'<li><a class="label-link" href="{esc(url)}" target="_blank" rel="noopener noreferrer">'
+            f'<span class="label-link-name">{esc(name)}</span>{license_html}</a></li>'
+        )
+    if not items:
+        return ""
+    return (
+        '      <section class="label-links" aria-label="食藥署藥品仿單">\n'
+        '        <div class="section-title">食藥署藥品仿單</div>\n'
+        f'        <ul class="label-link-list">{"".join(items)}</ul>\n'
+        '      </section>\n'
+    )
+
+
+LABEL_LINK_STYLES = """    .label-links {
+      margin:0 0 18px;
+    }
+    .label-link-list {
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:grid;
+      gap:8px;
+    }
+    .label-link {
+      display:flex;
+      align-items:stretch;
+      min-height:44px;
+      border:1px solid var(--line);
+      border-radius:10px;
+      background:#fff;
+      color:var(--ink);
+      text-decoration:none;
+      overflow:hidden;
+    }
+    .label-link-name {
+      flex:1 1 auto;
+      padding:10px 12px;
+      font-weight:700;
+      line-height:1.45;
+      color:var(--brand);
+      overflow-wrap:anywhere;
+    }
+    .label-link-license {
+      flex:0 0 auto;
+      display:flex;
+      align-items:center;
+      padding:8px 12px;
+      background:var(--brand);
+      color:#fff;
+      font-size:.82rem;
+      font-weight:700;
+      white-space:nowrap;
+    }
+    .label-link-license::after {
+      content:"↗";
+      margin-left:6px;
+    }
+    .label-link:hover,
+    .label-link:focus-visible {
+      border-color:var(--brand);
+    }
+    @media (max-width:420px) {
+      .label-link { flex-direction:column; }
+      .label-link-license { justify-content:space-between; }
+    }
+"""
+
+
 def render_card_text_content(card_content, h1, category_label, step_number, total, header_link=""):
     if not card_content:
         return ""
@@ -445,6 +542,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     json_ld = render_json_ld(seo, h1, card_content)
     links = share_links(page_url, title)
     related_cards = render_related_cards(steps, step, series_seo or {})
+    label_links_html = render_label_links(step)
     pilot_navigation = render_navigation(pilot) if pilot else ""
     pilot_footer_start = '      <footer class="acne-pilot-footer">\n' if pilot else ""
     pilot_footer_end = '\n      </footer>\n' + render_footer(ROOT, page_path) if pilot else ""
@@ -973,7 +1071,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     </nav>
     <section class="info">
 {info_heading}
-{pilot_navigation}{pilot_footer_start}      <div class="section-title">同系列圖卡</div>
+{label_links_html}{pilot_navigation}{pilot_footer_start}      <div class="section-title">同系列圖卡</div>
       <ol class="related-list" aria-label="同系列圖卡">
         {related_cards}
       </ol>{series_links}{pilot_footer_end}
@@ -1184,6 +1282,8 @@ def generate_card_pages(cards, seo_index, card_content_index, only_image_ids=Non
             page_html = render_card_page(card_id, card, step, index, seo, card_content,
                                         render_series_links(card, cards, card_content), seo_index,
                                         pilot=pilot_pages.get(image_id))
+            if render_label_links(step):
+                page_html = page_html.replace("  </style>", LABEL_LINK_STYLES + "  </style>", 1)
             if image_id in pilot_pages:
                 page_html = page_html.replace("  </style>", ACNE_PILOT_STYLES + footer_styles(ROOT) + "\n  </style>", 1)
             elif show_shared_footer(card_id, card):
