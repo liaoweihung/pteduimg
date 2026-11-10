@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-10T12:01:42+08:00",
-  "baseline": "c43564375a6e55a4451adc19e6b5e2c6028ea74c",
-  "scope": "網站來源快照；版本 c4356437",
+  "generatedAt": "2026-11-10T13:48:51+08:00",
+  "baseline": "2af4d12f923569dc0c1a8cce7defff7b201f05b2",
+  "scope": "網站來源快照；版本 2af4d12f",
   "counts": {
     "cards": 409,
     "series": 90,
@@ -1652,8 +1652,7 @@
       "series": "ped_fever_reducer",
       "issues": [
         "reference_status",
-        "date_status",
-        "footer_status"
+        "date_status"
       ]
     },
     {
@@ -2440,16 +2439,7 @@
       "series": "ped_fever_reducer",
       "issues": [
         "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "舒抑痛口服懸液：兒童退燒劑量與使用注意事項",
-      "path": "cards/idofen_suspension.html",
-      "series": "ped_fever_reducer",
-      "issues": [
-        "footer_status"
+        "date_status"
       ]
     },
     {
@@ -2606,14 +2596,6 @@
       ]
     },
     {
-      "title": "馬蓋先口服懸濁液：兒童退燒劑量與使用注意事項",
-      "path": "cards/macsafe_suspension.html",
-      "series": "ped_fever_reducer",
-      "issues": [
-        "footer_status"
-      ]
-    },
-    {
       "title": "胃幽門螺旋桿菌檢查",
       "path": "cards/methodology_of_exam_Hp.html",
       "series": "Hpylori_exam",
@@ -2724,8 +2706,7 @@
       "issues": [
         "text_status",
         "reference_status",
-        "date_status",
-        "footer_status"
+        "date_status"
       ]
     },
     {
@@ -3883,8 +3864,8 @@
       "partial": 21
     },
     "footer_status": {
-      "missing": 244,
-      "machine_pass": 165
+      "missing": 239,
+      "machine_pass": 170
     },
     "jsonld_status": {
       "machine_pass": 235,
