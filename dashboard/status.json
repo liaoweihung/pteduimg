@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-04T09:32:13+08:00",
-  "baseline": "85c5467911fbd4f498a0a6959117b69adcb1c647",
-  "scope": "網站來源快照；版本 85c54679",
+  "generatedAt": "2026-11-10T11:40:44+08:00",
+  "baseline": "d283fcace44ae3a7f0201ebe8c86b72d4fd9539b",
+  "scope": "網站來源快照；版本 d283fcac",
   "counts": {
     "cards": 409,
     "series": 90,
@@ -3013,16 +3013,6 @@
       ]
     },
     {
-      "title": "兒科感冒藥水",
-      "path": "cards/ped_cold_secorine.html",
-      "series": "pediatric_cold_syrup",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status"
-      ]
-    },
-    {
       "title": "縫合／術後傷口，回家怎麼照顧？",
       "path": "cards/postoperative_wound.html",
       "series": "postoperative_wound",
@@ -3879,17 +3869,17 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 273,
+      "machine_pass": 274,
       "partial": 1,
-      "missing": 135
+      "missing": 134
     },
     "reference_status": {
-      "missing": 220,
-      "machine_pass": 189
+      "missing": 219,
+      "machine_pass": 190
     },
     "date_status": {
-      "missing": 220,
-      "machine_pass": 168,
+      "missing": 219,
+      "machine_pass": 169,
       "partial": 21
     },
     "footer_status": {
