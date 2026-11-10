@@ -11566,7 +11566,7 @@
     "altText": "息咳寧糖漿衛教圖卡：成分與許可證字號、緩解感冒症狀的用途、家長核對用量三步驟、兒童用量依醫囑且 6 歲以下先由醫師診治、服用後嗜睡等注意事項，以及息咳寧與息咳液不同",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
-    "needsMedicalReview": true,
+    "needsMedicalReview": false,
     "sourceCheckedAt": "2026-11-10",
     "updatedAt": "2026-11-10",
     "references": [
@@ -11575,6 +11575,6 @@
         "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC040833%E8%99%9F"
       }
     ],
-    "revisionCredit": "使用者提供圖卡；AI依TFDA核准仿單整理網站文字並核對來源"
+    "revisionCredit": "使用者提供圖卡；AI依TFDA核准仿單整理網站文字並核對來源；網站作者（藥師）2026-11-10 確認"
   }
 ]
