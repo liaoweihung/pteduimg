@@ -11534,5 +11534,47 @@
         "url": "https://www.health.mn.gov/diseases/asthma/professionals/inhaleryouth.pdf"
       }
     ]
+  },
+  {
+    "cardId": "pediatric_cold_syrup",
+    "title": "息咳寧糖漿怎麼吃？成分、兒童用量與注意事項",
+    "image": "img/ped_cold_secorine.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html",
+    "summary": "息咳寧糖漿（Secorine Syrup）是含 dl-Methylephedrine、Chlorpheniramine 與 Glyceryl guaiacolate 的複方感冒藥水，用於緩解流鼻水、鼻塞、打噴嚏、咳嗽及喀痰；不是抗生素，也不含退燒成分。兒童用量依醫囑，6 歲以下先由醫師診治。",
+    "sections": [
+      {
+        "heading": "認對藥品",
+        "text": "每 1 mL 含 dl-Methylephedrine HCl 1 mg、Chlorpheniramine maleate 0.1 mg、Glyceryl guaiacolate（Guaifenesin）5 mg；許可證字號衛署藥製字第040833號，屬醫師藥師藥劑生指示藥品。本品含阿斯巴甜，苯酮尿症者不可使用。"
+      },
+      {
+        "heading": "用途",
+        "text": "緩解感冒的流鼻水、鼻塞、打噴嚏、咳嗽及喀痰。Chlorpheniramine 是第一代抗組織胺；dl-Methylephedrine 可擴張支氣管、減輕鼻塞與咳嗽；Glyceryl guaiacolate 幫助排痰。"
+      },
+      {
+        "heading": "家長如何核對用量",
+        "text": "看藥名與濃度、每次 mL 與每日次數，再用附屬量器量取；使用前搖勻。兒童用量依醫囑與藥袋，不用體重公式自行速算；6 歲以下先由醫師診治。仿單自行使用參考量：成人及 12 歲以上每次 20 mL、9 歲以上未滿 12 歲 10 mL、6 歲以上未滿 9 歲 6.7 mL，皆一日 3 次。藥袋指示與此不同時，以處方為準，有疑問先問藥師。"
+      },
+      {
+        "heading": "服用後注意",
+        "text": "可能引起嗜睡；也可能出現頭暈、噁心等不適。超過建議量可能焦慮、暈眩或失眠，兒童可能躁動，不要自行加量，也不要用來讓孩子入睡。出現心跳加速、排尿困難、發疹或視覺模糊，請停藥並諮詢醫藥人員。避免酒精、開車及操作危險機械；勿自行併用其他感冒、止咳化痰、鼻炎、抗過敏、止痛退燒或安眠鎮靜藥。自行使用勿超過 7 日；咳嗽超過一星期、高燒、膿痰、疹子、持續頭痛，或發燒持續三日，應就醫。"
+      },
+      {
+        "heading": "息咳寧 ≠ 息咳液",
+        "text": "兩者名稱相似但配方不同，不要自行替換或合用。有疑問請把藥瓶或藥袋帶給藥師核對。"
+      }
+    ],
+    "altText": "息咳寧糖漿衛教圖卡：成分與許可證字號、緩解感冒症狀的用途、家長核對用量三步驟、兒童用量依醫囑且 6 歲以下先由醫師診治、服用後嗜睡等注意事項，以及息咳寧與息咳液不同",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-11-10",
+    "updatedAt": "2026-11-10",
+    "references": [
+      {
+        "title": "衛生福利部食品藥物管理署 藥品仿單查詢平台：「晟德」息咳寧糖漿（衛署藥製字第040833號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC040833%E8%99%9F"
+      }
+    ],
+    "revisionCredit": "使用者提供圖卡；AI依TFDA核准仿單整理網站文字並核對來源"
   }
 ]
