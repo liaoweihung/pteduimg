@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-10T13:48:51+08:00",
-  "baseline": "2af4d12f923569dc0c1a8cce7defff7b201f05b2",
-  "scope": "網站來源快照；版本 2af4d12f",
+  "generatedAt": "2026-11-11T21:18:12+08:00",
+  "baseline": "fad743cbbb0d7f20d53053af03c3d4a36612f23c",
+  "scope": "網站來源快照；版本 fad743cb",
   "counts": {
-    "cards": 409,
-    "series": 90,
-    "allSeries": 94,
+    "cards": 415,
+    "series": 91,
+    "allSeries": 95,
     "hidden": 4,
     "retired": 4,
     "areas": 16,
@@ -19,7 +19,7 @@
     "growth": 1,
     "infectious_diseases": 3,
     "eyes": 3,
-    "gastrointestinal": 4,
+    "gastrointestinal": 5,
     "oral_health": 4,
     "insect_repellent": 1,
     "elimination_care": 4,
@@ -28,7 +28,7 @@
     "sleep": 1,
     "travel_medication": 3,
     "pregnancy": 2,
-    "infant_care": 1
+    "infant_care": 2
   },
   "series": [
     {
@@ -973,6 +973,17 @@
       "areas": [
         "gastrointestinal",
         "elimination_care"
+      ],
+      "departments": []
+    },
+    {
+      "id": "diarrhea_care",
+      "title": "腹瀉、拉肚子注意什麼？",
+      "count": 6,
+      "hidden": false,
+      "areas": [
+        "gastrointestinal",
+        "infant_care"
       ],
       "departments": []
     }
@@ -3850,31 +3861,31 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 274,
+      "machine_pass": 280,
       "partial": 1,
       "missing": 134
     },
     "reference_status": {
       "missing": 219,
-      "machine_pass": 190
+      "machine_pass": 196
     },
     "date_status": {
       "missing": 219,
-      "machine_pass": 169,
+      "machine_pass": 175,
       "partial": 21
     },
     "footer_status": {
       "missing": 239,
-      "machine_pass": 170
+      "machine_pass": 176
     },
     "jsonld_status": {
-      "machine_pass": 235,
+      "machine_pass": 241,
       "missing": 174
     }
   },
   "sync": {
-    "pages": 413,
-    "fields": 413,
+    "pages": 419,
+    "fields": 419,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4826,6 +4837,42 @@
       },
       {
         "page": "diabetic_foot",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "diarrhea_care_1",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "diarrhea_care_2",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "diarrhea_care_3",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "diarrhea_care_4",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "diarrhea_care_5",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "diarrhea_care_6",
         "fields": [
           "rules_sha256"
         ]
