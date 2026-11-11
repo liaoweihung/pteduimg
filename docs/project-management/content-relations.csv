@@ -499,3 +499,11 @@ REL-08db60dec6704b69,page:laxative_duration,further_reading,page:enema_clinical_
 REL-23d7e3ef2de966fb,page:laxative_comparison,further_reading,page:constipation_cate,source_observed,management,data/card_content.json,便祕用藥怎麼選？口服藥與甘油浣腸各有角色
 REL-e6cf7e7f18ba72ba,page:laxative_comparison,further_reading,page:stomach_medicine_antacid,source_observed,management,data/card_content.json,氧化鎂是胃藥還是便祕藥？
 REL-e248ea5f9f1c3065,page:laxative_comparison,further_reading,page:lactulose_constipation,source_observed,management,data/card_content.json,乳果糖藥水怎麼吃？杜化液、樂多差異
+REL-e9bde8d55d79658b,series:diarrhea_care,has_card,page:diarrhea_care_1,source_observed,series_membership,cards.json,CR-2026-073；新系列第 1 張
+REL-6a59750a786206c3,series:diarrhea_care,has_card,page:diarrhea_care_2,source_observed,series_membership,cards.json,CR-2026-073；新系列第 2 張
+REL-a60706dcf26354a7,series:diarrhea_care,has_card,page:diarrhea_care_3,source_observed,series_membership,cards.json,CR-2026-073；新系列第 3 張
+REL-0cf0d26098b4f2ff,series:diarrhea_care,has_card,page:diarrhea_care_4,source_observed,series_membership,cards.json,CR-2026-073；新系列第 4 張
+REL-bc3477d4efca68fe,series:diarrhea_care,has_card,page:diarrhea_care_5,source_observed,series_membership,cards.json,CR-2026-073；新系列第 5 張
+REL-a341c131b1f90a31,series:diarrhea_care,has_card,page:diarrhea_care_6,source_observed,series_membership,cards.json,CR-2026-073；新系列第 6 張
+REL-e67edee6cd59fa0b,page:diarrhea_care_5,further_reading,page:ped_diarrhea_hidrasec,source_observed,management,data/card_content.json,瀉必寧 Hidrasec 怎麼吃？兒童劑量、服用方法與注意事項
+REL-40fab6874823e087,page:diarrhea_care_6,further_reading,page:ped_diarrhea_hidrasec,source_observed,management,data/card_content.json,瀉必寧 Hidrasec 怎麼吃？兒童劑量、服用方法與注意事項

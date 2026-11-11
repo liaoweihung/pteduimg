@@ -3796,5 +3796,72 @@
       "hemorr_sitbath",
       "rectal"
     ]
+  },
+  "diarrhea_care": {
+    "title": "腹瀉、拉肚子注意什麼？",
+    "category": "public_education",
+    "showFooter": true,
+    "topics": [
+      "gastrointestinal",
+      "infant_care"
+    ],
+    "order": 36,
+    "hidden": false,
+    "icon": "💧",
+    "tags": [
+      "腹瀉",
+      "拉肚子",
+      "拉肚子怎麼辦",
+      "成人腹瀉",
+      "腹瀉飲食",
+      "腹瀉補水",
+      "腹瀉多久看醫生",
+      "腹瀉脫水",
+      "血便",
+      "小孩拉肚子",
+      "兒童腹瀉",
+      "兒童電解質液",
+      "口服電解質液",
+      "ORS",
+      "兒童腹瀉警訊",
+      "小孩脫水症狀",
+      "兒童腸胃炎",
+      "寶寶拉肚子",
+      "嬰兒腹瀉",
+      "腹瀉配方奶",
+      "拉肚子母乳",
+      "奶粉稀釋",
+      "嬰兒腹瀉脫水",
+      "嬰兒拉肚子就醫",
+      "運動飲料",
+      "諾羅病毒"
+    ],
+    "texts": [
+      "成人腹瀉怎麼辦？補水、飲食與居家照顧",
+      "拉肚子何時要看醫生？成人腹瀉警訊",
+      "小孩拉肚子怎麼辦？補水與飲食照顧",
+      "兒童腹瀉何時就醫？尿量、精神與危險徵兆",
+      "寶寶拉肚子奶要停嗎？母乳、配方奶與副食品照顧",
+      "嬰兒腹瀉何時就醫？尿布、喝奶與脫水警訊"
+    ],
+    "steps": [
+      "img/diarrhea_care_1.webp",
+      "img/diarrhea_care_2.webp",
+      "img/diarrhea_care_3.webp",
+      "img/diarrhea_care_4.webp",
+      "img/diarrhea_care_5.webp",
+      "img/diarrhea_care_6.webp"
+    ],
+    "favorite_keys": [
+      "diarrhea_care-0",
+      "diarrhea_care-1",
+      "diarrhea_care-2",
+      "diarrhea_care-3",
+      "diarrhea_care-4",
+      "diarrhea_care-5"
+    ],
+    "related_series": [
+      "pregnancy_minor_ailments"
+    ]
   }
 }

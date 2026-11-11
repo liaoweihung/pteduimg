@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v528af3f41e635395ed03e6cd';
+const CACHE_NAME = 'pwa-cache-ve2c023cb164c0c3ee0a07bc6';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -213,6 +213,12 @@ const urlsToCache = [
   "./img/contraceptive_pills_missed_dose.webp",
   "./img/diabetes_nutrition_formula.webp",
   "./img/diabetic_foot.webp",
+  "./img/diarrhea_care_1.webp",
+  "./img/diarrhea_care_2.webp",
+  "./img/diarrhea_care_3.webp",
+  "./img/diarrhea_care_4.webp",
+  "./img/diarrhea_care_5.webp",
+  "./img/diarrhea_care_6.webp",
   "./img/diosmin_use.webp",
   "./img/dry_eye_comp.webp",
   "./img/dry_eye_dailycare.webp",
@@ -880,6 +886,12 @@ const urlsToCache = [
   "./cards/laxative_osmotic.html",
   "./cards/laxative_duration.html",
   "./cards/laxative_comparison.html",
+  "./cards/diarrhea_care_1.html",
+  "./cards/diarrhea_care_2.html",
+  "./cards/diarrhea_care_3.html",
+  "./cards/diarrhea_care_4.html",
+  "./cards/diarrhea_care_5.html",
+  "./cards/diarrhea_care_6.html",
   "./cards/acne.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare_2.html",

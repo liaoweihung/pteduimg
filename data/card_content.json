@@ -11576,5 +11576,337 @@
       }
     ],
     "revisionCredit": "使用者提供圖卡；AI依TFDA核准仿單整理網站文字並核對來源；網站作者（藥師）2026-11-10 確認"
+  },
+  {
+    "cardId": "diarrhea_care",
+    "title": "成人腹瀉怎麼辦？補水、飲食與居家照顧",
+    "image": "img/diarrhea_care_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diarrhea_care_1.html",
+    "summary": "大人拉肚子該喝什麼、吃什麼？了解腹瀉時如何補充水分與電解質、何時使用口服電解質液，以及飲食注意事項。",
+    "sections": [
+      {
+        "heading": "少量多次補充水分",
+        "text": "腹瀉會使身體流失水分及電解質。輕微腹瀉時可適量喝水；若水便頻繁、流失量較大，或是長輩、身體較虛弱者，建議使用口服電解質液（ORS）。同時噁心想吐時，可以少量、多次慢慢喝。"
+      },
+      {
+        "heading": "可以吃就正常吃",
+        "text": "腹瀉時不需要一律禁食。只要沒有嚴重嘔吐、腹脹或無法進食，可以依食慾進食。初期可選擇白飯、稀飯、麵條、吐司、雞肉、蛋或清淡湯品等容易消化的食物，再逐步恢復平常飲食。"
+      },
+      {
+        "heading": "暫時少吃刺激食物",
+        "text": "油膩食物、酒精、含糖量高的飲料，以及咖啡、濃茶等含咖啡因飲料，可能使腹瀉加重。部分人在腸胃炎後會暫時對乳糖較敏感，若喝牛奶後腹瀉明顯加劇，可暫時減少乳糖攝取。"
+      },
+      {
+        "heading": "大人拉肚子可以正常吃東西嗎？",
+        "text": "可以。一般輕微腹瀉不需要刻意禁食，只要沒有明顯脫水、嚴重嘔吐或無法進食，就能依食慾進食。可先選擇容易接受的食物，並補充流失的水分與電解質。"
+      },
+      {
+        "heading": "腹瀉一定要喝電解質液嗎？可以喝運動飲料嗎？",
+        "text": "不一定。成人輕微腹瀉且能正常喝水進食時，可以先補充水分並正常飲食；運動飲料可以提供部分水分，但不等於口服電解質液。若有大量水便、持續流失水分或脫水風險，口服電解質液更適合用來補充流失的水分和電解質。"
+      },
+      {
+        "heading": "拉肚子會傳染給家人嗎？",
+        "text": "如果腹瀉是由諾羅病毒等病原造成，可能透過受污染的手、食物、物品及排泄物傳播。如廁後、換尿布後及備餐前，應使用肥皂和清水正確洗手。若疑似諾羅病毒感染，症狀停止後至少 48 小時內，仍應避免替他人準備食物。"
+      },
+      {
+        "heading": "衛教重點",
+        "text": "腹瀉時，預防脫水比急著止瀉更重要。"
+      }
+    ],
+    "altText": "大人拉肚子先補水、正常吃衛教圖卡：少量多次補水、可以吃就正常吃、暫時少吃油膩高糖飲料及酒精，預防脫水比急著止瀉更重要",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-11-11",
+    "sourceCheckedAt": "2026-11-11",
+    "references": [
+      {
+        "title": "衛生福利部疾病管制署：病毒性腸胃炎 Q&A",
+        "url": "https://www.cdc.gov.tw/Category/QAPage/h5jfdG8vi3tGUDO8fNAoFQ"
+      },
+      {
+        "title": "美國 NIDDK：Symptoms & Causes of Diarrhea",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diarrhea/symptoms-causes"
+      },
+      {
+        "title": "美國 CDC：Norovirus Fact Sheet for Food Workers",
+        "url": "https://www.cdc.gov/norovirus/communication-resources/facts-for-food-workers.html"
+      }
+    ],
+    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源"
+  },
+  {
+    "cardId": "diarrhea_care",
+    "title": "拉肚子何時要看醫生？成人腹瀉警訊",
+    "image": "img/diarrhea_care_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diarrhea_care_2.html",
+    "summary": "腹瀉超過兩天、血便、劇烈腹痛或頭暈怎麼辦？認識成人腹瀉的脫水徵兆與就醫警訊，了解哪些情況不能繼續在家觀察。",
+    "sections": [
+      {
+        "heading": "本卡適用於成人",
+        "text": "多數輕微腹瀉可以居家觀察，但出現以下任一項就應就醫評估，不需要同時發生。兒童與嬰幼兒請參考本系列第 4 張與第 6 張。"
+      },
+      {
+        "heading": "排便異常或劇烈腹痛",
+        "text": "血便、黑色柏油樣便、劇烈或持續加重的腹痛，或腹瀉合併明顯腹脹、無法正常進食，可能不只是一般急性腸胃炎，應儘速就醫。"
+      },
+      {
+        "heading": "疑似嚴重脫水",
+        "text": "尿量明顯變少或尿色很深、口乾、頭暈、站起來容易暈眩、非常虛弱或無法補充足夠水分，都是脫水警訊。若出現意識不清、昏厥或無法正常反應，應立即就醫。"
+      },
+      {
+        "heading": "症狀持續或加重",
+        "text": "腹瀉超過 2 天仍未改善、高燒（體溫達 39°C 以上）、頻繁嘔吐，或一天出現多次大量水便，建議就醫評估。近期使用抗生素後開始腹瀉，也應就醫或先詢問藥師。"
+      },
+      {
+        "heading": "拉肚子多久需要看醫生？",
+        "text": "成人腹瀉超過兩天仍未改善，建議就醫評估。如果有血便、黑色柏油樣便、劇烈腹痛、高燒、明顯脫水或無法喝水，不需要等兩天，應儘速就醫。"
+      },
+      {
+        "heading": "特別提醒",
+        "text": "高齡者、孕婦、免疫力低下者，以及有腎臟病、心臟病等慢性疾病的患者，應更早尋求醫療協助。"
+      }
+    ],
+    "altText": "成人拉肚子出現這些情況別再等衛教圖卡：血便黑便或劇烈腹痛、疑似嚴重脫水、高燒或腹瀉超過2天未改善，高齡孕婦及免疫力低下者應更早就醫",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-11-11",
+    "sourceCheckedAt": "2026-11-11",
+    "references": [
+      {
+        "title": "美國 NIDDK：Symptoms & Causes of Diarrhea",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diarrhea/symptoms-causes"
+      },
+      {
+        "title": "衛生福利部疾病管制署：病毒性腸胃炎 Q&A",
+        "url": "https://www.cdc.gov.tw/Category/QAPage/h5jfdG8vi3tGUDO8fNAoFQ"
+      }
+    ],
+    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源"
+  },
+  {
+    "cardId": "diarrhea_care",
+    "title": "小孩拉肚子怎麼辦？補水與飲食照顧",
+    "image": "img/diarrhea_care_3.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diarrhea_care_3.html",
+    "summary": "孩子腹瀉需要禁食嗎？可以喝運動飲料嗎？認識兒童腹瀉的補水原則、口服電解質液 ORS 使用時機與正常飲食建議。",
+    "sections": [
+      {
+        "heading": "本卡適用於 3 歲以上兒童",
+        "text": "兒童腹瀉常與急性腸胃炎有關。照顧時最重要的是預防脫水，同時避免長時間禁食造成營養攝取不足。未滿 3 歲請參考本系列第 5 張與第 6 張。"
+      },
+      {
+        "heading": "補充口服電解質液",
+        "text": "孩子水便頻繁或合併嘔吐時，建議補充口服電解質液（ORS），藥局即可購買。參考補充量：10 歲以下每拉一次水便，約補充 100～200 mL；10 歲以上可依口渴情況多喝。ORS 含適當比例的葡萄糖及電解質，有助腸道吸收水分。"
+      },
+      {
+        "heading": "少量多次慢慢喝",
+        "text": "一次喝太多容易吐。若孩子喝了想吐或嘔吐，先休息約 10 分鐘，再用湯匙或小口慢慢餵，確認能接受後逐步增加。若持續嘔吐、無法喝下足夠液體，或出現脫水徵兆，應就醫評估。"
+      },
+      {
+        "heading": "可以吃就正常吃",
+        "text": "沒有明顯脫水且能進食時，不需要刻意讓孩子餓肚子，可依食慾繼續正常、符合年齡的飲食。若已出現脫水，應先接受適當補液，再恢復平常飲食。腹瀉期間避免果汁、汽水和高糖飲料。"
+      },
+      {
+        "heading": "小孩拉肚子可以喝運動飲料嗎？",
+        "text": "不建議用運動飲料取代口服電解質液。運動飲料的糖分與電解質比例不適合補充腹瀉造成的流失；水便頻繁或有脫水風險時，應使用口服電解質液，並少量多次補充。"
+      },
+      {
+        "heading": "衛教重點",
+        "text": "不要只靠運動飲料補充電解質，也不要讓孩子長時間禁食。"
+      }
+    ],
+    "altText": "小孩拉肚子補水比禁食重要衛教圖卡：水便多或嘔吐時補充口服電解質液ORS、少量多次喝、可以吃就正常吃並避免果汁汽水高糖飲料，不建議只靠運動飲料",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-11-11",
+    "sourceCheckedAt": "2026-11-11",
+    "references": [
+      {
+        "title": "WHO：Manual for the Health Care of Children in Humanitarian Emergencies, Chapter 3 Diarrhoea and dehydration（2008）",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK143745/"
+      },
+      {
+        "title": "NICE CG84：Diarrhoea and vomiting caused by gastroenteritis in under 5s: diagnosis and management（2009）",
+        "url": "https://www.nice.org.uk/guidance/cg84/chapter/Recommendations"
+      },
+      {
+        "title": "中國醫藥大學附設醫院衛教單張：嬰幼兒急性腸胃炎及口服補液原則（2026-03-26 更新）",
+        "url": "https://cmuh.cmu.edu.tw/HealthEdus/Detail?no=5467"
+      }
+    ],
+    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源"
+  },
+  {
+    "cardId": "diarrhea_care",
+    "title": "兒童腹瀉何時就醫？尿量、精神與危險徵兆",
+    "image": "img/diarrhea_care_4.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diarrhea_care_4.html",
+    "summary": "孩子拉肚子時尿量減少、沒有眼淚或精神變差怎麼辦？認識兒童腹瀉脫水症狀、活動力變化及需要就醫的警訊。",
+    "sections": [
+      {
+        "heading": "尿量明顯減少",
+        "text": "兒童身體儲存的水分較少，腹瀉合併嘔吐時可能更快脫水。尿得比平常少、嘴巴乾燥、哭泣時眼淚減少，都可能是脫水的徵兆。"
+      },
+      {
+        "heading": "精神或活動力變差",
+        "text": "孩子明顯嗜睡、反應變慢、異常虛弱，或和平常的活動力差很多，應提高警覺。若意識不清、叫不太醒，應立即就醫。"
+      },
+      {
+        "heading": "其他危險症狀",
+        "text": "血便、劇烈或持續腹痛、高燒（體溫達 39°C 以上）、反覆嘔吐或吐出綠色液體、無法補充足夠水分，都應儘速就醫。"
+      },
+      {
+        "heading": "腹瀉持續多久要就醫？",
+        "text": "兒童腹瀉持續超過一天，或症狀加重、家長無法確定是否脫水，建議及早聯絡醫療人員評估。腹瀉超過一週仍未改善，也應回診檢查。"
+      },
+      {
+        "heading": "小孩拉肚子，怎麼知道有沒有脫水？",
+        "text": "觀察孩子的尿量、嘴巴是否乾燥、哭泣有沒有眼淚，以及精神活動力。若尿量明顯減少、異常虛弱、反應變差，應儘速就醫；若叫不太醒或意識異常，應立即就醫。"
+      },
+      {
+        "heading": "衛教重點",
+        "text": "尿量、精神和活動力，往往比單看腹瀉次數更能幫助家長察覺危險。"
+      }
+    ],
+    "altText": "小孩拉肚子注意危險訊號衛教圖卡：尿量減少嘴巴乾哭沒有眼淚、精神和活動力變差、血便腹痛高燒持續嘔吐，叫不太醒或明顯脫水應立即就醫",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-11-11",
+    "sourceCheckedAt": "2026-11-11",
+    "references": [
+      {
+        "title": "NICE CG84：Diarrhoea and vomiting caused by gastroenteritis in under 5s: diagnosis and management（2009）",
+        "url": "https://www.nice.org.uk/guidance/cg84/chapter/Recommendations"
+      },
+      {
+        "title": "美國 NIDDK：Symptoms & Causes of Diarrhea",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diarrhea/symptoms-causes"
+      }
+    ],
+    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源"
+  },
+  {
+    "cardId": "diarrhea_care",
+    "title": "寶寶拉肚子奶要停嗎？母乳、配方奶與副食品照顧",
+    "image": "img/diarrhea_care_5.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diarrhea_care_5.html",
+    "summary": "嬰兒腹瀉還能喝母乳或配方奶嗎？需要稀釋奶粉或換奶嗎？了解嬰幼兒腹瀉時的餵奶、補水及副食品照顧原則。",
+    "sections": [
+      {
+        "heading": "本卡適用於未滿 3 歲嬰幼兒",
+        "text": "嬰幼兒腹瀉時，照護方式和成人不同。未滿 1 歲的嬰兒，特別是未滿 6 個月者，發生脫水的風險較高。"
+      },
+      {
+        "heading": "母乳繼續餵",
+        "text": "寶寶腹瀉時仍可繼續哺餵母乳，不需要因為拉肚子就停止。如果寶寶一次喝得比較少，可以增加餵食次數。"
+      },
+      {
+        "heading": "配方奶正常沖泡",
+        "text": "使用配方奶的寶寶，原則上繼續正常濃度的配方奶。不要自行把奶粉沖淡，也不要因為腹瀉就直接更換無乳糖或其他特殊配方；若持續腹瀉、懷疑乳糖不耐受，應由醫師評估。"
+      },
+      {
+        "heading": "留意補水和進食",
+        "text": "觀察寶寶喝奶、尿布及精神活動力是否和平常相近。水便次數多時，可在喝奶之外，用湯匙少量多次補充口服電解質液，未滿 2 歲每拉一次水便約補充 50～100 mL；未滿 6 個月的寶寶，補充前請先詢問醫師或藥師。已吃副食品的寶寶，若沒有明顯脫水且能進食，可依耐受情況繼續符合年齡的飲食。"
+      },
+      {
+        "heading": "寶寶拉肚子，需要停母乳或換奶粉嗎？",
+        "text": "通常不需要。母乳可以繼續哺餵，配方奶原則上照正常濃度沖泡，不要自行稀釋或更換特殊配方。如有持續腹瀉、脫水或懷疑乳糖不耐受，應由醫師評估。"
+      },
+      {
+        "heading": "衛教重點",
+        "text": "小寶寶容易脫水，不要自行用大量白開水取代母乳或配方奶，也不要用運動飲料、果汁或汽水補水。"
+      }
+    ],
+    "altText": "寶寶拉肚子奶不用停衛教圖卡：母乳繼續餵、配方奶正常沖泡不稀釋不自行換特殊配方、留意補水喝奶尿量與副食品，不要用大量白開水取代奶",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-11-11",
+    "sourceCheckedAt": "2026-11-11",
+    "references": [
+      {
+        "title": "NICE CG84：Diarrhoea and vomiting caused by gastroenteritis in under 5s: diagnosis and management（2009）",
+        "url": "https://www.nice.org.uk/guidance/cg84/chapter/Recommendations"
+      },
+      {
+        "title": "中國醫藥大學附設醫院衛教單張：嬰幼兒急性腸胃炎及口服補液原則（2026-03-26 更新）",
+        "url": "https://cmuh.cmu.edu.tw/HealthEdus/Detail?no=5467"
+      },
+      {
+        "title": "WHO：Manual for the Health Care of Children in Humanitarian Emergencies, Chapter 3 Diarrhoea and dehydration（2008）",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK143745/"
+      }
+    ],
+    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源",
+    "related_links": [
+      {
+        "title": "瀉必寧 Hidrasec 怎麼吃？兒童劑量、服用方法與注意事項",
+        "url": "../cards/ped_diarrhea_hidrasec.html"
+      }
+    ]
+  },
+  {
+    "cardId": "diarrhea_care",
+    "title": "嬰兒腹瀉何時就醫？尿布、喝奶與脫水警訊",
+    "image": "img/diarrhea_care_6.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diarrhea_care_6.html",
+    "summary": "寶寶拉肚子時尿布變乾、喝奶變少或嗜睡怎麼辦？認識嬰兒脫水警訊，以及未滿兩個月腹瀉、未滿三個月發燒時的就醫原則。",
+    "sections": [
+      {
+        "heading": "出現脫水徵兆",
+        "text": "尿布比平常乾、3 小時以上沒有濕尿布、哭泣時沒有眼淚、眼眶凹陷、嘴巴乾燥，或頭頂囟門（軟軟的地方）明顯凹陷，都可能是脫水徵兆，應儘速就醫評估。"
+      },
+      {
+        "heading": "喝奶或精神變差",
+        "text": "寶寶明顯喝不下奶、反應變差、異常嗜睡或活動力明顯下降，都是需要注意的警訊。若叫不太醒、無法正常反應，應立即就醫。"
+      },
+      {
+        "heading": "其他警訊",
+        "text": "血便、反覆嘔吐或吐出綠色液體、明顯腹痛、腹部異常脹大，或 3 個月以上寶寶體溫達 39°C，都需要儘速就醫評估。"
+      },
+      {
+        "heading": "特別注意的年齡",
+        "text": "未滿 2 個月的嬰兒出現腹瀉（大便比平常明顯更稀、更多次；喝母乳的寶寶平常本來就常解稀便），或未滿 3 個月的嬰兒體溫達 38°C，應立即就醫評估。未滿 6 個月的嬰兒脫水風險較高，應及早諮詢醫療人員。"
+      },
+      {
+        "heading": "寶寶拉肚子，哪些情況需要立即就醫？",
+        "text": "寶寶出現明顯尿量減少、反應差、異常嗜睡、無法正常喝奶或血便，應儘速就醫。未滿兩個月的嬰兒出現腹瀉，或未滿三個月發燒達 38°C，也應立即就醫評估。"
+      },
+      {
+        "heading": "衛教重點",
+        "text": "寶寶腹瀉時，不只看大便次數，更要注意尿布、喝奶和精神狀況。"
+      }
+    ],
+    "altText": "寶寶拉肚子注意尿布和精神衛教圖卡：尿量明顯變少哭沒有眼淚眼眶凹陷、喝奶或精神變差、血便反覆嘔吐高燒，未滿2個月腹瀉或未滿3個月發燒達38°C立即就醫",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-11-11",
+    "sourceCheckedAt": "2026-11-11",
+    "references": [
+      {
+        "title": "NICE CG84：Diarrhoea and vomiting caused by gastroenteritis in under 5s: diagnosis and management（2009）",
+        "url": "https://www.nice.org.uk/guidance/cg84/chapter/Recommendations"
+      },
+      {
+        "title": "美國 NIDDK：Symptoms & Causes of Diarrhea",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diarrhea/symptoms-causes"
+      },
+      {
+        "title": "中國醫藥大學附設醫院衛教單張：嬰幼兒急性腸胃炎及口服補液原則（2026-03-26 更新）",
+        "url": "https://cmuh.cmu.edu.tw/HealthEdus/Detail?no=5467"
+      }
+    ],
+    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源",
+    "related_links": [
+      {
+        "title": "瀉必寧 Hidrasec 怎麼吃？兒童劑量、服用方法與注意事項",
+        "url": "../cards/ped_diarrhea_hidrasec.html"
+      }
+    ]
   }
 ]

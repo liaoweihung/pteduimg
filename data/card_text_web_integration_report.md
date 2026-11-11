@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：275
+- 成功加入文字頁數：281
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -280,3 +280,9 @@
 | MDI | 吸入器第二口要等多久？間隔 30–60 秒、再搖一次 | https://liaoweihung.github.io/pteduimg/cards/MDI_6.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | MDI | MDI 吸入器最重要的 3 個動作：吐氣、同步吸、閉氣 | https://liaoweihung.github.io/pteduimg/cards/MDI_7.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | pediatric_cold_syrup | 息咳寧糖漿怎麼吃？成分、兒童用量與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diarrhea_care | 成人腹瀉怎麼辦？補水、飲食與居家照顧 | https://liaoweihung.github.io/pteduimg/cards/diarrhea_care_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diarrhea_care | 拉肚子何時要看醫生？成人腹瀉警訊 | https://liaoweihung.github.io/pteduimg/cards/diarrhea_care_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diarrhea_care | 小孩拉肚子怎麼辦？補水與飲食照顧 | https://liaoweihung.github.io/pteduimg/cards/diarrhea_care_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diarrhea_care | 兒童腹瀉何時就醫？尿量、精神與危險徵兆 | https://liaoweihung.github.io/pteduimg/cards/diarrhea_care_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diarrhea_care | 寶寶拉肚子奶要停嗎？母乳、配方奶與副食品照顧 | https://liaoweihung.github.io/pteduimg/cards/diarrhea_care_5.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diarrhea_care | 嬰兒腹瀉何時就醫？尿布、喝奶與脫水警訊 | https://liaoweihung.github.io/pteduimg/cards/diarrhea_care_6.html | 是 | 是 | 是 | 是 | 是 | 無 |
