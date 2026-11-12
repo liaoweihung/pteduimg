@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-11T21:18:12+08:00",
-  "baseline": "fad743cbbb0d7f20d53053af03c3d4a36612f23c",
-  "scope": "網站來源快照；版本 fad743cb",
+  "generatedAt": "2026-11-12T12:34:28+08:00",
+  "baseline": "42c04be36aad9cc568cfb4a45c01970906544072",
+  "scope": "網站來源快照；版本 42c04be3",
   "counts": {
-    "cards": 415,
-    "series": 91,
-    "allSeries": 95,
+    "cards": 420,
+    "series": 92,
+    "allSeries": 96,
     "hidden": 4,
     "retired": 4,
     "areas": 16,
@@ -19,7 +19,7 @@
     "growth": 1,
     "infectious_diseases": 3,
     "eyes": 3,
-    "gastrointestinal": 5,
+    "gastrointestinal": 6,
     "oral_health": 4,
     "insect_repellent": 1,
     "elimination_care": 4,
@@ -984,6 +984,16 @@
       "areas": [
         "gastrointestinal",
         "infant_care"
+      ],
+      "departments": []
+    },
+    {
+      "id": "diarrhea_drugs",
+      "title": "常見腹瀉藥物",
+      "count": 5,
+      "hidden": false,
+      "areas": [
+        "gastrointestinal"
       ],
       "departments": []
     }
@@ -3861,31 +3871,31 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 280,
+      "machine_pass": 285,
       "partial": 1,
       "missing": 134
     },
     "reference_status": {
       "missing": 219,
-      "machine_pass": 196
+      "machine_pass": 201
     },
     "date_status": {
       "missing": 219,
-      "machine_pass": 175,
+      "machine_pass": 180,
       "partial": 21
     },
     "footer_status": {
       "missing": 239,
-      "machine_pass": 176
+      "machine_pass": 181
     },
     "jsonld_status": {
-      "machine_pass": 241,
+      "machine_pass": 246,
       "missing": 174
     }
   },
   "sync": {
-    "pages": 419,
-    "fields": 419,
+    "pages": 424,
+    "fields": 441,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4844,35 +4854,74 @@
       {
         "page": "diarrhea_care_1",
         "fields": [
+          "content_sha256",
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "diarrhea_care_2",
         "fields": [
+          "content_sha256",
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "diarrhea_care_3",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "diarrhea_care_4",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "diarrhea_care_5",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "diarrhea_care_6",
+        "fields": [
+          "source_sha256",
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "diarrhea_drugs_1",
+        "fields": [
+          "source_sha256",
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "diarrhea_drugs_2",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "diarrhea_drugs_3",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "diarrhea_drugs_4",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "diarrhea_drugs_5",
         "fields": [
           "rules_sha256"
         ]
@@ -5420,6 +5469,7 @@
       {
         "page": "lactulose_constipation",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5828,6 +5878,8 @@
       {
         "page": "ped_diarrhea_hidrasec",
         "fields": [
+          "content_sha256",
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -6068,18 +6120,22 @@
       {
         "page": "smecta_1",
         "fields": [
+          "content_sha256",
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "smecta_2",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "smecta_3",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -6338,6 +6394,7 @@
       {
         "page": "wempty_suspension",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
