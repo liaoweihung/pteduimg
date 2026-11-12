@@ -45,7 +45,7 @@ PUBLIC_TOPIC_TITLES = {
     "growth": "成長",
     "chronic_conditions": "慢性病",
     "sleep": "睡眠",
-    "pregnancy": "懷孕",
+    "pregnancy": "懷孕與哺乳",
     "travel_medication": "旅遊與用藥常識",
 }
 

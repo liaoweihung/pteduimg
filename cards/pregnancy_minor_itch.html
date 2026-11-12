@@ -86,7 +86,7 @@
         var btn = document.querySelector('button[onclick="returnToCardHome()"]');
         if (!btn) return;
         var stateRaw = sessionStorage.getItem('pteduimgReturnState');
-        var topicTitles = {"skin_wound": "皮膚與傷口", "acne": "痘痘／粉刺", "eyes": "眼睛", "oral_health": "口腔", "throat": "喉嚨", "infectious_diseases": "傳染病", "heat_illness": "中暑", "insect_repellent": "防蚊液", "gastrointestinal": "胃腸相關", "elimination_care": "排泄與照護", "infant_care": "嬰幼兒照護", "growth": "成長", "chronic_conditions": "慢性病", "sleep": "睡眠", "pregnancy": "懷孕", "travel_medication": "旅遊與用藥常識"};
+        var topicTitles = {"skin_wound": "皮膚與傷口", "acne": "痘痘／粉刺", "eyes": "眼睛", "oral_health": "口腔", "throat": "喉嚨", "infectious_diseases": "傳染病", "heat_illness": "中暑", "insect_repellent": "防蚊液", "gastrointestinal": "胃腸相關", "elimination_care": "排泄與照護", "infant_care": "嬰幼兒照護", "growth": "成長", "chronic_conditions": "慢性病", "sleep": "睡眠", "pregnancy": "懷孕與哺乳", "travel_medication": "旅遊與用藥常識"};
         if (stateRaw) {
           var state = JSON.parse(stateRaw);
           if (state && state.url) {
@@ -646,6 +646,7 @@
 <li><a class="related-item" href="../cards/pregnancy_minor_itch.html" aria-current="page">懷孕期間皮膚癢可以用什麼？</a></li>
 <li><a class="related-item" href="../cards/pregnancy_minor_insomnia.html">懷孕期間睡不好可以怎麼做？</a></li>
       </ol>
+      <nav aria-label="推薦閱讀"><div class="section-title">推薦閱讀</div><ul style="line-height:2.4; margin:0; padding-left:20px;"><li><a href="../cards/breastfeeding_minor_itch.html">產後哺乳期間怎麼用藥？看哺乳版</a></li></ul></nav>
     </section>
     <div class="qr-modal" id="qr-modal" hidden>
       <div class="qr-box" role="dialog" aria-modal="true" aria-label="圖卡 QR code">

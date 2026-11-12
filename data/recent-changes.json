@@ -1,5 +1,16 @@
 [
   {
+    "request_id": "CR-2026-076",
+    "completed_at": "2026-11-12",
+    "request_type": "新增系列",
+    "series_id": "breastfeeding_minor_ailments",
+    "series_title": "哺乳期間小毛病",
+    "card_count": 9,
+    "first_page_id": "breastfeeding_minor_fever_pain",
+    "first_step_index": 0,
+    "first_image": "img/breastfeeding_minor_fever_pain.webp"
+  },
+  {
     "request_id": "CR-2026-074",
     "completed_at": "2026-11-12",
     "request_type": "新增系列",

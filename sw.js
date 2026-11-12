@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v99fc90a15d7f51870e3ae88d';
+const CACHE_NAME = 'pwa-cache-vc8306049fa41d8e8848d4d5d';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -173,6 +173,15 @@ const urlsToCache = [
   "./img/balanced_nutrition_supplement.webp",
   "./img/boyBMI.webp",
   "./img/boy_height2.webp",
+  "./img/breastfeeding_minor_constipation.webp",
+  "./img/breastfeeding_minor_cough.webp",
+  "./img/breastfeeding_minor_diarrhea.webp",
+  "./img/breastfeeding_minor_engorgement.webp",
+  "./img/breastfeeding_minor_fever_pain.webp",
+  "./img/breastfeeding_minor_insomnia.webp",
+  "./img/breastfeeding_minor_itch.webp",
+  "./img/breastfeeding_minor_reflux.webp",
+  "./img/breastfeeding_minor_rhinitis.webp",
   "./img/bruise_be_gone.webp",
   "./img/bruising_care_1.webp",
   "./img/bruising_care_2.webp",
@@ -903,6 +912,15 @@ const urlsToCache = [
   "./cards/diarrhea_drugs_3.html",
   "./cards/diarrhea_drugs_4.html",
   "./cards/diarrhea_drugs_5.html",
+  "./cards/breastfeeding_minor_fever_pain.html",
+  "./cards/breastfeeding_minor_rhinitis.html",
+  "./cards/breastfeeding_minor_cough.html",
+  "./cards/breastfeeding_minor_constipation.html",
+  "./cards/breastfeeding_minor_diarrhea.html",
+  "./cards/breastfeeding_minor_reflux.html",
+  "./cards/breastfeeding_minor_itch.html",
+  "./cards/breastfeeding_minor_insomnia.html",
+  "./cards/breastfeeding_minor_engorgement.html",
   "./cards/acne.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare_2.html",

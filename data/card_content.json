@@ -3358,7 +3358,13 @@
     "sourceMessageId": "9fb21d48-cfcc-4f14-a8c8-c3dd1af616b1",
     "sourceType": "chatgpt_history",
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "related_links": [
+      {
+        "title": "產後哺乳期間怎麼用藥？看哺乳版",
+        "url": "../cards/breastfeeding_minor_fever_pain.html"
+      }
+    ]
   },
   {
     "cardId": "pregnancy_minor_ailments",
@@ -3385,7 +3391,13 @@
     "sourceMessageId": "9fb21d48-cfcc-4f14-a8c8-c3dd1af616b1",
     "sourceType": "chatgpt_history",
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "related_links": [
+      {
+        "title": "產後哺乳期間怎麼用藥？看哺乳版",
+        "url": "../cards/breastfeeding_minor_rhinitis.html"
+      }
+    ]
   },
   {
     "cardId": "pregnancy_minor_ailments",
@@ -3412,7 +3424,13 @@
     "sourceMessageId": "9fb21d48-cfcc-4f14-a8c8-c3dd1af616b1",
     "sourceType": "chatgpt_history",
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "related_links": [
+      {
+        "title": "產後哺乳期間怎麼用藥？看哺乳版",
+        "url": "../cards/breastfeeding_minor_cough.html"
+      }
+    ]
   },
   {
     "cardId": "pregnancy_minor_ailments",
@@ -3439,7 +3457,13 @@
     "sourceMessageId": "9fb21d48-cfcc-4f14-a8c8-c3dd1af616b1",
     "sourceType": "chatgpt_history",
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "related_links": [
+      {
+        "title": "產後哺乳期間怎麼用藥？看哺乳版",
+        "url": "../cards/breastfeeding_minor_constipation.html"
+      }
+    ]
   },
   {
     "cardId": "pregnancy_minor_ailments",
@@ -3466,7 +3490,13 @@
     "sourceMessageId": "e98f8133-e2bb-44d3-8a39-1e064d81dc76",
     "sourceType": "chatgpt_history",
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "related_links": [
+      {
+        "title": "產後哺乳期間怎麼用藥？看哺乳版",
+        "url": "../cards/breastfeeding_minor_diarrhea.html"
+      }
+    ]
   },
   {
     "cardId": "pregnancy_minor_ailments",
@@ -3493,7 +3523,13 @@
     "sourceMessageId": "195ad25b-ab5f-4fef-8678-855ffb99111d",
     "sourceType": "chatgpt_history",
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "related_links": [
+      {
+        "title": "產後哺乳期間怎麼用藥？看哺乳版",
+        "url": "../cards/breastfeeding_minor_reflux.html"
+      }
+    ]
   },
   {
     "cardId": "pregnancy_minor_ailments",
@@ -3520,7 +3556,13 @@
     "sourceMessageId": "b054a034-3fd1-4414-8020-06d8e6f7f3e8",
     "sourceType": "chatgpt_history",
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "related_links": [
+      {
+        "title": "產後哺乳期間怎麼用藥？看哺乳版",
+        "url": "../cards/breastfeeding_minor_itch.html"
+      }
+    ]
   },
   {
     "cardId": "pregnancy_minor_ailments",
@@ -3551,7 +3593,13 @@
     "sourceMessageId": "e4af6c1a-aa1f-4700-a495-064904efa430",
     "sourceType": "chatgpt_history",
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "related_links": [
+      {
+        "title": "產後哺乳期間怎麼用藥？看哺乳版",
+        "url": "../cards/breastfeeding_minor_insomnia.html"
+      }
+    ]
   },
   {
     "cardId": "burn_first_aid",
@@ -12438,6 +12486,670 @@
       {
         "title": "拉肚子何時要看醫生？成人腹瀉警訊",
         "url": "../cards/diarrhea_care_2.html"
+      }
+    ]
+  },
+  {
+    "cardId": "breastfeeding_minor_ailments",
+    "title": "哺乳期間頭痛、發燒可以吃什麼？",
+    "image": "img/breastfeeding_minor_fever_pain.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_fever_pain.html",
+    "summary": "哺乳期間頭痛或發燒，可以使用 Acetaminophen（乙醯胺酚）或 Ibuprofen（布洛芬），兩者都是哺乳期常用的退燒止痛藥，多數情況不需要停餵母乳。",
+    "sections": [
+      {
+        "heading": "怎麼選？",
+        "text": "只需要退燒、止痛時，Acetaminophen 是第一選擇；需要消炎（例如塞奶、牙痛）時可選 Ibuprofen。成人請依包裝標示使用，Acetaminophen 一天總量不要超過包裝建議的上限。服藥可安排在餵奶後，減少寶寶接觸的藥量。"
+      },
+      {
+        "heading": "避免重複成分",
+        "text": "綜合感冒藥常含 Acetaminophen，和普拿疼一起吃容易過量。購買前先看成分，或請藥師幫忙核對。"
+      },
+      {
+        "heading": "哪些人用 Ibuprofen 要先問？",
+        "text": "有胃潰瘍、胃出血病史、對 NSAID 過敏、氣喘吃止痛藥會發作，或腎功能不佳者，請先詢問醫師或藥師。"
+      },
+      {
+        "heading": "不建議自行使用 Aspirin",
+        "text": "阿斯匹靈用於止痛退燒時，哺乳期有其他更適合的選擇。醫師開立的低劑量阿斯匹靈請照處方使用。"
+      },
+      {
+        "heading": "就醫警訊",
+        "text": "產後 6 週內出現劇烈頭痛、視力模糊、上腹痛、明顯水腫或血壓升高，可能是產後子癲前症，請立即就醫。發燒合併乳房紅腫熱痛，要考慮乳腺炎。"
+      },
+      {
+        "heading": "餵母乳可以吃普拿疼嗎？",
+        "text": "可以。Acetaminophen 是哺乳期間常用的退燒止痛藥，一般劑量不需要停餵。"
+      },
+      {
+        "heading": "吃完止痛藥要隔多久才能餵奶？",
+        "text": "Acetaminophen、Ibuprofen 一般不需要特別等待，可在餵奶後服藥。"
+      }
+    ],
+    "altText": "哺乳期間頭痛發燒用藥衛教圖卡：可選 Acetaminophen、Ibuprofen，不建議自行吃 Aspirin，產後劇烈頭痛、視力模糊、上腹痛或血壓升高要立即就醫",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "references": [
+      {
+        "title": "LactMed（NIH Drugs and Lactation Database）",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK501922/"
+      },
+      {
+        "title": "NHS Specialist Pharmacy Service – Safety in breastfeeding",
+        "url": "https://www.sps.nhs.uk/"
+      },
+      {
+        "title": "Academy of Breastfeeding Medicine Clinical Protocol #36: The Mastitis Spectrum (2022)",
+        "url": "https://www.bfmed.org/protocols"
+      }
+    ],
+    "revisionCredit": "藥師審閱；使用者提供衛教文字與SEO",
+    "related_links": [
+      {
+        "title": "懷孕期間也有同樣困擾？看孕期版",
+        "url": "../cards/pregnancy_minor_fever_pain.html"
+      },
+      {
+        "title": "乳房紅腫發燒？看塞奶與乳腺炎",
+        "url": "../cards/breastfeeding_minor_engorgement.html"
+      }
+    ]
+  },
+  {
+    "cardId": "breastfeeding_minor_ailments",
+    "title": "哺乳期間鼻塞、流鼻水可以用什麼？",
+    "image": "img/breastfeeding_minor_rhinitis.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_rhinitis.html",
+    "summary": "哺乳期間鼻塞、流鼻水，先用生理食鹽水噴鼻或洗鼻；過敏性鼻炎可選較不嗜睡的抗組織胺或類固醇鼻噴劑。選藥時除了寶寶，也要注意奶量。",
+    "sections": [
+      {
+        "heading": "優先選擇",
+        "text": "生理食鹽水噴鼻、洗鼻沒有藥物進入母乳的問題，適合先用。過敏引起的鼻水、噴嚏，可選 Loratadine、Cetirizine、Fexofenadine；鼻塞為主可用 Fluticasone、Budesonide 等類固醇鼻噴劑，局部使用，進入母乳的量很少。"
+      },
+      {
+        "heading": "鼻塞很嚴重時",
+        "text": "Oxymetazoline 鼻噴劑可短期使用，最多連續 3 天，用太久可能反而更塞。"
+      },
+      {
+        "heading": "可能讓奶量變少的成分",
+        "text": "Pseudoephedrine（偽麻黃鹼）有研究顯示單次服用就可能降低奶量；Methylephedrine（甲基麻黃鹼）作用類似。這兩種成分常見於台灣的綜合感冒藥，奶量還沒穩定、或本來奶量就偏少的媽媽，請避免自行使用。"
+      },
+      {
+        "heading": "容易嗜睡的抗組織胺",
+        "text": "Chlorpheniramine 等第一代抗組織胺可能讓寶寶嗜睡、喝奶變差，高劑量也可能影響奶量。如果非用不可，以短期、低劑量為主，並觀察寶寶。"
+      },
+      {
+        "heading": "就醫警訊",
+        "text": "鼻塞超過 10 天、黃綠鼻涕合併臉頰痛或發燒，可能是鼻竇炎，請就醫。"
+      },
+      {
+        "heading": "哺乳期間可以吃綜合感冒藥嗎？",
+        "text": "不建議自行吃。很多綜合感冒藥含偽麻黃鹼、甲基麻黃鹼或嗜睡抗組織胺，可能影響奶量或讓寶寶嗜睡，最好請藥師依症狀挑單一成分。"
+      },
+      {
+        "heading": "吃鼻塞藥會退奶嗎？",
+        "text": "Pseudoephedrine 可能減少奶量，尤其產後初期或奶量不穩時要避免。"
+      }
+    ],
+    "altText": "哺乳期間鼻塞流鼻水用藥衛教圖卡：優先生理食鹽水洗鼻、非嗜睡抗組織胺與類固醇鼻噴劑，Oxymetazoline 最多 3 天，偽麻黃鹼與甲基麻黃鹼可能減少奶量",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "references": [
+      {
+        "title": "LactMed（NIH Drugs and Lactation Database）",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK501922/"
+      },
+      {
+        "title": "NHS Specialist Pharmacy Service – Safety in breastfeeding",
+        "url": "https://www.sps.nhs.uk/"
+      },
+      {
+        "title": "Academy of Breastfeeding Medicine Clinical Protocol #36: The Mastitis Spectrum (2022)",
+        "url": "https://www.bfmed.org/protocols"
+      }
+    ],
+    "revisionCredit": "藥師審閱；使用者提供衛教文字與SEO",
+    "related_links": [
+      {
+        "title": "懷孕期間也有同樣困擾？看孕期版",
+        "url": "../cards/pregnancy_minor_rhinitis.html"
+      },
+      {
+        "title": "洗鼻器怎麼用？",
+        "url": "../cards/nasal_rinse_1.html"
+      },
+      {
+        "title": "鼻噴劑正確使用步驟",
+        "url": "../cards/nasal_1.html"
+      }
+    ]
+  },
+  {
+    "cardId": "breastfeeding_minor_ailments",
+    "title": "哺乳期間咳嗽可以吃什麼？",
+    "image": "img/breastfeeding_minor_cough.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_cough.html",
+    "summary": "哺乳期間乾咳可考慮 Dextromethorphan（右美沙芬），有痰可考慮 Acetylcysteine。含 Codeine 或 Dihydrocodeine 的止咳藥可能讓寶寶嗜睡、呼吸變慢，應避免自行使用。",
+    "sections": [
+      {
+        "heading": "乾咳",
+        "text": "Dextromethorphan 以止咳糖漿的一般劑量使用時，進入母乳的量很低，可作為乾咳的選擇。"
+      },
+      {
+        "heading": "有痰咳嗽",
+        "text": "先多喝水、避免菸害。化痰藥可考慮 Acetylcysteine；Guaifenesin、Ambroxol 的哺乳期資料較少，不代表有害，需要時請藥師評估，寶寶是新生兒或早產兒時更要先問。"
+      },
+      {
+        "heading": "要避開的成分",
+        "text": "Codeine（可待因）與 Dihydrocodeine（二氫可待因）屬於鴉片類止咳成分，少數媽媽代謝較快，可能讓寶寶嗜睡、呼吸變慢；台灣不少止咳藥水與綜合感冒藥含二氫可待因。含 Methylephedrine 的複方可能減少奶量；高酒精含量的糖漿也不建議。"
+      },
+      {
+        "heading": "就醫警訊",
+        "text": "持續高燒、喘、胸痛、咳血，或咳嗽超過 3 週、越來越嚴重，請就醫。"
+      },
+      {
+        "heading": "哺乳可以喝咳嗽藥水嗎？",
+        "text": "可以，但要看成分。避開含可待因、二氫可待因的產品，以 Dextromethorphan 等單純成分為優先。"
+      },
+      {
+        "heading": "寶寶出現什麼狀況要注意？",
+        "text": "媽媽吃止咳藥後，寶寶異常嗜睡、叫不醒、喝奶變差或呼吸變慢，要立即就醫。"
+      }
+    ],
+    "altText": "哺乳期間咳嗽用藥衛教圖卡：乾咳可用 Dextromethorphan，有痰可用 Acetylcysteine，避免含 Codeine、Dihydrocodeine 與甲基麻黃鹼的止咳藥，持續高燒、喘、胸痛、咳血要就醫",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "references": [
+      {
+        "title": "LactMed（NIH Drugs and Lactation Database）",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK501922/"
+      },
+      {
+        "title": "NHS Specialist Pharmacy Service – Safety in breastfeeding",
+        "url": "https://www.sps.nhs.uk/"
+      },
+      {
+        "title": "Academy of Breastfeeding Medicine Clinical Protocol #36: The Mastitis Spectrum (2022)",
+        "url": "https://www.bfmed.org/protocols"
+      }
+    ],
+    "revisionCredit": "藥師審閱；使用者提供衛教文字與SEO",
+    "related_links": [
+      {
+        "title": "懷孕期間也有同樣困擾？看孕期版",
+        "url": "../cards/pregnancy_minor_cough.html"
+      },
+      {
+        "title": "喉嚨痛一起出現？",
+        "url": "../cards/sore_throat_causes.html"
+      }
+    ]
+  },
+  {
+    "cardId": "breastfeeding_minor_ailments",
+    "title": "哺乳期間便祕可以用什麼？",
+    "image": "img/breastfeeding_minor_constipation.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_constipation.html",
+    "summary": "哺乳期間便祕，先從喝水、纖維與活動改善；需要用藥時，氧化鎂、乳果糖、PEG 與洋車前子殼都是哺乳期可用的選擇，一般便祕藥不需要停餵母乳。",
+    "sections": [
+      {
+        "heading": "先從生活習慣開始",
+        "text": "哺乳會增加水分需求，餵奶時順手喝一杯水。多吃蔬菜、水果、全穀類，依身體恢復狀況適度活動。"
+      },
+      {
+        "heading": "常用軟便藥",
+        "text": "氧化鎂是台灣最常用的軟便藥，幾乎不進入母乳；腎功能不佳者先問醫師，並與部分抗生素、鐵劑間隔服用。洋車前子殼要配足量水；乳果糖、PEG 可讓糞便保持水分，效果較溫和。"
+      },
+      {
+        "heading": "短期使用",
+        "text": "番瀉苷、Bisacodyl 屬刺激性瀉劑，必要時短期使用；甘油栓劑作用快、在局部作用。"
+      },
+      {
+        "heading": "產後特別情況",
+        "text": "會陰傷口或痔瘡疼痛會讓人不敢解便，可以和醫師討論先用軟便藥。"
+      },
+      {
+        "heading": "就醫警訊",
+        "text": "腹痛明顯、嘔吐、血便，或長期排便困難，請就醫確認原因。"
+      },
+      {
+        "heading": "哺乳可以吃氧化鎂嗎？",
+        "text": "可以。氧化鎂吸收很少，哺乳期間可以使用。"
+      },
+      {
+        "heading": "吃瀉藥寶寶會拉肚子嗎？",
+        "text": "常用的軟便藥進入母乳的量很少，一般不會讓寶寶拉肚子。"
+      }
+    ],
+    "altText": "哺乳期間便祕用藥衛教圖卡：先多喝水與纖維，可選氧化鎂、洋車前子殼、乳果糖、PEG，必要時短期用番瀉苷、Bisacodyl 或甘油栓劑",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "references": [
+      {
+        "title": "LactMed（NIH Drugs and Lactation Database）",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK501922/"
+      },
+      {
+        "title": "NHS Specialist Pharmacy Service – Safety in breastfeeding",
+        "url": "https://www.sps.nhs.uk/"
+      },
+      {
+        "title": "Academy of Breastfeeding Medicine Clinical Protocol #36: The Mastitis Spectrum (2022)",
+        "url": "https://www.bfmed.org/protocols"
+      }
+    ],
+    "revisionCredit": "藥師審閱；使用者提供衛教文字與SEO",
+    "related_links": [
+      {
+        "title": "懷孕期間也有同樣困擾？看孕期版",
+        "url": "../cards/pregnancy_minor_constipation.html"
+      },
+      {
+        "title": "便祕藥怎麼選？各類型比較",
+        "url": "../cards/laxative_comparison.html"
+      },
+      {
+        "title": "便秘常見類型與成因",
+        "url": "../cards/constipation_cate.html"
+      },
+      {
+        "title": "浣腸怎麼用",
+        "url": "../cards/enema_steps.html"
+      }
+    ]
+  },
+  {
+    "cardId": "breastfeeding_minor_ailments",
+    "title": "哺乳期間拉肚子，可以吃止瀉藥嗎？",
+    "image": "img/breastfeeding_minor_diarrhea.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_diarrhea.html",
+    "summary": "哺乳媽媽拉肚子，第一步是補充水分與電解質，通常可以繼續餵母乳。沒有發燒、血便的成人急性水瀉，必要時可短期使用 Loperamide。",
+    "sections": [
+      {
+        "heading": "先補水",
+        "text": "腹瀉會流失水分，哺乳又需要更多水分，建議用口服電解質液（ORS）少量多次補充。脫水可能讓奶量暫時下降，補足水分後通常會恢復。"
+      },
+      {
+        "heading": "還能餵母乳嗎？",
+        "text": "一般腸胃炎通常可以繼續哺乳，母乳中的抗體反而能保護寶寶。抱寶寶、餵奶前後與如廁後都要徹底洗手。"
+      },
+      {
+        "heading": "止瀉藥",
+        "text": "Loperamide 進入母乳的量很少，沒有警訊的成人急性水瀉可短期使用，請依包裝標示。次水楊酸鉍含水楊酸鹽，不建議自行使用。其他常見止瀉藥（如正露丸、高克痢）的哺乳期使用，可請藥師評估。"
+      },
+      {
+        "heading": "不要自行止瀉的情況",
+        "text": "發燒、血便、劇烈腹痛或腹脹，表示可能是細菌感染或其他問題，用止瀉藥壓住症狀反而可能延誤。"
+      },
+      {
+        "heading": "就醫警訊",
+        "text": "發燒、血便、劇烈腹痛，或口乾、尿量明顯減少、頭暈等脫水症狀。"
+      },
+      {
+        "heading": "媽媽拉肚子會傳染給寶寶嗎？",
+        "text": "病菌主要透過手和接觸傳染，不是透過母乳。勤洗手比停餵更重要。"
+      },
+      {
+        "heading": "拉肚子奶量變少怎麼辦？",
+        "text": "先補足水分與電解質，持續依寶寶需求哺乳，奶量通常會回來。"
+      }
+    ],
+    "altText": "哺乳期間腹瀉衛教圖卡：先用 ORS 補水，通常可繼續哺乳，必要時短期使用 Loperamide，不建議次水楊酸鉍，發燒、血便、劇烈腹痛或脫水要就醫",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "references": [
+      {
+        "title": "LactMed（NIH Drugs and Lactation Database）",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK501922/"
+      },
+      {
+        "title": "NHS Specialist Pharmacy Service – Safety in breastfeeding",
+        "url": "https://www.sps.nhs.uk/"
+      },
+      {
+        "title": "Academy of Breastfeeding Medicine Clinical Protocol #36: The Mastitis Spectrum (2022)",
+        "url": "https://www.bfmed.org/protocols"
+      }
+    ],
+    "revisionCredit": "藥師審閱；使用者提供衛教文字與SEO",
+    "related_links": [
+      {
+        "title": "懷孕期間也有同樣困擾？看孕期版",
+        "url": "../cards/pregnancy_minor_diarrhea.html"
+      },
+      {
+        "title": "成人腹瀉居家照顧與就醫警訊",
+        "url": "../cards/diarrhea_care_1.html"
+      },
+      {
+        "title": "拉肚子何時要看醫生？成人腹瀉警訊",
+        "url": "../cards/diarrhea_care_2.html"
+      },
+      {
+        "title": "寶寶也拉肚子？母乳要不要停",
+        "url": "../cards/diarrhea_care_5.html"
+      },
+      {
+        "title": "常見止瀉藥怎麼選？正露丸、暮帝納斯、高克痢、Loperamide 用法與注意事項",
+        "url": "../cards/diarrhea_drugs_1.html"
+      },
+      {
+        "title": "Loperamide（樂必寧）止瀉藥用法與注意事項",
+        "url": "../cards/diarrhea_drugs_5.html"
+      }
+    ]
+  },
+  {
+    "cardId": "breastfeeding_minor_ailments",
+    "title": "哺乳期間胃酸逆流、胃不舒服可以吃什麼？",
+    "image": "img/breastfeeding_minor_reflux.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_reflux.html",
+    "summary": "哺乳期間胃酸逆流、胃不舒服，可以短期使用制酸劑、海藻酸鹽或 Famotidine；症狀較頑固時，可由醫師評估 Omeprazole 等 PPI。多種常見胃藥都不需要停餵母乳。",
+    "sections": [
+      {
+        "heading": "先調整習慣",
+        "text": "產後作息不規律、邊顧寶寶邊吃飯，容易吃太快、吃太飽。少量多餐，飯後 2–3 小時內不要躺下，減少油炸、甜食、咖啡與辛辣食物。"
+      },
+      {
+        "heading": "常見胃藥",
+        "text": "制酸劑（碳酸鈣、鎂鋁鹽類）與海藻酸鹽主要在胃裡作用，吸收很少，適合偶爾發作時使用。Famotidine 抑制胃酸分泌，進入母乳的量少。Omeprazole、Pantoprazole 等 PPI 哺乳期可用，需要時由醫師評估。"
+      },
+      {
+        "heading": "吃胃藥要注意",
+        "text": "制酸劑會影響部分藥物吸收（如鐵劑、部分抗生素），請錯開服用時間。"
+      },
+      {
+        "heading": "就醫警訊",
+        "text": "持續劇痛、吐血、黑便、吞嚥困難或體重下降。產後上腹痛合併頭痛、視力模糊或血壓升高，可能是產後子癲前症，請立即就醫。"
+      },
+      {
+        "heading": "哺乳可以喝胃乳嗎？",
+        "text": "可以。制酸劑吸收很少，哺乳期間可以短期使用。"
+      },
+      {
+        "heading": "胃痛就是胃酸太多嗎？",
+        "text": "不一定。膽結石、胰臟炎，甚至產後子癲前症都可能上腹痛，反覆或劇烈疼痛要就醫。"
+      }
+    ],
+    "altText": "哺乳期間胃酸逆流用藥衛教圖卡：先調整飲食與作息，可選制酸劑、海藻酸鹽、Famotidine，必要時醫師評估 PPI，吐血、黑便或產後上腹痛合併頭痛要就醫",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "references": [
+      {
+        "title": "LactMed（NIH Drugs and Lactation Database）",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK501922/"
+      },
+      {
+        "title": "NHS Specialist Pharmacy Service – Safety in breastfeeding",
+        "url": "https://www.sps.nhs.uk/"
+      },
+      {
+        "title": "Academy of Breastfeeding Medicine Clinical Protocol #36: The Mastitis Spectrum (2022)",
+        "url": "https://www.bfmed.org/protocols"
+      }
+    ],
+    "revisionCredit": "藥師審閱；使用者提供衛教文字與SEO",
+    "related_links": [
+      {
+        "title": "懷孕期間也有同樣困擾？看孕期版",
+        "url": "../cards/pregnancy_minor_nausea.html"
+      },
+      {
+        "title": "胃藥怎麼吃？常見胃藥指南",
+        "url": "../cards/stomach_medicine_guide.html"
+      },
+      {
+        "title": "海藻酸鹽 Alginate 胃乳錠用法",
+        "url": "../cards/stomach_medicine_alginate.html"
+      },
+      {
+        "title": "H2 受體拮抗劑（Famotidine 等）胃藥用法",
+        "url": "../cards/stomach_medicine_h2_blocker.html"
+      },
+      {
+        "title": "質子幫浦抑制劑 PPI 胃藥用法",
+        "url": "../cards/stomach_medicine_ppi.html"
+      }
+    ]
+  },
+  {
+    "cardId": "breastfeeding_minor_ailments",
+    "title": "哺乳期間皮膚癢，可以擦藥或吃藥嗎？",
+    "image": "img/breastfeeding_minor_itch.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_itch.html",
+    "summary": "哺乳期間皮膚癢，先從保濕與溫和清潔開始；輕度濕疹可短期擦低效價類固醇，需要口服時可選 Cetirizine、Loratadine。擦在乳頭附近時，要避免寶寶直接吃到藥膏。",
+    "sections": [
+      {
+        "heading": "皮膚乾癢",
+        "text": "產後荷爾蒙變化、頻繁洗手與睡眠不足，都可能讓皮膚變乾。洗澡水溫不要太熱，洗後 3 分鐘內擦無香料保濕乳液或乳霜。"
+      },
+      {
+        "heading": "外用藥",
+        "text": "Hydrocortisone 等低效價類固醇適合短期擦在輕度濕疹、發炎處。擦在身體其他部位、面積不大時，進入母乳的量極少。"
+      },
+      {
+        "heading": "擦在乳頭或乳暈",
+        "text": "先確認成分，由醫師或藥師指導。選低效價類固醇與乳霜劑型，避免軟膏（寶寶可能吃進較多基劑）。餵奶後擦薄薄一層，下次餵奶前若還有殘留，用清水輕輕擦掉。不要在乳房上大範圍使用中、強效類固醇。"
+      },
+      {
+        "heading": "口服抗組織胺",
+        "text": "Cetirizine、Loratadine 較不嗜睡，適合需要口服止癢時。"
+      },
+      {
+        "heading": "就醫警訊",
+        "text": "紅腫熱痛、流膿、皮疹擴散，或乳頭持續疼痛、破皮不癒（可能是黴菌感染或含乳姿勢問題）。"
+      },
+      {
+        "heading": "擦藥膏後可以馬上餵奶嗎？",
+        "text": "擦在身體其他部位可以；擦在乳頭附近，建議餵奶後再擦，下次餵奶前先擦掉殘留。"
+      }
+    ],
+    "altText": "哺乳期間皮膚癢衛教圖卡：先保濕，可短期擦 Hydrocortisone，口服 Cetirizine、Loratadine，乳頭擦藥選低效價乳霜、餵奶後擦，紅腫熱痛流膿要就醫",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "references": [
+      {
+        "title": "LactMed（NIH Drugs and Lactation Database）",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK501922/"
+      },
+      {
+        "title": "NHS Specialist Pharmacy Service – Safety in breastfeeding",
+        "url": "https://www.sps.nhs.uk/"
+      },
+      {
+        "title": "Academy of Breastfeeding Medicine Clinical Protocol #36: The Mastitis Spectrum (2022)",
+        "url": "https://www.bfmed.org/protocols"
+      }
+    ],
+    "revisionCredit": "藥師審閱；使用者提供衛教文字與SEO",
+    "related_links": [
+      {
+        "title": "懷孕期間也有同樣困擾？看孕期版",
+        "url": "../cards/pregnancy_minor_itch.html"
+      },
+      {
+        "title": "異位性皮膚炎藥膏怎麼擦",
+        "url": "../cards/atopic_dermatitis_care.html"
+      }
+    ]
+  },
+  {
+    "cardId": "breastfeeding_minor_ailments",
+    "title": "哺乳期間睡不好，可以怎麼做？",
+    "image": "img/breastfeeding_minor_insomnia.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_insomnia.html",
+    "summary": "哺乳期間睡不好，有很多不用吃藥的方法可以先試：夜奶時保持昏暗、家人分工、白天曬太陽與把握時間補眠。若仍需要藥物，部分安眠藥經醫師評估可以短期使用，不一定要停餵母乳。",
+    "sections": [
+      {
+        "heading": "夜奶時，幫自己更快再睡著",
+        "text": "夜奶只開小夜燈，不開大燈、不滑手機，餵完比較容易接著睡。寶寶床放在媽媽房間（同房不同床），夜奶不用走遠，抱回床也方便。換尿布、拍嗝、哄睡交給家人，媽媽只負責餵奶，餵完就回去睡。"
+      },
+      {
+        "heading": "家人分工，換一段完整睡眠",
+        "text": "用擠出的母乳或依醫囑的配方奶，讓家人餵其中一餐，媽媽可以連續睡 4–5 小時。奶量剛建立的前幾週，若間隔太久會脹奶，可先和醫護人員或泌乳顧問討論怎麼安排。"
+      },
+      {
+        "heading": "白天這樣做，晚上更好睡",
+        "text": "寶寶睡時跟著補眠，家事先放一邊，也可以請親友來幫忙。早上拉開窗簾、帶寶寶出門曬太陽或散步，有助調整媽媽的生理時鐘，也幫寶寶分辨白天和晚上。每天盡量在差不多的時間起床，作息越固定，越容易入睡。"
+      },
+      {
+        "heading": "咖啡因與飲食",
+        "text": "哺乳媽媽每天喝 1–2 杯咖啡一般沒問題，但下午以後少喝；茶、可樂、能量飲料也含咖啡因。晚餐不要吃太飽。不要用酒精助眠，酒精會讓睡眠變淺，也會進入母乳。"
+      },
+      {
+        "heading": "睡前放鬆",
+        "text": "洗溫水澡、做簡單伸展或腹式呼吸，放下手機。躺了一段時間仍睡不著，可以起來做安靜的事，有睡意再回床上，不要躺在床上一直看時間。"
+      },
+      {
+        "heading": "不吃藥的專業治療",
+        "text": "失眠持續超過一個月，可以詢問醫師「失眠認知行為治療（CBT-I）」。這是不用吃藥的睡眠治療，哺乳期間也適合。"
+      },
+      {
+        "heading": "助眠藥物",
+        "text": "部分短效安眠藥經醫師評估可以短期使用，醫師會依寶寶年齡、健康狀況挑選。Melatonin 在台灣屬處方藥，需經醫師評估，不是保健食品。"
+      },
+      {
+        "heading": "不要自己拿感冒藥助眠",
+        "text": "含 Diphenhydramine、Chlorpheniramine 的感冒藥或抗過敏藥，可能讓寶寶嗜睡，也可能影響奶量。"
+      },
+      {
+        "heading": "安全提醒",
+        "text": "使用任何鎮靜或助眠藥後，不要和寶寶同床或抱著寶寶在沙發上睡著，並留意寶寶是否異常嗜睡、喝奶變差。"
+      },
+      {
+        "heading": "產後憂鬱與焦慮",
+        "text": "照顧新生兒很累是正常的，但如果寶寶睡了自己還是睡不著，或持續情緒低落、容易哭泣、焦慮、對事情失去興趣超過 2 週，請就醫評估產後憂鬱或焦慮，這些都可以治療。"
+      },
+      {
+        "heading": "哺乳期間睡不好可以怎麼做？",
+        "text": "先從夜奶保持昏暗、家人分擔夜間照顧、白天曬太陽與補眠開始；這些方法不影響母乳，可以同時進行。"
+      },
+      {
+        "heading": "哺乳可以喝咖啡嗎？",
+        "text": "可以。每天 1–2 杯一般沒問題，下午以後少喝，避免影響自己的睡眠；若寶寶出現煩躁、難入睡，可再減量。"
+      },
+      {
+        "heading": "餵母乳可以吃褪黑激素嗎？",
+        "text": "褪黑激素在台灣是處方藥，哺乳期研究有限，需經醫師評估，不建議自行購買服用。"
+      },
+      {
+        "heading": "吃安眠藥要停餵母乳嗎？",
+        "text": "不一定。醫師可以挑選適合哺乳的藥物，不需要因為失眠就放棄哺乳。"
+      }
+    ],
+    "altText": "哺乳期間睡不好衛教圖卡：夜奶只開小夜燈、同房不同床、家人分工夜間照顧，白天補眠與曬太陽，咖啡每天 1–2 杯，安眠藥由醫師評估，褪黑激素在台灣屬處方藥，失眠合併情緒低落要評估產後憂鬱",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "references": [
+      {
+        "title": "LactMed（NIH Drugs and Lactation Database）",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK501922/"
+      },
+      {
+        "title": "NHS Specialist Pharmacy Service – Safety in breastfeeding",
+        "url": "https://www.sps.nhs.uk/"
+      },
+      {
+        "title": "Academy of Breastfeeding Medicine Clinical Protocol #36: The Mastitis Spectrum (2022)",
+        "url": "https://www.bfmed.org/protocols"
+      }
+    ],
+    "revisionCredit": "藥師審閱；使用者提供衛教文字與SEO",
+    "related_links": [
+      {
+        "title": "懷孕期間也有同樣困擾？看孕期版",
+        "url": "../cards/pregnancy_minor_insomnia.html"
+      },
+      {
+        "title": "常見助眠藥物分類",
+        "url": "../cards/bzd_z_sleep_aids.html"
+      }
+    ]
+  },
+  {
+    "cardId": "breastfeeding_minor_ailments",
+    "title": "哺乳期間乳房脹痛、塞奶怎麼辦？",
+    "image": "img/breastfeeding_minor_engorgement.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_engorgement.html",
+    "summary": "塞奶、乳房脹痛時，依寶寶需求正常哺乳、冷敷減少腫脹，避免用力按摩與過度擠奶；疼痛可用 Ibuprofen 或 Acetaminophen。紅腫熱痛合併發燒，要考慮乳腺炎並就醫。",
+    "sections": [
+      {
+        "heading": "為什麼不要一直擠？",
+        "text": "目前的哺乳醫學建議認為，塞奶多半是乳房組織發炎腫脹，不是奶「卡住」。為了排空而一直擠，反而會刺激更多奶量，讓腫脹更嚴重。依寶寶需求正常餵即可。"
+      },
+      {
+        "heading": "冷敷，不要長時間熱敷",
+        "text": "餵奶後用毛巾包冰敷袋冷敷，可減輕腫脹與疼痛。長時間熱敷可能讓發炎更明顯。"
+      },
+      {
+        "heading": "不要用力按摩",
+        "text": "用力推揉可能造成組織受傷、加重發炎。可以用很輕的手法，從乳房往腋下方向輕撫。"
+      },
+      {
+        "heading": "止痛藥",
+        "text": "Ibuprofen 同時止痛與消炎，Acetaminophen 可止痛退燒，兩者都可在哺乳期使用，請依包裝標示。"
+      },
+      {
+        "heading": "何時就醫？",
+        "text": "乳房明顯紅腫熱痛、發燒、畏寒或全身不適；照護 12–24 小時仍未改善或惡化；摸到持續的硬塊或有波動感。醫師會評估是否需要抗生素。乳腺炎多數不需要停餵母乳。"
+      },
+      {
+        "heading": "塞奶要冷敷還是熱敷？",
+        "text": "建議冷敷。冷敷可以減少腫脹與疼痛，長時間熱敷可能讓發炎更嚴重。"
+      },
+      {
+        "heading": "乳腺炎可以繼續餵奶嗎？",
+        "text": "多數可以，繼續哺乳有助於恢復；若需抗生素，醫師會選擇哺乳期可用的藥物。"
+      }
+    ],
+    "altText": "塞奶與乳房脹痛衛教圖卡：依寶寶需求哺乳、冷敷、避免用力按摩與過度擠奶，可用 Ibuprofen、Acetaminophen 止痛，紅腫熱痛發燒或 12–24 小時未改善要就醫",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "references": [
+      {
+        "title": "LactMed（NIH Drugs and Lactation Database）",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK501922/"
+      },
+      {
+        "title": "NHS Specialist Pharmacy Service – Safety in breastfeeding",
+        "url": "https://www.sps.nhs.uk/"
+      },
+      {
+        "title": "Academy of Breastfeeding Medicine Clinical Protocol #36: The Mastitis Spectrum (2022)",
+        "url": "https://www.bfmed.org/protocols"
+      }
+    ],
+    "revisionCredit": "藥師審閱；使用者提供衛教文字與SEO",
+    "related_links": [
+      {
+        "title": "退燒止痛藥怎麼選？看哺乳頭痛發燒",
+        "url": "../cards/breastfeeding_minor_fever_pain.html"
       }
     ]
   }

@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：286
+- 成功加入文字頁數：295
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -291,3 +291,12 @@
 | diarrhea_drugs | 黃連素類複方：看清楚的不只是黃連素 | https://liaoweihung.github.io/pteduimg/cards/diarrhea_drugs_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | diarrhea_drugs | 高嶺土＋果膠：高克痢怎麼用？ | https://liaoweihung.github.io/pteduimg/cards/diarrhea_drugs_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | diarrhea_drugs | Loperamide：減少跑廁所，但要用對情況 | https://liaoweihung.github.io/pteduimg/cards/diarrhea_drugs_5.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| breastfeeding_minor_ailments | 哺乳期間頭痛、發燒可以吃什麼？ | https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_fever_pain.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| breastfeeding_minor_ailments | 哺乳期間鼻塞、流鼻水可以用什麼？ | https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_rhinitis.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| breastfeeding_minor_ailments | 哺乳期間咳嗽可以吃什麼？ | https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_cough.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| breastfeeding_minor_ailments | 哺乳期間便祕可以用什麼？ | https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_constipation.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| breastfeeding_minor_ailments | 哺乳期間拉肚子，可以吃止瀉藥嗎？ | https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_diarrhea.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| breastfeeding_minor_ailments | 哺乳期間胃酸逆流、胃不舒服可以吃什麼？ | https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_reflux.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| breastfeeding_minor_ailments | 哺乳期間皮膚癢，可以擦藥或吃藥嗎？ | https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_itch.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| breastfeeding_minor_ailments | 哺乳期間睡不好，可以怎麼做？ | https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_insomnia.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| breastfeeding_minor_ailments | 哺乳期間乳房脹痛、塞奶怎麼辦？ | https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_engorgement.html | 是 | 是 | 是 | 是 | 是 | 無 |
