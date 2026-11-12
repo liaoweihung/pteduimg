@@ -13152,5 +13152,101 @@
         "url": "../cards/breastfeeding_minor_fever_pain.html"
       }
     ]
+  },
+  {
+    "cardId": "skin_glue_care",
+    "title": "傷口用了皮膚組織膠，回家怎麼照顧？",
+    "image": "img/skin_glue_care_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/skin_glue_care_1.html",
+    "summary": "皮膚組織膠是醫護人員用來黏合傷口的醫療用黏著劑，塗上後會在傷口表面形成一層透明亮膜，通常不用拆線。回家後重點是讓膠膜自然脫落、避免浸泡、不要在膠膜上塗東西，並注意防曬；若傷口裂開或出現感染徵象，請聯絡施作院所或就醫。",
+    "sections": [
+      {
+        "heading": "皮膚組織膠是什麼？和液體 OK 繃一樣嗎？",
+        "text": "不一樣。皮膚組織膠是醫護人員評估傷口後，用來把傷口邊緣黏合在一起的醫療器材；液體 OK 繃則是民眾可自行購買、用於表淺小傷口的保護膜。兩者有時都被俗稱「醫用三秒膠」，但用途不同，不能互相取代，深或裂開的傷口不要自己用液體 OK 繃處理。"
+      },
+      {
+        "heading": "1. 讓膠膜自然脫落",
+        "text": "膠膜多在 1～2 週內隨傷口癒合自行脫落，時間依傷口位置與狀況而異。期間不要摳、抓、搓揉或撕除，翹起的邊緣也不要剪，否則膠膜可能在傷口還沒長好前提早脫落。"
+      },
+      {
+        "heading": "2. 保持乾燥，避免浸泡",
+        "text": "什麼時候可以碰水、淋浴，請依施作醫護人員的指示，各院所說法可能不同。膠膜脫落前避免泡澡、游泳和大量流汗的活動；不小心沾濕時，用乾淨毛巾輕拍乾，不要來回擦。"
+      },
+      {
+        "heading": "3. 不塗不抹，膠布不貼在膠膜上",
+        "text": "除非醫護人員另有指示，不要在膠膜上塗藥膏、乳液、凡士林或消毒水，這些可能讓膠膜軟化、提早脫落。如果需要用紗布保護傷口，膠布要貼在膠膜外圍的皮膚上，不要直接黏在膠膜上，以免撕膠布時把膠膜一起帶走。"
+      },
+      {
+        "heading": "4. 注意防曬",
+        "text": "膠膜還在時，避免傷口長時間曬太陽；膠膜脫落、傷口癒合後，持續防曬一段時間，可減少疤痕顏色變深。"
+      },
+      {
+        "heading": "什麼情況要回診或就醫？",
+        "text": "出現以下情況，請聯絡施作院所或就醫：\n- 傷口裂開、邊緣分開，或再次流血\n- 紅、腫、痛愈來愈嚴重，或摸起來發熱\n- 有膿、異味，或發燒\n\n傷口剛處理後輕微紅腫、疼痛是常見的，通常會慢慢改善；若愈來愈嚴重才需要回診。不同傷口與處置的照護時程不同，請以施作院所的指示為準。"
+      },
+      {
+        "heading": "皮膚組織膠多久會脫落？",
+        "text": "多在 1～2 週內隨傷口癒合自行脫落，依傷口而異。不需要自己撕，也不要剪掉翹起的邊緣。"
+      },
+      {
+        "heading": "用了組織膠可以洗澡嗎？",
+        "text": "多數情況可以短暫淋浴，但何時可碰水請依施作醫護人員指示。避免泡澡、游泳，沾濕後輕拍乾。"
+      },
+      {
+        "heading": "組織膠上可以擦藥膏或優碘嗎？",
+        "text": "除非醫護人員指示，不要塗。藥膏、乳液、凡士林和消毒水可能讓膠膜提早脫落。"
+      },
+      {
+        "heading": "傷口要不要貼紗布或 OK 繃？",
+        "text": "通常不需要。若要保護傷口，膠布貼在膠膜外圍的皮膚上，不要直接黏在膠膜上。"
+      },
+      {
+        "heading": "皮膚組織膠和液體 OK 繃有什麼不同？",
+        "text": "組織膠由醫護人員用來黏合傷口；液體 OK 繃是民眾可自行購買、用於表淺小傷口的保護膜。兩者用途不同，不能互相取代。"
+      },
+      {
+        "heading": "什麼情況要回診？",
+        "text": "傷口裂開或再次流血；紅腫痛愈來愈嚴重或摸起來發熱；有膿、異味或發燒時，請聯絡施作院所或就醫。"
+      }
+    ],
+    "altText": "皮膚組織膠黏合傷口返家照護四重點與就醫警訊圖卡",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "references": [
+      {
+        "title": "美國 FDA – Tissue Adhesive for the Topical Approximation of Skin (2008)",
+        "url": "https://www.fda.gov/medical-devices/guidance-documents-medical-devices-and-radiation-emitting-products/tissue-adhesive-topical-approximation-skin-class-ii-special-controls-guidance-industry-and-fda-staff"
+      },
+      {
+        "title": "衛福部食藥署 – 用對液體 OK 繃時機，傷口照護更快好 (2021)",
+        "url": "https://www.mohw.gov.tw/fp-16-59524-1.html"
+      },
+      {
+        "title": "Guy's and St Thomas' NHS – Glued wounds",
+        "url": "https://www.guysandstthomas.nhs.uk/health-information/glued-wounds"
+      },
+      {
+        "title": "臺中榮民總醫院 – 急診常見外傷返家後傷口照護 (2026)",
+        "url": "https://ihealth.vghtc.gov.tw/media/310"
+      }
+    ],
+    "revisionCredit": "藥師審閱；使用者提供衛教文字與SEO",
+    "related_links": [
+      {
+        "title": "縫合／術後傷口回家怎麼照顧？",
+        "url": "../cards/postoperative_wound.html"
+      },
+      {
+        "title": "敷料怎麼選、怎麼換？",
+        "url": "../cards/wound_dressings.html"
+      },
+      {
+        "title": "傷口好了，如何照顧疤痕？",
+        "url": "../cards/scar_care.html"
+      }
+    ]
   }
 ]

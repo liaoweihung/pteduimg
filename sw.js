@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v812d1282d0b21be3a3fb521c';
+const CACHE_NAME = 'pwa-cache-v14b935962cbd29ad34da7fd2';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -431,6 +431,7 @@ const urlsToCache = [
   "./img/silicone_scar_when_to_start.webp",
   "./img/site_instruction_01.webp",
   "./img/site_instruction_02.webp",
+  "./img/skin_glue_care_1.webp",
   "./img/slipped_fall_wound.webp",
   "./img/smecta_1.webp",
   "./img/smecta_2.webp",
@@ -921,6 +922,7 @@ const urlsToCache = [
   "./cards/breastfeeding_minor_itch.html",
   "./cards/breastfeeding_minor_insomnia.html",
   "./cards/breastfeeding_minor_engorgement.html",
+  "./cards/skin_glue_care_1.html",
   "./cards/acne.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare_2.html",

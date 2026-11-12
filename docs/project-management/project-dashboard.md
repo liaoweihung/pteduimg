@@ -4,6 +4,8 @@
 
 即時技術變更不再由本頁手抄。執行 `python -B scripts/project_change_tracker.py` 可直接查看已提交與未提交的網站變更；用 `--page`、`--series` 或 `--request` 篩選。這裡保留專案判斷、人工證據與下一步。
 
+2026-11-12 新增「皮膚組織膠返家照護」衛教圖卡（CR-2026-080）：skin_glue_care 系列納入 public.html（皮膚與外傷照護，order 3.55），啟用 showFooter；圖卡加入深色單色透明 Logo（高 58px），靜態文字含 AEO 問答、雙日期、直接來源與藥師審閱，SEO 標題依草稿設定。建立與術後傷口、敷料、除疤等傷口主題互連。增量建置 1 頁與全域索引完成；check_site.py 通過；清冊提案零差異。詳見[定點證據](evidence/skin-glue-care-2026-11-12.md)。
+
 2026-11-12 新增「哺乳期間小毛病」九張衛教圖卡（CR-2026-076）：reastfeeding_minor_ailments 系列列入 public.html（懷孕與哺乳、嬰幼兒照護、胃腸相關），啟用 showFooter；圖卡加入深色單色透明 Logo，逐頁靜態文字含 AEO 問答、雙日期、直接來源與藥師審閱，SEO 標題依草稿設定。建立本系列與懷孕小毛病 8 頁一對一雙向互連與既有頁面互連。全域建置 9 頁與全域索引完成；check_site.py 通過；專案管理檢查通過。詳見[定點證據](evidence/breastfeeding-minor-ailments-2026-11-12.md)。
 
 2026-11-12 管理連結補登（CR-2026-075）：提交 `9afb5fcb` 的公眾衛教圖卡返回體驗、末頁推薦閱讀及藥師圖卡返回行為，原先使 GitHub Actions 管理連結檢查失敗；本機以提交 SHA 補上需求連結後，同一範圍的追蹤器檢查通過。原始授權與桌機／手機操作驗收證據待確認；完整管理檢查另有清冊及規則指紋等錯誤，未於本次批次修補。詳見[定點證據](evidence/public-card-return-2026-11-12.md)。

@@ -4019,5 +4019,43 @@
       "img/breastfeeding_minor_engorgement.webp"
     ],
     "showFooter": true
+  },
+  "skin_glue_care": {
+    "title": "皮膚組織膠返家照護",
+    "category": "public_education",
+    "order": 3.55,
+    "hidden": false,
+    "icon": "🩹",
+    "topics": [
+      "skin_wound"
+    ],
+    "tags": [
+      "皮膚組織膠",
+      "醫用膠",
+      "傷口黏合膠",
+      "組織膠照護",
+      "組織膠可以碰水嗎",
+      "組織膠多久脫落",
+      "組織膠可以擦藥嗎",
+      "組織膠vs液體OK繃",
+      "傷口照護",
+      "手術傷口",
+      "縫合傷口",
+      "免拆線",
+      "急診傷口"
+    ],
+    "texts": [
+      "傷口用了皮膚組織膠，回家怎麼照顧？"
+    ],
+    "steps": [
+      "img/skin_glue_care_1.webp"
+    ],
+    "related_series": [
+      "postoperative_wound",
+      "wound_dressings",
+      "scar_care",
+      "fall_wound"
+    ],
+    "showFooter": true
   }
 }
