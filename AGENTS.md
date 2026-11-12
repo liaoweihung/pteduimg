@@ -46,6 +46,8 @@
 
 需求依名稱、說明、範圍與 `related_ids` 搜尋，涵蓋同一需求就沿用 CR；沒有才新增下一個 `CR-YYYY-NNN`。新增或修改圖卡都必須登記對應類型的 CR（新增系列、系列追加圖卡、修改既有圖卡）；這三類的 `related_ids` 必須明確列出 `series:<id>` 與每一個受影響的 `page:<id>`，並在任務完成時填齊所有受影響 page ID 與實際完成日期 `completed_at`。`page-inventory.csv` 的 `added_at`、`added_cr`、`last_updated_at`、`last_updated_cr` 由 `scripts/check_project_management.py` 自動從 completed CR 推算，禁止手填。登記不等於核准，明確授權可如實記錄。不得順帶改其他系列、藥品資料庫、計算器或重設頁首／頁尾。
 
+上架建置順序（使用者 2026-11-12 指示）：因首頁「最近新增」（`data/recent-changes.json`）由 `build.py` 自動從 `change-requests.csv` 中篩選 `status = completed` 的 CR 產生，上架流程中**必須先將本次 CR 標記為 completed 並填齊 `completed_at`，再做最後一次建置**；Commit 前必須確認 `data/recent-changes.json` 第一筆已包含本次系列。
+
 ## 建置、可見性與驗證
 
 - `cards/*.html`、`all-cards.html` 等由既有產生器維護，不手寫生成頁。新增可見系列、系列末尾追加或安全局部更新可用 `python build.py --incremental IMAGE_ID [IMAGE_ID ...]`，自動擴展相依頁並更新完整全域索引；限制依建置文件。移除、系列重組／排序、可見性、退出、共用模板或結構變更仍需 full build：`python build.py`；它會清除重建圖卡 HTML 並恢復退出頁，建置前後必須檢查 diff。

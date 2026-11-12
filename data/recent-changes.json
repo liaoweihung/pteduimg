@@ -1,5 +1,16 @@
 [
   {
+    "request_id": "CR-2026-080",
+    "completed_at": "2026-11-12",
+    "request_type": "新增系列",
+    "series_id": "skin_glue_care",
+    "series_title": "皮膚組織膠返家照護",
+    "card_count": 1,
+    "first_page_id": "skin_glue_care_1",
+    "first_step_index": 0,
+    "first_image": "img/skin_glue_care_1.webp"
+  },
+  {
     "request_id": "CR-2026-076",
     "completed_at": "2026-11-12",
     "request_type": "新增系列",

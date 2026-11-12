@@ -1833,6 +1833,8 @@ Sitemap: {abs_url("sitemap-main.xml")}
 
 def generate_recent_changes(cards, root=ROOT):
     cr_path = root / "docs" / "project-management" / "change-requests.csv"
+    if not cr_path.exists():
+        cr_path = ROOT / "docs" / "project-management" / "change-requests.csv"
     out_path = root / "data" / "recent-changes.json"
     if not cr_path.exists():
         out_path.parent.mkdir(parents=True, exist_ok=True)

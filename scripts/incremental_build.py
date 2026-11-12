@@ -269,7 +269,7 @@ def run_incremental(build, requested):
     (root / "outputs").mkdir(exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="incremental-stage-", dir=root / "outputs") as directory:
         stage = Path(directory)
-        for name in set(SOURCES + RULES + GLOBALS + ("index.html", "public.html", "retired-cards.html")):
+        for name in set(SOURCES + RULES + GLOBALS + ("index.html", "public.html", "retired-cards.html", "docs/project-management/change-requests.csv")):
             source = root / name
             if source.is_file():
                 (stage / name).parent.mkdir(parents=True, exist_ok=True)
