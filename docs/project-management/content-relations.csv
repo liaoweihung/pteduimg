@@ -507,3 +507,8 @@ REL-bc3477d4efca68fe,series:diarrhea_care,has_card,page:diarrhea_care_5,source_o
 REL-a341c131b1f90a31,series:diarrhea_care,has_card,page:diarrhea_care_6,source_observed,series_membership,cards.json,CR-2026-073；新系列第 6 張
 REL-e67edee6cd59fa0b,page:diarrhea_care_5,further_reading,page:ped_diarrhea_hidrasec,source_observed,management,data/card_content.json,瀉必寧 Hidrasec 怎麼吃？兒童劑量、服用方法與注意事項
 REL-40fab6874823e087,page:diarrhea_care_6,further_reading,page:ped_diarrhea_hidrasec,source_observed,management,data/card_content.json,瀉必寧 Hidrasec 怎麼吃？兒童劑量、服用方法與注意事項
+REL-9d2e3b01343591dd,series:diarrhea_drugs,has_card,page:diarrhea_drugs_1,source_observed,series_membership,cards.json,CR-2026-074；新系列第 1 張
+REL-53c12acd2e1696dc,series:diarrhea_drugs,has_card,page:diarrhea_drugs_2,source_observed,series_membership,cards.json,CR-2026-074；新系列第 2 張
+REL-59411d7802111b6d,series:diarrhea_drugs,has_card,page:diarrhea_drugs_3,source_observed,series_membership,cards.json,CR-2026-074；新系列第 3 張
+REL-08b782aa9500369c,series:diarrhea_drugs,has_card,page:diarrhea_drugs_4,source_observed,series_membership,cards.json,CR-2026-074；新系列第 4 張
+REL-abfda379940c4722,series:diarrhea_drugs,has_card,page:diarrhea_drugs_5,source_observed,series_membership,cards.json,CR-2026-074；新系列第 5 張

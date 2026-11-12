@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-ve2c023cb164c0c3ee0a07bc6';
+const CACHE_NAME = 'pwa-cache-vb1ec2719a71875728c3462c1';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -219,6 +219,11 @@ const urlsToCache = [
   "./img/diarrhea_care_4.webp",
   "./img/diarrhea_care_5.webp",
   "./img/diarrhea_care_6.webp",
+  "./img/diarrhea_drugs_1.webp",
+  "./img/diarrhea_drugs_2.webp",
+  "./img/diarrhea_drugs_3.webp",
+  "./img/diarrhea_drugs_4.webp",
+  "./img/diarrhea_drugs_5.webp",
   "./img/diosmin_use.webp",
   "./img/dry_eye_comp.webp",
   "./img/dry_eye_dailycare.webp",
@@ -892,6 +897,11 @@ const urlsToCache = [
   "./cards/diarrhea_care_4.html",
   "./cards/diarrhea_care_5.html",
   "./cards/diarrhea_care_6.html",
+  "./cards/diarrhea_drugs_1.html",
+  "./cards/diarrhea_drugs_2.html",
+  "./cards/diarrhea_drugs_3.html",
+  "./cards/diarrhea_drugs_4.html",
+  "./cards/diarrhea_drugs_5.html",
   "./cards/acne.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare_2.html",

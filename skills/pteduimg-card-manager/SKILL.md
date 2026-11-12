@@ -163,13 +163,25 @@ Also perform the relevant desktop/mobile and page-flow checks below. Record the 
 
 Use lowercase English filenames with underscores and numeric suffixes when possible, for example `img/bugspray_1.webp`, `img/bugspray_2.webp`, `img/bugspray_3.webp`. Convert PNG/JPG/JPEG to WebP unless the user asks to retain the original format; do not apply this conversion rule to overwrite the brand PNG master.
 
+### Adding Logo During Conversion (User instruction 2026-11-12)
+When converting new card images that have a reserved blank band at the bottom (approximately 8% of image height), overlay the website's official Logo (e.g., `docs/brand/assets/logo_primary_transparent.png` or monochrome variant) horizontally centered and proportionally scaled without covering any text or illustrations, and preserve the original source images without overwriting.
+
 Use Pillow when available:
 
 ```python
 from PIL import Image
 
-with Image.open(src) as image:
-    image.save(dst, "WEBP", quality=90, method=6)
+logo = Image.open("docs/brand/assets/logo_primary_transparent.png")
+logo_cropped = logo.crop(logo.getbbox())
+h_logo = 40  # scaled to fit within bottom 8% band without touching text
+w_logo = int(logo_cropped.width * (h_logo / logo_cropped.height))
+logo_resized = logo_cropped.resize((w_logo, h_logo), Image.Resampling.LANCZOS)
+
+with Image.open(src).convert("RGBA") as image:
+    x_pos = (image.width - w_logo) // 2
+    y_pos = (bottom_content_y + image.height - h_logo) // 2
+    image.paste(logo_resized, (x_pos, y_pos), logo_resized)
+    image.convert("RGB").save(dst, "WEBP", quality=90, method=6)
 ```
 
 After conversion, keep only the source files the user wants preserved.

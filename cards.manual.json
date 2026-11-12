@@ -1526,6 +1526,9 @@
       "img/wempty_suspension.webp",
       "img/lactulose_constipation.webp",
       "img/ped_diarrhea_hidrasec.webp"
+    ],
+    "related_series": [
+      "diarrhea_drugs"
     ]
   },
   "smecta_diarrhea": {
@@ -1565,6 +1568,9 @@
       "img/smecta_1.webp",
       "img/smecta_2.webp",
       "img/smecta_3.webp"
+    ],
+    "related_series": [
+      "diarrhea_drugs"
     ]
   },
   "kidsolone_oral_solution": {
@@ -3702,7 +3708,63 @@
       "diarrhea_care-5"
     ],
     "related_series": [
-      "pregnancy_minor_ailments"
+      "pregnancy_minor_ailments",
+      "diarrhea_drugs"
+    ]
+  },
+  "diarrhea_drugs": {
+    "title": "常見腹瀉藥物",
+    "category": "public_education",
+    "showFooter": true,
+    "topics": [
+      "gastrointestinal"
+    ],
+    "order": 36.1,
+    "hidden": false,
+    "icon": "💊",
+    "tags": [
+      "止瀉藥",
+      "拉肚子吃什麼藥",
+      "正露丸",
+      "暮帝納斯",
+      "高克痢",
+      "Loperamide",
+      "樂必寧",
+      "黃連素",
+      "止瀉藥副作用",
+      "大便變黑",
+      "舒腹達",
+      "瀉必寧",
+      "成人腹瀉",
+      "水瀉",
+      "口服電解質液",
+      "ORS"
+    ],
+    "texts": [
+      "常見止瀉藥怎麼選？",
+      "正露丸、暮帝納斯：熟悉的名字，成分不同",
+      "黃連素類複方：看清楚的不只是黃連素",
+      "高克痢怎麼用？",
+      "Loperamide：減少跑廁所，但要用對情況"
+    ],
+    "steps": [
+      "img/diarrhea_drugs_1.webp",
+      "img/diarrhea_drugs_2.webp",
+      "img/diarrhea_drugs_3.webp",
+      "img/diarrhea_drugs_4.webp",
+      "img/diarrhea_drugs_5.webp"
+    ],
+    "favorite_keys": [
+      "diarrhea_drugs-0",
+      "diarrhea_drugs-1",
+      "diarrhea_drugs-2",
+      "diarrhea_drugs-3",
+      "diarrhea_drugs-4"
+    ],
+    "related_series": [
+      "diarrhea_care",
+      "smecta_diarrhea",
+      "pediatric_gi_syrup"
     ]
   }
 }

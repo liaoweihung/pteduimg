@@ -8637,7 +8637,13 @@
         "url": "https://reg.tai-an.com.tw/tw/medicine_search/show.aspx?code=DIOC&page=7"
       }
     ],
-    "revisionCredit": "使用者提供並聲明圖卡與文字已經人工檢核；本站整理逐頁文字並核對來源"
+    "revisionCredit": "使用者提供並聲明圖卡與文字已經人工檢核；本站整理逐頁文字並核對來源",
+    "related_links": [
+      {
+        "title": "常見止瀉藥怎麼選？正露丸、暮帝納斯、高克痢、Loperamide 用法與注意事項",
+        "url": "../cards/diarrhea_drugs_1.html"
+      }
+    ]
   },
   {
     "cardId": "smecta_diarrhea",
@@ -9537,7 +9543,13 @@
         "url": "https://www.nhi.gov.tw/ch/dl-11816-0603144ebf0d4078ade610d25a0b1f99-1.pdf"
       }
     ],
-    "revisionCredit": "使用者提供並確認圖卡文字；AI整理網站文字及核對來源"
+    "revisionCredit": "使用者提供並確認圖卡文字；AI整理網站文字及核對來源",
+    "related_links": [
+      {
+        "title": "常見止瀉藥怎麼選？正露丸、暮帝納斯、高克痢、Loperamide 用法與注意事項",
+        "url": "../cards/diarrhea_drugs_1.html"
+      }
+    ]
   },
   {
     "cardId": "NTG",
@@ -11633,7 +11645,13 @@
         "url": "https://www.cdc.gov/norovirus/communication-resources/facts-for-food-workers.html"
       }
     ],
-    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源"
+    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源",
+    "related_links": [
+      {
+        "title": "常見止瀉藥怎麼選？正露丸、暮帝納斯、高克痢、Loperamide 用法與注意事項",
+        "url": "../cards/diarrhea_drugs_1.html"
+      }
+    ]
   },
   {
     "cardId": "diarrhea_care",
@@ -11683,7 +11701,13 @@
         "url": "https://www.cdc.gov.tw/Category/QAPage/h5jfdG8vi3tGUDO8fNAoFQ"
       }
     ],
-    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源"
+    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源",
+    "related_links": [
+      {
+        "title": "常見止瀉藥怎麼選？正露丸、暮帝納斯、高克痢、Loperamide 用法與注意事項",
+        "url": "../cards/diarrhea_drugs_1.html"
+      }
+    ]
   },
   {
     "cardId": "diarrhea_care",
@@ -11906,6 +11930,514 @@
       {
         "title": "瀉必寧 Hidrasec 怎麼吃？兒童劑量、服用方法與注意事項",
         "url": "../cards/ped_diarrhea_hidrasec.html"
+      }
+    ]
+  },
+  {
+    "cardId": "diarrhea_drugs",
+    "title": "常見止瀉藥怎麼選？正露丸、暮帝納斯、高克痢、Loperamide 用法與注意事項",
+    "image": "img/diarrhea_drugs_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diarrhea_drugs_1.html",
+    "summary": "止瀉藥能減少跑廁所的次數，但不能取代補水，也不會治好造成腹瀉的原因。正露丸、暮帝納斯、黃連素複方、高克痢與 Loperamide 成分不同，用法、年齡限制與禁忌也不同；有發燒、血便、劇烈腹痛或脫水時，請先就醫，不要自行服用止瀉藥。本頁以成人急性腹瀉為主，劑量範例均標明產品，不可套用到其他品牌或兒童。",
+    "sections": [
+      {
+        "heading": "常見止瀉藥怎麼選？先確認有無警訊",
+        "text": "沒有警訊的成人急性水樣腹瀉，若頻繁跑廁所影響工作、搭車或睡眠，可以評估短期使用止瀉藥。選藥前先確認有沒有發燒、血便、劇烈腹痛、明顯腹脹或脫水。"
+      },
+      {
+        "heading": "常見 7 種止瀉藥物重點一覽",
+        "text": "正露丸（木餾油＋生藥，各品牌與丸劑／糖衣錠不能直接換算）；暮帝納斯腹瀉整腸錠（次硝酸鉍＋次沒食子酸鉍＋鞣酸蛋白，與國外次水楊酸鉍製劑不同）；黃連素類複方（含 Scopolia 萃取物具抗膽鹼作用，看完整配方不只看黃連素）；高克痢（高嶺土＋果膠，先搖勻並與其他口服藥錯開）；舒腹達（Diosmectite 依劑型使用留意服藥間隔）；Loperamide（減少腸道蠕動，成人短期使用）；瀉必寧（Racecadotril 減少腸液分泌，依處方使用）。"
+      },
+      {
+        "heading": "所有止瀉藥都不能取代補水",
+        "text": "所有止瀉藥都不能取代補水；水瀉較多時可用口服電解質液（ORS）。不要自行同時吃多種止瀉藥，先請藥師確認是否重複成分、增加便祕風險或影響其他藥物吸收。"
+      },
+      {
+        "heading": "共同提醒與就醫時機",
+        "text": "止瀉期間仍要補充水分與電解質。有血便、黑色柏油便、發燒合併明顯不適、劇烈腹痛或脫水，請就醫；成人腹瀉超過 2 天未改善，也應重新評估，不要持續加量或反覆更換止瀉藥。"
+      },
+      {
+        "heading": "拉肚子吃止瀉藥，還需要補水嗎？",
+        "text": "需要。止瀉藥只減少排便次數，不會補回流失的水分與電解質；水瀉較多時建議喝口服電解質液。"
+      },
+      {
+        "heading": "正露丸和暮帝納斯哪個比較好？",
+        "text": "沒有絕對優劣。兩者成分、用法與年齡限制都不同，請依症狀與個人狀況請藥師協助選擇，不要同時吃。"
+      },
+      {
+        "heading": "吃止瀉藥後大便變黑正常嗎？",
+        "text": "暮帝納斯等含鉍的止瀉藥可能讓糞便變深色。但若是黑色柏油便，或伴隨頭暈、無力、腹痛，可能是腸胃道出血，請就醫。"
+      },
+      {
+        "heading": "Loperamide 可以吃多久？",
+        "text": "成人急性腹瀉自行使用不超過 48 小時；仍未改善，或出現發燒、血便、腹脹，請停藥就醫。"
+      },
+      {
+        "heading": "止瀉藥可以和其他藥一起吃嗎？",
+        "text": "要注意間隔：高克痢與其他口服藥錯開 2～3 小時，暮帝納斯與其他藥或益生菌間隔 2 小時。也不要自行併用多種止瀉藥，先問藥師。"
+      },
+      {
+        "heading": "小孩拉肚子可以吃這些止瀉藥嗎？",
+        "text": "不能套用成人劑量。正露丸未滿 5 歲不可服用，大正止瀉藥錠未滿 8 歲不適用，Loperamide 兒童使用須由醫師評估。小孩腹瀉最重要的是補水與觀察脫水徵兆。"
+      }
+    ],
+    "altText": "常見止瀉藥怎麼選衛教圖卡：選藥前確認警訊、正露丸、暮帝納斯、黃連素複方、高克痢、舒腹達、Loperamide、瀉必寧重點一覽與補水重要性",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "references": [
+      {
+        "title": "IDSA 感染性腹瀉臨床實務指引",
+        "url": "https://www.idsociety.org/practice-guideline/infectious-diarrhea/"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：正露丸相關公告",
+        "url": "https://www.fda.gov.tw/TC/csmnewsContent.aspx?id=5407&mid=269"
+      },
+      {
+        "title": "台灣大幸藥品：正露丸產品資訊",
+        "url": "https://taiko.com.tw/"
+      },
+      {
+        "title": "暮帝納斯腹瀉整腸錠官方網站",
+        "url": "https://boterasu.com/"
+      },
+      {
+        "title": "台灣大正製藥：大正止瀉藥錠產品資訊",
+        "url": "https://www.twtaisho.com.tw/p3_product_detail.php?Page=0&cid=0&nid=17&tid=6"
+      },
+      {
+        "title": "生達化學製藥：高克痢懸乳液仿單與藥物資訊",
+        "url": "https://kb.commonhealth.com.tw/drugs/24107.html"
+      },
+      {
+        "title": "衛生福利部苗栗醫院：Kaolin/Pectin 衛教指導",
+        "url": "https://www.mil.mohw.gov.tw/english/public/ufile/d1/1706846124349.pdf"
+      },
+      {
+        "title": "三軍總醫院：高克痢衛教說明",
+        "url": "https://www1.ndmctsgh.edu.tw/pharm/pic/mededu/005PEC02.pdf"
+      },
+      {
+        "title": "高雄市立凱旋醫院：舒腹達 Smecta 藥品資訊",
+        "url": "https://ksph.kcg.gov.tw/7/dfiles/Smecta.htm"
+      },
+      {
+        "title": "PubMed：黃連素（Berberine）腹瀉臨床研究文獻回顧",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33149763/"
+      },
+      {
+        "title": "MedlinePlus：Loperamide 用法與用藥安全",
+        "url": "https://medlineplus.gov/druginfo/meds/a682280.html"
+      },
+      {
+        "title": "美國 NIDDK：Diarrhea Symptoms & Causes",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diarrhea/symptoms-causes"
+      }
+    ],
+    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源",
+    "related_links": [
+      {
+        "title": "成人腹瀉怎麼辦？補水、飲食與居家照顧",
+        "url": "../cards/diarrhea_care_1.html"
+      },
+      {
+        "title": "拉肚子何時要看醫生？成人腹瀉警訊",
+        "url": "../cards/diarrhea_care_2.html"
+      },
+      {
+        "title": "舒腹達是什麼？用途與兒童劑量",
+        "url": "../cards/smecta_1.html"
+      },
+      {
+        "title": "瀉必寧 Hidrasec 怎麼吃？兒童劑量與用法",
+        "url": "../cards/ped_diarrhea_hidrasec.html"
+      }
+    ]
+  },
+  {
+    "cardId": "diarrhea_drugs",
+    "title": "正露丸、暮帝納斯：熟悉的名字，成分不同",
+    "image": "img/diarrhea_drugs_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diarrhea_drugs_2.html",
+    "summary": "正露丸主成分為木餾油加生藥，不同品牌與劑型用法不同；暮帝納斯含鉍鹽具收斂保護作用，服藥需間隔且不可連續使用超過 7 天。大便變黑若伴隨頭暈無力應儘速就醫。",
+    "sections": [
+      {
+        "heading": "正露丸：品牌、丸劑與糖衣錠不能直接換算",
+        "text": "正露丸主成分為木餾油加生藥，但不同品牌配方不一定相同。以台灣大幸正露丸為例，15 歲以上每次 3 粒、每日 3 次、飯後服用，未滿 5 歲不可服用；正露糖衣錠請依包裝標示的年齡與用量。其他品牌、海外版本或不同劑型不能照相同顆數吃，兒童也不能套用成人劑量。症狀沒改善不要因為是家庭常備藥就持續加量；孕哺期、兒童或正在吃其他藥者，先請藥師核對。"
+      },
+      {
+        "heading": "暮帝納斯腹瀉整腸錠：收斂保護與服藥間隔",
+        "text": "暮帝納斯腹瀉整腸錠（不是「健胃暮帝納斯」）每錠含次硝酸鉍 33.3 mg、次沒食子酸鉍 44.4 mg、鞣酸蛋白 44.4 mg，以收斂與黏膜保護作用緩解腹瀉。成人每次 6 粒、每日 3 次，不得連續使用超過 7 天，但這不代表可以拖到第 7 天才就醫。與其他藥物或益生菌間隔 2 小時；服藥期間避免喝酒；發燒合併腹瀉先就醫；孕婦及未滿 3 歲先諮詢；嚴重便祕時停用。"
+      },
+      {
+        "heading": "鉍製劑與大便變黑的辨識",
+        "text": "鉍製劑可能讓糞便變深色，但黑便不是藥效指標。若是黑色柏油便，或伴隨頭暈、無力、腹痛，請就醫。暮帝納斯不含次水楊酸鉍（BSS），國外旅行者腹瀉指引對 BSS 的建議不能直接套用。"
+      },
+      {
+        "heading": "正露丸和暮帝納斯哪個比較好？",
+        "text": "沒有絕對優劣。兩者成分、用法與年齡限制都不同，請依症狀與個人狀況請藥師協助選擇，不要同時吃。"
+      },
+      {
+        "heading": "吃止瀉藥後大便變黑正常嗎？",
+        "text": "暮帝納斯等含鉍的止瀉藥可能讓糞便變深色。但若是黑色柏油便，或伴隨頭暈、無力、腹痛，可能是腸胃道出血，請就醫。"
+      }
+    ],
+    "altText": "正露丸與暮帝納斯成分、用法與注意事項衛教圖卡：正露丸木餾油加生藥、暮帝納斯鉍鹽加鞣酸蛋白，年齡限制與黑便觀察重點",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "references": [
+      {
+        "title": "IDSA 感染性腹瀉臨床實務指引",
+        "url": "https://www.idsociety.org/practice-guideline/infectious-diarrhea/"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：正露丸相關公告",
+        "url": "https://www.fda.gov.tw/TC/csmnewsContent.aspx?id=5407&mid=269"
+      },
+      {
+        "title": "台灣大幸藥品：正露丸產品資訊",
+        "url": "https://taiko.com.tw/"
+      },
+      {
+        "title": "暮帝納斯腹瀉整腸錠官方網站",
+        "url": "https://boterasu.com/"
+      },
+      {
+        "title": "台灣大正製藥：大正止瀉藥錠產品資訊",
+        "url": "https://www.twtaisho.com.tw/p3_product_detail.php?Page=0&cid=0&nid=17&tid=6"
+      },
+      {
+        "title": "生達化學製藥：高克痢懸乳液仿單與藥物資訊",
+        "url": "https://kb.commonhealth.com.tw/drugs/24107.html"
+      },
+      {
+        "title": "衛生福利部苗栗醫院：Kaolin/Pectin 衛教指導",
+        "url": "https://www.mil.mohw.gov.tw/english/public/ufile/d1/1706846124349.pdf"
+      },
+      {
+        "title": "三軍總醫院：高克痢衛教說明",
+        "url": "https://www1.ndmctsgh.edu.tw/pharm/pic/mededu/005PEC02.pdf"
+      },
+      {
+        "title": "高雄市立凱旋醫院：舒腹達 Smecta 藥品資訊",
+        "url": "https://ksph.kcg.gov.tw/7/dfiles/Smecta.htm"
+      },
+      {
+        "title": "PubMed：黃連素（Berberine）腹瀉臨床研究文獻回顧",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33149763/"
+      },
+      {
+        "title": "MedlinePlus：Loperamide 用法與用藥安全",
+        "url": "https://medlineplus.gov/druginfo/meds/a682280.html"
+      },
+      {
+        "title": "美國 NIDDK：Diarrhea Symptoms & Causes",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diarrhea/symptoms-causes"
+      }
+    ],
+    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源",
+    "related_links": [
+      {
+        "title": "常見止瀉藥怎麼選？5 類腹瀉藥物重點與使用原則",
+        "url": "../cards/diarrhea_drugs_1.html"
+      },
+      {
+        "title": "成人腹瀉怎麼辦？補水、飲食與居家照顧",
+        "url": "../cards/diarrhea_care_1.html"
+      }
+    ]
+  },
+  {
+    "cardId": "diarrhea_drugs",
+    "title": "黃連素類複方：看清楚的不只是黃連素",
+    "image": "img/diarrhea_drugs_3.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diarrhea_drugs_3.html",
+    "summary": "含黃連素（Berberine）的台灣止瀉藥通常是多成分複方，常含抗膽鹼成分 Scopolia 萃取物，不可只看黃連素。青光眼、排尿困難者先諮詢，血便發燒請就醫。",
+    "sections": [
+      {
+        "heading": "黃連素止瀉藥多為複方，作用禁忌看完整配方",
+        "text": "含黃連素（Berberine）的台灣止瀉藥通常是多成分複方，作用與禁忌不能只看「含黃連素」。以大正止瀉藥錠為例，每錠含 Acrinol 7.5 mg、鞣酸蛋白 75 mg、Berberine chloride 14 mg、Scopolia 萃取散 12.75 mg（萃取物 4.25 mg）、維生素 B1 1.25 mg、B2 0.5 mg；Scopolia 具抗膽鹼作用，可緩解腸道痙攣。"
+      },
+      {
+        "heading": "用法與年齡限制",
+        "text": "用法：15 歲以上每次 4 錠、每日 3 次，間隔至少 4 小時；8～14 歲用量不同，未滿 8 歲不適用。僅限此產品，不能套用到其他黃連素複方。"
+      },
+      {
+        "heading": "注意事項與禁忌族群",
+        "text": "不要與其他胃腸止痛、鎮痙藥併用，避免飲酒；可能口乾、便祕、視力模糊；青光眼、排尿困難或正在接受治療者先諮詢。"
+      },
+      {
+        "heading": "研究效果與感染警訊",
+        "text": "部分研究顯示黃連素可能對腹瀉有幫助，但研究差異大，不代表各種腹瀉都有效。出現血便、發燒或明顯腹痛時，不要因包裝寫著黃連素就自己當成感染治療。"
+      },
+      {
+        "heading": "止瀉藥可以和其他藥一起吃嗎？",
+        "text": "要注意間隔：黃連素複方不要自行與其他胃腸止痛、鎮痙藥併用。也不要自行併用多種止瀉藥，先問藥師。"
+      }
+    ],
+    "altText": "黃連素類複方止瀉藥成分與注意事項衛教圖卡：含 Acrinol、鞣酸蛋白、黃連素、Scopolia 萃取物，青光眼排尿困難禁忌與警訊",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "references": [
+      {
+        "title": "IDSA 感染性腹瀉臨床實務指引",
+        "url": "https://www.idsociety.org/practice-guideline/infectious-diarrhea/"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：正露丸相關公告",
+        "url": "https://www.fda.gov.tw/TC/csmnewsContent.aspx?id=5407&mid=269"
+      },
+      {
+        "title": "台灣大幸藥品：正露丸產品資訊",
+        "url": "https://taiko.com.tw/"
+      },
+      {
+        "title": "暮帝納斯腹瀉整腸錠官方網站",
+        "url": "https://boterasu.com/"
+      },
+      {
+        "title": "台灣大正製藥：大正止瀉藥錠產品資訊",
+        "url": "https://www.twtaisho.com.tw/p3_product_detail.php?Page=0&cid=0&nid=17&tid=6"
+      },
+      {
+        "title": "生達化學製藥：高克痢懸乳液仿單與藥物資訊",
+        "url": "https://kb.commonhealth.com.tw/drugs/24107.html"
+      },
+      {
+        "title": "衛生福利部苗栗醫院：Kaolin/Pectin 衛教指導",
+        "url": "https://www.mil.mohw.gov.tw/english/public/ufile/d1/1706846124349.pdf"
+      },
+      {
+        "title": "三軍總醫院：高克痢衛教說明",
+        "url": "https://www1.ndmctsgh.edu.tw/pharm/pic/mededu/005PEC02.pdf"
+      },
+      {
+        "title": "高雄市立凱旋醫院：舒腹達 Smecta 藥品資訊",
+        "url": "https://ksph.kcg.gov.tw/7/dfiles/Smecta.htm"
+      },
+      {
+        "title": "PubMed：黃連素（Berberine）腹瀉臨床研究文獻回顧",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33149763/"
+      },
+      {
+        "title": "MedlinePlus：Loperamide 用法與用藥安全",
+        "url": "https://medlineplus.gov/druginfo/meds/a682280.html"
+      },
+      {
+        "title": "美國 NIDDK：Diarrhea Symptoms & Causes",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diarrhea/symptoms-causes"
+      }
+    ],
+    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源",
+    "related_links": [
+      {
+        "title": "常見止瀉藥怎麼選？5 類腹瀉藥物重點與使用原則",
+        "url": "../cards/diarrhea_drugs_1.html"
+      },
+      {
+        "title": "成人腹瀉怎麼辦？補水、飲食與居家照顧",
+        "url": "../cards/diarrhea_care_1.html"
+      }
+    ]
+  },
+  {
+    "cardId": "diarrhea_drugs",
+    "title": "高嶺土＋果膠：高克痢怎麼用？",
+    "image": "img/diarrhea_drugs_4.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diarrhea_drugs_4.html",
+    "summary": "高克痢（高嶺土＋果膠）懸液用於暫時緩解輕中度急性腹瀉。先搖勻再用量杯量取，成人每次 30 mL，並與其他口服藥錯開 2～3 小時，排便恢復即停藥。",
+    "sections": [
+      {
+        "heading": "高克痢成分與用途",
+        "text": "高克痢（Pecolin）為指示藥懸液，每毫升含高嶺土 200 mg、果膠 10 mg，用於暫時緩解輕微或中度急性腹瀉。"
+      },
+      {
+        "heading": "高克痢正確使用 4 大步驟與要點",
+        "text": "1. 先搖勻，再用量杯量取。2. 依仿單：成人（12 歲以上）腹瀉後服用每次 30 mL，間隔至少 4 小時，一日不超過 4 次；12 歲以下應經醫師或藥師指示。其他高嶺土／果膠產品濃度與用量不同（有些成人每次僅 8～9 mL），不能照高克痢的毫升數服用。3. 與其他口服藥錯開 2～3 小時，尤其甲狀腺藥、Digoxin。4. 空腹或隨餐都可以；藥袋另有指示時先確認原因。"
+      },
+      {
+        "heading": "停藥時機與成分差異叮嚀",
+        "text": "糞便變稠不代表水分與電解質已補回。排便恢復就停藥；明顯腹脹、便祕或腹痛加重時停用並諮詢；服藥 48 小時仍無改善或發燒，請就醫。高嶺土／果膠與舒腹達（Diosmectite）是不同成分，證據、年齡與用法不能互相套用。"
+      },
+      {
+        "heading": "止瀉藥可以和其他藥一起吃嗎？",
+        "text": "要注意間隔：高克痢具吸附作用，與其他口服藥務必錯開 2～3 小時，避免影響其他藥品吸收。"
+      }
+    ],
+    "altText": "高嶺土加果膠高克痢用法衛教圖卡：先搖勻、成人每次 30mL、與其他口服藥錯開 2 至 3 小時、排便恢復即停藥注意事項",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "references": [
+      {
+        "title": "IDSA 感染性腹瀉臨床實務指引",
+        "url": "https://www.idsociety.org/practice-guideline/infectious-diarrhea/"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：正露丸相關公告",
+        "url": "https://www.fda.gov.tw/TC/csmnewsContent.aspx?id=5407&mid=269"
+      },
+      {
+        "title": "台灣大幸藥品：正露丸產品資訊",
+        "url": "https://taiko.com.tw/"
+      },
+      {
+        "title": "暮帝納斯腹瀉整腸錠官方網站",
+        "url": "https://boterasu.com/"
+      },
+      {
+        "title": "台灣大正製藥：大正止瀉藥錠產品資訊",
+        "url": "https://www.twtaisho.com.tw/p3_product_detail.php?Page=0&cid=0&nid=17&tid=6"
+      },
+      {
+        "title": "生達化學製藥：高克痢懸乳液仿單與藥物資訊",
+        "url": "https://kb.commonhealth.com.tw/drugs/24107.html"
+      },
+      {
+        "title": "衛生福利部苗栗醫院：Kaolin/Pectin 衛教指導",
+        "url": "https://www.mil.mohw.gov.tw/english/public/ufile/d1/1706846124349.pdf"
+      },
+      {
+        "title": "三軍總醫院：高克痢衛教說明",
+        "url": "https://www1.ndmctsgh.edu.tw/pharm/pic/mededu/005PEC02.pdf"
+      },
+      {
+        "title": "高雄市立凱旋醫院：舒腹達 Smecta 藥品資訊",
+        "url": "https://ksph.kcg.gov.tw/7/dfiles/Smecta.htm"
+      },
+      {
+        "title": "PubMed：黃連素（Berberine）腹瀉臨床研究文獻回顧",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33149763/"
+      },
+      {
+        "title": "MedlinePlus：Loperamide 用法與用藥安全",
+        "url": "https://medlineplus.gov/druginfo/meds/a682280.html"
+      },
+      {
+        "title": "美國 NIDDK：Diarrhea Symptoms & Causes",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diarrhea/symptoms-causes"
+      }
+    ],
+    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源",
+    "related_links": [
+      {
+        "title": "常見止瀉藥怎麼選？5 類腹瀉藥物重點與使用原則",
+        "url": "../cards/diarrhea_drugs_1.html"
+      },
+      {
+        "title": "舒腹達是什麼？用途與兒童劑量",
+        "url": "../cards/smecta_1.html"
+      }
+    ]
+  },
+  {
+    "cardId": "diarrhea_drugs",
+    "title": "Loperamide：減少跑廁所，但要用對情況",
+    "image": "img/diarrhea_drugs_5.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diarrhea_drugs_5.html",
+    "summary": "Loperamide 透過減少腸道蠕動降低排便次數，僅緩解症狀而不殺菌。成人自用不超過 48 小時，發燒、血便或感染性腹瀉禁忌自行使用，超量可能引發嚴重心律不整。",
+    "sections": [
+      {
+        "heading": "Loperamide 作用機轉與使用原則",
+        "text": "Loperamide 減少腸道蠕動、降低排便次數，適合免疫功能正常、沒有發燒或血便的成人短期使用；它只緩解症狀，不會清除病原。台灣產品多數須醫師處方，少數為指示藥，請依藥袋或藥師指示。"
+      },
+      {
+        "heading": "成人一般用法原則（2 mg 膠囊）",
+        "text": "成人一般用法原則（2 mg 膠囊）：首次 2 粒（4 mg），之後每次稀便後 1 粒（2 mg），每日總量依醫囑，一般不超過 8 粒（16 mg），上限不是目標。糞便變硬或 24 小時沒排便就停用；自行使用不超過 48 小時，沒改善請就醫。"
+      },
+      {
+        "heading": "不適合自行使用的危險情況",
+        "text": "不適合自行使用：發燒、血便或疑似侵入性感染；明顯腹脹、便祕、疑似腸阻塞；最近使用抗生素後腹瀉；潰瘍性結腸炎等病史突然惡化；孕哺期、肝病或多重用藥未經評估。兒童用藥須由醫師依年齡與病因評估，本頁不提供兒童劑量。"
+      },
+      {
+        "heading": "副作用與超量風險警告",
+        "text": "可能便祕、噁心、腹部不適或頭暈；腹脹加劇、停止排氣排便請就醫。超過建議劑量可能造成嚴重心律不整。"
+      },
+      {
+        "heading": "Loperamide 可以吃多久？",
+        "text": "成人急性腹瀉自行使用不超過 48 小時；仍未改善，或出現發燒、血便、腹脹，請停藥就醫。"
+      },
+      {
+        "heading": "小孩拉肚子可以吃這些止瀉藥嗎？",
+        "text": "不能套用成人劑量。Loperamide 兒童使用須由醫師評估，本頁不提供兒童劑量。小孩腹瀉最重要的是補水與觀察脫水徵兆。"
+      }
+    ],
+    "altText": "Loperamide 成人用法原則與禁忌衛教圖卡：首次 2 粒之後每次稀便 1 粒、一日上限不超過 8 粒、自行使用不超過 48 小時、發燒血便禁忌",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "references": [
+      {
+        "title": "IDSA 感染性腹瀉臨床實務指引",
+        "url": "https://www.idsociety.org/practice-guideline/infectious-diarrhea/"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：正露丸相關公告",
+        "url": "https://www.fda.gov.tw/TC/csmnewsContent.aspx?id=5407&mid=269"
+      },
+      {
+        "title": "台灣大幸藥品：正露丸產品資訊",
+        "url": "https://taiko.com.tw/"
+      },
+      {
+        "title": "暮帝納斯腹瀉整腸錠官方網站",
+        "url": "https://boterasu.com/"
+      },
+      {
+        "title": "台灣大正製藥：大正止瀉藥錠產品資訊",
+        "url": "https://www.twtaisho.com.tw/p3_product_detail.php?Page=0&cid=0&nid=17&tid=6"
+      },
+      {
+        "title": "生達化學製藥：高克痢懸乳液仿單與藥物資訊",
+        "url": "https://kb.commonhealth.com.tw/drugs/24107.html"
+      },
+      {
+        "title": "衛生福利部苗栗醫院：Kaolin/Pectin 衛教指導",
+        "url": "https://www.mil.mohw.gov.tw/english/public/ufile/d1/1706846124349.pdf"
+      },
+      {
+        "title": "三軍總醫院：高克痢衛教說明",
+        "url": "https://www1.ndmctsgh.edu.tw/pharm/pic/mededu/005PEC02.pdf"
+      },
+      {
+        "title": "高雄市立凱旋醫院：舒腹達 Smecta 藥品資訊",
+        "url": "https://ksph.kcg.gov.tw/7/dfiles/Smecta.htm"
+      },
+      {
+        "title": "PubMed：黃連素（Berberine）腹瀉臨床研究文獻回顧",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33149763/"
+      },
+      {
+        "title": "MedlinePlus：Loperamide 用法與用藥安全",
+        "url": "https://medlineplus.gov/druginfo/meds/a682280.html"
+      },
+      {
+        "title": "美國 NIDDK：Diarrhea Symptoms & Causes",
+        "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diarrhea/symptoms-causes"
+      }
+    ],
+    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源",
+    "related_links": [
+      {
+        "title": "常見止瀉藥怎麼選？5 類腹瀉藥物重點與使用原則",
+        "url": "../cards/diarrhea_drugs_1.html"
+      },
+      {
+        "title": "拉肚子何時要看醫生？成人腹瀉警訊",
+        "url": "../cards/diarrhea_care_2.html"
       }
     ]
   }

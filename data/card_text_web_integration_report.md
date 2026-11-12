@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：281
+- 成功加入文字頁數：286
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -286,3 +286,8 @@
 | diarrhea_care | 兒童腹瀉何時就醫？尿量、精神與危險徵兆 | https://liaoweihung.github.io/pteduimg/cards/diarrhea_care_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | diarrhea_care | 寶寶拉肚子奶要停嗎？母乳、配方奶與副食品照顧 | https://liaoweihung.github.io/pteduimg/cards/diarrhea_care_5.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | diarrhea_care | 嬰兒腹瀉何時就醫？尿布、喝奶與脫水警訊 | https://liaoweihung.github.io/pteduimg/cards/diarrhea_care_6.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diarrhea_drugs | 常見止瀉藥怎麼選？正露丸、暮帝納斯、高克痢、Loperamide 用法與注意事項 | https://liaoweihung.github.io/pteduimg/cards/diarrhea_drugs_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diarrhea_drugs | 正露丸、暮帝納斯：熟悉的名字，成分不同 | https://liaoweihung.github.io/pteduimg/cards/diarrhea_drugs_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diarrhea_drugs | 黃連素類複方：看清楚的不只是黃連素 | https://liaoweihung.github.io/pteduimg/cards/diarrhea_drugs_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diarrhea_drugs | 高嶺土＋果膠：高克痢怎麼用？ | https://liaoweihung.github.io/pteduimg/cards/diarrhea_drugs_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diarrhea_drugs | Loperamide：減少跑廁所，但要用對情況 | https://liaoweihung.github.io/pteduimg/cards/diarrhea_drugs_5.html | 是 | 是 | 是 | 是 | 是 | 無 |
