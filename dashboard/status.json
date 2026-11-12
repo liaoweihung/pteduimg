@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-12T17:43:50+08:00",
-  "baseline": "ca08e4454e9542d75bbb011101c0b3d925fc0aef",
-  "scope": "網站來源快照；版本 ca08e445",
+  "generatedAt": "2026-11-12T18:05:10+08:00",
+  "baseline": "97575424823cf9158099abb79097a57f577d5132",
+  "scope": "網站來源快照；版本 97575424",
   "counts": {
     "cards": 429,
     "series": 93,
@@ -3732,7 +3732,7 @@
   },
   "sync": {
     "pages": 433,
-    "fields": 1079,
+    "fields": 1088,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4609,54 +4609,63 @@
       {
         "page": "breastfeeding_minor_constipation",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "breastfeeding_minor_cough",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "breastfeeding_minor_diarrhea",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "breastfeeding_minor_engorgement",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "breastfeeding_minor_fever_pain",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "breastfeeding_minor_insomnia",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "breastfeeding_minor_itch",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "breastfeeding_minor_reflux",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "breastfeeding_minor_rhinitis",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
