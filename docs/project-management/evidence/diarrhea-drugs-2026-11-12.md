@@ -10,7 +10,7 @@
   3. `diarrhea_drugs_3` 黃連素類複方：看清楚的不只是黃連素
   4. `diarrhea_drugs_4` 高嶺土＋果膠：高克痢怎麼用？
   5. `diarrhea_drugs_5` Loperamide：減少跑廁所，但要用對情況
-- 圖片由使用者提供，轉為 WebP（quality 90, method 6）。轉圖時使用網站現有定稿母版之彩色透明 Logo（`docs/brand/assets/logo_primary_transparent.png`），於圖底預留約 8% 空白橫帶水平置中等比縮放（高 40px，y=971~1011），原圖完整保留；轉圖加 Logo 流程載入 `AGENTS.md` 與 Card Manager。
+- 圖片由使用者提供，轉為 WebP（quality 90, method 6）。轉圖時使用網站現有定稿深色單色透明 Logo（`docs/brand/assets/logo_black_transparent.png`），於圖卡右下角（高 36px，寬 71px，距右 24px，距底 20px）等比縮放疊加，原圖完整保留；轉圖加 Logo 流程載入 `AGENTS.md` 與 Card Manager。
 - 逐頁 `data/card_content.json`：標題、摘要、分段重點、AEO FAQ 問答、altText、雙日期（`2026-11-12`）、12 項直接來源；`needsMedicalReview: true`。
 - `seo.json`：title、description、og:title、og:description 依使用者指示設定。
 - 內部連結：
