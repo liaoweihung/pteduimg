@@ -82,21 +82,8 @@
         page_path: '/pteduimg/cards/ped_cold_exdila_liquid.html'
       });
     }
-    (function() {
-      try {
-        var defaultReturnPage = "../index.html";
-        var referrerPath = document.referrer ? new URL(document.referrer).pathname : '';
-        if (defaultReturnPage === '../public.html') {
-          sessionStorage.setItem('pteduimgCardReturnPage', '../public.html');
-        } else if (referrerPath.endsWith('/public.html')) {
-          sessionStorage.setItem('pteduimgCardReturnPage', '../public.html');
-        } else if (referrerPath.endsWith('/index.html') || referrerPath.endsWith('/pteduimg/')) {
-          sessionStorage.setItem('pteduimgCardReturnPage', '../index.html');
-        }
-      } catch (err) {}
-    })();
     function returnToCardHome() {
-      location.href = sessionStorage.getItem('pteduimgCardReturnPage') || "../index.html";
+      location.href = "../index.html";
     }
     var cardFavoriteKey = "pediatric_cold_syrup-5";
     var cardShareUrl = "https://liaoweihung.github.io/pteduimg/cards/ped_cold_exdila_liquid.html";
@@ -424,6 +411,47 @@
       font-weight:700;
       background:#f0f9f9;
       border-radius:6px;
+    }
+    .next-series-section {
+      margin-top:20px;
+    }
+    .next-topic-group {
+      margin:10px 0 16px;
+    }
+    .next-topic-title {
+      font-size:.88rem;
+      font-weight:700;
+      color:#203b48;
+      margin:6px 0;
+    }
+    .next-series-list {
+      list-style:disc;
+      margin:0 0 6px;
+      padding-left:1.6rem;
+      line-height:2.2;
+    }
+    .next-series-list li {
+      margin:4px 0;
+    }
+    .next-series-list a {
+      color:var(--brand);
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
+    .next-topic-return {
+      margin:6px 0 10px;
+    }
+    .next-topic-return a {
+      display:inline-flex;
+      align-items:center;
+      min-height:36px;
+      color:var(--brand);
+      font-weight:600;
+      font-size:.88rem;
+      text-decoration:none;
+    }
+    .next-topic-return a:hover {
+      text-decoration:underline;
     }
     .qr-modal {
       position:fixed;

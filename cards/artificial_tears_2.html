@@ -31,13 +31,19 @@
     "@id": "https://liaoweihung.github.io/pteduimg/cards/artificial_tears_2.html"
   },
   "inLanguage": "zh-TW",
-  "dateModified": "2026-10-02",
   "isPartOf": {
     "@type": "WebSite",
     "name": "藥局衛教助手",
     "url": "https://liaoweihung.github.io/pteduimg/"
   },
-  "keywords": "人工淚液、防腐劑、玻尿酸、乾眼症、眼藥水、OTC眼藥水、止癢眼藥水、抗過敏眼藥水、退紅眼藥水、血管收縮劑、抗菌眼藥水、疲勞眼藥水、涼感眼藥水、洗眼液、眼睛痠、眼睛紅、眼睛疲勞、眼睛分泌物、Ketotifen、Antazoline、Tetrahydrozoline、Naphazoline、Sulfamethoxazole、Chloramphenicol、Vitamin B6、Vitamin B12、Menthol、Camphor"
+  "dateModified": "2026-10-02",
+  "keywords": "人工淚液、防腐劑、玻尿酸、乾眼症、眼藥水、OTC眼藥水、止癢眼藥水、抗過敏眼藥水、退紅眼藥水、血管收縮劑、抗菌眼藥水、疲勞眼藥水、涼感眼藥水、洗眼液、眼睛痠、眼睛紅、眼睛疲勞、眼睛分泌物、Ketotifen、Antazoline、Tetrahydrozoline、Naphazoline、Sulfamethoxazole、Chloramphenicol、Vitamin B6、Vitamin B12、Menthol、Camphor",
+  "author": {
+    "@type": "Person",
+    "@id": "https://liaoweihung.github.io/pteduimg/author.html#person",
+    "name": "藥局衛教助手製作者",
+    "url": "https://liaoweihung.github.io/pteduimg/author.html"
+  }
 }
   </script>
   <script src="../qrious.min.js"></script>
@@ -76,21 +82,51 @@
         page_path: '/pteduimg/cards/artificial_tears_2.html'
       });
     }
-    (function() {
+    function updateReturnButton() {
       try {
-        var defaultReturnPage = "../public.html";
-        var referrerPath = document.referrer ? new URL(document.referrer).pathname : '';
-        if (defaultReturnPage === '../public.html') {
-          sessionStorage.setItem('pteduimgCardReturnPage', '../public.html');
-        } else if (referrerPath.endsWith('/public.html')) {
-          sessionStorage.setItem('pteduimgCardReturnPage', '../public.html');
-        } else if (referrerPath.endsWith('/index.html') || referrerPath.endsWith('/pteduimg/')) {
-          sessionStorage.setItem('pteduimgCardReturnPage', '../index.html');
+        var btn = document.querySelector('button[onclick="returnToCardHome()"]');
+        if (!btn) return;
+        var stateRaw = sessionStorage.getItem('pteduimgReturnState');
+        var topicTitles = {"skin_wound": "皮膚與傷口", "acne": "痘痘／粉刺", "eyes": "眼睛", "oral_health": "口腔", "throat": "喉嚨", "infectious_diseases": "傳染病", "heat_illness": "中暑", "insect_repellent": "防蚊液", "gastrointestinal": "胃腸相關", "elimination_care": "排泄與照護", "infant_care": "嬰幼兒照護", "growth": "成長", "chronic_conditions": "慢性病", "sleep": "睡眠", "pregnancy": "懷孕", "travel_medication": "旅遊與用藥常識"};
+        if (stateRaw) {
+          var state = JSON.parse(stateRaw);
+          if (state && state.url) {
+            var returnUrl = new URL(state.url, window.location.href);
+            var q = returnUrl.searchParams.get('q');
+            var topic = returnUrl.searchParams.get('topic');
+            if (q && q.trim()) {
+              btn.textContent = '‹ 回到搜尋結果';
+              return;
+            }
+            if (topic && topic !== 'all' && topicTitles[topic]) {
+              btn.textContent = '‹ 回到『' + topicTitles[topic] + '』';
+              return;
+            }
+            btn.textContent = '‹ 看更多衛教圖卡';
+            return;
+          }
+        }
+        btn.textContent = "\u2039 \u56de\u5230\u300e\u773c\u775b\u300f";
+      } catch (err) {}
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', updateReturnButton);
+    } else {
+      updateReturnButton();
+    }
+    function returnToCardHome() {
+      try {
+        var stateRaw = sessionStorage.getItem('pteduimgReturnState');
+        if (stateRaw) {
+          var state = JSON.parse(stateRaw);
+          if (state && state.url) {
+            sessionStorage.setItem('pteduimgRestorePending', '1');
+            location.href = state.url;
+            return;
+          }
         }
       } catch (err) {}
-    })();
-    function returnToCardHome() {
-      location.href = sessionStorage.getItem('pteduimgCardReturnPage') || "../public.html";
+      location.href = "../public.html?topic=eyes";
     }
     var cardFavoriteKey = "artificial_tears-1";
     var cardShareUrl = "https://liaoweihung.github.io/pteduimg/cards/artificial_tears_2.html";
@@ -419,6 +455,47 @@
       background:#f0f9f9;
       border-radius:6px;
     }
+    .next-series-section {
+      margin-top:20px;
+    }
+    .next-topic-group {
+      margin:10px 0 16px;
+    }
+    .next-topic-title {
+      font-size:.88rem;
+      font-weight:700;
+      color:#203b48;
+      margin:6px 0;
+    }
+    .next-series-list {
+      list-style:disc;
+      margin:0 0 6px;
+      padding-left:1.6rem;
+      line-height:2.2;
+    }
+    .next-series-list li {
+      margin:4px 0;
+    }
+    .next-series-list a {
+      color:var(--brand);
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
+    .next-topic-return {
+      margin:6px 0 10px;
+    }
+    .next-topic-return a {
+      display:inline-flex;
+      align-items:center;
+      min-height:36px;
+      color:var(--brand);
+      font-weight:600;
+      font-size:.88rem;
+      text-decoration:none;
+    }
+    .next-topic-return a:hover {
+      text-decoration:underline;
+    }
     .qr-modal {
       position:fixed;
       inset:0;
@@ -519,7 +596,7 @@
 <body>
   <main>
     <div class="top-actions">
-      <button class="pill" type="button" onclick="returnToCardHome()">返回首頁</button>
+      <button class="pill" type="button" onclick="returnToCardHome()">‹ 回到『眼睛』</button>
       <div class="action-cluster">
         <button class="pill icon-pill" type="button" onclick="showQRCode()" aria-label="顯示 QR code">🔲</button>
         <button class="pill icon-pill" id="favorite-button" type="button" onclick="toggleFavorite()" aria-pressed="false" aria-label="加入收藏">☆</button>

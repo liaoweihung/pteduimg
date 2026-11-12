@@ -41,6 +41,23 @@
   ],
   "observations": [
     {
+      "id": "OBS-2026-11-12-intentional-noindex-acne",
+      "kind": "page_indexing_noindex_detail",
+      "observed_at": "2026-11-12T08:25:38Z",
+      "property_url": "https://liaoweihung.github.io/",
+      "data_updated_date": "2026-11-09",
+      "indexed_total": 28,
+      "not_indexed_total": 3,
+      "noindex_affected_total": 1,
+      "first_detected_date": "2026-11-07",
+      "example_url": "https://liaoweihung.github.io/pteduimg/cards/acne.html",
+      "last_crawled_date": "2026-11-06",
+      "validation_status": "not_started",
+      "interpretation": "intentional_retired_page_noindex",
+      "evidence_file": "evidence/noindex-acne-2026-11-12.md",
+      "notes": "GSC noindex detail has one example; local retired inventory and generated page confirm intentional exclusion. Other unindexed reasons were not investigated in this observation."
+    },
+    {
       "id": "OBS-2026-09-06-original-manual-group",
       "observed_at": "2026-09-06T02:30:07.098Z",
       "kind": "historical_group_index_observation",

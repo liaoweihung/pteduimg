@@ -20,12 +20,33 @@ BASE_URL = "https://liaoweihung.github.io/pteduimg/"
 GA_MEASUREMENT_ID = "G-T5R33JYTC0"
 ROOT = Path(__file__).resolve().parent
 CARDS_JSON = ROOT / "cards.json"
+CARDS_MANUAL_JSON = ROOT / "cards.manual.json"
 SEO_JSON = ROOT / "seo.json"
 CARD_CONTENT_JSON = ROOT / "data" / "card_content.json"
 LABEL_LINKS_JSON = ROOT / "data" / "label_links.json"
 CARD_TEXT_REPORT = ROOT / "data" / "card_text_web_integration_report.md"
 CARDS_DIR = ROOT / "cards"
 SITE_TITLE = "藥局衛教助手"
+
+
+PUBLIC_TOPIC_TITLES = {
+    "skin_wound": "皮膚與傷口",
+    "acne": "痘痘／粉刺",
+    "eyes": "眼睛",
+    "oral_health": "口腔",
+    "throat": "喉嚨",
+    "infectious_diseases": "傳染病",
+    "heat_illness": "中暑",
+    "insect_repellent": "防蚊液",
+    "gastrointestinal": "胃腸相關",
+    "elimination_care": "排泄與照護",
+    "infant_care": "嬰幼兒照護",
+    "growth": "成長",
+    "chronic_conditions": "慢性病",
+    "sleep": "睡眠",
+    "pregnancy": "懷孕",
+    "travel_medication": "旅遊與用藥常識",
+}
 
 
 CATEGORY_LABELS = {
@@ -42,6 +63,13 @@ FORBIDDEN_SEO_WORDS = ("保證", "治癒")
 def read_cards():
     with CARDS_JSON.open("r", encoding="utf-8") as file:
         return json.load(file)
+
+
+def read_manual_cards():
+    if CARDS_MANUAL_JSON.exists():
+        with CARDS_MANUAL_JSON.open("r", encoding="utf-8") as file:
+            return json.load(file)
+    return {}
 
 
 def read_seo():
@@ -506,7 +534,77 @@ def show_shared_footer(card_id, card):
     return bool(card.get("showFooter") or is_acne_topic(card_id, card))
 
 
-def render_card_page(card_id, card, step, step_index, seo, card_content=None, series_links="", series_seo=None, pilot=None):
+def render_next_reads(card_id, card, cards, manual_cards):
+    topics = manual_cards.get(card_id, {}).get("topics") or card.get("topics") or []
+    if not topics:
+        return ""
+
+    ordered_public_series = [
+        (sid, c) for sid, c in cards.items()
+        if c.get("category") == "public_education" and not c.get("hidden") and c.get("steps")
+    ]
+
+    topic_blocks = []
+    seen_series = {card_id}
+
+    for topic_id in topics:
+        topic_title = PUBLIC_TOPIC_TITLES.get(topic_id, topic_id)
+        candidates = []
+        for sid, c in ordered_public_series:
+            if sid in seen_series:
+                continue
+            c_topics = manual_cards.get(sid, {}).get("topics") or c.get("topics") or []
+            if topic_id in c_topics:
+                candidates.append((sid, c))
+                if len(candidates) >= 3:
+                    break
+
+        if len(candidates) < 2:
+            for sid, c in ordered_public_series:
+                if sid == card_id or any(s == sid for s, _ in candidates):
+                    continue
+                c_topics = manual_cards.get(sid, {}).get("topics") or c.get("topics") or []
+                if topic_id in c_topics:
+                    candidates.append((sid, c))
+                    if len(candidates) >= 3:
+                        break
+
+        for sid, _ in candidates:
+            seen_series.add(sid)
+
+        series_lis = []
+        for sid, c in candidates:
+            first_step = c["steps"][0]
+            series_lis.append(f'<li><a href="../{esc(page_for_image(first_step))}">{esc(c["title"])}</a></li>')
+
+        list_html = f'<ul class="next-series-list">\n            {"".join(series_lis)}\n          </ul>' if series_lis else ''
+        return_link_html = f'<div class="next-topic-return"><a href="../public.html?topic={esc(topic_id)}">‹ 回到『{esc(topic_title)}』主題</a></div>'
+
+        topic_blocks.append(
+            f'        <div class="next-topic-group">\n'
+            f'          <div class="next-topic-title">主題：{esc(topic_title)}</div>\n'
+            f'          {list_html}\n'
+            f'          {return_link_html}\n'
+            f'        </div>'
+        )
+
+    if not topic_blocks:
+        return ""
+
+    blocks_html = "\n".join(topic_blocks)
+    return (
+        f'\n      <div class="next-series-section">\n'
+        f'        <div class="section-title">接下來可以看</div>\n'
+        f'{blocks_html}\n'
+        f'      </div>'
+    )
+
+
+def render_card_page(card_id, card, step, step_index, seo, card_content=None, series_links="", series_seo=None, pilot=None, cards=None, manual_cards=None):
+    if cards is None:
+        cards = read_cards()
+    if manual_cards is None:
+        manual_cards = read_manual_cards()
     # Opt-in only: preserve every other series' output and the medical source record.
     if pilot and card_content:
         card_content = {**card_content, "expandText": False}
@@ -515,7 +613,22 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     step_number = step_index + 1
     category = card.get("category") or "uncategorized"
     category_label = CATEGORY_LABELS.get(category, category)
-    default_return_page = "../public.html" if category == "public_education" else "../index.html"
+    is_public = (category == "public_education")
+
+    series_topics = (manual_cards.get(card_id, {}).get("topics") or card.get("topics") or []) if is_public else []
+    if is_public:
+        if len(series_topics) == 1:
+            single_topic = series_topics[0]
+            single_topic_title = PUBLIC_TOPIC_TITLES.get(single_topic, single_topic)
+            default_return_page = f"../public.html?topic={single_topic}"
+            default_btn_text = f"‹ 回到『{single_topic_title}』"
+        else:
+            default_return_page = "../public.html"
+            default_btn_text = "‹ 看更多衛教圖卡"
+    else:
+        default_return_page = "../index.html"
+        default_btn_text = "返回首頁"
+
     title = seo["page_title"]
     tracking_title = seo.get("tracking_title") or title
     description = seo["meta_description"]
@@ -528,7 +641,60 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     acne_topic = is_acne_topic(card_id, card)
     top_actions_class = "top-actions acne-topic-actions" if acne_topic else "top-actions"
     return_navigation = (render_topic_return(page_path) if acne_topic else
-                         '<button class="pill" type="button" onclick="returnToCardHome()">返回首頁</button>')
+                         f'<button class="pill" type="button" onclick="returnToCardHome()">{default_btn_text}</button>')
+    is_public_last_step = (category == "public_education" and step_index == total - 1)
+    next_reads_html = render_next_reads(card_id, card, cards, manual_cards) if is_public_last_step else ""
+    if is_public:
+        return_script = f"""    function updateReturnButton() {{
+      try {{
+        var btn = document.querySelector('button[onclick="returnToCardHome()"]');
+        if (!btn) return;
+        var stateRaw = sessionStorage.getItem('pteduimgReturnState');
+        var topicTitles = {json.dumps(PUBLIC_TOPIC_TITLES, ensure_ascii=False)};
+        if (stateRaw) {{
+          var state = JSON.parse(stateRaw);
+          if (state && state.url) {{
+            var returnUrl = new URL(state.url, window.location.href);
+            var q = returnUrl.searchParams.get('q');
+            var topic = returnUrl.searchParams.get('topic');
+            if (q && q.trim()) {{
+              btn.textContent = '‹ 回到搜尋結果';
+              return;
+            }}
+            if (topic && topic !== 'all' && topicTitles[topic]) {{
+              btn.textContent = '‹ 回到『' + topicTitles[topic] + '』';
+              return;
+            }}
+            btn.textContent = '‹ 看更多衛教圖卡';
+            return;
+          }}
+        }}
+        btn.textContent = {json.dumps(default_btn_text)};
+      }} catch (err) {{}}
+    }}
+    if (document.readyState === 'loading') {{
+      document.addEventListener('DOMContentLoaded', updateReturnButton);
+    }} else {{
+      updateReturnButton();
+    }}
+    function returnToCardHome() {{
+      try {{
+        var stateRaw = sessionStorage.getItem('pteduimgReturnState');
+        if (stateRaw) {{
+          var state = JSON.parse(stateRaw);
+          if (state && state.url) {{
+            sessionStorage.setItem('pteduimgRestorePending', '1');
+            location.href = state.url;
+            return;
+          }}
+        }}
+      }} catch (err) {{}}
+      location.href = {json.dumps(default_return_page)};
+    }}"""
+    else:
+        return_script = """    function returnToCardHome() {
+      location.href = "../index.html";
+    }"""
     topic_nav_styles = TOP_NAV_STYLES if acne_topic else ""
     mobile_nav_styles = """
     @media (max-width:679px) {
@@ -721,22 +887,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
         page_path: '/pteduimg/{page_path}'
       }});
     }}
-    (function() {{
-      try {{
-        var defaultReturnPage = {json.dumps(default_return_page)};
-        var referrerPath = document.referrer ? new URL(document.referrer).pathname : '';
-        if (defaultReturnPage === '../public.html') {{
-          sessionStorage.setItem('pteduimgCardReturnPage', '../public.html');
-        }} else if (referrerPath.endsWith('/public.html')) {{
-          sessionStorage.setItem('pteduimgCardReturnPage', '../public.html');
-        }} else if (referrerPath.endsWith('/index.html') || referrerPath.endsWith('/pteduimg/')) {{
-          sessionStorage.setItem('pteduimgCardReturnPage', '../index.html');
-        }}
-      }} catch (err) {{}}
-    }})();
-    function returnToCardHome() {{
-      location.href = sessionStorage.getItem('pteduimgCardReturnPage') || {json.dumps(default_return_page)};
-    }}
+{return_script}
     var cardFavoriteKey = {json.dumps((card.get('favorite_keys') or [f'{card_id}-{i}' for i in range(total)])[step_index])};
     var cardShareUrl = {json.dumps(page_url)};
     var cardTitle = {json.dumps(title, ensure_ascii=False)};
@@ -959,6 +1110,47 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
       background:#f0f9f9;
       border-radius:6px;
     }}
+    .next-series-section {{
+      margin-top:20px;
+    }}
+    .next-topic-group {{
+      margin:10px 0 16px;
+    }}
+    .next-topic-title {{
+      font-size:.88rem;
+      font-weight:700;
+      color:#203b48;
+      margin:6px 0;
+    }}
+    .next-series-list {{
+      list-style:disc;
+      margin:0 0 6px;
+      padding-left:1.6rem;
+      line-height:2.2;
+    }}
+    .next-series-list li {{
+      margin:4px 0;
+    }}
+    .next-series-list a {{
+      color:var(--brand);
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }}
+    .next-topic-return {{
+      margin:6px 0 10px;
+    }}
+    .next-topic-return a {{
+      display:inline-flex;
+      align-items:center;
+      min-height:36px;
+      color:var(--brand);
+      font-weight:600;
+      font-size:.88rem;
+      text-decoration:none;
+    }}
+    .next-topic-return a:hover {{
+      text-decoration:underline;
+    }}
     .qr-modal {{
       position:fixed;
       inset:0;
@@ -1074,7 +1266,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
 {label_links_html}{pilot_navigation}{pilot_footer_start}      <div class="section-title">同系列圖卡</div>
       <ol class="related-list" aria-label="同系列圖卡">
         {related_cards}
-      </ol>{series_links}{pilot_footer_end}
+      </ol>{next_reads_html}{series_links}{pilot_footer_end}
     </section>{shared_footer}
     <div class="qr-modal" id="qr-modal" hidden>
       <div class="qr-box" role="dialog" aria-modal="true" aria-label="圖卡 QR code">
@@ -1259,6 +1451,7 @@ def generate_card_pages(cards, seo_index, card_content_index, only_image_ids=Non
                 # are overwritten below, so a locked stale file should not stop builds.
                 pass
 
+    manual_cards = read_manual_cards()
     generated_pages = []
     rendered = {}
     used_ids = set()
@@ -1281,7 +1474,8 @@ def generate_card_pages(cards, seo_index, card_content_index, only_image_ids=Non
             card_content = card_content_index.get(step.replace("\\", "/"))
             page_html = render_card_page(card_id, card, step, index, seo, card_content,
                                         render_series_links(card, cards, card_content), seo_index,
-                                        pilot=pilot_pages.get(image_id))
+                                        pilot=pilot_pages.get(image_id),
+                                        cards=cards, manual_cards=manual_cards)
             if render_label_links(step):
                 page_html = page_html.replace("  </style>", LABEL_LINK_STYLES + "  </style>", 1)
             if image_id in pilot_pages:

@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>常見止瀉藥怎麼選？正露丸、暮帝納斯、高克痢、Loperamide 用法與注意事項｜藥局衛教助手</title>
-  <meta name="description" content="藥師整理常見止瀉藥：正露丸、暮帝納斯、黃連素複方、高克痢、Loperamide 的成分、成人用法與禁忌。哪些腹瀉不能自己吃止瀉藥、何時該就醫，以及補水的重要性。">
+  <meta name="description" content="止瀉藥能減少跑廁所的次數，但不能取代補水，也不會治好造成腹瀉的原因。正露丸、暮帝納斯、黃連素複方、高克痢與 Loperamide 成分不同，用法、年齡限制與禁忌也不同；有發燒、血便、劇烈腹痛或脫水時，請先就醫，不要自行服用止瀉藥。本頁以成人急性腹瀉為主，劑量範例均標明產品，不可套用到其他品牌或兒童。">
   <meta name="keywords" content="止瀉藥、拉肚子吃什麼藥、正露丸、暮帝納斯、高克痢、Loperamide、樂必寧、黃連素、止瀉藥副作用、大便變黑、舒腹達、瀉必寧、成人腹瀉、水瀉、口服電解質液、ORS">
   <link rel="canonical" href="https://liaoweihung.github.io/pteduimg/cards/diarrhea_drugs_1.html">
   <link rel="icon" type="image/png" href="../icon.png?v=3">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="藥局衛教助手">
-  <meta property="og:title" content="常見止瀉藥怎麼選？藥師整理 5 類腹瀉藥物">
-  <meta property="og:description" content="藥師整理常見止瀉藥：正露丸、暮帝納斯、黃連素複方、高克痢、Loperamide 的成分、成人用法與禁忌。哪些腹瀉不能自己吃止瀉藥、何時該就醫，以及補水的重要性。">
+  <meta property="og:title" content="常見止瀉藥怎麼選？正露丸、暮帝納斯、高克痢、Loperamide 用法與注意事項｜藥局衛教助手">
+  <meta property="og:description" content="止瀉藥能減少跑廁所的次數，但不能取代補水，也不會治好造成腹瀉的原因。正露丸、暮帝納斯、黃連素複方、高克痢與 Loperamide 成分不同，用法、年齡限制與禁忌也不同；有發燒、血便、劇烈腹痛或脫水時，請先就醫，不要自行服用止瀉藥。本頁以成人急性腹瀉為主，劑量範例均標明產品，不可套用到其他品牌或兒童。">
   <meta property="og:image" content="https://liaoweihung.github.io/pteduimg/img/diarrhea_drugs_1.webp">
   <meta property="og:url" content="https://liaoweihung.github.io/pteduimg/cards/diarrhea_drugs_1.html">
   <meta name="twitter:card" content="summary_large_image">
@@ -82,21 +82,51 @@
         page_path: '/pteduimg/cards/diarrhea_drugs_1.html'
       });
     }
-    (function() {
+    function updateReturnButton() {
       try {
-        var defaultReturnPage = "../public.html";
-        var referrerPath = document.referrer ? new URL(document.referrer).pathname : '';
-        if (defaultReturnPage === '../public.html') {
-          sessionStorage.setItem('pteduimgCardReturnPage', '../public.html');
-        } else if (referrerPath.endsWith('/public.html')) {
-          sessionStorage.setItem('pteduimgCardReturnPage', '../public.html');
-        } else if (referrerPath.endsWith('/index.html') || referrerPath.endsWith('/pteduimg/')) {
-          sessionStorage.setItem('pteduimgCardReturnPage', '../index.html');
+        var btn = document.querySelector('button[onclick="returnToCardHome()"]');
+        if (!btn) return;
+        var stateRaw = sessionStorage.getItem('pteduimgReturnState');
+        var topicTitles = {"skin_wound": "皮膚與傷口", "acne": "痘痘／粉刺", "eyes": "眼睛", "oral_health": "口腔", "throat": "喉嚨", "infectious_diseases": "傳染病", "heat_illness": "中暑", "insect_repellent": "防蚊液", "gastrointestinal": "胃腸相關", "elimination_care": "排泄與照護", "infant_care": "嬰幼兒照護", "growth": "成長", "chronic_conditions": "慢性病", "sleep": "睡眠", "pregnancy": "懷孕", "travel_medication": "旅遊與用藥常識"};
+        if (stateRaw) {
+          var state = JSON.parse(stateRaw);
+          if (state && state.url) {
+            var returnUrl = new URL(state.url, window.location.href);
+            var q = returnUrl.searchParams.get('q');
+            var topic = returnUrl.searchParams.get('topic');
+            if (q && q.trim()) {
+              btn.textContent = '‹ 回到搜尋結果';
+              return;
+            }
+            if (topic && topic !== 'all' && topicTitles[topic]) {
+              btn.textContent = '‹ 回到『' + topicTitles[topic] + '』';
+              return;
+            }
+            btn.textContent = '‹ 看更多衛教圖卡';
+            return;
+          }
+        }
+        btn.textContent = "\u2039 \u56de\u5230\u300e\u80c3\u8178\u76f8\u95dc\u300f";
+      } catch (err) {}
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', updateReturnButton);
+    } else {
+      updateReturnButton();
+    }
+    function returnToCardHome() {
+      try {
+        var stateRaw = sessionStorage.getItem('pteduimgReturnState');
+        if (stateRaw) {
+          var state = JSON.parse(stateRaw);
+          if (state && state.url) {
+            sessionStorage.setItem('pteduimgRestorePending', '1');
+            location.href = state.url;
+            return;
+          }
         }
       } catch (err) {}
-    })();
-    function returnToCardHome() {
-      location.href = sessionStorage.getItem('pteduimgCardReturnPage') || "../public.html";
+      location.href = "../public.html?topic=gastrointestinal";
     }
     var cardFavoriteKey = "diarrhea_drugs-0";
     var cardShareUrl = "https://liaoweihung.github.io/pteduimg/cards/diarrhea_drugs_1.html";
@@ -425,6 +455,47 @@
       background:#f0f9f9;
       border-radius:6px;
     }
+    .next-series-section {
+      margin-top:20px;
+    }
+    .next-topic-group {
+      margin:10px 0 16px;
+    }
+    .next-topic-title {
+      font-size:.88rem;
+      font-weight:700;
+      color:#203b48;
+      margin:6px 0;
+    }
+    .next-series-list {
+      list-style:disc;
+      margin:0 0 6px;
+      padding-left:1.6rem;
+      line-height:2.2;
+    }
+    .next-series-list li {
+      margin:4px 0;
+    }
+    .next-series-list a {
+      color:var(--brand);
+      text-decoration:underline;
+      text-underline-offset:3px;
+    }
+    .next-topic-return {
+      margin:6px 0 10px;
+    }
+    .next-topic-return a {
+      display:inline-flex;
+      align-items:center;
+      min-height:36px;
+      color:var(--brand);
+      font-weight:600;
+      font-size:.88rem;
+      text-decoration:none;
+    }
+    .next-topic-return a:hover {
+      text-decoration:underline;
+    }
     .qr-modal {
       position:fixed;
       inset:0;
@@ -539,7 +610,7 @@
 <body>
   <main>
     <div class="top-actions">
-      <button class="pill" type="button" onclick="returnToCardHome()">返回首頁</button>
+      <button class="pill" type="button" onclick="returnToCardHome()">‹ 回到『胃腸相關』</button>
       <div class="action-cluster">
         <button class="pill icon-pill" type="button" onclick="showQRCode()" aria-label="顯示 QR code">🔲</button>
         <button class="pill icon-pill" id="favorite-button" type="button" onclick="toggleFavorite()" aria-pressed="false" aria-label="加入收藏">☆</button>

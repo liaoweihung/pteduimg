@@ -860,19 +860,113 @@ body.public-page .site-footer { font-size: .95rem; }
         }
     }
 
+    function syncUrlParams() {
+        const params = new URLSearchParams(window.location.search);
+        if (activePublicTopic && activePublicTopic !== 'all') {
+            params.set('topic', activePublicTopic);
+        } else {
+            params.delete('topic');
+        }
+        const searchInput = document.getElementById('card-search');
+        const query = searchInput ? searchInput.value.trim() : (cardSearchTerm || '');
+        if (query) {
+            params.set('q', query);
+        } else {
+            params.delete('q');
+        }
+        const qs = params.toString();
+        const newUrl = qs ? `${window.location.pathname}?${qs}` : window.location.pathname;
+        history.replaceState(null, '', newUrl);
+    }
+
+    function saveReturnState() {
+        try {
+            const currentScroll = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+            const state = {
+                url: window.location.href,
+                scrollY: currentScroll,
+                visibleSeriesLimit: visibleSeriesLimit
+            };
+            sessionStorage.setItem('pteduimgReturnState', JSON.stringify(state));
+        } catch (err) {}
+    }
+
+    let pendingScrollRestore = null;
+    function readReturnStateOnLoad() {
+        try {
+            const isRestorePending = sessionStorage.getItem('pteduimgRestorePending') === '1';
+            sessionStorage.removeItem('pteduimgRestorePending');
+            if (!isRestorePending) {
+                return;
+            }
+
+            const raw = sessionStorage.getItem('pteduimgReturnState');
+            if (raw) {
+                const state = JSON.parse(raw);
+                if (state && state.url) {
+                    const savedUrl = new URL(state.url, window.location.href);
+                    const currentUrl = new URL(window.location.href);
+                    if (savedUrl.pathname === currentUrl.pathname && savedUrl.search === currentUrl.search) {
+                        if (typeof state.visibleSeriesLimit === 'number' && state.visibleSeriesLimit > visibleSeriesLimit) {
+                            visibleSeriesLimit = state.visibleSeriesLimit;
+                        }
+                        if (typeof state.scrollY === 'number' && state.scrollY > 0) {
+                            pendingScrollRestore = state.scrollY;
+                        }
+                    }
+                }
+            }
+        } catch (err) {}
+    }
+
+    function applyScrollPosition(targetY) {
+        window.scrollTo({ top: targetY, behavior: 'instant' });
+        if (document.documentElement) document.documentElement.scrollTop = targetY;
+        if (document.body) {
+            document.body.scrollTop = targetY;
+            if (typeof document.body.scrollTo === 'function') {
+                document.body.scrollTo({ top: targetY, behavior: 'instant' });
+            }
+        }
+    }
+
+    function tryRestoreScroll() {
+        if (pendingScrollRestore !== null) {
+            const targetY = pendingScrollRestore;
+            pendingScrollRestore = null;
+            requestAnimationFrame(() => {
+                applyScrollPosition(targetY);
+                setTimeout(() => {
+                    applyScrollPosition(targetY);
+                }, 50);
+            });
+        }
+    }
+
     function selectPublicTopic(topicId) {
         if (!publicTopicMeta.some(topic => topic.id === topicId)) return;
         activePublicTopic = topicId;
         visibleSeriesLimit = 12;
+        syncUrlParams();
         renderHome();
         // 重新繪製後把焦點還給目前選取的主題，鍵盤與螢幕報讀使用者不會迷路
         document.querySelector(`.topic-filter-btn[data-topic="${topicId}"]`)?.focus({ preventScroll: true });
     }
 
-    function applyPublicTopicFromUrl() {
-        const topicId = new URLSearchParams(window.location.search).get('topic');
+    function applyPublicFiltersFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        const topicId = params.get('topic');
         if (publicTopicMeta.some(topic => topic.id === topicId)) {
             activePublicTopic = topicId;
+        }
+        const q = params.get('q');
+        if (q) {
+            const trimmed = q.trim();
+            cardSearchTerm = trimmed.toLocaleLowerCase();
+            const searchInput = document.getElementById('card-search');
+            if (searchInput) {
+                searchInput.value = trimmed;
+            }
         }
     }
 
@@ -898,7 +992,10 @@ body.public-page .site-footer { font-size: .95rem; }
 
         scrollToTarget();
         requestAnimationFrame(scrollToTarget);
-        history.replaceState(null, '', window.location.pathname);
+        const params = new URLSearchParams(window.location.search);
+        params.delete('focus');
+        const qs = params.toString();
+        history.replaceState(null, '', qs ? `${window.location.pathname}?${qs}` : window.location.pathname);
     }
 
     function getActivePublicTopicTitle() {
@@ -908,14 +1005,19 @@ body.public-page .site-footer { font-size: .95rem; }
     function updateCardSearch(value) {
         cardSearchTerm = (value || '').trim().toLocaleLowerCase();
         visibleSeriesLimit = 12;
+        syncUrlParams();
         renderHome();
     }
 
     function clearPublicFilters() {
         activePublicTopic = 'all';
-        document.getElementById('card-search').value = '';
-        updateCardSearch('');
-        document.getElementById('card-search').focus();
+        const searchInput = document.getElementById('card-search');
+        if (searchInput) searchInput.value = '';
+        cardSearchTerm = '';
+        visibleSeriesLimit = 12;
+        syncUrlParams();
+        renderHome();
+        if (searchInput) searchInput.focus();
     }
 
     function showMoreCards() {
@@ -1011,6 +1113,7 @@ body.public-page .site-footer { font-size: .95rem; }
         document.getElementById('fav-count').textContent = `（${visibleFavCount} 張）`;
         initFavoriteSorting();
         focusRelatedNavigation();
+        tryRestoreScroll();
     }
 
     function openViewer(type, startIndex = 0) {
@@ -1117,6 +1220,7 @@ function updateContent() {
         const item = educationData[type];
         const step = item && item.steps && item.steps[index];
         if (!step) return;
+        saveReturnState();
         window.location.href = getCardPagePath(step);
     }
 
@@ -1298,7 +1402,8 @@ function updateContent() {
     }
     function initPage() {
         setupPageHeader();
-        applyPublicTopicFromUrl();
+        readReturnStateOnLoad();
+        applyPublicFiltersFromUrl();
         document.getElementById('card-search').addEventListener('input', function(event) {
             updateCardSearch(event.target.value);
         });
@@ -1306,6 +1411,14 @@ function updateContent() {
             const button = event.target.closest('.topic-filter-btn');
             if (button) selectPublicTopic(button.dataset.topic);
         });
+        document.addEventListener('click', function(event) {
+            const link = event.target.closest('a');
+            if (!link) return;
+            const href = link.getAttribute('href') || '';
+            if (href.includes('cards/') || (link.pathname && link.pathname.includes('/cards/'))) {
+                saveReturnState();
+            }
+        }, true);
         const hasCachedCards = loadCachedEducationData();
         loadCachedSeoData();
         if (hasCachedCards) {
