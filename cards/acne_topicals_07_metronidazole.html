@@ -635,8 +635,11 @@
           btns[i].addEventListener("click", function () {
             var vote = this.getAttribute("data-vote");
             var body = new URLSearchParams();
-            body.append("source", "藥局衛教助手｜按鈕");
-            body.append("feedback", (vote === "helpful" ? "👍 有幫助" : "👎 沒幫助") + "｜" + location.pathname + "｜" + document.title);
+            body.append("type", "vote");
+            body.append("source", "藥局衛教助手");
+            body.append("vote", vote);
+            body.append("page", location.pathname);
+            body.append("title", document.title);
             done("傳送中…");
             fetch(GAS_URL, { method: "POST", body: body }).then(function () {
               try { localStorage.setItem(key, vote); } catch (e) {}
