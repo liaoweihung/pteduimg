@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-12T17:27:37+08:00",
-  "baseline": "234cf846cdf227789fbac341f61bdb23dfb38c3c",
-  "scope": "網站來源快照；版本 234cf846",
+  "generatedAt": "2026-11-12T17:43:50+08:00",
+  "baseline": "ca08e4454e9542d75bbb011101c0b3d925fc0aef",
+  "scope": "網站來源快照；版本 ca08e445",
   "counts": {
-    "cards": 420,
-    "series": 92,
-    "allSeries": 96,
+    "cards": 429,
+    "series": 93,
+    "allSeries": 97,
     "hidden": 4,
     "retired": 4,
     "areas": 16,
@@ -19,7 +19,7 @@
     "growth": 1,
     "infectious_diseases": 3,
     "eyes": 3,
-    "gastrointestinal": 6,
+    "gastrointestinal": 7,
     "oral_health": 4,
     "insect_repellent": 1,
     "elimination_care": 4,
@@ -27,8 +27,8 @@
     "throat": 1,
     "sleep": 1,
     "travel_medication": 3,
-    "pregnancy": 2,
-    "infant_care": 2
+    "pregnancy": 3,
+    "infant_care": 3
   },
   "series": [
     {
@@ -993,6 +993,18 @@
       "count": 5,
       "hidden": false,
       "areas": [
+        "gastrointestinal"
+      ],
+      "departments": []
+    },
+    {
+      "id": "breastfeeding_minor_ailments",
+      "title": "哺乳期間小毛病",
+      "count": 9,
+      "hidden": false,
+      "areas": [
+        "pregnancy",
+        "infant_care",
         "gastrointestinal"
       ],
       "departments": []
@@ -3697,30 +3709,30 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 285,
+      "machine_pass": 294,
       "partial": 1,
       "missing": 134
     },
     "reference_status": {
       "missing": 219,
-      "machine_pass": 201
+      "machine_pass": 210
     },
     "date_status": {
       "missing": 219,
-      "machine_pass": 180,
+      "machine_pass": 189,
       "partial": 21
     },
     "footer_status": {
       "missing": 239,
-      "machine_pass": 181
+      "machine_pass": 190
     },
     "jsonld_status": {
-      "machine_pass": 420
+      "machine_pass": 429
     }
   },
   "sync": {
-    "pages": 424,
-    "fields": 1030,
+    "pages": 433,
+    "fields": 1079,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4591,6 +4603,60 @@
         "page": "boy_height2",
         "fields": [
           "source_sha256",
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "breastfeeding_minor_constipation",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "breastfeeding_minor_cough",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "breastfeeding_minor_diarrhea",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "breastfeeding_minor_engorgement",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "breastfeeding_minor_fever_pain",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "breastfeeding_minor_insomnia",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "breastfeeding_minor_itch",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "breastfeeding_minor_reflux",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "breastfeeding_minor_rhinitis",
+        "fields": [
           "rules_sha256"
         ]
       },
@@ -6170,6 +6236,11 @@
       {
         "page": "pregnancy_minor_constipation",
         "fields": [
+          "added_at",
+          "added_cr",
+          "last_updated_at",
+          "last_updated_cr",
+          "content_sha256",
           "source_sha256",
           "rules_sha256"
         ]
@@ -6177,6 +6248,11 @@
       {
         "page": "pregnancy_minor_cough",
         "fields": [
+          "added_at",
+          "added_cr",
+          "last_updated_at",
+          "last_updated_cr",
+          "content_sha256",
           "source_sha256",
           "rules_sha256"
         ]
@@ -6184,6 +6260,11 @@
       {
         "page": "pregnancy_minor_diarrhea",
         "fields": [
+          "added_at",
+          "added_cr",
+          "last_updated_at",
+          "last_updated_cr",
+          "content_sha256",
           "source_sha256",
           "rules_sha256"
         ]
@@ -6191,6 +6272,11 @@
       {
         "page": "pregnancy_minor_fever_pain",
         "fields": [
+          "added_at",
+          "added_cr",
+          "last_updated_at",
+          "last_updated_cr",
+          "content_sha256",
           "source_sha256",
           "rules_sha256"
         ]
@@ -6198,6 +6284,11 @@
       {
         "page": "pregnancy_minor_insomnia",
         "fields": [
+          "added_at",
+          "added_cr",
+          "last_updated_at",
+          "last_updated_cr",
+          "content_sha256",
           "source_sha256",
           "rules_sha256"
         ]
@@ -6205,6 +6296,11 @@
       {
         "page": "pregnancy_minor_itch",
         "fields": [
+          "added_at",
+          "added_cr",
+          "last_updated_at",
+          "last_updated_cr",
+          "content_sha256",
           "source_sha256",
           "rules_sha256"
         ]
@@ -6212,6 +6308,11 @@
       {
         "page": "pregnancy_minor_nausea",
         "fields": [
+          "added_at",
+          "added_cr",
+          "last_updated_at",
+          "last_updated_cr",
+          "content_sha256",
           "source_sha256",
           "rules_sha256"
         ]
@@ -6219,6 +6320,11 @@
       {
         "page": "pregnancy_minor_rhinitis",
         "fields": [
+          "added_at",
+          "added_cr",
+          "last_updated_at",
+          "last_updated_cr",
+          "content_sha256",
           "source_sha256",
           "rules_sha256"
         ]
