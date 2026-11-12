@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-12T20:09:21+08:00",
-  "baseline": "3dd8ba29f9b67e869376ad96bb1e39d7bf76bc73",
-  "scope": "網站來源快照；版本 3dd8ba29",
+  "generatedAt": "2026-11-12T21:29:33+08:00",
+  "baseline": "e1b25ca850d6c953371a493936517f640d2714e0",
+  "scope": "網站來源快照；版本 e1b25ca8",
   "counts": {
-    "cards": 429,
-    "series": 93,
-    "allSeries": 97,
+    "cards": 430,
+    "series": 94,
+    "allSeries": 98,
     "hidden": 4,
     "retired": 4,
     "areas": 16,
@@ -14,7 +14,7 @@
   },
   "areas": {
     "chronic_conditions": 7,
-    "skin_wound": 26,
+    "skin_wound": 27,
     "acne": 6,
     "growth": 1,
     "infectious_diseases": 3,
@@ -1006,6 +1006,16 @@
         "pregnancy",
         "infant_care",
         "gastrointestinal"
+      ],
+      "departments": []
+    },
+    {
+      "id": "skin_glue_care",
+      "title": "皮膚組織膠返家照護",
+      "count": 1,
+      "hidden": false,
+      "areas": [
+        "skin_wound"
       ],
       "departments": []
     }
@@ -3709,30 +3719,30 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 294,
+      "machine_pass": 295,
       "partial": 1,
       "missing": 134
     },
     "reference_status": {
       "missing": 219,
-      "machine_pass": 210
+      "machine_pass": 211
     },
     "date_status": {
       "missing": 219,
-      "machine_pass": 189,
+      "machine_pass": 190,
       "partial": 21
     },
     "footer_status": {
       "missing": 239,
-      "machine_pass": 190
+      "machine_pass": 191
     },
     "jsonld_status": {
-      "machine_pass": 429
+      "machine_pass": 430
     }
   },
   "sync": {
-    "pages": 433,
-    "fields": 1088,
+    "pages": 434,
+    "fields": 1089,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -6555,6 +6565,12 @@
         "fields": [
           "jsonld_status",
           "source_sha256",
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "skin_glue_care_1",
+        "fields": [
           "rules_sha256"
         ]
       },
