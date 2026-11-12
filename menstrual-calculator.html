@@ -123,7 +123,76 @@
 
     <section class="medical-note" aria-label="醫療提示"><h2>使用提醒</h2><p>本工具僅提供日期推算參考，實際排卵日與月經來潮時間可能因個人週期而不同。</p><p>若月經長期未來、不規則出血、異常腹痛或可能懷孕，請接受醫療評估。</p><p>預產期為估算值；若醫療院所已依超音波校正孕週或預產期，應以醫療紀錄為準。</p><details><summary>計算依據與參考來源</summary><p>預產期採 LMP＋280 天的慣例；排卵日採下次月經前 14 天的簡化假設。<span hidden>延經日期以預估月經日前 5 天作為較早的開始評估時間，且 Norethisterone 通常至少要在預計月經前 3 天開始才可能有效；口服 Medroxyprogesterone 停藥後的撤退性出血以 3～7 天估計。各藥物方案與個人適用性須由醫療人員確認。</span></p><p><a href="https://www.acog.org/womens-health/faqs/when-pregnancy-goes-past-your-due-date" target="_blank" rel="noopener">ACOG：預產期與 LMP</a>　<a href="https://www.nhs.uk/conditions/periods/fertility-in-the-menstrual-cycle/" target="_blank" rel="noopener">NHS：月經週期與排卵</a><span hidden>　<a href="https://www.sps.nhs.uk/articles/choosing-a-medicine-to-delay-periods/" target="_blank" rel="noopener">NHS SPS：延經藥物選擇</a>　<a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=1020bb60-4f13-4cd7-aaa1-c556752c84b7&amp;version=1" target="_blank" rel="noopener">DailyMed：Medroxyprogesterone</a></span></p></details></section>
   </main>
-  <footer class="site-footer"><p>本工具僅供健康衛教與日期推算參考，不能取代醫師、藥師或婦產科醫療評估。</p><p><a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a></p></footer>
+  <footer class="site-footer">
+  <div class="page-vote" data-page-vote>
+    <style>
+      .page-vote { margin: 0 0 14px 0; padding: 12px; border: 1px solid rgba(127,127,127,.25); border-radius: 12px; text-align: center; }
+      .page-vote__q { margin: 0 0 10px 0; font-weight: 600; }
+      .page-vote__btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+      .page-vote__btn { min-width: 110px; padding: 9px 16px; font-size: 1rem; border-radius: 999px; border: 1px solid rgba(127,127,127,.45); background: transparent; color: inherit; cursor: pointer; }
+      .page-vote__btn:active { transform: scale(.97); }
+      .page-vote__btn:disabled { opacity: .55; cursor: default; }
+      .page-vote__msg { margin: 10px 0 0 0; display: none; }
+    </style>
+    <p class="page-vote__q">這頁內容對您有幫助嗎？</p>
+    <div class="page-vote__btns">
+      <button type="button" class="page-vote__btn" data-vote="helpful">👍 有幫助</button>
+      <button type="button" class="page-vote__btn" data-vote="not_helpful">👎 沒幫助</button>
+    </div>
+    <p class="page-vote__msg" data-vote-msg></p>
+    <script>
+      (function () {
+        var GAS_URL = "https://script.google.com/macros/s/AKfycbw0uIMQZIeqmx-D0i4YBN7FPidC1QEteoNp6Ae28fMPKFC9HmH10jx6pvIB2DCom5R_/exec";
+        var FEEDBACK_URL = "https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手";
+        var box = document.currentScript.closest("[data-page-vote]");
+        if (!box) return;
+        var btns = box.querySelectorAll("[data-vote]");
+        var msg = box.querySelector("[data-vote-msg]");
+        var key = "pageVote:" + location.pathname;
+        function done(text, html) {
+          for (var i = 0; i < btns.length; i++) btns[i].disabled = true;
+          if (html) msg.innerHTML = html; else msg.textContent = text;
+          msg.style.display = "block";
+        }
+        try { if (localStorage.getItem(key)) { done("您已回饋過這一頁，謝謝！"); return; } } catch (e) {}
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function () {
+            var vote = this.getAttribute("data-vote");
+            var body = new URLSearchParams();
+            body.append("type", "vote");
+            body.append("source", "藥局衛教助手");
+            body.append("vote", vote);
+            body.append("page", location.pathname);
+            body.append("title", document.title);
+            done("傳送中…");
+            fetch(GAS_URL, { method: "POST", body: body }).then(function () {
+              try { localStorage.setItem(key, vote); } catch (e) {}
+              if (vote === "helpful") {
+                done("謝謝您的回饋！");
+              } else {
+                done("", '謝謝您的回饋！想告訴我們哪裡不清楚嗎？<a href="' + FEEDBACK_URL + '" target="_blank" rel="noopener">留言給藥師</a>（請勿填寫個人或病情資料）');
+              }
+            }).catch(function () {
+              for (var j = 0; j < btns.length; j++) btns[j].disabled = false;
+              msg.textContent = "傳送失敗，請稍後再試。";
+            });
+          });
+        }
+      })();
+    </script>
+  </div>
+  <p style="margin: 0 0 8px 0;">本工具僅供健康衛教與日期推算參考，不能取代醫師、藥師或婦產科醫療評估。</p>
+  <p style="margin: 0;">
+    <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a>
+    &nbsp;|&nbsp;
+   <a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" onclick="if (typeof trackFeedbackClick === 'function') trackFeedbackClick()">💬 意見回饋</a>
+  </p>
+  <p style="margin: 0 0 8px 0;">
+    <a href="./about.html">關於本站</a> &nbsp;|&nbsp;
+    <a href="./author.html">作者資訊</a> &nbsp;|&nbsp;
+    <a href="./editorial-policy.html">編輯與資料來源政策</a>
+  </p>
+</footer>
   <script src="./js/menstrual-calculator.js?v=5"></script>
 </body>
 </html>
