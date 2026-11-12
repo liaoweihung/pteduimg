@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-vc8306049fa41d8e8848d4d5d';
+const CACHE_NAME = 'pwa-cache-v2e4c2fef5f3457e1936cfc7d';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?

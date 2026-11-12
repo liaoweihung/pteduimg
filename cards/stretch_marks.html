@@ -87,7 +87,7 @@
         var btn = document.querySelector('button[onclick="returnToCardHome()"]');
         if (!btn) return;
         var stateRaw = sessionStorage.getItem('pteduimgReturnState');
-        var topicTitles = {"skin_wound": "皮膚與傷口", "acne": "痘痘／粉刺", "eyes": "眼睛", "oral_health": "口腔", "throat": "喉嚨", "infectious_diseases": "傳染病", "heat_illness": "中暑", "insect_repellent": "防蚊液", "gastrointestinal": "胃腸相關", "elimination_care": "排泄與照護", "infant_care": "嬰幼兒照護", "growth": "成長", "chronic_conditions": "慢性病", "sleep": "睡眠", "pregnancy": "懷孕", "travel_medication": "旅遊與用藥常識"};
+        var topicTitles = {"skin_wound": "皮膚與傷口", "acne": "痘痘／粉刺", "eyes": "眼睛", "oral_health": "口腔", "throat": "喉嚨", "infectious_diseases": "傳染病", "heat_illness": "中暑", "insect_repellent": "防蚊液", "gastrointestinal": "胃腸相關", "elimination_care": "排泄與照護", "infant_care": "嬰幼兒照護", "growth": "成長", "chronic_conditions": "慢性病", "sleep": "睡眠", "pregnancy": "懷孕與哺乳", "travel_medication": "旅遊與用藥常識"};
         if (stateRaw) {
           var state = JSON.parse(stateRaw);
           if (state && state.url) {
@@ -659,11 +659,11 @@
           <div class="next-topic-return"><a href="../public.html?topic=skin_wound">‹ 回到『皮膚與傷口』主題</a></div>
         </div>
         <div class="next-topic-group">
-          <div class="next-topic-title">主題：懷孕</div>
+          <div class="next-topic-title">主題：懷孕與哺乳</div>
           <ul class="next-series-list">
-            <li><a href="../cards/pregnancy_minor_fever_pain.html">懷孕期間小毛病</a></li>
+            <li><a href="../cards/pregnancy_minor_fever_pain.html">懷孕期間小毛病</a></li><li><a href="../cards/breastfeeding_minor_fever_pain.html">哺乳期間小毛病</a></li>
           </ul>
-          <div class="next-topic-return"><a href="../public.html?topic=pregnancy">‹ 回到『懷孕』主題</a></div>
+          <div class="next-topic-return"><a href="../public.html?topic=pregnancy">‹ 回到『懷孕與哺乳』主題</a></div>
         </div>
       </div>
       <nav aria-label="相關系列"><div class="section-title">相關系列</div><ul style="line-height:2.4; margin:0; padding-left:20px;"><li><a href="../cards/prevent_scar.html">傷口好了，如何照顧疤痕？</a></li></ul></nav>

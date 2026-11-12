@@ -87,7 +87,7 @@
         var btn = document.querySelector('button[onclick="returnToCardHome()"]');
         if (!btn) return;
         var stateRaw = sessionStorage.getItem('pteduimgReturnState');
-        var topicTitles = {"skin_wound": "皮膚與傷口", "acne": "痘痘／粉刺", "eyes": "眼睛", "oral_health": "口腔", "throat": "喉嚨", "infectious_diseases": "傳染病", "heat_illness": "中暑", "insect_repellent": "防蚊液", "gastrointestinal": "胃腸相關", "elimination_care": "排泄與照護", "infant_care": "嬰幼兒照護", "growth": "成長", "chronic_conditions": "慢性病", "sleep": "睡眠", "pregnancy": "懷孕", "travel_medication": "旅遊與用藥常識"};
+        var topicTitles = {"skin_wound": "皮膚與傷口", "acne": "痘痘／粉刺", "eyes": "眼睛", "oral_health": "口腔", "throat": "喉嚨", "infectious_diseases": "傳染病", "heat_illness": "中暑", "insect_repellent": "防蚊液", "gastrointestinal": "胃腸相關", "elimination_care": "排泄與照護", "infant_care": "嬰幼兒照護", "growth": "成長", "chronic_conditions": "慢性病", "sleep": "睡眠", "pregnancy": "懷孕與哺乳", "travel_medication": "旅遊與用藥常識"};
         if (stateRaw) {
           var state = JSON.parse(stateRaw);
           if (state && state.url) {
@@ -682,6 +682,60 @@
       <nav aria-label="相關系列"><div class="section-title">相關系列</div><ul style="line-height:2.4; margin:0; padding-left:20px;"><li><a href="../cards/acne_topicals_01_basics.html">痘痘藥怎麼搭，才不會越擦越刺激？</a></li><li><a href="../cards/acne_topicals_02_retinoids.html">A酸、杜鵑花酸、BPO、水楊酸怎麼用？</a></li></ul></nav>
     </section>
 <footer class="site-footer">
+  <div class="page-vote" data-page-vote>
+    <style>
+      .page-vote { margin: 0 0 14px 0; padding: 12px; border: 1px solid rgba(127,127,127,.25); border-radius: 12px; text-align: center; }
+      .page-vote__q { margin: 0 0 10px 0; font-weight: 600; }
+      .page-vote__btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+      .page-vote__btn { min-width: 110px; padding: 9px 16px; font-size: 1rem; border-radius: 999px; border: 1px solid rgba(127,127,127,.45); background: transparent; color: inherit; cursor: pointer; }
+      .page-vote__btn:active { transform: scale(.97); }
+      .page-vote__btn:disabled { opacity: .55; cursor: default; }
+      .page-vote__msg { margin: 10px 0 0 0; display: none; }
+    </style>
+    <p class="page-vote__q">這頁內容對您有幫助嗎？</p>
+    <div class="page-vote__btns">
+      <button type="button" class="page-vote__btn" data-vote="helpful">👍 有幫助</button>
+      <button type="button" class="page-vote__btn" data-vote="not_helpful">👎 沒幫助</button>
+    </div>
+    <p class="page-vote__msg" data-vote-msg></p>
+    <script>
+      (function () {
+        var GAS_URL = "https://script.google.com/macros/s/AKfycbw0uIMQZIeqmx-D0i4YBN7FPidC1QEteoNp6Ae28fMPKFC9HmH10jx6pvIB2DCom5R_/exec";
+        var FEEDBACK_URL = "https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手";
+        var box = document.currentScript.closest("[data-page-vote]");
+        if (!box) return;
+        var btns = box.querySelectorAll("[data-vote]");
+        var msg = box.querySelector("[data-vote-msg]");
+        var key = "pageVote:" + location.pathname;
+        function done(text, html) {
+          for (var i = 0; i < btns.length; i++) btns[i].disabled = true;
+          if (html) msg.innerHTML = html; else msg.textContent = text;
+          msg.style.display = "block";
+        }
+        try { if (localStorage.getItem(key)) { done("您已回饋過這一頁，謝謝！"); return; } } catch (e) {}
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function () {
+            var vote = this.getAttribute("data-vote");
+            var body = new URLSearchParams();
+            body.append("source", "藥局衛教助手｜按鈕");
+            body.append("feedback", (vote === "helpful" ? "👍 有幫助" : "👎 沒幫助") + "｜" + location.pathname + "｜" + document.title);
+            done("傳送中…");
+            fetch(GAS_URL, { method: "POST", body: body }).then(function () {
+              try { localStorage.setItem(key, vote); } catch (e) {}
+              if (vote === "helpful") {
+                done("謝謝您的回饋！");
+              } else {
+                done("", '謝謝您的回饋！想告訴我們哪裡不清楚嗎？<a href="' + FEEDBACK_URL + '" target="_blank" rel="noopener">留言給藥師</a>（請勿填寫個人或病情資料）');
+              }
+            }).catch(function () {
+              for (var j = 0; j < btns.length; j++) btns[j].disabled = false;
+              msg.textContent = "傳送失敗，請稍後再試。";
+            });
+          });
+        }
+      })();
+    </script>
+  </div>
   <p style="margin: 0 0 8px 0;">本工具圖文僅供藥師衛教參考，非專業人士務必諮詢藥師建議。</p>
   <p style="margin: 0;">
     <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a>
