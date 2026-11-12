@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v64c926673f059c111eaef594';
+const CACHE_NAME = 'pwa-cache-v99fc90a15d7f51870e3ae88d';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -54,6 +54,7 @@ const urlsToCache = [
   "./404.html",
   "./cards.json",
   "./seo.json",
+  "./data/recent-changes.json",
   "./img/01_can_i_bring_medicine.png",
   "./img/02_how_much_medicine.png",
   "./img/03_prescription_documents.png",

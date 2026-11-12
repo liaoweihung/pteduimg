@@ -36,7 +36,8 @@ MANUAL_FIELDS = ["medical_review_status", "medical_review_evidence", "reviewer",
                  "review_required", "review_reason", "last_human_confirmed_at"]
 MACHINE_FIELDS = ["page_id", "page_path", "url", "title", "primary_series_id",
                   "series_ids", "image_path", "favorite_keys", "visibility",
-                  "generated_state", "text_status", "reference_status", "date_status",
+                  "generated_state", "added_at", "added_cr", "last_updated_at",
+                  "last_updated_cr", "text_status", "reference_status", "date_status",
                   "seo_basic_status", "jsonld_status", "footer_status",
                   "source_needs_medical_review", "content_sha256", "source_sha256",
                   "rules_sha256", "rules_version", "rules_v1_sha256", "checked_at", "evidence_sources"]
@@ -51,8 +52,9 @@ REL_TYPES = {
     "related_tool": ({"page", "topic", "subtopic"}, {"tool"}),
     "topic_return": ({"page"}, {"topic"}),
 }
-REQUEST_TYPES = {"新增圖卡", "修改醫療內容", "SEO/AEO", "作者或審閱者", "網站連結",
-                 "賣場連結", "疾病主題", "計算器", "資料庫", "網站功能"}
+REQUEST_TYPES = {"新增系列", "系列追加圖卡", "修改既有圖卡", "新增圖卡", "修改醫療內容", "SEO/AEO",
+                 "作者或審閱者", "網站連結", "賣場連結", "疾病主題", "計算器", "資料庫", "網站功能"}
+CARD_REQUEST_TYPES = {"新增系列", "系列追加圖卡", "修改既有圖卡"}
 REQUEST_STATES = {"registered", "needs_confirmation", "approved", "in_progress",
                   "blocked", "completed", "cancelled"}
 
@@ -139,6 +141,26 @@ def machine_snapshot(root, checked_at):
     rule_values = rules_v2.domains(root) if v2 else None
     registry = read_json(root, rules_v2.MANIFEST) if v2 else None
     navigation = read_json(root, "data/acne_navigation.json")
+    requests_path = root / PM / "change-requests.csv"
+    card_additions = defaultdict(list)
+    card_updates = defaultdict(list)
+    if requests_path.is_file():
+        with requests_path.open(encoding="utf-8-sig", newline="") as f:
+            for r in csv.DictReader(f):
+                if r.get("status") == "completed":
+                    req_type = r.get("request_type")
+                    c_at = r.get("completed_at", "")
+                    rid = r.get("request_id", "")
+                    if req_type in {"新增系列", "系列追加圖卡"}:
+                        for target in r.get("related_ids", "").split("|"):
+                            target = target.strip()
+                            if target.startswith("page:"):
+                                card_additions[target[5:]].append((c_at, rid))
+                    if req_type in {"新增系列", "系列追加圖卡", "修改既有圖卡"}:
+                        for target in r.get("related_ids", "").split("|"):
+                            target = target.strip()
+                            if target.startswith("page:"):
+                                card_updates[target[5:]].append((c_at, rid))
     rows = []
     for pid in sorted(set(members) | set(retired_by_id)):
         group = members.get(pid, [])
@@ -213,12 +235,26 @@ def machine_snapshot(root, checked_at):
         payload = {"memberships": [{"id": s, "index": i, "data": c, "manual": manual.get(s)}
                                    for s, c, i, _ in group], "retired": old, "records": recs,
                    "html": file_hash(root, path), "image": file_hash(root, image)}
+        if card_additions.get(pid):
+            adds = sorted(card_additions[pid], key=lambda x: (x[0], x[1]))
+            added_at, added_cr = adds[0]
+        else:
+            added_at, added_cr = "pre-system", "pre-system"
+
+        if card_updates.get(pid):
+            upds = sorted(card_updates[pid], key=lambda x: (x[0], x[1]))
+            last_updated_at, last_updated_cr = upds[-1]
+        else:
+            last_updated_at, last_updated_cr = "pre-system", "pre-system"
+
         row = dict(zip(MACHINE_FIELDS, [""] * len(MACHINE_FIELDS)))
         row.update(page_id=pid, page_path=path, url=url, title=title,
                    primary_series_id=primary[0] if primary else "unknown",
                    series_ids=compact([g[0] for g in group]), image_path=image,
                    favorite_keys=compact(favs), visibility=visibility,
                    generated_state="present" if exists else "pending" if not expected_page else "missing",
+                   added_at=added_at, added_cr=added_cr,
+                   last_updated_at=last_updated_at, last_updated_cr=last_updated_cr,
                    text_status="machine_pass" if text_ok else "partial" if text_present else "missing",
                    reference_status="machine_pass" if refs_ok else "partial" if refs else "missing",
                    date_status="machine_pass" if dates_ok else "partial" if any(record.get(k) for k in ["updatedAt", "sourceCheckedAt"]) else "missing",
@@ -421,6 +457,15 @@ def validate(root, model, live):
             demand(r["approval"] in {"approved", "not_required"}, f"{rid}: completed without approval")
         if r["status"] in {"approved", "in_progress"}:
             demand(r["approval"] in {"approved", "not_required"}, f"{rid}: work started without approval")
+        if r["request_type"] in CARD_REQUEST_TYPES:
+            related = [t.strip() for t in r["related_ids"].split("|") if t.strip()]
+            has_series = any(t.startswith("series:") for t in related)
+            has_page = any(t.startswith("page:") for t in related)
+            demand(has_series, f"{rid}: missing series ID in related_ids")
+            demand(has_page, f"{rid}: missing page ID in related_ids")
+            if r["status"] == "completed":
+                demand(r.get("completed_at") not in {"", "unknown"} and valid_date(r.get("completed_at")),
+                       f"{rid}: completed card request missing completed_at")
     for a in audits:
         evidence(a["path"], a["audit_id"])
         demand(a["validity"] in {"historical_only", "partially_superseded", "current_structural", "conflict", "unknown"}, f"{a['audit_id']}: invalid validity")

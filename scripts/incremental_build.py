@@ -15,7 +15,8 @@ RULES = ("build.py", "scripts/incremental_build.py", "scripts/site_footer.py",
          "templates/site-footer.html", "css/base.css", "author.html",
          "data/acne_navigation.json", "cards.retired.json")
 GLOBALS = ("seo.json", "all-cards.html", "sitemap.xml", "sitemap-main.xml",
-           "sw.js", "robots.txt", "data/card_text_web_integration_report.md")
+           "sw.js", "robots.txt", "data/card_text_web_integration_report.md",
+           "data/recent-changes.json")
 
 
 def digest(data):
@@ -293,6 +294,7 @@ def run_incremental(build, requested):
             build.build_card_text_integration_report(contents)
             build.update_sitemap(list(after), contents)
             build.update_robots()
+            build.generate_recent_changes(cards, root=stage)
             build.update_service_worker(cards, list(after), [r["page"] for r in retired], source_root=root)
         names = changed_pages + list(GLOBALS)
         # Recheck inputs before publishing, so an editor cannot silently race planning.

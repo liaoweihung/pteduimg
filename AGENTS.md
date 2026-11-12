@@ -44,7 +44,7 @@
 
 共用頁尾（使用者 2026-11-04 指示）：新增系列／圖卡，或修改既有系列的圖片、網頁文字、標題／SEO 時，若該系列尚未啟用，一併在 `cards.json` 與 `cards.manual.json` 設定 `showFooter: true` 並隨同次建置產生共用頁尾。這是本條授權的例外，不屬於「重設頁首／頁尾」；不改共用頁尾內容與模板，也不藉此批次補其他未觸及的系列。青春痘頁面另依下方規則。
 
-需求依名稱、說明、範圍與 `related_ids` 搜尋，涵蓋同一需求就沿用 CR；沒有才新增下一個 `CR-YYYY-NNN`。登記不等於核准，明確授權可如實記錄。不得順帶改其他系列、藥品資料庫、計算器或重設頁首／頁尾。
+需求依名稱、說明、範圍與 `related_ids` 搜尋，涵蓋同一需求就沿用 CR；沒有才新增下一個 `CR-YYYY-NNN`。新增或修改圖卡都必須登記對應類型的 CR（新增系列、系列追加圖卡、修改既有圖卡）；這三類的 `related_ids` 必須明確列出 `series:<id>` 與每一個受影響的 `page:<id>`，並在任務完成時填齊所有受影響 page ID 與實際完成日期 `completed_at`。`page-inventory.csv` 的 `added_at`、`added_cr`、`last_updated_at`、`last_updated_cr` 由 `scripts/check_project_management.py` 自動從 completed CR 推算，禁止手填。登記不等於核准，明確授權可如實記錄。不得順帶改其他系列、藥品資料庫、計算器或重設頁首／頁尾。
 
 ## 建置、可見性與驗證
 

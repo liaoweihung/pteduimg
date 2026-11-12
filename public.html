@@ -344,7 +344,7 @@ body.public-page .site-footer { font-size: .95rem; }
 <div id="category-sections"></div>
 <button id="show-more" class="show-more" type="button" onclick="showMoreCards()" hidden>顯示更多主題</button>
 <section class="featured-section" aria-labelledby="featured-title">
-    <h2 class="section-title" id="featured-title">精選圖卡</h2>
+    <h2 class="section-title" id="featured-title">最近新增</h2>
     <div class="featured-carousel" id="featured-carousel"></div>
 </section>
 <a class="tool-link-btn" href="./calc.html"><span aria-hidden="true">🧮</span>醫藥計算器</a>
@@ -461,10 +461,31 @@ body.public-page .site-footer { font-size: .95rem; }
         pediatrics: '兒科', cardiology: '心臟內科', pharmacy_general: '藥事通用'
     };
 
-    const featuredCardIds = [
-        "heat_exhaustion",
-        "japan_otc_drug_classification",
-    ];
+    let recentChanges = [];
+    const RECENT_CHANGES_CACHE_KEY = 'cachedRecentChanges';
+
+    function loadCachedRecentChanges() {
+        try {
+            const cached = JSON.parse(localStorage.getItem(RECENT_CHANGES_CACHE_KEY) || 'null');
+            if (Array.isArray(cached)) {
+                recentChanges = cached;
+                return true;
+            }
+        } catch (err) {}
+        return false;
+    }
+
+    async function loadRecentChanges() {
+        try {
+            const response = await fetch('./data/recent-changes.json');
+            if (!response.ok) throw new Error('recent-changes.json not found');
+            recentChanges = await response.json();
+            localStorage.setItem(RECENT_CHANGES_CACHE_KEY, JSON.stringify(recentChanges));
+        } catch (err) {
+            console.error('無法讀取 recent-changes.json：', err);
+            recentChanges = recentChanges || [];
+        }
+    }
 
     const pageMeta = {
         pharmacist: {
@@ -758,29 +779,30 @@ body.public-page .site-footer { font-size: .95rem; }
         const carousel = document.getElementById('featured-carousel');
         if (!carousel) return;
 
-        const featuredCards = featuredCardIds.flatMap(key => {
-            const item = educationData[key];
-            if (!item || item.hidden || !isVisibleOnPage(item) || !Array.isArray(item.steps)) return [];
+        const latestChanges = (Array.isArray(recentChanges) ? recentChanges : []).slice(0, 4);
 
-            return item.steps
-                .map((step, index) => ({ key, item, step, index }))
-                .filter(({ step }) => step);
-        });
-
-        if (!featuredCards.length) {
-            carousel.innerHTML = '<div class="featured-empty">目前尚無熱門議題</div>';
+        if (!latestChanges.length) {
+            carousel.innerHTML = '<div class="featured-empty">目前尚無更新項目</div>';
             return;
         }
 
-        carousel.innerHTML = featuredCards.map(({ key, item, step, index }) => {
-            const cardTitle = escapeCardText(getStepTitle(item, index));
+        carousel.innerHTML = latestChanges.map(change => {
+            const seriesId = change.series_id;
+            const item = educationData[seriesId];
+            const stepIndex = typeof change.first_step_index === 'number' ? change.first_step_index : 0;
+            const step = (item && item.steps && item.steps[stepIndex]) || change.first_image || '';
+            const isAppend = change.request_type === '系列追加圖卡';
+            const seriesTitle = (item && item.title) || change.series_title || '';
+            const displayTitle = isAppend ? `${seriesTitle} ＋${change.card_count} 張` : seriesTitle;
+            const escapedTitle = escapeCardText(displayTitle);
+
             return `
             <button type="button"
                     class="featured-card"
-                    onclick="openFeaturedTopic('${key}', ${index})"
-                    aria-label="開啟圖卡：${cardTitle}">
-                <img class="featured-card-img" loading="lazy" src="${step}" alt="${cardTitle}">
-                <div class="featured-card-title">${cardTitle}</div>
+                    onclick="openFeaturedTopic('${seriesId}', ${stepIndex})"
+                    aria-label="開啟圖卡：${escapedTitle}">
+                <img class="featured-card-img" loading="lazy" src="${step}" alt="${escapedTitle}">
+                <div class="featured-card-title">${escapedTitle}</div>
             </button>`;
         }).join('');
     }
@@ -794,7 +816,7 @@ body.public-page .site-footer { font-size: .95rem; }
                 card_id: cardId,
                 card_title: item.title,
                 step_number: stepIndex + 1,
-                source: 'featured_topics'
+                source: 'recent_changes'
             });
         }
 
@@ -1421,13 +1443,14 @@ function updateContent() {
         }, true);
         const hasCachedCards = loadCachedEducationData();
         loadCachedSeoData();
+        loadCachedRecentChanges();
         if (hasCachedCards) {
             hideHomeLoading();
             renderHome();
         } else {
             showHomeLoading();
         }
-        Promise.all([loadEducationData(), loadSeoData()]).then(() => {
+        Promise.all([loadEducationData(), loadSeoData(), loadRecentChanges()]).then(() => {
             hideHomeLoading();
             renderHome();
         });

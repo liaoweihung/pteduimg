@@ -82,7 +82,7 @@ python -m json.tool cards.manual.json > $null
 python -m json.tool data/card_content.json > $null
 ```
 
-Read `docs/project-management/README.md`, then search `change-requests.csv`, `page-inventory.csv`, `content-relations.csv`, and `project-dashboard.md` for the proposed series, page IDs, and request scope. Reuse an existing CR that covers the work; create the next stable `CR-YYYY-NNN` only when no existing request covers it. Registration alone is not approval. A user's explicit instruction to add the cards authorizes that stated scope, and the CR should record that authorization accurately.
+Read `docs/project-management/README.md`, then search `change-requests.csv`, `page-inventory.csv`, `content-relations.csv`, and `project-dashboard.md` for the proposed series, page IDs, and request scope. Reuse an existing CR that covers the work; create the next stable `CR-YYYY-NNN` only when no existing request covers it. 新增或修改圖卡都必須登記對應類型的 CR（新增系列、系列追加圖卡、修改既有圖卡）。這三類需求的 `related_ids` 必須明確列出 `series:<id>` 與每一個受影響的 `page:<id>`，並在任務完成時填齊所有受影響 page ID 與實際完成日期 `completed_at`。`page-inventory.csv` 的 `added_at`、`added_cr`、`last_updated_at`、`last_updated_cr` 由 `scripts/check_project_management.py` 自動從 completed CR 推算，禁止手填。Registration alone is not approval. A user's explicit instruction to add the cards authorizes that stated scope, and the CR should record that authorization accurately.
 
 For a new card or series, if the user has not provided search keywords, tags, or labels, ask what keywords or labels they want before finalizing metadata.
 

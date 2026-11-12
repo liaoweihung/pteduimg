@@ -1,0 +1,112 @@
+[
+  {
+    "request_id": "CR-2026-074",
+    "completed_at": "2026-11-12",
+    "request_type": "新增系列",
+    "series_id": "diarrhea_drugs",
+    "series_title": "常見腹瀉藥物",
+    "card_count": 5,
+    "first_page_id": "diarrhea_drugs_1",
+    "first_step_index": 0,
+    "first_image": "img/diarrhea_drugs_1.webp"
+  },
+  {
+    "request_id": "CR-2026-073",
+    "completed_at": "2026-11-11",
+    "request_type": "新增系列",
+    "series_id": "diarrhea_care",
+    "series_title": "腹瀉、拉肚子注意什麼？",
+    "card_count": 6,
+    "first_page_id": "diarrhea_care_1",
+    "first_step_index": 0,
+    "first_image": "img/diarrhea_care_1.webp"
+  },
+  {
+    "request_id": "CR-2026-068",
+    "completed_at": "2026-11-04",
+    "request_type": "新增系列",
+    "series_id": "constipation_medicines",
+    "series_title": "排便不順，可以怎麼做？",
+    "card_count": 7,
+    "first_page_id": "constipation_types",
+    "first_step_index": 0,
+    "first_image": "img/constipation_types.webp"
+  },
+  {
+    "request_id": "CR-2026-060",
+    "completed_at": "2026-11-01",
+    "request_type": "新增系列",
+    "series_id": "stomach_medicine",
+    "series_title": "胃藥怎麼吃？",
+    "card_count": 7,
+    "first_page_id": "stomach_medicine_guide",
+    "first_step_index": 0,
+    "first_image": "img/stomach_medicine_guide.webp"
+  },
+  {
+    "request_id": "CR-2026-046",
+    "completed_at": "2026-10-26",
+    "request_type": "新增系列",
+    "series_id": "baby_nasal_aspirator",
+    "series_title": "使用吸鼻器與注意事項",
+    "card_count": 7,
+    "first_page_id": "baby_nasal_aspirator_1",
+    "first_step_index": 0,
+    "first_image": "img/baby_nasal_aspirator_1.webp"
+  },
+  {
+    "request_id": "CR-2026-030",
+    "completed_at": "2026-10-17",
+    "request_type": "新增系列",
+    "series_id": "silicone_scar_care",
+    "series_title": "除疤凝膠和貼片如何使用",
+    "card_count": 6,
+    "first_page_id": "silicone_scar_when_to_start",
+    "first_step_index": 1,
+    "first_image": "img/silicone_scar_when_to_start.webp"
+  },
+  {
+    "request_id": "CR-2026-029",
+    "completed_at": "2026-10-16",
+    "request_type": "新增系列",
+    "series_id": "knee_brace_use",
+    "series_title": "護膝怎麼穿?",
+    "card_count": 7,
+    "first_page_id": "knee_brace_fit",
+    "first_step_index": 0,
+    "first_image": "img/knee_brace_fit.webp"
+  },
+  {
+    "request_id": "CR-2026-028",
+    "completed_at": "2026-10-15",
+    "request_type": "新增系列",
+    "series_id": "facial_spots",
+    "series_title": "臉部斑點",
+    "card_count": 6,
+    "first_page_id": "facial_spots_types_sun_freckles",
+    "first_step_index": 0,
+    "first_image": "img/facial_spots_types_sun_freckles.webp"
+  },
+  {
+    "request_id": "CR-2026-027",
+    "completed_at": "2026-10-14",
+    "request_type": "新增系列",
+    "series_id": "elderly_nutrition_supplements",
+    "series_title": "營養品怎麼選",
+    "card_count": 9,
+    "first_page_id": "elderly_nutrition_supplements_choose",
+    "first_step_index": 3,
+    "first_image": "img/elderly_nutrition_supplements_choose.webp"
+  },
+  {
+    "request_id": "CR-2026-026",
+    "completed_at": "2026-10-14",
+    "request_type": "新增系列",
+    "series_id": "compression_stockings",
+    "series_title": "彈性襪",
+    "card_count": 8,
+    "first_page_id": "compression_stockings_benefits",
+    "first_step_index": 0,
+    "first_image": "img/compression_stockings_benefits.webp"
+  }
+]

@@ -1,6 +1,6 @@
 # 藥局衛教助手專案管理系統 v1
 
-建立日期：2026-10-13。這是本機管理層，不是另一套圖卡內容資料庫，也不會被網站載入。從 [總控台](project-dashboard.md) 看下一步，先查 [需求登記](change-requests.csv)，再用 [頁面主清冊](page-inventory.csv) 找受影響頁及既有證據。
+建立日期：2026-10-13。這是本機管理層，不是另一套圖卡內容資料庫。除 `change-requests.csv` 由 `build.py` 讀取並產生供 `public.html`「最近新增」使用的 `data/recent-changes.json` 以外，本目錄檔案不會直接被網站前端載入。從 [總控台](project-dashboard.md) 看下一步，先查 [需求登記](change-requests.csv)，再用 [頁面主清冊](page-inventory.csv) 找受影響頁及既有證據。
 
 搜尋與AI可見度追蹤另依 [搜尋追蹤流程](search-tracking.md) 維護 [Search Console歷史資料](search-console-history.json)：逐筆提交與每次觀測都附證據並累積保存；資料取得日、報表日、比較窗及檢索日分開。此授權不包含自動提交索引、修改網站或發布。
 

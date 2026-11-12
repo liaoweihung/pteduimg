@@ -1,4 +1,5 @@
 import argparse
+import csv
 import datetime
 import html
 import json
@@ -1677,6 +1678,7 @@ def update_service_worker(cards, generated_pages, retired_pages=(), source_root=
         "./404.html",
         "./cards.json",
         "./seo.json",
+        "./data/recent-changes.json",
     ]
     cache_items.extend(f"./img/{img}" for img in image_files)
     cache_items.extend(f"./{page}" for page in generated_pages)
@@ -1789,6 +1791,77 @@ Sitemap: {abs_url("sitemap-main.xml")}
     write_if_changed(ROOT / "robots.txt", robots)
 
 
+def generate_recent_changes(cards, root=ROOT):
+    cr_path = root / "docs" / "project-management" / "change-requests.csv"
+    out_path = root / "data" / "recent-changes.json"
+    if not cr_path.exists():
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        write_if_changed(out_path, "[]\n")
+        return []
+
+    with cr_path.open(encoding="utf-8-sig", newline="") as f:
+        requests = list(csv.DictReader(f))
+
+    entries = []
+    for r in requests:
+        if r.get("status") != "completed":
+            continue
+        req_type = r.get("request_type")
+        if req_type not in {"新增系列", "系列追加圖卡"}:
+            continue
+
+        related = [t.strip() for t in r.get("related_ids", "").split("|") if t.strip()]
+        series_ids = [t[7:] for t in related if t.startswith("series:")]
+        page_ids = [t[5:] for t in related if t.startswith("page:")]
+
+        if not series_ids:
+            continue
+
+        matched_sid = None
+        for sid in series_ids:
+            if sid in cards:
+                card = cards[sid]
+                if card.get("category") == "public_education" and not card.get("hidden"):
+                    matched_sid = sid
+                    break
+
+        if not matched_sid:
+            continue
+
+        card = cards[matched_sid]
+        steps = card.get("steps") or []
+        step_stems = [Path(s).stem for s in steps]
+
+        affected_in_series = [pid for pid in page_ids if pid in step_stems]
+        if not affected_in_series:
+            affected_in_series = page_ids
+
+        first_page_id = affected_in_series[0] if affected_in_series else ""
+        first_step_index = 0
+        if first_page_id in step_stems:
+            first_step_index = step_stems.index(first_page_id)
+
+        first_image = steps[first_step_index] if first_step_index < len(steps) else ""
+        count = len(affected_in_series)
+
+        entries.append({
+            "request_id": r["request_id"],
+            "completed_at": r["completed_at"],
+            "request_type": req_type,
+            "series_id": matched_sid,
+            "series_title": card.get("title", matched_sid),
+            "card_count": count,
+            "first_page_id": first_page_id,
+            "first_step_index": first_step_index,
+            "first_image": first_image
+        })
+
+    entries.sort(key=lambda x: (x["completed_at"], x["request_id"]), reverse=True)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    write_if_changed(out_path, json.dumps(entries, ensure_ascii=False, indent=2) + "\n")
+    return entries
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Build static pteduimg card pages.")
     modes = parser.add_mutually_exclusive_group()
@@ -1830,6 +1903,7 @@ def main(argv=None):
     text_success, text_failures = build_card_text_integration_report(card_content_index)
     update_sitemap(generated_pages, card_content_index)
     update_robots()
+    generate_recent_changes(cards, ROOT)
     update_service_worker(cards, generated_pages, [entry['page'] for entry in retired])
     save_baseline(ROOT)
     print(f"Generated {len(generated_pages)} static card pages.")
