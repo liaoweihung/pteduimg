@@ -2,7 +2,7 @@
 
 Run python -B scripts/site_footer.py --write after editing the shared source.
 Without --write this checks that homepage and Hub footers are in sync.
-Use --page topics/acne.html to sync only the Hub, including its marked styles.
+Use --page topics/acne.html (or topics/mom.html) to sync only that Hub, including its marked styles.
 Homepage action buttons are page-local and never included in this source.
 """
 from pathlib import Path
@@ -62,9 +62,9 @@ def sync_footer(root=ROOT, write=False, page='index.html'):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--write', action='store_true')
-    parser.add_argument('--page', action='append', choices=[*NOTICES, 'topics/acne.html'])
+    parser.add_argument('--page', action='append', choices=[*NOTICES, 'topics/acne.html', 'topics/mom.html'])
     args = parser.parse_args()
-    for page in args.page or [*NOTICES, 'topics/acne.html']:
+    for page in args.page or [*NOTICES, 'topics/acne.html', 'topics/mom.html']:
         if not sync_footer(write=args.write, page=page):
             sys.exit(f'{page} footer differs from shared source; run with --write')
     print('Selected footers match shared source.')

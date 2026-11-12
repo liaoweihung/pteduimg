@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>媽媽專屬｜哺乳、懷孕用藥與媽媽常見問題｜藥局衛教助手</title>
+  <meta name="description" content="藥師整理給媽媽的衛教目錄：餵母乳、懷孕期間能吃什麼藥，富貴手、肝斑、妊娠紋、痔瘡與陰道用藥，避孕、驗孕與經期計算，以及寶寶照護延伸閱讀。">
+  <link rel="canonical" href="https://liaoweihung.github.io/pteduimg/topics/mom.html">
+  <link rel="icon" type="image/png" href="../icon.png?v=3">
+  <script src="../qrious.min.js"></script>
+  <style>
+    :root { color-scheme:light; --ink:#263238; --muted:#64748b; --line:#e5e7eb; --brand:#007b83; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#fff7fb; color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Microsoft JhengHei",sans-serif; line-height:1.65; }
+    .wrap { width:min(100%,880px); margin:0 auto; padding:0 16px; }
+    /* shared-header-styles:start */
+    .top-actions {
+      position:sticky;
+      top:0;
+      z-index:10;
+      display:flex;
+      min-height:48px;
+      justify-content:space-between;
+      align-items:center;
+      gap:8px;
+      padding:7px 8px;
+      background:rgba(255,255,255,.72);
+      border-bottom:1px solid rgba(229,231,235,.55);
+      backdrop-filter:blur(8px);
+    }
+    .action-cluster {
+      display:flex;
+      gap:6px;
+      overflow-x:auto;
+    }
+    .pill {
+      pointer-events:auto;
+      display:inline-flex;
+      align-items:center;
+      min-height:34px;
+      border:1px solid rgba(255,255,255,.42);
+      border-radius:8px;
+      background:rgba(255,255,255,.48);
+      color:rgba(38,50,56,.76);
+      text-decoration:none;
+      font-size:.9rem;
+      font-weight:700;
+      padding:6px 10px;
+      box-shadow:0 1px 5px rgba(15,23,42,.06);
+      cursor:pointer;
+      white-space:nowrap;
+    }
+    .pill:hover,
+    .pill:focus-visible {
+      background:rgba(255,255,255,.82);
+      color:var(--ink);
+    }
+    .pill.active {
+      background:rgba(0,123,131,.62);
+      border-color:rgba(0,123,131,.2);
+      color:#fff;
+    }
+    .icon-pill {
+      justify-content:center;
+      width:34px;
+      min-width:34px;
+      padding:0;
+      font-size:1.15rem;
+      line-height:1;
+    }
+
+    .mom-topic-actions { flex-wrap:wrap; }
+    .mom-topic-actions .action-cluster { flex:none; margin-left:auto; }
+    .topic-return-nav { display:flex; gap:6px; max-width:100%; }
+    .topic-return-nav .pill { min-height:44px; padding:8px; line-height:1.4; }
+    .topic-return-nav a { white-space:normal; color:#00676e; }
+    .topic-return-nav .pill:focus-visible { outline:2px solid var(--brand); outline-offset:2px; }
+
+    /* shared-header-styles:end */
+    .brand-mark { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); display:flex; align-items:center; padding:4px; }
+    .brand-mark img { display:block; height:30px; width:auto; opacity:.85; }
+    a { color:var(--brand); text-underline-offset:3px; }
+    a:focus-visible { outline:2px solid var(--brand); outline-offset:3px; }
+    .topic-intro { margin-top:16px; padding:14px; background:#fff; border:1px solid #f5dce8; border-radius:12px; box-shadow:0 6px 18px rgba(170,73,121,.08); }
+    .topic-intro__img { float:right; width:96px; height:96px; margin:0 0 8px 12px; border-radius:16px; }
+    .topic-intro::after { content:""; display:block; clear:both; }
+    h1 { font-size:clamp(1.4rem,4vw,1.9rem); line-height:1.3; margin:0 0 10px; }
+    .lead { color:var(--muted); margin:0; }
+    .topic-group { margin-top:16px; background:#fff; border:1px solid #f5dce8; border-top:4px solid var(--accent); border-radius:12px; padding:12px; box-shadow:0 6px 18px rgba(170,73,121,.08); }
+    .topic-group h2 { font-size:1.05rem; margin:0 0 8px; color:var(--accent); }
+    .topic-row { display:block; border-top:1px solid var(--line); }
+    .topic-group h2 + .topic-row, .extension-note + .topic-row { border-top:0; }
+    .topic-row summary, .topic-row--link { display:flex; align-items:center; gap:12px; min-height:60px; padding:6px 4px; cursor:pointer; list-style:none; color:var(--ink); text-decoration:none; font-weight:600; }
+    .topic-row summary::-webkit-details-marker { display:none; }
+    .topic-row summary img, .topic-row--link img, .topic-row .topic-emoji { width:48px; height:48px; flex:none; border-radius:10px; object-fit:cover; object-position:top; background:var(--soft); }
+    .topic-row .topic-emoji { display:grid; place-items:center; font-size:1.6rem; }
+    .topic-row__name { flex:1; min-width:0; }
+    .topic-row__name small { display:block; margin-top:2px; color:var(--muted); font-size:.8rem; font-weight:400; line-height:1.4; }
+    .topic-row__meta { flex:none; padding:2px 10px; border-radius:999px; background:var(--soft); color:var(--accent); font-size:.82rem; font-weight:700; }
+    .topic-row summary .topic-row__meta::after { content:" ▾"; }
+    .topic-row[open] summary .topic-row__meta::after { content:" ▴"; }
+    .topic-row summary:focus-visible, .topic-row--link:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+    .topic-row__desc { margin:0 4px 6px; color:var(--muted); font-size:.88rem; }
+    .topic-row ul { margin:0 0 12px; }
+    ul { list-style:none; padding:0; margin:10px 0 0; display:grid; gap:6px; }
+    li a { display:flex; align-items:center; min-height:44px; padding:8px 12px; border:1px solid var(--line); border-radius:10px; color:var(--ink); text-decoration:none; overflow-wrap:anywhere; }
+    li a:hover, li a:focus-visible { border-color:var(--accent); background:var(--soft); }
+    .faq-item { background:#fff; border:1px solid var(--line); border-radius:10px; padding:0 12px; }
+    .faq-item + .faq-item { margin-top:8px; }
+    .faq-item summary { min-height:44px; padding:10px 0; font-weight:600; cursor:pointer; }
+    .faq-item p { margin:0 0 12px; }
+    .extension-note { margin:-4px 0 6px; color:var(--muted); font-size:.88rem; }
+    /* shared-footer-styles:start */
+.site-footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #7f8c8d; /* 跟您的 Section Title 使用一樣的高級灰 */
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+.site-footer a {
+    color: #7f8c8d;
+    text-decoration: none;
+}
+.site-footer a:active {
+    color: #2c3e50;
+}
+    /* shared-footer-styles:end */
+    .site-footer { width:min(100%,880px); margin:24px auto 0; }
+    .site-footer p + p { padding-top:8px; }
+    .site-footer a { display:inline-block; }
+
+
+    .mom-topic-actions { position:sticky; }
+    .qr-modal { position:fixed; inset:0; z-index:20; display:grid; place-items:center; padding:18px; background:rgba(15,23,42,.34); }
+    .qr-modal[hidden] { display:none; }
+    .qr-box, .share-box { width:min(100%,300px); border-radius:10px; background:#fff; padding:18px; text-align:center; box-shadow:0 18px 44px rgba(15,23,42,.18); }
+    .qr-box canvas { display:block; width:220px; height:220px; margin:0 auto 12px; }
+    .qr-title { margin:0 0 6px; color:var(--ink); font-size:1.05rem; line-height:1.35; font-weight:700; }
+    .qr-hint { margin:0 0 16px; color:var(--muted); font-size:.9rem; line-height:1.45; }
+    .qr-close { width:100%; border:0; border-radius:8px; background:var(--brand); color:#fff; font-weight:700; padding:10px 12px; cursor:pointer; font:inherit; }
+    .share-box { width:min(100%,340px); text-align:left; }
+    .share-title { margin:0 0 12px; font-size:1rem; line-height:1.3; font-weight:700; }
+    .share-modal-actions { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:10px; }
+    .share-button { display:flex; align-items:center; justify-content:center; min-height:44px; border:1px solid var(--line); border-radius:8px; background:#fff; color:var(--brand); font:inherit; font-weight:700; text-decoration:none; cursor:pointer; }
+    .favorite-toast { position:fixed; left:50%; bottom:26px; z-index:30; max-width:calc(100vw - 40px); padding:11px 16px; border-radius:999px; background:rgba(38,50,56,.96); color:#fff; font-size:.95rem; font-weight:700; line-height:1.35; box-shadow:0 8px 24px rgba(0,0,0,.22); opacity:0; pointer-events:none; transform:translate(-50%,12px); transition:opacity .2s ease, transform .2s ease; }
+    .favorite-toast.show { opacity:1; transform:translate(-50%,0); }
+  </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "媽媽專屬", "url": "https://liaoweihung.github.io/pteduimg/topics/mom.html", "inLanguage": "zh-TW", "isPartOf": {"@type": "WebSite", "name": "藥局衛教助手", "url": "https://liaoweihung.github.io/pteduimg/"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "餵母乳可以吃普拿疼嗎？要停餵嗎？", "acceptedAnswer": {"@type": "Answer", "text": "可以。Acetaminophen（普拿疼）與 Ibuprofen（布洛芬）都是哺乳期常用的退燒止痛藥，一般劑量多數情況不需要停餵，可在餵奶後服藥。注意綜合感冒藥常含 Acetaminophen，避免重複吃。"}}, {"@type": "Question", "name": "哺乳期間感冒，可以吃綜合感冒藥嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不建議自行吃。許多綜合感冒藥含偽麻黃鹼、甲基麻黃鹼（可能讓奶量變少）或容易嗜睡的抗組織胺，最好請藥師依症狀挑單一成分。"}}, {"@type": "Question", "name": "塞奶要冷敷還是熱敷？", "acceptedAnswer": {"@type": "Answer", "text": "建議冷敷。餵奶後用毛巾包冰敷袋冷敷可減輕腫脹與疼痛，長時間熱敷可能讓發炎更明顯；不要用力按摩或一直擠奶。乳房紅腫熱痛合併發燒，要就醫。"}}, {"@type": "Question", "name": "懷孕頭痛可以吃什麼止痛藥？", "acceptedAnswer": {"@type": "Answer", "text": "可優先考慮 Acetaminophen，以最低有效劑量、最短時間使用。NSAID 類止痛藥（例如布洛芬），尤其懷孕 20 週後，不應自行使用。劇烈頭痛、視力異常或血壓升高要就醫。"}}, {"@type": "Question", "name": "做家事手一直乾裂脫皮，是富貴手嗎？", "acceptedAnswer": {"@type": "Answer", "text": "富貴手通常是手部濕疹的俗稱，反覆碰水、洗碗、接觸清潔劑都可能誘發。洗手後立即擦護手霜、做家事戴手套是基本照護。單手脫皮或合併香港腳，可能是黴菌感染，應給醫師評估。"}}, {"@type": "Question", "name": "臉上出現對稱的大片褐色斑，是肝斑嗎？", "acceptedAnswer": {"@type": "Answer", "text": "肝斑常見於雙頰、額頭與上唇，通常左右對稱，日曬與荷爾蒙變化都可能參與形成，而且容易反覆。持續防曬是基本功；斑點快速改變或出血，應看皮膚科。"}}, {"@type": "Question", "name": "忘記吃避孕藥怎麼辦？", "acceptedAnswer": {"@type": "Answer", "text": "一般複方口服避孕藥延誤未滿 48 小時，儘快補服該顆，下一顆照原時間吃；達 48 小時（連續漏兩顆以上）的處理不同，可能需要加用保險套 7 天。不確定時請問藥師。"}}, {"@type": "Question", "name": "驗孕筆什麼時候驗最準？", "acceptedAnswer": {"@type": "Answer", "text": "月經預計來潮後再驗準確度較高；週期不規則，可在性行為後約 2～3 週檢測。太早驗可能因 hCG 濃度不足出現偽陰性。"}}]}]}</script>
+</head>
+<body>
+  <!-- shared-header:start -->
+    <div class="top-actions mom-topic-actions">
+      <nav class="topic-return-nav" aria-label="返回導覽"><a class="pill" href="../public.html">返回首頁</a></nav>
+      <a class="brand-mark" href="../public.html" aria-label="藥局衛教助手首頁"><img src="../img/topics/logo_black_72.png" width="136" height="72" alt="藥局衛教助手"></a>
+      <div class="action-cluster">
+        <button class="pill icon-pill" type="button" onclick="showQRCode()" aria-label="顯示 QR code">🔲</button>
+        <button class="pill icon-pill" id="favorite-button" type="button" onclick="toggleFavorite()" aria-pressed="false" aria-label="加入收藏">☆</button>
+        <button class="pill icon-pill" type="button" onclick="showSharePanel()" aria-label="分享主題頁">↗</button>
+      </div>
+    </div>
+  <!-- shared-header:end -->
+  <main class="wrap">
+    <div class="topic-intro">
+      <img class="topic-intro__img" src="../img/topics/mom.webp" width="384" height="384" alt="媽媽抱著寶寶，旁邊是藥盒與膠囊" decoding="async">
+      <h1>媽媽專屬</h1>
+      <p class="lead">餵母乳、懷孕能吃什麼藥？手乾裂、長斑、產後不適怎麼照顧？藥師把媽媽常問的問題整理在這裡，點主題展開看圖卡。</p>
+    </div>
+    <section class="topic-group" style="--accent:#207467;--soft:#effaf7">
+      <h2>懷孕與哺乳</h2>
+        <details class="topic-row" id="breastfeeding">
+          <summary><img src="../img/breastfeeding_minor_engorgement.webp" width="768" height="1024" alt="" loading="lazy" decoding="async"><span class="topic-row__name">哺乳期間小毛病</span><span class="topic-row__meta">9 張</span></summary>
+          <p class="topic-row__desc">餵母乳時頭痛、感冒、塞奶，哪些藥可以用、要不要停餵。</p>
+          <ul>
+              <li><a href="../cards/breastfeeding_minor_fever_pain.html">哺乳期間頭痛、發燒可以吃什麼？</a></li>
+              <li><a href="../cards/breastfeeding_minor_rhinitis.html">哺乳期間鼻塞、流鼻水可以用什麼？</a></li>
+              <li><a href="../cards/breastfeeding_minor_engorgement.html">哺乳期間乳房脹痛、塞奶怎麼辦？</a></li>
+              <li><a href="../cards/breastfeeding_minor_cough.html">哺乳期間咳嗽可以吃什麼？</a></li>
+              <li><a href="../cards/breastfeeding_minor_constipation.html">哺乳期間便祕可以用什麼？</a></li>
+              <li><a href="../cards/breastfeeding_minor_diarrhea.html">哺乳期間拉肚子，可以吃止瀉藥嗎？</a></li>
+              <li><a href="../cards/breastfeeding_minor_reflux.html">哺乳期間胃酸逆流、胃不舒服可以吃什麼？</a></li>
+              <li><a href="../cards/breastfeeding_minor_itch.html">哺乳期間皮膚癢，可以擦藥或吃藥嗎？</a></li>
+              <li><a href="../cards/breastfeeding_minor_insomnia.html">哺乳期間睡不好，可以怎麼做？</a></li>
+          </ul>
+        </details>
+        <details class="topic-row" id="pregnancy">
+          <summary><img src="../img/pregnancy_minor_fever_pain.webp" width="941" height="1672" alt="" loading="lazy" decoding="async"><span class="topic-row__name">懷孕期間小毛病</span><span class="topic-row__meta">8 張</span></summary>
+          <p class="topic-row__desc">孕吐、頭痛、感冒、便祕，懷孕時能用什麼藥。</p>
+          <ul>
+              <li><a href="../cards/pregnancy_minor_fever_pain.html">懷孕頭痛、發燒可以吃什麼？</a></li>
+              <li><a href="../cards/pregnancy_minor_nausea.html">懷孕一直想吐可以吃什麼？</a></li>
+              <li><a href="../cards/pregnancy_minor_rhinitis.html">懷孕鼻塞流鼻水可以用什麼？</a></li>
+              <li><a href="../cards/pregnancy_minor_cough.html">懷孕期間咳嗽可以吃什麼？</a></li>
+              <li><a href="../cards/pregnancy_minor_constipation.html">懷孕期間便秘可以用什麼？</a></li>
+              <li><a href="../cards/pregnancy_minor_diarrhea.html">懷孕拉肚子先別急著吃止瀉藥</a></li>
+              <li><a href="../cards/pregnancy_minor_itch.html">懷孕期間皮膚癢可以用什麼？</a></li>
+              <li><a href="../cards/pregnancy_minor_insomnia.html">懷孕期間睡不好可以怎麼做？</a></li>
+          </ul>
+        </details>
+        <a class="topic-row topic-row--link" id="weight" href="../pregnancy-weight-calculator.html"><span class="topic-emoji" aria-hidden="true">🤰</span><span class="topic-row__name">孕期體重增加計算器<small>依孕前 BMI 看體重增加是否在建議範圍</small></span><span class="topic-row__meta">計算器 ›</span></a>
+    </section>
+    <section class="topic-group" style="--accent:#007b83;--soft:#effafa">
+      <h2>媽媽的身體照護</h2>
+        <details class="topic-row" id="hands">
+          <summary><img src="../img/hand_eczema_symptoms.webp" width="1086" height="1448" alt="" loading="lazy" decoding="async"><span class="topic-row__name">富貴手</span><span class="topic-row__meta">4 張</span></summary>
+          <p class="topic-row__desc">洗奶瓶、做家事，手乾裂脫皮怎麼照顧。</p>
+          <ul>
+              <li><a href="../cards/hand_eczema_symptoms.html">富貴手是什麼？手部乾裂、脫皮與濕疹症狀</a></li>
+              <li><a href="../cards/hand_eczema_handwashing_gloves.html">富貴手如何洗手、做家事？雙手防護四重點</a></li>
+              <li><a href="../cards/hand_eczema_moisturizers.html">富貴手護手霜怎麼選？保濕成分與擦法</a></li>
+              <li><a href="../cards/hand_eczema_treatment.html">富貴手需要擦藥嗎？類固醇用法與就醫時機</a></li>
+          </ul>
+        </details>
+        <details class="topic-row" id="skin">
+          <summary><img src="../img/facial_spots_types_melasma_acne_marks.webp" width="941" height="1672" alt="" loading="lazy" decoding="async"><span class="topic-row__name">妊娠紋和色素沉澱</span><span class="topic-row__meta">3 張</span></summary>
+          <p class="topic-row__desc">妊娠紋、肝斑與產後色素沉澱怎麼照護。</p>
+          <ul>
+              <li><a href="../cards/stretch_marks.html">妊娠紋、肥胖紋，怎麼照護？</a></li>
+              <li><a href="../cards/facial_spots_types_melasma_acne_marks.html">臉上的斑點有哪些種類？肝斑與痘印色素沉澱</a></li>
+              <li><a href="../cards/facial_spots_sun_protection.html">想淡斑，防曬不能少：SPF、補擦與遮陽重點</a></li>
+          </ul>
+        </details>
+        <details class="topic-row" id="hemorrhoids">
+          <summary><img src="../img/hemorr_sitbath_1.png" width="1792" height="2400" alt="" loading="lazy" decoding="async"><span class="topic-row__name">痔瘡與產後不適</span><span class="topic-row__meta">3 張</span></summary>
+          <p class="topic-row__desc">痔瘡怎麼坐浴、痔瘡軟膏怎麼用。</p>
+          <ul>
+              <li><a href="../cards/hemorr_sitbath_1.html">痔瘡坐浴：準備溫水、坐浴與擦乾</a></li>
+              <li><a href="../cards/hemorr_sitbath_2.html">溫水坐浴：掌握水溫、時間與清潔</a></li>
+              <li><a href="../cards/hem_oint_1.html">痔瘡軟膏（注入管）怎麼用？步驟教學</a></li>
+          </ul>
+        </details>
+        <details class="topic-row" id="vaginal">
+          <summary><img src="../img/vag_1.png" width="1696" height="2528" alt="" loading="lazy" decoding="async"><span class="topic-row__name">陰道用藥</span><span class="topic-row__meta">3 張</span></summary>
+          <p class="topic-row__desc">陰道塞劑、陰道軟膏的正確用法與注意事項。</p>
+          <ul>
+              <li><a href="../cards/vag_1.html">陰道塞劑怎麼用？步驟教學</a></li>
+              <li><a href="../cards/vag_oint_1.html">陰道軟膏怎麼用？步驟教學</a></li>
+              <li><a href="../cards/vag_oint_6.html">陰道軟膏療程：經期與使用禁忌</a></li>
+          </ul>
+        </details>
+    </section>
+    <section class="topic-group" style="--accent:#a64529;--soft:#fff5f0">
+      <h2>經期、避孕與驗孕</h2>
+        <a class="topic-row topic-row--link" id="cycle" href="../menstrual-calculator.html"><span class="topic-emoji" aria-hidden="true">🌷</span><span class="topic-row__name">經期・排卵・預產期計算器<small>推算下次月經、排卵日與預產期</small></span><span class="topic-row__meta">計算器 ›</span></a>
+        <details class="topic-row" id="contraception">
+          <summary><img src="../img/contraceptive_pills_how_to_take.webp" width="941" height="1672" alt="" loading="lazy" decoding="async"><span class="topic-row__name">避孕</span><span class="topic-row__meta">6 張</span></summary>
+          <p class="topic-row__desc">事前、事後避孕藥怎麼吃，保險套怎麼用。</p>
+          <ul>
+              <li><a href="../cards/contraceptive_pills_how_to_take.html">事前避孕藥怎麼吃？</a></li>
+              <li><a href="../cards/contraceptive_pills_missed_dose.html">忘記吃避孕藥怎麼辦？</a></li>
+              <li><a href="../cards/emergency_contraceptive_pills_how_to_take.html">事後避孕藥怎麼吃？</a></li>
+              <li><a href="../cards/emergency_contraceptive_pills_notice.html">吃完事後避孕藥要注意什麼？</a></li>
+              <li><a href="../cards/condom_check_before_use.html">保險套怎麼正確使用？</a></li>
+              <li><a href="../cards/condom_common_mistakes.html">保險套常見使用錯誤</a></li>
+          </ul>
+        </details>
+        <details class="topic-row" id="test">
+          <summary><img src="../img/pregnancy_test_timing.webp" width="941" height="1672" alt="" loading="lazy" decoding="async"><span class="topic-row__name">驗孕</span><span class="topic-row__meta">5 張</span></summary>
+          <p class="topic-row__desc">驗孕筆什麼時候驗、怎麼驗、怎麼看結果。</p>
+          <ul>
+              <li><a href="../cards/pregnancy_test_timing.html">驗孕筆什麼時候驗最準？</a></li>
+              <li><a href="../cards/pregnancy_test_steps_1_2.html">驗孕筆正確使用第 1、2 步</a></li>
+              <li><a href="../cards/pregnancy_test_steps_3_4.html">驗孕筆正確使用第 3、4 步</a></li>
+              <li><a href="../cards/pregnancy_test_result_reading.html">驗孕筆如何判讀結果？</a></li>
+              <li><a href="../cards/pregnancy_test_faq.html">驗孕筆常見問題 Q&amp;A</a></li>
+          </ul>
+        </details>
+    </section>
+    <section class="topic-group faq-section" aria-labelledby="faq" style="--accent:#8a5a14;--soft:#fdf7ec">
+      <h2 id="faq">媽媽常見問題</h2>
+        <details class="faq-item">
+          <summary>餵母乳可以吃普拿疼嗎？要停餵嗎？</summary>
+          <p>可以。Acetaminophen（普拿疼）與 Ibuprofen（布洛芬）都是哺乳期常用的退燒止痛藥，一般劑量多數情況不需要停餵，可在餵奶後服藥。注意綜合感冒藥常含 Acetaminophen，避免重複吃。 <a href="../cards/breastfeeding_minor_fever_pain.html">看圖卡：哺乳期間頭痛、發燒可以吃什麼？</a></p>
+        </details>
+        <details class="faq-item">
+          <summary>哺乳期間感冒，可以吃綜合感冒藥嗎？</summary>
+          <p>不建議自行吃。許多綜合感冒藥含偽麻黃鹼、甲基麻黃鹼（可能讓奶量變少）或容易嗜睡的抗組織胺，最好請藥師依症狀挑單一成分。 <a href="../cards/breastfeeding_minor_rhinitis.html">看圖卡：哺乳期間鼻塞、流鼻水可以用什麼？</a></p>
+        </details>
+        <details class="faq-item">
+          <summary>塞奶要冷敷還是熱敷？</summary>
+          <p>建議冷敷。餵奶後用毛巾包冰敷袋冷敷可減輕腫脹與疼痛，長時間熱敷可能讓發炎更明顯；不要用力按摩或一直擠奶。乳房紅腫熱痛合併發燒，要就醫。 <a href="../cards/breastfeeding_minor_engorgement.html">看圖卡：哺乳期間乳房脹痛、塞奶怎麼辦？</a></p>
+        </details>
+        <details class="faq-item">
+          <summary>懷孕頭痛可以吃什麼止痛藥？</summary>
+          <p>可優先考慮 Acetaminophen，以最低有效劑量、最短時間使用。NSAID 類止痛藥（例如布洛芬），尤其懷孕 20 週後，不應自行使用。劇烈頭痛、視力異常或血壓升高要就醫。 <a href="../cards/pregnancy_minor_fever_pain.html">看圖卡：懷孕頭痛、發燒可以吃什麼？</a></p>
+        </details>
+        <details class="faq-item">
+          <summary>做家事手一直乾裂脫皮，是富貴手嗎？</summary>
+          <p>富貴手通常是手部濕疹的俗稱，反覆碰水、洗碗、接觸清潔劑都可能誘發。洗手後立即擦護手霜、做家事戴手套是基本照護。單手脫皮或合併香港腳，可能是黴菌感染，應給醫師評估。 <a href="../cards/hand_eczema_symptoms.html">看圖卡：富貴手是什麼？</a></p>
+        </details>
+        <details class="faq-item">
+          <summary>臉上出現對稱的大片褐色斑，是肝斑嗎？</summary>
+          <p>肝斑常見於雙頰、額頭與上唇，通常左右對稱，日曬與荷爾蒙變化都可能參與形成，而且容易反覆。持續防曬是基本功；斑點快速改變或出血，應看皮膚科。 <a href="../cards/facial_spots_types_melasma_acne_marks.html">看圖卡：肝斑與痘印色素沉澱</a></p>
+        </details>
+        <details class="faq-item">
+          <summary>忘記吃避孕藥怎麼辦？</summary>
+          <p>一般複方口服避孕藥延誤未滿 48 小時，儘快補服該顆，下一顆照原時間吃；達 48 小時（連續漏兩顆以上）的處理不同，可能需要加用保險套 7 天。不確定時請問藥師。 <a href="../cards/contraceptive_pills_missed_dose.html">看圖卡：忘記吃避孕藥怎麼辦？</a></p>
+        </details>
+        <details class="faq-item">
+          <summary>驗孕筆什麼時候驗最準？</summary>
+          <p>月經預計來潮後再驗準確度較高；週期不規則，可在性行為後約 2～3 週檢測。太早驗可能因 hCG 濃度不足出現偽陰性。 <a href="../cards/pregnancy_test_timing.html">看圖卡：驗孕筆什麼時候驗最準？</a></p>
+        </details>
+    </section>
+    <section class="topic-group" style="--accent:#7450a2;--soft:#f8f3fc">
+      <h2>延伸閱讀</h2>
+      <p class="extension-note">本頁以媽媽自己為主；寶寶的照護整理在這裡供延伸閱讀。</p>
+        <details class="topic-row" id="baby">
+          <summary><img src="../img/baby_nasal_aspirator_1.webp" width="941" height="1672" alt="" loading="lazy" decoding="async"><span class="topic-row__name">寶寶照護</span><span class="topic-row__meta">7 項</span></summary>
+          <p class="topic-row__desc">寶寶發燒、鼻塞、拉肚子與生長發育。</p>
+          <ul>
+              <li><a href="../cards/notice_ped_fever_reducer.html">小兒發燒注意事項</a></li>
+              <li><a href="../cards/baby_nasal_aspirator_1.html">寶寶鼻塞怎麼辦？吸鼻器可以幫忙</a></li>
+              <li><a href="../cards/diarrhea_care_5.html">寶寶拉肚子奶要停嗎？母乳、配方奶與副食品照顧</a></li>
+              <li><a href="../cards/diarrhea_care_6.html">嬰兒腹瀉何時就醫？尿布、喝奶與脫水警訊</a></li>
+              <li><a href="../cards/Prevent_Enterovirus.html">預防腸病毒：洗手、消毒與生病時的處理</a></li>
+              <li><a href="../cards/burn_first_aid_01.html">燙傷急救：先沖水、移除飾品與衣物</a></li>
+              <li><a href="../growth-calculator.html">兒童身高體重百分位計算器</a></li>
+          </ul>
+        </details>
+    </section>
+  </main>
+  <script>
+    (function () {
+      var KEY = 'pteduimgReturnState';
+      function allDetails() { return Array.prototype.slice.call(document.querySelectorAll('main details')); }
+      document.querySelector('main').addEventListener('click', function (e) {
+        var a = e.target.closest('a[href]');
+        if (!a) return;
+        try {
+          var open = [];
+          allDetails().forEach(function (d, i) { if (d.open) open.push(i); });
+          sessionStorage.setItem(KEY, JSON.stringify({
+            url: location.href.split('#')[0], scrollY: window.scrollY || 0,
+            open: open, hub: 'mom', hubTitle: '媽媽專屬'
+          }));
+        } catch (err) {}
+      });
+      try {
+        if (sessionStorage.getItem('pteduimgRestorePending') !== '1') return;
+        sessionStorage.removeItem('pteduimgRestorePending');
+        var state = JSON.parse(sessionStorage.getItem(KEY) || 'null');
+        if (!state || state.hub !== 'mom') return;
+        var list = allDetails();
+        (state.open || []).forEach(function (i) { if (list[i]) list[i].open = true; });
+        window.scrollTo(0, state.scrollY || 0);
+      } catch (err) {}
+    })();
+  </script>
+    <div class="qr-modal" id="qr-modal" hidden>
+      <div class="qr-box" role="dialog" aria-modal="true" aria-label="媽媽專屬 QR code">
+        <div class="qr-title">請掃描開啟「媽媽專屬」</div>
+        <p class="qr-hint">掃描後會直接打開這個主題頁。</p>
+        <canvas id="qr-canvas"></canvas>
+        <button class="qr-close" type="button" onclick="closeQRCode()">完成</button>
+      </div>
+    </div>
+    <div class="qr-modal" id="share-modal" hidden>
+      <div class="share-box" role="dialog" aria-modal="true" aria-label="分享主題頁">
+        <div class="share-title">分享「媽媽專屬」</div>
+        <div class="share-modal-actions">
+          <a class="share-button" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Ftopics%2Fmom.html" target="_blank" rel="noopener">LINE</a>
+          <a class="share-button" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Ftopics%2Fmom.html" target="_blank" rel="noopener">Facebook</a>
+          <a class="share-button" href="https://www.threads.net/intent/post?text=%E5%AA%BD%E5%AA%BD%E5%B0%88%E5%B1%AC%EF%BD%9C%E8%97%A5%E5%B1%80%E8%A1%9B%E6%95%99%E5%8A%A9%E6%89%8B%20https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Ftopics%2Fmom.html" target="_blank" rel="noopener">Threads</a>
+          <button class="share-button" type="button" onclick="copyShareUrl()">複製連結</button>
+        </div>
+        <button class="qr-close" type="button" onclick="closeSharePanel()">完成</button>
+      </div>
+    </div>
+    <div id="favorite-toast" class="favorite-toast" role="status" aria-live="polite"></div>
+  <script>
+    var hubFavoriteKey = 'topic:mom';
+    var hubShareUrl = 'https://liaoweihung.github.io/pteduimg/topics/mom.html';
+    function getFavorites() {
+      try { var s = JSON.parse(localStorage.getItem('favImages') || '[]'); return Array.isArray(s) ? s : []; } catch (err) { return []; }
+    }
+    function setFavoriteButtonState() {
+      var btn = document.getElementById('favorite-button');
+      if (!btn) return;
+      var on = getFavorites().indexOf(hubFavoriteKey) !== -1;
+      btn.classList.toggle('active', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.textContent = on ? '★' : '☆';
+      btn.setAttribute('aria-label', on ? '取消收藏' : '加入收藏');
+    }
+    function toggleFavorite() {
+      var favs = getFavorites(), i = favs.indexOf(hubFavoriteKey), adding = i === -1;
+      if (adding) favs.push(hubFavoriteKey); else favs.splice(i, 1);
+      try { localStorage.setItem('favImages', JSON.stringify(favs)); } catch (err) {}
+      setFavoriteButtonState();
+      showFavoriteToast(adding ? '已加入我的收藏' : '已從我的收藏移除');
+    }
+    var favoriteToastTimer = null;
+    function showFavoriteToast(message) {
+      var toast = document.getElementById('favorite-toast');
+      if (!toast) return;
+      toast.textContent = message; toast.classList.add('show');
+      clearTimeout(favoriteToastTimer);
+      favoriteToastTimer = setTimeout(function () { toast.classList.remove('show'); }, 1800);
+    }
+    function showQRCode() {
+      var modal = document.getElementById('qr-modal'), canvas = document.getElementById('qr-canvas');
+      if (!modal || !canvas || typeof QRious !== 'function') return;
+      new QRious({ element: canvas, value: hubShareUrl, size: 220 });
+      modal.hidden = false;
+    }
+    function closeQRCode() { document.getElementById('qr-modal').hidden = true; }
+    function showSharePanel() { document.getElementById('share-modal').hidden = false; }
+    function closeSharePanel() { document.getElementById('share-modal').hidden = true; }
+    function copyShareUrl() {
+      navigator.clipboard.writeText(hubShareUrl).then(function () { showFavoriteToast('已複製連結'); }, function () {});
+    }
+    setFavoriteButtonState();
+  </script>
+  <footer class="site-footer">
+  <div class="page-vote" data-page-vote>
+    <style>
+      .page-vote { margin: 0 0 14px 0; padding: 12px; border: 1px solid rgba(127,127,127,.25); border-radius: 12px; text-align: center; }
+      .page-vote__q { margin: 0 0 10px 0; font-weight: 600; }
+      .page-vote__btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+      .page-vote__btn { min-width: 110px; padding: 9px 16px; font-size: 1rem; border-radius: 999px; border: 1px solid rgba(127,127,127,.45); background: transparent; color: inherit; cursor: pointer; }
+      .page-vote__btn:active { transform: scale(.97); }
+      .page-vote__btn:disabled { opacity: .55; cursor: default; }
+      .page-vote__msg { margin: 10px 0 0 0; display: none; }
+    </style>
+    <p class="page-vote__q">這頁內容對您有幫助嗎？</p>
+    <div class="page-vote__btns">
+      <button type="button" class="page-vote__btn" data-vote="helpful">👍 有幫助</button>
+      <button type="button" class="page-vote__btn" data-vote="not_helpful">👎 沒幫助</button>
+    </div>
+    <p class="page-vote__msg" data-vote-msg></p>
+    <script>
+      (function () {
+        var GAS_URL = "https://script.google.com/macros/s/AKfycbw0uIMQZIeqmx-D0i4YBN7FPidC1QEteoNp6Ae28fMPKFC9HmH10jx6pvIB2DCom5R_/exec";
+        var FEEDBACK_URL = "https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手";
+        var box = document.currentScript.closest("[data-page-vote]");
+        if (!box) return;
+        var btns = box.querySelectorAll("[data-vote]");
+        var msg = box.querySelector("[data-vote-msg]");
+        var key = "pageVote:" + location.pathname;
+        function done(text, html) {
+          for (var i = 0; i < btns.length; i++) btns[i].disabled = true;
+          if (html) msg.innerHTML = html; else msg.textContent = text;
+          msg.style.display = "block";
+        }
+        try { if (localStorage.getItem(key)) { done("您已回饋過這一頁，謝謝！"); return; } } catch (e) {}
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function () {
+            var vote = this.getAttribute("data-vote");
+            var body = new URLSearchParams();
+            body.append("type", "vote");
+            body.append("source", "藥局衛教助手");
+            body.append("vote", vote);
+            body.append("page", location.pathname);
+            body.append("title", document.title);
+            done("傳送中…");
+            fetch(GAS_URL, { method: "POST", body: body }).then(function () {
+              try { localStorage.setItem(key, vote); } catch (e) {}
+              if (vote === "helpful") {
+                done("謝謝您的回饋！");
+              } else {
+                done("", '謝謝您的回饋！想告訴我們哪裡不清楚嗎？<a href="' + FEEDBACK_URL + '" target="_blank" rel="noopener">留言給藥師</a>（請勿填寫個人或病情資料）');
+              }
+            }).catch(function () {
+              for (var j = 0; j < btns.length; j++) btns[j].disabled = false;
+              msg.textContent = "傳送失敗，請稍後再試。";
+            });
+          });
+        }
+      })();
+    </script>
+  </div>
+  <p style="margin: 0 0 8px 0;">本工具圖文僅供藥師衛教參考，非專業人士務必諮詢藥師建議。</p>
+  <p style="margin: 0;">
+    <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a>
+    &nbsp;|&nbsp;
+   <a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" onclick="if (typeof trackFeedbackClick === 'function') trackFeedbackClick()">💬 意見回饋</a>
+  </p>
+  <p style="margin: 0 0 8px 0;">
+    <a href="../about.html">關於本站</a> &nbsp;|&nbsp;
+    <a href="../author.html">作者資訊</a> &nbsp;|&nbsp;
+    <a href="../editorial-policy.html">編輯與資料來源政策</a>
+  </p>
+</footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () { navigator.serviceWorker.register('../sw.js').catch(function () {}); });
+    }
+  </script>
+</body>
+</html>

@@ -646,15 +646,29 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     is_public_last_step = (category == "public_education" and step_index == total - 1)
     next_reads_html = render_next_reads(card_id, card, cards, manual_cards) if is_public_last_step else ""
     if is_public:
-        return_script = f"""    function updateReturnButton() {{
+        return_script = f"""    function readHubReturnState() {{
+      try {{
+        var state = JSON.parse(sessionStorage.getItem('pteduimgReturnState') || 'null');
+        if (!state || !state.hub || !state.url || !document.referrer) return null;
+        var from = new URL(document.referrer).pathname;
+        if (from === new URL(state.url, window.location.href).pathname || from.indexOf('/cards/') !== -1) return state;
+      }} catch (err) {{}}
+      return null;
+    }}
+    function updateReturnButton() {{
       try {{
         var btn = document.querySelector('button[onclick="returnToCardHome()"]');
         if (!btn) return;
+        var hub = readHubReturnState();
+        if (hub) {{
+          btn.textContent = '‹ 回到' + hub.hubTitle;
+          return;
+        }}
         var stateRaw = sessionStorage.getItem('pteduimgReturnState');
         var topicTitles = {json.dumps(PUBLIC_TOPIC_TITLES, ensure_ascii=False)};
         if (stateRaw) {{
           var state = JSON.parse(stateRaw);
-          if (state && state.url) {{
+          if (state && state.url && !state.hub) {{
             var returnUrl = new URL(state.url, window.location.href);
             var q = returnUrl.searchParams.get('q');
             var topic = returnUrl.searchParams.get('topic');
@@ -683,7 +697,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
         var stateRaw = sessionStorage.getItem('pteduimgReturnState');
         if (stateRaw) {{
           var state = JSON.parse(stateRaw);
-          if (state && state.url) {{
+          if (state && state.url && (!state.hub || readHubReturnState())) {{
             sessionStorage.setItem('pteduimgRestorePending', '1');
             location.href = state.url;
             return;
@@ -693,7 +707,32 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
       location.href = {json.dumps(default_return_page)};
     }}"""
     else:
-        return_script = """    function returnToCardHome() {
+        return_script = """    function readHubReturnState() {
+      try {
+        var state = JSON.parse(sessionStorage.getItem('pteduimgReturnState') || 'null');
+        if (!state || !state.hub || !state.url || !document.referrer) return null;
+        var from = new URL(document.referrer).pathname;
+        if (from === new URL(state.url, window.location.href).pathname || from.indexOf('/cards/') !== -1) return state;
+      } catch (err) {}
+      return null;
+    }
+    function updateReturnButton() {
+      var hub = readHubReturnState();
+      var btn = document.querySelector('button[onclick="returnToCardHome()"]');
+      if (hub && btn) btn.textContent = '‹ 回到' + hub.hubTitle;
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', updateReturnButton);
+    } else {
+      updateReturnButton();
+    }
+    function returnToCardHome() {
+      var hub = readHubReturnState();
+      if (hub) {
+        try { sessionStorage.setItem('pteduimgRestorePending', '1'); } catch (err) {}
+        location.href = hub.url;
+        return;
+      }
       location.href = "../index.html";
     }"""
     topic_nav_styles = TOP_NAV_STYLES if acne_topic else ""
@@ -1742,6 +1781,7 @@ def update_sitemap(generated_pages, card_content_index):
         ("author.html", "monthly", "0.5"),
         ("editorial-policy.html", "monthly", "0.5"),
         ("topics/acne.html", "weekly", "0.8"),
+        ("topics/mom.html", "weekly", "0.8"),
         ("all-cards.html", "weekly", "0.8"),
         ("retired-cards.html", "monthly", "0.3"),
         ("calc.html", "monthly", "0.7"),

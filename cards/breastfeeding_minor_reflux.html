@@ -82,15 +82,29 @@
         page_path: '/pteduimg/cards/breastfeeding_minor_reflux.html'
       });
     }
+    function readHubReturnState() {
+      try {
+        var state = JSON.parse(sessionStorage.getItem('pteduimgReturnState') || 'null');
+        if (!state || !state.hub || !state.url || !document.referrer) return null;
+        var from = new URL(document.referrer).pathname;
+        if (from === new URL(state.url, window.location.href).pathname || from.indexOf('/cards/') !== -1) return state;
+      } catch (err) {}
+      return null;
+    }
     function updateReturnButton() {
       try {
         var btn = document.querySelector('button[onclick="returnToCardHome()"]');
         if (!btn) return;
+        var hub = readHubReturnState();
+        if (hub) {
+          btn.textContent = '‹ 回到' + hub.hubTitle;
+          return;
+        }
         var stateRaw = sessionStorage.getItem('pteduimgReturnState');
         var topicTitles = {"skin_wound": "皮膚與傷口", "acne": "痘痘／粉刺", "eyes": "眼睛", "oral_health": "口腔", "throat": "喉嚨", "infectious_diseases": "傳染病", "heat_illness": "中暑", "insect_repellent": "防蚊液", "gastrointestinal": "胃腸相關", "elimination_care": "排泄與照護", "infant_care": "嬰幼兒照護", "growth": "成長", "chronic_conditions": "慢性病", "sleep": "睡眠", "pregnancy": "懷孕與哺乳", "travel_medication": "旅遊與用藥常識"};
         if (stateRaw) {
           var state = JSON.parse(stateRaw);
-          if (state && state.url) {
+          if (state && state.url && !state.hub) {
             var returnUrl = new URL(state.url, window.location.href);
             var q = returnUrl.searchParams.get('q');
             var topic = returnUrl.searchParams.get('topic');
@@ -119,7 +133,7 @@
         var stateRaw = sessionStorage.getItem('pteduimgReturnState');
         if (stateRaw) {
           var state = JSON.parse(stateRaw);
-          if (state && state.url) {
+          if (state && state.url && (!state.hub || readHubReturnState())) {
             sessionStorage.setItem('pteduimgRestorePending', '1');
             location.href = state.url;
             return;

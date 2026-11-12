@@ -341,6 +341,15 @@ body.public-page .site-footer { font-size: .95rem; }
         </a>
     </article>
 </section>
+<section id="mom-hub-entry" class="acne-hub-entry" aria-label="媽媽專屬" hidden>
+    <article class="series-card">
+        <a class="series-link" href="./topics/mom.html">
+            <img class="acne-hub-thumb" src="./img/topics/mom.webp" width="56" height="56" alt="" loading="lazy">
+            <span><strong>媽媽專屬</strong><small>懷孕、哺乳用藥與媽媽常見問題</small></span>
+            <span class="series-arrow" aria-hidden="true">›</span>
+        </a>
+    </article>
+</section>
 <div id="category-sections"></div>
 <button id="show-more" class="show-more" type="button" onclick="showMoreCards()" hidden>顯示更多主題</button>
 <section class="featured-section" aria-labelledby="featured-title">
@@ -665,6 +674,10 @@ body.public-page .site-footer { font-size: .95rem; }
         }
 
         const el = event.currentTarget;
+        if (el.dataset.href) {
+            location.href = el.dataset.href;
+            return;
+        }
         navigateToCardPage(el.dataset.type, parseInt(el.dataset.idx));
     }
 
@@ -1076,6 +1089,7 @@ body.public-page .site-footer { font-size: .95rem; }
 
         document.getElementById('ranking-note').hidden = !!cardSearchTerm;
         document.getElementById('acne-hub-entry').hidden = !!cardSearchTerm || !['all', 'acne'].includes(activePublicTopic);
+        document.getElementById('mom-hub-entry').hidden = !!cardSearchTerm || !['all', 'pregnancy'].includes(activePublicTopic);
         const total = Object.values(categories).reduce((count, items) => count + items.length, 0);
         document.getElementById('result-count').textContent = `${getActivePublicTopicTitle()} · ${total} 個系列${cardSearchTerm ? '符合搜尋' : ''}`;
         document.getElementById('clear-filters').hidden = !cardSearchTerm && activePublicTopic === 'all';
@@ -1113,7 +1127,22 @@ body.public-page .site-footer { font-size: .95rem; }
         }
 
         let visibleFavCount = 0;
+        const topicHubFavorites = { 'topic:mom': { title: '媽媽專屬', icon: '🤱', label: '主題頁', href: './topics/mom.html' } };
         favoriteImages.forEach(favKey => {
+            const hub = topicHubFavorites[favKey];
+            if (hub) {
+                visibleFavCount++;
+                favGrid.innerHTML += `
+                    <div class="menu-item fav-item sortable-fav"
+                         data-fav-key="${favKey}"
+                         data-href="${hub.href}">
+                        <span class="drag-grip">☰</span>
+                        <span class="icon">${hub.icon}</span>
+                        <div style="font-weight:bold; font-size:1.1rem;">${hub.title}</div>
+                        <div class="fav-label">${hub.label}</div>
+                    </div>`;
+                return;
+            }
             const { type, idx } = resolveCardFavoriteKey(favKey);
             if (educationData[type] && educationData[type].hidden) return;
             if(educationData[type] && educationData[type].steps[idx] && isVisibleOnPage(educationData[type])) {

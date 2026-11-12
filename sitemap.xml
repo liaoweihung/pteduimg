@@ -36,6 +36,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://liaoweihung.github.io/pteduimg/topics/mom.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://liaoweihung.github.io/pteduimg/all-cards.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
