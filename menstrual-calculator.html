@@ -6,15 +6,15 @@
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/png" href="./icon.png?v=3">
   <link rel="canonical" href="https://liaoweihung.github.io/pteduimg/menstrual-calculator.html">
-  <title>經期計算器｜排卵日、受孕期、延經、催經、孕週與預產期計算</title>
-  <meta name="description" content="免費經期計算器，可依最後一次月經與週期預估下次月經、排卵日、易受孕期，並計算延經開始日期、催經療程日期、孕週及預產期。">
-  <meta name="keywords" content="經期計算器,月經計算器,月經週期計算,下次月經,排卵日計算,排卵期,易受孕期,延經,催經,黃體素,月經遲來,預產期計算,懷孕週數,LMP">
+  <title>經期計算器｜排卵日、受孕期、孕週與預產期計算</title>
+  <meta name="description" content="免費經期計算器，可依最後一次月經與週期預估下次月經、排卵日、易受孕期，並計算孕週及預產期。">
+  <meta name="keywords" content="經期計算器,月經計算器,月經週期計算,下次月經,排卵日計算,排卵期,易受孕期,月經遲來,預產期計算,懷孕週數,LMP">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="經期・排卵・延經・催經・預產期計算器">
-  <meta property="og:description" content="月經週期、排卵受孕期、延經／催經日期、孕週與預產期一次計算。">
+  <meta property="og:title" content="經期・排卵・預產期計算器">
+  <meta property="og:description" content="月經週期、排卵受孕期、孕週與預產期一次計算。">
   <meta property="og:url" content="https://liaoweihung.github.io/pteduimg/menstrual-calculator.html">
   <meta property="og:image" content="https://liaoweihung.github.io/pteduimg/icon.png">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"經期・排卵・延經・催經・預產期計算器","applicationCategory":"HealthApplication","operatingSystem":"Web","description":"以本機日期運算提供月經週期、排卵、孕週與預產期的衛教推算。","url":"https://liaoweihung.github.io/pteduimg/menstrual-calculator.html"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"經期・排卵・預產期計算器","applicationCategory":"HealthApplication","operatingSystem":"Web","description":"以本機日期運算提供月經週期、排卵、孕週與預產期的衛教推算。","url":"https://liaoweihung.github.io/pteduimg/menstrual-calculator.html"}</script>
   <script>
     const GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
     const urlParams = new URLSearchParams(window.location.search);
@@ -52,7 +52,7 @@
     <a class="back-button" href="./calc.html">‹ 回醫藥計算器</a>
     <section class="intro-card" aria-labelledby="page-title">
       <div class="intro-icon" aria-hidden="true">🌷</div>
-      <div><h1 id="page-title">經期・排卵・延經・催經・預產期計算器</h1><p>月經週期、排卵受孕期、延經／催經日期、孕週與預產期一次計算</p></div>
+      <div><h1 id="page-title">經期・排卵・預產期計算器</h1><p>月經週期、排卵受孕期、孕週與預產期一次計算</p></div>
     </section>
 
     <section class="form-card basic-card" aria-labelledby="basic-title">
@@ -82,7 +82,8 @@
         <details><summary>計算原理</summary><p>本工具以「下一次預估月經日前 14 天」估算排卵日，易受孕期以排卵日前 5 天至排卵後 1 天呈現。排卵時間可能提前或延後。</p></details>
       </article>
 
-      <article class="feature-card is-collapsed" id="delay-card">
+      <!-- 延經、催經區塊暫時隱藏（2026-11-12）；要恢復時刪除兩區塊的 hidden -->
+      <article class="feature-card is-collapsed" id="delay-card" hidden>
         <button class="card-heading" type="button" aria-expanded="false" aria-controls="delay-card"><span aria-hidden="true">⏳</span><h2>延經</h2><i aria-hidden="true">⌄</i></button>
         <p class="result-label">最晚服用藥品時間（Norethisterone）</p><strong class="big-date" id="delay-start">請先輸入日期</strong>
         <p class="inline-warning">延經藥建議在預估月經日前五天開始評估；少於三天時，延經效果可能較不穩定。</p>
@@ -91,7 +92,7 @@
         <details><summary>計算原理</summary><p>本頁以預估月經日前 5 天顯示較早的開始評估時間；Norethisterone 通常至少應於預計月經前 3 天開始才可能有效。停藥後出血以約 2～3 天的區間呈現。此為用藥時程衛教，是否適用須由醫療人員評估。</p></details>
       </article>
 
-      <article class="feature-card is-collapsed" id="induce-card">
+      <article class="feature-card is-collapsed" id="induce-card" hidden>
         <button class="card-heading" type="button" aria-expanded="false" aria-controls="induce-card"><span aria-hidden="true">💊</span><h2>催經</h2><i aria-hidden="true">⌄</i></button>
         <p class="result-label">日期／療程計算與用藥前提醒</p><strong class="big-date small-big" id="late-period">請先輸入日期</strong>
         <p class="inline-warning">如有懷孕可能，使用催經藥前應先排除懷孕。</p>
@@ -120,9 +121,9 @@
       </article>
     </section>
 
-    <section class="medical-note" aria-label="醫療提示"><h2>使用提醒</h2><p>本工具僅提供日期推算與用藥衛教參考，實際排卵日、月經來潮及撤退性出血時間可能因個人週期而不同。</p><p>延經或催經藥屬藥物治療，使用前應確認適應症、禁忌症及懷孕可能。若月經長期未來、不規則出血、異常腹痛或可能懷孕，請接受醫療評估。</p><p>預產期為估算值；若醫療院所已依超音波校正孕週或預產期，應以醫療紀錄為準。</p><details><summary>計算依據與參考來源</summary><p>預產期採 LMP＋280 天的慣例；排卵日採下次月經前 14 天的簡化假設。延經日期以預估月經日前 5 天作為較早的開始評估時間，且 Norethisterone 通常至少要在預計月經前 3 天開始才可能有效；口服 Medroxyprogesterone 停藥後的撤退性出血以 3～7 天估計。各藥物方案與個人適用性須由醫療人員確認。</p><p><a href="https://www.acog.org/womens-health/faqs/when-pregnancy-goes-past-your-due-date" target="_blank" rel="noopener">ACOG：預產期與 LMP</a>　<a href="https://www.nhs.uk/conditions/periods/fertility-in-the-menstrual-cycle/" target="_blank" rel="noopener">NHS：月經週期與排卵</a>　<a href="https://www.sps.nhs.uk/articles/choosing-a-medicine-to-delay-periods/" target="_blank" rel="noopener">NHS SPS：延經藥物選擇</a>　<a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=1020bb60-4f13-4cd7-aaa1-c556752c84b7&amp;version=1" target="_blank" rel="noopener">DailyMed：Medroxyprogesterone</a></p></details></section>
+    <section class="medical-note" aria-label="醫療提示"><h2>使用提醒</h2><p>本工具僅提供日期推算參考，實際排卵日與月經來潮時間可能因個人週期而不同。</p><p>若月經長期未來、不規則出血、異常腹痛或可能懷孕，請接受醫療評估。</p><p>預產期為估算值；若醫療院所已依超音波校正孕週或預產期，應以醫療紀錄為準。</p><details><summary>計算依據與參考來源</summary><p>預產期採 LMP＋280 天的慣例；排卵日採下次月經前 14 天的簡化假設。<span hidden>延經日期以預估月經日前 5 天作為較早的開始評估時間，且 Norethisterone 通常至少要在預計月經前 3 天開始才可能有效；口服 Medroxyprogesterone 停藥後的撤退性出血以 3～7 天估計。各藥物方案與個人適用性須由醫療人員確認。</span></p><p><a href="https://www.acog.org/womens-health/faqs/when-pregnancy-goes-past-your-due-date" target="_blank" rel="noopener">ACOG：預產期與 LMP</a>　<a href="https://www.nhs.uk/conditions/periods/fertility-in-the-menstrual-cycle/" target="_blank" rel="noopener">NHS：月經週期與排卵</a><span hidden>　<a href="https://www.sps.nhs.uk/articles/choosing-a-medicine-to-delay-periods/" target="_blank" rel="noopener">NHS SPS：延經藥物選擇</a>　<a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=1020bb60-4f13-4cd7-aaa1-c556752c84b7&amp;version=1" target="_blank" rel="noopener">DailyMed：Medroxyprogesterone</a></span></p></details></section>
   </main>
   <footer class="site-footer"><p>本工具僅供健康衛教與日期推算參考，不能取代醫師、藥師或婦產科醫療評估。</p><p><a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a></p></footer>
-  <script src="./js/menstrual-calculator.js?v=4"></script>
+  <script src="./js/menstrual-calculator.js?v=5"></script>
 </body>
 </html>

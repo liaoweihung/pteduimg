@@ -58,7 +58,7 @@
       trackCalculatorEvent('calculator_date_input', { field: id, session_input_count: dateInputCounts[id] });
     });
   });
-  const cards = [...document.querySelectorAll('.feature-card')];
+  const cards = [...document.querySelectorAll('.feature-card')].filter(card => !card.hidden);
   const allCardsButton = $('toggle-all-cards');
   function setCardExpanded(card, expanded) {
     card.classList.toggle('is-collapsed', !expanded);
