@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-13T09:44:08+08:00",
-  "baseline": "165b76d6734193397582f7d1ec40011679cadd48",
-  "scope": "網站來源快照；版本 165b76d6",
+  "generatedAt": "2026-11-13T10:08:38+08:00",
+  "baseline": "526c3cb59bbadbffb37cd7190bd1d71df9719be3",
+  "scope": "網站來源快照；版本 526c3cb5",
   "counts": {
-    "cards": 430,
-    "series": 94,
-    "allSeries": 98,
+    "cards": 433,
+    "series": 95,
+    "allSeries": 99,
     "hidden": 4,
     "retired": 4,
-    "areas": 16,
+    "areas": 17,
     "topics": 1,
     "tools": 6
   },
@@ -28,7 +28,8 @@
     "sleep": 1,
     "travel_medication": 3,
     "pregnancy": 3,
-    "infant_care": 3
+    "infant_care": 3,
+    "sports_injury": 1
   },
   "series": [
     {
@@ -1016,6 +1017,16 @@
       "hidden": false,
       "areas": [
         "skin_wound"
+      ],
+      "departments": []
+    },
+    {
+      "id": "sports_sprain",
+      "title": "運動扭傷",
+      "count": 3,
+      "hidden": false,
+      "areas": [
+        "sports_injury"
       ],
       "departments": []
     }
@@ -3719,30 +3730,30 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 295,
+      "machine_pass": 298,
       "partial": 1,
       "missing": 134
     },
     "reference_status": {
       "missing": 219,
-      "machine_pass": 211
+      "machine_pass": 214
     },
     "date_status": {
       "missing": 219,
-      "machine_pass": 190,
+      "machine_pass": 193,
       "partial": 21
     },
     "footer_status": {
       "missing": 239,
-      "machine_pass": 191
+      "machine_pass": 194
     },
     "jsonld_status": {
-      "machine_pass": 430
+      "machine_pass": 433
     }
   },
   "sync": {
-    "pages": 434,
-    "fields": 1089,
+    "pages": 437,
+    "fields": 1092,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -6623,6 +6634,24 @@
         "fields": [
           "jsonld_status",
           "source_sha256",
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "sports_sprain_1",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "sports_sprain_2",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "sports_sprain_3",
+        "fields": [
           "rules_sha256"
         ]
       },
