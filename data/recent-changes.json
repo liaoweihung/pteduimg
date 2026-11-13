@@ -1,5 +1,16 @@
 [
   {
+    "request_id": "CR-2026-083",
+    "completed_at": "2026-11-13",
+    "request_type": "新增系列",
+    "series_id": "sports_sprain",
+    "series_title": "運動扭傷",
+    "card_count": 3,
+    "first_page_id": "sports_sprain_1",
+    "first_step_index": 0,
+    "first_image": "img/sports_sprain_1.webp"
+  },
+  {
     "request_id": "CR-2026-080",
     "completed_at": "2026-11-12",
     "request_type": "新增系列",

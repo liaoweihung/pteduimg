@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-vbb14392d871e4ee28f32aa38';
+const CACHE_NAME = 'pwa-cache-v25473d0d53ba6fb08755f35c';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -439,6 +439,9 @@ const urlsToCache = [
   "./img/sore_throat_causes.webp",
   "./img/sore_throat_otc_choice.webp",
   "./img/sore_throat_red_flags.webp",
+  "./img/sports_sprain_1.webp",
+  "./img/sports_sprain_2.webp",
+  "./img/sports_sprain_3.webp",
   "./img/stomach_medicine_alginate.webp",
   "./img/stomach_medicine_antacid.webp",
   "./img/stomach_medicine_guide.webp",
@@ -923,6 +926,9 @@ const urlsToCache = [
   "./cards/breastfeeding_minor_insomnia.html",
   "./cards/breastfeeding_minor_engorgement.html",
   "./cards/skin_glue_care_1.html",
+  "./cards/sports_sprain_1.html",
+  "./cards/sports_sprain_2.html",
+  "./cards/sports_sprain_3.html",
   "./cards/acne.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare_2.html",

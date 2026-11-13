@@ -4,6 +4,8 @@
 
 即時技術變更不再由本頁手抄。執行 `python -B scripts/project_change_tracker.py` 可直接查看已提交與未提交的網站變更；用 `--page`、`--series` 或 `--request` 篩選。這裡保留專案判斷、人工證據與下一步。
 
+2026-11-13 新增「運動扭傷」三張民眾衛教圖卡（CR-2026-083）：網站作者（藥師）於對話表示覆核通過並授權上架；新增「運動傷害」篩選、三頁靜態文字與雙日期／直接來源、SEO 和右下角深色 Logo，未在頁面揭露審核者。三頁定點清冊提案零差異、`check_site.py` 通過，首頁最近新增第一筆為本系列；全量管理檢查仍有 1160 項錯誤，本系列三頁無錯誤。桌機／手機瀏覽器操作驗收未完成。現況來源 99 系列（95 可見、4 hidden）、441 筆清冊（433 current、4 hidden、4 retired）、526 條關聯、302 筆文字紀錄（其中 3 筆退出頁）。詳見[定點證據](evidence/sports-sprain-2026-11-13.md)。
+
 2026-11-13 媽媽專屬主題頁 SEO/AEO 補強（CR-2026-082，延續 CR-2026-079）：topics/mom.html 加入 OG 分享標籤、BreadcrumbList 麵包屑結構化資料、常見問題底部更新日期與 FAQ 引用說明，更新 CollectionPage 之 dateModified (2026-11-13)。未改動衛教醫療內容。更新 sw.js CACHE_NAME；site_footer.py 本頁同步通過；check_site.py 通過。
 
 2026-11-12 新增「皮膚組織膠返家照護」衛教圖卡（CR-2026-080）：skin_glue_care 系列納入 public.html（皮膚與外傷照護，order 3.55），啟用 showFooter；圖卡加入深色單色透明 Logo（高 58px），靜態文字含 AEO 問答、雙日期、直接來源與藥師審閱，SEO 標題依草稿設定。建立與術後傷口、敷料、除疤等傷口主題互連。增量建置 1 頁與全域索引完成；check_site.py 通過；清冊提案零差異。詳見[定點證據](evidence/skin-glue-care-2026-11-12.md)。

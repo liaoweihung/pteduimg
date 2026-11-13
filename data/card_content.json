@@ -13248,5 +13248,165 @@
         "url": "../cards/prevent_scar.html"
       }
     ]
+  },
+  {
+    "cardId": "sports_sprain",
+    "title": "運動時扭到關節，可能傷到哪裡？",
+    "image": "img/sports_sprain_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/sports_sprain_1.html",
+    "summary": "扭傷是關節周圍的韌帶被過度拉扯或撕裂，常見於腳踝、膝蓋和手腕。局部疼痛、腫脹或瘀青可能出現；光看外觀或還能活動，無法排除骨折等較嚴重的傷。",
+    "sections": [
+      {
+        "heading": "扭傷與拉傷有什麼不同？",
+        "text": "扭傷是關節周圍的韌帶被過度拉扯或撕裂；拉傷則是肌肉或肌腱受傷。兩者常見表現都是局部疼痛、腫脹、瘀青，關節不穩或使不上力，活動或承重時更痛。"
+      },
+      {
+        "heading": "常見部位與可能情境",
+        "text": "腳踝：踩空、落地或急轉方向時翻腳刀。膝蓋：急停、轉身或落地時扭轉，之後覺得膝蓋不穩。手腕或拇指：跌倒時手撐地，或拇指被往外扳開。這些只是情境舉例，實際傷勢須由醫療人員評估。"
+      },
+      {
+        "heading": "還能動，就代表沒有骨折嗎？",
+        "text": "不能這樣判斷。光看外觀或還能活動，無法排除骨折、脫臼或較嚴重的韌帶傷；傷勢輕重要由醫師檢查判斷，不建議自行分級。醫師評估腳踝受傷是否需要 X 光時，會參考受傷後能否立即承重、在診間能否走 4 步等條件；這是限踝部的臨床評估規則，不適用膝蓋、手腕，也不適合自行在家判斷。"
+      }
+    ],
+    "altText": "運動扭傷常見部位：腳踝、膝蓋、手腕與拇指；說明扭傷和拉傷的差別，以及不能只靠外觀判斷傷勢。",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "revisionCredit": "Codex 草稿、Claude 修訂",
+    "references": [
+      {
+        "title": "NHS — Sprains and strains（2024-04-23 複核）",
+        "url": "https://www.nhs.uk/conditions/sprains-and-strains/"
+      },
+      {
+        "title": "American College of Radiology — ACR Appropriateness Criteria: Acute Trauma to the Ankle（2020）",
+        "url": "https://acsearch.acr.org/docs/69436/Narrative/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "扭傷當下怎麼處理？",
+        "url": "../cards/sports_sprain_2.html"
+      }
+    ]
+  },
+  {
+    "cardId": "sports_sprain",
+    "title": "扭傷當下，先停下來",
+    "image": "img/sports_sprain_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/sports_sprain_2.html",
+    "summary": "扭傷當下先停止運動，依 PRICE 原則保護患部、休息、冷敷、視情況加壓並抬高。頭 2～3 天先別熱敷、按摩或喝酒；關節變形、麻木或皮膚變色等警訊應立即就醫。",
+    "sections": [
+      {
+        "heading": "扭傷當下怎麼處理？",
+        "text": "先停下來，再照 PRICE 原則處理：保護、休息、冰敷、加壓、抬高。1. 停止運動並保護患部，別硬撐或反覆測試能不能跑跳。2. 冰袋隔毛巾，每次約 15～20 分鐘，不直接貼皮膚；受傷後頭 2～3 天可每 2～3 小時重複一次，不舒服就停。3. 讓受傷部位有支撐，盡量墊高到高於心臟。4. 視情況用彈性繃帶或護具；加壓不是人人都要做。手指或腳趾發麻、刺痛、變色或變冷，立刻鬆開，仍未改善請就醫。"
+      },
+      {
+        "heading": "頭 2～3 天先避免什麼？",
+        "text": "先別熱敷、泡熱水澡、按摩或推拿、喝酒，這些可能讓腫脹更明顯。"
+      },
+      {
+        "heading": "需要止痛藥時",
+        "text": "先問藥師或醫師。藥師可依情況建議口服止痛藥或外用凝膠、乳膏。口服非類固醇消炎止痛藥（NSAIDs）不是人人適合；有胃潰瘍病史、氣喘、心臟、肝臟或腎臟疾病、懷孕，或正在使用抗凝血藥的人，使用前一定要先問。"
+      },
+      {
+        "heading": "什麼情況要立即就醫？",
+        "text": "關節變形，或受傷時聽到斷裂聲；患部麻木、刺痛；皮膚變藍、變灰，或摸起來冰冷，請立即就醫（急診）。"
+      },
+      {
+        "heading": "什麼情況要盡快就醫？",
+        "text": "疼痛劇烈或越來越痛；腫脹、瘀青嚴重或持續加重；無法踩地承重，或受傷部位僵硬、難以正常使用；合併發燒或畏寒；自行照護後一直沒有好轉，都應盡快就醫。可能不只是扭傷，別自行判斷。"
+      }
+    ],
+    "altText": "扭傷當下處理四步驟：停止運動、冷敷、抬高、視情況用彈性繃帶，以及立即就醫與盡快就醫警訊。",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "revisionCredit": "Codex 草稿、Claude 修訂",
+    "references": [
+      {
+        "title": "NHS — Sprains and strains（2024-04-23 複核）",
+        "url": "https://www.nhs.uk/conditions/sprains-and-strains/"
+      },
+      {
+        "title": "NHS — Ibuprofen for adults（2025-08-27 複核）",
+        "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/"
+      },
+      {
+        "title": "衛生福利部中央健康保險署 — 肌肉拉傷、關節扭傷、脫臼及骨折（2023-11-29 更新）",
+        "url": "https://www.nhi.gov.tw/ch/cp-2758-39bb9-2951-1.html"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "常見的扭傷",
+        "url": "../cards/sports_sprain_1.html"
+      },
+      {
+        "title": "扭傷後怎麼恢復活動？",
+        "url": "../cards/sports_sprain_3.html"
+      }
+    ]
+  },
+  {
+    "cardId": "sports_sprain",
+    "title": "扭傷後，怎麼恢復活動？",
+    "image": "img/sports_sprain_3.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/sports_sprain_3.html",
+    "summary": "扭傷後在腫痛緩和、疼痛不明顯加重的範圍內循序恢復活動。腳踝扭傷可依醫療人員建議練活動度、肌力與平衡；未改善、惡化或反覆不穩應就醫評估。",
+    "sections": [
+      {
+        "heading": "腫痛緩和後，逐步活動",
+        "text": "頭 2～3 天過後，在不讓疼痛明顯加重的範圍內溫和活動關節，避免僵硬；不必一直完全不動。"
+      },
+      {
+        "heading": "循序恢復走路與日常動作",
+        "text": "先避免跑跳、急停、變向。活動後當天或隔天腫痛明顯加重，代表進度太快，先退一步。"
+      },
+      {
+        "heading": "腳踝扭傷：練平衡、防再扭",
+        "text": "穿合腳、包覆好的鞋，必要時用護具；依醫療人員建議練活動度、肌力和平衡。膝蓋、手腕的傷，請依醫師或物理治療師指示。"
+      },
+      {
+        "heading": "什麼時候可以回到原本運動？",
+        "text": "走路、慢跑、跳躍、變向都不痛、不腫、不覺得不穩，再逐步回到原本的運動。恢復時間因部位與傷勢而異，別只看天數就急著回場。"
+      },
+      {
+        "heading": "大概多久會好？",
+        "text": "一般而言，多數扭傷與拉傷約 2 週後會覺得好轉，但跑步等劇烈運動可能要避免到 8 週左右，嚴重者可能要幾個月才恢復正常。以腳踝為例，輕微踝扭傷通常幾週內恢復；完全消腫、感覺正常可能需數月。個別傷勢差異很大。"
+      },
+      {
+        "heading": "何時需要就醫評估？",
+        "text": "居家照護後，疼痛或腫脹沒有改善；症狀越來越嚴重；關節持續不穩、常常再扭到，或無法正常使用，應就醫評估。可諮詢骨科、復健科或物理治療師。"
+      }
+    ],
+    "altText": "扭傷後循序恢復活動四步驟，含腳踝平衡訓練、回場前自我檢查及就醫評估時機。",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "updatedAt": "2026-11-12",
+    "sourceCheckedAt": "2026-11-12",
+    "revisionCredit": "Codex 草稿、Claude 修訂",
+    "references": [
+      {
+        "title": "NHS — Sprains and strains（2024-04-23 複核）",
+        "url": "https://www.nhs.uk/conditions/sprains-and-strains/"
+      },
+      {
+        "title": "Cambridge University Hospitals — Discharge advice: Following attendance with ankle sprain（Version 4，2025-01-14）",
+        "url": "https://www.cuh.nhs.uk/patient-information/discharge-advice-following-attendance-with-ankle-sprain/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "扭傷當下怎麼處理？",
+        "url": "../cards/sports_sprain_2.html"
+      }
+    ]
   }
 ]

@@ -31,6 +31,7 @@ SITE_TITLE = "藥局衛教助手"
 
 
 PUBLIC_TOPIC_TITLES = {
+    "sports_injury": "運動傷害",
     "skin_wound": "皮膚與傷口",
     "acne": "痘痘／粉刺",
     "eyes": "眼睛",

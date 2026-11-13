@@ -13,6 +13,7 @@
   - public page: `public.html`
   - a non-empty `topics` array so the card appears in one or more public-page topic filters. Without `topics`, the card appears only in `全部圖卡`.
 - Use one or more of these public-card topic IDs in `topics`:
+  - `sports_injury`
   - `skin_wound`
   - `eyes`
   - `oral_health`

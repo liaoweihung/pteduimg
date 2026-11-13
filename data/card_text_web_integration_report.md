@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：296
+- 成功加入文字頁數：299
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -301,3 +301,6 @@
 | breastfeeding_minor_ailments | 哺乳期間睡不好，可以怎麼做？ | https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_insomnia.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | breastfeeding_minor_ailments | 哺乳期間乳房脹痛、塞奶怎麼辦？ | https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_engorgement.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | skin_glue_care | 傷口用了皮膚組織膠，回家怎麼照顧？ | https://liaoweihung.github.io/pteduimg/cards/skin_glue_care_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| sports_sprain | 運動時扭到關節，可能傷到哪裡？ | https://liaoweihung.github.io/pteduimg/cards/sports_sprain_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| sports_sprain | 扭傷當下，先停下來 | https://liaoweihung.github.io/pteduimg/cards/sports_sprain_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| sports_sprain | 扭傷後，怎麼恢復活動？ | https://liaoweihung.github.io/pteduimg/cards/sports_sprain_3.html | 是 | 是 | 是 | 是 | 是 | 無 |

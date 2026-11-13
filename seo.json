@@ -5837,5 +5837,44 @@
     "og_url": "https://liaoweihung.github.io/pteduimg/cards/skin_glue_care_1.html",
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/skin_glue_care_1.html",
     "twitter_card": "summary_large_image"
+  },
+  "cards/sports_sprain_1.html": {
+    "page_title": "運動時扭到關節，可能傷到哪裡？｜藥局衛教助手",
+    "meta_description": "扭傷是關節周圍的韌帶被過度拉扯或撕裂，常見於腳踝、膝蓋和手腕。局部疼痛、腫脹或瘀青可能出現；光看外觀或還能活動，無法排除骨折等較嚴重的傷。",
+    "h1": "運動時扭到關節，可能傷到哪裡？",
+    "image_alt": "運動扭傷常見部位：腳踝、膝蓋、手腕與拇指；說明扭傷和拉傷的差別，以及不能只靠外觀判斷傷勢。",
+    "keywords": "運動扭傷、腳踝扭傷、運動傷害、扭傷與拉傷差別",
+    "og_title": "運動時扭到關節，可能傷到哪裡？｜藥局衛教助手",
+    "og_description": "扭傷是關節周圍的韌帶被過度拉扯或撕裂，常見於腳踝、膝蓋和手腕。局部疼痛、腫脹或瘀青可能出現；光看外觀或還能活動，無法排除骨折等較嚴重的傷。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/sports_sprain_1.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/sports_sprain_1.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/sports_sprain_1.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/sports_sprain_2.html": {
+    "page_title": "扭傷當下，先停下來｜藥局衛教助手",
+    "meta_description": "扭傷當下先停止運動，依 PRICE 原則保護患部、休息、冷敷、視情況加壓並抬高。頭 2～3 天先別熱敷、按摩或喝酒；關節變形、麻木或皮膚變色等警訊應立即就醫。",
+    "h1": "扭傷當下，先停下來",
+    "image_alt": "扭傷當下處理四步驟：停止運動、冷敷、抬高、視情況用彈性繃帶，以及立即就醫與盡快就醫警訊。",
+    "keywords": "運動扭傷、扭傷急救、扭傷冰敷、扭傷何時就醫、急性處置",
+    "og_title": "扭傷當下，先停下來｜藥局衛教助手",
+    "og_description": "扭傷當下先停止運動，依 PRICE 原則保護患部、休息、冷敷、視情況加壓並抬高。頭 2～3 天先別熱敷、按摩或喝酒；關節變形、麻木或皮膚變色等警訊應立即就醫。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/sports_sprain_2.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/sports_sprain_2.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/sports_sprain_2.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/sports_sprain_3.html": {
+    "page_title": "扭傷後，怎麼恢復活動？｜藥局衛教助手",
+    "meta_description": "扭傷後在腫痛緩和、疼痛不明顯加重的範圍內循序恢復活動。腳踝扭傷可依醫療人員建議練活動度、肌力與平衡；未改善、惡化或反覆不穩應就醫評估。",
+    "h1": "扭傷後，怎麼恢復活動？",
+    "image_alt": "扭傷後循序恢復活動四步驟，含腳踝平衡訓練、回場前自我檢查及就醫評估時機。",
+    "keywords": "運動扭傷、扭傷後運動、恢復運動、腳踝扭傷",
+    "og_title": "扭傷後，怎麼恢復活動？｜藥局衛教助手",
+    "og_description": "扭傷後在腫痛緩和、疼痛不明顯加重的範圍內循序恢復活動。腳踝扭傷可依醫療人員建議練活動度、肌力與平衡；未改善、惡化或反覆不穩應就醫評估。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/sports_sprain_3.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/sports_sprain_3.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/sports_sprain_3.html",
+    "twitter_card": "summary_large_image"
   }
 }

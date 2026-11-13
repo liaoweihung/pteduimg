@@ -4057,5 +4057,38 @@
       "fall_wound"
     ],
     "showFooter": true
+  },
+  "sports_sprain": {
+    "title": "運動扭傷",
+    "category": "public_education",
+    "order": 37,
+    "hidden": false,
+    "icon": "🏃",
+    "topics": [
+      "sports_injury"
+    ],
+    "tags": [
+      "運動傷害",
+      "扭傷",
+      "急性處置",
+      "恢復運動",
+      "運動扭傷",
+      "腳踝扭傷",
+      "扭傷急救",
+      "扭傷冰敷",
+      "扭傷何時就醫",
+      "扭傷後運動"
+    ],
+    "texts": [
+      "運動時扭到關節，可能傷到哪裡？",
+      "扭傷當下，先停下來",
+      "扭傷後，怎麼恢復活動？"
+    ],
+    "steps": [
+      "img/sports_sprain_1.webp",
+      "img/sports_sprain_2.webp",
+      "img/sports_sprain_3.webp"
+    ],
+    "showFooter": true
   }
 }
