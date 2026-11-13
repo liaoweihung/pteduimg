@@ -28,7 +28,7 @@
 - **sw.js 版本退回（已修正）**：增量建置把 `coreUrlsToCache` 的 `./css/base.css?v=7`（CR-2026-084 手動升版）改回 `v=6`，因 `build.py` 寫死 `v=6`。經藥師同意並確認改法，`build.py` 新增 `_page_css_ref()`，建置時從 `index.html`（base、pharmacist）與 `public.html`（public）讀取實際引用的 CSS 版本，找不到即報錯。之後執行 `python build.py` 完整建置：`sw.js` 維持 `base.css?v=7`；`all-cards.html`、`seo.json`、兩份 sitemap、首頁與整合報告內容不變。
 - **完整建置附帶產物**：266 張既有圖卡頁唯一差異為返回導覽 `topicTitles` 補上 `"sports_injury": "運動傷害"`（CR-2026-083 新增分類時只做增量建置，舊頁未同步）；`cards/bzd_z_sleep_aids.html`（同屬睡眠主題）新增「失眠怎麼辦？睡眠與用藥入門」系列連結。以上為現行模板的技術輸出，未改任何衛教正文。
 - **建置後檢查**：`check_site.py` 通過；九頁 `--propose` 零差異；管理測試仍 16/18。全量管理錯誤 1157 → 1158，新增一項為 `skin_glue_care_1: machine field drift: source_sha256`（該頁 HTML 因上述 `topicTitles` 改變而雜湊漂移）。經藥師同意，依 `--propose --page skin_glue_care_1` 只合併該列 `source_sha256`、`rules_sha256`、`checked_at` 三個機械欄位，人工欄位未動；合併後該頁提案零差異，全量管理錯誤降為 1156，`check_site.py` 通過。
-- **系列縮圖功能（已確認保留）**：`index.html`、`public.html` 系列列表在系列有 `thumbnail` 時改顯示 48×64 縮圖、否則維持 icon；目前只有兩個失眠系列有設定。此為首頁行為變更，藥師 2026-11-13 確認保留，已補記於 CR-2026-086。
+- **系列縮圖功能與圖示調整（已確認保留）**：`index.html`、`public.html` 系列列表在系列有 `thumbnail` 時改顯示 48×64 縮圖、否則維持 icon。藥師 2026-11-13 指示：失眠兩系列（`insomnia_public`、`insomnia_medication`）首頁列表改顯示 emoji，不要縮圖。移除兩系列的 thumbnail 設定，`insomnia_medication` 的 icon 從 💊 改為 🌙，與 `insomnia_public` 一致。來源資料與 `cards.json` 保持一致，`index.html`／`public.html` 的縮圖程式保留、本系列不使用縮圖，兩系列 icon 統一為 🌙。重新建置後兩系列列表皆顯示 🌙，`check_site.py` 通過。
 - **版本核對**：九頁逐頁文字與 `insomnia_medication_education_v2.md` 第三部分一致（非 v1）：柔速瑞字號 061977（v1 為 025852）、靜安能字號 049273、500 勒克斯均在；達衛眠在圖與文字皆寫「非管制藥品」，與 v2 一致。v1、v2、九頁文字及圖卡均無「FM2／第三級」。
 - **圖卡目視附記**：card09 右側中段有一塊鮭紅色矩形，原始 `v1/失眠用藥_card09.png` 即有，非轉檔造成；card06、card07 Logo 底下的深藍／淡紫色塊待 Logo 目視驗收一併確認。
 - **來源待藥師決定**：

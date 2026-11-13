@@ -3954,7 +3954,6 @@
       "不靠藥物也能好好睡：CBT-I 與睡眠衛生",
       "失眠藥物有哪些？六大常見類型"
     ],
-    "thumbnail": "img/insomnia_card01_thumb.webp",
     "related_series": [
       "insomnia_medication"
     ],
@@ -3973,7 +3972,7 @@
     ],
     "order": 17.8,
     "hidden": false,
-    "icon": "💊",
+    "icon": "🌙",
     "tags": [
       "失眠",
       "失眠藥物",
@@ -3993,7 +3992,6 @@
       "具鎮靜作用之抗憂鬱劑：Trazodone 用藥重點",
       "第一代抗組織胺類：Diphenhydramine 與 Hydroxyzine"
     ],
-    "thumbnail": "img/insomnia_card04_thumb.webp",
     "related_series": [
       "insomnia_public"
     ],
