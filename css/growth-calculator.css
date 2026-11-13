@@ -25,9 +25,9 @@ body.growth-page header {
     padding-top: max(10px, env(safe-area-inset-top));
 }
 
-body.growth-page header .header-icon {
-    width: 32px;
+body.growth-page header .header-logo {
     height: 32px;
+    width: auto;
     flex: 0 0 auto;
 }
 

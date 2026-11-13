@@ -13,6 +13,7 @@ body .brand-header .header-icon {
     border-radius: 12px;
     background: #fff;
 }
+body .brand-header .header-logo { flex: 0 0 auto; height: 44px; }
 .brand-copy { min-width: 0; text-align: left; }
 body .brand-header .brand-name {
     display: block;
