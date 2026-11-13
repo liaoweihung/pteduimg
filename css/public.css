@@ -131,7 +131,7 @@ body.public-page .top-nav a.active {
 body.public-page { background: #f7fafb; color: #203b48; }
 body.public-page header { background: #fff; justify-content: flex-start; font-size: 1rem; padding: 12px 20px; }
 body.public-page header .header-logo,
-body.public-page .header-logo { height: 30px; width: auto; }
+body.public-page .header-logo { height: 38px; width: auto; }
 body.public-page .top-nav { margin: 0; padding: 4px 16px 10px; background: #fff; }
 #public-content { max-width: 760px; margin: auto; padding: 0 16px 24px; }
 body.public-page .card-search-wrap { padding: 0; margin: 24px 0 12px; }
