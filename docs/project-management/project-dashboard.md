@@ -4,6 +4,8 @@
 
 即時技術變更不再由本頁手抄。執行 `python -B scripts/project_change_tracker.py` 可直接查看已提交與未提交的網站變更；用 `--page`、`--series` 或 `--request` 篩選。這裡保留專案判斷、人工證據與下一步。
 
+2026-11-13 媽媽專屬主題頁 SEO/AEO 補強（CR-2026-082，延續 CR-2026-079）：topics/mom.html 加入 OG 分享標籤、BreadcrumbList 麵包屑結構化資料、常見問題底部更新日期與 FAQ 引用說明，更新 CollectionPage 之 dateModified (2026-11-13)。未改動衛教醫療內容。更新 sw.js CACHE_NAME；site_footer.py 本頁同步通過；check_site.py 通過。
+
 2026-11-12 新增「皮膚組織膠返家照護」衛教圖卡（CR-2026-080）：skin_glue_care 系列納入 public.html（皮膚與外傷照護，order 3.55），啟用 showFooter；圖卡加入深色單色透明 Logo（高 58px），靜態文字含 AEO 問答、雙日期、直接來源與藥師審閱，SEO 標題依草稿設定。建立與術後傷口、敷料、除疤等傷口主題互連。增量建置 1 頁與全域索引完成；check_site.py 通過；清冊提案零差異。詳見[定點證據](evidence/skin-glue-care-2026-11-12.md)。
 
 2026-11-12 新增「哺乳期間小毛病」九張衛教圖卡（CR-2026-076）：reastfeeding_minor_ailments 系列列入 public.html（懷孕與哺乳、嬰幼兒照護、胃腸相關），啟用 showFooter；圖卡加入深色單色透明 Logo，逐頁靜態文字含 AEO 問答、雙日期、直接來源與藥師審閱，SEO 標題依草稿設定。建立本系列與懷孕小毛病 8 頁一對一雙向互連與既有頁面互連。全域建置 9 頁與全域索引完成；check_site.py 通過；專案管理檢查通過。詳見[定點證據](evidence/breastfeeding-minor-ailments-2026-11-12.md)。
@@ -164,3 +166,5 @@ CR-2026-037：手機介面與機械統計接入 main 分支發布。workflow 自
 2026-11-12（CR-2026-078）：calc.html 與 6 個計算器加入共用頁尾（含有幫助／沒幫助按鈕），各頁原提醒文字保留；check_site 通過；手機實機未驗收。
 
 2026-11-12（CR-2026-079）：新增「媽媽專屬」主題頁 topics/mom.html 與首頁入口；圖卡從主題頁進入時返回鍵改為「回到媽媽專屬」（433 頁重建，僅返回鍵程式）；首頁收藏支援主題頁；兩個孕產計算器加返回按鈕。check_site 通過；使用者手機實機驗收通過。
+
+2026-11-13（CR-2026-082）：媽媽專屬主題頁 topics/mom.html SEO/AEO 補強（延續 CR-2026-079），加入 OG 標籤、BreadcrumbList 結構化資料、常見問題更新日期；未改動醫療內容；sw.js 更新 CACHE_NAME；site_footer.py 本頁同步通過；check_site 通過。
