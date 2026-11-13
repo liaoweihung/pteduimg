@@ -13408,5 +13408,370 @@
         "url": "../cards/sports_sprain_2.html"
       }
     ]
+  },
+  {
+    "cardId": "insomnia_public",
+    "image": "img/insomnia_card01.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card01.html",
+    "title": "睡不好就是失眠症嗎？醫學診斷與主觀感受",
+    "summary": "失眠症須考量入睡或維持睡眠困難、每週至少三晚且持續三個月以上，以及日間功能影響；短暫壓力、作息時相偏移或睡眠時數較短，需分別評估。",
+    "sections": [
+      {
+        "heading": "醫學定義「失眠症」（DSM-5 診斷標準）",
+        "text": "必須同時符合主觀症狀、頻率與功能影響： 睡眠困擾表現：難以入睡、難以維持睡眠（半夜頻繁醒來或醒後難再入睡），或清晨早醒且無法再睡。 時間標準：每週至少發生 3 晚，且持續 3 個月以上（台灣成人慢性失眠盛行率約 10.7%）。 必要前提：即使有充足的睡眠時間與合適環境仍睡不好，並已造成日間功能缺損（如疲倦、專注力下降、情緒不穩或影響工作學業）。 排除其他病因：需先排除睡眠呼吸中止症（如嚴重打鼾伴隨白天嗜睡）、日夜節律障礙、藥物／物質影響，或憂鬱症／焦慮症等共病（中山醫訊）。"
+      },
+      {
+        "heading": "「自己感覺失眠」的常見落差",
+        "text": " 短期急性壓力：偶發性 1～2 週睡不好，壓力解除後常可自行恢復。 作息時相偏移：總睡眠時數其實足夠，只是生理時鐘前移（例如長輩晚上 7 點就寢、凌晨 2 點醒來）或延後（睡前滑手機致凌晨才睡、早上起不來）。 睡眠迷思：過度執著「一定要睡滿 8 小時」，或雖睡 5～6 小時但白天精神良好，並無日間功能障礙。"
+      }
+    ],
+    "altText": "失眠與失眠藥物衛教圖卡第 1 張：睡不好就是失眠症嗎？醫學診斷與主觀感受",
+    "updatedAt": "2026-11-13",
+    "sourceCheckedAt": "2026-11-13",
+    "revisionCredit": "使用者提供並查核失眠藥物衛教文件；本站依文件整理圖卡與逐頁文字",
+    "references": [
+      {
+        "title": "中山醫學大學附設醫院中山醫訊：淺談睡眠疾患（2022-03）",
+        "url": "https://web.csh.org.tw/web/cshmagazine/?p=4654"
+      },
+      {
+        "title": "台灣成人慢性失眠盛行率約 10.7%",
+        "url": "https://wd.vghtpe.gov.tw/fm/files/11004%E6%A6%AE%E7%B8%BD%E4%BA%BA_%E9%A6%AC%E6%AC%A3%E9%86%AB%E5%B8%AB_%E5%A4%B1%E7%9C%A0%E7%9A%84%E9%9D%9E%E8%97%A5%E7%89%A9%E6%B2%BB%E7%99%82.pdf"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "insomnia_public",
+    "image": "img/insomnia_card02.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card02.html",
+    "title": "不靠藥物也能好好睡：CBT-I 與睡眠衛生",
+    "summary": "慢性失眠的非藥物處理包含失眠認知行為治療（CBT-I）、刺激控制、規律起床、限眠療法及睡前放鬆，應依個人情況調整。",
+    "sections": [
+      {
+        "heading": "重點",
+        "text": "國際睡眠醫學指引皆將失眠認知行為治療（CBT-I）列為慢性失眠的首選第一線療法，療效比安眠藥更持久（臺灣醫學會、Tendays 衛教）："
+      },
+      {
+        "heading": "刺激控制法（重建床與睡眠的連結）",
+        "text": " 床只能用來睡覺與親密行為，不在床上滑手機、看電視、工作或煩惱。 躺床超過 20 分鐘仍清醒，請起身到微暗安靜處做單調放鬆的活動，有睡意再回床；無論昨晚睡多久，每天固定時間起床（Tendays 衛教）。"
+      },
+      {
+        "heading": "限眠療法（濃縮睡眠驅力）",
+        "text": "依「睡眠日誌」計算實際睡眠時數，暫時縮短躺床總時間以提升睡眠效率，待穩定後再每週微幅增加 15～30 分鐘（建議由專業人員指導）（Tendays 衛教）。"
+      },
+      {
+        "heading": "生理時鐘與午睡管理",
+        "text": "早上起床後曬太陽 15 分鐘（室內光線通常不足 500 勒克斯（lux），戶外日光效果較佳），穩定褪黑激素節律；遵守午睡 33 法則（午睡不超過 30 分鐘、下午 3 點後不睡）（糖尿病關懷基金會）。"
+      },
+      {
+        "heading": "放鬆訓練與認知重建",
+        "text": "睡前 15～30 分鐘進行腹式呼吸、漸進式肌肉放鬆或正念冥想；練習打破「今晚睡不好明天就完了」的災難化思考，並避開睡前 3C 藍光、咖啡因、尼古丁與以酒助眠（糖尿病關懷基金會、中山醫訊）。"
+      }
+    ],
+    "altText": "失眠與失眠藥物衛教圖卡第 2 張：不靠藥物也能好好睡：CBT-I 與睡眠衛生",
+    "updatedAt": "2026-11-13",
+    "sourceCheckedAt": "2026-11-13",
+    "revisionCredit": "使用者提供並查核失眠藥物衛教文件；本站依文件整理圖卡與逐頁文字",
+    "references": [
+      {
+        "title": "臺灣醫學會",
+        "url": "https://www.fma.org.tw/2009/E-20-5.html"
+      },
+      {
+        "title": "Tendays 衛教",
+        "url": "https://www.tendays.com.tw/insomnia-cbti-sleep-environment"
+      },
+      {
+        "title": "糖尿病關懷基金會",
+        "url": "https://www.dmcare.org.tw/zh-hant/article/497"
+      },
+      {
+        "title": "中山醫學大學附設醫院中山醫訊：淺談睡眠疾患（2022-03）",
+        "url": "https://web.csh.org.tw/web/cshmagazine/?p=4654"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "insomnia_public",
+    "image": "img/insomnia_card03.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card03.html",
+    "title": "失眠藥物有哪些？六大常見類型",
+    "summary": "六類常見失眠相關藥物的作用機轉與管制分級不同；醫師會依失眠型態、共病、年齡及用藥風險選擇，切勿自行增減或停藥。",
+    "sections": [
+      {
+        "heading": "選藥邏輯",
+        "text": "醫師會依失眠型態（入睡困難、易醒／早醒）、是否合併焦慮／憂鬱／過敏、年齡與肝腎功能，選擇不同機轉與半衰期的藥物，並以最低有效劑量短期評估為原則（中山醫訊、使蒂諾斯仿單）。"
+      },
+      {
+        "heading": "管制分級差異",
+        "text": "BZDs 與 Non-BZDs 多屬第四級管制藥品，具依賴性與耐受性風險，須憑醫師處方領藥且不可任意停藥；褪黑激素受體促效劑、食慾素受體拮抗劑、抗憂鬱劑及抗組織胺則屬非管制藥品。"
+      },
+      {
+        "heading": "共同禁忌",
+        "text": "任何助眠藥物皆不可與酒精併用，服藥後應立即準備就寢，避免開車或操作危險機械。"
+      }
+    ],
+    "altText": "失眠與失眠藥物衛教圖卡第 3 張：失眠藥物有哪些？六大常見類型",
+    "updatedAt": "2026-11-13",
+    "sourceCheckedAt": "2026-11-13",
+    "revisionCredit": "使用者提供並查核失眠藥物衛教文件；本站依文件整理圖卡與逐頁文字",
+    "references": [
+      {
+        "title": "中山醫學大學附設醫院中山醫訊：淺談睡眠疾患（2022-03）",
+        "url": "https://web.csh.org.tw/web/cshmagazine/?p=4654"
+      },
+      {
+        "title": "高雄市立凱旋醫院藥品仿單查詢平台：使蒂諾斯膜衣錠 10 毫克（2024-06-20）",
+        "url": "https://ksph.kcg.gov.tw/7/dfiles_pdf/Stilnox.pdf"
+      },
+      {
+        "title": "高雄市立凱旋醫院藥品仿單查詢平台：悠樂丁錠 2 公絲（2025-12-01）",
+        "url": "https://ksph.kcg.gov.tw/7/dfiles_pdf/Eurodin.pdf"
+      },
+      {
+        "title": "高雄市立凱旋醫院藥品仿單查詢平台：達衛眠錠 5 毫克（2025-04-07）",
+        "url": "https://ksph.kcg.gov.tw/7/dfiles_pdf/Dayvigo.pdf"
+      },
+      {
+        "title": "耕莘醫院藥劑部：柔速瑞膜衣錠 8 毫克藥品資訊",
+        "url": "https://www.cth.org.tw/?aid=606&iid=682&page_name=detail&pid=40"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "insomnia_medication",
+    "image": "img/insomnia_card04.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card04.html",
+    "title": "苯二氮平類 BZDs：Estazolam 用藥重點",
+    "summary": "Estazolam 是苯二氮平類處方藥，可能造成隔日嗜睡與跌倒風險；避免酒精與相關交互作用，長期使用不可驟停。",
+    "sections": [
+      {
+        "heading": "代表藥品",
+        "text": "悠樂丁錠 2 公絲（衛署藥製字第012458號｜第四級管制藥品｜核准仿單 PDF）"
+      },
+      {
+        "heading": "藥動與作用",
+        "text": "口服後吸收迅速，服用 2 mg 約 0.5～1.6 小時達最高血中濃度，半衰期約 24 小時，屬於中效型 BZD，除助眠外也具抗焦慮與肌肉鬆弛作用（仿單資訊）。"
+      },
+      {
+        "heading": "衛教重點",
+        "text": " 因半衰期較長，隔天較可能出現殘餘嗜睡、頭暈或步態不穩，高齡者夜間起床須嚴防跌倒。 避免與葡萄柚／葡萄柚汁及酒精併用；呼吸機能極度低下者須防呼吸抑制風險（仿單資訊）。 孕婦不建議使用；重症肌無力患者及正在服用 ritonavir 者禁用；長期服用者應由醫師逐步減量，不可驟停（仿單資訊）。"
+      }
+    ],
+    "altText": "失眠與失眠藥物衛教圖卡第 4 張：苯二氮平類 BZDs：Estazolam 用藥重點",
+    "updatedAt": "2026-11-13",
+    "sourceCheckedAt": "2026-11-13",
+    "revisionCredit": "使用者提供並查核失眠藥物衛教文件；本站依文件整理圖卡與逐頁文字",
+    "references": [
+      {
+        "title": "高雄市立凱旋醫院藥品仿單查詢平台：悠樂丁錠 2 公絲（2025-12-01）",
+        "url": "https://ksph.kcg.gov.tw/7/dfiles_pdf/Eurodin.pdf"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "insomnia_medication",
+    "image": "img/insomnia_card05.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card05.html",
+    "title": "非苯二氮平類 Z-drugs：Zolpidem 用藥重點",
+    "summary": "Zolpidem 用於成人失眠症短期治療，須於臨睡前服用並預留睡眠時間；留意複雜性睡眠行為，不可與酒精併用。",
+    "sections": [
+      {
+        "heading": "代表藥品",
+        "text": "使蒂諾斯膜衣錠 10 毫克（衛署藥輸字第021531號｜第四級管制藥品｜核准仿單 PDF）"
+      },
+      {
+        "heading": "藥動與劑量",
+        "text": "血漿排除半衰期約 2.4 小時，起效極快；女性清除率較低，建議起始劑量女性為 5 mg、男性為 5～10 mg，老年人與肝功能不全者建議 5 mg，每日最高不超過 10 mg（仿單資訊）。"
+      },
+      {
+        "heading": "衛教重點",
+        "text": " 須於臨睡前或坐於床上服用，並確保有 7～8 小時不受干擾的睡眠；當晚不可重複補服，服藥後易產生順行性健忘（仿單資訊）。 若曾出現複雜性睡眠行為（夢遊、夢駕、半夜打電話或煮食卻毫無記憶），應立即停藥並回診，且後續禁用（仿單資訊）。 禁用於嚴重肝功能不全、急性／嚴重呼吸功能不全、睡眠呼吸暫止症候群及肌無力患者；連續治療逾 4 週者停藥須漸進減量以防反跳性失眠（仿單資訊）。"
+      }
+    ],
+    "altText": "失眠與失眠藥物衛教圖卡第 5 張：非苯二氮平類 Z-drugs：Zolpidem 用藥重點",
+    "updatedAt": "2026-11-13",
+    "sourceCheckedAt": "2026-11-13",
+    "revisionCredit": "使用者提供並查核失眠藥物衛教文件；本站依文件整理圖卡與逐頁文字",
+    "references": [
+      {
+        "title": "高雄市立凱旋醫院藥品仿單查詢平台：使蒂諾斯膜衣錠 10 毫克（2024-06-20）",
+        "url": "https://ksph.kcg.gov.tw/7/dfiles_pdf/Stilnox.pdf"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "insomnia_medication",
+    "image": "img/insomnia_card06.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card06.html",
+    "title": "褪黑激素受體促效劑：Ramelteon 用藥重點",
+    "summary": "Ramelteon 是褪黑激素受體促效劑，核准用於入睡困難型失眠；依醫囑於就寢前服用，留意高脂肪餐點與藥物交互作用。",
+    "sections": [
+      {
+        "heading": "代表藥品",
+        "text": "柔速瑞膜衣錠 8 毫克（Rozerem Tablets 8 mg｜衛部藥製字第061977號｜非管制藥品｜仿單請以食藥署許可證查詢系統輸入字號下載）"
+      },
+      {
+        "heading": "機轉與適應症",
+        "text": "選擇性作用於腦部褪黑激素受體，協助調整日夜節律，核准用於治療入睡困難型失眠；動物或人類長期使用後中止不會產生戒斷徵候，似乎不會造成生理依賴性（仿單）。"
+      },
+      {
+        "heading": "衛教重點",
+        "text": " 建議劑量為就寢前 30 分鐘內服用 4～8 mg，每天總劑量不超過 8 mg（仿單）。 不要伴隨高脂肪餐點，或在吃完高脂肪餐點後立即服用（仿單）。 不可與 fluvoxamine 併用（仿單）。 服藥後若出現血管水腫（舌頭、喉頭腫脹、呼吸困難），須立即就醫，且不可再服用本藥（仿單）。"
+      }
+    ],
+    "altText": "失眠與失眠藥物衛教圖卡第 6 張：褪黑激素受體促效劑：Ramelteon 用藥重點",
+    "updatedAt": "2026-11-13",
+    "sourceCheckedAt": "2026-11-13",
+    "revisionCredit": "使用者提供並查核失眠藥物衛教文件；本站依文件整理圖卡與逐頁文字",
+    "references": [
+      {
+        "title": "耕莘醫院藥劑部：柔速瑞膜衣錠 8 毫克藥品資訊",
+        "url": "https://www.cth.org.tw/?aid=606&iid=682&page_name=detail&pid=40"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "insomnia_medication",
+    "image": "img/insomnia_card07.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card07.html",
+    "title": "食慾素受體拮抗劑 DORAs：Lemborexant 用藥重點",
+    "summary": "Lemborexant 阻斷食慾素受體，用於失眠症；臨睡前使用並預留足夠睡眠時間，留意隔日嗜睡及高齡者跌倒風險。",
+    "sections": [
+      {
+        "heading": "代表藥品",
+        "text": "達衛眠錠 5 毫克（衛部藥輸字第028145號｜非管制藥品｜核准仿單 PDF）"
+      },
+      {
+        "heading": "機轉與適應症",
+        "text": "雙重阻斷促進清醒的神經勝肽受體（OX1R 與 OX2R），降低大腦「清醒驅力」，同時改善入睡困難與睡眠維持困難；屬非管制藥品，動物與臨床試驗中長期使用未見身體依賴或戒斷症狀，但有藥物或酒精濫用史者仍應由醫師密切追蹤（仿單資訊、臺中醫院衛教）。"
+      },
+      {
+        "heading": "衛教重點",
+        "text": " 成人建議起始劑量為 5 mg，每晚最多一次於臨睡前服用，宜預留 7 小時以上睡眠，最大建議劑量 10 mg；隨餐或餐後立即服藥會延遲入睡時間；猝睡症患者禁用（仿單資訊）。 常見副作用為隔日嗜睡與疲勞；65 歲以上長輩使用 10 mg 劑量嗜睡發生率較高（約 9.8%，5 mg 約 4.9%），高齡者使用超過 5 mg 須留意跌倒風險（仿單資訊）。"
+      }
+    ],
+    "altText": "失眠與失眠藥物衛教圖卡第 7 張：食慾素受體拮抗劑 DORAs：Lemborexant 用藥重點",
+    "updatedAt": "2026-11-13",
+    "sourceCheckedAt": "2026-11-13",
+    "revisionCredit": "使用者提供並查核失眠藥物衛教文件；本站依文件整理圖卡與逐頁文字",
+    "references": [
+      {
+        "title": "高雄市立凱旋醫院藥品仿單查詢平台：達衛眠錠 5 毫克（2025-04-07）",
+        "url": "https://ksph.kcg.gov.tw/7/dfiles_pdf/Dayvigo.pdf"
+      },
+      {
+        "title": "臺中醫院衛教",
+        "url": "https://www.taic.mohw.gov.tw/?aid=504&pid=88&page_name=detail&iid=4762"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "insomnia_medication",
+    "image": "img/insomnia_card08.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card08.html",
+    "title": "具鎮靜作用之抗憂鬱劑：Trazodone 用藥重點",
+    "summary": "Trazodone 核准用於抑鬱症，臨床上也可能利用其鎮靜特性輔助失眠；留意嗜睡、姿勢性低血壓及交互作用。",
+    "sections": [
+      {
+        "heading": "代表藥品",
+        "text": "美舒鬱錠 50 毫克（衛署藥製字第033664號｜非管制藥品｜核准仿單 PDF）"
+      },
+      {
+        "heading": "機轉與定位",
+        "text": "食藥署核准適應症為治療各種型態之抑鬱症（抗憂鬱劑量通常為每日 150～400 mg）；臨床上常以低劑量（25～100 mg）利用其阻斷 5-HT2A、H1 與 α1 受體的鎮靜效果輔助改善失眠（仿單資訊、李政洋身心診所）。"
+      },
+      {
+        "heading": "衛教重點",
+        "text": " 常見副作用包含鎮靜、疲勞、口乾、頭昏與姿勢性低血壓（合併降血壓藥物者須特別留意，半夜起身應先坐床邊再站起）（高雄市立凱旋醫院）。 嚴重肝功能障礙者禁用，不可與酒精或 MAO 抑制劑併用；若發生罕見的陰莖異常勃起超過 1 小時須立即就醫（高雄市立凱旋醫院）。"
+      }
+    ],
+    "altText": "失眠與失眠藥物衛教圖卡第 8 張：具鎮靜作用之抗憂鬱劑：Trazodone 用藥重點",
+    "updatedAt": "2026-11-13",
+    "sourceCheckedAt": "2026-11-13",
+    "revisionCredit": "使用者提供並查核失眠藥物衛教文件；本站依文件整理圖卡與逐頁文字",
+    "references": [
+      {
+        "title": "三軍總醫院藥品仿單：美舒鬱錠 50 毫克",
+        "url": "https://www1.ndmctsgh.edu.tw/pharm/pic/medinsert/005MES02.pdf"
+      },
+      {
+        "title": "李政洋身心診所",
+        "url": "https://www.leepsyclinic.com/p/trazodone.html"
+      },
+      {
+        "title": "高雄市立凱旋醫院",
+        "url": "https://ksph.kcg.gov.tw/7/dfiles/Mesyrel_50.htm"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "insomnia_medication",
+    "image": "img/insomnia_card09.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card09.html",
+    "title": "第一代抗組織胺類：Diphenhydramine 與 Hydroxyzine",
+    "summary": "第一代抗組織胺可能因嗜睡作用短期助眠，但有耐受性與抗膽鹼副作用；高齡者及特定疾病患者應先諮詢醫藥人員。",
+    "sections": [
+      {
+        "heading": "代表藥品 1（市售指示助眠藥）",
+        "text": "中美靜安能膠囊（成分 Diphenhydramine 50 mg｜衛署藥製字第049273號｜醫師藥師藥劑生指示藥品｜核准仿單 PDF）"
+      },
+      {
+        "heading": "代表藥品 2（院所常用處方藥）",
+        "text": "克胺寧錠 25 毫克（成分 Hydroxyzine｜衛署藥製字第039007號｜核准適應症：焦慮狀態、嘔吐、過敏疾患｜藥品資訊｜核准仿單 PDF）"
+      },
+      {
+        "heading": "機轉與定位",
+        "text": "第一代抗組織胺親脂性高，易穿越血腦障壁阻斷中樞 H1 受體產生明顯嗜睡副作用；雖非管制藥且成癮性低，但容易產生耐受性（連吃數天效果遞減）且鎮靜可能延續至白天，故僅適合短期過渡，不建議用於慢性失眠（亞東醫院藥學部、永信藥品衛教）。"
+      },
+      {
+        "heading": "衛教重點",
+        "text": " 具明顯抗膽鹼作用（口乾、視力模糊、便祕、排尿困難），12 歲以下、嚴重肝腎疾病、青光眼、前列腺肥大排尿困難、慢性支氣管炎／肺氣腫等患者使用前應先洽醫師；孕婦、65 歲以上、正在服用其他安眠藥或感冒藥者應先諮詢醫師或藥師（靜安能仿單、克胺寧藥品資訊）。 高齡者排除較慢、抗膽鹼副作用風險較高，易導致頭暈跌倒與意識混淆，Hydroxyzine 仿單不建議高齡者使用；Diphenhydramine 助眠指示藥若入睡困難連續 2 星期以上，應停藥就醫。 Hydroxyzine 懷孕期間禁用；曾有 QT 間期延長與心律不整個案，應以最低有效劑量、最短時間使用，出現心悸等心臟症狀應立即停藥就醫；痙攣風險較高者須小心使用（克胺寧仿單、靜安能仿單）。"
+      }
+    ],
+    "altText": "失眠與失眠藥物衛教圖卡第 9 張：第一代抗組織胺類：Diphenhydramine 與 Hydroxyzine",
+    "updatedAt": "2026-11-13",
+    "sourceCheckedAt": "2026-11-13",
+    "revisionCredit": "使用者提供並查核失眠藥物衛教文件；本站依文件整理圖卡與逐頁文字",
+    "references": [
+      {
+        "title": "中美製藥：靜安能膠囊仿單",
+        "url": "https://admin.chungmei.com.tw/storage/product/2SHT11-A0020.pdf"
+      },
+      {
+        "title": "藥品資訊",
+        "url": "https://www.mercy.org.tw/?aid=320&pid=64&page_name=detail&iid=2217"
+      },
+      {
+        "title": "三軍總醫院藥品仿單：克胺寧錠 25 毫克",
+        "url": "https://www1.ndmctsgh.edu.tw/pharm/Home/GetInsertCFile?id=005ARA05"
+      },
+      {
+        "title": "亞東醫院藥學部：正確使用助眠藥，睡眠障礙我不要",
+        "url": "https://www.e-pharm.info/tw/safety/72"
+      },
+      {
+        "title": "永信藥品衛教",
+        "url": "https://www.ysp.com.tw/tw/magazine/1195"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
   }
 ]

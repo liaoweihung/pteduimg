@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-vbcffc514e19d28766ba4ec92';
+const CACHE_NAME = 'pwa-cache-vf97c51db7a1a4daafa89aae8';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -306,6 +306,15 @@ const urlsToCache = [
   "./img/hydrocolloid_how_to_use.webp",
   "./img/ibuprofen_sol.webp",
   "./img/idofen_suspension.webp",
+  "./img/insomnia_card01.webp",
+  "./img/insomnia_card02.webp",
+  "./img/insomnia_card03.webp",
+  "./img/insomnia_card04.webp",
+  "./img/insomnia_card05.webp",
+  "./img/insomnia_card06.webp",
+  "./img/insomnia_card07.webp",
+  "./img/insomnia_card08.webp",
+  "./img/insomnia_card09.webp",
   "./img/japan_otc_drug_classification.webp",
   "./img/jin_huang_san.webp",
   "./img/jinchuang_ointment.webp",
@@ -929,6 +938,15 @@ const urlsToCache = [
   "./cards/sports_sprain_1.html",
   "./cards/sports_sprain_2.html",
   "./cards/sports_sprain_3.html",
+  "./cards/insomnia_card01.html",
+  "./cards/insomnia_card02.html",
+  "./cards/insomnia_card03.html",
+  "./cards/insomnia_card04.html",
+  "./cards/insomnia_card05.html",
+  "./cards/insomnia_card06.html",
+  "./cards/insomnia_card07.html",
+  "./cards/insomnia_card08.html",
+  "./cards/insomnia_card09.html",
   "./cards/acne.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare_2.html",

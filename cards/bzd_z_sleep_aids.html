@@ -100,7 +100,7 @@
           return;
         }
         var stateRaw = sessionStorage.getItem('pteduimgReturnState');
-        var topicTitles = {"skin_wound": "皮膚與傷口", "acne": "痘痘／粉刺", "eyes": "眼睛", "oral_health": "口腔", "throat": "喉嚨", "infectious_diseases": "傳染病", "heat_illness": "中暑", "insect_repellent": "防蚊液", "gastrointestinal": "胃腸相關", "elimination_care": "排泄與照護", "infant_care": "嬰幼兒照護", "growth": "成長", "chronic_conditions": "慢性病", "sleep": "睡眠", "pregnancy": "懷孕與哺乳", "travel_medication": "旅遊與用藥常識"};
+        var topicTitles = {"sports_injury": "運動傷害", "skin_wound": "皮膚與傷口", "acne": "痘痘／粉刺", "eyes": "眼睛", "oral_health": "口腔", "throat": "喉嚨", "infectious_diseases": "傳染病", "heat_illness": "中暑", "insect_repellent": "防蚊液", "gastrointestinal": "胃腸相關", "elimination_care": "排泄與照護", "infant_care": "嬰幼兒照護", "growth": "成長", "chronic_conditions": "慢性病", "sleep": "睡眠", "pregnancy": "懷孕與哺乳", "travel_medication": "旅遊與用藥常識"};
         if (stateRaw) {
           var state = JSON.parse(stateRaw);
           if (state && state.url && !state.hub) {
@@ -586,7 +586,9 @@
         <div class="section-title">接下來可以看</div>
         <div class="next-topic-group">
           <div class="next-topic-title">主題：睡眠</div>
-          
+          <ul class="next-series-list">
+            <li><a href="../cards/insomnia_card01.html">失眠怎麼辦？睡眠與用藥入門</a></li>
+          </ul>
           <div class="next-topic-return"><a href="../public.html?topic=sleep">‹ 回到『睡眠』主題</a></div>
         </div>
       </div>

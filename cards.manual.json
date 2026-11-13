@@ -3931,5 +3931,80 @@
       "img/sports_sprain_3.webp"
     ],
     "showFooter": true
+  },
+  "insomnia_public": {
+    "title": "失眠怎麼辦？睡眠與用藥入門",
+    "category": "public_education",
+    "topics": [
+      "sleep"
+    ],
+    "order": 10.1,
+    "hidden": false,
+    "icon": "🌙",
+    "tags": [
+      "失眠",
+      "失眠藥物",
+      "安眠藥",
+      "CBT-I",
+      "BZD",
+      "Z-drugs"
+    ],
+    "texts": [
+      "睡不好就是失眠症嗎？醫學診斷與主觀感受",
+      "不靠藥物也能好好睡：CBT-I 與睡眠衛生",
+      "失眠藥物有哪些？六大常見類型"
+    ],
+    "thumbnail": "img/insomnia_card01_thumb.webp",
+    "related_series": [
+      "insomnia_medication"
+    ],
+    "showFooter": true,
+    "steps": [
+      "img/insomnia_card01.webp",
+      "img/insomnia_card02.webp",
+      "img/insomnia_card03.webp"
+    ]
+  },
+  "insomnia_medication": {
+    "title": "失眠藥物六大類：代表產品與安全提醒",
+    "category": "pharmacist_product",
+    "departments": [
+      "pharmacy_general"
+    ],
+    "order": 17.8,
+    "hidden": false,
+    "icon": "💊",
+    "tags": [
+      "失眠",
+      "失眠藥物",
+      "安眠藥",
+      "BZD",
+      "Z-drugs",
+      "Ramelteon",
+      "Lemborexant",
+      "Trazodone",
+      "抗組織胺"
+    ],
+    "texts": [
+      "苯二氮平類 BZDs：Estazolam 用藥重點",
+      "非苯二氮平類 Z-drugs：Zolpidem 用藥重點",
+      "褪黑激素受體促效劑：Ramelteon 用藥重點",
+      "食慾素受體拮抗劑 DORAs：Lemborexant 用藥重點",
+      "具鎮靜作用之抗憂鬱劑：Trazodone 用藥重點",
+      "第一代抗組織胺類：Diphenhydramine 與 Hydroxyzine"
+    ],
+    "thumbnail": "img/insomnia_card04_thumb.webp",
+    "related_series": [
+      "insomnia_public"
+    ],
+    "showFooter": true,
+    "steps": [
+      "img/insomnia_card04.webp",
+      "img/insomnia_card05.webp",
+      "img/insomnia_card06.webp",
+      "img/insomnia_card07.webp",
+      "img/insomnia_card08.webp",
+      "img/insomnia_card09.webp"
+    ]
   }
 }

@@ -1,5 +1,16 @@
 [
   {
+    "request_id": "CR-2026-086",
+    "completed_at": "2026-11-13",
+    "request_type": "新增系列",
+    "series_id": "insomnia_public",
+    "series_title": "失眠怎麼辦？睡眠與用藥入門",
+    "card_count": 3,
+    "first_page_id": "insomnia_card01",
+    "first_step_index": 0,
+    "first_image": "img/insomnia_card01.webp"
+  },
+  {
     "request_id": "CR-2026-083",
     "completed_at": "2026-11-13",
     "request_type": "新增系列",

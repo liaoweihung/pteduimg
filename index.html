@@ -1002,7 +1002,9 @@
                                  data-category="${cat}"
                                  onclick="handleMainCardClick(event, '${key}')">
                                 <span class="drag-grip main-drag-grip">☰</span>
-                                <span class="icon">${item.icon || '📌'}</span>
+                                ${item.thumbnail
+                                    ? `<img class="icon" src="${item.thumbnail}" width="48" height="64" alt="" loading="lazy" style="width:48px;height:64px;object-fit:cover;border-radius:6px;flex-shrink:0;">`
+                                    : `<span class="icon">${item.icon || '📌'}</span>`}
                                 <div style="font-weight:bold; font-size:1.1rem;">${item.title}</div>
                             </div>`;
                     });

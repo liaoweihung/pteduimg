@@ -1654,6 +1654,15 @@ def build_card_text_integration_report(card_content_index):
     return success_count, failure_count
 
 
+def _page_css_ref(name, page="index.html"):
+    """Return the versioned CSS URL (e.g. ./css/base.css?v=7) the page actually links."""
+    text = (ROOT / page).read_text(encoding="utf-8")
+    match = re.search(rf'\./css/{re.escape(name)}\?v=\d+', text)
+    if not match:
+        raise RuntimeError(f"{page} 找不到 {name} 的版本參照")
+    return match.group(0)
+
+
 def update_service_worker(cards, generated_pages, retired_pages=(), source_root=None):
     sw_path = ROOT / "sw.js"
     if not sw_path.exists():
@@ -1736,9 +1745,9 @@ def update_service_worker(cards, generated_pages, retired_pages=(), source_root=
         "./cards.json",
         "./seo.json",
         "./qrious.min.js",
-        "./css/base.css?v=6",
-        "./css/pharmacist.css?v=2",
-        "./css/public.css?v=3",
+        _page_css_ref("base.css"),
+        _page_css_ref("pharmacist.css"),
+        _page_css_ref("public.css", "public.html"),
         "./icon.png",
     ]
     core_cache_array = ",\n  ".join(json.dumps(item, ensure_ascii=False) for item in core_cache_items)

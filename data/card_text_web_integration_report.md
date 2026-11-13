@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：299
+- 成功加入文字頁數：308
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -304,3 +304,12 @@
 | sports_sprain | 運動時扭到關節，可能傷到哪裡？ | https://liaoweihung.github.io/pteduimg/cards/sports_sprain_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | sports_sprain | 扭傷當下，先停下來 | https://liaoweihung.github.io/pteduimg/cards/sports_sprain_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | sports_sprain | 扭傷後，怎麼恢復活動？ | https://liaoweihung.github.io/pteduimg/cards/sports_sprain_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_public | 睡不好就是失眠症嗎？醫學診斷與主觀感受 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card01.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_public | 不靠藥物也能好好睡：CBT-I 與睡眠衛生 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card02.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_public | 失眠藥物有哪些？六大常見類型 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card03.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 苯二氮平類 BZDs：Estazolam 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card04.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 非苯二氮平類 Z-drugs：Zolpidem 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card05.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 褪黑激素受體促效劑：Ramelteon 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card06.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 食慾素受體拮抗劑 DORAs：Lemborexant 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card07.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 具鎮靜作用之抗憂鬱劑：Trazodone 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card08.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 第一代抗組織胺類：Diphenhydramine 與 Hydroxyzine | https://liaoweihung.github.io/pteduimg/cards/insomnia_card09.html | 是 | 是 | 是 | 是 | 是 | 無 |

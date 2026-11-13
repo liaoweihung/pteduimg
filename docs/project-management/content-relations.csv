@@ -525,3 +525,14 @@ REL-f822edae6a2d4799,series:skin_glue_care,has_card,page:skin_glue_care_1,source
 REL-70f67f86731c407b,series:sports_sprain,has_card,page:sports_sprain_1,source_observed,series_membership,cards.json,CR-2026-083；新系列第 1 張
 REL-d3eb289a24329689,series:sports_sprain,has_card,page:sports_sprain_2,source_observed,series_membership,cards.json,CR-2026-083；新系列第 2 張
 REL-3b9eba2c5530f6a7,series:sports_sprain,has_card,page:sports_sprain_3,source_observed,series_membership,cards.json,CR-2026-083；新系列第 3 張
+REL-78cf0c3049e72362,series:insomnia_public,has_card,page:insomnia_card01,source_observed,series_membership,cards.json,本次新增圖卡系列成員
+REL-baefe30b6d52bcf4,series:insomnia_public,has_card,page:insomnia_card02,source_observed,series_membership,cards.json,本次新增圖卡系列成員
+REL-782bfbd797ea88ee,series:insomnia_public,has_card,page:insomnia_card03,source_observed,series_membership,cards.json,本次新增圖卡系列成員
+REL-fa346d54bf3d13b7,series:insomnia_medication,has_card,page:insomnia_card04,source_observed,series_membership,cards.json,本次新增圖卡系列成員
+REL-1ff7a300ef4cdadd,series:insomnia_medication,has_card,page:insomnia_card05,source_observed,series_membership,cards.json,本次新增圖卡系列成員
+REL-c60302db4df9dbc6,series:insomnia_medication,has_card,page:insomnia_card06,source_observed,series_membership,cards.json,本次新增圖卡系列成員
+REL-f89e3f20639b7431,series:insomnia_medication,has_card,page:insomnia_card07,source_observed,series_membership,cards.json,本次新增圖卡系列成員
+REL-92e3fba24a8e460a,series:insomnia_medication,has_card,page:insomnia_card08,source_observed,series_membership,cards.json,本次新增圖卡系列成員
+REL-818c91df757fec59,series:insomnia_medication,has_card,page:insomnia_card09,source_observed,series_membership,cards.json,本次新增圖卡系列成員
+REL-291bf5a9dc92531a,page:insomnia_card01,further_reading,page:insomnia_card04,source_observed,management,cards/insomnia_card01.html,民眾與藥師失眠系列雙向延伸閱讀
+REL-3646d62fe45d8037,page:insomnia_card04,further_reading,page:insomnia_card01,source_observed,management,cards/insomnia_card04.html,藥師與民眾失眠系列雙向延伸閱讀

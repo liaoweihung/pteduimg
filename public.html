@@ -1111,7 +1111,9 @@ body.public-page .site-footer { font-size: .95rem; }
                     const links = steps.map((step, index) => `<a href="${getCardPagePath(step)}">${index + 1}. ${escapeCardText(getStepTitle(item, index))}</a>`).join('');
                     return `<article class="series-card">
                         <a class="series-link" href="${getCardPagePath(steps[0])}">
-                            <span class="series-icon" aria-hidden="true">${item.icon || '📌'}</span>
+                            ${item.thumbnail
+                                ? `<img class="series-icon" src="${item.thumbnail}" width="48" height="64" alt="" loading="lazy" style="width:48px;height:64px;object-fit:cover;border-radius:6px;">`
+                                : `<span class="series-icon" aria-hidden="true">${item.icon || '📌'}</span>`}
                             <span><strong>${escapeCardText(item.title)}</strong><small>${steps.length} 張圖卡</small></span>
                             <span class="series-arrow" aria-hidden="true">›</span>
                         </a>
