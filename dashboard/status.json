@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-13T12:56:40+08:00",
-  "baseline": "b520f233d58bc57a552a6aa6b67ee6b47e80c6b7",
-  "scope": "網站來源快照；版本 b520f233",
+  "generatedAt": "2026-11-14T01:48:27+08:00",
+  "baseline": "bc3ece808b4853618e70fcca31d4e8ffc704e53f",
+  "scope": "網站來源快照；版本 bc3ece80",
   "counts": {
     "cards": 442,
     "series": 97,
@@ -3773,7 +3773,7 @@
   },
   "sync": {
     "pages": 446,
-    "fields": 1101,
+    "fields": 1110,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -5631,54 +5631,63 @@
       {
         "page": "insomnia_card01",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card02",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card03",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card04",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card05",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card06",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card07",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card08",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card09",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
