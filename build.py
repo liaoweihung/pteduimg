@@ -636,7 +636,10 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     description = seo["meta_description"]
     keywords = clean_seo_text(seo.get("keywords") or "")
     h1 = clean_seo_text(seo.get("display_title") or (card_content or {}).get("title") or card.get("title") or seo["h1"])
-    if card_id == "enema_use" and card_content:
+    manual_card = manual_cards.get(card_id) or {}
+    # Series opt-in: H1 uses the per-page card_content title instead of the SEO display_title.
+    title_from_card_text = card.get("title_from_card_text", manual_card.get("title_from_card_text"))
+    if title_from_card_text is True and card_content:
         h1 = clean_seo_text(card_content["title"])
     image_alt = seo["image_alt"]
     page_path = page_for_image(step)
@@ -818,7 +821,11 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     }
     .card-text-body section p { margin:0; }
 """
-    if card_id == "child_height_weight":
+    # Series opt-in: "tool_link": {"title", "url"} shows a tool button beside the H1; url is relative to cards/.
+    tool_link = card.get("tool_link") or manual_card.get("tool_link") or {}
+    tool_link_title = str(tool_link.get("title") or "").strip() if isinstance(tool_link, dict) else ""
+    tool_link_url = str(tool_link.get("url") or "").strip() if isinstance(tool_link, dict) else ""
+    if tool_link_title and tool_link_url:
         calculator_styles = """    .info-header {
       display:flex;
       align-items:flex-start;
@@ -855,7 +862,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
       background:rgba(0,123,131,.06);
     }
 """
-        calculator_link = '<a class="calculator-link" href="../growth-calculator.html">直接計算</a>'
+        calculator_link = f'<a class="calculator-link" href="{esc(tool_link_url)}">{esc(tool_link_title)}</a>'
         if card_content:
             info_heading = render_card_text_content(
                 card_content, h1, category_label, step_number, total, header_link=calculator_link

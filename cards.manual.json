@@ -365,6 +365,10 @@
     "title": "小孩身高體重",
     "category": "public_education",
     "showFooter": true,
+    "tool_link": {
+      "title": "直接計算",
+      "url": "../growth-calculator.html"
+    },
     "topics": [
       "growth"
     ],
@@ -1614,6 +1618,7 @@
     ],
     "order": 81,
     "hidden": false,
+    "title_from_card_text": true,
     "icon": "🚽",
     "tags": [
       "浣腸",
