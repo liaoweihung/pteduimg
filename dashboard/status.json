@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-13T11:47:06+08:00",
-  "baseline": "ddc19f3dcd507a8b8e5d69fe0eb53753196f1144",
-  "scope": "網站來源快照；版本 ddc19f3d",
+  "generatedAt": "2026-11-13T12:56:40+08:00",
+  "baseline": "b520f233d58bc57a552a6aa6b67ee6b47e80c6b7",
+  "scope": "網站來源快照；版本 b520f233",
   "counts": {
-    "cards": 433,
-    "series": 95,
-    "allSeries": 99,
+    "cards": 442,
+    "series": 97,
+    "allSeries": 101,
     "hidden": 4,
     "retired": 4,
     "areas": 17,
@@ -25,7 +25,7 @@
     "elimination_care": 4,
     "heat_illness": 1,
     "throat": 1,
-    "sleep": 1,
+    "sleep": 2,
     "travel_medication": 3,
     "pregnancy": 3,
     "infant_care": 3,
@@ -1029,6 +1029,26 @@
         "sports_injury"
       ],
       "departments": []
+    },
+    {
+      "id": "insomnia_public",
+      "title": "失眠怎麼辦？睡眠與用藥入門",
+      "count": 3,
+      "hidden": false,
+      "areas": [
+        "sleep"
+      ],
+      "departments": []
+    },
+    {
+      "id": "insomnia_medication",
+      "title": "失眠藥物六大類：代表產品與安全提醒",
+      "count": 6,
+      "hidden": false,
+      "areas": [],
+      "departments": [
+        "pharmacy_general"
+      ]
     }
   ],
   "issues": [
@@ -3730,30 +3750,30 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 298,
+      "machine_pass": 307,
       "partial": 1,
       "missing": 134
     },
     "reference_status": {
       "missing": 219,
-      "machine_pass": 214
+      "machine_pass": 223
     },
     "date_status": {
       "missing": 219,
-      "machine_pass": 193,
+      "machine_pass": 202,
       "partial": 21
     },
     "footer_status": {
       "missing": 239,
-      "machine_pass": 194
+      "machine_pass": 203
     },
     "jsonld_status": {
-      "machine_pass": 433
+      "machine_pass": 442
     }
   },
   "sync": {
-    "pages": 437,
-    "fields": 1092,
+    "pages": 446,
+    "fields": 1101,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -5605,6 +5625,60 @@
         "page": "idofen_suspension",
         "fields": [
           "source_sha256",
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insomnia_card01",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insomnia_card02",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insomnia_card03",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insomnia_card04",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insomnia_card05",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insomnia_card06",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insomnia_card07",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insomnia_card08",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insomnia_card09",
+        "fields": [
           "rules_sha256"
         ]
       },
