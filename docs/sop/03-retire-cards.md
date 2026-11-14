@@ -18,9 +18,11 @@
 > 指令以 PowerShell 為例。用 bash 執行時：`> $null` 改成 `> /dev/null`，`| Select-String "…"` 改成 `| grep "…"`。
 ```powershell
 git status --short
+python -c "import os;os.makedirs('outputs',exist_ok=True)"
 python -B scripts/check_project_management.py --summary --report-file outputs/mgmt-before.json > $null
+python -c "import json;json.load(open('outputs/mgmt-before.json',encoding='utf-8'));print('BASELINE OK')"
 ```
-記下已存在的改動，本次不碰。第二個指令會因為網站原有的管理錯誤回報失敗，這是正常的：它只是存下「改之前」的狀態，檢查時用來比對。
+記下已存在的改動，本次不碰。存基準的指令會因為網站原有的管理錯誤回報失敗，這是正常的；但最後一行必須印出 `BASELINE OK`，沒有就代表基準沒存到，停下來回報，不要開始修改。這份基準是「改之前」的狀態，檢查時用來比對。
 
 ### 2. 登記 CR
 先查有沒有已涵蓋本次工作、尚未完成的 CR：`git grep -n "<系列ID>" docs/project-management/change-requests.csv`。有就沿用並補上受影響的 ID；沒有才在 `docs/project-management/change-requests.csv` 末尾新增一列，編號接續最後一筆：
@@ -42,7 +44,7 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 favorite_keys：["x-0", "x-2"]
 ```
 
-系列已經有 `favorite_keys` 時，刪掉被淘汰那張的編號即可（清單長度必須等於 `steps`）。淘汰的是系列最後一張、且系列沒有 `favorite_keys` 時，不用處理。
+系列已經有 `favorite_keys` 時，刪掉被淘汰那張的編號即可（清單長度必須等於 `steps`）。淘汰的是系列最後一張、且系列沒有 `favorite_keys` 時，不用處理：日後在這個系列加新卡時，作業卡 2 規定新卡用「系列ID-頁ID」當編號，不會重用被淘汰卡的編號。
 
 ### 5. 登記淘汰紀錄
 在 `cards.retired.json` 每淘汰一頁新增一筆，格式照檔案內現有紀錄：
@@ -83,7 +85,7 @@ git grep -n "<系列ID>" -- cards.json cards.manual.json
 ### 7. 標記 CR 完成（必須在建置前）
 `status` 改為 `completed`，`completed_at` 填今天，`validation_result` 先填「建置與檢查進行中」（不可留 `unknown`，否則管理檢查會報錯；檢查步驟會改成實際結果）。
 
-之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。
+之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。若已經執行過建置，改回後再執行一次完整建置 `python -B build.py`，讓首頁「最近新增」移除這筆。
 
 ### 8. 完整建置
 ```powershell

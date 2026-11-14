@@ -6,7 +6,7 @@
 - 複核了哪些頁（頁 ID）
 - 複核者（要記錄的名稱）
 - 複核日期
-- 複核依據（例如複核紀錄文件的名稱或位置）
+- 複核依據（例如複核紀錄文件的名稱或位置），以及**複核的是哪個版本**（素材定稿的檔名或日期）
 - （選填）頁面上要不要顯示「審閱狀態」。沒提到就照預設：不顯示，不必為此停下來問。
 
 ## 步驟
@@ -15,9 +15,11 @@
 > 指令以 PowerShell 為例。用 bash 執行時：`> $null` 改成 `> /dev/null`，`| Select-String "…"` 改成 `| grep "…"`。
 ```powershell
 git status --short
+python -c "import os;os.makedirs('outputs',exist_ok=True)"
 python -B scripts/check_project_management.py --summary --report-file outputs/mgmt-before.json > $null
+python -c "import json;json.load(open('outputs/mgmt-before.json',encoding='utf-8'));print('BASELINE OK')"
 ```
-記下已存在的改動，本次不碰。第二個指令會因為網站原有的管理錯誤回報失敗，這是正常的。
+記下已存在的改動，本次不碰。存基準的指令會因為網站原有的管理錯誤回報失敗，這是正常的；但最後一行必須印出 `BASELINE OK`，沒有就代表基準沒存到，停下來回報，不要開始修改。
 
 ### 2. 登記 CR
 先查有沒有已涵蓋本次工作、尚未完成的 CR：`git grep -n "<系列ID>" docs/project-management/change-requests.csv`。有就沿用；沒有才在末尾新增一列，編號接續最後一筆：`request_type` 填 `修改既有圖卡`，名稱寫「登記藥師複核：<系列或頁>」，`related_ids` 列出系列與每一個複核的頁；`status` 填 `in_progress`、`approval` 填 `approved`；`git_commit` 填 `same_commit`；`completed_at`、`validation_result` 先填 `unknown`；`evidence` 填第 3 步的 evidence 檔路徑。
@@ -25,7 +27,18 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 ### 3. 建立 evidence 檔
 在 `docs/project-management/evidence/` 建立一份（檔名 `<CR編號>-review-<系列ID>.md`），10 行以內：複核的頁、複核者、日期、複核依據，以及藥師的原話（如「已複核通過」）。
 
-### 4. 更新逐頁文字
+### 4. 確認複核的是目前網站上的版本
+藥師複核的版本，必須就是現在網站上的版本，才能登記。對每一頁檢查：
+```powershell
+git log --oneline --since=<複核日期> -- img/<頁ID>.webp
+```
+- 有輸出：複核日期之後圖片被換過。
+- `data/card_content.json` 該頁的 `updatedAt` 或 `imageUpdatedAt` 晚於複核日期：複核之後內容或圖片改過。
+- 該頁的 evidence 或 CR 紀錄顯示，複核日期之後還有其他修改。
+
+任一項成立，就**不登記這一頁**，回報藥師：「複核的是舊版本，目前版本需要重新複核」。只登記確認版本相符的頁。
+
+### 4-1. 更新逐頁文字
 在 `data/card_content.json` 用搜尋找到每一頁的紀錄：
 - `needsMedicalReview` 改為 `false`。
 - 藥師要在頁面顯示審閱狀態時，才加上 `"reviewStatus": "藥師提供的文字"`。選擇不顯示（或沒提到）時，該頁若已有舊的 `reviewStatus`，一併移除。
@@ -35,7 +48,7 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 ### 5. 標記 CR 完成（必須在建置前）
 `status` 改為 `completed`，`completed_at` 填今天，`validation_result` 先填「建置與檢查進行中」（不可留 `unknown`，否則管理檢查會報錯；檢查步驟會改成實際結果）。
 
-之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。
+之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。若已經執行過建置，改回後再執行一次完整建置 `python -B build.py`，讓首頁「最近新增」移除這筆。
 
 ### 6. 建置
 ```powershell

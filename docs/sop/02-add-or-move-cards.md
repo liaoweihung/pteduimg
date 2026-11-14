@@ -19,13 +19,15 @@
 > 指令以 PowerShell 為例。用 bash 執行時：`> $null` 改成 `> /dev/null`，`| Select-String "…"` 改成 `| grep "…"`。
 ```powershell
 git status --short
+python -c "import os;os.makedirs('outputs',exist_ok=True)"
 python -B scripts/check_project_management.py --summary --report-file outputs/mgmt-before.json > $null
+python -c "import json;json.load(open('outputs/mgmt-before.json',encoding='utf-8'));print('BASELINE OK')"
 ```
-記下已存在的改動，本次不碰。第二個指令會因為網站原有的管理錯誤回報失敗，這是正常的：它只是存下「改之前」的狀態，檢查時用來比對。
+記下已存在的改動，本次不碰。存基準的指令會因為網站原有的管理錯誤回報失敗，這是正常的；但最後一行必須印出 `BASELINE OK`，沒有就代表基準沒存到，停下來回報，不要開始修改。這份基準是「改之前」的狀態，檢查時用來比對。
 
 ### 2. 登記 CR
 先查有沒有已涵蓋本次工作、尚未完成的 CR：`git grep -n "<系列ID>" docs/project-management/change-requests.csv`。有就沿用並補上受影響的 ID；沒有才在 `docs/project-management/change-requests.csv` 末尾新增一列，編號接續最後一筆：
-`request_type`：**插入新卡**填 `系列追加圖卡`；調整順序、搬移、共用、拆分、合併都沒有新增圖卡，填 `修改既有圖卡`（拆分或合併出來的新系列也不要填 `新增系列`，否則會被當成新內容出現在首頁「最近新增」）；`related_ids` 列出所有受影響的系列與頁（`series:<ID>|page:<ID>|…`）；`status` 填 `in_progress`、`approval` 填 `approved`；`git_commit` 填 `same_commit`（本次變更會和 CR 一起提交；先填好，變更追蹤檢查才會通過）；`completed_at`、`validation_result` 先填 `unknown`；`evidence` 填下面建立的 evidence 檔路徑。
+`request_type`：**插入新卡**填 `系列追加圖卡`；調整順序、搬移、共用、拆分、合併都沒有新增圖卡，填 `修改既有圖卡`（拆分或合併出來的新系列也不要填 `新增系列`，否則會被當成新內容出現在首頁「最近新增」）；`related_ids`：**插入新卡**時只列該系列與**新卡**的頁（其他順序有變的舊頁不要列，否則首頁「最近新增」和清冊會把它們算成新卡）；其他情況列出所有受影響的系列與頁（`series:<ID>|page:<ID>|…`）；`status` 填 `in_progress`、`approval` 填 `approved`；`git_commit` 填 `same_commit`（本次變更會和 CR 一起提交；先填好，變更追蹤檢查才會通過）；`completed_at`、`validation_result` 先填 `unknown`；`evidence` 填下面建立的 evidence 檔路徑。
 
 同時建立 evidence 檔 `docs/project-management/evidence/<CR編號>-<系列ID>.md`（沿用既有 CR 時，更新該 CR 原本的 evidence 檔，不另建），10 行以內：本次範圍、素材來源（有新素材時：圖片檔名、對應文字的版本或日期、藥師定稿確認）。檢查完成後再補上結果。其餘欄位照前一筆同類 CR 的寫法。
 
@@ -52,22 +54,22 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 
 ### 5. 保護收藏編號
 
-**插在系列最後面**（包括把共用卡加到目標系列最後面）：系列沒有 `favorite_keys` 就不用處理；**系列已有 `favorite_keys` 時**，要在清單最後補一個該系列沒用過的新編號，清單長度必須等於 `steps`，否則建置會拒絕。
+網站用 `favorite_keys` 記住民眾收藏了哪張卡。系列沒有 `favorite_keys` 時，預設編號是「系列ID-順序」，例如 `demo-2`。**原則：一個編號只要曾經給過某張卡，就不能再給另一張卡**，否則舊收藏會打開別的衛教卡（例如淘汰了第 3 張，日後又在第 3 個位置加新卡，`demo-2` 就會指到新卡）。
 
-**其他情況**（插在中間、調整順序、搬移、拆分、合併）：
-網站用「系列ID-順序」記住民眾收藏了哪張卡，例如 `fall_wound-2`。插在中間、調整順序或搬走一張，後面的順序都會變，原本收藏的人點開會看到另一張卡。
-
-處理方式：在受影響的系列設定 `favorite_keys`，跟 `steps` 一一對應。**舊卡保留原本的編號**，新卡給一個該系列沒用過的編號。
+**任何一張卡新加入既有系列**（插在尾端或中間的新卡，以及共用卡加入的目標系列；搬入的卡不算，見下方）：
+1. 系列還沒有 `favorite_keys` 就先建立：照目前順序填預設編號 `["<系列ID>-0", "<系列ID>-1", …]`，舊卡編號不變。
+2. 新卡的編號用 `"<系列ID>-<新卡頁ID>"`，例如 `"insomnia_public-insomnia_card10"`。頁 ID 永不重複使用，所以這個編號不會跟過去任何卡撞到。
+3. 清單長度必須等於 `steps`，否則建置會拒絕。
 
 ```
-原本 steps：[A, B, C]，對應編號 [x-0, x-1, x-2]
+原本 steps：[A, B, C]，沒有 favorite_keys（預設 x-0, x-1, x-2）
 在 A 後插入 N：steps [A, N, B, C]
-favorite_keys：["x-0", "x-3", "x-1", "x-2"]
+favorite_keys：["x-0", "x-N頁ID", "x-1", "x-2"]
 ```
 
-系列已經有 `favorite_keys` 時，照同樣原則調整。搬移時，原系列和目標系列都要處理。
+**調整順序、搬移、拆分、合併**：舊卡一律**沿用原本的編號**，跟著卡走，即使編號前綴是舊系列名稱也沒關係（例如傷口系列拆分時，疤痕系列的卡仍使用 `fall_wound-2`）。原系列和目標系列都要處理。
 
-**卡換到別的系列時，沿用它原本的編號**，即使編號前綴是舊系列名稱也沒關係。例如傷口系列拆分時，疤痕系列的卡仍使用 `fall_wound-2`。這樣民眾原本的收藏才不會失效。所有系列的編號合起來不可重複。
+所有系列的編號合起來不可重複。
 
 ### 6. 搬移或共用時：更新關聯
 在 `content-relations.csv`：
@@ -80,7 +82,7 @@ favorite_keys：["x-0", "x-3", "x-1", "x-2"]
 ### 7. 標記 CR 完成（必須在建置前）
 `status` 改為 `completed`，`completed_at` 填今天，`validation_result` 先填「建置與檢查進行中」（不可留 `unknown`，否則管理檢查會報錯；檢查步驟會改成實際結果）。
 
-之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。
+之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。若已經執行過建置，改回後再執行一次完整建置 `python -B build.py`，讓首頁「最近新增」移除這筆。
 
 ### 8. 建置
 - **只是插在系列最後面**：`python -B build.py --incremental <新頁ID>`

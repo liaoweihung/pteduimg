@@ -26,10 +26,12 @@
 > 指令以 PowerShell 為例。用 bash 執行時：`> $null` 改成 `> /dev/null`，`| Select-String "…"` 改成 `| grep "…"`。
 ```powershell
 git status --short
+python -c "import os;os.makedirs('outputs',exist_ok=True)"
 python -B scripts/check_project_management.py --summary --report-file outputs/mgmt-before.json > $null
+python -c "import json;json.load(open('outputs/mgmt-before.json',encoding='utf-8'));print('BASELINE OK')"
 ```
 
-記下已存在的改動，本次不碰、不提交。第二個指令會因為網站原有的管理錯誤回報失敗，這是正常的：它只是存下「改之前」的狀態，第 9 步用來比對。
+記下已存在的改動，本次不碰、不提交。存基準的指令會因為網站原有的管理錯誤回報失敗，這是正常的；但最後一行必須印出 `BASELINE OK`，沒有就代表基準沒存到，停下來回報，不要開始修改。這份基準是「改之前」的狀態，第 9 步用來比對。
 
 ## 2. 登記需求單（CR）
 
@@ -41,7 +43,7 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 | proposed_at | 今天 |
 | name／description | 一句話說明新增什麼系列、幾張 |
 | request_type | `新增系列` |
-| scope、related_ids | `series:<系列ID>\|page:<頁ID>\|…`，列出系列與每一頁 |
+| scope、related_ids | `series:<系列ID>\|page:<頁ID>\|…`，**只列新系列與它的新頁**。同時被修改的既有系列（例如互設 `related_series`）不要列進來，否則首頁「最近新增」會把它們算成新卡；它們會在第 9 步的清冊合併中處理 |
 | priority／status／approval | `P1`／`in_progress`／`approved` |
 | needs_pharmacist／author_permission／commercial_disclosure | `yes`／`unknown`／`unknown`（藥師確認沒有商業關係才填 `no`） |
 | completed_at／validation_result | `unknown`（第 6、9 步再填） |
@@ -124,7 +126,7 @@ def convert(src, dst, color=None):  # color 可指定 "black" 或 "white"，預�
 
 把該 CR 的 `status` 改成 `completed`，`completed_at` 填今天，`validation_result` 先填「建置與檢查進行中」（不可留 `unknown`，否則管理檢查會報錯；檢查步驟會改成實際結果）。順序不能顛倒，否則首頁「最近新增」不會出現本系列。
 
-之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。
+之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。若已經執行過建置，改回後再執行一次完整建置 `python -B build.py`，讓首頁「最近新增」移除這筆。
 
 ## 7. 建置
 
