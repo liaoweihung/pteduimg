@@ -21,9 +21,12 @@ def read_retired_cards(root, cards):
         if page != 'cards/' + Path(image).stem + '.html' or page in seen or page in active:
             raise ValueError(f'Duplicate or active retired URL: {page}')
         datetime.date.fromisoformat(item['retired_at'])
-        if not item['title'] or not item['reason'] or not item['replacements']:
+        if not item['title'] or not item['reason']:
             raise ValueError(f'Incomplete retired record: {page}')
-        if any(link['page'] not in active for link in item['replacements']):
+        # replacements may be omitted or empty; any listed link must point to an active card.
+        if 'replacements' in item and not isinstance(item['replacements'], list):
+            raise ValueError(f'Retired replacements must be a list: {page}')
+        if any(link['page'] not in active for link in replacements_of(item)):
             raise ValueError(f'Retired page has missing replacement: {page}')
         seen.add(page)
     return records
@@ -58,10 +61,14 @@ def document(title, description, page, content, base_url, prefix='', noindex=Fal
 '''
 
 
+def replacements_of(record):
+    return record.get('replacements') or []
+
+
 def replacement_list(record, prefix=''):
     return '<ul class="replacement-list">' + ''.join(
         f'<li><a href="{prefix}{esc(link["page"])}">{esc(link["title"])} <span aria-hidden="true">→</span></a></li>'
-        for link in record['replacements']) + '</ul>'
+        for link in replacements_of(record)) + '</ul>'
 
 
 def write_retired_pages(root, records, base_url):
@@ -70,23 +77,27 @@ def write_retired_pages(root, records, base_url):
         page = record['page']
         anchor = Path(page).stem
         url = base_url + page
+        has_replacements = bool(replacements_of(record))
+        ledger_replacements = f'\n  <h3>目前建議閱讀</h3>{replacement_list(record)}' if has_replacements else ''
+        page_replacements = f'<h2>請優先閱讀目前版本</h2>{replacement_list(record, "../")}' if has_replacements else ''
+        image_note = ('以下保留退出時的圖片，供版本比對；請優先閱讀上方目前版本。' if has_replacements
+                      else '以下保留退出時的圖片，供版本比對。')
         search = ' '.join([record['title'], record['reason'], url, record['original_series'], *record.get('tags', [])])
         blocks.append(f'''<article class="archive-record" id="{esc(anchor)}" data-search="{esc(search)}">
   <div class="record-meta"><span class="status">已退出主要目錄</span><time datetime="{esc(record['retired_at'])}">{esc(record['retired_at'])}</time></div>
   <h2>{esc(record['title'])}</h2>
   <p class="original-series">原系列：{esc(record['original_series'])}</p>
   <p class="reason">{esc(record['reason'])}</p>
-  <p class="url-label">保留的舊網址</p><a class="old-url" href="{esc(page)}">{esc(url)}</a>
-  <h3>目前建議閱讀</h3>{replacement_list(record)}
+  <p class="url-label">保留的舊網址</p><a class="old-url" href="{esc(page)}">{esc(url)}</a>{ledger_replacements}
   <a class="history-link" href="{esc(page)}">查看退出說明與歷史圖卡</a>
 </article>''')
         content = f'''<p class="eyebrow">圖卡版本紀錄</p><h1>{esc(record['title'])}</h1>
 <section class="retirement-notice"><span class="status">已退出主要目錄</span>
 <p>這張圖卡已於 <time datetime="{esc(record['retired_at'])}">{esc(record['retired_at'])}</time> 退出主要目錄，舊網址保留供查找。</p>
-<p>{esc(record['reason'])}</p><h2>請優先閱讀目前版本</h2>{replacement_list(record, '../')}
+<p>{esc(record['reason'])}</p>{page_replacements}
 <p><a href="../retired-cards.html#{esc(anchor)}">查看完整退出紀錄</a></p></section>
 <details class="historical-image"><summary>展開歷史圖卡（內容未更新）</summary>
-<p>以下保留退出時的圖片，供版本比對；請優先閱讀上方目前版本。</p>
+<p>{image_note}</p>
 <img src="../{esc(record['image'])}" alt="歷史圖卡：{esc(record['title'])}" loading="lazy"></details>'''
         (root / page).write_text(document(record['title'] + '（已退出）', record['reason'], page, content, base_url, '../', True), encoding='utf-8', newline='\n')
     content = f'''<p class="eyebrow">藥局衛教助手 · 版本紀錄</p><h1>退出圖卡紀錄</h1>

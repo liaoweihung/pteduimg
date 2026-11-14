@@ -6,8 +6,8 @@
 
 共同入口為 [AGENTS.md](../AGENTS.md)，保留醫療與人工簽核、資料責任、建置、可見性、快取、Git、品牌及特殊任務的關鍵限制。使用者任務涉及哪項功能，就先讀任務表對應文件；不以入口摘要取代完整 SOP，也不預先 inline 展開整套文件。
 
-- 圖卡操作沿用 [專案 Card Manager](../skills/pteduimg-card-manager/SKILL.md)，保留逐頁文字／日期／來源 schema、完整新增工作與清冊增量程序。
-- 分類 ID 與 metadata 範例移至該 Skill 的 [card-data.md](../skills/pteduimg-card-manager/references/card-data.md)。
+- 圖卡操作沿用 [專案 Card Manager](../AGENTS.md)，保留逐頁文字／日期／來源 schema、完整新增工作與清冊增量程序。
+- 分類 ID 與 metadata 範例移至該 Skill 的 [card-data.md](sop/card-data.md)。
 - 原根目錄的共用建置、退出、排程、UI 檢查、快取與發布細節集中到 [site-build-and-release.md](site-build-and-release.md)，不再於 Skill 重複維護同一套程序。
 - Hub 詳細規則移到 [pharmacy-tools-maintenance.md](pharmacy-tools-maintenance.md)。既有專案管理、品牌、青春痘及搜尋 SOP 沿用原文件。
 - [GEMINI.md](../GEMINI.md) 與 [Copilot 入口](../.github/copilot-instructions.md) 要求先讀 AGENTS，再按任務讀文件；仍直接連到同一份品牌規範。
@@ -23,11 +23,11 @@
 | [AGENTS.md](../AGENTS.md) | 修改 | 28,048 | 11,997 |
 | [GEMINI.md](../GEMINI.md) | 修改 | 1,212 | 1,152 |
 | [.github/copilot-instructions.md](../.github/copilot-instructions.md) | 修改 | 901 | 888 |
-| [skills/pteduimg-card-manager/SKILL.md](../skills/pteduimg-card-manager/SKILL.md) | 修改 | 21,027 | 15,891 |
+| [skills/pteduimg-card-manager/SKILL.md](../AGENTS.md) | 修改 | 21,027 | 15,891 |
 | [docs/brand/README.md](brand/README.md) | 修改 | 5,763 | 5,841 |
 | [docs/project-management/README.md](project-management/README.md) | 修改 | 14,209 | 14,293 |
 | [docs/project-management/search-tracking.md](project-management/search-tracking.md) | 修改 | 5,025 | 5,199 |
-| [skills/pteduimg-card-manager/references/card-data.md](../skills/pteduimg-card-manager/references/card-data.md) | 新增 | 0 | 3,427 |
+| [skills/pteduimg-card-manager/references/card-data.md](sop/card-data.md) | 新增 | 0 | 3,427 |
 | [docs/site-build-and-release.md](site-build-and-release.md) | 新增 | 0 | 14,529 |
 | [docs/pharmacy-tools-maintenance.md](pharmacy-tools-maintenance.md) | 新增 | 0 | 2,665 |
 | [docs/ai-instructions-refactor-2026-10-23.md](ai-instructions-refactor-2026-10-23.md) | 新增 | 0 | 16,403 |
@@ -35,7 +35,7 @@
 
 ### 提交流程的遠端同步
 
-後續使用者明確授權兩筆 Commit 與 Push，且指定不做新增載入、建置或全站醫療測試。同步時遠端 `main` 已增加網站變更追蹤：保留遠端 [專案管理 SOP](project-management/README.md#網站變更自動追蹤) 原文，把此規則接入 [網站建置／發布 SOP](site-build-and-release.md#網站變更追蹤) 與 [Card Manager Skill](../skills/pteduimg-card-manager/SKILL.md)，不以舊本機副本覆蓋遠端管理文件。根 `AGENTS.md` 為 11,984 bytes；合併後 Skill 為 16,226 bytes、建置 SOP 為 15,316 bytes。遠端尚無原工作目錄未追蹤的 `docs/acne-mobile-card-rollout.md`，因此正式入口只連已入庫的 Pilot 規格，手機版的關鍵限制留在 AGENTS，不把該份範圍外文件混入提交。這次只核對提交差異與路徑，未重做下方記錄的 AI 載入或網站測試；下方驗證數字皆指先前快照。
+後續使用者明確授權兩筆 Commit 與 Push，且指定不做新增載入、建置或全站醫療測試。同步時遠端 `main` 已增加網站變更追蹤：保留遠端 [專案管理 SOP](project-management/README.md#網站變更自動追蹤) 原文，把此規則接入 [網站建置／發布 SOP](site-build-and-release.md#網站變更追蹤) 與 [Card Manager Skill](../AGENTS.md)，不以舊本機副本覆蓋遠端管理文件。根 `AGENTS.md` 為 11,984 bytes；合併後 Skill 為 16,226 bytes、建置 SOP 為 15,316 bytes。遠端尚無原工作目錄未追蹤的 `docs/acne-mobile-card-rollout.md`，因此正式入口只連已入庫的 Pilot 規格，手機版的關鍵限制留在 AGENTS，不把該份範圍外文件混入提交。這次只核對提交差異與路徑，未重做下方記錄的 AI 載入或網站測試；下方驗證數字皆指先前快照。
 
 刪除檔案：無。`GEMINI.md`、Copilot 入口與品牌 README 在本次開始前已存在，即使仍為 Git untracked，也列為本輪「修改」。原始素材包 23 個檔案及兩份品牌匯入／驗證 JSON 保持原樣；舊驗證 JSON 是當時快照，不當成此次重構的驗證結果。
 
@@ -48,16 +48,16 @@
 | 原章節／原行號 | 現行位置 | 保留內容與整理方式 |
 |---|---|---|
 | 品牌規範，7–14 | [品牌入口](brand/README.md)、[AI 約束](brand/BRAND_GUIDE_AI.md)、AGENTS「品牌與特殊頁面」 | 固定三色、PNG 母版、禁重畫、透明版待驗收、SVG 暫停、浮水印未定稿、醫療／發布界線；原包不改 |
-| Card Data Model，16–58 | [資料模型](../skills/pteduimg-card-manager/references/card-data.md#card-data-model) | 原章完整搬移：雙 JSON、steps、兩類入口、15 個 topics、12 個 departments、多分類與缺分類後果 |
-| 新增圖卡的文字與可信度要求，60–73 | [Skill](../skills/pteduimg-card-manager/SKILL.md#required-text-dates-and-sources-for-new-cards)、AGENTS「醫療內容與人工簽核底線」 | 逐圖靜態文字、雙日期、直接來源、修訂歸屬、缺項處理、前瞻適用、不回補舊卡；沿用 Skill 更完整的欄位定義 |
-| 新增衛教圖卡標準作業流程，75–90 | [Skill 完整流程](../skills/pteduimg-card-manager/SKILL.md#end-to-end-new-card-workflow)、[管理 SOP](project-management/README.md)、AGENTS「圖卡工作與資料責任／管理紀錄與完成標準」 | 原十步合併到既有流程；逐步對照見下表，不另建立第三份 SOP |
+| Card Data Model，16–58 | [資料模型](sop/card-data.md) | 原章完整搬移：雙 JSON、steps、兩類入口、15 個 topics、12 個 departments、多分類與缺分類後果 |
+| 新增圖卡的文字與可信度要求，60–73 | [Skill](../AGENTS.md)、AGENTS「醫療內容與人工簽核底線」 | 逐圖靜態文字、雙日期、直接來源、修訂歸屬、缺項處理、前瞻適用、不回補舊卡；沿用 Skill 更完整的欄位定義 |
+| 新增衛教圖卡標準作業流程，75–90 | [Skill 完整流程](../AGENTS.md)、[管理 SOP](project-management/README.md)、AGENTS「圖卡工作與資料責任／管理紀錄與完成標準」 | 原十步合併到既有流程；逐步對照見下表，不另建立第三份 SOP |
 | Static Card Pages，92–136 | [建置模式](site-build-and-release.md#static-card-pages) | 原章完整搬移：Route B、URL 對應、full／selected 條件、全部產物、靜態 OG、範圍衝突 |
 | Static All Cards Index，138–148 | [靜態索引](site-build-and-release.md#static-all-cards-index) | 原章完整搬移：不手改、重建時機、兩 sitemap 收錄、hidden 非隱私控制 |
-| Adding A New Image To An Existing Card，150–178 | [Skill 新增圖片](../skills/pteduimg-card-manager/SKILL.md#adding-images-or-a-new-series)、Image Conversion、[建置驗證](site-build-and-release.md) | img／WebP／命名、steps 同步與 manual 例外、唯一文字紀錄、full build、三 JSON、生成頁與全域輸出；合併原本重複流程 |
-| Adding A New Card Series，180–201 | [資料模型範例](../skills/pteduimg-card-manager/references/card-data.md#adding-a-new-card-series)、Skill 完整流程 | 原範例保留，尾句由「上述建置」改指獨立建置文件；分類與標籤確認要求不變 |
+| Adding A New Image To An Existing Card，150–178 | [Skill 新增圖片](../AGENTS.md)、Image Conversion、[建置驗證](site-build-and-release.md) | img／WebP／命名、steps 同步與 manual 例外、唯一文字紀錄、full build、三 JSON、生成頁與全域輸出；合併原本重複流程 |
+| Adding A New Card Series，180–201 | [資料模型範例](sop/card-data.md)、Skill 完整流程 | 原範例保留，尾句由「上述建置」改指獨立建置文件；分類與標籤確認要求不變 |
 | Retiring Or Replacing Cards，203–208 | [退出規範](site-build-and-release.md#retiring-or-replacing-cards) | 原章完整搬移：active steps／retired schema、原圖與舊 URL、替代頁、noindex、索引與連結驗證 |
 | Scheduled Card Publishing，210–247 | [排程規範](site-build-and-release.md#scheduled-card-publishing)、同檔「排程的補充操作」 | 原章完整搬移；加回既有 Skill 的台灣時區轉換、精選清單、無到期卡跳過建置等獨有細節 |
-| Image Conversion，249–266 | [Skill 轉檔](../skills/pteduimg-card-manager/SKILL.md#image-conversion)、完整流程 | Pillow quality=90／method=6、英文小寫底線數字檔名、來源保留；品牌 PNG 母版明確排除覆寫 |
+| Image Conversion，249–266 | [Skill 轉檔](../AGENTS.md)、完整流程 | Pillow quality=90／method=6、英文小寫底線數字檔名、來源保留；品牌 PNG 母版明確排除覆寫 |
 | Local Testing，268–283 | [頁面操作檢查](site-build-and-release.md#local-testing) | 原章完整搬移：兩入口、工具列下方圖片、同系列翻頁、返回、QR／分享、favImages |
 | Offline Cache and Update Experience，285–291 | [快取規範](site-build-and-release.md#offline-cache-and-update-experience)、AGENTS「快取、發布與證據界線」 | 原章完整搬移：cache-first／背景更新、core 與 runtime、更新 pill、接管與重載分開、不強刷 |
 | Regression Check，293–318 | [回歸檢查](site-build-and-release.md#regression-check) | 原章完整搬移，僅將 project skill 引用改可點擊連結；所有 invariants、pending 缺頁限制及不得造假通過保留 |

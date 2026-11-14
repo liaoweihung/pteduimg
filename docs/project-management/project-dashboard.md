@@ -1,5 +1,7 @@
 # 藥局衛教助手專案總控台
 
+> 參考資料，平常不必讀；AI 作業不再更新本頁，日常紀錄以 change-requests.csv 與 evidence 為準，本頁僅在藥師要求時整理。
+
 管理快照：2026-10-26，`liaoweihung/pteduimg`。管理系統初建時的歷史盤點基準為 HEAD `333ed52512cfbaf2b0f900e76605bc0b5c8264cc`。CR-2026-031／032 的兒科感冒藥水原九頁、CR-2026-038 的胃利空單張系列，以及 CR-2026-039 的生達鎮咳袪痰液均已有 Git Commit；CR-039 的圖卡內容已推送至 `origin/main`（`a9295bf`）。GitHub Pages 部署狀態仍須另查。
 
 即時技術變更不再由本頁手抄。執行 `python -B scripts/project_change_tracker.py` 可直接查看已提交與未提交的網站變更；用 `--page`、`--series` 或 `--request` 篩選。這裡保留專案判斷、人工證據與下一步。

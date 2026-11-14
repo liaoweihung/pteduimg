@@ -1,6 +1,8 @@
 # 網站建置、驗證與發布規範
 
-本檔承接根目錄 AGENTS.md 的技術操作細節。修改產生器、頁面、導覽、快取或進行排程／退出／發布前，讀取相應章節；所有程式與資料路徑、命令工作目錄均以 repository 根目錄為準。圖卡來源與醫療要求另見 [Card Manager](../skills/pteduimg-card-manager/SKILL.md)，人工欄位依 [專案管理 SOP](project-management/README.md)，藥局工具依 [Hub 維護規範](pharmacy-tools-maintenance.md)。
+> 參考資料，平常不必讀；日常作業依 AGENTS.md 與 docs/sop/ 作業卡。
+
+本檔承接根目錄 AGENTS.md 的技術操作細節。修改產生器、頁面、導覽、快取或進行排程／退出／發布前，讀取相應章節；所有程式與資料路徑、命令工作目錄均以 repository 根目錄為準。圖卡來源與醫療要求另見 [AGENTS.md 與 docs/sop/ 作業卡](../AGENTS.md)，人工欄位依 [專案管理 SOP](project-management/README.md)，藥局工具依 [Hub 維護規範](pharmacy-tools-maintenance.md)。
 
 ## 章節導覽
 
@@ -196,7 +198,7 @@ This checks key site invariants, including:
 - Local/private-network previews do not load GA unconditionally.
 - `sw.js` keeps the stable runtime cache for previously viewed pages/images.
 
-These checks do not certify medical accuracy or universally require sources/update dates for new cards. Explicitly verify the new-card checklist in the [Card Manager](../skills/pteduimg-card-manager/SKILL.md) as well.
+These checks do not certify medical accuracy or universally require sources/update dates for new cards. Explicitly verify the new-card checklist in [docs/sop/01-new-series.md](sop/01-new-series.md) as well.
 
 Current pending-card limitation: `check_static_card_text_content` includes all non-retired `matchConfidence: "high"` records, even for scheduled hidden cards whose pages are intentionally not generated. This can cause a missing-page failure; other pending records may also affect the integration report. Diagnose and report this separately from actual published-page failures. Do not lower matching confidence, remove required text, or publish early to make a check pass. Fix the check when that work is in scope; otherwise report the unresolved limitation and targeted checks performed, not an all-pass result.
 
@@ -273,6 +275,8 @@ python -m json.tool data/card_content.json
 - 前端行為、版面、生成頁或首頁精選清單有變更時，依範圍做桌機／手機瀏覽器檢查；靜態驗證不代替目視與操作測試。
 
 ## 網站變更追蹤
+
+> 圖卡以外的頁面（計算器、主題頁等）目前不在管理範圍，依 AGENTS.md 不需登記 CR。
 
 所有會影響公開網站、生成頁、圖片、樣式、JavaScript、公開資料、SEO、PWA 或建置／發布流程的工作，結束前都須沿用或更新對應 CR，並執行 `python -B scripts/project_change_tracker.py --check`。查詢可用 `--page PAGE_ID`、`--series SERIES_ID` 或 `--request CR-ID`；工具從 Git 歷史與目前工作目錄取得技術變更，不覆寫人工審核欄位。
 

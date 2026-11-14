@@ -17,7 +17,7 @@ PM = "docs/project-management"
 REQUESTS = f"{PM}/change-requests.csv"
 TRACKING_START = "183cc0d1b03c00ae67aba102908e3a1877e05bec"
 
-MANAGEMENT_PREFIXES = (f"{PM}/", "skills/pteduimg-card-manager/")
+MANAGEMENT_PREFIXES = (f"{PM}/", "docs/sop/", "docs/material/", "CLAUDE.md")
 MANAGEMENT_FILES = {
     "AGENTS.md", "scripts/check_project_management.py", "scripts/test_project_management.py",
     "scripts/project_change_tracker.py", "scripts/test_project_change_tracker.py",

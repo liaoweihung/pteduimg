@@ -402,7 +402,7 @@ def check_retired_cards(cards: dict, manual: dict, failures: list[str]) -> None:
             errors.append(page + ': missing retirement notice or historical content')
         if page not in archive or page not in sw or not (ROOT / item['image']).exists():
             errors.append(page + ': missing ledger, cache route or historical image')
-        for replacement in item['replacements']:
+        for replacement in item.get('replacements') or []:
             if replacement['page'] not in active_pages or replacement['page'] not in content:
                 errors.append(page + ': broken replacement URL')
     check(not errors, 'retired URLs stay reachable with notices, replacements and noindex', str(errors), failures)

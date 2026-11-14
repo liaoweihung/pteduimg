@@ -1,0 +1,102 @@
+# 作業卡 2：新增或移動圖卡（既有系列）
+
+適用：在已上線的系列**插入新卡**、**調整順序**、**把卡搬到另一個系列**、**讓一張卡同時出現在兩個系列**，或**拆分、合併系列**。只讀這一份；同時還有其他調整時，再讀對應的作業卡。
+
+網站作業從「素材已定稿」開始，**不查核、不改寫醫療內容**。缺素材就停下來問藥師。
+
+## 素材
+
+| 情況 | 需要 |
+|---|---|
+| 插入新卡 | 新圖 PNG、逐頁文字（同作業卡 1 第 0 步），以及插在哪個系列的第幾張之後 |
+| 調整順序 | 系列的新順序 |
+| 搬移或共用 | 哪張卡、從哪個系列、到哪個系列的第幾張；搬移（原系列移除）或共用（兩邊都保留） |
+| 拆分或合併系列 | 新系列的系列資訊（同作業卡 1 第 0 步的「系列資訊」）、要放進哪些現有的卡與順序；原系列保留或移除 |
+
+## 步驟
+
+### 1. 確認工作區並存下檢查基準
+```powershell
+git status --short
+python -B scripts/check_project_management.py --summary --report-file outputs/mgmt-before.json > $null
+```
+記下已存在的改動，本次不碰。第二個指令會因為網站原有的管理錯誤回報失敗，這是正常的：它只是存下「改之前」的狀態，檢查時用來比對。
+
+### 2. 登記 CR
+先查有沒有已涵蓋本次工作、尚未完成的 CR：`git grep -n "<系列ID>" docs/project-management/change-requests.csv`。有就沿用並補上受影響的 ID；沒有才在 `docs/project-management/change-requests.csv` 末尾新增一列，編號接續最後一筆：
+`request_type`：**插入新卡**填 `系列追加圖卡`；調整順序、搬移、共用、拆分、合併都沒有新增圖卡，填 `修改既有圖卡`（拆分或合併出來的新系列也不要填 `新增系列`，否則會被當成新內容出現在首頁「最近新增」）；`related_ids` 列出所有受影響的系列與頁（`series:<ID>|page:<ID>|…`）；`status` 填 `in_progress`、`approval` 填 `approved`；`completed_at`、`git_commit`、`validation_result` 先填 `unknown`。其餘欄位照前一筆同類 CR 的寫法。
+
+### 3. 插入新卡時：處理新卡素材
+- 圖片轉檔加 Logo、寫入 `data/card_content.json`：做法同作業卡 1 第 3、5 步，包括命名前的重複檢查，以及第 5 步下方 `updatedAt`／`revisionCredit`／`matchConfidence` 的規定。
+- 在 `content-relations.csv` 為新頁加 `has_card` 關聯：格式同作業卡 1 第 8 步。
+
+### 4. 修改 steps（cards.json 與 cards.manual.json 同步）
+- **插入**：把新圖放到指定位置。
+- **調整順序**：照新順序重排。
+- **搬移**：從原系列 `steps` 移除，加入目標系列。頁 ID、網址、文字都不變。
+- **共用**：原系列不動，在目標系列加入同一個圖片路徑。不要複製圖檔或文字。
+
+### 4-1. 拆分或合併時：建立新系列
+- 在兩份 cards JSON 新增系列設定，欄位同作業卡 1 第 4 步；`steps` 填入搬過來的現有圖片路徑。
+- 不需要轉檔、不新增 card_content 紀錄：頁面、網址、文字都沿用。
+- 原系列被搬空時，從兩份 cards JSON 移除整個系列。系列沒有自己的頁面，不需要走淘汰流程；但要搜尋 `related_series` 有沒有指向它，有的話改指向新系列。
+- 新系列在 `docs/project-management/content-relations.csv` 的 `has_card` 關聯照第 6 步處理。
+
+### 4-2. 開啟共用頁尾
+本次有變動的系列（插入新卡的系列、搬入卡片的目標系列、拆分或合併出來的新系列），在兩份 cards JSON 若還沒有 `"showFooter": true` 就加上。只開本次有變動的系列，不要動其他系列。
+
+### 5. 保護收藏編號（插在最後面以外都要做）
+網站用「系列ID-順序」記住民眾收藏了哪張卡，例如 `fall_wound-2`。插在中間、調整順序或搬走一張，後面的順序都會變，原本收藏的人點開會看到另一張卡。
+
+處理方式：在受影響的系列設定 `favorite_keys`，跟 `steps` 一一對應。**舊卡保留原本的編號**，新卡給一個該系列沒用過的編號。
+
+```
+原本 steps：[A, B, C]，對應編號 [x-0, x-1, x-2]
+在 A 後插入 N：steps [A, N, B, C]
+favorite_keys：["x-0", "x-3", "x-1", "x-2"]
+```
+
+系列已經有 `favorite_keys` 時，照同樣原則調整。搬移時，原系列和目標系列都要處理。
+
+**卡換到別的系列時，沿用它原本的編號**，即使編號前綴是舊系列名稱也沒關係。例如傷口系列拆分時，疤痕系列的卡仍使用 `fall_wound-2`。這樣民眾原本的收藏才不會失效。所有系列的編號合起來不可重複。
+
+### 6. 搬移或共用時：更新關聯
+在 `content-relations.csv`：
+- 共用：新增 `series:<目標系列>,has_card,page:<頁ID>`。
+- 搬移：同上新增，並刪除原系列那一列。
+
+關聯 ID 算法同作業卡 1 第 8 步。
+
+### 7. 標記 CR 完成（必須在建置前）
+`status` 改為 `completed`，`completed_at` 填今天。
+
+### 8. 建置
+- **只是插在系列最後面**：`python -B build.py --incremental <新頁ID>`
+- **其他情況**（插在中間、調整順序、搬移、共用、拆分、合併）：`python -B build.py`（完整建置）
+
+增量建置被拒絕時，停下回報原因。
+
+### 9. 檢查
+```powershell
+python -m json.tool cards.json > $null
+python -m json.tool cards.manual.json > $null
+python -m json.tool data/card_content.json > $null
+python -B scripts/check_site.py
+python -B scripts/check_project_management.py --propose --page <受影響頁ID> ...
+python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
+python -B scripts/project_change_tracker.py --check --page <受影響頁ID> ...
+```
+- `check_site.py` 必須通過。
+- 三份 JSON 都要能解析。
+- 基準比對：只看輸出的 `Baseline difference` 那一行，`new` 與 `worsened` 都必須是 0。原本就有的錯誤（`persistent`）不處理，也不必閱讀完整報告；不是 0 時才打開 `outputs/mgmt-after.json` 找出是哪幾筆。
+- 變更追蹤：受影響的頁都要對應到本次 CR。
+- 清冊的 `added_at`、`added_cr`、`last_updated_at`、`last_updated_cr` 由程式依 CR 推算，不要手填。
+- 一般圖卡作業不執行 `scripts/test_*.py`。
+- `--propose` 有差異時，只把機械欄位依 `page_id` 合併進 `page-inventory.csv`（新頁人工欄位填 `unknown`，舊頁人工欄位不動）；合併後必須零差異。
+- 開啟受影響系列的一頁，確認「第幾張／共幾張」和上一張、下一張正確。
+- 用 `git diff --stat` 確認只改到本次相關的檔案。完整建置會重寫很多頁，只要差異都是張數、翻頁之類的連帶變化就正常；有不明的改動要列出來。
+
+結果填入 CR 的 `validation_result`。
+
+### 10. 回報（不要 commit 或 push）
+做了什麼、受影響的系列與頁、收藏編號怎麼處理、檢查結果、要提交的檔案清單。
