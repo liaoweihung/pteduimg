@@ -95,7 +95,7 @@ class ProjectChangeTrackerTests(unittest.TestCase):
         self.assertFalse(tracker.is_site_path("docs/project-management/project-dashboard.md"))
 
     def test_site_paths_cover_pages_assets_and_generators(self):
-        for path in ["index.html", "cards/example.html", "img/example.webp", "css/site.css", "build.py"]:
+        for path in ["index.html", "cards/example.html", "img/example.webp", "css/base.css", "build.py"]:
             with self.subTest(path=path):
                 self.assertTrue(tracker.is_site_path(path))
 
@@ -108,6 +108,32 @@ class ProjectChangeTrackerTests(unittest.TestCase):
                      "retired-cards.html", "cards/example.html"]:
             with self.subTest(path=path):
                 self.assertTrue(tracker.is_site_path(path))
+
+    def test_tool_only_assets_need_no_cr(self):
+        for path in ["css/growth-calculator.css", "css/medicine-explorer-theme.css", "css/trust-pages.css",
+                     "js/medicine-explorer-shell.js", "js/tcm-formula-explorer.js", "css/new-tool.css"]:
+            with self.subTest(path=path):
+                self.assertFalse(tracker.is_site_path(path))
+        for path in sorted(tracker.CARD_SHARED_ASSETS):
+            with self.subTest(path=path):
+                self.assertTrue((ROOT / path).is_file(), f"listed shared asset is missing: {path}")
+                self.assertTrue(tracker.is_site_path(path))
+
+    def test_card_side_pages_only_use_listed_shared_assets(self):
+        import re
+        pages = [ROOT / name for name in sorted(tracker.SITE_FILES) if name.endswith(".html")]
+        pages += sorted((ROOT / "cards").glob("*.html")) + sorted((ROOT / "templates").rglob("*.html"))
+        pages += [ROOT / "scripts/site_footer.py", ROOT / "scripts/site_header.py",
+                  ROOT / "scripts/card_archive.py", ROOT / "scripts/acne_pilot.py"]
+        pattern = re.compile(r"(?:href|src)=[\"'](?:\.{1,2}/|/)*((?:css|js)/[\w./-]+?\.(?:css|js))")
+        unlisted = {}
+        for page in pages:
+            if not page.is_file():
+                continue
+            for asset in pattern.findall(page.read_text(encoding="utf-8", errors="ignore")):
+                if asset not in tracker.CARD_SHARED_ASSETS:
+                    unlisted.setdefault(asset, page.relative_to(ROOT).as_posix())
+        self.assertEqual(unlisted, {}, "card-side pages use css/js files missing from CARD_SHARED_ASSETS")
 
     def test_ai_entry_files_are_management_paths(self):
         for path in ["AGENTS.md", "CLAUDE.md", "GEMINI.md", ".github/copilot-instructions.md"]:

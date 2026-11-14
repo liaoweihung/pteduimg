@@ -20,7 +20,7 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 記下已存在的改動，本次不碰。第二個指令會因為網站原有的管理錯誤回報失敗，這是正常的。
 
 ### 2. 登記 CR
-先查有沒有已涵蓋本次工作、尚未完成的 CR：`git grep -n "<系列ID>" docs/project-management/change-requests.csv`。有就沿用；沒有才在末尾新增一列，編號接續最後一筆：`request_type` 填 `修改既有圖卡`，名稱寫「登記藥師複核：<系列或頁>」，`related_ids` 列出系列與每一個複核的頁；`status` 填 `in_progress`、`approval` 填 `approved`；`completed_at`、`git_commit`、`validation_result` 先填 `unknown`。
+先查有沒有已涵蓋本次工作、尚未完成的 CR：`git grep -n "<系列ID>" docs/project-management/change-requests.csv`。有就沿用；沒有才在末尾新增一列，編號接續最後一筆：`request_type` 填 `修改既有圖卡`，名稱寫「登記藥師複核：<系列或頁>」，`related_ids` 列出系列與每一個複核的頁；`status` 填 `in_progress`、`approval` 填 `approved`；`git_commit` 填 `same_commit`；`completed_at`、`validation_result` 先填 `unknown`；`evidence` 填第 3 步的 evidence 檔路徑。
 
 ### 3. 建立 evidence 檔
 在 `docs/project-management/evidence/` 建立一份，10 行以內：複核的頁、複核者、日期、複核依據，以及藥師的原話（如「已複核通過」）。
@@ -29,10 +29,11 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 在 `data/card_content.json` 用搜尋找到每一頁的紀錄：
 - `needsMedicalReview` 改為 `false`。
 - 藥師要在頁面顯示審閱狀態時，才加上 `"reviewStatus": "藥師提供的文字"`；預設不加。
+  - 頁面只有在 `updatedAt` 和 `revisionCredit` 都有值時才會顯示這一行；該頁若設了 `"showEditorialDetails": false`，`reviewStatus` 也不會顯示。遇到這兩種情況，先回報藥師，不要自行改其他欄位。
 - 其他欄位（文字、日期、來源）一律不動。複核不等於內容更新，`updatedAt` 不改。
 
 ### 5. 標記 CR 完成（必須在建置前）
-`status` 改為 `completed`，`completed_at` 填今天。
+`status` 改為 `completed`，`completed_at` 填今天，`validation_result` 先填「建置與檢查進行中」（不可留 `unknown`，否則管理檢查會報錯；檢查步驟會改成實際結果）。
 
 之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。
 
@@ -72,9 +73,10 @@ python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
 - JSON 都要能解析，`check_site.py` 必須通過，`--propose` 必須零差異。
 - 基準比對：`new` 與 `worsened` 都必須是 0；有複核相關的錯誤時，打開 `outputs/mgmt-after.json` 找出原因並回報，不要為了通過而改人工欄位。
 - 變更追蹤：結果不可有「目前未提交網站變更：缺少管理連結」。
+- 開啟複核的頁面，確認「審閱狀態」有或沒有顯示，符合藥師的選擇。
 - 用 `git diff --stat` 確認只改到本次相關的檔案。
 
-結果填入 CR 的 `validation_result`。
+**填寫順序**：先執行上面除了基準比對以外的指令，把結果寫入 CR 的 `validation_result` 和 evidence 檔；**再**執行基準比對；最後在 `validation_result` 補上「基準比對 new=0、worsened=0」。
 
 ### 9. 回報（不要 commit 或 push）
 登記了哪些頁、複核者與日期、頁面是否顯示審閱狀態、檢查結果、要提交的檔案清單。

@@ -27,6 +27,7 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parents[1]
 PM = "docs/project-management"
+REMOVED_SERIES = f"{PM}/removed-series.json"
 BASE = "https://liaoweihung.github.io/pteduimg/"
 RULE_FILES = ["build.py", "scripts/site_footer.py", "templates/site-footer.html",
               "scripts/acne_pilot.py", "data/acne_navigation.json", "scripts/site_header.py"]
@@ -283,7 +284,16 @@ def load_model(root):
             "requests": read_csv(root, f"{PM}/change-requests.csv"),
             "relations": read_csv(root, f"{PM}/content-relations.csv"),
             "topics": read_json(root, f"{PM}/content-topics.json"),
-            "audits": read_json(root, f"{PM}/audit-register.json")}
+            "audits": read_json(root, f"{PM}/audit-register.json"),
+            "removed_series": read_removed_series(root)}
+
+
+def read_removed_series(root):
+    """Series removed from cards.json; historical CRs may still reference them."""
+    path = root / REMOVED_SERIES
+    if not path.is_file():
+        return {"schema_version": 1, "series": []}
+    return json.loads(path.read_text(encoding="utf-8-sig"))
 
 
 def validate(root, model, live):
@@ -330,6 +340,24 @@ def validate(root, model, live):
     stored = {r["page_id"]: r for r in inv}
     demand(set(current) == set(stored), f"inventory IDs differ: missing={sorted(set(current)-set(stored))}; extra={sorted(set(stored)-set(current))}")
     request_ids = {r["request_id"] for r in requests}
+    removed_data = model.get("removed_series") or {"schema_version": 1, "series": []}
+    removed_list = removed_data.get("series") if isinstance(removed_data, dict) else None
+    demand(isinstance(removed_data, dict) and removed_data.get("schema_version") == 1,
+           "removed-series: schema_version must be 1")
+    demand(isinstance(removed_list, list), "removed-series: series must be a list")
+    removed_ids = set()
+    for item in removed_list if isinstance(removed_list, list) else []:
+        if not isinstance(item, dict):
+            demand(False, "removed-series: entry must be an object")
+            continue
+        sid = str(item.get("id") or "")
+        for field in ["id", "title", "removed_at", "reason", "request_id"]:
+            demand(isinstance(item.get(field), str) and bool(item[field].strip()), f"removed-series {sid or '?'}: missing {field}")
+        demand(sid not in removed_ids, f"removed-series: duplicate {sid}")
+        demand(valid_date(item.get("removed_at")), f"removed-series {sid}: invalid removed_at")
+        demand(item.get("request_id") in request_ids, f"removed-series {sid}: unknown request {item.get('request_id')}")
+        demand(sid not in cards, f"removed series still in cards.json: {sid}")
+        removed_ids.add(sid)
     audit_ids = {a["audit_id"] for a in audits}
     if (root / rules_v2.MANIFEST).is_file():
         registry = read_json(root, rules_v2.MANIFEST)
@@ -385,6 +413,9 @@ def validate(root, model, live):
             return "page"
         if prefix == "series" and raw in cards:
             return "series"
+        # Removed series stay valid CR targets, but are not valid relation endpoints.
+        if prefix == "series" and raw in removed_ids:
+            return "removed_series"
         if node_id in nodes:
             return nodes[node_id]["kind"]
         return None
@@ -450,8 +481,10 @@ def validate(root, model, live):
         for f in ["needs_pharmacist", "author_permission", "commercial_disclosure"]:
             demand(r[f] in {"yes", "no", "unknown"}, f"{rid}: invalid {f}")
         evidence(r["evidence"], rid)
+        # Cancelled work never created its series/pages, so its targets need not exist.
+        cancelled = r["status"] == "cancelled"
         for target in filter(None,r["related_ids"].split("|")):
-            demand(kind(target) is not None, f"{rid}: missing related target {target}")
+            demand(cancelled or kind(target) is not None, f"{rid}: missing related target {target}")
         if r["status"] == "completed":
             demand(r["completed_at"] != "unknown" and r["validation_result"] != "unknown", f"{rid}: completion needs date and validation")
             demand(r["approval"] in {"approved", "not_required"}, f"{rid}: completed without approval")
@@ -461,8 +494,8 @@ def validate(root, model, live):
             related = [t.strip() for t in r["related_ids"].split("|") if t.strip()]
             has_series = any(t.startswith("series:") for t in related)
             has_page = any(t.startswith("page:") for t in related)
-            demand(has_series, f"{rid}: missing series ID in related_ids")
-            demand(has_page, f"{rid}: missing page ID in related_ids")
+            demand(cancelled or has_series, f"{rid}: missing series ID in related_ids")
+            demand(cancelled or has_page, f"{rid}: missing page ID in related_ids")
             if r["status"] == "completed":
                 demand(r.get("completed_at") not in {"", "unknown"} and valid_date(r.get("completed_at")),
                        f"{rid}: completed card request missing completed_at")

@@ -25,7 +25,14 @@ MANAGEMENT_FILES = {
     ".github/workflows/project-management-check.yml",
 }
 # Pages outside the card workflow (topics/, web/, calc/, root calculator/tool/info pages) need no CR (AGENTS.md).
-SITE_PREFIXES = ("cards/", "img/", "css/", "js/", "assets/", "templates/", "dashboard/")
+SITE_PREFIXES = ("cards/", "img/", "assets/", "templates/", "dashboard/")
+# css/ and js/ files used by card pages, the two home pages, templates/ or build programs.
+# Files used only by calculators, tools or topics/ need no CR. A guard test in
+# test_project_change_tracker.py fails when a card-side page references an unlisted file.
+CARD_SHARED_ASSETS = {
+    "css/base.css", "css/brand-header.css", "css/pharmacist.css", "css/public.css",
+    "css/card-archive.css", "js/card-archive.js",
+}
 SITE_FILES = {
     "404.html", "all-cards.html", "build.py", "cards.json", "cards.manual.json",
     "cards.retired.json", "index.html", "public.html", "manifest.json", "robots.txt",
@@ -70,6 +77,8 @@ def is_site_path(path: str, tracked: bool = True) -> bool:
         return False
     if path.startswith(("docs/", "output/", "tests/", ".codex", ".agents/")):
         return False
+    if path.startswith(("css/", "js/")):
+        return path in CARD_SHARED_ASSETS
     if path in SITE_FILES or any(path.startswith(prefix) for prefix in SITE_PREFIXES):
         return True
     if path.startswith("data/") and tracked and Path(path).suffix.lower() in {".json", ".csv"}:

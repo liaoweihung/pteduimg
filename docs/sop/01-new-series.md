@@ -44,8 +44,11 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 | scope、related_ids | `series:<系列ID>\|page:<頁ID>\|…`，列出系列與每一頁 |
 | priority／status／approval | `P1`／`in_progress`／`approved` |
 | needs_pharmacist／author_permission／commercial_disclosure | `yes`／`unknown`／`unknown`（藥師確認沒有商業關係才填 `no`） |
-| completed_at／git_commit／validation_result | `unknown`（第 6、9 步再填） |
+| completed_at／validation_result | `unknown`（第 6、9 步再填） |
+| git_commit | `same_commit`（本次變更會和 CR 一起提交；先填好，變更追蹤檢查才會通過） |
 | evidence | `docs/project-management/evidence/<系列ID>-YYYY-MM-DD.md` |
+
+同時建立這個 evidence 檔，10 行以內：範圍（系列、頁數）、素材來源（圖片檔名、對應文字的版本或日期、藥師定稿確認）。第 9 步再補上檢查結果。
 
 ## 3. 圖片轉檔加 Logo
 
@@ -119,7 +122,7 @@ def convert(src, dst, color=None):  # color 可指定 "black" 或 "white"，預�
 
 ## 6. 標記 CR 完成（必須在建置前）
 
-把該 CR 的 `status` 改成 `completed`，`completed_at` 填今天。順序不能顛倒，否則首頁「最近新增」不會出現本系列。
+把該 CR 的 `status` 改成 `completed`，`completed_at` 填今天，`validation_result` 先填「建置與檢查進行中」（不可留 `unknown`，否則管理檢查會報錯；檢查步驟會改成實際結果）。順序不能顛倒，否則首頁「最近新增」不會出現本系列。
 
 之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。
 
@@ -137,12 +140,20 @@ python -B build.py --incremental <頁ID1> <頁ID2> ...
    ```powershell
    python -B scripts/check_project_management.py --propose --page <頁ID1> --page <頁ID2>
    ```
-   把輸出的機械欄位依 `page_id` 新增到 `page-inventory.csv`。人工欄位一律填 `unknown`，`known_issue_ids` 填本 CR 編號，`review_required` 填 `yes`。
+   把輸出的機械欄位依 `page_id` 新增到 `page-inventory.csv`。新頁的人工欄位照下表填（跟其他欄位不同，這幾欄填 `unknown` 會被檢查判為錯誤）：
+
+   | 欄位 | 填法 |
+   |---|---|
+   | `known_issue_ids` | 本 CR 編號 |
+   | `review_required` | `yes` |
+   | `review_reason` | `新頁尚待藥師複核` |
+   | `audit_ids` | 空白（不可填 `unknown`） |
+   | `history_note` | 空白 |
+   | 其餘人工欄位（`medical_review_status`、`medical_review_evidence`、`reviewer`、`review_date`、`reviewed_content_sha256`、`documented_status`、`seo_aeo_status`、`last_human_confirmed_at`） | `unknown` |
    `added_at`、`added_cr`、`last_updated_at`、`last_updated_cr` 由程式依 CR 自動推算，**不要手填**；不要用提案內容整份覆蓋 CSV。
 2. 在 `content-relations.csv` 為每頁加一列：
    `REL-<雜湊>,series:<系列ID>,has_card,page:<頁ID>,source_observed,series_membership,cards.json,<CR 編號>`
    `<雜湊>` 是 `series:<系列ID>|has_card|page:<頁ID>` 的 SHA-256 前 16 碼。
-3. 建立 evidence 檔，10 行以內即可：範圍（系列、頁數）、素材來源（圖片檔名、對應文字的版本或日期、藥師定稿確認）、第 9 步的檢查結果。
 
 ## 9. 檢查
 
@@ -174,7 +185,7 @@ python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
 - 用 `git diff --stat` 確認變更只有本次相關的檔案，沒有動到 `build.py`、`templates/`、`scripts/`、`skills/`、`index.html`、`public.html`。
 - 一般圖卡作業不執行 `scripts/test_*.py`，改到檢查程式本身才需要。
 
-把結果填入 CR 的 `validation_result`。
+**填寫順序**：先執行上面除了基準比對以外的指令，把結果寫入 CR 的 `validation_result` 和 evidence 檔；**再**執行基準比對；最後在 `validation_result` 補上「基準比對 new=0、worsened=0」。
 
 ## 10. 回報（不要 commit 或 push）
 

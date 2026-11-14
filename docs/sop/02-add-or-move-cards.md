@@ -25,12 +25,13 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 
 ### 2. 登記 CR
 先查有沒有已涵蓋本次工作、尚未完成的 CR：`git grep -n "<系列ID>" docs/project-management/change-requests.csv`。有就沿用並補上受影響的 ID；沒有才在 `docs/project-management/change-requests.csv` 末尾新增一列，編號接續最後一筆：
-`request_type`：**插入新卡**填 `系列追加圖卡`；調整順序、搬移、共用、拆分、合併都沒有新增圖卡，填 `修改既有圖卡`（拆分或合併出來的新系列也不要填 `新增系列`，否則會被當成新內容出現在首頁「最近新增」）；`related_ids` 列出所有受影響的系列與頁（`series:<ID>|page:<ID>|…`）；`status` 填 `in_progress`、`approval` 填 `approved`；`completed_at`、`git_commit`、`validation_result` 先填 `unknown`。其餘欄位照前一筆同類 CR 的寫法。
+`request_type`：**插入新卡**填 `系列追加圖卡`；調整順序、搬移、共用、拆分、合併都沒有新增圖卡，填 `修改既有圖卡`（拆分或合併出來的新系列也不要填 `新增系列`，否則會被當成新內容出現在首頁「最近新增」）；`related_ids` 列出所有受影響的系列與頁（`series:<ID>|page:<ID>|…`）；`status` 填 `in_progress`、`approval` 填 `approved`；`git_commit` 填 `same_commit`（本次變更會和 CR 一起提交；先填好，變更追蹤檢查才會通過）；`completed_at`、`validation_result` 先填 `unknown`；`evidence` 填下面建立的 evidence 檔路徑。
+
+同時建立 evidence 檔 `docs/project-management/evidence/<系列ID>-YYYY-MM-DD.md`，10 行以內：本次範圍、素材來源（有新素材時：圖片檔名、對應文字的版本或日期、藥師定稿確認）。檢查完成後再補上結果。其餘欄位照前一筆同類 CR 的寫法。
 
 ### 3. 插入新卡時：處理新卡素材
 - 圖片轉檔加 Logo、寫入 `data/card_content.json`：做法同作業卡 1 第 3、5 步，包括命名前的重複檢查，以及第 5 步下方 `updatedAt`／`revisionCredit`／`matchConfidence` 的規定。
 - 在 `content-relations.csv` 為新頁加 `has_card` 關聯：格式同作業卡 1 第 8 步。
-- 清冊與 evidence 比照作業卡 1 第 8 步：新頁人工欄位填 `unknown`、`known_issue_ids` 填本 CR、`review_required` 填 `yes`，並建立 evidence 檔。
 
 ### 4. 修改 steps（cards.json 與 cards.manual.json 同步）
 - **插入**：把新圖放到指定位置。
@@ -43,13 +44,17 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 ### 4-1. 拆分或合併時：建立新系列
 - 在兩份 cards JSON 新增系列設定，欄位同作業卡 1 第 4 步；`steps` 填入搬過來的現有圖片路徑。
 - 不需要轉檔、不新增 card_content 紀錄：頁面、網址、文字都沿用。
-- 原系列被搬空時，從兩份 cards JSON 移除整個系列。系列沒有自己的頁面，不需要走淘汰流程；但要搜尋 `related_series` 有沒有指向它，有的話改指向新系列。
+- 原系列被搬空時，從兩份 cards JSON 移除整個系列，並在 `docs/project-management/removed-series.json` 的 `series` 清單加一筆：`{"id": "<系列ID>", "title": "<系列標題>", "removed_at": "YYYY-MM-DD", "reason": "<原因>", "request_id": "<本次 CR>"}`。這樣過去引用這個系列的 CR 仍然有效，管理檢查不會報「missing related target」。系列沒有自己的頁面，不需要走淘汰流程；但要搜尋 `related_series` 有沒有指向它，有的話改指向新系列。
 - 新系列在 `docs/project-management/content-relations.csv` 的 `has_card` 關聯照第 6 步處理。
 
 ### 4-2. 開啟共用頁尾
 本次有變動的系列（插入新卡的系列、搬入卡片的目標系列、拆分或合併出來的新系列），在兩份 cards JSON 若還沒有 `"showFooter": true` 就加上。只開本次有變動的系列，不要動其他系列。
 
-### 5. 保護收藏編號（插在最後面以外都要做）
+### 5. 保護收藏編號
+
+**插在系列最後面**：系列沒有 `favorite_keys` 就不用處理；**系列已有 `favorite_keys` 時**，要在清單最後補一個該系列沒用過的新編號，清單長度必須等於 `steps`，否則建置會拒絕。
+
+**其他情況**（插在中間、調整順序、搬移、拆分、合併）：
 網站用「系列ID-順序」記住民眾收藏了哪張卡，例如 `fall_wound-2`。插在中間、調整順序或搬走一張，後面的順序都會變，原本收藏的人點開會看到另一張卡。
 
 處理方式：在受影響的系列設定 `favorite_keys`，跟 `steps` 一一對應。**舊卡保留原本的編號**，新卡給一個該系列沒用過的編號。
@@ -73,7 +78,7 @@ favorite_keys：["x-0", "x-3", "x-1", "x-2"]
 關聯 ID 算法同作業卡 1 第 8 步。
 
 ### 7. 標記 CR 完成（必須在建置前）
-`status` 改為 `completed`，`completed_at` 填今天。
+`status` 改為 `completed`，`completed_at` 填今天，`validation_result` 先填「建置與檢查進行中」（不可留 `unknown`，否則管理檢查會報錯；檢查步驟會改成實際結果）。
 
 之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。
 
@@ -82,6 +87,9 @@ favorite_keys：["x-0", "x-3", "x-1", "x-2"]
 - **其他情況**（插在中間、調整順序、搬移、共用、拆分、合併）：`python -B build.py`（完整建置）
 
 增量建置被拒絕時，停下回報原因。
+
+### 8-1. 插入新卡時：更新清冊（建置後）
+照作業卡 1 第 8 步第 1 項：用 `--propose` 取得新頁的機械欄位，新增到 `page-inventory.csv`，人工欄位照該處的表格填。
 
 ### 9. 檢查
 ```powershell
@@ -97,11 +105,11 @@ python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
 - 變更追蹤：只需執行一次、填本次任一頁 ID。程式對「尚未提交的變更」本來就整體檢查；`--page` 只是排除與本次無關的舊提交紀錄。結果不可有「目前未提交網站變更：缺少管理連結」。
 - 清冊的 `added_at`、`added_cr`、`last_updated_at`、`last_updated_cr` 由程式依 CR 推算，不要手填。
 - 一般圖卡作業不執行 `scripts/test_*.py`。
-- `--propose` 有差異時，只把機械欄位依 `page_id` 合併進 `page-inventory.csv`（新頁人工欄位填 `unknown`，舊頁人工欄位不動）；合併後必須零差異。
+- `--propose` 有差異時，只把機械欄位依 `page_id` 合併進 `page-inventory.csv`，舊頁人工欄位不動；合併後必須零差異。
 - 開啟受影響系列的一頁，確認「第幾張／共幾張」和上一張、下一張正確。
 - 用 `git diff --stat` 確認只改到本次相關的檔案。完整建置會重寫很多頁，只要差異都是張數、翻頁之類的連帶變化就正常；有不明的改動要列出來。
 
-結果填入 CR 的 `validation_result`。
+**填寫順序**：先執行上面除了基準比對以外的指令，把結果寫入 CR 的 `validation_result` 和 evidence 檔；**再**執行基準比對；最後在 `validation_result` 補上「基準比對 new=0、worsened=0」。
 
 ### 10. 回報（不要 commit 或 push）
 做了什麼、受影響的系列與頁、收藏編號怎麼處理、檢查結果、要提交的檔案清單。

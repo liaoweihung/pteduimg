@@ -38,6 +38,67 @@ class ManagementValidationTests(unittest.TestCase):
     def test_missing_relation_target(self):
         self.corrupt(lambda m: m["relations"][0].update(target_id="page:no-such-page"), "invalid relation endpoints")
 
+    def _with_removed_series(self, model, series_id="retired_trial_series"):
+        model["removed_series"] = {"schema_version": 1, "series": [{
+            "id": series_id, "title": "試做系列", "removed_at": "2026-11-14",
+            "reason": "測試", "request_id": model["requests"][0]["request_id"]}]}
+        return series_id
+
+    def test_removed_series_is_valid_request_target(self):
+        model = copy.deepcopy(self.model)
+        sid = self._with_removed_series(model)
+        model["requests"][0]["related_ids"] = f"series:{sid}"
+        errors, _ = pm.validate(self.root, model, self.live)
+        self.assertFalse(any(f"missing related target series:{sid}" in e for e in errors))
+        self.assertFalse(any(e.startswith("removed-series") or "removed series" in e for e in errors), errors[:5])
+
+    def test_unknown_removed_series_still_missing(self):
+        self.corrupt(lambda m: m["requests"][0].update(related_ids="series:no_such_series"),
+                     "missing related target series:no_such_series")
+
+    def test_removed_series_still_in_cards(self):
+        active = next(iter(pm.read_json(self.root, "cards.json")))
+        self.corrupt(lambda m: self._with_removed_series(m, active), f"removed series still in cards.json: {active}")
+
+    def test_removed_series_needs_known_request(self):
+        def mutate(m):
+            self._with_removed_series(m)
+            m["removed_series"]["series"][0]["request_id"] = "CR-0000-000"
+        self.corrupt(mutate, "unknown request CR-0000-000")
+
+    def test_relation_to_removed_series_is_invalid(self):
+        def mutate(m):
+            sid = self._with_removed_series(m)
+            m["relations"][0].update(source_id=f"series:{sid}")
+        self.corrupt(mutate, "invalid relation endpoints")
+
+    def _card_request_with_missing_targets(self, model, status):
+        row = next(r for r in model["requests"] if r["request_type"] in pm.CARD_REQUEST_TYPES)
+        row.update(status=status, related_ids="series:no_such_trial|page:no_such_trial_1")
+        if status == "completed":
+            row.update(approval="approved", completed_at="2026-11-14", validation_result="test")
+        return row["request_id"]
+
+    def test_cancelled_card_request_skips_target_checks(self):
+        model = copy.deepcopy(self.model)
+        rid = self._card_request_with_missing_targets(model, "cancelled")
+        errors, _ = pm.validate(self.root, model, self.live)
+        self.assertFalse([e for e in errors if e.startswith(rid + ":") and
+                          ("missing related target" in e or "ID in related_ids" in e)], errors[:5])
+
+    def test_completed_card_request_still_needs_targets(self):
+        model = copy.deepcopy(self.model)
+        rid = self._card_request_with_missing_targets(model, "completed")
+        errors, _ = pm.validate(self.root, model, self.live)
+        self.assertIn(f"{rid}: missing related target series:no_such_trial", errors)
+        self.assertIn(f"{rid}: missing related target page:no_such_trial_1", errors)
+        model = copy.deepcopy(self.model)
+        rid = self._card_request_with_missing_targets(model, "completed")
+        next(r for r in model["requests"] if r["request_id"] == rid)["related_ids"] = ""
+        errors, _ = pm.validate(self.root, model, self.live)
+        self.assertIn(f"{rid}: missing series ID in related_ids", errors)
+        self.assertIn(f"{rid}: missing page ID in related_ids", errors)
+
     def test_missing_membership(self):
         self.corrupt(lambda m: m["relations"].pop(0), "series/card relations differ")
 

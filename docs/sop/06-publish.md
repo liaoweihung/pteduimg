@@ -20,7 +20,7 @@ git status --short
 - 一律不提交：`outputs/`、`__pycache__/`、`output/hub`、原始 PNG 素材。
 
 ### 3. 更新 CR 並確認同步後仍然正確
-- 本次 CR 的 `git_commit` 若為 `unknown`，現在改成 `same_commit`（**要在加入檔案前改**，否則提交出去的仍是舊值）。
+- **本次工作有 CR 時**：確認 CR 的 `git_commit` 是 `same_commit`（作業卡在建立 CR 時已填；若仍是 `unknown`，**在加入檔案前**改好）。不需要 CR 的工作（例如計算器、主題頁）跳過這一項。
 - 第 1 步同步下來的遠端提交，如果改到 `cards.json`、`cards.manual.json`、`data/`、`build.py`、`templates/`、`scripts/`（自動更新的 `dashboard/` 不算），先重新建置並跑 `python -B scripts/check_site.py`，通過後再繼續。
 
 ### 4. 只加入指定的檔案
@@ -29,10 +29,10 @@ git add <檔案1> <檔案2> ...
 ```
 不要使用 `git add .` 或 `git add -A`。檔案很多時（例如完整建置更新了大量 `cards/*.html`），可以用 `git add cards/`，但先確認 `cards/` 裡沒有清單外的改動。刪除的檔案用 `git rm` 或 `git add <刪除的路徑>`。
 
-加入後執行 `git diff --cached --stat`，確認暫存的檔案跟清單一致、CR 檔案已在其中。
+加入後執行 `git diff --cached --stat`，確認暫存的檔案跟清單一致；有 CR 時，確認 CR 檔案已在其中。
 
 ### 5. 提交
-- commit 訊息：一句話說明做了什麼，結尾加上 CR 編號。例如：`新增失眠與失眠藥物雙系列（9 張）CR-2026-086`
+- commit 訊息：一句話說明做了什麼，有 CR 時結尾加上 CR 編號。例如：`新增失眠與失眠藥物雙系列（9 張）CR-2026-086`
 - 同一批變更包含兩件以上互不相關的事時，盡量分開 commit；但 CR 的 `same_commit` 必須跟它記錄的變更在同一個 commit。無法乾淨拆開時，合併成一次，訊息寫明每一件事。
 
 ### 6. 推送

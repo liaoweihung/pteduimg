@@ -24,11 +24,13 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 
 ### 2. 登記 CR
 先查有沒有已涵蓋本次工作、尚未完成的 CR：`git grep -n "<系列ID>" docs/project-management/change-requests.csv`。有就沿用並補上受影響的 ID；沒有才在 `docs/project-management/change-requests.csv` 末尾新增一列，編號接續最後一筆：
-`request_type` 填 `修改既有圖卡`；`related_ids` 列出系列與每一個淘汰的頁；`status` 填 `in_progress`、`approval` 填 `approved`；`completed_at`、`git_commit`、`validation_result` 先填 `unknown`。其餘欄位照前一筆同類 CR 的寫法。
+`request_type` 填 `修改既有圖卡`；`related_ids` 列出系列與每一個淘汰的頁；`status` 填 `in_progress`、`approval` 填 `approved`；`git_commit` 填 `same_commit`（本次變更會和 CR 一起提交；先填好，變更追蹤檢查才會通過）；`completed_at`、`validation_result` 先填 `unknown`；`evidence` 填下面建立的 evidence 檔路徑。
+
+同時建立 evidence 檔 `docs/project-management/evidence/<系列ID>-YYYY-MM-DD.md`，10 行以內：本次範圍、素材來源（有新素材時：圖片檔名、對應文字的版本或日期、藥師定稿確認）。檢查完成後再補上結果。其餘欄位照前一筆同類 CR 的寫法。
 
 ### 3. 從系列移除
 - **淘汰單張**：從 cards.json 與 cards.manual.json **所有**含這張圖的系列 `steps` 移除。
-- **整個系列下架**：從兩份 cards JSON 刪除整個系列。
+- **整個系列下架**：從兩份 cards JSON 刪除整個系列，並在 `docs/project-management/removed-series.json` 的 `series` 清單加一筆：`{"id": "<系列ID>", "title": "<系列標題>", "removed_at": "YYYY-MM-DD", "reason": "<原因>", "request_id": "<本次 CR>"}`。這樣過去引用這個系列的 CR 仍然有效，管理檢查不會報「missing related target」。
 - 圖檔和 `data/card_content.json` 的紀錄都**保留，不要刪除**。
 
 ### 4. 保護收藏編號（淘汰單張且不是最後一張時）
@@ -78,7 +80,7 @@ git grep -n "<系列ID>" -- cards.json cards.manual.json
 改了哪些地方要列在回報裡。
 
 ### 7. 標記 CR 完成（必須在建置前）
-`status` 改為 `completed`，`completed_at` 填今天。
+`status` 改為 `completed`，`completed_at` 填今天，`validation_result` 先填「建置與檢查進行中」（不可留 `unknown`，否則管理檢查會報錯；檢查步驟會改成實際結果）。
 
 之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。
 
@@ -106,7 +108,7 @@ python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
 - 確認 `retired-cards.html` 有這一筆，`sitemap.xml` 和 `all-cards.html` 已經沒有它。
 - 用 `git diff --stat` 確認只改到本次相關的檔案，有不明的改動要列出來。
 
-結果填入 CR 的 `validation_result`。
+**填寫順序**：先執行上面除了基準比對以外的指令，把結果寫入 CR 的 `validation_result` 和 evidence 檔；**再**執行基準比對；最後在 `validation_result` 補上「基準比對 new=0、worsened=0」。
 
 ### 10. 回報（不要 commit 或 push）
 淘汰了哪些頁、替代頁、改了哪些連結、收藏編號怎麼處理、檢查結果、要提交的檔案清單。
