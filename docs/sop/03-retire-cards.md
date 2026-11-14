@@ -2,7 +2,9 @@
 
 適用：讓一張圖卡**從全站下架**，或整個系列下架。只讀這一份。
 
-**先確認這張卡是否還在其他系列**：`git grep -n "img/<頁ID>.webp" -- cards.json`。如果只是要從某個系列拿掉、其他系列仍保留，**不要用本卡**，改用作業卡 2 的「從其中一個系列移除共用卡」。
+**圖片路徑**：既有頁的圖片不一定是 `.webp`（網站有不少 `.png`）。先在 cards.json 該頁所屬系列的 `steps` 找到**實際圖片路徑**，以下所有寫 `img/<頁ID>.webp` 的地方（搜尋、仿單的鍵、淘汰紀錄、換圖）都改用這個實際路徑。
+
+**先確認這張卡是否還在其他系列**：`git grep -n "<實際圖片路徑>" -- cards.json`。如果只是要從某個系列拿掉、其他系列仍保留，**不要用本卡**，改用作業卡 2 的「從其中一個系列移除共用卡」。
 
 網站**不真的刪除頁面**，而是「淘汰」：舊網址保留，打開會看到退出日期與**淘汰原因**，並列入「退出圖卡紀錄」（`retired-cards.html`）；同時從搜尋引擎、首頁、索引中移除。這樣民眾的收藏和外部連結才不會變成錯誤頁。
 
@@ -18,10 +20,13 @@
 > 指令以 PowerShell 為例。用 bash 執行時：`> $null` 改成 `> /dev/null`，`| Select-String "…"` 改成 `| grep "…"`。
 ```powershell
 git status --short
-python -c "import os;os.makedirs('outputs',exist_ok=True);p='outputs/mgmt-before.json';os.path.exists(p) and os.remove(p)"
-python -B scripts/check_project_management.py --summary --report-file outputs/mgmt-before.json > $null
-python -c "import json;json.load(open('outputs/mgmt-before.json',encoding='utf-8'));print('BASELINE OK')"
+python -c "import os;os.makedirs('outputs',exist_ok=True)"
+python -B scripts/check_project_management.py --summary --report-file <基準檔> > $null
+python -c "import json;json.load(open('<基準檔>',encoding='utf-8'));print('BASELINE OK')"
 ```
+**基準檔**：`<基準檔>` 用這次開工的日期時間命名，例如 `outputs/mgmt-before-20261114-1240.json`，**不可是已存在的檔名**，並在本次的 evidence 檔記下這個檔名。
+**續作同一筆 CR**（例如上次失敗、這次接著做）：**跳過本步的存基準**，改用 evidence 記錄的原始基準檔；不可重新存基準，否則上次已經引入的錯誤會被當成原本就有的錯誤。原始基準檔遺失時停下回報。
+
 記下已存在的改動，本次不碰。存基準的指令會因為網站原有的管理錯誤回報失敗，這是正常的；但最後一行必須印出 `BASELINE OK`，沒有就代表基準沒存到，停下來回報，不要開始修改。這份基準是「改之前」的狀態，檢查時用來比對。
 
 ### 2. 登記 CR
@@ -51,7 +56,7 @@ favorite_keys：["x-0", "x-2"]
 
 ```json
 {
-  "image": "img/<頁ID>.webp",
+  "image": "<實際圖片路徑>",
   "title": "原頁標題",
   "reason": "淘汰原因",
   "page": "cards/<頁ID>.html",
@@ -71,7 +76,7 @@ favorite_keys：["x-0", "x-2"]
 **其他連結**：分三種搜尋，兩份 cards JSON 都要搜：
 ```powershell
 git grep -n "<頁ID>.html" -- topics/ data/ cards.json cards.manual.json cards.retired.json
-git grep -n "img/<頁ID>.webp" -- data/ cards.json cards.manual.json
+git grep -n "<實際圖片路徑>" -- data/ cards.json cards.manual.json
 git grep -n "<系列ID>" -- cards.json cards.manual.json
 ```
 （第三行只在整個系列下架時需要。搜尋結果中，被淘汰頁**自己的**逐頁文字紀錄不用改。）
@@ -103,7 +108,7 @@ python -B scripts/check_project_management.py --propose --page <受影響頁ID> 
 python -c "import json;[json.load(open(f,encoding='utf-8')) for f in ('cards.json','cards.manual.json','data/card_content.json')];print('JSON OK')"
 python -B scripts/check_site.py
 python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
-python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
+python -B scripts/check_project_management.py --summary --baseline-file <基準檔> --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
 ```
 - `check_site.py` 必須通過。
 - 三份 JSON 都要能解析。

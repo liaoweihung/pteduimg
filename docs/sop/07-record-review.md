@@ -15,18 +15,22 @@
 > 指令以 PowerShell 為例。用 bash 執行時：`> $null` 改成 `> /dev/null`，`| Select-String "…"` 改成 `| grep "…"`。
 ```powershell
 git status --short
-python -c "import os;os.makedirs('outputs',exist_ok=True);p='outputs/mgmt-before.json';os.path.exists(p) and os.remove(p)"
-python -B scripts/check_project_management.py --summary --report-file outputs/mgmt-before.json > $null
-python -c "import json;json.load(open('outputs/mgmt-before.json',encoding='utf-8'));print('BASELINE OK')"
+python -c "import os;os.makedirs('outputs',exist_ok=True)"
+python -B scripts/check_project_management.py --summary --report-file <基準檔> > $null
+python -c "import json;json.load(open('<基準檔>',encoding='utf-8'));print('BASELINE OK')"
 ```
+**基準檔**：`<基準檔>` 用這次開工的日期時間命名，例如 `outputs/mgmt-before-20261114-1240.json`，**不可是已存在的檔名**，並在本次的 evidence 檔記下這個檔名。
+**續作同一筆 CR**（例如上次失敗、這次接著做）：**跳過本步的存基準**，改用 evidence 記錄的原始基準檔；不可重新存基準，否則上次已經引入的錯誤會被當成原本就有的錯誤。原始基準檔遺失時停下回報。
+
 記下已存在的改動，本次不碰。存基準的指令會因為網站原有的管理錯誤回報失敗，這是正常的；但最後一行必須印出 `BASELINE OK`，沒有就代表基準沒存到，停下來回報，不要開始修改。
 
 ### 2. 確認複核的是目前網站上的版本（登記 CR 之前做）
 藥師複核的版本，必須就是現在網站上的版本，才能登記。對每一頁檢查：
 1. **找出實際圖片**：在 cards.json 該頁所屬系列的 `steps` 找到它的圖片路徑（可能是 `.webp`，也可能是 `.png` 等其他格式），不要自己假設副檔名。
-2. **找出最後一次修改這頁的紀錄**：清冊 `page-inventory.csv` 該頁的 `last_updated_cr`，打開那張 CR 的 evidence 檔，看當時的素材版本（圖片檔名、文字版本或日期）。
-3. **比對**：藥師複核的版本必須跟第 2 項的素材版本一致。
-   - 舊頁的 `last_updated_cr` 是 `pre-system`（沒有素材紀錄）、或藥師說複核的是「網站上的現行版本」時：只有在藥師複核日期是**今天**，或藥師明確確認「登記前網站沒有再改過這頁」的情況下才算相符。
+2. **找出最近一次改到這頁圖文的紀錄**：從清冊 `page-inventory.csv` 該頁的 `last_updated_cr` 開始找；那張 CR 若只改系列設定（排序、標題等）、沒有記錄素材版本，就用 `git grep -n "page:<頁ID>" docs/project-management/change-requests.csv` 往前找更早的 CR，直到找到記錄了素材版本（圖片檔名、文字版本或日期）的那一張。
+3. **比對**：藥師複核的版本（定稿檔名、文字版本，或藥師實際看過的網站版本）跟第 2 項找到的版本一致，就算相符，直接登記。
+   - **只憑日期不算相符**：同一天也可能改過版本。
+   - 找不到任何素材紀錄（例如很舊的頁），或無法分辨是否一致時：列出這頁圖片與文字最近一次被修改的提交（`git log -1 --format="%h %ad" --date=iso -- <實際圖片路徑>`），請藥師確認他看的是不是這個版本；確認後才登記。
 4. **確認沒有未提交的修改**：`git status --short` 中，這頁的圖片或 `data/card_content.json` 不可有尚未提交、又不屬於本次的改動。
 
 版本一致、也沒有未提交修改的頁，才列入本次登記。版本不一致、對不到 evidence，或無法判斷的頁，**不登記**，回報藥師：「這頁目前版本與複核版本無法確認相同，需要重新複核或提供版本資料」。**一頁都不符合就停止，不建立 CR。**
@@ -83,7 +87,7 @@ python -B scripts/check_project_management.py --propose --page <受影響頁ID> 
 python -c "import json;[json.load(open(f,encoding='utf-8')) for f in ('cards.json','cards.manual.json','data/card_content.json')];print('JSON OK')"
 python -B scripts/check_site.py
 python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
-python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
+python -B scripts/check_project_management.py --summary --baseline-file <基準檔> --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
 ```
 - JSON 都要能解析，`check_site.py` 必須通過，`--propose` 必須零差異。
 - 基準比對：`new` 與 `worsened` 都必須是 0；有複核相關的錯誤時，打開 `outputs/mgmt-after.json` 找出原因並回報，不要為了通過而改人工欄位。

@@ -10,10 +10,13 @@
 > 指令以 PowerShell 為例。用 bash 執行時：`> $null` 改成 `> /dev/null`，`| Select-String "…"` 改成 `| grep "…"`。
 ```powershell
 git status --short
-python -c "import os;os.makedirs('outputs',exist_ok=True);p='outputs/mgmt-before.json';os.path.exists(p) and os.remove(p)"
-python -B scripts/check_project_management.py --summary --report-file outputs/mgmt-before.json > $null
-python -c "import json;json.load(open('outputs/mgmt-before.json',encoding='utf-8'));print('BASELINE OK')"
+python -c "import os;os.makedirs('outputs',exist_ok=True)"
+python -B scripts/check_project_management.py --summary --report-file <基準檔> > $null
+python -c "import json;json.load(open('<基準檔>',encoding='utf-8'));print('BASELINE OK')"
 ```
+**基準檔**：`<基準檔>` 用這次開工的日期時間命名，例如 `outputs/mgmt-before-20261114-1240.json`，**不可是已存在的檔名**，並在本次的 evidence 檔記下這個檔名。
+**續作同一筆 CR**（例如上次失敗、這次接著做）：**跳過本步的存基準**，改用 evidence 記錄的原始基準檔；不可重新存基準，否則上次已經引入的錯誤會被當成原本就有的錯誤。原始基準檔遺失時停下回報。
+
 記下已存在的改動，本次不碰。存基準的指令會因為網站原有的管理錯誤回報失敗，這是正常的；但最後一行必須印出 `BASELINE OK`，沒有就代表基準沒存到，停下來回報，不要開始修改。這份基準是「改之前」的狀態，檢查時用來比對。
 
 ### 2. 登記 CR
@@ -23,14 +26,16 @@ python -c "import json;json.load(open('outputs/mgmt-before.json',encoding='utf-8
 同時建立 evidence 檔 `docs/project-management/evidence/<CR編號>-<系列ID>.md`（沿用既有 CR 時，更新該 CR 原本的 evidence 檔，不另建），10 行以內：本次範圍、素材來源（有新素材時：圖片檔名、對應文字的版本或日期、藥師定稿確認）。檢查完成後再補上結果。其餘欄位照前一筆同類 CR 的寫法。
 
 ### 3. 依改動類型修改
+**圖片路徑**：既有頁的圖片不一定是 `.webp`（網站有不少 `.png`）。先在 cards.json 該頁所屬系列的 `steps` 找到**實際圖片路徑**，以下所有寫 `img/<頁ID>.webp` 的地方（搜尋、仿單的鍵、淘汰紀錄、換圖）都改用這個實際路徑。
+
 可以同時做好幾項。`data/card_content.json` 很大，用搜尋找到該頁的紀錄直接修改，不要整份讀取。
 
 | 改動 | 改哪裡 | 注意 |
 |---|---|---|
-| 換圖片 | 新圖（不含 Logo 的 PNG）轉檔加 Logo（做法同作業卡 1 第 3 步），**沿用原檔名**覆蓋 `img/<頁ID>.webp` | 該頁紀錄加上或更新 `"imageUpdatedAt": "今天"`，否則民眾手機會繼續顯示快取的舊圖。新圖上的文字與該頁文字必須仍然對得上；對不上就停下來問，不要維持 `matchConfidence: "high"` |
+| 換圖片 | 新圖（不含 Logo 的 PNG）轉檔加 Logo（做法同作業卡 1 第 3 步），**沿用原路徑與副檔名**覆蓋實際圖片（原圖是 `.png` 就輸出 PNG：把轉檔程式最後一行改成 `im.convert("RGB").save(dst, "PNG")`） | 該頁紀錄加上或更新 `"imageUpdatedAt": "今天"`，否則民眾手機會繼續顯示快取的舊圖。新圖上的文字與該頁文字必須仍然對得上；對不上就停下來問，不要維持 `matchConfidence: "high"` |
 | 改文字 | 該頁的 `title`、`summary`、`sections` | **醫療內容有改**：更新 `updatedAt`、`sourceCheckedAt`、`references`、`revisionCredit`（依素材填寫，`updatedAt` 和 `revisionCredit` 缺一個，「內容更新」那行就不會顯示），`needsMedicalReview` 設為 `true`。**只改不影響醫療意思的錯字或標點**：日期都不動。藥名、成分、劑量、單位、頻次、年齡或否定詞（不、勿、禁止）的錯字，視為醫療內容修改，須由素材端重新定稿後照「醫療內容有改」處理 |
 | 刪掉某段文字 | 該頁 `sections` 刪掉那一段 | `title`、`summary` 和至少一段 `sections` 必須保留 |
-| 食藥署仿單連結 | `data/label_links.json` 的 `pages` 物件內，以 `img/<頁ID>.webp` 為鍵：`[{"name": "品名", "license": "許可證字號", "url": "https://mcp.fda.gov.tw/im_detail_1/<許可證字號>"}]` | 網址只能用食藥署仿單平台；刪除連結就移除該鍵 |
+| 食藥署仿單連結 | `data/label_links.json` 的 `pages` 物件內，以實際圖片路徑為鍵（例如 `img/<頁ID>.webp` 或 `img/<頁ID>.png`）：`[{"name": "品名", "license": "許可證字號", "url": "https://mcp.fda.gov.tw/im_detail_1/<許可證字號>"}]` | 網址只能用食藥署仿單平台；刪除連結就移除該鍵 |
 | 推薦閱讀 | 該頁 `related_links`：`[{"title": "", "url": ""}]` | 外部連結、YouTube 都放這裡；站內連結用 `../cards/<頁ID>.html` |
 | 工具按鈕 | 屬於系列設定，改用作業卡 5 | 會套用到整個系列 |
 | 頁面上加入**以上都沒有**的東西 | 需要改 build.py | **停下來**，依 AGENTS.md 先提出改法，經藥師同意才能做 |
@@ -62,7 +67,7 @@ python -B scripts/check_project_management.py --propose --page <受影響頁ID> 
 python -c "import json;[json.load(open(f,encoding='utf-8')) for f in ('cards.json','cards.manual.json','data/card_content.json')];print('JSON OK')"
 python -B scripts/check_site.py
 python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
-python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
+python -B scripts/check_project_management.py --summary --baseline-file <基準檔> --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
 ```
 - `check_site.py` 必須通過。
 - 三份 JSON 都要能解析。
