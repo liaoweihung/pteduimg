@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-14T01:48:27+08:00",
-  "baseline": "bc3ece808b4853618e70fcca31d4e8ffc704e53f",
-  "scope": "網站來源快照；版本 bc3ece80",
+  "generatedAt": "2026-11-14T10:33:12+08:00",
+  "baseline": "df0995dc269a77b0288202e3df1e530ca53c2081",
+  "scope": "網站來源快照；版本 df0995dc",
   "counts": {
     "cards": 442,
     "series": 97,
@@ -3772,8 +3772,8 @@
     }
   },
   "sync": {
-    "pages": 446,
-    "fields": 1110,
+    "pages": 450,
+    "fields": 1114,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4169,9 +4169,21 @@
         ]
       },
       {
+        "page": "acne",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
         "page": "acne_dailycare",
         "fields": [
           "source_sha256",
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "acne_dailycare_2",
+        "fields": [
           "rules_sha256"
         ]
       },
@@ -4843,6 +4855,12 @@
         ]
       },
       {
+        "page": "comedo_dailycare",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
         "page": "common_skin_redness_causes",
         "fields": [
           "jsonld_status",
@@ -5239,6 +5257,12 @@
         "page": "enema_clinical_cond",
         "fields": [
           "source_sha256",
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "enema_comp",
+        "fields": [
           "rules_sha256"
         ]
       },
