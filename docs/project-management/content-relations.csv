@@ -536,3 +536,5 @@ REL-92e3fba24a8e460a,series:insomnia_medication,has_card,page:insomnia_card08,so
 REL-818c91df757fec59,series:insomnia_medication,has_card,page:insomnia_card09,source_observed,series_membership,cards.json,本次新增圖卡系列成員
 REL-291bf5a9dc92531a,page:insomnia_card01,further_reading,page:insomnia_card04,source_observed,management,cards/insomnia_card01.html,民眾與藥師失眠系列雙向延伸閱讀
 REL-3646d62fe45d8037,page:insomnia_card04,further_reading,page:insomnia_card01,source_observed,management,cards/insomnia_card04.html,藥師與民眾失眠系列雙向延伸閱讀
+REL-d09d58313907fbe7,series:liquid_medicine_storage,has_card,page:liquid_medicine_storage_01,source_observed,series_membership,cards.json,CR-2026-093
+REL-2e72251a2297c43c,series:liquid_medicine_storage,has_card,page:liquid_medicine_storage_02,source_observed,series_membership,cards.json,CR-2026-093

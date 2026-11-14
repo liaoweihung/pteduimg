@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v78a799f487bfc500f9c4c651';
+const CACHE_NAME = 'pwa-cache-v1fe229842efa1c4b060efc1e';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -345,6 +345,8 @@ const urlsToCache = [
   "./img/laxative_osmotic.webp",
   "./img/laxative_saline.webp",
   "./img/laxative_stimulant.webp",
+  "./img/liquid_medicine_storage_01.webp",
+  "./img/liquid_medicine_storage_02.webp",
   "./img/macsafe_suspension.webp",
   "./img/methodology_of_exam_Hp.webp",
   "./img/motion_sickness_meds_1.webp",
@@ -947,6 +949,8 @@ const urlsToCache = [
   "./cards/insomnia_card07.html",
   "./cards/insomnia_card08.html",
   "./cards/insomnia_card09.html",
+  "./cards/liquid_medicine_storage_01.html",
+  "./cards/liquid_medicine_storage_02.html",
   "./cards/acne.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare_2.html",

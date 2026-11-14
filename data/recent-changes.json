@@ -1,5 +1,16 @@
 [
   {
+    "request_id": "CR-2026-093",
+    "completed_at": "2026-11-15",
+    "request_type": "新增系列",
+    "series_id": "liquid_medicine_storage",
+    "series_title": "藥水要不要冰？",
+    "card_count": 2,
+    "first_page_id": "liquid_medicine_storage_01",
+    "first_step_index": 0,
+    "first_image": "img/liquid_medicine_storage_01.webp"
+  },
+  {
     "request_id": "CR-2026-086",
     "completed_at": "2026-11-13",
     "request_type": "新增系列",

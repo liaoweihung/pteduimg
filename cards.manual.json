@@ -4009,5 +4009,30 @@
       "img/insomnia_card08.webp",
       "img/insomnia_card09.webp"
     ]
+  },
+  "liquid_medicine_storage": {
+    "title": "藥水要不要冰？",
+    "category": "public_education",
+    "topics": [
+      "travel_medication"
+    ],
+    "order": 24.1,
+    "hidden": false,
+    "icon": "🧊",
+    "tags": [
+      "藥水保存",
+      "藥水冷藏",
+      "眼藥水",
+      "抗生素藥水"
+    ],
+    "texts": [
+      "藥水要不要冰？先看藥袋與產品標示",
+      "藥水保存實例：安滅菌、日舒、舒而坦與希普利敏"
+    ],
+    "showFooter": true,
+    "steps": [
+      "img/liquid_medicine_storage_01.webp",
+      "img/liquid_medicine_storage_02.webp"
+    ]
   }
 }

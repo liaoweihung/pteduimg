@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：308
+- 成功加入文字頁數：310
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -313,3 +313,5 @@
 | insomnia_medication | 食慾素受體拮抗劑 DORAs：Lemborexant 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card07.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | insomnia_medication | 具鎮靜作用之抗憂鬱劑：Trazodone 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card08.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | insomnia_medication | 第一代抗組織胺類：Diphenhydramine 與 Hydroxyzine | https://liaoweihung.github.io/pteduimg/cards/insomnia_card09.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| liquid_medicine_storage | 藥水要不要冰？先看藥袋與產品標示 | https://liaoweihung.github.io/pteduimg/cards/liquid_medicine_storage_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| liquid_medicine_storage | 藥水保存實例：安滅菌、日舒、舒而坦與希普利敏 | https://liaoweihung.github.io/pteduimg/cards/liquid_medicine_storage_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
