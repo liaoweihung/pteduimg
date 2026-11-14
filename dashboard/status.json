@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-15T00:20:59+08:00",
-  "baseline": "c62dbc447a6d671982efb4ecdd7e8e91c644a5a5",
-  "scope": "網站來源快照；版本 c62dbc44",
+  "generatedAt": "2026-11-15T01:55:21+08:00",
+  "baseline": "f2175bd1a56f38ab319ee34d152597444b4d1f91",
+  "scope": "網站來源快照；版本 f2175bd1",
   "counts": {
-    "cards": 442,
-    "series": 97,
-    "allSeries": 101,
+    "cards": 444,
+    "series": 98,
+    "allSeries": 102,
     "hidden": 4,
     "retired": 4,
     "areas": 17,
@@ -26,7 +26,7 @@
     "heat_illness": 1,
     "throat": 1,
     "sleep": 2,
-    "travel_medication": 3,
+    "travel_medication": 4,
     "pregnancy": 3,
     "infant_care": 3,
     "sports_injury": 1
@@ -1049,6 +1049,16 @@
       "departments": [
         "pharmacy_general"
       ]
+    },
+    {
+      "id": "liquid_medicine_storage",
+      "title": "藥水要不要冰？",
+      "count": 2,
+      "hidden": false,
+      "areas": [
+        "travel_medication"
+      ],
+      "departments": []
     }
   ],
   "issues": [
@@ -3750,30 +3760,30 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 307,
+      "machine_pass": 309,
       "partial": 1,
       "missing": 134
     },
     "reference_status": {
       "missing": 219,
-      "machine_pass": 223
+      "machine_pass": 225
     },
     "date_status": {
       "missing": 219,
-      "machine_pass": 202,
+      "machine_pass": 204,
       "partial": 21
     },
     "footer_status": {
       "missing": 239,
-      "machine_pass": 203
+      "machine_pass": 205
     },
     "jsonld_status": {
-      "machine_pass": 442
+      "machine_pass": 444
     }
   },
   "sync": {
-    "pages": 450,
-    "fields": 1108,
+    "pages": 452,
+    "fields": 1110,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -5929,6 +5939,18 @@
         "page": "laxative_stimulant",
         "fields": [
           "source_sha256",
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "liquid_medicine_storage_01",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "liquid_medicine_storage_02",
+        "fields": [
           "rules_sha256"
         ]
       },
