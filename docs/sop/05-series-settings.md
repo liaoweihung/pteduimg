@@ -5,6 +5,7 @@
 ## 步驟
 
 ### 1. 確認工作區並存下檢查基準
+> 指令以 PowerShell 為例。用 bash 執行時：`> $null` 改成 `> /dev/null`，`| Select-String "…"` 改成 `| grep "…"`。
 ```powershell
 git status --short
 python -B scripts/check_project_management.py --summary --report-file outputs/mgmt-before.json > $null
@@ -34,6 +35,8 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 ### 4. 標記 CR 完成（必須在建置前）
 `status` 改為 `completed`，`completed_at` 填今天。
 
+之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。
+
 ### 5. 建置
 - **改 `order` 或 `hidden`**：`python -B build.py`（完整建置）
 - **其他設定**：`python -B build.py --incremental <該系列任一頁ID>`
@@ -42,18 +45,16 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 
 ### 6. 檢查
 ```powershell
-python -m json.tool cards.json > $null
-python -m json.tool cards.manual.json > $null
-python -m json.tool data/card_content.json > $null
+python -c "import json;[json.load(open(f,encoding='utf-8')) for f in ('cards.json','cards.manual.json','data/card_content.json')];print('JSON OK')"
 python -B scripts/check_site.py
 python -B scripts/check_project_management.py --propose --page <該系列頁ID> ...
 python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
-python -B scripts/project_change_tracker.py --check --page <該系列頁ID> ...
+python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
 ```
 - `check_site.py` 必須通過。
 - 三份 JSON 都要能解析。
 - 基準比對：只看輸出的 `Baseline difference` 那一行，`new` 與 `worsened` 都必須是 0。原本就有的錯誤（`persistent`）不處理，也不必閱讀完整報告；不是 0 時才打開 `outputs/mgmt-after.json` 找出是哪幾筆。
-- 變更追蹤：受影響的頁都要對應到本次 CR。
+- 變更追蹤：只需執行一次、填本次任一頁 ID。程式對「尚未提交的變更」本來就整體檢查；`--page` 只是排除與本次無關的舊提交紀錄。結果不可有「目前未提交網站變更：缺少管理連結」。
 - 清冊的 `added_at`、`added_cr`、`last_updated_at`、`last_updated_cr` 由程式依 CR 推算，不要手填。
 - 一般圖卡作業不執行 `scripts/test_*.py`。
 - `--propose` 有差異時，只把機械欄位依 `page_id` 合併進 `page-inventory.csv`，人工欄位不動；合併後必須零差異。

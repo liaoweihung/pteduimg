@@ -1,6 +1,6 @@
 # 作業卡 2：新增或移動圖卡（既有系列）
 
-適用：在已上線的系列**插入新卡**、**調整順序**、**把卡搬到另一個系列**、**讓一張卡同時出現在兩個系列**，或**拆分、合併系列**。只讀這一份；同時還有其他調整時，再讀對應的作業卡。
+適用：在已上線的系列**插入新卡**、**調整順序**、**把卡搬到另一個系列**、**讓一張卡同時出現在兩個系列**、**把共用卡從其中一個系列移除（卡仍留在其他系列）**，或**拆分、合併系列**。只讀這一份；同時還有其他調整時，再讀對應的作業卡。
 
 網站作業從「素材已定稿」開始，**不查核、不改寫醫療內容**。缺素材就停下來問藥師。
 
@@ -16,6 +16,7 @@
 ## 步驟
 
 ### 1. 確認工作區並存下檢查基準
+> 指令以 PowerShell 為例。用 bash 執行時：`> $null` 改成 `> /dev/null`，`| Select-String "…"` 改成 `| grep "…"`。
 ```powershell
 git status --short
 python -B scripts/check_project_management.py --summary --report-file outputs/mgmt-before.json > $null
@@ -29,12 +30,15 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 ### 3. 插入新卡時：處理新卡素材
 - 圖片轉檔加 Logo、寫入 `data/card_content.json`：做法同作業卡 1 第 3、5 步，包括命名前的重複檢查，以及第 5 步下方 `updatedAt`／`revisionCredit`／`matchConfidence` 的規定。
 - 在 `content-relations.csv` 為新頁加 `has_card` 關聯：格式同作業卡 1 第 8 步。
+- 清冊與 evidence 比照作業卡 1 第 8 步：新頁人工欄位填 `unknown`、`known_issue_ids` 填本 CR、`review_required` 填 `yes`，並建立 evidence 檔。
 
 ### 4. 修改 steps（cards.json 與 cards.manual.json 同步）
 - **插入**：把新圖放到指定位置。
 - **調整順序**：照新順序重排。
 - **搬移**：從原系列 `steps` 移除，加入目標系列。頁 ID、網址、文字都不變。
 - **共用**：原系列不動，在目標系列加入同一個圖片路徑。不要複製圖檔或文字。
+  - **共用的限制**：同一張圖只會產生一個頁面，頁面上的翻頁、「第幾張／共幾張」和收藏按鈕，都以 cards.json 中**排在前面的系列**（主要系列）為準。民眾從另一個系列點進來，翻頁會跳到主要系列的其他卡。只在內容完全相同、可以接受這個限制時使用；回報時寫明主要系列是哪一個。
+- **從其中一個系列移除共用卡**：只從該系列的 `steps` 移除，卡仍留在其他系列，**不走淘汰流程**（不登記 `cards.retired.json`）。
 
 ### 4-1. 拆分或合併時：建立新系列
 - 在兩份 cards JSON 新增系列設定，欄位同作業卡 1 第 4 步；`steps` 填入搬過來的現有圖片路徑。
@@ -63,12 +67,15 @@ favorite_keys：["x-0", "x-3", "x-1", "x-2"]
 ### 6. 搬移或共用時：更新關聯
 在 `content-relations.csv`：
 - 共用：新增 `series:<目標系列>,has_card,page:<頁ID>`。
+- 從其中一個系列移除共用卡：刪除該系列那一列，其他系列的列保留。
 - 搬移：同上新增，並刪除原系列那一列。
 
 關聯 ID 算法同作業卡 1 第 8 步。
 
 ### 7. 標記 CR 完成（必須在建置前）
 `status` 改為 `completed`，`completed_at` 填今天。
+
+之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。
 
 ### 8. 建置
 - **只是插在系列最後面**：`python -B build.py --incremental <新頁ID>`
@@ -78,18 +85,16 @@ favorite_keys：["x-0", "x-3", "x-1", "x-2"]
 
 ### 9. 檢查
 ```powershell
-python -m json.tool cards.json > $null
-python -m json.tool cards.manual.json > $null
-python -m json.tool data/card_content.json > $null
+python -c "import json;[json.load(open(f,encoding='utf-8')) for f in ('cards.json','cards.manual.json','data/card_content.json')];print('JSON OK')"
 python -B scripts/check_site.py
 python -B scripts/check_project_management.py --propose --page <受影響頁ID> ...
 python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
-python -B scripts/project_change_tracker.py --check --page <受影響頁ID> ...
+python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
 ```
 - `check_site.py` 必須通過。
 - 三份 JSON 都要能解析。
 - 基準比對：只看輸出的 `Baseline difference` 那一行，`new` 與 `worsened` 都必須是 0。原本就有的錯誤（`persistent`）不處理，也不必閱讀完整報告；不是 0 時才打開 `outputs/mgmt-after.json` 找出是哪幾筆。
-- 變更追蹤：受影響的頁都要對應到本次 CR。
+- 變更追蹤：只需執行一次、填本次任一頁 ID。程式對「尚未提交的變更」本來就整體檢查；`--page` 只是排除與本次無關的舊提交紀錄。結果不可有「目前未提交網站變更：缺少管理連結」。
 - 清冊的 `added_at`、`added_cr`、`last_updated_at`、`last_updated_cr` 由程式依 CR 推算，不要手填。
 - 一般圖卡作業不執行 `scripts/test_*.py`。
 - `--propose` 有差異時，只把機械欄位依 `page_id` 合併進 `page-inventory.csv`（新頁人工欄位填 `unknown`，舊頁人工欄位不動）；合併後必須零差異。

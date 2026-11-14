@@ -99,6 +99,22 @@ class ProjectChangeTrackerTests(unittest.TestCase):
             with self.subTest(path=path):
                 self.assertTrue(tracker.is_site_path(path))
 
+    def test_non_card_pages_need_no_cr(self):
+        for path in ["topics/acne.html", "web/example.html", "calc/example.html",
+                     "growth-calculator.html", "about.html", "tool.html"]:
+            with self.subTest(path=path):
+                self.assertFalse(tracker.is_site_path(path))
+        for path in ["index.html", "public.html", "404.html", "all-cards.html",
+                     "retired-cards.html", "cards/example.html"]:
+            with self.subTest(path=path):
+                self.assertTrue(tracker.is_site_path(path))
+
+    def test_ai_entry_files_are_management_paths(self):
+        for path in ["AGENTS.md", "CLAUDE.md", "GEMINI.md", ".github/copilot-instructions.md"]:
+            with self.subTest(path=path):
+                self.assertTrue(tracker.is_management_path(path))
+                self.assertFalse(tracker.is_site_path(path))
+
     def test_outputs_and_research_docs_are_not_site_changes(self):
         self.assertFalse(tracker.is_site_path("output/preview/index.html"))
         self.assertFalse(tracker.is_site_path("docs/research.html"))

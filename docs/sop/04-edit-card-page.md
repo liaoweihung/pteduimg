@@ -7,6 +7,7 @@
 ## 步驟
 
 ### 1. 確認工作區並存下檢查基準
+> 指令以 PowerShell 為例。用 bash 執行時：`> $null` 改成 `> /dev/null`，`| Select-String "…"` 改成 `| grep "…"`。
 ```powershell
 git status --short
 python -B scripts/check_project_management.py --summary --report-file outputs/mgmt-before.json > $null
@@ -23,7 +24,7 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 | 改動 | 改哪裡 | 注意 |
 |---|---|---|
 | 換圖片 | 新圖（不含 Logo 的 PNG）轉檔加 Logo（做法同作業卡 1 第 3 步），**沿用原檔名**覆蓋 `img/<頁ID>.webp` | 該頁紀錄加上或更新 `"imageUpdatedAt": "今天"`，否則民眾手機會繼續顯示快取的舊圖。新圖上的文字與該頁文字必須仍然對得上；對不上就停下來問，不要維持 `matchConfidence: "high"` |
-| 改文字 | 該頁的 `title`、`summary`、`sections` | **醫療內容有改**：更新 `updatedAt`、`sourceCheckedAt`、`references`、`revisionCredit`（依素材填寫，`updatedAt` 和 `revisionCredit` 缺一個，「內容更新」那行就不會顯示），`needsMedicalReview` 設為 `true`。**只改錯字或標點**：日期都不動 |
+| 改文字 | 該頁的 `title`、`summary`、`sections` | **醫療內容有改**：更新 `updatedAt`、`sourceCheckedAt`、`references`、`revisionCredit`（依素材填寫，`updatedAt` 和 `revisionCredit` 缺一個，「內容更新」那行就不會顯示），`needsMedicalReview` 設為 `true`。**只改不影響醫療意思的錯字或標點**：日期都不動。藥名、成分、劑量、單位、頻次、年齡或否定詞（不、勿、禁止）的錯字，視為醫療內容修改，須由素材端重新定稿後照「醫療內容有改」處理 |
 | 刪掉某段文字 | 該頁 `sections` 刪掉那一段 | `title`、`summary` 和至少一段 `sections` 必須保留 |
 | 食藥署仿單連結 | `data/label_links.json`，以 `img/<頁ID>.webp` 為鍵：`[{"name": "品名", "license": "許可證字號", "url": "https://mcp.fda.gov.tw/im_detail_1/<許可證字號>"}]` | 網址只能用食藥署仿單平台；刪除連結就移除該鍵 |
 | 推薦閱讀 | 該頁 `related_links`：`[{"title": "", "url": ""}]` | 外部連結、YouTube 都放這裡；站內連結用 `../cards/<頁ID>.html` |
@@ -35,6 +36,8 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 ### 4. 標記 CR 完成（必須在建置前）
 `status` 改為 `completed`，`completed_at` 填今天。
 
+之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。
+
 ### 5. 建置
 ```powershell
 python -B build.py --incremental <受影響頁ID> ...
@@ -43,19 +46,17 @@ python -B build.py --incremental <受影響頁ID> ...
 
 ### 6. 檢查
 ```powershell
-python -m json.tool cards.json > $null
-python -m json.tool cards.manual.json > $null
-python -m json.tool data/card_content.json > $null
+python -c "import json;[json.load(open(f,encoding='utf-8')) for f in ('cards.json','cards.manual.json','data/card_content.json')];print('JSON OK')"
 python -B scripts/check_site.py
 python -B scripts/check_project_management.py --propose --page <受影響頁ID> ...
 python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
-python -B scripts/project_change_tracker.py --check --page <受影響頁ID> ...
+python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
 ```
 - `check_site.py` 必須通過。
 - 三份 JSON 都要能解析。
 - 換圖時，逐張檢查疊上 Logo 的新圖；有問題時照作業卡 1 第 9 步「Logo 檢查」的方式回報原因與處理方式，不自行移動、縮小 Logo 或修圖。
 - 基準比對：只看輸出的 `Baseline difference` 那一行，`new` 與 `worsened` 都必須是 0。原本就有的錯誤（`persistent`）不處理，也不必閱讀完整報告；不是 0 時才打開 `outputs/mgmt-after.json` 找出是哪幾筆。
-- 變更追蹤：受影響的頁都要對應到本次 CR。
+- 變更追蹤：只需執行一次、填本次任一頁 ID。程式對「尚未提交的變更」本來就整體檢查；`--page` 只是排除與本次無關的舊提交紀錄。結果不可有「目前未提交網站變更：缺少管理連結」。
 - 清冊的 `added_at`、`added_cr`、`last_updated_at`、`last_updated_cr` 由程式依 CR 推算，不要手填。
 - 一般圖卡作業不執行 `scripts/test_*.py`。
 - `--propose` 有差異時，只把機械欄位依 `page_id` 合併進 `page-inventory.csv`，人工欄位不動；合併後必須零差異。

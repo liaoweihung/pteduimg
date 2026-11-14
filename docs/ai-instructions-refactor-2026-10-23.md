@@ -23,11 +23,11 @@
 | [AGENTS.md](../AGENTS.md) | 修改 | 28,048 | 11,997 |
 | [GEMINI.md](../GEMINI.md) | 修改 | 1,212 | 1,152 |
 | [.github/copilot-instructions.md](../.github/copilot-instructions.md) | 修改 | 901 | 888 |
-| [skills/pteduimg-card-manager/SKILL.md](../AGENTS.md) | 修改 | 21,027 | 15,891 |
+| skills/pteduimg-card-manager/SKILL.md（已於 2026-11-14 刪除，內容併入 docs/sop/） | 修改 | 21,027 | 15,891 |
 | [docs/brand/README.md](brand/README.md) | 修改 | 5,763 | 5,841 |
 | [docs/project-management/README.md](project-management/README.md) | 修改 | 14,209 | 14,293 |
 | [docs/project-management/search-tracking.md](project-management/search-tracking.md) | 修改 | 5,025 | 5,199 |
-| [skills/pteduimg-card-manager/references/card-data.md](sop/card-data.md) | 新增 | 0 | 3,427 |
+| skills/pteduimg-card-manager/references/card-data.md（已於 2026-11-14 刪除，內容併入 docs/sop/） | 新增 | 0 | 3,427 |
 | [docs/site-build-and-release.md](site-build-and-release.md) | 新增 | 0 | 14,529 |
 | [docs/pharmacy-tools-maintenance.md](pharmacy-tools-maintenance.md) | 新增 | 0 | 2,665 |
 | [docs/ai-instructions-refactor-2026-10-23.md](ai-instructions-refactor-2026-10-23.md) | 新增 | 0 | 16,403 |

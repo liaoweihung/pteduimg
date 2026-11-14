@@ -23,6 +23,7 @@
 
 ## 1. 確認工作區並存下檢查基準
 
+> 指令以 PowerShell 為例。用 bash 執行時：`> $null` 改成 `> /dev/null`，`| Select-String "…"` 改成 `| grep "…"`。
 ```powershell
 git status --short
 python -B scripts/check_project_management.py --summary --report-file outputs/mgmt-before.json > $null
@@ -42,7 +43,7 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 | request_type | `新增系列` |
 | scope、related_ids | `series:<系列ID>\|page:<頁ID>\|…`，列出系列與每一頁 |
 | priority／status／approval | `P1`／`in_progress`／`approved` |
-| needs_pharmacist／author_permission／commercial_disclosure | `yes`／`unknown`／`no` |
+| needs_pharmacist／author_permission／commercial_disclosure | `yes`／`unknown`／`unknown`（藥師確認沒有商業關係才填 `no`） |
 | completed_at／git_commit／validation_result | `unknown`（第 6、9 步再填） |
 | evidence | `docs/project-management/evidence/<系列ID>-YYYY-MM-DD.md` |
 
@@ -120,6 +121,8 @@ def convert(src, dst, color=None):  # color 可指定 "black" 或 "white"，預�
 
 把該 CR 的 `status` 改成 `completed`，`completed_at` 填今天。順序不能顛倒，否則首頁「最近新增」不會出現本系列。
 
+之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。
+
 ## 7. 建置
 
 ```powershell
@@ -139,18 +142,16 @@ python -B build.py --incremental <頁ID1> <頁ID2> ...
 2. 在 `content-relations.csv` 為每頁加一列：
    `REL-<雜湊>,series:<系列ID>,has_card,page:<頁ID>,source_observed,series_membership,cards.json,<CR 編號>`
    `<雜湊>` 是 `series:<系列ID>|has_card|page:<頁ID>` 的 SHA-256 前 16 碼。
-3. 建立 evidence 檔：寫下範圍（系列、頁數、素材來源）與第 9 步的檢查結果，10 行以內即可。
+3. 建立 evidence 檔，10 行以內即可：範圍（系列、頁數）、素材來源（圖片檔名、對應文字的版本或日期、藥師定稿確認）、第 9 步的檢查結果。
 
 ## 9. 檢查
 
 ```powershell
-python -m json.tool cards.json > $null
-python -m json.tool cards.manual.json > $null
-python -m json.tool data/card_content.json > $null
+python -c "import json;[json.load(open(f,encoding='utf-8')) for f in ('cards.json','cards.manual.json','data/card_content.json')];print('JSON OK')"
 python -B scripts/check_site.py
 python -B scripts/check_project_management.py --propose --page <頁ID1> --page <頁ID2>
 python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
-python -B scripts/project_change_tracker.py --check --page <頁ID1> --page <頁ID2>
+python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
 ```
 
 - 三份 JSON 都要能解析。
@@ -167,7 +168,7 @@ python -B scripts/project_change_tracker.py --check --page <頁ID1> --page <頁I
 - `check_site.py` 必須通過。
 - `--propose` 必須零差異。
 - 基準比對：只看輸出的 `Baseline difference` 那一行，`new` 與 `worsened` 都必須是 0。原本就有的錯誤（`persistent`）不處理，也不必閱讀完整報告；不是 0 時才打開 `outputs/mgmt-after.json` 找出是哪幾筆。
-- 變更追蹤：本次的頁都要對應到本次 CR。
+- 變更追蹤：只需執行一次、填本次任一頁 ID。程式對「尚未提交的變更」本來就整體檢查；`--page` 只是排除與本次無關的舊提交紀錄。結果不可有「目前未提交網站變更：缺少管理連結」。
 - 開啟一頁生成的 HTML，確認有摘要、分段重點、兩個日期、來源連結，以及「內容更新」那一行。
 - 介面：首頁列表有出現本系列、同系列翻頁與「第幾張／共幾張」正確、返回入口可用、分享網址指向正確頁面。
 - 用 `git diff --stat` 確認變更只有本次相關的檔案，沒有動到 `build.py`、`templates/`、`scripts/`、`skills/`、`index.html`、`public.html`。

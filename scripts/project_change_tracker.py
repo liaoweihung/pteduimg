@@ -19,11 +19,13 @@ TRACKING_START = "183cc0d1b03c00ae67aba102908e3a1877e05bec"
 
 MANAGEMENT_PREFIXES = (f"{PM}/", "docs/sop/", "docs/material/", "CLAUDE.md")
 MANAGEMENT_FILES = {
-    "AGENTS.md", "scripts/check_project_management.py", "scripts/test_project_management.py",
+    "AGENTS.md", "GEMINI.md", ".github/copilot-instructions.md",
+    "scripts/check_project_management.py", "scripts/test_project_management.py",
     "scripts/project_change_tracker.py", "scripts/test_project_change_tracker.py",
     ".github/workflows/project-management-check.yml",
 }
-SITE_PREFIXES = ("cards/", "img/", "css/", "js/", "assets/", "templates/", "topics/", "web/", "calc/", "dashboard/")
+# Pages outside the card workflow (topics/, web/, calc/, root calculator/tool/info pages) need no CR (AGENTS.md).
+SITE_PREFIXES = ("cards/", "img/", "css/", "js/", "assets/", "templates/", "dashboard/")
 SITE_FILES = {
     "404.html", "all-cards.html", "build.py", "cards.json", "cards.manual.json",
     "cards.retired.json", "index.html", "public.html", "manifest.json", "robots.txt",
@@ -77,7 +79,8 @@ def is_site_path(path: str, tracked: bool = True) -> bool:
     if path.startswith("scripts/"):
         name = Path(path).name
         return name.startswith(("build_", "site_", "publish_", "card_archive")) and name.endswith(".py")
-    return "/" not in path and path.lower().endswith(".html")
+    # Root HTML pages count only when listed in SITE_FILES.
+    return False
 
 
 def classify_areas(files: set[str]) -> list[str]:

@@ -1,6 +1,8 @@
 # 作業卡 3：刪除圖卡（淘汰）
 
-適用：讓一張圖卡、或整個系列下架。只讀這一份。
+適用：讓一張圖卡**從全站下架**，或整個系列下架。只讀這一份。
+
+**先確認這張卡是否還在其他系列**：`git grep -n "img/<頁ID>.webp" -- cards.json`。如果只是要從某個系列拿掉、其他系列仍保留，**不要用本卡**，改用作業卡 2 的「從其中一個系列移除共用卡」。
 
 網站**不真的刪除頁面**，而是「淘汰」：舊網址保留，打開會看到退出日期與**淘汰原因**，並列入「退出圖卡紀錄」（`retired-cards.html`）；同時從搜尋引擎、首頁、索引中移除。這樣民眾的收藏和外部連結才不會變成錯誤頁。
 
@@ -13,6 +15,7 @@
 ## 步驟
 
 ### 1. 確認工作區並存下檢查基準
+> 指令以 PowerShell 為例。用 bash 執行時：`> $null` 改成 `> /dev/null`，`| Select-String "…"` 改成 `| grep "…"`。
 ```powershell
 git status --short
 python -B scripts/check_project_management.py --summary --report-file outputs/mgmt-before.json > $null
@@ -24,7 +27,7 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 `request_type` 填 `修改既有圖卡`；`related_ids` 列出系列與每一個淘汰的頁；`status` 填 `in_progress`、`approval` 填 `approved`；`completed_at`、`git_commit`、`validation_result` 先填 `unknown`。其餘欄位照前一筆同類 CR 的寫法。
 
 ### 3. 從系列移除
-- **淘汰單張**：從 cards.json 與 cards.manual.json 該系列的 `steps` 移除。
+- **淘汰單張**：從 cards.json 與 cards.manual.json **所有**含這張圖的系列 `steps` 移除。
 - **整個系列下架**：從兩份 cards JSON 刪除整個系列。
 - 圖檔和 `data/card_content.json` 的紀錄都**保留，不要刪除**。
 
@@ -57,19 +60,27 @@ favorite_keys：["x-0", "x-2"]
 
 沒有替代頁時，`replacements` 填 `[]`。
 
-### 6. 處理指向它的連結
-搜尋其他地方有沒有連到被淘汰的頁，有的話改連到替代頁；沒有替代頁就移除該連結：
+### 6. 清理關聯表與指向它的連結
+
+**關聯表**：在 `docs/project-management/content-relations.csv` 刪除所有 `source_id` 或 `target_id` 是 `page:<頁ID>` 的列；整個系列下架時，也刪除 `series:<系列ID>` 的列。不刪的話，管理檢查會出現「relation targets retired card」等新錯誤。
+
+**其他連結**：分三種搜尋，兩份 cards JSON 都要搜：
 ```powershell
-git grep -n "<頁ID>.html" -- topics/ data/card_content.json data/label_links.json cards.json
+git grep -n "<頁ID>.html" -- topics/ data/ cards.json cards.manual.json
+git grep -n "img/<頁ID>.webp" -- data/ cards.json cards.manual.json
+git grep -n "<系列ID>" -- cards.json cards.manual.json
 ```
-- `topics/` 主題頁裡的連結 → 改成替代頁網址。
-- 其他圖卡的 `related_links` → 改成替代頁。
-- 其他系列的 `related_series` 指向被下架的系列 → 移除。
+（第三行只在整個系列下架時需要。）
+- `topics/` 主題頁、其他圖卡的 `related_links` 指向被淘汰的頁：有替代頁就改連過去，沒有就移除。
+- `data/label_links.json` 以被淘汰圖片為鍵的紀錄：保留不動（淘汰頁仍保留歷史）。
+- 其他系列的 `related_series` 指向被下架的系列：移除。
 
 改了哪些地方要列在回報裡。
 
 ### 7. 標記 CR 完成（必須在建置前）
 `status` 改為 `completed`，`completed_at` 填今天。
+
+之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。
 
 ### 8. 完整建置
 ```powershell
@@ -78,18 +89,16 @@ python -B build.py
 
 ### 9. 檢查
 ```powershell
-python -m json.tool cards.json > $null
-python -m json.tool cards.manual.json > $null
-python -m json.tool data/card_content.json > $null
+python -c "import json;[json.load(open(f,encoding='utf-8')) for f in ('cards.json','cards.manual.json','data/card_content.json')];print('JSON OK')"
 python -B scripts/check_site.py
 python -B scripts/check_project_management.py --propose --page <淘汰頁ID> --page <受影響頁ID> ...
 python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
-python -B scripts/project_change_tracker.py --check --page <淘汰頁ID> --page <受影響頁ID> ...
+python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
 ```
 - `check_site.py` 必須通過。
 - 三份 JSON 都要能解析。
 - 基準比對：只看輸出的 `Baseline difference` 那一行，`new` 與 `worsened` 都必須是 0。原本就有的錯誤（`persistent`）不處理，也不必閱讀完整報告；不是 0 時才打開 `outputs/mgmt-after.json` 找出是哪幾筆。
-- 變更追蹤：受影響的頁都要對應到本次 CR。
+- 變更追蹤：只需執行一次、填本次任一頁 ID。程式對「尚未提交的變更」本來就整體檢查；`--page` 只是排除與本次無關的舊提交紀錄。結果不可有「目前未提交網站變更：缺少管理連結」。
 - 清冊的 `added_at`、`added_cr`、`last_updated_at`、`last_updated_cr` 由程式依 CR 推算，不要手填。
 - 一般圖卡作業不執行 `scripts/test_*.py`。
 - `--propose` 有差異時，只把機械欄位依 `page_id` 合併進 `page-inventory.csv`，人工欄位不動；合併後必須零差異。
