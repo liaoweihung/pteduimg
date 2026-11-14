@@ -10,7 +10,7 @@
 > 指令以 PowerShell 為例。用 bash 執行時：`> $null` 改成 `> /dev/null`，`| Select-String "…"` 改成 `| grep "…"`。
 ```powershell
 git status --short
-python -c "import os;os.makedirs('outputs',exist_ok=True)"
+python -c "import os;os.makedirs('outputs',exist_ok=True);p='outputs/mgmt-before.json';os.path.exists(p) and os.remove(p)"
 python -B scripts/check_project_management.py --summary --report-file outputs/mgmt-before.json > $null
 python -c "import json;json.load(open('outputs/mgmt-before.json',encoding='utf-8'));print('BASELINE OK')"
 ```
@@ -45,7 +45,7 @@ python -c "import json;json.load(open('outputs/mgmt-before.json',encoding='utf-8
 ### 4. 標記 CR 完成（必須在建置前）
 `status` 改為 `completed`，`completed_at` 填今天，`validation_result` 先填「建置與檢查進行中」（不可留 `unknown`，否則管理檢查會報錯；檢查步驟會改成實際結果）。
 
-之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。若已經執行過建置，改回後再執行一次完整建置 `python -B build.py`，讓首頁「最近新增」移除這筆。
+之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。然後**停下來回報**，不要自行重新建置或還原檔案（完整建置會刪掉並重產整個 `cards/`，可能毀掉不屬於本次的工作）。回報時說明：失敗在哪一步、已產生哪些檔案（`git status --short`），以及首頁「最近新增」（`data/recent-changes.json`）是否已出現這筆 CR。由藥師決定修好後繼續，或用 git 還原本次變更。
 
 ### 5. 建置
 ```powershell

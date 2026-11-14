@@ -19,7 +19,7 @@
 > 指令以 PowerShell 為例。用 bash 執行時：`> $null` 改成 `> /dev/null`，`| Select-String "…"` 改成 `| grep "…"`。
 ```powershell
 git status --short
-python -c "import os;os.makedirs('outputs',exist_ok=True)"
+python -c "import os;os.makedirs('outputs',exist_ok=True);p='outputs/mgmt-before.json';os.path.exists(p) and os.remove(p)"
 python -B scripts/check_project_management.py --summary --report-file outputs/mgmt-before.json > $null
 python -c "import json;json.load(open('outputs/mgmt-before.json',encoding='utf-8'));print('BASELINE OK')"
 ```
@@ -41,7 +41,7 @@ python -c "import json;json.load(open('outputs/mgmt-before.json',encoding='utf-8
 - **搬移**：從原系列 `steps` 移除，加入目標系列。頁 ID、網址、文字都不變。
 - **共用**：原系列不動，在目標系列加入同一個圖片路徑。不要複製圖檔或文字。
   - **共用的限制**：同一張圖只會產生一個頁面，頁面上的翻頁、「第幾張／共幾張」和收藏按鈕，都以 cards.json 中**排在前面的系列**（主要系列）為準。民眾從另一個系列點進來，翻頁會跳到主要系列的其他卡。只在內容完全相同、可以接受這個限制時使用；回報時寫明主要系列是哪一個。
-- **從其中一個系列移除共用卡**：只從該系列的 `steps` 移除，卡仍留在其他系列，**不走淘汰流程**（不登記 `cards.retired.json`）。
+- **從其中一個系列移除共用卡**：卡仍留在其他系列，**不走淘汰流程**（不登記 `cards.retired.json`）。先依**移除前**的順序固定該系列的收藏編號（沒有 `favorite_keys` 就照預設 `<系列ID>-0, -1, …` 建立），再把這張卡從 `steps` 和 `favorite_keys` **同時**移除。這樣後面的卡仍保留原編號，舊收藏不會開到別張卡；其他系列不用改。
 
 ### 4-1. 拆分或合併時：建立新系列
 - 在兩份 cards JSON 新增系列設定，欄位同作業卡 1 第 4 步；`steps` 填入搬過來的現有圖片路徑。
@@ -67,7 +67,7 @@ python -c "import json;json.load(open('outputs/mgmt-before.json',encoding='utf-8
 favorite_keys：["x-0", "x-N頁ID", "x-1", "x-2"]
 ```
 
-**調整順序、搬移、拆分、合併**：舊卡一律**沿用原本的編號**，跟著卡走，即使編號前綴是舊系列名稱也沒關係（例如傷口系列拆分時，疤痕系列的卡仍使用 `fall_wound-2`）。原系列和目標系列都要處理。
+**調整順序、搬移、拆分、合併、從其中一個系列移除共用卡**：舊卡一律**沿用原本的編號**，跟著卡走，即使編號前綴是舊系列名稱也沒關係（例如傷口系列拆分時，疤痕系列的卡仍使用 `fall_wound-2`）。原系列和目標系列都要處理。
 
 所有系列的編號合起來不可重複。
 
@@ -82,9 +82,11 @@ favorite_keys：["x-0", "x-N頁ID", "x-1", "x-2"]
 ### 7. 標記 CR 完成（必須在建置前）
 `status` 改為 `completed`，`completed_at` 填今天，`validation_result` 先填「建置與檢查進行中」（不可留 `unknown`，否則管理檢查會報錯；檢查步驟會改成實際結果）。
 
-之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。若已經執行過建置，改回後再執行一次完整建置 `python -B build.py`，讓首頁「最近新增」移除這筆。
+之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。然後**停下來回報**，不要自行重新建置或還原檔案（完整建置會刪掉並重產整個 `cards/`，可能毀掉不屬於本次的工作）。回報時說明：失敗在哪一步、已產生哪些檔案（`git status --short`），以及首頁「最近新增」（`data/recent-changes.json`）是否已出現這筆 CR。由藥師決定修好後繼續，或用 git 還原本次變更。
 
 ### 8. 建置
+完整建置前先執行 `git status --short cards/`：如果有**不屬於本次工作**的未提交 HTML，停下回報（完整建置會刪除 `cards/` 下所有 HTML 再重新產生，那些檔案會消失）。
+
 - **只是插在系列最後面**：`python -B build.py --incremental <新頁ID>`
 - **其他情況**（插在中間、調整順序、搬移、共用、從其中一個系列移除共用卡、拆分、合併）：`python -B build.py`（完整建置）
 
