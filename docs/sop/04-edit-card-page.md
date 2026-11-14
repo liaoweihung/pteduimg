@@ -19,6 +19,11 @@ python -c "import json;json.load(open('<基準檔>',encoding='utf-8'));print('BA
 
 記下已存在的改動，本次不碰。存基準的指令會因為網站原有的管理錯誤回報失敗，這是正常的；但最後一行必須印出 `BASELINE OK`，沒有就代表基準沒存到，停下來回報，不要開始修改。這份基準是「改之前」的狀態，檢查時用來比對。
 
+### 1-1. 先確認圖片路徑與逐頁文字紀錄（登記 CR 之前做）
+**圖片路徑**：既有頁的圖片不一定是 `.webp`（網站有不少 `.png`）。先在 cards.json 該頁所屬系列的 `steps` 找到**實際圖片路徑**，以下所有寫 `img/<頁ID>.webp` 的地方（搜尋、仿單的鍵、淘汰紀錄、換圖）都改用這個實際路徑。
+
+**逐頁文字紀錄**：用實際圖片路徑在 `data/card_content.json` 搜尋該頁紀錄（`git grep -n "<實際圖片路徑>" -- data/card_content.json`）。網站有不少舊頁沒有這筆紀錄。換圖、改文字、刪段落、推薦閱讀，以及已複核頁的任何改動，都需要這筆紀錄；只改仿單連結不需要。需要卻沒有時，**停下來回報**，說明缺的是這頁的逐頁文字定稿（標題、摘要、分段重點、來源、兩個日期、修訂歸屬），等藥師提供後再繼續；不要自己補寫，也不要先登記 CR 或做其他修改。
+
 ### 2. 登記 CR
 先查有沒有已涵蓋本次工作、尚未完成的 CR：`git grep -n "<系列ID>" docs/project-management/change-requests.csv`。有就沿用並補上受影響的 ID；沒有才在 `docs/project-management/change-requests.csv` 末尾新增一列，編號接續最後一筆：
 `request_type` 填 `修改既有圖卡`；`related_ids` 列出系列與每一個受影響的頁；`status` 填 `in_progress`、`approval` 填 `approved`；`git_commit` 填 `same_commit`（本次變更會和 CR 一起提交；先填好，變更追蹤檢查才會通過）；`completed_at`、`validation_result` 先填 `unknown`；`evidence` 填下面建立的 evidence 檔路徑。
@@ -26,8 +31,6 @@ python -c "import json;json.load(open('<基準檔>',encoding='utf-8'));print('BA
 同時建立 evidence 檔 `docs/project-management/evidence/<CR編號>-<系列ID>.md`（沿用既有 CR 時，更新該 CR 原本的 evidence 檔，不另建），10 行以內：本次範圍、素材來源（有新素材時：圖片檔名、對應文字的版本或日期、藥師定稿確認）。檢查完成後再補上結果。其餘欄位照前一筆同類 CR 的寫法。
 
 ### 3. 依改動類型修改
-**圖片路徑**：既有頁的圖片不一定是 `.webp`（網站有不少 `.png`）。先在 cards.json 該頁所屬系列的 `steps` 找到**實際圖片路徑**，以下所有寫 `img/<頁ID>.webp` 的地方（搜尋、仿單的鍵、淘汰紀錄、換圖）都改用這個實際路徑。
-
 可以同時做好幾項。`data/card_content.json` 很大，用搜尋找到該頁的紀錄直接修改，不要整份讀取。
 
 | 改動 | 改哪裡 | 注意 |
