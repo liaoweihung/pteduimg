@@ -26,15 +26,15 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 先查有沒有已涵蓋本次工作、尚未完成的 CR：`git grep -n "<系列ID>" docs/project-management/change-requests.csv`。有就沿用並補上受影響的 ID；沒有才在 `docs/project-management/change-requests.csv` 末尾新增一列，編號接續最後一筆：
 `request_type` 填 `修改既有圖卡`；`related_ids` 列出系列與每一個淘汰的頁；`status` 填 `in_progress`、`approval` 填 `approved`；`git_commit` 填 `same_commit`（本次變更會和 CR 一起提交；先填好，變更追蹤檢查才會通過）；`completed_at`、`validation_result` 先填 `unknown`；`evidence` 填下面建立的 evidence 檔路徑。
 
-同時建立 evidence 檔 `docs/project-management/evidence/<系列ID>-YYYY-MM-DD.md`，10 行以內：本次範圍、素材來源（有新素材時：圖片檔名、對應文字的版本或日期、藥師定稿確認）。檢查完成後再補上結果。其餘欄位照前一筆同類 CR 的寫法。
+同時建立 evidence 檔 `docs/project-management/evidence/<CR編號>-<系列ID>.md`（沿用既有 CR 時，更新該 CR 原本的 evidence 檔，不另建），10 行以內：本次範圍、素材來源（有新素材時：圖片檔名、對應文字的版本或日期、藥師定稿確認）。檢查完成後再補上結果。其餘欄位照前一筆同類 CR 的寫法。
 
 ### 3. 從系列移除
 - **淘汰單張**：從 cards.json 與 cards.manual.json **所有**含這張圖的系列 `steps` 移除。
 - **整個系列下架**：從兩份 cards JSON 刪除整個系列，並在 `docs/project-management/removed-series.json` 的 `series` 清單加一筆：`{"id": "<系列ID>", "title": "<系列標題>", "removed_at": "YYYY-MM-DD", "reason": "<原因>", "request_id": "<本次 CR>"}`。這樣過去引用這個系列的 CR 仍然有效，管理檢查不會報「missing related target」。
 - 圖檔和 `data/card_content.json` 的紀錄都**保留，不要刪除**。
 
-### 4. 保護收藏編號（淘汰單張且不是最後一張時）
-系列中剩下的卡要保留原本的收藏編號，否則民眾收藏的會變成另一張卡。在該系列設定 `favorite_keys`，跟 `steps` 一一對應：
+### 4. 保護收藏編號（淘汰單張時）
+每個含這張圖的系列都要處理。系列中剩下的卡要保留原本的收藏編號，否則民眾收藏的會變成另一張卡。在該系列設定 `favorite_keys`，跟 `steps` 一一對應：
 
 ```
 原本 steps：[A, B, C]，編號 [x-0, x-1, x-2]
@@ -42,7 +42,7 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 favorite_keys：["x-0", "x-2"]
 ```
 
-系列已經有 `favorite_keys` 時，刪掉被淘汰那張的編號即可。
+系列已經有 `favorite_keys` 時，刪掉被淘汰那張的編號即可（清單長度必須等於 `steps`）。淘汰的是系列最後一張、且系列沒有 `favorite_keys` 時，不用處理。
 
 ### 5. 登記淘汰紀錄
 在 `cards.retired.json` 每淘汰一頁新增一筆，格式照檔案內現有紀錄：
@@ -68,12 +68,13 @@ favorite_keys：["x-0", "x-2"]
 
 **其他連結**：分三種搜尋，兩份 cards JSON 都要搜：
 ```powershell
-git grep -n "<頁ID>.html" -- topics/ data/ cards.json cards.manual.json
+git grep -n "<頁ID>.html" -- topics/ data/ cards.json cards.manual.json cards.retired.json
 git grep -n "img/<頁ID>.webp" -- data/ cards.json cards.manual.json
 git grep -n "<系列ID>" -- cards.json cards.manual.json
 ```
-（第三行只在整個系列下架時需要。）
+（第三行只在整個系列下架時需要。搜尋結果中，被淘汰頁**自己的**逐頁文字紀錄不用改。）
 - `topics/` 主題頁、其他圖卡的 `related_links` 指向被淘汰的頁：有替代頁就改連過去，沒有就移除。
+- `cards.retired.json` 裡**其他舊淘汰卡**的 `replacements` 指向本次淘汰的頁：藥師有指定新的替代頁就改過去；沒有就從該筆的 `replacements` 移除這一項，其他有效的替代頁保留（清單可以變成空的）。
 - `data/label_links.json` 以被淘汰圖片為鍵的紀錄：保留不動（淘汰頁仍保留歷史）。
 - 其他系列的 `related_series` 指向被下架的系列：移除。
 
@@ -90,12 +91,15 @@ python -B build.py
 ```
 
 ### 9. 檢查
+
+**清冊要涵蓋的頁**：不只本次直接修改的頁。建置後用 `git status --short cards/` 列出所有 HTML 有變動的頁，再加上「系列設定（`steps`、標題、`showFooter`、`favorite_keys`、`related_series`、`tool_link` 等）有改動的系列」的**每一頁**；這些頁的機械欄位都會跟著變。以下 `<受影響頁ID>` 指的就是這整份清單。
+
 ```powershell
+python -B scripts/check_project_management.py --propose --page <受影響頁ID> ...
 python -c "import json;[json.load(open(f,encoding='utf-8')) for f in ('cards.json','cards.manual.json','data/card_content.json')];print('JSON OK')"
 python -B scripts/check_site.py
-python -B scripts/check_project_management.py --propose --page <淘汰頁ID> --page <受影響頁ID> ...
-python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
 python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
+python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
 ```
 - `check_site.py` 必須通過。
 - 三份 JSON 都要能解析。
@@ -108,7 +112,10 @@ python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
 - 確認 `retired-cards.html` 有這一筆，`sitemap.xml` 和 `all-cards.html` 已經沒有它。
 - 用 `git diff --stat` 確認只改到本次相關的檔案，有不明的改動要列出來。
 
-**填寫順序**：先執行上面除了基準比對以外的指令，把結果寫入 CR 的 `validation_result` 和 evidence 檔；**再**執行基準比對；最後在 `validation_result` 補上「基準比對 new=0、worsened=0」。
+**執行順序**：
+1. 先用 `--propose`（涵蓋上述全部受影響頁）把機械欄位合併進 `page-inventory.csv`，再跑一次 `--propose` 確認零差異。既有頁只合併機械欄位，人工欄位不動（本作業卡明確要求修改的人工欄位除外）；新頁的人工欄位照作業卡 1 第 8 步的表格填。
+2. 再執行其餘檢查（JSON、`check_site.py`、變更追蹤、頁面確認），把結果寫入 CR 的 `validation_result` 和 evidence 檔。
+3. 最後才執行基準比對，並在 `validation_result` 補上「基準比對 new=0、worsened=0」。
 
 ### 10. 回報（不要 commit 或 push）
 淘汰了哪些頁、替代頁、改了哪些連結、收藏編號怎麼處理、檢查結果、要提交的檔案清單。

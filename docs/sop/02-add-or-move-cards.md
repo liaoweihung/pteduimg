@@ -27,7 +27,7 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 先查有沒有已涵蓋本次工作、尚未完成的 CR：`git grep -n "<系列ID>" docs/project-management/change-requests.csv`。有就沿用並補上受影響的 ID；沒有才在 `docs/project-management/change-requests.csv` 末尾新增一列，編號接續最後一筆：
 `request_type`：**插入新卡**填 `系列追加圖卡`；調整順序、搬移、共用、拆分、合併都沒有新增圖卡，填 `修改既有圖卡`（拆分或合併出來的新系列也不要填 `新增系列`，否則會被當成新內容出現在首頁「最近新增」）；`related_ids` 列出所有受影響的系列與頁（`series:<ID>|page:<ID>|…`）；`status` 填 `in_progress`、`approval` 填 `approved`；`git_commit` 填 `same_commit`（本次變更會和 CR 一起提交；先填好，變更追蹤檢查才會通過）；`completed_at`、`validation_result` 先填 `unknown`；`evidence` 填下面建立的 evidence 檔路徑。
 
-同時建立 evidence 檔 `docs/project-management/evidence/<系列ID>-YYYY-MM-DD.md`，10 行以內：本次範圍、素材來源（有新素材時：圖片檔名、對應文字的版本或日期、藥師定稿確認）。檢查完成後再補上結果。其餘欄位照前一筆同類 CR 的寫法。
+同時建立 evidence 檔 `docs/project-management/evidence/<CR編號>-<系列ID>.md`（沿用既有 CR 時，更新該 CR 原本的 evidence 檔，不另建），10 行以內：本次範圍、素材來源（有新素材時：圖片檔名、對應文字的版本或日期、藥師定稿確認）。檢查完成後再補上結果。其餘欄位照前一筆同類 CR 的寫法。
 
 ### 3. 插入新卡時：處理新卡素材
 - 圖片轉檔加 Logo、寫入 `data/card_content.json`：做法同作業卡 1 第 3、5 步，包括命名前的重複檢查，以及第 5 步下方 `updatedAt`／`revisionCredit`／`matchConfidence` 的規定。
@@ -52,7 +52,7 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 
 ### 5. 保護收藏編號
 
-**插在系列最後面**：系列沒有 `favorite_keys` 就不用處理；**系列已有 `favorite_keys` 時**，要在清單最後補一個該系列沒用過的新編號，清單長度必須等於 `steps`，否則建置會拒絕。
+**插在系列最後面**（包括把共用卡加到目標系列最後面）：系列沒有 `favorite_keys` 就不用處理；**系列已有 `favorite_keys` 時**，要在清單最後補一個該系列沒用過的新編號，清單長度必須等於 `steps`，否則建置會拒絕。
 
 **其他情況**（插在中間、調整順序、搬移、拆分、合併）：
 網站用「系列ID-順序」記住民眾收藏了哪張卡，例如 `fall_wound-2`。插在中間、調整順序或搬走一張，後面的順序都會變，原本收藏的人點開會看到另一張卡。
@@ -84,7 +84,7 @@ favorite_keys：["x-0", "x-3", "x-1", "x-2"]
 
 ### 8. 建置
 - **只是插在系列最後面**：`python -B build.py --incremental <新頁ID>`
-- **其他情況**（插在中間、調整順序、搬移、共用、拆分、合併）：`python -B build.py`（完整建置）
+- **其他情況**（插在中間、調整順序、搬移、共用、從其中一個系列移除共用卡、拆分、合併）：`python -B build.py`（完整建置）
 
 增量建置被拒絕時，停下回報原因。
 
@@ -92,12 +92,15 @@ favorite_keys：["x-0", "x-3", "x-1", "x-2"]
 照作業卡 1 第 8 步第 1 項：用 `--propose` 取得新頁的機械欄位，新增到 `page-inventory.csv`，人工欄位照該處的表格填。
 
 ### 9. 檢查
+
+**清冊要涵蓋的頁**：不只本次直接修改的頁。建置後用 `git status --short cards/` 列出所有 HTML 有變動的頁，再加上「系列設定（`steps`、標題、`showFooter`、`favorite_keys`、`related_series`、`tool_link` 等）有改動的系列」的**每一頁**；這些頁的機械欄位都會跟著變。以下 `<受影響頁ID>` 指的就是這整份清單。
+
 ```powershell
+python -B scripts/check_project_management.py --propose --page <受影響頁ID> ...
 python -c "import json;[json.load(open(f,encoding='utf-8')) for f in ('cards.json','cards.manual.json','data/card_content.json')];print('JSON OK')"
 python -B scripts/check_site.py
-python -B scripts/check_project_management.py --propose --page <受影響頁ID> ...
-python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
 python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
+python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
 ```
 - `check_site.py` 必須通過。
 - 三份 JSON 都要能解析。
@@ -109,7 +112,10 @@ python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
 - 開啟受影響系列的一頁，確認「第幾張／共幾張」和上一張、下一張正確。
 - 用 `git diff --stat` 確認只改到本次相關的檔案。完整建置會重寫很多頁，只要差異都是張數、翻頁之類的連帶變化就正常；有不明的改動要列出來。
 
-**填寫順序**：先執行上面除了基準比對以外的指令，把結果寫入 CR 的 `validation_result` 和 evidence 檔；**再**執行基準比對；最後在 `validation_result` 補上「基準比對 new=0、worsened=0」。
+**執行順序**：
+1. 先用 `--propose`（涵蓋上述全部受影響頁）把機械欄位合併進 `page-inventory.csv`，再跑一次 `--propose` 確認零差異。既有頁只合併機械欄位，人工欄位不動（本作業卡明確要求修改的人工欄位除外）；新頁的人工欄位照作業卡 1 第 8 步的表格填。
+2. 再執行其餘檢查（JSON、`check_site.py`、變更追蹤、頁面確認），把結果寫入 CR 的 `validation_result` 和 evidence 檔。
+3. 最後才執行基準比對，並在 `validation_result` 補上「基準比對 new=0、worsened=0」。
 
 ### 10. 回報（不要 commit 或 push）
 做了什麼、受影響的系列與頁、收藏編號怎麼處理、檢查結果、要提交的檔案清單。

@@ -10,6 +10,7 @@ import tempfile
 
 STATE = "outputs/incremental-build/state.json"
 SOURCES = ("cards.json", "seo.json", "data/card_content.json")
+LABEL_LINKS = "data/label_links.json"
 RULES = ("build.py", "scripts/incremental_build.py", "scripts/site_footer.py",
          "scripts/site_header.py", "scripts/acne_pilot.py", "scripts/card_archive.py",
          "templates/site-footer.html", "css/base.css", "author.html",
@@ -55,8 +56,11 @@ def head(root):
 
 
 def snapshot(root):
+    sources = {p: json.loads((root / p).read_text(encoding="utf-8")) for p in SOURCES}
+    sources[LABEL_LINKS] = (json.loads((root / LABEL_LINKS).read_text(encoding="utf-8"))
+                            if (root / LABEL_LINKS).is_file() else {"pages": {}})
     return {"version": 1, "head": head(root),
-            "sources": {p: json.loads((root / p).read_text(encoding="utf-8")) for p in SOURCES},
+            "sources": sources,
             "rules": {p: digest((root / p).read_bytes().replace(b"\r\n", b"\n")) for p in RULES},
             "globals": {p: digest((root / p).read_bytes().replace(b"\r\n", b"\n")) for p in GLOBALS if (root / p).exists()},
             "runtime": runtime_digest(root)}
@@ -71,13 +75,23 @@ def baseline(root):
     if state.exists():
         saved = json.loads(state.read_text(encoding="utf-8"))
         if saved.get("version") == 1 and saved.get("head") == head(root):
+            if LABEL_LINKS not in saved.get("sources", {}):
+                try:
+                    saved["sources"][LABEL_LINKS] = json.loads(git(root, "show", f"{saved['head']}:{LABEL_LINKS}"))
+                except (ValueError, KeyError, OSError):
+                    saved["sources"][LABEL_LINKS] = {"pages": {}}
             return saved
     revision = head(root)
     if not revision:
         raise ValueError("No Git HEAD or local baseline; run python build.py first.")
     read = lambda p: git(root, "show", f"{revision}:{p}")
+    sources = {p: json.loads(read(p)) for p in SOURCES}
+    try:
+        sources[LABEL_LINKS] = json.loads(read(LABEL_LINKS))
+    except (ValueError, KeyError, OSError):
+        sources[LABEL_LINKS] = {"pages": {}}
     return {"version": 1, "head": revision,
-            "sources": {p: json.loads(read(p)) for p in SOURCES},
+            "sources": sources,
             "rules": {p: digest(read(p).replace(b"\r\n", b"\n")) for p in RULES},
             "globals": {p: digest(read(p).replace(b"\r\n", b"\n")) for p in GLOBALS}, "runtime": None}
 
@@ -119,6 +133,13 @@ def content_index(records):
             if isinstance(r, dict) and r.get("matchConfidence") == "high" and r.get("image")}
 
 
+def label_links_index(data):
+    pages = data.get("pages") if isinstance(data, dict) else None
+    if not isinstance(pages, dict):
+        return {}
+    return {k.replace("\\", "/"): v for k, v in pages.items() if isinstance(v, list)}
+
+
 def owners(build, cards):
     result = {}
     for series, card in cards.items():
@@ -136,10 +157,12 @@ def owners(build, cards):
     return result
 
 
-def signatures(build, cards, contents, seo):
+def signatures(build, cards, contents, seo, label_links=None):
+    links = label_links if label_links is not None else {}
     return {page: [series, index, cards[series], contents.get(image), seo.get(page),
                    [seo.get(build.page_for_image(step)) for step in cards[series].get("steps", [])],
-                   build.render_series_links(cards[series], cards)]
+                   build.render_series_links(cards[series], cards),
+                   links.get(image.replace("\\", "/"), [])]
             for page, (series, index, image) in owners(build, cards).items()}
 
 
@@ -178,10 +201,12 @@ def validate_changes(build, old, new, requested):
     for page in before:
         if before[page][0] != after[page][0]:
             raise ValueError("Primary series changed; use python build.py: " + page)
-    for source in ("data/card_content.json", "seo.json"):
-        a, b = old[source], new[source]
+    for source in ("data/card_content.json", "seo.json", LABEL_LINKS):
+        a, b = old.get(source, {}), new.get(source, {})
         if source.endswith("card_content.json"):
             a, b = content_index(a), content_index(b)
+        elif source == LABEL_LINKS:
+            a, b = label_links_index(a), label_links_index(b)
         for key in a.keys() | b.keys():
             if a.get(key) != b.get(key):
                 page_id = Path(key).stem
@@ -192,15 +217,18 @@ def validate_changes(build, old, new, requested):
 
 @contextmanager
 def use_root(build, root):
-    names = ("ROOT", "CARDS_DIR", "CARDS_JSON", "SEO_JSON", "CARD_CONTENT_JSON", "CARD_TEXT_REPORT")
-    previous = {key: getattr(build, key) for key in names}
+    names = ("ROOT", "CARDS_DIR", "CARDS_JSON", "SEO_JSON", "CARD_CONTENT_JSON", "CARD_TEXT_REPORT", "LABEL_LINKS_JSON")
+    previous = {key: getattr(build, key) for key in names if hasattr(build, key)}
+    prev_links = getattr(build, "_LABEL_LINKS", None)
     for key, value in previous.items():
         setattr(build, key, root / value.relative_to(previous["ROOT"]))
+    build._LABEL_LINKS = None
     try:
         yield
     finally:
         for key, value in previous.items():
             setattr(build, key, value)
+        build._LABEL_LINKS = prev_links
 
 
 def merge_page(old, current, new, name, temp):
@@ -231,6 +259,8 @@ def run_incremental(build, requested):
     retired_images = {r["image"] for r in retired}
     contents = {i: r for i, r in content_index(new["data/card_content.json"]).items() if i not in retired_images}
     old_contents = {i: r for i, r in content_index(old["data/card_content.json"]).items() if i not in retired_images}
+    label_links = label_links_index(new.get(LABEL_LINKS))
+    old_label_links = label_links_index(old.get(LABEL_LINKS))
     seo = build.build_seo_index(cards, contents, False, new["seo.json"])
     old_seo = build.build_seo_index(old["cards.json"], old_contents, False, old["seo.json"])
     for page in after:
@@ -238,8 +268,8 @@ def run_incremental(build, requested):
             expected = old_seo[page][field] if page in before else build.abs_url(page)
             if seo[page][field] != expected:
                 raise ValueError("URL identity change requires python build.py: " + page + " (" + field + ")")
-    previous = signatures(build, old["cards.json"], old_contents, old_seo)
-    following = signatures(build, cards, contents, seo)
+    previous = signatures(build, old["cards.json"], old_contents, old_seo, old_label_links)
+    following = signatures(build, cards, contents, seo, label_links)
     affected = {Path(p).stem for p in following if previous.get(p) != following[p]}
     for page in before:
         if not (root / page).is_file():
@@ -269,14 +299,20 @@ def run_incremental(build, requested):
     (root / "outputs").mkdir(exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="incremental-stage-", dir=root / "outputs") as directory:
         stage = Path(directory)
-        for name in set(SOURCES + RULES + GLOBALS + ("index.html", "public.html", "retired-cards.html", "docs/project-management/change-requests.csv")):
+        for name in set(SOURCES + (LABEL_LINKS,) + RULES + GLOBALS + ("index.html", "public.html", "retired-cards.html", "docs/project-management/change-requests.csv")):
             source = root / name
             if source.is_file():
                 (stage / name).parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(source, stage / name)
         shutil.copytree(root / "cards", stage / "cards")
-        rendered = build.generate_card_pages(cards, seo, contents, affected, render_only=True)
-        old_rendered = build.generate_card_pages(old["cards.json"], old_seo, old_contents, affected, render_only=True)
+        prev_cache = getattr(build, "_LABEL_LINKS", None)
+        try:
+            build._LABEL_LINKS = label_links
+            rendered = build.generate_card_pages(cards, seo, contents, affected, render_only=True)
+            build._LABEL_LINKS = old_label_links
+            old_rendered = build.generate_card_pages(old["cards.json"], old_seo, old_contents, affected, render_only=True)
+        finally:
+            build._LABEL_LINKS = prev_cache
         changed_pages = []
         for page, text in rendered.items():
             existing = root / page

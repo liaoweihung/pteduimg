@@ -7,7 +7,7 @@
 - 複核者（要記錄的名稱）
 - 複核日期
 - 複核依據（例如複核紀錄文件的名稱或位置）
-- 頁面上要不要顯示「審閱狀態」（預設不顯示）
+- （選填）頁面上要不要顯示「審閱狀態」。沒提到就照預設：不顯示，不必為此停下來問。
 
 ## 步驟
 
@@ -23,12 +23,12 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 先查有沒有已涵蓋本次工作、尚未完成的 CR：`git grep -n "<系列ID>" docs/project-management/change-requests.csv`。有就沿用；沒有才在末尾新增一列，編號接續最後一筆：`request_type` 填 `修改既有圖卡`，名稱寫「登記藥師複核：<系列或頁>」，`related_ids` 列出系列與每一個複核的頁；`status` 填 `in_progress`、`approval` 填 `approved`；`git_commit` 填 `same_commit`；`completed_at`、`validation_result` 先填 `unknown`；`evidence` 填第 3 步的 evidence 檔路徑。
 
 ### 3. 建立 evidence 檔
-在 `docs/project-management/evidence/` 建立一份，10 行以內：複核的頁、複核者、日期、複核依據，以及藥師的原話（如「已複核通過」）。
+在 `docs/project-management/evidence/` 建立一份（檔名 `<CR編號>-review-<系列ID>.md`），10 行以內：複核的頁、複核者、日期、複核依據，以及藥師的原話（如「已複核通過」）。
 
 ### 4. 更新逐頁文字
 在 `data/card_content.json` 用搜尋找到每一頁的紀錄：
 - `needsMedicalReview` 改為 `false`。
-- 藥師要在頁面顯示審閱狀態時，才加上 `"reviewStatus": "藥師提供的文字"`；預設不加。
+- 藥師要在頁面顯示審閱狀態時，才加上 `"reviewStatus": "藥師提供的文字"`。選擇不顯示（或沒提到）時，該頁若已有舊的 `reviewStatus`，一併移除。
   - 頁面只有在 `updatedAt` 和 `revisionCredit` 都有值時才會顯示這一行；該頁若設了 `"showEditorialDetails": false`，`reviewStatus` 也不會顯示。遇到這兩種情況，先回報藥師，不要自行改其他欄位。
 - 其他欄位（文字、日期、來源）一律不動。複核不等於內容更新，`updatedAt` 不改。
 
@@ -63,12 +63,15 @@ python -B scripts/check_project_management.py --propose --page <複核頁ID>
 其他人工欄位不動。
 
 ### 8. 檢查
+
+**清冊要涵蓋的頁**：不只本次直接修改的頁。建置後用 `git status --short cards/` 列出所有 HTML 有變動的頁，再加上「系列設定（`steps`、標題、`showFooter`、`favorite_keys`、`related_series`、`tool_link` 等）有改動的系列」的**每一頁**；這些頁的機械欄位都會跟著變。以下 `<受影響頁ID>` 指的就是這整份清單。
+
 ```powershell
+python -B scripts/check_project_management.py --propose --page <受影響頁ID> ...
 python -c "import json;[json.load(open(f,encoding='utf-8')) for f in ('cards.json','cards.manual.json','data/card_content.json')];print('JSON OK')"
 python -B scripts/check_site.py
-python -B scripts/check_project_management.py --propose --page <複核頁ID>
-python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
 python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
+python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
 ```
 - JSON 都要能解析，`check_site.py` 必須通過，`--propose` 必須零差異。
 - 基準比對：`new` 與 `worsened` 都必須是 0；有複核相關的錯誤時，打開 `outputs/mgmt-after.json` 找出原因並回報，不要為了通過而改人工欄位。
@@ -76,7 +79,10 @@ python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
 - 開啟複核的頁面，確認「審閱狀態」有或沒有顯示，符合藥師的選擇。
 - 用 `git diff --stat` 確認只改到本次相關的檔案。
 
-**填寫順序**：先執行上面除了基準比對以外的指令，把結果寫入 CR 的 `validation_result` 和 evidence 檔；**再**執行基準比對；最後在 `validation_result` 補上「基準比對 new=0、worsened=0」。
+**執行順序**：
+1. 先用 `--propose`（涵蓋上述全部受影響頁）把機械欄位合併進 `page-inventory.csv`，再跑一次 `--propose` 確認零差異。既有頁只合併機械欄位，人工欄位不動（本作業卡明確要求修改的人工欄位除外）；新頁的人工欄位照作業卡 1 第 8 步的表格填。
+2. 再執行其餘檢查（JSON、`check_site.py`、變更追蹤、頁面確認），把結果寫入 CR 的 `validation_result` 和 evidence 檔。
+3. 最後才執行基準比對，並在 `validation_result` 補上「基準比對 new=0、worsened=0」。
 
 ### 9. 回報（不要 commit 或 push）
 登記了哪些頁、複核者與日期、頁面是否顯示審閱狀態、檢查結果、要提交的檔案清單。

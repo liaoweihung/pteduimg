@@ -17,7 +17,7 @@
 **同一內容要出現在多處時，不要複製圖片或文字**：系列要出現在多個分類，就在 topics／departments 填多個代碼；某張卡要同時放進另一個系列，照作業卡 2 的「共用」處理。
 
 **選填素材**（有提供才做）：
-- 食藥署仿單（品名＋許可證字號）→ 寫入 `data/label_links.json`，以 `img/<頁ID>.webp` 為鍵：`[{"name": "品名", "license": "許可證字號", "url": "https://mcp.fda.gov.tw/im_detail_1/<許可證字號>"}]`
+- 食藥署仿單（品名＋許可證字號）→ 寫入 `data/label_links.json` 的 `pages` 物件內，以 `img/<頁ID>.webp` 為鍵：`[{"name": "品名", "license": "許可證字號", "url": "https://mcp.fda.gov.tw/im_detail_1/<許可證字號>"}]`
 - 推薦閱讀（標題＋網址，可放外部連結或 YouTube）→ card_content 該頁加 `"related_links": [{"title": "", "url": ""}]`
 - 工具按鈕（例如連到計算器）→ 系列資料加 `"tool_link": {"title": "直接計算", "url": "../xxx.html"}`
 
@@ -46,7 +46,7 @@ python -B scripts/check_project_management.py --summary --report-file outputs/mg
 | needs_pharmacist／author_permission／commercial_disclosure | `yes`／`unknown`／`unknown`（藥師確認沒有商業關係才填 `no`） |
 | completed_at／validation_result | `unknown`（第 6、9 步再填） |
 | git_commit | `same_commit`（本次變更會和 CR 一起提交；先填好，變更追蹤檢查才會通過） |
-| evidence | `docs/project-management/evidence/<系列ID>-YYYY-MM-DD.md` |
+| evidence | `docs/project-management/evidence/<CR編號>-<系列ID>.md`（沿用既有 CR 時，更新該 CR 原本的 evidence 檔，不另建） |
 
 同時建立這個 evidence 檔，10 行以內：範圍（系列、頁數）、素材來源（圖片檔名、對應文字的版本或日期、藥師定稿確認）。第 9 步再補上檢查結果。
 
@@ -132,7 +132,7 @@ def convert(src, dst, color=None):  # color 可指定 "black" 或 "white"，預�
 python -B build.py --incremental <頁ID1> <頁ID2> ...
 ```
 
-列出全部新頁 ID。如果增量建置拒絕執行，**停下回報原因**，不要自行改跑完整建置。
+列出全部新頁 ID。若同時修改了既有系列（例如兩邊互設 `related_series`），再加上該既有系列任一頁 ID，否則建置會拒絕。如果增量建置拒絕執行，**停下回報原因**，不要自行改跑完整建置。
 
 ## 8. 管理紀錄
 
@@ -157,12 +157,14 @@ python -B build.py --incremental <頁ID1> <頁ID2> ...
 
 ## 9. 檢查
 
+**清冊要涵蓋的頁**：不只本次直接修改的頁。建置後用 `git status --short cards/` 列出所有 HTML 有變動的頁，再加上「系列設定（`steps`、標題、`showFooter`、`favorite_keys`、`related_series`、`tool_link` 等）有改動的系列」的**每一頁**；這些頁的機械欄位都會跟著變。以下 `<受影響頁ID>` 指的就是這整份清單。
+
 ```powershell
+python -B scripts/check_project_management.py --propose --page <受影響頁ID> ...
 python -c "import json;[json.load(open(f,encoding='utf-8')) for f in ('cards.json','cards.manual.json','data/card_content.json')];print('JSON OK')"
 python -B scripts/check_site.py
-python -B scripts/check_project_management.py --propose --page <頁ID1> --page <頁ID2>
-python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
 python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
+python -B scripts/check_project_management.py --summary --baseline-file outputs/mgmt-before.json --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
 ```
 
 - 三份 JSON 都要能解析。
@@ -182,10 +184,13 @@ python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
 - 變更追蹤：只需執行一次、填本次任一頁 ID。程式對「尚未提交的變更」本來就整體檢查；`--page` 只是排除與本次無關的舊提交紀錄。結果不可有「目前未提交網站變更：缺少管理連結」。
 - 開啟一頁生成的 HTML，確認有摘要、分段重點、兩個日期、來源連結，以及「內容更新」那一行。
 - 介面：首頁列表有出現本系列、同系列翻頁與「第幾張／共幾張」正確、返回入口可用、分享網址指向正確頁面。
-- 用 `git diff --stat` 確認變更只有本次相關的檔案，沒有動到 `build.py`、`templates/`、`scripts/`、`skills/`、`index.html`、`public.html`。
+- 用 `git diff --stat` 確認變更只有本次相關的檔案，沒有動到 `build.py`、`templates/`、`scripts/`、`index.html`、`public.html`。
 - 一般圖卡作業不執行 `scripts/test_*.py`，改到檢查程式本身才需要。
 
-**填寫順序**：先執行上面除了基準比對以外的指令，把結果寫入 CR 的 `validation_result` 和 evidence 檔；**再**執行基準比對；最後在 `validation_result` 補上「基準比對 new=0、worsened=0」。
+**執行順序**：
+1. 先用 `--propose`（涵蓋上述全部受影響頁）把機械欄位合併進 `page-inventory.csv`，再跑一次 `--propose` 確認零差異。既有頁只合併機械欄位，人工欄位不動（本作業卡明確要求修改的人工欄位除外）；新頁的人工欄位照作業卡 1 第 8 步的表格填。
+2. 再執行其餘檢查（JSON、`check_site.py`、變更追蹤、頁面確認），把結果寫入 CR 的 `validation_result` 和 evidence 檔。
+3. 最後才執行基準比對，並在 `validation_result` 補上「基準比對 new=0、worsened=0」。
 
 ## 10. 回報（不要 commit 或 push）
 
