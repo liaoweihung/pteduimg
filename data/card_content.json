@@ -13809,7 +13809,7 @@
       {"title": "食藥署：眼用製劑衛教", "url": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639160123985473312"}
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": false
   },
   {
     "cardId": "liquid_medicine_storage",
@@ -13848,6 +13848,6 @@
       {"title": "食藥署：廢棄藥品處理", "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=4&id=t624044"}
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": false
   }
 ]
