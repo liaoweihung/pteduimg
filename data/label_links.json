@@ -165,6 +165,15 @@
         "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC023349%E8%99%9F"
       }
     ],
+    "img/motion_sickness_meds_1.webp": [
+      {"name": "克暈錠", "license": "內衛藥製字第013550號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E5%85%A7%E8%A1%9B%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC013550%E8%99%9F"},
+      {"name": "「強生」美克利靜錠25毫克", "license": "內衛藥製字第012916號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E5%85%A7%E8%A1%9B%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC012916%E8%99%9F"},
+      {"name": "「黃氏」富旅安錠", "license": "衛署藥製字第038592號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC038592%E8%99%9F"}
+    ],
+    "img/motion_sickness_meds_2.webp": [
+      {"name": "人生旅安糖漿", "license": "衛署藥製字第010587號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC010587%E8%99%9F"},
+      {"name": "暈得寧防暈貼片劑1.5毫克", "license": "衛署藥製字第044712號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC044712%E8%99%9F"}
+    ],
     "img/insomnia_card04.webp": [
       {"name": "悠樂丁錠 2 公絲", "license": "衛署藥製字第012458號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC012458%E8%99%9F"}
     ],
