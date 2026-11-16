@@ -5141,7 +5141,7 @@
     "needsMedicalReview": true,
     "reviewStatus": "sources_checked_not_clinician_approval",
     "sourceCheckedAt": "2026-09-09",
-    "updatedAt": "2026-09-09",
+    "updatedAt": "2026-11-16",
     "references": [
       {
         "title": "Gloucestershire Hospitals NHS：Ice and heat treatment",
@@ -5150,6 +5150,12 @@
       {
         "title": "Dudley Group NHS：Sprains and strains",
         "url": "https://www.dgft.nhs.uk/pil/sprains-and-strains/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "扭傷怎麼處理？冰敷還是熱敷",
+        "url": "../cards/sports_sprain_2.html"
       }
     ]
   },
@@ -13251,10 +13257,10 @@
   },
   {
     "cardId": "sports_sprain",
-    "title": "運動時扭到關節，可能傷到哪裡？",
+    "title": "扭到腳踝、翻腳刀，傷到哪裡？扭傷和拉傷差在哪",
     "image": "img/sports_sprain_1.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/sports_sprain_1.html",
-    "summary": "扭傷是關節周圍的韌帶被過度拉扯或撕裂，常見於腳踝、膝蓋和手腕。局部疼痛、腫脹或瘀青可能出現；光看外觀或還能活動，無法排除骨折等較嚴重的傷。",
+    "summary": "扭傷是關節周圍的韌帶受傷，拉傷是肌肉或肌腱受傷；翻腳刀（腳踝扭傷）最常見，膝蓋、手腕也常扭到。還能走、外觀看起來不嚴重，不代表沒有骨折，傷勢要由醫師判斷。",
     "sections": [
       {
         "heading": "扭傷與拉傷有什麼不同？",
@@ -13267,14 +13273,22 @@
       {
         "heading": "還能動，就代表沒有骨折嗎？",
         "text": "不能這樣判斷。光看外觀或還能活動，無法排除骨折、脫臼或較嚴重的韌帶傷；傷勢輕重要由醫師檢查判斷，不建議自行分級。醫師評估腳踝受傷是否需要 X 光時，會參考受傷後能否立即承重、在診間能否走 4 步等條件；這是限踝部的臨床評估規則，不適用膝蓋、手腕，也不適合自行在家判斷。"
+      },
+      {
+        "heading": "翻腳刀是什麼？",
+        "text": "翻腳刀是腳踝往內翻造成的扭傷，是最常見的腳踝扭傷，通常傷到腳踝外側的韌帶。踩空、落地踩到別人的腳或急轉方向時最容易發生。"
+      },
+      {
+        "heading": "扭傷要看哪一科？",
+        "text": "一般先看骨科；有關節變形、麻木、皮膚變藍變冷等警訊，直接到急診。之後恢復活動有困難，可找復健科或物理治療師。"
       }
     ],
     "altText": "運動扭傷常見部位：腳踝、膝蓋、手腕與拇指；說明扭傷和拉傷的差別，以及不能只靠外觀判斷傷勢。",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
-    "needsMedicalReview": false,
-    "updatedAt": "2026-11-12",
-    "sourceCheckedAt": "2026-11-12",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-11-16",
+    "sourceCheckedAt": "2026-11-16",
     "revisionCredit": "Codex 草稿、Claude 修訂",
     "references": [
       {
@@ -13290,27 +13304,35 @@
       {
         "title": "扭傷當下怎麼處理？",
         "url": "../cards/sports_sprain_2.html"
+      },
+      {
+        "title": "扭傷多久會好？",
+        "url": "../cards/sports_sprain_3.html"
       }
     ]
   },
   {
     "cardId": "sports_sprain",
-    "title": "扭傷當下，先停下來",
+    "title": "扭傷怎麼處理？冰敷還是熱敷、什麼時候要看醫生",
     "image": "img/sports_sprain_2.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/sports_sprain_2.html",
-    "summary": "扭傷當下先停止運動，依 PRICE 原則保護患部、休息、冷敷、視情況加壓並抬高。頭 2～3 天先別熱敷、按摩或喝酒；關節變形、麻木或皮膚變色等警訊應立即就醫。",
+    "summary": "扭傷頭 2～3 天要冰敷，不要熱敷。當下先停止運動，依 PRICE 原則保護、休息、冰敷、加壓、抬高；先別按摩、推拿或喝酒。關節變形、麻木或皮膚變色要立即就醫。",
     "sections": [
       {
         "heading": "扭傷當下怎麼處理？",
         "text": "先停下來，再照 PRICE 原則處理：保護、休息、冰敷、加壓、抬高。1. 停止運動並保護患部，別硬撐或反覆測試能不能跑跳。2. 冰袋隔毛巾，每次約 15～20 分鐘，不直接貼皮膚；受傷後頭 2～3 天可每 2～3 小時重複一次，不舒服就停。3. 讓受傷部位有支撐，盡量墊高到高於心臟。4. 視情況用彈性繃帶或護具；加壓不是人人都要做。手指或腳趾發麻、刺痛、變色或變冷，立刻鬆開，仍未改善請就醫。"
       },
       {
-        "heading": "頭 2～3 天先避免什麼？",
-        "text": "先別熱敷、泡熱水澡、按摩或推拿、喝酒，這些可能讓腫脹更明顯。"
+        "heading": "扭傷可以熱敷、按摩嗎？",
+        "text": "頭 2～3 天不要熱敷、泡熱水澡、按摩或推拿，也先別喝酒，這些可能讓腫脹更明顯。"
       },
       {
-        "heading": "需要止痛藥時",
-        "text": "先問藥師或醫師。藥師可依情況建議口服止痛藥或外用凝膠、乳膏。口服非類固醇消炎止痛藥（NSAIDs）不是人人適合；有胃潰瘍病史、氣喘、心臟、肝臟或腎臟疾病、懷孕，或正在使用抗凝血藥的人，使用前一定要先問。"
+        "heading": "什麼時候可以改熱敷？",
+        "text": "頭 2～3 天過後、腫脹已經消退，可以依舒服程度溫敷；溫敷後又腫起來就先停，並請醫師或藥師評估。"
+      },
+      {
+        "heading": "扭傷可以吃止痛藥、擦藥膏嗎？",
+        "text": "先問藥師或醫師。藥師可依情況建議口服止痛藥或外用凝膠、乳膏。口服非類固醇消炎止痛藥（NSAIDs）不是人人適合；有胃潰瘍病史、氣喘、心臟、肝臟或腎臟疾病、懷孕，或正在使用抗凝血藥的人，使用前一定要先問。已經在吃口服消炎止痛藥的人，再擦同類藥膏或貼布前先問藥師。"
       },
       {
         "heading": "什麼情況要立即就醫？",
@@ -13324,9 +13346,9 @@
     "altText": "扭傷當下處理四步驟：停止運動、冷敷、抬高、視情況用彈性繃帶，以及立即就醫與盡快就醫警訊。",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
-    "needsMedicalReview": false,
-    "updatedAt": "2026-11-12",
-    "sourceCheckedAt": "2026-11-12",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-11-16",
+    "sourceCheckedAt": "2026-11-16",
     "revisionCredit": "Codex 草稿、Claude 修訂",
     "references": [
       {
@@ -13348,21 +13370,33 @@
         "url": "../cards/sports_sprain_1.html"
       },
       {
-        "title": "扭傷後怎麼恢復活動？",
+        "title": "扭傷後多久可以運動？",
         "url": "../cards/sports_sprain_3.html"
+      },
+      {
+        "title": "正骨水怎麼用？",
+        "url": "../cards/zheng_gu_shui.html"
+      },
+      {
+        "title": "撞到瘀青怎麼辦？",
+        "url": "../cards/bruise_be_gone.html"
       }
     ]
   },
   {
     "cardId": "sports_sprain",
-    "title": "扭傷後，怎麼恢復活動？",
+    "title": "扭傷多久會好？什麼時候可以恢復運動",
     "image": "img/sports_sprain_3.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/sports_sprain_3.html",
-    "summary": "扭傷後在腫痛緩和、疼痛不明顯加重的範圍內循序恢復活動。腳踝扭傷可依醫療人員建議練活動度、肌力與平衡；未改善、惡化或反覆不穩應就醫評估。",
+    "summary": "多數扭傷約 2 週後會覺得好轉，但跑跳等劇烈運動可能要到 8 週左右，嚴重者需數月。腫痛緩和後循序活動，走、跑、跳、變向都不痛不腫、不覺得不穩，再回到原本運動。",
     "sections": [
       {
-        "heading": "腫痛緩和後，逐步活動",
-        "text": "頭 2～3 天過後，在不讓疼痛明顯加重的範圍內溫和活動關節，避免僵硬；不必一直完全不動。"
+        "heading": "扭傷多久會好？",
+        "text": "一般而言，多數扭傷與拉傷約 2 週後會覺得好轉，但跑步等劇烈運動可能要避免到 8 週左右，嚴重者可能要幾個月才恢復正常。以腳踝為例，輕微踝扭傷通常幾週內恢復；完全消腫、感覺正常可能需數月。個別傷勢差異很大。"
+      },
+      {
+        "heading": "扭傷後要一直休息不動嗎？",
+        "text": "不用一直不動。頭 2～3 天過後，在不讓疼痛明顯加重的範圍內溫和活動關節，避免僵硬；不必一直完全不動。"
       },
       {
         "heading": "循序恢復走路與日常動作",
@@ -13377,10 +13411,6 @@
         "text": "走路、慢跑、跳躍、變向都不痛、不腫、不覺得不穩，再逐步回到原本的運動。恢復時間因部位與傷勢而異，別只看天數就急著回場。"
       },
       {
-        "heading": "大概多久會好？",
-        "text": "一般而言，多數扭傷與拉傷約 2 週後會覺得好轉，但跑步等劇烈運動可能要避免到 8 週左右，嚴重者可能要幾個月才恢復正常。以腳踝為例，輕微踝扭傷通常幾週內恢復；完全消腫、感覺正常可能需數月。個別傷勢差異很大。"
-      },
-      {
         "heading": "何時需要就醫評估？",
         "text": "居家照護後，疼痛或腫脹沒有改善；症狀越來越嚴重；關節持續不穩、常常再扭到，或無法正常使用，應就醫評估。可諮詢骨科、復健科或物理治療師。"
       }
@@ -13388,9 +13418,9 @@
     "altText": "扭傷後循序恢復活動四步驟，含腳踝平衡訓練、回場前自我檢查及就醫評估時機。",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
-    "needsMedicalReview": false,
-    "updatedAt": "2026-11-12",
-    "sourceCheckedAt": "2026-11-12",
+    "needsMedicalReview": true,
+    "updatedAt": "2026-11-16",
+    "sourceCheckedAt": "2026-11-16",
     "revisionCredit": "Codex 草稿、Claude 修訂",
     "references": [
       {
@@ -13404,8 +13434,16 @@
     ],
     "related_links": [
       {
+        "title": "扭到哪裡？扭傷和拉傷差別",
+        "url": "../cards/sports_sprain_1.html"
+      },
+      {
         "title": "扭傷當下怎麼處理？",
         "url": "../cards/sports_sprain_2.html"
+      },
+      {
+        "title": "護膝怎麼選？",
+        "url": "../cards/knee_brace_1.html"
       }
     ]
   },
@@ -13803,10 +13841,22 @@
     "sourceCheckedAt": "2026-11-15",
     "revisionCredit": "Codex 編修；本站作者確認圖卡與逐頁文字",
     "references": [
-      {"title": "食藥署：藥品可以放冰箱保存嗎？", "url": "https://www.fda.gov.tw/tc/newsContent.aspx?id=22351"},
-      {"title": "食藥署：把藥放冰箱，可以保存更久，是真的嗎？", "url": "https://www.fda.gov.tw/TC/newsContent.aspx?cid=5049&id=13773"},
-      {"title": "食藥署：藥品保存與開封後期限提醒", "url": "https://www.fda.gov.tw/Tc/newsContent.aspx?cid=4&id=t601511"},
-      {"title": "食藥署：眼用製劑衛教", "url": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639160123985473312"}
+      {
+        "title": "食藥署：藥品可以放冰箱保存嗎？",
+        "url": "https://www.fda.gov.tw/tc/newsContent.aspx?id=22351"
+      },
+      {
+        "title": "食藥署：把藥放冰箱，可以保存更久，是真的嗎？",
+        "url": "https://www.fda.gov.tw/TC/newsContent.aspx?cid=5049&id=13773"
+      },
+      {
+        "title": "食藥署：藥品保存與開封後期限提醒",
+        "url": "https://www.fda.gov.tw/Tc/newsContent.aspx?cid=4&id=t601511"
+      },
+      {
+        "title": "食藥署：眼用製劑衛教",
+        "url": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639160123985473312"
+      }
     ],
     "matchConfidence": "high",
     "needsMedicalReview": false
@@ -13840,12 +13890,30 @@
     "sourceCheckedAt": "2026-11-15",
     "revisionCredit": "Codex 編修；本站作者確認圖卡與逐頁文字",
     "references": [
-      {"title": "安滅菌糖漿用粉劑 457 mg/5 mL 仿單", "url": "https://www.ttyl.mohw.gov.tw/public/medi_news/de10f5197e10f8fe8dfa6a3f16103a66.pdf"},
-      {"title": "輝瑞：日舒懸液用粉 47.78 mg/g 仿單", "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=17343"},
-      {"title": "舒而坦眼藥水仿單", "url": "https://www.cth.org.tw/public/medi_news/b5cc15d6d2c8994a9952702b1bfb350e.pdf"},
-      {"title": "臺大醫院藥劑部：舒而坦保存說明", "url": "https://www.ntuh.gov.tw/phr/Faq.action?agroup=a&fid=1896&q_type=A02"},
-      {"title": "「晟德」希普利敏液仿單", "url": "https://www.cth.org.tw/public/medi_news/0c133454e62504eec2affd6144398c96.pdf"},
-      {"title": "食藥署：廢棄藥品處理", "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=4&id=t624044"}
+      {
+        "title": "安滅菌糖漿用粉劑 457 mg/5 mL 仿單",
+        "url": "https://www.ttyl.mohw.gov.tw/public/medi_news/de10f5197e10f8fe8dfa6a3f16103a66.pdf"
+      },
+      {
+        "title": "輝瑞：日舒懸液用粉 47.78 mg/g 仿單",
+        "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=17343"
+      },
+      {
+        "title": "舒而坦眼藥水仿單",
+        "url": "https://www.cth.org.tw/public/medi_news/b5cc15d6d2c8994a9952702b1bfb350e.pdf"
+      },
+      {
+        "title": "臺大醫院藥劑部：舒而坦保存說明",
+        "url": "https://www.ntuh.gov.tw/phr/Faq.action?agroup=a&fid=1896&q_type=A02"
+      },
+      {
+        "title": "「晟德」希普利敏液仿單",
+        "url": "https://www.cth.org.tw/public/medi_news/0c133454e62504eec2affd6144398c96.pdf"
+      },
+      {
+        "title": "食藥署：廢棄藥品處理",
+        "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=4&id=t624044"
+      }
     ],
     "matchConfidence": "high",
     "needsMedicalReview": false

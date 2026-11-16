@@ -301,9 +301,9 @@
 | breastfeeding_minor_ailments | 哺乳期間睡不好，可以怎麼做？ | https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_insomnia.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | breastfeeding_minor_ailments | 哺乳期間乳房脹痛、塞奶怎麼辦？ | https://liaoweihung.github.io/pteduimg/cards/breastfeeding_minor_engorgement.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | skin_glue_care | 傷口用了皮膚組織膠，回家怎麼照顧？ | https://liaoweihung.github.io/pteduimg/cards/skin_glue_care_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| sports_sprain | 運動時扭到關節，可能傷到哪裡？ | https://liaoweihung.github.io/pteduimg/cards/sports_sprain_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| sports_sprain | 扭傷當下，先停下來 | https://liaoweihung.github.io/pteduimg/cards/sports_sprain_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| sports_sprain | 扭傷後，怎麼恢復活動？ | https://liaoweihung.github.io/pteduimg/cards/sports_sprain_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| sports_sprain | 扭到腳踝、翻腳刀，傷到哪裡？扭傷和拉傷差在哪 | https://liaoweihung.github.io/pteduimg/cards/sports_sprain_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| sports_sprain | 扭傷怎麼處理？冰敷還是熱敷、什麼時候要看醫生 | https://liaoweihung.github.io/pteduimg/cards/sports_sprain_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| sports_sprain | 扭傷多久會好？什麼時候可以恢復運動 | https://liaoweihung.github.io/pteduimg/cards/sports_sprain_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | insomnia_public | 睡不好就是失眠症嗎？醫學診斷與主觀感受 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card01.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | insomnia_public | 不靠藥物也能好好睡：CBT-I 與睡眠衛生 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card02.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | insomnia_public | 失眠藥物有哪些？六大常見類型 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card03.html | 是 | 是 | 是 | 是 | 是 | 無 |
