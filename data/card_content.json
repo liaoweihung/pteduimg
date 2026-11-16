@@ -13848,6 +13848,6 @@
       {"title": "食藥署：廢棄藥品處理", "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=4&id=t624044"}
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": false
   }
 ]
