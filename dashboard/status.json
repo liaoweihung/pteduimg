@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-16T23:04:39+08:00",
-  "baseline": "1fadf7aa6f8c34981dd3f9356c4d7b4ebc6b06c7",
-  "scope": "網站來源快照；版本 1fadf7aa",
+  "generatedAt": "2026-11-16T23:47:17+08:00",
+  "baseline": "502089b3c492e316fd32a77233100809320ada27",
+  "scope": "網站來源快照；版本 502089b3",
   "counts": {
     "cards": 445,
     "series": 98,
@@ -1192,8 +1192,7 @@
       "issues": [
         "text_status",
         "reference_status",
-        "date_status",
-        "footer_status"
+        "date_status"
       ]
     },
     {
@@ -3764,8 +3763,8 @@
       "partial": 21
     },
     "footer_status": {
-      "missing": 239,
-      "machine_pass": 206
+      "missing": 238,
+      "machine_pass": 207
     },
     "jsonld_status": {
       "machine_pass": 445
@@ -3773,7 +3772,7 @@
   },
   "sync": {
     "pages": 453,
-    "fields": 1091,
+    "fields": 1089,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -3869,8 +3868,6 @@
       {
         "page": "Champix",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
