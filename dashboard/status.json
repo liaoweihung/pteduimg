@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-16T11:32:32+08:00",
-  "baseline": "9aaee4fdf5d66acdc67c1f0bdf49610c24900abc",
-  "scope": "網站來源快照；版本 9aaee4fd",
+  "generatedAt": "2026-11-16T12:40:39+08:00",
+  "baseline": "967a476d02f0651b0ae6b147a10b6ee165e96e8d",
+  "scope": "網站來源快照；版本 967a476d",
   "counts": {
     "cards": 444,
     "series": 98,
@@ -3783,7 +3783,7 @@
   },
   "sync": {
     "pages": 452,
-    "fields": 1110,
+    "fields": 1108,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -5972,14 +5972,12 @@
       {
         "page": "motion_sickness_meds_1",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "motion_sickness_meds_2",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
