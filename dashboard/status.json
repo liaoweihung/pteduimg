@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-16T14:05:43+08:00",
-  "baseline": "b761db32cc3c3f4469f9616e460dde950cf4da42",
-  "scope": "網站來源快照；版本 b761db32",
+  "generatedAt": "2026-11-16T20:37:27+08:00",
+  "baseline": "fe379ef9971ae19cf563230964b973c454faec65",
+  "scope": "網站來源快照；版本 fe379ef9",
   "counts": {
     "cards": 444,
     "series": 98,
@@ -2940,16 +2940,6 @@
       ]
     },
     {
-      "title": "兒科感冒藥水",
-      "path": "cards/ped_cold_cypromin.html",
-      "series": "pediatric_cold_syrup",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status"
-      ]
-    },
-    {
       "title": "縫合／術後傷口，回家怎麼照顧？",
       "path": "cards/postoperative_wound.html",
       "series": "postoperative_wound",
@@ -3760,17 +3750,17 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 309,
+      "machine_pass": 310,
       "partial": 1,
-      "missing": 134
+      "missing": 133
     },
     "reference_status": {
-      "missing": 219,
-      "machine_pass": 225
+      "missing": 218,
+      "machine_pass": 226
     },
     "date_status": {
-      "missing": 219,
-      "machine_pass": 204,
+      "missing": 218,
+      "machine_pass": 205,
       "partial": 21
     },
     "footer_status": {
@@ -3783,7 +3773,7 @@
   },
   "sync": {
     "pages": 452,
-    "fields": 1106,
+    "fields": 1094,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -6286,84 +6276,72 @@
       {
         "page": "ped_asthma_meptin_liquid",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_cetirizine",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_cough_mixture",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_cypromin",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_exdila_liquid",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_guaphen_syrup",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_koko_sou_syrup",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_mintapp_syrup",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_musco_solution",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_nocough_syrup",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_peace_syrup",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_secorine",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
