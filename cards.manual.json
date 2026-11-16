@@ -598,6 +598,7 @@
   },
   "Champix": {
     "title": "戒必適Champix",
+    "showFooter": true,
     "category": "pharmacist_product",
     "departments": [
       "chest_medicine_smoking_cessation"
