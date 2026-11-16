@@ -1,6 +1,13 @@
 {
   "_note": "藥品介紹頁的食藥署仿單連結（顯示於「文字版重點」與「同系列圖卡」之間）。key 為圖片路徑；url 為 TFDA 藥品仿單查詢平台。",
   "pages": {
+    "img/ped_gi_pecolin_suspension.webp": [
+      {
+        "name": "「生達」高克痢懸乳液",
+        "license": "內衛藥製字第008873號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E5%85%A7%E8%A1%9B%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC008873%E8%99%9F"
+      }
+    ],
     "img/ped_cold_cypromin.webp": [
       {
         "name": "「晟德」希普利敏液 0.4 毫克/毫升",

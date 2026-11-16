@@ -2033,20 +2033,38 @@
       "瀉必寧副作用",
       "小朋友拉肚子止瀉藥",
       "Racecadotril 兒童劑量",
-      "Hidrasec granules"
+      "Hidrasec granules",
+      "高克痢",
+      "高克痢懸乳液",
+      "Pecolin",
+      "高克痢劑量",
+      "高克痢 幾歲",
+      "高克痢 間隔",
+      "小孩拉肚子 止瀉藥水",
+      "高嶺土 果膠",
+      "Kaolin",
+      "Pectin"
     ],
     "texts": [
       "胃利空懸液劑：兒童劑量、用途與注意事項",
       "乳果糖藥水怎麼吃？杜化液、樂多差異與便祕用藥指南",
-      "瀉必寧 Hidrasec 怎麼吃？兒童劑量、服用方法與注意事項"
+      "瀉必寧 Hidrasec 怎麼吃？兒童劑量、服用方法與注意事項",
+      "高克痢懸乳液怎麼喝？兒童劑量、間隔與停藥時機"
     ],
     "steps": [
       "img/wempty_suspension.webp",
       "img/lactulose_constipation.webp",
-      "img/ped_diarrhea_hidrasec.webp"
+      "img/ped_diarrhea_hidrasec.webp",
+      "img/ped_gi_pecolin_suspension.webp"
     ],
     "related_series": [
       "diarrhea_drugs"
+    ],
+    "favorite_keys": [
+      "pediatric_gi_syrup-0",
+      "pediatric_gi_syrup-1",
+      "pediatric_gi_syrup-2",
+      "pediatric_gi_syrup-ped_gi_pecolin_suspension"
     ]
   },
   "smecta_diarrhea": {

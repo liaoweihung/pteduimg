@@ -13983,5 +13983,97 @@
     ],
     "matchConfidence": "high",
     "needsMedicalReview": false
+  },
+  {
+    "cardId": "pediatric_gi_syrup",
+    "title": "高克痢懸乳液怎麼喝？兒童劑量、間隔與停藥時機",
+    "image": "img/ped_gi_pecolin_suspension.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ped_gi_pecolin_suspension.html",
+    "summary": "高克痢懸乳液（Pecolin）含高嶺土與果膠，是暫時緩解輕微或中度急性腹瀉的指示藥。拉肚子後才喝，每次至少隔 4 小時、一天最多 4 次，和其他口服藥至少隔 2 小時；腹瀉停止就可以停藥。止瀉藥不能取代補水，未滿 3 歲或有血便、發燒、脫水時請先就醫。",
+    "sections": [
+      {
+        "heading": "高克痢是什麼藥？",
+        "text": "高克痢是吸附型止瀉藥，每毫升含高嶺土（Kaolin）200 mg、果膠（Pectin）10 mg，用於暫時緩解輕微或中度急性腹瀉。它可能讓大便比較成形，但不會補回流失的水分與電解質，也不能治療造成腹瀉的原因。"
+      },
+      {
+        "heading": "高克痢幾歲可以喝？一次喝多少？",
+        "text": "高克痢仿單有 3 歲以上的兒童劑量，拉肚子後服用：3 歲以上、未滿 6 歲每次 7.5 mL；6 歲以上、未滿 12 歲每次 15 mL；12 歲以上及成人每次 30 mL。未滿 12 歲應由醫師或藥師指示使用，不宜自行服用。仿單沒有 3 歲以下的劑量，未滿 3 歲的寶寶拉肚子請先就醫。"
+      },
+      {
+        "heading": "家裡是別牌止瀉藥水，可以照這個量嗎？",
+        "text": "不行。其他含高嶺土、果膠的止瀉藥水濃度不同，有些成人每次只要 8～9 mL。家裡若是其他品牌，請照該產品標示或問藥師，不要套用高克痢的毫升數。"
+      },
+      {
+        "heading": "高克痢一天可以喝幾次？",
+        "text": "拉肚子後才喝，不是三餐固定吃。每次至少間隔 4 小時，一天不超過 4 次。高克痢靜置後會沉澱，每次喝前都要搖勻，用量杯或餵藥針筒量取，不要用家用湯匙估量。"
+      },
+      {
+        "heading": "高克痢可以和其他藥一起吃嗎？",
+        "text": "高嶺土會吸附其他藥品，影響吸收。請和其他口服藥至少間隔 2 小時。孩子同時在吃抗生素或其他需要按時服用的藥，請藥師協助安排服藥時間。"
+      },
+      {
+        "heading": "高克痢可以加在牛奶裡嗎？",
+        "text": "不建議加進整瓶牛奶或配方奶，孩子沒喝完就不知道吃了多少藥。腹瀉期間也不要因為吃止瀉藥就停掉原本的餵奶與飲食。"
+      },
+      {
+        "heading": "腹瀉好了，還要繼續喝嗎？",
+        "text": "不用。腹瀉停止就可以停藥，不必整瓶喝完。要注意的是，大便變稠不代表水分已經補回來，還是要繼續補水。高克痢可能造成便祕，出現便祕或明顯腹脹就停用，必要時詢問藥師。"
+      },
+      {
+        "heading": "什麼情況要就醫？",
+        "text": "兒童腹瀉最重要的是預防與矯正脫水，可用口服電解質液（ORS）少量多次補充，高克痢只是輔助。出現下列情況請儘快就醫，不要只靠止瀉藥：未滿 3 歲；血便、黑便、發燒或肚子很痛；一直吐、喝不下水；脫水徵象，例如尿布 6～8 小時沒濕或尿量明顯變少、哭沒有眼淚、嘴唇乾、嗜睡或叫不太醒；使用 2 天（48 小時）仍沒改善，或越來越嚴重。"
+      },
+      {
+        "heading": "藥品資訊",
+        "text": "品名：高克痢懸乳液（PECOLIN SUSPENSION \"STANDARD\"）；許可證字號：內衛藥製字第008873號；藥品類別：醫師藥師藥劑生指示藥品；廠商：生達化學製藥股份有限公司。"
+      }
+    ],
+    "altText": "高克痢懸乳液衛教圖卡：喝前搖勻，3～未滿6歲7.5 mL、6～未滿12歲15 mL、12歲以上30 mL，未滿3歲先就醫；每次隔4小時、一天最多4次，與其他藥隔2小時，腹瀉停止就停藥並持續補水",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-11-16",
+    "updatedAt": "2026-11-16",
+    "references": [
+      {
+        "title": "康健知識庫（食藥署公開資料）：生達 高克痢懸乳液",
+        "url": "https://kb.commonhealth.com.tw/drugs/24107.html"
+      },
+      {
+        "title": "康健知識庫（食藥署公開資料）：華盛頓 克痢懸浮液（別牌劑量對照）",
+        "url": "https://kb.commonhealth.com.tw/drugs/24143.html"
+      },
+      {
+        "title": "康健知識庫（食藥署公開資料）：榮民 克痢必定懸液劑（別牌劑量對照）",
+        "url": "https://kb.commonhealth.com.tw/drugs/24111.html"
+      },
+      {
+        "title": "亞東醫院藥學部：Pecolin 藥品資料",
+        "url": "https://www.e-pharm.info/safety/drug-information/femh-formulary/item/okaol1"
+      },
+      {
+        "title": "奇美醫院：藥品衛教資料",
+        "url": "https://www.chimei.org.tw/main/cmh_department/55500/Dinfo/data/26K048.pdf"
+      },
+      {
+        "title": "WHO：Diarrhoeal disease",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease"
+      }
+    ],
+    "revisionCredit": "使用者提供並確認圖卡與網頁文字；AI 依仿單資料整理文字及核對來源",
+    "related_links": [
+      {
+        "title": "高嶺土＋果膠：高克痢怎麼用？（成人用法）",
+        "url": "../cards/diarrhea_drugs_4.html"
+      },
+      {
+        "title": "常見止瀉藥怎麼選？正露丸、暮帝納斯、高克痢、Loperamide 用法與注意事項",
+        "url": "../cards/diarrhea_drugs_1.html"
+      },
+      {
+        "title": "舒腹達是什麼？用途與兒童劑量",
+        "url": "../cards/smecta_1.html"
+      }
+    ]
   }
 ]

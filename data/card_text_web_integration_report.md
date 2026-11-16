@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：311
+- 成功加入文字頁數：312
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -316,3 +316,4 @@
 | insomnia_medication | 第一代抗組織胺類：Diphenhydramine 與 Hydroxyzine | https://liaoweihung.github.io/pteduimg/cards/insomnia_card09.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | liquid_medicine_storage | 藥水要不要冰？先看藥袋與產品標示 | https://liaoweihung.github.io/pteduimg/cards/liquid_medicine_storage_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | liquid_medicine_storage | 藥水保存實例：安滅菌、日舒、舒而坦與希普利敏 | https://liaoweihung.github.io/pteduimg/cards/liquid_medicine_storage_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| pediatric_gi_syrup | 高克痢懸乳液怎麼喝？兒童劑量、間隔與停藥時機 | https://liaoweihung.github.io/pteduimg/cards/ped_gi_pecolin_suspension.html | 是 | 是 | 是 | 是 | 是 | 無 |
