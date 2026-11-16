@@ -183,6 +183,12 @@
     "img/insomnia_card09.webp": [
       {"name": "中美靜安能膠囊", "license": "衛署藥製字第049273號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC049273%E8%99%9F"},
       {"name": "克胺寧錠 25 毫克", "license": "衛署藥製字第039007號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC039007%E8%99%9F"}
+    ],
+    "img/liquid_medicine_storage_02.webp": [
+      {"name": "安滅菌糖漿用粉劑 457 毫克/5 毫升", "license": "衛署藥輸字第022447號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC022447%E8%99%9F"},
+      {"name": "日舒懸液用粉 47.78 毫克/公克", "license": "衛署藥輸字第021830號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC021830%E8%99%9F"},
+      {"name": "舒而坦眼藥水", "license": "衛署藥輸字第022540號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC022540%E8%99%9F"},
+      {"name": "希普利敏液", "license": "衛署藥製字第043588號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC043588%E8%99%9F"}
     ]
   }
 }
