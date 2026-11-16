@@ -1,27 +1,14 @@
 # 作業卡 5：修改系列設定
 
-適用：修改系列層級的設定，例如系列標題、icon、搜尋標籤、分類、首頁排序、工具按鈕、相關系列，或暫時隱藏系列。只讀這一份。單頁內容改用作業卡 4；要永久下架改用作業卡 3。
+適用：修改系列層級的設定，例如系列標題、icon、搜尋標籤、分類、首頁排序、工具按鈕、相關系列，或暫時隱藏系列。先讀作業卡 0（共同步驟），再照本卡做。單頁內容改用作業卡 4；要永久下架改用作業卡 3。
 
 ## 步驟
 
-### 1. 確認工作區並存下檢查基準
-> 指令以 PowerShell 為例。用 bash 執行時：`> $null` 改成 `> /dev/null`，`| Select-String "…"` 改成 `| grep "…"`。
-```powershell
-git status --short
-python -c "import os;os.makedirs('outputs',exist_ok=True)"
-python -B scripts/check_project_management.py --summary --report-file <基準檔> > $null
-python -c "import json;json.load(open('<基準檔>',encoding='utf-8'));print('BASELINE OK')"
-```
-**基準檔**：`<基準檔>` 用這次開工的日期時間命名，例如 `outputs/mgmt-before-20261114-1240.json`，**不可是已存在的檔名**，並在本次的 evidence 檔記下這個檔名。
-**續作同一筆 CR**（例如上次失敗、這次接著做）：**跳過本步的存基準**，改用 evidence 記錄的原始基準檔；不可重新存基準，否則上次已經引入的錯誤會被當成原本就有的錯誤。原始基準檔遺失時停下回報。
-
-記下已存在的改動，本次不碰。存基準的指令會因為網站原有的管理錯誤回報失敗，這是正常的；但最後一行必須印出 `BASELINE OK`，沒有就代表基準沒存到，停下來回報，不要開始修改。這份基準是「改之前」的狀態，檢查時用來比對。
+### 1. 開工
+照作業卡 0 第 1 步。
 
 ### 2. 登記 CR
-先查有沒有已涵蓋本次工作、尚未完成的 CR：`git grep -n "<系列ID>" docs/project-management/change-requests.csv`。有就沿用並補上受影響的 ID；沒有才在 `docs/project-management/change-requests.csv` 末尾新增一列，編號接續最後一筆：
-`request_type` 填 `修改既有圖卡`；`related_ids` 列出系列與該系列每一頁（互設 `related_series` 時，兩個系列和它們的頁都要列）；`status` 填 `in_progress`、`approval` 填 `approved`；`git_commit` 填 `same_commit`（本次變更會和 CR 一起提交；先填好，變更追蹤檢查才會通過）；`completed_at`、`validation_result` 先填 `unknown`；`evidence` 填下面建立的 evidence 檔路徑。
-
-同時建立 evidence 檔 `docs/project-management/evidence/<CR編號>-<系列ID>.md`（沿用既有 CR 時，更新該 CR 原本的 evidence 檔，不另建），10 行以內：本次範圍、素材來源（有新素材時：圖片檔名、對應文字的版本或日期、藥師定稿確認）。檢查完成後再補上結果。其餘欄位照前一筆同類 CR 的寫法。
+照作業卡 0 第 2 步，本卡的欄位：`request_type` 填 `修改既有圖卡`；`related_ids` 列出系列與該系列每一頁（互設 `related_series` 時，兩個系列和它們的頁都要列）。
 
 ### 3. 修改設定（cards.json 與 cards.manual.json 寫入相同內容）
 
@@ -39,44 +26,16 @@ python -c "import json;json.load(open('<基準檔>',encoding='utf-8'));print('BA
 
 **暫時隱藏的限制**：`hidden: true` 只會讓系列從首頁列表消失，圖卡頁面仍然存在，知道網址的人還是看得到，搜尋引擎也可能還在收錄。要真正下架，請改用作業卡 3。
 
-### 4. 標記 CR 完成（必須在建置前）
-`status` 改為 `completed`，`completed_at` 填今天，`validation_result` 先填「建置與檢查進行中」（不可留 `unknown`，否則管理檢查會報錯；檢查步驟會改成實際結果）。
-
-之後的建置或檢查失敗、本次無法完成時，把 `status` 改回 `in_progress`、`completed_at` 改回 `unknown`，並在 `validation_result` 寫明失敗原因。然後**停下來回報**，不要自行重新建置或還原檔案（完整建置會刪掉並重產整個 `cards/`，可能毀掉不屬於本次的工作）。回報時說明：失敗在哪一步、已產生哪些檔案（`git status --short`），以及首頁「最近新增」（`data/recent-changes.json`）是否已出現這筆 CR。由藥師決定修好後繼續，或用 git 還原本次變更。
-
-### 5. 建置
-完整建置前先執行 `git status --short cards/`：如果有**不屬於本次工作**的未提交 HTML，停下回報（完整建置會刪除 `cards/` 下所有 HTML 再重新產生，那些檔案會消失）。
-
-- **改 `order` 或 `hidden`**：`python -B build.py`（完整建置）
+### 4. 標記完成與建置
+照作業卡 0 第 3 步。建置指令：
+- **改 `order` 或 `hidden`**：`python -B build.py`（完整建置，先做作業卡 0 第 3 步的 `cards/` 檢查）
 - **其他設定**：`python -B build.py --incremental <每個有改到的系列各一頁ID>`。例如兩個系列互設 `related_series`，兩個系列各列一頁，否則建置會拒絕。
 
-增量建置被拒絕時，停下回報原因。
+### 5. 草稿（視藥師要求）
+藥師要先看草稿：照作業卡 0 第 4 步；修改後用第 4 步的指令重新建置。系列設定不涉及複核。
 
 ### 6. 檢查
+照作業卡 0 第 6 步。本卡的**頁面確認**：開啟該系列的一頁，確認改動有出現；改 `order` 或 `hidden` 時確認首頁列表正確。
 
-**清冊要涵蓋的頁**：不只本次直接修改的頁。建置後用 `git status --short cards/` 列出所有 HTML 有變動的頁，再加上「系列設定（`steps`、標題、`showFooter`、`favorite_keys`、`related_series`、`tool_link` 等）有改動的系列」的**每一頁**；這些頁的機械欄位都會跟著變。以下 `<受影響頁ID>` 指的就是這整份清單。
-
-```powershell
-python -B scripts/check_project_management.py --propose --page <受影響頁ID> ...
-python -c "import json;[json.load(open(f,encoding='utf-8')) for f in ('cards.json','cards.manual.json','data/card_content.json')];print('JSON OK')"
-python -B scripts/check_site.py
-python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
-python -B scripts/check_project_management.py --summary --baseline-file <基準檔> --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
-```
-- `check_site.py` 必須通過。
-- 三份 JSON 都要能解析。
-- 基準比對：只看輸出的 `Baseline difference` 那一行，`new` 與 `worsened` 都必須是 0。原本就有的錯誤（`persistent`）不處理，也不必閱讀完整報告；不是 0 時才打開 `outputs/mgmt-after.json` 找出是哪幾筆。
-- 變更追蹤：只需執行一次、填本次任一頁 ID。程式對「尚未提交的變更」本來就整體檢查；`--page` 只是排除與本次無關的舊提交紀錄。結果不可有「目前未提交網站變更：缺少管理連結」。
-- 清冊的 `added_at`、`added_cr`、`last_updated_at`、`last_updated_cr` 由程式依 CR 推算，不要手填。
-- 一般圖卡作業不執行 `scripts/test_*.py`。
-- `--propose` 有差異時，只把機械欄位依 `page_id` 合併進 `page-inventory.csv`，人工欄位不動；合併後必須零差異。
-- 開啟該系列的一頁，確認改動有出現。
-- 用 `git diff --stat` 確認只改到本次相關的檔案。
-
-**執行順序**：
-1. 先用 `--propose`（涵蓋上述全部受影響頁）把機械欄位合併進 `page-inventory.csv`，再跑一次 `--propose` 確認零差異。既有頁只合併機械欄位，人工欄位不動（本作業卡明確要求修改的人工欄位除外）；新頁的人工欄位照作業卡 1 第 8 步的表格填。
-2. 再執行其餘檢查（JSON、`check_site.py`、變更追蹤、頁面確認），把結果寫入 CR 的 `validation_result` 和 evidence 檔。
-3. 最後才執行基準比對，並在 `validation_result` 補上「基準比對 new=0、worsened=0」。
-
-### 7. 回報（不要 commit 或 push）
-改了哪些設定、檢查結果、要提交的檔案清單。隱藏系列時，要提醒藥師頁面仍可經由網址開啟。
+### 7. 回報
+照作業卡 0 第 8 步，另外列出：改了哪些設定、檢查結果、要提交的檔案清單。隱藏系列時，要提醒藥師頁面仍可經由網址開啟。

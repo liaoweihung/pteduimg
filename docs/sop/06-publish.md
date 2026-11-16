@@ -21,7 +21,7 @@ git status --short
 
 ### 3. 更新 CR 並確認同步後仍然正確
 - **本次工作有 CR 時**：確認 CR 的 `git_commit` 是 `same_commit`（作業卡在建立 CR 時已填；若仍是 `unknown`，**在加入檔案前**改好）。不需要 CR 的工作（例如計算器、主題頁）跳過這一項。
-- 第 1 步同步下來的遠端提交，如果改到 `cards.json`、`cards.manual.json`、`data/`、`build.py`、`templates/`、`scripts/`（自動更新的 `dashboard/` 不算），先依原本那張作業卡重新建置、重跑它的檢查步驟（含基準比對），並更新 CR 的 `validation_result`，通過後再繼續。
+- 第 1 步同步下來的遠端提交，如果改到 `cards.json`、`cards.manual.json`、`data/`、`build.py`、`templates/`、`scripts/`（自動更新的 `dashboard/` 不算），先依原本那張作業卡重新建置、重跑檢查（作業卡 0 第 6 步，含基準比對），並更新 CR 的 `validation_result`，通過後再繼續。
 
 ### 4. 只加入指定的檔案
 ```powershell

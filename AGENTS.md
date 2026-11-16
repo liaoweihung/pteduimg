@@ -1,6 +1,6 @@
 # pteduimg AI 專案指令
 
-本 repository 是藥局衛教圖卡的靜態 GitHub Pages 網站。**只讀本檔和對應的作業卡，照步驟做。**其他文件是參考資料，作業卡沒寫到的狀況才查。
+本 repository 是藥局衛教圖卡的靜態 GitHub Pages 網站。**只讀本檔和對應的作業卡，照步驟做。**作業卡 1～5、7 都要先讀 [作業卡 0（共同步驟）](docs/sop/00-common.md)。其他文件是參考資料，作業卡沒寫到的狀況才查。
 
 ## 工作分派
 
@@ -12,7 +12,7 @@
 | 修改圖卡頁面（換圖、改文字、仿單、推薦閱讀） | [docs/sop/04-edit-card-page.md](docs/sop/04-edit-card-page.md) |
 | 修改系列設定（標題、icon、標籤、分類、排序、工具按鈕、隱藏） | [docs/sop/05-series-settings.md](docs/sop/05-series-settings.md) |
 | commit、push | [docs/sop/06-publish.md](docs/sop/06-publish.md) |
-| 登記藥師複核（藥師提供複核結果後） | [docs/sop/07-record-review.md](docs/sop/07-record-review.md) |
+| 登記藥師複核（另外登記；修改當下就複核的，照作業卡 0 第 5 步） | [docs/sop/07-record-review.md](docs/sop/07-record-review.md) |
 | 撰寫或查核圖卡文字（素材階段，不改網站） | [docs/material/README.md](docs/material/README.md) 的 A 節 |
 | 製作圖卡圖片（素材階段，不改網站） | [docs/material/README.md](docs/material/README.md) 的 B 節 |
 
@@ -23,7 +23,7 @@
 ## 共同底線
 
 1. **素材與網站分開**：圖片與文字由藥師在網站外定稿。網站作業不查核、不改寫醫療內容，也不自行找來源。缺素材就停下來問，不補寫、不猜測，不捏造日期、來源、作者或審閱者。
-2. **醫療狀態不得假冒**：新內容的 `needsMedicalReview` 一律為 `true`；沒有藥師具名的複核紀錄，不得標記為已複核。技術檢查通過不等於醫療簽核。
+2. **醫療狀態不得假冒**：新內容的 `needsMedicalReview` 一律為 `true`；藥師沒有明確表示已複核，不得標記為已複核（登記方式見作業卡 0 第 5 步或作業卡 7）。技術檢查通過不等於醫療簽核。
 3. **改程式和規則要先經同意**：
    - 程式：`build.py`、`scripts/`、`templates/`、共用樣式（`css/base.css` 等）、`sw.js` 的快取邏輯、`index.html`、`public.html` 的程式部分。建置時由 `build.py` 自動更新的 `sw.js` 屬正常產物，不需另外同意。
    - 規則：本檔、各 AI 入口檔（`CLAUDE.md`、`GEMINI.md`、`.github/copilot-instructions.md`）、`docs/sop/`、`docs/material/`。
