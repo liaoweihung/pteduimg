@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-16T12:40:39+08:00",
-  "baseline": "967a476d02f0651b0ae6b147a10b6ee165e96e8d",
-  "scope": "網站來源快照；版本 967a476d",
+  "generatedAt": "2026-11-16T13:36:51+08:00",
+  "baseline": "b52d4e6e069c18968808843a97a75297bdfb62d5",
+  "scope": "網站來源快照；版本 b52d4e6e",
   "counts": {
     "cards": 444,
     "series": 98,
@@ -3783,7 +3783,7 @@
   },
   "sync": {
     "pages": 452,
-    "fields": 1108,
+    "fields": 1106,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4735,8 +4735,6 @@
       {
         "page": "bruise_be_gone",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
