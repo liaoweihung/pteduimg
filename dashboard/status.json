@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-16T20:37:27+08:00",
-  "baseline": "fe379ef9971ae19cf563230964b973c454faec65",
-  "scope": "網站來源快照；版本 fe379ef9",
+  "generatedAt": "2026-11-16T23:04:39+08:00",
+  "baseline": "1fadf7aa6f8c34981dd3f9356c4d7b4ebc6b06c7",
+  "scope": "網站來源快照；版本 1fadf7aa",
   "counts": {
-    "cards": 444,
+    "cards": 445,
     "series": 98,
     "allSeries": 102,
     "hidden": 4,
@@ -601,7 +601,7 @@
     {
       "id": "pediatric_gi_syrup",
       "title": "兒科腸胃藥水",
-      "count": 3,
+      "count": 4,
       "hidden": false,
       "areas": [],
       "departments": [
@@ -3750,30 +3750,30 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 310,
+      "machine_pass": 311,
       "partial": 1,
       "missing": 133
     },
     "reference_status": {
       "missing": 218,
-      "machine_pass": 226
+      "machine_pass": 227
     },
     "date_status": {
       "missing": 218,
-      "machine_pass": 205,
+      "machine_pass": 206,
       "partial": 21
     },
     "footer_status": {
       "missing": 239,
-      "machine_pass": 205
+      "machine_pass": 206
     },
     "jsonld_status": {
-      "machine_pass": 444
+      "machine_pass": 445
     }
   },
   "sync": {
-    "pages": 452,
-    "fields": 1094,
+    "pages": 453,
+    "fields": 1091,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -5844,7 +5844,6 @@
       {
         "page": "lactulose_constipation",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -6348,8 +6347,12 @@
       {
         "page": "ped_diarrhea_hidrasec",
         "fields": [
-          "content_sha256",
-          "source_sha256",
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_gi_pecolin_suspension",
+        "fields": [
           "rules_sha256"
         ]
       },
@@ -7051,7 +7054,6 @@
       {
         "page": "wempty_suspension",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
