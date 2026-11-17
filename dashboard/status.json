@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-17T00:07:57+08:00",
-  "baseline": "099a2b290276ed015d4e506f27fa5bd88875c8d2",
-  "scope": "網站來源快照；版本 099a2b29",
+  "generatedAt": "2026-11-17T11:13:14+08:00",
+  "baseline": "3d9d17c61980c6aa855980c6b8aaaf3b93df8246",
+  "scope": "網站來源快照；版本 3d9d17c6",
   "counts": {
-    "cards": 445,
-    "series": 98,
-    "allSeries": 102,
+    "cards": 451,
+    "series": 99,
+    "allSeries": 103,
     "hidden": 4,
     "retired": 4,
     "areas": 17,
@@ -28,7 +28,7 @@
     "sleep": 2,
     "travel_medication": 4,
     "pregnancy": 3,
-    "infant_care": 3,
+    "infant_care": 4,
     "sports_injury": 1
   },
   "series": [
@@ -1057,6 +1057,16 @@
       "hidden": false,
       "areas": [
         "travel_medication"
+      ],
+      "departments": []
+    },
+    {
+      "id": "child_medicine_feeding",
+      "title": "兒童餵藥技巧",
+      "count": 6,
+      "hidden": false,
+      "areas": [
+        "infant_care"
       ],
       "departments": []
     }
@@ -3749,30 +3759,30 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 311,
+      "machine_pass": 317,
       "partial": 1,
       "missing": 133
     },
     "reference_status": {
       "missing": 218,
-      "machine_pass": 227
+      "machine_pass": 233
     },
     "date_status": {
       "missing": 218,
-      "machine_pass": 206,
+      "machine_pass": 212,
       "partial": 21
     },
     "footer_status": {
       "missing": 238,
-      "machine_pass": 207
+      "machine_pass": 213
     },
     "jsonld_status": {
-      "machine_pass": 445
+      "machine_pass": 451
     }
   },
   "sync": {
-    "pages": 453,
-    "fields": 1089,
+    "pages": 459,
+    "fields": 1095,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4832,6 +4842,42 @@
         "fields": [
           "jsonld_status",
           "source_sha256",
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "child_medicine_feeding_01",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "child_medicine_feeding_02",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "child_medicine_feeding_03",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "child_medicine_feeding_04",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "child_medicine_feeding_05",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "child_medicine_feeding_06",
+        "fields": [
           "rules_sha256"
         ]
       },
