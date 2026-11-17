@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-17T11:13:14+08:00",
-  "baseline": "3d9d17c61980c6aa855980c6b8aaaf3b93df8246",
-  "scope": "網站來源快照；版本 3d9d17c6",
+  "generatedAt": "2026-11-17T11:41:04+08:00",
+  "baseline": "37cd57cf9e2d652c706123c3313f3af5a75c7d2d",
+  "scope": "網站來源快照；版本 37cd57cf",
   "counts": {
-    "cards": 451,
+    "cards": 456,
     "series": 99,
     "allSeries": 103,
     "hidden": 4,
@@ -1042,8 +1042,8 @@
     },
     {
       "id": "insomnia_medication",
-      "title": "失眠藥物六大類：代表產品與安全提醒",
-      "count": 6,
+      "title": "失眠藥物：代表產品與安全提醒",
+      "count": 11,
       "hidden": false,
       "areas": [],
       "departments": [
@@ -3759,30 +3759,30 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 317,
+      "machine_pass": 322,
       "partial": 1,
       "missing": 133
     },
     "reference_status": {
       "missing": 218,
-      "machine_pass": 233
+      "machine_pass": 238
     },
     "date_status": {
       "missing": 218,
-      "machine_pass": 212,
+      "machine_pass": 217,
       "partial": 21
     },
     "footer_status": {
       "missing": 238,
-      "machine_pass": 213
+      "machine_pass": 218
     },
     "jsonld_status": {
-      "machine_pass": 451
+      "machine_pass": 456
     }
   },
   "sync": {
-    "pages": 459,
-    "fields": 1095,
+    "pages": 464,
+    "fields": 1097,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -5696,21 +5696,18 @@
       {
         "page": "insomnia_card01",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card02",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card03",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5746,6 +5743,36 @@
       },
       {
         "page": "insomnia_card09",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insomnia_card10",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insomnia_card11",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insomnia_card12",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insomnia_card13",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insomnia_card14",
         "fields": [
           "rules_sha256"
         ]
