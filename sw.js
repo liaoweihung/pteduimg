@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v0caac349c20b5533e3fb2b5f';
+const CACHE_NAME = 'pwa-cache-v80c5202f767e1d25ca120246';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -321,6 +321,11 @@ const urlsToCache = [
   "./img/insomnia_card07.webp",
   "./img/insomnia_card08.webp",
   "./img/insomnia_card09.webp",
+  "./img/insomnia_card10.webp",
+  "./img/insomnia_card11.webp",
+  "./img/insomnia_card12.webp",
+  "./img/insomnia_card13.webp",
+  "./img/insomnia_card14.webp",
   "./img/japan_otc_drug_classification.webp",
   "./img/jin_huang_san.webp",
   "./img/jinchuang_ointment.webp",
@@ -957,6 +962,11 @@ const urlsToCache = [
   "./cards/insomnia_card07.html",
   "./cards/insomnia_card08.html",
   "./cards/insomnia_card09.html",
+  "./cards/insomnia_card10.html",
+  "./cards/insomnia_card11.html",
+  "./cards/insomnia_card12.html",
+  "./cards/insomnia_card13.html",
+  "./cards/insomnia_card14.html",
   "./cards/liquid_medicine_storage_01.html",
   "./cards/liquid_medicine_storage_02.html",
   "./cards/child_medicine_feeding_01.html",
@@ -997,7 +1007,16 @@ const revisedImageUrls = [
   "./img/bruising_care_1.webp",
   "./img/bruising_care_2.webp",
   "./img/bruising_care_3.webp",
-  "./img/bruising_care_4.webp"
+  "./img/bruising_care_4.webp",
+  "./img/insomnia_card01.webp",
+  "./img/insomnia_card02.webp",
+  "./img/insomnia_card03.webp",
+  "./img/insomnia_card04.webp",
+  "./img/insomnia_card05.webp",
+  "./img/insomnia_card06.webp",
+  "./img/insomnia_card07.webp",
+  "./img/insomnia_card08.webp",
+  "./img/insomnia_card09.webp"
 ];
 
 self.addEventListener('install', (e) => {

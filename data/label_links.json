@@ -173,42 +173,154 @@
       }
     ],
     "img/motion_sickness_meds_1.webp": [
-      {"name": "克暈錠", "license": "內衛藥製字第013550號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E5%85%A7%E8%A1%9B%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC013550%E8%99%9F"},
-      {"name": "「強生」美克利靜錠25毫克", "license": "內衛藥製字第012916號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E5%85%A7%E8%A1%9B%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC012916%E8%99%9F"},
-      {"name": "「黃氏」富旅安錠", "license": "衛署藥製字第038592號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC038592%E8%99%9F"}
+      {
+        "name": "克暈錠",
+        "license": "內衛藥製字第013550號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E5%85%A7%E8%A1%9B%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC013550%E8%99%9F"
+      },
+      {
+        "name": "「強生」美克利靜錠25毫克",
+        "license": "內衛藥製字第012916號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E5%85%A7%E8%A1%9B%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC012916%E8%99%9F"
+      },
+      {
+        "name": "「黃氏」富旅安錠",
+        "license": "衛署藥製字第038592號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC038592%E8%99%9F"
+      }
     ],
     "img/motion_sickness_meds_2.webp": [
-      {"name": "人生旅安糖漿", "license": "衛署藥製字第010587號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC010587%E8%99%9F"},
-      {"name": "暈得寧防暈貼片劑1.5毫克", "license": "衛署藥製字第044712號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC044712%E8%99%9F"}
+      {
+        "name": "人生旅安糖漿",
+        "license": "衛署藥製字第010587號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC010587%E8%99%9F"
+      },
+      {
+        "name": "暈得寧防暈貼片劑1.5毫克",
+        "license": "衛署藥製字第044712號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC044712%E8%99%9F"
+      }
     ],
     "img/insomnia_card04.webp": [
-      {"name": "悠樂丁錠 2 公絲", "license": "衛署藥製字第012458號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC012458%E8%99%9F"}
+      {
+        "name": "悠樂丁錠 2 公絲",
+        "license": "衛署藥製字第012458號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC012458%E8%99%9F"
+      }
     ],
     "img/insomnia_card05.webp": [
-      {"name": "使蒂諾斯膜衣錠 10 毫克", "license": "衛署藥輸字第021531號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC021531%E8%99%9F"}
+      {
+        "name": "使蒂諾斯膜衣錠 10 毫克",
+        "license": "衛署藥輸字第021531號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC021531%E8%99%9F"
+      }
     ],
     "img/insomnia_card06.webp": [
-      {"name": "柔速瑞膜衣錠 8 毫克", "license": "衛部藥製字第061977號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E9%83%A8%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC061977%E8%99%9F"}
+      {
+        "name": "柔速瑞膜衣錠 8 毫克",
+        "license": "衛部藥製字第061977號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E9%83%A8%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC061977%E8%99%9F"
+      }
     ],
     "img/insomnia_card07.webp": [
-      {"name": "達衛眠錠 5 毫克", "license": "衛部藥輸字第028145號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E9%83%A8%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC028145%E8%99%9F"}
+      {
+        "name": "達衛眠錠 5 毫克",
+        "license": "衛部藥輸字第028145號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E9%83%A8%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC028145%E8%99%9F"
+      }
     ],
     "img/insomnia_card08.webp": [
-      {"name": "美舒鬱錠 50 毫克", "license": "衛署藥製字第033664號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC033664%E8%99%9F"}
+      {
+        "name": "美舒鬱錠 50 毫克",
+        "license": "衛署藥製字第033664號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC033664%E8%99%9F"
+      }
     ],
     "img/insomnia_card09.webp": [
-      {"name": "中美靜安能膠囊", "license": "衛署藥製字第049273號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC049273%E8%99%9F"},
-      {"name": "克胺寧錠 25 毫克", "license": "衛署藥製字第039007號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC039007%E8%99%9F"}
+      {
+        "name": "中美靜安能膠囊",
+        "license": "衛署藥製字第049273號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC049273%E8%99%9F"
+      },
+      {
+        "name": "克胺寧錠 25 毫克",
+        "license": "衛署藥製字第039007號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC039007%E8%99%9F"
+      }
     ],
     "img/Champix.webp": [
-      {"name": "戒必適膜衣錠 0.5 毫克", "license": "衛署藥輸字第024649號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC024649%E8%99%9F"},
-      {"name": "戒必適膜衣錠 1 毫克", "license": "衛署藥輸字第024648號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC024648%E8%99%9F"}
+      {
+        "name": "戒必適膜衣錠 0.5 毫克",
+        "license": "衛署藥輸字第024649號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC024649%E8%99%9F"
+      },
+      {
+        "name": "戒必適膜衣錠 1 毫克",
+        "license": "衛署藥輸字第024648號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC024648%E8%99%9F"
+      }
     ],
     "img/liquid_medicine_storage_02.webp": [
-      {"name": "安滅菌糖漿用粉劑 457 毫克/5 毫升", "license": "衛署藥輸字第022447號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC022447%E8%99%9F"},
-      {"name": "日舒懸液用粉 47.78 毫克/公克", "license": "衛署藥輸字第021830號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC021830%E8%99%9F"},
-      {"name": "舒而坦眼藥水", "license": "衛署藥輸字第022540號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC022540%E8%99%9F"},
-      {"name": "希普利敏液", "license": "衛署藥製字第043588號", "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC043588%E8%99%9F"}
+      {
+        "name": "安滅菌糖漿用粉劑 457 毫克/5 毫升",
+        "license": "衛署藥輸字第022447號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC022447%E8%99%9F"
+      },
+      {
+        "name": "日舒懸液用粉 47.78 毫克/公克",
+        "license": "衛署藥輸字第021830號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC021830%E8%99%9F"
+      },
+      {
+        "name": "舒而坦眼藥水",
+        "license": "衛署藥輸字第022540號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC022540%E8%99%9F"
+      },
+      {
+        "name": "希普利敏液",
+        "license": "衛署藥製字第043588號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC043588%E8%99%9F"
+      }
+    ],
+    "img/insomnia_card10.webp": [
+      {
+        "name": "利瑞卡膠囊 75 毫克",
+        "license": "衛署藥輸字第024995號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC024995%E8%99%9F"
+      }
+    ],
+    "img/insomnia_card11.webp": [
+      {
+        "name": "思樂康膜衣錠 25 公絲",
+        "license": "衛署藥輸字第022543號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC022543%E8%99%9F"
+      }
+    ],
+    "img/insomnia_card12.webp": [
+      {
+        "name": "美妥平口溶錠 30 毫克",
+        "license": "衛署藥製字第049656號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC049656%E8%99%9F"
+      }
+    ],
+    "img/insomnia_card13.webp": [
+      {
+        "name": "舒肉筋新錠",
+        "license": "衛署藥製字第005813號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC005813%E8%99%9F"
+      },
+      {
+        "name": "鬆得樂錠 2 毫克",
+        "license": "衛署藥輸字第019626號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC019626%E8%99%9F"
+      }
+    ],
+    "img/insomnia_card14.webp": [
+      {
+        "name": "佩你安錠",
+        "license": "衛署藥製字第004737號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC004737%E8%99%9F"
+      }
     ]
   }
 }

@@ -545,3 +545,8 @@ REL-163a12113301c46a,series:child_medicine_feeding,has_card,page:child_medicine_
 REL-c1af3d48b1d91999,series:child_medicine_feeding,has_card,page:child_medicine_feeding_04,source_observed,series_membership,cards.json,CR-2026-105
 REL-febc934db2d12768,series:child_medicine_feeding,has_card,page:child_medicine_feeding_05,source_observed,series_membership,cards.json,CR-2026-105
 REL-2355f911c4fa713e,series:child_medicine_feeding,has_card,page:child_medicine_feeding_06,source_observed,series_membership,cards.json,CR-2026-105
+REL-ddc6725ed7d64ef7,series:insomnia_medication,has_card,page:insomnia_card10,source_observed,series_membership,cards.json,CR-2026-106
+REL-8eb7cef08d2297b1,series:insomnia_medication,has_card,page:insomnia_card11,source_observed,series_membership,cards.json,CR-2026-106
+REL-c56c8c44121d4c70,series:insomnia_medication,has_card,page:insomnia_card12,source_observed,series_membership,cards.json,CR-2026-106
+REL-f3c68ef093b1f3e3,series:insomnia_medication,has_card,page:insomnia_card13,source_observed,series_membership,cards.json,CR-2026-106
+REL-b60b632bf60834da,series:insomnia_medication,has_card,page:insomnia_card14,source_observed,series_membership,cards.json,CR-2026-106

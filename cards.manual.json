@@ -3997,7 +3997,7 @@
     ]
   },
   "insomnia_medication": {
-    "title": "失眠藥物六大類：代表產品與安全提醒",
+    "title": "失眠藥物：代表產品與安全提醒",
     "category": "pharmacist_product",
     "departments": [
       "pharmacy_general"
@@ -4014,7 +4014,15 @@
       "Ramelteon",
       "Lemborexant",
       "Trazodone",
-      "抗組織胺"
+      "抗組織胺",
+      "Pregabalin",
+      "Quetiapine",
+      "Mirtazapine",
+      "Chlorzoxazone",
+      "Tizanidine",
+      "Cyproheptadine",
+      "肌肉鬆弛劑",
+      "感冒糖漿助眠"
     ],
     "texts": [
       "苯二氮平類 BZDs：Estazolam 用藥重點",
@@ -4022,7 +4030,12 @@
       "褪黑激素受體促效劑：Ramelteon 用藥重點",
       "食慾素受體拮抗劑 DORAs：Lemborexant 用藥重點",
       "具鎮靜作用之抗憂鬱劑：Trazodone 用藥重點",
-      "第一代抗組織胺類：Diphenhydramine 與 Hydroxyzine"
+      "第一代抗組織胺類：Diphenhydramine 與 Hydroxyzine",
+      "α2δ 鈣離子通道調節劑：Pregabalin 用藥重點",
+      "第二代抗精神病藥（低劑量輔助）：Quetiapine 用藥重點",
+      "NaSSA 類抗憂鬱劑：Mirtazapine 用藥重點",
+      "中樞性肌肉鬆弛劑：Chlorzoxazone 與 Tizanidine",
+      "用藥迷思：抗過敏開胃藥、暈車藥與感冒糖漿不能當安眠藥"
     ],
     "related_series": [
       "insomnia_public"
@@ -4034,7 +4047,25 @@
       "img/insomnia_card06.webp",
       "img/insomnia_card07.webp",
       "img/insomnia_card08.webp",
-      "img/insomnia_card09.webp"
+      "img/insomnia_card09.webp",
+      "img/insomnia_card10.webp",
+      "img/insomnia_card11.webp",
+      "img/insomnia_card12.webp",
+      "img/insomnia_card13.webp",
+      "img/insomnia_card14.webp"
+    ],
+    "favorite_keys": [
+      "insomnia_medication-0",
+      "insomnia_medication-1",
+      "insomnia_medication-2",
+      "insomnia_medication-3",
+      "insomnia_medication-4",
+      "insomnia_medication-5",
+      "insomnia_medication-insomnia_card10",
+      "insomnia_medication-insomnia_card11",
+      "insomnia_medication-insomnia_card12",
+      "insomnia_medication-insomnia_card13",
+      "insomnia_medication-insomnia_card14"
     ]
   },
   "liquid_medicine_storage": {

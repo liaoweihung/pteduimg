@@ -13544,7 +13544,8 @@
       }
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "imageUpdatedAt": "2026-11-17"
   },
   {
     "cardId": "insomnia_public",
@@ -13597,7 +13598,8 @@
       }
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "imageUpdatedAt": "2026-11-17"
   },
   {
     "cardId": "insomnia_public",
@@ -13646,7 +13648,8 @@
       }
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "imageUpdatedAt": "2026-11-17"
   },
   {
     "cardId": "insomnia_medication",
@@ -13679,7 +13682,8 @@
       }
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "imageUpdatedAt": "2026-11-17"
   },
   {
     "cardId": "insomnia_medication",
@@ -13712,7 +13716,8 @@
       }
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "imageUpdatedAt": "2026-11-17"
   },
   {
     "cardId": "insomnia_medication",
@@ -13745,7 +13750,8 @@
       }
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "imageUpdatedAt": "2026-11-17"
   },
   {
     "cardId": "insomnia_medication",
@@ -13782,7 +13788,8 @@
       }
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "imageUpdatedAt": "2026-11-17"
   },
   {
     "cardId": "insomnia_medication",
@@ -13823,7 +13830,8 @@
       }
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "imageUpdatedAt": "2026-11-17"
   },
   {
     "cardId": "insomnia_medication",
@@ -13876,7 +13884,8 @@
       }
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "imageUpdatedAt": "2026-11-17"
   },
   {
     "cardId": "liquid_medicine_storage",
@@ -14353,6 +14362,215 @@
       {
         "title": "羅東博愛醫院：小孩吐藥要補餵嗎？",
         "url": "https://www.pohai.org.tw/health_detail.php?PKey=3165"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "insomnia_medication",
+    "image": "img/insomnia_card10.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card10.html",
+    "title": "α2δ 鈣離子通道調節劑：Pregabalin 用藥重點",
+    "summary": "Pregabalin 核准用於神經痛、纖維肌痛與癲癇輔助治療，可減少夜間覺醒並增加深層睡眠，適合合併神經痛或纖維肌痛的失眠；常見頭暈、嗜睡、水腫與體重增加，腎功能不全須調整劑量，停藥須逐漸減量。",
+    "sections": [
+      {
+        "heading": "代表藥品",
+        "text": "利瑞卡膠囊 75 毫克（成分 Pregabalin｜衛署藥輸字第024995號｜非管制藥品）"
+      },
+      {
+        "heading": "機轉與定位",
+        "text": "Pregabalin 與同類藥物 Gabapentin 都不是直接作用於 GABA 受體，而是調節神經元鈣離子通道，減少興奮性神經傳導物質釋放。台灣核准適應症為糖尿病周邊神經病變及脊髓損傷引起之神經性疼痛、帶狀疱疹後神經痛、纖維肌痛與成人局部癲癇輔助治療（未核准用於焦慮）。研究顯示可減少夜間覺醒並增加深層（慢波）睡眠，特別適合合併疼痛、焦慮或不寧腿症候群的失眠患者（李政洋身心診所、永信藥品）。"
+      },
+      {
+        "heading": "衛教重點",
+        "text": "常見副作用為頭暈、嗜睡、視力模糊、周邊水腫與體重增加，併用 TZD 類降血糖藥時水腫風險更高；服藥後避免開車或操作危險機械（臺安醫院藥品資訊、藥商變更仿單）。主要經腎臟排除，腎功能不全者須依肌酸酐清除率調整劑量；停藥須由醫師指示，以至少一週時間逐漸減量。仿單警語：可能增加自殺意念或行為、情緒或行為異常，出現時應立即告知醫師。"
+      }
+    ],
+    "altText": "失眠與失眠藥物衛教圖卡第 10 張：α2δ 鈣離子通道調節劑 Pregabalin（利瑞卡膠囊 75 毫克）的藥品特色與用藥安全提醒",
+    "updatedAt": "2026-11-17",
+    "sourceCheckedAt": "2026-11-14",
+    "revisionCredit": "使用者提供並查核失眠藥物衛教文件；本站依文件整理圖卡與逐頁文字",
+    "references": [
+      {
+        "title": "三軍總醫院藥品仿單：利瑞卡膠囊",
+        "url": "https://www1.ndmctsgh.edu.tw/pharm/pic/medinsert/005LYR01.pdf"
+      },
+      {
+        "title": "李政洋身心診所：Pregabalin 與睡眠",
+        "url": "https://www.leepsyclinic.com/2021/12/ep2.html"
+      },
+      {
+        "title": "永信藥品衛教",
+        "url": "https://www.ysp.com.tw/tw/magazine/144"
+      },
+      {
+        "title": "臺安醫院藥品資訊",
+        "url": "https://www.tahsda.org.tw/drugs/detail.php?id=1222"
+      },
+      {
+        "title": "藥商變更仿單",
+        "url": "https://www.stm.org.tw/pharmacy/UploadedFiles/2022/054b4e74-6856-43c0-9361-b61ddc4ac85b.pdf"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "insomnia_medication",
+    "image": "img/insomnia_card11.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card11.html",
+    "title": "第二代抗精神病藥（低劑量輔助）：Quetiapine 用藥重點",
+    "summary": "Quetiapine 低劑量（25～100 mg）因強效阻斷 H1 受體而有明顯鎮靜作用，臨床偶用於頑固型失眠輔助；用於失眠屬仿單外使用，不是單純失眠的第一線用藥，長期使用須留意體重、血糖血脂與姿勢性低血壓。",
+    "sections": [
+      {
+        "heading": "代表藥品",
+        "text": "思樂康膜衣錠 25 公絲（成分 Quetiapine｜衛署藥輸字第022543號｜非管制藥品）"
+      },
+      {
+        "heading": "機轉與定位",
+        "text": "Quetiapine 的受體作用隨劑量不同，在低劑量（25～100 mg）時主要強效阻斷 H1 組織胺受體，產生顯著鎮靜與助眠感。台灣核准適應症為思覺失調症與雙極性疾患之躁症發作，用於失眠屬仿單外使用；臨床上常見於頑固型失眠、雙極性疾患或憂鬱症合併嚴重失眠的輔助（中國附醫、李政洋身心診所）。"
+      },
+      {
+        "heading": "衛教重點",
+        "text": "Quetiapine 不是單純失眠的第一線用藥。即使低劑量長期使用，仍須留意體重增加、血糖／血脂代謝異常與姿勢性低血壓，起始治療時應防頭暈跌倒（李政洋身心診所）。老年失智症相關精神病患者使用非典型抗精神病藥，有較高死亡風險的警語（思樂康仿單）。"
+      }
+    ],
+    "altText": "失眠與失眠藥物衛教圖卡第 11 張：第二代抗精神病藥 Quetiapine（思樂康膜衣錠 25 公絲）低劑量輔助助眠的特色與用藥安全提醒",
+    "updatedAt": "2026-11-17",
+    "sourceCheckedAt": "2026-11-14",
+    "revisionCredit": "使用者提供並查核失眠藥物衛教文件；本站依文件整理圖卡與逐頁文字",
+    "references": [
+      {
+        "title": "高雄市立凱旋醫院：思樂康仿單",
+        "url": "https://ksph.kcg.gov.tw/7/dfiles_pdf/Seroquel.pdf"
+      },
+      {
+        "title": "中國醫藥大學附設醫院衛教",
+        "url": "https://www.cmuh.cmu.edu.tw/NewsInfo/NewsArticle?no=7557"
+      },
+      {
+        "title": "李政洋身心診所：Quetiapine",
+        "url": "https://www.leepsyclinic.com/p/quetiapine.html"
+      },
+      {
+        "title": "耕莘醫院：思樂康仿單資料",
+        "url": "https://www.cth.org.tw/public/medi_news/0343cd905c9491eb93cd5d7323932f51.pdf"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "insomnia_medication",
+    "image": "img/insomnia_card12.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card12.html",
+    "title": "NaSSA 類抗憂鬱劑：Mirtazapine 用藥重點",
+    "summary": "Mirtazapine 低劑量（7.5～15 mg）阻斷 H1 受體的鎮靜作用極強，臨床常用於憂鬱伴隨失眠、食慾不振或體重減輕者；食慾大增、體重上升與隔日昏沉很常見，避免併用酒精，停藥須由醫師評估。",
+    "sections": [
+      {
+        "heading": "代表藥品",
+        "text": "美妥平口溶錠 30 毫克（Mirtapine Orally Disintegrating Tablets 30mg｜成分 Mirtazapine 30 mg｜衛署藥製字第049656號｜核准適應症：鬱症｜非管制藥品）"
+      },
+      {
+        "heading": "機轉與定位",
+        "text": "Mirtazapine 屬正腎上腺素與特定血清素抗憂鬱劑（NaSSA），在低劑量（7.5～15 mg）時 H1 受體阻斷的鎮靜效果極為強烈，臨床常開立於憂鬱伴隨失眠、食慾不振或體重減輕者。三環抗憂鬱劑如 Amitriptyline 也有強鎮靜力，但抗膽鹼與心律風險較高。"
+      },
+      {
+        "heading": "衛教重點",
+        "text": "嗜睡與食慾大增／體重上升非常常見，部分患者隔日昏沉感較明顯，應避免開車或操作危險機械。不可併用酒精或 MAO 抑制劑，也避免併用其他中樞神經抑制劑；停藥須由醫師評估逐步減量。"
+      }
+    ],
+    "altText": "失眠與失眠藥物衛教圖卡第 12 張：NaSSA 類抗憂鬱劑 Mirtazapine（美妥平口溶錠 30 毫克）強鎮靜輔助的特色與用藥安全提醒",
+    "updatedAt": "2026-11-17",
+    "sourceCheckedAt": "2026-11-14",
+    "revisionCredit": "使用者提供並查核失眠藥物衛教文件；本站依文件整理圖卡與逐頁文字",
+    "references": [
+      {
+        "title": "衛生福利部食品藥物管理署 西藥許可證查詢（衛署藥製字第049656號）",
+        "url": "https://lmspiq.fda.gov.tw/web/DRPIQ/DRPIQLicSearch"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "insomnia_medication",
+    "image": "img/insomnia_card13.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card13.html",
+    "title": "中樞性肌肉鬆弛劑：Chlorzoxazone 與 Tizanidine",
+    "summary": "中樞性肌肉鬆弛劑有明顯嗜睡副作用，常用於肩頸緊繃、下背痛合併入睡困難者；Chlorzoxazone 可能讓尿液變橙紅、肝功能不佳者慎用，Tizanidine 須防低血壓，且不可併用 Fluvoxamine 或 Ciprofloxacin。",
+    "sections": [
+      {
+        "heading": "代表藥品 1",
+        "text": "舒肉筋新錠（成分 Chlorzoxazone｜衛署藥製字第005813號｜非管制藥品）"
+      },
+      {
+        "heading": "代表藥品 2",
+        "text": "鬆得樂錠 2 毫克（成分 Tizanidine｜衛署藥輸字第019626號｜非管制藥品）"
+      },
+      {
+        "heading": "機轉與定位",
+        "text": "透過抑制脊髓神經傳導或刺激中樞 α2 受體達到肌肉鬆弛，因具明顯中樞鎮靜與嗜睡副作用，基層診所與骨科／復健科常開立於肩頸緊繃、下背痛合併入睡困難者。同類也常見 Mephenoxalone（如肌舒朗錠，衛署藥製字第044459號），以及 Baclofen（如倍鬆錠 5 毫克，衛署藥製字第037141號）；Baclofen 長期使用後突然停藥可能引起幻覺、錯亂、興奮或痙攣，須緩慢減量。"
+      },
+      {
+        "heading": "衛教重點",
+        "text": "Chlorzoxazone 可能讓尿液變成橙色或紫紅色，屬正常現象，不需驚慌；肝功能不佳者須小心使用，並避免同時大量食用西洋菜（watercress）（耕莘醫院）。Tizanidine 須留意低血壓、口乾與肝酵素升高；它經 CYP1A2 代謝，禁用於併用 Fluvoxamine 或 Ciprofloxacin 者（仁慈醫院）。"
+      }
+    ],
+    "altText": "失眠與失眠藥物衛教圖卡第 13 張：中樞性肌肉鬆弛劑 Chlorzoxazone（舒肉筋新錠）與 Tizanidine（鬆得樂錠 2 毫克）的特色與用藥安全提醒",
+    "updatedAt": "2026-11-17",
+    "sourceCheckedAt": "2026-11-14",
+    "revisionCredit": "使用者提供並查核失眠藥物衛教文件；本站依文件整理圖卡與逐頁文字",
+    "references": [
+      {
+        "title": "高雄市立凱旋醫院：舒肉筋新錠仿單",
+        "url": "https://k2c.ktgh.com.tw/Public/tbDrug/201301151040167055.pdf"
+      },
+      {
+        "title": "耕莘醫院：Chlorzoxazone 用藥資訊",
+        "url": "https://www.cth.org.tw/?aid=606&pid=0&page_name=detail&iid=368"
+      },
+      {
+        "title": "仁慈醫院：鬆得樂錠藥品資訊",
+        "url": "https://www.mercy.org.tw/?aid=320&pid=64&page_name=detail&iid=1732"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": true
+  },
+  {
+    "cardId": "insomnia_medication",
+    "image": "img/insomnia_card14.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card14.html",
+    "title": "用藥迷思：抗過敏開胃藥、暈車藥與感冒糖漿不能當安眠藥",
+    "summary": "Cyproheptadine（佩你安錠）、暈車藥與複方感冒糖漿常因嗜睡被拿來助眠，但長期使用可能造成鎮咳成分依賴、抗膽鹼副作用或止痛成分肝毒性；持續失眠應尋求醫師與藥師評估正規治療。",
+    "sections": [
+      {
+        "heading": "代表藥品",
+        "text": "永信 佩你安錠（成分 Cyproheptadine｜衛署藥製字第004737號｜須由醫師處方使用｜核准適應症為枯草熱、過敏性鼻炎、皮膚炎、濕疹、蕁麻疹、氣喘等過敏疾患）"
+      },
+      {
+        "heading": "為什麼吃了會想睡？",
+        "text": "Cyproheptadine 具強效抗組織胺與 5-HT2 拮抗作用，核准用於過敏疾患（食慾促進、偏頭痛預防屬仿單外使用），因嗜睡感強而偶被借用來助眠。此外，民眾也常把暈車／止吐藥（如 Meclizine、Dimenhydrinate 等第一代抗組織胺），或含第一代抗組織胺／鎮咳成分的複方感冒糖漿，當成助眠藥長期飲用。"
+      },
+      {
+        "heading": "衛教重點",
+        "text": "Cyproheptadine 常見食慾增加、口乾與注意力下降，服藥後勿開車（彰基藥品辨識）。切勿長期拿感冒糖漿或暈車藥當安眠藥，以免造成鎮咳成分依賴、抗膽鹼副作用或 Acetaminophen 肝毒性累積；持續失眠應尋求醫師與藥師評估正規治療。"
+      }
+    ],
+    "altText": "失眠與失眠藥物衛教圖卡第 14 張：用藥迷思提醒，Cyproheptadine（佩你安錠）、暈車藥與複方感冒糖漿不能長期當安眠藥",
+    "updatedAt": "2026-11-17",
+    "sourceCheckedAt": "2026-11-14",
+    "revisionCredit": "使用者提供並查核失眠藥物衛教文件；本站依文件整理圖卡與逐頁文字",
+    "references": [
+      {
+        "title": "衛生福利部食品藥物管理署：佩你安錠仿單",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC004737%E8%99%9F"
+      },
+      {
+        "title": "彰化基督教醫院 藥品辨識：Cyproheptadine",
+        "url": "https://www.cch.org.tw/drug/online_service/Printer_Drug.aspx?CODE=MTCPA&D_TYPE=S"
       }
     ],
     "matchConfidence": "high",

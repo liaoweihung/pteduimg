@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：318
+- 成功加入文字頁數：323
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -323,3 +323,8 @@
 | child_medicine_feeding | 藥太苦可以加在牛奶裡嗎？3 大混藥地雷與 5 mL 一口量掩味法 | https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_04.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | child_medicine_feeding | 小孩餵藥怎麼餵不會嗆到？別平躺強灌，用 45 度半坐臥＋頰囊分次慢推 | https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | child_medicine_feeding | 小孩吃藥後吐了要補嗎？先看時間、吐出多少和孩子狀態再決定 | https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_06.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | α2δ 鈣離子通道調節劑：Pregabalin 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card10.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 第二代抗精神病藥（低劑量輔助）：Quetiapine 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card11.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | NaSSA 類抗憂鬱劑：Mirtazapine 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card12.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 中樞性肌肉鬆弛劑：Chlorzoxazone 與 Tizanidine | https://liaoweihung.github.io/pteduimg/cards/insomnia_card13.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 用藥迷思：抗過敏開胃藥、暈車藥與感冒糖漿不能當安眠藥 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card14.html | 是 | 是 | 是 | 是 | 是 | 無 |
