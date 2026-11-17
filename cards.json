@@ -4220,5 +4220,48 @@
       "img/liquid_medicine_storage_01.webp",
       "img/liquid_medicine_storage_02.webp"
     ]
+  },
+  "child_medicine_feeding": {
+    "title": "兒童餵藥技巧",
+    "category": "public_education",
+    "topics": [
+      "infant_care"
+    ],
+    "order": 36.1,
+    "hidden": false,
+    "icon": "🧸",
+    "tags": [
+      "兒童餵藥",
+      "小孩不吃藥",
+      "餵藥技巧",
+      "餵藥偏方",
+      "寶寶餵藥",
+      "餵藥針筒",
+      "頰囊餵藥",
+      "小孩吃藥吐了",
+      "吐藥要補嗎",
+      "吐藥補餵",
+      "藥太苦",
+      "藥混牛奶",
+      "藥混果汁",
+      "一歲以下蜂蜜",
+      "嬰兒肉毒桿菌",
+      "壓碎藥錠",
+      "藥丸吞不下",
+      "口溶錠",
+      "針筒分散法",
+      "Montelukast 顆粒",
+      "Clarithromycin 藥水",
+      "Ciprofloxacin 牛奶"
+    ],
+    "showFooter": true,
+    "steps": [
+      "img/child_medicine_feeding_01.webp",
+      "img/child_medicine_feeding_02.webp",
+      "img/child_medicine_feeding_03.webp",
+      "img/child_medicine_feeding_04.webp",
+      "img/child_medicine_feeding_05.webp",
+      "img/child_medicine_feeding_06.webp"
+    ]
   }
 }

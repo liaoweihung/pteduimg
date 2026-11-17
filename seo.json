@@ -6032,5 +6032,83 @@
     "og_url": "https://liaoweihung.github.io/pteduimg/cards/liquid_medicine_storage_02.html",
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/liquid_medicine_storage_02.html",
     "twitter_card": "summary_large_image"
+  },
+  "cards/child_medicine_feeding_01.html": {
+    "page_title": "小孩不肯吃藥怎麼辦？破除 4 大民間餵藥偏方與吐藥應變指南｜藥局衛教助手",
+    "meta_description": "孩子哭鬧、吐藥、咬緊牙關，家長常試各種網路偏方。用兩支湯匙壓藥、藥混整瓶牛奶或蜂蜜、平躺捏鼻子灌藥、針筒直噴喉嚨，都可能讓藥效變差或讓孩子嗆到。本系列整理每種偏方的風險、安全的替代做法，以及吐藥後要不要補藥的判斷方式。",
+    "h1": "小孩不肯吃藥怎麼辦？破除 4 大民間餵藥偏方與吐藥應變指南",
+    "image_alt": "兒童餵藥技巧衛教圖卡第 1 張：餵藥不再像打仗，破除 4 大民間餵藥偏方與吐藥應變指南",
+    "keywords": "兒童餵藥、小孩不吃藥、餵藥技巧、餵藥偏方、寶寶餵藥、餵藥針筒、頰囊餵藥、小孩吃藥吐了、吐藥要補嗎、吐藥補餵、藥太苦、藥混牛奶、藥混果汁、一歲以下蜂蜜、嬰兒肉毒桿菌、壓碎藥錠、藥丸吞不下、口溶錠、針筒分散法、Montelukast 顆粒、Clarithromycin 藥水、Ciprofloxacin 牛奶",
+    "og_title": "小孩不肯吃藥怎麼辦？破除 4 大民間餵藥偏方與吐藥應變指南｜藥局衛教助手",
+    "og_description": "孩子哭鬧、吐藥、咬緊牙關，家長常試各種網路偏方。用兩支湯匙壓藥、藥混整瓶牛奶或蜂蜜、平躺捏鼻子灌藥、針筒直噴喉嚨，都可能讓藥效變差或讓孩子嗆到。本系列整理每種偏方的風險、安全的替代做法，以及吐藥後要不要補藥的判斷方式。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/child_medicine_feeding_01.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_01.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_01.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/child_medicine_feeding_02.html": {
+    "page_title": "兒童餵藥 6 大實用關鍵：確認藥品、選對方法與工具，餵藥更安全｜藥局衛教助手",
+    "meta_description": "餵藥前先看清楚藥名、劑量、用法和時間；依藥水、藥粉、顆粒或藥錠選擇適合的餵法；用餵藥針筒或有刻度的量杯量藥；用溫和鼓勵的方式讓孩子配合；餵完留意嘔吐、皮疹等不適；有過敏史、慢性病或長期用藥時先問醫師或藥師。",
+    "h1": "兒童餵藥 6 大實用關鍵：確認藥品、選對方法與工具，餵藥更安全",
+    "image_alt": "兒童餵藥技巧衛教圖卡第 2 張：兒童餵藥 6 大實用關鍵，先確認藥品資訊、依劑型選擇方法、使用適合的工具、營造合作氛圍、餵完注意觀察、特殊狀況先諮詢",
+    "keywords": "兒童餵藥、小孩不吃藥、餵藥技巧、餵藥偏方、寶寶餵藥、餵藥針筒、頰囊餵藥、小孩吃藥吐了、吐藥要補嗎、吐藥補餵、藥太苦、藥混牛奶、藥混果汁、一歲以下蜂蜜、嬰兒肉毒桿菌、壓碎藥錠、藥丸吞不下、口溶錠、針筒分散法、Montelukast 顆粒、Clarithromycin 藥水、Ciprofloxacin 牛奶",
+    "og_title": "兒童餵藥 6 大實用關鍵：確認藥品、選對方法與工具，餵藥更安全｜藥局衛教助手",
+    "og_description": "餵藥前先看清楚藥名、劑量、用法和時間；依藥水、藥粉、顆粒或藥錠選擇適合的餵法；用餵藥針筒或有刻度的量杯量藥；用溫和鼓勵的方式讓孩子配合；餵完留意嘔吐、皮疹等不適；有過敏史、慢性病或長期用藥時先問醫師或藥師。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/child_medicine_feeding_02.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_02.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_02.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/child_medicine_feeding_03.html": {
+    "page_title": "藥丸吞不下可以壓碎嗎？別用兩支湯匙壓藥，改用針筒溫水分散法｜藥局衛教助手",
+    "meta_description": "用兩支湯匙夾壓藥錠，碎塊容易彈飛造成劑量不準；壓碎緩釋錠、腸溶錠可能失效或一次釋出過量；壓破膜衣會讓苦味爆發。先問藥師確認劑型，只有速放裸錠或可分散的口溶錠、腸溶微粒錠，才能放進針筒吸冷溫水自然散開，推完再吸水沖洗針筒。",
+    "h1": "藥丸吞不下可以壓碎嗎？別用兩支湯匙壓藥，改用針筒溫水分散法",
+    "image_alt": "兒童餵藥技巧衛教圖卡第 3 張：藥丸吞不下別用兩支湯匙硬壓，改用針筒溫水分散法，先問藥師確認劑型、針筒吸水讓藥錠自然崩散、推完沖洗針筒且不可咬碎微粒",
+    "keywords": "兒童餵藥、小孩不吃藥、餵藥技巧、餵藥偏方、寶寶餵藥、餵藥針筒、頰囊餵藥、小孩吃藥吐了、吐藥要補嗎、吐藥補餵、藥太苦、藥混牛奶、藥混果汁、一歲以下蜂蜜、嬰兒肉毒桿菌、壓碎藥錠、藥丸吞不下、口溶錠、針筒分散法、Montelukast 顆粒、Clarithromycin 藥水、Ciprofloxacin 牛奶",
+    "og_title": "藥丸吞不下可以壓碎嗎？別用兩支湯匙壓藥，改用針筒溫水分散法｜藥局衛教助手",
+    "og_description": "用兩支湯匙夾壓藥錠，碎塊容易彈飛造成劑量不準；壓碎緩釋錠、腸溶錠可能失效或一次釋出過量；壓破膜衣會讓苦味爆發。先問藥師確認劑型，只有速放裸錠或可分散的口溶錠、腸溶微粒錠，才能放進針筒吸冷溫水自然散開，推完再吸水沖洗針筒。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/child_medicine_feeding_03.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_03.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_03.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/child_medicine_feeding_04.html": {
+    "page_title": "藥太苦可以加在牛奶裡嗎？3 大混藥地雷與 5 mL 一口量掩味法｜藥局衛教助手",
+    "meta_description": "藥混進整瓶奶，孩子沒喝完就算不出藥量，還可能從此厭奶；混整杯果汁可能干擾部分抗過敏藥吸收；未滿 1 歲不可用蜂蜜。混食物前先問藥師，只取 5 mL 一口量。遇酸變苦的藥水避開果汁、養樂多與蘋果泥；遇鈣會失效的藥不配乳製品；Montelukast 顆粒依仿單只配特定食物。",
+    "h1": "藥太苦可以加在牛奶裡嗎？3 大混藥地雷與 5 mL 一口量掩味法",
+    "image_alt": "兒童餵藥技巧衛教圖卡第 4 張：藥太苦別倒進整瓶奶，三大混藥地雷與 5 mL 一口量三明治掩味法，並依小嬰兒、遇酸變苦藥水、遇鈣會失效的藥、Montelukast 顆粒說明可搭配的食物",
+    "keywords": "兒童餵藥、小孩不吃藥、餵藥技巧、餵藥偏方、寶寶餵藥、餵藥針筒、頰囊餵藥、小孩吃藥吐了、吐藥要補嗎、吐藥補餵、藥太苦、藥混牛奶、藥混果汁、一歲以下蜂蜜、嬰兒肉毒桿菌、壓碎藥錠、藥丸吞不下、口溶錠、針筒分散法、Montelukast 顆粒、Clarithromycin 藥水、Ciprofloxacin 牛奶",
+    "og_title": "藥太苦可以加在牛奶裡嗎？3 大混藥地雷與 5 mL 一口量掩味法｜藥局衛教助手",
+    "og_description": "藥混進整瓶奶，孩子沒喝完就算不出藥量，還可能從此厭奶；混整杯果汁可能干擾部分抗過敏藥吸收；未滿 1 歲不可用蜂蜜。混食物前先問藥師，只取 5 mL 一口量。遇酸變苦的藥水避開果汁、養樂多與蘋果泥；遇鈣會失效的藥不配乳製品；Montelukast 顆粒依仿單只配特定食物。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/child_medicine_feeding_04.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_04.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_04.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/child_medicine_feeding_05.html": {
+    "page_title": "小孩餵藥怎麼餵不會嗆到？別平躺強灌，用 45 度半坐臥＋頰囊分次慢推｜藥局衛教助手",
+    "meta_description": "平躺捏鼻子強灌，藥水容易誤入氣管，引起嗆咳或吸入性肺炎；針筒直噴喉嚨正中央會觸發嘔吐反射。正確做法：讓孩子約 45 度半坐臥，針筒從嘴角伸到臉頰內側（頰囊），每次約 1～2 mL（小嬰兒可減為 0.5～1 mL），依藥量分次慢慢推，吞下再推下一口。",
+    "h1": "小孩餵藥怎麼餵不會嗆到？別平躺強灌，用 45 度半坐臥＋頰囊分次慢推",
+    "image_alt": "兒童餵藥技巧衛教圖卡第 5 張：餵藥別平躺捏鼻子強灌或針筒直噴喉嚨，正確 3 步驟為約 45 度半坐臥、針筒放入頰囊處、少量多次慢慢推入",
+    "keywords": "兒童餵藥、小孩不吃藥、餵藥技巧、餵藥偏方、寶寶餵藥、餵藥針筒、頰囊餵藥、小孩吃藥吐了、吐藥要補嗎、吐藥補餵、藥太苦、藥混牛奶、藥混果汁、一歲以下蜂蜜、嬰兒肉毒桿菌、壓碎藥錠、藥丸吞不下、口溶錠、針筒分散法、Montelukast 顆粒、Clarithromycin 藥水、Ciprofloxacin 牛奶",
+    "og_title": "小孩餵藥怎麼餵不會嗆到？別平躺強灌，用 45 度半坐臥＋頰囊分次慢推｜藥局衛教助手",
+    "og_description": "平躺捏鼻子強灌，藥水容易誤入氣管，引起嗆咳或吸入性肺炎；針筒直噴喉嚨正中央會觸發嘔吐反射。正確做法：讓孩子約 45 度半坐臥，針筒從嘴角伸到臉頰內側（頰囊），每次約 1～2 mL（小嬰兒可減為 0.5～1 mL），依藥量分次慢慢推，吞下再推下一口。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/child_medicine_feeding_05.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_05.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_05.html",
+    "twitter_card": "summary_large_image"
+  },
+  "cards/child_medicine_feeding_06.html": {
+    "page_title": "小孩吃藥後吐了要補嗎？先看時間、吐出多少和孩子狀態再決定｜藥局衛教助手",
+    "meta_description": "孩子吐藥後，先判斷 3 件事：服藥後多久吐、吐出多少藥、孩子現在的精神與食慾。15 分鐘內吐，大多數藥物可能還沒吸收，先詢問醫師或藥師；超過 30 分鐘才吐，通常不需要再補，照原本時間吃下一次。一天內連續多次嘔吐、無法順利服藥，或精神變差、有脫水症狀，應聯絡醫師或藥師或盡快就醫。",
+    "h1": "小孩吃藥後吐了要補嗎？先看時間、吐出多少和孩子狀態再決定",
+    "image_alt": "兒童餵藥技巧衛教圖卡第 6 張：孩子吐藥了怎麼辦，先判斷吐的時間、吐出多少與孩子狀態，15 分鐘內吐先詢問醫師或藥師，超過 30 分鐘通常不需補服，連續多次嘔吐或精神變差應聯絡醫師或就醫",
+    "keywords": "兒童餵藥、小孩不吃藥、餵藥技巧、餵藥偏方、寶寶餵藥、餵藥針筒、頰囊餵藥、小孩吃藥吐了、吐藥要補嗎、吐藥補餵、藥太苦、藥混牛奶、藥混果汁、一歲以下蜂蜜、嬰兒肉毒桿菌、壓碎藥錠、藥丸吞不下、口溶錠、針筒分散法、Montelukast 顆粒、Clarithromycin 藥水、Ciprofloxacin 牛奶",
+    "og_title": "小孩吃藥後吐了要補嗎？先看時間、吐出多少和孩子狀態再決定｜藥局衛教助手",
+    "og_description": "孩子吐藥後，先判斷 3 件事：服藥後多久吐、吐出多少藥、孩子現在的精神與食慾。15 分鐘內吐，大多數藥物可能還沒吸收，先詢問醫師或藥師；超過 30 分鐘才吐，通常不需要再補，照原本時間吃下一次。一天內連續多次嘔吐、無法順利服藥，或精神變差、有脫水症狀，應聯絡醫師或藥師或盡快就醫。",
+    "og_image": "https://liaoweihung.github.io/pteduimg/img/child_medicine_feeding_06.webp",
+    "og_url": "https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_06.html",
+    "canonical": "https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_06.html",
+    "twitter_card": "summary_large_image"
   }
 }

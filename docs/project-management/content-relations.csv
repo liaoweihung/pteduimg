@@ -539,3 +539,9 @@ REL-3646d62fe45d8037,page:insomnia_card04,further_reading,page:insomnia_card01,s
 REL-d09d58313907fbe7,series:liquid_medicine_storage,has_card,page:liquid_medicine_storage_01,source_observed,series_membership,cards.json,CR-2026-093
 REL-2e72251a2297c43c,series:liquid_medicine_storage,has_card,page:liquid_medicine_storage_02,source_observed,series_membership,cards.json,CR-2026-093
 REL-e06364fc9e6d17d5,series:pediatric_gi_syrup,has_card,page:ped_gi_pecolin_suspension,source_observed,series_membership,cards.json,CR-2026-102
+REL-17eaeee6f5902a9e,series:child_medicine_feeding,has_card,page:child_medicine_feeding_01,source_observed,series_membership,cards.json,CR-2026-105
+REL-5f901d6967963938,series:child_medicine_feeding,has_card,page:child_medicine_feeding_02,source_observed,series_membership,cards.json,CR-2026-105
+REL-163a12113301c46a,series:child_medicine_feeding,has_card,page:child_medicine_feeding_03,source_observed,series_membership,cards.json,CR-2026-105
+REL-c1af3d48b1d91999,series:child_medicine_feeding,has_card,page:child_medicine_feeding_04,source_observed,series_membership,cards.json,CR-2026-105
+REL-febc934db2d12768,series:child_medicine_feeding,has_card,page:child_medicine_feeding_05,source_observed,series_membership,cards.json,CR-2026-105
+REL-2355f911c4fa713e,series:child_medicine_feeding,has_card,page:child_medicine_feeding_06,source_observed,series_membership,cards.json,CR-2026-105

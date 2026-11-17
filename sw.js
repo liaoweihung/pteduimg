@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v1a4b0828e256a7e10bee00ec';
+const CACHE_NAME = 'pwa-cache-v0caac349c20b5533e3fb2b5f';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -198,6 +198,12 @@ const urlsToCache = [
   "./img/burn_first_aid_05.webp",
   "./img/burn_first_aid_06.webp",
   "./img/bzd_z_sleep_aids.webp",
+  "./img/child_medicine_feeding_01.webp",
+  "./img/child_medicine_feeding_02.webp",
+  "./img/child_medicine_feeding_03.webp",
+  "./img/child_medicine_feeding_04.webp",
+  "./img/child_medicine_feeding_05.webp",
+  "./img/child_medicine_feeding_06.webp",
   "./img/chomolyn_cromolyn_eye_drops.webp",
   "./img/comedo.webp",
   "./img/common_skin_redness_causes.webp",
@@ -953,6 +959,12 @@ const urlsToCache = [
   "./cards/insomnia_card09.html",
   "./cards/liquid_medicine_storage_01.html",
   "./cards/liquid_medicine_storage_02.html",
+  "./cards/child_medicine_feeding_01.html",
+  "./cards/child_medicine_feeding_02.html",
+  "./cards/child_medicine_feeding_03.html",
+  "./cards/child_medicine_feeding_04.html",
+  "./cards/child_medicine_feeding_05.html",
+  "./cards/child_medicine_feeding_06.html",
   "./cards/acne.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare_2.html",

@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：312
+- 成功加入文字頁數：318
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -317,3 +317,9 @@
 | liquid_medicine_storage | 藥水要不要冰？先看藥袋與產品標示 | https://liaoweihung.github.io/pteduimg/cards/liquid_medicine_storage_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | liquid_medicine_storage | 藥水保存實例：安滅菌、日舒、舒而坦與希普利敏 | https://liaoweihung.github.io/pteduimg/cards/liquid_medicine_storage_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | pediatric_gi_syrup | 高克痢懸乳液怎麼喝？兒童劑量、間隔與停藥時機 | https://liaoweihung.github.io/pteduimg/cards/ped_gi_pecolin_suspension.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| child_medicine_feeding | 小孩不肯吃藥怎麼辦？破除 4 大民間餵藥偏方與吐藥應變指南 | https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| child_medicine_feeding | 兒童餵藥 6 大實用關鍵：確認藥品、選對方法與工具，餵藥更安全 | https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| child_medicine_feeding | 藥丸吞不下可以壓碎嗎？別用兩支湯匙壓藥，改用針筒溫水分散法 | https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_03.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| child_medicine_feeding | 藥太苦可以加在牛奶裡嗎？3 大混藥地雷與 5 mL 一口量掩味法 | https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_04.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| child_medicine_feeding | 小孩餵藥怎麼餵不會嗆到？別平躺強灌，用 45 度半坐臥＋頰囊分次慢推 | https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| child_medicine_feeding | 小孩吃藥後吐了要補嗎？先看時間、吐出多少和孩子狀態再決定 | https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_06.html | 是 | 是 | 是 | 是 | 是 | 無 |
