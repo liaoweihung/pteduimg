@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：326
+- 成功加入文字頁數：332
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -331,3 +331,9 @@
 | oral_patch_use | 口內貼片怎麼貼？正確使用步驟與脫落處理 | https://liaoweihung.github.io/pteduimg/cards/oral_patch_use.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | oral_patch_use | 口內貼片種類、正反面與使用注意事項 | https://liaoweihung.github.io/pteduimg/cards/oral_patch_use_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | oral_patch_use | 口內膏怎麼擦？正確使用步驟與注意事項 | https://liaoweihung.github.io/pteduimg/cards/oral_patch_use_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ear | 耳滴劑怎麼點？點耳藥水 6 步驟，從洗手、清潔外耳開始 | https://liaoweihung.github.io/pteduimg/cards/ear_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ear | 耳藥水要先溫熱嗎？冰的耳滴劑點了容易頭暈 | https://liaoweihung.github.io/pteduimg/cards/ear_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ear | 點耳藥水耳朵怎麼拉？成人往上往後，3 歲以下小孩往下往後 | https://liaoweihung.github.io/pteduimg/cards/ear_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ear | 耳藥水滴幾滴？懸空滴入，瓶口不要碰到耳朵 | https://liaoweihung.github.io/pteduimg/cards/ear_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ear | 點完耳藥水要按耳珠？輕壓幾下，幫助藥水流進耳道 | https://liaoweihung.github.io/pteduimg/cards/ear_5.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ear | 點完耳藥水要躺多久？保持姿勢約 5 分鐘，兩耳要分開點 | https://liaoweihung.github.io/pteduimg/cards/ear_6.html | 是 | 是 | 是 | 是 | 是 | 無 |

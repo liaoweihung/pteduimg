@@ -1356,6 +1356,7 @@
     "order": 30,
     "hidden": false,
     "icon": "👂",
+    "showFooter": true,
     "steps": [
       "img/ear_1.png",
       "img/ear_2.png",

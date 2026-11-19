@@ -14914,5 +14914,317 @@
     ],
     "matchConfidence": "high",
     "needsMedicalReview": true
+  },
+  {
+    "cardId": "ear",
+    "image": "img/ear_1.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ear_1.html",
+    "title": "耳滴劑怎麼點？點耳藥水 6 步驟，從洗手、清潔外耳開始",
+    "summary": "點耳藥水 6 步驟：洗手並清潔外耳、手心握瓶溫熱藥水、側躺讓患耳朝上並拉直耳道、瓶口不碰耳朵滴入、輕按耳珠、保持姿勢約 5 分鐘。第一步先洗手，用面紙或棉球擦掉耳朵外面的分泌物，不要用棉花棒往耳道深處挖。",
+    "sections": [
+      {
+        "heading": "點耳藥水的 6 個步驟",
+        "text": "1. 洗手、清潔外耳。2. 手心握住藥瓶 1～2 分鐘，讓藥水接近體溫。3. 側躺或頭歪向一側，要點的耳朵朝上；成人把耳朵往上、往後拉，3 歲以下小孩往下、往後拉。4. 瓶口不碰耳朵，懸空滴入醫師或標籤指示的滴數。5. 輕壓耳朵前方的耳珠幾下，幫助藥水流進去。6. 保持姿勢約 5 分鐘再起身。"
+      },
+      {
+        "heading": "步驟一：洗手、清潔外耳",
+        "text": "點藥前後都要用肥皂洗手。耳朵外面和耳道口如果有分泌物，用乾淨面紙或棉球輕輕擦掉。不要用棉花棒往耳道深處挖，容易把分泌物推進去或刮傷耳道。"
+      },
+      {
+        "heading": "開始前先確認",
+        "text": "確認手上的是耳用藥水（標示耳用、耳滴劑），不是眼藥水或其他藥水；查看有效期限，藥水變色、混濁（懸浮液除外）或過期就不要用。"
+      },
+      {
+        "heading": "什麼時候要就醫？",
+        "text": "耳朵越來越痛、發燒、耳朵流膿或流血、聽力變差、頭暈，或依指示點藥幾天後沒有改善，請回診或就醫。耳朵正在流膿、懷疑鼓膜破洞時，不要自己買耳藥水來點。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "耳藥水可以點眼睛嗎？",
+        "answer": "不可以。耳用藥水是給耳朵用的，不要點進眼睛。"
+      },
+      {
+        "question": "症狀好了可以先停藥嗎？",
+        "answer": "抗生素類耳藥水要照醫師指示的天數用完，不要症狀一好就停；有疑問先問醫師或藥師。"
+      },
+      {
+        "question": "沒用完的耳藥水可以留著下次用嗎？",
+        "answer": "不建議。開封後的保存期限依產品說明，療程結束後不要留著自己再用，下次耳朵不舒服先讓醫師看過。"
+      }
+    ],
+    "altText": "耳滴劑使用步驟一衛教圖卡：點耳藥水前先用肥皂洗淨雙手，並清潔外耳",
+    "related_links": [
+      {
+        "title": "點完耳藥水要躺多久？",
+        "url": "../cards/ear_6.html"
+      },
+      {
+        "title": "小孩點耳藥水耳朵怎麼拉？",
+        "url": "../cards/ear_3.html"
+      }
+    ],
+    "updatedAt": "2026-11-19",
+    "sourceCheckedAt": "2026-11-19",
+    "revisionCredit": "依本站圖卡內容整理逐頁文字（Claude 協助撰寫，待藥師複核）",
+    "references": [
+      {
+        "title": "臺北醫學大學附設醫院：Ear drops 用藥衛教單",
+        "url": "https://www.tmuh.org.tw/UploadFile/files/%E8%97%A5%E5%8A%91%E9%83%A8/%E7%94%A8%E8%97%A5%E8%AB%AE%E8%A9%A2%E4%B8%AD%E5%BF%83-%E8%A1%9B%E6%95%99%E5%96%AE%E5%BC%B5/%E8%8B%B1%E6%96%87%E7%89%88/EN9010-Ear%20drops_EN.pdf"
+      },
+      {
+        "title": "MedlinePlus：Ofloxacin Otic",
+        "url": "https://medlineplus.gov/druginfo/meds/a607011.html"
+      },
+      {
+        "title": "Drugs.com：How to Use Ear Drops",
+        "url": "https://www.drugs.com/cg/how-to-use-ear-drops.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false
+  },
+  {
+    "cardId": "ear",
+    "image": "img/ear_2.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ear_2.html",
+    "title": "耳藥水要先溫熱嗎？冰的耳滴劑點了容易頭暈",
+    "summary": "點耳藥水前，把藥瓶握在手心 1～2 分鐘，讓藥水接近體溫。藥水太冰直接滴進耳朵，可能引起頭暈、噁心。不要用熱水泡、微波或吹風機加熱。",
+    "sections": [
+      {
+        "heading": "為什麼要先溫熱？",
+        "text": "耳道很靠近掌管平衡的內耳，冰涼的藥水突然流進去，可能引起頭暈、噁心或不舒服。冷藏保存的耳藥水特別要先回溫。"
+      },
+      {
+        "heading": "怎麼溫熱？",
+        "text": "把藥瓶握在手心或在兩手間來回輕搓 1～2 分鐘，摸起來不冰就可以。不要用熱水燙、微波爐或吹風機加熱，太燙會燙傷耳道，也可能影響藥品。"
+      },
+      {
+        "heading": "需要搖一搖嗎？",
+        "text": "標籤寫懸浮液、或寫「使用前搖勻」的耳藥水，使用前要搖勻；一般澄清的溶液不需要用力搖。"
+      }
+    ],
+    "altText": "耳滴劑使用步驟二衛教圖卡：雙手手心搓揉藥瓶，把耳藥水溫熱到接近體溫",
+    "related_links": [
+      {
+        "title": "耳滴劑怎麼點？6 步驟",
+        "url": "../cards/ear_1.html"
+      },
+      {
+        "title": "點耳藥水耳朵怎麼拉？",
+        "url": "../cards/ear_3.html"
+      }
+    ],
+    "updatedAt": "2026-11-19",
+    "sourceCheckedAt": "2026-11-19",
+    "revisionCredit": "依本站圖卡內容整理逐頁文字（Claude 協助撰寫，待藥師複核）",
+    "references": [
+      {
+        "title": "MedlinePlus：Ofloxacin Otic",
+        "url": "https://medlineplus.gov/druginfo/meds/a607011.html"
+      },
+      {
+        "title": "Drugs.com：How to Use Ear Drops",
+        "url": "https://www.drugs.com/cg/how-to-use-ear-drops.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false
+  },
+  {
+    "cardId": "ear",
+    "image": "img/ear_3.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ear_3.html",
+    "title": "點耳藥水耳朵怎麼拉？成人往上往後，3 歲以下小孩往下往後",
+    "summary": "點耳藥水時側躺或頭歪向一側，讓要點的耳朵朝上。成人和 3 歲以上的孩子，把耳朵上緣往上、往後拉；3 歲以下的幼兒，把耳垂往下、往後拉，讓彎曲的耳道變直，藥水才流得進去。",
+    "sections": [
+      {
+        "heading": "姿勢：側躺，患耳朝上",
+        "text": "躺下最容易點準，也方便點完後保持姿勢。自己不方便躺時，可以坐著把頭歪向一側，讓耳朵朝上。"
+      },
+      {
+        "heading": "成人怎麼拉？",
+        "text": "成人和 3 歲以上的孩子，用手指捏住耳朵上緣，輕輕往上、往後拉。"
+      },
+      {
+        "heading": "小孩怎麼拉？",
+        "text": "3 歲以下的幼兒耳道角度不同，要捏住耳垂輕輕往下、往後拉。幫孩子點藥時，可以請另一位大人幫忙固定頭部，避免孩子突然轉頭。"
+      },
+      {
+        "heading": "為什麼要拉耳朵？",
+        "text": "耳道不是直的，拉開後耳道變直，藥水才能順利流到需要的位置，不會停在耳道口流出來。"
+      }
+    ],
+    "altText": "耳滴劑使用步驟三衛教圖卡：側躺讓患耳朝上，成人將耳朵往上往後拉開耳道",
+    "related_links": [
+      {
+        "title": "耳滴劑怎麼點？6 步驟",
+        "url": "../cards/ear_1.html"
+      },
+      {
+        "title": "耳藥水滴幾滴？瓶口不要碰耳朵",
+        "url": "../cards/ear_4.html"
+      }
+    ],
+    "updatedAt": "2026-11-19",
+    "sourceCheckedAt": "2026-11-19",
+    "revisionCredit": "依本站圖卡內容整理逐頁文字（Claude 協助撰寫，待藥師複核）",
+    "references": [
+      {
+        "title": "MedlinePlus：Ofloxacin Otic",
+        "url": "https://medlineplus.gov/druginfo/meds/a607011.html"
+      },
+      {
+        "title": "Children's Wisconsin：Ear drops",
+        "url": "https://childrenswi.org/teaching-sheet/ent/ear-drops"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false
+  },
+  {
+    "cardId": "ear",
+    "image": "img/ear_4.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ear_4.html",
+    "title": "耳藥水滴幾滴？懸空滴入，瓶口不要碰到耳朵",
+    "summary": "拉著耳朵，把瓶口懸空在耳道口上方，滴入醫師、藥袋或產品標籤指示的滴數。瓶口不要碰到耳朵或手指，避免細菌汙染整瓶藥水。滴偏流到外面的藥水，用面紙擦掉即可。",
+    "sections": [
+      {
+        "heading": "要滴幾滴？",
+        "text": "依藥袋、醫師指示或產品標籤，不同藥品滴數不同，不要自己加量或減量。"
+      },
+      {
+        "heading": "怎麼滴？",
+        "text": "一手繼續拉著耳朵，另一手拿藥瓶，瓶口朝下懸空在耳道口上方，輕擠瓶身滴入。看不到自己的耳朵時，可以請家人幫忙。"
+      },
+      {
+        "heading": "瓶口為什麼不能碰耳朵？",
+        "text": "瓶口碰到耳朵、手指或其他東西，細菌可能跑進瓶子裡，汙染整瓶藥水。萬一碰到，用乾淨面紙擦拭瓶口；用完立刻蓋緊瓶蓋。"
+      },
+      {
+        "heading": "藥水流到外面怎麼辦？",
+        "text": "流到耳朵外面的藥水用面紙輕輕擦掉。確定藥水大部分沒有進到耳朵裡時，先問藥師要不要補滴，不要自行多滴。"
+      }
+    ],
+    "altText": "耳滴劑使用步驟四衛教圖卡：拉著耳朵，瓶口懸空不碰耳朵，滴入指示滴數的耳藥水",
+    "related_links": [
+      {
+        "title": "點耳藥水耳朵怎麼拉？",
+        "url": "../cards/ear_3.html"
+      },
+      {
+        "title": "點完耳藥水要按耳珠",
+        "url": "../cards/ear_5.html"
+      }
+    ],
+    "updatedAt": "2026-11-19",
+    "sourceCheckedAt": "2026-11-19",
+    "revisionCredit": "依本站圖卡內容整理逐頁文字（Claude 協助撰寫，待藥師複核）",
+    "references": [
+      {
+        "title": "Drugs.com：How to Use Ear Drops",
+        "url": "https://www.drugs.com/cg/how-to-use-ear-drops.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false
+  },
+  {
+    "cardId": "ear",
+    "image": "img/ear_5.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ear_5.html",
+    "title": "點完耳藥水要按耳珠？輕壓幾下，幫助藥水流進耳道",
+    "summary": "耳珠是耳道口前方、靠近臉頰的小突起。滴完藥水後，用手指輕壓耳珠幾下，像打氣一樣把藥水推進耳道。醫師說有鼓膜破洞或裝耳管、要治療中耳時，依醫囑按壓（常見寫法是按 4 下）。",
+    "sections": [
+      {
+        "heading": "耳珠在哪裡？",
+        "text": "耳珠是耳道口前面、靠近臉頰那一小塊軟骨，用手指往耳道方向輕壓時，會蓋住耳道口。"
+      },
+      {
+        "heading": "怎麼按？",
+        "text": "保持側躺，用手指往耳道方向輕壓耳珠，放開，再壓，重複幾下。力道輕柔即可，不要用力搓揉；按壓時會痛就停下來。"
+      },
+      {
+        "heading": "鼓膜破洞或有耳管時",
+        "text": "醫師處方的耳藥水，有些是用來治療中耳感染，需要藥水穿過鼓膜破洞或耳管進到中耳，仿單常見的寫法是按壓耳珠 4 下。鼓膜有破洞時，只用醫師開的耳藥水，不要自己買其他耳藥水來點。"
+      }
+    ],
+    "altText": "耳滴劑使用步驟五衛教圖卡：滴完藥水後輕按耳道口前方的耳珠，幫助藥水流入耳道",
+    "related_links": [
+      {
+        "title": "耳藥水滴幾滴？瓶口不要碰耳朵",
+        "url": "../cards/ear_4.html"
+      },
+      {
+        "title": "點完耳藥水要躺多久？",
+        "url": "../cards/ear_6.html"
+      }
+    ],
+    "updatedAt": "2026-11-19",
+    "sourceCheckedAt": "2026-11-19",
+    "revisionCredit": "依本站圖卡內容整理逐頁文字（Claude 協助撰寫，待藥師複核）",
+    "references": [
+      {
+        "title": "MedlinePlus：Ofloxacin Otic",
+        "url": "https://medlineplus.gov/druginfo/meds/a607011.html"
+      },
+      {
+        "title": "Mayo Clinic：Ofloxacin (otic route) proper use",
+        "url": "https://www.mayoclinic.org/drugs-supplements/ofloxacin-otic-route/proper-use/drg-20065162"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false
+  },
+  {
+    "cardId": "ear",
+    "image": "img/ear_6.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ear_6.html",
+    "title": "點完耳藥水要躺多久？保持姿勢約 5 分鐘，兩耳要分開點",
+    "summary": "點完耳藥水後，維持患耳朝上的姿勢約 5 分鐘，可輕揉耳朵前方，讓藥水留在耳道裡。兩耳都要點時，先點完一耳、等約 5 分鐘再翻身點另一耳。起身時流出的藥水用面紙擦掉。",
+    "sections": [
+      {
+        "heading": "要躺多久？",
+        "text": "保持側躺、患耳朝上約 5 分鐘，太快起身藥水容易流出來，藥效打折。藥品說明有寫時間的，照說明做。"
+      },
+      {
+        "heading": "可以按摩嗎？",
+        "text": "可以用手指在耳朵前方輕輕揉一揉，幫助藥水分布；不要把手指或棉花棒伸進耳道。"
+      },
+      {
+        "heading": "兩耳都要點怎麼辦？",
+        "text": "先點完一耳並保持姿勢約 5 分鐘，再翻身點另一耳，不要兩耳連續點完就起身。"
+      },
+      {
+        "heading": "起身時藥水流出來怎麼辦？",
+        "text": "用面紙擦掉流出來的藥水就好。需要時可以在耳道口輕放一小團乾淨棉球接住，不要往耳道裡塞，起來一段時間後拿掉。"
+      }
+    ],
+    "altText": "耳滴劑使用步驟六衛教圖卡：點完耳藥水後保持側躺患耳朝上約 5 分鐘，並輕揉耳朵前方",
+    "related_links": [
+      {
+        "title": "耳滴劑怎麼點？6 步驟",
+        "url": "../cards/ear_1.html"
+      },
+      {
+        "title": "點完耳藥水要按耳珠",
+        "url": "../cards/ear_5.html"
+      }
+    ],
+    "updatedAt": "2026-11-19",
+    "sourceCheckedAt": "2026-11-19",
+    "revisionCredit": "依本站圖卡內容整理逐頁文字（Claude 協助撰寫，待藥師複核）",
+    "references": [
+      {
+        "title": "MedlinePlus：Ofloxacin Otic",
+        "url": "https://medlineplus.gov/druginfo/meds/a607011.html"
+      },
+      {
+        "title": "臺北醫學大學附設醫院：Ear drops 用藥衛教單",
+        "url": "https://www.tmuh.org.tw/UploadFile/files/%E8%97%A5%E5%8A%91%E9%83%A8/%E7%94%A8%E8%97%A5%E8%AB%AE%E8%A9%A2%E4%B8%AD%E5%BF%83-%E8%A1%9B%E6%95%99%E5%96%AE%E5%BC%B5/%E8%8B%B1%E6%96%87%E7%89%88/EN9010-Ear%20drops_EN.pdf"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false
   }
 ]

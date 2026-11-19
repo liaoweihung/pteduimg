@@ -964,6 +964,7 @@
     "order": 30,
     "hidden": false,
     "icon": "👂",
+    "showFooter": true,
     "texts": [
       "步驟一：洗淨雙手與清潔外耳",
       "步驟二：手心搓揉，溫熱藥水",
