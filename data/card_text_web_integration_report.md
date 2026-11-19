@@ -158,7 +158,7 @@
 | burn_first_aid | 燙傷藥品與敷料，怎麼選？ | https://liaoweihung.github.io/pteduimg/cards/burn_first_aid_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | fall_wound | 這個傷口，可以自己照顧嗎？ | https://liaoweihung.github.io/pteduimg/cards/wound_when_to_seek_care.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | fall_wound | 受傷後，需要評估破傷風嗎？ | https://liaoweihung.github.io/pteduimg/cards/wound_tetanus.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| wound_dressings | 人工皮怎麼貼、何時換？ | https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_how_to_use.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| wound_dressings | 人工皮多久換一次？什麼時候不用貼？ | https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_how_to_use.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | wound_dressings | 人工皮怎麼換？先慢慢取下 | https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_change_steps.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | wound_dressings | 人工皮怎麼貼？一步一步做 | https://liaoweihung.github.io/pteduimg/cards/hydrocolloid_apply_steps.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | fall_wound | 傷口正在變好，還是需要就醫？ | https://liaoweihung.github.io/pteduimg/cards/wound_healing_signs.html | 是 | 是 | 是 | 是 | 是 | 無 |

@@ -216,17 +216,22 @@ def apply_card_content_seo(seo, card_content):
     if not card_content:
         return seo
     title = clean_seo_text(card_content.get("title"))
-    summary = clean_seo_text(card_content.get("summary"))
+    seo_title = clean_seo_text(card_content.get("seoTitle"))
+    summary = clean_seo_text(card_content.get("metaDescription")) or clean_seo_text(card_content.get("summary"))
     alt_text = clean_seo_text(card_content.get("altText"))
     if title:
-        seo["page_title"] = f"{title}｜{SITE_TITLE}"
         seo["h1"] = title
+    if seo_title or title:
+        seo["page_title"] = seo_title or f"{title}｜{SITE_TITLE}"
         seo["og_title"] = seo["page_title"]
     if summary:
         seo["meta_description"] = summary
         seo["og_description"] = summary
     if alt_text:
         seo["image_alt"] = alt_text
+    related_title = clean_seo_text(card_content.get("relatedTitle"))
+    if related_title:
+        seo["related_title"] = related_title
     return seo
 
 
@@ -250,6 +255,7 @@ def build_seo_index(cards, card_content_index, write_output=True, existing_seo=N
             fallback = fallback_seo_for_card(card_id, card, step, index)
             raw_seo = existing_seo.get(page_path) or existing_seo.get(image_id)
             seo = normalize_card_seo(raw_seo, fallback)
+            seo.pop("related_title", None)  # Derived from current card content, never from the last build.
             card_content = card_content_index.get(step.replace("\\", "/"))
             seo_index[page_path] = apply_card_content_seo(seo, card_content)
 
@@ -279,31 +285,31 @@ def read_page_json_ld(path):
         return {}
 
 
+def content_date(card_content, field, page_url):
+    value = (card_content or {}).get(field)
+    if value is None or value == "":
+        return None
+    if isinstance(value, str) and re.fullmatch(r"[0-9]{4}-[0-9]{2}-[0-9]{2}", value):
+        try:
+            return datetime.date.fromisoformat(value).isoformat()
+        except ValueError:
+            pass
+    warnings.warn(
+        f"{page_url}: invalid {field}={value!r}; expected a valid YYYY-MM-DD; ignored.",
+        UserWarning,
+        stacklevel=2,
+    )
+    return None
+
+
 def content_modified_date(card_content, page_url):
-    # These fields denote substantive text/image revisions, not exports or builds.
     # Never infer a content date from source checks or previously generated HTML.
-    content = card_content or {}
-    dates = {}
-    for field in ("updatedAt", "imageUpdatedAt"):
-        value = content.get(field)
-        if value is None or value == "":
-            continue
-        if isinstance(value, str) and re.fullmatch(r"[0-9]{4}-[0-9]{2}-[0-9]{2}", value):
-            try:
-                datetime.date.fromisoformat(value)
-                dates[field] = value
-                continue
-            except ValueError:
-                pass
-        warnings.warn(
-            f"{page_url}: invalid {field}={value!r}; expected a valid YYYY-MM-DD; ignored.",
-            UserWarning,
-            stacklevel=2,
-        )
+    dates = {field: content_date(card_content, field, page_url) for field in ("updatedAt", "imageUpdatedAt")}
     return dates.get("updatedAt") or dates.get("imageUpdatedAt")
 
 
 def render_json_ld(seo, headline, card_content=None):
+    date_published = content_date(card_content, "publishedAt", seo["canonical"])
     date_modified = content_modified_date(card_content, seo["canonical"])
     data = {
         "@context": "https://schema.org",
@@ -323,6 +329,8 @@ def render_json_ld(seo, headline, card_content=None):
             "url": BASE_URL,
         },
     }
+    if date_published:
+        data["datePublished"] = date_published
     if date_modified:
         data["dateModified"] = date_modified
     keywords = clean_seo_text(seo.get("keywords") or "")
@@ -356,8 +364,8 @@ def render_related_cards(series_steps, current_step, seo_index):
     items = []
     for index, step in enumerate(series_steps, start=1):
         page_path = page_for_image(step)
-        title = (seo_index.get(page_path) or {}).get("page_title") or f"第 {index} 張"
-        title = title.removesuffix(f"｜{SITE_TITLE}")
+        seo = seo_index.get(page_path) or {}
+        title = seo.get("related_title") or seo.get("page_title", "").removesuffix(f"｜{SITE_TITLE}") or f"第 {index} 張"
         current = ' aria-current="page"' if step == current_step else ""
         items.append(
             f'<li><a class="related-item" href="../{esc(page_path)}"{current}>'
@@ -462,11 +470,30 @@ LABEL_LINK_STYLES = """    .label-links {
 """
 
 
+def render_article_inline(text):
+    return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", esc(text))
+
+
+def render_article_blocks(blocks):
+    parts = []
+    for block in blocks:
+        if isinstance(block, str):
+            parts.append(f"<p>{render_article_inline(block)}</p>")
+        else:
+            tag = "ol" if block.get("ordered") else "ul"
+            items = "".join(f"<li>{render_article_inline(item)}</li>" for item in block["items"])
+            parts.append(f"<{tag}>{items}</{tag}>")
+    return "\n".join(parts)
+
+
 def render_card_text_content(card_content, h1, category_label, step_number, total, header_link=""):
     if not card_content:
         return ""
     summary = clean_seo_text(card_content.get("summary"))
+    article = card_content.get("article") or {}
     section_html = []
+    if article.get("intro"):
+        section_html.append(render_article_blocks(article["intro"]))
     for section in card_content.get("sections") or []:
         if not isinstance(section, dict):
             continue
@@ -474,12 +501,27 @@ def render_card_text_content(card_content, h1, category_label, step_number, tota
         text = clean_seo_text(section.get("text"))
         if not heading or not text:
             continue
+        paragraph = f"<strong>{esc(text)}</strong>" if section.get("emphasize") else esc(text)
+        blocks = render_article_blocks(section.get("blocks") or [])
+        paragraphs = [f"<p>{paragraph}</p>"]
+        if blocks:
+            paragraphs.insert(0 if section.get("textAfterBlocks") else 1, blocks)
+        section_body = "\n            ".join(paragraphs)
         section_html.append(
             f"""          <section>
             <h2>{esc(heading)}</h2>
-            <p>{esc(text)}</p>
+            {section_body}
           </section>"""
         )
+    if card_content.get("faq"):
+        questions = "\n".join(
+            f'<h3>{esc(item["question"])}</h3><p>{esc(item["answer"])}</p>'
+            for item in card_content["faq"]
+        )
+        section_html.append(f"<section><h2>常見問題</h2>\n{questions}\n</section>")
+    if article.get("reminder"):
+        reminder = render_article_blocks(article["reminder"])
+        section_html.append(f"<section><h2>藥師提醒</h2>\n{reminder}\n</section>")
     sections = "\n".join(section_html)
     reference_links = []
     for reference in card_content.get("references") or []:
@@ -493,7 +535,8 @@ def render_card_text_content(card_content, h1, category_label, step_number, tota
     if reference_links:
         checked_at = clean_seo_text(card_content.get("sourceCheckedAt"))
         date_label = f"（資料查核：{esc(checked_at)}）" if checked_at else ""
-        references = f'<section class="card-references"><h2>資料來源{date_label}</h2><ul>{"".join(reference_links)}</ul></section>'
+        reference_heading = "參考資料" if article else "資料來源"
+        references = f'<section class="card-references"><h2>{reference_heading}{date_label}</h2><ul>{"".join(reference_links)}</ul></section>'
         sections += "\n" + references
     editorial = ""
     if card_content.get("updatedAt") and card_content.get("revisionCredit"):
@@ -532,8 +575,8 @@ def render_card_text_content(card_content, h1, category_label, step_number, tota
       </article>"""
 
 
-def show_shared_footer(card_id, card):
-    return bool(card.get("showFooter") or is_acne_topic(card_id, card))
+def show_shared_footer(card_id, card, card_content=None):
+    return bool((card_content or {}).get("showFooter") or card.get("showFooter") or is_acne_topic(card_id, card))
 
 
 def render_next_reads(card_id, card, cards, manual_cards):
@@ -639,7 +682,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     manual_card = manual_cards.get(card_id) or {}
     # Series opt-in: H1 uses the per-page card_content title instead of the SEO display_title.
     title_from_card_text = card.get("title_from_card_text", manual_card.get("title_from_card_text"))
-    if title_from_card_text is True and card_content:
+    if card_content and (title_from_card_text is True or card_content.get("seoTitle")):
         h1 = clean_seo_text(card_content["title"])
     image_alt = seo["image_alt"]
     page_path = page_for_image(step)
@@ -756,7 +799,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     pilot_navigation = render_navigation(pilot) if pilot else ""
     pilot_footer_start = '      <footer class="acne-pilot-footer">\n' if pilot else ""
     pilot_footer_end = '\n      </footer>\n' + render_footer(ROOT, page_path) if pilot else ""
-    shared_footer = '\n' + render_footer(ROOT, page_path) if show_shared_footer(card_id, card) and not pilot else ""
+    shared_footer = '\n' + render_footer(ROOT, page_path) if show_shared_footer(card_id, card, card_content) and not pilot else ""
     prev_step = steps[step_index - 1] if total > 1 else step
     next_step = steps[(step_index + 1) % total] if total > 1 else step
     prev_url = f"../{page_for_image(prev_step)}"
@@ -820,6 +863,15 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
       line-height:1.4;
     }
     .card-text-body section p { margin:0; }
+"""
+        if card_content.get("article"):
+            card_text_styles += """    .card-text-body p + p,
+    .card-text-body ul + p,
+    .card-text-body ol + p { margin-top:.75em; }
+    .card-text-body section:first-of-type { margin-top:1em; }
+    .card-text-body ul, .card-text-body ol { padding-inline-start:1.5em; }
+    .card-text-body li + li { margin-top:.35em; }
+    .card-text-body h3 { margin:1em 0 .25em; font-size:1em; }
 """
     # Series opt-in: "tool_link": {"title", "url"} shows a tool button beside the H1; url is relative to cards/.
     tool_link = card.get("tool_link") or manual_card.get("tool_link") or {}
@@ -1528,7 +1580,7 @@ def generate_card_pages(cards, seo_index, card_content_index, only_image_ids=Non
                 page_html = page_html.replace("  </style>", LABEL_LINK_STYLES + "  </style>", 1)
             if image_id in pilot_pages:
                 page_html = page_html.replace("  </style>", ACNE_PILOT_STYLES + footer_styles(ROOT) + "\n  </style>", 1)
-            elif show_shared_footer(card_id, card):
+            elif show_shared_footer(card_id, card, card_content):
                 page_html = page_html.replace("  </style>", footer_styles(ROOT) + "\n  </style>", 1)
             rendered[page_path] = page_html
             if not render_only:
@@ -1574,6 +1626,8 @@ def build_card_text_integration_report(card_content_index):
         page_path = ROOT / page_for_image(image)
         expected_title = clean_seo_text(record.get("title"))
         expected_summary = clean_seo_text(record.get("summary"))
+        seo_title = clean_seo_text(record.get("seoTitle"))
+        expected_description = clean_seo_text(record.get("metaDescription")) or expected_summary
         expected_alt = clean_seo_text(record.get("altText"))
         expected_url = clean_seo_text(record.get("url")) or abs_url(page_for_image(image))
         errors = []
@@ -1585,10 +1639,11 @@ def build_card_text_integration_report(card_content_index):
         alt_match = re.search(r'<img class="hero-img"[^>]* alt="(.*?)"', page_html, flags=re.DOTALL)
         canonical_match = re.search(r'<link rel="canonical" href="(.*?)">', page_html, flags=re.DOTALL)
 
-        title_ok = bool(title_match and expected_title and expected_title in html.unescape(title_match.group(1)))
+        actual_title = html.unescape(title_match.group(1)) if title_match else ""
+        title_ok = actual_title == seo_title if seo_title else bool(expected_title and expected_title in actual_title)
         description_ok = bool(
-            description_match and expected_summary
-            and html.unescape(description_match.group(1)) == expected_summary
+            description_match and expected_description
+            and html.unescape(description_match.group(1)) == expected_description
         )
         h1_ok = bool(
             len(h1_matches) == 1 and expected_title
@@ -1605,7 +1660,10 @@ def build_card_text_integration_report(card_content_index):
             and sections
             and all(
                 f"<h2>{esc(clean_seo_text(section.get('heading')))}</h2>" in page_html
-                and f"<p>{esc(clean_seo_text(section.get('text')))}</p>" in page_html
+                and (
+                    f"<p>{esc(clean_seo_text(section.get('text')))}</p>" in page_html
+                    or f"<p><strong>{esc(clean_seo_text(section.get('text')))}</strong></p>" in page_html
+                )
                 for section in sections
             )
         )
