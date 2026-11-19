@@ -457,6 +457,130 @@
       ],
       "explicit_citations": null, "chatgpt_search_found": null,
       "notes": "All 12 visible rows captured; dates confirmed in modal. These are GSC report exposures, not independently observed answer citations. Do not add to Web totals as disjoint traffic or attribute growth to JSON-LD."
+    },
+    {
+      "id": "OBS-2026-11-19-traffic-comparison",
+      "kind": "gsc_and_ga4_comparison",
+      "observed_date": "2026-11-19",
+      "evidence_file": "evidence/search-console-2026-11-19.md",
+      "filters": {"search_type": "web", "country": "all", "device": "all"},
+      "comparison_columns": ["previous", "current"],
+      "gsc": {
+        "periods": [["2026-09-22", "2026-10-19"], ["2026-10-20", "2026-11-16"]],
+        "impressions": [179, 2220], "clicks": [6, 41], "reported_ctr_percent": [3.4, 1.8], "average_position": [20.4, 7.4],
+        "page_url_prefix": "https://liaoweihung.github.io/pteduimg/",
+        "page_rows_columns": ["relative_url", "previous_impressions", "current_impressions", "previous_clicks", "current_clicks"],
+        "page_rows": [
+          ["cards/ped_cold_secorine.html",30,1115,3,16], ["cards/ped_cold_exdila_liquid.html",1,190,0,12],
+          ["cards/ped_cold_guaphen_syrup.html",5,238,0,6], ["cards/ped_cold_peace_syrup.html",0,153,0,3],
+          ["",6,57,3,2], ["cards/japan_otc_drug_classification.html",0,49,0,1], ["cards/over_one_oint_01.html",13,23,0,1],
+          ["cards/hydrocolloid_how_to_use.html",85,109,0,0], ["cards/acne_patch_how_to_use.html",12,107,0,0], ["growth-calculator.html",0,54,0,0],
+          ["cards/acne_patch_when_to_use.html",8,27,0,0], ["cards/ped_cold_cetirizine.html",8,27,0,0], ["pregnancy-weight-calculator.html",0,22,0,0],
+          ["cards/antiphen.html",3,13,0,0], ["cards/wound_healing_signs.html",5,10,0,0], ["cards/adult_diaper_2.html",4,10,0,0],
+          ["cards/acne_stage.html",5,9,0,0], ["cards/wound_cover.html",2,4,0,0], ["cards/wound_tetanus.html",4,4,0,0],
+          ["cards/ibuprofen_sol.html",3,3,0,0], ["cards/wound_when_to_seek_care.html",4,2,0,0], ["cards/acne.html",1,2,0,0],
+          ["cards/Ped_abx_susp_1.html",0,2,0,0], ["public.html",3,0,0,0], ["cards/acne_dailycare_2.html",2,0,0,0],
+          ["cards/Ped_abx_susp_8.html",2,0,0,0], ["cards/oral_hygiene_08.html",1,0,0,0], ["cards/acne_dailycare.html",1,0,0,0]
+        ],
+        "device_rows_columns": ["device", "previous_impressions", "current_impressions", "previous_clicks", "current_clicks"],
+        "device_rows": [["mobile",54,1668,5,32], ["desktop",125,546,1,9], ["tablet",0,7,0,0]],
+        "top_query_rows_columns": ["query", "previous_impressions", "current_impressions", "previous_clicks", "current_clicks"],
+        "top_query_rows": [
+          ["息咳寧 劑量",1,405,0,5], ["喘解液兒童用量",0,57,0,3], ["咳酚糖漿兒童劑量",1,32,0,3],
+          ["息咳寧劑量計算",0,94,0,2], ["息咳寧劑量",0,38,0,1], ["息咳寧用量",0,24,0,1], ["鼻福藥水劑量",0,8,0,1],
+          ["息咳寧4歲劑量",0,7,0,1], ["喘解液用量",0,6,0,1], ["息咳寧兒童劑量體重",0,6,0,1]
+        ],
+        "query_total_rows": 171,
+        "cohort_observation": {"manual_5": {"impressions": [54,1165], "clicks": [3,17]}, "natural_21": {"visible_rows": 5, "missing_rows": 16, "visible_impressions": [12,32], "visible_clicks": [0,0]}, "historical_index_counts": "OBS-2026-10-21-original26-and-information"}
+      },
+      "ga4": {"report": "Pages and screens; all users", "periods": [["2026-09-24","2026-10-21"],["2026-10-22","2026-11-18"]], "views": [1211,1656], "active_users": [244,396], "average_engagement_seconds_per_active_user": [43,28], "sessions_by_source": null},
+      "index_report": {"data_updated_date": "2026-11-13", "indexed_total": 28, "not_indexed_total": 3, "validation_404": "passed", "individual_inspection": null},
+      "ai_beta": {"same_periods_as_gsc": true, "impressions": [18,305], "leading_pages": {"ped_cold_guaphen_syrup": [3,92], "ped_cold_secorine": [5,88], "ped_cold_exdila_liquid": [0,66], "ped_cold_peace_syrup": [0,19]}, "chatgpt_found": null, "explicit_ai_citation": null},
+      "notes": "GSC and GA4 date boundaries not independently verified; GA4 all-source engagement is not search traffic. Missing rows and current per-page index status not imputed."
+    },
+    {
+      "id": "OBS-2026-11-19-cold-7d-forecast-evaluation",
+      "kind": "gsc_forecast_evaluation",
+      "observed_date": "2026-11-19",
+      "evidence_file": "evidence/search-console-2026-11-19.md",
+      "forecast_reference": "FORECAST-2026-10-19-cold-7d",
+      "cohort": "manual-cold-syrups-2026-10-19",
+      "period": {"start": "2026-10-20", "end": "2026-10-26"},
+      "pages": [
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_peace_syrup.html", "impressions": 24, "clicks": 0, "computed_ctr_percent": 0, "average_position": null, "queries": null},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_guaphen_syrup.html", "impressions": 66, "clicks": 1, "computed_ctr_percent": 1.5152, "average_position": null, "queries": null},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_exdila_liquid.html", "impressions": 30, "clicks": 3, "computed_ctr_percent": 10, "average_position": null, "queries": null}
+      ],
+      "combined": {"page_impressions_sum": 120, "clicks_sum": 4, "computed_ctr_percent": 3.3333, "impressions_above_prior_range_upper": 99, "clicks_above_working_range_upper": 2},
+      "historical_index_observation": "OBS-2026-10-21-cold-index",
+      "notes": "Full fixed window; original forecast left unchanged. Seven-day query and position breakdown not obtained. Historical indexing evidence dates are not exact first-index timestamps."
+    },
+    {
+      "id": "OBS-2026-11-19-fixed-jsonld-and-information",
+      "kind": "gsc_fixed_window_comparisons",
+      "observed_date": "2026-11-19",
+      "evidence_file": "evidence/search-console-2026-11-19.md",
+      "comparison_columns": ["previous", "current"],
+      "jsonld_cohort_2": {
+        "deployment_date": "2026-10-01", "deployment_id": 6776599971, "periods": [["2026-09-03","2026-09-30"],["2026-10-02","2026-10-29"]],
+        "property_impressions": [113,595], "property_clicks": [3,13],
+        "pages": [
+          {"url": "https://liaoweihung.github.io/pteduimg/cards/acne_stage.html", "impressions": [4,5], "clicks": [1,0], "computed_ctr_percent": [25,0], "index_status": null, "average_position": null, "queries": null},
+          {"url": "https://liaoweihung.github.io/pteduimg/cards/acne_dailycare.html", "impressions": [1,1], "clicks": [0,0], "computed_ctr_percent": [0,0], "index_status": null, "average_position": null, "queries": null}
+        ],
+        "missing_page_rows": 23, "missing_page_metrics": null
+      },
+      "other_jsonld_cohorts": {"cohort_1": null, "cohort_3": null},
+      "site_information_pages": {
+        "periods": [["2026-09-04","2026-10-01"],["2026-10-04","2026-10-31"]], "deployment_date": null,
+        "property_impressions": [111,720], "property_clicks": [4,14],
+        "missing_page_rows": ["https://liaoweihung.github.io/pteduimg/about.html","https://liaoweihung.github.io/pteduimg/author.html","https://liaoweihung.github.io/pteduimg/editorial-policy.html"],
+        "page_metrics": null, "current_index_status": null
+      },
+      "chatgpt_found": null, "explicit_ai_citation": null,
+      "notes": "Matched against complete property comparison tables. No page row is not evidence of zero impressions or no index. Site-wide growth does not establish an effect of the JSON-LD or information-page changes."
+    },
+    {
+      "id": "OBS-2026-11-19-acne-patch-7d",
+      "kind": "gsc_page_performance",
+      "observed_date": "2026-11-19",
+      "evidence_file": "evidence/search-console-2026-11-19.md",
+      "period": {"start": "2026-11-10", "end": "2026-11-16"},
+      "filters": {"property": "https://liaoweihung.github.io/", "search_type": "web", "country": "all", "device": "all"},
+      "pages": [
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/acne_patch_how_to_use.html", "impressions": 56, "clicks": 0, "computed_ctr_percent": 0, "average_position": null, "queries": null},
+        {"url": "https://liaoweihung.github.io/pteduimg/cards/acne_patch_when_to_use.html", "impressions": 13, "clicks": 0, "computed_ctr_percent": 0, "average_position": null, "queries": null}
+      ],
+      "notes": "Two page rows observed directly in the 7-day report. Period overlaps the 28-day comparison and is not an independent comparison week."
+    },
+    {
+      "id": "OBS-2026-11-19-query-opportunities",
+      "kind": "gsc_page_and_query_diagnostics",
+      "observed_date": "2026-11-19",
+      "evidence_file": "evidence/search-console-2026-11-19.md",
+      "performance_baseline": "OBS-2026-11-19-traffic-comparison",
+      "period": {"start": "2026-10-20", "end": "2026-11-16"},
+      "filters": {"property": "https://liaoweihung.github.io/", "search_type": "web", "country": "all", "device": "all"},
+      "page_row_columns": ["relative_url", "reported_ctr_percent", "average_position"],
+      "page_rows": [
+        ["cards/ped_cold_secorine.html", 1.4, 4.3], ["cards/ped_cold_exdila_liquid.html", 6.3, 5.4],
+        ["cards/ped_cold_guaphen_syrup.html", 2.5, 6.2], ["cards/ped_cold_peace_syrup.html", 2, 4.5],
+        ["cards/hydrocolloid_how_to_use.html", 0, 23.6], ["cards/acne_patch_how_to_use.html", 0, 8.8],
+        ["growth-calculator.html", 0, 20.5], ["cards/japan_otc_drug_classification.html", 2, 10.2]
+      ],
+      "query_row_columns": ["query", "impressions", "clicks", "average_position"],
+      "query_breakdowns": {
+        "cards/acne_patch_how_to_use.html": {"rows_shown": 6, "rows": [
+          ["藥局 痘痘貼", 2, 0, 7.0], ["痘痘貼怎麼用", 2, 0, 11.5], ["圖", 1, 0, 1.0],
+          ["有圖片嗎", 1, 0, 2.0], ["貼痘痘貼要擦藥嗎", 1, 0, 10.0], ["痘痘貼使用方法", 1, 0, 29.0]
+        ]},
+        "cards/hydrocolloid_how_to_use.html": {"rows_shown": 22, "rows": [
+          ["人工皮什麼時候換", 12, 0, 25.6], ["人工皮什麼時候不用貼", 11, 0, 24.3], ["人工皮貼多久", 10, 0, 19.1],
+          ["人工皮貼到什麼時候", 8, 0, 28.8], ["人工皮要貼到什麼時候", 6, 0, 25.8], ["人工皮多久換", 5, 0, 24.2],
+          ["人工皮更換時機", 5, 0, 27.0], ["人工皮什麼時候貼", 5, 0, 27.6], ["人工皮關節貼法", 4, 0, 21.3], ["人工貼皮", 2, 0, 28.0]
+        ]}
+      },
+      "notes": "Page impressions and clicks are the existing fixed-window baseline. Query data are visible rows, not external search volume or a complete explanation of page exposure."
     }
   ],
   "forecasts": [
