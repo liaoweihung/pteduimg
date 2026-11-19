@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-19T15:57:37+08:00",
-  "baseline": "226c6def92982032ab8fe227043fa5d21e760216",
-  "scope": "網站來源快照；版本 226c6def",
+  "generatedAt": "2026-11-20T00:27:01+08:00",
+  "baseline": "65a4e95b42605a1003883ef0c3e499150ddf9a55",
+  "scope": "網站來源快照；版本 65a4e95b",
   "counts": {
     "cards": 456,
     "series": 99,
@@ -2045,72 +2045,6 @@
       ]
     },
     {
-      "title": "步驟一：洗淨雙手與清潔外耳",
-      "path": "cards/ear_1.html",
-      "series": "ear",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "步驟二：手心搓揉，溫熱藥水",
-      "path": "cards/ear_2.html",
-      "series": "ear",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "步驟三：側躺，拉開耳道",
-      "path": "cards/ear_3.html",
-      "series": "ear",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "步驟四：懸空滴入藥水",
-      "path": "cards/ear_4.html",
-      "series": "ear",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "步驟五：輕按耳珠",
-      "path": "cards/ear_5.html",
-      "series": "ear",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "步驟六：保持姿勢與按摩",
-      "path": "cards/ear_6.html",
-      "series": "ear",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
       "title": "常見五種皮膚紅腫的原因",
       "path": "cards/eczema_s.html",
       "series": "common_skin_redness_causes",
@@ -3708,22 +3642,22 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 325,
+      "machine_pass": 331,
       "partial": 1,
-      "missing": 130
+      "missing": 124
     },
     "reference_status": {
-      "missing": 214,
-      "machine_pass": 242
+      "missing": 208,
+      "machine_pass": 248
     },
     "date_status": {
-      "missing": 213,
-      "machine_pass": 222,
+      "missing": 207,
+      "machine_pass": 228,
       "partial": 21
     },
     "footer_status": {
-      "missing": 234,
-      "machine_pass": 222
+      "missing": 228,
+      "machine_pass": 228
     },
     "jsonld_status": {
       "machine_pass": 456
@@ -3731,7 +3665,7 @@
   },
   "sync": {
     "pages": 464,
-    "fields": 1087,
+    "fields": 1075,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -5130,48 +5064,36 @@
       {
         "page": "ear_1",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ear_2",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ear_3",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ear_4",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ear_5",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ear_6",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
