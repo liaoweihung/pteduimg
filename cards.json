@@ -1304,7 +1304,8 @@
       "acne",
       "acne_application",
       "wound_dressings"
-    ]
+    ],
+    "showFooter": true
   },
   "onitment_general": {
     "title": "藥膏的使用",

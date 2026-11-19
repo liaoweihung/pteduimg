@@ -128,8 +128,8 @@
 | tooth_extraction_daily_changes | 第 3～7 天：怎樣代表正在變好？ | https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_days_3_7.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | tooth_extraction_daily_changes | 1～2 週後：還有一個洞，是不是沒好？ | https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_weeks_1_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | tooth_extraction_daily_changes | 拔牙後怎樣判斷正常或異常？ | https://liaoweihung.github.io/pteduimg/cards/tooth_extraction_normal_vs_warning.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| acne_patch_use | 痘痘貼適合什麼狀況？ | https://liaoweihung.github.io/pteduimg/cards/acne_patch_when_to_use.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| acne_patch_use | 痘痘貼怎麼用？ | https://liaoweihung.github.io/pteduimg/cards/acne_patch_how_to_use.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_patch_use | 痘痘貼有用嗎？哪種痘痘適合貼、紅腫沒白頭能貼嗎 | https://liaoweihung.github.io/pteduimg/cards/acne_patch_when_to_use.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| acne_patch_use | 痘痘貼怎麼用？要貼多久、多久換一次 | https://liaoweihung.github.io/pteduimg/cards/acne_patch_how_to_use.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | acne_patch_use | 痘痘破了怎麼辦？還能擦藥、貼痘痘貼嗎？ | https://liaoweihung.github.io/pteduimg/cards/acne_patch_broken_skin.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | rosacea_care | 青春痘還是酒糟？哪些線索值得就醫確認？ | https://liaoweihung.github.io/pteduimg/cards/rosacea_vs_acne_clues.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | rosacea_care | 酒糟肌如何清潔、保濕、防曬與減少刺激？ | https://liaoweihung.github.io/pteduimg/cards/rosacea_skin_care.html | 是 | 是 | 是 | 是 | 是 | 無 |

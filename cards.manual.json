@@ -2591,7 +2591,8 @@
       "acne",
       "acne_application",
       "wound_dressings"
-    ]
+    ],
+    "showFooter": true
   },
   "japan_otc_drug_classification": {
     "title": "日本成藥的分級",
