@@ -4,26 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>口內貼片種類、正反面與使用注意事項｜藥局衛教助手</title>
-  <meta name="description" content="認識溶解型、保護貼片型與含藥型口內貼片，了解正反面、黏貼時間、補貼方式與不確定時的處理原則。">
+  <meta name="description" content="口內貼片不一定都一樣：有會溶解的、主要保護傷口的，也有含消炎或止痛成分的。正反面怎麼分、能不能補貼、一天用幾次都依產品而不同，先看外盒或說明書，不確定就問藥師。">
   <meta name="keywords" content="口內貼片、口內膏貼、口腔潰瘍、嘴破、口內破、口腔黏膜、貼片使用方法、溶解型貼片、不溶型貼片、保護貼片、含藥貼片、口內貼片正反面、口內膏、口腔潰瘍照護">
   <link rel="canonical" href="https://liaoweihung.github.io/pteduimg/cards/oral_patch_use_2.html">
   <link rel="icon" type="image/png" href="../icon.png?v=3">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="藥局衛教助手">
   <meta property="og:title" content="口內貼片種類、正反面與使用注意事項｜藥局衛教助手">
-  <meta property="og:description" content="認識溶解型、保護貼片型與含藥型口內貼片，了解正反面、黏貼時間、補貼方式與不確定時的處理原則。">
+  <meta property="og:description" content="口內貼片不一定都一樣：有會溶解的、主要保護傷口的，也有含消炎或止痛成分的。正反面怎麼分、能不能補貼、一天用幾次都依產品而不同，先看外盒或說明書，不確定就問藥師。">
   <meta property="og:image" content="https://liaoweihung.github.io/pteduimg/img/oral_patch_use_2.webp">
   <meta property="og:url" content="https://liaoweihung.github.io/pteduimg/cards/oral_patch_use_2.html">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="口內貼片種類、正反面與使用注意事項｜藥局衛教助手">
-  <meta name="twitter:description" content="認識溶解型、保護貼片型與含藥型口內貼片，了解正反面、黏貼時間、補貼方式與不確定時的處理原則。">
+  <meta name="twitter:description" content="口內貼片不一定都一樣：有會溶解的、主要保護傷口的，也有含消炎或止痛成分的。正反面怎麼分、能不能補貼、一天用幾次都依產品而不同，先看外盒或說明書，不確定就問藥師。">
   <meta name="twitter:image" content="https://liaoweihung.github.io/pteduimg/img/oral_patch_use_2.webp">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "口內貼片和口內膏的使用",
-  "description": "認識溶解型、保護貼片型與含藥型口內貼片，了解正反面、黏貼時間、補貼方式與不確定時的處理原則。",
+  "headline": "口內貼片種類、正反面與使用注意事項",
+  "description": "口內貼片不一定都一樣：有會溶解的、主要保護傷口的，也有含消炎或止痛成分的。正反面怎麼分、能不能補貼、一天用幾次都依產品而不同，先看外盒或說明書，不確定就問藥師。",
   "image": "https://liaoweihung.github.io/pteduimg/img/oral_patch_use_2.webp",
   "url": "https://liaoweihung.github.io/pteduimg/cards/oral_patch_use_2.html",
   "mainEntityOfPage": {
@@ -36,6 +36,7 @@
     "name": "藥局衛教助手",
     "url": "https://liaoweihung.github.io/pteduimg/"
   },
+  "dateModified": "2026-11-19",
   "keywords": "口內貼片、口內膏貼、口腔潰瘍、嘴破、口內破、口腔黏膜、貼片使用方法、溶解型貼片、不溶型貼片、保護貼片、含藥貼片、口內貼片正反面、口內膏、口腔潰瘍照護",
   "author": {
     "@type": "Person",
@@ -91,9 +92,36 @@
       return null;
     }
     function updateReturnButton() {
-      var hub = readHubReturnState();
-      var btn = document.querySelector('button[onclick="returnToCardHome()"]');
-      if (hub && btn) btn.textContent = '‹ 回到' + hub.hubTitle;
+      try {
+        var btn = document.querySelector('button[onclick="returnToCardHome()"]');
+        if (!btn) return;
+        var hub = readHubReturnState();
+        if (hub) {
+          btn.textContent = '‹ 回到' + hub.hubTitle;
+          return;
+        }
+        var stateRaw = sessionStorage.getItem('pteduimgReturnState');
+        var topicTitles = {"sports_injury": "運動傷害", "skin_wound": "皮膚與傷口", "acne": "痘痘／粉刺", "eyes": "眼睛", "oral_health": "口腔", "throat": "喉嚨", "infectious_diseases": "傳染病", "heat_illness": "中暑", "insect_repellent": "防蚊液", "gastrointestinal": "胃腸相關", "elimination_care": "排泄與照護", "infant_care": "嬰幼兒照護", "growth": "成長", "chronic_conditions": "慢性病", "sleep": "睡眠", "pregnancy": "懷孕與哺乳", "travel_medication": "旅遊與用藥常識"};
+        if (stateRaw) {
+          var state = JSON.parse(stateRaw);
+          if (state && state.url && !state.hub) {
+            var returnUrl = new URL(state.url, window.location.href);
+            var q = returnUrl.searchParams.get('q');
+            var topic = returnUrl.searchParams.get('topic');
+            if (q && q.trim()) {
+              btn.textContent = '‹ 回到搜尋結果';
+              return;
+            }
+            if (topic && topic !== 'all' && topicTitles[topic]) {
+              btn.textContent = '‹ 回到『' + topicTitles[topic] + '』';
+              return;
+            }
+            btn.textContent = '‹ 看更多衛教圖卡';
+            return;
+          }
+        }
+        btn.textContent = "\u2039 \u56de\u5230\u300e\u53e3\u8154\u300f";
+      } catch (err) {}
     }
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', updateReturnButton);
@@ -101,13 +129,18 @@
       updateReturnButton();
     }
     function returnToCardHome() {
-      var hub = readHubReturnState();
-      if (hub) {
-        try { sessionStorage.setItem('pteduimgRestorePending', '1'); } catch (err) {}
-        location.href = hub.url;
-        return;
-      }
-      location.href = "../index.html";
+      try {
+        var stateRaw = sessionStorage.getItem('pteduimgReturnState');
+        if (stateRaw) {
+          var state = JSON.parse(stateRaw);
+          if (state && state.url && (!state.hub || readHubReturnState())) {
+            sessionStorage.setItem('pteduimgRestorePending', '1');
+            location.href = state.url;
+            return;
+          }
+        }
+      } catch (err) {}
+      location.href = "../public.html?topic=oral_health";
     }
     var cardFavoriteKey = "oral_patch_use-1";
     var cardShareUrl = "https://liaoweihung.github.io/pteduimg/cards/oral_patch_use_2.html";
@@ -340,6 +373,57 @@
       color:var(--muted);
       font-size:.86rem;
     }
+    .card-text-content {
+      margin:0 0 18px;
+    }
+    .card-text-details {
+      border:1px solid var(--line);
+      border-radius:10px;
+      background:#fff;
+      overflow:hidden;
+    }
+    .card-text-details summary {
+      display:flex;
+      align-items:center;
+      gap:8px;
+      min-height:44px;
+      padding:10px 12px;
+      color:var(--brand);
+      font-size:.95rem;
+      font-weight:700;
+      cursor:pointer;
+      list-style:none;
+    }
+    .card-text-details summary::-webkit-details-marker { display:none; }
+    .card-text-details summary::before {
+      content:"▼";
+      display:inline-block;
+      font-size:.72rem;
+      transition:transform .18s ease;
+    }
+    .card-text-details[open] summary::before { transform:rotate(180deg); }
+    .card-text-details[open] summary { border-bottom:1px solid var(--line); }
+    .card-text-body {
+      padding:12px;
+      color:var(--ink);
+      font-size:.95rem;
+      line-height:1.65;
+    }
+    .card-text-body .card-summary {
+      margin:0 0 14px;
+      color:#475569;
+    }
+    .card-text-body section + section {
+      margin-top:14px;
+      padding-top:14px;
+      border-top:1px solid var(--line);
+    }
+    .card-text-body h2 {
+      margin:0 0 5px;
+      font-size:1rem;
+      line-height:1.4;
+    }
+    .card-text-body section p { margin:0; }
     .share-row {
       display:flex;
       gap:8px;
@@ -521,12 +605,26 @@
       .page-arrow { width:46px; height:46px; }
       .info { padding:14px 16px 36px; }
     }
+.site-footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #7f8c8d; /* 跟您的 Section Title 使用一樣的高級灰 */
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+.site-footer a {
+    color: #7f8c8d;
+    text-decoration: none;
+}
+.site-footer a:active {
+    color: #2c3e50;
+}
   </style>
 </head>
 <body>
   <main>
     <div class="top-actions">
-      <button class="pill" type="button" onclick="returnToCardHome()">返回首頁</button>
+      <button class="pill" type="button" onclick="returnToCardHome()">‹ 回到『口腔』</button>
       <div class="action-cluster">
         <button class="pill icon-pill" type="button" onclick="showQRCode()" aria-label="顯示 QR code">🔲</button>
         <button class="pill icon-pill" id="favorite-button" type="button" onclick="toggleFavorite()" aria-pressed="false" aria-label="加入收藏">☆</button>
@@ -535,7 +633,7 @@
     </div>
     <section class="image-stage" aria-label="口內貼片種類、正反面與使用注意事項｜藥局衛教助手">
       <a class="image-side-link prev" href="../cards/oral_patch_use.html" aria-label="上一張"></a>
-      <img class="hero-img" src="../img/oral_patch_use_2.webp" alt="口內貼片種類正反面與使用注意事項圖卡" decoding="async" fetchpriority="high">
+      <img class="hero-img" src="../img/oral_patch_use_2.webp" alt="口內貼片和口內膏的使用第 2 張圖卡：口內貼片分會溶解型、保護貼片型、含藥型，正反面怎麼分，以及不確定時先看說明書、問藥師" decoding="async" fetchpriority="high">
       <a class="image-side-link next" href="../cards/oral_patch_use_3.html" aria-label="下一張"></a>
     </section>
     <nav class="page-nav" aria-label="同系列翻頁">
@@ -544,15 +642,112 @@
       <a class="page-arrow" href="../cards/oral_patch_use_3.html" aria-label="下一張">›</a>
     </nav>
     <section class="info">
-      <h1>口內貼片和口內膏的使用</h1>
-      <p class="meta">藥師衛教 · 2/3</p>
+      <article class="card-text-content">
+        <h1>口內貼片種類、正反面與使用注意事項</h1>
+        <p class="meta">民眾疾病衛教 · 2/3</p>
+        <p class="meta">內容更新：2026-11-19 ｜ 本次修訂：依本站圖卡內容整理逐頁文字（Claude 協助撰寫）</p>
+        <details class="card-text-details">
+          <summary>文字版重點</summary>
+          <div class="card-text-body">
+            <p class="card-summary">口內貼片不一定都一樣：有會溶解的、主要保護傷口的，也有含消炎或止痛成分的。正反面怎麼分、能不能補貼、一天用幾次都依產品而不同，先看外盒或說明書，不確定就問藥師。</p>
+          <section>
+            <h2>口內貼片有哪幾種？</h2>
+            <p>常見有三種設計：會溶解型，會吸收口水慢慢變軟、變小；保護貼片型，主要把傷口蓋住隔開刺激，一段時間後自然掉落；含藥型，可能含有消炎或止痛成分，使用次數要照說明。不同產品材質不同，不能每一種都用同樣方式貼。</p>
+          </section>
+          <section>
+            <h2>口內貼片正反面怎麼分？</h2>
+            <p>每種產品不一樣：有些是一面貼患部、一面朝外；有些兩面顏色不同；也有些兩面看起來差不多。不要憑感覺亂貼，先看外盒或說明書上標示哪一面要貼傷口。貼反了容易黏不住，含藥型也可能讓藥物沒有接觸到傷口。</p>
+          </section>
+          <section>
+            <h2>含藥貼片和一般保護貼片怎麼選？</h2>
+            <p>單純想減少摩擦、讓吃東西比較不痛，保護型貼片就有幫助。含類固醇等消炎成分的產品，適合一般非感染性的嘴破（例如阿弗他口瘡、咬到或刷牙刮傷）；如果疑似病毒（例如成群小水泡的皰疹）、黴菌（可擦掉的白色斑塊）或細菌感染，不適合自行使用含類固醇的產品，應先就醫。懷孕、哺乳中或幼兒使用含藥產品前，請先詢問醫師或藥師。</p>
+          </section>
+          <section>
+            <h2>不確定怎麼貼時怎麼辦？</h2>
+            <p>不要憑感覺亂貼，先看外盒或說明書，確認哪一面要貼傷口；還是不確定，就拿著產品問藥師。正反面、黏貼時間、可不可以補貼，都可能因產品不同而不同。</p>
+          </section>
+<section class="card-references"><h2>資料來源（資料查核：2026-11-19）</h2><ul><li><a href="https://www.medsafe.govt.nz/profs/Datasheet/k/kenaloginOrabasepaste.pdf" target="_blank" rel="noopener noreferrer">Medsafe（紐西蘭）：Kenalog in Orabase 0.1% 口內膏仿單（禁用於黴菌、病毒或細菌感染）</a></li><li><a href="https://www.nhs.uk/conditions/mouth-ulcers/" target="_blank" rel="noopener noreferrer">NHS：Mouth ulcers（口腔潰瘍）</a></li></ul></section>
+          </div>
+        </details>
+      </article>
       <div class="section-title">同系列圖卡</div>
       <ol class="related-list" aria-label="同系列圖卡">
         <li><a class="related-item" href="../cards/oral_patch_use.html">口內貼片怎麼貼？正確使用步驟與脫落處理</a></li>
 <li><a class="related-item" href="../cards/oral_patch_use_2.html" aria-current="page">口內貼片種類、正反面與使用注意事項</a></li>
 <li><a class="related-item" href="../cards/oral_patch_use_3.html">口內膏怎麼擦？正確使用步驟與注意事項</a></li>
       </ol>
+      <nav aria-label="推薦閱讀"><div class="section-title">推薦閱讀</div><ul style="line-height:2.4; margin:0; padding-left:20px;"><li><a href="../cards/oral_patch_use.html">口內貼片怎麼貼？正確使用步驟與脫落處理</a></li><li><a href="../cards/oral_patch_use_3.html">口內膏怎麼擦？正確使用步驟與注意事項</a></li></ul></nav>
     </section>
+<footer class="site-footer">
+  <div class="page-vote" data-page-vote>
+    <style>
+      .page-vote { margin: 0 0 14px 0; padding: 12px; border: 1px solid rgba(127,127,127,.25); border-radius: 12px; text-align: center; }
+      .page-vote__q { margin: 0 0 10px 0; font-weight: 600; }
+      .page-vote__btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+      .page-vote__btn { min-width: 110px; padding: 9px 16px; font-size: 1rem; border-radius: 999px; border: 1px solid rgba(127,127,127,.45); background: transparent; color: inherit; cursor: pointer; }
+      .page-vote__btn:active { transform: scale(.97); }
+      .page-vote__btn:disabled { opacity: .55; cursor: default; }
+      .page-vote__msg { margin: 10px 0 0 0; display: none; }
+    </style>
+    <p class="page-vote__q">這頁內容對您有幫助嗎？</p>
+    <div class="page-vote__btns">
+      <button type="button" class="page-vote__btn" data-vote="helpful">👍 有幫助</button>
+      <button type="button" class="page-vote__btn" data-vote="not_helpful">👎 沒幫助</button>
+    </div>
+    <p class="page-vote__msg" data-vote-msg></p>
+    <script>
+      (function () {
+        var GAS_URL = "https://script.google.com/macros/s/AKfycbw0uIMQZIeqmx-D0i4YBN7FPidC1QEteoNp6Ae28fMPKFC9HmH10jx6pvIB2DCom5R_/exec";
+        var FEEDBACK_URL = "https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手";
+        var box = document.currentScript.closest("[data-page-vote]");
+        if (!box) return;
+        var btns = box.querySelectorAll("[data-vote]");
+        var msg = box.querySelector("[data-vote-msg]");
+        var key = "pageVote:" + location.pathname;
+        function done(text, html) {
+          for (var i = 0; i < btns.length; i++) btns[i].disabled = true;
+          if (html) msg.innerHTML = html; else msg.textContent = text;
+          msg.style.display = "block";
+        }
+        try { if (localStorage.getItem(key)) { done("您已回饋過這一頁，謝謝！"); return; } } catch (e) {}
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function () {
+            var vote = this.getAttribute("data-vote");
+            var body = new URLSearchParams();
+            body.append("type", "vote");
+            body.append("source", "藥局衛教助手");
+            body.append("vote", vote);
+            body.append("page", location.pathname);
+            body.append("title", document.title);
+            done("傳送中…");
+            fetch(GAS_URL, { method: "POST", body: body }).then(function () {
+              try { localStorage.setItem(key, vote); } catch (e) {}
+              if (vote === "helpful") {
+                done("謝謝您的回饋！");
+              } else {
+                done("", '謝謝您的回饋！想告訴我們哪裡不清楚嗎？<a href="' + FEEDBACK_URL + '" target="_blank" rel="noopener">留言給藥師</a>（請勿填寫個人或病情資料）');
+              }
+            }).catch(function () {
+              for (var j = 0; j < btns.length; j++) btns[j].disabled = false;
+              msg.textContent = "傳送失敗，請稍後再試。";
+            });
+          });
+        }
+      })();
+    </script>
+  </div>
+  <p style="margin: 0 0 8px 0;">本工具圖文僅供藥師衛教參考，非專業人士務必諮詢藥師建議。</p>
+  <p style="margin: 0;">
+    <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a>
+    &nbsp;|&nbsp;
+   <a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" onclick="if (typeof trackFeedbackClick === 'function') trackFeedbackClick()">💬 意見回饋</a>
+  </p>
+  <p style="margin: 0 0 8px 0;">
+    <a href="../about.html">關於本站</a> &nbsp;|&nbsp;
+    <a href="../author.html">作者資訊</a> &nbsp;|&nbsp;
+    <a href="../editorial-policy.html">編輯與資料來源政策</a>
+  </p>
+</footer>
     <div class="qr-modal" id="qr-modal" hidden>
       <div class="qr-box" role="dialog" aria-modal="true" aria-label="圖卡 QR code">
         <div class="qr-title">請患者掃描開啟這張圖卡</div>

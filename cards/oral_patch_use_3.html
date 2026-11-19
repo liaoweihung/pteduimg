@@ -4,26 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>口內膏怎麼擦？正確使用步驟與注意事項｜藥局衛教助手</title>
-  <meta name="description" content="口內膏怎麼擦？圖解清潔口腔、吸乾患部、少量點塗與避免搓揉，並整理適合使用時間及口腔潰瘍就醫警訊。">
+  <meta name="description" content="口內膏怎麼擦才不會一下就掉？先洗手、漱口，用棉棒吸乾患部，取少量薄薄點在嘴破處，不要來回抹開，擦完暫時別吃喝。整理飯後和睡前擦的原因、擦了多久沒好要回診，以及嘴破就醫警訊。">
   <meta name="keywords" content="口內貼片、口內膏貼、口腔潰瘍、嘴破、口內破、口腔黏膜、貼片使用方法、溶解型貼片、不溶型貼片、口內膏、口內膏使用方法、口腔潰瘍藥膏、嘴破藥、患部吸乾、棉棒塗抹、口腔潰瘍照護">
   <link rel="canonical" href="https://liaoweihung.github.io/pteduimg/cards/oral_patch_use_3.html">
   <link rel="icon" type="image/png" href="../icon.png?v=3">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="藥局衛教助手">
   <meta property="og:title" content="口內膏怎麼擦？正確使用步驟與注意事項｜藥局衛教助手">
-  <meta property="og:description" content="口內膏怎麼擦？圖解清潔口腔、吸乾患部、少量點塗與避免搓揉，並整理適合使用時間及口腔潰瘍就醫警訊。">
+  <meta property="og:description" content="口內膏怎麼擦才不會一下就掉？先洗手、漱口，用棉棒吸乾患部，取少量薄薄點在嘴破處，不要來回抹開，擦完暫時別吃喝。整理飯後和睡前擦的原因、擦了多久沒好要回診，以及嘴破就醫警訊。">
   <meta property="og:image" content="https://liaoweihung.github.io/pteduimg/img/oral_patch_use_3.webp">
   <meta property="og:url" content="https://liaoweihung.github.io/pteduimg/cards/oral_patch_use_3.html">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="口內膏怎麼擦？正確使用步驟與注意事項｜藥局衛教助手">
-  <meta name="twitter:description" content="口內膏怎麼擦？圖解清潔口腔、吸乾患部、少量點塗與避免搓揉，並整理適合使用時間及口腔潰瘍就醫警訊。">
+  <meta name="twitter:description" content="口內膏怎麼擦才不會一下就掉？先洗手、漱口，用棉棒吸乾患部，取少量薄薄點在嘴破處，不要來回抹開，擦完暫時別吃喝。整理飯後和睡前擦的原因、擦了多久沒好要回診，以及嘴破就醫警訊。">
   <meta name="twitter:image" content="https://liaoweihung.github.io/pteduimg/img/oral_patch_use_3.webp">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "口內貼片和口內膏的使用",
-  "description": "口內膏怎麼擦？圖解清潔口腔、吸乾患部、少量點塗與避免搓揉，並整理適合使用時間及口腔潰瘍就醫警訊。",
+  "headline": "口內膏怎麼擦？正確使用步驟與注意事項",
+  "description": "口內膏怎麼擦才不會一下就掉？先洗手、漱口，用棉棒吸乾患部，取少量薄薄點在嘴破處，不要來回抹開，擦完暫時別吃喝。整理飯後和睡前擦的原因、擦了多久沒好要回診，以及嘴破就醫警訊。",
   "image": "https://liaoweihung.github.io/pteduimg/img/oral_patch_use_3.webp",
   "url": "https://liaoweihung.github.io/pteduimg/cards/oral_patch_use_3.html",
   "mainEntityOfPage": {
@@ -36,6 +36,7 @@
     "name": "藥局衛教助手",
     "url": "https://liaoweihung.github.io/pteduimg/"
   },
+  "dateModified": "2026-11-19",
   "keywords": "口內貼片、口內膏貼、口腔潰瘍、嘴破、口內破、口腔黏膜、貼片使用方法、溶解型貼片、不溶型貼片、口內膏、口內膏使用方法、口腔潰瘍藥膏、嘴破藥、患部吸乾、棉棒塗抹、口腔潰瘍照護",
   "author": {
     "@type": "Person",
@@ -91,9 +92,36 @@
       return null;
     }
     function updateReturnButton() {
-      var hub = readHubReturnState();
-      var btn = document.querySelector('button[onclick="returnToCardHome()"]');
-      if (hub && btn) btn.textContent = '‹ 回到' + hub.hubTitle;
+      try {
+        var btn = document.querySelector('button[onclick="returnToCardHome()"]');
+        if (!btn) return;
+        var hub = readHubReturnState();
+        if (hub) {
+          btn.textContent = '‹ 回到' + hub.hubTitle;
+          return;
+        }
+        var stateRaw = sessionStorage.getItem('pteduimgReturnState');
+        var topicTitles = {"sports_injury": "運動傷害", "skin_wound": "皮膚與傷口", "acne": "痘痘／粉刺", "eyes": "眼睛", "oral_health": "口腔", "throat": "喉嚨", "infectious_diseases": "傳染病", "heat_illness": "中暑", "insect_repellent": "防蚊液", "gastrointestinal": "胃腸相關", "elimination_care": "排泄與照護", "infant_care": "嬰幼兒照護", "growth": "成長", "chronic_conditions": "慢性病", "sleep": "睡眠", "pregnancy": "懷孕與哺乳", "travel_medication": "旅遊與用藥常識"};
+        if (stateRaw) {
+          var state = JSON.parse(stateRaw);
+          if (state && state.url && !state.hub) {
+            var returnUrl = new URL(state.url, window.location.href);
+            var q = returnUrl.searchParams.get('q');
+            var topic = returnUrl.searchParams.get('topic');
+            if (q && q.trim()) {
+              btn.textContent = '‹ 回到搜尋結果';
+              return;
+            }
+            if (topic && topic !== 'all' && topicTitles[topic]) {
+              btn.textContent = '‹ 回到『' + topicTitles[topic] + '』';
+              return;
+            }
+            btn.textContent = '‹ 看更多衛教圖卡';
+            return;
+          }
+        }
+        btn.textContent = "\u2039 \u56de\u5230\u300e\u53e3\u8154\u300f";
+      } catch (err) {}
     }
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', updateReturnButton);
@@ -101,13 +129,18 @@
       updateReturnButton();
     }
     function returnToCardHome() {
-      var hub = readHubReturnState();
-      if (hub) {
-        try { sessionStorage.setItem('pteduimgRestorePending', '1'); } catch (err) {}
-        location.href = hub.url;
-        return;
-      }
-      location.href = "../index.html";
+      try {
+        var stateRaw = sessionStorage.getItem('pteduimgReturnState');
+        if (stateRaw) {
+          var state = JSON.parse(stateRaw);
+          if (state && state.url && (!state.hub || readHubReturnState())) {
+            sessionStorage.setItem('pteduimgRestorePending', '1');
+            location.href = state.url;
+            return;
+          }
+        }
+      } catch (err) {}
+      location.href = "../public.html?topic=oral_health";
     }
     var cardFavoriteKey = "oral_patch_use-2";
     var cardShareUrl = "https://liaoweihung.github.io/pteduimg/cards/oral_patch_use_3.html";
@@ -340,6 +373,57 @@
       color:var(--muted);
       font-size:.86rem;
     }
+    .card-text-content {
+      margin:0 0 18px;
+    }
+    .card-text-details {
+      border:1px solid var(--line);
+      border-radius:10px;
+      background:#fff;
+      overflow:hidden;
+    }
+    .card-text-details summary {
+      display:flex;
+      align-items:center;
+      gap:8px;
+      min-height:44px;
+      padding:10px 12px;
+      color:var(--brand);
+      font-size:.95rem;
+      font-weight:700;
+      cursor:pointer;
+      list-style:none;
+    }
+    .card-text-details summary::-webkit-details-marker { display:none; }
+    .card-text-details summary::before {
+      content:"▼";
+      display:inline-block;
+      font-size:.72rem;
+      transition:transform .18s ease;
+    }
+    .card-text-details[open] summary::before { transform:rotate(180deg); }
+    .card-text-details[open] summary { border-bottom:1px solid var(--line); }
+    .card-text-body {
+      padding:12px;
+      color:var(--ink);
+      font-size:.95rem;
+      line-height:1.65;
+    }
+    .card-text-body .card-summary {
+      margin:0 0 14px;
+      color:#475569;
+    }
+    .card-text-body section + section {
+      margin-top:14px;
+      padding-top:14px;
+      border-top:1px solid var(--line);
+    }
+    .card-text-body h2 {
+      margin:0 0 5px;
+      font-size:1rem;
+      line-height:1.4;
+    }
+    .card-text-body section p { margin:0; }
     .share-row {
       display:flex;
       gap:8px;
@@ -521,12 +605,26 @@
       .page-arrow { width:46px; height:46px; }
       .info { padding:14px 16px 36px; }
     }
+.site-footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #7f8c8d; /* 跟您的 Section Title 使用一樣的高級灰 */
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+.site-footer a {
+    color: #7f8c8d;
+    text-decoration: none;
+}
+.site-footer a:active {
+    color: #2c3e50;
+}
   </style>
 </head>
 <body>
   <main>
     <div class="top-actions">
-      <button class="pill" type="button" onclick="returnToCardHome()">返回首頁</button>
+      <button class="pill" type="button" onclick="returnToCardHome()">‹ 回到『口腔』</button>
       <div class="action-cluster">
         <button class="pill icon-pill" type="button" onclick="showQRCode()" aria-label="顯示 QR code">🔲</button>
         <button class="pill icon-pill" id="favorite-button" type="button" onclick="toggleFavorite()" aria-pressed="false" aria-label="加入收藏">☆</button>
@@ -535,7 +633,7 @@
     </div>
     <section class="image-stage" aria-label="口內膏怎麼擦？正確使用步驟與注意事項｜藥局衛教助手">
       <a class="image-side-link prev" href="../cards/oral_patch_use_2.html" aria-label="上一張"></a>
-      <img class="hero-img" src="../img/oral_patch_use_3.webp" alt="口內膏正確使用步驟與注意事項圖卡" decoding="async" fetchpriority="high">
+      <img class="hero-img" src="../img/oral_patch_use_3.webp" alt="口內貼片和口內膏的使用第 3 張圖卡：口內膏 4 步驟（洗手清口腔、吸乾患部、少量點上、不要搓揉），適合擦的時間、擦完後的變化與何時就醫" decoding="async" fetchpriority="high">
       <a class="image-side-link next" href="../cards/oral_patch_use.html" aria-label="下一張"></a>
     </section>
     <nav class="page-nav" aria-label="同系列翻頁">
@@ -544,15 +642,130 @@
       <a class="page-arrow" href="../cards/oral_patch_use.html" aria-label="下一張">›</a>
     </nav>
     <section class="info">
-      <h1>口內貼片和口內膏的使用</h1>
-      <p class="meta">藥師衛教 · 3/3</p>
+      <article class="card-text-content">
+        <h1>口內膏怎麼擦？正確使用步驟與注意事項</h1>
+        <p class="meta">民眾疾病衛教 · 3/3</p>
+        <p class="meta">內容更新：2026-11-19 ｜ 本次修訂：依本站圖卡內容整理逐頁文字（Claude 協助撰寫）</p>
+        <details class="card-text-details">
+          <summary>文字版重點</summary>
+          <div class="card-text-body">
+            <p class="card-summary">口內膏怎麼擦才不會一下就掉？先洗手、漱口，用棉棒吸乾患部，取少量薄薄點在嘴破處，不要來回抹開，擦完暫時別吃喝。整理飯後和睡前擦的原因、擦了多久沒好要回診，以及嘴破就醫警訊。</p>
+          <section>
+            <h2>口內膏怎麼擦？4 個步驟</h2>
+            <p>1. 先洗手、清口腔：可以先漱口或刷牙，把食物殘渣清掉。2. 吸乾患部：用棉棒、紗布或紙巾輕輕吸乾口水，太濕不容易附著。3. 少量點上：用棉棒或乾淨手指取少量口內膏，薄薄點在嘴破處，能蓋住傷口即可。4. 不要搓揉：不要來回抹開，也不要一直用舌頭碰，擦完先別吃喝。</p>
+          </section>
+          <section>
+            <h2>口內膏為什麼不能抹開？</h2>
+            <p>常見的口內膏是把藥放在會黏附口腔的基劑裡，碰到口水後會形成一層滑滑的保護膜，讓藥停留在傷口上。如果來回塗抹，膏體反而會變成顆粒、碎掉，比較容易脫落。輕輕「點上、壓一下」就好。</p>
+          </section>
+          <section>
+            <h2>口內膏什麼時候擦比較好？一天擦幾次？</h2>
+            <p>吃完東西、清潔口腔後，以及睡前，都是適合的時間；睡前擦可以讓藥整晚停留在傷口上。擦完後暫時不要吃喝，常見建議約 30 分鐘。不同產品的成分和次數不同，一天擦幾次請依藥袋、外盒或說明書。</p>
+          </section>
+          <section>
+            <h2>擦完口內膏會怎樣？</h2>
+            <p>有些口內膏會變得比較黏，在傷口上形成一層保護膜，之後會慢慢脫落，通常不用刻意摳掉。</p>
+          </section>
+          <section>
+            <h2>哪些嘴破不適合自己擦口內膏？</h2>
+            <p>含類固醇的口內膏適合一般非感染性的嘴破。如果是成群的小水泡（可能是皰疹）、可以擦掉的白色斑塊（可能是黴菌感染），或傷口紅腫化膿，不適合自行擦含類固醇的口內膏，請先就醫。含類固醇口內膏使用約 7 天仍沒有明顯改善，也應回診或詢問藥師。</p>
+          </section>
+          <section>
+            <h2>嘴破什麼時候要就醫？</h2>
+            <p>超過 2 週沒好、越來越大或越來越痛、多處潰瘍或痛到吃不下、合併發燒或腫脹時，請就醫。國民健康署提醒，口腔黏膜破皮超過兩週未癒合是口腔癌的警訊之一，有吸菸、嚼檳榔習慣的人更要盡快檢查。</p>
+          </section>
+<section class="card-references"><h2>資料來源（資料查核：2026-11-19）</h2><ul><li><a href="https://www.medsafe.govt.nz/profs/Datasheet/k/kenaloginOrabasepaste.pdf" target="_blank" rel="noopener noreferrer">Medsafe（紐西蘭）：Kenalog in Orabase 0.1% 口內膏仿單</a></li><li><a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4705&amp;pid=17306" target="_blank" rel="noopener noreferrer">衛生福利部國民健康署：口腔出現「破斑硬突腫」應儘速就醫</a></li></ul></section>
+          </div>
+        </details>
+      </article>
       <div class="section-title">同系列圖卡</div>
       <ol class="related-list" aria-label="同系列圖卡">
         <li><a class="related-item" href="../cards/oral_patch_use.html">口內貼片怎麼貼？正確使用步驟與脫落處理</a></li>
 <li><a class="related-item" href="../cards/oral_patch_use_2.html">口內貼片種類、正反面與使用注意事項</a></li>
 <li><a class="related-item" href="../cards/oral_patch_use_3.html" aria-current="page">口內膏怎麼擦？正確使用步驟與注意事項</a></li>
       </ol>
+      <div class="next-series-section">
+        <div class="section-title">接下來可以看</div>
+        <div class="next-topic-group">
+          <div class="next-topic-title">主題：口腔</div>
+          <ul class="next-series-list">
+            <li><a href="../cards/oral_hygiene_01.html">口腔清潔</a></li><li><a href="../cards/angular_cheilitis_01.html">口角炎</a></li><li><a href="../cards/tooth_extraction_aftercare_1.html">拔牙以後該怎麼吃藥</a></li>
+          </ul>
+          <div class="next-topic-return"><a href="../public.html?topic=oral_health">‹ 回到『口腔』主題</a></div>
+        </div>
+      </div>
+      <nav aria-label="推薦閱讀"><div class="section-title">推薦閱讀</div><ul style="line-height:2.4; margin:0; padding-left:20px;"><li><a href="../cards/oral_patch_use.html">口內貼片怎麼貼？正確使用步驟與脫落處理</a></li><li><a href="../cards/oral_patch_use_2.html">口內貼片種類、正反面與使用注意事項</a></li></ul></nav>
     </section>
+<footer class="site-footer">
+  <div class="page-vote" data-page-vote>
+    <style>
+      .page-vote { margin: 0 0 14px 0; padding: 12px; border: 1px solid rgba(127,127,127,.25); border-radius: 12px; text-align: center; }
+      .page-vote__q { margin: 0 0 10px 0; font-weight: 600; }
+      .page-vote__btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+      .page-vote__btn { min-width: 110px; padding: 9px 16px; font-size: 1rem; border-radius: 999px; border: 1px solid rgba(127,127,127,.45); background: transparent; color: inherit; cursor: pointer; }
+      .page-vote__btn:active { transform: scale(.97); }
+      .page-vote__btn:disabled { opacity: .55; cursor: default; }
+      .page-vote__msg { margin: 10px 0 0 0; display: none; }
+    </style>
+    <p class="page-vote__q">這頁內容對您有幫助嗎？</p>
+    <div class="page-vote__btns">
+      <button type="button" class="page-vote__btn" data-vote="helpful">👍 有幫助</button>
+      <button type="button" class="page-vote__btn" data-vote="not_helpful">👎 沒幫助</button>
+    </div>
+    <p class="page-vote__msg" data-vote-msg></p>
+    <script>
+      (function () {
+        var GAS_URL = "https://script.google.com/macros/s/AKfycbw0uIMQZIeqmx-D0i4YBN7FPidC1QEteoNp6Ae28fMPKFC9HmH10jx6pvIB2DCom5R_/exec";
+        var FEEDBACK_URL = "https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手";
+        var box = document.currentScript.closest("[data-page-vote]");
+        if (!box) return;
+        var btns = box.querySelectorAll("[data-vote]");
+        var msg = box.querySelector("[data-vote-msg]");
+        var key = "pageVote:" + location.pathname;
+        function done(text, html) {
+          for (var i = 0; i < btns.length; i++) btns[i].disabled = true;
+          if (html) msg.innerHTML = html; else msg.textContent = text;
+          msg.style.display = "block";
+        }
+        try { if (localStorage.getItem(key)) { done("您已回饋過這一頁，謝謝！"); return; } } catch (e) {}
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function () {
+            var vote = this.getAttribute("data-vote");
+            var body = new URLSearchParams();
+            body.append("type", "vote");
+            body.append("source", "藥局衛教助手");
+            body.append("vote", vote);
+            body.append("page", location.pathname);
+            body.append("title", document.title);
+            done("傳送中…");
+            fetch(GAS_URL, { method: "POST", body: body }).then(function () {
+              try { localStorage.setItem(key, vote); } catch (e) {}
+              if (vote === "helpful") {
+                done("謝謝您的回饋！");
+              } else {
+                done("", '謝謝您的回饋！想告訴我們哪裡不清楚嗎？<a href="' + FEEDBACK_URL + '" target="_blank" rel="noopener">留言給藥師</a>（請勿填寫個人或病情資料）');
+              }
+            }).catch(function () {
+              for (var j = 0; j < btns.length; j++) btns[j].disabled = false;
+              msg.textContent = "傳送失敗，請稍後再試。";
+            });
+          });
+        }
+      })();
+    </script>
+  </div>
+  <p style="margin: 0 0 8px 0;">本工具圖文僅供藥師衛教參考，非專業人士務必諮詢藥師建議。</p>
+  <p style="margin: 0;">
+    <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a>
+    &nbsp;|&nbsp;
+   <a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" onclick="if (typeof trackFeedbackClick === 'function') trackFeedbackClick()">💬 意見回饋</a>
+  </p>
+  <p style="margin: 0 0 8px 0;">
+    <a href="../about.html">關於本站</a> &nbsp;|&nbsp;
+    <a href="../author.html">作者資訊</a> &nbsp;|&nbsp;
+    <a href="../editorial-policy.html">編輯與資料來源政策</a>
+  </p>
+</footer>
     <div class="qr-modal" id="qr-modal" hidden>
       <div class="qr-box" role="dialog" aria-modal="true" aria-label="圖卡 QR code">
         <div class="qr-title">請患者掃描開啟這張圖卡</div>

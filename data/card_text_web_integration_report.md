@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：323
+- 成功加入文字頁數：326
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -328,3 +328,6 @@
 | insomnia_medication | NaSSA 類抗憂鬱劑：Mirtazapine 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card12.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | insomnia_medication | 中樞性肌肉鬆弛劑：Chlorzoxazone 與 Tizanidine | https://liaoweihung.github.io/pteduimg/cards/insomnia_card13.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | insomnia_medication | 用藥迷思：抗過敏開胃藥、暈車藥與感冒糖漿不能當安眠藥 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card14.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| oral_patch_use | 口內貼片怎麼貼？正確使用步驟與脫落處理 | https://liaoweihung.github.io/pteduimg/cards/oral_patch_use.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| oral_patch_use | 口內貼片種類、正反面與使用注意事項 | https://liaoweihung.github.io/pteduimg/cards/oral_patch_use_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| oral_patch_use | 口內膏怎麼擦？正確使用步驟與注意事項 | https://liaoweihung.github.io/pteduimg/cards/oral_patch_use_3.html | 是 | 是 | 是 | 是 | 是 | 無 |

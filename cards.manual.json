@@ -2630,9 +2630,9 @@
   },
   "oral_patch_use": {
     "title": "口內貼片和口內膏的使用",
-    "category": "pharmacist_general",
-    "departments": [
-      "dentistry"
+    "category": "public_education",
+    "topics": [
+      "oral_health"
     ],
     "order": 122,
     "hidden": false,
@@ -2653,13 +2653,17 @@
       "嘴破藥",
       "患部吸乾",
       "棉棒塗抹",
-      "口腔潰瘍照護"
+      "口腔潰瘍照護",
+      "嘴破貼片",
+      "口內貼片正反面",
+      "口內貼片掉了"
     ],
     "steps": [
       "img/oral_patch_use.webp",
       "img/oral_patch_use_2.webp",
       "img/oral_patch_use_3.webp"
-    ]
+    ],
+    "showFooter": true
   },
   "eye_wash_solution": {
     "title": "洗眼液",
