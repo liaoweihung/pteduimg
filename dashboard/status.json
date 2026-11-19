@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-17T11:41:04+08:00",
-  "baseline": "37cd57cf9e2d652c706123c3313f3af5a75c7d2d",
-  "scope": "網站來源快照；版本 37cd57cf",
+  "generatedAt": "2026-11-19T10:55:18+08:00",
+  "baseline": "dd44fbada240f1ae6bcef6701c9d2d36c9315296",
+  "scope": "網站來源快照；版本 dd44fbad",
   "counts": {
     "cards": 456,
     "series": 99,
@@ -20,7 +20,7 @@
     "infectious_diseases": 3,
     "eyes": 3,
     "gastrointestinal": 7,
-    "oral_health": 4,
+    "oral_health": 5,
     "insect_repellent": 1,
     "elimination_care": 4,
     "heat_illness": 1,
@@ -786,10 +786,10 @@
       "title": "口內貼片和口內膏的使用",
       "count": 3,
       "hidden": false,
-      "areas": [],
-      "departments": [
-        "dentistry"
-      ]
+      "areas": [
+        "oral_health"
+      ],
+      "departments": []
     },
     {
       "id": "eye_wash_solution",
@@ -2793,39 +2793,6 @@
       ]
     },
     {
-      "title": "口內貼片和口內膏的使用",
-      "path": "cards/oral_patch_use.html",
-      "series": "oral_patch_use",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "口內貼片和口內膏的使用",
-      "path": "cards/oral_patch_use_2.html",
-      "series": "oral_patch_use",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "口內貼片和口內膏的使用",
-      "path": "cards/oral_patch_use_3.html",
-      "series": "oral_patch_use",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
       "title": "眼睛癢，可以點抗過敏眼藥水嗎？",
       "path": "cards/otc_anti_allergy_eye_drops.html",
       "series": "artificial_tears",
@@ -3759,22 +3726,22 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 322,
+      "machine_pass": 325,
       "partial": 1,
-      "missing": 133
+      "missing": 130
     },
     "reference_status": {
-      "missing": 218,
-      "machine_pass": 238
+      "missing": 215,
+      "machine_pass": 241
     },
     "date_status": {
-      "missing": 218,
-      "machine_pass": 217,
+      "missing": 215,
+      "machine_pass": 220,
       "partial": 21
     },
     "footer_status": {
-      "missing": 238,
-      "machine_pass": 218
+      "missing": 235,
+      "machine_pass": 221
     },
     "jsonld_status": {
       "machine_pass": 456
@@ -3782,7 +3749,7 @@
   },
   "sync": {
     "pages": 464,
-    "fields": 1097,
+    "fields": 1091,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -6223,24 +6190,18 @@
       {
         "page": "oral_patch_use",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "oral_patch_use_2",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "oral_patch_use_3",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
