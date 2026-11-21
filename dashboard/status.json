@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-21T11:24:21+08:00",
-  "baseline": "15ee6bbbaa62b8d5a1a081b18d6f2aaf2dd1bd8b",
-  "scope": "網站來源快照；版本 15ee6bbb",
+  "generatedAt": "2026-11-21T12:06:26+08:00",
+  "baseline": "b39e96419a2d134447f41dcab5a93eaf066adc11",
+  "scope": "網站來源快照；版本 b39e9641",
   "counts": {
-    "cards": 456,
+    "cards": 459,
     "series": 99,
     "allSeries": 103,
     "hidden": 4,
@@ -591,7 +591,7 @@
     {
       "id": "pediatric_cold_syrup",
       "title": "兒科感冒藥水",
-      "count": 12,
+      "count": 15,
       "hidden": false,
       "areas": [],
       "departments": [
@@ -3642,30 +3642,30 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 331,
+      "machine_pass": 334,
       "partial": 1,
       "missing": 124
     },
     "reference_status": {
       "missing": 208,
-      "machine_pass": 248
+      "machine_pass": 251
     },
     "date_status": {
       "missing": 207,
-      "machine_pass": 228,
+      "machine_pass": 231,
       "partial": 21
     },
     "footer_status": {
       "missing": 228,
-      "machine_pass": 228
+      "machine_pass": 231
     },
     "jsonld_status": {
-      "machine_pass": 456
+      "machine_pass": 459
     }
   },
   "sync": {
-    "pages": 464,
-    "fields": 1077,
+    "pages": 467,
+    "fields": 1080,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -6254,6 +6254,12 @@
         ]
       },
       {
+        "page": "ped_cold_muco",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
         "page": "ped_cold_musco_solution",
         "fields": [
           "rules_sha256"
@@ -6273,6 +6279,18 @@
       },
       {
         "page": "ped_cold_secorine",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_soltan",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_cold_sortuss",
         "fields": [
           "rules_sha256"
         ]
