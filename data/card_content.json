@@ -10545,10 +10545,10 @@
   },
   {
     "cardId": "japan_otc_drug_classification",
-    "title": "日本成藥的分級",
+    "title": "日本藥品怎麼分級？第一、二、三類差在哪？",
     "image": "img/japan_otc_drug_classification.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/japan_otc_drug_classification.html",
-    "summary": "日本成藥依風險分為第一類、第二類（含指定第二類）與第三類。第一類風險最高需藥劑師說明；第二與三類可由登錄販賣者販售。購買日本藥品與回台限量重點整理。",
+    "summary": "日本成藥依風險分第一類、第二類（含指定第二類）、第三類。第一類要藥劑師當面說明才能買；分級看的是副作用風險，不是藥效強弱。另整理帶回台灣的數量限制：每種 12 個、合計 36 個。",
     "sections": [
       {
         "heading": "第一類醫藥品（風險最高）",
@@ -10567,12 +10567,30 @@
         "text": "藥品分級代表的是副作用與相互作用之風險高低，而非藥效強弱排名。入境台灣旅客攜帶自用非處方藥，依衛生福利部與海關規定，每種至多 12 瓶（盒、罐、條、支），合計以不超過 36 瓶為限，且僅供個人自用，不得轉售或代購。"
       }
     ],
+    "faq": [
+      {
+        "question": "第一類醫藥品為什麼有時買不到？",
+        "answer": "第一類風險最高，必須由藥劑師當面說明才能販售。店內沒有藥劑師值班時就不能購買。"
+      },
+      {
+        "question": "指定第二類醫藥品是什麼？包裝怎麼看？",
+        "answer": "屬第二類中需要特別注意的藥品，包裝標示「[2]」或「(2)」。可能含鎮靜、止咳或類固醇成分，懷孕、兒童與慢性病患者使用前先問藥師。"
+      },
+      {
+        "question": "第三類比較弱、比較沒效嗎？",
+        "answer": "不是。分級依副作用與交互作用風險，不代表藥效強弱。"
+      },
+      {
+        "question": "日本成藥帶回台灣可以帶多少？",
+        "answer": "自用非處方藥每種最多 12 個（瓶、盒等），合計不超過 36 個，只限自用。"
+      }
+    ],
     "altText": "日本成藥分級比較圖卡：第一類、第二類、指定第二類、第三類醫藥品之風險等級、販售人員資格（藥劑師與登錄販賣者）及旅日購藥注意事項",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "sourceCheckedAt": "2026-11-01",
-    "updatedAt": "2026-11-01",
+    "sourceCheckedAt": "2026-11-21",
+    "updatedAt": "2026-11-21",
     "references": [
       {
         "title": "日本厚生勞動省（MHLW）：一般用醫藥品販賣制度與分級規範",
@@ -10583,7 +10601,7 @@
         "url": "https://www.fda.gov.tw/TC/siteContent.aspx?sid=3928"
       }
     ],
-    "revisionCredit": "本站整理靜態文字、法規重點及核對官方來源"
+    "revisionCredit": "本站整理靜態文字、法規重點及核對官方來源；2026-11-21 依藥師定稿更新標題、摘要與常見問題"
   },
   {
     "cardId": "child_height_weight",

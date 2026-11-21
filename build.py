@@ -350,6 +350,34 @@ def render_json_ld(seo, headline, card_content=None):
     return json.dumps(data, ensure_ascii=False, indent=2).replace("</", "<\\/")
 
 
+def render_faq_json_ld(faq_items):
+    if not faq_items or not isinstance(faq_items, list):
+        return ""
+    main_entities = []
+    for item in faq_items:
+        if not isinstance(item, dict):
+            continue
+        q = clean_seo_text(item.get("question"))
+        a = clean_seo_text(item.get("answer"))
+        if q and a:
+            main_entities.append({
+                "@type": "Question",
+                "name": q,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": a,
+                },
+            })
+    if not main_entities:
+        return ""
+    data = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": main_entities,
+    }
+    return json.dumps(data, ensure_ascii=False, indent=2).replace("</", "<\\/")
+
+
 def share_links(page_url, title):
     encoded_url = quote(page_url, safe="")
     encoded_text = quote(title, safe="")
@@ -793,6 +821,11 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     page_url = seo["canonical"]
     image_url = seo["og_image"]
     json_ld = render_json_ld(seo, h1, card_content)
+    faq_json_ld = render_faq_json_ld((card_content or {}).get("faq"))
+    faq_json_ld_script = f"""  <script type="application/ld+json">
+{faq_json_ld}
+  </script>
+""" if faq_json_ld else ""
     links = share_links(page_url, title)
     related_cards = render_related_cards(steps, step, series_seo or {})
     label_links_html = render_label_links(step)
@@ -951,7 +984,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
   <script type="application/ld+json">
 {json_ld}
   </script>
-  <script src="../qrious.min.js"></script>
+{faq_json_ld_script}  <script src="../qrious.min.js"></script>
   <script>
     var GA_MEASUREMENT_ID = '{GA_MEASUREMENT_ID}';
     var urlParams = new URLSearchParams(window.location.search);

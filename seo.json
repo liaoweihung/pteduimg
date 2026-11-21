@@ -4455,13 +4455,13 @@
     "twitter_card": "summary_large_image"
   },
   "cards/japan_otc_drug_classification.html": {
-    "page_title": "日本成藥的分級｜藥局衛教助手",
-    "meta_description": "日本成藥依風險分為第一類、第二類（含指定第二類）與第三類。第一類風險最高需藥劑師說明；第二與三類可由登錄販賣者販售。購買日本藥品與回台限量重點整理。",
-    "h1": "日本成藥的分級",
+    "page_title": "日本藥品怎麼分級？第一、二、三類差在哪？｜藥局衛教助手",
+    "meta_description": "日本成藥依風險分第一類、第二類（含指定第二類）、第三類。第一類要藥劑師當面說明才能買；分級看的是副作用風險，不是藥效強弱。另整理帶回台灣的數量限制：每種 12 個、合計 36 個。",
+    "h1": "日本藥品怎麼分級？第一、二、三類差在哪？",
     "image_alt": "日本成藥分級比較圖卡：第一類、第二類、指定第二類、第三類醫藥品之風險等級、販售人員資格（藥劑師與登錄販賣者）及旅日購藥注意事項",
     "keywords": "日本成藥、日本OTC藥品、日本藥品分級、第一類醫藥品、第二類醫藥品、第三類醫藥品、指定第二類醫藥品、一般用醫藥品、日本藥妝、日本藥局、旅日購藥、藥師、登錄販賣者、成藥分級、用藥安全、OTC",
-    "og_title": "日本成藥的分級｜藥局衛教助手",
-    "og_description": "日本成藥依風險分為第一類、第二類（含指定第二類）與第三類。第一類風險最高需藥劑師說明；第二與三類可由登錄販賣者販售。購買日本藥品與回台限量重點整理。",
+    "og_title": "日本藥品怎麼分級？第一、二、三類差在哪？｜藥局衛教助手",
+    "og_description": "日本成藥依風險分第一類、第二類（含指定第二類）、第三類。第一類要藥劑師當面說明才能買；分級看的是副作用風險，不是藥效強弱。另整理帶回台灣的數量限制：每種 12 個、合計 36 個。",
     "og_image": "https://liaoweihung.github.io/pteduimg/img/japan_otc_drug_classification.webp",
     "og_url": "https://liaoweihung.github.io/pteduimg/cards/japan_otc_drug_classification.html",
     "canonical": "https://liaoweihung.github.io/pteduimg/cards/japan_otc_drug_classification.html",
