@@ -305,15 +305,15 @@
 | sports_sprain | 扭到腳踝、翻腳刀，傷到哪裡？扭傷和拉傷差在哪 | https://liaoweihung.github.io/pteduimg/cards/sports_sprain_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | sports_sprain | 扭傷怎麼處理？冰敷還是熱敷、什麼時候要看醫生 | https://liaoweihung.github.io/pteduimg/cards/sports_sprain_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | sports_sprain | 扭傷多久會好？什麼時候可以恢復運動 | https://liaoweihung.github.io/pteduimg/cards/sports_sprain_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| insomnia_public | 睡不好就是失眠症嗎？醫學診斷與主觀感受 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card01.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| insomnia_public | 不靠藥物也能好好睡：CBT-I 與睡眠衛生 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card02.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| insomnia_public | 失眠藥物有哪些？六大常見類型 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card03.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| insomnia_medication | 苯二氮平類 BZDs：Estazolam 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card04.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| insomnia_medication | 非苯二氮平類 Z-drugs：Zolpidem 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card05.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| insomnia_medication | 褪黑激素受體促效劑：Ramelteon 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card06.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| insomnia_medication | 食慾素受體拮抗劑 DORAs：Lemborexant 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card07.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| insomnia_medication | 具鎮靜作用之抗憂鬱劑：Trazodone 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card08.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| insomnia_medication | 第一代抗組織胺類：Diphenhydramine 與 Hydroxyzine | https://liaoweihung.github.io/pteduimg/cards/insomnia_card09.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_public | 睡不好就是失眠嗎？3 個條件看懂失眠症 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card01.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_public | 不吃安眠藥也能睡好？認識 CBT-I 和睡前好習慣 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card02.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_public | 安眠藥有哪幾種？6 大類差在哪、會不會上癮 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card03.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 悠樂丁（Estazolam）怎麼吃？隔天昏沉、停藥要注意 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card04.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 使蒂諾斯（Zolpidem）怎麼吃？夢遊、配酒與停藥提醒 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card05.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 柔速瑞（Ramelteon）是褪黑激素嗎？怎麼吃、會不會依賴 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card06.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 達衛眠（Lemborexant）怎麼吃？隔天嗜睡與長輩跌倒提醒 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card07.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 美舒鬱（Trazodone）是抗憂鬱藥，為什麼拿來幫助睡眠？ | https://liaoweihung.github.io/pteduimg/cards/insomnia_card08.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 靜安能、克胺寧可以助眠嗎？抗組織胺幫助睡眠的副作用 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card09.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | liquid_medicine_storage | 藥水要不要冰？先看藥袋與產品標示 | https://liaoweihung.github.io/pteduimg/cards/liquid_medicine_storage_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | liquid_medicine_storage | 藥水保存實例：安滅菌、日舒、舒而坦與希普利敏 | https://liaoweihung.github.io/pteduimg/cards/liquid_medicine_storage_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | pediatric_gi_syrup | 高克痢懸乳液怎麼喝？兒童劑量、間隔與停藥時機 | https://liaoweihung.github.io/pteduimg/cards/ped_gi_pecolin_suspension.html | 是 | 是 | 是 | 是 | 是 | 無 |
@@ -323,11 +323,11 @@
 | child_medicine_feeding | 藥太苦可以加在牛奶裡嗎？3 大混藥地雷與 5 mL 一口量掩味法 | https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_04.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | child_medicine_feeding | 小孩餵藥怎麼餵不會嗆到？別平躺強灌，用 45 度半坐臥＋頰囊分次慢推 | https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | child_medicine_feeding | 小孩吃藥後吐了要補嗎？先看時間、吐出多少和孩子狀態再決定 | https://liaoweihung.github.io/pteduimg/cards/child_medicine_feeding_06.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| insomnia_medication | α2δ 鈣離子通道調節劑：Pregabalin 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card10.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| insomnia_medication | 第二代抗精神病藥（低劑量輔助）：Quetiapine 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card11.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| insomnia_medication | NaSSA 類抗憂鬱劑：Mirtazapine 用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card12.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| insomnia_medication | 中樞性肌肉鬆弛劑：Chlorzoxazone 與 Tizanidine | https://liaoweihung.github.io/pteduimg/cards/insomnia_card13.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| insomnia_medication | 用藥迷思：抗過敏開胃藥、暈車藥與感冒糖漿不能當安眠藥 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card14.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 利瑞卡（Pregabalin）吃了會想睡？神經痛藥與睡眠 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card10.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 思樂康（Quetiapine）低劑量助眠？長期吃要注意什麼 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card11.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 美妥平（Mirtazapine）吃了很想睡、胃口變好？用藥重點 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card12.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 肌肉鬆弛劑會讓人想睡？舒肉筋、鬆得樂注意事項 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card13.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insomnia_medication | 感冒糖漿、暈車藥可以當安眠藥嗎？佩你安也不適合 | https://liaoweihung.github.io/pteduimg/cards/insomnia_card14.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | oral_patch_use | 口內貼片怎麼貼？正確使用步驟與脫落處理 | https://liaoweihung.github.io/pteduimg/cards/oral_patch_use.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | oral_patch_use | 口內貼片種類、正反面與使用注意事項 | https://liaoweihung.github.io/pteduimg/cards/oral_patch_use_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | oral_patch_use | 口內膏怎麼擦？正確使用步驟與注意事項 | https://liaoweihung.github.io/pteduimg/cards/oral_patch_use_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
