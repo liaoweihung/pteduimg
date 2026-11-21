@@ -11842,7 +11842,7 @@
     "title": "息咳寧糖漿怎麼吃？成分、兒童用量與注意事項",
     "image": "img/ped_cold_secorine.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html",
-    "summary": "息咳寧糖漿（Secorine Syrup）是含 dl-Methylephedrine、Chlorpheniramine 與 Glyceryl guaiacolate 的複方感冒藥水，用於緩解流鼻水、鼻塞、打噴嚏、咳嗽及喀痰；不是抗生素，也不含退燒成分。兒童用量依醫囑，6 歲以下先由醫師診治。",
+    "summary": "息咳寧糖漿（Secorine Syrup）是含 dl-Methylephedrine、Chlorpheniramine 與 Glyceryl guaiacolate 的複方感冒藥水，用於緩解流鼻水、鼻塞、打噴嚏、咳嗽及喀痰；不是抗生素，也不含退燒成分。兒童用量依醫囑（醫師常依體重調整），6 歲以下先由醫師診治。",
     "sections": [
       {
         "heading": "認對藥品",
@@ -11854,7 +11854,11 @@
       },
       {
         "heading": "家長如何核對用量",
-        "text": "看藥名與濃度、每次 mL 與每日次數，再用附屬量器量取；使用前搖勻。兒童用量依醫囑與藥袋，不用體重公式自行速算；6 歲以下先由醫師診治。仿單自行使用參考量：成人及 12 歲以上每次 20 mL、9 歲以上未滿 12 歲 10 mL、6 歲以上未滿 9 歲 6.7 mL，皆一日 3 次。藥袋指示與此不同時，以處方為準，有疑問先問藥師。"
+        "text": "看藥名與濃度、每次 mL 與每日次數，再用附屬量器量取；使用前搖勻。仿單自行使用參考量：成人及 12 歲以上每次 20 mL、9 歲以上未滿 12 歲 10 mL、6 歲以上未滿 9 歲 6.7 mL，皆一日 3 次。",
+        "blocks": [
+          "未滿 12 歲兒童，醫師開立時常依體重調整，例如傑登醫師建議每次「體重（kg）÷ 4」mL、每次最多不超過 10 mL、一日 3～4 次（例：16 公斤每次約 4 mL）。",
+          "這是醫師評估後的處方參考，家長不要自行換算或加量；6 歲以下先由醫師診治。藥袋指示與此不同時，以藥袋為準，有疑問先問藥師。"
+        ]
       },
       {
         "heading": "服用後注意",
@@ -11865,19 +11869,24 @@
         "text": "兩者名稱相似但配方不同，不要自行替換或合用。有疑問請把藥瓶或藥袋帶給藥師核對。"
       }
     ],
-    "altText": "息咳寧糖漿衛教圖卡：成分與許可證字號、緩解感冒症狀的用途、家長核對用量三步驟、兒童用量依醫囑且 6 歲以下先由醫師診治、服用後嗜睡等注意事項，以及息咳寧與息咳液不同",
+    "altText": "息咳寧糖漿衛教圖卡：每 1 mL 主要成分、緩解感冒流鼻水鼻塞打噴嚏咳嗽喀痰的適應症、仿單建議劑量表（未滿 6 歲請洽醫師診治），以及搖勻量取、可能嗜睡、不重複使用綜合感冒藥、症狀持續就醫等用藥提醒",
     "sourceType": "source_checked_revision",
     "matchConfidence": "high",
     "needsMedicalReview": false,
-    "sourceCheckedAt": "2026-11-10",
-    "updatedAt": "2026-11-10",
+    "sourceCheckedAt": "2026-11-21",
+    "updatedAt": "2026-11-21",
     "references": [
       {
         "title": "衛生福利部食品藥物管理署 藥品仿單查詢平台：「晟德」息咳寧糖漿（衛署藥製字第040833號）",
         "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC040833%E8%99%9F"
+      },
+      {
+        "title": "傑登醫師（Dr. Jaden）〈綜合感冒糖漿－息咳寧〉，2023-12-19",
+        "url": "https://www.drjadenhealth.com/l/secorine/"
       }
     ],
-    "revisionCredit": "使用者提供圖卡；AI依TFDA核准仿單整理網站文字並核對來源；網站作者（藥師）2026-11-10 確認"
+    "revisionCredit": "使用者提供圖卡；AI依TFDA核准仿單與傑登醫師文章整理網站文字；網站作者（藥師）2026-11-21 確認",
+    "imageUpdatedAt": "2026-11-21"
   },
   {
     "cardId": "diarrhea_care",

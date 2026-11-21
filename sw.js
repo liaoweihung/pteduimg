@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v4fcad95858d978afb7567d69';
+const CACHE_NAME = 'pwa-cache-v0bc36f69f6908b69396bfa4b';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -1008,6 +1008,7 @@ const revisedImageUrls = [
   "./img/bruising_care_2.webp",
   "./img/bruising_care_3.webp",
   "./img/bruising_care_4.webp",
+  "./img/ped_cold_secorine.webp",
   "./img/insomnia_card01.webp",
   "./img/insomnia_card02.webp",
   "./img/insomnia_card03.webp",
