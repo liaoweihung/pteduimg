@@ -550,3 +550,6 @@ REL-8eb7cef08d2297b1,series:insomnia_medication,has_card,page:insomnia_card11,so
 REL-c56c8c44121d4c70,series:insomnia_medication,has_card,page:insomnia_card12,source_observed,series_membership,cards.json,CR-2026-106
 REL-f3c68ef093b1f3e3,series:insomnia_medication,has_card,page:insomnia_card13,source_observed,series_membership,cards.json,CR-2026-106
 REL-b60b632bf60834da,series:insomnia_medication,has_card,page:insomnia_card14,source_observed,series_membership,cards.json,CR-2026-106
+REL-78073ab0760111ea,series:pediatric_cold_syrup,has_card,page:ped_cold_soltan,source_observed,series_membership,cards.json,CR-2026-112
+REL-29f19814ba0c60fb,series:pediatric_cold_syrup,has_card,page:ped_cold_muco,source_observed,series_membership,cards.json,CR-2026-112
+REL-839416eff92ad999,series:pediatric_cold_syrup,has_card,page:ped_cold_sortuss,source_observed,series_membership,cards.json,CR-2026-112

@@ -321,6 +321,27 @@
         "license": "衛署藥製字第004737號",
         "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC004737%E8%99%9F"
       }
+    ],
+    "img/ped_cold_soltan.webp": [
+      {
+        "name": "〝晟德〞舒痰液３毫克/毫升（鹽酸安布索）",
+        "license": "衛署藥製字第043160號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC043160%E8%99%9F"
+      }
+    ],
+    "img/ped_cold_muco.webp": [
+      {
+        "name": "〝派頓〞莫喀糖漿20毫克/毫升",
+        "license": "衛署藥製字第030836號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC030836%E8%99%9F"
+      }
+    ],
+    "img/ped_cold_sortuss.webp": [
+      {
+        "name": "「晟德」息咳液",
+        "license": "衛署藥製字第040706號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC040706%E8%99%9F"
+      }
     ]
   }
 }

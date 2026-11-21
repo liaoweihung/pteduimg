@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v0bc36f69f6908b69396bfa4b';
+const CACHE_NAME = 'pwa-cache-ve2f96c36f6cf674e5a007114';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -410,10 +410,13 @@ const urlsToCache = [
   "./img/ped_cold_guaphen_syrup.webp",
   "./img/ped_cold_koko_sou_syrup.webp",
   "./img/ped_cold_mintapp_syrup.webp",
+  "./img/ped_cold_muco.webp",
   "./img/ped_cold_musco_solution.webp",
   "./img/ped_cold_nocough_syrup.webp",
   "./img/ped_cold_peace_syrup.webp",
   "./img/ped_cold_secorine.webp",
+  "./img/ped_cold_soltan.webp",
+  "./img/ped_cold_sortuss.webp",
   "./img/ped_diarrhea_hidrasec.webp",
   "./img/ped_gi_pecolin_suspension.webp",
   "./img/postoperative_wound.webp",
@@ -767,6 +770,9 @@ const urlsToCache = [
   "./cards/ped_cold_koko_sou_syrup.html",
   "./cards/ped_cold_cough_mixture.html",
   "./cards/ped_cold_nocough_syrup.html",
+  "./cards/ped_cold_soltan.html",
+  "./cards/ped_cold_muco.html",
+  "./cards/ped_cold_sortuss.html",
   "./cards/wempty_suspension.html",
   "./cards/lactulose_constipation.html",
   "./cards/ped_diarrhea_hidrasec.html",

@@ -15253,5 +15253,286 @@
     ],
     "matchConfidence": "high",
     "needsMedicalReview": false
+  },
+  {
+    "cardId": "pediatric_cold_syrup",
+    "title": "舒痰液（Soltan）怎麼喝？兒童化痰藥水使用指南",
+    "seoTitle": "舒痰液怎麼喝？Ambroxol 兒童用量與注意事項｜藥局衛教助手",
+    "metaDescription": "舒痰液（Soltan Liquid）含 Ambroxol 3 mg/mL，用於化痰。藥師整理仿單的各年齡用量、含阿斯巴甜與苯酮尿症注意、皮膚口腔出現新傷口要立即停藥就醫；實際用量依醫師處方。",
+    "image": "img/ped_cold_soltan.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_soltan.html",
+    "summary": "舒痰液（Soltan Liquid）每毫升含 Ambroxol hydrochloride 3 mg，是幫助痰液變稀、容易咳出的處方化痰藥水，不是抗生素。兒童用量依年齡不同，實際每次毫升數與次數請依醫師處方。含阿斯巴甜，苯酮尿症者不宜使用；皮膚或口腔黏膜出現新傷口，要立即停藥並就醫。",
+    "sections": [
+      {
+        "heading": "舒痰液是什麼藥？",
+        "text": "舒痰液是化痰藥，每 1 mL 含 Ambroxol hydrochloride（鹽酸安布索）3 mg，作用是讓痰變稀、比較容易咳出來。它不是抗生素，也不能治療造成咳嗽的感染。本品屬處方藥，須由醫師處方使用。"
+      },
+      {
+        "heading": "舒痰液小孩一次喝多少？",
+        "text": "以下是食藥署仿單的用量（醫院藥品資料相同），不是家長自行給藥表，實際每次毫升數與次數以醫師處方和藥袋為準：\n\n- 12 歲以上：每次 10 mL，一天三次\n- 6～12 歲：每次 5 mL，一天三次\n- 2～6 歲：每次 2.5 mL，一天二至三次\n- 2 歲以下：每次 2.5 mL，一天二次\n\n仿單在 6 歲、12 歲交界的年齡寫法有重疊，剛好在交界年齡的孩子，請醫師確認，不要自行選量。嬰幼兒須經醫師評估，不要自行給藥。"
+      },
+      {
+        "heading": "家裡有別的化痰藥水，可以照這個量嗎？",
+        "text": "不行。不同化痰藥水的成分和濃度不同，毫升數不能互相套用。即使同樣含 Ambroxol，濃度不同，喝的量也不同；請照該產品藥袋或問藥師。"
+      },
+      {
+        "heading": "2.5 mL 要怎麼量才準？",
+        "text": "小量藥水建議用口服餵藥針筒量取，比藥杯或家用湯匙準確。量好後慢慢從嘴角餵入，不要整管一次推進。"
+      },
+      {
+        "heading": "為什麼苯酮尿症要特別注意？",
+        "text": "仿單警語：本品含阿斯巴甜（Aspartame），苯酮尿症者不宜使用。孩子有苯酮尿症，請主動告訴醫師和藥師。另外賦形劑含黃色色素 Tartrazine 與亞硫酸鹽（Sodium Metabisulfite），曾對這些成分過敏的人也請先告知。"
+      },
+      {
+        "heading": "舒痰液有什麼副作用？",
+        "text": "較常見的是輕微的腸胃不適：胃灼熱、消化不良，偶爾噁心、嘔吐。少數人會有過敏反應，例如皮疹、蕁麻疹、搔癢；極少數可能出現臉或嘴唇腫、呼吸困難等嚴重過敏。出現出疹、搔癢請停藥並詢問醫師或藥師；臉腫、呼吸困難請立即就醫。"
+      },
+      {
+        "heading": "什麼情況要立即停藥、就醫？",
+        "text": "- 皮膚或口腔黏膜出現新的傷口（例如水泡、破皮、口腔潰瘍）：立即停藥並就醫。仿單提醒，極少數人可能發生多形性紅斑、史蒂文生氏-強生症候群等嚴重皮膚反應，早期可能像感冒（發燒、全身痠痛、鼻炎、咳嗽、喉嚨痛），容易被誤以為是感冒本身的症狀。\n- 呼吸困難、嘴唇發紫或意識不清：立即就醫。"
+      },
+      {
+        "heading": "懷孕或哺乳可以喝嗎？",
+        "text": "仿單提醒孕婦使用要注意，懷孕前三個月更應謹慎。懷孕或哺乳期間，請先詢問醫師或藥師再使用。"
+      },
+      {
+        "heading": "藥品資訊",
+        "text": "品名：〝晟德〞舒痰液３毫克/毫升（鹽酸安布索）；SOLTAN LIQUID 3MG/ML \"CENTER\"\n許可證字號：衛署藥製字第043160號\n藥品類別：須由醫師處方使用\n廠商：晟德大藥廠"
+      }
+    ],
+    "altText": "舒痰液衛教圖卡：Ambroxol HCl 3 mg/mL 化痰藥水；醫院資料參考用量 12 歲以上每次 10 mL、6～12 歲 5 mL 一天三次，2～6 歲 2.5 mL 一天二至三次，2 歲以下 2.5 mL 一天二次，實際依醫師處方；含阿斯巴甜，苯酮尿症者不宜；皮膚或口腔黏膜出現新傷口立即停藥就醫",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-11-21",
+    "updatedAt": "2026-11-21",
+    "revisionCredit": "使用者提供圖卡；AI依食藥署核准仿單整理網站文字；查核日 2026-11-21",
+    "showFooter": true,
+    "references": [
+      {
+        "title": "衛生福利部食品藥物管理署 藥品仿單查詢平台：〝晟德〞舒痰液３毫克/毫升（鹽酸安布索）（衛署藥製字第043160號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC043160%E8%99%9F"
+      },
+      {
+        "title": "國軍臺中總醫院 Soltan Liquid 3mg/mL",
+        "url": "https://web-reg-server.803.org.tw/PhC/PharmaBooks/Keyword_Detail/CP3-2PXO872wVSGLask-TQzEvj-7hU5CjxLxDCAQdOU%3D"
+      },
+      {
+        "title": "亞東醫院藥學部 Soltan Liquid",
+        "url": "https://www.e-pharm.info/safety/drug-information/femh-formulary/item/oambr6"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署 含 ambroxol 或 bromhexine 處方藥仿單修訂公告",
+        "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&id=22047"
+      },
+      {
+        "title": "衛生福利部 袪痰劑仿單加強標示",
+        "url": "https://mohw.gov.tw/cp-2704-8903-1.html"
+      },
+      {
+        "title": "衛生福利部中央健康保險署 呼吸系統急症",
+        "url": "https://www.nhi.gov.tw/ch/cp-2794-a7c50-2951-1.html"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "莫喀糖漿怎麼喝？兒童化痰糖漿使用指南",
+        "url": "../cards/ped_cold_muco.html"
+      },
+      {
+        "title": "息咳液怎麼喝？兒童鎮咳祛痰藥水使用指南",
+        "url": "../cards/ped_cold_sortuss.html"
+      },
+      {
+        "title": "息咳寧糖漿怎麼吃？成分、兒童用量與注意事項",
+        "url": "../cards/ped_cold_secorine.html"
+      },
+      {
+        "title": "兒童餵藥 6 大實用關鍵：確認藥品、選對方法與工具，餵藥更安全",
+        "url": "../cards/child_medicine_feeding_02.html"
+      }
+    ]
+  },
+  {
+    "cardId": "pediatric_cold_syrup",
+    "title": "莫喀糖漿（Muco）怎麼喝？兒童化痰糖漿使用指南",
+    "seoTitle": "莫喀糖漿怎麼喝？Carbocisteine 兒童用量與注意事項｜藥局衛教助手",
+    "metaDescription": "莫喀糖漿（Muco Syrup）含 Carbocisteine 20 mg/mL，可降低痰的黏稠度。藥師說明仿單兒童用量「每日每公斤 1.5 mL、分三次」是一天總量不是一次量，以及氣喘、出疹、咳嗽超過一週等需就醫的情況。",
+    "image": "img/ped_cold_muco.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_muco.html",
+    "summary": "莫喀糖漿（Muco Syrup）每毫升含 Carbocisteine 20 mg，用來降低呼吸道分泌物的黏稠度，讓痰比較容易排出。仿單兒童用量是「一天總量」每公斤體重 30 mg（相當於每公斤 1.5 mL），分三次服用，不是每次喝的量；每次幾 mL 請依藥袋或由醫師、藥師確認。",
+    "sections": [
+      {
+        "heading": "莫喀糖漿是什麼藥？",
+        "text": "莫喀糖漿是化痰藥，每 1 mL 含 Carbocisteine（S-Carboxymethylcysteine，羧甲半胱胺酸）20 mg，作用是降低痰的黏稠度。它不是以壓制咳嗽為主的止咳藥，也不是抗生素。"
+      },
+      {
+        "heading": "莫喀糖漿小孩一次喝多少？",
+        "text": "仿單寫的幼童及兒童用量是：**一天總量每公斤體重 30 mg，相當於本品 1.5 mL，分三次服用**。\n\n這是一天的總量，不是每次的量。每次要喝幾 mL，請看藥袋，或請醫師、藥師依孩子體重確認，不要自行把 1.5 mL 乘上體重當成一次的量。仿單沒有寫明適用的最小年齡，嬰幼兒使用前請先經醫師評估。"
+      },
+      {
+        "heading": "怎麼量、怎麼喝？",
+        "text": "使用前搖勻，用附的量器或口服餵藥針筒量取，不要用家用湯匙估量，也不要超過建議量。"
+      },
+      {
+        "heading": "可以和其他藥水混在一起嗎？",
+        "text": "不要自行混合。仿單提醒本品與抗生素或含鹽酸鹽化合物等糖漿混在一起，外觀可能改變。這是指不要把藥液混在同一瓶或同一杯，不代表要停掉醫師開的其他藥；分別量取、分別餵就好。"
+      },
+      {
+        "heading": "誰要先就醫或先問醫藥人員？",
+        "text": "- 對本品成分過敏者不可使用。\n- 有氣喘、慢性阻塞性肺病、吸菸相關的咳嗽或有濃痰，使用前先就醫。\n- 懷孕、哺乳、有肝病或心臟病，先詢問醫師或藥師。"
+      },
+      {
+        "heading": "莫喀糖漿有什麼副作用？",
+        "text": "可能有皮疹、紅斑、噁心、食慾不振、胃部不適、腹脹、腹瀉或口渴；偶爾有搔癢、心悸、流鼻水或全身壓迫感。出現這些情況請停藥，並諮詢醫師或藥師。"
+      },
+      {
+        "heading": "什麼情況要停藥就醫？",
+        "text": "- 高燒、出疹、持續頭痛，或咳嗽超過一星期、反覆發作：停藥就醫。\n- 呼吸困難、嘴唇發紫或意識不清：立即就醫。"
+      },
+      {
+        "heading": "怎麼保存？",
+        "text": "密封、25°C 以下保存，不需冰存；避免日照，放在兒童拿不到的地方。賦形劑含糖與酒精，有相關飲食限制請告訴醫師或藥師。"
+      },
+      {
+        "heading": "藥品資訊",
+        "text": "品名：〝派頓〞莫喀糖漿20毫克/毫升；Muco Syrup 20mg/ml \"Patron\"\n許可證字號：衛署藥製字第030836號\n藥品類別：醫師藥師藥劑生指示藥品\n委託者：臺灣派頓；製造廠：晟德"
+      }
+    ],
+    "altText": "莫喀糖漿衛教圖卡：Carbocisteine 20 mg/mL 化痰糖漿；仿單兒童每日總量每公斤體重 30 mg（每日每公斤 1.5 mL），分三次服用，不是每次用量，每次幾 mL 由醫師或藥師確認；使用前搖勻、不混其他藥水；氣喘或濃痰先就醫；高燒、持續頭痛、咳嗽超過一星期停藥就醫",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-11-21",
+    "updatedAt": "2026-11-21",
+    "revisionCredit": "使用者提供圖卡；AI依食藥署核准仿單整理網站文字；查核日 2026-11-21",
+    "showFooter": true,
+    "references": [
+      {
+        "title": "衛生福利部食品藥物管理署 藥品仿單查詢平台：〝派頓〞莫喀糖漿20毫克/毫升（衛署藥製字第030836號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC030836%E8%99%9F"
+      },
+      {
+        "title": "天主教輔仁大學附設醫院 藥品查詢 Muco",
+        "url": "https://pharmacy.fjuh.fju.edu.tw/Key_Search/P4?query=MUC01"
+      },
+      {
+        "title": "衛生福利部中央健康保險署 呼吸系統急症",
+        "url": "https://www.nhi.gov.tw/ch/cp-2794-a7c50-2951-1.html"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "舒痰液（Soltan）怎麼喝？兒童化痰藥水使用指南",
+        "url": "../cards/ped_cold_soltan.html"
+      },
+      {
+        "title": "息咳液怎麼喝？兒童鎮咳祛痰藥水使用指南",
+        "url": "../cards/ped_cold_sortuss.html"
+      },
+      {
+        "title": "息咳寧糖漿怎麼吃？成分、兒童用量與注意事項",
+        "url": "../cards/ped_cold_secorine.html"
+      },
+      {
+        "title": "兒童餵藥 6 大實用關鍵：確認藥品、選對方法與工具，餵藥更安全",
+        "url": "../cards/child_medicine_feeding_02.html"
+      }
+    ]
+  },
+  {
+    "cardId": "pediatric_cold_syrup",
+    "title": "息咳液（Sortuss）怎麼喝？兒童鎮咳祛痰藥水使用指南",
+    "seoTitle": "息咳液怎麼喝？Sortuss 成分、兒童用量與注意事項｜藥局衛教助手",
+    "metaDescription": "息咳液（Sortuss）是處方鎮咳祛痰藥水，和息咳寧糖漿（Secorine）不同。藥師整理三種成分、仿單兒童每次用量、可能嗜睡、不可喝酒、服用抗憂鬱劑要先告知等注意事項。",
+    "image": "img/ped_cold_sortuss.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_sortuss.html",
+    "summary": "息咳液（Sortuss Cough Liquid）是含 Dextromethorphan、Glyceryl guaiacolate 與 Ipecac 的處方鎮咳祛痰藥水，和名稱相近的息咳寧糖漿（Secorine）是不同藥品。用量依醫師處方；可能嗜睡，服藥期間不要喝酒，正在服用抗憂鬱劑請先告知醫師或藥師。",
+    "sections": [
+      {
+        "heading": "息咳液是什麼藥？",
+        "text": "息咳液是複方鎮咳祛痰藥水，每 1 mL 含：\n\n- Dextromethorphan HBr 1 mg：鎮咳成分\n- Glyceryl guaiacolate（Guaifenesin）10 mg：祛痰成分\n- Ipecac fluid extract 0.005 min.：祛痰成分（min. 是仿單記載的容量單位，不是 mg；食藥署最新仿單確認）\n\n本品屬處方藥，各年齡都須由醫師處方使用。"
+      },
+      {
+        "heading": "息咳液和息咳寧一樣嗎？",
+        "text": "不一樣。息咳寧糖漿（Secorine）含抗組織胺和支氣管擴張成分，息咳液（Sortuss）是鎮咳祛痰配方。兩者名字很像，但成分和用量都不同，不要自行替換或一起喝。有疑問請把藥瓶或藥袋帶給藥師核對。"
+      },
+      {
+        "heading": "息咳液小孩一次喝多少？",
+        "text": "以下取自食藥署仿單平台的最新仿單（版次 2019-11-25，2020 年上傳），實際用量以醫師處方和藥袋為準：\n\n- 成人：每次 10～20 mL\n- 6～12 歲：每次 6～10 mL\n- 2～6 歲：每次 2～6 mL\n\n仿單寫每 4 小時服用一次。這些都是「每次」用量，不是一天的總量。原仿單在 6 歲交界的年齡寫法有重疊，6 歲左右的孩子請醫師確認；仿單沒有列 2 歲以下的用量，不可自行比例減量套用。咳嗽沒好也不要自行增加次數，忘記吃不要一次喝兩倍。"
+      },
+      {
+        "heading": "怎麼量、怎麼喝？",
+        "text": "服用前搖勻，用量器或口服餵藥針筒量取，不要用家用湯匙估量。"
+      },
+      {
+        "heading": "息咳液有什麼副作用？",
+        "text": "仿單只寫明發疹、搔癢、過敏時應立即停藥。醫院衛教資料另列：可能嗜睡、頭暈、噁心或嘔吐；也可能出現不安、興奮、流汗、視力模糊或便祕。服藥後如果精神變差，避免需要專注的活動；成人不要開車或操作機械。症狀嚴重或持續，請回診。"
+      },
+      {
+        "heading": "服用息咳液要注意什麼？",
+        "text": "- 服藥期間不要喝酒（仿單：不得併服含酒精飲料），也不要超過建議劑量。\n- 不要自行加吃其他感冒藥、止咳藥。\n- 正在服用抗憂鬱劑（例如 MAOI、SSRI 類）：先告知醫師或藥師，不要自行併用，也不要自行停掉原本的藥。\n- 對本品成分過敏者先告知醫師。"
+      },
+      {
+        "heading": "什麼情況要停藥就醫？",
+        "text": "- 過敏、出疹或搔癢：停藥就醫。\n- 呼吸困難、嘴唇發紫或意識不清：立即就醫。"
+      },
+      {
+        "heading": "怎麼保存？",
+        "text": "密封、25°C 以下保存，不需冰存，避免陽光直射，放在兒童拿不到的地方。本品用 Sucralose 調味，不含阿斯巴甜；含山梨醇與色素。"
+      },
+      {
+        "heading": "藥品資訊",
+        "text": "品名：「晟德」息咳液；SORTUSS COUGH LIQUID \"CENTER\"\n許可證字號：衛署藥製字第040706號\n藥品類別：須由醫師處方使用\n廠商：晟德大藥廠"
+      }
+    ],
+    "altText": "息咳液衛教圖卡：Sortuss 鎮咳祛痰藥水，不是息咳寧 Secorine；每 mL 含 Dextromethorphan HBr 1 mg、Glyceryl guaiacolate 10 mg、Ipecac fluid extract 0.005 min；2019 仿單參考通常每 4 小時一次，6～12 歲每次 6～10 mL，2～6 歲每次 2～6 mL，各年齡依醫師處方；可能嗜睡，不喝酒，服用抗憂鬱劑先告知醫師藥師",
+    "sourceType": "source_checked_revision",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "sourceCheckedAt": "2026-11-21",
+    "updatedAt": "2026-11-21",
+    "revisionCredit": "使用者提供圖卡；AI依食藥署核准仿單整理網站文字；查核日 2026-11-21",
+    "showFooter": true,
+    "references": [
+      {
+        "title": "衛生福利部食品藥物管理署 藥品仿單查詢平台：息咳液（衛署藥製字第040706號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC040706%E8%99%9F"
+      },
+      {
+        "title": "光田綜合醫院 Sortuss 產品頁",
+        "url": "https://www.ktgh.com.tw/ktgh/Home/WesternMedDetail/EB4B044500ED9E4BFA613D3956339146"
+      },
+      {
+        "title": "臺北市立聯合醫院 息咳液用藥指導單張",
+        "url": "https://www-ws.gov.taipei/001/Upload/446/relfile/22055/9101903/e39392c6-4e46-4bca-bebd-25d4cf774a11.pdf"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署 指示藥品審查基準（鎮咳袪痰劑）",
+        "url": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637945139465117001&type=1"
+      },
+      {
+        "title": "衛生福利部中央健康保險署 呼吸系統急症",
+        "url": "https://www.nhi.gov.tw/ch/cp-2794-a7c50-2951-1.html"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "息咳寧糖漿怎麼吃？成分、兒童用量與注意事項",
+        "url": "../cards/ped_cold_secorine.html"
+      },
+      {
+        "title": "舒痰液（Soltan）怎麼喝？兒童化痰藥水使用指南",
+        "url": "../cards/ped_cold_soltan.html"
+      },
+      {
+        "title": "莫喀糖漿（Muco）怎麼喝？兒童化痰糖漿使用指南",
+        "url": "../cards/ped_cold_muco.html"
+      },
+      {
+        "title": "兒童餵藥 6 大實用關鍵：確認藥品、選對方法與工具，餵藥更安全",
+        "url": "../cards/child_medicine_feeding_02.html"
+      }
+    ]
   }
 ]

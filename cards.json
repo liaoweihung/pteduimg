@@ -1936,7 +1936,29 @@
       "安咳糖漿副作用",
       "安咳糖漿怎麼喝",
       "安咳糖漿與安咳液不同",
-      "衛署藥製字第029634號"
+      "衛署藥製字第029634號",
+      "舒痰液",
+      "Soltan",
+      "舒痰液 劑量",
+      "舒痰液 幾歲",
+      "Ambroxol 藥水",
+      "安布索",
+      "小孩 化痰藥水",
+      "舒痰液 副作用",
+      "莫喀糖漿",
+      "Muco",
+      "莫喀 劑量",
+      "Carbocisteine",
+      "羧甲半胱胺酸",
+      "小孩 化痰糖漿",
+      "莫喀糖漿 一次喝多少",
+      "息咳液",
+      "Sortuss",
+      "息咳液 劑量",
+      "息咳液 息咳寧 差別",
+      "Dextromethorphan 藥水",
+      "小孩 止咳藥水",
+      "息咳液 副作用"
     ],
     "texts": [
       "希普利敏",
@@ -1950,7 +1972,10 @@
       "美舒咳液怎麼吃？兒童祛痰藥水用量與注意事項",
       "可克嗽糖漿怎麼吃？兒童止咳化痰藥水用量與注意事項",
       "生達鎮咳袪痰液怎麼用？兒童參考劑量與注意事項",
-      "「杏輝」安咳糖漿（Nocough Syrup）兒童用藥指南"
+      "「杏輝」安咳糖漿（Nocough Syrup）兒童用藥指南",
+      "舒痰液（Soltan）怎麼喝？兒童化痰藥水使用指南",
+      "莫喀糖漿（Muco）怎麼喝？兒童化痰糖漿使用指南",
+      "息咳液（Sortuss）怎麼喝？兒童鎮咳祛痰藥水使用指南"
     ],
     "steps": [
       "img/ped_cold_cypromin.webp",
@@ -1964,7 +1989,10 @@
       "img/ped_cold_musco_solution.webp",
       "img/ped_cold_koko_sou_syrup.webp",
       "img/ped_cold_cough_mixture.webp",
-      "img/ped_cold_nocough_syrup.webp"
+      "img/ped_cold_nocough_syrup.webp",
+      "img/ped_cold_soltan.webp",
+      "img/ped_cold_muco.webp",
+      "img/ped_cold_sortuss.webp"
     ],
     "favorite_keys": [
       "pediatric_cold_syrup-0",
@@ -1978,7 +2006,10 @@
       "pediatric_cold_syrup-7",
       "pediatric_cold_syrup-8",
       "pediatric_cold_syrup-9",
-      "pediatric_cold_syrup-11"
+      "pediatric_cold_syrup-11",
+      "pediatric_cold_syrup-ped_cold_soltan",
+      "pediatric_cold_syrup-ped_cold_muco",
+      "pediatric_cold_syrup-ped_cold_sortuss"
     ]
   },
   "pediatric_gi_syrup": {
