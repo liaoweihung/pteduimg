@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-21T10:24:58+08:00",
-  "baseline": "649cdc1011745825b26f429157196c0063992800",
-  "scope": "網站來源快照；版本 649cdc10",
+  "generatedAt": "2026-11-21T11:17:27+08:00",
+  "baseline": "3fdf6adefd7bbd9e41d8623fc5c6801530b069b1",
+  "scope": "網站來源快照；版本 3fdf6ade",
   "counts": {
     "cards": 456,
     "series": 99,
@@ -3665,7 +3665,7 @@
   },
   "sync": {
     "pages": 464,
-    "fields": 1075,
+    "fields": 1077,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -5647,6 +5647,8 @@
       {
         "page": "japan_otc_drug_classification",
         "fields": [
+          "title",
+          "content_sha256",
           "source_sha256",
           "rules_sha256"
         ]
