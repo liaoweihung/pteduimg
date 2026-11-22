@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-22T17:38:17+08:00",
-  "baseline": "48b6f13eef794ef1a5ca0d5316bacb38b8ec5d13",
-  "scope": "網站來源快照；版本 48b6f13e",
+  "generatedAt": "2026-11-23T00:42:06+08:00",
+  "baseline": "483b52a37a7088f454e78bf2edabab5cb670718a",
+  "scope": "網站來源快照；版本 483b52a3",
   "counts": {
     "cards": 464,
     "series": 100,
@@ -1656,15 +1656,6 @@
       ]
     },
     {
-      "title": "安佳熱",
-      "path": "cards/antiphen.html",
-      "series": "ped_fever_reducer",
-      "issues": [
-        "reference_status",
-        "date_status"
-      ]
-    },
-    {
       "title": "人工皮與石蠟紗布，有什麼不同？",
       "path": "cards/artficial_vs_paraffin.html",
       "series": "wound_dressings",
@@ -2239,15 +2230,6 @@
       "series": "wound_dressings",
       "issues": [
         "footer_status"
-      ]
-    },
-    {
-      "title": "依普芬",
-      "path": "cards/ibuprofen_sol.html",
-      "series": "ped_fever_reducer",
-      "issues": [
-        "reference_status",
-        "date_status"
       ]
     },
     {
@@ -3451,12 +3433,12 @@
       "missing": 108
     },
     "reference_status": {
-      "missing": 189,
-      "machine_pass": 275
+      "missing": 187,
+      "machine_pass": 277
     },
     "date_status": {
-      "missing": 188,
-      "machine_pass": 255,
+      "missing": 186,
+      "machine_pass": 257,
       "partial": 21
     },
     "footer_status": {
@@ -3469,7 +3451,7 @@
   },
   "sync": {
     "pages": 472,
-    "fields": 1044,
+    "fields": 1039,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4223,7 +4205,6 @@
       {
         "page": "antiphen",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5358,14 +5339,12 @@
       {
         "page": "ibuprofen_sol",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "idofen_suspension",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5691,7 +5670,6 @@
       {
         "page": "macsafe_suspension",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5808,7 +5786,6 @@
       {
         "page": "notice_ped_fever_reducer",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
