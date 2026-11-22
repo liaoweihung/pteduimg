@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：340
+- 成功加入文字頁數：356
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -84,9 +84,9 @@
 | over_one_oint | 藥膏一起擦 | https://liaoweihung.github.io/pteduimg/cards/over_one_oint_03.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | motion_sickness_meds | 暈車藥錠劑比較與使用提醒 | https://liaoweihung.github.io/pteduimg/cards/motion_sickness_meds_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | motion_sickness_meds | 暈車藥糖漿與貼片使用方式 | https://liaoweihung.github.io/pteduimg/cards/motion_sickness_meds_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| sore_throat_otc | 喉嚨痛不一定是感冒 | https://liaoweihung.github.io/pteduimg/cards/sore_throat_causes.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| sore_throat_otc | 喉嚨痛怎麼選OTC產品 | https://liaoweihung.github.io/pteduimg/cards/sore_throat_otc_choice.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| sore_throat_otc | 喉嚨痛出現這些情況建議就醫 | https://liaoweihung.github.io/pteduimg/cards/sore_throat_red_flags.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| sore_throat_otc | 喉嚨痛一定是感冒嗎？4 種常見原因：病毒、乾燥、鼻涕倒流、胃酸逆流 | https://liaoweihung.github.io/pteduimg/cards/sore_throat_causes.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| sore_throat_otc | 喉嚨痛吃什麼藥？含片、喉嚨噴劑、止痛藥、潤喉產品怎麼選 | https://liaoweihung.github.io/pteduimg/cards/sore_throat_otc_choice.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| sore_throat_otc | 喉嚨痛多久要看醫生？7 種要儘快就醫的情況 | https://liaoweihung.github.io/pteduimg/cards/sore_throat_red_flags.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | adult_diaper | 成人紙尿布的分類 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | adult_diaper | 成人紙尿布使用的小重點 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | adult_diaper | 照護的小幫手 | https://liaoweihung.github.io/pteduimg/cards/adult_diaper_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
@@ -345,3 +345,19 @@
 | drug_weight_gain | 吃藥變胖可以換藥嗎？和醫師討論調整用藥的方向 | https://liaoweihung.github.io/pteduimg/cards/drug_weight_gain_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | drug_weight_gain | 吃藥變胖怎麼辦？藥師整理 5 個生活調整 | https://liaoweihung.github.io/pteduimg/cards/drug_weight_gain_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | drug_weight_gain | 戒菸後會變胖嗎？戒菸藥會讓人變胖嗎？ | https://liaoweihung.github.io/pteduimg/cards/drug_weight_gain_5.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| fungal_foot_nail | 香港腳藥膏怎麼擦？要擦多久、擦多大範圍、何時看醫生 | https://liaoweihung.github.io/pteduimg/cards/hk_foot.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| fungal_foot_nail | Terbinafine 乳膏怎麼擦？香港腳每天塗抹範圍與療程 | https://liaoweihung.github.io/pteduimg/cards/terbinafine_daily_cream.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| fungal_foot_nail | 香港腳一次療程護膜液怎麼用？擦一次就好的步驟與 24 小時注意事項 | https://liaoweihung.github.io/pteduimg/cards/terbinafine_once_treatment.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| fungal_foot_nail | 灰指甲怎麼治療？擦藥、口服藥、合併治療與雷射比較 | https://liaoweihung.github.io/pteduimg/cards/fungal_nail.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| fungal_foot_nail | 灰指甲油怎麼擦？Amorolfine 使用步驟、每週次數與要擦多久 | https://liaoweihung.github.io/pteduimg/cards/amorolfine.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| fungal_foot_nail | 恢甲清怎麼用？灰指甲護理筆每天 2 次的擦法與注意事項 | https://liaoweihung.github.io/pteduimg/cards/excilor.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| fungal_foot_nail | 香港腳藥膏擦 7 天就夠？Terbinafine 一週療程與停藥後的變化 | https://liaoweihung.github.io/pteduimg/cards/terbinafine_7_days.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| hemorr_sitbath | 痔瘡坐浴怎麼做？4 步驟：坐浴盆、水溫、時間與擦乾 | https://liaoweihung.github.io/pteduimg/cards/hemorr_sitbath_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| hemorr_sitbath | 痔瘡溫水坐浴一天幾次？水溫、時間與不要加的東西 | https://liaoweihung.github.io/pteduimg/cards/hemorr_sitbath_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| Prevent_Enterovirus | 洗手 5 時機：預防腸病毒，什麼時候一定要洗手？ | https://liaoweihung.github.io/pteduimg/cards/Wash_hands_five_steps.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| Prevent_Enterovirus | 預防腸病毒怎麼做？洗手、漂白水消毒與重症前兆 | https://liaoweihung.github.io/pteduimg/cards/Prevent_Enterovirus.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| Prevent_Enterovirus | 腸病毒疫苗要打嗎？71 型疫苗接種年齡、劑數與兩種廠牌差異 | https://liaoweihung.github.io/pteduimg/cards/EnteroVirus_vaccine.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| common_skin_conditions | 異位性皮膚炎藥膏怎麼擦？類固醇與保濕劑的用法 | https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_care.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| common_skin_conditions | 病毒疣怎麼辦？和雞眼、厚繭怎麼分，不要摳，常見治療方式 | https://liaoweihung.github.io/pteduimg/cards/wart.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| common_skin_conditions | 蚊蟲叮咬怎麼擦藥？冰敷、止癢藥膏與何時就醫 | https://liaoweihung.github.io/pteduimg/cards/bug_bite.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| common_skin_conditions | 嘴破擦口內膏怎麼擦？4 步驟與多久沒好要就醫 | https://liaoweihung.github.io/pteduimg/cards/orabase.html | 是 | 是 | 是 | 是 | 是 | 無 |

@@ -2896,76 +2896,250 @@
   },
   {
     "cardId": "sore_throat_otc",
-    "title": "喉嚨痛不一定是感冒",
     "image": "img/sore_throat_causes.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/sore_throat_causes.html",
-    "summary": "喉嚨痛不一定是感冒，常見原因包括病毒感染、乾燥或用聲過度、鼻涕倒流與胃食道逆流。",
+    "title": "喉嚨痛一定是感冒嗎？4 種常見原因：病毒、乾燥、鼻涕倒流、胃酸逆流",
+    "metaDescription": "喉嚨痛不一定是感冒。病毒感染、空氣乾燥或用嗓過度、過敏鼻涕倒流、胃食道逆流都會造成喉嚨痛，原因不同，適合的產品也不同。",
+    "keywords": "喉嚨痛原因、喉嚨痛不是感冒、喉嚨卡卡、鼻涕倒流、胃食道逆流喉嚨痛、喉嚨乾癢、早上喉嚨痛、聲音沙啞",
+    "summary": "喉嚨痛最常見的原因是感冒病毒，但喉嚨乾燥、用嗓過度、過敏造成的鼻涕倒流，以及胃食道逆流也很常見。先觀察自己的症狀，才能選對緩解產品。",
     "sections": [
       {
-        "heading": "常見原因",
-        "text": "病毒性感冒；空氣乾燥或用聲過度；過敏或鼻涕倒流；胃食道逆流。"
+        "heading": "感冒病毒感染",
+        "text": "常伴隨流鼻水、咳嗽，可能發燒。多為病毒感染，通常會自然改善。"
       },
       {
-        "heading": "先判斷再處理",
-        "text": "不同原因的處理方式不同，不要只因喉嚨痛就直接使用抗生素。"
+        "heading": "喉嚨乾燥或用嗓過度",
+        "text": "講話很多、熬夜、在冷氣房待太久，出現乾癢、沙啞。環境乾燥或用聲過度會讓喉嚨受到刺激。"
+      },
+      {
+        "heading": "鼻涕倒流（過敏）",
+        "text": "一直想清喉嚨、喉嚨卡卡，伴隨鼻塞、打噴嚏，早晨較明顯。鼻涕倒流刺激咽喉，造成慢性不適。"
+      },
+      {
+        "heading": "胃食道逆流",
+        "text": "喉嚨灼熱、早上起床特別不舒服、常常想清喉嚨、聲音沙啞。胃酸逆流刺激咽喉，可能造成慢性喉嚨痛。"
+      },
+      {
+        "heading": "先觀察，再選產品",
+        "text": "不同原因的喉嚨痛，適合的產品不一樣。不要只因喉嚨痛就直接使用抗生素。"
       }
     ],
-    "altText": "喉嚨痛不一定是感冒衛教圖卡",
-    "sourceConversationId": "6a2ed4de-e580-83ee-899f-1e34094320b8",
-    "sourceMessageId": "fa8db78d-b5e0-4c33-9fbd-0bbd77b8f08b",
-    "sourceType": "chatgpt_history",
+    "faq": [
+      {
+        "question": "喉嚨痛就是感冒嗎？",
+        "answer": "不一定。除了感冒病毒，喉嚨乾燥、用嗓過度、過敏鼻涕倒流和胃食道逆流也會讓喉嚨痛。"
+      },
+      {
+        "question": "早上起床喉嚨特別痛，是什麼原因？",
+        "answer": "早晨較明顯的喉嚨卡卡，常見於鼻涕倒流；起床時喉嚨灼熱、想清喉嚨，則可能和胃食道逆流有關。睡覺時開冷氣、張口呼吸造成的乾燥也可能。"
+      },
+      {
+        "question": "喉嚨痛需要吃抗生素嗎？",
+        "answer": "大部分喉嚨痛是病毒感染，抗生素沒有幫助。是否需要抗生素，應由醫師評估。"
+      }
+    ],
+    "altText": "喉嚨痛四大原因圖卡：感冒病毒感染、喉嚨乾燥或用嗓過度、鼻涕倒流、胃食道逆流的症狀特徵",
+    "references": [
+      {
+        "title": "NHS：Sore throat（喉嚨痛）",
+        "url": "https://www.nhs.uk/conditions/sore-throat/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "喉嚨痛吃什麼藥？含片、噴劑、止痛藥怎麼選",
+        "url": "../cards/sore_throat_otc_choice.html"
+      },
+      {
+        "title": "喉嚨痛多久要看醫生？",
+        "url": "../cards/sore_throat_red_flags.html"
+      },
+      {
+        "title": "哺乳期間胃酸逆流可以吃什麼？",
+        "url": "../cards/breastfeeding_minor_reflux.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "expandText": true
   },
   {
     "cardId": "sore_throat_otc",
-    "title": "喉嚨痛怎麼選OTC產品",
     "image": "img/sore_throat_otc_choice.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/sore_throat_otc_choice.html",
-    "summary": "喉嚨痛的 OTC 產品可依症狀選擇含片、噴劑、止痛藥或滋潤型產品。",
+    "title": "喉嚨痛吃什麼藥？含片、喉嚨噴劑、止痛藥、潤喉產品怎麼選",
+    "metaDescription": "輕度喉嚨痛、喉嚨癢可用含片；吞口水痛、局部痛明顯可用喉嚨噴劑；很痛或發燒可用止痛藥；乾燥沙啞選潤喉產品。大部分喉嚨痛不需要抗生素。",
+    "keywords": "喉嚨痛吃什麼藥、喉嚨痛藥局買什麼、喉糖推薦、喉嚨噴劑、舒立效、得伏寧、必達定喉嚨噴劑、Benzydamine、Povidone-Iodine、Acetaminophen、Ibuprofen、蜂蜜",
+    "summary": "喉嚨痛的藥局產品可依症狀選：含片、喉嚨噴劑、口服止痛藥、潤喉產品。這些產品主要是緩解症狀，大部分喉嚨痛不需要抗生素；症狀持續或惡化，請找醫師評估。",
     "sections": [
       {
-        "heading": "含片",
-        "text": "常見成分：Amylmetacresol／Dichlorobenzyl alcohol（AMC／DCBA）、Cetylpyridinium chloride（CPC）。"
+        "heading": "含片：輕度喉嚨痛、喉嚨癢",
+        "text": "適合輕度喉嚨痛、喉嚨癢、吞嚥不適。常見成分有 Amylmetacresol（AMC）、Dichlorobenzyl alcohol（DCBA）、Cetylpyridinium chloride（CPC），幫助止痛、潤喉。小朋友含片有噎到的風險，使用年齡依產品標示。"
       },
       {
-        "heading": "喉嚨噴劑",
-        "text": "常見成分：Benzydamine、Povidone-Iodine。"
+        "heading": "喉嚨噴劑：吞口水會痛",
+        "text": "適合吞口水會痛、局部疼痛明顯的人。常見成分有 Benzydamine、Povidone-Iodine，局部消炎、止痛。含碘產品不適合對碘過敏或有甲狀腺疾病的人，懷孕、哺乳期間使用前先問醫師或藥師。"
       },
       {
-        "heading": "止痛藥",
-        "text": "常見成分：Acetaminophen、Ibuprofen。"
+        "heading": "止痛藥：很痛或合併發燒",
+        "text": "常見成分是 Acetaminophen（乙醯胺酚）、Ibuprofen（布洛芬），減少疼痛與不適。有胃潰瘍、腎臟病、懷孕後期或正在吃抗凝血藥的人，使用 Ibuprofen 前先問醫師或藥師；同時吃感冒藥時，注意是否重複含有相同成分。"
       },
       {
-        "heading": "滋潤舒緩",
-        "text": "常見成分：Honey、Glycerin 或草本成分。"
+        "heading": "潤喉產品：乾燥、講話多、沙啞",
+        "text": "常見成分有蜂蜜（Honey）、甘油（Glycerin）或草本萃取，用來保濕、舒緩刺激。未滿 1 歲的嬰兒不可以吃蜂蜜。"
+      },
+      {
+        "heading": "大部分喉嚨痛不需要抗生素",
+        "text": "大部分喉嚨痛是病毒感染，OTC 產品主要目的是緩解症狀。症狀持續或惡化，請找醫師評估。"
+      },
+      {
+        "heading": "台灣核准藥品",
+        "text": "本頁仿單示例：AMC／DCBA 含片如舒立效口含錠；Benzydamine 噴劑如得伏寧消炎噴液劑 1.5 毫克/毫升（3 毫克/毫升加強型須醫師處方）；Povidone-Iodine 噴劑如必達定殺菌口腔噴液（食藥署許可證資料，2026-11-17 下載）。"
       }
     ],
-    "altText": "喉嚨痛怎麼選OTC產品衛教圖卡",
-    "sourceConversationId": "6a2ed4de-e580-83ee-899f-1e34094320b8",
-    "sourceMessageId": "afb76aa6-2fc8-4f66-b835-6d467280dd9d",
-    "sourceType": "chatgpt_history",
+    "faq": [
+      {
+        "question": "喉嚨痛，藥局可以買什麼？",
+        "answer": "可以依症狀選擇含片、喉嚨噴劑、口服止痛藥（Acetaminophen、Ibuprofen）或含蜂蜜、甘油的潤喉產品。不確定時，把症狀告訴藥師。"
+      },
+      {
+        "question": "喉嚨噴劑和含片差在哪？",
+        "answer": "含片適合輕度喉嚨痛或喉嚨癢；噴劑可以直接噴在疼痛處，較適合吞口水就痛、局部疼痛明顯的情況。"
+      },
+      {
+        "question": "喉嚨痛可以吃普拿疼或布洛芬嗎？",
+        "answer": "可以用 Acetaminophen 或 Ibuprofen 緩解疼痛和發燒，但要依包裝或醫囑使用，並注意感冒藥裡是否已含相同成分。有胃潰瘍、腎臟病或懷孕後期的人，用 Ibuprofen 前先問醫師或藥師。"
+      },
+      {
+        "question": "小朋友喉嚨痛可以含喉糖或吃蜂蜜嗎？",
+        "answer": "含片有噎到的風險，使用年齡依產品標示。未滿 1 歲的嬰兒不可以吃蜂蜜。"
+      }
+    ],
+    "altText": "喉嚨痛 OTC 產品選擇圖卡：含片、喉嚨噴劑、止痛藥、潤喉產品的適合症狀、常見成分與作用",
+    "references": [
+      {
+        "title": "NHS：Sore throat（喉嚨痛）",
+        "url": "https://www.nhs.uk/conditions/sore-throat/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "喉嚨噴劑怎麼噴？",
+        "url": "../cards/throat_spray_step_1.html"
+      },
+      {
+        "title": "喉嚨痛多久要看醫生？",
+        "url": "../cards/sore_throat_red_flags.html"
+      },
+      {
+        "title": "喉嚨痛一定是感冒嗎？4 種常見原因",
+        "url": "../cards/sore_throat_causes.html"
+      },
+      {
+        "title": "懷孕頭痛、發燒可以吃什麼？",
+        "url": "../cards/pregnancy_minor_fever_pain.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "expandText": true
   },
   {
     "cardId": "sore_throat_otc",
-    "title": "喉嚨痛出現這些情況建議就醫",
     "image": "img/sore_throat_red_flags.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/sore_throat_red_flags.html",
-    "summary": "高燒、吞嚥或呼吸困難、扁桃腺白色膿點、症狀久未改善等情況應就醫。",
+    "title": "喉嚨痛多久要看醫生？7 種要儘快就醫的情況",
+    "metaDescription": "喉嚨痛合併高燒超過 38.5°C、吞嚥或呼吸困難、扁桃腺白色膿點、超過 1 週沒改善、聲音沙啞超過 2～3 週或反覆發作，建議儘快就醫。",
+    "keywords": "喉嚨痛多久要看醫生、喉嚨痛看哪一科、扁桃腺化膿、喉嚨痛發燒、吞嚥困難、聲音沙啞很久、喉嚨痛一直不好、鏈球菌咽喉炎",
+    "summary": "大部分喉嚨痛約一週內會自行改善，但出現高燒、吞嚥或呼吸困難、扁桃腺有白色膿點、症狀拖太久或反覆發作時，可能不是一般感冒，應儘快就醫。",
     "sections": [
       {
-        "heading": "建議就醫",
-        "text": "發燒超過 38.5°C；吞嚥困難或呼吸困難；扁桃腺出現白色膿點；喉嚨痛超過 1 週；聲音沙啞超過 2～3 週；症狀反覆發作。"
+        "heading": "1. 高燒超過 38.5°C",
+        "text": "持續發燒不退。"
+      },
+      {
+        "heading": "2. 吞嚥困難",
+        "text": "吃東西或喝水時痛到吞不下去。"
+      },
+      {
+        "heading": "3. 呼吸困難",
+        "text": "呼吸費力、喘不過氣。呼吸困難或連口水都吞不下時，請立即就醫。"
+      },
+      {
+        "heading": "4. 扁桃腺有白色膿點",
+        "text": "扁桃腺紅腫、有膿點或白色斑塊。"
+      },
+      {
+        "heading": "5. 症狀超過 1 週",
+        "text": "喉嚨痛遲遲不改善。"
+      },
+      {
+        "heading": "6. 聲音沙啞超過 2～3 週",
+        "text": "聲音持續沙啞、變化或無法恢復。"
+      },
+      {
+        "heading": "7. 反覆發作",
+        "text": "喉嚨痛好了又再發生，可能和慢性發炎、過敏、胃食道逆流或其他疾病有關。"
+      },
+      {
+        "heading": "藥師小提醒",
+        "text": "大部分喉嚨痛是病毒感染，會自行改善。抗生素對病毒無效，不建議自行使用。症狀持續惡化或出現上述情況，請儘早就醫，由醫師找出原因、對症治療。"
       }
     ],
-    "altText": "喉嚨痛出現這些情況建議就醫衛教圖卡",
-    "sourceConversationId": "6a2ed4de-e580-83ee-899f-1e34094320b8",
-    "sourceMessageId": "fa8db78d-b5e0-4c33-9fbd-0bbd77b8f08b",
-    "sourceType": "chatgpt_history",
+    "faq": [
+      {
+        "question": "喉嚨痛幾天沒好要看醫生？",
+        "answer": "超過 1 週沒有改善就建議就醫；如果有高燒、吞嚥或呼吸困難，不用等，請儘快就醫。"
+      },
+      {
+        "question": "扁桃腺有白點，一定要吃抗生素嗎？",
+        "answer": "扁桃腺白色膿點可能是細菌感染，也可能是病毒，是否需要抗生素要由醫師判斷，不要自行吃剩下的抗生素。"
+      },
+      {
+        "question": "聲音沙啞多久要檢查？",
+        "answer": "沙啞超過 2～3 週沒有恢復，建議就醫檢查。"
+      },
+      {
+        "question": "免疫力差的人喉嚨痛要注意什麼？",
+        "answer": "糖尿病、正在化療等免疫力較弱的人，喉嚨痛合併發燒時，建議早一點就醫。"
+      }
+    ],
+    "altText": "喉嚨痛就醫警訊圖卡：高燒、吞嚥困難、呼吸困難、扁桃腺膿點、超過 1 週、沙啞 2～3 週、反覆發作",
+    "references": [
+      {
+        "title": "NHS：Sore throat（喉嚨痛）",
+        "url": "https://www.nhs.uk/conditions/sore-throat/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "喉嚨痛吃什麼藥？含片、噴劑怎麼選",
+        "url": "../cards/sore_throat_otc_choice.html"
+      },
+      {
+        "title": "喉嚨痛一定是感冒嗎？",
+        "url": "../cards/sore_throat_causes.html"
+      },
+      {
+        "title": "三合一快篩結果判讀",
+        "url": "../cards/Res3_ABCovid_4.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "expandText": true
   },
   {
     "cardId": "adult_diaper",
@@ -16353,5 +16527,1329 @@
     "matchConfidence": "high",
     "needsMedicalReview": false,
     "revisionCredit": "依藥師確認文字稿（v7）整理網頁文字"
+  },
+  {
+    "cardId": "fungal_foot_nail",
+    "image": "img/hk_foot.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/hk_foot.html",
+    "title": "香港腳藥膏怎麼擦？要擦多久、擦多大範圍、何時看醫生",
+    "metaDescription": "趾縫脫皮發白、腳底脫屑搔癢可先用香港腳藥膏。Terbinafine 約 1～2 週、Clotrimazole／Miconazole 約 4 週，症狀消失後別太早停藥。",
+    "keywords": "香港腳藥膏、香港腳怎麼擦、香港腳擦多久、香港腳藥膏推薦、足癬、Terbinafine、Clotrimazole、Miconazole、療黴舒、香港腳復發",
+    "summary": "趾縫脫皮發白、腳底脫屑乾裂搔癢、小範圍反覆發作的香港腳，可以先用藥局的抗黴菌藥膏。不同成分要擦的時間不同，香港腳最常復發的原因就是太早停藥。",
+    "sections": [
+      {
+        "heading": "哪些情況可以先用藥局的藥膏？",
+        "text": "趾縫脫皮、發白、搔癢；腳底脫屑、乾裂、搔癢；或小範圍症狀反覆發作，都是常見的香港腳表現，可以先諮詢藥師選擇抗黴菌藥膏。"
+      },
+      {
+        "heading": "藥膏要擦多久？",
+        "text": "Terbinafine 約擦 1～2 週；Clotrimazole、Miconazole 約擦 4 週。實際天數依產品說明。症狀消失後，仍要再持續擦一段時間（約 1～2 週），不要一不癢就停。"
+      },
+      {
+        "heading": "要擦多大範圍？",
+        "text": "除了紅、癢、脫皮的地方，周圍 1～2 公分看起來正常的皮膚也要一起擦。"
+      },
+      {
+        "heading": "預防復發這樣做",
+        "text": "洗腳後把趾縫擦乾、每天換襪子、鞋子輪流穿，保持腳部乾燥。"
+      },
+      {
+        "heading": "這些情況請看醫生",
+        "text": "紅、腫、熱、痛或流膿；指甲變黃、變厚（可能已變成灰指甲）；糖尿病患者；或規律擦藥 2～4 週仍沒有改善。"
+      },
+      {
+        "heading": "台灣核准藥品",
+        "text": "台灣核准含 Terbinafine 的外用指示藥共 80 張有效許可證，劑型有乳膏、凝膠、噴劑與一次療程護膜液（食藥署許可證資料，2026-11-17 下載）。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "香港腳一定要擦藥嗎？會自己好嗎？",
+        "answer": "香港腳通常不會自己好，建議使用抗黴菌藥膏治療，並保持腳部乾燥，避免傳染給家人或擴散到指甲。"
+      },
+      {
+        "question": "香港腳藥膏擦多久才可以停？",
+        "answer": "依成分不同，Terbinafine 約 1～2 週，Clotrimazole、Miconazole 約 4 週。不癢不代表黴菌已經清除，症狀消失後仍要依產品說明再擦一段時間。"
+      },
+      {
+        "question": "只擦最癢的地方可以嗎？",
+        "answer": "不夠。要連病灶周圍 1～2 公分看似正常的皮膚一起擦，趾縫也要擦到。"
+      },
+      {
+        "question": "糖尿病患者可以自己買香港腳藥膏擦嗎？",
+        "answer": "糖尿病患者腳部傷口容易惡化，出現香港腳建議先看醫師，不要只自行擦藥。"
+      }
+    ],
+    "altText": "香港腳藥膏使用圖卡：適用 OTC 藥膏的症狀、各成分塗擦時間、預防復發與就醫情況",
+    "references": [
+      {
+        "title": "NHS：Athlete's foot（香港腳）",
+        "url": "https://www.nhs.uk/conditions/athletes-foot/"
+      },
+      {
+        "title": "NHS Highland：Fungal nail and skin infections（抗黴菌用藥指引）",
+        "url": "https://www.rightdecisions.scot.nhs.uk/tam-treatments-and-medicines-nhs-highland/adult-therapeutic-guidelines/antimicrobial-guidance/skin-soft-tissue-antimicrobial/fungal-nail-and-skin-infections-antimicrobial/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "Terbinafine 乳膏每天怎麼擦？塗抹範圍與療程",
+        "url": "../cards/terbinafine_daily_cream.html"
+      },
+      {
+        "title": "香港腳一次療程護膜液怎麼用？",
+        "url": "../cards/terbinafine_once_treatment.html"
+      },
+      {
+        "title": "灰指甲怎麼治療？擦藥、口服藥與雷射比較",
+        "url": "../cards/fungal_nail.html"
+      },
+      {
+        "title": "糖尿病足：腳有傷口，不痛也要處理",
+        "url": "../cards/diabetic_foot.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "expandText": true
+  },
+  {
+    "cardId": "fungal_foot_nail",
+    "image": "img/terbinafine_daily_cream.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/terbinafine_daily_cream.html",
+    "title": "Terbinafine 乳膏怎麼擦？香港腳每天塗抹範圍與療程",
+    "metaDescription": "Terbinafine 乳膏要每天固定時間薄擦，範圍包含病灶、邊緣和周圍看似正常的皮膚，趾縫也要擦。不癢了也要完成療程，每 2～3 天拍照觀察。",
+    "keywords": "Terbinafine乳膏、療黴舒乳膏、香港腳藥膏怎麼擦、香港腳塗抹範圍、趾縫、香港腳療程、特比萘芬",
+    "summary": "Terbinafine 乳膏的重點是每天規律薄擦，而且病灶周圍看似正常的皮膚也要一起擦。止癢通常比外觀恢復快，即使比較不癢，也要依說明完成療程。",
+    "sections": [
+      {
+        "heading": "1. 每天固定時間擦",
+        "text": "先洗淨患部並完全擦乾，依產品說明每天使用。建議固定在洗澡擦乾後或睡前，比較不會忘記。"
+      },
+      {
+        "heading": "2. 塗抹範圍要比病灶大",
+        "text": "不要只擦最紅、最癢的中心。要擦到病灶本身、病灶邊緣和周圍看似正常的皮膚；趾縫型也要塗到趾縫、腳趾根部和相鄰皮膚。薄薄一層即可，不必厚擦。"
+      },
+      {
+        "heading": "3. 變好也要完成療程",
+        "text": "不要想到才擦，也不要只在發癢時擦。發癢先改善，不代表黴菌已完全清除。漏擦後不要一次補很多。"
+      },
+      {
+        "heading": "4. 每 2～3 天觀察一次",
+        "text": "用相同角度、相同光線拍照比較，觀察範圍、邊緣、發癢感、水泡與龜裂。通常先是發癢、刺痛減輕，再來紅、脫皮、水泡減少，接著龜裂修復，最後外觀才慢慢恢復正常。"
+      },
+      {
+        "heading": "這些情況要重新評估",
+        "text": "規律使用後病灶仍持續擴大、療程結束仍沒有明顯改善、反覆流膿或滲液腫熱疼痛，或病灶在指甲、頭皮、大片足底時，請找醫師評估。"
+      },
+      {
+        "heading": "台灣核准藥品",
+        "text": "台灣核准含 Terbinafine 的外用指示藥共 80 張有效許可證，劑型有乳膏、凝膠、噴劑與一次療程護膜液（食藥署許可證資料，2026-11-17 下載）。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Terbinafine 乳膏一天擦幾次？",
+        "answer": "依產品說明。以療黴舒乳膏仿單為例，足癬是 1 天 1 次，共 1 週；未滿 12 歲請勿使用。不同乳膏、凝膠或噴劑的次數與療程可能不同。"
+      },
+      {
+        "question": "忘記擦了，可以下次擦厚一點嗎？",
+        "answer": "不需要。漏擦後照原本的時間繼續薄擦即可，不要一次補很多。"
+      },
+      {
+        "question": "擦了幾天不癢了，可以停嗎？",
+        "answer": "不建議。止癢通常最先改善，外觀恢復比止癢慢，仍要依說明完成療程。"
+      }
+    ],
+    "altText": "Terbinafine 每日乳膏使用圖卡：固定時間擦、塗抹範圍大於病灶、完成療程、每 2～3 天觀察",
+    "references": [
+      {
+        "title": "NHS：Athlete's foot（香港腳）",
+        "url": "https://www.nhs.uk/conditions/athletes-foot/"
+      },
+      {
+        "title": "NHS Highland：Fungal nail and skin infections（抗黴菌用藥指引）",
+        "url": "https://www.rightdecisions.scot.nhs.uk/tam-treatments-and-medicines-nhs-highland/adult-therapeutic-guidelines/antimicrobial-guidance/skin-soft-tissue-antimicrobial/fungal-nail-and-skin-infections-antimicrobial/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "香港腳藥膏怎麼擦？要擦多久",
+        "url": "../cards/hk_foot.html"
+      },
+      {
+        "title": "香港腳藥膏擦 7 天就夠？Terbinafine 一週療程",
+        "url": "../cards/terbinafine_7_days.html"
+      },
+      {
+        "title": "藥膏一次擦多少？指尖單位 FTU",
+        "url": "../cards/oneFTU.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "expandText": true
+  },
+  {
+    "cardId": "fungal_foot_nail",
+    "image": "img/terbinafine_once_treatment.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/terbinafine_once_treatment.html",
+    "title": "香港腳一次療程護膜液怎麼用？擦一次就好的步驟與 24 小時注意事項",
+    "metaDescription": "Terbinafine 一次療程護膜液要兩隻腳完整塗一次：趾縫、腳趾周圍、腳底到兩側，等 1～2 分鐘成膜，24 小時內不洗腳、不搓掉，不必每天補擦。",
+    "keywords": "一次療程護膜液、療黴舒一次療程、Lamisil Once、香港腳擦一次、香港腳護膜液、Terbinafine、足癬",
+    "summary": "一次療程護膜液是塗一次就完成療程的劑型，重點是整隻腳完整覆蓋、等藥膜形成，並在 24 小時內不要洗掉。它只用於足癬（香港腳）。",
+    "sections": [
+      {
+        "heading": "1. 先洗淨、擦乾",
+        "text": "洗腳後特別把趾縫擦乾。皮膚潮濕時不要急著塗。"
+      },
+      {
+        "heading": "2. 兩隻腳都要完整塗",
+        "text": "不要只擦最紅、最癢的地方。塗抹範圍依序是趾縫、腳趾周圍、腳底、足部兩側。即使只有一腳有症狀，也建議兩腳都塗。"
+      },
+      {
+        "heading": "3. 薄薄塗一次，等它成膜",
+        "text": "薄薄塗開即可，不要厚厚一層。等約 1～2 分鐘自然乾燥形成透明藥膜。這是一次療程，不要每天補擦。"
+      },
+      {
+        "heading": "4. 24 小時內不要洗掉",
+        "text": "不要洗腳、泡腳，不要刻意搓掉藥膜，也不要再加擦其他產品。"
+      },
+      {
+        "heading": "病灶怎麼觀察？",
+        "text": "先是發癢、灼熱感減輕，再來紅、脫皮、水泡慢慢減少，之後龜裂逐漸修復、外觀慢慢恢復。不要期待隔天立刻完全好。"
+      },
+      {
+        "heading": "什麼時候要問醫師或藥師？",
+        "text": "症狀擴大或更紅更痛、出現流膿或明顯腫熱、刺激感很強或越擦越嚴重，或一段時間後仍完全沒改善。一次療程護膜液只適用於足癬，不要擦在指甲、眼睛、口腔或傷口內。"
+      },
+      {
+        "heading": "台灣核准藥品",
+        "text": "台灣核准的 Terbinafine 一次療程護膜液有：療黴舒 一次療程護膜液、足濕癬、黴癒、療黴足、黴足淨、黴好、樂療黴等 7 張許可證（食藥署許可證資料，2026-11-17 下載）。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "一次療程護膜液真的只要擦一次嗎？",
+        "answer": "是。塗一次後讓藥膜持續作用，不需要每天補擦。改善需要時間，不會隔天就完全好。"
+      },
+      {
+        "question": "塗完多久可以洗腳？",
+        "answer": "24 小時內不要洗腳、泡腳，也不要搓掉藥膜。"
+      },
+      {
+        "question": "只有一隻腳癢，另一隻也要擦嗎？",
+        "answer": "建議兩腳都塗，而且要從趾縫、腳趾周圍、腳底塗到足部兩側。"
+      },
+      {
+        "question": "可以拿來擦灰指甲嗎？",
+        "answer": "不行。一次療程護膜液只適用於足癬，不要擦在指甲、眼睛、口腔或傷口內。灰指甲請看灰指甲的治療方式。"
+      }
+    ],
+    "altText": "Terbinafine 一次療程護膜液使用圖卡：洗淨擦乾、兩腳完整塗、等 1～2 分鐘成膜、24 小時內不洗掉",
+    "references": [
+      {
+        "title": "NHS：Athlete's foot（香港腳）",
+        "url": "https://www.nhs.uk/conditions/athletes-foot/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "香港腳藥膏怎麼擦？要擦多久",
+        "url": "../cards/hk_foot.html"
+      },
+      {
+        "title": "Terbinafine 乳膏每天怎麼擦？",
+        "url": "../cards/terbinafine_daily_cream.html"
+      },
+      {
+        "title": "灰指甲怎麼治療？",
+        "url": "../cards/fungal_nail.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "expandText": true
+  },
+  {
+    "cardId": "fungal_foot_nail",
+    "image": "img/fungal_nail.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/fungal_nail.html",
+    "title": "灰指甲怎麼治療？擦藥、口服藥、合併治療與雷射比較",
+    "metaDescription": "灰指甲依範圍與嚴重度選擇治療：輕症可擦外用藥，多片或已到甲根常需口服藥，也可合併治療或雷射輔助。新指甲長出要數個月，需耐心治療。",
+    "keywords": "灰指甲怎麼治療、灰指甲擦藥、灰指甲口服藥、灰指甲雷射、甲癬、Amorolfine、Terbinafine、Itraconazole、灰指甲會好嗎",
+    "summary": "灰指甲的治療方式要看感染範圍與嚴重程度。外用藥適合輕症，口服藥是中重度的主要治療，也可合併使用；不論哪一種，都要等健康的新指甲長出來，需要耐心。",
+    "sections": [
+      {
+        "heading": "外用藥：輕症適用",
+        "text": "適合只有 1～2 片指甲、感染範圍小於一半、還沒侵犯甲根，或不想吃藥的人。常見成分如 Amorolfine。手指甲約需 6 個月、腳趾甲約 9～12 個月；優點是不需吃藥，缺點是療程長、成功率較低。"
+      },
+      {
+        "heading": "口服藥：中重度的主要治療",
+        "text": "適合多片指甲感染、指甲變厚變形，或感染已到甲根的人，由醫師開立。常見藥物：Terbinafine 手指甲約 6 週、腳趾甲約 12 週；Itraconazole 常用脈衝治療（吃 1 週、停 3 週，重複數個週期）。成功率較高、療程較短，但可能影響肝功能，也有藥物交互作用。"
+      },
+      {
+        "heading": "合併治療",
+        "text": "口服藥加外用藥，用於嚴重感染、復發的灰指甲，或想提高治療成功率的人，需要較長期配合治療。"
+      },
+      {
+        "heading": "雷射治療：輔助或不適合吃藥者",
+        "text": "適合不想吃藥、不能吃口服藥或輕中度感染者。不需吃藥、治療時間短，但健保不給付、費用較高，效果因人而異。"
+      },
+      {
+        "heading": "治療灰指甲要注意",
+        "text": "吃口服藥可能需要定期抽血追蹤肝功能；用藥前務必告知醫師所有正在使用的藥物。指甲不會馬上變好：新指甲長出約需手指 4～6 個月、腳趾 9～18 個月。平時保持足部乾燥、定期修剪指甲、不共用指甲剪。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "灰指甲可以只擦藥嗎？",
+        "answer": "輕症可以，例如只有 1～2 片指甲、範圍小於一半、還沒到甲根。多片感染、指甲變厚變形，或已經侵犯甲根，外用藥效果有限，建議看醫師評估口服藥。"
+      },
+      {
+        "question": "灰指甲口服藥傷肝嗎？",
+        "answer": "口服抗黴菌藥可能影響肝功能，醫師可能安排治療前後抽血追蹤。也有藥物交互作用，請告知醫師所有正在使用的藥物。"
+      },
+      {
+        "question": "灰指甲要多久才會好？",
+        "answer": "要等健康新指甲長出來，手指甲約 4～6 個月，腳趾甲約 9～18 個月，不是擦到不黃就算好。"
+      },
+      {
+        "question": "指甲變黃變厚一定是灰指甲嗎？",
+        "answer": "不一定，乾癬、外傷等也可能讓指甲變色變厚。醫師可能取指甲檢體確認後再決定是否用口服藥。"
+      }
+    ],
+    "altText": "灰指甲治療方式比較圖卡：外用藥、口服藥、合併治療、雷射的適用對象與優缺點",
+    "references": [
+      {
+        "title": "NHS：Fungal nail infection（灰指甲）",
+        "url": "https://www.nhs.uk/conditions/fungal-nail-infection/"
+      },
+      {
+        "title": "NHS Forth Valley：Dermatophyte infection – nail（CKS 摘要）",
+        "url": "https://rightdecisions.scot.nhs.uk/antimicrobial-prescribing-nhs-forth-valley/primary-care-guidance/skin-infections/dermatophyte-infection-nail"
+      },
+      {
+        "title": "NHS Highland：Fungal nail and skin infections（抗黴菌用藥指引）",
+        "url": "https://www.rightdecisions.scot.nhs.uk/tam-treatments-and-medicines-nhs-highland/adult-therapeutic-guidelines/antimicrobial-guidance/skin-soft-tissue-antimicrobial/fungal-nail-and-skin-infections-antimicrobial/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "灰指甲油怎麼擦？Amorolfine 使用步驟",
+        "url": "../cards/amorolfine.html"
+      },
+      {
+        "title": "恢甲清怎麼用？",
+        "url": "../cards/excilor.html"
+      },
+      {
+        "title": "香港腳藥膏怎麼擦？",
+        "url": "../cards/hk_foot.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "expandText": true
+  },
+  {
+    "cardId": "fungal_foot_nail",
+    "image": "img/amorolfine.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/amorolfine.html",
+    "title": "灰指甲油怎麼擦？Amorolfine 使用步驟、每週次數與要擦多久",
+    "metaDescription": "Amorolfine 5% 指甲油適合輕度灰指甲：擦前先銼平、清潔擦乾，整片病甲塗滿後風乾約 3 分鐘，每週 1～2 次。手指約 6 個月、腳趾 9～12 個月以上。",
+    "keywords": "灰指甲油、Amorolfine、樂指利、Loceryl、灰指甲擦藥、抗甲癬油劑、灰指甲要擦多久、灰指甲銼指甲",
+    "summary": "Amorolfine 5% 是外用的指甲油劑，適合範圍小、還沒嚴重變厚的灰指甲。它不是擦到不黃就停，而是要持續到健康的新指甲長出來。",
+    "sections": [
+      {
+        "heading": "適合哪些人？",
+        "text": "只有 1～2 片指甲感染、感染範圍小於一半、指甲沒有嚴重變厚變形，或不適合、不想吃口服藥的人。"
+      },
+      {
+        "heading": "使用步驟",
+        "text": "1. 塗藥前把患部指甲（尤其指甲表面）儘可能銼平，讓藥液更容易滲透。2. 洗淨指甲，保持完全乾燥。3. 塗滿整個病甲，包括指甲表面、邊緣和前端縫隙，自然風乾約 3 分鐘。4. 每週 1～2 次，請依醫師或藥師指示持續使用。"
+      },
+      {
+        "heading": "要擦多久？",
+        "text": "手指甲約 6 個月，腳趾甲約 9～12 個月以上。新指甲長出來才算成功。"
+      },
+      {
+        "heading": "最常失敗的原因",
+        "text": "覺得沒效果就停藥、指甲變漂亮就停藥、忘記規律使用。"
+      },
+      {
+        "heading": "台灣核准藥品",
+        "text": "台灣核准的 Amorolfine 5% 抗甲癬油劑共 10 張有效許可證，其中 8 張為指示藥、2 張須醫師處方（食藥署許可證資料，2026-11-17 下載）。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "灰指甲油一週擦幾次？",
+        "answer": "Amorolfine 5% 指甲油一般每週 1～2 次，請依醫師或藥師指示。"
+      },
+      {
+        "question": "擦之前一定要銼指甲嗎？",
+        "answer": "建議先把較厚的地方輕輕銼平，讓藥液更容易滲透。銼指甲的工具不要和家人共用。"
+      },
+      {
+        "question": "指甲看起來不黃了，可以停嗎？",
+        "answer": "不建議。要持續到健康的新指甲長出來，手指甲約 6 個月、腳趾甲約 9～12 個月以上。"
+      },
+      {
+        "question": "擦了很久都沒改善怎麼辦？",
+        "answer": "請回診評估。範圍變大、指甲變厚或多片感染時，可能需要口服藥或合併治療。"
+      }
+    ],
+    "altText": "Amorolfine 5% 灰指甲油使用圖卡：適用對象、4 個使用步驟、手指與腳趾療程、常見失敗原因",
+    "references": [
+      {
+        "title": "NHS：Fungal nail infection（灰指甲）",
+        "url": "https://www.nhs.uk/conditions/fungal-nail-infection/"
+      },
+      {
+        "title": "NHS Forth Valley：Dermatophyte infection – nail（CKS 摘要）",
+        "url": "https://rightdecisions.scot.nhs.uk/antimicrobial-prescribing-nhs-forth-valley/primary-care-guidance/skin-infections/dermatophyte-infection-nail"
+      },
+      {
+        "title": "Guy's and St Thomas' NHS：Fungal nail infections",
+        "url": "https://guysandstthomas.nhs.uk/health-information/fungal-nail-infections"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "灰指甲怎麼治療？擦藥、口服藥與雷射比較",
+        "url": "../cards/fungal_nail.html"
+      },
+      {
+        "title": "恢甲清怎麼用？",
+        "url": "../cards/excilor.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "expandText": true
+  },
+  {
+    "cardId": "fungal_foot_nail",
+    "image": "img/excilor.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/excilor.html",
+    "title": "恢甲清怎麼用？灰指甲護理筆每天 2 次的擦法與注意事項",
+    "metaDescription": "恢甲清每天早晚各擦 1 次：清潔擦乾後塗滿整片病甲、前緣與兩側，約 1～2 分鐘乾燥。至少持續 3 個月以上；指甲很厚或多片感染應就醫。",
+    "keywords": "恢甲清、Excilor、恢甲清怎麼用、灰指甲護理、灰指甲筆、灰指甲醫療器材、灰指甲日常照護",
+    "summary": "恢甲清是灰指甲的日常照護產品（屬醫療器材，不是藥品），每天早晚各使用 1 次。要持續使用到健康新指甲長出來；指甲很厚、範圍大或多片感染時，應就醫評估。",
+    "sections": [
+      {
+        "heading": "作用原理",
+        "text": "產品說明其成分可滲透甲板、降低指甲酸鹼值，創造不利黴菌生長的環境，再等待健康的新指甲慢慢取代受感染的指甲。"
+      },
+      {
+        "heading": "使用方式：每天 2 次",
+        "text": "1. 洗淨患部並擦乾，保持指甲乾燥。2. 塗滿整片病甲，包括指甲表面、前緣（自由緣）及兩側。3. 約 1～2 分鐘即可乾燥，之後可穿襪或穿鞋。4. 每天早、晚各一次，持續不中斷。"
+      },
+      {
+        "heading": "需要多久？",
+        "text": "至少持續 3 個月以上。手指甲約 4～6 個月，腳趾甲約 6～12 個月。指甲生長速度慢，需要耐心持續使用。"
+      },
+      {
+        "heading": "小提醒",
+        "text": "產品標示不需銼甲。保持足部乾燥、勤換襪，避免共用指甲剪、毛巾及鞋襪。"
+      },
+      {
+        "heading": "什麼時候要就醫？",
+        "text": "指甲很厚、感染範圍大或多片指甲感染時，建議就醫評估，以獲得適合的治療。實際治療請依醫師、藥師建議。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "恢甲清是藥嗎？",
+        "answer": "不是。恢甲清屬於醫療器材，作為灰指甲的日常照護使用；感染範圍大或多片指甲時，請就醫評估是否需要藥物治療。"
+      },
+      {
+        "question": "恢甲清一天擦幾次？",
+        "answer": "每天 2 次，早上一次、晚上一次。"
+      },
+      {
+        "question": "恢甲清要擦多久？",
+        "answer": "至少 3 個月以上；手指甲約 4～6 個月、腳趾甲約 6～12 個月，要等健康新指甲長出來。"
+      },
+      {
+        "question": "恢甲清和灰指甲油（Amorolfine）有什麼不同？",
+        "answer": "恢甲清是醫療器材、每天使用 2 次；Amorolfine 是抗黴菌藥品，每週 1～2 次。選擇哪一種，可依感染範圍與醫師、藥師建議。"
+      }
+    ],
+    "altText": "恢甲清使用圖卡：作用原理、每天早晚各 1 次的 4 個步驟、療程時間與就醫提醒",
+    "references": [
+      {
+        "title": "NHS：Fungal nail infection（灰指甲）",
+        "url": "https://www.nhs.uk/conditions/fungal-nail-infection/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "灰指甲油怎麼擦？Amorolfine 使用步驟",
+        "url": "../cards/amorolfine.html"
+      },
+      {
+        "title": "灰指甲怎麼治療？",
+        "url": "../cards/fungal_nail.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "expandText": true
+  },
+  {
+    "cardId": "fungal_foot_nail",
+    "image": "img/terbinafine_7_days.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/terbinafine_7_days.html",
+    "title": "香港腳藥膏擦 7 天就夠？Terbinafine 一週療程與停藥後的變化",
+    "metaDescription": "Terbinafine 會留在角質層持續作用，所以香港腳只要擦 7 天。停藥後藥物仍在作用，皮膚還需時間修復；沒改善或反覆發作請就醫。",
+    "keywords": "Terbinafine七天、香港腳擦7天、療黴舒乳膏、香港腳一週療程、Terbinafine停藥、香港腳藥膏多久見效",
+    "summary": "Terbinafine 可以停留在皮膚角質層，停止擦藥後仍持續作用，所以香港腳的療程比其他藥膏短。不過黴菌被消滅後，皮膚還要時間修復，外觀不會立刻恢復。",
+    "sections": [
+      {
+        "heading": "1. 藥物進入皮膚",
+        "text": "抗黴菌藥進入角質層，開始對抗黴菌。"
+      },
+      {
+        "heading": "2. 黴菌逐漸被消滅",
+        "text": "藥物持續對抗黴菌，感染慢慢受到控制。"
+      },
+      {
+        "heading": "3. 藥物持續作用",
+        "text": "部分藥物可停留在角質層中持續發揮效果，即使停止擦藥，藥物仍在皮膚裡作用。"
+      },
+      {
+        "heading": "4. 皮膚慢慢修復",
+        "text": "黴菌消失後，皮膚需要時間修復，才會恢復健康狀態。所以療程短，但改善需要時間。"
+      },
+      {
+        "heading": "提醒",
+        "text": "請依醫師或藥師指示完成療程。症狀沒有改善或反覆發作，建議就醫檢查。"
+      },
+      {
+        "heading": "台灣核准藥品",
+        "text": "台灣核准含 Terbinafine 的外用指示藥共 80 張有效許可證，劑型有乳膏、凝膠、噴劑與一次療程護膜液（食藥署許可證資料，2026-11-17 下載）。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "為什麼 Terbinafine 擦 7 天就夠，其他藥膏要擦比較久？",
+        "answer": "Terbinafine 是殺黴菌型的藥物，會停留在角質層持續作用，所以療程較短；Clotrimazole、Miconazole 等通常需要擦較久。"
+      },
+      {
+        "question": "擦完 7 天還有脫皮，要繼續擦嗎？",
+        "answer": "停藥後藥物仍在皮膚裡作用，皮膚修復需要時間，外觀恢復通常比止癢慢。依產品說明完成療程即可；一段時間後仍沒改善或反覆發作，請就醫。"
+      },
+      {
+        "question": "小孩可以用 Terbinafine 乳膏嗎？",
+        "answer": "以療黴舒乳膏仿單為例，未滿 12 歲請勿使用。兒童的香港腳請先諮詢醫師或藥師。"
+      }
+    ],
+    "altText": "Terbinafine 七天療程原理圖卡：藥物進入角質層、持續作用、黴菌被消滅、皮膚慢慢修復",
+    "references": [
+      {
+        "title": "NHS Highland：Fungal nail and skin infections（抗黴菌用藥指引）",
+        "url": "https://www.rightdecisions.scot.nhs.uk/tam-treatments-and-medicines-nhs-highland/adult-therapeutic-guidelines/antimicrobial-guidance/skin-soft-tissue-antimicrobial/fungal-nail-and-skin-infections-antimicrobial/"
+      },
+      {
+        "title": "NHS：Athlete's foot（香港腳）",
+        "url": "https://www.nhs.uk/conditions/athletes-foot/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "Terbinafine 乳膏每天怎麼擦？",
+        "url": "../cards/terbinafine_daily_cream.html"
+      },
+      {
+        "title": "香港腳藥膏怎麼擦？要擦多久",
+        "url": "../cards/hk_foot.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "expandText": true
+  },
+  {
+    "cardId": "hemorr_sitbath",
+    "image": "img/hemorr_sitbath_1.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/hemorr_sitbath_1.html",
+    "title": "痔瘡坐浴怎麼做？4 步驟：坐浴盆、水溫、時間與擦乾",
+    "metaDescription": "痔瘡溫水坐浴 4 步驟：把坐浴盆放在馬桶上，加入約 38～40°C 溫水，坐 10～15 分鐘，起身後輕輕按壓印乾，保持乾淨乾燥。",
+    "keywords": "痔瘡坐浴、坐浴怎麼做、坐浴盆、溫水坐浴、坐浴水溫、痔瘡居家照護、肛門腫痛",
+    "summary": "溫水坐浴可以幫助舒緩痔瘡的不適並保持清潔。在家只要準備可放在馬桶上的坐浴盆，用不燙的溫水坐 10～15 分鐘，再輕輕印乾即可。",
+    "sections": [
+      {
+        "heading": "1. 準備工具",
+        "text": "準備專用坐浴盆，可直接放在馬桶上使用。"
+      },
+      {
+        "heading": "2. 加入溫水",
+        "text": "加入約 38～40°C 的溫水，不要太燙。"
+      },
+      {
+        "heading": "3. 舒服地坐下",
+        "text": "坐 10～15 分鐘，放鬆心情。"
+      },
+      {
+        "heading": "4. 溫和擦乾",
+        "text": "起身後用毛巾輕輕按壓印乾，不要用力擦，保持乾淨乾燥。"
+      },
+      {
+        "heading": "坐浴的好處",
+        "text": "舒緩不適、促進循環、保持清潔。坐浴是輔助的居家照護；多喝水、多吃膳食纖維、避免便祕與如廁時過度用力，同樣重要。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "痔瘡坐浴水溫多少？",
+        "answer": "約 38～40°C 的溫水，以不燙手為準，不要太燙。"
+      },
+      {
+        "question": "坐浴一次坐多久？",
+        "answer": "每次約 10～15 分鐘。"
+      },
+      {
+        "question": "沒有坐浴盆可以怎麼做？",
+        "answer": "可以在浴缸放少量溫水坐浴，或用溫水沖洗肛門周圍。用浴缸前先把浴缸洗乾淨。"
+      },
+      {
+        "question": "坐浴可以治好痔瘡嗎？",
+        "answer": "坐浴主要是舒緩不適與清潔，不能讓痔瘡消失。改善便祕、避免久坐和如廁用力才是根本；出血、劇痛或脫出推不回去，請就醫。"
+      }
+    ],
+    "altText": "痔瘡坐浴教學圖卡：準備坐浴盆、加入 38～40°C 溫水、坐 10～15 分鐘、輕輕按壓擦乾",
+    "references": [
+      {
+        "title": "Alberta Health：Hemorrhoids: Care Instructions",
+        "url": "https://myhealth.alberta.ca/Health/aftercareinformation/pages/conditions.aspx?hwid=uf7564"
+      },
+      {
+        "title": "AAFP：Management of Hemorrhoids – Guidelines From the ASCRS（2025）",
+        "url": "https://www.aafp.org/pubs/afp/issues/2025/1200/practice-guidelines-hemorrhoids.html"
+      },
+      {
+        "title": "AGA 臨床實務更新：痔瘡的診斷與治療（2026 新聞稿）",
+        "url": "https://www.eurekalert.org/news-releases/1125855"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "痔瘡溫水坐浴一天幾次？水溫、時間與禁忌",
+        "url": "../cards/hemorr_sitbath_2.html"
+      },
+      {
+        "title": "痔瘡軟膏注入管怎麼用？",
+        "url": "../cards/hem_oint_6.html"
+      },
+      {
+        "title": "便祕有哪些類型？",
+        "url": "../cards/constipation_types.html"
+      },
+      {
+        "title": "懷孕期間便秘可以用什麼？",
+        "url": "../cards/pregnancy_minor_constipation.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "expandText": true
+  },
+  {
+    "cardId": "hemorr_sitbath",
+    "image": "img/hemorr_sitbath_2.png",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/hemorr_sitbath_2.html",
+    "title": "痔瘡溫水坐浴一天幾次？水溫、時間與不要加的東西",
+    "metaDescription": "痔瘡溫水坐浴每天 3～4 次、每次 10～15 分鐘，水溫 37～40°C 不燙手為準，洗後點乾再上藥。不要加刺激性藥水，也不要用力搓揉。",
+    "keywords": "坐浴一天幾次、痔瘡坐浴時間、坐浴水溫、坐浴可以加鹽嗎、坐浴加藥水、痔瘡消腫、坐浴後擦藥",
+    "summary": "溫水坐浴可以幫助放鬆括約肌、舒緩腫痛，並在排便後清潔。記住三要原則：要溫水、要定時、要按乾；不要加刺激性藥水，也不要用力搓揉。",
+    "sections": [
+      {
+        "heading": "為什麼要坐浴？",
+        "text": "幫助放鬆括約肌、舒緩腫痛，以及排便後清潔。"
+      },
+      {
+        "heading": "三要原則 1：要溫水",
+        "text": "水溫 37～40°C，以不燙手為準。"
+      },
+      {
+        "heading": "三要原則 2：要定時",
+        "text": "每天 3～4 次，每次 10～15 分鐘；排便後也可以坐浴清潔。"
+      },
+      {
+        "heading": "三要原則 3：要按乾",
+        "text": "洗後輕輕點乾、保持乾燥，再擦痔瘡藥。"
+      },
+      {
+        "heading": "禁忌提醒",
+        "text": "不要加刺激性藥水，也不要過度用力搓揉。"
+      },
+      {
+        "heading": "什麼時候要就醫？",
+        "text": "坐浴與擦藥幾天後仍很痛、出血量多或反覆出血、痔瘡脫出推不回去、發燒，或排便習慣明顯改變，請就醫檢查。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "痔瘡坐浴一天要坐幾次？",
+        "answer": "每天 3～4 次，每次 10～15 分鐘；排便後也可以坐浴清潔。"
+      },
+      {
+        "question": "坐浴水裡可以加鹽或藥水嗎？",
+        "answer": "不要加刺激性藥水。一般用乾淨的溫水就可以。"
+      },
+      {
+        "question": "坐浴完可以馬上擦痔瘡藥嗎？",
+        "answer": "可以，先把肛門周圍輕輕點乾、保持乾燥，再上藥。"
+      },
+      {
+        "question": "痔瘡出血要看醫生嗎？",
+        "answer": "出血量多、反覆出血，或合併排便習慣改變、體重減輕時，請就醫檢查，排除其他腸道疾病。"
+      }
+    ],
+    "altText": "痔瘡溫水坐浴三要原則圖卡：37～40°C 溫水、每天 3～4 次每次 10～15 分鐘、洗後點乾再上藥，以及禁忌提醒",
+    "references": [
+      {
+        "title": "Alberta Health：Hemorrhoids: Care Instructions",
+        "url": "https://myhealth.alberta.ca/Health/aftercareinformation/pages/conditions.aspx?hwid=uf7564"
+      },
+      {
+        "title": "AAFP：Management of Hemorrhoids – Guidelines From the ASCRS（2025）",
+        "url": "https://www.aafp.org/pubs/afp/issues/2025/1200/practice-guidelines-hemorrhoids.html"
+      },
+      {
+        "title": "AGA 臨床實務更新：痔瘡的診斷與治療（2026 新聞稿）",
+        "url": "https://www.eurekalert.org/news-releases/1125855"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "痔瘡坐浴怎麼做？4 步驟",
+        "url": "../cards/hemorr_sitbath_1.html"
+      },
+      {
+        "title": "痔瘡軟膏注入管怎麼用？",
+        "url": "../cards/hem_oint_6.html"
+      },
+      {
+        "title": "便祕藥怎麼選？四大類瀉劑比較",
+        "url": "../cards/laxative_comparison.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "expandText": true
+  },
+  {
+    "cardId": "Prevent_Enterovirus",
+    "image": "img/Wash_hands_five_steps.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/Wash_hands_five_steps.html",
+    "title": "洗手 5 時機：預防腸病毒，什麼時候一定要洗手？",
+    "metaDescription": "預防腸病毒要落實洗手 5 時機：看病前後、擤鼻涕後、上廁所後、吃東西前、接觸幼兒前，用肥皂確實洗手 30 秒以上。酒精對腸病毒效果有限。",
+    "keywords": "洗手五時機、洗手時機、腸病毒洗手、肥皂洗手、濕搓沖捧擦、酒精可以殺腸病毒嗎、預防腸病毒",
+    "summary": "勤洗手是預防腸病毒最重要的方法。記住洗手 5 時機，並用肥皂或洗手乳確實洗手 30 秒以上；酒精對腸病毒的效果有限，不能取代濕洗手。",
+    "sections": [
+      {
+        "heading": "洗手 5 時機",
+        "text": "看病前後、擤鼻涕後、上廁所後、吃東西前、接觸幼兒前。"
+      },
+      {
+        "heading": "確實洗手 30 秒以上",
+        "text": "用肥皂或洗手乳，依「濕、搓、沖、捧、擦」步驟洗手，手心、手背、指縫、指尖和手腕都要搓到。"
+      },
+      {
+        "heading": "酒精可以取代洗手嗎？",
+        "text": "不行。疾管署提醒，酒精對腸病毒的毒殺效果有限，仍應以肥皂或洗手乳濕洗手。"
+      },
+      {
+        "heading": "大人也要洗手",
+        "text": "大人感染腸病毒常沒有明顯症狀，外出返家先更衣、洗手，再摟抱或餵食嬰幼兒。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "用酒精乾洗手可以預防腸病毒嗎？",
+        "answer": "效果有限。腸病毒對酒精的抵抗力較強，應該用肥皂或洗手乳濕洗手。"
+      },
+      {
+        "question": "洗手要洗多久？",
+        "answer": "圖卡建議確實洗手 30 秒以上，依「濕、搓、沖、捧、擦」步驟洗。"
+      },
+      {
+        "question": "小孩痊癒了還要注意洗手嗎？",
+        "answer": "要。腸病毒痊癒後仍可能隨糞便排出病毒好幾週，如廁後與換尿布後都要確實洗手。"
+      }
+    ],
+    "altText": "勤洗手圖卡：看病前後、擤鼻涕後、上廁所後、吃東西前、接觸幼兒前，確實洗手 30 秒以上",
+    "references": [
+      {
+        "title": "衛福部疾管署新聞稿：腸病毒預防、漂白水消毒與生病不上課",
+        "url": "https://mohw.gov.tw/cp-16-86282-1.html"
+      },
+      {
+        "title": "衛福部疾管署新聞稿：大人返家先更衣、正確洗手",
+        "url": "https://mohw.gov.tw/cp-16-78854-1.html"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "預防腸病毒怎麼做？漂白水消毒與重症前兆",
+        "url": "../cards/Prevent_Enterovirus.html"
+      },
+      {
+        "title": "腸病毒疫苗要打嗎？",
+        "url": "../cards/EnteroVirus_vaccine.html"
+      },
+      {
+        "title": "兒童餵藥 6 大實用關鍵",
+        "url": "../cards/child_medicine_feeding_02.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "expandText": true
+  },
+  {
+    "cardId": "Prevent_Enterovirus",
+    "image": "img/Prevent_Enterovirus.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/Prevent_Enterovirus.html",
+    "title": "預防腸病毒怎麼做？洗手、漂白水消毒與重症前兆",
+    "metaDescription": "預防腸病毒：勤洗手、用 500 ppm 漂白水（10 公升水加 100 毫升漂白水）消毒、返家先更衣。孩子出現嗜睡、肌抽躍、持續嘔吐、呼吸急促，要立刻到大醫院。",
+    "keywords": "預防腸病毒、腸病毒消毒、漂白水怎麼泡、500ppm漂白水、腸病毒重症前兆、肌抽躍、腸病毒要請假幾天、腸病毒居家照顧",
+    "summary": "腸病毒傳染力強，預防重點是勤洗手、用漂白水消毒常接觸物品、大人返家先更衣洗手。孩子生病時要在家休息，並留意重症前兆，一出現就立刻到大醫院。",
+    "sections": [
+      {
+        "heading": "1. 勤洗手",
+        "text": "看病前後、擤鼻涕後、上廁所後、吃東西前、接觸幼兒前，確實洗手 30 秒以上。"
+      },
+      {
+        "heading": "2. 消毒：用漂白水，不是酒精",
+        "text": "使用濃度 500 ppm 的漂白水（10 公升清水加 100 毫升市售家用漂白水）消毒常接觸的物品和玩具。酒精對腸病毒消毒效果有限。處理病童口鼻分泌物、嘔吐物或排泄物污染的物品，疾管署建議用 1,000 ppm（1 公升清水加 20 毫升漂白水）。調配時戴防水手套、口罩，並保持通風。"
+      },
+      {
+        "heading": "3. 返家衛生",
+        "text": "成人工作或外出返家，務必更衣、洗手後再接觸幼兒。"
+      },
+      {
+        "heading": "4. 環境衛生",
+        "text": "保持室內通風，流行期少去擁擠的公共場所。"
+      },
+      {
+        "heading": "5. 接種疫苗",
+        "text": "可諮詢醫師接種腸病毒 71 型疫苗，適用對象為滿 2 個月至未滿 6 歲的兒童。"
+      },
+      {
+        "heading": "生病時：居家隔離",
+        "text": "罹病學童應請假在家休息，避免交叉感染；通常建議至少請假一週。"
+      },
+      {
+        "heading": "觀察重症前兆",
+        "text": "持續發燒、嗜睡、意識不清、活力不佳、手腳無力、肌抽躍（無故驚嚇或突然間全身肌肉收縮）、呼吸急促、持續嘔吐。出現以上症狀，請立刻到大醫院就醫。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "酒精可以消毒腸病毒嗎？",
+        "answer": "效果有限。環境消毒建議用 500 ppm 漂白水：10 公升清水加 100 毫升市售家用漂白水。"
+      },
+      {
+        "question": "漂白水怎麼泡？",
+        "answer": "一般環境：10 公升清水加 100 毫升漂白水（500 ppm）。被嘔吐物、排泄物污染：1 公升清水加 20 毫升漂白水（1,000 ppm）。調配時戴手套、口罩並保持通風。"
+      },
+      {
+        "question": "腸病毒要請假幾天？",
+        "answer": "發病後一週內傳染力最強，通常建議至少請假一週，在家休息避免傳染給其他孩子。"
+      },
+      {
+        "question": "什麼是肌抽躍？",
+        "answer": "孩子無故驚嚇或突然全身肌肉收縮，尤其在睡覺時。這是腸病毒重症前兆之一，出現時要立刻到大醫院。"
+      }
+    ],
+    "altText": "預防腸病毒圖卡：勤洗手、500 ppm 漂白水消毒、返家衛生、環境通風、接種疫苗，以及居家隔離與重症前兆",
+    "references": [
+      {
+        "title": "衛福部疾管署新聞稿：腸病毒預防、漂白水消毒與生病不上課",
+        "url": "https://mohw.gov.tw/cp-16-86282-1.html"
+      },
+      {
+        "title": "衛福部疾管署新聞稿：腸病毒重症前兆病徵",
+        "url": "https://mohw.gov.tw/cp-16-79147-1.html"
+      },
+      {
+        "title": "衛福部疾管署新聞稿：大人返家先更衣、正確洗手",
+        "url": "https://mohw.gov.tw/cp-16-78854-1.html"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "洗手 5 時機",
+        "url": "../cards/Wash_hands_five_steps.html"
+      },
+      {
+        "title": "腸病毒疫苗要打嗎？71 型疫苗接種",
+        "url": "../cards/EnteroVirus_vaccine.html"
+      },
+      {
+        "title": "兒童腹瀉何時就醫？",
+        "url": "../cards/diarrhea_care_4.html"
+      },
+      {
+        "title": "舒抑痛口服懸液：兒童退燒劑量",
+        "url": "../cards/idofen_suspension.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "expandText": true
+  },
+  {
+    "cardId": "Prevent_Enterovirus",
+    "image": "img/EnteroVirus_vaccine.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/EnteroVirus_vaccine.html",
+    "title": "腸病毒疫苗要打嗎？71 型疫苗接種年齡、劑數與兩種廠牌差異",
+    "metaDescription": "腸病毒 71 型疫苗適用滿 2 個月至未滿 6 歲兒童。恩穩健（高端）2 劑間隔 56 天，未滿 2 歲開打需 1 年後追加；安拓伏（安特羅）2 劑間隔 28 天。",
+    "keywords": "腸病毒疫苗、腸病毒71型疫苗、腸病毒疫苗要打嗎、恩穩健、Envacgen、高端腸病毒疫苗、安拓伏、EnVAX-A71、安特羅、腸病毒疫苗幾劑、腸病毒疫苗追加",
+    "summary": "腸病毒 71 型是最容易造成重症的型別之一，目前台灣有兩種核准疫苗，適用滿 2 個月至未滿 6 歲的兒童。兩種廠牌的劑數與間隔不同，建議用同一廠牌打完。",
+    "sections": [
+      {
+        "heading": "誰需要打？",
+        "text": "滿 2 個月至未滿 6 歲的兒童。無論以前有沒有得過腸病毒，都可以和醫師討論接種；6 歲以下最容易發生腦炎等重症。"
+      },
+      {
+        "heading": "恩穩健（高端，Envacgen）",
+        "text": "基礎劑打 2 劑，間隔至少 56 天。第一劑時未滿 2 歲的寶寶，建議第一劑後滿一年再打第 3 劑追加；滿 2 歲才開始打，打 2 劑即可。"
+      },
+      {
+        "heading": "安拓伏（安特羅，EnVAX-A71）",
+        "text": "基礎劑打 2 劑，間隔至少 28 天；目前沒有追加劑建議。"
+      },
+      {
+        "heading": "建議同一廠牌打完",
+        "text": "目前沒有兩種腸病毒 71 型疫苗交替使用的資料，第一劑打哪一廠牌，後續就用同一廠牌。"
+      },
+      {
+        "heading": "打針前要注意",
+        "text": "寶寶正在發燒或有急性中重度疾病，先等病情穩定、康復後再打。對疫苗成分曾發生嚴重過敏者不可施打。"
+      },
+      {
+        "heading": "打針後",
+        "text": "可以和常規的嬰幼兒疫苗同時、不同部位接種。疫苗只預防 71 型，不能預防其他型別的腸病毒，平時仍要勤洗手。"
+      },
+      {
+        "heading": "台灣核准藥品",
+        "text": "台灣核准的腸病毒 71 型疫苗：恩穩健腸病毒71型疫苗（Envacgen，衛部菌疫製字第000152號）、安拓伏腸病毒71型疫苗（EnVAX-A71，衛部菌疫製字第000149號），適應症皆為 2 個月以上至未滿 6 歲嬰幼兒（食藥署許可證資料，2026-11-17 下載）。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "腸病毒疫苗要打幾劑？",
+        "answer": "恩穩健（高端）2 劑、間隔 56 天，第一劑時未滿 2 歲者 1 年後再追加 1 劑；安拓伏（安特羅）2 劑、間隔 28 天。"
+      },
+      {
+        "question": "打了腸病毒疫苗就不會得腸病毒嗎？",
+        "answer": "不是。疫苗只預防腸病毒 71 型，對克沙奇病毒等其他型別沒有交叉保護，仍要勤洗手、做好環境消毒。"
+      },
+      {
+        "question": "兩種腸病毒疫苗可以混打嗎？",
+        "answer": "目前沒有交替使用的資料，建議第一劑打哪一廠牌，後續就用同一廠牌完成。"
+      },
+      {
+        "question": "腸病毒疫苗可以和其他疫苗一起打嗎？",
+        "answer": "可以和常規嬰幼兒疫苗同一天、不同部位接種，詳細安排請和醫師討論。"
+      },
+      {
+        "question": "腸病毒疫苗是公費嗎？",
+        "answer": "目前多為自費接種，部分縣市曾有補助方案，請洽當地衛生局或醫療院所。"
+      }
+    ],
+    "altText": "腸病毒 A71 型疫苗圖卡：接種對象、兩種廠牌的劑數與間隔、追加劑、接種前暫緩與禁忌、接種後保護",
+    "references": [
+      {
+        "title": "恩穩健腸病毒71型疫苗（Envacgen）仿單",
+        "url": "https://reg.802.mnd.gov.tw/PhC/images/drug/IENV01/Guide1.pdf"
+      },
+      {
+        "title": "衛福部疾管署新聞稿：腸病毒重症前兆病徵",
+        "url": "https://mohw.gov.tw/cp-16-79147-1.html"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "預防腸病毒怎麼做？重症前兆",
+        "url": "../cards/Prevent_Enterovirus.html"
+      },
+      {
+        "title": "洗手 5 時機",
+        "url": "../cards/Wash_hands_five_steps.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "expandText": true
+  },
+  {
+    "cardId": "common_skin_conditions",
+    "image": "img/atopic_dermatitis_care.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_care.html",
+    "title": "異位性皮膚炎藥膏怎麼擦？類固醇與保濕劑的用法",
+    "metaDescription": "異位性皮膚炎發作時薄擦類固醇藥膏，減少紅、癢、發炎；平常每天擦保濕劑，沒發作也要擦。洗澡後 3 分鐘內保濕，避免太熱的水與過度清潔。",
+    "keywords": "異位性皮膚炎藥膏、異位性皮膚炎怎麼擦、濕疹擦什麼、類固醇藥膏、保濕劑、洗澡後保濕、異位性皮膚炎保養、濕疹",
+    "summary": "異位性皮膚炎的照護有兩個重點：發作時用類固醇藥膏控制紅、癢、發炎；平常每天擦保濕劑，即使沒發作也要擦，可以減少復發。",
+    "sections": [
+      {
+        "heading": "發作時：類固醇藥膏",
+        "text": "減少紅、癢、發炎，薄薄擦一層即可。皮膚恢復正常即可停藥，或依醫師指示的方式減量。"
+      },
+      {
+        "heading": "平常最重要：保濕劑",
+        "text": "保濕乳霜或乳液每天都要擦，沒發作也要擦，可以減少復發。"
+      },
+      {
+        "heading": "保濕黃金時機",
+        "text": "洗澡後 3 分鐘內立即保濕。"
+      },
+      {
+        "heading": "要避免的事",
+        "text": "太熱的水、一直抓癢、過度清潔。"
+      },
+      {
+        "heading": "重點提醒",
+        "text": "保濕是每天的功課；類固醇是發作時的幫手。擦藥 1～2 週沒有改善、皮膚滲液結痂或疑似感染時，請回診。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "類固醇藥膏擦多了會變薄嗎？",
+        "answer": "依醫師指示、薄擦在發炎處並在改善後停用或減量，可以降低副作用風險。臉部、皮膚皺摺處較薄，用藥前先確認醫師指示。"
+      },
+      {
+        "question": "異位性皮膚炎沒發作也要擦保濕嗎？",
+        "answer": "要。保濕劑是每天的功課，可以減少復發。"
+      },
+      {
+        "question": "類固醇和保濕劑要先擦哪個？",
+        "answer": "依醫師或藥師指示；常見做法是兩者間隔一段時間，避免互相稀釋或推開藥膏。"
+      },
+      {
+        "question": "洗澡要注意什麼？",
+        "answer": "避免太熱的水與過度清潔，洗完 3 分鐘內擦保濕劑。"
+      }
+    ],
+    "altText": "異位性皮膚炎藥膏使用圖卡：發作時薄擦類固醇、平常每天擦保濕劑、洗澡後 3 分鐘內保濕、避免熱水與抓癢",
+    "references": [
+      {
+        "title": "NHS：Atopic eczema（異位性皮膚炎）",
+        "url": "https://www.nhs.uk/conditions/atopic-eczema/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "富貴手需要擦藥嗎？類固醇用法與就醫時機",
+        "url": "../cards/hand_eczema_treatment.html"
+      },
+      {
+        "title": "藥膏一次擦多少？指尖單位 FTU",
+        "url": "../cards/oneFTU.html"
+      },
+      {
+        "title": "臉部、眼皮與鼠蹊部可以擦藥膏嗎？",
+        "url": "../cards/thin_skin_part.html"
+      },
+      {
+        "title": "懷孕期間皮膚癢可以用什麼？",
+        "url": "../cards/pregnancy_minor_itch.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "expandText": true
+  },
+  {
+    "cardId": "common_skin_conditions",
+    "image": "img/wart.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/wart.html",
+    "title": "病毒疣怎麼辦？和雞眼、厚繭怎麼分，不要摳，常見治療方式",
+    "metaDescription": "病毒疣是 HPV 感染皮膚造成，有傳染性，表面粗粗、可能看到小黑點，常被誤認為雞眼或厚繭。不要摳、剪或挖除；可冷凍、水楊酸或疣貼布治療。",
+    "keywords": "病毒疣、疣怎麼辦、疣和雞眼差別、長疣、HPV、冷凍治療、水楊酸、疣貼布、腳底疣、小孩長疣",
+    "summary": "病毒疣是 HPV（人類乳突病毒）感染皮膚造成，具有傳染性，常長在手指、腳底、膝蓋，小朋友特別常見。它常被誤認為雞眼或厚繭，不確定時請諮詢藥師或就醫。",
+    "sections": [
+      {
+        "heading": "常見位置和外觀",
+        "text": "常見於手指、手背、腳底、膝蓋，小朋友的手腳特別常見。表面粗粗的、摸起來硬硬的，可能看到小黑點（血栓點），數量可能越來越多。"
+      },
+      {
+        "heading": "不要摳、剪或挖除",
+        "text": "不要用手摳、用指甲剪修剪、自己挖除，也不要和家人共用指甲剪，可能造成擴散、傷口感染或疤痕。"
+      },
+      {
+        "heading": "會自己好嗎？",
+        "text": "許多病毒疣會在數個月到 1～2 年內自行消退，兒童尤其常見。充足睡眠、均衡飲食、規律運動、減少壓力，是維持整體健康的好習慣。"
+      },
+      {
+        "heading": "常見治療方式（需耐心，通常要數週到數月）",
+        "text": "冷凍治療：以低溫冷凍疣體，使其壞死脫落。水楊酸藥品：藥液或藥膏塗抹，幫助軟化角質、去除疣體。疣貼布：含藥貼布持續作用，逐漸去除疣體。其他治療：如雷射、電燒、免疫治療等，依醫師評估。"
+      },
+      {
+        "heading": "水楊酸使用注意",
+        "text": "不要擦在臉上，也不要擦到周圍正常皮膚。糖尿病、血液循環不好或腳部感覺遲鈍的人，不要自行使用，請先看醫師。"
+      },
+      {
+        "heading": "貼心提醒",
+        "text": "病毒疣具有傳染性，避免赤腳走公共場所，保持患處乾燥清潔。疣長在臉部或生殖器、會出血或外觀改變、範圍很大或很痛時，請就醫。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "病毒疣和雞眼怎麼分？",
+        "answer": "病毒疣表面較粗糙，常可看到小黑點（血栓點），數量可能變多；雞眼多在受壓迫的地方，中間有硬核。不確定時請諮詢藥師或就醫，不要自己挖。"
+      },
+      {
+        "question": "病毒疣會傳染嗎？",
+        "answer": "會。避免赤腳走在泳池、浴室等公共場所，不共用指甲剪、毛巾和鞋子。"
+      },
+      {
+        "question": "病毒疣可以自己用藥局的藥處理嗎？",
+        "answer": "手腳的小範圍疣可以諮詢藥師使用水楊酸藥品或疣貼布，通常要持續數週到數月。臉部、生殖器的疣，以及糖尿病或血液循環不好的人，請就醫。"
+      },
+      {
+        "question": "病毒疣會自己好嗎？",
+        "answer": "許多疣會在數個月到 1～2 年內自行消退，兒童尤其常見；但若持續變多、很痛或影響生活，可以就醫治療。"
+      }
+    ],
+    "altText": "認識病毒疣圖卡：常見位置與外觀、不要摳剪挖除、良好生活習慣、冷凍水楊酸疣貼布等治療方式",
+    "references": [
+      {
+        "title": "NHS：Warts and verrucas（病毒疣）",
+        "url": "https://www.nhs.uk/conditions/warts-and-verrucas/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "藥膏一次擦多少？指尖單位 FTU",
+        "url": "../cards/oneFTU.html"
+      },
+      {
+        "title": "糖尿病足：腳有傷口，不痛也要處理",
+        "url": "../cards/diabetic_foot.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "expandText": true
+  },
+  {
+    "cardId": "common_skin_conditions",
+    "image": "img/bug_bite.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/bug_bite.html",
+    "title": "蚊蟲叮咬怎麼擦藥？冰敷、止癢藥膏與何時就醫",
+    "metaDescription": "蚊蟲叮咬後可冰敷 10～15 分鐘減少紅腫搔癢，清潔後薄擦止癢藥膏，不癢不紅就可停藥。紅腫擴大、流膿、發燒或呼吸困難、嘴唇腫脹要就醫。",
+    "keywords": "蚊蟲叮咬、蚊子咬擦什麼、小黑蚊咬、跳蚤咬、蚊子咬腫一大包、止癢藥膏、蚊蟲叮咬冰敷、蚊蟲叮咬就醫",
+    "summary": "蚊子、小黑蚊、跳蚤叮咬後的紅腫癢是過敏反應。剛被咬可以冰敷，擦藥只要少量、有症狀再擦、改善就停；避免抓癢最重要。",
+    "sections": [
+      {
+        "heading": "為什麼會癢？",
+        "text": "蚊子、小黑蚊、跳蚤等叮咬後，身體產生過敏反應，造成紅腫、搔癢、局部發熱。"
+      },
+      {
+        "heading": "剛被叮咬怎麼辦？",
+        "text": "可冰敷 10～15 分鐘，幫助減少紅腫與搔癢。不建議熱敷，可能讓癢感更明顯。"
+      },
+      {
+        "heading": "正確擦藥 4 步驟",
+        "text": "1. 先用清水清洗患處。2. 薄薄擦藥，少量即可。3. 避免抓癢，越抓越癢，也容易感染。4. 觀察變化，通常幾天內會逐漸改善。"
+      },
+      {
+        "heading": "不癢、不紅了，就可以停藥",
+        "text": "有症狀再擦藥，改善即可停用；不需要固定擦滿幾天，也不是擦越久越有效。"
+      },
+      {
+        "heading": "什麼情況要就醫？",
+        "text": "紅腫範圍越來越大、出現膿液或明顯疼痛、發燒。若出現呼吸困難、嘴唇或喉嚨腫脹，可能是嚴重過敏，請立即就醫。"
+      },
+      {
+        "heading": "小提醒",
+        "text": "大部分蚊蟲叮咬 1～2 週內會自然恢復。擦藥能減輕不適，避免搔抓更重要。做好防蚊措施：穿著長袖衣物、使用防蚊液。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "蚊子咬可以擦什麼藥？",
+        "answer": "可以諮詢藥師選擇止癢藥膏，例如含低效類固醇或止癢成分的產品，少量薄擦即可；癢到影響睡眠也可以詢問口服抗組織胺。"
+      },
+      {
+        "question": "蚊子咬要冰敷還是熱敷？",
+        "answer": "冰敷 10～15 分鐘，可以減少紅腫和搔癢；不建議熱敷。"
+      },
+      {
+        "question": "小黑蚊咬腫一大包正常嗎？",
+        "answer": "叮咬後的局部紅腫多半是過敏反應，通常幾天內改善；若紅腫越來越大、發熱疼痛或流膿，可能是感染，請就醫。"
+      },
+      {
+        "question": "蚊子咬的藥要擦幾天？",
+        "answer": "不需要固定擦滿幾天。有癢、有紅再擦，改善了就停。"
+      }
+    ],
+    "altText": "蚊蟲叮咬擦藥圖卡：為什麼會癢、剛被咬先冰敷、正確擦藥 4 步驟、有症狀再擦、就醫警訊",
+    "references": [
+      {
+        "title": "NHS：Insect bites and stings（蚊蟲叮咬）",
+        "url": "https://www.nhs.uk/conditions/insect-bites-and-stings/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "防蚊液怎麼選、怎麼噴？",
+        "url": "../cards/bugspray_1.html"
+      },
+      {
+        "title": "常見五種皮膚紅腫的原因",
+        "url": "../cards/common_skin_redness_causes.html"
+      },
+      {
+        "title": "哺乳期間皮膚癢，可以擦藥或吃藥嗎？",
+        "url": "../cards/breastfeeding_minor_itch.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "expandText": true
+  },
+  {
+    "cardId": "common_skin_conditions",
+    "image": "img/orabase.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/orabase.html",
+    "title": "嘴破擦口內膏怎麼擦？4 步驟與多久沒好要就醫",
+    "metaDescription": "嘴破擦口內膏 4 步驟：洗手、用棉棒吸乾口水、薄薄塗一層、30 分鐘內避免飲食。不要塗太厚、不要馬上漱口；超過 2 週沒好或反覆發作要就醫。",
+    "keywords": "嘴破擦什麼、口內膏怎麼擦、口腔潰瘍、嘴破怎麼好得快、嘴破多久會好、假牙磨破、口內膏",
+    "summary": "嘴破（口腔潰瘍）、假牙摩擦破皮或口腔黏膜發炎疼痛時，可以使用口內膏。正確塗抹加上良好生活習慣，能幫助修復；超過 2 週沒好或反覆發作，要就醫檢查。",
+    "sections": [
+      {
+        "heading": "什麼時候使用？",
+        "text": "嘴破（口腔潰瘍）、假牙摩擦造成破皮、口腔黏膜發炎疼痛。"
+      },
+      {
+        "heading": "正確使用 4 步驟",
+        "text": "1. 先洗手，保持手部清潔。2. 用棉棒或衛生紙輕輕吸乾患處的口水。3. 少量薄薄塗一層，不要來回搓揉。4. 30 分鐘內避免飲食，讓藥物停留較久，效果更好。"
+      },
+      {
+        "heading": "使用注意事項",
+        "text": "不要塗太厚、不要立刻喝水漱口、避免塗在正常黏膜上。"
+      },
+      {
+        "heading": "生活照護也很重要",
+        "text": "充足睡眠、多休息、適度放鬆減少壓力、補充水分與均衡飲食。嘴破常與疲勞、壓力大、免疫力下降有關；口內膏能幫助減輕不適，但生活作息調整同樣重要。"
+      },
+      {
+        "heading": "什麼情況要就醫？",
+        "text": "超過 2 週仍未癒合、反覆發作、潰瘍越來越大或非常疼痛、合併發燒或吞嚥困難。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "口內膏擦了要多久不能吃東西？",
+        "answer": "塗完後 30 分鐘內避免飲食，讓藥物停留較久。"
+      },
+      {
+        "question": "口內膏可以擦很厚嗎？",
+        "answer": "不需要。薄薄一層即可，塗太厚反而容易脫落，也不要塗在正常黏膜上。"
+      },
+      {
+        "question": "嘴破多久沒好要看醫生？",
+        "answer": "超過 2 週仍未癒合、反覆發作、越來越大或很痛，或合併發燒、吞嚥困難，請就醫。"
+      },
+      {
+        "question": "所有口內膏成分都一樣嗎？",
+        "answer": "不一樣。常見有含類固醇的口內膏（多須醫師處方），也有其他成分的產品；請依藥袋或產品說明使用，不確定時問藥師。"
+      }
+    ],
+    "altText": "口內膏正確使用圖卡：什麼時候用、4 個使用步驟、使用注意事項、生活照護與就醫情況",
+    "references": [
+      {
+        "title": "NHS：Mouth ulcers（嘴破）",
+        "url": "https://www.nhs.uk/conditions/mouth-ulcers/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "口內膏怎麼擦？正確使用步驟",
+        "url": "../cards/oral_patch_use_3.html"
+      },
+      {
+        "title": "口內貼片怎麼貼？",
+        "url": "../cards/oral_patch_use.html"
+      },
+      {
+        "title": "口腔清潔",
+        "url": "../cards/oral_hygiene_01.html"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "AI 整理（Claude），待藥師複核",
+    "sourceType": "manual",
+    "matchConfidence": "high",
+    "needsMedicalReview": true,
+    "expandText": true
   }
 ]

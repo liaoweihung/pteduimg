@@ -483,6 +483,77 @@
         "license": "衛部藥輸字第029054號",
         "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E9%83%A8%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC029054%E8%99%9F"
       }
+    ],
+    "img/hk_foot.webp": [
+      {
+        "name": "「瑞士」療黴舒 乳膏10毫克/公克",
+        "license": "衛署藥輸字第024470號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC024470%E8%99%9F"
+      }
+    ],
+    "img/terbinafine_daily_cream.webp": [
+      {
+        "name": "「瑞士」療黴舒 乳膏10毫克/公克",
+        "license": "衛署藥輸字第024470號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC024470%E8%99%9F"
+      }
+    ],
+    "img/terbinafine_once_treatment.webp": [
+      {
+        "name": "療黴舒 一次療程護膜液",
+        "license": "衛署藥輸字第024710號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC024710%E8%99%9F"
+      }
+    ],
+    "img/fungal_nail.webp": [
+      {
+        "name": "樂指利抗甲癬油劑５％",
+        "license": "衛署藥輸字第023226號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC023226%E8%99%9F"
+      }
+    ],
+    "img/amorolfine.webp": [
+      {
+        "name": "樂指利抗甲癬油劑５％",
+        "license": "衛署藥輸字第023226號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC023226%E8%99%9F"
+      }
+    ],
+    "img/terbinafine_7_days.webp": [
+      {
+        "name": "「瑞士」療黴舒 乳膏10毫克/公克",
+        "license": "衛署藥輸字第024470號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC024470%E8%99%9F"
+      }
+    ],
+    "img/sore_throat_otc_choice.webp": [
+      {
+        "name": "舒立效口含錠",
+        "license": "衛署藥輸字第022195號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC022195%E8%99%9F"
+      },
+      {
+        "name": "得伏寧消炎噴液劑1.5毫克/公撮",
+        "license": "衛署藥輸字第024244號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC024244%E8%99%9F"
+      },
+      {
+        "name": "必達定殺菌口腔噴液",
+        "license": "衛部藥輸字第026339號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E9%83%A8%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC026339%E8%99%9F"
+      }
+    ],
+    "img/EnteroVirus_vaccine.webp": [
+      {
+        "name": "恩穩健腸病毒71型疫苗（Envacgen）",
+        "license": "衛部菌疫製字第000152號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E9%83%A8%E8%8F%8C%E7%96%AB%E8%A3%BD%E5%AD%97%E7%AC%AC000152%E8%99%9F"
+      },
+      {
+        "name": "安拓伏腸病毒71型疫苗（EnVAX-A71）",
+        "license": "衛部菌疫製字第000149號",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E9%83%A8%E8%8F%8C%E7%96%AB%E8%A3%BD%E5%AD%97%E7%AC%AC000149%E8%99%9F"
+      }
     ]
   }
 }

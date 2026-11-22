@@ -419,13 +419,32 @@
       "腸病毒",
       "洗手",
       "預防腸病毒",
-      "A71型疫苗"
+      "A71型疫苗",
+      "腸病毒疫苗",
+      "腸病毒71型疫苗",
+      "恩穩健",
+      "安拓伏",
+      "Envacgen",
+      "EnVAX-A71",
+      "腸病毒重症前兆",
+      "漂白水消毒",
+      "500ppm",
+      "腸病毒症狀",
+      "手足口病",
+      "洗手五時機",
+      "腸病毒請假"
     ],
     "texts": [
-      "",
-      "預防腸病毒：洗手、消毒與生病時的處理",
-      ""
-    ]
+      "洗手 5 時機：預防腸病毒，什麼時候一定要洗手？",
+      "預防腸病毒怎麼做？洗手、漂白水消毒與重症前兆",
+      "腸病毒疫苗要打嗎？71 型疫苗接種年齡、劑數與兩種廠牌差異"
+    ],
+    "related_series": [
+      "child_medicine_feeding",
+      "ped_fever_reducer",
+      "diarrhea_care"
+    ],
+    "showFooter": true
   },
   "dry_eye": {
     "title": "乾眼症",
@@ -1902,18 +1921,33 @@
       "扁桃腺",
       "白色膿點",
       "抗生素",
-      "就醫警訊"
+      "就醫警訊",
+      "喉嚨痛吃什麼藥",
+      "喉嚨痛藥局",
+      "喉糖",
+      "舒立效",
+      "得伏寧",
+      "必達定",
+      "喉嚨痛多久會好",
+      "喉嚨痛看哪一科",
+      "鏈球菌"
     ],
     "texts": [
-      "喉嚨痛不一定是感冒",
-      "喉嚨痛怎麼選OTC產品",
-      "喉嚨痛出現這些情況建議就醫"
+      "喉嚨痛一定是感冒嗎？4 種常見原因：病毒、乾燥、鼻涕倒流、胃酸逆流",
+      "喉嚨痛吃什麼藥？含片、喉嚨噴劑、止痛藥、潤喉產品怎麼選",
+      "喉嚨痛多久要看醫生？7 種要儘快就醫的情況"
     ],
     "steps": [
       "img/sore_throat_causes.webp",
       "img/sore_throat_otc_choice.webp",
       "img/sore_throat_red_flags.webp"
-    ]
+    ],
+    "related_series": [
+      "throat_spray",
+      "pediatric_cold_syrup",
+      "Res3_ABCovid"
+    ],
+    "showFooter": true
   },
   "fungal_foot_nail": {
     "title": "香港腳與灰指甲",
@@ -1958,16 +1992,29 @@
       "病灶觀察",
       "水泡",
       "脫皮",
-      "搔癢"
+      "搔癢",
+      "香港腳藥膏推薦",
+      "香港腳擦多久",
+      "灰指甲怎麼治療",
+      "灰指甲擦藥",
+      "灰指甲口服藥",
+      "樂指利",
+      "Loceryl",
+      "Lamisil",
+      "療黴舒一次療程",
+      "Itraconazole",
+      "Clotrimazole",
+      "Miconazole",
+      "足癬怎麼擦"
     ],
     "texts": [
-      "香港腳藥膏怎麼擦?",
-      "Terbinafine每日乳膏使用方式",
-      "Terbinafine一次療程完整擦法",
-      "灰指甲的治療方式",
-      "Amorolfine使用方式",
-      "恢甲清如何使用",
-      "Terbinafine的七天療程"
+      "香港腳藥膏怎麼擦？要擦多久、擦多大範圍、何時看醫生",
+      "Terbinafine 乳膏怎麼擦？香港腳每天塗抹範圍與療程",
+      "香港腳一次療程護膜液怎麼用？擦一次就好的步驟與 24 小時注意事項",
+      "灰指甲怎麼治療？擦藥、口服藥、合併治療與雷射比較",
+      "灰指甲油怎麼擦？Amorolfine 使用步驟、每週次數與要擦多久",
+      "恢甲清怎麼用？灰指甲護理筆每天 2 次的擦法與注意事項",
+      "香港腳藥膏擦 7 天就夠？Terbinafine 一週療程與停藥後的變化"
     ],
     "steps": [
       "img/hk_foot.webp",
@@ -1977,7 +2024,13 @@
       "img/amorolfine.webp",
       "img/excilor.webp",
       "img/terbinafine_7_days.webp"
-    ]
+    ],
+    "related_series": [
+      "common_skin_redness_causes",
+      "diabetic_foot",
+      "onitment_general"
+    ],
+    "showFooter": true
   },
   "common_skin_conditions": {
     "title": "常見皮膚狀況",
@@ -2002,20 +2055,39 @@
       "止癢藥膏",
       "口內膏",
       "嘴破",
-      "口腔潰瘍"
+      "口腔潰瘍",
+      "異位性皮膚炎藥膏",
+      "異位性皮膚炎保濕",
+      "濕疹擦什麼",
+      "類固醇藥膏怎麼擦",
+      "病毒疣怎麼辦",
+      "疣和雞眼差別",
+      "水楊酸",
+      "冷凍治療",
+      "蚊蟲叮咬擦什麼",
+      "蚊子咬腫一大包",
+      "嘴破擦什麼",
+      "口腔潰瘍多久會好"
     ],
     "texts": [
-      "異位性皮膚炎藥膏怎麼用",
-      "認識病毒疣",
-      "蚊蟲叮咬怎麼擦藥?",
-      "口內膏正確使用方式"
+      "異位性皮膚炎藥膏怎麼擦？類固醇與保濕劑的用法",
+      "病毒疣怎麼辦？和雞眼、厚繭怎麼分，不要摳，常見治療方式",
+      "蚊蟲叮咬怎麼擦藥？冰敷、止癢藥膏與何時就醫",
+      "嘴破擦口內膏怎麼擦？4 步驟與多久沒好要就醫"
     ],
     "steps": [
       "img/atopic_dermatitis_care.webp",
       "img/wart.webp",
       "img/bug_bite.webp",
       "img/orabase.webp"
-    ]
+    ],
+    "related_series": [
+      "hand_eczema",
+      "onitment_general",
+      "bugspray",
+      "oral_patch_use"
+    ],
+    "showFooter": true
   },
   "insomnia_sleep_aids": {
     "title": "常見助眠藥物分類",
@@ -3131,9 +3203,27 @@
       "img/hemorr_sitbath_2.png"
     ],
     "texts": [
-      "痔瘡坐浴：準備溫水、坐浴與擦乾",
-      "溫水坐浴：掌握水溫、時間與清潔"
-    ]
+      "痔瘡坐浴怎麼做？4 步驟：坐浴盆、水溫、時間與擦乾",
+      "痔瘡溫水坐浴一天幾次？水溫、時間與不要加的東西"
+    ],
+    "tags": [
+      "痔瘡坐浴",
+      "溫水坐浴",
+      "坐浴盆",
+      "痔瘡怎麼辦",
+      "痔瘡腫痛",
+      "肛門腫痛",
+      "坐浴水溫",
+      "坐浴一天幾次",
+      "產後痔瘡",
+      "便祕痔瘡"
+    ],
+    "related_series": [
+      "hem_oint",
+      "constipation_medicines",
+      "pregnancy_minor_ailments"
+    ],
+    "showFooter": true
   },
   "Res3_ABCovid": {
     "title": "三合一快篩",
