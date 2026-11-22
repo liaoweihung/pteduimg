@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-22T12:52:59+08:00",
-  "baseline": "13c6c47b984cf950d6930c0addfc736536008833",
-  "scope": "網站來源快照；版本 13c6c47b",
+  "generatedAt": "2026-11-22T17:38:17+08:00",
+  "baseline": "48b6f13eef794ef1a5ca0d5316bacb38b8ec5d13",
+  "scope": "網站來源快照；版本 48b6f13e",
   "counts": {
     "cards": 464,
     "series": 100,
@@ -1227,17 +1227,6 @@
       ]
     },
     {
-      "title": "預防腸病毒",
-      "path": "cards/EnteroVirus_vaccine.html",
-      "series": "Prevent_Enterovirus",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
       "title": "胃幽門螺旋桿菌檢查",
       "path": "cards/Exame_Hpylore.html",
       "series": "Hpylori_exam",
@@ -1383,17 +1372,6 @@
       ]
     },
     {
-      "title": "預防腸病毒：洗手、消毒與生病時的處理",
-      "path": "cards/Prevent_Enterovirus.html",
-      "series": "Prevent_Enterovirus",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
       "title": "洗去頭皮油膏",
       "path": "cards/Ps_hair_wash.html",
       "series": "hair_wash",
@@ -1441,17 +1419,6 @@
       "title": "三合一快篩結果判讀：陽性、陰性與無效",
       "path": "cards/Res3_ABCovid_4.html",
       "series": "Res3_ABCovid",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "預防腸病毒",
-      "path": "cards/Wash_hands_five_steps.html",
-      "series": "Prevent_Enterovirus",
       "issues": [
         "text_status",
         "reference_status",
@@ -1659,17 +1626,6 @@
       ]
     },
     {
-      "title": "香港腳與灰指甲",
-      "path": "cards/amorolfine.html",
-      "series": "fungal_foot_nail",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
       "title": "口角炎",
       "path": "cards/angular_cheilitis_01.html",
       "series": "angular_cheilitis",
@@ -1750,17 +1706,6 @@
       ]
     },
     {
-      "title": "常見皮膚狀況",
-      "path": "cards/atopic_dermatitis_care.html",
-      "series": "common_skin_conditions",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
       "title": "小孩身高體重",
       "path": "cards/boyBMI.html",
       "series": "child_height_weight",
@@ -1785,17 +1730,6 @@
       "series": "bruising_care",
       "issues": [
         "date_status"
-      ]
-    },
-    {
-      "title": "常見皮膚狀況",
-      "path": "cards/bug_bite.html",
-      "series": "common_skin_conditions",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
       ]
     },
     {
@@ -2075,17 +2009,6 @@
       ]
     },
     {
-      "title": "香港腳與灰指甲",
-      "path": "cards/excilor.html",
-      "series": "fungal_foot_nail",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
       "title": "步驟一：洗淨雙手",
       "path": "cards/eye_1.html",
       "series": "eye",
@@ -2194,17 +2117,6 @@
       ]
     },
     {
-      "title": "香港腳與灰指甲",
-      "path": "cards/fungal_nail.html",
-      "series": "fungal_foot_nail",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
       "title": "中暑",
       "path": "cards/heat_exhaustion.html",
       "series": "heat_exhaustion",
@@ -2303,42 +2215,9 @@
       ]
     },
     {
-      "title": "痔瘡坐浴：準備溫水、坐浴與擦乾",
-      "path": "cards/hemorr_sitbath_1.html",
-      "series": "hemorr_sitbath",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "溫水坐浴：掌握水溫、時間與清潔",
-      "path": "cards/hemorr_sitbath_2.html",
-      "series": "hemorr_sitbath",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
       "title": "常見五種皮膚紅腫的原因",
       "path": "cards/hives_s.html",
       "series": "common_skin_redness_causes",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "香港腳與灰指甲",
-      "path": "cards/hk_foot.html",
-      "series": "fungal_foot_nail",
       "issues": [
         "text_status",
         "reference_status",
@@ -2632,17 +2511,6 @@
       "path": "cards/oneFTU.html",
       "series": "onitment_general",
       "issues": [
-        "footer_status"
-      ]
-    },
-    {
-      "title": "常見皮膚狀況",
-      "path": "cards/orabase.html",
-      "series": "common_skin_conditions",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
         "footer_status"
       ]
     },
@@ -3178,73 +3046,10 @@
       ]
     },
     {
-      "title": "喉嚨痛不一定是感冒",
-      "path": "cards/sore_throat_causes.html",
-      "series": "sore_throat_otc",
-      "issues": [
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "喉嚨痛怎麼選OTC產品",
-      "path": "cards/sore_throat_otc_choice.html",
-      "series": "sore_throat_otc",
-      "issues": [
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "喉嚨痛出現這些情況建議就醫",
-      "path": "cards/sore_throat_red_flags.html",
-      "series": "sore_throat_otc",
-      "issues": [
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
       "title": "妊娠紋、肥胖紋，怎麼照護？",
       "path": "cards/stretch_marks.html",
       "series": "stretch_marks_care",
       "issues": [
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "香港腳與灰指甲",
-      "path": "cards/terbinafine_7_days.html",
-      "series": "fungal_foot_nail",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "香港腳與灰指甲",
-      "path": "cards/terbinafine_daily_cream.html",
-      "series": "fungal_foot_nail",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
-      "title": "香港腳與灰指甲",
-      "path": "cards/terbinafine_once_treatment.html",
-      "series": "fungal_foot_nail",
-      "issues": [
-        "text_status",
-        "reference_status",
         "date_status",
         "footer_status"
       ]
@@ -3536,17 +3341,6 @@
       ]
     },
     {
-      "title": "常見皮膚狀況",
-      "path": "cards/wart.html",
-      "series": "common_skin_conditions",
-      "issues": [
-        "text_status",
-        "reference_status",
-        "date_status",
-        "footer_status"
-      ]
-    },
-    {
       "title": "傷口清潔與消毒，怎麼分？",
       "path": "cards/wound_4_soln.html",
       "series": "fall_wound",
@@ -3652,22 +3446,22 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 339,
+      "machine_pass": 355,
       "partial": 1,
-      "missing": 124
+      "missing": 108
     },
     "reference_status": {
-      "missing": 208,
-      "machine_pass": 256
+      "missing": 189,
+      "machine_pass": 275
     },
     "date_status": {
-      "missing": 207,
-      "machine_pass": 236,
+      "missing": 188,
+      "machine_pass": 255,
       "partial": 21
     },
     "footer_status": {
-      "missing": 228,
-      "machine_pass": 236
+      "missing": 209,
+      "machine_pass": 255
     },
     "jsonld_status": {
       "machine_pass": 464
@@ -3675,7 +3469,7 @@
   },
   "sync": {
     "pages": 472,
-    "fields": 1081,
+    "fields": 1044,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -3785,8 +3579,6 @@
       {
         "page": "EnteroVirus_vaccine",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -3997,8 +3789,6 @@
       {
         "page": "Prevent_Enterovirus",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4045,8 +3835,6 @@
       {
         "page": "Wash_hands_five_steps",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4405,8 +4193,6 @@
       {
         "page": "amorolfine",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4479,8 +4265,6 @@
       {
         "page": "atopic_dermatitis_care",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4654,8 +4438,6 @@
       {
         "page": "bug_bite",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5271,8 +5053,6 @@
       {
         "page": "excilor",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5399,8 +5179,6 @@
       {
         "page": "fungal_nail",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5527,16 +5305,12 @@
       {
         "page": "hemorr_sitbath_1",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "hemorr_sitbath_2",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5558,8 +5332,6 @@
       {
         "page": "hk_foot",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -6057,8 +5829,6 @@
       {
         "page": "orabase",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -6704,23 +6474,18 @@
       {
         "page": "sore_throat_causes",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "sore_throat_otc_choice",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "sore_throat_red_flags",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -6802,24 +6567,18 @@
       {
         "page": "terbinafine_7_days",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "terbinafine_daily_cream",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "terbinafine_once_treatment",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -7033,8 +6792,6 @@
       {
         "page": "wart",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
