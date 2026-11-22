@@ -553,3 +553,8 @@ REL-b60b632bf60834da,series:insomnia_medication,has_card,page:insomnia_card14,so
 REL-78073ab0760111ea,series:pediatric_cold_syrup,has_card,page:ped_cold_soltan,source_observed,series_membership,cards.json,CR-2026-112
 REL-29f19814ba0c60fb,series:pediatric_cold_syrup,has_card,page:ped_cold_muco,source_observed,series_membership,cards.json,CR-2026-112
 REL-839416eff92ad999,series:pediatric_cold_syrup,has_card,page:ped_cold_sortuss,source_observed,series_membership,cards.json,CR-2026-112
+REL-45878c82872b802d,series:drug_weight_gain,has_card,page:drug_weight_gain_1,source_observed,series_membership,cards.json,CR-2026-114
+REL-4c12707a3c5ef982,series:drug_weight_gain,has_card,page:drug_weight_gain_2,source_observed,series_membership,cards.json,CR-2026-114
+REL-4a22838beecc4c31,series:drug_weight_gain,has_card,page:drug_weight_gain_3,source_observed,series_membership,cards.json,CR-2026-114
+REL-a50ed49d174e8c12,series:drug_weight_gain,has_card,page:drug_weight_gain_4,source_observed,series_membership,cards.json,CR-2026-114
+REL-dd98710cfcbdbdb7,series:drug_weight_gain,has_card,page:drug_weight_gain_5,source_observed,series_membership,cards.json,CR-2026-114

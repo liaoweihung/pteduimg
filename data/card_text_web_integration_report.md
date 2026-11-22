@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：335
+- 成功加入文字頁數：340
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -340,3 +340,8 @@
 | pediatric_cold_syrup | 舒痰液（Soltan）怎麼喝？兒童化痰藥水使用指南 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_soltan.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | pediatric_cold_syrup | 莫喀糖漿（Muco）怎麼喝？兒童化痰糖漿使用指南 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_muco.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | pediatric_cold_syrup | 息咳液（Sortuss）怎麼喝？兒童鎮咳祛痰藥水使用指南 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_sortuss.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| drug_weight_gain | 吃藥會讓我變胖嗎？抗憂鬱藥、精神科用藥、神經痛藥要注意 | https://liaoweihung.github.io/pteduimg/cards/drug_weight_gain_1.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| drug_weight_gain | 類固醇、胰島素、避孕藥會讓人變胖嗎？5 類可能增重的藥物 | https://liaoweihung.github.io/pteduimg/cards/drug_weight_gain_2.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| drug_weight_gain | 吃藥變胖可以換藥嗎？和醫師討論調整用藥的方向 | https://liaoweihung.github.io/pteduimg/cards/drug_weight_gain_3.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| drug_weight_gain | 吃藥變胖怎麼辦？藥師整理 5 個生活調整 | https://liaoweihung.github.io/pteduimg/cards/drug_weight_gain_4.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| drug_weight_gain | 戒菸後會變胖嗎？戒菸藥會讓人變胖嗎？ | https://liaoweihung.github.io/pteduimg/cards/drug_weight_gain_5.html | 是 | 是 | 是 | 是 | 是 | 無 |

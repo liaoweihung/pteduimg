@@ -9025,7 +9025,13 @@
         "url": "https://www.ktgh.com.tw/ktgh/Home/WesternMedDetail?CatID=65&NewsID=821&Ordid=26013"
       }
     ],
-    "revisionCredit": "使用者提供並人工確認圖卡與文字，並同意依仿單修正服用次數；本站整理靜態文字及核對直接來源"
+    "revisionCredit": "使用者提供並人工確認圖卡與文字，並同意依仿單修正服用次數；本站整理靜態文字及核對直接來源",
+    "related_links": [
+      {
+        "title": "吃藥會讓我變胖嗎？類固醇、糖尿病、荷爾蒙等 5 類",
+        "url": "../cards/drug_weight_gain_2.html"
+      }
+    ]
   },
   {
     "cardId": "pediatric_cold_syrup",
@@ -9091,7 +9097,13 @@
         "url": "https://ksph.kcg.gov.tw/7/dfiles_pdf/Cyproh.pdf"
       }
     ],
-    "revisionCredit": "使用者提供圖卡；AI 依核准適應症、醫院用藥指導單張與同成分仿單整理網站文字；網站作者（藥師）2026-11-16 確認"
+    "revisionCredit": "使用者提供圖卡；AI 依核准適應症、醫院用藥指導單張與同成分仿單整理網站文字；網站作者（藥師）2026-11-16 確認",
+    "related_links": [
+      {
+        "title": "吃藥會讓我變胖嗎？類固醇、糖尿病、荷爾蒙等 5 類",
+        "url": "../cards/drug_weight_gain_2.html"
+      }
+    ]
   },
   {
     "cardId": "pediatric_cold_syrup",
@@ -10003,7 +10015,13 @@
       }
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "related_links": [
+      {
+        "title": "吃藥會讓我變胖嗎？類固醇、糖尿病、荷爾蒙等 5 類",
+        "url": "../cards/drug_weight_gain_2.html"
+      }
+    ]
   },
   {
     "cardId": "contraceptive_pills",
@@ -14248,7 +14266,13 @@
     ],
     "matchConfidence": "high",
     "needsMedicalReview": true,
-    "imageUpdatedAt": "2026-11-17"
+    "imageUpdatedAt": "2026-11-17",
+    "related_links": [
+      {
+        "title": "吃藥會讓我變胖嗎？類固醇、糖尿病、荷爾蒙等 5 類",
+        "url": "../cards/drug_weight_gain_2.html"
+      }
+    ]
   },
   {
     "cardId": "liquid_medicine_storage",
@@ -14800,7 +14824,13 @@
       }
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "related_links": [
+      {
+        "title": "吃藥會讓我變胖嗎？情緒、精神與神經用藥",
+        "url": "../cards/drug_weight_gain_1.html"
+      }
+    ]
   },
   {
     "cardId": "insomnia_medication",
@@ -14860,7 +14890,13 @@
       }
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "related_links": [
+      {
+        "title": "吃藥會讓我變胖嗎？情緒、精神與神經用藥",
+        "url": "../cards/drug_weight_gain_1.html"
+      }
+    ]
   },
   {
     "cardId": "insomnia_medication",
@@ -14912,7 +14948,13 @@
       }
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "related_links": [
+      {
+        "title": "吃藥會讓我變胖嗎？情緒、精神與神經用藥",
+        "url": "../cards/drug_weight_gain_1.html"
+      }
+    ]
   },
   {
     "cardId": "insomnia_medication",
@@ -15032,7 +15074,13 @@
       }
     ],
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": true,
+    "related_links": [
+      {
+        "title": "吃藥會讓我變胖嗎？類固醇、糖尿病、荷爾蒙等 5 類",
+        "url": "../cards/drug_weight_gain_2.html"
+      }
+    ]
   },
   {
     "cardId": "oral_patch_use",
@@ -15795,5 +15843,515 @@
         "url": "../cards/child_medicine_feeding_02.html"
       }
     ]
+  },
+  {
+    "cardId": "drug_weight_gain",
+    "image": "img/drug_weight_gain_1.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/drug_weight_gain_1.html",
+    "title": "吃藥會讓我變胖嗎？抗憂鬱藥、精神科用藥、神經痛藥要注意",
+    "summary": "部分抗憂鬱藥、精神相關藥物與癲癇、神經痛、頭暈用藥，可能增加食慾或造成水腫，讓體重上升。不是吃了就一定會胖，也不要自行停藥。",
+    "sections": [
+      {
+        "heading": "哪些藥可能讓體重增加？",
+        "text": "常見有 8 類：情緒類藥物（抗憂鬱藥）、精神相關藥物、神經穩定類藥物（癲癇、神經痛、頭暈）、類固醇、糖尿病藥物、荷爾蒙藥物、抗甲狀腺藥物與抗過敏藥物。本頁介紹前 3 類，其餘 5 類見下一頁。可以對照藥袋上的英文學名。"
+      },
+      {
+        "heading": "抗憂鬱藥會讓人變胖嗎？",
+        "text": "部分抗憂鬱藥可能增加食慾、影響代謝或造成水分滯留，讓體重逐漸上升。常見代表成分如 Mirtazapine、Paroxetine、Amitriptyline。"
+      },
+      {
+        "heading": "精神科用藥會讓人變胖嗎？",
+        "text": "部分精神相關藥物可能增加食慾，並影響血糖與血脂。常見代表成分如 Olanzapine、Quetiapine。"
+      },
+      {
+        "heading": "癲癇、神經痛、頭暈的藥會讓人變胖嗎？",
+        "text": "部分神經穩定類藥物可能增加食慾或讓體重上升，常見代表成分如 Valproate、Pregabalin、Flunarizine。其中 Pregabalin 也可能造成水腫。"
+      },
+      {
+        "heading": "為什麼吃藥會變胖？",
+        "text": "主要有三種原因：食慾增加、代謝改變、水分滯留。所以體重增加不一定都是脂肪。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "吃了這些藥一定會變胖嗎？",
+        "answer": "不一定。這些藥只是有可能讓體重增加，不是每個人都會；體重增加也不一定都是脂肪，有些是水腫。"
+      },
+      {
+        "question": "擔心變胖，可以自己停藥嗎？",
+        "answer": "不要自行停藥。先控制好原本的疾病，再和醫師、藥師討論怎麼減少對體重的影響。"
+      },
+      {
+        "question": "怎麼知道自己吃的是不是這些藥？",
+        "answer": "可以對照藥袋上的英文學名，或把藥袋帶到藥局請藥師確認。"
+      }
+    ],
+    "altText": "吃藥會讓我變胖嗎衛教圖卡：情緒類藥物、精神相關藥物、神經穩定類藥物的代表成分，以及食慾增加、代謝改變、水分滯留三種原因",
+    "keywords": "吃藥變胖、抗憂鬱藥變胖、精神科藥變胖、神經痛藥變胖、Mirtazapine 變胖、Paroxetine、Amitriptyline、Olanzapine 變胖、Quetiapine 變胖、Valproate、Pregabalin 水腫、Flunarizine 變胖",
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "references": [
+      {
+        "title": "衛生福利部食品藥物管理署：樂活優口溶錠 30 毫克核准藥品資料（衛署藥輸字第024009號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥輸字第024009號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：克憂果膜衣錠 20 毫克核准藥品資料（衛署藥輸字第021536號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥輸字第021536號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：德利能糖衣錠 10 毫克核准藥品資料（衛署藥製字第000649號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第000649號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：津普速口溶錠 10 毫克核准藥品資料（衛署藥輸字第023912號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥輸字第023912號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：安保思樂錠 300 毫克核准藥品資料（衛署藥輸字第025465號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥輸字第025465號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：帝拔癲腸溶錠 200 毫克核准藥品資料（衛署藥輸字第014899號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥輸字第014899號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：利瑞卡膠囊 75 毫克核准藥品資料（衛署藥輸字第024995號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥輸字第024995號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：服腦清錠 5 毫克核准藥品資料（衛署藥製字第028581號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第028581號"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "吃藥會讓我變胖嗎？類固醇、糖尿病、荷爾蒙等 5 類",
+        "url": "../cards/drug_weight_gain_2.html"
+      },
+      {
+        "title": "美妥平（Mirtazapine）吃了很想睡、胃口變好？用藥重點",
+        "url": "../cards/insomnia_card12.html"
+      },
+      {
+        "title": "思樂康（Quetiapine）低劑量助眠？長期吃要注意什麼",
+        "url": "../cards/insomnia_card11.html"
+      },
+      {
+        "title": "利瑞卡（Pregabalin）吃了會想睡？神經痛藥與睡眠",
+        "url": "../cards/insomnia_card10.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "revisionCredit": "依藥師確認文字稿（v7）整理網頁文字"
+  },
+  {
+    "cardId": "drug_weight_gain",
+    "image": "img/drug_weight_gain_2.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/drug_weight_gain_2.html",
+    "title": "類固醇、胰島素、避孕藥會讓人變胖嗎？5 類可能增重的藥物",
+    "summary": "類固醇、部分糖尿病藥、荷爾蒙藥物與抗過敏藥，可能增加食慾或造成水腫；甲狀腺亢進治療後體重也常回升。體重增加不一定是脂肪，不要自行停藥。",
+    "sections": [
+      {
+        "heading": "吃類固醇會變胖嗎？",
+        "text": "口服類固醇長期使用，可能增加食慾、造成水腫與「月亮臉」。常見代表成分如 Prednisolone、Methylprednisolone、Dexamethasone。"
+      },
+      {
+        "heading": "糖尿病藥會讓人變胖嗎？",
+        "text": "部分降血糖藥可能讓體重增加，例如胰島素（Insulin）、Glimepiride、Pioglitazone；Pioglitazone 也可能造成水腫。胰島素是必要治療，不可因為怕胖自行減量。"
+      },
+      {
+        "heading": "避孕藥、荷爾蒙藥會讓人變胖嗎？",
+        "text": "部分荷爾蒙藥品可能造成體液滯留或體重增加，例如口服避孕藥、Megestrol、Medroxyprogesterone。"
+      },
+      {
+        "heading": "甲狀腺亢進吃藥後變胖，是藥的副作用嗎？",
+        "text": "抗甲狀腺藥物（如 Methimazole、Carbimazole、Propylthiouracil）治療後，甲狀腺功能恢復正常，體重常會回升，部分人可能超過生病前的體重。國內仿單沒有把體重增加列為這類藥的副作用；這是研究觀察到的治療後變化。"
+      },
+      {
+        "heading": "過敏藥會讓人變胖嗎？",
+        "text": "部分抗組織胺長期使用，可能增加食慾或引起水腫，讓體重上升，例如 Cyproheptadine、Ketotifen、Hydroxyzine。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "吃類固醇臉變圓了，停藥就會好嗎？",
+        "answer": "類固醇不可自行停藥。臉變圓（月亮臉）、水腫或食慾變好，請和醫師討論劑量與療程；醫師會以最低有效劑量、最短療程為原則。"
+      },
+      {
+        "question": "打胰島素體重變重，可以少打一點嗎？",
+        "answer": "不可以。胰島素是必要治療，不可因為怕胖自行減量。可以和醫師討論其他對體重影響較小的糖尿病藥物是否適合。"
+      },
+      {
+        "question": "吃避孕藥會胖嗎？",
+        "answer": "部分口服避孕藥的仿單把體重增加列為較常見的不良反應，也可能有體液滯留，但不是每個人都會發生。有疑問請問醫師或藥師。"
+      },
+      {
+        "question": "甲狀腺亢進治療後變胖，要停藥嗎？",
+        "answer": "不要自行停藥。治療後體重回升常和甲狀腺功能恢復正常有關，請和醫師討論追蹤與體重管理。"
+      }
+    ],
+    "altText": "吃藥會讓我變胖嗎衛教圖卡：類固醇、糖尿病藥物、荷爾蒙藥物、抗甲狀腺藥物、抗過敏藥物的代表成分與體重變化提醒",
+    "keywords": "類固醇變胖、月亮臉、吃類固醇水腫、胰島素變胖、糖尿病藥變胖、Pioglitazone 水腫、避孕藥會胖嗎、荷爾蒙變胖、Megestrol、甲狀腺亢進治療後變胖、抗甲狀腺藥物、Methimazole、過敏藥變胖、Cyproheptadine 變胖、Ketotifen、Hydroxyzine",
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "references": [
+      {
+        "title": "衛生福利部食品藥物管理署：「成大」普列道寧錠 5 毫克核准藥品資料（衛署藥製字第006543號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第006543號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：敏疫朗錠 4 毫克核准藥品資料（衛署藥製字第043761號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第043761號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：得舒爽片核准藥品資料（內衛藥製字第006306號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/內衛藥製字第006306號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：諾胰保 諾特筆核准藥品資料（衛部菌疫輸字第001054號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛部菌疫輸字第001054號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：瑪爾胰 2.0 錠核准藥品資料（衛署藥輸字第022671號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥輸字第022671號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：愛妥糖錠 15 公絲核准藥品資料（衛部藥製字第061860號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛部藥製字第061860號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：美雅祥錠 40 毫克核准藥品資料（衛署藥製字第034727號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第034727號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：祈麗安錠核准藥品資料（衛署藥輸字第017244號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥輸字第017244號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：黛麗安糖衣錠核准藥品資料（衛署藥輸字第022877號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥輸字第022877號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：普維拉錠 10 毫克核准藥品資料（衛署藥輸字第012946號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥輸字第012946號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：德利錠核准藥品資料（衛署藥製字第011873號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第011873號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：「成大」善體定錠 1 毫克核准藥品資料（衛署藥製字第032970號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第032970號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：克胺寧錠 25 毫克核准藥品資料（衛署藥製字第039007號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第039007號"
+      },
+      {
+        "title": "Torlinska B, et al. Patients treated for hyperthyroidism are at increased risk of becoming obese. Thyroid. 2019",
+        "url": "https://research.birmingham.ac.uk/portal/en/publications/patients-treated-for-hyperthyroidism-are-at-increased-risk-of-becoming-obese(f8ae3f29-fdd5-431d-af08-4e88cbc3325b).html"
+      },
+      {
+        "title": "Dale J, et al. Weight gain following treatment of hyperthyroidism. Clin Endocrinol. 2001;55(2):233–239",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11531931/"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "吃藥會讓我變胖嗎？情緒、精神與神經用藥",
+        "url": "../cards/drug_weight_gain_1.html"
+      },
+      {
+        "title": "不想因為吃藥變胖？和醫師討論調整用藥",
+        "url": "../cards/drug_weight_gain_3.html"
+      },
+      {
+        "title": "必爾生口服液：兒童類固醇的用途、劑量與副作用",
+        "url": "../cards/kidsolone_oral_solution.html"
+      },
+      {
+        "title": "事前避孕藥怎麼吃？複方口服避孕藥的開始與接續方式",
+        "url": "../cards/contraceptive_pills_how_to_take.html"
+      },
+      {
+        "title": "靜安能、克胺寧可以助眠嗎？抗組織胺幫助睡眠的副作用",
+        "url": "../cards/insomnia_card09.html"
+      },
+      {
+        "title": "希普利敏液（Cyproheptadine）怎麼吃？兒童劑量、用途與副作用",
+        "url": "../cards/ped_cold_cypromin.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "revisionCredit": "依藥師確認文字稿（v7）整理網頁文字"
+  },
+  {
+    "cardId": "drug_weight_gain",
+    "image": "img/drug_weight_gain_3.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/drug_weight_gain_3.html",
+    "title": "吃藥變胖可以換藥嗎？和醫師討論調整用藥的方向",
+    "summary": "同一類藥物中，不同藥品對體重的影響不一樣，可以請醫師評估是否有更適合的選擇。胰島素是必要治療，不可因為怕胖自行減量；切勿自行停藥、換藥或減量。",
+    "sections": [
+      {
+        "heading": "吃藥變胖，可以換藥嗎？",
+        "text": "可以和醫師討論。同一類藥物中，不同藥品對體重的影響不一樣，醫師會考量原本的疾病、療效與副作用，評估是否有更適合的選擇。"
+      },
+      {
+        "heading": "抗憂鬱藥、精神科藥有比較不影響體重的嗎？",
+        "text": "情緒類藥物中，不同機轉的抗憂鬱藥（如 NDRI 類）對體重的影響相對較小。精神相關藥物中，不同機轉的藥品（如多巴胺部分致效劑類）對體重、血糖與血脂的影響相對較小，但仍要定期量體重。"
+      },
+      {
+        "heading": "糖尿病藥有比較不會胖的嗎？",
+        "text": "第二型糖尿病藥物中，雙胍類、排糖藥（SGLT2 抑制劑）、腸泌素（GLP-1 受體促效劑）對體重影響較小，部分還可能幫助減重。胰島素是必要治療，不可因為怕胖自行減量。"
+      },
+      {
+        "heading": "類固醇怎麼減少對體重的影響？",
+        "text": "以最低有效劑量、最短療程為原則；能局部使用時，優先選擇局部劑型。這需要由醫師評估。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "我可以自己改吃比較不會胖的藥嗎？",
+        "answer": "不可以。是否適合換藥要考量原本的疾病、療效與副作用，請由醫師評估，切勿自行停藥、換藥或減量。"
+      },
+      {
+        "question": "看診時怎麼跟醫師開口？",
+        "answer": "可以直接告訴醫師最近的體重變化（最好有定期記錄的數字），並詢問同一類藥物中是否有對體重影響較小的選擇。"
+      },
+      {
+        "question": "換了藥就不用注意體重了嗎？",
+        "answer": "仍要定期量體重。即使是對體重影響相對較小的藥物，也建議持續追蹤。"
+      }
+    ],
+    "altText": "不想因為吃藥變胖衛教圖卡：和醫師討論調整用藥，情緒類、精神相關、第二型糖尿病藥物與類固醇的調整方向，胰島素不可自行減量",
+    "keywords": "吃藥變胖怎麼辦、吃藥變胖可以換藥嗎、不會胖的抗憂鬱藥、不會胖的糖尿病藥、SGLT2 抑制劑、排糖藥、GLP-1、腸泌素、雙胍類、類固醇減量、胰島素變胖",
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "references": [
+      {
+        "title": "Apovian CM, et al. Pharmacological Management of Obesity: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab. 2015;100(2):342–362",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25590212/"
+      },
+      {
+        "title": "Petimar J, et al. Medication-Induced Weight Change Across Common Antidepressant Treatments. Ann Intern Med. 2024;177(8):993–1003",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38950403/"
+      },
+      {
+        "title": "Pillinger T, et al. Comparative effects of 18 antipsychotics on metabolic function. Lancet Psychiatry. 2020;7(1):64–77",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31860457/"
+      },
+      {
+        "title": "American Diabetes Association. 9. Pharmacologic Approaches to Glycemic Treatment: Standards of Care in Diabetes—2026",
+        "url": "https://doi.org/10.2337/dc26-S009"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "不想因為吃藥變胖？5 個生活調整",
+        "url": "../cards/drug_weight_gain_4.html"
+      },
+      {
+        "title": "吃藥會讓我變胖嗎？情緒、精神與神經用藥",
+        "url": "../cards/drug_weight_gain_1.html"
+      },
+      {
+        "title": "長期高血糖的危害",
+        "url": "../cards/DM_damage.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "revisionCredit": "依藥師確認文字稿（v7）整理網頁文字"
+  },
+  {
+    "cardId": "drug_weight_gain",
+    "image": "img/drug_weight_gain_4.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/drug_weight_gain_4.html",
+    "title": "吃藥變胖怎麼辦？藥師整理 5 個生活調整",
+    "summary": "吃藥後體重增加，可以從 5 件事做起：定期量體重、減少多餘熱量、調整飲食、增加身體活動、睡眠要充足。2～3 天內體重增加 1～2 公斤合併水腫或喘，應儘快就醫。",
+    "sections": [
+      {
+        "heading": "吃藥變胖，生活上可以怎麼做？",
+        "text": "可以從 5 件事做起：定期量體重、減少多餘熱量、調整飲食、增加身體活動、睡眠要充足。"
+      },
+      {
+        "heading": "為什麼要定期量體重？",
+        "text": "每週固定時間記錄體重，並留意腰圍變化，才能及早發現變化，也方便回診時和醫師討論。"
+      },
+      {
+        "heading": "飲食要怎麼調整？",
+        "text": "少喝含糖飲料，減少零食與宵夜；三餐規律，多吃蔬菜、適量蛋白質，並且少鹽。"
+      },
+      {
+        "heading": "運動和睡眠也有關係嗎？",
+        "text": "有。可以從快走開始，逐漸建立規律運動習慣；睡眠不足與壓力都可能影響食慾，所以睡眠要充足。"
+      },
+      {
+        "heading": "體重增加什麼時候要就醫？",
+        "text": "若 2～3 天內體重增加 1～2 公斤以上，並出現明顯水腫或喘，應儘快就醫。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "吃藥變胖，靠飲食運動有用嗎？",
+        "answer": "有研究支持。服用精神科藥物的人參加生活型態介入（飲食、運動、行為調整），體重增加較少；用藥初期就開始效果更好。"
+      },
+      {
+        "question": "體重突然變重很多，要注意什麼？",
+        "answer": "2～3 天內體重增加 1～2 公斤以上，又出現明顯水腫或喘，可能不是單純變胖，應儘快就醫。"
+      },
+      {
+        "question": "為了減重可以自己少吃一點藥嗎？",
+        "answer": "不可以。切勿為了減重而自行停藥、換藥或減量，請先和醫師、藥師討論。"
+      }
+    ],
+    "altText": "吃藥變胖的 5 個生活調整衛教圖卡：定期量體重、減少多餘熱量、調整飲食、增加身體活動、睡眠充足，以及體重快速增加合併水腫或喘要就醫",
+    "keywords": "吃藥變胖怎麼辦、吃藥體重增加怎麼控制、藥物引起體重增加、怎麼控制體重、量體重、腰圍、少喝含糖飲料、少鹽、快走、睡眠不足會變胖、體重突然增加、水腫",
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "references": [
+      {
+        "title": "Bruins J, et al. The Effects of Lifestyle Interventions on (Long-Term) Weight Management, Cardiometabolic Risk and Depressive Symptoms in People with Psychotic Disorders: A Meta-Analysis. PLoS One. 2014;9(12):e112276",
+        "url": "https://doi.org/10.1371/journal.pone.0112276"
+      },
+      {
+        "title": "Abdullah S, et al. Evaluation of components of non-pharmacological interventions for weight management in early antipsychotic therapy. BJPsych Bull. 2026;50:421–431",
+        "url": "https://doi.org/10.1192/bjb.2026.10216"
+      },
+      {
+        "title": "Apovian CM, et al. Pharmacological Management of Obesity: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab. 2015",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25590212/"
+      },
+      {
+        "title": "Terrier B, et al. French recommendations for the management of systemic necrotizing vasculitides. Orphanet J Rare Dis. 2020;15:351（皮質類固醇飲食建議表）",
+        "url": "https://doi.org/10.1186/s13023-020-01621-3"
+      },
+      {
+        "title": "國軍醫院：心臟衰竭病人之衛教（114.06.18 修訂）",
+        "url": "https://813.mnd.gov.tw/media/心臟衰竭病人之衛教.pdf"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "不吃安眠藥也能睡好？認識 CBT-I 和睡前好習慣",
+        "url": "../cards/insomnia_card02.html"
+      },
+      {
+        "title": "不想因為吃藥變胖？和醫師討論調整用藥",
+        "url": "../cards/drug_weight_gain_3.html"
+      },
+      {
+        "title": "戒菸後會變胖嗎？常見戒菸藥物",
+        "url": "../cards/drug_weight_gain_5.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "revisionCredit": "依藥師確認文字稿（v7）整理網頁文字"
+  },
+  {
+    "cardId": "drug_weight_gain",
+    "image": "img/drug_weight_gain_5.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/drug_weight_gain_5.html",
+    "title": "戒菸後會變胖嗎？戒菸藥會讓人變胖嗎？",
+    "summary": "戒菸第一年體重平均增加約 4～5 公斤，原因是戒掉尼古丁後食慾變好，不是戒菸藥。戒菸藥不會讓體重增加更多，不要因為怕胖而放棄戒菸。",
+    "sections": [
+      {
+        "heading": "戒菸後會變胖嗎？",
+        "text": "常會。戒菸第一年，體重平均增加約 4～5 公斤，大多發生在前 3 個月。"
+      },
+      {
+        "heading": "戒菸為什麼會變胖？",
+        "text": "尼古丁會抑制食慾，戒菸後食慾變好，體重就容易上升。讓體重增加的是「戒掉尼古丁」，不是戒菸藥。"
+      },
+      {
+        "heading": "戒菸藥會讓人變胖嗎？",
+        "text": "不會讓體重增加更多。研究顯示，使用戒菸藥物的人和沒用藥的人，戒菸後的增重幅度相近；尼古丁替代療法與 Bupropion 還可能稍微減少戒菸後的增重。"
+      },
+      {
+        "heading": "常見的戒菸藥物有哪些？",
+        "text": "口服藥如 Varenicline、Bupropion；尼古丁替代療法有尼古丁貼片、尼古丁口腔噴霧，另有尼古丁咀嚼錠、口含錠。台灣核准的產品例如：Varenicline 有戒必適、戒衛清、快戒士；Bupropion 適應症含戒菸輔助的有輔寧等；尼古丁貼片有尼古清戒菸貼片、克菸貼片、停菸貼片；口腔噴霧有尼古清戒菸噴霧；咀嚼錠、口含錠有尼古清薄荷咀嚼錠、尼古清戒菸口含錠。"
+      },
+      {
+        "heading": "怕胖怎麼辦？",
+        "text": "不要因為怕胖而放棄戒菸。戒菸期間可以搭配 5 個生活調整（定期量體重、減少多餘熱量、調整飲食、增加身體活動、睡眠充足）控制體重。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "吃戒菸藥會胖嗎？",
+        "answer": "戒菸藥不會讓體重增加更多。戒菸後變胖主要是戒掉尼古丁、食慾變好；尼古丁替代療法與 Bupropion 還可能稍微減少增重。"
+      },
+      {
+        "question": "戒菸後大概會胖多少？",
+        "answer": "研究統計，戒菸第一年平均增加約 4～5 公斤，大多在前 3 個月；個人差異很大，也有人體重沒有增加。"
+      },
+      {
+        "question": "怕胖，可以不要戒菸嗎？",
+        "answer": "不要因為怕胖而放棄戒菸。可以搭配生活調整控制體重，也可以請藥師協助選擇戒菸藥物。"
+      },
+      {
+        "question": "Bupropion 每一種都能拿來戒菸嗎？",
+        "answer": "不一定。台灣部分含 Bupropion 的藥品適應症只有憂鬱症，有些才包含戒菸輔助，請依醫師處方使用。"
+      }
+    ],
+    "altText": "戒菸後會變胖嗎衛教圖卡：戒菸第一年平均增加約 4～5 公斤，常見戒菸藥物（口服藥、尼古丁貼片、尼古丁口腔噴霧），不要因為怕胖而放棄戒菸",
+    "keywords": "戒菸變胖、戒菸後會變胖嗎、戒菸藥會胖嗎、戒菸胖多少、戒菸體重增加、戒菸藥物、Varenicline、戒必適、Bupropion、尼古丁貼片、尼古丁口腔噴霧、尼古丁口嚼錠、尼古丁口含錠、尼古清、克菸",
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "references": [
+      {
+        "title": "衛生福利部食品藥物管理署：戒必適膜衣錠 1 毫克核准藥品資料（衛署藥輸字第024648號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥輸字第024648號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：輔寧持續性藥效錠 150 毫克核准藥品資料（衛署藥製字第049011號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第049011號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：尼古清戒菸貼片 15 毫克核准藥品資料（衛部藥輸字第028583號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛部藥輸字第028583號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：尼古清戒菸噴霧核准藥品資料（衛部藥輸字第027835號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛部藥輸字第027835號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：尼古清薄荷咀嚼錠 2 毫克核准藥品資料（衛署藥輸字第024740號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥輸字第024740號"
+      },
+      {
+        "title": "衛生福利部食品藥物管理署：尼古清戒菸口含錠 2 毫克核准藥品資料（衛部藥輸字第029054號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛部藥輸字第029054號"
+      },
+      {
+        "title": "Aubin HJ, et al. Weight gain in smokers after quitting cigarettes: meta-analysis. BMJ. 2012;345:e4439",
+        "url": "https://doi.org/10.1136/bmj.e4439"
+      },
+      {
+        "title": "Hartmann-Boyce J, et al. Interventions for preventing weight gain after smoking cessation. Cochrane Database Syst Rev. 2021;10:CD006219",
+        "url": "https://doi.org/10.1002/14651858.CD006219.pub4"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "尼古丁貼片",
+        "url": "../cards/Nicotine_1.html"
+      },
+      {
+        "title": "不想因為吃藥變胖？5 個生活調整",
+        "url": "../cards/drug_weight_gain_4.html"
+      },
+      {
+        "title": "吃藥會讓我變胖嗎？情緒、精神與神經用藥",
+        "url": "../cards/drug_weight_gain_1.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "revisionCredit": "依藥師確認文字稿（v7）整理網頁文字"
   }
 ]
