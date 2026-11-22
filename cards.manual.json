@@ -953,7 +953,13 @@
     "category": "pharmacist_product",
     "order": 30,
     "hidden": true,
-    "icon": "🚭"
+    "icon": "🚭",
+    "steps": [
+      "img/Nicotine_1.webp"
+    ],
+    "related_series": [
+      "drug_weight_gain"
+    ]
   },
   "ear": {
     "title": "耳滴劑",
@@ -4177,7 +4183,6 @@
     "title": "吃藥會讓我變胖嗎？",
     "category": "public_education",
     "topics": [
-      "travel_medication",
       "chronic_conditions"
     ],
     "order": 10.2,

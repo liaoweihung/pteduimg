@@ -1345,6 +1345,9 @@
     "icon": "🚭",
     "steps": [
       "img/Nicotine_1.webp"
+    ],
+    "related_series": [
+      "drug_weight_gain"
     ]
   },
   "ear": {
@@ -4336,7 +4339,6 @@
     "title": "吃藥會讓我變胖嗎？",
     "category": "public_education",
     "topics": [
-      "travel_medication",
       "chronic_conditions"
     ],
     "order": 10.2,
