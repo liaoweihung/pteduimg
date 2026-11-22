@@ -47,7 +47,8 @@ def document(title, description, page, content, base_url, prefix='', noindex=Fal
   <meta property="og:description" content="{esc(description)}">
   <meta property="og:url" content="{esc(base_url + page)}">
   <meta property="og:image" content="{esc(base_url)}icon.png">
-  <link rel="icon" href="{prefix}icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{prefix}assets/brand/favicon-mono-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="{prefix}assets/brand/favicon-mono-192.png">
   <link rel="stylesheet" href="{prefix}css/card-archive.css">
   <script defer src="{prefix}js/card-archive.js"></script>
 </head>

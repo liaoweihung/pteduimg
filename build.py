@@ -986,7 +986,8 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
   <meta name="description" content="{esc(description)}">
   {f'<meta name="keywords" content="{esc(keywords)}">' if keywords else ''}
   <link rel="canonical" href="{esc(seo['canonical'])}">
-  <link rel="icon" type="image/png" href="../icon.png?v=3">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/brand/favicon-mono-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/brand/favicon-mono-192.png">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="{esc(SITE_TITLE)}">
   <meta property="og:title" content="{esc(seo['og_title'])}">
