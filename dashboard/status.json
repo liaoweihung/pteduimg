@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-22T12:28:28+08:00",
-  "baseline": "63e6c4ac1ff1fc2c0e863961a252577512d5b82c",
-  "scope": "網站來源快照；版本 63e6c4ac",
+  "generatedAt": "2026-11-22T12:52:59+08:00",
+  "baseline": "13c6c47b984cf950d6930c0addfc736536008833",
+  "scope": "網站來源快照；版本 13c6c47b",
   "counts": {
     "cards": 464,
     "series": 100,
@@ -26,7 +26,7 @@
     "heat_illness": 1,
     "throat": 1,
     "sleep": 2,
-    "travel_medication": 5,
+    "travel_medication": 4,
     "pregnancy": 3,
     "infant_care": 4,
     "sports_injury": 1
@@ -1076,7 +1076,6 @@
       "count": 5,
       "hidden": false,
       "areas": [
-        "travel_medication",
         "chronic_conditions"
       ],
       "departments": []
@@ -3676,7 +3675,7 @@
   },
   "sync": {
     "pages": 472,
-    "fields": 1083,
+    "fields": 1081,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -3904,8 +3903,6 @@
       {
         "page": "Nicotine_1",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
