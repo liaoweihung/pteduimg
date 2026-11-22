@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-23T00:42:06+08:00",
-  "baseline": "483b52a37a7088f454e78bf2edabab5cb670718a",
-  "scope": "網站來源快照；版本 483b52a3",
+  "generatedAt": "2026-11-23T01:14:42+08:00",
+  "baseline": "69f1725680d378c4f01a077da87398042805a1d9",
+  "scope": "網站來源快照；版本 69f17256",
   "counts": {
     "cards": 464,
     "series": 100,
@@ -1201,8 +1201,7 @@
       "issues": [
         "text_status",
         "reference_status",
-        "date_status",
-        "footer_status"
+        "date_status"
       ]
     },
     {
@@ -1297,8 +1296,7 @@
       "series": "Ped_abx_susp",
       "issues": [
         "reference_status",
-        "date_status",
-        "footer_status"
+        "date_status"
       ]
     },
     {
@@ -1307,8 +1305,7 @@
       "series": "Ped_abx_susp",
       "issues": [
         "reference_status",
-        "date_status",
-        "footer_status"
+        "date_status"
       ]
     },
     {
@@ -1317,8 +1314,7 @@
       "series": "Ped_abx_susp",
       "issues": [
         "reference_status",
-        "date_status",
-        "footer_status"
+        "date_status"
       ]
     },
     {
@@ -1327,8 +1323,7 @@
       "series": "Ped_abx_susp",
       "issues": [
         "reference_status",
-        "date_status",
-        "footer_status"
+        "date_status"
       ]
     },
     {
@@ -1337,8 +1332,7 @@
       "series": "Ped_abx_susp",
       "issues": [
         "reference_status",
-        "date_status",
-        "footer_status"
+        "date_status"
       ]
     },
     {
@@ -1347,8 +1341,7 @@
       "series": "Ped_abx_susp",
       "issues": [
         "reference_status",
-        "date_status",
-        "footer_status"
+        "date_status"
       ]
     },
     {
@@ -1357,8 +1350,7 @@
       "series": "Ped_abx_susp",
       "issues": [
         "reference_status",
-        "date_status",
-        "footer_status"
+        "date_status"
       ]
     },
     {
@@ -1367,8 +1359,7 @@
       "series": "Ped_abx_susp",
       "issues": [
         "reference_status",
-        "date_status",
-        "footer_status"
+        "date_status"
       ]
     },
     {
@@ -3442,8 +3433,8 @@
       "partial": 21
     },
     "footer_status": {
-      "missing": 209,
-      "machine_pass": 255
+      "missing": 200,
+      "machine_pass": 264
     },
     "jsonld_status": {
       "machine_pass": 464
@@ -3451,7 +3442,7 @@
   },
   "sync": {
     "pages": 472,
-    "fields": 1039,
+    "fields": 1000,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -3539,8 +3530,6 @@
       {
         "page": "AugmentinSyrup",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -3707,64 +3696,48 @@
       {
         "page": "Ped_abx_susp_1",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "Ped_abx_susp_2",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "Ped_abx_susp_3",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "Ped_abx_susp_4",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "Ped_abx_susp_5",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "Ped_abx_susp_6",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "Ped_abx_susp_7",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "Ped_abx_susp_8",
         "fields": [
-          "jsonld_status",
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4252,49 +4225,42 @@
       {
         "page": "baby_nasal_aspirator_1",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "baby_nasal_aspirator_2",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "baby_nasal_aspirator_3",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "baby_nasal_aspirator_4",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "baby_nasal_aspirator_5",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "baby_nasal_aspirator_6",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "baby_nasal_aspirator_7",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4308,14 +4274,12 @@
       {
         "page": "boyBMI",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "boy_height2",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4739,28 +4703,24 @@
       {
         "page": "diarrhea_care_3",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "diarrhea_care_4",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "diarrhea_care_5",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "diarrhea_care_6",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5166,14 +5126,12 @@
       {
         "page": "girlBMI",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "girl_height2",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5224,14 +5182,12 @@
       {
         "page": "height_prediction",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "height_tips",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -6429,22 +6385,18 @@
       {
         "page": "smecta_1",
         "fields": [
-          "content_sha256",
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "smecta_2",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "smecta_3",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
