@@ -66,8 +66,8 @@
 | Ped_abx_susp | 使用前要搖一搖 | https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_6.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | Ped_abx_susp | 不可冷凍。過期就丟棄，顏色稍微變深是正常的 | https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_7.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | Ped_abx_susp | 整合全部的步驟 | https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_8.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| ped_fever_reducer | 安佳熱 | https://liaoweihung.github.io/pteduimg/cards/antiphen.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| ped_fever_reducer | 依普芬 | https://liaoweihung.github.io/pteduimg/cards/ibuprofen_sol.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_fever_reducer | 安佳熱（Acetaminophen）兒童退燒糖漿怎麼吃？ | https://liaoweihung.github.io/pteduimg/cards/antiphen.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_fever_reducer | 依普芬（Ibuprofen）兒童退燒止痛藥水怎麼吃？ | https://liaoweihung.github.io/pteduimg/cards/ibuprofen_sol.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | ped_fever_reducer | 舒抑痛口服懸液：兒童退燒劑量與使用注意事項 | https://liaoweihung.github.io/pteduimg/cards/idofen_suspension.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | ped_fever_reducer | 馬蓋先口服懸濁液：兒童退燒劑量與使用注意事項 | https://liaoweihung.github.io/pteduimg/cards/macsafe_suspension.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | oral_hygiene | 口腔清潔 | https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_01.html | 是 | 是 | 是 | 是 | 是 | 無 |

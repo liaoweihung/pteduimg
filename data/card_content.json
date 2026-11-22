@@ -2361,53 +2361,303 @@
   },
   {
     "cardId": "ped_fever_reducer",
-    "title": "安佳熱",
+    "title": "安佳熱（Acetaminophen）兒童退燒糖漿怎麼吃？",
     "image": "img/antiphen.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/antiphen.html",
-    "summary": "安佳熱（Acetaminophen）退燒糖漿：紅色（草莓口味）或紫色糖漿；耳溫達 38°C～39°C 時使用。",
+    "summary": "安佳熱糖漿（Anti-Phen Syrup）每 1 mL 含 Acetaminophen（乙醯胺酚）24 mg，用來退燒和止痛，和成人常用的普拿疼是同一種成分。依仿單，6 歲以上未滿 12 歲每次 10～15 mL，3 歲以上未滿 6 歲每次 5～7.5 mL；每 4～6 小時可重複一次，24 小時內不超過 5 次。3 歲以下請先由醫師評估。",
     "sections": [
       {
-        "heading": "給藥間隔與上限",
-        "text": "兩次服藥至少間隔 4 小時；一天最多 5 次。"
+        "heading": "安佳熱是什麼藥？",
+        "text": "安佳熱是退燒止痛糖漿，每 1 mL 含 Acetaminophen 24 mg，可以緩解發燒和頭痛、喉嚨痛、牙痛等疼痛。它不是消炎藥，也不是抗生素。有葡萄（紫色）和草莓（紅色）兩種口味。藥品類別是醫師藥師藥劑生指示藥品。"
       },
       {
-        "heading": "年齡劑量",
-        "text": "6～12歲每次10～15毫升；3～6歲每次5～7.5毫升；3歲以下由醫師評估使用。"
+        "heading": "安佳熱小孩一次喝多少？",
+        "textAfterBlocks": true,
+        "text": "仿單提醒第一次先用最小的建議量。有藥袋時，以藥袋寫的毫升數為準。",
+        "blocks": [
+          "以下是食藥署仿單的每次用量：",
+          {
+            "items": [
+              "**12 歲以上及成人**：每次 20～30 mL",
+              "**6 歲以上未滿 12 歲**：每次 10～15 mL",
+              "**3 歲以上未滿 6 歲**：每次 5～7.5 mL",
+              "**3 歲以下**：請洽醫師診治"
+            ]
+          }
+        ]
       },
       {
-        "heading": "劑量速算",
-        "text": "單次劑量（c.c.）＝孩童體重（kg）÷ 2。"
+        "heading": "為什麼藥袋和年齡表不一樣？",
+        "text": "醫師可能依孩子的體重開立個別劑量，常用範圍是每公斤 10～15 mg，所以藥袋上的毫升數可能和年齡表不同。請照藥袋給；不確定時問開藥的醫師或藥師，不要自己換算。"
+      },
+      {
+        "heading": "安佳熱多久可以吃一次？",
+        "text": "需要時再吃；症狀持續的話，每 4～6 小時可以再吃一次，24 小時內不超過 5 次。"
+      },
+      {
+        "heading": "喝了多久開始退燒？還沒退可以提早再喝嗎？",
+        "text": "口服安佳熱大約 30～60 分鐘開始作用，多數孩子體溫會下降 1～2°C。",
+        "blocks": [
+          "喝完一小時燒還沒全退是常見的，**不要提早再喝**，仍要間隔 4～6 小時。"
+        ]
+      },
+      {
+        "heading": "發燒幾度要吃退燒藥？",
+        "text": "退燒藥是為了讓孩子舒服、能休息，不是要把體溫壓到正常。要不要吃，看孩子不舒服的程度；有藥袋時，照藥袋確認藥名、每次幾毫升和間隔。",
+        "blocks": [
+          "衛福部的建議是兒童體溫超過 38.5°C **且**感到不舒服時，依醫師處方使用。",
+          "圖卡上寫「耳溫 38～39°C 時使用」，是常見的參考說法，不是仿單規定。孩子精神好、沒有不舒服，可以先觀察；體溫到了 39°C 也不代表要改吃別的退燒藥，仍照藥袋。"
+        ]
+      },
+      {
+        "heading": "安佳熱和依普芬可以一起用嗎？",
+        "text": "不要自行同時給兩種退燒藥。安佳熱是 Acetaminophen，依普芬是 Ibuprofen，成分、濃度和間隔都不同，毫升數不能互相套用。醫師若指示兩種交替，請照指示，並把每種藥給的時間和毫升數記下來，避免給太多。"
+      },
+      {
+        "heading": "什麼情況不能用或要先問？",
+        "textAfterBlocks": true,
+        "text": "同時吃其他含 Acetaminophen 的止痛、退燒或綜合感冒藥：先問醫師藥師，避免重複。",
+        "blocks": [
+          {
+            "items": [
+              "曾對本品過敏，或有**苯酮尿症**（本品含阿斯巴甜）：不可使用。",
+              "有肝臟疾病：先洽醫師。"
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "什麼時候要就醫？",
+        "text": "12 歲以下用了 3 天，發燒或疼痛沒有改善：就醫。",
+        "blocks": [
+          "不用等 3 天、要儘快就醫的情況：",
+          {
+            "items": [
+              "**未滿 3 個月**的寶寶，體溫達 38°C",
+              "呼吸困難",
+              "精神明顯變差、叫不太醒"
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "安佳熱有什麼副作用？",
+        "text": "仿單列出可能出現發疹、發紅、噁心、嘔吐、食慾不振、頭暈或耳鳴，出現時請停藥並詢問醫師藥師。臉、嘴唇、喉嚨腫，呼吸困難，或全身起疹、搔癢，請立即停藥就醫。"
+      },
+      {
+        "heading": "怎麼量、怎麼保存？",
+        "text": "5 mL 以上可以用量杯，眼睛和刻度平視；少於 5 mL 用口服針筒比較準。密封、25°C 以下保存，不需冰存；避免陽光直射，放在兒童拿不到的地方。"
+      },
+      {
+        "heading": "藥品資訊",
+        "text": "品名：「晟德」安佳熱糖漿 24 毫克/毫升；ANTI-PHEN SYRUP 24MG/ML \"CENTER\"",
+        "blocks": [
+          {
+            "items": [
+              "許可證字號：衛署藥製字第040164號",
+              "藥品類別：醫師藥師藥劑生指示藥品",
+              "廠商：晟德大藥廠"
+            ]
+          }
+        ]
       }
     ],
-    "altText": "安佳熱第 1 張圖卡",
+    "altText": "安佳熱退燒糖漿衛教圖卡：Acetaminophen，紅色草莓口味或紫色；兩次至少間隔 4 小時、一天最多 5 次；6～12 歲每次 10～15 mL、3～6 歲 5～7.5 mL、3 歲以下由醫師評估；圖卡另列體重速算，實際用量依藥袋",
     "sourceConversationId": "6a0dc1ca-25dc-83a6-a126-60ef828de577",
     "sourceMessageId": "d05150de-6f3a-4861-b562-84b8dc8577c6",
     "sourceType": "chatgpt_history",
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": false,
+    "seoTitle": "安佳熱糖漿幾小時吃一次？兒童分齡用量與退燒注意事項",
+    "metaDescription": "安佳熱糖漿每 mL 含 Acetaminophen 24 mg。每 4～6 小時可再吃一次，24 小時不超過 5 次；6 歲以上未滿 12 歲每次 10～15 mL，3 歲以上未滿 6 歲每次 5～7.5 mL，3 歲以下先看醫師。苯酮尿症不可用。",
+    "references": [
+      {
+        "title": "食藥署藥品仿單查詢平台：「晟德」安佳熱糖漿（衛署藥製字第040164號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第040164號"
+      },
+      {
+        "title": "臺北市立聯合醫院 安佳熱糖漿用藥指導單張",
+        "url": "https://www-ws.gov.taipei/001/Upload/446/relfile/22055/9101903/6f6f3353-9217-4152-8489-a12e5ea85d65.pdf"
+      },
+      {
+        "title": "臺大醫院健康電子報 小兒發燒的藥物治療",
+        "url": "https://epaper.ntuh.gov.tw/health/201803/project_3.html"
+      },
+      {
+        "title": "衛生福利部 兒童發燒用藥提醒",
+        "url": "https://www.mohw.gov.tw/fp-16-39575-1.html"
+      },
+      {
+        "title": "NICE NG143 兒童發燒評估",
+        "url": "https://www.nice.org.uk/guidance/ng143/chapter/recommendations"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "藥師提供圖卡，AI 協助仿單核對與網頁文字撰寫",
+    "related_links": [
+      {
+        "title": "依普芬（Ibuprofen）兒童退燒止痛藥水怎麼吃？",
+        "url": "../cards/ibuprofen_sol.html"
+      },
+      {
+        "title": "小兒發燒注意事項",
+        "url": "../cards/notice_ped_fever_reducer.html"
+      }
+    ]
   },
   {
     "cardId": "ped_fever_reducer",
-    "title": "依普芬",
+    "title": "依普芬（Ibuprofen）兒童退燒止痛藥水怎麼吃？",
     "image": "img/ibuprofen_sol.webp",
     "url": "https://liaoweihung.github.io/pteduimg/cards/ibuprofen_sol.html",
-    "summary": "依普芬（Ibuprofen）：紫色或紅色懸浮液，使用前需搖勻；耳溫達 39°C 以上時使用。",
+    "summary": "依普芬口服懸液劑每 1 mL 含 Ibuprofen（布洛芬）20 mg，是須由醫師處方的退燒止痛藥水，屬非類固醇消炎止痛藥（NSAIDs）。使用前要搖勻，每次用量照藥袋；仿單用於 6 個月到 12 歲兒童，每 6～8 小時一次，一天每公斤最多 2 mL。",
     "sections": [
       {
-        "heading": "給藥間隔",
-        "text": "兩次服藥至少間隔 6 小時。"
+        "heading": "依普芬是什麼藥？",
+        "text": "依普芬是 Ibuprofen 懸液劑，每 1 mL 含 20 mg，可以退燒、止痛，也有消炎作用。有葡萄口味（紫色）和綜合水果口味（紅色）。藥品類別是須由醫師處方使用。"
       },
       {
-        "heading": "劑量速算",
-        "text": "單次劑量（c.c.）＝孩童體重（kg）÷ 2；若發燒程度較輕，醫師有時會建議體重 ÷ 4 的低劑量。"
+        "heading": "依普芬小孩一次喝多少？",
+        "text": "仿單寫 6 個月到 12 歲依體重和體溫計算：",
+        "blocks": [
+          {
+            "items": [
+              "體溫 39°C 以下：每公斤 0.25 mL",
+              "體溫 39°C 以上：每公斤 0.5 mL",
+              "一天上限：每公斤 2 mL"
+            ]
+          },
+          "仿單在剛好 39°C 的寫法有重疊，所以**實際每次幾 mL 請看藥袋**。藥袋沒寫清楚時，先問開藥的院所或藥師，不要自己選。6 個月以下的寶寶不要自行使用。"
+        ]
+      },
+      {
+        "heading": "依普芬多久可以吃一次？",
+        "text": "兩次之間至少隔 6 小時，仿單寫每 6～8 小時一次。口服後大約 60 分鐘開始作用，燒還沒退也不要提早再吃或自行加量。"
+      },
+      {
+        "heading": "發燒幾度要吃退燒藥？",
+        "text": "退燒藥是為了讓孩子舒服、能休息，不是要把體溫壓到正常。要不要吃，看孩子不舒服的程度；有藥袋時，照藥袋確認藥名、每次幾毫升和間隔。",
+        "blocks": [
+          "圖卡上寫「耳溫 39°C 以上時使用」，是常見的參考說法，不是仿單規定。不代表 39°C 以下就不能用依普芬，或燒到 39°C 就要從安佳熱換成依普芬，仍照藥袋。"
+        ]
+      },
+      {
+        "heading": "依普芬和安佳熱可以一起用嗎？",
+        "text": "不要自行同時給兩種退燒藥。依普芬是 Ibuprofen，安佳熱是 Acetaminophen，成分、濃度和間隔都不同，毫升數不能互相套用。醫師若指示兩種交替，請照指示，並把每種藥給的時間和毫升數記下來。"
+      },
+      {
+        "heading": "依普芬和舒抑痛、馬蓋先成分一樣嗎？",
+        "text": "一樣。",
+        "blocks": [
+          "這三款都是 Ibuprofen 20 mg/mL，**不要重複給**；各自的用法還是看藥袋。"
+        ]
+      },
+      {
+        "heading": "孩子一直吐、喝不下，還能照藥袋給嗎？",
+        "text": "先不要自行給。孩子持續嘔吐、拉肚子、喝不下水或尿量變少時，Ibuprofen 可能影響腎臟，請先聯絡醫師或就醫。吃完藥吐出來要不要補，可以看「吃藥後吐了要補嗎」。"
+      },
+      {
+        "heading": "什麼情況不能用或要先問？",
+        "text": "對 Ibuprofen 過敏，或吃 Aspirin、其他止痛消炎藥後曾發生氣喘、蕁麻疹：不可使用。",
+        "blocks": [
+          {
+            "items": [
+              "有消化性潰瘍、腸胃出血、嚴重出血傾向，或嚴重肝、腎功能不全：不可使用。",
+              "有氣喘、曾有過敏病史、肝病或血液疾病：先告訴醫師。",
+              "盡量不要和其他止痛消炎藥一起吃。"
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "依普芬有什麼副作用？",
+        "text": "可能出現食慾不振、噁心、嘔吐、胃痛、腹瀉、便祕或頭痛。仿單也提醒：高燒的幼兒用藥後，要注意是否退燒過度、四肢冰冷、虛弱。",
+        "blocks": [
+          "服藥後出現以下**任何一項**，請停藥並儘速就醫：",
+          {
+            "items": [
+              "新的皮疹、嘴破或口腔黏膜破損，或其他疑似過敏的情形",
+              "呼吸困難或喘",
+              "吐血、黑便",
+              "視力異常"
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "怎麼量、怎麼保存？",
+        "text": "使用前搖勻，用口服針筒或量杯量取，不要用家用湯匙。密封、25°C 以下保存，不需冰存；避免陽光直射，放在兒童拿不到的地方。"
+      },
+      {
+        "heading": "藥品資訊",
+        "text": "品名：「晟德」依普芬口服懸液劑 20 毫克/毫升；IBUPROFEN ORAL SUSPENSION 20MG/ML \"CENTER\"",
+        "blocks": [
+          {
+            "items": [
+              "許可證字號：衛署藥製字第043152號",
+              "藥品類別：須由醫師處方使用",
+              "廠商：晟德大藥廠"
+            ]
+          }
+        ]
       }
     ],
-    "altText": "依普芬第 2 張圖卡",
+    "altText": "依普芬退燒止痛糖漿衛教圖卡：Ibuprofen 口服懸液，紫色葡萄或紅色口味，使用前搖勻；兩次至少間隔 6 小時；圖卡列體重速算與醫師可能建議的低劑量，實際每次用量依藥袋與醫師指示",
     "sourceConversationId": "6a0dc1ca-25dc-83a6-a126-60ef828de577",
     "sourceMessageId": "61126f11-7ccd-49d6-a48e-bf2c074a8641",
     "sourceType": "chatgpt_history",
     "matchConfidence": "high",
-    "needsMedicalReview": true
+    "needsMedicalReview": false,
+    "seoTitle": "依普芬口服懸液怎麼用？兒童退燒劑量、給藥間隔與搖勻方法",
+    "metaDescription": "依普芬口服懸液劑每 mL 含 Ibuprofen（布洛芬）20 mg，是處方退燒止痛藥水。用前搖勻，每次用量依藥袋，每 6～8 小時一次，6 個月以上兒童使用。說明和舒抑痛、馬蓋先同成分不可重複，以及吐、喝不下時怎麼辦。",
+    "references": [
+      {
+        "title": "食藥署藥品仿單查詢平台：「晟德」依普芬口服懸液劑（衛署藥製字第043152號）",
+        "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第043152號"
+      },
+      {
+        "title": "臺北市立聯合醫院 依普芬口服懸液劑用藥指導單張",
+        "url": "https://www-ws.gov.taipei/001/Upload/446/relfile/22055/9101903/f0d8268e-c7fa-4a1c-992b-1a6122e85c9f.pdf"
+      },
+      {
+        "title": "臺大醫院健康電子報 小兒發燒的藥物治療",
+        "url": "https://epaper.ntuh.gov.tw/health/201803/project_3.html"
+      },
+      {
+        "title": "衛生福利部 兒童發燒用藥提醒",
+        "url": "https://www.mohw.gov.tw/fp-16-39575-1.html"
+      },
+      {
+        "title": "成大醫院藥劑部 舒抑痛與依普芬品項替換公告",
+        "url": "https://nckuhpharmacy.hosp.ncku.edu.tw/var/file/72/1072/img/745/116279717.pdf"
+      }
+    ],
+    "updatedAt": "2026-11-22",
+    "sourceCheckedAt": "2026-11-22",
+    "revisionCredit": "藥師提供圖卡，AI 協助仿單核對與網頁文字撰寫",
+    "related_links": [
+      {
+        "title": "安佳熱（Acetaminophen）兒童退燒糖漿怎麼吃？",
+        "url": "../cards/antiphen.html"
+      },
+      {
+        "title": "舒抑痛口服懸液：兒童退燒劑量與使用注意事項",
+        "url": "../cards/idofen_suspension.html"
+      },
+      {
+        "title": "馬蓋先口服懸濁液：兒童退燒劑量與使用注意事項",
+        "url": "../cards/macsafe_suspension.html"
+      },
+      {
+        "title": "小孩吃藥後吐了要補嗎？先看時間、吐出多少和孩子狀態再決定",
+        "url": "../cards/child_medicine_feeding_06.html"
+      },
+      {
+        "title": "小兒發燒注意事項",
+        "url": "../cards/notice_ped_fever_reducer.html"
+      }
+    ]
   },
   {
     "cardId": "ped_fever_reducer",
