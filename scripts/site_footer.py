@@ -62,9 +62,9 @@ def sync_footer(root=ROOT, write=False, page='index.html'):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--write', action='store_true')
-    parser.add_argument('--page', action='append', choices=[*NOTICES, 'topics/acne.html', 'topics/mom.html'])
+    parser.add_argument('--page', action='append', choices=[*NOTICES, 'topics/acne.html', 'topics/mom.html', 'topics/pediatric-medicine.html'])
     args = parser.parse_args()
-    for page in args.page or [*NOTICES, 'topics/acne.html', 'topics/mom.html']:
+    for page in args.page or [*NOTICES, 'topics/acne.html', 'topics/mom.html', 'topics/pediatric-medicine.html']:
         if not sync_footer(write=args.write, page=page):
             sys.exit(f'{page} footer differs from shared source; run with --write')
     print('Selected footers match shared source.')

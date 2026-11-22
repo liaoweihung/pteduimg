@@ -4,6 +4,7 @@ import datetime
 import html
 import json
 import os
+import posixpath
 import re
 import warnings
 from pathlib import Path
@@ -715,9 +716,24 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     image_alt = seo["image_alt"]
     page_path = page_for_image(step)
     acne_topic = is_acne_topic(card_id, card)
-    top_actions_class = "top-actions acne-topic-actions" if acne_topic else "top-actions"
-    return_navigation = (render_topic_return(page_path) if acne_topic else
-                         f'<button class="pill" type="button" onclick="returnToCardHome()">{default_btn_text}</button>')
+    topic_hub = None
+    if not acne_topic:
+        raw_hub = (card_content or {}).get("topic_hub") or card.get("topic_hub")
+        if isinstance(raw_hub, dict) and raw_hub.get("url") and raw_hub.get("label"):
+            topic_hub = raw_hub
+    has_topic_nav = acne_topic or bool(topic_hub)
+    top_actions_class = "top-actions acne-topic-actions" if has_topic_nav else "top-actions"
+    if acne_topic:
+        return_navigation = render_topic_return(page_path)
+    elif topic_hub:
+        hub_href = posixpath.relpath(topic_hub["url"], posixpath.dirname(page_path.replace("\\", "/")) or ".")
+        return_navigation = (
+            '<nav class="topic-return-nav" aria-label="返回導覽">'
+            f'<button class="pill" type="button" onclick="returnToCardHome()">{default_btn_text}</button>'
+            f'<a class="pill" href="{esc(hub_href)}">{esc(topic_hub["label"])}</a></nav>'
+        )
+    else:
+        return_navigation = f'<button class="pill" type="button" onclick="returnToCardHome()">{default_btn_text}</button>'
     is_public_last_step = (category == "public_education" and step_index == total - 1)
     next_reads_html = render_next_reads(card_id, card, cards, manual_cards) if is_public_last_step else ""
     if is_public:
@@ -810,13 +826,13 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
       }
       location.href = "../index.html";
     }"""
-    topic_nav_styles = TOP_NAV_STYLES if acne_topic else ""
+    topic_nav_styles = TOP_NAV_STYLES if has_topic_nav else ""
     mobile_nav_styles = """
     @media (max-width:679px) {
       .image-stage { min-height:0; padding:12px 8px; }
       .hero-img { max-height:calc(100svh - 220px); }
     }
-""" if acne_topic else ""
+""" if has_topic_nav else ""
     header_html = render_header(return_navigation, '      <div class="action-cluster">\n        <button class="pill icon-pill" type="button" onclick="showQRCode()" aria-label="顯示 QR code">🔲</button>\n        <button class="pill icon-pill" id="favorite-button" type="button" onclick="toggleFavorite()" aria-pressed="false" aria-label="加入收藏">☆</button>\n        <button class="pill icon-pill" type="button" onclick="showSharePanel()" aria-label="分享圖卡">↗</button>\n      </div>', top_actions_class)
     page_url = seo["canonical"]
     image_url = seo["og_image"]
@@ -1890,6 +1906,7 @@ def update_sitemap(generated_pages, card_content_index):
         ("editorial-policy.html", "monthly", "0.5"),
         ("topics/acne.html", "weekly", "0.8"),
         ("topics/mom.html", "weekly", "0.8"),
+        ("topics/pediatric-medicine.html", "weekly", "0.8"),
         ("all-cards.html", "weekly", "0.8"),
         ("retired-cards.html", "monthly", "0.3"),
         ("calc.html", "monthly", "0.7"),

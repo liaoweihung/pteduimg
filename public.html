@@ -350,6 +350,15 @@ body.public-page .site-footer { font-size: .95rem; }
         </a>
     </article>
 </section>
+<section id="pediatric-hub-entry" class="acne-hub-entry" aria-label="兒科用藥總整理" hidden>
+    <article class="series-card">
+        <a class="series-link" href="./topics/pediatric-medicine.html">
+            <img class="acne-hub-thumb" src="./img/ped_cold_secorine.webp" width="56" height="56" alt="" loading="lazy" style="object-fit:cover;object-position:top;">
+            <span><strong>兒科用藥總整理</strong><small>餵藥照護、常用兒科藥水、預防與成長</small></span>
+            <span class="series-arrow" aria-hidden="true">›</span>
+        </a>
+    </article>
+</section>
 <div id="category-sections"></div>
 <button id="show-more" class="show-more" type="button" onclick="showMoreCards()" hidden>顯示更多主題</button>
 <section class="featured-section" aria-labelledby="featured-title">
@@ -1091,6 +1100,7 @@ body.public-page .site-footer { font-size: .95rem; }
         document.getElementById('ranking-note').hidden = !!cardSearchTerm;
         document.getElementById('acne-hub-entry').hidden = !!cardSearchTerm || !['all', 'acne'].includes(activePublicTopic);
         document.getElementById('mom-hub-entry').hidden = !!cardSearchTerm || !['all', 'pregnancy'].includes(activePublicTopic);
+        document.getElementById('pediatric-hub-entry').hidden = !!cardSearchTerm || !['all', 'infant_care', 'growth', 'infectious_diseases'].includes(activePublicTopic);
         const total = Object.values(categories).reduce((count, items) => count + items.length, 0);
         document.getElementById('result-count').textContent = `${getActivePublicTopicTitle()} · ${total} 個系列${cardSearchTerm ? '符合搜尋' : ''}`;
         document.getElementById('clear-filters').hidden = !cardSearchTerm && activePublicTopic === 'all';
@@ -1130,7 +1140,10 @@ body.public-page .site-footer { font-size: .95rem; }
         }
 
         let visibleFavCount = 0;
-        const topicHubFavorites = { 'topic:mom': { title: '媽媽專屬', icon: '🤱', label: '主題頁', href: './topics/mom.html' } };
+        const topicHubFavorites = {
+            'topic:mom': { title: '媽媽專屬', icon: '🤱', label: '主題頁', href: './topics/mom.html' },
+            'topic:pediatric-medicine': { title: '兒科用藥總整理', icon: '🧸', label: '主題頁', href: './topics/pediatric-medicine.html' }
+        };
         favoriteImages.forEach(favKey => {
             const hub = topicHubFavorites[favKey];
             if (hub) {

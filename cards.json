@@ -399,7 +399,11 @@
       "身高百分位",
       "兒童BMI標準",
       "遺傳身高"
-    ]
+    ],
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    }
   },
   "Prevent_Enterovirus": {
     "title": "預防腸病毒",
@@ -444,7 +448,11 @@
       "ped_fever_reducer",
       "diarrhea_care"
     ],
-    "showFooter": true
+    "showFooter": true,
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    }
   },
   "dry_eye": {
     "title": "乾眼症",
@@ -836,7 +844,12 @@
     "icon": "👶",
     "steps": [
       "img/AugmentinSyrup.png"
-    ]
+    ],
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    },
+    "showFooter": true
   },
   "Champix": {
     "title": "戒必適Champix",
@@ -1809,7 +1822,12 @@
       "img/Ped_abx_susp_6.png",
       "img/Ped_abx_susp_7.png",
       "img/Ped_abx_susp_8.png"
-    ]
+    ],
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    },
+    "showFooter": true
   },
   "ped_fever_reducer": {
     "title": "兒科退燒藥水",
@@ -1865,7 +1883,11 @@
       "img/idofen_suspension.webp",
       "img/macsafe_suspension.webp",
       "img/notice_ped_fever_reducer.webp"
-    ]
+    ],
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    }
   },
   "pediatric_cold_syrup": {
     "title": "兒科感冒藥水",
@@ -2050,7 +2072,11 @@
       "pediatric_cold_syrup-ped_cold_soltan",
       "pediatric_cold_syrup-ped_cold_muco",
       "pediatric_cold_syrup-ped_cold_sortuss"
-    ]
+    ],
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    }
   },
   "pediatric_gi_syrup": {
     "title": "兒科腸胃藥水",
@@ -2139,7 +2165,11 @@
       "pediatric_gi_syrup-1",
       "pediatric_gi_syrup-2",
       "pediatric_gi_syrup-ped_gi_pecolin_suspension"
-    ]
+    ],
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    }
   },
   "smecta_diarrhea": {
     "title": "舒腹達與腹瀉",
@@ -2181,7 +2211,11 @@
     ],
     "related_series": [
       "diarrhea_drugs"
-    ]
+    ],
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    }
   },
   "kidsolone_oral_solution": {
     "title": "必爾生口服液",
@@ -2214,7 +2248,11 @@
     ],
     "steps": [
       "img/kidsolone_oral_solution.webp"
-    ]
+    ],
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    }
   },
   "enema_use": {
     "title": "浣腸使用",
@@ -3851,7 +3889,11 @@
       "baby_nasal_aspirator-4",
       "baby_nasal_aspirator-5",
       "baby_nasal_aspirator-6"
-    ]
+    ],
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    }
   },
   "stomach_medicine": {
     "title": "胃藥怎麼吃？",
@@ -4380,7 +4422,11 @@
     "steps": [
       "img/liquid_medicine_storage_01.webp",
       "img/liquid_medicine_storage_02.webp"
-    ]
+    ],
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    }
   },
   "child_medicine_feeding": {
     "title": "兒童餵藥技巧",
@@ -4423,7 +4469,11 @@
       "img/child_medicine_feeding_04.webp",
       "img/child_medicine_feeding_05.webp",
       "img/child_medicine_feeding_06.webp"
-    ]
+    ],
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    }
   },
   "drug_weight_gain": {
     "title": "吃藥會讓我變胖嗎？",

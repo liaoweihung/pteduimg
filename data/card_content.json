@@ -12520,7 +12520,11 @@
         "url": "https://cmuh.cmu.edu.tw/HealthEdus/Detail?no=5467"
       }
     ],
-    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源"
+    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源",
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    }
   },
   {
     "cardId": "diarrhea_care",
@@ -12570,7 +12574,11 @@
         "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diarrhea/symptoms-causes"
       }
     ],
-    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源"
+    "revisionCredit": "使用者提供圖卡、網頁文字與網址；本站整理逐頁靜態文字並核對直接來源",
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    }
   },
   {
     "cardId": "diarrhea_care",
@@ -12630,7 +12638,11 @@
         "title": "瀉必寧 Hidrasec 怎麼吃？兒童劑量、服用方法與注意事項",
         "url": "../cards/ped_diarrhea_hidrasec.html"
       }
-    ]
+    ],
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    }
   },
   {
     "cardId": "diarrhea_care",
@@ -12690,7 +12702,11 @@
         "title": "瀉必寧 Hidrasec 怎麼吃？兒童劑量、服用方法與注意事項",
         "url": "../cards/ped_diarrhea_hidrasec.html"
       }
-    ]
+    ],
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    }
   },
   {
     "cardId": "diarrhea_drugs",
