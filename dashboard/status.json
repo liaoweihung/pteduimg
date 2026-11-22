@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-21T14:09:52+08:00",
-  "baseline": "ba3d542e4c8e6e352dadd238b61b7290da124c11",
-  "scope": "網站來源快照；版本 ba3d542e",
+  "generatedAt": "2026-11-22T12:28:28+08:00",
+  "baseline": "63e6c4ac1ff1fc2c0e863961a252577512d5b82c",
+  "scope": "網站來源快照；版本 63e6c4ac",
   "counts": {
-    "cards": 459,
-    "series": 99,
-    "allSeries": 103,
+    "cards": 464,
+    "series": 100,
+    "allSeries": 104,
     "hidden": 4,
     "retired": 4,
     "areas": 17,
@@ -13,7 +13,7 @@
     "tools": 6
   },
   "areas": {
-    "chronic_conditions": 7,
+    "chronic_conditions": 8,
     "skin_wound": 27,
     "acne": 6,
     "growth": 1,
@@ -26,7 +26,7 @@
     "heat_illness": 1,
     "throat": 1,
     "sleep": 2,
-    "travel_medication": 4,
+    "travel_medication": 5,
     "pregnancy": 3,
     "infant_care": 4,
     "sports_injury": 1
@@ -1067,6 +1067,17 @@
       "hidden": false,
       "areas": [
         "infant_care"
+      ],
+      "departments": []
+    },
+    {
+      "id": "drug_weight_gain",
+      "title": "吃藥會讓我變胖嗎？",
+      "count": 5,
+      "hidden": false,
+      "areas": [
+        "travel_medication",
+        "chronic_conditions"
       ],
       "departments": []
     }
@@ -3642,30 +3653,30 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 334,
+      "machine_pass": 339,
       "partial": 1,
       "missing": 124
     },
     "reference_status": {
       "missing": 208,
-      "machine_pass": 251
+      "machine_pass": 256
     },
     "date_status": {
       "missing": 207,
-      "machine_pass": 231,
+      "machine_pass": 236,
       "partial": 21
     },
     "footer_status": {
       "missing": 228,
-      "machine_pass": 231
+      "machine_pass": 236
     },
     "jsonld_status": {
-      "machine_pass": 459
+      "machine_pass": 464
     }
   },
   "sync": {
-    "pages": 467,
-    "fields": 1080,
+    "pages": 472,
+    "fields": 1083,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4924,7 +4935,6 @@
       {
         "page": "contraceptive_pills_how_to_take",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5034,6 +5044,36 @@
         "fields": [
           "jsonld_status",
           "source_sha256",
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "drug_weight_gain_1",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "drug_weight_gain_2",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "drug_weight_gain_3",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "drug_weight_gain_4",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "drug_weight_gain_5",
+        "fields": [
           "rules_sha256"
         ]
       },
@@ -5679,7 +5719,6 @@
       {
         "page": "kidsolone_oral_solution",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
