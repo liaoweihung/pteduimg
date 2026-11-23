@@ -12,6 +12,7 @@
     "scope": "Observation and records only; no automatic website changes, builds, indexing submissions, commits or pushes."
   },
   "cohorts": [
+    {"id": "manual-insomnia-2026-11-21", "description": "Insomnia series: cards 01-11 confirmed requested; card12 rejected by daily quota; cards13-14 pending.", "submitted_date": "2026-11-21", "urls": ["https://liaoweihung.github.io/pteduimg/cards/insomnia_card01.html", "https://liaoweihung.github.io/pteduimg/cards/insomnia_card02.html", "https://liaoweihung.github.io/pteduimg/cards/insomnia_card03.html", "https://liaoweihung.github.io/pteduimg/cards/insomnia_card04.html", "https://liaoweihung.github.io/pteduimg/cards/insomnia_card05.html", "https://liaoweihung.github.io/pteduimg/cards/insomnia_card06.html", "https://liaoweihung.github.io/pteduimg/cards/insomnia_card07.html", "https://liaoweihung.github.io/pteduimg/cards/insomnia_card08.html", "https://liaoweihung.github.io/pteduimg/cards/insomnia_card09.html", "https://liaoweihung.github.io/pteduimg/cards/insomnia_card10.html", "https://liaoweihung.github.io/pteduimg/cards/insomnia_card11.html"], "evidence_file": "evidence/insomnia-index-submissions-2026-11-21.md"},
     {"id": "manual-2026-08-29", "description": "5 pages manually requested for indexing; part of the original 26 text-updated pages", "submitted_date": "2026-08-29"},
     {"id": "manual-acne-2026-09-06", "description": "6 acne pages manually requested for indexing; separate from the original 26-page experiment", "submitted_date": "2026-09-06"},
     {"id": "natural-text-2026-08-22", "description": "21 original text-updated pages without a recorded manual submission in this experiment; not proof they were never submitted by anyone"},
@@ -21,6 +22,21 @@
     {"id": "manual-japan-otc-2026-11-01", "description": "Single Japan OTC classification card URL requested for indexing with explicit user authorization; separate from other manual and JSON-LD cohorts.", "submitted_date": "2026-11-01", "urls": ["https://liaoweihung.github.io/pteduimg/cards/japan_otc_drug_classification.html"], "deployment_date": null, "evidence_file": "evidence/japan-otc-indexing-2026-11-01.md"}
   ],
   "manual_submissions": [
+    {"id": "SUB-20261123-insomnia-12", "cohort": "manual-insomnia-2026-11-21", "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card12.html", "submitted_date": "2026-11-23", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown; no last crawl", "result": "indexing_requested", "evidence_file": "evidence/insomnia-index-submissions-2026-11-23.md"},
+    {"id": "SUB-20261123-insomnia-13", "cohort": "manual-insomnia-2026-11-21", "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card13.html", "submitted_date": "2026-11-23", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown; no last crawl", "result": "indexing_requested", "evidence_file": "evidence/insomnia-index-submissions-2026-11-23.md"},
+    {"id": "SUB-20261123-insomnia-14", "cohort": "manual-insomnia-2026-11-21", "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card14.html", "submitted_date": "2026-11-23", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown; no last crawl", "result": "indexing_requested", "evidence_file": "evidence/insomnia-index-submissions-2026-11-23.md"},
+    {"id": "SUB-20261121-insomnia-05", "cohort": "manual-insomnia-2026-11-21", "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card05.html", "submitted_date": "2026-11-21", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown; no last crawl", "result": "indexing_requested", "evidence_file": "evidence/insomnia-index-submissions-2026-11-21.md"},
+    {"id": "SUB-20261121-insomnia-01", "cohort": "manual-insomnia-2026-11-21", "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card01.html", "submitted_date": "2026-11-21", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown; no last crawl", "result": "indexing_requested", "evidence_file": "evidence/insomnia-index-submissions-2026-11-21.md"},
+    {"id": "SUB-20261121-insomnia-02", "cohort": "manual-insomnia-2026-11-21", "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card02.html", "submitted_date": "2026-11-21", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown; no last crawl", "result": "indexing_requested", "evidence_file": "evidence/insomnia-index-submissions-2026-11-21.md"},
+    {"id": "SUB-20261121-insomnia-03", "cohort": "manual-insomnia-2026-11-21", "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card03.html", "submitted_date": "2026-11-21", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown; no last crawl", "result": "indexing_requested", "evidence_file": "evidence/insomnia-index-submissions-2026-11-21.md"},
+    {"id": "SUB-20261121-insomnia-04", "cohort": "manual-insomnia-2026-11-21", "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card04.html", "submitted_date": "2026-11-21", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown; no last crawl", "result": "indexing_requested", "evidence_file": "evidence/insomnia-index-submissions-2026-11-21.md"},
+    {"id": "SUB-20261121-insomnia-06", "cohort": "manual-insomnia-2026-11-21", "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card06.html", "submitted_date": "2026-11-21", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown; no last crawl", "result": "indexing_requested", "evidence_file": "evidence/insomnia-index-submissions-2026-11-21.md"},
+    {"id": "SUB-20261121-insomnia-07", "cohort": "manual-insomnia-2026-11-21", "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card07.html", "submitted_date": "2026-11-21", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown; no last crawl", "result": "indexing_requested", "evidence_file": "evidence/insomnia-index-submissions-2026-11-21.md"},
+    {"id": "SUB-20261121-insomnia-08", "cohort": "manual-insomnia-2026-11-21", "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card08.html", "submitted_date": "2026-11-21", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown; no last crawl", "result": "indexing_requested", "evidence_file": "evidence/insomnia-index-submissions-2026-11-21.md"},
+    {"id": "SUB-20261121-insomnia-09", "cohort": "manual-insomnia-2026-11-21", "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card09.html", "submitted_date": "2026-11-21", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown; no last crawl", "result": "indexing_requested", "evidence_file": "evidence/insomnia-index-submissions-2026-11-21.md"},
+    {"id": "SUB-20261121-insomnia-10", "cohort": "manual-insomnia-2026-11-21", "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card10.html", "submitted_date": "2026-11-21", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown; no last crawl", "result": "indexing_requested", "evidence_file": "evidence/insomnia-index-submissions-2026-11-21.md"},
+    {"id": "SUB-20261121-insomnia-11", "cohort": "manual-insomnia-2026-11-21", "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card11.html", "submitted_date": "2026-11-21", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown; no last crawl", "result": "indexing_requested", "evidence_file": "evidence/insomnia-index-submissions-2026-11-21.md"},
+    {"id": "SUB-20261121-insomnia-12", "cohort": "manual-insomnia-2026-11-21", "url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card12.html", "submitted_date": "2026-11-21", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown; no last crawl", "result": "rejected_daily_quota", "evidence_file": "evidence/insomnia-index-submissions-2026-11-21.md"},
     {"id": "SUB-0829-01", "cohort": "manual-2026-08-29", "url": "https://liaoweihung.github.io/pteduimg/cards/Ped_abx_susp_8.html", "submitted_date": "2026-08-29", "submitted_at": null, "pre_submit_status": "URL not on Google", "result": "indexing_requested", "evidence_id": "H0829"},
     {"id": "SUB-0829-02", "cohort": "manual-2026-08-29", "url": "https://liaoweihung.github.io/pteduimg/cards/oral_hygiene_08.html", "submitted_date": "2026-08-29", "submitted_at": null, "pre_submit_status": "URL not on Google", "result": "indexing_requested", "evidence_id": "H0829"},
     {"id": "SUB-0829-03", "cohort": "manual-2026-08-29", "url": "https://liaoweihung.github.io/pteduimg/cards/over_one_oint_01.html", "submitted_date": "2026-08-29", "submitted_at": null, "pre_submit_status": "URL not on Google", "result": "indexing_requested", "evidence_id": "H0829"},
@@ -40,6 +56,8 @@
     {"id": "SUB-1101-japan-otc", "cohort": "manual-japan-otc-2026-11-01", "url": "https://liaoweihung.github.io/pteduimg/cards/japan_otc_drug_classification.html", "submitted_date": "2026-11-01", "submitted_at": null, "pre_submit_status": "URL not on Google; URL unknown to Google", "result": "indexing_requested", "evidence_id": "S1101-japan-otc", "evidence_file": "evidence/japan-otc-indexing-2026-11-01.md", "screenshot_file": "evidence/japan-otc-indexing-2026-11-01.png", "inspection_url": "https://search.google.com/search-console/inspect?resource_id=https%3A%2F%2Fliaoweihung.github.io%2F&id=GfzvC_aIUV5fQ6olsOYI5w"}
   ],
   "observations": [
+    {"id": "OBS-2026-11-23-insomnia-remaining-submissions", "kind": "manual_indexing_requests", "observed_date": "2026-11-23", "cohort": "manual-insomnia-2026-11-21", "evidence_file": "evidence/insomnia-index-submissions-2026-11-23.md", "requested_successfully": [12, 13, 14], "pending": [], "notes": "Each confirmed by Google heading: indexing requested, added to priority crawl queue. Not proof of indexing. Prior 01-11 not resubmitted or reinspected."},
+    {"id": "OBS-2026-11-21-insomnia-manual-submissions", "kind": "manual_indexing_requests", "observed_date": "2026-11-21", "recorded_at": "2026-11-21T12:39:27+08:00", "evidence_file": "evidence/insomnia-index-submissions-2026-11-21.md", "cohort": "manual-insomnia-2026-11-21", "requested_successfully": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "rejected_daily_quota": [12], "not_attempted_due_to_quota": [13, 14], "index_status_before_request": "URL unknown; not indexed for cards 01-12", "last_crawl": null, "notes": "Success means requested, not indexed. Per-URL exact submission times not recorded. No inspection of cards 13-14 in this operation. No scheduled retry created."},
     {
       "id": "OBS-2026-11-12-intentional-noindex-acne",
       "kind": "page_indexing_noindex_detail",
@@ -581,8 +599,82 @@
         ]}
       },
       "notes": "Page impressions and clicks are the existing fixed-window baseline. Query data are visible rows, not external search volume or a complete explanation of page exposure."
+    },
+    {
+      "id": "OBS-2026-11-21-secorine-optimization",
+      "kind": "page_optimization_tracking_registration",
+      "observed_date": "2026-11-21",
+      "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html",
+      "evidence_file": "evidence/secorine-optimization-2026-11-21.md",
+      "change_request": "CR-2026-111",
+      "source_commit": "649cdc1011745825b26f429157196c0063992800",
+      "deployment_date": null,
+      "last_crawled_date": null,
+      "index_status": null,
+      "status": "awaiting_deployment_verification_and_complete_post_window",
+      "historical_reference": {
+        "period": {"start": "2026-10-20", "end": "2026-11-16"},
+        "impressions": 1115, "clicks": 16, "reported_ctr_percent": 1.4, "average_position": 4.3,
+        "source_observation_ids": ["OBS-2026-11-19-traffic-comparison", "OBS-2026-11-19-query-opportunities"]
+      },
+      "case_study_reference": {
+        "source_commit": "d7776c46413323d54572c86fb12ae046d5548959",
+        "period": {"start": "2026-11-12", "end": "2026-11-18"},
+        "gsc_web_clicks": 16, "ga4_views": 98, "ga4_google_organic_landing_sessions": 48
+      },
+      "comparison_plan": {
+        "period_basis": "GSC report dates, conditional on verified deployment falling on 2026-11-21 in the report timezone. Exclude deployment day.",
+        "provisional_pre": {"start": "2026-10-24", "end": "2026-11-20"},
+        "provisional_post": {"start": "2026-11-22", "end": "2026-12-19"},
+        "current_post_metrics": null,
+        "watch_queries": ["息咳寧 劑量", "息咳寧劑量計算", "息咳寧兒童劑量體重"]
+      },
+      "notes": "User-reported optimization and GitHub commit verified as separate from CR-2026-071. Published version and crawl not verified. Historical windows overlap and are not additive. No indexing request or recurring task change."
+    },
+    {
+      "id": "OBS-2026-11-21-page-ranking-opportunities",
+      "kind": "gsc_page_and_query_diagnostics",
+      "observed_date": "2026-11-21",
+      "evidence_file": "evidence/search-rank-opportunities-2026-11-21.md",
+      "period": {"start": "2026-10-22", "end": "2026-11-18"},
+      "filters": {"property": "https://liaoweihung.github.io/", "search_type": "web", "country": "all", "device": "all"},
+      "property_totals": {"impressions": 2700, "clicks": 53, "reported_ctr_percent": 2, "average_position": 7},
+      "page_url_prefix": "https://liaoweihung.github.io/pteduimg/",
+      "page_row_columns": ["relative_url", "impressions", "clicks", "reported_ctr_percent", "average_position"],
+      "page_rows": [
+        ["cards/ped_cold_secorine.html",1401,26,1.9,4.4], ["cards/ped_cold_exdila_liquid.html",214,11,5.1,5.2],
+        ["cards/ped_cold_guaphen_syrup.html",273,6,2.2,6.4], ["cards/ped_cold_peace_syrup.html",179,5,2.8,3.9],
+        ["",63,2,3.2,6.9], ["cards/japan_otc_drug_classification.html",66,1,1.5,9.8], ["cards/antiphen.html",34,1,2.9,5.6],
+        ["cards/over_one_oint_01.html",24,1,4.2,4.8], ["cards/acne_patch_how_to_use.html",118,0,0,8.3],
+        ["cards/hydrocolloid_how_to_use.html",115,0,0,21.2], ["growth-calculator.html",66,0,0,18.3],
+        ["cards/ped_cold_cetirizine.html",33,0,0,25.1], ["pregnancy-weight-calculator.html",32,0,0,28.8],
+        ["cards/acne_patch_when_to_use.html",27,0,0,18.8], ["cards/ibuprofen_sol.html",18,0,0,10.8], ["cards/acne_stage.html",11,0,0,2],
+        ["cards/adult_diaper_2.html",10,0,0,35.5], ["cards/wound_healing_signs.html",9,0,0,24], ["cards/wound_tetanus.html",9,0,0,27.6],
+        ["cards/wound_cover.html",4,0,0,7.5], ["cards/wound_when_to_seek_care.html",2,0,0,4.5],
+        ["cards/acne.html",2,0,0,5], ["cards/Ped_abx_susp_8.html",1,0,0,1], ["cards/Ped_abx_susp_1.html",1,0,0,3]
+      ],
+      "query_row_columns": ["query", "impressions", "clicks", "reported_ctr_percent", "average_position"],
+      "selected_query_rows": {
+        "cards/ped_cold_peace_syrup.html": [["鼻福 劑量",20,0,0,1.1], ["鼻福用量",11,0,0,2], ["鼻福藥水劑量",12,1,8.3,3.7], ["鼻福劑量",9,1,11.1,1]],
+        "cards/ped_cold_guaphen_syrup.html": [["咳酚糖漿兒童劑量",34,2,5.9,5.6], ["咳酚糖漿",6,0,0,6.8], ["咳酚糖漿嬰兒劑量",5,0,0,5], ["咳酚糖漿劑量",4,0,0,1]],
+        "cards/japan_otc_drug_classification.html": [["第 二 類 醫藥 品",2,0,0,35], ["藥劑",1,0,0,7], ["日本藥品分類等級",1,0,0,10], ["日本第二類醫藥品",1,0,0,13]]
+      },
+      "acne_patch_update": {"change_request": "CR-2026-108", "source_commit": "b1d1f5e823fb615cd1cc4ddac0f66f7d151e1c1e", "commit_date_taipei": "2026-11-19", "deployment_date": null, "last_crawled_date": null, "relation_to_period": "pre_update"},
+      "notes": "Complete page table and selected visible queries, not external search volume. Window substantially overlaps the prior observation. No new per-URL index or AI visibility checks."
     }
-  ],
+  ,{
+    "id": "OBS-2026-11-21-insomnia-discovery",
+    "observed_date": "2026-11-21",
+    "evidence_file": "evidence/insomnia-search-diagnosis-2026-11-21.md",
+    "period": {"start": "2026-08-19", "end": "2026-11-18"},
+    "filters": {"property": "https://liaoweihung.github.io/", "search_type": "web", "country": "all", "device": "all", "page_contains": "/cards/insomnia_card"},
+    "metrics": {"impressions": 0, "clicks": 0, "ctr": null, "average_position": null},
+    "inspected_urls": [
+      {"url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card05.html", "status": "url_unknown_to_google", "indexed": false, "last_crawl": null},
+      {"url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card01.html", "status": "url_unknown_to_google", "indexed": false, "last_crawl": null}
+    ],
+    "notes": "Observed filtered chart totals; not inferred from missing rows. Both URL inspections show no referring sitemap or page and no crawl. Other twelve URLs not inspected. No live test, index request or GA4 check."
+  }],
   "forecasts": [
     {
       "id": "FORECAST-2026-10-19-cold-7d",
