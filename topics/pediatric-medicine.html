@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>兒科用藥總整理｜餵藥、泡藥保存與常見兒科藥水｜藥局衛教助手</title>
-  <meta name="description" content="藥師整理的兒科用藥系列目錄：兒童餵藥技巧、藥水要不要冰、抗生素藥水泡製、兒科感冒退燒腸胃藥水，以及吸鼻器、腸病毒預防、兒童生長計算器與防蚊液、口內膏、口角炎、中暑等日常照護。">
+  <title>兒童用藥總整理：小孩感冒、退燒、腸胃藥水與餵藥問題｜藥局衛教助手</title>
+  <meta name="description" content="小孩拿到的感冒、咳嗽、退燒、腸胃藥水是什麼藥？藥師整理 26 種常見兒科藥水圖卡，並回答吃藥後吐了要不要補、藥水要不要冰、藥太苦能不能加牛奶等家長常見問題。">
   <link rel="canonical" href="https://liaoweihung.github.io/pteduimg/topics/pediatric-medicine.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="藥局衛教助手">
   <meta property="og:locale" content="zh_TW">
-  <meta property="og:title" content="兒科用藥總整理｜餵藥、泡藥保存與常見兒科藥水｜藥局衛教助手">
-  <meta property="og:description" content="兒童餵藥技巧、藥水保存、抗生素泡製、常見兒科藥水、預防與成長，以及防蚊液、口內膏、口角炎與中暑等家長常見照護，一頁快速查看。">
+  <meta property="og:title" content="兒童用藥總整理：常見兒科藥水與餵藥問題">
+  <meta property="og:description" content="小孩拿到的感冒、咳嗽、退燒、腸胃藥水是什麼藥？藥師整理 26 種常見兒科藥水圖卡，並回答吃藥後吐了要不要補、藥水要不要冰、藥太苦能不能加牛奶等家長常見問題。">
   <meta property="og:image" content="https://liaoweihung.github.io/pteduimg/img/ped_cold_secorine.webp">
   <meta property="og:image:width" content="941">
   <meta property="og:image:height" content="1672">
@@ -371,6 +371,85 @@
       line-height: 1;
     }
 
+    /* Expanded FAQ list */
+    .faq-list {
+      margin: 4px 20px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .faq-item {
+      background: #ffffff;
+      border: 1px solid #e6eceb;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .02);
+    }
+    .faq-item summary {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+      min-height: 44px;
+      padding: 12px 14px;
+      cursor: pointer;
+      list-style: none;
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.4;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-q-text {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      flex: 1;
+    }
+    .faq-q-text::before {
+      content: "Q";
+      flex: none;
+      font-size: .82rem;
+      font-weight: 800;
+      color: var(--brand);
+    }
+    .faq-item summary::after {
+      content: "▾";
+      flex: none;
+      font-size: .85rem;
+      color: #9fb0bc;
+      transition: transform .15s ease;
+    }
+    .faq-item[open] summary::after {
+      transform: rotate(180deg);
+    }
+    .faq-item[open] summary {
+      border-bottom: 1px solid var(--line);
+    }
+    .faq-answer {
+      padding: 12px 14px;
+      background: #fafcfc;
+      font-size: .9rem;
+      line-height: 1.6;
+      color: #34495e;
+    }
+    .faq-answer p {
+      margin: 0;
+    }
+    .faq-card-link {
+      display: inline-block;
+      margin-left: 6px;
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .faq-card-link:hover,
+    .faq-card-link:focus-visible {
+      text-decoration: underline;
+      color: #005f66;
+    }
+
     /* shared-footer-styles:start */
 .site-footer {
     text-align: center;
@@ -476,11 +555,14 @@
         "@id": "https://liaoweihung.github.io/pteduimg/topics/pediatric-medicine.html",
         "url": "https://liaoweihung.github.io/pteduimg/topics/pediatric-medicine.html",
         "name": "兒科用藥總整理",
-        "headline": "兒科用藥總整理｜餵藥、泡藥保存與常見兒科藥水｜藥局衛教助手",
-        "description": "藥師整理的兒科用藥系列目錄：兒童餵藥技巧、藥水要不要冰、抗生素藥水泡製、兒科感冒退燒腸胃藥水，以及吸鼻器、腸病毒預防、兒童生長計算器與防蚊液、口內膏、口角炎、中暑等日常照護。",
+        "headline": "兒童用藥總整理：小孩感冒、退燒、腸胃藥水與餵藥問題｜藥局衛教助手",
+        "description": "小孩拿到的感冒、咳嗽、退燒、腸胃藥水是什麼藥？藥師整理 26 種常見兒科藥水圖卡，並回答吃藥後吐了要不要補、藥水要不要冰、藥太苦能不能加牛奶等家長常見問題。",
         "inLanguage": "zh-TW",
         "datePublished": "2026-11-22",
-        "dateModified": "2026-11-23",
+        "dateModified": "2026-11-24",
+        "mainEntity": {
+          "@id": "https://liaoweihung.github.io/pteduimg/topics/pediatric-medicine.html#drug-list"
+        },
         "author": {
           "@type": "Person",
           "@id": "https://liaoweihung.github.io/pteduimg/author.html#person",
@@ -500,6 +582,117 @@
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "藥局衛教助手", "item": "https://liaoweihung.github.io/pteduimg/public.html" },
           { "@type": "ListItem", "position": 2, "name": "兒科用藥總整理", "item": "https://liaoweihung.github.io/pteduimg/topics/pediatric-medicine.html" }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://liaoweihung.github.io/pteduimg/topics/pediatric-medicine.html#drug-list",
+        "name": "依藥名找（26 種藥水）",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "息咳寧", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html" },
+          { "@type": "ListItem", "position": 2, "name": "息咳液", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_sortuss.html" },
+          { "@type": "ListItem", "position": 3, "name": "安咳糖漿", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_nocough_syrup.html" },
+          { "@type": "ListItem", "position": 4, "name": "可克嗽", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_koko_sou_syrup.html" },
+          { "@type": "ListItem", "position": 5, "name": "生達鎮咳袪痰液", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_cough_mixture.html" },
+          { "@type": "ListItem", "position": 6, "name": "咳酚糖漿", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_guaphen_syrup.html" },
+          { "@type": "ListItem", "position": 7, "name": "舒痰液", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_soltan.html" },
+          { "@type": "ListItem", "position": 8, "name": "美舒咳液", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_musco_solution.html" },
+          { "@type": "ListItem", "position": 9, "name": "莫喀糖漿", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_muco.html" },
+          { "@type": "ListItem", "position": 10, "name": "鼻福糖漿", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_peace_syrup.html" },
+          { "@type": "ListItem", "position": 11, "name": "希普利敏液", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_cypromin.html" },
+          { "@type": "ListItem", "position": 12, "name": "勝克敏液", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_cetirizine.html" },
+          { "@type": "ListItem", "position": 13, "name": "敏達糖漿", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_mintapp_syrup.html" },
+          { "@type": "ListItem", "position": 14, "name": "滅喘淨液", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_asthma_meptin_liquid.html" },
+          { "@type": "ListItem", "position": 15, "name": "喘解液", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_cold_exdila_liquid.html" },
+          { "@type": "ListItem", "position": 16, "name": "安佳熱", "url": "https://liaoweihung.github.io/pteduimg/cards/antiphen.html" },
+          { "@type": "ListItem", "position": 17, "name": "依普芬", "url": "https://liaoweihung.github.io/pteduimg/cards/ibuprofen_sol.html" },
+          { "@type": "ListItem", "position": 18, "name": "舒抑痛", "url": "https://liaoweihung.github.io/pteduimg/cards/idofen_suspension.html" },
+          { "@type": "ListItem", "position": 19, "name": "馬蓋先", "url": "https://liaoweihung.github.io/pteduimg/cards/macsafe_suspension.html" },
+          { "@type": "ListItem", "position": 20, "name": "發燒注意事項", "url": "https://liaoweihung.github.io/pteduimg/cards/notice_ped_fever_reducer.html" },
+          { "@type": "ListItem", "position": 21, "name": "胃利空", "url": "https://liaoweihung.github.io/pteduimg/cards/wempty_suspension.html" },
+          { "@type": "ListItem", "position": 22, "name": "瀉必寧", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_diarrhea_hidrasec.html" },
+          { "@type": "ListItem", "position": 23, "name": "高克痢", "url": "https://liaoweihung.github.io/pteduimg/cards/ped_gi_pecolin_suspension.html" },
+          { "@type": "ListItem", "position": 24, "name": "舒腹達", "url": "https://liaoweihung.github.io/pteduimg/cards/smecta_1.html" },
+          { "@type": "ListItem", "position": 25, "name": "乳果糖（杜化液／樂多）", "url": "https://liaoweihung.github.io/pteduimg/cards/lactulose_constipation.html" },
+          { "@type": "ListItem", "position": 26, "name": "必爾生口服液", "url": "https://liaoweihung.github.io/pteduimg/cards/kidsolone_oral_solution.html" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://liaoweihung.github.io/pteduimg/topics/pediatric-medicine.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "小孩吃藥後吐出來，要再補一次嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "先看多久吐、吐出多少。吃完 15 分鐘內就吐，先問醫師或藥師要不要補；超過 30 分鐘才吐，通常不用補，下一次照原時間吃。一直吐、精神變差或有脫水，要就醫。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "藥太苦，可以加在牛奶裡嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不建議倒進整瓶奶：孩子喝不完就算不出吃了多少藥，也可能從此不愛喝奶。要混食物前先問藥師能不能混，只取約 5 mL 一口量；未滿 1 歲不可用蜂蜜。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "藥丸吞不下，可以壓碎嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不要用兩支湯匙壓：碎塊會彈飛、劑量不準，緩釋錠或腸溶錠壓碎還可能失效或一次釋出太多。先請藥師確認劑型，可以分散的錠劑才用針筒加冷開水讓它自然散開。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "吃退燒藥退不下來，什麼情況要趕快就醫？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "出現任一種就儘速就醫：體溫達 39°C 以上；吃退燒藥超過 1～2 小時仍降不下來；藥效撐不到 4～6 小時又燒起來。最重要的觀察指標是孩子的活動力，燒退後精神、食慾恢復，可以先觀察。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "安佳熱和依普芬可以一起吃嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不要自行同時給兩種退燒藥。安佳熱是 Acetaminophen、每 4～6 小時一次，依普芬是 Ibuprofen、每 6～8 小時一次，毫升數不能互相套用。醫師指示交替時，記下每種藥的時間和毫升數。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "息咳寧和息咳液一樣嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不一樣。息咳寧糖漿（Secorine）含甲基麻黃鹼、抗組織胺和化痰成分；息咳液（Sortuss）是含 Dextromethorphan 的鎮咳祛痰處方藥水。名字很像，但成分和用量都不同，不要自行替換或一起喝。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "藥水沒喝完，要不要冰？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "多數一般藥水不需要冷藏；藥袋或瓶身寫「冷藏」或「2～8°C」才放冰箱，避開門邊和冷凍庫。一般口服藥水開封後，建議在這次療程內（或一個月內）用完。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "寶寶拉肚子，母乳或配方奶要停嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "通常不需要。母乳繼續餵；配方奶照正常濃度沖泡，不要自行沖淡或換特殊配方。持續腹瀉、有脫水跡象或懷疑乳糖不耐受，請醫師評估。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "舒腹達（止瀉粉）怎麼泡？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "兒童每包加約 50 mL 水，或混入適合年齡的半流質食物，攪勻後分次吃。處方寫的是一天總包數，不是每次的量；舒腹達不是口服電解質液，不能取代補水。"
+            }
+          }
         ]
       }
     ]
@@ -522,7 +715,7 @@
   <main class="wrap">
     <header class="page-head">
       <h1>兒科用藥總整理</h1>
-      <p>點擊下方系列直接看圖卡</p>
+      <p>這一頁整理藥局常見的兒科藥水和餵藥問題。拿到藥袋時，可以先找藥名，點進去看成分、用量和注意事項；不知道怎麼餵、吐了要不要補、要不要冰，下方常見問題有簡短答案。實際用量以醫師處方和藥袋為準。</p>
     </header>
 
     <!-- 1. 餵藥與照護 -->
@@ -545,23 +738,14 @@
           <span class="meta">補水飲食與脫水警訊</span>
         </a>
       </div>
-      <div class="section-qa" aria-label="餵藥與照護常見問題">
-        <p class="section-qa__title">常見問題</p>
-        <ul class="section-qa__list">
-          <li><a href="../cards/child_medicine_feeding_06.html"><span class="section-qa__q">小孩吃藥後吐出來，要再補一次嗎？</span><span class="section-qa__chev" aria-hidden="true">›</span></a></li>
-          <li><a href="../cards/child_medicine_feeding_04.html"><span class="section-qa__q">藥太苦，可以加在牛奶裡嗎？</span><span class="section-qa__chev" aria-hidden="true">›</span></a></li>
-          <li><a href="../cards/child_medicine_feeding_03.html"><span class="section-qa__q">藥丸吞不下，可以用湯匙壓碎嗎？</span><span class="section-qa__chev" aria-hidden="true">›</span></a></li>
-          <li><a href="../cards/diarrhea_care_5.html"><span class="section-qa__q">寶寶拉肚子，母乳或配方奶要停嗎？</span><span class="section-qa__chev" aria-hidden="true">›</span></a></li>
-        </ul>
-      </div>
     </section>
 
-    <!-- 2. 常用兒科藥物 -->
+    <!-- 2. 小孩常用藥水：感冒、退燒、腸胃 -->
     <section aria-labelledby="sec-syrups">
-      <h2 class="section-title" id="sec-syrups">常用兒科藥物</h2>
+      <h2 class="section-title" id="sec-syrups">小孩常用藥水：感冒、退燒、腸胃</h2>
 
-      <details class="drug-index">
-        <summary>依藥名快速點選（26 項藥品直達）</summary>
+      <details class="drug-index" id="drug-list">
+        <summary>依藥名找（26 種藥水）</summary>
         <div class="drug-index-body">
           <div class="drug-index-group">
             <h3>感冒・止咳・鼻塞・氣喘</h3>
@@ -654,13 +838,66 @@
           <span class="meta">Augmentin</span>
         </a>
       </div>
-      <div class="section-qa" aria-label="常用兒科藥物常見問題">
-        <p class="section-qa__title">常見問題</p>
-        <ul class="section-qa__list">
-          <li><a href="../cards/notice_ped_fever_reducer.html"><span class="section-qa__q">吃退燒藥退不下來，哪 3 種情況要趕快就醫？</span><span class="section-qa__chev" aria-hidden="true">›</span></a></li>
-          <li><a href="../cards/liquid_medicine_storage_01.html"><span class="section-qa__q">藥水沒喝完，到底要不要冰？</span><span class="section-qa__chev" aria-hidden="true">›</span></a></li>
-          <li><a href="../cards/smecta_2.html"><span class="section-qa__q">舒腹達（止瀉粉）怎麼泡、怎麼吃？</span><span class="section-qa__chev" aria-hidden="true">›</span></a></li>
-        </ul>
+    </section>
+
+    <!-- 家長最常問的兒童用藥問題 -->
+    <section aria-labelledby="sec-faq">
+      <h2 class="section-title" id="sec-faq">家長最常問的兒童用藥問題</h2>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary><span class="faq-q-text">小孩吃藥後吐出來，要再補一次嗎？</span></summary>
+          <div class="faq-answer">
+            <p>先看多久吐、吐出多少。吃完 15 分鐘內就吐，先問醫師或藥師要不要補；超過 30 分鐘才吐，通常不用補，下一次照原時間吃。一直吐、精神變差或有脫水，要就醫。 <a class="faq-card-link" href="../cards/child_medicine_feeding_06.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item" open>
+          <summary><span class="faq-q-text">藥太苦，可以加在牛奶裡嗎？</span></summary>
+          <div class="faq-answer">
+            <p>不建議倒進整瓶奶：孩子喝不完就算不出吃了多少藥，也可能從此不愛喝奶。要混食物前先問藥師能不能混，只取約 5 mL 一口量；未滿 1 歲不可用蜂蜜。 <a class="faq-card-link" href="../cards/child_medicine_feeding_04.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item" open>
+          <summary><span class="faq-q-text">藥丸吞不下，可以壓碎嗎？</span></summary>
+          <div class="faq-answer">
+            <p>不要用兩支湯匙壓：碎塊會彈飛、劑量不準，緩釋錠或腸溶錠壓碎還可能失效或一次釋出太多。先請藥師確認劑型，可以分散的錠劑才用針筒加冷開水讓它自然散開。 <a class="faq-card-link" href="../cards/child_medicine_feeding_03.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item" open>
+          <summary><span class="faq-q-text">吃退燒藥退不下來，什麼情況要趕快就醫？</span></summary>
+          <div class="faq-answer">
+            <p>出現任一種就儘速就醫：體溫達 39°C 以上；吃退燒藥超過 1～2 小時仍降不下來；藥效撐不到 4～6 小時又燒起來。最重要的觀察指標是孩子的活動力，燒退後精神、食慾恢復，可以先觀察。 <a class="faq-card-link" href="../cards/notice_ped_fever_reducer.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item" open>
+          <summary><span class="faq-q-text">安佳熱和依普芬可以一起吃嗎？</span></summary>
+          <div class="faq-answer">
+            <p>不要自行同時給兩種退燒藥。安佳熱是 Acetaminophen、每 4～6 小時一次，依普芬是 Ibuprofen、每 6～8 小時一次，毫升數不能互相套用。醫師指示交替時，記下每種藥的時間和毫升數。 <a class="faq-card-link" href="../cards/antiphen.html">看圖卡 ›</a> <a class="faq-card-link" href="../cards/ibuprofen_sol.html">看依普芬圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item" open>
+          <summary><span class="faq-q-text">息咳寧和息咳液一樣嗎？</span></summary>
+          <div class="faq-answer">
+            <p>不一樣。息咳寧糖漿（Secorine）含甲基麻黃鹼、抗組織胺和化痰成分；息咳液（Sortuss）是含 Dextromethorphan 的鎮咳祛痰處方藥水。名字很像，但成分和用量都不同，不要自行替換或一起喝。 <a class="faq-card-link" href="../cards/ped_cold_secorine.html">看圖卡 ›</a> <a class="faq-card-link" href="../cards/ped_cold_sortuss.html">看息咳液圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item" open>
+          <summary><span class="faq-q-text">藥水沒喝完，要不要冰？</span></summary>
+          <div class="faq-answer">
+            <p>多數一般藥水不需要冷藏；藥袋或瓶身寫「冷藏」或「2～8°C」才放冰箱，避開門邊和冷凍庫。一般口服藥水開封後，建議在這次療程內（或一個月內）用完。 <a class="faq-card-link" href="../cards/liquid_medicine_storage_01.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item" open>
+          <summary><span class="faq-q-text">寶寶拉肚子，母乳或配方奶要停嗎？</span></summary>
+          <div class="faq-answer">
+            <p>通常不需要。母乳繼續餵；配方奶照正常濃度沖泡，不要自行沖淡或換特殊配方。持續腹瀉、有脫水跡象或懷疑乳糖不耐受，請醫師評估。 <a class="faq-card-link" href="../cards/diarrhea_care_5.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item" open>
+          <summary><span class="faq-q-text">舒腹達（止瀉粉）怎麼泡？</span></summary>
+          <div class="faq-answer">
+            <p>兒童每包加約 50 mL 水，或混入適合年齡的半流質食物，攪勻後分次吃。處方寫的是一天總包數，不是每次的量；舒腹達不是口服電解質液，不能取代補水。 <a class="faq-card-link" href="../cards/smecta_2.html">看圖卡 ›</a></p>
+          </div>
+        </details>
       </div>
     </section>
 
@@ -765,7 +1002,7 @@
         var href = a.getAttribute('href') || '';
         if (href.indexOf('#') === 0) return;
         if (shouldTrackAnalytics()) {
-          var isQa = !!a.closest('.section-qa');
+          var isQa = !!a.closest('.section-qa') || !!a.closest('.faq-list');
           gtag('event', isQa ? 'pediatric_hub_qa_click' : 'pediatric_hub_card_click', {
             link_text: a.textContent.trim().slice(0, 60),
             link_url: href
