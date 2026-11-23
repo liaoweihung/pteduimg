@@ -32,7 +32,53 @@ def read_retired_cards(root, cards):
     return records
 
 
-def document(title, description, page, content, base_url, prefix='', noindex=False):
+GA_MEASUREMENT_ID = 'G-T5R33JYTC0'
+
+
+def analytics_script(title, page):
+    page_title = json.dumps(f'{title}｜藥局衛教助手', ensure_ascii=False)
+    page_path = json.dumps('/pteduimg/' + page.lstrip('/'), ensure_ascii=False)
+    return f'''
+  <script>
+    var GA_MEASUREMENT_ID = '{GA_MEASUREMENT_ID}';
+    var urlParams = new URLSearchParams(window.location.search);
+    var host = window.location.hostname;
+    var isPrivateNetworkHost = ['localhost', '127.0.0.1', '::1'].indexOf(host) !== -1
+      || /^192\\.168\\./.test(host)
+      || /^10\\./.test(host)
+      || /^172\\.(1[6-9]|2\\d|3[0-1])\\./.test(host);
+    var isLocalPreview = isPrivateNetworkHost || window.location.protocol === 'file:';
+
+    if (urlParams.get('dev') === '1') {{
+      localStorage.setItem('isDeveloper', 'true');
+    }}
+    if (urlParams.get('dev') === '0') {{
+      localStorage.removeItem('isDeveloper');
+    }}
+
+    window.isAnalyticsDisabled = isLocalPreview || localStorage.getItem('isDeveloper') === 'true';
+    window['ga-disable-' + GA_MEASUREMENT_ID] = window.isAnalyticsDisabled;
+    function shouldTrackAnalytics() {{
+      return !window.isAnalyticsDisabled && typeof gtag === 'function';
+    }}
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{ dataLayer.push(arguments); }}
+    if (!window.isAnalyticsDisabled) {{
+      var gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
+      document.head.appendChild(gaScript);
+      gtag('js', new Date());
+      gtag('config', GA_MEASUREMENT_ID, {{
+        page_title: {page_title},
+        page_path: {page_path}
+      }});
+    }}
+  </script>'''
+
+
+def document(title, description, page, content, base_url, prefix='', noindex=False, include_analytics=False):
+    analytics = analytics_script(title, page) if include_analytics else ''
     return f'''<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -49,7 +95,7 @@ def document(title, description, page, content, base_url, prefix='', noindex=Fal
   <meta property="og:image" content="{esc(base_url)}icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="{prefix}assets/brand/favicon-mono-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="{prefix}assets/brand/favicon-mono-192.png">
-  <link rel="stylesheet" href="{prefix}css/card-archive.css">
+  <link rel="stylesheet" href="{prefix}css/card-archive.css">{analytics}
   <script defer src="{prefix}js/card-archive.js"></script>
 </head>
 <body>
@@ -108,4 +154,4 @@ def write_retired_pages(root, records, base_url):
 <p id="archive-count" role="status">共 {len(records)} 筆退出紀錄</p></section>
 <div class="archive-records">{''.join(blocks)}</div><p id="no-results" hidden>找不到符合的紀錄，請換個關鍵字或清除搜尋。</p>
 <noscript><p>目前列出全部紀錄，可使用瀏覽器的「在頁面中尋找」。</p></noscript>'''
-    (root / 'retired-cards.html').write_text(document('退出圖卡紀錄', '查找已退出主要目錄的圖卡、舊網址、退出原因與新版閱讀入口。', 'retired-cards.html', content, base_url), encoding='utf-8', newline='\n')
+    (root / 'retired-cards.html').write_text(document('退出圖卡紀錄', '查找已退出主要目錄的圖卡、舊網址、退出原因與新版閱讀入口。', 'retired-cards.html', content, base_url, include_analytics=True), encoding='utf-8', newline='\n')
