@@ -193,6 +193,10 @@
         gap: 16px;
       }
     }
+    .dose-tool-link { display:flex; align-items:center; gap:12px; margin:6px 20px 12px; padding:12px 14px; border:1px solid #d8e8e1; border-radius:12px; background:#e8f7f1; color:#1f5b49; text-decoration:none; }
+    .dose-tool-link__icon { font-size:1.5rem; }
+    .dose-tool-link__text { flex:1; display:grid; gap:2px; }
+    .dose-tool-link__text span { color:#4b635b; font-size:.88rem; }
     .menu-item {
       display: flex;
       flex-direction: column;
@@ -782,6 +786,11 @@
     <!-- 2. 常用兒科藥物 -->
     <section aria-labelledby="sec-syrups">
       <h2 class="section-title" id="sec-syrups">常用兒科藥物</h2>
+      <a class="dose-tool-link" href="../ped-dose-calculator.html">
+        <span class="dose-tool-link__icon" aria-hidden="true">🧴</span>
+        <span class="dose-tool-link__text"><strong>兒科藥水劑量查詢</strong><span>依症狀、成分或藥名找藥，輸入年齡或體重看一次喝幾 mL</span></span>
+        <span aria-hidden="true">›</span>
+      </a>
 
       <details class="drug-index" id="drug-list">
         <summary>依藥名快速點選（36 項藥品直達）</summary>

@@ -2,7 +2,6 @@
   'use strict';
 
   var DATA_URL = './data/ped-dose.json?v=20261124';
-  var MODE_KEY = 'pedDoseMode';
   var GROUP_ORDER = ['退燒止痛', '感冒綜合', '止咳化痰', '鼻塞流鼻水', '過敏止癢', '氣喘', '腸胃', '類固醇'];
   var SYMPTOMS = [
     ['發燒／疼痛', ['發燒', '退燒', '疼痛', '頭痛', '牙痛', '喉嚨痛']],
@@ -19,8 +18,7 @@
   var drugs = [];
   var mode = 'public';
   var selectedId = null;
-  var activeChip = null;
-
+  
   function $(id) { return document.getElementById(id); }
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -42,6 +40,15 @@
   }
 
   // ---------- inputs ----------
+  // months only matter under 3 years: show the field when years is 0-2
+  function monthHidden() { return $('month-field').hidden; }
+  function toggleMonth() {
+    var ys = $('age-y').value.trim();
+    var show = ys !== '' && Number(ys) >= 0 && Number(ys) < 3;
+    $('month-field').hidden = !show;
+    $('age-grid').classList.toggle('no-month', !show);
+    if (!show) $('age-m').value = '';
+  }
   function readInputs() {
     var yEl = $('age-y'), mEl = $('age-m'), wEl = $('weight');
     var errors = [];
@@ -49,7 +56,7 @@
     var ys = yEl.value.trim(), ms = mEl.value.trim(), ws = wEl.value.trim();
     var age = null, kg = null;
     if (ys !== '' || ms !== '') {
-      var y = ys === '' ? 0 : Number(ys), m = ms === '' ? 0 : Number(ms);
+      var y = ys === '' ? 0 : Number(ys), m = (ms === '' || monthHidden()) ? 0 : Number(ms);
       if (!isFinite(y) || y < 0 || y > 18 || Math.floor(y) !== y) { errors.push('年齡請填 0～18 的整數歲。'); yEl.setAttribute('aria-invalid', 'true'); }
       else if (!isFinite(m) || m < 0 || m > 11 || Math.floor(m) !== m) { errors.push('月數請填 0～11。'); mEl.setAttribute('aria-invalid', 'true'); }
       else age = y * 12 + m;
@@ -117,6 +124,11 @@
     return false;
   }
 
+  function numericRule(rule, drug, kg) {
+    var n = computeRule(rule, drug, kg);
+    return n.num;
+  }
+
   function computeRule(rule, drug, kg) {
     var lo, hi, unit = 'mL', capped = false;
     if (rule.mlPerKg) { lo = kg * rule.mlPerKg[0]; hi = kg * rule.mlPerKg[1]; }
@@ -141,7 +153,7 @@
       if (drug.mgPerMl) extra.push('＝ ' + range(lo * drug.mgPerMl, hi * drug.mgPerMl, 'mg') + (rule.per === 'day' ? '／天' : ''));
       if (drug.mcgPerMl) extra.push('＝ ' + range(lo * drug.mcgPerMl, hi * drug.mcgPerMl, 'μg'));
     }
-    return { main: main, extra: extra };
+    return { main: main, extra: extra, num: { lo: lo, hi: hi, unit: unit, per: rule.per, isMax: !!rule.isMax, divide: rule.divide } };
   }
 
   // ---------- rendering ----------
@@ -185,6 +197,7 @@
       if (h.mismatch) sub.push('孩子的年齡和體重落在仿單不同組，請照藥袋或問醫師藥師。');
       if (r.caution) sub.push(esc(r.caution));
       if (r.note) sub.push(esc(r.note));
+      if (mode === 'pharmacist' && kg != null && !r.stop) { var eq = doseEquiv(drug, r.dose, kg); if (eq) sub.push(eq); }
       blocks += answer(cls, '<span class="tag">' + esc(drug.age.source) + '</span>' + esc(r.label), r.dose, sub.join('<br>'));
     });
     if (drug.age && (age != null || kg != null) && hits.length === 0) {
@@ -221,6 +234,14 @@
     });
 
     html += blocks;
+    {
+      var same = sameIngredient(drug);
+      if (same.length) {
+        html += '<p class="same-ing"><strong>同成分：</strong>' + same.map(function (d) {
+          return '<button type="button" class="link-btn" data-goto="' + esc(d.id) + '">' + esc(d.name) + '（' + esc(d.ingredient) + '）</button>';
+        }).join('、') + '</p>';
+      }
+    }
     if (drug.frequency) html += '<p class="freq"><strong>多久一次：</strong>' + esc(drug.frequency) + '</p>';
 
     if (drug.age && drug.age.rows.length > 1) {
@@ -245,39 +266,194 @@
 
     box.innerHTML = html;
     box.hidden = false;
+    renderRx();
   }
 
-  function matchesQuery(d, q) {
-    if (!q) return true;
-    var hay = [d.name, d.ingredient, d.group, d.form].concat(d.aliases || [], d.uses || []).join(' ').toLowerCase();
-    return q.toLowerCase().split(/\s+/).every(function (t) { return !t || hay.indexOf(t) >= 0; });
+  // ---------- pharmacist: prescription check ----------
+  function baseIngredient(d) {
+    if (!d.mgPerMl && !d.mcgPerMl) return null;
+    if (/、/.test(d.ingredient)) return null;
+    return d.ingredient.split(' ')[0].toLowerCase();
+  }
+  function sameIngredient(drug) {
+    var key = baseIngredient(drug);
+    if (!key) return [];
+    return drugs.filter(function (d) { return d.id !== drug.id && baseIngredient(d) === key; });
+  }
+  function parseDose(text) {
+    // returns {per:'dose'|'day', lo, hi, dayMax}
+    var m = /([\d.]+)(?:\s*～\s*([\d.]+))?\s*mL/.exec(text);
+    if (!m) return null;
+    var before = text.slice(0, m.index);
+    var per = /每次/.test(before) || !/每日|每天/.test(before) ? 'dose' : 'day';
+    var out = { per: per, lo: Number(m[1]), hi: Number(m[2] || m[1]) };
+    var mx = /每日最多\s*([\d.]+)\s*mL/.exec(text);
+    if (mx) out.dayMax = Number(mx[1]);
+    return out;
+  }
+  function doseEquiv(drug, text, kg) {
+    var p = parseDose(text);
+    if (!p) return '';
+    var conc = drug.mgPerMl || drug.mcgPerMl;
+    if (!conc) return '';
+    var u = drug.mgPerMl ? 'mg' : 'μg';
+    return '≈ ' + range(p.lo * conc / kg, p.hi * conc / kg, u + '/kg') + (p.per === 'day' ? '／天' : '／次') + '（以 ' + fmt(kg) + ' kg 換算）';
+  }
+  function verdict(v, lo, hi, maxOnly) {
+    var t = 0.03;
+    if (!maxOnly && v < lo * (1 - t)) return ['low', '低於'];
+    if (v > hi * (1 + t)) return ['high', '高於'];
+    return ['ok', maxOnly ? '未超過' : '範圍內'];
+  }
+  function rxRow(label, v, lo, hi, unit, maxOnly, what) {
+    var vd = verdict(v, lo, hi, maxOnly);
+    return '<li class="rx-' + vd[0] + '"><span class="rx-mark">' + vd[1] + '</span><span>' + label +
+      '<small>' + what + ' ' + (maxOnly ? '上限 ' + fmt(hi) + ' ' + unit : range(lo, hi, unit)) + '；處方 ' + fmt(v) + ' ' + unit + '</small></span></li>';
   }
 
-  function renderList() {
-    var q = $('drug-search').value.trim();
-    var chipTerms = activeChip != null ? SYMPTOMS[activeChip][1] : null;
-    var list = drugs.filter(function (d) {
-      if (!matchesQuery(d, q)) return false;
-      if (chipTerms) return (d.uses || []).some(function (u) { return chipTerms.indexOf(u) >= 0; });
-      return true;
+  function renderRx() {
+    var card = $('rx-card');
+    var drug = drugs.filter(function (d) { return d.id === selectedId; })[0];
+    if (!drug) { card.hidden = true; return; }
+    card.hidden = false;
+    var unit = drug.unit === 'mg' ? 'mg' : (drug.form === '粉劑' ? '包' : 'mL');
+    $('rx-unit').textContent = unit;
+    var out = $('rx-out');
+    var input = readInputs();
+    var age = input.age, kg = input.kg;
+    var dose = parseFloat($('rx-dose').value), times = parseInt($('rx-times').value, 10);
+    if (!(dose > 0)) { out.innerHTML = '<p class="prompt">輸入處方每次的量（和每日次數），換算 mg/kg 並比對下方各項參考範圍。</p>'; return; }
+    var hasTimes = times > 0 && times <= 8;
+    var day = hasTimes ? dose * times : null;
+    var html = '<div class="rx-sum">';
+    var conc = unit === 'mL' ? (drug.mgPerMl || drug.mcgPerMl) : (unit === 'mg' ? 1 : null);
+    var cu = drug.mcgPerMl && unit === 'mL' ? 'μg' : 'mg';
+    if (conc) {
+      html += '<p><strong>每次</strong> ' + fmt(dose) + ' ' + unit + (unit === 'mL' ? ' ＝ ' + fmt(dose * conc) + ' ' + cu : '') +
+        (kg != null ? ' ＝ <b>' + fmt(dose * conc / kg) + ' ' + cu + '/kg</b>' : '') + '</p>';
+      if (hasTimes) html += '<p><strong>每天</strong> ' + fmt(day) + ' ' + unit + (unit === 'mL' ? ' ＝ ' + fmt(day * conc) + ' ' + cu : '') +
+        (kg != null ? ' ＝ <b>' + fmt(day * conc / kg) + ' ' + cu + '/kg/day</b>' : '') + '</p>';
+    } else {
+      html += '<p><strong>每次</strong> ' + fmt(dose) + ' ' + unit + (hasTimes ? '，每天 ' + fmt(day) + ' ' + unit : '') + '</p>';
+    }
+    if (kg == null) html += '<p class="sub-note">輸入體重才能換算 mg/kg 並比對體重劑量。</p>';
+    html += '</div>';
+
+    var rows = [];
+    var TAG = { public: '仿單', doctor: '醫師分享', pharmacist: '藥師參考' };
+    matchRows(drug, age, kg).forEach(function (h) {
+      if (h.row.stop) return;
+      var pd = parseDose(h.row.dose);
+      if (!pd || unit !== 'mL') return;
+      var lbl = '仿單表：' + esc(h.row.label);
+      if (pd.per === 'dose') rows.push(rxRow(lbl, dose, pd.lo, pd.hi, 'mL', false, '每次'));
+      else if (hasTimes) rows.push(rxRow(lbl, day, pd.lo, pd.hi, 'mL', false, '每天'));
+      if (pd.dayMax && hasTimes) rows.push(rxRow(lbl + '（每日上限）', day, pd.dayMax, pd.dayMax, 'mL', true, '每天'));
     });
-    var box = $('drug-list');
-    if (!list.length) { box.innerHTML = '<p class="empty-note">找不到符合的藥水。可以換個寫法，或用成分名（例如 Ibuprofen）找。</p>'; return; }
+    if (kg != null) {
+      (drug.weight || []).forEach(function (rule) {
+        if (ruleApplies(rule, age, kg) === false) return;
+        var n = numericRule(rule, drug, kg);
+        if (n.unit !== unit) return;
+        var lbl = TAG[rule.audience] + '：' + esc(rule.label);
+        if (n.per === 'dose') rows.push(rxRow(lbl, dose, n.lo, n.hi, unit, false, '每次'));
+        else if (hasTimes) {
+          var maxOnly = n.isMax && Math.abs(n.lo - n.hi) < 0.005;
+          rows.push(rxRow(lbl, day, n.lo, n.hi, unit, maxOnly, '每天'));
+        }
+      });
+    }
+    if (rows.length) html += '<ul class="rx-list">' + rows.join('') + '</ul>';
+    else html += '<p class="sub-note">' + (hasTimes ? '這支藥在目前的年齡／體重下沒有可比對的數值範圍。' : '填上每日次數，可以比對每日總量。') + '</p>';
+    if (!hasTimes && rows.length) html += '<p class="sub-note">填上每日次數，可以再比對每日總量與上限。</p>';
+    out.innerHTML = html;
+  }
+
+  var BY_KEY = 'pedDoseBy';
+  var by = 'symptom';
+
+  function ingredientNames(d) {
+    return d.ingredient.split('、').map(function (part) {
+      return part.replace(/（.*?）/g, '').trim().split(/\s+[\d.]/)[0].trim();
+    }).filter(function (n) { return n && !/^[\d.]/.test(n); });
+  }
+  function ingredientIndex() {
+    var map = {};
+    drugs.forEach(function (d) {
+      ingredientNames(d).forEach(function (n) { (map[n] = map[n] || []).push(d); });
+    });
+    return map;
+  }
+  function drugsFor(value) {
+    if (by === 'name') return drugs.slice();
+    if (value === '' || value == null) return [];
+    if (by === 'symptom') {
+      var terms = SYMPTOMS[Number(value)][1];
+      return drugs.filter(function (d) { return (d.uses || []).some(function (u) { return terms.indexOf(u) >= 0; }); });
+    }
+    return ingredientIndex()[value] || [];
+  }
+
+  function renderBySelect() {
+    Array.prototype.forEach.call(document.querySelectorAll('.by-tab'), function (t) {
+      var on = t.getAttribute('data-by') === by;
+      t.setAttribute('aria-selected', String(on));
+      t.classList.toggle('is-active', on);
+    });
+    var field = $('by-field'), sel = $('by-select');
+    if (by === 'name') { field.hidden = true; renderDrugSelect(); return; }
+    field.hidden = false;
+    if (by === 'symptom') {
+      $('by-label').textContent = '症狀';
+      sel.innerHTML = '<option value="">請選擇症狀</option>' + SYMPTOMS.map(function (sy, i) {
+        return '<option value="' + i + '">' + esc(sy[0]) + '（' + drugsForSym(i) + '）</option>';
+      }).join('');
+    } else {
+      $('by-label').textContent = '成分';
+      var idx = ingredientIndex();
+      var names = Object.keys(idx).sort(function (a, b) { return a.localeCompare(b, 'zh-Hant'); });
+      sel.innerHTML = '<option value="">請選擇成分</option>' + names.map(function (n) {
+        return '<option value="' + esc(n) + '">' + esc(n) + '（' + idx[n].length + '）</option>';
+      }).join('');
+    }
+    renderDrugSelect();
+  }
+  function drugsForSym(i) {
+    var terms = SYMPTOMS[i][1];
+    return drugs.filter(function (d) { return (d.uses || []).some(function (u) { return terms.indexOf(u) >= 0; }); }).length;
+  }
+
+  function renderDrugSelect() {
+    var list = drugsFor($('by-select').value);
+    var field = $('drug-field'), sel = $('drug-select');
+    if (by !== 'name' && !list.length) { field.hidden = true; return; }
+    field.hidden = false;
     var groups = {};
     list.forEach(function (d) { (groups[d.group] = groups[d.group] || []).push(d); });
     var order = GROUP_ORDER.concat(Object.keys(groups).filter(function (g) { return GROUP_ORDER.indexOf(g) < 0; }));
-    box.innerHTML = order.filter(function (g) { return groups[g]; }).map(function (g) {
-      return '<div class="drug-group"><h3>' + esc(g) + '</h3><div class="drug-buttons">' + groups[g].map(function (d) {
-        return '<button type="button" class="drug-btn" data-id="' + esc(d.id) + '"' + (d.id === selectedId ? ' aria-current="true"' : '') + '>' +
-          esc(d.name) + '<small>' + esc(d.ingredient.split('（')[0]) + '</small></button>';
-      }).join('') + '</div></div>';
-    }).join('');
+    var html = '<option value="">請選擇藥水（' + list.length + ' 種）</option>';
+    order.forEach(function (g) {
+      if (!groups[g]) return;
+      html += '<optgroup label="' + esc(g) + '">' + groups[g].map(function (d) {
+        return '<option value="' + esc(d.id) + '">' + esc(d.name) + '</option>';
+      }).join('') + '</optgroup>';
+    });
+    sel.innerHTML = html;
+    sel.value = list.some(function (d) { return d.id === selectedId; }) ? selectedId : '';
+  }
+
+  function setBy(v, keep) {
+    by = ['symptom', 'ingredient', 'name'].indexOf(v) >= 0 ? v : 'symptom';
+    try { localStorage.setItem(BY_KEY, by); } catch (e) {}
+    $('by-select').value = '';
+    renderBySelect();
   }
 
   function selectDrug(id, opts) {
+    if (id !== selectedId) { $('rx-dose').value = ''; $('rx-times').value = ''; }
     selectedId = id;
     renderResult();
-    renderList();
+    if ($('drug-select').value !== id) { setBy('name'); $('drug-select').value = id; }
     try {
       var u = new URL(location.href);
       u.searchParams.set('drug', id);
@@ -287,52 +463,29 @@
     track('ped_dose_select', { drug_id: id, mode: mode, source: (opts && opts.source) || 'list' });
   }
 
-  function setMode(m) {
-    mode = m === 'pharmacist' ? 'pharmacist' : 'public';
-    document.body.classList.toggle('is-pharmacist', mode === 'pharmacist');
-    Array.prototype.forEach.call(document.querySelectorAll('.mode-btn'), function (b) {
-      b.setAttribute('aria-checked', String(b.getAttribute('data-mode') === mode));
-    });
-    $('mode-hint').textContent = mode === 'pharmacist'
-      ? '藥師版：另外顯示藥師參考範圍與 mg 換算，供核對處方。'
-      : '民眾版：顯示仿單用量，以及醫師分享的參考劑量。';
-    try { localStorage.setItem(MODE_KEY, mode); } catch (e) {}
-    renderResult();
-  }
-
   function init() {
-    var chips = $('symptom-chips');
-    chips.innerHTML = SYMPTOMS.map(function (s, i) {
-      return '<button type="button" class="chip" data-chip="' + i + '" aria-pressed="false">' + esc(s[0]) + '</button>';
-    }).join('');
-    chips.addEventListener('click', function (e) {
-      var b = e.target.closest('[data-chip]');
-      if (!b) return;
-      var i = Number(b.getAttribute('data-chip'));
-      activeChip = activeChip === i ? null : i;
-      Array.prototype.forEach.call(chips.children, function (c, j) { c.setAttribute('aria-pressed', String(j === activeChip)); });
-      renderList();
-      if (activeChip != null) track('ped_dose_symptom', { symptom: SYMPTOMS[i][0] });
+    document.querySelector('.by-tabs').addEventListener('click', function (e) {
+      var t = e.target.closest('[data-by]');
+      if (t) { setBy(t.getAttribute('data-by')); track('ped_dose_by', { by: by }); }
     });
-    $('drug-list').addEventListener('click', function (e) {
-      var b = e.target.closest('[data-id]');
-      if (b) selectDrug(b.getAttribute('data-id'), { scroll: true });
+    $('by-select').addEventListener('change', function () {
+      renderDrugSelect();
+      if (this.value !== '') track('ped_dose_filter', { by: by, value: this.value });
     });
-    $('drug-search').addEventListener('input', renderList);
+    $('drug-select').addEventListener('change', function () {
+      if (this.value) selectDrug(this.value, { source: by });
+    });
+    ['rx-dose', 'rx-times'].forEach(function (id) { $(id).addEventListener('input', renderRx); });
+    $('age-y').addEventListener('input', toggleMonth);
     ['age-y', 'age-m', 'weight'].forEach(function (id) { $(id).addEventListener('input', renderResult); });
-    document.querySelector('.mode-switch').addEventListener('click', function (e) {
-      var b = e.target.closest('[data-mode]');
-      if (b) { setMode(b.getAttribute('data-mode')); track('ped_dose_mode', { mode: mode }); }
-    });
     $('dose-result').addEventListener('click', function (e) {
+      var g = e.target.closest('[data-goto]');
+      if (g) { selectDrug(g.getAttribute('data-goto'), { source: 'same_ingredient' }); return; }
       var a = e.target.closest('[data-track]');
       if (a) track('ped_dose_card_click', { drug_id: selectedId, link: a.getAttribute('data-track') });
     });
 
     var params = new URLSearchParams(location.search);
-    var savedMode = null;
-    try { savedMode = localStorage.getItem(MODE_KEY); } catch (e) {}
-    setMode(params.get('mode') || savedMode || 'public');
 
     fetch(DATA_URL).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -341,13 +494,16 @@
       data = json;
       drugs = json.drugs || [];
       $('data-date').textContent = '資料整理日期：' + (json.updated || '');
-      renderList();
+      var savedBy = null;
+      try { savedBy = localStorage.getItem(BY_KEY); } catch (e) {}
+      setBy(savedBy || 'symptom');
       var want = params.get('drug');
       if (want && drugs.some(function (d) { return d.id === want; })) {
+        selectedId = want;
         selectDrug(want, { source: 'link' });
       }
     }).catch(function () {
-      $('drug-list').innerHTML = '<p class="empty-note">藥品資料載入失敗，請重新整理頁面。</p>';
+      $('drug-msg').textContent = '藥品資料載入失敗，請重新整理頁面。';
     });
   }
 

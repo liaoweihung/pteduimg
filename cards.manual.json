@@ -1309,6 +1309,16 @@
     "hidden": false,
     "icon": "🌡️",
     "showFooter": true,
+    "tool_link": {
+      "title": "算劑量",
+      "url": "../ped-dose-calculator.html?drug={page}",
+      "pages": [
+        "antiphen",
+        "ibuprofen_sol",
+        "idofen_suspension",
+        "macsafe_suspension"
+      ]
+    },
     "favorite_keys": [
       "ped_fever_reducer-0",
       "ped_fever_reducer-1",
@@ -1363,6 +1373,27 @@
     "title": "兒科感冒藥水",
     "category": "pharmacist_product",
     "showFooter": true,
+    "tool_link": {
+      "title": "算劑量",
+      "url": "../ped-dose-calculator.html?drug={page}",
+      "pages": [
+        "ped_cold_cypromin",
+        "ped_cold_cetirizine",
+        "ped_cold_secorine",
+        "ped_asthma_meptin_liquid",
+        "ped_cold_peace_syrup",
+        "ped_cold_guaphen_syrup",
+        "ped_cold_exdila_liquid",
+        "ped_cold_mintapp_syrup",
+        "ped_cold_musco_solution",
+        "ped_cold_koko_sou_syrup",
+        "ped_cold_cough_mixture",
+        "ped_cold_nocough_syrup",
+        "ped_cold_soltan",
+        "ped_cold_muco",
+        "ped_cold_sortuss"
+      ]
+    },
     "departments": [
       "pediatrics"
     ],
@@ -1552,6 +1583,15 @@
     "title": "兒科腸胃藥水",
     "category": "pharmacist_product",
     "showFooter": true,
+    "tool_link": {
+      "title": "算劑量",
+      "url": "../ped-dose-calculator.html?drug={page}",
+      "pages": [
+        "wempty_suspension",
+        "ped_diarrhea_hidrasec",
+        "ped_gi_pecolin_suspension"
+      ]
+    },
     "departments": [
       "pediatrics"
     ],
@@ -1645,6 +1685,13 @@
     "title": "舒腹達與腹瀉",
     "category": "pharmacist_product",
     "showFooter": true,
+    "tool_link": {
+      "title": "算劑量",
+      "url": "../ped-dose-calculator.html?drug={page}",
+      "pages": [
+        "smecta_1"
+      ]
+    },
     "departments": [
       "pediatrics",
       "pharmacy_general"
@@ -1691,6 +1738,13 @@
     "title": "必爾生口服液",
     "category": "pharmacist_product",
     "showFooter": true,
+    "tool_link": {
+      "title": "算劑量",
+      "url": "../ped-dose-calculator.html?drug={page}",
+      "pages": [
+        "kidsolone_oral_solution"
+      ]
+    },
     "departments": [
       "pediatrics",
       "pharmacy_general"

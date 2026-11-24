@@ -47,62 +47,62 @@
     }
   </script>
   <link rel="stylesheet" href="./css/base.css?v=7">
-  <link rel="stylesheet" href="./css/ped-dose-calculator.css?v=1">
+  <link rel="stylesheet" href="./css/ped-dose-calculator.css?v=7">
 </head>
 <body class="pdc-page">
-  <header><img src="./assets/brand/logo-mono-black.png" alt="藥局衛教助手 Logo" class="header-logo" width="182" height="96"><span>兒科藥水劑量查詢</span></header>
+  <header><img src="./assets/brand/logo-mono-black.png" alt="藥局衛教助手 Logo" class="header-logo" width="182" height="96"></header>
   <main class="calculator-shell">
-    <div class="back-row">
-      <a class="back-button" href="./calc.html">‹ 回醫藥計算器</a>
-      <a class="back-button" href="./topics/pediatric-medicine.html">‹ 回兒科用藥總整理</a>
-    </div>
+    <h1 id="page-title" class="page-title">兒科藥水劑量查詢</h1>
+    <p class="page-sub">核對用，實際用量以醫師處方和藥袋為準。</p>
 
-    <section class="intro-card" aria-labelledby="page-title">
-      <div class="intro-icon" aria-hidden="true">🧴</div>
-      <div>
-        <h1 id="page-title">兒科藥水劑量查詢</h1>
-        <p class="lead-q">小孩的藥水一次喝幾 mL？</p>
-        <p>用藥名、成分或症狀找藥，輸入年齡或體重，對照仿單用量和醫師常用的參考劑量。用來核對藥袋，<strong>實際用量以醫師處方和藥袋為準</strong>。</p>
+    <section class="form-card" aria-labelledby="drug-title">
+      <h2 id="drug-title" class="sr-only">選擇藥水</h2>
+      <div class="by-tabs" role="tablist" aria-label="查詢方式">
+        <button type="button" class="by-tab" role="tab" data-by="symptom">依症狀</button>
+        <button type="button" class="by-tab" role="tab" data-by="ingredient">依成分</button>
+        <button type="button" class="by-tab" role="tab" data-by="name">依藥名</button>
       </div>
-    </section>
-
-    <div class="mode-switch" role="radiogroup" aria-label="顯示模式">
-      <button type="button" class="mode-btn" role="radio" data-mode="public" aria-checked="true">民眾版</button>
-      <button type="button" class="mode-btn" role="radio" data-mode="pharmacist" aria-checked="false">藥師版</button>
-    </div>
-    <p class="mode-hint" id="mode-hint"></p>
-
-    <section class="form-card" aria-labelledby="input-title">
-      <h2 id="input-title">孩子的年齡與體重</h2>
-      <div class="field-grid three-col">
-        <label class="field"><span>年齡（歲）</span><input id="age-y" type="number" inputmode="numeric" min="0" max="18" step="1" placeholder="例：3"></label>
-        <label class="field"><span>又幾個月</span><input id="age-m" type="number" inputmode="numeric" min="0" max="11" step="1" placeholder="0～11"></label>
-        <label class="field"><span>體重（公斤）</span><input id="weight" type="number" inputmode="decimal" min="2" max="100" step="0.1" placeholder="例：15"></label>
+      <label class="field" id="by-field"><span id="by-label">症狀</span><select id="by-select"></select></label>
+      <label class="field" id="drug-field"><span>藥名</span><select id="drug-select"></select></label>
+      <div class="field-grid three-col inputs no-month" id="age-grid">
+        <label class="field"><span>年齡（歲）</span><input id="age-y" type="number" inputmode="numeric" min="0" max="18" step="1" placeholder="歲"></label>
+        <label class="field" id="month-field" hidden><span>又幾個月</span><input id="age-m" type="number" inputmode="numeric" min="0" max="11" step="1" placeholder="月"></label>
+        <label class="field"><span>體重（公斤）</span><input id="weight" type="number" inputmode="decimal" min="2" max="100" step="0.1" placeholder="kg"></label>
       </div>
       <p class="form-message" id="input-error" role="alert"></p>
-      <p class="subtle-note">可以只填年齡或只填體重；有的藥仿單依年齡，有的依體重。數值只在你的瀏覽器內計算，不會上傳。</p>
+      <p class="form-message" id="drug-msg"></p>
     </section>
+
 
     <section class="result-card" id="dose-result" hidden aria-live="polite" aria-labelledby="result-title"></section>
 
-    <section class="form-card" aria-labelledby="search-title">
-      <h2 id="search-title">找藥水</h2>
-      <label class="field search-field"><span class="sr-only">搜尋藥名、成分或症狀</span>
-        <input id="drug-search" type="search" placeholder="藥名、成分或症狀，例：安佳熱、咳嗽" autocomplete="off">
-      </label>
-      <div class="chip-row" id="symptom-chips" aria-label="依症狀找"></div>
-      <div class="drug-list" id="drug-list" aria-live="polite"></div>
-    </section>
+    <details class="form-card rx-card" id="rx-card" hidden>
+      <summary id="rx-title">處方核對：換算 mg/kg <span class="rx-tag">藥師用</span></summary>
+      <div class="field-grid two-col rx-inputs">
+        <label class="field"><span>處方每次（<span id="rx-unit">mL</span>）</span><input id="rx-dose" type="number" inputmode="decimal" min="0" step="0.1" placeholder="例：5"></label>
+        <label class="field"><span>每日次數</span><input id="rx-times" type="number" inputmode="numeric" min="1" max="8" step="1" placeholder="例：3"></label>
+      </div>
+      <div id="rx-out" aria-live="polite"></div>
+    </details>
 
-    <section class="medical-note" aria-labelledby="method-title">
-      <h2 id="method-title">怎麼看、資料從哪裡來</h2>
+
+    <details class="medical-note">
+      <summary>怎麼看、資料從哪裡來</summary>
+      <p>可以只填年齡或只填體重；有的藥仿單依年齡，有的依體重。數值只在你的瀏覽器內計算，不會上傳。</p>
       <p>這裡的劑量整理自本站兒科藥水圖卡已寫出的內容（出處列在每支藥的最下方），依「那一款產品」的濃度計算；同成分不同品牌濃度可能不同，毫升數不能互相套用。</p>
       <p>醫師可能依孩子的體重、病情另外開立劑量，所以藥袋的毫升數和仿單表不一樣是常見的。藥袋和這裡不同時，<strong>請照藥袋給</strong>；有疑問先問開藥的醫師或藥師，不要自己改量。</p>
-      <p>仿單沒有寫、但醫師開藥時常用的劑量，標為「醫師分享劑量」並列出分享者，出處在每支藥的最下方。仿單寫「由醫師診治」的年齡，醫師仍可能依體重開藥，這時藥袋上的量可以對照這一行。</p>
+      <p>仿單沒有寫、但醫師開藥時常用的劑量，標為「醫師分享劑量」並列出分享者。仿單寫「由醫師診治」的年齡，醫師仍可能依體重開藥，這時藥袋上的量可以對照這一行。</p>
+      <p>「處方核對」可以輸入處方的每次用量和每日次數，換算 mg/kg 並和各項參考範圍比對，供藥師核對處方。</p>
       <p>未滿 3 個月的寶寶發燒、呼吸困難、精神明顯變差、一直吐或有脫水跡象，請直接就醫。</p>
       <p class="checked-date" id="data-date"></p>
-    </section>
+    </details>
+
+    <div class="back-row">
+      <a class="back-button" href="./calc.html">‹ 醫藥計算器</a>
+      <a class="back-button" href="./topics/pediatric-medicine.html">‹ 兒科用藥總整理</a>
+    </div>
   </main>
+
 <footer class="site-footer">
   <div class="page-vote" data-page-vote>
     <style>
@@ -173,6 +173,6 @@
     <a href="./editorial-policy.html">編輯與資料來源政策</a>
   </p>
 </footer>
-  <script src="./js/ped-dose-calculator.js?v=1"></script>
+  <script src="./js/ped-dose-calculator.js?v=6"></script>
 </body>
 </html>

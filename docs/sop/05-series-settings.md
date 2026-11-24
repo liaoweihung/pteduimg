@@ -19,7 +19,7 @@
 | 搜尋標籤 | `tags` | |
 | 分類 | 民眾：`topics`；藥師：`departments`（可填多個，讓系列同時出現在多個分類） | 代碼只能用 `docs/sop/card-data.md` 列出的 ID |
 | 首頁排序 | `order` | 數字越小越前面 |
-| 工具按鈕 | `tool_link`：`{"title": "直接計算", "url": "../xxx.html"}` | 刪除按鈕就移除這個欄位 |
+| 工具按鈕 | `tool_link`：`{"title": "直接計算", "url": "../xxx.html"}`；只給部分頁面加 `"pages": ["頁面ID", ...]`，url 裡的 `{page}` 會換成頁面 ID（例：`"../ped-dose-calculator.html?drug={page}"`） | 刪除按鈕就移除這個欄位；新增藥水到劑量查詢頁時，`data/ped-dose.json` 的 `id` 要和頁面 ID 相同，並加進該系列 `pages` |
 | 相關系列 | `related_series`：`["<另一系列ID>"]` | 兩個系列都要互相加 |
 | 暫時隱藏 | `hidden: true` | 見下方說明 |
 | 共用頁尾 | `showFooter: true` | 有改到的系列若還沒開啟，一併開啟 |
