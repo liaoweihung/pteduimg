@@ -383,13 +383,13 @@
 | allergic_rhinitis | 口服抗組織胺能改善什麼？ | https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_04.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | allergic_rhinitis | 去鼻塞噴劑，只能短期用 | https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | allergic_rhinitis | 洗鼻用什麼水？何時要就醫？ | https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_06.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| ped_liquid | 滅菌靈懸液用粉劑（Nystatin）怎麼喝？兒童鵝口瘡泡製、劑量與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| ped_liquid | 停咳喜液／米瑞液（Butamirate）怎麼喝？兒童乾咳劑量、濃度差異與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| ped_liquid | 兒童止吐藥水（胃利空／吐必止／平吐寧 Domperidone）怎麼喝？劑量原則、搖勻與警訊 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_03.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| ped_liquid | 日舒懸液用粉劑（Azithromycin）怎麼泡、怎麼喝？兒童劑量與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_04.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| ped_liquid | 優力黴素懸液用粉劑（Cephalexin）怎麼泡、怎麼喝？濃度對照與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| ped_liquid | 安莫西林／萬博黴素懸液用粉劑（Amoxicillin）怎麼泡、怎麼喝？兒童劑量與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_06.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| ped_liquid | 沙法克寧懸液劑（Sulfamethoxazole + Trimethoprim）怎麼喝？兒童劑量、禁忌與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_07.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| ped_liquid | 亞涕液（Triprolidine + Pseudoephedrine）怎麼喝？兒童劑量、副作用與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_08.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| ped_liquid | 舒安敏／喜驅敏內服液（Levocetirizine 0.5 mg/mL）怎麼喝？兒童劑量、濃度防錯與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_09.html | 是 | 是 | 是 | 是 | 是 | 無 |
-| ped_liquid | 利達敏寧／宜敏靜／敏福／暢敏糖漿（Loratadine 1 mg/mL）怎麼喝？兒童劑量與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_10.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_abx | 安莫西林／萬博黴素兒童藥水怎麼泡？要冰幾天？Amoxicillin 用法與起疹警訊 | https://liaoweihung.github.io/pteduimg/cards/ped_abx_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_abx | 優力黴素藥粉怎麼泡？幾 cc、要冰幾天？Cephalexin 兒童抗生素重點 | https://liaoweihung.github.io/pteduimg/cards/ped_abx_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_abx | 日舒／菌巴達兒童藥水怎麼泡？加水 9 mL、不用冰保存與劑量重點 | https://liaoweihung.github.io/pteduimg/cards/ped_abx_03.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_abx | 沙法克寧懸液劑怎麼喝？蠶豆症、未滿 2 個月禁忌與多喝水防曬重點 | https://liaoweihung.github.io/pteduimg/cards/ped_abx_04.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_abx | 滅菌靈懸液用粉劑怎麼泡、怎麼滴？嬰兒鵝口瘡劑量、喝奶間隔與保存重點 | https://liaoweihung.github.io/pteduimg/cards/ped_abx_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| pediatric_cold_syrup | 停咳喜液／米瑞液怎麼喝？兒童止咳藥水濃度對照、劑量與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_butamirate.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| pediatric_cold_syrup | 亞涕液／鼻福／通鼻液怎麼喝？兒童鼻塞藥水年齡限制、防重複用藥與睡前注意 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_triprolidine_pse.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| pediatric_cold_syrup | 舒安敏／喜驅敏內服液怎麼喝？與勝克敏濃度差一半別喝錯！兒童劑量與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_levocetirizine.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| pediatric_cold_syrup | 利達敏寧／宜敏靜／敏福糖漿怎麼喝？體重 30 公斤分界、不嗜睡與停藥檢驗重點 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_loratadine.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| pediatric_gi_syrup | 兒童止吐藥水 Domperidone 怎麼喝？吐必止、平吐寧、胃利空的劑量原則與警訊 | https://liaoweihung.github.io/pteduimg/cards/ped_gi_domperidone.html | 是 | 是 | 是 | 是 | 是 | 無 |

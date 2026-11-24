@@ -98,5 +98,225 @@
       "甘油浣腸",
       "浣腸比較"
     ]
+  },
+  {
+    "image": "img/ped_liquid_01.webp",
+    "title": "滅菌靈懸液用粉劑（Nystatin）怎麼喝？兒童鵝口瘡泡製、劑量與注意事項",
+    "reason": "本頁已移至分類系列，內容相同",
+    "page": "cards/ped_liquid_01.html",
+    "retired_at": "2026-11-24",
+    "original_series": "兒科常用藥水",
+    "replacements": [
+      {
+        "page": "cards/ped_abx_05.html",
+        "title": "滅菌靈懸液用粉劑怎麼泡、怎麼滴？嬰兒鵝口瘡劑量、喝奶間隔與保存重點"
+      }
+    ],
+    "tags": [
+      "兒科藥水",
+      "抗生素",
+      "止吐",
+      "止咳",
+      "抗過敏",
+      "退燒"
+    ]
+  },
+  {
+    "image": "img/ped_liquid_02.webp",
+    "title": "停咳喜液／米瑞液（Butamirate）怎麼喝？兒童乾咳劑量、濃度差異與注意事項",
+    "reason": "本頁已移至分類系列，內容相同",
+    "page": "cards/ped_liquid_02.html",
+    "retired_at": "2026-11-24",
+    "original_series": "兒科常用藥水",
+    "replacements": [
+      {
+        "page": "cards/ped_cold_butamirate.html",
+        "title": "停咳喜液／米瑞液怎麼喝？兒童止咳藥水濃度對照、劑量與注意事項"
+      }
+    ],
+    "tags": [
+      "兒科藥水",
+      "抗生素",
+      "止吐",
+      "止咳",
+      "抗過敏",
+      "退燒"
+    ]
+  },
+  {
+    "image": "img/ped_liquid_03.webp",
+    "title": "兒童止吐藥水（胃利空／吐必止／平吐寧 Domperidone）怎麼喝？劑量原則、搖勻與警訊",
+    "reason": "本頁已移至分類系列，內容相同",
+    "page": "cards/ped_liquid_03.html",
+    "retired_at": "2026-11-24",
+    "original_series": "兒科常用藥水",
+    "replacements": [
+      {
+        "page": "cards/ped_gi_domperidone.html",
+        "title": "兒童止吐藥水 Domperidone 怎麼喝？吐必止、平吐寧、胃利空的劑量原則與警訊"
+      }
+    ],
+    "tags": [
+      "兒科藥水",
+      "抗生素",
+      "止吐",
+      "止咳",
+      "抗過敏",
+      "退燒"
+    ]
+  },
+  {
+    "image": "img/ped_liquid_04.webp",
+    "title": "日舒懸液用粉劑（Azithromycin）怎麼泡、怎麼喝？兒童劑量與注意事項",
+    "reason": "本頁已移至分類系列，內容相同",
+    "page": "cards/ped_liquid_04.html",
+    "retired_at": "2026-11-24",
+    "original_series": "兒科常用藥水",
+    "replacements": [
+      {
+        "page": "cards/ped_abx_03.html",
+        "title": "日舒／菌巴達兒童藥水怎麼泡？加水 9 mL、不用冰保存與劑量重點"
+      }
+    ],
+    "tags": [
+      "兒科藥水",
+      "抗生素",
+      "止吐",
+      "止咳",
+      "抗過敏",
+      "退燒"
+    ]
+  },
+  {
+    "image": "img/ped_liquid_05.webp",
+    "title": "優力黴素懸液用粉劑（Cephalexin）怎麼泡、怎麼喝？濃度對照與注意事項",
+    "reason": "本頁已移至分類系列，內容相同",
+    "page": "cards/ped_liquid_05.html",
+    "retired_at": "2026-11-24",
+    "original_series": "兒科常用藥水",
+    "replacements": [
+      {
+        "page": "cards/ped_abx_02.html",
+        "title": "優力黴素藥粉怎麼泡？幾 cc、要冰幾天？Cephalexin 兒童抗生素重點"
+      }
+    ],
+    "tags": [
+      "兒科藥水",
+      "抗生素",
+      "止吐",
+      "止咳",
+      "抗過敏",
+      "退燒"
+    ]
+  },
+  {
+    "image": "img/ped_liquid_06.webp",
+    "title": "安莫西林／萬博黴素懸液用粉劑（Amoxicillin）怎麼泡、怎麼喝？兒童劑量與注意事項",
+    "reason": "本頁已移至分類系列，內容相同",
+    "page": "cards/ped_liquid_06.html",
+    "retired_at": "2026-11-24",
+    "original_series": "兒科常用藥水",
+    "replacements": [
+      {
+        "page": "cards/ped_abx_01.html",
+        "title": "安莫西林／萬博黴素兒童藥水怎麼泡？要冰幾天？Amoxicillin 用法與起疹警訊"
+      }
+    ],
+    "tags": [
+      "兒科藥水",
+      "抗生素",
+      "止吐",
+      "止咳",
+      "抗過敏",
+      "退燒"
+    ]
+  },
+  {
+    "image": "img/ped_liquid_07.webp",
+    "title": "沙法克寧懸液劑（Sulfamethoxazole + Trimethoprim）怎麼喝？兒童劑量、禁忌與注意事項",
+    "reason": "本頁已移至分類系列，內容相同",
+    "page": "cards/ped_liquid_07.html",
+    "retired_at": "2026-11-24",
+    "original_series": "兒科常用藥水",
+    "replacements": [
+      {
+        "page": "cards/ped_abx_04.html",
+        "title": "沙法克寧懸液劑怎麼喝？蠶豆症、未滿 2 個月禁忌與多喝水防曬重點"
+      }
+    ],
+    "tags": [
+      "兒科藥水",
+      "抗生素",
+      "止吐",
+      "止咳",
+      "抗過敏",
+      "退燒"
+    ]
+  },
+  {
+    "image": "img/ped_liquid_08.webp",
+    "title": "亞涕液（Triprolidine + Pseudoephedrine）怎麼喝？兒童劑量、副作用與注意事項",
+    "reason": "本頁已移至分類系列，內容相同",
+    "page": "cards/ped_liquid_08.html",
+    "retired_at": "2026-11-24",
+    "original_series": "兒科常用藥水",
+    "replacements": [
+      {
+        "page": "cards/ped_cold_triprolidine_pse.html",
+        "title": "亞涕液／鼻福／通鼻液怎麼喝？兒童鼻塞藥水年齡限制、防重複用藥與睡前注意"
+      }
+    ],
+    "tags": [
+      "兒科藥水",
+      "抗生素",
+      "止吐",
+      "止咳",
+      "抗過敏",
+      "退燒"
+    ]
+  },
+  {
+    "image": "img/ped_liquid_09.webp",
+    "title": "舒安敏／喜驅敏內服液（Levocetirizine 0.5 mg/mL）怎麼喝？兒童劑量、濃度防錯與注意事項",
+    "reason": "本頁已移至分類系列，內容相同",
+    "page": "cards/ped_liquid_09.html",
+    "retired_at": "2026-11-24",
+    "original_series": "兒科常用藥水",
+    "replacements": [
+      {
+        "page": "cards/ped_cold_levocetirizine.html",
+        "title": "舒安敏／喜驅敏內服液怎麼喝？與勝克敏濃度差一半別喝錯！兒童劑量與注意事項"
+      }
+    ],
+    "tags": [
+      "兒科藥水",
+      "抗生素",
+      "止吐",
+      "止咳",
+      "抗過敏",
+      "退燒"
+    ]
+  },
+  {
+    "image": "img/ped_liquid_10.webp",
+    "title": "利達敏寧／宜敏靜／敏福／暢敏糖漿（Loratadine 1 mg/mL）怎麼喝？兒童劑量與注意事項",
+    "reason": "本頁已移至分類系列，內容相同",
+    "page": "cards/ped_liquid_10.html",
+    "retired_at": "2026-11-24",
+    "original_series": "兒科常用藥水",
+    "replacements": [
+      {
+        "page": "cards/ped_cold_loratadine.html",
+        "title": "利達敏寧／宜敏靜／敏福糖漿怎麼喝？體重 30 公斤分界、不嗜睡與停藥檢驗重點"
+      }
+    ],
+    "tags": [
+      "兒科藥水",
+      "抗生素",
+      "止吐",
+      "止咳",
+      "抗過敏",
+      "退燒"
+    ]
   }
 ]

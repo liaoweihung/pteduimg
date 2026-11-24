@@ -1827,7 +1827,10 @@
       "url": "topics/pediatric-medicine.html",
       "label": "兒科用藥總整理"
     },
-    "showFooter": true
+    "showFooter": true,
+    "related_series": [
+      "ped_abx"
+    ]
   },
   "ped_fever_reducer": {
     "title": "兒科退燒藥水",
@@ -2073,36 +2076,44 @@
     "steps": [
       "img/ped_cold_cypromin.webp",
       "img/ped_cold_cetirizine.webp",
+      "img/ped_cold_levocetirizine.webp",
       "img/ped_cold_secorine.webp",
       "img/ped_asthma_meptin_liquid.webp",
       "img/ped_cold_peace_syrup.webp",
+      "img/ped_cold_triprolidine_pse.webp",
       "img/ped_cold_guaphen_syrup.webp",
       "img/ped_cold_exdila_liquid.webp",
       "img/ped_cold_mintapp_syrup.webp",
+      "img/ped_cold_loratadine.webp",
       "img/ped_cold_musco_solution.webp",
       "img/ped_cold_koko_sou_syrup.webp",
       "img/ped_cold_cough_mixture.webp",
       "img/ped_cold_nocough_syrup.webp",
       "img/ped_cold_soltan.webp",
       "img/ped_cold_muco.webp",
-      "img/ped_cold_sortuss.webp"
+      "img/ped_cold_sortuss.webp",
+      "img/ped_cold_butamirate.webp"
     ],
     "favorite_keys": [
       "pediatric_cold_syrup-0",
       "pediatric_cold_syrup-1",
+      "pediatric_cold_syrup-ped_cold_levocetirizine",
       "pediatric_cold_syrup-2",
       "pediatric_cold_syrup-10",
       "pediatric_cold_syrup-3",
+      "pediatric_cold_syrup-ped_cold_triprolidine_pse",
       "pediatric_cold_syrup-4",
       "pediatric_cold_syrup-5",
       "pediatric_cold_syrup-6",
+      "pediatric_cold_syrup-ped_cold_loratadine",
       "pediatric_cold_syrup-7",
       "pediatric_cold_syrup-8",
       "pediatric_cold_syrup-9",
       "pediatric_cold_syrup-11",
       "pediatric_cold_syrup-ped_cold_soltan",
       "pediatric_cold_syrup-ped_cold_muco",
-      "pediatric_cold_syrup-ped_cold_sortuss"
+      "pediatric_cold_syrup-ped_cold_sortuss",
+      "pediatric_cold_syrup-ped_cold_butamirate"
     ],
     "topic_hub": {
       "url": "topics/pediatric-medicine.html",
@@ -2193,6 +2204,7 @@
     ],
     "steps": [
       "img/wempty_suspension.webp",
+      "img/ped_gi_domperidone.webp",
       "img/lactulose_constipation.webp",
       "img/ped_diarrhea_hidrasec.webp",
       "img/ped_gi_pecolin_suspension.webp"
@@ -2202,6 +2214,7 @@
     ],
     "favorite_keys": [
       "pediatric_gi_syrup-0",
+      "pediatric_gi_syrup-ped_gi_domperidone",
       "pediatric_gi_syrup-1",
       "pediatric_gi_syrup-2",
       "pediatric_gi_syrup-ped_gi_pecolin_suspension"
@@ -4784,74 +4797,39 @@
       "img/allergic_rhinitis_06.webp"
     ]
   },
-  "ped_liquid": {
-    "title": "兒科常用藥水",
+  "ped_abx": {
+    "title": "兒科抗生素與抗黴菌藥水",
     "category": "pharmacist_product",
     "departments": [
       "pediatrics"
     ],
     "order": 17.4,
     "hidden": false,
-    "icon": "🩺",
+    "icon": "💊",
     "tags": [
-      "兒科常用藥水",
-      "兒童藥水",
-      "原瓶藥水",
-      "滅菌靈",
-      "停咳喜",
-      "米瑞液",
-      "必達米瑞液",
-      "胃利空",
-      "吐必止",
-      "平吐寧",
-      "日舒",
-      "菌巴達",
-      "優力黴素",
-      "安莫西林",
-      "萬博黴素",
-      "沙法克寧",
-      "亞涕液",
-      "鼻福",
-      "通鼻液",
-      "舒安敏",
-      "喜驅敏",
-      "勝涕敏",
-      "利達敏寧",
-      "宜敏靜",
-      "敏福",
-      "暢敏",
-      "Nystatin",
-      "Butamirate",
-      "Domperidone",
-      "Azithromycin",
-      "Cephalexin",
-      "Amoxicillin",
-      "SMX-TMP",
-      "Triprolidine",
-      "Pseudoephedrine",
-      "Levocetirizine",
-      "Loratadine",
-      "兒童抗生素",
-      "止吐藥水",
-      "止咳藥水",
-      "過敏藥水"
+      "抗生素",
+      "抗黴菌",
+      "兒科藥水",
+      "泡製步驟",
+      "冷藏保存",
+      "鵝口瘡",
+      "中耳炎",
+      "黴漿菌"
     ],
     "showFooter": true,
     "topic_hub": {
       "url": "topics/pediatric-medicine.html",
       "label": "兒科用藥總整理"
     },
+    "related_series": [
+      "Ped_abx_susp"
+    ],
     "steps": [
-      "img/ped_liquid_01.webp",
-      "img/ped_liquid_02.webp",
-      "img/ped_liquid_03.webp",
-      "img/ped_liquid_04.webp",
-      "img/ped_liquid_05.webp",
-      "img/ped_liquid_06.webp",
-      "img/ped_liquid_07.webp",
-      "img/ped_liquid_08.webp",
-      "img/ped_liquid_09.webp",
-      "img/ped_liquid_10.webp"
+      "img/ped_abx_01.webp",
+      "img/ped_abx_02.webp",
+      "img/ped_abx_03.webp",
+      "img/ped_abx_04.webp",
+      "img/ped_abx_05.webp"
     ]
   }
 }

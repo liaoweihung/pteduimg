@@ -1,4 +1,12 @@
 {
   "schema_version": 1,
-  "series": []
+  "series": [
+    {
+      "id": "ped_liquid",
+      "title": "兒科常用藥水",
+      "removed_at": "2026-11-24",
+      "reason": "依規劃分入新系列 ped_abx 與既有系列 pediatric_cold_syrup、pediatric_gi_syrup",
+      "request_id": "CR-2026-123"
+    }
+  ]
 }

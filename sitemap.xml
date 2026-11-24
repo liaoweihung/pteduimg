@@ -1427,6 +1427,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_cold_levocetirizine.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://liaoweihung.github.io/pteduimg/cards/ped_cold_secorine.html</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -1445,6 +1451,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_cold_triprolidine_pse.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://liaoweihung.github.io/pteduimg/cards/ped_cold_guaphen_syrup.html</loc>
     <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -1459,6 +1471,12 @@
   <url>
     <loc>https://liaoweihung.github.io/pteduimg/cards/ped_cold_mintapp_syrup.html</loc>
     <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_cold_loratadine.html</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1505,8 +1523,20 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_cold_butamirate.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://liaoweihung.github.io/pteduimg/cards/wempty_suspension.html</loc>
     <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_gi_domperidone.html</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -2851,61 +2881,31 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_liquid_01.html</loc>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_abx_01.html</loc>
     <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_liquid_02.html</loc>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_abx_02.html</loc>
     <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_liquid_03.html</loc>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_abx_03.html</loc>
     <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_liquid_04.html</loc>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_abx_04.html</loc>
     <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_liquid_05.html</loc>
-    <lastmod>2026-11-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_liquid_06.html</loc>
-    <lastmod>2026-11-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_liquid_07.html</loc>
-    <lastmod>2026-11-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_liquid_08.html</loc>
-    <lastmod>2026-11-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_liquid_09.html</loc>
-    <lastmod>2026-11-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_liquid_10.html</loc>
+    <loc>https://liaoweihung.github.io/pteduimg/cards/ped_abx_05.html</loc>
     <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
