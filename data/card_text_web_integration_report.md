@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：356
+- 成功加入文字頁數：378
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -361,3 +361,25 @@
 | common_skin_conditions | 病毒疣怎麼辦？和雞眼、厚繭怎麼分，不要摳，常見治療方式 | https://liaoweihung.github.io/pteduimg/cards/wart.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | common_skin_conditions | 蚊蟲叮咬怎麼擦藥？冰敷、止癢藥膏與何時就醫 | https://liaoweihung.github.io/pteduimg/cards/bug_bite.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | common_skin_conditions | 嘴破擦口內膏怎麼擦？4 步驟與多久沒好要就醫 | https://liaoweihung.github.io/pteduimg/cards/orabase.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diaper_rash | 寶寶紅屁屁怎麼辦？尿布疹照護 3 步驟 | https://liaoweihung.github.io/pteduimg/cards/diaper_rash_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diaper_rash | 換尿布時，怎麼減少皮膚刺激？ | https://liaoweihung.github.io/pteduimg/cards/diaper_rash_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diaper_rash | 屏障膏怎麼擦？氧化鋅、白凡士林用法 | https://liaoweihung.github.io/pteduimg/cards/diaper_rash_03.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diaper_rash | 尿布疹的藥膏，可以自己換嗎？ | https://liaoweihung.github.io/pteduimg/cards/diaper_rash_04.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| diaper_rash | 尿布疹什麼時候要就醫？ | https://liaoweihung.github.io/pteduimg/cards/diaper_rash_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insect_bites | 被蚊蟲叮咬，先做這三件事 | https://liaoweihung.github.io/pteduimg/cards/insect_bites_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insect_bites | 蚊蟲叮咬，止癢藥膏怎麼選？ | https://liaoweihung.github.io/pteduimg/cards/insect_bites_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insect_bites | 小孩被叮，擦藥前看這裡 | https://liaoweihung.github.io/pteduimg/cards/insect_bites_03.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insect_bites | 隱翅蟲停在皮膚上怎麼辦？ | https://liaoweihung.github.io/pteduimg/cards/insect_bites_04.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| insect_bites | 被叮之後，什麼時候要就醫？ | https://liaoweihung.github.io/pteduimg/cards/insect_bites_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| atopic_dermatitis | 孩子皮膚一直癢？認識異位性皮膚炎 | https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| atopic_dermatitis | 異位性皮膚炎，洗澡怎麼洗？ | https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| atopic_dermatitis | 孩子的皮膚怎麼保濕？ | https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_03.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| atopic_dermatitis | 異位性皮膚炎的類固醇藥膏擦多少？用指尖單位估量 | https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_04.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| atopic_dermatitis | 日常生活怎麼減少孩子的搔癢？ | https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| atopic_dermatitis | 異位性皮膚炎，什麼時候要就醫？ | https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_06.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| allergic_rhinitis | 孩子一直打噴嚏，是鼻過敏嗎？ | https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| allergic_rhinitis | 哪些東西會讓孩子的鼻子不舒服？ | https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| allergic_rhinitis | 類固醇鼻噴劑，怎麼噴？ | https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_03.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| allergic_rhinitis | 口服抗組織胺能改善什麼？ | https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_04.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| allergic_rhinitis | 去鼻塞噴劑，只能短期用 | https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| allergic_rhinitis | 洗鼻用什麼水？何時要就醫？ | https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_06.html | 是 | 是 | 是 | 是 | 是 | 無 |

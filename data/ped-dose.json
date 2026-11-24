@@ -1,0 +1,1764 @@
+{
+  "_readme": "兒科藥水劑量查詢（ped-dose-calculator.html）的資料檔。劑量文字只取自站上已定稿的圖卡頁（card_content.json），不另找來源。年齡以「月」表示，from 含、to 不含。weight 規則 audience：public＝仿單換算，doctor＝醫師／醫院分享的仿單外劑量（兩種民眾版都顯示），pharmacist＝只在藥師版顯示。refs 取自圖卡頁的參考資料。needsMedicalReview 為 true 表示尚待藥師核對本檔數字。",
+  "updated": "2026-11-24",
+  "needsMedicalReview": true,
+  "drugs": [
+    {
+      "id": "antiphen",
+      "name": "安佳熱糖漿",
+      "aliases": [
+        "Anti-Phen",
+        "安佳熱",
+        "普拿疼成分"
+      ],
+      "ingredient": "Acetaminophen 24 mg/mL",
+      "mgPerMl": 24,
+      "group": "退燒止痛",
+      "rx": false,
+      "form": "糖漿",
+      "uses": [
+        "發燒",
+        "退燒",
+        "頭痛",
+        "喉嚨痛",
+        "牙痛",
+        "疼痛"
+      ],
+      "image": "img/antiphen.webp",
+      "frequency": "需要時再吃；每 4～6 小時可再吃一次，24 小時內不超過 5 次。",
+      "age": {
+        "source": "食藥署仿單",
+        "rows": [
+          {
+            "from": 144,
+            "dose": "每次 20～30 mL",
+            "label": "12 歲以上及成人"
+          },
+          {
+            "from": 72,
+            "to": 144,
+            "dose": "每次 10～15 mL",
+            "label": "6 歲以上未滿 12 歲"
+          },
+          {
+            "from": 36,
+            "to": 72,
+            "dose": "每次 5～7.5 mL",
+            "label": "3 歲以上未滿 6 歲"
+          },
+          {
+            "from": 0,
+            "to": 36,
+            "dose": "請洽醫師診治",
+            "label": "3 歲以下",
+            "stop": true
+          }
+        ]
+      },
+      "weight": [
+        {
+          "audience": "doctor",
+          "source": "醫師依體重開立的常用範圍（圖卡）",
+          "per": "dose",
+          "mgPerKg": [
+            10,
+            15
+          ],
+          "label": "每次 10～15 mg/kg"
+        }
+      ],
+      "notes": [
+        "仿單提醒第一次先用最小的建議量；有藥袋時，以藥袋寫的毫升數為準。",
+        "喝完一小時燒還沒全退是常見的，不要提早再喝。",
+        "有苯酮尿症（含阿斯巴甜）不可使用；同時吃其他含 Acetaminophen 的藥先問醫師藥師。"
+      ],
+      "refs": [
+        {
+          "title": "食藥署藥品仿單查詢平台：「晟德」安佳熱糖漿（衛署藥製字第040164號）",
+          "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第040164號"
+        },
+        {
+          "title": "臺北市立聯合醫院 安佳熱糖漿用藥指導單張",
+          "url": "https://www-ws.gov.taipei/001/Upload/446/relfile/22055/9101903/6f6f3353-9217-4152-8489-a12e5ea85d65.pdf"
+        },
+        {
+          "title": "臺大醫院健康電子報 小兒發燒的藥物治療",
+          "url": "https://epaper.ntuh.gov.tw/health/201803/project_3.html"
+        },
+        {
+          "title": "衛生福利部 兒童發燒用藥提醒",
+          "url": "https://www.mohw.gov.tw/fp-16-39575-1.html"
+        },
+        {
+          "title": "NICE NG143 兒童發燒評估",
+          "url": "https://www.nice.org.uk/guidance/ng143/chapter/recommendations"
+        }
+      ]
+    },
+    {
+      "id": "ibuprofen_sol",
+      "name": "依普芬口服懸液劑",
+      "aliases": [
+        "依普芬",
+        "Ibuprofen",
+        "布洛芬"
+      ],
+      "ingredient": "Ibuprofen 20 mg/mL",
+      "mgPerMl": 20,
+      "group": "退燒止痛",
+      "rx": true,
+      "form": "懸液劑",
+      "uses": [
+        "發燒",
+        "退燒",
+        "疼痛",
+        "消炎"
+      ],
+      "image": "img/ibuprofen_sol.webp",
+      "frequency": "每 6～8 小時一次，兩次之間至少隔 6 小時。",
+      "ageRange": {
+        "from": 6,
+        "to": 144,
+        "outside": "仿單兒童用量適用 6 個月到 12 歲；6 個月以下的寶寶不要自行使用。"
+      },
+      "weight": [
+        {
+          "audience": "public",
+          "source": "食藥署仿單",
+          "per": "dose",
+          "mlPerKg": [
+            0.25,
+            0.25
+          ],
+          "label": "體溫 39°C 以下：每次 0.25 mL/kg"
+        },
+        {
+          "audience": "public",
+          "source": "食藥署仿單",
+          "per": "dose",
+          "mlPerKg": [
+            0.5,
+            0.5
+          ],
+          "label": "體溫 39°C 以上：每次 0.5 mL/kg"
+        },
+        {
+          "audience": "public",
+          "source": "食藥署仿單",
+          "per": "day",
+          "mlPerKg": [
+            2,
+            2
+          ],
+          "label": "一天上限：2 mL/kg",
+          "isMax": true
+        }
+      ],
+      "notes": [
+        "仿單在剛好 39°C 的寫法有重疊，實際每次幾 mL 請看藥袋。",
+        "依普芬、舒抑痛、馬蓋先都是 Ibuprofen 20 mg/mL，不要重複給。",
+        "持續嘔吐、拉肚子、喝不下水或尿量變少，先聯絡醫師。"
+      ],
+      "refs": [
+        {
+          "title": "食藥署藥品仿單查詢平台：「晟德」依普芬口服懸液劑（衛署藥製字第043152號）",
+          "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第043152號"
+        },
+        {
+          "title": "臺北市立聯合醫院 依普芬口服懸液劑用藥指導單張",
+          "url": "https://www-ws.gov.taipei/001/Upload/446/relfile/22055/9101903/f0d8268e-c7fa-4a1c-992b-1a6122e85c9f.pdf"
+        },
+        {
+          "title": "臺大醫院健康電子報 小兒發燒的藥物治療",
+          "url": "https://epaper.ntuh.gov.tw/health/201803/project_3.html"
+        },
+        {
+          "title": "衛生福利部 兒童發燒用藥提醒",
+          "url": "https://www.mohw.gov.tw/fp-16-39575-1.html"
+        },
+        {
+          "title": "成大醫院藥劑部 舒抑痛與依普芬品項替換公告",
+          "url": "https://nckuhpharmacy.hosp.ncku.edu.tw/var/file/72/1072/img/745/116279717.pdf"
+        }
+      ]
+    },
+    {
+      "id": "idofen_suspension",
+      "name": "舒抑痛口服懸液",
+      "aliases": [
+        "舒抑痛",
+        "Idofen",
+        "Ibuprofen",
+        "布洛芬"
+      ],
+      "ingredient": "Ibuprofen 20 mg/mL",
+      "mgPerMl": 20,
+      "group": "退燒止痛",
+      "rx": true,
+      "form": "懸液劑",
+      "uses": [
+        "發燒",
+        "退燒",
+        "疼痛",
+        "消炎"
+      ],
+      "image": "img/idofen_suspension.webp",
+      "frequency": "每 6～8 小時一次，不要自行縮短間隔。",
+      "ageRange": {
+        "from": 6,
+        "to": 144,
+        "outside": "仿單兒童用量為 6 個月至 12 歲；6 個月以下應先由醫師評估。"
+      },
+      "weight": [
+        {
+          "audience": "public",
+          "source": "核准仿單",
+          "per": "dose",
+          "mlPerKg": [
+            0.25,
+            0.5
+          ],
+          "label": "解熱：依體溫每次 0.25 或 0.5 mL/kg"
+        },
+        {
+          "audience": "public",
+          "source": "核准仿單",
+          "per": "dose",
+          "mlPerKg": [
+            0.5,
+            0.5
+          ],
+          "label": "止痛：每次 0.5 mL/kg"
+        },
+        {
+          "audience": "public",
+          "source": "核准仿單",
+          "per": "day",
+          "mlPerKg": [
+            2,
+            2
+          ],
+          "label": "每日最高 2 mL/kg（40 mg/kg）",
+          "isMax": true
+        }
+      ],
+      "notes": [
+        "實際選用哪一劑量，須依症狀及醫師處方。",
+        "和依普芬、馬蓋先成分相同，不能只看商品名互換用量，也不要重複給。"
+      ],
+      "refs": [
+        {
+          "title": "舒抑痛口服懸液核准仿單（衛署藥製字第045438號；版本日期 2024-06-25）",
+          "url": "https://wwwhf.vghks.gov.tw/DIIdentify/KH/drugpdf/09076.pdf"
+        },
+        {
+          "title": "國軍高雄總醫院：舒抑痛口服懸液 20 mg/mL 藥品資料",
+          "url": "https://reg.802.mnd.gov.tw/Med/PharmaBooks/Keyword_Detail/4Xvy9yw89n-2Gt4ZC2JO4MW22Q62vELb20KhVwTViaQ="
+        },
+        {
+          "title": "國立成功大學醫學院附設醫院藥劑部：舒抑痛與依普芬品項替換公告（2025-07-15）",
+          "url": "https://nckuhpharmacy.hosp.ncku.edu.tw/var/file/72/1072/img/745/894667448.pdf"
+        }
+      ]
+    },
+    {
+      "id": "macsafe_suspension",
+      "name": "馬蓋先口服懸濁液",
+      "aliases": [
+        "馬蓋先",
+        "MacSafe",
+        "Ibuprofen",
+        "布洛芬"
+      ],
+      "ingredient": "Ibuprofen 20 mg/mL",
+      "mgPerMl": 20,
+      "group": "退燒止痛",
+      "rx": true,
+      "form": "懸濁液",
+      "uses": [
+        "發燒",
+        "退燒",
+        "疼痛"
+      ],
+      "image": "img/macsafe_suspension.webp",
+      "frequency": "通常每日 3 次。",
+      "age": {
+        "source": "核准仿單第 3.1 節（年齡與體重並列）",
+        "rowMatch": "kgFirst",
+        "rows": [
+          {
+            "from": 132,
+            "to": 192,
+            "kgFrom": 41,
+            "kgTo": 61,
+            "dose": "每次 20 mL（400 mg）",
+            "label": "11～15 歲／41～60 kg"
+          },
+          {
+            "from": 96,
+            "to": 132,
+            "kgFrom": 30,
+            "kgTo": 41,
+            "dose": "每次 15 mL（300 mg）",
+            "label": "8～10 歲／30～40 kg"
+          },
+          {
+            "from": 60,
+            "to": 96,
+            "kgFrom": 20,
+            "kgTo": 30,
+            "dose": "每次 10 mL（200 mg）",
+            "label": "5～7 歲／20～29 kg"
+          },
+          {
+            "from": 24,
+            "to": 60,
+            "kgFrom": 12,
+            "kgTo": 20,
+            "dose": "每次 5 mL（100 mg）",
+            "label": "2～4 歲／12～19 kg"
+          },
+          {
+            "from": 0,
+            "to": 24,
+            "dose": "常規分齡用量從 2 歲開始；未滿 2 歲由醫師評估",
+            "label": "未滿 2 歲",
+            "stop": true
+          }
+        ]
+      },
+      "weight": [
+        {
+          "audience": "public",
+          "source": "核准仿單第 3.1 節",
+          "per": "day",
+          "mlPerKg": [
+            0.75,
+            2
+          ],
+          "label": "每日 0.75～2 mL/kg（15～40 mg/kg）",
+          "isMax": true
+        },
+        {
+          "audience": "pharmacist",
+          "source": "仿單第 10.1 節（藥理及研究資訊，非核准用法）",
+          "per": "dose",
+          "mlPerKg": [
+            0.25,
+            0.5
+          ],
+          "label": "退燒：≤39.16°C 每次 0.25 mL/kg；>39.16°C 每次 0.5 mL/kg"
+        }
+      ],
+      "notes": [
+        "年齡和體重不在同一組時，以醫師處方為準。",
+        "兒童須遵守每日 15～40 mg/kg 範圍，不可套用成人每日 2,400 mg 上限。"
+      ],
+      "refs": [
+        {
+          "title": "衛生福利部食品藥物管理署：馬蓋先口服懸濁液20毫克/毫升核准仿單（衛署藥製字第034222號）",
+          "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第034222號"
+        }
+      ]
+    },
+    {
+      "id": "ped_cold_secorine",
+      "name": "息咳寧糖漿",
+      "aliases": [
+        "息咳寧",
+        "Secorine"
+      ],
+      "ingredient": "dl-Methylephedrine 1 mg、Chlorpheniramine 0.1 mg、Guaifenesin 5 mg（每 mL）",
+      "group": "感冒綜合",
+      "rx": false,
+      "form": "糖漿",
+      "uses": [
+        "感冒",
+        "流鼻水",
+        "鼻塞",
+        "打噴嚏",
+        "咳嗽",
+        "有痰"
+      ],
+      "image": "img/ped_cold_secorine.webp",
+      "frequency": "仿單：一日 3 次。",
+      "age": {
+        "source": "仿單自行使用參考量",
+        "rows": [
+          {
+            "from": 144,
+            "dose": "每次 20 mL",
+            "label": "成人及 12 歲以上"
+          },
+          {
+            "from": 108,
+            "to": 144,
+            "dose": "每次 10 mL",
+            "label": "9 歲以上未滿 12 歲"
+          },
+          {
+            "from": 72,
+            "to": 108,
+            "dose": "每次 6.7 mL",
+            "label": "6 歲以上未滿 9 歲"
+          },
+          {
+            "from": 0,
+            "to": 72,
+            "dose": "先由醫師診治",
+            "label": "6 歲以下",
+            "stop": true
+          }
+        ]
+      },
+      "weight": [
+        {
+          "audience": "doctor",
+          "source": "傑登醫師（Dr. Jaden）",
+          "per": "dose",
+          "mlPerKg": [
+            0.25,
+            0.25
+          ],
+          "maxDoseMl": 10,
+          "ageTo": 144,
+          "label": "每次 體重÷4 mL，最多 10 mL，一日 3～4 次"
+        }
+      ],
+      "notes": [
+        "含阿斯巴甜，苯酮尿症者不可使用。",
+        "可能嗜睡；不要用來讓孩子入睡。自行使用勿超過 7 日。",
+        "息咳寧和息咳液名字像但配方不同。"
+      ],
+      "refs": [
+        {
+          "title": "衛生福利部食品藥物管理署 藥品仿單查詢平台：「晟德」息咳寧糖漿（衛署藥製字第040833號）",
+          "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC040833%E8%99%9F"
+        },
+        {
+          "title": "傑登醫師（Dr. Jaden）〈綜合感冒糖漿－息咳寧〉，2023-12-19",
+          "url": "https://www.drjadenhealth.com/l/secorine/"
+        }
+      ]
+    },
+    {
+      "id": "ped_cold_sortuss",
+      "name": "息咳液",
+      "aliases": [
+        "Sortuss"
+      ],
+      "ingredient": "Dextromethorphan 1 mg、Guaifenesin 10 mg、Ipecac（每 mL）",
+      "group": "止咳化痰",
+      "rx": true,
+      "form": "液劑",
+      "uses": [
+        "咳嗽",
+        "有痰",
+        "止咳",
+        "化痰"
+      ],
+      "image": "img/ped_cold_sortuss.webp",
+      "frequency": "仿單寫每 4 小時服用一次；表上是「每次」用量。",
+      "age": {
+        "source": "食藥署仿單（2019-11-25 版）",
+        "rows": [
+          {
+            "from": 144,
+            "dose": "每次 10～20 mL",
+            "label": "成人"
+          },
+          {
+            "from": 72,
+            "to": 144,
+            "dose": "每次 6～10 mL",
+            "label": "6～12 歲",
+            "note": "原仿單在 6 歲交界寫法重疊，6 歲左右請醫師確認。"
+          },
+          {
+            "from": 24,
+            "to": 72,
+            "dose": "每次 2～6 mL",
+            "label": "2～6 歲",
+            "note": "原仿單在 6 歲交界寫法重疊，6 歲左右請醫師確認。"
+          },
+          {
+            "from": 0,
+            "to": 24,
+            "dose": "仿單沒有列 2 歲以下用量，不可自行比例減量",
+            "label": "2 歲以下",
+            "stop": true
+          }
+        ]
+      },
+      "notes": [
+        "處方藥，各年齡都須由醫師處方使用。",
+        "正在服用抗憂鬱劑（MAOI、SSRI 類）先告知醫師或藥師。"
+      ],
+      "refs": [
+        {
+          "title": "衛生福利部食品藥物管理署 藥品仿單查詢平台：息咳液（衛署藥製字第040706號）",
+          "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC040706%E8%99%9F"
+        },
+        {
+          "title": "光田綜合醫院 Sortuss 產品頁",
+          "url": "https://www.ktgh.com.tw/ktgh/Home/WesternMedDetail/EB4B044500ED9E4BFA613D3956339146"
+        },
+        {
+          "title": "臺北市立聯合醫院 息咳液用藥指導單張",
+          "url": "https://www-ws.gov.taipei/001/Upload/446/relfile/22055/9101903/e39392c6-4e46-4bca-bebd-25d4cf774a11.pdf"
+        },
+        {
+          "title": "衛生福利部食品藥物管理署 指示藥品審查基準（鎮咳袪痰劑）",
+          "url": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f637945139465117001&type=1"
+        },
+        {
+          "title": "衛生福利部中央健康保險署 呼吸系統急症",
+          "url": "https://www.nhi.gov.tw/ch/cp-2794-a7c50-2951-1.html"
+        }
+      ]
+    },
+    {
+      "id": "ped_cold_nocough_syrup",
+      "name": "安咳糖漿",
+      "aliases": [
+        "Nocough",
+        "杏輝安咳"
+      ],
+      "ingredient": "Dextromethorphan 1 mg、Guaifenesin 5 mg、Phenylephrine 1 mg、Chlorpheniramine 0.2 mg（每 mL）",
+      "group": "感冒綜合",
+      "rx": false,
+      "form": "糖漿",
+      "uses": [
+        "感冒",
+        "咳嗽",
+        "鼻塞",
+        "有痰",
+        "流鼻水",
+        "打噴嚏"
+      ],
+      "image": "img/ped_cold_nocough_syrup.webp",
+      "frequency": "每日 3～4 次；不要服用超過 7 日。",
+      "age": {
+        "source": "TFDA 仿單",
+        "rows": [
+          {
+            "from": 144,
+            "dose": "每次 10 mL",
+            "label": "12 歲以上"
+          },
+          {
+            "from": 108,
+            "to": 144,
+            "dose": "每次 5 mL",
+            "label": "9～未滿 12 歲"
+          },
+          {
+            "from": 72,
+            "to": 108,
+            "dose": "每次 3 mL",
+            "label": "6～未滿 9 歲"
+          },
+          {
+            "from": 0,
+            "to": 72,
+            "dose": "請洽醫師診治，不宜自行使用",
+            "label": "6 歲以下",
+            "stop": true
+          }
+        ]
+      },
+      "notes": [
+        "仿單沒有 mg/kg 公式，不要用其他產品的體重公式換算。",
+        "正在服用 MAOI 或 SSRI 類抗憂鬱藥者不可使用。",
+        "安咳糖漿和安咳液配方不同，不能互換毫升數。"
+      ],
+      "refs": [
+        {
+          "title": "衛生福利部食品藥物管理署：「杏輝」安咳糖漿核准電子仿單（衛署藥製字第029634號）",
+          "url": "https://mcp.fda.gov.tw/exportpdf/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC029634%E8%99%9F"
+        }
+      ]
+    },
+    {
+      "id": "ped_cold_koko_sou_syrup",
+      "name": "可克嗽糖漿",
+      "aliases": [
+        "可克嗽"
+      ],
+      "ingredient": "Dextromethorphan 0.75 mg、dl-Methylephedrine 1 mg、Potassium Guaiacol Sulfonate 4.1667 mg（每 mL）",
+      "group": "止咳化痰",
+      "rx": false,
+      "form": "糖漿",
+      "uses": [
+        "咳嗽",
+        "有痰",
+        "止咳"
+      ],
+      "image": "img/ped_cold_koko_sou_syrup.webp",
+      "frequency": "每日 3 次；不要服用超過 7 日。",
+      "age": {
+        "source": "食藥署仿單",
+        "rows": [
+          {
+            "from": 144,
+            "dose": "每次 20 mL",
+            "label": "12 歲以上"
+          },
+          {
+            "from": 108,
+            "to": 144,
+            "dose": "每次 10 mL",
+            "label": "9 至未滿 12 歲"
+          },
+          {
+            "from": 72,
+            "to": 108,
+            "dose": "每次 7 mL",
+            "label": "6 至未滿 9 歲"
+          },
+          {
+            "from": 0,
+            "to": 72,
+            "dose": "先由醫師診治",
+            "label": "6 歲以下",
+            "stop": true
+          }
+        ]
+      },
+      "notes": [
+        "仿單沒有兒童 mg/kg 公式，不可自行換算。",
+        "服用 MAOI 或 SSRI 類抗憂鬱藥的人不可使用。"
+      ],
+      "refs": [
+        {
+          "title": "衛生福利部食品藥物管理署：可克嗽糖漿核准仿單（衛署藥製字第033192號）",
+          "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC033192%E8%99%9F?export=opendata"
+        }
+      ]
+    },
+    {
+      "id": "ped_cold_cough_mixture",
+      "name": "生達鎮咳袪痰液",
+      "aliases": [
+        "Cough Mixture",
+        "鎮咳袪痰液",
+        "桔梗"
+      ],
+      "ingredient": "桔梗流浸膏 0.2 mL/mL",
+      "group": "止咳化痰",
+      "rx": false,
+      "form": "液劑",
+      "uses": [
+        "咳嗽",
+        "有痰",
+        "止咳",
+        "化痰"
+      ],
+      "image": "img/ped_cold_cough_mixture.webp",
+      "frequency": "每日 3 次。",
+      "age": {
+        "source": "產品仿單",
+        "rows": [
+          {
+            "from": 144,
+            "dose": "每次 5～15 mL",
+            "label": "成人"
+          },
+          {
+            "from": 0,
+            "to": 144,
+            "dose": "仿單只寫「兒童酌減」，請依醫師或藥師指示",
+            "label": "兒童",
+            "stop": true
+          }
+        ]
+      },
+      "weight": [
+        {
+          "audience": "doctor",
+          "source": "耕莘醫院藥品資訊、Dr. Jaden Health",
+          "per": "dose",
+          "mlPerKg": [
+            0.25,
+            0.25
+          ],
+          "ageTo": 144,
+          "label": "每次 0.25 mL/kg（體重÷4），每日 3 次"
+        }
+      ],
+      "notes": [
+        "本品含桔梗成分，可能有細微沉澱，使用前充分搖勻。"
+      ],
+      "refs": [
+        {
+          "title": "生達化學製藥：鎮咳袪痰液 Cough Mixture 產品資料（衛署藥製字第030862號）",
+          "url": "https://www.standard.com.tw/product-info.php?c1=1&c2=4&c3=37&i=123"
+        },
+        {
+          "title": "生達化學製藥：鎮咳袪痰液產品仿單（文件標示 2017-08-01；耕莘醫院收錄）",
+          "url": "https://www.cth.org.tw/public/medi_news/01832855f81982955529d0a68ed0e9bd.pdf"
+        },
+        {
+          "title": "耕莘醫院：Cough Mixture 藥品資訊（成人與兒童常用劑量）",
+          "url": "https://www.cth.org.tw/?aid=606&iid=1181&page_name=detail&pid=0"
+        },
+        {
+          "title": "Dr. Jaden Health：鎮咳藥水－鎮咳祛痰液（2024-01-13）",
+          "url": "https://www.drjadenhealth.com/l/cough-mixture/"
+        }
+      ]
+    },
+    {
+      "id": "ped_cold_guaphen_syrup",
+      "name": "咳酚糖漿",
+      "aliases": [
+        "Guaphen",
+        "Guaifenesin"
+      ],
+      "ingredient": "Guaifenesin 20 mg/mL",
+      "mgPerMl": 20,
+      "group": "止咳化痰",
+      "form": "糖漿",
+      "uses": [
+        "有痰",
+        "化痰",
+        "咳嗽"
+      ],
+      "image": "img/ped_cold_guaphen_syrup.webp",
+      "frequency": "每日 4～6 次，每次至少間隔 4 小時。",
+      "age": {
+        "source": "本產品核准仿單",
+        "rows": [
+          {
+            "from": 144,
+            "dose": "每次 10 mL",
+            "label": "12 歲以上"
+          },
+          {
+            "from": 72,
+            "to": 144,
+            "dose": "每次 5 mL",
+            "label": "6 至未滿 12 歲"
+          },
+          {
+            "from": 36,
+            "to": 72,
+            "dose": "每次 2.5 mL",
+            "label": "3 至未滿 6 歲"
+          },
+          {
+            "from": 0,
+            "to": 36,
+            "dose": "請先由醫師診治",
+            "label": "未滿 3 歲",
+            "stop": true
+          }
+        ]
+      },
+      "notes": [
+        "含阿斯巴甜，苯酮尿症患者不可使用。"
+      ],
+      "refs": [
+        {
+          "title": "咳酚糖漿 20 毫克／毫升仿單",
+          "url": "https://www.cth.org.tw/public/medi_news/4617047b823a6f296d0a7e9cbab06788.pdf"
+        },
+        {
+          "title": "中國醫藥大學附設醫院：Guaifenesin 用藥指導",
+          "url": "https://www.cmuh.cmu.edu.tw/HealthEdus/Detail?no=7097"
+        }
+      ]
+    },
+    {
+      "id": "ped_cold_soltan",
+      "name": "舒痰液",
+      "aliases": [
+        "Soltan",
+        "Ambroxol",
+        "安布索"
+      ],
+      "ingredient": "Ambroxol 3 mg/mL",
+      "mgPerMl": 3,
+      "group": "止咳化痰",
+      "rx": true,
+      "form": "液劑",
+      "uses": [
+        "有痰",
+        "化痰",
+        "咳嗽"
+      ],
+      "image": "img/ped_cold_soltan.webp",
+      "frequency": "次數依年齡（見表）。",
+      "age": {
+        "source": "食藥署仿單",
+        "rows": [
+          {
+            "from": 144,
+            "dose": "每次 10 mL，一天三次",
+            "label": "12 歲以上"
+          },
+          {
+            "from": 72,
+            "to": 144,
+            "dose": "每次 5 mL，一天三次",
+            "label": "6～12 歲",
+            "note": "仿單在 6、12 歲交界寫法重疊，交界年齡請醫師確認。"
+          },
+          {
+            "from": 24,
+            "to": 72,
+            "dose": "每次 2.5 mL，一天二至三次",
+            "label": "2～6 歲",
+            "note": "仿單在 6 歲交界寫法重疊，交界年齡請醫師確認。"
+          },
+          {
+            "from": 0,
+            "to": 24,
+            "dose": "每次 2.5 mL，一天二次",
+            "label": "2 歲以下",
+            "caution": "嬰幼兒須經醫師評估，不要自行給藥。"
+          }
+        ]
+      },
+      "notes": [
+        "含阿斯巴甜，苯酮尿症者不宜使用。",
+        "皮膚或口腔黏膜出現新的傷口，立即停藥並就醫。",
+        "不同化痰藥水濃度不同，毫升數不能互相套用。"
+      ],
+      "refs": [
+        {
+          "title": "衛生福利部食品藥物管理署 藥品仿單查詢平台：〝晟德〞舒痰液３毫克/毫升（鹽酸安布索）（衛署藥製字第043160號）",
+          "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC043160%E8%99%9F"
+        },
+        {
+          "title": "國軍臺中總醫院 Soltan Liquid 3mg/mL",
+          "url": "https://web-reg-server.803.org.tw/PhC/PharmaBooks/Keyword_Detail/CP3-2PXO872wVSGLask-TQzEvj-7hU5CjxLxDCAQdOU%3D"
+        },
+        {
+          "title": "亞東醫院藥學部 Soltan Liquid",
+          "url": "https://www.e-pharm.info/safety/drug-information/femh-formulary/item/oambr6"
+        },
+        {
+          "title": "衛生福利部食品藥物管理署 含 ambroxol 或 bromhexine 處方藥仿單修訂公告",
+          "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&id=22047"
+        },
+        {
+          "title": "衛生福利部 袪痰劑仿單加強標示",
+          "url": "https://mohw.gov.tw/cp-2704-8903-1.html"
+        },
+        {
+          "title": "衛生福利部中央健康保險署 呼吸系統急症",
+          "url": "https://www.nhi.gov.tw/ch/cp-2794-a7c50-2951-1.html"
+        }
+      ]
+    },
+    {
+      "id": "ped_cold_musco_solution",
+      "name": "美舒咳液",
+      "aliases": [
+        "Musco",
+        "Ambroxol",
+        "安布索"
+      ],
+      "ingredient": "Ambroxol 3 mg/mL",
+      "mgPerMl": 3,
+      "group": "止咳化痰",
+      "rx": true,
+      "form": "液劑",
+      "uses": [
+        "有痰",
+        "化痰",
+        "祛痰"
+      ],
+      "image": "img/ped_cold_musco_solution.webp",
+      "frequency": "次數依年齡（見表）。",
+      "age": {
+        "source": "產品標示",
+        "rows": [
+          {
+            "from": 120,
+            "dose": "每次 10 mL，每日 3 次",
+            "label": "10 歲以上"
+          },
+          {
+            "from": 60,
+            "to": 120,
+            "dose": "每次 5 mL，每日 3 次",
+            "label": "5 至未滿 10 歲"
+          },
+          {
+            "from": 24,
+            "to": 60,
+            "dose": "每次 2.5 mL，每日 3 次",
+            "label": "2 至未滿 5 歲"
+          },
+          {
+            "from": 0,
+            "to": 24,
+            "dose": "每次 2.5 mL，每日 2 次",
+            "label": "未滿 2 歲",
+            "caution": "須由醫師依體重及病情評估，不可自行照表給藥。"
+          }
+        ]
+      },
+      "weight": [
+        {
+          "audience": "doctor",
+          "source": "醫院藥品資料（未滿 2 歲參考）",
+          "per": "day",
+          "mgPerKg": [
+            1.2,
+            1.6
+          ],
+          "ageTo": 24,
+          "label": "未滿 2 歲：每日 1.2～1.6 mg/kg"
+        }
+      ],
+      "notes": [
+        "出現皮疹、皮膚水泡或黏膜破損，應停藥並立即就醫。"
+      ],
+      "refs": [
+        {
+          "title": "生達化學製藥：美舒咳液產品資料與兒童分齡用量",
+          "url": "https://www.standard.com.tw/product-info.php?c1=1&c2=75&c3=100&i=260"
+        },
+        {
+          "title": "耕莘醫院藥劑部：美舒咳液 3mg/mL 用藥資料與仿單",
+          "url": "https://www.cth.org.tw/?aid=606&iid=1719&page_name=detail&pid=40"
+        },
+        {
+          "title": "耕莘醫院藥劑部：美舒咳液仿單",
+          "url": "https://www.cth.org.tw/public/medi_news/57633e7140fd5a669e6cd9845d26299b.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ped_cold_muco",
+      "name": "莫喀糖漿",
+      "aliases": [
+        "Muco",
+        "Carbocisteine",
+        "羧甲半胱胺酸"
+      ],
+      "ingredient": "Carbocisteine 20 mg/mL",
+      "mgPerMl": 20,
+      "group": "止咳化痰",
+      "rx": false,
+      "form": "糖漿",
+      "uses": [
+        "有痰",
+        "化痰"
+      ],
+      "image": "img/ped_cold_muco.webp",
+      "frequency": "一天總量分三次服用。",
+      "weight": [
+        {
+          "audience": "public",
+          "source": "食藥署仿單（幼童及兒童）",
+          "per": "day",
+          "mlPerKg": [
+            1.5,
+            1.5
+          ],
+          "divide": [
+            3,
+            3
+          ],
+          "label": "一天總量 30 mg/kg（1.5 mL/kg），分三次"
+        }
+      ],
+      "noAgeTable": "仿單用量依體重計算，沒有年齡分組表，也沒有寫明適用的最小年齡。",
+      "notes": [
+        "1.5 mL/kg 是一天的總量，不是每次的量。",
+        "嬰幼兒使用前請先經醫師評估。",
+        "不要和其他藥水混在同一瓶或同一杯，分別量、分別餵。"
+      ],
+      "refs": [
+        {
+          "title": "衛生福利部食品藥物管理署 藥品仿單查詢平台：〝派頓〞莫喀糖漿20毫克/毫升（衛署藥製字第030836號）",
+          "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC030836%E8%99%9F"
+        },
+        {
+          "title": "天主教輔仁大學附設醫院 藥品查詢 Muco",
+          "url": "https://pharmacy.fjuh.fju.edu.tw/Key_Search/P4?query=MUC01"
+        },
+        {
+          "title": "衛生福利部中央健康保險署 呼吸系統急症",
+          "url": "https://www.nhi.gov.tw/ch/cp-2794-a7c50-2951-1.html"
+        }
+      ]
+    },
+    {
+      "id": "ped_cold_peace_syrup",
+      "name": "鼻福糖漿",
+      "aliases": [
+        "Peace",
+        "Pseudoephedrine",
+        "Triprolidine"
+      ],
+      "ingredient": "Pseudoephedrine 6 mg、Triprolidine 0.25 mg（每 mL）",
+      "group": "鼻塞流鼻水",
+      "rx": true,
+      "form": "糖漿",
+      "uses": [
+        "鼻塞",
+        "流鼻水",
+        "鼻炎",
+        "感冒"
+      ],
+      "image": "img/ped_cold_peace_syrup.webp",
+      "frequency": "成人及 12 歲以上每日 3 次；較小年齡組的次數依醫師處方。",
+      "age": {
+        "source": "仿單",
+        "rows": [
+          {
+            "from": 144,
+            "dose": "每次 10 mL",
+            "label": "12 歲以上"
+          },
+          {
+            "from": 72,
+            "to": 144,
+            "dose": "每次 5 mL",
+            "label": "6 至未滿 12 歲"
+          },
+          {
+            "from": 24,
+            "to": 72,
+            "dose": "每次 2.5 mL",
+            "label": "2 至未滿 6 歲",
+            "caution": "6 歲以下不可由家長自行依表給藥，應先由醫師評估。"
+          },
+          {
+            "from": 6,
+            "to": 24,
+            "dose": "每次 1.25 mL",
+            "label": "6 個月至未滿 2 歲",
+            "caution": "6 歲以下不可由家長自行依表給藥，應先由醫師評估。"
+          },
+          {
+            "from": 0,
+            "to": 6,
+            "dose": "仿單沒有列 6 個月以下用量",
+            "label": "未滿 6 個月",
+            "stop": true
+          }
+        ]
+      },
+      "notes": [
+        "有高血壓、心臟疾病或腎功能異常，先告知醫師。不要和其他含 Pseudoephedrine 或抗組織胺的感冒藥重複。"
+      ],
+      "refs": [
+        {
+          "title": "永信藥品：鼻福糖漿 Peace Syrup 產品資料",
+          "url": "https://www.ysp.com.tw/tw/product"
+        },
+        {
+          "title": "奇美醫院：鼻福糖漿仿單",
+          "url": "https://www.chimei.org.tw/main/cmh_department/55500/Dinfo/data/23P168.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ped_cold_cypromin",
+      "name": "希普利敏液",
+      "aliases": [
+        "Cypromin",
+        "Cyproheptadine",
+        "喜普"
+      ],
+      "ingredient": "Cyproheptadine 0.4 mg/mL",
+      "mgPerMl": 0.4,
+      "group": "過敏止癢",
+      "rx": true,
+      "form": "液劑",
+      "uses": [
+        "過敏",
+        "癢",
+        "皮膚癢",
+        "蕁麻疹",
+        "過敏性鼻炎",
+        "流鼻水",
+        "蚊蟲叮咬",
+        "咳嗽"
+      ],
+      "image": "img/ped_cold_cypromin.webp",
+      "frequency": "每日 2～3 次（成人每日 3 次）。",
+      "age": {
+        "source": "圖卡：一般參考用量（口服）",
+        "rows": [
+          {
+            "from": 168,
+            "dose": "每次 10 mL，每日 3 次；每日最多 80 mL",
+            "label": "成人"
+          },
+          {
+            "from": 84,
+            "to": 168,
+            "dose": "每次 10 mL，每日 2～3 次；每日最多 40 mL",
+            "label": "7～14 歲"
+          },
+          {
+            "from": 72,
+            "to": 84,
+            "dose": "參考表沒有列出 6～7 歲，請依藥袋或問藥師",
+            "label": "6～7 歲",
+            "stop": true
+          },
+          {
+            "from": 24,
+            "to": 72,
+            "dose": "每次 5 mL，每日 2～3 次；每日最多 30 mL",
+            "label": "2～6 歲"
+          },
+          {
+            "from": 0,
+            "to": 24,
+            "dose": "原則上不建議使用，只能依醫師指示；新生兒、早產兒不可使用",
+            "label": "2 歲以下",
+            "stop": true
+          }
+        ]
+      },
+      "weight": [
+        {
+          "audience": "public",
+          "source": "圖卡簡易速算（核對藥袋用）",
+          "per": "dose",
+          "mlPerKg": [
+            0.25,
+            0.25
+          ],
+          "ageFrom": 24,
+          "label": "每次 體重÷4 mL（0.1 mg/kg），每日 2～3 次"
+        },
+        {
+          "audience": "public",
+          "source": "圖卡",
+          "per": "day",
+          "mgPerKg": [
+            0.5,
+            0.5
+          ],
+          "ageFrom": 24,
+          "label": "每日不超過 0.5 mg/kg",
+          "isMax": true
+        }
+      ],
+      "notes": [
+        "速算只用來核對藥袋上的量是否合理，也不可超過該年齡的每日最大量；藥袋與速算不同時以處方為準。",
+        "第一代抗組織胺，常見嗜睡、口乾；孩子異常嗜睡、叫不醒請立即就醫。"
+      ],
+      "refs": [
+        {
+          "title": "衛生福利部食品藥物管理署 藥品仿單查詢平台：「晟德」希普利敏液 0.4 毫克/毫升（衛署藥製字第043588號）",
+          "url": "https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E7%BD%B2%E8%97%A5%E8%A3%BD%E5%AD%97%E7%AC%AC043588%E8%99%9F"
+        },
+        {
+          "title": "臺北市立聯合醫院藥劑科：希普利敏液／喜普液 0.4 毫克/毫升用藥指導單張（TPE202309）",
+          "url": "https://www-ws.gov.taipei/001/Upload/446/relfile/22055/9101903/c04e8908-8a63-4989-91f1-a08e0acb0e2a.pdf"
+        },
+        {
+          "title": "「國嘉」喜普錠 4 毫克（Cyproheptadine）仿單（同成分禁忌與注意事項，衛署藥製字第040791號）",
+          "url": "https://ksph.kcg.gov.tw/7/dfiles_pdf/Cyproh.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ped_cold_cetirizine",
+      "name": "勝克敏液",
+      "aliases": [
+        "Cetirizine",
+        "驅異樂成分"
+      ],
+      "ingredient": "Cetirizine 1 mg/mL",
+      "mgPerMl": 1,
+      "group": "過敏止癢",
+      "rx": true,
+      "form": "液劑",
+      "uses": [
+        "過敏",
+        "過敏性鼻炎",
+        "鼻炎",
+        "流鼻水",
+        "打噴嚏",
+        "鼻癢",
+        "眼癢",
+        "結膜炎",
+        "蕁麻疹",
+        "癢"
+      ],
+      "image": "img/ped_cold_cetirizine.webp",
+      "frequency": "每日一次（3～6 歲也可早晚各一次）。",
+      "age": {
+        "source": "台灣核准仿單",
+        "rows": [
+          {
+            "from": 72,
+            "dose": "每次 10 mL（10 mg），每日一次",
+            "label": "成人及 6 歲以上"
+          },
+          {
+            "from": 36,
+            "to": 72,
+            "dose": "每次 5 mL 每日一次，或早晚各 2.5 mL（每日總量 5 mL）",
+            "label": "3 歲至未滿 6 歲"
+          },
+          {
+            "from": 0,
+            "to": 36,
+            "dose": "沒有核准的常規分齡劑量，須由醫師評估",
+            "label": "未滿 3 歲",
+            "stop": true
+          }
+        ]
+      },
+      "notes": [
+        "仿單以年齡分組，沒有 mg/kg 公式；不要套用其他 Cetirizine 產品或國外仿單的嬰幼兒劑量。",
+        "腎功能不全者可能須調整劑量。"
+      ],
+      "refs": [
+        {
+          "title": "衛生福利部食品藥物管理署：「晟德」勝克敏液 1 毫克/毫升核准藥品資料（衛署藥製字第044023號）",
+          "url": "https://mcp.fda.gov.tw/im_detail_1/衛署藥製字第044023號"
+        },
+        {
+          "title": "「晟德」勝克敏液 1 毫克/毫升核准仿單（版本日期 2026-03-31）",
+          "url": "https://www1.ndmctsgh.edu.tw/pharm/Home/GetInsertCFile?id=005CET03"
+        },
+        {
+          "title": "臺北市立聯合醫院藥劑科：勝克敏液 1 毫克/毫升用藥指導單張（TPE202603）",
+          "url": "https://www-ws.gov.taipei/Download.ashx?icon=..pdf&n=MjAyNS0xNTRfQ2V0aXJpemluZeWPo%2Bacjea2si5wZGY%3D&u=LzAwMS9VcGxvYWQvNDQ2L3JlbGZpbGUvMjIwNTUvOTU1MDA5OS80NGJjZTNkZC0xOTU2LTQxYTQtOGI1NC1mMWIwMGQwZDEzMzEucGRm"
+        },
+        {
+          "title": "臺北醫學大學附設醫院：Cetirizine 勝克敏液藥品使用指導單（2022-11）",
+          "url": "https://www.tmuh.org.tw/UploadFile/files/%E8%97%A5%E5%8A%91%E9%83%A8/%E7%94%A8%E8%97%A5%E8%AB%AE%E8%A9%A2%E4%B8%AD%E5%BF%83-%E8%A1%9B%E6%95%99%E5%96%AE%E5%BC%B5/202211/%E6%B0%B4%E5%8A%91/8013-Cetirizine%20%E5%8B%9D%E5%85%8B%E6%95%8F%E6%B6%B2(Cetirizine).pdf"
+        }
+      ]
+    },
+    {
+      "id": "ped_cold_mintapp_syrup",
+      "name": "敏達糖漿",
+      "aliases": [
+        "Mintapp",
+        "Loratadine",
+        "樂雷塔定"
+      ],
+      "ingredient": "Loratadine 1 mg/mL",
+      "mgPerMl": 1,
+      "group": "過敏止癢",
+      "rx": true,
+      "form": "糖漿",
+      "uses": [
+        "過敏",
+        "過敏性鼻炎",
+        "流鼻水",
+        "鼻塞",
+        "鼻癢",
+        "眼癢"
+      ],
+      "image": "img/ped_cold_mintapp_syrup.webp",
+      "frequency": "每日一次。",
+      "age": {
+        "source": "圖卡（產品資料）",
+        "rows": [
+          {
+            "from": 144,
+            "dose": "每日 10 mL",
+            "label": "12 歲以上"
+          },
+          {
+            "from": 24,
+            "to": 144,
+            "kgFromExcl": 30,
+            "dose": "每日 10 mL",
+            "label": "2 至未滿 12 歲，體重超過 30 公斤"
+          },
+          {
+            "from": 24,
+            "to": 144,
+            "kgTo": 30,
+            "kgToIncl": true,
+            "dose": "每日 5 mL",
+            "label": "2 至未滿 12 歲，體重 30 公斤以下"
+          },
+          {
+            "from": 0,
+            "to": 24,
+            "dose": "沒有供家長自行使用的常規劑量，須由醫師評估",
+            "label": "未滿 2 歲",
+            "stop": true
+          }
+        ]
+      },
+      "notes": [
+        "敏達與勝克敏液有效成分不同，不可直接互換劑量。"
+      ],
+      "refs": [
+        {
+          "title": "杏輝藥品：敏達糖漿產品資料與藥證入口",
+          "url": "https://www.sinphar.store/products/%E6%95%8F%E9%81%94%E7%B3%96%E6%BC%BF"
+        },
+        {
+          "title": "衛生福利部中央健康保險署：MINTAPP SYRUP 成分與規格資料",
+          "url": "https://www.nhi.gov.tw/ch/dl-39135-3a64247039a84bb984fd77cfe87b42e4-1.pdf"
+        },
+        {
+          "title": "KingNet 國家網路醫藥：謝元富醫師答覆敏達糖漿與希普利敏的劑量差異",
+          "url": "https://www.kingnet.com.tw/inquiry/single?accessKey=662f73e6d1e50d9f1aba1b6a8cde9727&inquiryId=193940"
+        }
+      ]
+    },
+    {
+      "id": "ped_asthma_meptin_liquid",
+      "name": "滅喘淨液",
+      "aliases": [
+        "Meptin",
+        "Procaterol"
+      ],
+      "ingredient": "Procaterol 5 μg/mL",
+      "mcgPerMl": 5,
+      "group": "氣喘",
+      "rx": true,
+      "form": "液劑",
+      "uses": [
+        "氣喘",
+        "喘",
+        "支氣管炎",
+        "喘鳴"
+      ],
+      "image": "img/ped_asthma_meptin_liquid.webp",
+      "frequency": "6 歲以上：一日 1 次睡前，或早晨、睡前各 1 次；未滿 6 歲：一日 2～3 次。",
+      "age": {
+        "source": "仿單",
+        "rows": [
+          {
+            "from": 72,
+            "dose": "每次 5 mL（成人每次 10 mL）",
+            "label": "6 歲以上兒童"
+          },
+          {
+            "from": 36,
+            "to": 72,
+            "dose": "每次 4～5 mL",
+            "label": "3～6 歲（仿單年齡參考量）"
+          },
+          {
+            "from": 12,
+            "to": 36,
+            "dose": "每次 3～4 mL",
+            "label": "1～3 歲（仿單年齡參考量）"
+          },
+          {
+            "from": 0,
+            "to": 12,
+            "dose": "每次 2～3 mL",
+            "label": "未滿 1 歲（仿單年齡參考量）"
+          }
+        ]
+      },
+      "weight": [
+        {
+          "audience": "public",
+          "source": "仿單",
+          "per": "dose",
+          "mlPerKg": [
+            0.25,
+            0.25
+          ],
+          "ageTo": 72,
+          "label": "未滿 6 歲：每次 0.25 mL/kg（1.25 μg/kg），一日 2～3 次"
+        }
+      ],
+      "notes": [
+        "不要因為喘得比較厲害就自行加量；持續過量可能造成心律不整。",
+        "實際用量以醫師處方為主。"
+      ],
+      "refs": [
+        {
+          "title": "台灣大塚製藥：滅喘淨液仿單（衛署藥製字第043122號，G-6765；中山醫學大學附設醫院提供）",
+          "url": "https://www.csh.org.tw/into/pharm/DESC/MEPTL1.pdf"
+        },
+        {
+          "title": "天主教耕莘醫院：Meptin Liquid 滅喘淨液藥品資訊（含保存與開封期限）",
+          "url": "https://www.cth.org.tw/?aid=606&iid=1155&page_name=detail&pid=0"
+        }
+      ]
+    },
+    {
+      "id": "ped_cold_exdila_liquid",
+      "name": "喘解液",
+      "aliases": [
+        "Exdila",
+        "Procaterol"
+      ],
+      "ingredient": "Procaterol 5 μg/mL",
+      "mcgPerMl": 5,
+      "group": "氣喘",
+      "rx": true,
+      "form": "液劑",
+      "uses": [
+        "氣喘",
+        "喘",
+        "喘鳴"
+      ],
+      "image": "img/ped_cold_exdila_liquid.webp",
+      "frequency": "6 歲以上每日 1 次睡前或早晚各 1 次；未滿 6 歲每日 2～3 次。",
+      "age": {
+        "source": "仿單參考用量",
+        "rows": [
+          {
+            "from": 72,
+            "dose": "每次 5 mL",
+            "label": "6 歲以上"
+          },
+          {
+            "from": 0,
+            "to": 72,
+            "dose": "依體重計算（請輸入體重）",
+            "label": "未滿 6 歲"
+          }
+        ]
+      },
+      "weight": [
+        {
+          "audience": "public",
+          "source": "仿單參考用量",
+          "per": "dose",
+          "mlPerKg": [
+            0.25,
+            0.25
+          ],
+          "ageTo": 72,
+          "label": "未滿 6 歲：每次 0.25 mL/kg，每日 2～3 次"
+        }
+      ],
+      "notes": [
+        "仿單未列適用所有兒童的每日最大劑量。",
+        "不能取代急性氣喘發作時的急救吸入藥物；呼吸困難加劇、嘴唇發紫立即就醫。"
+      ],
+      "refs": [
+        {
+          "title": "光田綜合醫院：Procaterol（喘解液）用藥指導",
+          "url": "https://www.ktgh.com.tw/ktgh/Home/GenerateGuideLeaflet/AA6D81CBD02462D59DF5929173D039C7"
+        },
+        {
+          "title": "中國醫藥大學附設醫院：Procaterol 用藥指導",
+          "url": "https://cmuh.cmu.edu.tw/HealthEdus/Detail?no=5961"
+        }
+      ]
+    },
+    {
+      "id": "wempty_suspension",
+      "name": "胃利空懸液",
+      "aliases": [
+        "Wempty",
+        "Domperidone",
+        "止吐"
+      ],
+      "ingredient": "Domperidone 1 mg/mL",
+      "mgPerMl": 1,
+      "group": "腸胃",
+      "rx": true,
+      "form": "懸液劑",
+      "uses": [
+        "嘔吐",
+        "噁心",
+        "想吐",
+        "止吐"
+      ],
+      "image": "img/wempty_suspension.webp",
+      "frequency": "每日最多 3 次；飯前及睡前 15～30 分鐘。",
+      "age": {
+        "source": "食藥署修訂用量（2014）",
+        "rows": [
+          {
+            "from": 144,
+            "kgFromExcl": 35,
+            "dose": "每次 10 mL，每日最多 3 次",
+            "label": "12 歲以上且體重超過 35 公斤"
+          }
+        ],
+        "otherwise": "12 歲以下，或體重 35 公斤以下：依體重計算（請輸入體重）"
+      },
+      "weight": [
+        {
+          "audience": "public",
+          "source": "食藥署修訂用量（2014）",
+          "per": "dose",
+          "mlPerKg": [
+            0.25,
+            0.25
+          ],
+          "anyOf": [
+            {
+              "ageTo": 144
+            },
+            {
+              "kgTo": 35
+            }
+          ],
+          "label": "12 歲以下或體重低於 35 公斤：每次 0.25 mL/kg，每日最多 3 次"
+        }
+      ],
+      "notes": [
+        "恰好 35 公斤的分組公告沒有明確說明，請醫師確認。",
+        "產品仿單登載用法可能仍為舊版，請以藥袋為準。",
+        "持續嘔吐、喝不下水、尿量明顯減少或精神變差，儘速就醫。"
+      ],
+      "refs": [
+        {
+          "title": "光田綜合醫院：晟德胃利空懸液劑 1 mg/mL 產品仿單（衛署藥製字第046242號）",
+          "url": "https://admincp.ktgh.com.tw/Upload/Medicine/251216030322636690JLAVB.pdf"
+        },
+        {
+          "title": "衛生福利部食品藥物管理署：Domperidone 安全性及療效再評估結果、修訂用法用量（2014-11-12）",
+          "url": "https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&id=11783"
+        }
+      ]
+    },
+    {
+      "id": "ped_diarrhea_hidrasec",
+      "name": "瀉必寧（顆粒劑）",
+      "aliases": [
+        "Hidrasec",
+        "Racecadotril",
+        "瀉必寧"
+      ],
+      "ingredient": "Racecadotril 10 mg／包、30 mg／包",
+      "group": "腸胃",
+      "rx": true,
+      "form": "懸浮液用顆粒",
+      "unit": "mg",
+      "uses": [
+        "腹瀉",
+        "拉肚子",
+        "止瀉"
+      ],
+      "image": "img/ped_diarrhea_hidrasec.webp",
+      "frequency": "每日規律服用 3 次；直到兩次正常大便，療程不超過 5 天。",
+      "ageRange": {
+        "from": 3,
+        "outside": "未滿 3 個月嬰兒不可使用。"
+      },
+      "weight": [
+        {
+          "audience": "public",
+          "source": "台灣核准仿單",
+          "per": "dose",
+          "mgPerKg": [
+            1.5,
+            1.5
+          ],
+          "maxDoseMg": 60,
+          "label": "每次 1.5 mg/kg，每日 3 次；每次最高 60 mg"
+        }
+      ],
+      "notes": [
+        "這是顆粒劑，實際每次幾包依藥袋（有 10 mg、30 mg 兩種）。",
+        "只是輔助治療，仍要補充水分與電解質。"
+      ],
+      "refs": [
+        {
+          "title": "中山醫學大學附設醫院：瀉必寧 Hidrasec 10 mg 台灣核准仿單（2024-12-17 版）",
+          "url": "https://www.csh.org.tw/into/pharm/DESC/HIDR10.pdf"
+        },
+        {
+          "title": "奇美醫療體系：Racecadotril 瀉必寧藥物使用須知",
+          "url": "https://www.chimei.org.tw/main/cmh_department/59012/info/5500/A5500506.html"
+        },
+        {
+          "title": "光田綜合醫院：Hidrasec 藥品資料",
+          "url": "https://www.ktgh.com.tw/ktgh/Home/WesternMedDetail/262DB9A54955B10BE2CD0E8FE2A31794"
+        },
+        {
+          "title": "衛生福利部中央健康保險署：Hidrasec 10 mg／30 mg 醫療科技評估報告",
+          "url": "https://www.nhi.gov.tw/ch/dl-11816-0603144ebf0d4078ade610d25a0b1f99-1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ped_gi_pecolin_suspension",
+      "name": "高克痢懸乳液",
+      "aliases": [
+        "Pecolin",
+        "高嶺土",
+        "果膠"
+      ],
+      "ingredient": "Kaolin 200 mg、Pectin 10 mg（每 mL）",
+      "group": "腸胃",
+      "rx": false,
+      "form": "懸乳液",
+      "uses": [
+        "腹瀉",
+        "拉肚子",
+        "止瀉"
+      ],
+      "image": "img/ped_gi_pecolin_suspension.webp",
+      "frequency": "拉肚子後才喝；每次至少間隔 4 小時，一天不超過 4 次；和其他口服藥隔 2 小時。",
+      "age": {
+        "source": "仿單",
+        "rows": [
+          {
+            "from": 144,
+            "dose": "每次 30 mL",
+            "label": "12 歲以上及成人"
+          },
+          {
+            "from": 72,
+            "to": 144,
+            "dose": "每次 15 mL",
+            "label": "6 歲以上、未滿 12 歲",
+            "caution": "未滿 12 歲應由醫師或藥師指示使用。"
+          },
+          {
+            "from": 36,
+            "to": 72,
+            "dose": "每次 7.5 mL",
+            "label": "3 歲以上、未滿 6 歲",
+            "caution": "未滿 12 歲應由醫師或藥師指示使用。"
+          },
+          {
+            "from": 0,
+            "to": 36,
+            "dose": "仿單沒有 3 歲以下劑量，請先就醫",
+            "label": "未滿 3 歲",
+            "stop": true
+          }
+        ]
+      },
+      "notes": [
+        "其他品牌高嶺土止瀉藥水濃度不同，不要套用這裡的毫升數。",
+        "止瀉藥不能取代補水；血便、發燒、一直吐或有脫水跡象請就醫。"
+      ],
+      "refs": [
+        {
+          "title": "康健知識庫（食藥署公開資料）：生達 高克痢懸乳液",
+          "url": "https://kb.commonhealth.com.tw/drugs/24107.html"
+        },
+        {
+          "title": "康健知識庫（食藥署公開資料）：華盛頓 克痢懸浮液（別牌劑量對照）",
+          "url": "https://kb.commonhealth.com.tw/drugs/24143.html"
+        },
+        {
+          "title": "康健知識庫（食藥署公開資料）：榮民 克痢必定懸液劑（別牌劑量對照）",
+          "url": "https://kb.commonhealth.com.tw/drugs/24111.html"
+        },
+        {
+          "title": "亞東醫院藥學部：Pecolin 藥品資料",
+          "url": "https://www.e-pharm.info/safety/drug-information/femh-formulary/item/okaol1"
+        },
+        {
+          "title": "奇美醫院：藥品衛教資料",
+          "url": "https://www.chimei.org.tw/main/cmh_department/55500/Dinfo/data/26K048.pdf"
+        },
+        {
+          "title": "WHO：Diarrhoeal disease",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease"
+        }
+      ]
+    },
+    {
+      "id": "smecta_1",
+      "name": "舒腹達（口服懸液用粉劑）",
+      "aliases": [
+        "Smecta",
+        "Diosmectite",
+        "止瀉粉"
+      ],
+      "ingredient": "Diosmectite 3 g／包",
+      "group": "腸胃",
+      "rx": true,
+      "form": "粉劑",
+      "uses": [
+        "腹瀉",
+        "拉肚子",
+        "止瀉"
+      ],
+      "image": "img/smecta_1.webp",
+      "frequency": "每日總量分 3 次服用。",
+      "age": {
+        "source": "核准仿單",
+        "rows": [
+          {
+            "from": 24,
+            "dose": "每日 2～3 包（全天總量），分 3 次",
+            "label": "2 歲（含）以上兒童（成人急性腹瀉一般每日 3 包）"
+          },
+          {
+            "from": 0,
+            "to": 24,
+            "dose": "未滿 2 歲應避免使用",
+            "label": "未滿 2 歲",
+            "stop": true
+          }
+        ]
+      },
+      "notes": [
+        "每天 2 包是全天總量，不是每次 2 包。",
+        "兒童急性腹瀉須併用口服補液鹽（ORS）。"
+      ],
+      "refs": [
+        {
+          "title": "舒腹達口服懸液用粉劑核准仿單（衛署藥輸字第023349號；版本日期 2023-06-07）",
+          "url": "https://www1.ndmctsgh.edu.tw/pharm/pic/medinsert/005SME01.pdf"
+        },
+        {
+          "title": "臺安醫院：舒腹達口服懸液用粉劑藥品資料（DIOC）",
+          "url": "https://reg.tai-an.com.tw/tw/medicine_search/show.aspx?code=DIOC&page=7"
+        }
+      ]
+    },
+    {
+      "id": "kidsolone_oral_solution",
+      "name": "必爾生口服液",
+      "aliases": [
+        "Kidsolone",
+        "Prednisolone",
+        "類固醇"
+      ],
+      "ingredient": "Prednisolone 1 mg/mL（當量）",
+      "mgPerMl": 1,
+      "group": "類固醇",
+      "rx": true,
+      "form": "口服液",
+      "uses": [
+        "氣喘",
+        "過敏",
+        "發炎"
+      ],
+      "image": "img/kidsolone_oral_solution.webp",
+      "frequency": "每日總量分 3～4 次（依疾病與處方）。",
+      "noAgeTable": "仿單兒童起始劑量是很寬的體重範圍，視疾病而定，沒有固定的每次毫升對照表，請照藥袋。",
+      "weight": [
+        {
+          "audience": "pharmacist",
+          "source": "產品仿單",
+          "per": "day",
+          "mgPerKg": [
+            0.14,
+            2
+          ],
+          "divide": [
+            3,
+            4
+          ],
+          "label": "兒童起始 0.14～2 mg/kg/day，分 3～4 次"
+        }
+      ],
+      "notes": [
+        "不要自行調整每日總量、次數或療程，也不要自行突然停藥。"
+      ],
+      "refs": [
+        {
+          "title": "晟德必爾生口服液 Kidsolone Oral Solution 核准仿單（衛署藥製字第046614號）",
+          "url": "https://www.tai-an.com.tw/upload/DrugInfo/Drug/Instructions/PREDS.pdf"
+        },
+        {
+          "title": "光田綜合醫院：必爾生口服液藥品資料（Kidsolone Oral Solution 1 mg/mL）",
+          "url": "https://www.ktgh.com.tw/ktgh/Home/WesternMedDetail?CatID=65&NewsID=821&Ordid=26013"
+        }
+      ]
+    }
+  ]
+}

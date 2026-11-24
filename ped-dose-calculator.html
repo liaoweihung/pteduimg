@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-mono-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/brand/favicon-mono-192.png">
+  <link rel="canonical" href="https://liaoweihung.github.io/pteduimg/ped-dose-calculator.html">
+  <title>兒科藥水劑量查詢｜小孩藥水一次喝幾 mL？依年齡、體重對照仿單｜藥局衛教助手</title>
+  <meta name="description" content="小孩的感冒、退燒、化痰、過敏、腸胃藥水一次喝幾 mL？輸入年齡或體重，對照安佳熱、依普芬、舒痰液、勝克敏液等常見兒科藥水的仿單用量，並連到藥品圖卡。實際用量以藥袋為準。">
+  <meta name="keywords" content="兒童藥水劑量,小孩藥水一次喝多少,兒科藥水,退燒藥水劑量,安佳熱劑量,依普芬劑量,感冒藥水,化痰藥水,體重換算藥量,兒童用藥">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="兒科藥水劑量查詢">
+  <meta property="og:description" content="輸入年齡或體重，對照常見兒科藥水的仿單用量。實際用量以藥袋為準。">
+  <meta property="og:url" content="https://liaoweihung.github.io/pteduimg/ped-dose-calculator.html">
+  <meta property="og:image" content="https://liaoweihung.github.io/pteduimg/icon.png">
+  <meta property="og:locale" content="zh_TW">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "兒科藥水劑量查詢", "url": "https://liaoweihung.github.io/pteduimg/ped-dose-calculator.html", "applicationCategory": "HealthApplication", "operatingSystem": "Web", "inLanguage": "zh-TW", "isAccessibleForFree": true, "description": "依年齡或體重對照常見兒科藥水的仿單用量，可用藥名、成分或症狀查詢，並連到對應的藥品衛教圖卡。", "dateModified": "2026-11-24", "author": {"@type": "Person", "@id": "https://liaoweihung.github.io/pteduimg/author.html#person"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "醫藥計算器", "item": "https://liaoweihung.github.io/pteduimg/calc.html"}, {"@type": "ListItem", "position": 2, "name": "兒科藥水劑量查詢", "item": "https://liaoweihung.github.io/pteduimg/ped-dose-calculator.html"}]}]}</script>
+  <script>
+    const GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
+    const urlParams = new URLSearchParams(window.location.search);
+    const host = window.location.hostname;
+    const isPrivateNetworkHost = ['localhost', '127.0.0.1', '::1'].includes(host)
+      || /^192\.168\./.test(host) || /^10\./.test(host) || /^172\.(1[6-9]|2\d|3[0-1])\./.test(host);
+    const isLocalPreview = isPrivateNetworkHost || window.location.protocol === 'file:';
+    if (urlParams.get('dev') === '1') localStorage.setItem('isDeveloper', 'true');
+    if (urlParams.get('dev') === '0') localStorage.removeItem('isDeveloper');
+    window.isAnalyticsDisabled = isLocalPreview || localStorage.getItem('isDeveloper') === 'true';
+    window[`ga-disable-${GA_MEASUREMENT_ID}`] = window.isAnalyticsDisabled;
+    function shouldTrackAnalytics() { return !window.isAnalyticsDisabled && typeof gtag === 'function'; }
+    function trackCalculatorEvent(eventName, parameters) {
+      if (shouldTrackAnalytics()) gtag('event', eventName, parameters);
+    }
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(){ dataLayer.push(arguments); };
+    if (!window.isAnalyticsDisabled) {
+      const gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+      document.head.appendChild(gaScript);
+      gtag('js', new Date());
+      gtag('config', GA_MEASUREMENT_ID);
+    }
+  </script>
+  <link rel="stylesheet" href="./css/base.css?v=7">
+  <link rel="stylesheet" href="./css/ped-dose-calculator.css?v=1">
+</head>
+<body class="pdc-page">
+  <header><img src="./assets/brand/logo-mono-black.png" alt="藥局衛教助手 Logo" class="header-logo" width="182" height="96"><span>兒科藥水劑量查詢</span></header>
+  <main class="calculator-shell">
+    <div class="back-row">
+      <a class="back-button" href="./calc.html">‹ 回醫藥計算器</a>
+      <a class="back-button" href="./topics/pediatric-medicine.html">‹ 回兒科用藥總整理</a>
+    </div>
+
+    <section class="intro-card" aria-labelledby="page-title">
+      <div class="intro-icon" aria-hidden="true">🧴</div>
+      <div>
+        <h1 id="page-title">兒科藥水劑量查詢</h1>
+        <p class="lead-q">小孩的藥水一次喝幾 mL？</p>
+        <p>用藥名、成分或症狀找藥，輸入年齡或體重，對照仿單用量和醫師常用的參考劑量。用來核對藥袋，<strong>實際用量以醫師處方和藥袋為準</strong>。</p>
+      </div>
+    </section>
+
+    <div class="mode-switch" role="radiogroup" aria-label="顯示模式">
+      <button type="button" class="mode-btn" role="radio" data-mode="public" aria-checked="true">民眾版</button>
+      <button type="button" class="mode-btn" role="radio" data-mode="pharmacist" aria-checked="false">藥師版</button>
+    </div>
+    <p class="mode-hint" id="mode-hint"></p>
+
+    <section class="form-card" aria-labelledby="input-title">
+      <h2 id="input-title">孩子的年齡與體重</h2>
+      <div class="field-grid three-col">
+        <label class="field"><span>年齡（歲）</span><input id="age-y" type="number" inputmode="numeric" min="0" max="18" step="1" placeholder="例：3"></label>
+        <label class="field"><span>又幾個月</span><input id="age-m" type="number" inputmode="numeric" min="0" max="11" step="1" placeholder="0～11"></label>
+        <label class="field"><span>體重（公斤）</span><input id="weight" type="number" inputmode="decimal" min="2" max="100" step="0.1" placeholder="例：15"></label>
+      </div>
+      <p class="form-message" id="input-error" role="alert"></p>
+      <p class="subtle-note">可以只填年齡或只填體重；有的藥仿單依年齡，有的依體重。數值只在你的瀏覽器內計算，不會上傳。</p>
+    </section>
+
+    <section class="result-card" id="dose-result" hidden aria-live="polite" aria-labelledby="result-title"></section>
+
+    <section class="form-card" aria-labelledby="search-title">
+      <h2 id="search-title">找藥水</h2>
+      <label class="field search-field"><span class="sr-only">搜尋藥名、成分或症狀</span>
+        <input id="drug-search" type="search" placeholder="藥名、成分或症狀，例：安佳熱、咳嗽" autocomplete="off">
+      </label>
+      <div class="chip-row" id="symptom-chips" aria-label="依症狀找"></div>
+      <div class="drug-list" id="drug-list" aria-live="polite"></div>
+    </section>
+
+    <section class="medical-note" aria-labelledby="method-title">
+      <h2 id="method-title">怎麼看、資料從哪裡來</h2>
+      <p>這裡的劑量整理自本站兒科藥水圖卡已寫出的內容（出處列在每支藥的最下方），依「那一款產品」的濃度計算；同成分不同品牌濃度可能不同，毫升數不能互相套用。</p>
+      <p>醫師可能依孩子的體重、病情另外開立劑量，所以藥袋的毫升數和仿單表不一樣是常見的。藥袋和這裡不同時，<strong>請照藥袋給</strong>；有疑問先問開藥的醫師或藥師，不要自己改量。</p>
+      <p>仿單沒有寫、但醫師開藥時常用的劑量，標為「醫師分享劑量」並列出分享者，出處在每支藥的最下方。仿單寫「由醫師診治」的年齡，醫師仍可能依體重開藥，這時藥袋上的量可以對照這一行。</p>
+      <p>未滿 3 個月的寶寶發燒、呼吸困難、精神明顯變差、一直吐或有脫水跡象，請直接就醫。</p>
+      <p class="checked-date" id="data-date"></p>
+    </section>
+  </main>
+<footer class="site-footer">
+  <div class="page-vote" data-page-vote>
+    <style>
+      .page-vote { margin: 0 0 14px 0; padding: 12px; border: 1px solid rgba(127,127,127,.25); border-radius: 12px; text-align: center; }
+      .page-vote__q { margin: 0 0 10px 0; font-weight: 600; }
+      .page-vote__btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+      .page-vote__btn { min-width: 110px; padding: 9px 16px; font-size: 1rem; border-radius: 999px; border: 1px solid rgba(127,127,127,.45); background: transparent; color: inherit; cursor: pointer; }
+      .page-vote__btn:active { transform: scale(.97); }
+      .page-vote__btn:disabled { opacity: .55; cursor: default; }
+      .page-vote__msg { margin: 10px 0 0 0; display: none; }
+    </style>
+    <p class="page-vote__q">這頁內容對您有幫助嗎？</p>
+    <div class="page-vote__btns">
+      <button type="button" class="page-vote__btn" data-vote="helpful">👍 有幫助</button>
+      <button type="button" class="page-vote__btn" data-vote="not_helpful">👎 沒幫助</button>
+    </div>
+    <p class="page-vote__msg" data-vote-msg></p>
+    <script>
+      (function () {
+        var GAS_URL = "https://script.google.com/macros/s/AKfycbw0uIMQZIeqmx-D0i4YBN7FPidC1QEteoNp6Ae28fMPKFC9HmH10jx6pvIB2DCom5R_/exec";
+        var FEEDBACK_URL = "https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手";
+        var box = document.currentScript.closest("[data-page-vote]");
+        if (!box) return;
+        var btns = box.querySelectorAll("[data-vote]");
+        var msg = box.querySelector("[data-vote-msg]");
+        var key = "pageVote:" + location.pathname;
+        function done(text, html) {
+          for (var i = 0; i < btns.length; i++) btns[i].disabled = true;
+          if (html) msg.innerHTML = html; else msg.textContent = text;
+          msg.style.display = "block";
+        }
+        try { if (localStorage.getItem(key)) { done("您已回饋過這一頁，謝謝！"); return; } } catch (e) {}
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function () {
+            var vote = this.getAttribute("data-vote");
+            var body = new URLSearchParams();
+            body.append("type", "vote");
+            body.append("source", "藥局衛教助手");
+            body.append("vote", vote);
+            body.append("page", location.pathname);
+            body.append("title", document.title);
+            done("傳送中…");
+            fetch(GAS_URL, { method: "POST", body: body }).then(function () {
+              try { localStorage.setItem(key, vote); } catch (e) {}
+              if (vote === "helpful") {
+                done("謝謝您的回饋！");
+              } else {
+                done("", '謝謝您的回饋！想告訴我們哪裡不清楚嗎？<a href="' + FEEDBACK_URL + '" target="_blank" rel="noopener">留言給藥師</a>（請勿填寫個人或病情資料）');
+              }
+            }).catch(function () {
+              for (var j = 0; j < btns.length; j++) btns[j].disabled = false;
+              msg.textContent = "傳送失敗，請稍後再試。";
+            });
+          });
+        }
+      })();
+    </script>
+  </div>
+  <p style="margin: 0 0 8px 0;">本工具圖文僅供藥師衛教參考，非專業人士務必諮詢藥師建議。</p>
+  <p style="margin: 0;">
+    <a href="https://liaoweihung.github.io/hub/index.html">&copy; 2026 💎 DiamondL 藥師開發設計</a>
+    &nbsp;|&nbsp;
+   <a href="https://liaoweihung.github.io/hub/feedback.html?source=藥局衛教助手" target="_blank" onclick="if (typeof trackFeedbackClick === 'function') trackFeedbackClick()">💬 意見回饋</a>
+  </p>
+  <p style="margin: 0 0 8px 0;">
+    <a href="./about.html">關於本站</a> &nbsp;|&nbsp;
+    <a href="./author.html">作者資訊</a> &nbsp;|&nbsp;
+    <a href="./editorial-policy.html">編輯與資料來源政策</a>
+  </p>
+</footer>
+  <script src="./js/ped-dose-calculator.js?v=1"></script>
+</body>
+</html>

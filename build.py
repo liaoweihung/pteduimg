@@ -923,9 +923,15 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     .card-text-body h3 { margin:1em 0 .25em; font-size:1em; }
 """
     # Series opt-in: "tool_link": {"title", "url"} shows a tool button beside the H1; url is relative to cards/.
+    # Optional "pages": [page ids] limits the button to those pages; "{page}" in url is replaced by the page id.
     tool_link = card.get("tool_link") or manual_card.get("tool_link") or {}
     tool_link_title = str(tool_link.get("title") or "").strip() if isinstance(tool_link, dict) else ""
     tool_link_url = str(tool_link.get("url") or "").strip() if isinstance(tool_link, dict) else ""
+    page_id = Path(step).stem
+    tool_link_pages = tool_link.get("pages") if isinstance(tool_link, dict) else None
+    if isinstance(tool_link_pages, list) and page_id not in tool_link_pages:
+        tool_link_title = tool_link_url = ""
+    tool_link_url = tool_link_url.replace("{page}", quote(page_id, safe=""))
     if tool_link_title and tool_link_url:
         calculator_styles = """    .info-header {
       display:flex;
@@ -1863,6 +1869,7 @@ def update_service_worker(cards, generated_pages, retired_pages=(), source_root=
         "./growth-calculator.html",
         "./menstrual-calculator.html",
         "./pregnancy-weight-calculator.html",
+        "./ped-dose-calculator.html",
         "./10-yr-cv-risk.html",
         "./rx-refillable-date.html",
         "./taiwan_child_growth_data.json",
@@ -1873,6 +1880,9 @@ def update_service_worker(cards, generated_pages, retired_pages=(), source_root=
         "./js/menstrual-calculator.js",
         "./css/pregnancy-weight-calculator.css",
         "./js/pregnancy-weight-calculator.js",
+        "./css/ped-dose-calculator.css",
+        "./js/ped-dose-calculator.js",
+        "./data/ped-dose.json",
         "./css/rx-refillable-date.css",
         "./icon.png",
         "./404.html",
@@ -1952,6 +1962,7 @@ def update_sitemap(generated_pages, card_content_index):
         ("growth-calculator.html", "monthly", "0.6"),
         ("menstrual-calculator.html", "monthly", "0.6"),
         ("pregnancy-weight-calculator.html", "monthly", "0.6"),
+        ("ped-dose-calculator.html", "monthly", "0.6"),
         ("10-yr-cv-risk.html", "monthly", "0.6"),
         ("rx-refillable-date.html", "monthly", "0.6"),
     ]
