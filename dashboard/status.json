@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-24T10:54:58+08:00",
-  "baseline": "988b144bfddfe16d315f5fcaa382d5e0c041b6cb",
-  "scope": "網站來源快照；版本 988b144b",
+  "generatedAt": "2026-11-24T17:01:05+08:00",
+  "baseline": "e7598a95bf0bbb1eeacfa8316bfe495e55fa4362",
+  "scope": "網站來源快照；版本 e7598a95",
   "counts": {
     "cards": 486,
     "series": 104,
@@ -10,7 +10,7 @@
     "retired": 4,
     "areas": 17,
     "topics": 1,
-    "tools": 6
+    "tools": 7
   },
   "areas": {
     "chronic_conditions": 9,
@@ -7004,6 +7004,10 @@
     {
       "title": "經期、排卵與預產期計算器",
       "path": "menstrual-calculator.html"
+    },
+    {
+      "title": "兒科藥水劑量查詢",
+      "path": "ped-dose-calculator.html"
     },
     {
       "title": "孕期體重增加計算器",
