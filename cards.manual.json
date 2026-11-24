@@ -4393,5 +4393,185 @@
       "img/drug_weight_gain_4.webp",
       "img/drug_weight_gain_5.webp"
     ]
+  },
+  "diaper_rash": {
+    "title": "尿布疹（紅屁屁）居家照護",
+    "category": "public_education",
+    "topics": [
+      "infant_care"
+    ],
+    "order": 36.2,
+    "hidden": false,
+    "icon": "🧷",
+    "tags": [
+      "尿布疹",
+      "紅屁屁",
+      "寶寶屁股紅",
+      "尿布疹擦什麼",
+      "氧化鋅",
+      "屁屁膏",
+      "白凡士林",
+      "屏障膏",
+      "爽身粉",
+      "痱子粉",
+      "尿布疹念珠菌",
+      "尿布疹就醫",
+      "尿布疹多久會好",
+      "換尿布"
+    ],
+    "related_series": [
+      "atopic_dermatitis",
+      "child_medicine_feeding",
+      "diarrhea_care"
+    ],
+    "showFooter": true,
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    },
+    "steps": [
+      "img/diaper_rash_01.webp",
+      "img/diaper_rash_02.webp",
+      "img/diaper_rash_03.webp",
+      "img/diaper_rash_04.webp",
+      "img/diaper_rash_05.webp"
+    ]
+  },
+  "insect_bites": {
+    "title": "蚊蟲叮咬怎麼辦？",
+    "category": "public_education",
+    "topics": [
+      "skin_wound",
+      "insect_repellent"
+    ],
+    "order": 17.1,
+    "hidden": false,
+    "icon": "🦟",
+    "tags": [
+      "蚊蟲叮咬",
+      "蚊子咬",
+      "蚊子包",
+      "小黑蚊",
+      "紅豆冰",
+      "隱翅蟲",
+      "蚊蟲叮咬擦什麼",
+      "止癢藥膏",
+      "抗組織胺藥膏",
+      "類固醇藥膏",
+      "小孩蚊子咬",
+      "2 歲以下止癢藥",
+      "薄荷 樟腦 嬰兒",
+      "蠶豆症 樟腦",
+      "蚊蟲叮咬 就醫"
+    ],
+    "related_series": [
+      "bugspray",
+      "atopic_dermatitis"
+    ],
+    "showFooter": true,
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    },
+    "steps": [
+      "img/insect_bites_01.webp",
+      "img/insect_bites_02.webp",
+      "img/insect_bites_03.webp",
+      "img/insect_bites_04.webp",
+      "img/insect_bites_05.webp"
+    ]
+  },
+  "atopic_dermatitis": {
+    "title": "兒童異位性皮膚炎居家照護",
+    "category": "public_education",
+    "topics": [
+      "skin_wound",
+      "infant_care"
+    ],
+    "order": 36.3,
+    "hidden": false,
+    "icon": "🧴",
+    "tags": [
+      "異位性皮膚炎",
+      "兒童異位性皮膚炎",
+      "濕疹",
+      "小孩皮膚癢",
+      "寶寶濕疹",
+      "保濕",
+      "乳液 乳霜 油膏",
+      "類固醇藥膏",
+      "類固醇藥膏擦多少",
+      "指尖單位",
+      "FTU",
+      "異位性皮膚炎洗澡",
+      "異位性皮膚炎飲食",
+      "異位性皮膚炎就醫",
+      "疱疹性濕疹"
+    ],
+    "related_series": [
+      "allergic_rhinitis",
+      "diaper_rash",
+      "insect_bites"
+    ],
+    "showFooter": true,
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    },
+    "steps": [
+      "img/atopic_dermatitis_01.webp",
+      "img/atopic_dermatitis_02.webp",
+      "img/atopic_dermatitis_03.webp",
+      "img/atopic_dermatitis_04.webp",
+      "img/atopic_dermatitis_05.webp",
+      "img/atopic_dermatitis_06.webp"
+    ]
+  },
+  "allergic_rhinitis": {
+    "title": "兒童過敏性鼻炎（鼻過敏）",
+    "category": "public_education",
+    "topics": [
+      "infant_care",
+      "chronic_conditions"
+    ],
+    "order": 36.4,
+    "hidden": false,
+    "icon": "🤧",
+    "tags": [
+      "過敏性鼻炎",
+      "鼻過敏",
+      "小孩鼻過敏",
+      "一直打噴嚏",
+      "流鼻水",
+      "鼻塞",
+      "塵蟎",
+      "類固醇鼻噴劑",
+      "鼻噴劑怎麼噴",
+      "抗組織胺",
+      "第二代抗組織胺",
+      "去鼻塞噴劑",
+      "藥物性鼻炎",
+      "洗鼻",
+      "生理食鹽水洗鼻",
+      "洗鼻鹽"
+    ],
+    "related_series": [
+      "atopic_dermatitis",
+      "pediatric_cold_syrup",
+      "MDI"
+    ],
+    "showFooter": true,
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    },
+    "steps": [
+      "img/allergic_rhinitis_01.webp",
+      "img/allergic_rhinitis_02.webp",
+      "img/allergic_rhinitis_03.webp",
+      "img/allergic_rhinitis_04.webp",
+      "img/allergic_rhinitis_05.webp",
+      "img/allergic_rhinitis_06.webp"
+    ]
   }
 }

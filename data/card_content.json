@@ -18117,5 +18117,1541 @@
     "matchConfidence": "high",
     "needsMedicalReview": true,
     "expandText": true
+  },
+  {
+    "cardId": "diaper_rash",
+    "image": "img/diaper_rash_01.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diaper_rash_01.html",
+    "title": "寶寶紅屁屁怎麼辦？尿布疹照護 3 步驟",
+    "seoTitle": "寶寶紅屁屁怎麼辦？尿布疹居家照護 3 步驟｜藥局衛教助手",
+    "metaDescription": "尿布疹常和尿便刺激、悶熱、摩擦有關。藥師整理居家照護 3 步驟：溫水沖洗、輕拍晾乾、厚擦屏障膏再包尿布；拉肚子時更要勤換尿布。",
+    "summary": "尿布疹是包尿布部位的皮膚發炎，常和尿液、糞便刺激，以及尿布裡悶熱、摩擦有關。照護重點是溫水沖洗、輕拍晾乾，再厚擦一層屏障膏隔開尿便；寶寶拉肚子時要更勤換尿布。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **為什麼會出現尿布疹？** 尿便長時間接觸皮膚，加上尿布內潮濕悶熱與摩擦，皮膚就容易發紅、破皮。拉肚子、天氣熱或尿布太久沒換時更常見。"
+      },
+      {
+        "heading": "居家照護 3 步驟是什麼？",
+        "text": "第 1 步用溫水輕輕洗掉尿便；第 2 步用柔軟的布輕拍，讓屁屁晾乾；第 3 步厚擦一層屏障膏，再包上乾淨尿布。"
+      },
+      {
+        "heading": "拉肚子時要注意什麼？",
+        "text": "稀便更容易刺激皮膚，發現有大便就要換，換完同樣洗淨、晾乾、擦屏障膏。"
+      },
+      {
+        "heading": "這個系列還有什麼？",
+        "text": "依序介紹換尿布的清潔細節、屏障膏怎麼擦、藥膏能不能自己換，以及什麼情況要就醫。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **為什麼會出現尿布疹？** 尿便長時間接觸皮膚，加上尿布內潮濕悶熱與摩擦，皮膚就容易發紅、破皮。拉肚子、天氣熱或尿布太久沒換時更常見。"
+      },
+      {
+        "question": "居家照護 3 步驟是什麼？",
+        "answer": "第 1 步用溫水輕輕洗掉尿便；第 2 步用柔軟的布輕拍，讓屁屁晾乾；第 3 步厚擦一層屏障膏，再包上乾淨尿布。"
+      },
+      {
+        "question": "拉肚子時要注意什麼？",
+        "answer": "稀便更容易刺激皮膚，發現有大便就要換，換完同樣洗淨、晾乾、擦屏障膏。"
+      },
+      {
+        "question": "這個系列還有什麼？",
+        "answer": "依序介紹換尿布的清潔細節、屏障膏怎麼擦、藥膏能不能自己換，以及什麼情況要就醫。"
+      }
+    ],
+    "altText": "尿布疹衛教圖卡第 1 張：寶寶紅屁屁怎麼辦，尿布疹和尿便刺激、悶熱、摩擦有關，照護 3 步驟為溫水沖洗、輕拍晾乾、擦屏障膏再包尿布",
+    "keywords": "尿布疹、紅屁屁、寶寶屁股紅、尿布疹擦什麼、氧化鋅、屁屁膏、白凡士林、屏障膏、爽身粉、痱子粉、尿布疹念珠菌、尿布疹就醫、尿布疹多久會好、換尿布",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "臺大醫院 用藥 FAQ No.210",
+        "url": "https://health.ntuh.gov.tw/health/NTUH_e_Net/NTUH_e_Net_no210/用藥FAQ_No210.pdf"
+      },
+      {
+        "title": "國軍醫院 紅臀及尿布疹護理",
+        "url": "https://806.mnd.gov.tw/at-view/uploads/2022/PED-09.pdf"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "diaper_rash",
+    "image": "img/diaper_rash_02.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diaper_rash_02.html",
+    "title": "換尿布時，怎麼減少皮膚刺激？",
+    "seoTitle": "換尿布怎麼做才不紅屁屁？清潔、擦乾與尿布選擇｜藥局衛教助手",
+    "metaDescription": "約每 2 小時看看尿布，尿濕或有大便當下就換。大便後用溫水洗淨、輕拍不用力擦，避開含酒精或香料的濕紙巾，晾乾再包透氣、不太緊的尿布。",
+    "summary": "預防尿布疹最重要的是讓皮膚保持乾爽。約每 2 小時檢查一次尿布，尿濕或有大便就馬上換；大便後用溫水洗淨，用柔軟的布輕拍，不要來回用力擦。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **尿布多久要換一次？** 約每 2 小時看看尿布，發現尿濕或有大便，當下就換，不用等滿 2 小時。"
+      },
+      {
+        "heading": "大便後用濕紙巾擦就好嗎？",
+        "text": "用溫水洗淨比只用濕紙巾擦拭溫和。洗完用柔軟的布輕拍，不要來回用力擦。"
+      },
+      {
+        "heading": "濕紙巾怎麼選？",
+        "text": "避開含酒精或香料的濕紙巾；沐浴用品也要沖乾淨，不要殘留在皮膚上。"
+      },
+      {
+        "heading": "包尿布前要注意什麼？",
+        "text": "讓屁屁晾乾再包，選透氣的尿布，不要包得太緊。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **尿布多久要換一次？** 約每 2 小時看看尿布，發現尿濕或有大便，當下就換，不用等滿 2 小時。"
+      },
+      {
+        "question": "大便後用濕紙巾擦就好嗎？",
+        "answer": "用溫水洗淨比只用濕紙巾擦拭溫和。洗完用柔軟的布輕拍，不要來回用力擦。"
+      },
+      {
+        "question": "濕紙巾怎麼選？",
+        "answer": "避開含酒精或香料的濕紙巾；沐浴用品也要沖乾淨，不要殘留在皮膚上。"
+      },
+      {
+        "question": "包尿布前要注意什麼？",
+        "answer": "讓屁屁晾乾再包，選透氣的尿布，不要包得太緊。"
+      }
+    ],
+    "altText": "尿布疹衛教圖卡第 2 張：換尿布時減少皮膚刺激，約每 2 小時檢查尿布、尿濕或大便當下就換，大便後溫水洗淨輕拍不用力擦，避開含酒精或香料的濕紙巾，晾乾後包上透氣不太緊的尿布",
+    "keywords": "尿布疹、紅屁屁、寶寶屁股紅、尿布疹擦什麼、氧化鋅、屁屁膏、白凡士林、屏障膏、爽身粉、痱子粉、尿布疹念珠菌、尿布疹就醫、尿布疹多久會好、換尿布",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "國軍醫院 紅臀及尿布疹護理",
+        "url": "https://806.mnd.gov.tw/at-view/uploads/2022/PED-09.pdf"
+      },
+      {
+        "title": "中國醫藥大學附設醫院 如何預防尿布疹",
+        "url": "https://www.cmuh.cmu.edu.tw/HealthEdus/Detail?no=6128"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "diaper_rash",
+    "image": "img/diaper_rash_03.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diaper_rash_03.html",
+    "title": "屏障膏怎麼擦？氧化鋅、白凡士林用法",
+    "seoTitle": "尿布疹屏障膏怎麼擦？氧化鋅、白凡士林與爽身粉｜藥局衛教助手",
+    "metaDescription": "氧化鋅或白凡士林能隔開尿便、保護皮膚。洗淨晾乾後厚擦一層；換尿布時只清掉弄髒的膏，乾淨的可以留著再補。不要撲痱子粉或爽身粉。",
+    "summary": "屏障膏（例如氧化鋅、白凡士林）像在皮膚上加一層保護，隔開尿便。洗淨、晾乾後厚擦一層；下次換尿布時，只要輕輕清掉便便和沾髒的膏，乾淨的那層可以留著再補。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **屏障膏有哪些？** 常用的是氧化鋅和白凡士林，作用是隔開尿便、保護皮膚。"
+      },
+      {
+        "heading": "要擦多厚？擦在哪裡？",
+        "text": "洗淨、晾乾後，在容易接觸尿便的皮膚厚擦一層，蓋住發紅的地方。"
+      },
+      {
+        "heading": "每次換尿布都要把膏全部擦掉嗎？",
+        "text": "不用。輕輕清掉便便和沾髒的膏就好，乾淨的屏障膏可以留著，再補厚一層。用力擦掉反而會刺激皮膚。"
+      },
+      {
+        "heading": "可以撲痱子粉、爽身粉嗎？",
+        "text": "不建議。寶寶可能吸入粉末，粉末遇到尿便也容易結塊，反而刺激皮膚。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **屏障膏有哪些？** 常用的是氧化鋅和白凡士林，作用是隔開尿便、保護皮膚。"
+      },
+      {
+        "question": "要擦多厚？擦在哪裡？",
+        "answer": "洗淨、晾乾後，在容易接觸尿便的皮膚厚擦一層，蓋住發紅的地方。"
+      },
+      {
+        "question": "每次換尿布都要把膏全部擦掉嗎？",
+        "answer": "不用。輕輕清掉便便和沾髒的膏就好，乾淨的屏障膏可以留著，再補厚一層。用力擦掉反而會刺激皮膚。"
+      },
+      {
+        "question": "可以撲痱子粉、爽身粉嗎？",
+        "answer": "不建議。寶寶可能吸入粉末，粉末遇到尿便也容易結塊，反而刺激皮膚。"
+      }
+    ],
+    "altText": "尿布疹衛教圖卡第 3 張：屏障膏怎麼擦，氧化鋅或白凡士林能隔開尿便，洗淨晾乾後厚擦一層，換尿布時清掉沾髒的膏、乾淨的留著再補，不要撲痱子粉或爽身粉",
+    "keywords": "尿布疹、紅屁屁、寶寶屁股紅、尿布疹擦什麼、氧化鋅、屁屁膏、白凡士林、屏障膏、爽身粉、痱子粉、尿布疹念珠菌、尿布疹就醫、尿布疹多久會好、換尿布",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "臺大醫院 用藥 FAQ No.210",
+        "url": "https://health.ntuh.gov.tw/health/NTUH_e_Net/NTUH_e_Net_no210/用藥FAQ_No210.pdf"
+      },
+      {
+        "title": "臺北市立聯合醫院 氧化鋅軟膏用藥指導單張",
+        "url": "https://www-ws.gov.taipei/001/Upload/446/relfile/22055/9101903/4ca923eb-e306-47b7-803c-f27272c8e637.pdf"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "diaper_rash",
+    "image": "img/diaper_rash_04.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diaper_rash_04.html",
+    "title": "尿布疹的藥膏，可以自己換嗎？",
+    "seoTitle": "尿布疹藥膏可以自己擦嗎？類固醇、抗黴菌藥膏注意事項｜藥局衛教助手",
+    "metaDescription": "日常保護用氧化鋅或白凡士林即可。醫師另開的藥照這次指示的部位、次數、天數與順序擦；是否需要抗黴菌藥或抗生素由醫師判斷，不要拿家人的類固醇藥膏給寶寶擦。",
+    "summary": "日常保護用氧化鋅或白凡士林就可以。醫師另外開的藥膏，要照這次的指示擦；是否需要抗黴菌藥或抗生素，要由醫師判斷。不要拿家人的類固醇藥膏或以前剩下的藥給寶寶擦。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **日常保護要用什麼？** 氧化鋅或白凡士林可以隔開尿便，是日常照護的基本用品。"
+      },
+      {
+        "heading": "醫師開了藥膏，要怎麼擦？",
+        "text": "照這次指示的部位、次數、天數與順序擦。開了好幾種、不清楚先後時，把藥帶給醫師或藥師確認。"
+      },
+      {
+        "heading": "紅屁屁一直不好，可以自己買抗黴菌藥膏嗎？",
+        "text": "尿布疹是否合併黴菌或細菌感染，需要醫師判斷，再決定用什麼藥，不建議自行購買使用。"
+      },
+      {
+        "heading": "可以擦大人的類固醇藥膏嗎？",
+        "text": "不要。寶寶皮膚薄、包尿布處又悶，藥物比較容易吸收；家人的類固醇藥膏或以前剩下的藥都不要拿來擦。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **日常保護要用什麼？** 氧化鋅或白凡士林可以隔開尿便，是日常照護的基本用品。"
+      },
+      {
+        "question": "醫師開了藥膏，要怎麼擦？",
+        "answer": "照這次指示的部位、次數、天數與順序擦。開了好幾種、不清楚先後時，把藥帶給醫師或藥師確認。"
+      },
+      {
+        "question": "紅屁屁一直不好，可以自己買抗黴菌藥膏嗎？",
+        "answer": "尿布疹是否合併黴菌或細菌感染，需要醫師判斷，再決定用什麼藥，不建議自行購買使用。"
+      },
+      {
+        "question": "可以擦大人的類固醇藥膏嗎？",
+        "answer": "不要。寶寶皮膚薄、包尿布處又悶，藥物比較容易吸收；家人的類固醇藥膏或以前剩下的藥都不要拿來擦。"
+      }
+    ],
+    "altText": "尿布疹衛教圖卡第 4 張：尿布疹藥膏可以自己換嗎，日常保護用氧化鋅或白凡士林，醫師另開的藥照指示的部位、次數、天數與順序擦，是否需要抗黴菌藥或抗生素由醫師判斷，不要拿家人的類固醇藥膏或剩藥給寶寶擦",
+    "keywords": "尿布疹、紅屁屁、寶寶屁股紅、尿布疹擦什麼、氧化鋅、屁屁膏、白凡士林、屏障膏、爽身粉、痱子粉、尿布疹念珠菌、尿布疹就醫、尿布疹多久會好、換尿布",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "臺大醫院 用藥 FAQ No.210",
+        "url": "https://health.ntuh.gov.tw/health/NTUH_e_Net/NTUH_e_Net_no210/用藥FAQ_No210.pdf"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "類固醇藥膏擦多少？指尖單位（FTU）怎麼量",
+        "url": "../cards/atopic_dermatitis_04.html"
+      },
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "diaper_rash",
+    "image": "img/diaper_rash_05.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/diaper_rash_05.html",
+    "title": "尿布疹什麼時候要就醫？",
+    "seoTitle": "尿布疹什麼時候要看醫師？水泡、膿疱、3 天沒改善｜藥局衛教助手",
+    "metaDescription": "未滿 3 個月寶寶發燒要立即就醫。起水泡、膿疱、出血、潰瘍、範圍擴大、合併發燒或精神變差要提早就醫；皺褶處也紅、旁邊有零星小紅疹可能有感染。居家照護約 3 天沒改善也要看醫師。",
+    "summary": "多數尿布疹照顧好幾天會改善。未滿 3 個月的寶寶發燒要立即就醫；出現水泡、膿疱、出血、潰瘍、範圍擴大、合併發燒或精神變差要提早就醫；勤換尿布、擦屏障膏約 3 天仍沒改善，也請就醫。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **什麼情況要立即就醫？** 未滿 3 個月的寶寶發燒，立即就醫。"
+      },
+      {
+        "heading": "什麼情況要提早就醫？",
+        "text": "起水泡、膿疱、出血、潰瘍，或紅腫範圍擴大；尿布疹合併發燒，或寶寶精神變差。"
+      },
+      {
+        "heading": "皺褶處也紅、旁邊有小紅點，是什麼？",
+        "text": "可能合併感染（例如念珠菌），請醫師評估，不要自行擦藥。"
+      },
+      {
+        "heading": "照顧幾天沒好要就醫？",
+        "text": "勤換尿布、擦屏障膏約 3 天仍沒有改善，請就醫。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **什麼情況要立即就醫？** 未滿 3 個月的寶寶發燒，立即就醫。"
+      },
+      {
+        "question": "什麼情況要提早就醫？",
+        "answer": "起水泡、膿疱、出血、潰瘍，或紅腫範圍擴大；尿布疹合併發燒，或寶寶精神變差。"
+      },
+      {
+        "question": "皺褶處也紅、旁邊有小紅點，是什麼？",
+        "answer": "可能合併感染（例如念珠菌），請醫師評估，不要自行擦藥。"
+      },
+      {
+        "question": "照顧幾天沒好要就醫？",
+        "answer": "勤換尿布、擦屏障膏約 3 天仍沒有改善，請就醫。"
+      }
+    ],
+    "altText": "尿布疹衛教圖卡第 5 張：尿布疹什麼時候要就醫，未滿 3 個月寶寶發燒立即就醫，起水泡、膿疱、出血、潰瘍、範圍擴大、合併發燒或精神變差提早就醫，皺褶處也紅且旁有零星小紅疹可能感染，居家照護約 3 天沒改善請就醫",
+    "keywords": "尿布疹、紅屁屁、寶寶屁股紅、尿布疹擦什麼、氧化鋅、屁屁膏、白凡士林、屏障膏、爽身粉、痱子粉、尿布疹念珠菌、尿布疹就醫、尿布疹多久會好、換尿布",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "臺大醫院 用藥 FAQ No.210",
+        "url": "https://health.ntuh.gov.tw/health/NTUH_e_Net/NTUH_e_Net_no210/用藥FAQ_No210.pdf"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "insect_bites",
+    "image": "img/insect_bites_01.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insect_bites_01.html",
+    "title": "被蚊蟲叮咬，先做這三件事",
+    "seoTitle": "被蚊蟲叮咬怎麼辦？清洗、冷敷、避免抓破｜藥局衛教助手",
+    "metaDescription": "被蚊蟲叮咬，先用肥皂和清水洗叮咬處，再用毛巾包冰袋冷敷紅腫處；剪短指甲、癢時先冷敷，避免抓破。局部紅癢多半會改善，還是很癢可請藥師協助選藥。",
+    "summary": "被蚊蟲叮咬後，先清洗、冷敷，再避免抓破。局部紅癢多半會逐漸改善；還是很癢，可以請藥師協助選擇止癢藥。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **被叮後第一步做什麼？** 用肥皂和清水洗叮咬處。"
+      },
+      {
+        "heading": "怎麼冷敷？",
+        "text": "用毛巾包住冰袋，再敷在紅腫處，不要讓冰塊直接貼皮膚。"
+      },
+      {
+        "heading": "很癢一直抓怎麼辦？",
+        "text": "剪短指甲，癢的時候先冷敷。抓破皮容易細菌感染。"
+      },
+      {
+        "heading": "要不要擦藥？",
+        "text": "局部紅癢多半會逐漸改善；還是很癢，可以請藥師協助選藥。預防叮咬可參考防蚊液圖卡。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **被叮後第一步做什麼？** 用肥皂和清水洗叮咬處。"
+      },
+      {
+        "question": "怎麼冷敷？",
+        "answer": "用毛巾包住冰袋，再敷在紅腫處，不要讓冰塊直接貼皮膚。"
+      },
+      {
+        "question": "很癢一直抓怎麼辦？",
+        "answer": "剪短指甲，癢的時候先冷敷。抓破皮容易細菌感染。"
+      },
+      {
+        "question": "要不要擦藥？",
+        "answer": "局部紅癢多半會逐漸改善；還是很癢，可以請藥師協助選藥。預防叮咬可參考防蚊液圖卡。"
+      }
+    ],
+    "altText": "蚊蟲叮咬衛教圖卡第 1 張：被蚊蟲叮咬先做三件事，用肥皂和清水清洗、毛巾包冰袋冷敷、剪短指甲避免抓破，還是很癢可請藥師協助選藥",
+    "keywords": "蚊蟲叮咬、蚊子咬、蚊子包、小黑蚊、紅豆冰、隱翅蟲、蚊蟲叮咬擦什麼、止癢藥膏、抗組織胺藥膏、類固醇藥膏、小孩蚊子咬、2 歲以下止癢藥、薄荷 樟腦 嬰兒、蠶豆症 樟腦、蚊蟲叮咬 就醫",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "康健雜誌 6 種蟲咬",
+        "url": "https://www.commonhealth.com.tw/article/81801"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "防蚊液使用步驟",
+        "url": "../cards/bugspray_1.html"
+      },
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "insect_bites",
+    "image": "img/insect_bites_02.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insect_bites_02.html",
+    "title": "蚊蟲叮咬，止癢藥膏怎麼選？",
+    "seoTitle": "蚊蟲叮咬擦什麼藥？抗組織胺、局部麻醉、類固醇藥膏怎麼選｜藥局衛教助手",
+    "metaDescription": "抗組織胺可緩解紅腫搔癢；局部麻醉劑能暫時止癢但沒有消炎作用；類固醇可消炎止癢，依指示短期、小範圍使用並避開傷口。抓破皮先清洗，不用自行擦抗生素預防感染。",
+    "summary": "止癢藥膏常見三類成分：抗組織胺、局部麻醉劑、類固醇，用途不同。抓破皮時先清洗，不用自行擦抗生素預防感染；若紅腫熱痛持續擴大、流膿或發燒，請就醫評估。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **抗組織胺藥膏有什麼用？** 可緩解紅腫和搔癢。"
+      },
+      {
+        "heading": "局部麻醉劑有什麼用？",
+        "text": "可暫時緩解搔癢，但沒有消炎作用。常和其他成分做成複方。"
+      },
+      {
+        "heading": "類固醇藥膏可以擦嗎？",
+        "text": "可消炎止癢。依仿單或醫藥人員指示，短期、小範圍使用，避開傷口。"
+      },
+      {
+        "heading": "抓破皮要擦抗生素藥膏嗎？",
+        "text": "先用清水清洗。沒有感染跡象時，不用自行擦抗生素預防感染；若紅腫熱痛持續擴大、流膿或發燒，請就醫評估。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **抗組織胺藥膏有什麼用？** 可緩解紅腫和搔癢。"
+      },
+      {
+        "question": "局部麻醉劑有什麼用？",
+        "answer": "可暫時緩解搔癢，但沒有消炎作用。常和其他成分做成複方。"
+      },
+      {
+        "question": "類固醇藥膏可以擦嗎？",
+        "answer": "可消炎止癢。依仿單或醫藥人員指示，短期、小範圍使用，避開傷口。"
+      },
+      {
+        "question": "抓破皮要擦抗生素藥膏嗎？",
+        "answer": "先用清水清洗。沒有感染跡象時，不用自行擦抗生素預防感染；若紅腫熱痛持續擴大、流膿或發燒，請就醫評估。"
+      }
+    ],
+    "altText": "蚊蟲叮咬衛教圖卡第 2 張：止癢藥膏怎麼選，抗組織胺緩解紅腫搔癢，局部麻醉劑暫時止癢沒有消炎作用，類固醇消炎止癢需短期小範圍使用並避開傷口，抓破皮先清洗、不用自行擦抗生素，紅腫熱痛擴大、流膿或發燒請就醫",
+    "keywords": "蚊蟲叮咬、蚊子咬、蚊子包、小黑蚊、紅豆冰、隱翅蟲、蚊蟲叮咬擦什麼、止癢藥膏、抗組織胺藥膏、類固醇藥膏、小孩蚊子咬、2 歲以下止癢藥、薄荷 樟腦 嬰兒、蠶豆症 樟腦、蚊蟲叮咬 就醫",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "食藥署提醒（經健康醫療網轉述）",
+        "url": "https://www.moneyweekly.com.tw/_Article?AID=48067"
+      },
+      {
+        "title": "NICE NG182 Insect bites and stings: antimicrobial prescribing",
+        "url": "https://www.nice.org.uk/guidance/ng182/resources/insect-bites-and-stings-antimicrobial-prescribing-pdf-66142018322629"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "類固醇藥膏擦多少？指尖單位（FTU）怎麼量",
+        "url": "../cards/atopic_dermatitis_04.html"
+      },
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "insect_bites",
+    "image": "img/insect_bites_03.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insect_bites_03.html",
+    "title": "小孩被叮，擦藥前看這裡",
+    "seoTitle": "小孩被蚊子咬擦什麼？2 歲以下、蠶豆症擦藥注意事項｜藥局衛教助手",
+    "metaDescription": "2 歲以下使用含薄荷醇、樟腦或水楊酸甲酯的止癢藥前，先問醫師或藥師。孩子有蠶豆症要先告知藥師、帶藥盒確認成分。擦藥前確認適用年齡，依說明用量，不要大面積塗抹。",
+    "summary": "幫小孩擦止癢藥前，先看年齡和成分。2 歲以下使用含薄荷醇、樟腦或水楊酸甲酯的止癢藥，使用前先問醫師或藥師；有蠶豆症的孩子，要先告知藥師確認成分。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **2 歲以下可以擦含薄荷、樟腦的止癢藥嗎？** 食藥署提醒，這類成分可能引起嬰幼兒癲癇、意識障礙或呼吸抑制等神經不良反應，使用前請先問醫師或藥師。"
+      },
+      {
+        "heading": "其他止癢藥要注意什麼？",
+        "text": "使用前請藥師核對這一瓶的仿單，確認適用年齡。"
+      },
+      {
+        "heading": "孩子有蠶豆症怎麼辦？",
+        "text": "先告知藥師，帶藥盒確認成分及禁忌。蠶豆症要避免樟腦製劑，薄荷醇也要小心。"
+      },
+      {
+        "heading": "擦藥時要注意什麼？",
+        "text": "依說明用量，擦薄薄一層，不要大面積塗抹；不要拿大人的藥膏給小孩擦。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **2 歲以下可以擦含薄荷、樟腦的止癢藥嗎？** 食藥署提醒，這類成分可能引起嬰幼兒癲癇、意識障礙或呼吸抑制等神經不良反應，使用前請先問醫師或藥師。"
+      },
+      {
+        "question": "其他止癢藥要注意什麼？",
+        "answer": "使用前請藥師核對這一瓶的仿單，確認適用年齡。"
+      },
+      {
+        "question": "孩子有蠶豆症怎麼辦？",
+        "answer": "先告知藥師，帶藥盒確認成分及禁忌。蠶豆症要避免樟腦製劑，薄荷醇也要小心。"
+      },
+      {
+        "question": "擦藥時要注意什麼？",
+        "answer": "依說明用量，擦薄薄一層，不要大面積塗抹；不要拿大人的藥膏給小孩擦。"
+      }
+    ],
+    "altText": "蚊蟲叮咬衛教圖卡第 3 張：小孩被叮擦藥前看這裡，2 歲以下使用含薄荷醇、樟腦或水楊酸甲酯的止癢藥前先問醫師或藥師，其他外用止癢藥請藥師核對仿單，有蠶豆症先告知藥師，擦藥前確認適用年齡、依說明用量、不要大面積塗抹",
+    "keywords": "蚊蟲叮咬、蚊子咬、蚊子包、小黑蚊、紅豆冰、隱翅蟲、蚊蟲叮咬擦什麼、止癢藥膏、抗組織胺藥膏、類固醇藥膏、小孩蚊子咬、2 歲以下止癢藥、薄荷 樟腦 嬰兒、蠶豆症 樟腦、蚊蟲叮咬 就醫",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "食藥署提醒（健康醫療網轉述）",
+        "url": "https://www.moneyweekly.com.tw/_Article?AID=48067"
+      },
+      {
+        "title": "TVBS 健康 2.0 轉述食藥署",
+        "url": "https://health.tvbs.com.tw/medical/324286"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "insect_bites",
+    "image": "img/insect_bites_04.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insect_bites_04.html",
+    "title": "隱翅蟲停在皮膚上怎麼辦？",
+    "seoTitle": "隱翅蟲停在身上怎麼辦？不要拍、清水沖洗、何時就醫｜藥局衛教助手",
+    "metaDescription": "隱翅蟲停在身上要輕輕吹走，避免拍打；皮膚沾到蟲的體液，立即用大量清水沖洗；起水泡、紅腫或疼痛要盡快就醫。",
+    "summary": "隱翅蟲不會叮咬人，但體液含刺激性毒素，拍死後沾到皮膚會造成紅腫、灼熱甚至水泡。看到停在身上，輕輕吹走、不要拍；沾到體液立即用大量清水沖洗，起水泡、紅腫或疼痛要盡快就醫。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **隱翅蟲停在身上怎麼辦？** 輕輕吹走，或用紙引開，避免用手拍打。"
+      },
+      {
+        "heading": "皮膚沾到蟲的體液怎麼辦？",
+        "text": "立即用大量清水沖洗，並避免用手揉眼睛。"
+      },
+      {
+        "heading": "什麼情況要就醫？",
+        "text": "起水泡、紅腫或疼痛，請盡快就醫。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **隱翅蟲停在身上怎麼辦？** 輕輕吹走，或用紙引開，避免用手拍打。"
+      },
+      {
+        "question": "皮膚沾到蟲的體液怎麼辦？",
+        "answer": "立即用大量清水沖洗，並避免用手揉眼睛。"
+      },
+      {
+        "question": "什麼情況要就醫？",
+        "answer": "起水泡、紅腫或疼痛，請盡快就醫。"
+      }
+    ],
+    "altText": "蚊蟲叮咬衛教圖卡第 4 張：隱翅蟲停在皮膚上怎麼辦，停在身上輕輕吹走避免拍打，皮膚沾到蟲的體液立即用大量清水沖洗，起水泡、紅腫或疼痛盡快就醫",
+    "keywords": "蚊蟲叮咬、蚊子咬、蚊子包、小黑蚊、紅豆冰、隱翅蟲、蚊蟲叮咬擦什麼、止癢藥膏、抗組織胺藥膏、類固醇藥膏、小孩蚊子咬、2 歲以下止癢藥、薄荷 樟腦 嬰兒、蠶豆症 樟腦、蚊蟲叮咬 就醫",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "康健雜誌 6 種蟲咬",
+        "url": "https://www.commonhealth.com.tw/article/81801"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "insect_bites",
+    "image": "img/insect_bites_05.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/insect_bites_05.html",
+    "title": "被叮之後，什麼時候要就醫？",
+    "seoTitle": "蚊蟲叮咬什麼時候要就醫？過敏警訊、感染、發燒｜藥局衛教助手",
+    "metaDescription": "呼吸困難、舌頭或喉嚨腫、頭暈快昏倒，任何一項就打 119。只有全身起疹也要儘快就醫；紅腫熱痛擴大、流膿或發燒請就醫。發燒又頭痛、全身痠痛，記得告訴醫師旅遊與草叢活動史。",
+    "summary": "多數叮咬只會局部紅癢，但少數會引起嚴重過敏或感染。呼吸困難、舌頭或喉嚨腫、頭暈快昏倒，出現任何一項立刻打 119；全身起疹、紅腫熱痛擴大、流膿或發燒，要儘快就醫。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **什麼情況要立刻打 119？** 呼吸困難、舌頭或喉嚨腫，或頭暈快昏倒，出現任何一項就打 119，不用等症狀都出現。"
+      },
+      {
+        "heading": "只有全身起疹要就醫嗎？",
+        "text": "要，請儘快就醫。"
+      },
+      {
+        "heading": "叮咬處越來越紅腫怎麼辦？",
+        "text": "紅腫熱痛持續擴大、流膿或發燒，可能是細菌感染，請就醫評估。"
+      },
+      {
+        "heading": "發燒又全身痠痛要告訴醫師什麼？",
+        "text": "記得說明最近去哪裡旅行、是否到過草叢，幫助醫師判斷是否為蚊蟲或恙蟎傳播的疾病。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **什麼情況要立刻打 119？** 呼吸困難、舌頭或喉嚨腫，或頭暈快昏倒，出現任何一項就打 119，不用等症狀都出現。"
+      },
+      {
+        "question": "只有全身起疹要就醫嗎？",
+        "answer": "要，請儘快就醫。"
+      },
+      {
+        "question": "叮咬處越來越紅腫怎麼辦？",
+        "answer": "紅腫熱痛持續擴大、流膿或發燒，可能是細菌感染，請就醫評估。"
+      },
+      {
+        "question": "發燒又全身痠痛要告訴醫師什麼？",
+        "answer": "記得說明最近去哪裡旅行、是否到過草叢，幫助醫師判斷是否為蚊蟲或恙蟎傳播的疾病。"
+      }
+    ],
+    "altText": "蚊蟲叮咬衛教圖卡第 5 張：被叮之後什麼時候要就醫，呼吸困難、舌頭或喉嚨腫、頭暈快昏倒任一項立刻打 119，全身起疹、紅腫熱痛擴大、流膿或發燒儘快就醫，發燒頭痛全身痠痛要告訴醫師旅遊與草叢活動史",
+    "keywords": "蚊蟲叮咬、蚊子咬、蚊子包、小黑蚊、紅豆冰、隱翅蟲、蚊蟲叮咬擦什麼、止癢藥膏、抗組織胺藥膏、類固醇藥膏、小孩蚊子咬、2 歲以下止癢藥、薄荷 樟腦 嬰兒、蠶豆症 樟腦、蚊蟲叮咬 就醫",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "NICE NG182",
+        "url": "https://www.nice.org.uk/guidance/ng182/resources/insect-bites-and-stings-antimicrobial-prescribing-pdf-66142018322629"
+      },
+      {
+        "title": "康健雜誌 6 種蟲咬",
+        "url": "https://www.commonhealth.com.tw/article/81801"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "atopic_dermatitis",
+    "image": "img/atopic_dermatitis_01.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_01.html",
+    "title": "孩子皮膚一直癢？認識異位性皮膚炎",
+    "seoTitle": "孩子皮膚一直癢？認識兒童異位性皮膚炎與照護重點｜藥局衛教助手",
+    "metaDescription": "異位性皮膚炎會反覆發作，孩子的皮膚屏障較弱、容易乾癢發炎。嬰兒常在臉頰、頭頸，大孩子常在手肘彎、膝蓋後。照護重點：每天保濕、減少搔抓、發作時照醫師指示擦藥、留意感染。",
+    "summary": "異位性皮膚炎是會反覆發作的慢性皮膚發炎。孩子的皮膚屏障較弱，水分容易流失，也容易乾癢。照護重點是每天保濕、減少搔抓、發作時照醫師指示擦藥，並留意抓破後的感染跡象。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **異位性皮膚炎是什麼？** 會反覆發作的慢性皮膚發炎。皮膚屏障較弱，水分容易流失，所以容易乾、癢、發炎。"
+      },
+      {
+        "heading": "常長在哪裡？",
+        "text": "嬰兒常在臉頰、頭頸；大一點的孩子常在手肘彎、膝蓋後。"
+      },
+      {
+        "heading": "和其他過敏有關嗎？",
+        "text": "有些孩子也有過敏性鼻炎或氣喘。"
+      },
+      {
+        "heading": "照護重點有哪些？",
+        "text": "每天保濕；減少搔抓，打斷「越抓越癢」；發作時照醫師指示擦藥；抓破時留意感染跡象。持續照護，許多孩子的膚況會逐漸穩定。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **異位性皮膚炎是什麼？** 會反覆發作的慢性皮膚發炎。皮膚屏障較弱，水分容易流失，所以容易乾、癢、發炎。"
+      },
+      {
+        "question": "常長在哪裡？",
+        "answer": "嬰兒常在臉頰、頭頸；大一點的孩子常在手肘彎、膝蓋後。"
+      },
+      {
+        "question": "和其他過敏有關嗎？",
+        "answer": "有些孩子也有過敏性鼻炎或氣喘。"
+      },
+      {
+        "question": "照護重點有哪些？",
+        "answer": "每天保濕；減少搔抓，打斷「越抓越癢」；發作時照醫師指示擦藥；抓破時留意感染跡象。持續照護，許多孩子的膚況會逐漸穩定。"
+      }
+    ],
+    "altText": "異位性皮膚炎衛教圖卡第 1 張：孩子皮膚一直癢，認識異位性皮膚炎，皮膚屏障較弱、水分容易流失、容易乾癢反覆發炎，嬰兒常在臉頰頭頸、大孩子常在手肘彎與膝蓋後，照護重點為每天保濕、減少搔抓、發作時依醫囑擦藥、留意感染",
+    "keywords": "異位性皮膚炎、兒童異位性皮膚炎、濕疹、小孩皮膚癢、寶寶濕疹、保濕、乳液 乳霜 油膏、類固醇藥膏、類固醇藥膏擦多少、指尖單位、FTU、異位性皮膚炎洗澡、異位性皮膚炎飲食、異位性皮膚炎就醫、疱疹性濕疹",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "長庚醫訊 兒童異位性皮膚炎的居家照護",
+        "url": "https://www.cgmh.org.tw/cgmn/cgmn_file/2312013.pdf"
+      },
+      {
+        "title": "長庚醫訊 兒童異位性皮膚炎階梯治療",
+        "url": "https://www.cgmh.org.tw/cgmn/cgmn_file/2211013.pdf"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "孩子一直打噴嚏、流鼻水，是鼻過敏嗎？過敏性鼻炎症狀",
+        "url": "../cards/allergic_rhinitis_01.html"
+      },
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "atopic_dermatitis",
+    "image": "img/atopic_dermatitis_02.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_02.html",
+    "title": "異位性皮膚炎，洗澡怎麼洗？",
+    "seoTitle": "異位性皮膚炎怎麼洗澡？水溫、時間與潔膚重點｜藥局衛教助手",
+    "metaDescription": "用溫水洗 5～10 分鐘，水不要太燙。用不含香精的溫和潔膚產品，只洗腋下、手腳、屁股等容易髒或流汗處，不用全身抹、不要用力搓。洗完用毛巾輕拍，趁微濕馬上擦保濕。",
+    "summary": "洗對方法可以減少皮膚變乾。用溫水洗 5～10 分鐘，只在容易髒或流汗的地方用溫和潔膚產品，不要用力搓洗；洗完輕拍擦乾，趁皮膚還有一點濕潤就擦保濕。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **水溫和時間怎麼抓？** 溫水洗 5～10 分鐘，水不要太燙。"
+      },
+      {
+        "heading": "要用沐浴乳嗎？",
+        "text": "用不含香精的溫和潔膚產品，清洗容易髒或流汗的地方，例如腋下、手腳、屁股；不用全身抹，也不要用力搓洗。"
+      },
+      {
+        "heading": "洗完要做什麼？",
+        "text": "用毛巾輕拍，趁皮膚還有一點濕潤就擦保濕。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **水溫和時間怎麼抓？** 溫水洗 5～10 分鐘，水不要太燙。"
+      },
+      {
+        "question": "要用沐浴乳嗎？",
+        "answer": "用不含香精的溫和潔膚產品，清洗容易髒或流汗的地方，例如腋下、手腳、屁股；不用全身抹，也不要用力搓洗。"
+      },
+      {
+        "question": "洗完要做什麼？",
+        "answer": "用毛巾輕拍，趁皮膚還有一點濕潤就擦保濕。"
+      }
+    ],
+    "altText": "異位性皮膚炎衛教圖卡第 2 張：洗澡怎麼洗，溫水洗 5 到 10 分鐘水不要太燙，用不含香精的溫和潔膚產品只洗容易髒或流汗的地方，不全身抹、不用力搓，洗完輕拍、趁微濕馬上擦保濕",
+    "keywords": "異位性皮膚炎、兒童異位性皮膚炎、濕疹、小孩皮膚癢、寶寶濕疹、保濕、乳液 乳霜 油膏、類固醇藥膏、類固醇藥膏擦多少、指尖單位、FTU、異位性皮膚炎洗澡、異位性皮膚炎飲食、異位性皮膚炎就醫、疱疹性濕疹",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "長庚醫訊 兒童異位性皮膚炎的居家照護",
+        "url": "https://www.cgmh.org.tw/cgmn/cgmn_file/2312013.pdf"
+      },
+      {
+        "title": "TVBS 健康 2.0",
+        "url": "https://health.tvbs.com.tw/nutrition/342646"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "atopic_dermatitis",
+    "image": "img/atopic_dermatitis_03.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_03.html",
+    "title": "孩子的皮膚怎麼保濕？",
+    "seoTitle": "異位性皮膚炎怎麼保濕？次數、時機與乳液乳霜怎麼選｜藥局衛教助手",
+    "metaDescription": "每天至少 2 次，洗澡後馬上擦，全身都要擦、連沒紅疹的地方也要；覺得乾癢可再補。選不含香精、酒精、色素的產品；很乾選油膏或乳霜，濕熱怕油膩可選乳液。",
+    "summary": "保濕是異位性皮膚炎最基本、每天都要做的照護。每天至少擦 2 次，洗澡後馬上擦，全身都要擦，連沒有紅疹的地方也要擦；皮膚覺得乾、癢時可以再補擦。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **一天要擦幾次？** 每天至少 2 次，洗澡後馬上擦；覺得乾、癢時可以再補擦。"
+      },
+      {
+        "heading": "只擦紅疹的地方就好嗎？",
+        "text": "不是。全身都要擦，連沒有紅疹的地方也要擦。"
+      },
+      {
+        "heading": "保濕品怎麼選？",
+        "text": "選不含香精、酒精、色素的產品。皮膚很乾，選油膏或乳霜；天氣濕熱、怕油膩，也可以選乳液。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **一天要擦幾次？** 每天至少 2 次，洗澡後馬上擦；覺得乾、癢時可以再補擦。"
+      },
+      {
+        "question": "只擦紅疹的地方就好嗎？",
+        "answer": "不是。全身都要擦，連沒有紅疹的地方也要擦。"
+      },
+      {
+        "question": "保濕品怎麼選？",
+        "answer": "選不含香精、酒精、色素的產品。皮膚很乾，選油膏或乳霜；天氣濕熱、怕油膩，也可以選乳液。"
+      }
+    ],
+    "altText": "異位性皮膚炎衛教圖卡第 3 張：孩子的皮膚怎麼保濕，每天至少 2 次、洗澡後馬上擦，全身都要擦連沒有紅疹處也擦，乾癢時可補擦，選不含香精酒精色素的產品，很乾選油膏或乳霜，濕熱怕油膩可選乳液",
+    "keywords": "異位性皮膚炎、兒童異位性皮膚炎、濕疹、小孩皮膚癢、寶寶濕疹、保濕、乳液 乳霜 油膏、類固醇藥膏、類固醇藥膏擦多少、指尖單位、FTU、異位性皮膚炎洗澡、異位性皮膚炎飲食、異位性皮膚炎就醫、疱疹性濕疹",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "長庚醫訊 兒童異位性皮膚炎的居家照護",
+        "url": "https://www.cgmh.org.tw/cgmn/cgmn_file/2312013.pdf"
+      },
+      {
+        "title": "臺大醫院健康電子報 異位性皮膚炎的生活照顧",
+        "url": "https://epaper.ntuh.gov.tw/health/201702/pdf/異位性皮膚炎的生活照顧.pdf"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "atopic_dermatitis",
+    "image": "img/atopic_dermatitis_04.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_04.html",
+    "title": "異位性皮膚炎的類固醇藥膏擦多少？用指尖單位估量",
+    "seoTitle": "類固醇藥膏擦多少？指尖單位（FTU）怎麼量｜藥局衛教助手",
+    "metaDescription": "1 個指尖單位是藥膏從成人食指指尖擠到第一道指節皺褶，約 0.5 克，可擦約兩個成人手印大的皮膚。照處方部位、次數、天數薄薄抹勻；臉、脖子、皺摺處只擦醫師指定的藥膏。",
+    "summary": "類固醇藥膏可以用「指尖單位」估量：從成人食指指尖擠到第一道指節皺褶，約 0.5 克，大約可以擦兩個成人手印（含手指）大的皮膚。照處方的部位、次數與天數擦，何時停藥依醫師指示。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **什麼是指尖單位？** 一般 5 mm 管口的藥膏，從成人食指指尖擠到第一道指節皺褶，約 0.5 克，稱為 1 個指尖單位。"
+      },
+      {
+        "heading": "1 個指尖單位可以擦多大範圍？",
+        "text": "約兩個成人手印（含手指）大的皮膚。擦太少反而效果不好，擦太多也沒有比較快好。"
+      },
+      {
+        "heading": "怎麼擦？",
+        "text": "照處方的部位、次數與天數擦，在紅疹處薄薄抹勻。"
+      },
+      {
+        "heading": "臉和皺摺處可以擦同一條嗎？",
+        "text": "臉、脖子和皺摺處皮膚較薄，只擦醫師指定的藥膏。不要用別人的藥膏。"
+      },
+      {
+        "heading": "好轉了可以自己停藥嗎？",
+        "text": "何時停藥或改為維持治療，依醫師指示。"
+      },
+      {
+        "heading": "保濕還要擦嗎？",
+        "text": "保濕照常，和藥膏分開擦；先後與間隔依醫師或藥師指示。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **什麼是指尖單位？** 一般 5 mm 管口的藥膏，從成人食指指尖擠到第一道指節皺褶，約 0.5 克，稱為 1 個指尖單位。"
+      },
+      {
+        "question": "1 個指尖單位可以擦多大範圍？",
+        "answer": "約兩個成人手印（含手指）大的皮膚。擦太少反而效果不好，擦太多也沒有比較快好。"
+      },
+      {
+        "question": "怎麼擦？",
+        "answer": "照處方的部位、次數與天數擦，在紅疹處薄薄抹勻。"
+      },
+      {
+        "question": "臉和皺摺處可以擦同一條嗎？",
+        "answer": "臉、脖子和皺摺處皮膚較薄，只擦醫師指定的藥膏。不要用別人的藥膏。"
+      },
+      {
+        "question": "好轉了可以自己停藥嗎？",
+        "answer": "何時停藥或改為維持治療，依醫師指示。"
+      },
+      {
+        "question": "保濕還要擦嗎？",
+        "answer": "保濕照常，和藥膏分開擦；先後與間隔依醫師或藥師指示。"
+      }
+    ],
+    "altText": "異位性皮膚炎衛教圖卡第 4 張：類固醇藥膏擦多少，藥膏從成人食指指尖擠到第一道指節皺褶約 0.5 克為 1 個指尖單位，可擦約兩個成人手印大的皮膚，照處方部位次數天數薄薄抹勻，臉脖子皺摺處只擦醫師指定的藥膏，停藥依醫師指示，保濕照常與藥膏分開擦",
+    "keywords": "異位性皮膚炎、兒童異位性皮膚炎、濕疹、小孩皮膚癢、寶寶濕疹、保濕、乳液 乳霜 油膏、類固醇藥膏、類固醇藥膏擦多少、指尖單位、FTU、異位性皮膚炎洗澡、異位性皮膚炎飲食、異位性皮膚炎就醫、疱疹性濕疹",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "元氣網 指尖單位",
+        "url": "https://health.udn.com/health/story/6012/4228338"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "尿布疹的藥膏，可以自己換嗎？",
+        "url": "../cards/diaper_rash_04.html"
+      },
+      {
+        "title": "蚊蟲叮咬，止癢藥膏怎麼選？",
+        "url": "../cards/insect_bites_02.html"
+      },
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "atopic_dermatitis",
+    "image": "img/atopic_dermatitis_05.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_05.html",
+    "title": "日常生活怎麼減少孩子的搔癢？",
+    "seoTitle": "異位性皮膚炎生活照顧：衣物、指甲、流汗與飲食｜藥局衛教助手",
+    "metaDescription": "貼身穿柔軟透氣的棉質衣物；指甲剪短磨圓，晚上可戴棉手套；避免過熱，流汗後用濕毛巾輕擦；避開二手菸。不要為了濕疹停吃原本吃了沒事的食物，懷疑食物過敏先問醫師。",
+    "summary": "減少刺激可以讓孩子比較不癢：穿柔軟透氣的棉質衣物、指甲剪短、避免過熱流汗、避開二手菸。不要為了濕疹自行忌口；懷疑食物過敏，先跟醫師討論。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **衣服怎麼穿？** 貼身穿柔軟、透氣的棉質衣物，避開讓皮膚刺癢的布料。"
+      },
+      {
+        "heading": "怎麼減少抓破？",
+        "text": "指甲剪短、磨圓，晚上可戴棉手套。"
+      },
+      {
+        "heading": "流汗會比較癢嗎？",
+        "text": "會。避免過熱，流汗後用濕毛巾輕輕擦。"
+      },
+      {
+        "heading": "環境要注意什麼？",
+        "text": "避開二手菸。觀察孩子碰到什麼會更癢，再針對它調整。"
+      },
+      {
+        "heading": "要不要忌口？",
+        "text": "不要為了濕疹停吃原本吃了沒事的食物。懷疑食物過敏，先跟醫師討論。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **衣服怎麼穿？** 貼身穿柔軟、透氣的棉質衣物，避開讓皮膚刺癢的布料。"
+      },
+      {
+        "question": "怎麼減少抓破？",
+        "answer": "指甲剪短、磨圓，晚上可戴棉手套。"
+      },
+      {
+        "question": "流汗會比較癢嗎？",
+        "answer": "會。避免過熱，流汗後用濕毛巾輕輕擦。"
+      },
+      {
+        "question": "環境要注意什麼？",
+        "answer": "避開二手菸。觀察孩子碰到什麼會更癢，再針對它調整。"
+      },
+      {
+        "question": "要不要忌口？",
+        "answer": "不要為了濕疹停吃原本吃了沒事的食物。懷疑食物過敏，先跟醫師討論。"
+      }
+    ],
+    "altText": "異位性皮膚炎衛教圖卡第 5 張：日常生活減少搔癢，穿柔軟透氣棉質衣物，指甲剪短磨圓晚上可戴棉手套，避免過熱、流汗後濕毛巾輕擦，避開二手菸，不要為濕疹停吃原本吃了沒事的食物，懷疑食物過敏先問醫師",
+    "keywords": "異位性皮膚炎、兒童異位性皮膚炎、濕疹、小孩皮膚癢、寶寶濕疹、保濕、乳液 乳霜 油膏、類固醇藥膏、類固醇藥膏擦多少、指尖單位、FTU、異位性皮膚炎洗澡、異位性皮膚炎飲食、異位性皮膚炎就醫、疱疹性濕疹",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "臺大醫院健康電子報 異位性皮膚炎的生活照顧",
+        "url": "https://epaper.ntuh.gov.tw/health/201702/pdf/異位性皮膚炎的生活照顧.pdf"
+      },
+      {
+        "title": "TVBS 新聞 洪志興醫師",
+        "url": "https://news.tvbs.com.tw/ttalk/1692948"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "atopic_dermatitis",
+    "image": "img/atopic_dermatitis_06.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/atopic_dermatitis_06.html",
+    "title": "異位性皮膚炎，什麼時候要就醫？",
+    "seoTitle": "異位性皮膚炎什麼時候要就醫？水泡、黃痂、擦藥沒改善｜藥局衛教助手",
+    "metaDescription": "突然出現一群疼痛小水泡或凹陷小破皮、快速擴散，即使沒發燒也要當天就醫。紅腫熱痛加劇、流膿或結黃痂請儘早就醫。照處方治療 1～2 週沒改善、癢到影響睡眠上課請回診。",
+    "summary": "異位性皮膚炎抓破後可能合併細菌或病毒感染。突然出現一群疼痛的小水泡或凹陷小破皮，即使沒有發燒也要當天就醫；紅腫熱痛加劇、流膿或結黃痂要儘早就醫；照處方治療 1～2 週沒改善也請回診。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **什麼情況要當天就醫？** 突然出現一群疼痛的小水泡或凹陷小破皮，尤其快速擴散時，即使沒有發燒，也要當天就醫。這可能是病毒感染（疱疹性濕疹），需要盡快治療。"
+      },
+      {
+        "heading": "什麼情況要儘早就醫？",
+        "text": "紅腫熱痛加劇、流膿或結黃痂，可能是細菌感染。"
+      },
+      {
+        "heading": "什麼時候要回診？",
+        "text": "一般發作照處方治療 1～2 週仍未改善，或癢到影響睡眠、上課。若皮膚快速惡化，不要等到原訂回診日。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **什麼情況要當天就醫？** 突然出現一群疼痛的小水泡或凹陷小破皮，尤其快速擴散時，即使沒有發燒，也要當天就醫。這可能是病毒感染（疱疹性濕疹），需要盡快治療。"
+      },
+      {
+        "question": "什麼情況要儘早就醫？",
+        "answer": "紅腫熱痛加劇、流膿或結黃痂，可能是細菌感染。"
+      },
+      {
+        "question": "什麼時候要回診？",
+        "answer": "一般發作照處方治療 1～2 週仍未改善，或癢到影響睡眠、上課。若皮膚快速惡化，不要等到原訂回診日。"
+      }
+    ],
+    "altText": "異位性皮膚炎衛教圖卡第 6 張：什麼時候要就醫，突然出現一群疼痛小水泡或凹陷小破皮即使沒發燒也要當天就醫，紅腫熱痛加劇、流膿或結黃痂儘早就醫，照處方治療 1 到 2 週未改善或影響睡眠上課請回診，快速惡化不要等回診日",
+    "keywords": "異位性皮膚炎、兒童異位性皮膚炎、濕疹、小孩皮膚癢、寶寶濕疹、保濕、乳液 乳霜 油膏、類固醇藥膏、類固醇藥膏擦多少、指尖單位、FTU、異位性皮膚炎洗澡、異位性皮膚炎飲食、異位性皮膚炎就醫、疱疹性濕疹",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "長庚醫訊 兒童異位性皮膚炎的居家照護",
+        "url": "https://www.cgmh.org.tw/cgmn/cgmn_file/2312013.pdf"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "allergic_rhinitis",
+    "image": "img/allergic_rhinitis_01.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_01.html",
+    "title": "孩子一直打噴嚏，是鼻過敏嗎？",
+    "seoTitle": "孩子一直打噴嚏、流鼻水，是鼻過敏嗎？過敏性鼻炎症狀｜藥局衛教助手",
+    "metaDescription": "鼻子或眼睛癢、連續打噴嚏、流清鼻水，有時鼻塞；遇灰塵或季節變換又復發，是鼻過敏的線索。鼻塞讓孩子張口呼吸、睡不好，或症狀一直沒改善，請帶孩子看醫師。",
+    "summary": "過敏性鼻炎常見症狀是鼻子或眼睛癢、連續打噴嚏、流清鼻水，有時鼻塞，遇到灰塵或季節變換就容易復發。鼻塞讓孩子張口呼吸、晚上睡不好，或症狀一直沒改善，請帶孩子看醫師。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **鼻過敏有哪些症狀？** 鼻子或眼睛癢、連著打噴嚏、流清鼻水，有時還會鼻塞。"
+      },
+      {
+        "heading": "和感冒怎麼分？",
+        "text": "遇到灰塵或季節變換症狀又回來、反覆發生，是鼻過敏的線索。"
+      },
+      {
+        "heading": "和其他過敏有關嗎？",
+        "text": "有些孩子也有異位性皮膚炎或氣喘。"
+      },
+      {
+        "heading": "什麼時候要看醫師？",
+        "text": "鼻塞讓孩子張口呼吸、晚上睡不好，或症狀一直沒改善。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **鼻過敏有哪些症狀？** 鼻子或眼睛癢、連著打噴嚏、流清鼻水，有時還會鼻塞。"
+      },
+      {
+        "question": "和感冒怎麼分？",
+        "answer": "遇到灰塵或季節變換症狀又回來、反覆發生，是鼻過敏的線索。"
+      },
+      {
+        "question": "和其他過敏有關嗎？",
+        "answer": "有些孩子也有異位性皮膚炎或氣喘。"
+      },
+      {
+        "question": "什麼時候要看醫師？",
+        "answer": "鼻塞讓孩子張口呼吸、晚上睡不好，或症狀一直沒改善。"
+      }
+    ],
+    "altText": "過敏性鼻炎衛教圖卡第 1 張：孩子一直打噴嚏是鼻過敏嗎，鼻子眼睛癢、連續打噴嚏、流清鼻水、有時鼻塞，遇灰塵或季節變換復發，有些孩子也有異位性皮膚炎或氣喘，鼻塞影響睡眠或症狀沒改善請看醫師",
+    "keywords": "過敏性鼻炎、鼻過敏、小孩鼻過敏、一直打噴嚏、流鼻水、鼻塞、塵蟎、類固醇鼻噴劑、鼻噴劑怎麼噴、抗組織胺、第二代抗組織胺、去鼻塞噴劑、藥物性鼻炎、洗鼻、生理食鹽水洗鼻、洗鼻鹽",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "長庚醫訊 過敏性鼻炎治療",
+        "url": "https://www.cgmh.org.tw/cgmn/cgmn_file/2012008.pdf"
+      },
+      {
+        "title": "臺大醫院健康電子報 過敏性鼻炎的藥物治療簡介",
+        "url": "https://health.ntuh.gov.tw/health/NTUH_e_Net/NTUH_e_Net_no160/過敏性鼻炎的藥物治療簡介.pdf"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "孩子皮膚一直癢？認識兒童異位性皮膚炎與照護重點",
+        "url": "../cards/atopic_dermatitis_01.html"
+      },
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "allergic_rhinitis",
+    "image": "img/allergic_rhinitis_02.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_02.html",
+    "title": "哪些東西會讓孩子的鼻子不舒服？",
+    "seoTitle": "鼻過敏要避開什麼？塵蟎、黴菌、寵物皮屑與煙｜藥局衛教助手",
+    "metaDescription": "常見過敏原是塵蟎、黴菌、寵物皮屑，先留意孩子接觸什麼後會不舒服。從臥室做起：定期清洗床單、枕套與冷氣濾網，讓潮濕處通風乾燥；遠離二手菸與線香的煙。",
+    "summary": "塵蟎、黴菌、寵物皮屑是常見的鼻過敏原，二手菸和線香的煙也會刺激鼻子。先觀察孩子接觸什麼後會不舒服，再從臥室開始清潔與保持乾燥。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **常見過敏原有哪些？** 塵蟎、黴菌、寵物皮屑。先留意孩子接觸什麼後會不舒服，不必一開始就全部避開。"
+      },
+      {
+        "heading": "居家環境怎麼整理？",
+        "text": "從臥室做起：定期清洗床單、枕套與冷氣濾網，讓潮濕處通風乾燥。"
+      },
+      {
+        "heading": "煙會影響鼻過敏嗎？",
+        "text": "會。讓孩子遠離二手菸與線香的煙。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **常見過敏原有哪些？** 塵蟎、黴菌、寵物皮屑。先留意孩子接觸什麼後會不舒服，不必一開始就全部避開。"
+      },
+      {
+        "question": "居家環境怎麼整理？",
+        "answer": "從臥室做起：定期清洗床單、枕套與冷氣濾網，讓潮濕處通風乾燥。"
+      },
+      {
+        "question": "煙會影響鼻過敏嗎？",
+        "answer": "會。讓孩子遠離二手菸與線香的煙。"
+      }
+    ],
+    "altText": "過敏性鼻炎衛教圖卡第 2 張：哪些東西會讓孩子鼻子不舒服，常見過敏原為塵蟎、黴菌、寵物皮屑，從臥室做起定期清洗床單枕套與冷氣濾網、潮濕處通風乾燥，遠離二手菸與線香的煙",
+    "keywords": "過敏性鼻炎、鼻過敏、小孩鼻過敏、一直打噴嚏、流鼻水、鼻塞、塵蟎、類固醇鼻噴劑、鼻噴劑怎麼噴、抗組織胺、第二代抗組織胺、去鼻塞噴劑、藥物性鼻炎、洗鼻、生理食鹽水洗鼻、洗鼻鹽",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "長庚醫訊 過敏性鼻炎治療",
+        "url": "https://www.cgmh.org.tw/cgmn/cgmn_file/2012008.pdf"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "allergic_rhinitis",
+    "image": "img/allergic_rhinitis_03.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_03.html",
+    "title": "類固醇鼻噴劑，怎麼噴？",
+    "seoTitle": "類固醇鼻噴劑怎麼噴？正確角度與多久有效｜藥局衛教助手",
+    "metaDescription": "類固醇鼻噴劑要依醫囑規律使用，效果逐漸出現，充分效果可能需要 2～3 週。先輕擤鼻涕，頭微前傾，噴嘴朝鼻腔外側、避開鼻中隔，按壓時輕輕吸氣；反覆流鼻血請回診。",
+    "summary": "類固醇鼻噴劑是控制鼻過敏的常用藥，要依醫囑規律使用，不是有症狀才噴；效果會逐漸出現，充分效果可能需要 2～3 週。噴的時候頭微前傾，噴嘴朝鼻腔外側、避開鼻中隔。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **多久會有效？** 效果會逐漸出現，充分效果可能需要 2～3 週，要依醫囑規律使用。"
+      },
+      {
+        "heading": "噴之前要做什麼？",
+        "text": "先輕擤鼻涕。第一次使用，依這一瓶的說明試噴。"
+      },
+      {
+        "heading": "噴嘴要朝哪裡？",
+        "text": "頭微前傾，噴嘴朝鼻腔外側（同側耳朵方向），避開中間的鼻中隔。"
+      },
+      {
+        "heading": "噴的時候要用力吸嗎？",
+        "text": "不用，按壓時輕輕吸氣就好。"
+      },
+      {
+        "heading": "流鼻血怎麼辦？",
+        "text": "若反覆流鼻血，請回診；也可請藥師看一下噴的角度。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **多久會有效？** 效果會逐漸出現，充分效果可能需要 2～3 週，要依醫囑規律使用。"
+      },
+      {
+        "question": "噴之前要做什麼？",
+        "answer": "先輕擤鼻涕。第一次使用，依這一瓶的說明試噴。"
+      },
+      {
+        "question": "噴嘴要朝哪裡？",
+        "answer": "頭微前傾，噴嘴朝鼻腔外側（同側耳朵方向），避開中間的鼻中隔。"
+      },
+      {
+        "question": "噴的時候要用力吸嗎？",
+        "answer": "不用，按壓時輕輕吸氣就好。"
+      },
+      {
+        "question": "流鼻血怎麼辦？",
+        "answer": "若反覆流鼻血，請回診；也可請藥師看一下噴的角度。"
+      }
+    ],
+    "altText": "過敏性鼻炎衛教圖卡第 3 張：類固醇鼻噴劑怎麼噴，依醫囑規律使用、充分效果可能需要 2 到 3 週，先輕擤鼻涕、第一次依說明試噴，頭微前傾、噴嘴朝鼻腔外側避開鼻中隔，按壓時輕輕吸氣，反覆流鼻血請回診",
+    "keywords": "過敏性鼻炎、鼻過敏、小孩鼻過敏、一直打噴嚏、流鼻水、鼻塞、塵蟎、類固醇鼻噴劑、鼻噴劑怎麼噴、抗組織胺、第二代抗組織胺、去鼻塞噴劑、藥物性鼻炎、洗鼻、生理食鹽水洗鼻、洗鼻鹽",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "臺大醫院健康電子報 過敏性鼻炎的藥物治療簡介",
+        "url": "https://health.ntuh.gov.tw/health/NTUH_e_Net/NTUH_e_Net_no160/過敏性鼻炎的藥物治療簡介.pdf"
+      },
+      {
+        "title": "臺大醫院 過敏性鼻炎的藥物治療",
+        "url": "https://epaper.ntuh.gov.tw/health/201212/pdf/%E9%81%8E%E6%95%8F%E6%80%A7%E9%BC%BB%E7%82%8E%E7%9A%84%E8%97%A5%E7%89%A9%E6%B2%BB%E7%99%82.pdf"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "allergic_rhinitis",
+    "image": "img/allergic_rhinitis_04.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_04.html",
+    "title": "口服抗組織胺能改善什麼？",
+    "seoTitle": "鼻過敏吃抗組織胺有用嗎？能改善的症狀與嗜睡｜藥局衛教助手",
+    "metaDescription": "口服抗組織胺有助緩解打噴嚏、流鼻水、鼻子或眼睛癢，對鼻塞效果較弱。第一代較容易想睡，第二代通常較少嗜睡。給孩子用先確認適用年齡，按醫囑或藥袋服用；同時吃感冒藥請藥師核對成分。",
+    "summary": "口服抗組織胺可以緩解打噴嚏、流鼻水、鼻子或眼睛癢，但對鼻塞效果較弱。第一代較容易想睡，第二代通常較少嗜睡。給孩子用前先確認適用年齡；同時在吃感冒藥時，請藥師核對成分，避免重複。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **抗組織胺能改善哪些症狀？** 有助緩解打噴嚏、流鼻水、鼻子或眼睛癢；對鼻塞的效果較弱。"
+      },
+      {
+        "heading": "吃了會想睡嗎？",
+        "text": "第一代較容易想睡。第二代通常較少嗜睡，服藥後仍要留意。"
+      },
+      {
+        "heading": "小孩可以吃嗎？",
+        "text": "先確認這個藥的適用年齡，按醫囑或藥袋指示服用。"
+      },
+      {
+        "heading": "可以和感冒藥一起吃嗎？",
+        "text": "很多感冒藥也含抗組織胺。也在吃感冒藥時，請藥師核對成分，避免重複用藥。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **抗組織胺能改善哪些症狀？** 有助緩解打噴嚏、流鼻水、鼻子或眼睛癢；對鼻塞的效果較弱。"
+      },
+      {
+        "question": "吃了會想睡嗎？",
+        "answer": "第一代較容易想睡。第二代通常較少嗜睡，服藥後仍要留意。"
+      },
+      {
+        "question": "小孩可以吃嗎？",
+        "answer": "先確認這個藥的適用年齡，按醫囑或藥袋指示服用。"
+      },
+      {
+        "question": "可以和感冒藥一起吃嗎？",
+        "answer": "很多感冒藥也含抗組織胺。也在吃感冒藥時，請藥師核對成分，避免重複用藥。"
+      }
+    ],
+    "altText": "過敏性鼻炎衛教圖卡第 4 張：口服抗組織胺能改善什麼，有助緩解打噴嚏、流鼻水、鼻子或眼睛癢，對鼻塞效果較弱，第一代較容易想睡、第二代通常較少嗜睡，給孩子用先確認適用年齡，也在吃感冒藥請藥師核對成分避免重複",
+    "keywords": "過敏性鼻炎、鼻過敏、小孩鼻過敏、一直打噴嚏、流鼻水、鼻塞、塵蟎、類固醇鼻噴劑、鼻噴劑怎麼噴、抗組織胺、第二代抗組織胺、去鼻塞噴劑、藥物性鼻炎、洗鼻、生理食鹽水洗鼻、洗鼻鹽",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "臺大醫院健康電子報 過敏性鼻炎的藥物治療簡介",
+        "url": "https://health.ntuh.gov.tw/health/NTUH_e_Net/NTUH_e_Net_no160/過敏性鼻炎的藥物治療簡介.pdf"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "勝克敏液：兒童過敏用藥與分齡劑量",
+        "url": "../cards/ped_cold_cetirizine.html"
+      },
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "allergic_rhinitis",
+    "image": "img/allergic_rhinitis_05.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_05.html",
+    "title": "去鼻塞噴劑，只能短期用",
+    "seoTitle": "去鼻塞噴劑可以天天噴嗎？藥物性鼻炎與使用天數｜藥局衛教助手",
+    "metaDescription": "血管收縮型去鼻塞噴劑能很快緩解鼻塞，但連續用太久，鼻子可能反而更塞。照這一瓶仿單標示的天數使用，用後仍鼻塞請問醫師或藥師；給孩子用前先確認適用年齡與濃度。",
+    "summary": "血管收縮型去鼻塞噴劑通鼻塞很快，但只能短期使用；連續用太久，停藥後鼻子可能反而更塞（藥物性鼻炎）。照仿單標示的天數使用，給孩子用前先確認適用年齡與濃度。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **怎麼知道是不是去鼻塞噴劑？** 先看藥袋或問藥師，確認是血管收縮型去鼻塞噴劑。"
+      },
+      {
+        "heading": "為什麼不能一直噴？",
+        "text": "這類噴劑能很快緩解鼻塞，但連續用太久，鼻子可能反而更塞。"
+      },
+      {
+        "heading": "可以用幾天？",
+        "text": "照這一瓶仿單標示的天數使用。用後仍鼻塞，請問醫師或藥師，評估是否改用其他控制藥物。"
+      },
+      {
+        "heading": "小孩可以用嗎？",
+        "text": "給孩子用前，先確認適用年齡與濃度。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **怎麼知道是不是去鼻塞噴劑？** 先看藥袋或問藥師，確認是血管收縮型去鼻塞噴劑。"
+      },
+      {
+        "question": "為什麼不能一直噴？",
+        "answer": "這類噴劑能很快緩解鼻塞，但連續用太久，鼻子可能反而更塞。"
+      },
+      {
+        "question": "可以用幾天？",
+        "answer": "照這一瓶仿單標示的天數使用。用後仍鼻塞，請問醫師或藥師，評估是否改用其他控制藥物。"
+      },
+      {
+        "question": "小孩可以用嗎？",
+        "answer": "給孩子用前，先確認適用年齡與濃度。"
+      }
+    ],
+    "altText": "過敏性鼻炎衛教圖卡第 5 張：去鼻塞噴劑只能短期用，先確認是血管收縮型去鼻塞噴劑，能很快緩解鼻塞但連續用太久鼻子可能更塞，照仿單標示天數使用，用後仍鼻塞請問醫師或藥師，給孩子用前先確認適用年齡與濃度",
+    "keywords": "過敏性鼻炎、鼻過敏、小孩鼻過敏、一直打噴嚏、流鼻水、鼻塞、塵蟎、類固醇鼻噴劑、鼻噴劑怎麼噴、抗組織胺、第二代抗組織胺、去鼻塞噴劑、藥物性鼻炎、洗鼻、生理食鹽水洗鼻、洗鼻鹽",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "長庚醫訊 過敏性鼻炎治療",
+        "url": "https://www.cgmh.org.tw/cgmn/cgmn_file/2012008.pdf"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
+  },
+  {
+    "cardId": "allergic_rhinitis",
+    "image": "img/allergic_rhinitis_06.webp",
+    "url": "https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_06.html",
+    "title": "洗鼻用什麼水？何時要就醫？",
+    "seoTitle": "小孩洗鼻用什麼水？生理食鹽水、洗鼻鹽與就醫時機｜藥局衛教助手",
+    "metaDescription": "可用洗鼻專用生理食鹽水；用洗鼻鹽包時，依說明搭配蒸餾水、無菌水或煮沸放涼的水，不可直接用自來水。嬰幼兒可選適齡生理食鹽水滴鼻。呼吸明顯費力或嘴唇發紫，立即打 119。",
+    "summary": "洗鼻可以輔助緩解鼻子不適，但要用對水。可用洗鼻專用生理食鹽水；用洗鼻鹽包時，依說明搭配蒸餾水、無菌水或煮沸放涼的水，不可直接用自來水。嬰幼兒可選適齡的生理食鹽水滴鼻，使用沖洗器前先請兒科醫師評估。",
+    "sections": [
+      {
+        "heading": "分段重點",
+        "text": "- **洗鼻要用什麼水？** 可用洗鼻專用生理食鹽水。用洗鼻鹽包時，依說明搭配蒸餾水、無菌水或煮沸放涼的水。不可直接用自來水。"
+      },
+      {
+        "heading": "嬰幼兒可以洗鼻嗎？",
+        "text": "可選適齡的生理食鹽水滴鼻。使用沖洗器前，先請兒科醫師評估。"
+      },
+      {
+        "heading": "誰洗鼻前要先問醫師？",
+        "text": "吞嚥困難、耳朵發炎，或剛做過耳部手術。"
+      },
+      {
+        "heading": "什麼情況要就醫？",
+        "text": "洗鼻後耳痛、鼻部症狀超過 10 天未改善，或好轉後又加重。"
+      },
+      {
+        "heading": "什麼情況要打 119？",
+        "text": "呼吸明顯費力或嘴唇發紫，立即打 119。"
+      }
+    ],
+    "faq": [
+      {
+        "question": "分段重點",
+        "answer": "- **洗鼻要用什麼水？** 可用洗鼻專用生理食鹽水。用洗鼻鹽包時，依說明搭配蒸餾水、無菌水或煮沸放涼的水。不可直接用自來水。"
+      },
+      {
+        "question": "嬰幼兒可以洗鼻嗎？",
+        "answer": "可選適齡的生理食鹽水滴鼻。使用沖洗器前，先請兒科醫師評估。"
+      },
+      {
+        "question": "誰洗鼻前要先問醫師？",
+        "answer": "吞嚥困難、耳朵發炎，或剛做過耳部手術。"
+      },
+      {
+        "question": "什麼情況要就醫？",
+        "answer": "洗鼻後耳痛、鼻部症狀超過 10 天未改善，或好轉後又加重。"
+      },
+      {
+        "question": "什麼情況要打 119？",
+        "answer": "呼吸明顯費力或嘴唇發紫，立即打 119。"
+      }
+    ],
+    "altText": "過敏性鼻炎衛教圖卡第 6 張：洗鼻用什麼水、何時要就醫，可用洗鼻專用生理食鹽水，洗鼻鹽包依說明搭配蒸餾水、無菌水或煮沸放涼的水，不可直接用自來水，嬰幼兒可選適齡生理食鹽水滴鼻，吞嚥困難或耳朵發炎先問醫師，洗鼻後耳痛或症狀超過 10 天未改善請就醫，呼吸明顯費力或嘴唇發紫立即打 119",
+    "keywords": "過敏性鼻炎、鼻過敏、小孩鼻過敏、一直打噴嚏、流鼻水、鼻塞、塵蟎、類固醇鼻噴劑、鼻噴劑怎麼噴、抗組織胺、第二代抗組織胺、去鼻塞噴劑、藥物性鼻炎、洗鼻、生理食鹽水洗鼻、洗鼻鹽",
+    "updatedAt": "2026-11-24",
+    "sourceCheckedAt": "2026-11-24",
+    "revisionCredit": "藥師規劃與審閱，AI 協助資料查核與網頁文字撰寫",
+    "references": [
+      {
+        "title": "長庚醫訊 兒童鼻腔沖洗",
+        "url": "https://www.cgmh.org.tw/cgmn/cgmn_file/1710012.pdf"
+      },
+      {
+        "title": "衛福部 洗鼻器說明",
+        "url": "https://www.mohw.gov.tw/fp-16-18185-1.html"
+      }
+    ],
+    "related_links": [
+      {
+        "title": "兒科用藥總整理",
+        "url": "../topics/pediatric-medicine.html"
+      }
+    ],
+    "matchConfidence": "high",
+    "needsMedicalReview": false,
+    "showFooter": true,
+    "expandText": true
   }
 ]
