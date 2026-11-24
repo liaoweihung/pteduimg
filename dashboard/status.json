@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-24T19:24:57+08:00",
-  "baseline": "89a038c5f2db9aff872a5a2a3c41fed890c492eb",
-  "scope": "網站來源快照；版本 89a038c5",
+  "generatedAt": "2026-11-24T19:37:41+08:00",
+  "baseline": "17c361ddbe2a0f7ed9fbdab98bcbb9185d3caa62",
+  "scope": "網站來源快照；版本 17c361dd",
   "counts": {
     "cards": 496,
     "series": 105,
@@ -3495,7 +3495,7 @@
   },
   "sync": {
     "pages": 504,
-    "fields": 1060,
+    "fields": 1187,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -3583,12 +3583,14 @@
       {
         "page": "AugmentinSyrup",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "Champix",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -3603,6 +3605,7 @@
       {
         "page": "EnteroVirus_vaccine",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -3719,6 +3722,7 @@
       {
         "page": "Nicotine_1",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -3749,54 +3753,63 @@
       {
         "page": "Ped_abx_susp_1",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "Ped_abx_susp_2",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "Ped_abx_susp_3",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "Ped_abx_susp_4",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "Ped_abx_susp_5",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "Ped_abx_susp_6",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "Ped_abx_susp_7",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "Ped_abx_susp_8",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "Prevent_Enterovirus",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -3843,6 +3856,7 @@
       {
         "page": "Wash_hands_five_steps",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -3975,18 +3989,21 @@
       {
         "page": "acne_patch_broken_skin",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "acne_patch_how_to_use",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "acne_patch_when_to_use",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4201,42 +4218,49 @@
       {
         "page": "allergic_rhinitis_01",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "allergic_rhinitis_02",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "allergic_rhinitis_03",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "allergic_rhinitis_04",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "allergic_rhinitis_05",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "allergic_rhinitis_06",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "amorolfine",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4309,84 +4333,98 @@
       {
         "page": "atopic_dermatitis_01",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "atopic_dermatitis_02",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "atopic_dermatitis_03",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "atopic_dermatitis_04",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "atopic_dermatitis_05",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "atopic_dermatitis_06",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "atopic_dermatitis_care",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "baby_nasal_aspirator_1",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "baby_nasal_aspirator_2",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "baby_nasal_aspirator_3",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "baby_nasal_aspirator_4",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "baby_nasal_aspirator_5",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "baby_nasal_aspirator_6",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "baby_nasal_aspirator_7",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4400,12 +4438,14 @@
       {
         "page": "boyBMI",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "boy_height2",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4475,6 +4515,7 @@
       {
         "page": "bruise_be_gone",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4509,6 +4550,7 @@
       {
         "page": "bug_bite",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4589,36 +4631,42 @@
       {
         "page": "child_medicine_feeding_01",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "child_medicine_feeding_02",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "child_medicine_feeding_03",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "child_medicine_feeding_04",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "child_medicine_feeding_05",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "child_medicine_feeding_06",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4785,6 +4833,7 @@
       {
         "page": "contraceptive_pills_how_to_take",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4813,30 +4862,35 @@
       {
         "page": "diaper_rash_01",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "diaper_rash_02",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "diaper_rash_03",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "diaper_rash_04",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "diaper_rash_05",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4859,24 +4913,28 @@
       {
         "page": "diarrhea_care_3",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "diarrhea_care_4",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "diarrhea_care_5",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "diarrhea_care_6",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4926,30 +4984,35 @@
       {
         "page": "drug_weight_gain_1",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "drug_weight_gain_2",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "drug_weight_gain_3",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "drug_weight_gain_4",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "drug_weight_gain_5",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -4980,36 +5043,42 @@
       {
         "page": "ear_1",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ear_2",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ear_3",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ear_4",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ear_5",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ear_6",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5150,6 +5219,7 @@
       {
         "page": "excilor",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5276,18 +5346,21 @@
       {
         "page": "fungal_nail",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "girlBMI",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "girl_height2",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5338,12 +5411,14 @@
       {
         "page": "height_prediction",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "height_tips",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5398,12 +5473,14 @@
       {
         "page": "hemorr_sitbath_1",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "hemorr_sitbath_2",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5425,6 +5502,7 @@
       {
         "page": "hk_foot",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5445,6 +5523,7 @@
       {
         "page": "hydrocolloid_how_to_use",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5465,114 +5544,133 @@
       {
         "page": "insect_bites_01",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insect_bites_02",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insect_bites_03",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insect_bites_04",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insect_bites_05",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card01",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card02",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card03",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card04",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card05",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card06",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card07",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card08",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card09",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card10",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card11",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card12",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card13",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "insomnia_card14",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5804,12 +5902,14 @@
       {
         "page": "liquid_medicine_storage_01",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "liquid_medicine_storage_02",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5831,12 +5931,14 @@
       {
         "page": "motion_sickness_meds_1",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "motion_sickness_meds_2",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5954,6 +6056,7 @@
       {
         "page": "orabase",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -6023,18 +6126,21 @@
       {
         "page": "oral_patch_use",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "oral_patch_use_2",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "oral_patch_use_3",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -6258,60 +6364,70 @@
       {
         "page": "ped_liquid_01",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_liquid_02",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_liquid_03",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_liquid_04",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_liquid_05",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_liquid_06",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_liquid_07",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_liquid_08",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_liquid_09",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_liquid_10",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -6641,6 +6757,7 @@
       {
         "page": "skin_glue_care_1",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -6675,36 +6792,42 @@
       {
         "page": "sore_throat_causes",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "sore_throat_otc_choice",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "sore_throat_red_flags",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "sports_sprain_1",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "sports_sprain_2",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "sports_sprain_3",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -6768,18 +6891,21 @@
       {
         "page": "terbinafine_7_days",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "terbinafine_daily_cream",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "terbinafine_once_treatment",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -6993,6 +7119,7 @@
       {
         "page": "wart",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
