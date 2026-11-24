@@ -4729,5 +4729,75 @@
       "img/allergic_rhinitis_05.webp",
       "img/allergic_rhinitis_06.webp"
     ]
+  },
+  "ped_liquid": {
+    "title": "兒科常用藥水",
+    "category": "pharmacist_product",
+    "departments": [
+      "pediatrics"
+    ],
+    "order": 17.4,
+    "hidden": false,
+    "icon": "🩺",
+    "tags": [
+      "兒科常用藥水",
+      "兒童藥水",
+      "原瓶藥水",
+      "滅菌靈",
+      "停咳喜",
+      "米瑞液",
+      "必達米瑞液",
+      "胃利空",
+      "吐必止",
+      "平吐寧",
+      "日舒",
+      "菌巴達",
+      "優力黴素",
+      "安莫西林",
+      "萬博黴素",
+      "沙法克寧",
+      "亞涕液",
+      "鼻福",
+      "通鼻液",
+      "舒安敏",
+      "喜驅敏",
+      "勝涕敏",
+      "利達敏寧",
+      "宜敏靜",
+      "敏福",
+      "暢敏",
+      "Nystatin",
+      "Butamirate",
+      "Domperidone",
+      "Azithromycin",
+      "Cephalexin",
+      "Amoxicillin",
+      "SMX-TMP",
+      "Triprolidine",
+      "Pseudoephedrine",
+      "Levocetirizine",
+      "Loratadine",
+      "兒童抗生素",
+      "止吐藥水",
+      "止咳藥水",
+      "過敏藥水"
+    ],
+    "showFooter": true,
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    },
+    "steps": [
+      "img/ped_liquid_01.webp",
+      "img/ped_liquid_02.webp",
+      "img/ped_liquid_03.webp",
+      "img/ped_liquid_04.webp",
+      "img/ped_liquid_05.webp",
+      "img/ped_liquid_06.webp",
+      "img/ped_liquid_07.webp",
+      "img/ped_liquid_08.webp",
+      "img/ped_liquid_09.webp",
+      "img/ped_liquid_10.webp"
+    ]
   }
 }

@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v541424cf5ab3b9ec5192ef73';
+const CACHE_NAME = 'pwa-cache-v3f223292fcfdc0ff0300567c';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -450,6 +450,16 @@ const urlsToCache = [
   "./img/ped_cold_sortuss.webp",
   "./img/ped_diarrhea_hidrasec.webp",
   "./img/ped_gi_pecolin_suspension.webp",
+  "./img/ped_liquid_01.webp",
+  "./img/ped_liquid_02.webp",
+  "./img/ped_liquid_03.webp",
+  "./img/ped_liquid_04.webp",
+  "./img/ped_liquid_05.webp",
+  "./img/ped_liquid_06.webp",
+  "./img/ped_liquid_07.webp",
+  "./img/ped_liquid_08.webp",
+  "./img/ped_liquid_09.webp",
+  "./img/ped_liquid_10.webp",
   "./img/postoperative_wound.webp",
   "./img/pregnancy_minor_constipation.webp",
   "./img/pregnancy_minor_cough.webp",
@@ -1039,6 +1049,16 @@ const urlsToCache = [
   "./cards/allergic_rhinitis_04.html",
   "./cards/allergic_rhinitis_05.html",
   "./cards/allergic_rhinitis_06.html",
+  "./cards/ped_liquid_01.html",
+  "./cards/ped_liquid_02.html",
+  "./cards/ped_liquid_03.html",
+  "./cards/ped_liquid_04.html",
+  "./cards/ped_liquid_05.html",
+  "./cards/ped_liquid_06.html",
+  "./cards/ped_liquid_07.html",
+  "./cards/ped_liquid_08.html",
+  "./cards/ped_liquid_09.html",
+  "./cards/ped_liquid_10.html",
   "./cards/acne.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare_2.html",

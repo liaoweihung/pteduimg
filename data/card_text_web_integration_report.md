@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：378
+- 成功加入文字頁數：388
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -383,3 +383,13 @@
 | allergic_rhinitis | 口服抗組織胺能改善什麼？ | https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_04.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | allergic_rhinitis | 去鼻塞噴劑，只能短期用 | https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | allergic_rhinitis | 洗鼻用什麼水？何時要就醫？ | https://liaoweihung.github.io/pteduimg/cards/allergic_rhinitis_06.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_liquid | 滅菌靈懸液用粉劑（Nystatin）怎麼喝？兒童鵝口瘡泡製、劑量與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_liquid | 停咳喜液／米瑞液（Butamirate）怎麼喝？兒童乾咳劑量、濃度差異與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_liquid | 兒童止吐藥水（胃利空／吐必止／平吐寧 Domperidone）怎麼喝？劑量原則、搖勻與警訊 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_03.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_liquid | 日舒懸液用粉劑（Azithromycin）怎麼泡、怎麼喝？兒童劑量與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_04.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_liquid | 優力黴素懸液用粉劑（Cephalexin）怎麼泡、怎麼喝？濃度對照與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_05.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_liquid | 安莫西林／萬博黴素懸液用粉劑（Amoxicillin）怎麼泡、怎麼喝？兒童劑量與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_06.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_liquid | 沙法克寧懸液劑（Sulfamethoxazole + Trimethoprim）怎麼喝？兒童劑量、禁忌與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_07.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_liquid | 亞涕液（Triprolidine + Pseudoephedrine）怎麼喝？兒童劑量、副作用與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_08.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_liquid | 舒安敏／喜驅敏內服液（Levocetirizine 0.5 mg/mL）怎麼喝？兒童劑量、濃度防錯與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_09.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| ped_liquid | 利達敏寧／宜敏靜／敏福／暢敏糖漿（Loratadine 1 mg/mL）怎麼喝？兒童劑量與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_liquid_10.html | 是 | 是 | 是 | 是 | 是 | 無 |
