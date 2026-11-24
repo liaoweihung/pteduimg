@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-24T19:21:38+08:00",
-  "baseline": "6a39e34c8d2761590369c9279e3cf3adf7bf6937",
-  "scope": "網站來源快照；版本 6a39e34c",
+  "generatedAt": "2026-11-24T19:24:57+08:00",
+  "baseline": "89a038c5f2db9aff872a5a2a3c41fed890c492eb",
+  "scope": "網站來源快照；版本 89a038c5",
   "counts": {
     "cards": 496,
     "series": 105,
@@ -3495,7 +3495,7 @@
   },
   "sync": {
     "pages": 504,
-    "fields": 1032,
+    "fields": 1060,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4267,6 +4267,7 @@
       {
         "page": "antiphen",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5450,12 +5451,14 @@
       {
         "page": "ibuprofen_sol",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "idofen_suspension",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5608,6 +5611,7 @@
       {
         "page": "kidsolone_oral_solution",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5711,6 +5715,7 @@
       {
         "page": "lactulose_constipation",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5811,6 +5816,7 @@
       {
         "page": "macsafe_suspension",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -5927,6 +5933,7 @@
       {
         "page": "notice_ped_fever_reducer",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -6132,102 +6139,119 @@
       {
         "page": "ped_asthma_meptin_liquid",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_cetirizine",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_cough_mixture",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_cypromin",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_exdila_liquid",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_guaphen_syrup",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_koko_sou_syrup",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_mintapp_syrup",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_muco",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_musco_solution",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_nocough_syrup",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_peace_syrup",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_secorine",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_soltan",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_cold_sortuss",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_diarrhea_hidrasec",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "ped_gi_pecolin_suspension",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -6630,18 +6654,21 @@
       {
         "page": "smecta_1",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "smecta_2",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
       {
         "page": "smecta_3",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
@@ -6972,6 +6999,7 @@
       {
         "page": "wempty_suspension",
         "fields": [
+          "source_sha256",
           "rules_sha256"
         ]
       },
