@@ -47,6 +47,38 @@
   }
 }
   </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "耳藥水可以點眼睛嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不可以。耳用藥水是給耳朵用的，不要點進眼睛。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "症狀好了可以先停藥嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "抗生素類耳藥水要照醫師指示的天數用完，不要症狀一好就停；有疑問先問醫師或藥師。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "沒用完的耳藥水可以留著下次用嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不建議。開封後的保存期限依產品說明，療程結束後不要留著自己再用，下次耳朵不舒服先讓醫師看過。"
+      }
+    }
+  ]
+}
+  </script>
   <script src="../qrious.min.js"></script>
   <script>
     var GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
@@ -228,6 +260,11 @@
       height:auto;
       object-fit:contain;
       background:#fff;
+    }
+    /* phones: card image fills the width; scroll to see the rest */
+    @media (max-width:679px) {
+      .image-stage { min-height:0; padding:0; }
+      .hero-img { width:100%; max-height:none; }
     }
     .image-side-link {
       position:absolute;

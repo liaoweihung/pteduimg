@@ -260,6 +260,11 @@
       object-fit:contain;
       background:#fff;
     }
+    /* phones: card image fills the width; scroll to see the rest */
+    @media (max-width:679px) {
+      .image-stage { min-height:0; padding:0; }
+      .hero-img { width:100%; max-height:none; }
+    }
     .image-side-link {
       position:absolute;
       top:0;
@@ -589,7 +594,9 @@
         <div class="section-title">接下來可以看</div>
         <div class="next-topic-group">
           <div class="next-topic-title">主題：防蚊液</div>
-          
+          <ul class="next-series-list">
+            <li><a href="../cards/insect_bites_01.html">蚊蟲叮咬怎麼辦？</a></li>
+          </ul>
           <div class="next-topic-return"><a href="../public.html?topic=insect_repellent">‹ 回到『防蚊液』主題</a></div>
         </div>
       </div>

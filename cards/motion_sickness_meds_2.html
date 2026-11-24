@@ -260,6 +260,11 @@
       object-fit:contain;
       background:#fff;
     }
+    /* phones: card image fills the width; scroll to see the rest */
+    @media (max-width:679px) {
+      .image-stage { min-height:0; padding:0; }
+      .hero-img { width:100%; max-height:none; }
+    }
     .image-side-link {
       position:absolute;
       top:0;
@@ -716,7 +721,7 @@
         <div class="next-topic-group">
           <div class="next-topic-title">主題：旅遊與用藥常識</div>
           <ul class="next-series-list">
-            <li><a href="../cards/01_can_i_bring_medicine.html">出國帶藥</a></li><li><a href="../cards/japan_otc_drug_classification.html">日本成藥的分級</a></li>
+            <li><a href="../cards/01_can_i_bring_medicine.html">出國帶藥</a></li><li><a href="../cards/japan_otc_drug_classification.html">日本成藥的分級</a></li><li><a href="../cards/liquid_medicine_storage_01.html">藥水要不要冰？</a></li>
           </ul>
           <div class="next-topic-return"><a href="../public.html?topic=travel_medication">‹ 回到『旅遊與用藥常識』主題</a></div>
         </div>

@@ -261,6 +261,11 @@
       object-fit:contain;
       background:#fff;
     }
+    /* phones: card image fills the width; scroll to see the rest */
+    @media (max-width:679px) {
+      .image-stage { min-height:0; padding:0; }
+      .hero-img { width:100%; max-height:none; }
+    }
     .image-side-link {
       position:absolute;
       top:0;
@@ -707,7 +712,7 @@
         <div class="next-topic-group">
           <div class="next-topic-title">主題：嬰幼兒照護</div>
           <ul class="next-series-list">
-            <li><a href="../cards/baby_nasal_aspirator_1.html">使用吸鼻器與注意事項</a></li><li><a href="../cards/diarrhea_care_1.html">腹瀉、拉肚子注意什麼？</a></li>
+            <li><a href="../cards/baby_nasal_aspirator_1.html">使用吸鼻器與注意事項</a></li><li><a href="../cards/diarrhea_care_1.html">腹瀉、拉肚子注意什麼？</a></li><li><a href="../cards/child_medicine_feeding_01.html">兒童餵藥技巧</a></li>
           </ul>
           <div class="next-topic-return"><a href="../public.html?topic=infant_care">‹ 回到『嬰幼兒照護』主題</a></div>
         </div>

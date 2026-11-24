@@ -47,6 +47,62 @@
   }
 }
   </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "人工皮可以每天換嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以因為滲漏、鬆脫等需要而每天更換，但不代表每天都必須換。如果傷口穩定、人工皮密合且滲液未過多，依產品說明適當延長使用時間，可以減少頻繁撕除對傷口的刺激。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "人工皮貼了三天還沒變白，要換嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不一定。人工皮是否變白與滲液量、敷料種類有關。應同時觀察傷口狀況、敷料是否密合及產品規定的使用時間。不要只依顏色判斷。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "人工皮變白，是不是化膿？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不一定。人工皮吸收傷口滲液後會形成白色或淡黃色凝膠，這本身不代表感染。但如果伴隨紅腫擴大、疼痛增加、膿性分泌物、明顯異味或發燒，就應由醫師評估。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "人工皮貼到傷口沒有流組織液，就能停止嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不一定。要確認傷口是否已經閉合、長出完整的新皮膚。如果仍然有破皮或開放性傷口，即使滲液減少，也可能需要繼續適當的傷口照護。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "傷口長新皮了，還需要貼人工皮嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "如果新皮膚已完整覆蓋傷口，沒有滲液或其他需要敷料處理的問題，通常不必繼續貼人工皮。若新生皮膚容易受到摩擦，可以視情況使用其他適合的保護方式。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "人工皮可以貼超過七天嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "一般居家自行照護不建議超過 7 天不更換。不同產品的最長使用時間可能不同，應以產品仿單、實際滲液及醫護人員指示為準。若已滲漏、脫落或懷疑感染，應提早處理。"
+      }
+    }
+  ]
+}
+  </script>
   <script src="../qrious.min.js"></script>
   <script>
     var GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
@@ -260,6 +316,11 @@
       height:auto;
       object-fit:contain;
       background:#fff;
+    }
+    /* phones: card image fills the width; scroll to see the rest */
+    @media (max-width:679px) {
+      .image-stage { min-height:0; padding:0; }
+      .hero-img { width:100%; max-height:none; }
     }
     .image-side-link {
       position:absolute;

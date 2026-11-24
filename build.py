@@ -829,8 +829,8 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     topic_nav_styles = TOP_NAV_STYLES if has_topic_nav else ""
     mobile_nav_styles = """
     @media (max-width:679px) {
-      .image-stage { min-height:0; padding:12px 8px; }
-      .hero-img { max-height:calc(100svh - 220px); }
+      .image-stage { min-height:0; padding:0; }
+      .hero-img { width:100%; max-height:none; }
     }
 """ if has_topic_nav else ""
     header_html = render_header(return_navigation, '      <div class="action-cluster">\n        <button class="pill icon-pill" type="button" onclick="showQRCode()" aria-label="顯示 QR code">🔲</button>\n        <button class="pill icon-pill" id="favorite-button" type="button" onclick="toggleFavorite()" aria-pressed="false" aria-label="加入收藏">☆</button>\n        <button class="pill icon-pill" type="button" onclick="showSharePanel()" aria-label="分享圖卡">↗</button>\n      </div>', top_actions_class)
@@ -1161,6 +1161,11 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
       height:auto;
       object-fit:contain;
       background:#fff;
+    }}
+    /* phones: card image fills the width; scroll to see the rest */
+    @media (max-width:679px) {{
+      .image-stage {{ min-height:0; padding:0; }}
+      .hero-img {{ width:100%; max-height:none; }}
     }}
     .image-side-link {{
       position:absolute;

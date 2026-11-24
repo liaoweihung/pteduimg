@@ -301,6 +301,11 @@
       object-fit:contain;
       background:#fff;
     }
+    /* phones: card image fills the width; scroll to see the rest */
+    @media (max-width:679px) {
+      .image-stage { min-height:0; padding:0; }
+      .hero-img { width:100%; max-height:none; }
+    }
     .image-side-link {
       position:absolute;
       top:0;

@@ -161,7 +161,7 @@
             return;
           }
         }
-        btn.textContent = "\u2039 \u770b\u66f4\u591a\u885b\u6559\u5716\u5361";
+        btn.textContent = "\u2039 \u56de\u5230\u300e\u6162\u6027\u75c5\u300f";
       } catch (err) {}
     }
     if (document.readyState === 'loading') {
@@ -181,7 +181,7 @@
           }
         }
       } catch (err) {}
-      location.href = "../public.html";
+      location.href = "../public.html?topic=chronic_conditions";
     }
     var cardFavoriteKey = "drug_weight_gain-4";
     var cardShareUrl = "https://liaoweihung.github.io/pteduimg/cards/drug_weight_gain_5.html";
@@ -300,6 +300,11 @@
       height:auto;
       object-fit:contain;
       background:#fff;
+    }
+    /* phones: card image fills the width; scroll to see the rest */
+    @media (max-width:679px) {
+      .image-stage { min-height:0; padding:0; }
+      .hero-img { width:100%; max-height:none; }
     }
     .image-side-link {
       position:absolute;
@@ -717,7 +722,7 @@
 <body>
   <main>
     <div class="top-actions">
-      <button class="pill" type="button" onclick="returnToCardHome()">‹ 看更多衛教圖卡</button>
+      <button class="pill" type="button" onclick="returnToCardHome()">‹ 回到『慢性病』</button>
       <div class="action-cluster">
         <button class="pill icon-pill" type="button" onclick="showQRCode()" aria-label="顯示 QR code">🔲</button>
         <button class="pill icon-pill" id="favorite-button" type="button" onclick="toggleFavorite()" aria-pressed="false" aria-label="加入收藏">☆</button>
@@ -787,13 +792,6 @@
       </ol>
       <div class="next-series-section">
         <div class="section-title">接下來可以看</div>
-        <div class="next-topic-group">
-          <div class="next-topic-title">主題：旅遊與用藥常識</div>
-          <ul class="next-series-list">
-            <li><a href="../cards/01_can_i_bring_medicine.html">出國帶藥</a></li><li><a href="../cards/motion_sickness_meds_1.html">暈車/船/機藥</a></li><li><a href="../cards/japan_otc_drug_classification.html">日本成藥的分級</a></li>
-          </ul>
-          <div class="next-topic-return"><a href="../public.html?topic=travel_medication">‹ 回到『旅遊與用藥常識』主題</a></div>
-        </div>
         <div class="next-topic-group">
           <div class="next-topic-title">主題：慢性病</div>
           <ul class="next-series-list">
