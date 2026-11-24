@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-24T01:35:17+08:00",
-  "baseline": "9c67ee6446a1f3b5e8af52eb6ae46750ea64f334",
-  "scope": "網站來源快照；版本 9c67ee64",
+  "generatedAt": "2026-11-24T10:38:42+08:00",
+  "baseline": "c14b81a8f774836361cde919a2404c404eefcb1f",
+  "scope": "網站來源快照；版本 c14b81a8",
   "counts": {
-    "cards": 464,
-    "series": 100,
-    "allSeries": 104,
+    "cards": 486,
+    "series": 104,
+    "allSeries": 108,
     "hidden": 4,
     "retired": 4,
     "areas": 17,
@@ -13,22 +13,22 @@
     "tools": 6
   },
   "areas": {
-    "chronic_conditions": 8,
-    "skin_wound": 27,
+    "chronic_conditions": 9,
+    "skin_wound": 29,
     "acne": 6,
     "growth": 1,
     "infectious_diseases": 3,
     "eyes": 3,
     "gastrointestinal": 7,
     "oral_health": 5,
-    "insect_repellent": 1,
+    "insect_repellent": 2,
     "elimination_care": 4,
     "heat_illness": 1,
     "throat": 1,
     "sleep": 2,
     "travel_medication": 4,
     "pregnancy": 3,
-    "infant_care": 4,
+    "infant_care": 7,
     "sports_injury": 1
   },
   "series": [
@@ -1076,6 +1076,49 @@
       "count": 5,
       "hidden": false,
       "areas": [
+        "chronic_conditions"
+      ],
+      "departments": []
+    },
+    {
+      "id": "diaper_rash",
+      "title": "尿布疹（紅屁屁）居家照護",
+      "count": 5,
+      "hidden": false,
+      "areas": [
+        "infant_care"
+      ],
+      "departments": []
+    },
+    {
+      "id": "insect_bites",
+      "title": "蚊蟲叮咬怎麼辦？",
+      "count": 5,
+      "hidden": false,
+      "areas": [
+        "skin_wound",
+        "insect_repellent"
+      ],
+      "departments": []
+    },
+    {
+      "id": "atopic_dermatitis",
+      "title": "兒童異位性皮膚炎居家照護",
+      "count": 6,
+      "hidden": false,
+      "areas": [
+        "skin_wound",
+        "infant_care"
+      ],
+      "departments": []
+    },
+    {
+      "id": "allergic_rhinitis",
+      "title": "兒童過敏性鼻炎（鼻過敏）",
+      "count": 6,
+      "hidden": false,
+      "areas": [
+        "infant_care",
         "chronic_conditions"
       ],
       "departments": []
@@ -3419,30 +3462,30 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 355,
+      "machine_pass": 377,
       "partial": 1,
       "missing": 108
     },
     "reference_status": {
       "missing": 187,
-      "machine_pass": 277
+      "machine_pass": 299
     },
     "date_status": {
       "missing": 186,
-      "machine_pass": 257,
+      "machine_pass": 279,
       "partial": 21
     },
     "footer_status": {
       "missing": 200,
-      "machine_pass": 264
+      "machine_pass": 286
     },
     "jsonld_status": {
-      "machine_pass": 464
+      "machine_pass": 486
     }
   },
   "sync": {
-    "pages": 472,
-    "fields": 1000,
+    "pages": 494,
+    "fields": 1022,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -4146,6 +4189,42 @@
         ]
       },
       {
+        "page": "allergic_rhinitis_01",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "allergic_rhinitis_02",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "allergic_rhinitis_03",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "allergic_rhinitis_04",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "allergic_rhinitis_05",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "allergic_rhinitis_06",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
         "page": "amorolfine",
         "fields": [
           "rules_sha256"
@@ -4213,6 +4292,42 @@
         "page": "artificial_tears_4",
         "fields": [
           "source_sha256",
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "atopic_dermatitis_01",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "atopic_dermatitis_02",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "atopic_dermatitis_03",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "atopic_dermatitis_04",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "atopic_dermatitis_05",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "atopic_dermatitis_06",
+        "fields": [
           "rules_sha256"
         ]
       },
@@ -4681,6 +4796,36 @@
         "fields": [
           "jsonld_status",
           "source_sha256",
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "diaper_rash_01",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "diaper_rash_02",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "diaper_rash_03",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "diaper_rash_04",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "diaper_rash_05",
+        "fields": [
           "rules_sha256"
         ]
       },
@@ -5300,6 +5445,36 @@
       },
       {
         "page": "idofen_suspension",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insect_bites_01",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insect_bites_02",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insect_bites_03",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insect_bites_04",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "insect_bites_05",
         "fields": [
           "rules_sha256"
         ]
