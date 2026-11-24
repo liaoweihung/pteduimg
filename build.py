@@ -830,7 +830,7 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
     mobile_nav_styles = """
     @media (max-width:679px) {
       .image-stage { min-height:0; padding:0; }
-      .hero-img { width:100%; max-height:none; }
+      .hero-img { width:auto; max-width:100%; max-height:calc(100svh - var(--top-h, 64px)); }
     }
 """ if has_topic_nav else ""
     header_html = render_header(return_navigation, '      <div class="action-cluster">\n        <button class="pill icon-pill" type="button" onclick="showQRCode()" aria-label="顯示 QR code">🔲</button>\n        <button class="pill icon-pill" id="favorite-button" type="button" onclick="toggleFavorite()" aria-pressed="false" aria-label="加入收藏">☆</button>\n        <button class="pill icon-pill" type="button" onclick="showSharePanel()" aria-label="分享圖卡">↗</button>\n      </div>', top_actions_class)
@@ -1162,10 +1162,10 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
       object-fit:contain;
       background:#fff;
     }}
-    /* phones: card image fills the width; scroll to see the rest */
+    /* phones: whole card fits one screen under the top bar, as large as possible */
     @media (max-width:679px) {{
       .image-stage {{ min-height:0; padding:0; }}
-      .hero-img {{ width:100%; max-height:none; }}
+      .hero-img {{ width:auto; max-width:100%; max-height:calc(100svh - var(--top-h, 64px)); }}
     }}
     @media (prefers-reduced-motion:reduce) {{ .hero-img {{ transition:none !important; }} }}
     .image-side-link {{
@@ -1458,6 +1458,11 @@ def render_card_page(card_id, card, step, step_index, seo, card_content=None, se
       var img = stage && stage.querySelector('.hero-img');
       var prev = stage && stage.querySelector('.image-side-link.prev');
       var next = stage && stage.querySelector('.image-side-link.next');
+      var bar = document.querySelector('.top-actions');
+      function setTopH() {{ if (bar) document.documentElement.style.setProperty('--top-h', bar.getBoundingClientRect().height + 'px'); }}
+      setTopH();
+      window.addEventListener('resize', setTopH);
+      if (bar && window.ResizeObserver) new ResizeObserver(setTopH).observe(bar);
       if (!stage || !img || !prev || !next) return;
       var here = location.pathname.split('/').pop();
       if (prev.getAttribute('href').split('/').pop() === here) return;
