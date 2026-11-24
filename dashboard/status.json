@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-24T17:01:05+08:00",
-  "baseline": "e7598a95bf0bbb1eeacfa8316bfe495e55fa4362",
-  "scope": "網站來源快照；版本 e7598a95",
+  "generatedAt": "2026-11-24T19:21:38+08:00",
+  "baseline": "6a39e34c8d2761590369c9279e3cf3adf7bf6937",
+  "scope": "網站來源快照；版本 6a39e34c",
   "counts": {
-    "cards": 486,
-    "series": 104,
-    "allSeries": 108,
+    "cards": 496,
+    "series": 105,
+    "allSeries": 109,
     "hidden": 4,
     "retired": 4,
     "areas": 17,
@@ -1122,6 +1122,16 @@
         "chronic_conditions"
       ],
       "departments": []
+    },
+    {
+      "id": "ped_liquid",
+      "title": "兒科常用藥水",
+      "count": 10,
+      "hidden": false,
+      "areas": [],
+      "departments": [
+        "pediatrics"
+      ]
     }
   ],
   "issues": [
@@ -3462,30 +3472,30 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 377,
+      "machine_pass": 387,
       "partial": 1,
       "missing": 108
     },
     "reference_status": {
       "missing": 187,
-      "machine_pass": 299
+      "machine_pass": 309
     },
     "date_status": {
       "missing": 186,
-      "machine_pass": 279,
+      "machine_pass": 289,
       "partial": 21
     },
     "footer_status": {
       "missing": 200,
-      "machine_pass": 286
+      "machine_pass": 296
     },
     "jsonld_status": {
-      "machine_pass": 486
+      "machine_pass": 496
     }
   },
   "sync": {
-    "pages": 494,
-    "fields": 1022,
+    "pages": 504,
+    "fields": 1032,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -6217,6 +6227,66 @@
       },
       {
         "page": "ped_gi_pecolin_suspension",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_liquid_01",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_liquid_02",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_liquid_03",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_liquid_04",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_liquid_05",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_liquid_06",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_liquid_07",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_liquid_08",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_liquid_09",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "ped_liquid_10",
         "fields": [
           "rules_sha256"
         ]
