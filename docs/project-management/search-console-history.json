@@ -674,7 +674,50 @@
       {"url": "https://liaoweihung.github.io/pteduimg/cards/insomnia_card01.html", "status": "url_unknown_to_google", "indexed": false, "last_crawl": null}
     ],
     "notes": "Observed filtered chart totals; not inferred from missing rows. Both URL inspections show no referring sitemap or page and no crawl. Other twelve URLs not inspected. No live test, index request or GA4 check."
-  }],
+  },
+    {
+      "id": "OBS-2026-11-26-weekly-web-and-ai",
+      "kind": "gsc_weekly_performance_and_inspection",
+      "observed_date": "2026-11-26",
+      "evidence_file": "evidence/search-console-weekly-2026-11-26.md",
+      "filters": {"property": "https://liaoweihung.github.io/", "search_type": "web_text", "country": "all", "device": "all"},
+      "periods": {"previous": ["2026-11-10", "2026-11-16"], "current": ["2026-11-17", "2026-11-23"]},
+      "property_totals": {"impressions": [959,2220], "clicks": [19,84], "reported_ctr_percent": [2,3.8], "average_position": [6.6,5.9]},
+      "page_url_prefix": "https://liaoweihung.github.io/pteduimg/",
+      "page_row_columns": ["relative_url", "prev_impressions", "curr_impressions", "prev_clicks", "curr_clicks", "prev_reported_ctr_percent", "curr_reported_ctr_percent", "prev_average_position", "curr_average_position"],
+      "page_rows": [
+        ["cards/ped_cold_secorine.html",505,1168,9,57,1.8,4.9,4.4,4.4], ["cards/ped_cold_exdila_liquid.html",69,179,4,14,5.8,7.8,3.5,4.1],
+        ["cards/ped_cold_guaphen_syrup.html",86,222,4,4,4.7,1.8,5.7,6.6], ["cards/ped_cold_peace_syrup.html",57,111,0,4,0,3.6,3.2,3],
+        ["cards/antiphen.html",10,97,0,2,0,2.1,2.8,7.4], ["",6,24,0,1,0,4.2,8.2,7],
+        ["cards/ped_cold_cetirizine.html",11,23,0,1,0,4.3,27.3,15.2], ["cards/acne_patch_when_to_use.html",13,12,0,1,0,8.3,16.6,8.6],
+        ["cards/hydrocolloid_how_to_use.html",43,97,0,0,0,0,18.2,13.5], ["cards/ibuprofen_sol.html",2,48,0,0,0,0,29,9.8],
+        ["cards/acne_patch_how_to_use.html",56,46,0,0,0,0,7.7,9.1], ["cards/japan_otc_drug_classification.html",28,39,1,0,3.6,0,8.6,8.5],
+        ["growth-calculator.html",35,39,0,0,0,0,15,12.8], ["pregnancy-weight-calculator.html",16,31,0,0,0,0,19.9,18.2],
+        ["cards/wound_tetanus.html",2,25,0,0,0,0,36,10.8], ["cards/over_one_oint_01.html",10,13,1,0,10,0,4.4,3.6],
+        ["index.html",0,9,0,0,null,0,null,6.6], ["cards/insomnia_card14.html",0,9,0,0,null,0,null,6.9], ["cards/insomnia_card13.html",0,9,0,0,null,0,null,7.2],
+        ["cards/insomnia_card06.html",0,5,0,0,null,0,null,9.8], ["cards/wound_healing_signs.html",4,4,0,0,0,0,26.8,7.3],
+        ["cards/insomnia_card09.html",0,4,0,0,null,0,null,9.8], ["cards/insomnia_card11.html",0,3,0,0,null,0,null,7.7], ["cards/acne_stage.html",5,2,0,0,0,0,2,3],
+        ["cards/Ped_abx_susp_1.html",0,2,0,0,null,0,null,7], ["cards/insomnia_card12.html",0,2,0,0,null,0,null,7.5],
+        ["cards/adult_diaper_2.html",3,2,0,0,0,0,33.3,25.5], ["cards/Ped_abx_susp_8.html",0,1,0,0,null,0,null,1], ["cards/wound_cover.html",1,1,0,0,0,0,11,5],
+        ["cards/insomnia_card10.html",0,1,0,0,null,0,null,10], ["cards/insomnia_card08.html",0,1,0,0,null,0,null,11], ["cards/insomnia_card05.html",0,1,0,0,null,0,null,66]
+      ],
+      "query_row_columns": ["query", "prev_impressions", "curr_impressions", "prev_clicks", "curr_clicks", "prev_average_position", "curr_average_position"],
+      "top_visible_queries": [
+        ["息咳寧兒童劑量",51,75,0,6,2,1.7], ["息咳寧 劑量",144,201,1,4,2.1,2.2], ["息咳寧幼兒劑量",6,53,0,4,8.8,2.6],
+        ["喘解液用量",2,22,0,3,5.5,1.1], ["喘解液 劑量",0,12,0,3,null,1.2], ["咳酚糖漿兒童劑量",16,14,2,2,5.1,2],
+        ["息咳液兒童劑量",8,58,0,1,9.9,3.4], ["喘解液兒童用量",35,44,3,1,1.8,1.4], ["息咳寧劑量計算",28,21,1,1,2.1,1.7], ["息咳寧劑量體重",5,19,0,1,3.6,4.6]
+      ],
+      "inspections": [
+        {"relative_url":"cards/ped_cold_secorine.html","indexed":true,"last_crawl_display":"2026-11-15 13:47:54","inspection_id":"bbebVQgHg1WMRIt8ngpkPg"},
+        {"relative_url":"cards/acne_patch_when_to_use.html","indexed":true,"last_crawl_display":"2026-11-16 22:13:16","inspection_id":"Xe8VAKQTUlE3yZy0ijVj8g"},
+        {"relative_url":"cards/acne_patch_how_to_use.html","indexed":true,"last_crawl_display":"2026-10-30 07:47:45","inspection_id":"75Lm3hukOpxWFtrdV0OAgw"},
+        {"relative_url":"cards/insomnia_card14.html","indexed":true,"last_crawl_display":"2026-11-23 09:46:32","inspection_id":"eu_mveeVIhdoom8noVTlvw"}
+      ],
+      "insomnia_cohort": {"id":"manual-insomnia-2026-11-21","current_visible_pages":9,"current_page_impressions_sum":35,"current_clicks_sum":0,"current_inspected_indexed_pages":1},
+      "ai_beta": {"same_periods_as_gsc":true,"impressions":[121,596],"leading_page_impressions":{"secorine":[38,371],"exdila":[21,97],"guaphen":[34,69],"antiphen":[0,15],"peace":[6,9]},"explicit_ai_citation":null,"chatgpt_found":null},
+      "notes": "Zero-impression comparison rows use null for position and CTR. URL inspection display timezone not verified. No 28-day post-update verdict, AI citation, GA4, sitemap or full index audit."
+    }
+  ],
   "forecasts": [
     {
       "id": "FORECAST-2026-10-19-cold-7d",
