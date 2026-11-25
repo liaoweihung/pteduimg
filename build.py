@@ -1797,12 +1797,15 @@ def markdown_cell(value):
     return clean_seo_text(value).replace("|", "\\|") or "—"
 
 
-def build_card_text_integration_report(card_content_index):
+def build_card_text_integration_report(card_content_index, source_root=None):
     warn_forbidden_seo_words(card_content_index)
     rows = []
     success_count = 0
     for image, record in card_content_index.items():
-        page_path = ROOT / page_for_image(image)
+        rel_page = page_for_image(image)
+        page_path = ROOT / rel_page
+        if source_root is not None and not page_path.exists():
+            page_path = Path(source_root) / rel_page
         expected_title = normalize_text(record.get("title"))
         expected_summary = normalize_text(record.get("summary"))
         seo_title = normalize_text(record.get("seoTitle"))

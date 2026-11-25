@@ -5,12 +5,16 @@ import json
 from pathlib import Path
 import re
 import shutil
+import stat
 import subprocess
 import tempfile
 
 STATE = "outputs/incremental-build/state.json"
-SOURCES = ("cards.json", "seo.json", "data/card_content.json")
+STATE_VERSION = 2
+SOURCES = ("cards.json", "cards.manual.json", "seo.json", "data/card_content.json")
+CARDS_MANUAL = "cards.manual.json"
 LABEL_LINKS = "data/label_links.json"
+CHANGE_REQUESTS = "docs/project-management/change-requests.csv"
 RULES = ("build.py", "scripts/incremental_build.py", "scripts/site_footer.py",
          "scripts/site_header.py", "scripts/acne_pilot.py", "scripts/card_archive.py",
          "templates/site-footer.html", "css/base.css", "author.html",
@@ -18,6 +22,55 @@ RULES = ("build.py", "scripts/incremental_build.py", "scripts/site_footer.py",
 GLOBALS = ("seo.json", "all-cards.html", "sitemap.xml", "sitemap-main.xml",
            "sw.js", "robots.txt", "data/card_text_web_integration_report.md",
            "data/recent-changes.json")
+
+_ACTIVE_RUNTIME_CACHE = None
+
+
+class RuntimeDigestCache:
+    """In-memory per-run SHA-256 cache for root runtime assets.
+
+    Never persisted across runs: the initial snapshot in a run always hashes
+    file bytes directly. Subsequent calls within the same run reuse a root
+    file's digest only when its (st_size, st_mtime_ns) still matches and it
+    has not been invalidated. Overlay files are always read directly.
+    """
+
+    def __init__(self, root):
+        self.root = Path(root).resolve()
+        self._entries = {}
+
+    def invalidate(self, names):
+        for name in names:
+            self._entries.pop(name, None)
+
+    def file_digest(self, root, name):
+        path = root / name
+        try:
+            st = path.stat()
+        except OSError:
+            self._entries.pop(name, None)
+            return b"missing"
+        if not stat.S_ISREG(st.st_mode):
+            self._entries.pop(name, None)
+            return b"missing"
+        key = (st.st_size, st.st_mtime_ns)
+        cached = self._entries.get(name)
+        if cached is not None and cached[0] == key[0] and cached[1] == key[1]:
+            return cached[2]
+        value = hashlib.sha256(path.read_bytes()).digest()
+        self._entries[name] = (key[0], key[1], value)
+        return value
+
+
+@contextmanager
+def _use_runtime_cache(cache):
+    global _ACTIVE_RUNTIME_CACHE
+    previous = _ACTIVE_RUNTIME_CACHE
+    _ACTIVE_RUNTIME_CACHE = cache
+    try:
+        yield cache
+    finally:
+        _ACTIVE_RUNTIME_CACHE = previous
 
 
 def digest(data):
@@ -55,15 +108,29 @@ def head(root):
         return None
 
 
-def snapshot(root):
-    sources = {p: json.loads((root / p).read_text(encoding="utf-8")) for p in SOURCES}
+def _change_requests_digest(root):
+    path = Path(root) / CHANGE_REQUESTS
+    if not path.is_file():
+        return None
+    return digest(path.read_bytes().replace(b"\r\n", b"\n"))
+
+
+def snapshot(root, runtime_cache=None):
+    root = Path(root)
+    sources = {}
+    for p in SOURCES:
+        if p == CARDS_MANUAL and not (root / p).is_file():
+            sources[p] = {}
+        else:
+            sources[p] = json.loads((root / p).read_text(encoding="utf-8"))
     sources[LABEL_LINKS] = (json.loads((root / LABEL_LINKS).read_text(encoding="utf-8"))
                             if (root / LABEL_LINKS).is_file() else {"pages": {}})
-    return {"version": 1, "head": head(root),
+    return {"version": STATE_VERSION, "head": head(root),
             "sources": sources,
             "rules": {p: digest((root / p).read_bytes().replace(b"\r\n", b"\n")) for p in RULES},
             "globals": {p: digest((root / p).read_bytes().replace(b"\r\n", b"\n")) for p in GLOBALS if (root / p).exists()},
-            "runtime": runtime_digest(root)}
+            "change_requests": _change_requests_digest(root),
+            "runtime": runtime_digest(root, cache=runtime_cache)}
 
 
 def save_baseline(root):
@@ -71,10 +138,11 @@ def save_baseline(root):
 
 
 def baseline(root):
+    root = Path(root)
     state = root / STATE
     if state.exists():
         saved = json.loads(state.read_text(encoding="utf-8"))
-        if saved.get("version") == 1 and saved.get("head") == head(root):
+        if saved.get("version") == STATE_VERSION and saved.get("head") == head(root):
             if LABEL_LINKS not in saved.get("sources", {}):
                 try:
                     saved["sources"][LABEL_LINKS] = json.loads(git(root, "show", f"{saved['head']}:{LABEL_LINKS}"))
@@ -85,41 +153,69 @@ def baseline(root):
     if not revision:
         raise ValueError("No Git HEAD or local baseline; run python build.py first.")
     read = lambda p: git(root, "show", f"{revision}:{p}")
-    sources = {p: json.loads(read(p)) for p in SOURCES}
+    sources = {}
+    for p in SOURCES:
+        if p == CARDS_MANUAL:
+            try:
+                sources[p] = json.loads(read(p))
+            except (ValueError, KeyError, OSError):
+                sources[p] = {}
+        else:
+            sources[p] = json.loads(read(p))
     try:
         sources[LABEL_LINKS] = json.loads(read(LABEL_LINKS))
     except (ValueError, KeyError, OSError):
         sources[LABEL_LINKS] = {"pages": {}}
-    return {"version": 1, "head": revision,
+    try:
+        cr_digest = digest(read(CHANGE_REQUESTS).replace(b"\r\n", b"\n"))
+    except (ValueError, KeyError, OSError):
+        cr_digest = None
+    return {"version": STATE_VERSION, "head": revision,
             "sources": sources,
             "rules": {p: digest(read(p).replace(b"\r\n", b"\n")) for p in RULES},
-            "globals": {p: digest(read(p).replace(b"\r\n", b"\n")) for p in GLOBALS}, "runtime": None}
+            "globals": {p: digest(read(p).replace(b"\r\n", b"\n")) for p in GLOBALS},
+            "change_requests": cr_digest, "runtime": None}
 
 
 def runtime_paths(root):
     # Public files only: omit authoring sources, management, prototypes and caches.
+    root = Path(root)
     paths = {p.relative_to(root).as_posix() for p in root.iterdir()
              if p.is_file() and p.suffix.lower() in {".html", ".js", ".css", ".json", ".png", ".ico", ".webmanifest"}}
     for directory in ("cards", "img", "assets", "css", "js", "topics", "web", "data"):
-        for p in (root / directory).rglob("*"):
+        sub = root / directory
+        if not sub.is_dir():
+            continue
+        for p in sub.rglob("*"):
             if p.is_file() and p.suffix.lower() in {".html", ".js", ".css", ".json", ".webp", ".png", ".jpg", ".jpeg", ".svg", ".ico", ".woff", ".woff2"}:
                 paths.add(p.relative_to(root).as_posix())
     return paths - {"sw.js", "cards.manual.json", "data/card_content.json"}
 
 
-def runtime_digest(root, overlay=None, worker=None, extra=()):
+def runtime_digest(root, overlay=None, worker=None, extra=(), cache=None):
+    root = Path(root)
+    overlay = Path(overlay) if overlay is not None else None
+    if cache is None and _ACTIVE_RUNTIME_CACHE is not None and root.resolve() == _ACTIVE_RUNTIME_CACHE.root:
+        cache = _ACTIVE_RUNTIME_CACHE
     if worker is None:
         worker = (root / "sw.js").read_text(encoding="utf-8") if (root / "sw.js").exists() else ""
         worker = re.sub(r"const CACHE_NAME = '.*?';", "const CACHE_NAME = '';", worker)
     paths = runtime_paths(root)
     paths.update(p.removeprefix("./").split("?")[0] for p in extra if p != "./")
-    if overlay:
+    if overlay is not None:
         paths.update(runtime_paths(overlay))
     result = hashlib.sha256(worker.encode("utf-8"))
     for name in sorted(paths):
-        path = overlay / name if overlay and (overlay / name).is_file() else root / name
+        overlay_path = overlay / name if overlay is not None else None
+        if overlay_path is not None and overlay_path.is_file():
+            file_hash = hashlib.sha256(overlay_path.read_bytes()).digest()
+        elif cache is not None:
+            file_hash = cache.file_digest(root, name)
+        else:
+            path = root / name
+            file_hash = hashlib.sha256(path.read_bytes()).digest() if path.is_file() else b"missing"
         result.update(name.encode("utf-8") + b"\0")
-        result.update(hashlib.sha256(path.read_bytes()).digest() if path.is_file() else b"missing")
+        result.update(file_hash)
     return result.hexdigest()
 
 
@@ -140,6 +236,17 @@ def label_links_index(data):
     return {k.replace("\\", "/"): v for k, v in pages.items() if isinstance(v, list)}
 
 
+def manual_render_fields(manual_cards, series):
+    entry = (manual_cards or {}).get(series)
+    if not isinstance(entry, dict):
+        return None
+    return {
+        "topics": entry.get("topics"),
+        "title_from_card_text": entry.get("title_from_card_text"),
+        "tool_link": entry.get("tool_link"),
+    }
+
+
 def owners(build, cards):
     result = {}
     for series, card in cards.items():
@@ -157,13 +264,28 @@ def owners(build, cards):
     return result
 
 
-def signatures(build, cards, contents, seo, label_links=None):
+def signatures(build, cards, contents, seo, label_links=None, manual_cards=None):
     links = label_links if label_links is not None else {}
-    return {page: [series, index, cards[series], contents.get(image), seo.get(page),
-                   [seo.get(build.page_for_image(step)) for step in cards[series].get("steps", [])],
-                   build.render_series_links(cards[series], cards),
-                   links.get(image.replace("\\", "/"), [])]
-            for page, (series, index, image) in owners(build, cards).items()}
+    manual = manual_cards if manual_cards is not None else {}
+    result = {}
+    for page, (series, index, image) in owners(build, cards).items():
+        card = cards[series]
+        steps = card.get("steps") or []
+        is_public_last = (card.get("category") == "public_education" and index == len(steps) - 1)
+        next_reads = build.render_next_reads(series, card, cards, manual) if is_public_last else ""
+        result[page] = [
+            series,
+            index,
+            card,
+            manual_render_fields(manual, series),
+            contents.get(image),
+            seo.get(page),
+            [seo.get(build.page_for_image(step)) for step in steps],
+            build.render_series_links(card, cards),
+            next_reads,
+            links.get(image.replace("\\", "/"), []),
+        ]
+    return result
 
 
 def validate_changes(build, old, new, requested):
@@ -198,6 +320,26 @@ def validate_changes(build, old, new, requested):
             raise ValueError("Include an IMAGE_ID from changed series: " + series)
         if not previous and any(build.page_for_image(i) in before for i in card.get("steps", [])):
             raise ValueError("Regrouping existing images requires python build.py: " + series)
+    old_manual = old.get(CARDS_MANUAL) or {}
+    new_manual = new.get(CARDS_MANUAL) or {}
+    for series in sorted(old_manual.keys() | new_manual.keys()):
+        prev_manual = old_manual.get(series)
+        curr_manual = new_manual.get(series)
+        if prev_manual != curr_manual:
+            if series not in cards or build.is_scheduled_hidden(cards[series]):
+                raise ValueError("Manual card change for non-active/removed series requires python build.py: " + series)
+            if isinstance(curr_manual, dict):
+                if prev_manual is None and (curr_manual.get("hidden") or curr_manual.get("publish_at")):
+                    raise ValueError("Visibility/schedule change in cards.manual.json requires python build.py: " + series)
+                if isinstance(prev_manual, dict) and (
+                    bool(prev_manual.get("hidden")) != bool(curr_manual.get("hidden"))
+                    or prev_manual.get("publish_at") != curr_manual.get("publish_at")
+                ):
+                    raise ValueError("Visibility/schedule change in cards.manual.json requires python build.py: " + series)
+            elif isinstance(prev_manual, dict) and (prev_manual.get("hidden") or prev_manual.get("publish_at")):
+                raise ValueError("Visibility/schedule change in cards.manual.json requires python build.py: " + series)
+            if series not in selected_series:
+                raise ValueError("Include an IMAGE_ID from changed series in cards.manual.json: " + series)
     for page in before:
         if before[page][0] != after[page][0]:
             raise ValueError("Primary series changed; use python build.py: " + page)
@@ -217,7 +359,8 @@ def validate_changes(build, old, new, requested):
 
 @contextmanager
 def use_root(build, root):
-    names = ("ROOT", "CARDS_DIR", "CARDS_JSON", "SEO_JSON", "CARD_CONTENT_JSON", "CARD_TEXT_REPORT", "LABEL_LINKS_JSON")
+    names = ("ROOT", "CARDS_DIR", "CARDS_JSON", "CARDS_MANUAL_JSON", "SEO_JSON",
+             "CARD_CONTENT_JSON", "CARD_TEXT_REPORT", "LABEL_LINKS_JSON")
     previous = {key: getattr(build, key) for key in names if hasattr(build, key)}
     prev_links = getattr(build, "_LABEL_LINKS", None)
     for key, value in previous.items():
@@ -248,115 +391,145 @@ def merge_page(old, current, new, name, temp):
 def run_incremental(build, requested):
     root = build.ROOT
     saved = baseline(root)
-    current = snapshot(root)
-    changed_rules = [p for p in RULES if saved["rules"].get(p) != current["rules"][p]]
-    if changed_rules:
-        raise ValueError("Shared rules/retirement changed; use python build.py: " + ", ".join(changed_rules))
-    old, new = saved["sources"], current["sources"]
-    before, after = validate_changes(build, old, new, requested)
-    cards = new["cards.json"]
-    retired = build.read_retired_cards(root, cards)
-    retired_images = {r["image"] for r in retired}
-    contents = {i: r for i, r in content_index(new["data/card_content.json"]).items() if i not in retired_images}
-    old_contents = {i: r for i, r in content_index(old["data/card_content.json"]).items() if i not in retired_images}
-    label_links = label_links_index(new.get(LABEL_LINKS))
-    old_label_links = label_links_index(old.get(LABEL_LINKS))
-    seo = build.build_seo_index(cards, contents, False, new["seo.json"])
-    old_seo = build.build_seo_index(old["cards.json"], old_contents, False, old["seo.json"])
-    for page in after:
-        for field in ("canonical", "og_url"):
-            expected = old_seo[page][field] if page in before else build.abs_url(page)
-            if seo[page][field] != expected:
-                raise ValueError("URL identity change requires python build.py: " + page + " (" + field + ")")
-    previous = signatures(build, old["cards.json"], old_contents, old_seo, old_label_links)
-    following = signatures(build, cards, contents, seo, label_links)
-    affected = {Path(p).stem for p in following if previous.get(p) != following[p]}
-    for page in before:
-        if not (root / page).is_file():
-            raise ValueError("Missing baseline page; use python build.py: " + page)
-    for page, (_, _, image) in after.items():
-        if not (root / image).is_file():
-            raise ValueError("Missing image: " + image)
-        if page not in before and (root / page).exists():
-            raise ValueError("New page would overwrite an existing file: " + page)
-    if saved["runtime"] is None:
-        changed = set(git(root, "diff", "HEAD", "--name-only", "-z").decode("utf-8").split("\0"))
-        changed.update(git(root, "ls-files", "--others", "--exclude-standard", "-z").decode("utf-8").split("\0"))
-        runtime_changed = bool(changed & (runtime_paths(root) | {"sw.js"}))
-    else:
-        runtime_changed = saved["runtime"] != current["runtime"]
-    missing_globals = any(not (root / p).is_file() for p in GLOBALS)
-    for name, expected in saved.get("globals", {}).items():
-        if name not in ("seo.json", "sw.js") and (root / name).is_file() and digest((root / name).read_bytes().replace(b"\r\n", b"\n")) != expected:
-            raise ValueError("Generated global output edited manually; reconcile before building: " + name)
-    for name in ("404.html", "cards/404.html", "index.html", "public.html", "retired-cards.html", "sw.js") + tuple(r["page"] for r in retired):
-        if not (root / name).is_file():
-            raise ValueError("Missing structural output; use python build.py: " + name)
-    if not affected and old == new and not runtime_changed and not missing_globals:
-        print("Incremental: 0 affected pages; no public outputs changed.")
-        return
-    # Prepare everything off-tree; validation/merge failure cannot leave partial outputs.
-    (root / "outputs").mkdir(exist_ok=True)
-    with tempfile.TemporaryDirectory(prefix="incremental-stage-", dir=root / "outputs") as directory:
-        stage = Path(directory)
-        for name in set(SOURCES + (LABEL_LINKS,) + RULES + GLOBALS + ("index.html", "public.html", "retired-cards.html", "docs/project-management/change-requests.csv")):
-            source = root / name
-            if source.is_file():
-                (stage / name).parent.mkdir(parents=True, exist_ok=True)
-                shutil.copyfile(source, stage / name)
-        shutil.copytree(root / "cards", stage / "cards")
-        prev_cache = getattr(build, "_LABEL_LINKS", None)
-        try:
-            build._LABEL_LINKS = label_links
-            rendered = build.generate_card_pages(cards, seo, contents, affected, render_only=True)
-            build._LABEL_LINKS = old_label_links
-            old_rendered = build.generate_card_pages(old["cards.json"], old_seo, old_contents, affected, render_only=True)
-        finally:
-            build._LABEL_LINKS = prev_cache
-        changed_pages = []
-        for page, text in rendered.items():
-            existing = root / page
-            if existing.exists():
-                original_text = existing.read_text(encoding="utf-8")
-                text = merge_page(old_rendered[page], original_text, text, page, stage)
-                if text == original_text:
-                    continue  # Preserve existing bytes, including CRLF, when the render did not change.
-            if write_if_changed(stage / page, text):
-                changed_pages.append(page)
-        with use_root(build, stage):
-            # Homepage lists consume cards.json at runtime. Footer/template changes are rejected above.
-            write_if_changed(stage / "seo.json", json.dumps(seo, ensure_ascii=False, indent=2) + "\n")
-            write_if_changed(stage / "all-cards.html", build.render_all_cards_page(cards, seo), preserve_index_date=True)
-            build.build_card_text_integration_report(contents)
-            build.update_sitemap(list(after), contents)
-            build.update_robots()
-            build.generate_recent_changes(cards, root=stage)
-            build.update_service_worker(cards, list(after), [r["page"] for r in retired], source_root=root)
-        names = changed_pages + list(GLOBALS)
-        # Recheck inputs before publishing, so an editor cannot silently race planning.
-        if snapshot(root) != current:
-            raise ValueError("Inputs changed during build; retry. No outputs written.")
-        originals = {name: (root / name).read_bytes() if (root / name).exists() else None for name in names}
-        written = []
-        try:
-            for name in names:
-                data = (stage / name).read_bytes()
-                if originals[name] != data:
-                    (root / name).parent.mkdir(parents=True, exist_ok=True)
-                    written.append(name)
-                    (root / name).write_bytes(data)
-            result_state = snapshot(root)
-            expected_sources = {**new, "seo.json": seo}
-            if result_state["sources"] != expected_sources or result_state["rules"] != current["rules"]:
-                raise ValueError("Sources changed while writing outputs; rolled back. Retry after editing stops.")
-            write_if_changed(root / STATE, json.dumps(result_state, ensure_ascii=False, indent=2) + "\n")
-        except (OSError, ValueError):
-            for name in reversed(written):
-                if originals[name] is None:
-                    (root / name).unlink(missing_ok=True)
-                else:
-                    (root / name).write_bytes(originals[name])
-            raise
+    cache = RuntimeDigestCache(root)
+    with _use_runtime_cache(cache):
+        current = snapshot(root, runtime_cache=cache)
+        changed_rules = [p for p in RULES if saved["rules"].get(p) != current["rules"][p]]
+        if changed_rules:
+            raise ValueError("Shared rules/retirement changed; use python build.py: " + ", ".join(changed_rules))
+        old, new = saved["sources"], current["sources"]
+        before, after = validate_changes(build, old, new, requested)
+        cards = new["cards.json"]
+        manual_cards = new.get(CARDS_MANUAL) or {}
+        old_manual_cards = old.get(CARDS_MANUAL) or {}
+        retired = build.read_retired_cards(root, cards)
+        retired_images = {r["image"] for r in retired}
+        contents = {i: r for i, r in content_index(new["data/card_content.json"]).items() if i not in retired_images}
+        old_contents = {i: r for i, r in content_index(old["data/card_content.json"]).items() if i not in retired_images}
+        label_links = label_links_index(new.get(LABEL_LINKS))
+        old_label_links = label_links_index(old.get(LABEL_LINKS))
+        seo = build.build_seo_index(cards, contents, False, new["seo.json"])
+        old_seo = build.build_seo_index(old["cards.json"], old_contents, False, old["seo.json"])
+        for page in after:
+            for field in ("canonical", "og_url"):
+                expected = old_seo[page][field] if page in before else build.abs_url(page)
+                if seo[page][field] != expected:
+                    raise ValueError("URL identity change requires python build.py: " + page + " (" + field + ")")
+        previous = signatures(build, old["cards.json"], old_contents, old_seo, old_label_links, old_manual_cards)
+        following = signatures(build, cards, contents, seo, label_links, manual_cards)
+        affected = {Path(p).stem for p in following if previous.get(p) != following[p]}
+        for page in before:
+            if not (root / page).is_file():
+                raise ValueError("Missing baseline page; use python build.py: " + page)
+        for page, (_, _, image) in after.items():
+            if not (root / image).is_file():
+                raise ValueError("Missing image: " + image)
+            if page not in before and (root / page).exists():
+                raise ValueError("New page would overwrite an existing file: " + page)
+        if saved["runtime"] is None:
+            changed = set(git(root, "diff", "HEAD", "--name-only", "-z").decode("utf-8").split("\0"))
+            changed.update(git(root, "ls-files", "--others", "--exclude-standard", "-z").decode("utf-8").split("\0"))
+            runtime_changed = bool(changed & (runtime_paths(root) | {"sw.js"}))
+        else:
+            runtime_changed = saved["runtime"] != current["runtime"]
+        cr_changed = saved.get("change_requests") != current.get("change_requests")
+        missing_globals = any(not (root / p).is_file() for p in GLOBALS)
+        for name, expected in saved.get("globals", {}).items():
+            if name not in ("seo.json", "sw.js") and (root / name).is_file() and digest((root / name).read_bytes().replace(b"\r\n", b"\n")) != expected:
+                raise ValueError("Generated global output edited manually; reconcile before building: " + name)
+        for name in ("404.html", "cards/404.html", "index.html", "public.html", "retired-cards.html", "sw.js") + tuple(r["page"] for r in retired):
+            if not (root / name).is_file():
+                raise ValueError("Missing structural output; use python build.py: " + name)
+        if not affected and old == new and not runtime_changed and not cr_changed and not missing_globals:
+            print("Incremental: 0 affected pages; no public outputs changed.")
+            return
+        # Prepare everything off-tree; validation/merge failure cannot leave partial outputs.
+        (root / "outputs").mkdir(exist_ok=True)
+        with tempfile.TemporaryDirectory(prefix="incremental-stage-", dir=root / "outputs") as directory:
+            stage = Path(directory) / "stage"
+            work = Path(directory) / "work"
+            stage.mkdir()
+            work.mkdir()
+            stage_inputs = set(GLOBALS + ("data/card_content.json", "index.html", "public.html", CHANGE_REQUESTS))
+            for name in stage_inputs:
+                source = root / name
+                if source.is_file():
+                    (stage / name).parent.mkdir(parents=True, exist_ok=True)
+                    shutil.copyfile(source, stage / name)
+            if affected:
+                old_manual_path = work / "cards.manual.old.json"
+                new_manual_path = work / "cards.manual.new.json"
+                old_manual_path.write_text(
+                    json.dumps(old_manual_cards, ensure_ascii=False, indent=2) + "\n",
+                    encoding="utf-8",
+                )
+                new_manual_path.write_text(
+                    json.dumps(manual_cards, ensure_ascii=False, indent=2) + "\n",
+                    encoding="utf-8",
+                )
+                prev_cache = getattr(build, "_LABEL_LINKS", None)
+                prev_manual = getattr(build, "CARDS_MANUAL_JSON", None)
+                try:
+                    build._LABEL_LINKS = label_links
+                    build.CARDS_MANUAL_JSON = new_manual_path
+                    rendered = build.generate_card_pages(cards, seo, contents, affected, render_only=True)
+                    build._LABEL_LINKS = old_label_links
+                    build.CARDS_MANUAL_JSON = old_manual_path
+                    old_rendered = build.generate_card_pages(old["cards.json"], old_seo, old_contents, affected, render_only=True)
+                finally:
+                    build._LABEL_LINKS = prev_cache
+                    if prev_manual is not None:
+                        build.CARDS_MANUAL_JSON = prev_manual
+            else:
+                rendered = {}
+                old_rendered = {}
+            changed_pages = []
+            for page, text in rendered.items():
+                existing = root / page
+                if existing.exists():
+                    original_text = existing.read_text(encoding="utf-8")
+                    text = merge_page(old_rendered[page], original_text, text, page, work)
+                    if text == original_text:
+                        continue  # Preserve existing bytes, including CRLF, when the render did not change.
+                if write_if_changed(stage / page, text):
+                    changed_pages.append(page)
+            with use_root(build, stage):
+                # Homepage lists consume cards.json at runtime. Footer/template changes are rejected above.
+                write_if_changed(stage / "seo.json", json.dumps(seo, ensure_ascii=False, indent=2) + "\n")
+                write_if_changed(stage / "all-cards.html", build.render_all_cards_page(cards, seo), preserve_index_date=True)
+                build.build_card_text_integration_report(contents, source_root=root)
+                build.update_sitemap(list(after), contents)
+                build.update_robots()
+                build.generate_recent_changes(cards, root=stage)
+                build.update_service_worker(cards, list(after), [r["page"] for r in retired], source_root=root)
+            names = changed_pages + list(GLOBALS)
+            # Recheck inputs before publishing, so an editor cannot silently race planning.
+            if snapshot(root, runtime_cache=cache) != current:
+                raise ValueError("Inputs changed during build; retry. No outputs written.")
+            originals = {name: (root / name).read_bytes() if (root / name).exists() else None for name in names}
+            written = []
+            try:
+                for name in names:
+                    data = (stage / name).read_bytes()
+                    if originals[name] != data:
+                        (root / name).parent.mkdir(parents=True, exist_ok=True)
+                        written.append(name)
+                        (root / name).write_bytes(data)
+                cache.invalidate(written)
+                result_state = snapshot(root, runtime_cache=cache)
+                expected_sources = {**new, "seo.json": seo}
+                if (result_state["sources"] != expected_sources
+                        or result_state["rules"] != current["rules"]
+                        or result_state["change_requests"] != current["change_requests"]):
+                    raise ValueError("Sources changed while writing outputs; rolled back. Retry after editing stops.")
+                write_if_changed(root / STATE, json.dumps(result_state, ensure_ascii=False, indent=2) + "\n")
+            except (OSError, ValueError):
+                for name in reversed(written):
+                    if originals[name] is None:
+                        (root / name).unlink(missing_ok=True)
+                    else:
+                        (root / name).write_bytes(originals[name])
+                raise
     print(f"Incremental: {len(affected)} affected pages; {len(changed_pages)} card pages written.")
     print("Card pages: " + (", ".join(changed_pages) or "none"))
     print("Updated outputs: " + (", ".join(written) or "none"))
