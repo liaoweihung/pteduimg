@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-24T23:37:39+08:00",
-  "baseline": "6ce0cfffa088f178dbdf7a42d5b8ac91928a4909",
-  "scope": "網站來源快照；版本 6ce0cfff",
+  "generatedAt": "2026-11-26T00:18:11+08:00",
+  "baseline": "53b2be52b3b70f966f551d35bb049b452cc7e778",
+  "scope": "網站來源快照；版本 53b2be52",
   "counts": {
     "cards": 496,
     "series": 105,
@@ -1220,7 +1220,6 @@
       "path": "cards/09_australia_usa_china.html",
       "series": "travel_medication",
       "issues": [
-        "text_status",
         "reference_status",
         "date_status",
         "footer_status"
@@ -3472,8 +3471,7 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 387,
-      "partial": 1,
+      "machine_pass": 388,
       "missing": 108
     },
     "reference_status": {
@@ -3495,7 +3493,7 @@
   },
   "sync": {
     "pages": 500,
-    "fields": 1032,
+    "fields": 1031,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -3556,7 +3554,6 @@
       {
         "page": "09_australia_usa_china",
         "fields": [
-          "source_sha256",
           "rules_sha256"
         ]
       },
