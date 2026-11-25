@@ -122,11 +122,13 @@ class SitemapDatesTest(unittest.TestCase):
         # Independent public-entry contract: do not derive expectations from generated XML.
         static_entries = {
             "", "index.html", "public.html", "about.html", "author.html",
-            "editorial-policy.html", "topics/acne.html", "all-cards.html",
+            "editorial-policy.html", "topics/acne.html", "topics/mom.html",
+            "topics/pediatric-medicine.html", "all-cards.html",
             "retired-cards.html", "calc.html", "health-check-calculator.html",
             "cancer-marker-calculator.html", "growth-calculator.html",
             "menstrual-calculator.html", "pregnancy-weight-calculator.html",
-            "10-yr-cv-risk.html", "rx-refillable-date.html",
+            "ped-dose-calculator.html", "10-yr-cv-risk.html",
+            "rx-refillable-date.html",
         }
         self.assertEqual(set(rows), {build.abs_url(path) for path in static_entries | set(self.pages)})
         self.assertNotIn(build.abs_url("cards/not_generated.html"), rows)

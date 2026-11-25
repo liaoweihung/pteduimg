@@ -125,7 +125,15 @@ class RegistryValidationTests(unittest.TestCase):
                       {hashlib.sha256(lf).hexdigest(), hashlib.sha256(lf.replace(b'\n', b'\r\n')).hexdigest()})
         original={r['page_id']:r['rules_sha256'] for r in csv.DictReader(io.StringIO(raw.decode('utf-8-sig')))}
         self.assertEqual(original,registry['v1_by_page'])
-        self.assertEqual(original,{r['page_id']:r['rules_v1_sha256'] for r in self.model['inventory']})
+        inventory_by_id={r['page_id']:r for r in self.model['inventory']}
+        self.assertTrue(set(original).issubset(inventory_by_id))
+        self.assertEqual(original,{pid:inventory_by_id[pid]['rules_v1_sha256'] for pid in original})
+        post_migration_ids=set(inventory_by_id)-set(original)
+        self.assertTrue(post_migration_ids)
+        for pid in sorted(post_migration_ids):
+            with self.subTest(page_id=pid):
+                self.assertEqual(inventory_by_id[pid]['rules_v1_sha256'],'unknown')
+                self.assertEqual(inventory_by_id[pid]['rules_version'],'2')
 
     def test_global_domain_drift_is_a_real_validation_error(self):
         from unittest.mock import patch
