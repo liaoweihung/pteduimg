@@ -118,11 +118,43 @@ def esc(value):
     return html.escape(str(value or ""), quote=True)
 
 
+def normalize_text(value):
+    return re.sub(r"\s+", " ", str(value or "")).strip()
+
+
 def clean_seo_text(value):
-    text = re.sub(r"\s+", " ", str(value or "")).strip()
-    for word in FORBIDDEN_SEO_WORDS:
-        text = text.replace(word, "")
-    return text
+    # Preserve finalized pharmacist wording; do not silently strip FORBIDDEN_SEO_WORDS.
+    return normalize_text(value)
+
+
+def _iter_card_content_texts(value, prefix=""):
+    if isinstance(value, str):
+        yield prefix, value
+    elif isinstance(value, list):
+        for idx, item in enumerate(value):
+            yield from _iter_card_content_texts(item, f"{prefix}[{idx}]")
+    elif isinstance(value, dict):
+        for key, item in value.items():
+            if key in {"image", "url", "cardId", "matchConfidence", "updatedAt", "sourceCheckedAt", "imageUpdatedAt"}:
+                continue
+            next_prefix = f"{prefix}.{key}" if prefix else key
+            yield from _iter_card_content_texts(item, next_prefix)
+
+
+def warn_forbidden_seo_words(card_content_index, target_image_ids=None):
+    warnings = []
+    for image, record in card_content_index.items():
+        if target_image_ids is not None and Path(image).stem not in target_image_ids:
+            continue
+        page_path = page_for_image(image)
+        for field_path, text in _iter_card_content_texts(record):
+            matched = [word for word in FORBIDDEN_SEO_WORDS if word in text]
+            if matched:
+                words_text = "、".join(matched)
+                msg = f"[WARN] {page_path} ({field_path}): 內容含提醒詞「{words_text}」，已保留原句未刪除"
+                print(msg)
+                warnings.append(msg)
+    return warnings
 
 
 def step_topic(card_id, card, step, step_index):
@@ -1766,16 +1798,17 @@ def markdown_cell(value):
 
 
 def build_card_text_integration_report(card_content_index):
+    warn_forbidden_seo_words(card_content_index)
     rows = []
     success_count = 0
     for image, record in card_content_index.items():
         page_path = ROOT / page_for_image(image)
-        expected_title = clean_seo_text(record.get("title"))
-        expected_summary = clean_seo_text(record.get("summary"))
-        seo_title = clean_seo_text(record.get("seoTitle"))
-        expected_description = clean_seo_text(record.get("metaDescription")) or expected_summary
-        expected_alt = clean_seo_text(record.get("altText"))
-        expected_url = clean_seo_text(record.get("url")) or abs_url(page_for_image(image))
+        expected_title = normalize_text(record.get("title"))
+        expected_summary = normalize_text(record.get("summary"))
+        seo_title = normalize_text(record.get("seoTitle"))
+        expected_description = normalize_text(record.get("metaDescription")) or expected_summary
+        expected_alt = normalize_text(record.get("altText"))
+        expected_url = normalize_text(record.get("url")) or abs_url(page_for_image(image))
         errors = []
         page_html = page_path.read_text(encoding="utf-8") if page_path.exists() else ""
 
@@ -1805,10 +1838,10 @@ def build_card_text_integration_report(card_content_index):
             and esc(expected_summary) in page_html
             and sections
             and all(
-                f"<h2>{esc(clean_seo_text(section.get('heading')))}</h2>" in page_html
+                f"<h2>{esc(normalize_text(section.get('heading')))}</h2>" in page_html
                 and (
-                    f"<p>{esc(clean_seo_text(section.get('text')))}</p>" in page_html
-                    or f"<p><strong>{esc(clean_seo_text(section.get('text')))}</strong></p>" in page_html
+                    f"<p>{esc(normalize_text(section.get('text')))}</p>" in page_html
+                    or f"<p><strong>{esc(normalize_text(section.get('text')))}</strong></p>" in page_html
                 )
                 for section in sections
             )
@@ -2163,6 +2196,7 @@ def main(argv=None):
         missing_ids = sorted(only_image_ids - generated_ids)
         if missing_ids:
             parser.error("unknown or unavailable image IDs: " + ", ".join(missing_ids))
+        warn_forbidden_seo_words(card_content_index, target_image_ids=only_image_ids)
         print(f"Generated {len(generated_pages)} selected static card pages.")
         return
     for homepage in ('index.html', 'public.html'):
