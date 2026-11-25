@@ -1595,7 +1595,7 @@ def render_all_cards_page(cards, seo_index):
             seo = seo_index.get(page_path) or fallback_seo_for_card(card_id, card, step, index)
             topic = clean_seo_text(seo.get("h1") or step_topic(card_id, card, step, index))
             description = clean_seo_text(seo.get("meta_description") or "")
-            keyword_text = clean_seo_text(seo.get("keywords") or "?".join(tags))
+            keyword_text = clean_seo_text(seo.get("keywords") or "、".join(tags))
             total_pages += 1
             items.append(
                 f"""          <li>
@@ -1611,7 +1611,7 @@ def render_all_cards_page(cards, seo_index):
         sections.append(
             f"""      <section class=\"series\">
         <h2>{esc(series_title)}</h2>
-        <p class=\"series-meta\">{esc(category_label)} ? {len(items)} ???</p>
+        <p class=\"series-meta\">{esc(category_label)}｜{len(items)} 張圖卡</p>
         <ol>
 {chr(10).join(items)}
         </ol>
@@ -1624,8 +1624,8 @@ def render_all_cards_page(cards, seo_index):
 <head>
   <meta charset=\"UTF-8\">
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-  <title>?????????{SITE_TITLE}</title>
-  <meta name=\"description\" content=\"???????????????????????????????????\">
+  <title>完整圖卡目錄｜{SITE_TITLE}</title>
+  <meta name=\"description\" content=\"收錄藥局衛教助手所有已上架衛教圖卡系列與單張頁面，方便瀏覽與搜尋完整用藥與疾病照護指引。\">
   <link rel=\"canonical\" href=\"{esc(abs_url('all-cards.html'))}\">
   <script>
     var GA_MEASUREMENT_ID = '{GA_MEASUREMENT_ID}';
@@ -1691,15 +1691,15 @@ def render_all_cards_page(cards, seo_index):
 <body>
   <header>
     <div class=\"wrap hero\">
-      <nav class=\"crumbs\" aria-label=\"????\">
-        <a href=\"./\">????</a>
-        <a href=\"./public.html\">??????</a>
+      <nav class=\"crumbs\" aria-label=\"麵包屑導覽\">
+        <a href=\"./\">返回首頁</a>
+        <a href=\"./public.html\">民眾衛教圖卡</a>
       </nav>
-      <h1>????????</h1>
-      <p class=\"lead\">????????????????????????????????????????</p>
+      <h1>完整衛教圖卡目錄</h1>
+      <p class=\"lead\">彙整藥局衛教助手所有公開衛教圖卡系列與各張圖卡連結，方便藥師與民眾快速瀏覽與查詢。</p>
       <div class=\"stats\">
-        <span>? {total_pages} ???</span>
-        <span>?????{generated_at}</span>
+        <span>共 {total_pages} 張圖卡</span>
+        <span>更新日期：{generated_at}</span>
       </div>
     </div>
   </header>
@@ -1709,7 +1709,7 @@ def render_all_cards_page(cards, seo_index):
     </div>
   </main>
   <footer>
-    <div class=\"wrap\">? 2026 DiamondL ??????</div>
+    <div class=\"wrap\">&copy; 2026 DiamondL 藥師開發設計</div>
   </footer>
 </body>
 </html>

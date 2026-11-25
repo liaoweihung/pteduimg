@@ -29,7 +29,7 @@ def write_if_changed(path, text, encoding="utf-8", newline="\n", preserve_index_
     path = Path(path)
     if preserve_index_date and path.exists():
         old = path.read_text(encoding=encoding)
-        pattern = r"(<span>\?{5})\d{4}-\d{2}-\d{2}(</span>)"
+        pattern = r"(<span>更新日期：)\d{4}-\d{2}-\d{2}(</span>)"
         if re.sub(pattern, r"\1DATE\2", old) == re.sub(pattern, r"\1DATE\2", text):
             return False
     data = text.replace("\r\n", "\n").encode(encoding)
