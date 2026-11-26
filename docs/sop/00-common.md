@@ -104,25 +104,25 @@ python -c "import json;json.load(open('<基準檔>',encoding='utf-8'));print('BA
 1. **清冊合併**：
    ```powershell
    python -B scripts/check_project_management.py --propose --page <受影響頁ID> ...
+   python -B scripts/check_project_management.py --apply-machine --page <受影響頁ID> ...
    ```
-   有差異時，只把機械欄位依 `page_id` 合併進 `page-inventory.csv`，人工欄位不動（作業卡或第 5 步要求修改的除外）；不要用提案整份覆蓋。`added_at`、`added_cr`、`last_updated_at`、`last_updated_cr` 由程式依 CR 推算，不要手填。有第 5 步的複核時，此時填複核欄位。再跑一次 `--propose`，必須零差異。
+   先跑唯讀 `--propose` 檢視差異（僅計算指定頁）；有差異時，既有頁（或已依作業卡 1／2 建好人工欄位的新頁）以 `--apply-machine --page <受影響頁ID> ...` 限頁寫入白名單機械欄位（**必須帶 `--page`，不可全表刷寫**；程式寫入前後會自動斷言所有人工欄位與非目標列零變動，不會新建列或改動人工欄位）。`added_at`、`added_cr`、`last_updated_at`、`last_updated_cr` 由程式依 CR 推算，不要手填。有第 5 步的複核時，於機械欄位合併後填複核欄位。最後再跑一次 `--propose --page <受影響頁ID> ...`，必須零差異。
 2. **其餘檢查**：
    ```powershell
-   python -c "import json;[json.load(open(f,encoding='utf-8')) for f in ('cards.json','cards.manual.json','data/card_content.json')];print('JSON OK')"
    python -B scripts/check_site.py
-   python -B scripts/project_change_tracker.py --check --page <本次任一頁ID>
+   python -B scripts/project_change_tracker.py --check --range HEAD..HEAD
    git diff --stat
    ```
-   - JSON 都要能解析，`check_site.py` 必須通過。
-   - 變更追蹤只跑一次、填任一頁 ID 即可；結果不可有「目前未提交網站變更：缺少管理連結」。
+   - `check_site.py` 已單次解析並驗證 `cards.json`、`cards.manual.json`、`cards.retired.json`、`data/card_content.json` 與全站檢查，必須通過。
+   - 本地變更追蹤以 `--range HEAD..HEAD` 檢查工作區未提交變更（不掃描大量歷史 commit，且不漏報任何未提交網站檔案）；結果不可有「目前未提交網站變更：缺少管理連結」。若本機另有已提交尚未推送的 commit，可用 `--range origin/main..HEAD` 加驗；正式推送時仍由 GitHub CI 查完整提交範圍。
    - `git diff --stat` 只能有本次相關的檔案，有不明的改動要列出來。
    - 再做作業卡列出的**頁面確認**。
    - 把結果寫入 CR 的 `validation_result` 和 evidence 檔。
 3. **最後才做基準比對**：
    ```powershell
-   python -B scripts/check_project_management.py --summary --baseline-file <基準檔> --report-file outputs/mgmt-after.json | Select-String "Baseline difference"
+   python -B scripts/check_project_management.py --summary --baseline-file <基準檔> --report-file outputs/mgmt-after.json
    ```
-   這個指令也會回報失敗，屬正常；只看 `Baseline difference` 那一行，`new` 與 `worsened` 都必須是 0。不是 0 時才打開 `outputs/mgmt-after.json` 找出是哪幾筆。通過後在 `validation_result` 補上「基準比對 new=0、worsened=0」。
+   這個指令仍會因歷史管理債回報失敗（退出碼不變），屬正常；摘要會優先顯示 `Baseline difference` 與本次 `NEW`／`WORSENED`（醫療簽核／缺證據等實質錯誤排在機械漂移之前），歷史機械指紋漂移則以分類統計呈現。`new` 與 `worsened` 都必須是 0；需要完整逐筆清單時再打開 `outputs/mgmt-after.json`。通過後在 `validation_result` 補上「基準比對 new=0、worsened=0」。
 
 一般圖卡作業不執行 `scripts/test_*.py`。
 

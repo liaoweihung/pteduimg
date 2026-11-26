@@ -172,6 +172,70 @@ class ProjectChangeTrackerTests(unittest.TestCase):
         ]
         self.assertEqual(tracker.filter_changes(changes, "a", None, None), [changes[0]])
 
+    def test_head_to_head_skips_history_and_catches_uncommitted_site_change(self):
+        def fake_git(_root, *args, **kwargs):
+            if args[:2] == ("rev-list", "--reverse"):
+                self.assertEqual(args[2], "HEAD..HEAD")
+                return ""
+            if args == ("rev-parse", "HEAD"):
+                return "deadbeef" * 5 + "\n"
+            if args in (("diff", "--name-only"), ("ls-files",)):
+                return "index.html\n"
+            return ""
+
+        with patch.object(tracker, "git", side_effect=fake_git), \
+                patch.object(tracker, "commit_request_map", side_effect=AssertionError("history map should be skipped")), \
+                patch.object(tracker, "requests_worktree", return_value={}):
+            report = tracker.build_report(ROOT, "HEAD..HEAD", True, None, None, None)
+
+        self.assertEqual(report["changes"], [])
+        self.assertEqual(report["working_tree"]["files"], ["index.html"])
+        self.assertEqual(report["working_tree"]["coverage"], "缺少管理連結")
+        self.assertIn("目前未提交網站變更：缺少管理連結", report["problems"])
+
+    def test_current_worktree_skips_untouched_json_and_still_maps_card_series(self):
+        def fake_git(_root, *args, **kwargs):
+            if args in (("diff", "--name-only"), ("ls-files",)):
+                return "cards/demo_1.html\n"
+            return ""
+
+        worktree_calls = []
+
+        def fake_json_worktree(_root, path):
+            worktree_calls.append(path)
+            if path == "cards.json":
+                return {"demo_series": {"steps": ["img/demo_1.webp"]}}
+            raise AssertionError(f"Unexpected json_worktree read: {path}")
+
+        with patch.object(tracker, "git", side_effect=fake_git), \
+                patch.object(tracker, "json_at", side_effect=AssertionError("untouched HEAD json should not be read")), \
+                patch.object(tracker, "json_worktree", side_effect=fake_json_worktree), \
+                patch.object(tracker, "requests_worktree", return_value={}):
+            working = tracker.current_worktree(ROOT)
+
+        self.assertEqual(worktree_calls, ["cards.json"])
+        self.assertEqual(working["page_ids"], ["demo_1"])
+        self.assertEqual(working["series_ids"], ["demo_series"])
+        self.assertEqual(working["coverage"], "缺少管理連結")
+
+    def test_impact_for_commit_skips_untouched_json(self):
+        with patch.object(tracker, "json_at", side_effect=AssertionError("no git show expected for dashboard-only")):
+            self.assertEqual(tracker.impact_for_commit(ROOT, "abc1234", {"dashboard/status.json"}), ([], []))
+
+        seen = []
+
+        def fake_json_at(_root, ref, path):
+            seen.append((ref, path))
+            if path == "cards.json":
+                return {"demo_series": {"steps": ["img/demo_1.webp"]}}
+            raise AssertionError(f"Unexpected json_at: {ref}:{path}")
+
+        with patch.object(tracker, "json_at", side_effect=fake_json_at):
+            pages, series = tracker.impact_for_commit(ROOT, "abc1234", {"cards/demo_1.html"})
+        self.assertEqual(pages, ["demo_1"])
+        self.assertEqual(series, ["demo_series"])
+        self.assertEqual(seen, [("abc1234", "cards.json")])
+
     def test_live_history_report_has_stable_shape(self):
         report = tracker.build_report(
             ROOT, f"{tracker.TRACKING_START}..HEAD", False, None, None, None

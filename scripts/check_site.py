@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections import defaultdict
 import html as html_module
 import json
 import re
@@ -10,6 +11,8 @@ from site_footer import sync_footer
 
 
 ROOT = Path(__file__).resolve().parents[1]
+_TEXT_CACHE: dict[Path, str] | None = None
+_JSON_CACHE: dict[Path, object] | None = None
 
 
 def rel(path: Path) -> str:
@@ -17,10 +20,24 @@ def rel(path: Path) -> str:
 
 
 def read_text(path: Path) -> str:
+    if _TEXT_CACHE is not None:
+        cached = _TEXT_CACHE.get(path)
+        if cached is not None:
+            return cached
+        text = path.read_text(encoding="utf-8")
+        _TEXT_CACHE[path] = text
+        return text
     return path.read_text(encoding="utf-8")
 
 
 def load_json(path: Path):
+    if _JSON_CACHE is not None:
+        if path in _JSON_CACHE:
+            return _JSON_CACHE[path]
+        with path.open(encoding="utf-8") as handle:
+            data = json.load(handle)
+        _JSON_CACHE[path] = data
+        return data
     with path.open(encoding="utf-8") as handle:
         return json.load(handle)
 
@@ -44,11 +61,25 @@ def check(condition: bool, ok: str, fail: str, failures: list[str]) -> None:
 def check_json_files(failures: list[str]) -> tuple[dict, dict]:
     cards = load_json(ROOT / "cards.json")
     manual = load_json(ROOT / "cards.manual.json")
+    retired = load_json(ROOT / "cards.retired.json")
+    content_records = load_json(ROOT / "data" / "card_content.json")
     check(isinstance(cards, dict), "cards.json is valid", "cards.json must be an object", failures)
     check(
         isinstance(manual, dict),
         "cards.manual.json is valid",
         "cards.manual.json must be an object",
+        failures,
+    )
+    check(
+        isinstance(retired, list),
+        "cards.retired.json is valid",
+        "cards.retired.json must be a list",
+        failures,
+    )
+    check(
+        isinstance(content_records, list),
+        "data/card_content.json is valid",
+        "data/card_content.json must be a list",
         failures,
     )
     return cards, manual
@@ -434,6 +465,10 @@ def check_wound_regrouping(cards: dict, manual: dict, failures: list[str]) -> No
     actual = {}
     errors = []
     records = load_json(ROOT / 'data' / 'card_content.json')
+    records_by_stem: dict[str, list[dict]] = defaultdict(list)
+    for record in records:
+        if isinstance(record, dict):
+            records_by_stem[Path(record.get('image', '')).stem].append(record)
     seo = load_json(ROOT / 'seo.json')
     for key, size in sizes.items():
         card = cards.get(key, {})
@@ -448,7 +483,7 @@ def check_wound_regrouping(cards: dict, manual: dict, failures: list[str]) -> No
             content = read_text(page) if page.exists() else ''
             if f'var cardFavoriteKey = "{favorite}";' not in content:
                 errors.append(image + ': page favorite mismatch')
-            matching = [r for r in records if Path(r.get('image', '')).stem == Path(image).stem]
+            matching = records_by_stem.get(Path(image).stem, [])
             if len(matching) != 1 or matching[0].get('image') != image:
                 errors.append(image + ': duplicate or mismatched text record')
             page_seo = seo.get(f'cards/{Path(image).stem}.html', {})
@@ -466,28 +501,35 @@ def check_wound_regrouping(cards: dict, manual: dict, failures: list[str]) -> No
 
 
 def main() -> int:
+    global _TEXT_CACHE, _JSON_CACHE
     failures: list[str] = []
-    cards, _manual = check_json_files(failures)
-    check_retired_cards(cards, _manual, failures)
-    check_wound_regrouping(cards, _manual, failures)
-    pages = check_card_pages(cards, failures)
-    check_home_viewer(failures)
-    check_static_card_template(pages, failures)
-    check_static_card_text_content(cards, failures)
-    check_analytics_guards(failures)
-    check_service_worker(failures)
-    check_oral_liquid_explorer(failures)
-    check_medicine_shell(failures)
-    check_medicine_data_regression(failures)
-    check_tcm_formula_explorer(failures)
-    pilot_errors = check_pilot(ROOT)
-    for page in ['index.html', 'public.html',
-                 'cards/acne_stage.html', 'cards/acne_topicals_02_retinoids.html',
-                 'cards/acne_patch_when_to_use.html', 'cards/acne_patch_broken_skin.html']:
-        check(sync_footer(ROOT, page=page), f"{page} footer matches shared source",
-              f"{page} footer differs from templates/site-footer.html", failures)
-    check(not pilot_errors, "acne pilot layout, navigation data and hub links",
-          "\n".join(pilot_errors), failures)
+    _TEXT_CACHE = {}
+    _JSON_CACHE = {}
+    try:
+        cards, _manual = check_json_files(failures)
+        check_retired_cards(cards, _manual, failures)
+        check_wound_regrouping(cards, _manual, failures)
+        pages = check_card_pages(cards, failures)
+        check_home_viewer(failures)
+        check_static_card_template(pages, failures)
+        check_static_card_text_content(cards, failures)
+        check_analytics_guards(failures)
+        check_service_worker(failures)
+        check_oral_liquid_explorer(failures)
+        check_medicine_shell(failures)
+        check_medicine_data_regression(failures)
+        check_tcm_formula_explorer(failures)
+        pilot_errors = check_pilot(ROOT)
+        for page in ['index.html', 'public.html',
+                     'cards/acne_stage.html', 'cards/acne_topicals_02_retinoids.html',
+                     'cards/acne_patch_when_to_use.html', 'cards/acne_patch_broken_skin.html']:
+            check(sync_footer(ROOT, page=page), f"{page} footer matches shared source",
+                  f"{page} footer differs from templates/site-footer.html", failures)
+        check(not pilot_errors, "acne pilot layout, navigation data and hub links",
+              "\n".join(pilot_errors), failures)
+    finally:
+        _TEXT_CACHE = None
+        _JSON_CACHE = None
 
     if failures:
         print("\nSite check failed:")

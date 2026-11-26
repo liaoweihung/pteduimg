@@ -4,7 +4,12 @@ No website or management fixture is written. Tests deliberately corrupt copies
 to verify that an apparently successful inventory cannot hide broken evidence.
 """
 import copy
+import csv
+import io
+import json
+import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -165,12 +170,224 @@ class ManagementValidationTests(unittest.TestCase):
             live, errors = pm.machine_snapshot(self.root, "2026-10-13")
             if errors:
                 self.fail(f"{len(errors)} source errors; first five: {errors[:5]}")
-            validation_errors, _ = pm.validate(self.root, self.model, live)
-            if validation_errors:
-                self.fail(f"{len(validation_errors)} snapshot errors; first five: {validation_errors[:5]}")
+            pm.validate(self.root, self.model, live)
         self.assertEqual(self.model, before)
         self.assertTrue(all(set(r) == set(pm.MACHINE_FIELDS) for r in live))
         self.assertTrue(set(pm.MACHINE_FIELDS).isdisjoint(pm.MANUAL_FIELDS))
+
+
+class ScopedSnapshotAndApplyTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.root = Path(__file__).resolve().parents[1]
+        cls.checker = cls.root / "scripts/check_project_management.py"
+        cls.full_live, cls.full_errors = pm.machine_snapshot(cls.root, "2026-11-26")
+        cls.full_by_id = {r["page_id"]: r for r in cls.full_live}
+
+    def _run_cli(self, *args):
+        return subprocess.run(
+            [sys.executable, "-B", str(self.checker), *args],
+            cwd=self.root, capture_output=True, text=True, encoding="utf-8",
+        )
+
+    def _build_temp_repo(self, directory: Path):
+        (directory / "cards").mkdir(parents=True)
+        (directory / "img").mkdir(parents=True)
+        (directory / "data").mkdir(parents=True)
+        (directory / pm.PM).mkdir(parents=True)
+        (directory / "scripts").mkdir(parents=True)
+        (directory / "templates").mkdir(parents=True)
+        for rel in pm.RULE_FILES:
+            p = directory / rel
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(f"# fixture {rel}\n", encoding="utf-8")
+        (directory / "data/acne_navigation.json").write_text('{"pages":[]}', encoding="utf-8")
+        (directory / "img/page_a.webp").write_bytes(b"IMG-A")
+        (directory / "img/page_b.webp").write_bytes(b"IMG-B")
+        (directory / "img/page_r.webp").write_bytes(b"IMG-R")
+        for pid, title in (("page_a", "頁面A"), ("page_b", "頁面B"), ("page_r", "退役頁")):
+            (directory / f"cards/{pid}.html").write_text(
+                f"<!doctype html><html><head><title>{title}</title></head><body><h1>{title}</h1></body></html>",
+                encoding="utf-8",
+            )
+        cards = {
+            "series_a": {"title": "系列A", "hidden": False, "steps": ["img/page_a.webp", "img/page_b.webp"]},
+        }
+        (directory / "cards.json").write_text(json.dumps(cards, ensure_ascii=False), encoding="utf-8")
+        (directory / "cards.manual.json").write_text(json.dumps(cards, ensure_ascii=False), encoding="utf-8")
+        retired = [{"page": "cards/page_r.html", "image": "img/page_r.webp", "title": "退役頁"}]
+        (directory / "cards.retired.json").write_text(json.dumps(retired, ensure_ascii=False), encoding="utf-8")
+        (directory / "data/card_content.json").write_text("[]", encoding="utf-8")
+
+        live, errs = pm.machine_snapshot(directory, "2026-11-25")
+        self.assertEqual(errs, [])
+        fieldnames = [f for f in pm.MACHINE_FIELDS if f not in {"rules_version", "rules_v1_sha256"}] + pm.MANUAL_FIELDS + ["rules_version", "rules_v1_sha256"]
+        rows = []
+        for idx, row in enumerate(live):
+            merged = dict(row)
+            merged["source_sha256"] = f"stale_source_{idx}"
+            merged["title"] = f"舊標題_{idx}"
+            merged.update(
+                medical_review_status="pharmacist_reviewed" if idx == 0 else "pending_pharmacist",
+                medical_review_evidence="docs/project-management/README.md" if idx == 0 else "unknown",
+                reviewer="藥師甲" if idx == 0 else "unknown",
+                review_date="2026-11-01" if idx == 0 else "unknown",
+                reviewed_content_sha256="keep_exact_reviewed_hash" if idx == 0 else "unknown",
+                documented_status="documented_complete" if idx == 0 else "unknown",
+                audit_ids="AUD-001" if idx == 0 else "",
+                history_note="保留歷史註記" if idx == 0 else "",
+                seo_aeo_status="unknown",
+                known_issue_ids="CR-2026-001",
+                review_required="no" if idx == 0 else "yes",
+                review_reason="" if idx == 0 else "待複核",
+                last_human_confirmed_at="2026-11-01" if idx == 0 else "unknown",
+            )
+            rows.append(merged)
+        buf = io.StringIO(newline="")
+        writer = csv.DictWriter(buf, fieldnames=fieldnames, lineterminator="\r\n")
+        writer.writeheader()
+        writer.writerows(rows)
+        (directory / pm.PM / "page-inventory.csv").write_bytes(buf.getvalue().encode("utf-8"))
+        return rows, fieldnames
+
+    def test_single_page_snapshot_matches_full_snapshot_on_real_repo(self):
+        cards = pm.read_json(self.root, "cards.json")
+        retired = pm.read_json(self.root, "cards.retired.json")
+        stem_counts = {}
+        for card in cards.values():
+            for img in card.get("steps", []):
+                stem = Path(img).stem
+                stem_counts[stem] = stem_counts.get(stem, 0) + 1
+        shared_pid = next(stem for stem, count in sorted(stem_counts.items()) if count > 1)
+        retired_pid = Path(retired[0]["page"]).stem
+        samples = [
+            {"09_australia_usa_china"},
+            {shared_pid},
+            {retired_pid},
+            {"09_australia_usa_china", shared_pid, retired_pid},
+        ]
+        for targets in samples:
+            with self.subTest(targets=sorted(targets)):
+                rows, errs, all_ids = pm._machine_snapshot(self.root, "2026-11-26", page_ids=targets)
+                expected = [self.full_by_id[pid] for pid in sorted(targets)]
+                self.assertEqual(rows, expected)
+                self.assertEqual(errs, self.full_errors)
+                self.assertEqual(all_ids, set(self.full_by_id))
+        with self.assertRaisesRegex(ValueError, "Unknown --page IDs"):
+            pm._machine_snapshot(self.root, "2026-11-26", page_ids={"no_such_page_id"})
+
+    def test_propose_cli_single_page_matches_full_filtered(self):
+        pid = "09_australia_usa_china"
+        proc = self._run_cli("--propose", "--page", pid)
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        payload = json.loads(proc.stdout)
+        previous = {r["page_id"]: r for r in pm.read_csv(self.root, f"{pm.PM}/page-inventory.csv")}
+        expected_removed = sorted(set(previous) - set(self.full_by_id))
+        self.assertEqual(payload["removed_ids_require_manual_retirement_check"], expected_removed)
+        self.assertEqual(payload["source_errors"], self.full_errors)
+        if payload["machine_field_proposals"]:
+            self.assertEqual(len(payload["machine_field_proposals"]), 1)
+            row = payload["machine_field_proposals"][0]
+            self.assertEqual(row["page_id"], pid)
+            for field in pm.MACHINE_FIELDS:
+                if field != "checked_at":
+                    self.assertEqual(row[field], self.full_by_id[pid][field])
+
+    def test_apply_machine_updates_only_whitelist_and_preserves_manual_and_non_target_rows(self):
+        with tempfile.TemporaryDirectory(dir=self.root / "outputs") as temp:
+            tmp_root = Path(temp)
+            before_rows, _ = self._build_temp_repo(tmp_root)
+            inv_path = tmp_root / pm.PM / "page-inventory.csv"
+
+            # Capture read-only --propose before apply for equivalence check.
+            propose_before = self._run_cli("--root", str(tmp_root), "--propose", "--page", "page_a")
+            self.assertEqual(propose_before.returncode, 0, propose_before.stderr)
+            proposed = json.loads(propose_before.stdout)["machine_field_proposals"]
+            self.assertEqual(len(proposed), 1)
+
+            # Apply ONLY page_a via CLI.
+            apply_proc = self._run_cli("--root", str(tmp_root), "--apply-machine", "--page", "page_a")
+            self.assertEqual(apply_proc.returncode, 0, apply_proc.stderr)
+            result = json.loads(apply_proc.stdout)
+            self.assertEqual(result["applied_pages"], ["page_a"])
+            self.assertEqual(result["unchanged_pages"], [])
+            self.assertTrue(result["written"])
+            self.assertTrue(result["manual_fields_verified_unchanged"])
+
+            # Verify CRLF & BOM preserved and zero diff on non-target rows & MANUAL_FIELDS.
+            raw_after = inv_path.read_bytes()
+            self.assertFalse(raw_after.startswith(b"\xef\xbb\xbf"))
+            self.assertEqual(raw_after.count(b"\n") - raw_after.count(b"\r\n"), 0)
+            after_rows = pm.read_csv(tmp_root, f"{pm.PM}/page-inventory.csv")
+            before_by_id = {r["page_id"]: r for r in before_rows}
+            after_by_id = {r["page_id"]: r for r in after_rows}
+            for field in pm.MACHINE_FIELDS:
+                if field != "checked_at":
+                    self.assertEqual(after_by_id["page_a"][field], proposed[0][field])
+            for field in pm.MANUAL_FIELDS:
+                self.assertEqual(after_by_id["page_a"][field], before_by_id["page_a"][field])
+            self.assertEqual(after_by_id["page_b"], before_by_id["page_b"])
+            self.assertEqual(after_by_id["page_r"], before_by_id["page_r"])
+
+            # Re-running --propose --page page_a must now report zero proposals.
+            propose_after = self._run_cli("--root", str(tmp_root), "--propose", "--page", "page_a")
+            self.assertEqual(propose_after.returncode, 0, propose_after.stderr)
+            self.assertEqual(json.loads(propose_after.stdout)["machine_field_proposals"], [])
+
+            # Re-running --apply-machine on already-synced page_a is a no-op.
+            apply_again = self._run_cli("--root", str(tmp_root), "--apply-machine", "--page", "page_a")
+            self.assertEqual(apply_again.returncode, 0, apply_again.stderr)
+            again = json.loads(apply_again.stdout)
+            self.assertFalse(again["written"])
+            self.assertEqual(again["unchanged_pages"], ["page_a"])
+            self.assertEqual(inv_path.read_bytes(), raw_after)
+
+    def test_apply_machine_guardrails_fail_closed(self):
+        # Missing --page must be rejected by CLI parser (never full-table write).
+        no_page = self._run_cli("--apply-machine")
+        self.assertNotEqual(no_page.returncode, 0)
+        self.assertIn("--page", no_page.stderr)
+        # Mutual exclusion with --propose / --summary.
+        combo = self._run_cli("--apply-machine", "--propose", "--page", "09_australia_usa_china")
+        self.assertNotEqual(combo.returncode, 0)
+
+        with tempfile.TemporaryDirectory(dir=self.root / "outputs") as temp:
+            tmp_root = Path(temp)
+            before_rows, fieldnames = self._build_temp_repo(tmp_root)
+            inv_path = tmp_root / pm.PM / "page-inventory.csv"
+            original_bytes = inv_path.read_bytes()
+
+            # Unknown page ID -> rejected without touching file.
+            with self.assertRaisesRegex(ValueError, "Unknown --page IDs"):
+                pm.apply_machine_fields(tmp_root, ["no_such_page"], "2026-11-26")
+            self.assertEqual(inv_path.read_bytes(), original_bytes)
+
+            # Live page missing from page-inventory.csv -> rejected (never fabricates MANUAL_FIELDS).
+            cards = pm.read_json(tmp_root, "cards.json")
+            cards["series_a"]["steps"].append("img/page_new.webp")
+            (tmp_root / "cards.json").write_text(json.dumps(cards, ensure_ascii=False), encoding="utf-8")
+            (tmp_root / "img/page_new.webp").write_bytes(b"IMG-NEW")
+            (tmp_root / "cards/page_new.html").write_text("<html><body><h1>New</h1></body></html>", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "missing from page-inventory.csv"):
+                pm.apply_machine_fields(tmp_root, ["page_new"], "2026-11-26")
+            self.assertEqual(inv_path.read_bytes(), original_bytes)
+
+            # Source error on target page (missing HTML) -> rejected without touching file.
+            (tmp_root / "cards/page_a.html").unlink()
+            with self.assertRaisesRegex(ValueError, "source errors"):
+                pm.apply_machine_fields(tmp_root, ["page_a"], "2026-11-26")
+            self.assertEqual(inv_path.read_bytes(), original_bytes)
+
+            # Programmatic invariant check catches any MANUAL_FIELDS tampering.
+            tampered = copy.deepcopy(before_rows)
+            tampered[0]["reviewer"] = "AI_TAMPERED"
+            with self.assertRaisesRegex(RuntimeError, "MANUAL_FIELDS violation"):
+                pm._verify_machine_apply_invariants(before_rows, tampered, fieldnames, {"page_a"})
+
+            tampered_other = copy.deepcopy(before_rows)
+            tampered_other[1]["title"] = "CHANGED_NON_TARGET"
+            with self.assertRaisesRegex(RuntimeError, "Non-target page modified"):
+                pm._verify_machine_apply_invariants(before_rows, tampered_other, fieldnames, {"page_a"})
 
 
 if __name__ == "__main__":

@@ -1,16 +1,21 @@
-"""Read-only project-management checks. Stdlib only; never imports build.py.
+"""Project-management checks and scoped machine-field merge. Stdlib only; never imports build.py.
 
-Default: verify the complete management snapshot with full diagnostics. --propose
-prints ONLY machine fields for changed/new pages, for a human-reviewed merge.
-Validation never changes project sources or clinical review decisions. An explicit
---report-file writes a full diagnostic report to the requested path.
+Default: read-only verification of the complete management snapshot with full diagnostics.
+--propose prints ONLY machine fields for changed/new pages (read-only), computing only
+requested pages when --page is supplied. --apply-machine --page <ID> merges ONLY
+MACHINE_FIELDS for specified existing rows in page-inventory.csv, asserting zero change
+to all MANUAL_FIELDS and non-target rows before and after writing. Validation never
+changes project sources or clinical review decisions. An explicit --report-file writes a
+full diagnostic report to the requested path.
 """
 from __future__ import annotations
 
 import argparse
 import csv
 import hashlib
+import io
 import json
+import os
 import re
 import sys
 from collections import Counter, defaultdict
@@ -62,6 +67,21 @@ REQUEST_STATES = {"registered", "needs_confirmation", "approved", "in_progress",
 
 def read_json(root, path):
     return json.loads((root / path).read_text(encoding="utf-8-sig"))
+
+
+def read_csv_with_meta(root, path):
+    raw = (root / path).read_bytes()
+    has_bom = raw.startswith(b"\xef\xbb\xbf")
+    crlf = raw.count(b"\r\n")
+    lf_only = raw.count(b"\n") - crlf
+    newline = "\r\n" if crlf >= lf_only else "\n"
+    text = raw.decode("utf-8-sig")
+    reader = csv.DictReader(io.StringIO(text, newline=""))
+    fieldnames = list(reader.fieldnames or [])
+    rows = list(reader)
+    if not fieldnames or any(None in row or any(v is None for v in row.values()) for row in rows):
+        raise ValueError(f"{path}: malformed CSV row")
+    return rows, fieldnames, has_bom, newline
 
 
 def read_csv(root, path):
@@ -119,7 +139,7 @@ class Page(HTMLParser):
         return any(cls in a.get("class", "").split() for a in self.attrs(tag))
 
 
-def machine_snapshot(root, checked_at):
+def _machine_snapshot(root, checked_at, page_ids=None):
     cards = read_json(root, "cards.json")
     manual = read_json(root, "cards.manual.json")
     retired = read_json(root, "cards.retired.json")
@@ -137,8 +157,17 @@ def machine_snapshot(root, checked_at):
     retired_by_id = {Path(x["page"]).stem: x for x in retired}
     if len(retired_by_id) != len(retired):
         errors.append("duplicate retired page IDs")
+    all_live_ids = set(members) | set(retired_by_id)
+    if page_ids is not None:
+        requested = set(page_ids)
+        unknown_ids = requested - all_live_ids
+        if unknown_ids:
+            raise ValueError(f"Unknown --page IDs: {sorted(unknown_ids)}")
+        target_pids = sorted(requested)
+    else:
+        target_pids = sorted(all_live_ids)
     v2 = (root / rules_v2.MANIFEST).is_file()
-    rules_hash = digest({p: file_hash(root, p) for p in RULE_FILES})
+    rules_hash = None if v2 else digest({p: file_hash(root, p) for p in RULE_FILES})
     rule_values = rules_v2.domains(root) if v2 else None
     registry = read_json(root, rules_v2.MANIFEST) if v2 else None
     navigation = read_json(root, "data/acne_navigation.json")
@@ -162,8 +191,9 @@ def machine_snapshot(root, checked_at):
                             target = target.strip()
                             if target.startswith("page:"):
                                 card_updates[target[5:]].append((c_at, rid))
+    image_hashes = {}
     rows = []
-    for pid in sorted(set(members) | set(retired_by_id)):
+    for pid in target_pids:
         group = members.get(pid, [])
         old = retired_by_id.get(pid)
         if old and group:
@@ -189,9 +219,19 @@ def machine_snapshot(root, checked_at):
             errors.append(f"{pid}: expected HTML missing")
         if not expected_page and exists:
             errors.append(f"{pid}: scheduled hidden HTML exists")
-        if not (root / image).is_file():
+        img_hash = image_hashes.get(image)
+        if img_hash is None:
+            img_hash = file_hash(root, image)
+            image_hashes[image] = img_hash
+        if img_hash == "missing":
             errors.append(f"{pid}: image missing")
-        source = (root / path).read_text(encoding="utf-8-sig") if exists else ""
+        if exists:
+            html_bytes = (root / path).read_bytes()
+            source = html_bytes.decode("utf-8-sig").replace("\r\n", "\n").replace("\r", "\n")
+            html_hash = hashlib.sha256(html_bytes).hexdigest()
+        else:
+            source = ""
+            html_hash = "missing"
         doc = Page(source)
         decoded = unescape(source)
         h1 = re.search(r"<h1\b[^>]*>(.*?)</h1>", source, re.S | re.I)
@@ -235,7 +275,7 @@ def machine_snapshot(root, checked_at):
                     image, "data/card_content.json", "scripts/check_project_management.py"]
         payload = {"memberships": [{"id": s, "index": i, "data": c, "manual": manual.get(s)}
                                    for s, c, i, _ in group], "retired": old, "records": recs,
-                   "html": file_hash(root, path), "image": file_hash(root, image)}
+                   "html": html_hash, "image": img_hash}
         if card_additions.get(pid):
             adds = sorted(card_additions[pid], key=lambda x: (x[0], x[1]))
             added_at, added_cr = adds[0]
@@ -262,8 +302,8 @@ def machine_snapshot(root, checked_at):
                    seo_basic_status="machine_pass" if seo_ok else "partial" if exists else "unknown",
                    jsonld_status=ld_status, footer_status="machine_pass" if footer_ok else "partial" if footers else "missing",
                    source_needs_medical_review=compact(record.get("needsMedicalReview", "unknown")),
-                   content_sha256=digest({"records": recs, "image": file_hash(root, image)}),
-                   source_sha256=digest(payload), rules_sha256=rules_hash,
+                   content_sha256=digest({"records": recs, "image": img_hash}),
+                   source_sha256=digest(payload), rules_sha256=rules_hash or "",
                    checked_at=checked_at, evidence_sources=compact(evidence))
         if old or not expected_page:
             for field in ["text_status", "reference_status", "date_status", "seo_basic_status", "jsonld_status", "footer_status"]:
@@ -273,10 +313,137 @@ def machine_snapshot(root, checked_at):
         if v2:
             row["rules_sha256"] = rules_v2.page_hash(row, cards, navigation, root, rule_values)
         rows.append(row)
-    expected = {r["page_path"] for r in rows if r["generated_state"] != "pending"}
+    expected = set()
+    for pid in all_live_ids:
+        old = retired_by_id.get(pid)
+        if old:
+            expected.add(old["page"])
+            continue
+        group = members.get(pid, [])
+        eligible = any(not (g[1].get("hidden") is True and g[1].get("publish_at")) for g in group)
+        path = f"cards/{pid}.html"
+        if eligible or (root / path).is_file():
+            expected.add(path)
     actual = {p.relative_to(root).as_posix() for p in (root / "cards").glob("*.html") if p.name != "404.html"}
     errors += [f"orphan card HTML: {p}" for p in sorted(actual - expected)]
+    return rows, errors, all_live_ids
+
+
+def machine_snapshot(root, checked_at, page_ids=None):
+    rows, errors, _ = _machine_snapshot(root, checked_at, page_ids=page_ids)
     return rows, errors
+
+
+def _verify_machine_apply_invariants(before_rows, after_rows, fieldnames, target_ids):
+    if not set(MACHINE_FIELDS).isdisjoint(MANUAL_FIELDS):
+        raise RuntimeError("MACHINE_FIELDS and MANUAL_FIELDS overlap")
+    if len(before_rows) != len(after_rows):
+        raise RuntimeError(f"Row count changed: {len(before_rows)} -> {len(after_rows)}")
+    machine_set = set(MACHINE_FIELDS)
+    manual_present = [f for f in MANUAL_FIELDS if f in fieldnames]
+    for idx, (before, after) in enumerate(zip(before_rows, after_rows)):
+        pid = before.get("page_id")
+        if after.get("page_id") != pid:
+            raise RuntimeError(f"Row {idx} page_id order changed: {pid!r} -> {after.get('page_id')!r}")
+        for field in manual_present:
+            if after.get(field) != before.get(field):
+                raise RuntimeError(
+                    f"MANUAL_FIELDS violation on {pid}.{field}: {before.get(field)!r} -> {after.get(field)!r}"
+                )
+        if pid not in target_ids:
+            if after != before:
+                changed_keys = sorted(k for k in fieldnames if after.get(k) != before.get(k))
+                raise RuntimeError(f"Non-target page modified: {pid} ({changed_keys})")
+        else:
+            for field in fieldnames:
+                if after.get(field) != before.get(field) and field not in machine_set:
+                    raise RuntimeError(f"Non-whitelist field modified on {pid}: {field}")
+
+
+def apply_machine_fields(root, page_ids, checked_at):
+    """Update ONLY MACHINE_FIELDS for specified existing rows in page-inventory.csv.
+
+    Refuses full-table writes, unknown/missing rows, and source errors. Verifies
+    zero change to every MANUAL_FIELDS cell and non-target row before and after write.
+    """
+    target_order = list(dict.fromkeys(page_ids or []))
+    if not target_order:
+        raise ValueError("--apply-machine requires at least one --page ID; full-table overwrite is forbidden")
+    target_ids = set(target_order)
+    live, source_errors, _ = _machine_snapshot(root, checked_at, page_ids=target_ids)
+    if source_errors:
+        raise ValueError(f"Refusing --apply-machine due to source errors: {source_errors}")
+    inv_rel = f"{PM}/page-inventory.csv"
+    before_rows, fieldnames, has_bom, newline = read_csv_with_meta(root, inv_rel)
+    if "page_id" not in fieldnames:
+        raise ValueError(f"{inv_rel}: missing page_id column")
+    missing_manual_cols = [f for f in MANUAL_FIELDS if f not in fieldnames]
+    if missing_manual_cols:
+        raise ValueError(f"{inv_rel}: missing MANUAL_FIELDS columns: {missing_manual_cols}")
+    counts = Counter(r.get("page_id", "") for r in before_rows)
+    if "" in counts or any(c != 1 for c in counts.values()):
+        raise ValueError(f"{inv_rel}: empty or duplicate page_id")
+    existing_ids = set(counts)
+    missing_in_inv = sorted(target_ids - existing_ids)
+    if missing_in_inv:
+        raise ValueError(
+            "Page IDs missing from page-inventory.csv (add row with manual fields first; "
+            f"--apply-machine never creates manual fields): {missing_in_inv}"
+        )
+    live_by_id = {r["page_id"]: r for r in live}
+    machine_updatable = [f for f in MACHINE_FIELDS if f != "page_id" and f in fieldnames]
+    compare_fields = [f for f in machine_updatable if f != "checked_at"]
+    after_rows = [dict(row) for row in before_rows]
+    applied_pages = []
+    unchanged_pages = []
+    updated_fields_by_page = {}
+    for row in after_rows:
+        pid = row["page_id"]
+        if pid not in target_ids:
+            continue
+        target_live = live_by_id[pid]
+        if not any(row.get(f) != target_live[f] for f in compare_fields):
+            unchanged_pages.append(pid)
+            continue
+        changed_fields = []
+        for field in machine_updatable:
+            if row.get(field) != target_live[field]:
+                row[field] = target_live[field]
+                changed_fields.append(field)
+        applied_pages.append(pid)
+        updated_fields_by_page[pid] = changed_fields
+    _verify_machine_apply_invariants(before_rows, after_rows, fieldnames, target_ids)
+    if applied_pages:
+        buf = io.StringIO(newline="")
+        writer = csv.DictWriter(buf, fieldnames=fieldnames, lineterminator=newline, extrasaction="raise")
+        writer.writeheader()
+        writer.writerows(after_rows)
+        raw_out = (b"\xef\xbb\xbf" if has_bom else b"") + buf.getvalue().encode("utf-8")
+        inv_path = root / inv_rel
+        tmp_path = inv_path.with_name(f"{inv_path.name}.tmp.{os.getpid()}")
+        try:
+            tmp_path.write_bytes(raw_out)
+            os.replace(tmp_path, inv_path)
+        except Exception:
+            if tmp_path.exists():
+                tmp_path.unlink()
+            raise
+        reloaded_rows, reloaded_fields, _, _ = read_csv_with_meta(root, inv_rel)
+        if reloaded_fields != fieldnames:
+            raise RuntimeError("Post-write header mismatch in page-inventory.csv")
+        _verify_machine_apply_invariants(before_rows, reloaded_rows, fieldnames, target_ids)
+        reloaded_by_id = {r["page_id"]: r for r in reloaded_rows}
+        for pid in target_ids:
+            remaining = [f for f in compare_fields if reloaded_by_id[pid].get(f) != live_by_id[pid][f]]
+            if remaining:
+                raise RuntimeError(f"Post-write verification failed for {pid}: remaining drift {remaining}")
+    return {
+        "applied_pages": applied_pages,
+        "unchanged_pages": unchanged_pages,
+        "updated_fields_by_page": updated_fields_by_page,
+        "manual_fields_verified_unchanged": True,
+        "written": bool(applied_pages),
+    }
 
 
 def load_model(root):
@@ -581,24 +748,175 @@ def compare_diagnostics(current, baseline):
             "persistent": persistent}
 
 
+GROUP_PRIORITY = {
+    "medical_signoff": 0,
+    "evidence_and_audit": 1,
+    "manual_and_cr_integrity": 2,
+    "unclassified": 3,
+    "rules_fingerprint_drift": 4,
+    "machine_field_drift": 5,
+}
+SUBSTANTIVE_GROUPS = ("medical_signoff", "evidence_and_audit", "manual_and_cr_integrity")
+DRIFT_GROUPS = ("machine_field_drift", "rules_fingerprint_drift")
+HIGH_PRIORITY_MEDICAL_PATTERNS = (
+    re.compile(r"^[^:]+: pharmacist review is stale;"),
+    re.compile(r"^[^:]+: signed review missing "),
+    re.compile(r"^[^:]+: invalid medical_review_status$"),
+    re.compile(r"^[^:]+: invalid review_date$"),
+    re.compile(r"^[^:]+: conflict needs an issue$"),
+    re.compile(r"^[^:]+: review reason missing$"),
+    re.compile(r"^[^:]+: missing evidence$"),
+    re.compile(r"^[^:]+: historical snapshot hash mismatch$"),
+)
+SUMMARY_CLASSIFIERS = (
+    (re.compile(r"^([^:]+): (pharmacist review is stale;.+|signed review missing .+|invalid (?:medical_review_status|review_date|review_required|last_human_confirmed_at)|review reason missing|conflict needs an issue)$"), "medical_signoff"),
+    (re.compile(r"^([^:]+): (missing evidence|evidence path missing: .+|report changed;.+|historical snapshot hash mismatch|documented complete without audit|unknown audit)$"), "evidence_and_audit"),
+    (re.compile(r"^rules-v2: (domain drift: [a-z0-9_]+|historical page IDs differ)$"), "rules_fingerprint_drift"),
+    (re.compile(r"^([^:]+): (invalid (?:documented_status|seo_aeo_status|checked_at|text_status|reference_status|date_status|seo_basic_status|jsonld_status|footer_status|kind|topic status|namespace|relation endpoints/type|relation status|origin|request ID|request type|request status|proposed_at|completed_at|priority|approval|needs_pharmacist|author_permission|commercial_disclosure|validity|audit_date|hash normalization)|unknown request .+|missing related target .+|completion needs date and validation|completed without approval|work started without approval|missing (?:series|page) ID in related_ids|completed card request missing completed_at|duplicate .+|empty .+|inventory columns differ|missing formal page|missing section anchor|unpublished collection/proposal must not claim a page|relation targets retired card|missing Pilot .+|Pilot HTML .+|retired page also in active steps|filename stem collision: .+|multiple card_content records|expected HTML missing|scheduled hidden HTML exists|image missing|duplicate image within series)$"), "manual_and_cr_integrity"),
+    (re.compile(r"^removed-series(?: [^:]+)?: .+$"), "manual_and_cr_integrity"),
+    (re.compile(r"^(inventory IDs differ:|removed series still in cards\.json:|series/card relations differ|Pilot scope differs|Pilot relation set differs|Acne hierarchy series differ|duplicate retired page IDs|orphan card HTML: )"), "manual_and_cr_integrity"),
+)
+RESOLVED_DETAIL_LIMIT = 10
+
+
+def classify_diagnostic(item):
+    """Display-layer semantic classification; never alters stable diagnostic IDs."""
+    message = item["message"]
+    category = item["category"]
+    high_priority = any(p.search(message) for p in HIGH_PRIORITY_MEDICAL_PATTERNS)
+    if category == "machine_field_drift":
+        parts = item["id"].split("|")
+        scope = parts[1] if len(parts) > 1 else ""
+        subtype = parts[2] if len(parts) > 2 else "unknown"
+        return {"group": "machine_field_drift", "subtype": subtype, "scope": scope, "high_priority": False}
+    if category in {"evidence_path_missing", "report_changed"}:
+        parts = item["id"].split("|")
+        scope = parts[1] if len(parts) > 1 else ""
+        return {"group": "evidence_and_audit", "subtype": category, "scope": scope, "high_priority": high_priority}
+    for pattern, group in SUMMARY_CLASSIFIERS:
+        match = pattern.match(message)
+        if not match:
+            continue
+        if group == "rules_fingerprint_drift":
+            detail = match.group(1)
+            if detail.startswith("domain drift: "):
+                return {"group": group, "subtype": f"domain:{detail.split(': ', 1)[1]}", "scope": "rules-v2", "high_priority": False}
+            return {"group": group, "subtype": "historical_page_ids_differ", "scope": "rules-v2", "high_priority": False}
+        if match.lastindex and match.lastindex >= 2:
+            scope, detail = match.group(1), match.group(2)
+            subtype = detail.split(":", 1)[0]
+            if subtype.startswith("unknown request "):
+                subtype = "unknown request"
+            elif subtype.startswith("signed review missing "):
+                subtype = "signed review missing"
+            elif subtype.startswith("missing related target "):
+                subtype = "missing related target"
+            elif subtype.startswith("pharmacist review is stale"):
+                subtype = "pharmacist review is stale"
+            return {"group": group, "subtype": subtype, "scope": scope, "high_priority": high_priority}
+        return {"group": group, "subtype": message.split(":", 1)[0], "scope": "", "high_priority": high_priority}
+    return {"group": "unclassified", "subtype": "unclassified", "scope": "", "high_priority": True}
+
+
+def _print_grouped_summary(items, heading_prefix):
+    substantive = defaultdict(list)
+    drift = defaultdict(list)
+    high_priority_items = []
+    for item in items:
+        info = classify_diagnostic(item)
+        group = info["group"]
+        if group in DRIFT_GROUPS:
+            drift[group].append((item, info))
+        elif group in SUBSTANTIVE_GROUPS:
+            substantive[group].append((item, info))
+            if info["high_priority"]:
+                high_priority_items.append((item, info))
+    substantive_total = sum(item["count"] for entries in substantive.values() for item, _ in entries)
+    drift_total = sum(item["count"] for entries in drift.values() for item, _ in entries)
+    sub_heading = f"{heading_prefix}substantive issues" if heading_prefix else "Substantive issues"
+    drift_heading = f"{heading_prefix}mechanical drift" if heading_prefix else "Historical mechanical drift"
+    print(f"[{sub_heading}: {substantive_total}]")
+    if substantive_total == 0:
+        print("  (none)")
+    else:
+        for group in SUBSTANTIVE_GROUPS:
+            entries = substantive.get(group)
+            if not entries:
+                continue
+            total = sum(item["count"] for item, _ in entries)
+            subtypes = Counter()
+            scopes = sorted({info["scope"] for _, info in entries if info["scope"]})
+            for item, info in entries:
+                subtypes[info["subtype"]] += item["count"]
+            breakdown = ", ".join(f"{k}={v}" for k, v in subtypes.most_common())
+            scope_note = ""
+            if scopes:
+                sample = ", ".join(scopes[:5])
+                more = f" +{len(scopes) - 5} more" if len(scopes) > 5 else ""
+                scope_note = f" | scopes ({len(scopes)}): {sample}{more}"
+            print(f"  {group} ({total}): {breakdown}{scope_note}")
+        for item, info in sorted(high_priority_items, key=lambda pair: (GROUP_PRIORITY[pair[1]["group"]], pair[0]["id"])):
+            print(f"  HIGH-PRIORITY [{info['group']}]: {item['id']} ({item['count']}): {item['message']}")
+    print(f"[{drift_heading}: {drift_total}]")
+    if drift_total == 0:
+        print("  (none)")
+    else:
+        for group in DRIFT_GROUPS:
+            entries = drift.get(group)
+            if not entries:
+                continue
+            total = sum(item["count"] for item, _ in entries)
+            subtypes = Counter()
+            for item, info in entries:
+                subtypes[info["subtype"]] += item["count"]
+            breakdown = ", ".join(f"{k}={v}" for k, v in subtypes.most_common())
+            print(f"  {group} ({total}): {breakdown}")
+
+
 def print_summary(errors, warnings, diagnostics, comparison, report_file):
     categories = Counter()
     for item in diagnostics:
         categories[item["category"]] += item["count"]
     print(f"Management errors: {len(errors)}; warnings: {len(warnings)}; "
           f"status: {'FAIL' if errors else 'PASS'} (exit code unchanged).")
-    print("Categories: " + (", ".join(f"{key}={value}" for key, value in sorted(categories.items())) or "none"))
     if comparison is None:
         print("Baseline: none supplied; new and resolved errors cannot be determined.")
+        _print_grouped_summary(diagnostics, "")
     else:
         print("Baseline difference: " + ", ".join(
             f"{key}={len(comparison[key])}" for key in ("new", "resolved", "worsened", "persistent")))
-        for label in ("new", "worsened", "resolved"):
-            for item in comparison[label]:
-                print(f"{label.upper()}: {item['id']} ({item['count']}): {item['message']}")
+        action_new = sorted(comparison["new"], key=lambda it: (GROUP_PRIORITY[classify_diagnostic(it)["group"]], it["id"]))
+        action_worsened = sorted(comparison["worsened"], key=lambda it: (GROUP_PRIORITY[classify_diagnostic(it)["group"]], it["id"]))
+        print(f"[Action required (this change): new={len(action_new)}, worsened={len(action_worsened)}]")
+        if not action_new and not action_worsened:
+            print("  (none)")
+        for item in action_new:
+            group = classify_diagnostic(item)["group"]
+            print(f"NEW: [{group}] {item['id']} ({item['count']}): {item['message']}")
+        for item in action_worsened:
+            group = classify_diagnostic(item)["group"]
+            print(f"WORSENED: [{group}] {item['id']} ({item['count']}): {item['message']}")
+        resolved = sorted(comparison["resolved"], key=lambda it: (GROUP_PRIORITY[classify_diagnostic(it)["group"]], it["id"]))
+        if resolved:
+            if len(resolved) <= RESOLVED_DETAIL_LIMIT:
+                for item in resolved:
+                    group = classify_diagnostic(item)["group"]
+                    print(f"RESOLVED: [{group}] {item['id']} ({item['count']}): {item['message']}")
+            else:
+                res_groups = Counter()
+                for item in resolved:
+                    res_groups[classify_diagnostic(item)["group"]] += item["count"]
+                summary_str = ", ".join(f"{k}={v}" for k, v in res_groups.most_common())
+                print(f"RESOLVED SUMMARY ({len(resolved)} items): {summary_str}")
+                for item in resolved[:5]:
+                    group = classify_diagnostic(item)["group"]
+                    print(f"RESOLVED: [{group}] {item['id']} ({item['count']}): {item['message']}")
+                print(f"  ... ({len(resolved) - 5} more resolved items; see --report-file for full list)")
+        _print_grouped_summary(comparison["persistent"], "Persistent ")
     for item in diagnostics:
-        if item["category"] == "unclassified":
+        if classify_diagnostic(item)["group"] == "unclassified":
             print(f"UNCLASSIFIED: {item['id']} ({item['count']}): {item['message']}")
+    print("Categories: " + (", ".join(f"{key}={value}" for key, value in sorted(categories.items())) or "none"))
     print(f"Full diagnostics: {report_file}" if report_file else
           "Full diagnostics: rerun without --summary or supply --report-file PATH.")
 
@@ -607,13 +925,18 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--propose", action="store_true", help="print machine-only delta JSON to stdout; never overwrite manual columns")
-    parser.add_argument("--page", action="append", default=[], help="filter proposal by exact page ID; repeatable")
-    parser.add_argument("--summary", action="store_true", help="summarize full validation errors without listing known errors")
+    parser.add_argument("--apply-machine", action="store_true", help="write ONLY MACHINE_FIELDS for --page IDs into page-inventory.csv; requires --page and asserts zero change to MANUAL_FIELDS")
+    parser.add_argument("--page", action="append", default=[], help="exact page ID for --propose or --apply-machine; repeatable")
+    parser.add_argument("--summary", action="store_true", help="summarize full validation errors prioritizing new/worsened and substantive clinical/evidence issues")
     parser.add_argument("--report-file", type=Path, help="write complete JSON diagnostics to an explicitly chosen path")
     parser.add_argument("--baseline-file", type=Path, help="compare stable issue IDs with an explicitly supplied, reviewed report")
     args = parser.parse_args()
-    if args.propose and (args.summary or args.report_file or args.baseline_file):
-        parser.error("--propose cannot be combined with full-validation output options")
+    if args.propose and args.apply_machine:
+        parser.error("--propose and --apply-machine cannot be combined")
+    if args.apply_machine and not args.page:
+        parser.error("--apply-machine requires at least one --page ID; full-table overwrite is forbidden")
+    if (args.propose or args.apply_machine) and (args.summary or args.report_file or args.baseline_file):
+        parser.error("--propose/--apply-machine cannot be combined with full-validation output options")
     if args.report_file and args.baseline_file and args.report_file.resolve() == args.baseline_file.resolve():
         parser.error("--report-file must not overwrite --baseline-file")
     root = args.root.resolve()
@@ -626,19 +949,23 @@ def main():
         from datetime import timezone, timedelta
         now = datetime.now(timezone(timedelta(hours=8)))
     try:
-        live, source_errors = machine_snapshot(root, now.date().isoformat())
-        model = load_model(root)
+        today = now.date().isoformat()
+        if args.apply_machine:
+            result = apply_machine_fields(root, args.page, today)
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+            return 0
         if args.propose:
-            previous = {r["page_id"]: r for r in model["inventory"]}
-            unknown_ids = set(args.page) - {r['page_id'] for r in live}
-            if unknown_ids:
-                raise ValueError(f"Unknown --page IDs: {sorted(unknown_ids)}")
-            changed = [r for r in live if (not args.page or r["page_id"] in args.page)
-                       and (r["page_id"] not in previous or any(r[k] != previous[r["page_id"]].get(k) for k in MACHINE_FIELDS if k != "checked_at"))]
+            page_filter = set(args.page) if args.page else None
+            live, source_errors, all_live_ids = _machine_snapshot(root, today, page_ids=page_filter)
+            previous = {r["page_id"]: r for r in read_csv(root, f"{PM}/page-inventory.csv")}
+            changed = [r for r in live if (r["page_id"] not in previous or
+                                           any(r[k] != previous[r["page_id"]].get(k) for k in MACHINE_FIELDS if k != "checked_at"))]
             print(json.dumps({"machine_field_proposals": changed,
-                              "removed_ids_require_manual_retirement_check": sorted(set(previous)-{r['page_id'] for r in live}),
+                              "removed_ids_require_manual_retirement_check": sorted(set(previous) - all_live_ids),
                               "source_errors": source_errors}, ensure_ascii=False, indent=2))
             return bool(source_errors)
+        live, source_errors = machine_snapshot(root, today)
+        model = load_model(root)
         errors, warnings = validate(root, model, live)
         errors = source_errors + errors
         diagnostics = diagnostics_from_errors(errors)
@@ -667,7 +994,7 @@ def main():
                       "Read-only; no files written.")
             print(f"{'FAIL' if errors else 'PASS'}: {len(errors)} management validation errors. {suffix}")
         return bool(errors)
-    except (OSError, ValueError, KeyError, TypeError) as exc:
+    except (OSError, ValueError, KeyError, TypeError, RuntimeError) as exc:
         print(f"FAIL: invalid or missing input: {exc}", file=sys.stderr)
         return 1
 

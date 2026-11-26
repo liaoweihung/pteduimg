@@ -164,11 +164,14 @@ def changed_request_ids(root: Path, old_ref: str, new_ref: str | None = None) ->
 
 def commit_request_map(root: Path, requests: dict[str, dict[str, str]]) -> dict[str, list[str]]:
     mapping: dict[str, list[str]] = defaultdict(list)
+    resolved_cache: dict[str, str] = {}
     for rid, row in requests.items():
         for token in row.get("git_commit", "").replace(",", "|").split("|"):
             token = token.strip()
             if len(token) >= 7 and token not in {"unknown", "same_commit"}:
-                resolved = git(root, "rev-parse", "--verify", f"{token}^{{commit}}", check=False).strip()
+                if token not in resolved_cache:
+                    resolved_cache[token] = git(root, "rev-parse", "--verify", f"{token}^{{commit}}", check=False).strip()
+                resolved = resolved_cache[token]
                 if resolved:
                     mapping[resolved].append(rid)
     return mapping
@@ -244,13 +247,17 @@ def series_for_pages(cards: Any, pages: set[str]) -> set[str]:
 
 def impact_for_commit(root: Path, sha: str, files: set[str]) -> tuple[list[str], list[str]]:
     parent = f"{sha}^"
-    old_cards = json_at(root, parent, "cards.json")
-    new_cards = json_at(root, sha, "cards.json")
-    old_content = json_at(root, parent, "data/card_content.json")
-    new_content = json_at(root, sha, "data/card_content.json")
+    cards_changed = "cards.json" in files
+    content_changed = "data/card_content.json" in files
+    old_cards = json_at(root, parent, "cards.json") if cards_changed else None
+    new_cards = json_at(root, sha, "cards.json") if cards_changed else None
+    old_content = json_at(root, parent, "data/card_content.json") if content_changed else None
+    new_content = json_at(root, sha, "data/card_content.json") if content_changed else None
     series, pages = changed_series_and_pages(old_cards, new_cards, old_content, new_content)
     pages.update(pages_from_paths(files))
-    series.update(series_for_pages(new_cards or old_cards, pages))
+    if pages:
+        cards_lookup = new_cards if cards_changed else json_at(root, sha, "cards.json")
+        series.update(series_for_pages(cards_lookup or old_cards, pages))
     return sorted(pages), sorted(series)
 
 
@@ -262,6 +269,8 @@ def commit_metadata(root: Path, sha: str) -> tuple[str, str]:
 
 def history_changes(root: Path, range_spec: str) -> list[dict[str, Any]]:
     shas = [line for line in git(root, "rev-list", "--reverse", range_spec).splitlines() if line]
+    if not shas:
+        return []
     explicit_map = commit_request_map(root, requests_worktree(root))
     changes = []
     for sha in shas:
@@ -305,13 +314,17 @@ def current_worktree(root: Path) -> dict[str, Any]:
     all_files = staged | unstaged | untracked
     site_files = {path for path in all_files if is_site_path(path, tracked=path in tracked_files or path in staged)}
     management_files = {path for path in all_files if is_management_path(path)}
-    old_cards = json_at(root, "HEAD", "cards.json")
-    new_cards = json_worktree(root, "cards.json")
-    old_content = json_at(root, "HEAD", "data/card_content.json")
-    new_content = json_worktree(root, "data/card_content.json")
+    cards_changed = "cards.json" in all_files
+    content_changed = "data/card_content.json" in all_files
+    old_cards = json_at(root, "HEAD", "cards.json") if cards_changed else None
+    new_cards = json_worktree(root, "cards.json") if cards_changed else None
+    old_content = json_at(root, "HEAD", "data/card_content.json") if content_changed else None
+    new_content = json_worktree(root, "data/card_content.json") if content_changed else None
     series, pages = changed_series_and_pages(old_cards, new_cards, old_content, new_content)
     pages.update(pages_from_paths(site_files))
-    series.update(series_for_pages(new_cards or old_cards, pages))
+    if pages:
+        cards_lookup = new_cards if cards_changed else json_worktree(root, "cards.json")
+        series.update(series_for_pages(cards_lookup or old_cards, pages))
     changed_ids = changed_request_ids(root, "HEAD") if REQUESTS in all_files else []
     worktree_requests = requests_worktree(root)
     changed_requests = [
