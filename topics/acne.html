@@ -6,8 +6,20 @@
   <title>青春痘完整主題｜藥局衛教助手</title>
   <meta name="description" content="依照你現在的問題，找到既有的青春痘辨識、痘痘貼、用藥、保養與痘印疤痕圖卡。">
   <link rel="canonical" href="https://liaoweihung.github.io/pteduimg/topics/acne.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="藥局衛教助手">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:title" content="青春痘完整主題｜藥局衛教助手">
+  <meta property="og:description" content="依照你現在的問題，找到既有的青春痘辨識、痘痘貼、用藥、保養與痘印疤痕圖卡。">
+  <meta property="og:image" content="https://liaoweihung.github.io/pteduimg/img/acne_face_wash_01.webp">
+  <meta property="og:image:width" content="1254">
+  <meta property="og:image:height" content="1254">
+  <meta property="og:image:alt" content="青春痘完整主題">
+  <meta property="og:url" content="https://liaoweihung.github.io/pteduimg/topics/acne.html">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/brand/favicon-mono-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="../assets/brand/favicon-mono-192.png">
+  <script src="../qrious.min.js"></script>
   <script>
     var GA_MEASUREMENT_ID = 'G-T5R33JYTC0';
     var urlParams = new URLSearchParams(window.location.search);
@@ -45,101 +57,413 @@
     }
   </script>
   <style>
-    :root { color-scheme:light; --ink:#263238; --muted:#64748b; --line:#e5e7eb; --brand:#007b83; }
-    * { box-sizing:border-box; }
-    body { margin:0; background:#fff; color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Microsoft JhengHei",sans-serif; line-height:1.65; }
-    .wrap { width:min(100%,880px); margin:0 auto; padding:0 16px; }
+    :root {
+      color-scheme: light;
+      --bg: #f4f7f6;
+      --ink: #2c3e50;
+      --muted: #6c7a89;
+      --line: #e5ecea;
+      --brand: #007b83;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.5;
+    }
+    .wrap {
+      width: min(100%, 820px);
+      margin: 0 auto;
+      padding: 0 0 12px;
+    }
+
     /* shared-header-styles:start */
     .top-actions {
-      position:sticky;
-      top:0;
-      z-index:10;
-      display:flex;
-      min-height:48px;
-      justify-content:space-between;
-      align-items:center;
-      gap:8px;
-      padding:7px 8px;
-      background:rgba(255,255,255,.72);
-      border-bottom:1px solid rgba(229,231,235,.55);
-      backdrop-filter:blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      min-height: 48px;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 8px;
+      background: rgba(255, 255, 255, .86);
+      border-bottom: 1px solid rgba(229, 236, 234, .9);
+      backdrop-filter: blur(10px);
     }
     .action-cluster {
-      display:flex;
-      gap:6px;
-      overflow-x:auto;
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
     }
     .pill {
-      pointer-events:auto;
-      display:inline-flex;
-      align-items:center;
-      min-height:34px;
-      border:1px solid rgba(255,255,255,.42);
-      border-radius:8px;
-      background:rgba(255,255,255,.48);
-      color:rgba(38,50,56,.76);
-      text-decoration:none;
-      font-size:.9rem;
-      font-weight:700;
-      padding:6px 10px;
-      box-shadow:0 1px 5px rgba(15,23,42,.06);
-      cursor:pointer;
-      white-space:nowrap;
+      pointer-events: auto;
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      border: 1px solid rgba(255, 255, 255, .42);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .6);
+      color: rgba(44, 62, 80, .82);
+      text-decoration: none;
+      font-size: .9rem;
+      font-weight: 700;
+      padding: 6px 10px;
+      box-shadow: 0 1px 4px rgba(15, 23, 42, .06);
+      cursor: pointer;
+      white-space: nowrap;
     }
     .pill:hover,
     .pill:focus-visible {
-      background:rgba(255,255,255,.82);
-      color:var(--ink);
+      background: #fff;
+      color: var(--ink);
     }
     .pill.active {
-      background:rgba(0,123,131,.62);
-      border-color:rgba(0,123,131,.2);
-      color:#fff;
+      background: var(--brand);
+      border-color: var(--brand);
+      color: #fff;
     }
     .icon-pill {
-      justify-content:center;
-      width:34px;
-      min-width:34px;
-      padding:0;
-      font-size:1.15rem;
-      line-height:1;
+      justify-content: center;
+      width: 34px;
+      min-width: 34px;
+      padding: 0;
+      font-size: 1.15rem;
+      line-height: 1;
+    }
+    .acne-topic-actions { flex-wrap: wrap; }
+    .acne-topic-actions .action-cluster { flex: none; margin-left: auto; }
+    .topic-return-nav { display: flex; gap: 6px; max-width: 100%; }
+    .topic-return-nav .pill { min-height: 44px; padding: 8px 10px; line-height: 1.4; }
+    .topic-return-nav a { white-space: normal; color: #00676e; }
+    .topic-return-nav .pill:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+    /* shared-header-styles:end */
+
+    .brand-mark {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      padding: 4px;
+    }
+    .brand-mark img { display: block; height: 28px; width: auto; opacity: .88; }
+    a:focus-visible, button:focus-visible, summary:focus-visible {
+      outline: 2px solid var(--brand);
+      outline-offset: 2px;
     }
 
-    .acne-topic-actions { flex-wrap:wrap; }
-    .acne-topic-actions .action-cluster { flex:none; margin-left:auto; }
-    .topic-return-nav { display:flex; gap:6px; max-width:100%; }
-    .topic-return-nav .pill { min-height:44px; padding:8px; line-height:1.4; }
-    .topic-return-nav a { white-space:normal; color:#00676e; }
-    .topic-return-nav .pill:focus-visible { outline:2px solid var(--brand); outline-offset:2px; }
+    /* Clean title header */
+    .page-head {
+      padding: 18px 20px 4px;
+    }
+    .page-head h1 {
+      margin: 0 0 3px;
+      font-size: 1.4rem;
+      line-height: 1.3;
+      color: var(--ink);
+    }
+    .page-head p {
+      margin: 0;
+      font-size: .88rem;
+      color: var(--muted);
+    }
 
-    /* shared-header-styles:end */
-    .topic-intro { padding:24px 0 20px; border-bottom:1px solid var(--line); }
-    a { color:var(--brand); text-underline-offset:3px; }
-    a:focus-visible { outline:2px solid var(--brand); outline-offset:3px; }
-    h1 { font-size:clamp(1.4rem,4vw,1.9rem); line-height:1.3; margin:0 0 10px; }
-    .lead { color:var(--muted); margin:0; }
-    main { padding-top:4px; }
-    section { padding:22px 0; border-bottom:1px solid var(--line); }
-    .topic-section--wash { --topic-accent:#007b83; --topic-accent-soft:#effafa; }
-    .more-cards > summary { padding:10px 0; min-height:44px; color:var(--brand); font-weight:600; cursor:pointer; }
-    .more-cards > summary:focus-visible { outline:2px solid var(--brand); outline-offset:3px; }
-    .topic-section--identify { --topic-accent:#a64529; --topic-accent-soft:#fff5f0; }
-    .topic-section--medicine { --topic-accent:#24649b; --topic-accent-soft:#f1f7fd; }
-    .topic-section--patch { --topic-accent:#207467; --topic-accent-soft:#effaf7; }
-    .topic-section--other { --topic-accent:#7450a2; --topic-accent-soft:#f8f3fc; }
-    section .topic-heading h2 { color:var(--topic-accent); border-left:3px solid var(--topic-accent); padding-left:10px; }
-    section li a:hover, section li a:focus-visible { border-color:var(--topic-accent); background:var(--topic-accent-soft); text-decoration:underline; }
-    section li a:focus-visible { outline:2px solid var(--topic-accent); outline-offset:3px; }
-    h2 { font-size:1.1rem; margin:0 0 12px; }
-    h3 { font-size:.95rem; font-weight:600; color:var(--muted); margin:18px 0 8px; }
-    .topic-heading { display:flex; align-items:center; gap:16px; margin-bottom:16px; }
-    .topic-heading img { width:100px; height:100px; aspect-ratio:1; object-fit:contain; flex:none; border-radius:12px; }
-    .topic-heading div { min-width:0; }
-    .topic-heading h2 { margin:0 0 6px; }
-    .topic-heading p { margin:0; color:var(--muted); font-size:.9rem; }
-    ul { list-style:none; padding:0; margin:0; display:grid; gap:8px; }
-    li { min-width:0; }
-    li a { display:flex; align-items:center; min-height:44px; padding:10px 12px; border:1px solid var(--line); border-radius:10px; color:var(--ink); text-decoration:none; overflow-wrap:anywhere; }
+    /* index.html style section title & 2-col card grid */
+    .section-title {
+      margin: 0;
+      padding: 16px 20px 6px;
+      font-size: .92rem;
+      color: #6c7a89;
+      font-weight: 700;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      padding: 8px 20px 10px;
+    }
+    @media (min-width: 640px) {
+      .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+    }
+    .dose-tool-link { display:flex; align-items:center; gap:12px; margin:6px 20px 12px; padding:12px 14px; border:1px solid #d8e8e1; border-radius:12px; background:#e8f7f1; color:#1f5b49; text-decoration:none; }
+    .dose-tool-link__icon { font-size:1.5rem; }
+    .dose-tool-link__text { flex:1; display:grid; gap:2px; }
+    .dose-tool-link__text span { color:#4b635b; font-size:.88rem; }
+    .menu-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 122px;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 16px 10px 14px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--ink);
+      border: 1px solid #ecefef;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, .045);
+      transition: transform .12s ease, box-shadow .15s ease, border-color .15s ease;
+    }
+    .menu-item:hover,
+    .menu-item:focus-visible {
+      transform: translateY(-1px);
+      border-color: #b7dadb;
+      box-shadow: 0 6px 16px rgba(0, 123, 131, .1);
+    }
+    .menu-item:active {
+      transform: scale(.98);
+    }
+    .menu-item .icon {
+      font-size: 2.2rem;
+      line-height: 1.1;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .menu-item .title {
+      font-weight: 700;
+      font-size: 1.02rem;
+      line-height: 1.3;
+      color: var(--ink);
+      text-wrap: balance;
+    }
+    .menu-item .meta {
+      margin-top: 4px;
+      font-size: .78rem;
+      color: var(--muted);
+      line-height: 1.3;
+    }
+
+
+    /* Section header with square sticker */
+    .section-head { display:flex; align-items:center; gap:14px; padding:18px 20px 6px; }
+    .section-head img { width:76px; height:76px; flex:none; border-radius:14px; object-fit:cover; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,.06); }
+    .section-head .section-title { padding:0; font-size:1.05rem; color:var(--ink); }
+    .section-head p { margin:3px 0 0; font-size:.84rem; color:var(--muted); line-height:1.4; }
+    @media (min-width:640px) { .section-head img { width:92px; height:92px; } }
+
+    /* Subtle single-line collapsible syrup index at top of drug section */
+    .drug-index {
+      margin: 6px 20px 8px;
+      background: #fff;
+      border: 1px solid #d5e7e8;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .drug-index summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 44px;
+      padding: 10px 14px;
+      cursor: pointer;
+      list-style: none;
+      font-size: .88rem;
+      font-weight: 700;
+      color: var(--brand);
+    }
+    .drug-index summary::-webkit-details-marker { display: none; }
+    .drug-index summary::after {
+      content: "展開 ▾";
+      font-size: .8rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .drug-index[open] summary::after { content: "收合 ▴"; }
+    .drug-index[open] summary { border-bottom: 1px solid var(--line); }
+    .drug-index-body {
+      padding: 10px 14px 14px;
+    }
+    .drug-index-group {
+      margin-top: 10px;
+    }
+    .drug-index-group:first-child { margin-top: 0; }
+    .drug-index-group h3 {
+      margin: 0 0 6px;
+      font-size: .8rem;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .drug-pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .drug-pill-list a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 5px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #f9fbfb;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: .86rem;
+      font-weight: 600;
+    }
+    .drug-pill-list a:hover {
+      border-color: var(--brand);
+      background: #eaf6f6;
+      color: #005f66;
+    }
+
+    /* Compact clickable Q&A list below each section grid */
+    .section-qa {
+      margin: 4px 20px 12px;
+      background: #ffffff;
+      border: 1px solid #e6eceb;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .section-qa__title {
+      margin: 0;
+      padding: 9px 14px 7px;
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--brand);
+      background: #f8fbfb;
+      border-bottom: 1px solid var(--line);
+    }
+    .section-qa__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .section-qa__list li + li {
+      border-top: 1px solid var(--line);
+    }
+    .section-qa__list a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      min-height: 44px;
+      padding: 10px 14px;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: .92rem;
+      font-weight: 600;
+      line-height: 1.4;
+      transition: background .12s ease, color .12s ease;
+    }
+    .section-qa__list a:hover,
+    .section-qa__list a:focus-visible {
+      background: #f2fafa;
+      color: #005f66;
+    }
+    .section-qa__q {
+      display: flex;
+      align-items: baseline;
+      gap: 7px;
+      min-width: 0;
+    }
+    .section-qa__q::before {
+      content: "Q";
+      flex: none;
+      font-size: .76rem;
+      font-weight: 800;
+      color: var(--brand);
+    }
+    .section-qa__chev {
+      flex: none;
+      color: #9fb0bc;
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    /* Collapsible FAQ item in section-qa */
+    .faq-item {
+      background: #ffffff;
+      border: 0;
+      border-radius: 0;
+      overflow: hidden;
+    }
+    .section-qa .faq-item + .faq-item {
+      border-top: 1px solid var(--line);
+    }
+    .faq-item summary {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+      min-height: 44px;
+      padding: 10px 14px;
+      cursor: pointer;
+      list-style: none;
+      font-size: .92rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.4;
+      transition: background .12s ease, color .12s ease;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary:hover,
+    .faq-item summary:focus-visible {
+      background: #f2fafa;
+      color: #005f66;
+    }
+    .faq-q-text {
+      display: flex;
+      align-items: baseline;
+      gap: 7px;
+      flex: 1;
+    }
+    .faq-q-text::before {
+      content: "Q";
+      flex: none;
+      font-size: .76rem;
+      font-weight: 800;
+      color: var(--brand);
+    }
+    .faq-item summary::after {
+      content: "▾";
+      flex: none;
+      font-size: .85rem;
+      color: #9fb0bc;
+      transition: transform .15s ease;
+    }
+    .faq-item[open] summary::after {
+      transform: rotate(180deg);
+    }
+    .faq-item[open] summary {
+      border-bottom: 1px solid var(--line);
+    }
+    .faq-answer {
+      padding: 10px 14px 12px;
+      background: #f8fbfb;
+      font-size: .88rem;
+      line-height: 1.6;
+      color: #34495e;
+    }
+    .faq-answer p {
+      margin: 0;
+    }
+    .faq-card-link {
+      display: inline-block;
+      margin-left: 6px;
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .faq-card-link:hover,
+    .faq-card-link:focus-visible {
+      text-decoration: underline;
+      color: #005f66;
+    }
+
     /* shared-footer-styles:start */
 .site-footer {
     text-align: center;
@@ -156,128 +480,613 @@
     color: #2c3e50;
 }
     /* shared-footer-styles:end */
-    .site-footer { width:min(100%,880px); margin:12px auto 0; }
-    .site-footer p + p { padding-top:8px; }
-    .site-footer a { display:inline-block; }
-    @media (min-width:680px) { ul { grid-template-columns:1fr 1fr; } }
-    @media (min-width:680px) { .topic-heading img { width:128px; height:128px; } }
+    .site-footer { width: min(100%, 820px); margin: 12px auto 0; }
+    .site-footer p + p { padding-top: 8px; }
+    .site-footer a { display: inline-block; }
+
+    /* Modals & Toast */
+    .qr-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      display: grid;
+      place-items: center;
+      padding: 18px;
+      background: rgba(15, 23, 42, .34);
+    }
+    .qr-modal[hidden] { display: none; }
+    .qr-box, .share-box {
+      width: min(100%, 300px);
+      border-radius: 12px;
+      background: #fff;
+      padding: 18px;
+      text-align: center;
+      box-shadow: 0 18px 44px rgba(15, 23, 42, .18);
+    }
+    .qr-box canvas { display: block; width: 220px; height: 220px; margin: 0 auto 12px; }
+    .qr-title { margin: 0 0 6px; color: var(--ink); font-size: 1.05rem; line-height: 1.35; font-weight: 700; }
+    .qr-hint { margin: 0 0 16px; color: var(--muted); font-size: .9rem; line-height: 1.45; }
+    .qr-close {
+      width: 100%;
+      border: 0;
+      border-radius: 8px;
+      background: var(--brand);
+      color: #fff;
+      font-weight: 700;
+      padding: 10px 12px;
+      cursor: pointer;
+      font: inherit;
+    }
+    .share-box { width: min(100%, 340px); text-align: left; }
+    .share-title { margin: 0 0 12px; font-size: 1rem; line-height: 1.3; font-weight: 700; }
+    .share-modal-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .share-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--brand);
+      font: inherit;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .favorite-toast {
+      position: fixed;
+      left: 50%;
+      bottom: 26px;
+      z-index: 30;
+      max-width: calc(100vw - 40px);
+      padding: 11px 16px;
+      border-radius: 999px;
+      background: rgba(44, 62, 80, .96);
+      color: #fff;
+      font-size: .95rem;
+      font-weight: 700;
+      line-height: 1.35;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .22);
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, 12px);
+      transition: opacity .2s ease, transform .2s ease;
+    }
+    .favorite-toast.show { opacity: 1; transform: translate(-50%, 0); }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://liaoweihung.github.io/pteduimg/topics/acne.html",
+        "url": "https://liaoweihung.github.io/pteduimg/topics/acne.html",
+        "name": "青春痘完整主題",
+        "headline": "青春痘完整主題｜藥局衛教助手",
+        "description": "依照你現在的問題，找到既有的青春痘辨識、痘痘貼、用藥、保養與痘印疤痕圖卡。",
+        "inLanguage": "zh-TW",
+        "dateModified": "2026-11-27",
+        "mainEntity": { "@id": "https://liaoweihung.github.io/pteduimg/topics/acne.html#drug-list" },
+        "author": {
+          "@type": "Person",
+          "@id": "https://liaoweihung.github.io/pteduimg/author.html#person",
+          "name": "藥局衛教助手製作者",
+          "url": "https://liaoweihung.github.io/pteduimg/author.html"
+        },
+        "breadcrumb": { "@id": "https://liaoweihung.github.io/pteduimg/topics/acne.html#breadcrumb" },
+        "isPartOf": { "@type": "WebSite", "name": "藥局衛教助手", "url": "https://liaoweihung.github.io/pteduimg/" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://liaoweihung.github.io/pteduimg/topics/acne.html#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "藥局衛教助手", "item": "https://liaoweihung.github.io/pteduimg/public.html" },
+          { "@type": "ListItem", "position": 2, "name": "青春痘完整主題", "item": "https://liaoweihung.github.io/pteduimg/topics/acne.html" }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://liaoweihung.github.io/pteduimg/topics/acne.html#drug-list",
+        "name": "依成分快速點選",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "A 酸", "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_02_retinoids.html" },
+          { "@type": "ListItem", "position": 2, "name": "杜鵑花酸", "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_03_azelaic.html" },
+          { "@type": "ListItem", "position": 3, "name": "BPO（過氧化苯甲醯）", "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_04_bpo.html" },
+          { "@type": "ListItem", "position": 4, "name": "水楊酸", "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_08_salicylic.html" },
+          { "@type": "ListItem", "position": 5, "name": "Clindamycin", "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_05_clindamycin.html" },
+          { "@type": "ListItem", "position": 6, "name": "紅黴素", "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_06_erythromycin.html" },
+          { "@type": "ListItem", "position": 7, "name": "複方痘痘藥", "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_09_combinations.html" },
+          { "@type": "ListItem", "position": 8, "name": "Metronidazole（酒糟）", "url": "https://liaoweihung.github.io/pteduimg/cards/acne_topicals_07_metronidazole.html" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://liaoweihung.github.io/pteduimg/topics/acne.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "青春痘有哪些外觀與嚴重程度？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "依外觀可分四種：輕度粉刺型（黑頭、白頭粉刺為主，幾乎不紅腫）、輕度發炎型（開始出現紅色丘疹）、中度發炎型（紅腫丘疹與膿皰明顯增加，容易留下色素沉澱）、重度囊腫型（大型結節或囊腫、疼痛明顯，容易形成永久痘疤，建議儘早由皮膚科醫師評估）。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "黑頭、白頭或閉鎖性粉刺很多，怎麼照顧？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "粉刺是毛孔內角質與皮脂堆積，不是洗不乾淨，反覆刷洗、磨砂反而更刺激。早晚溫和清潔，搭配不易致粉刺的保濕和防曬；不要自行擠壓、挖除，需要清除時由皮膚科醫師評估。疼痛、發炎或開始留疤，應就醫。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "輕度發炎型青春痘，日常怎麼照護？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "重點是減少刺激、不要擠、保濕與防曬：一天溫和清潔 2 次，不磨砂、不用酒精反覆擦；選清爽、不易致痘的保濕產品，白天用 SPF 30 以上防曬。痘痘增加、出現硬塊或囊腫、開始留疤，或 2～3 個月仍無改善，建議就醫。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "青春痘洗臉水溫怎麼選？溫水會打開毛孔嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不會。毛孔不會因熱水打開、冷水關閉，不必交替冷熱水。用舒適的溫水輕輕打濕全臉即可，避免過熱造成乾燥與刺激，也不需要特別用冰水。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "洗臉後緊繃、刺痛正常嗎？青春痘肌怎麼保濕？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "洗後應該清爽舒適，不應明顯刺痛或緊繃；乾燥、脫皮、泛紅或刺痛，可能代表清潔方式或產品不適合。油性肌或青春痘肌也可能需要保濕，選清爽、不易致粉刺的產品；保濕有助維持皮膚屏障，但不能取代治療。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "拿到痘痘藥後，怎麼開始擦？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "洗臉後輕拍乾，再依指示薄擦指定治療區，不厚敷；A 酸類通常不只點在單顆痘痘上，範圍依醫囑。A 酸、BPO 初期可依醫療人員指示降低頻率、逐步適應。避開眼周、唇部及破皮處，並搭配不易致粉刺的保濕與 SPF 30 以上防曬。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "手上有兩種痘痘藥，能一起用嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "是否需要兩種藥、使用範圍與時段，先依處方確認，不要自行混合。外用抗生素常搭配 BPO，可降低抗藥性風險；Adapalene 與 BPO 可以搭配；Tretinoin 與 BPO 要看製劑，傳統製劑常分時使用。另外加杜鵑花酸、水楊酸等酸類，要注意刺激累加。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "痘痘藥、保濕與防曬，順序怎麼排？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "藥品種類與頻率先依處方。早上可依指示安排清潔、擦藥、保濕、防曬；晚上清潔後，依產品要求讓皮膚乾燥再擦藥。容易乾燥可詢問能否先保濕再擦藥，但不要把藥自行混進乳液；也不是每一層都要等 20～30 分鐘。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "一條複方藥已有哪些成分，會重複用藥嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "一條複方可能已含兩種以上有效成分，要看藥袋上的成分，不只記商品名稱。已含 A 酸、BPO 或抗生素時，不要再自行加擦相同成分；依整個產品的用法使用，不自行加倍。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "擦藥後紅、乾、刺，何時該停用或就醫？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "輕微乾燥、少量脫屑：加強溫和保濕、停止額外去角質，並詢問是否調整擦藥頻率。持續灼熱、紅痛、裂開或滲液：暫停可疑產品並聯絡醫療人員。臉唇腫脹、蕁麻疹要立即停用並就醫；合併喉嚨緊、呼吸困難或暈厥，立即撥打 119。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "這顆痘痘適合貼痘痘貼嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "一般水膠體痘痘貼對已冒白頭、或自然破掉有少量滲液的痘痘最有用，能吸收滲液、隔開手指不去摳。只有紅腫沒白頭、又硬又痛的深層痘、囊腫或粉刺，貼了效果有限；反覆發作或容易留疤，建議就醫。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "痘痘貼怎麼用、何時換？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "洗淨並完全擦乾後，選比痘痘稍大的尺寸蓋住正中央、輕壓邊緣，底下不要塗保養品或藥膏。多數產品建議貼數小時到一個晚上，實際依產品說明；變白、鼓起、邊緣翹起或弄髒就換新的。撕的時候順著皮膚表面慢慢撕開。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "痘痘破了，還能擦藥或貼嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "先清潔並輕壓止血，不要再擠。A 酸、BPO、水楊酸先不要擦在破口，癒合、無滲液後再恢復。小範圍、淺表、少量滲液時，可貼單純水膠體痘痘貼，不選含酸類或茶樹精油的款式。紅腫擴大、越來越熱痛、膿液增加、發燒或出血壓不住，請就醫。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "青春痘還是酒糟？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "青春痘常見黑頭、白頭粉刺，也可能長到胸、背；酒糟通常沒有粉刺，鼻子、雙頰等臉部中央反覆泛紅，合併紅色小疹或膿皰。兩者也可能同時存在，應由皮膚科確認。眼痛、明顯畏光或視力模糊，請當天就醫。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "酒糟肌如何清潔、保濕、防曬？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "早晚用溫和潔面產品、微溫水輕洗，避免熱水、洗臉刷與磨砂；洗後用無香精、不刺激的乳霜保濕；每天用廣效 SPF 30 以上防曬，搭配帽子或陽傘。新品一次只加一種，並記錄日曬、悶熱、熱飲、辛辣、酒精等是否讓臉更紅。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "留下的是紅黑印、凸疤還是凹疤？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "平坦紅印或黑印主要是顏色改變，注意防曬與減少刺激；肥厚性疤痕凸起較硬、仍在原傷口範圍內；蟹足腫會長出原傷口邊界，需要醫師評估；凹疤表面凹陷、常見於痘痘後，保養品難以填平，可諮詢皮膚科。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "不同疤痕產品的用途有什麼差別？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "傷口癒合、沒有滲液後才開始用。矽膠凝膠適合不易貼片的位置，依說明薄擦待乾；矽膠貼片依說明貼附、清洗並逐步適應。保濕品可減少乾燥不適，但淡斑、保濕與改善凸疤是不同的事；凹疤、蟹足腫或持續增厚的疤痕，請就醫評估。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- shared-header:start -->
     <div class="top-actions acne-topic-actions">
       <nav class="topic-return-nav" aria-label="返回導覽"><a class="pill" href="../public.html">返回首頁</a></nav>
+      <a class="brand-mark" href="../public.html" aria-label="藥局衛教助手首頁"><img src="../img/topics/logo_black_72.png" width="136" height="72" alt="藥局衛教助手"></a>
+      <div class="action-cluster">
+        <button class="pill icon-pill" type="button" onclick="showQRCode()" aria-label="顯示 QR code">🔲</button>
+        <button class="pill icon-pill" id="favorite-button" type="button" onclick="toggleFavorite()" aria-pressed="false" aria-label="加入收藏">☆</button>
+        <button class="pill icon-pill" type="button" onclick="showSharePanel()" aria-label="分享主題頁">↗</button>
+      </div>
     </div>
   <!-- shared-header:end -->
+
   <main class="wrap">
-    <div class="topic-intro">
+    <header class="page-head">
       <h1>青春痘完整主題</h1>
-      <p class="lead">青春痘相關圖卡的內容目錄，依主題瀏覽，不必依順序閱讀。</p>
-    </div>
-    <section class="topic-section--wash" aria-labelledby="face-wash">
-      <div class="topic-heading">
-        <img src="../img/acne_face_wash_01.webp" width="1254" height="1254" alt="青春痘為什麼一直長？正確洗臉先破除迷思" decoding="async">
-        <div><h2 id="face-wash">青春痘的正確洗臉</h2><p>溫和清潔的步驟、保養與常見問題。</p></div>
+      <p>點擊下方系列直接看圖卡</p>
+    </header>
+
+    <!-- 1. 認識青春痘與正確洗臉 -->
+    <section aria-labelledby="sec-basics">
+      <div class="section-head">
+        <img src="../img/topics/acne-identify.webp" width="384" height="384" alt="" decoding="async">
+        <div><h2 class="section-title" id="sec-basics">認識青春痘與正確洗臉</h2><p>分辨粉刺與發炎程度，從溫和清潔開始</p></div>
       </div>
-      <h3>洗臉漫畫</h3>
-      <ul>
-        <li><a href="../cards/acne_face_wash_01.html">青春痘為什麼一直長？正確洗臉先破除迷思</a></li>
-        <li><a href="../cards/acne_face_wash_02.html">青春痘洗臉別用力搓：避免過度清潔與刺激</a></li>
-        <li><a href="../cards/acne_face_wash_03.html">洗臉前先洗手：青春痘肌的清潔準備</a></li>
-      </ul>
-      <details class="more-cards" aria-label="洗臉漫畫的更多內容">
-        <summary>更多內容</summary>
-      <ul>
-        <li><a href="../cards/acne_face_wash_04.html">青春痘洗臉水溫怎麼選？溫水不會打開毛孔</a></li>
-        <li><a href="../cards/acne_face_wash_05.html">青春痘洗面乳怎麼選？溫和、不易致粉刺</a></li>
-        <li><a href="../cards/acne_face_wash_06.html">青春痘洗臉步驟：用指腹輕柔清潔</a></li>
-        <li><a href="../cards/acne_face_wash_07.html">洗面乳怎麼沖乾淨？留意髮際線、鼻翼與下巴</a></li>
-        <li><a href="../cards/acne_face_wash_08.html">洗臉後怎麼擦乾？柔軟毛巾輕拍不摩擦</a></li>
-        <li><a href="../cards/acne_face_wash_09.html">洗臉後緊繃、刺痛正常嗎？青春痘肌保濕重點</a></li>
-        <li><a href="../cards/acne_face_wash_10.html">青春痘每天怎麼洗臉？清潔、保濕、防曬與就醫時機</a></li>
-      </ul>
-      </details>
-      <h3>洗臉常見問題 Q&amp;A</h3>
-      <ul>
-        <li><a href="../cards/acne_face_wash_qa_1.html">青春痘洗臉 Q&A：一天洗幾次？熱水能打開毛孔嗎？</a></li>
-        <li><a href="../cards/acne_face_wash_qa_2.html">青春痘洗臉 Q&A：油性肌保濕、抗痘洗面乳與洗臉刷</a></li>
-        <li><a href="../cards/acne_face_wash_qa_3.html">青春痘洗臉 Q&A：多久會改善？日常照護與就醫警訊</a></li>
-      </ul>
-    </section>
-    <section class="topic-section--identify" aria-labelledby="identify">
-      <div class="topic-heading">
-        <img src="../img/topics/acne-identify.webp" width="384" height="384" alt="" loading="lazy" decoding="async">
-        <div><h2 id="identify">認識青春痘與粉刺</h2><p>認識常見類型與基本照護。</p></div>
+      <div class="menu-grid">
+        <a class="menu-item" href="../cards/acne_stage.html">
+          <span class="icon" aria-hidden="true">😊</span>
+          <span class="title">青春痘與粉刺</span>
+          <span class="meta">3 張・嚴重程度／粉刺／日常照護</span>
+        </a>
+        <a class="menu-item" href="../cards/acne_face_wash_01.html">
+          <span class="icon" aria-hidden="true">🫧</span>
+          <span class="title">青春痘的正確洗臉</span>
+          <span class="meta">10 張・水溫／洗面乳／洗臉步驟</span>
+        </a>
+        <a class="menu-item" href="../cards/acne_face_wash_qa_1.html">
+          <span class="icon" aria-hidden="true">💬</span>
+          <span class="title">洗臉常見問題</span>
+          <span class="meta">3 張・洗幾次／保濕／就醫</span>
+        </a>
       </div>
-      <ul>
-        <li><a href="../cards/acne_stage.html">青春痘有哪些外觀與嚴重程度？</a></li>
-        <li><a href="../cards/comedo.html">黑頭、白頭或閉鎖性粉刺很多，怎麼照顧？</a></li>
-        <li><a href="../cards/acne_dailycare.html">輕度發炎型青春痘日常照護</a></li>
-      </ul>
+      <div class="section-qa" aria-label="認識青春痘與正確洗臉常見問題">
+        <p class="section-qa__title">常見問題</p>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">青春痘有哪些外觀與嚴重程度？</span></summary>
+          <div class="faq-answer">
+            <p>依外觀可分四種：輕度粉刺型（黑頭、白頭粉刺為主，幾乎不紅腫）、輕度發炎型（開始出現紅色丘疹）、中度發炎型（紅腫丘疹與膿皰明顯增加，容易留下色素沉澱）、重度囊腫型（大型結節或囊腫、疼痛明顯，容易形成永久痘疤，建議儘早由皮膚科醫師評估）。 <a class="faq-card-link" href="../cards/acne_stage.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">黑頭、白頭或閉鎖性粉刺很多，怎麼照顧？</span></summary>
+          <div class="faq-answer">
+            <p>粉刺是毛孔內角質與皮脂堆積，不是洗不乾淨，反覆刷洗、磨砂反而更刺激。早晚溫和清潔，搭配不易致粉刺的保濕和防曬；不要自行擠壓、挖除，需要清除時由皮膚科醫師評估。疼痛、發炎或開始留疤，應就醫。 <a class="faq-card-link" href="../cards/comedo.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">輕度發炎型青春痘，日常怎麼照護？</span></summary>
+          <div class="faq-answer">
+            <p>重點是減少刺激、不要擠、保濕與防曬：一天溫和清潔 2 次，不磨砂、不用酒精反覆擦；選清爽、不易致痘的保濕產品，白天用 SPF 30 以上防曬。痘痘增加、出現硬塊或囊腫、開始留疤，或 2～3 個月仍無改善，建議就醫。 <a class="faq-card-link" href="../cards/acne_dailycare.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">青春痘洗臉水溫怎麼選？溫水會打開毛孔嗎？</span></summary>
+          <div class="faq-answer">
+            <p>不會。毛孔不會因熱水打開、冷水關閉，不必交替冷熱水。用舒適的溫水輕輕打濕全臉即可，避免過熱造成乾燥與刺激，也不需要特別用冰水。 <a class="faq-card-link" href="../cards/acne_face_wash_04.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">洗臉後緊繃、刺痛正常嗎？青春痘肌怎麼保濕？</span></summary>
+          <div class="faq-answer">
+            <p>洗後應該清爽舒適，不應明顯刺痛或緊繃；乾燥、脫皮、泛紅或刺痛，可能代表清潔方式或產品不適合。油性肌或青春痘肌也可能需要保濕，選清爽、不易致粉刺的產品；保濕有助維持皮膚屏障，但不能取代治療。 <a class="faq-card-link" href="../cards/acne_face_wash_09.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+      </div>
     </section>
-    <section class="topic-section--medicine" aria-labelledby="medicines">
-      <div class="topic-heading">
+
+    <!-- 2. 痘痘藥與使用方式 -->
+    <section aria-labelledby="sec-medicine">
+      <div class="section-head">
         <img src="../img/topics/acne-medicine.webp" width="384" height="384" alt="" loading="lazy" decoding="async">
-        <div><h2 id="medicines">痘痘藥與使用方式</h2><p>瀏覽常見成分、擦法與搭配。</p></div>
+        <div><h2 class="section-title" id="sec-medicine">痘痘藥與使用方式</h2><p>常見成分怎麼擦、兩種藥怎麼搭</p></div>
       </div>
-      <h3>常見成分與複方</h3>
-      <ul>
-        <li><a href="../cards/acne_topicals_02_retinoids.html">外用 A 酸怎麼擦？</a></li>
-        <li><a href="../cards/acne_topicals_03_azelaic.html">杜鵑花酸怎麼擦？</a></li>
-        <li><a href="../cards/acne_topicals_04_bpo.html">BPO 怎麼用、有哪些注意事項？</a></li>
-      </ul>
-      <details class="more-cards" aria-label="常見成分與複方的更多內容">
-        <summary>更多內容</summary>
-      <ul>
-        <li><a href="../cards/acne_topicals_08_salicylic.html">水楊酸怎麼用、如何避免重複刷酸？</a></li>
-        <li><a href="../cards/acne_topicals_05_clindamycin.html">Clindamycin 怎麼擦、要注意什麼？</a></li>
-        <li><a href="../cards/acne_topicals_06_erythromycin.html">紅黴素痘痘藥怎麼擦？</a></li>
-        <li><a href="../cards/acne_topicals_09_combinations.html">一條複方藥已有哪些成分，會重複用藥嗎？</a></li>
-      </ul>
+
+      <details class="drug-index" id="drug-list">
+        <summary>依成分快速點選（8 項成分直達）</summary>
+        <div class="drug-index-body">
+          <div class="drug-index-group">
+            <h3>常見痘痘藥成分</h3>
+            <ul class="drug-pill-list">
+              <li><a href="../cards/acne_topicals_02_retinoids.html">A 酸</a></li>
+              <li><a href="../cards/acne_topicals_03_azelaic.html">杜鵑花酸</a></li>
+              <li><a href="../cards/acne_topicals_04_bpo.html">BPO（過氧化苯甲醯）</a></li>
+              <li><a href="../cards/acne_topicals_08_salicylic.html">水楊酸</a></li>
+            </ul>
+          </div>
+          <div class="drug-index-group">
+            <h3>外用抗生素與複方</h3>
+            <ul class="drug-pill-list">
+              <li><a href="../cards/acne_topicals_05_clindamycin.html">Clindamycin</a></li>
+              <li><a href="../cards/acne_topicals_06_erythromycin.html">紅黴素</a></li>
+              <li><a href="../cards/acne_topicals_09_combinations.html">複方痘痘藥</a></li>
+            </ul>
+          </div>
+          <div class="drug-index-group">
+            <h3>酒糟用藥</h3>
+            <ul class="drug-pill-list">
+              <li><a href="../cards/acne_topicals_07_metronidazole.html">Metronidazole（酒糟）</a></li>
+            </ul>
+          </div>
+        </div>
       </details>
-      <h3>使用與搭配</h3>
-      <ul>
-        <li><a href="../cards/acne_topicals_01_basics.html">拿到痘痘藥後，怎麼開始擦？</a></li>
-        <li><a href="../cards/acne_topicals_10_pairing.html">手上有兩種痘痘藥，能一起用嗎？</a></li>
-        <li><a href="../cards/acne_topicals_11_routine.html">痘痘藥、保濕與防曬，順序怎麼排？</a></li>
-      </ul>
-      <details class="more-cards" aria-label="使用與搭配的更多內容">
-        <summary>更多內容</summary>
-      <ul>
-        <li><a href="../cards/acne_topicals_12_irritation.html">擦藥後紅、乾、刺，何時該停用或就醫？</a></li>
-      </ul>
-      </details>
+
+      <div class="menu-grid">
+        <a class="menu-item" href="../cards/acne_topicals_02_retinoids.html">
+          <span class="icon" aria-hidden="true">💊</span>
+          <span class="title">A 酸、杜鵑花酸、BPO、水楊酸</span>
+          <span class="meta">4 張・常見成分怎麼擦</span>
+        </a>
+        <a class="menu-item" href="../cards/acne_topicals_05_clindamycin.html">
+          <span class="icon" aria-hidden="true">🧴</span>
+          <span class="title">痘痘抗生素與複方藥膏</span>
+          <span class="meta">3 張・Clindamycin／紅黴素／複方</span>
+        </a>
+        <a class="menu-item" href="../cards/acne_topicals_01_basics.html">
+          <span class="icon" aria-hidden="true">🧩</span>
+          <span class="title">痘痘藥怎麼搭</span>
+          <span class="meta">4 張・擦法／搭配／早晚順序</span>
+        </a>
+      </div>
+      <div class="section-qa" aria-label="痘痘藥常見問題">
+        <p class="section-qa__title">常見問題</p>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">拿到痘痘藥後，怎麼開始擦？</span></summary>
+          <div class="faq-answer">
+            <p>洗臉後輕拍乾，再依指示薄擦指定治療區，不厚敷；A 酸類通常不只點在單顆痘痘上，範圍依醫囑。A 酸、BPO 初期可依醫療人員指示降低頻率、逐步適應。避開眼周、唇部及破皮處，並搭配不易致粉刺的保濕與 SPF 30 以上防曬。 <a class="faq-card-link" href="../cards/acne_topicals_01_basics.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">手上有兩種痘痘藥，能一起用嗎？</span></summary>
+          <div class="faq-answer">
+            <p>是否需要兩種藥、使用範圍與時段，先依處方確認，不要自行混合。外用抗生素常搭配 BPO，可降低抗藥性風險；Adapalene 與 BPO 可以搭配；Tretinoin 與 BPO 要看製劑，傳統製劑常分時使用。另外加杜鵑花酸、水楊酸等酸類，要注意刺激累加。 <a class="faq-card-link" href="../cards/acne_topicals_10_pairing.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">痘痘藥、保濕與防曬，順序怎麼排？</span></summary>
+          <div class="faq-answer">
+            <p>藥品種類與頻率先依處方。早上可依指示安排清潔、擦藥、保濕、防曬；晚上清潔後，依產品要求讓皮膚乾燥再擦藥。容易乾燥可詢問能否先保濕再擦藥，但不要把藥自行混進乳液；也不是每一層都要等 20～30 分鐘。 <a class="faq-card-link" href="../cards/acne_topicals_11_routine.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">一條複方藥已有哪些成分，會重複用藥嗎？</span></summary>
+          <div class="faq-answer">
+            <p>一條複方可能已含兩種以上有效成分，要看藥袋上的成分，不只記商品名稱。已含 A 酸、BPO 或抗生素時，不要再自行加擦相同成分；依整個產品的用法使用，不自行加倍。 <a class="faq-card-link" href="../cards/acne_topicals_09_combinations.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">擦藥後紅、乾、刺，何時該停用或就醫？</span></summary>
+          <div class="faq-answer">
+            <p>輕微乾燥、少量脫屑：加強溫和保濕、停止額外去角質，並詢問是否調整擦藥頻率。持續灼熱、紅痛、裂開或滲液：暫停可疑產品並聯絡醫療人員。臉唇腫脹、蕁麻疹要立即停用並就醫；合併喉嚨緊、呼吸困難或暈厥，立即撥打 119。 <a class="faq-card-link" href="../cards/acne_topicals_12_irritation.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+      </div>
     </section>
-    <section class="topic-section--patch" aria-labelledby="now">
-      <div class="topic-heading">
+
+    <!-- 3. 痘痘貼與破皮照護 -->
+    <section aria-labelledby="sec-patch">
+      <div class="section-head">
         <img src="../img/topics/acne-patch-care.webp" width="384" height="384" alt="" loading="lazy" decoding="async">
-        <div><h2 id="now">痘痘貼與破皮照護</h2><p>查看痘痘貼用法與破皮照護。</p></div>
+        <div><h2 class="section-title" id="sec-patch">痘痘貼與破皮照護</h2><p>哪種痘痘適合貼、怎麼貼、破了怎麼辦</p></div>
       </div>
-      <ul>
-        <li><a href="../cards/acne_patch_when_to_use.html">這顆痘痘適合貼痘痘貼嗎？</a></li>
-        <li><a href="../cards/acne_patch_how_to_use.html">痘痘貼怎麼用、何時換？</a></li>
-        <li><a href="../cards/acne_patch_broken_skin.html">痘痘破了，還能擦藥或貼嗎？</a></li>
-      </ul>
+      <div class="section-qa" aria-label="痘痘貼與破皮照護常見問題" style="margin-top:10px">
+        <p class="section-qa__title">常見問題</p>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">這顆痘痘適合貼痘痘貼嗎？</span></summary>
+          <div class="faq-answer">
+            <p>一般水膠體痘痘貼對已冒白頭、或自然破掉有少量滲液的痘痘最有用，能吸收滲液、隔開手指不去摳。只有紅腫沒白頭、又硬又痛的深層痘、囊腫或粉刺，貼了效果有限；反覆發作或容易留疤，建議就醫。 <a class="faq-card-link" href="../cards/acne_patch_when_to_use.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">痘痘貼怎麼用、何時換？</span></summary>
+          <div class="faq-answer">
+            <p>洗淨並完全擦乾後，選比痘痘稍大的尺寸蓋住正中央、輕壓邊緣，底下不要塗保養品或藥膏。多數產品建議貼數小時到一個晚上，實際依產品說明；變白、鼓起、邊緣翹起或弄髒就換新的。撕的時候順著皮膚表面慢慢撕開。 <a class="faq-card-link" href="../cards/acne_patch_how_to_use.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">痘痘破了，還能擦藥或貼嗎？</span></summary>
+          <div class="faq-answer">
+            <p>先清潔並輕壓止血，不要再擠。A 酸、BPO、水楊酸先不要擦在破口，癒合、無滲液後再恢復。小範圍、淺表、少量滲液時，可貼單純水膠體痘痘貼，不選含酸類或茶樹精油的款式。紅腫擴大、越來越熱痛、膿液增加、發燒或出血壓不住，請就醫。 <a class="faq-card-link" href="../cards/acne_patch_broken_skin.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+      </div>
     </section>
-    <section class="topic-section--other" aria-labelledby="marks">
-      <div class="topic-heading">
+
+    <!-- 4. 酒糟、痘印與疤痕 -->
+    <section aria-labelledby="sec-more">
+      <div class="section-head">
         <img src="../img/topics/acne-other.webp" width="384" height="384" alt="" loading="lazy" decoding="async">
-        <div><h2 id="marks">其他相關問題</h2><p>延伸閱讀酒糟、痘印與疤痕。</p></div>
+        <div><h2 class="section-title" id="sec-more">酒糟、痘印與疤痕</h2><p>分辨酒糟，處理痘痘留下的印子</p></div>
       </div>
-      <ul>
-        <li><a href="../cards/rosacea_vs_acne_clues.html">青春痘還是酒糟？</a></li>
-        <li><a href="../cards/acne_topicals_07_metronidazole.html">酒糟用藥：Metronidazole 怎麼擦？</a></li>
-        <li><a href="../cards/rosacea_skin_care.html">酒糟肌如何清潔、保濕、防曬？</a></li>
-      </ul>
-      <details class="more-cards" aria-label="其他相關問題的更多內容">
-        <summary>更多內容</summary>
-      <ul>
-        <li><a href="../cards/scar_remove_detail.html">留下的是紅黑印、凸疤還是凹疤？</a></li>
-        <li><a href="../cards/scar_remove.html">不同疤痕產品的用途有什麼差別？</a></li>
-      </ul>
-      </details>
+      <div class="menu-grid">
+        <a class="menu-item" href="../cards/rosacea_vs_acne_clues.html">
+          <span class="icon" aria-hidden="true">🌸</span>
+          <span class="title">臉紅又冒痘：酒糟</span>
+          <span class="meta">3 張・分辨／用藥／保養</span>
+        </a>
+        <a class="menu-item" href="../cards/scar_remove_detail.html">
+          <span class="icon" aria-hidden="true">🌿</span>
+          <span class="title">痘印與疤痕</span>
+          <span class="meta">紅黑印／凸疤／凹疤</span>
+        </a>
+        <a class="menu-item" href="../public.html">
+          <span class="icon" aria-hidden="true">📚</span>
+          <span class="title">查看更多主題的圖卡</span>
+          <span class="meta">民眾衛教首頁</span>
+        </a>
+      </div>
+      <div class="section-qa" aria-label="酒糟、痘印與疤痕常見問題">
+        <p class="section-qa__title">常見問題</p>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">青春痘還是酒糟？</span></summary>
+          <div class="faq-answer">
+            <p>青春痘常見黑頭、白頭粉刺，也可能長到胸、背；酒糟通常沒有粉刺，鼻子、雙頰等臉部中央反覆泛紅，合併紅色小疹或膿皰。兩者也可能同時存在，應由皮膚科確認。眼痛、明顯畏光或視力模糊，請當天就醫。 <a class="faq-card-link" href="../cards/rosacea_vs_acne_clues.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">酒糟肌如何清潔、保濕、防曬？</span></summary>
+          <div class="faq-answer">
+            <p>早晚用溫和潔面產品、微溫水輕洗，避免熱水、洗臉刷與磨砂；洗後用無香精、不刺激的乳霜保濕；每天用廣效 SPF 30 以上防曬，搭配帽子或陽傘。新品一次只加一種，並記錄日曬、悶熱、熱飲、辛辣、酒精等是否讓臉更紅。 <a class="faq-card-link" href="../cards/rosacea_skin_care.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">留下的是紅黑印、凸疤還是凹疤？</span></summary>
+          <div class="faq-answer">
+            <p>平坦紅印或黑印主要是顏色改變，注意防曬與減少刺激；肥厚性疤痕凸起較硬、仍在原傷口範圍內；蟹足腫會長出原傷口邊界，需要醫師評估；凹疤表面凹陷、常見於痘痘後，保養品難以填平，可諮詢皮膚科。 <a class="faq-card-link" href="../cards/scar_remove_detail.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-text">不同疤痕產品的用途有什麼差別？</span></summary>
+          <div class="faq-answer">
+            <p>傷口癒合、沒有滲液後才開始用。矽膠凝膠適合不易貼片的位置，依說明薄擦待乾；矽膠貼片依說明貼附、清洗並逐步適應。保濕品可減少乾燥不適，但淡斑、保濕與改善凸疤是不同的事；凹疤、蟹足腫或持續增厚的疤痕，請就醫評估。 <a class="faq-card-link" href="../cards/scar_remove.html">看圖卡 ›</a></p>
+          </div>
+        </details>
+      </div>
     </section>
   </main>
+
+  <!-- GA4 Click Tracking -->
+  <script>
+    (function () {
+      document.querySelector('main').addEventListener('click', function (e) {
+        var a = e.target.closest('a[href]');
+        if (!a || !shouldTrackAnalytics()) return;
+        var href = a.getAttribute('href') || '';
+        if (href.indexOf('#') === 0) return;
+        gtag('event', a.closest('.section-qa') ? 'acne_hub_qa_click' : 'acne_hub_card_click', {
+          link_text: a.textContent.trim().slice(0, 60),
+          link_url: href
+        });
+      });
+    })();
+  </script>
+
+  <!-- QR / Share / Favorite Modals -->
+  <div class="qr-modal" id="qr-modal" hidden>
+    <div class="qr-box" role="dialog" aria-modal="true" aria-label="青春痘完整主題 QR code">
+      <div class="qr-title">請掃描開啟「青春痘完整主題」</div>
+      <p class="qr-hint">掃描後會直接打開這個主題頁。</p>
+      <canvas id="qr-canvas"></canvas>
+      <button class="qr-close" type="button" onclick="closeQRCode()">完成</button>
+    </div>
+  </div>
+  <div class="qr-modal" id="share-modal" hidden>
+    <div class="share-box" role="dialog" aria-modal="true" aria-label="分享主題頁">
+      <div class="share-title">分享「青春痘完整主題」</div>
+      <div class="share-modal-actions">
+        <a class="share-button" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Ftopics%2Facne.html" target="_blank" rel="noopener">LINE</a>
+        <a class="share-button" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Ftopics%2Facne.html" target="_blank" rel="noopener">Facebook</a>
+        <a class="share-button" href="https://www.threads.net/intent/post?text=%E9%9D%92%E6%98%A5%E7%97%98%E5%AE%8C%E6%95%B4%E4%B8%BB%E9%A1%8C%EF%BD%9C%E8%97%A5%E5%B1%80%E8%A1%9B%E6%95%99%E5%8A%A9%E6%89%8B%20https%3A%2F%2Fliaoweihung.github.io%2Fpteduimg%2Ftopics%2Facne.html" target="_blank" rel="noopener">Threads</a>
+        <button class="share-button" type="button" onclick="copyShareUrl()">複製連結</button>
+      </div>
+      <button class="qr-close" type="button" onclick="closeSharePanel()">完成</button>
+    </div>
+  </div>
+  <div id="favorite-toast" class="favorite-toast" role="status" aria-live="polite"></div>
+
+  <script>
+    var hubFavoriteKey = 'topic:acne';
+    var hubShareUrl = 'https://liaoweihung.github.io/pteduimg/topics/acne.html';
+    function getFavorites() {
+      try { var s = JSON.parse(localStorage.getItem('favImages') || '[]'); return Array.isArray(s) ? s : []; } catch (err) { return []; }
+    }
+    function setFavoriteButtonState() {
+      var btn = document.getElementById('favorite-button');
+      if (!btn) return;
+      var on = getFavorites().indexOf(hubFavoriteKey) !== -1;
+      btn.classList.toggle('active', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.textContent = on ? '★' : '☆';
+      btn.setAttribute('aria-label', on ? '取消收藏' : '加入收藏');
+    }
+    function toggleFavorite() {
+      var favs = getFavorites(), i = favs.indexOf(hubFavoriteKey), adding = i === -1;
+      if (adding) favs.push(hubFavoriteKey); else favs.splice(i, 1);
+      try { localStorage.setItem('favImages', JSON.stringify(favs)); } catch (err) {}
+      setFavoriteButtonState();
+      showFavoriteToast(adding ? '已加入我的收藏' : '已從我的收藏移除');
+      if (shouldTrackAnalytics()) {
+        gtag('event', adding ? 'add_favorite_hub' : 'remove_favorite_hub', { hub: 'acne' });
+      }
+    }
+    var favoriteToastTimer = null;
+    function showFavoriteToast(message) {
+      var toast = document.getElementById('favorite-toast');
+      if (!toast) return;
+      toast.textContent = message;
+      toast.classList.add('show');
+      clearTimeout(favoriteToastTimer);
+      favoriteToastTimer = setTimeout(function () { toast.classList.remove('show'); }, 1800);
+    }
+    function showQRCode() {
+      var modal = document.getElementById('qr-modal'), canvas = document.getElementById('qr-canvas');
+      if (!modal || !canvas || typeof QRious !== 'function') return;
+      new QRious({ element: canvas, value: hubShareUrl, size: 220 });
+      modal.hidden = false;
+    }
+    function closeQRCode() { document.getElementById('qr-modal').hidden = true; }
+    function showSharePanel() { document.getElementById('share-modal').hidden = false; }
+    function closeSharePanel() { document.getElementById('share-modal').hidden = true; }
+    function copyShareUrl() {
+      navigator.clipboard.writeText(hubShareUrl).then(function () { showFavoriteToast('已複製連結'); }, function () {});
+    }
+    setFavoriteButtonState();
+  </script>
+
   <footer class="site-footer">
   <div class="page-vote" data-page-vote>
     <style>
