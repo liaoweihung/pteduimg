@@ -509,6 +509,46 @@ class IncrementalTests(unittest.TestCase):
         after = {k: v for k, v in self.state().items() if k != "img/other.webp"}
         self.assertEqual(before, after)
 
+    def test_historical_seo_titles_are_preserved(self):
+        seo = json.loads((self.root / "seo.json").read_text(encoding="utf-8"))
+        seo["cards/a0.html"]["title"] = "歷史自訂標題｜測試保留"
+        seo["cards/a0.html"]["display_title"] = "歷史顯示標題"
+        seo["cards/a0.html"]["tracking_title"] = "歷史追蹤標題"
+        self.put("seo.json", seo)
+
+        self.run_build()
+        rebuilt_seo = json.loads((self.root / "seo.json").read_text(encoding="utf-8"))
+        self.assertEqual(rebuilt_seo["cards/a0.html"]["title"], "歷史自訂標題｜測試保留")
+        self.assertEqual(rebuilt_seo["cards/a0.html"]["display_title"], "歷史顯示標題")
+        self.assertEqual(rebuilt_seo["cards/a0.html"]["tracking_title"], "歷史追蹤標題")
+        html_text = (self.root / "cards/a0.html").read_text(encoding="utf-8")
+        self.assertIn("<h1>歷史顯示標題</h1>", html_text)
+        self.assertIn('page_title: "歷史追蹤標題"', html_text)
+
+    def test_full_build_aborts_on_missing_or_empty_seo_when_cards_exist(self):
+        # Case 1: seo.json is empty object {}
+        self.put("seo.json", {})
+        before_empty = self.state()
+        with contextlib.redirect_stderr(io.StringIO()) as err, self.assertRaises(SystemExit) as ctx:
+            self.run_build()
+        self.assertNotEqual(ctx.exception.code, 0)
+        self.assertIn("--allow-empty-seo", err.getvalue())
+        self.assertEqual(before_empty, self.state())
+
+        # Case 2: seo.json is missing
+        (self.root / "seo.json").unlink()
+        before_missing = self.state()
+        with contextlib.redirect_stderr(io.StringIO()) as err, self.assertRaises(SystemExit) as ctx:
+            self.run_build()
+        self.assertNotEqual(ctx.exception.code, 0)
+        self.assertIn("seo.json", err.getvalue())
+        self.assertEqual(before_missing, self.state())
+
+        # Case 3: explicit --allow-empty-seo succeeds
+        self.run_build("--allow-empty-seo")
+        rebuilt_seo = json.loads((self.root / "seo.json").read_text(encoding="utf-8"))
+        self.assertIn("cards/a0.html", rebuilt_seo)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -2178,6 +2178,11 @@ def main(argv=None):
     )
     modes.add_argument("--incremental", nargs="+", metavar="IMAGE_ID",
                        help="Build affected pages and complete indexes; reject unsafe changes.")
+    parser.add_argument(
+        "--allow-empty-seo",
+        action="store_true",
+        help="Allow full build when cards/*.html already exists and seo.json is missing or empty.",
+    )
     args = parser.parse_args(argv)
     if args.incremental:
         import sys
@@ -2187,6 +2192,12 @@ def main(argv=None):
             parser.error(str(error))
         return
     only_image_ids = {Path(value).stem for value in args.only} if args.only else None
+    if only_image_ids is None and not args.allow_empty_seo:
+        if CARDS_DIR.is_dir() and any(CARDS_DIR.glob("*.html")) and not read_seo():
+            parser.error(
+                "cards/*.html already exists but seo.json is missing or empty; "
+                "restore seo.json from Git (e.g. `git restore seo.json`) or pass --allow-empty-seo to initialize."
+            )
 
     cards = read_cards()
     retired = read_retired_cards(ROOT, cards)

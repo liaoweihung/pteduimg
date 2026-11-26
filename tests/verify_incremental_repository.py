@@ -110,12 +110,15 @@ def main():
                 record.update(image=image, cardId=series, url=build.abs_url("cards/" + page + ".html"))
                 records.append(record)
                 cards[series]["steps"].append(image)
+                if "favorite_keys" in cards[series]:
+                    cards[series]["favorite_keys"].append(f"{series}-{page}")
                 manual[series] = copy.deepcopy(cards[series])
                 for name, data in (("cards.json", cards), ("cards.manual.json", manual), ("data/card_content.json", records)):
                     inc.write_if_changed(root / name, json.dumps(data, ensure_ascii=False, indent=2) + "\n")
                 build.main(["--incremental", page])
 
             cards["incremental_test"] = copy.deepcopy(cards["pediatric_gi_syrup"])
+            cards["incremental_test"].pop("favorite_keys", None)
             cards["incremental_test"]["steps"] = []
             add("incremental_test_new", "incremental_test")
             assert all(original[p.name] == (inc.digest(p.read_bytes()), p.stat().st_mtime_ns)
