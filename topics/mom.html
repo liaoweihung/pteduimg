@@ -136,27 +136,61 @@
     .lead { color:var(--muted); margin:0; }
     .topic-group { margin-top:16px; background:#fff; border:1px solid #f5dce8; border-top:4px solid var(--accent); border-radius:12px; padding:12px; box-shadow:0 6px 18px rgba(170,73,121,.08); }
     .topic-group h2 { font-size:1.05rem; margin:0 0 8px; color:var(--accent); }
-    .topic-row { display:block; border-top:1px solid var(--line); }
-    .topic-group h2 + .topic-row, .extension-note + .topic-row { border-top:0; }
-    .topic-row summary, .topic-row--link { display:flex; align-items:center; gap:12px; min-height:60px; padding:6px 4px; cursor:pointer; list-style:none; color:var(--ink); text-decoration:none; font-weight:600; }
-    .topic-row summary::-webkit-details-marker { display:none; }
-    .topic-row summary img, .topic-row--link img, .topic-row .topic-emoji { width:48px; height:48px; flex:none; border-radius:10px; object-fit:cover; object-position:top; background:var(--soft); }
-    .topic-row .topic-emoji { display:grid; place-items:center; font-size:1.6rem; }
-    .topic-row__name { flex:1; min-width:0; }
-    .topic-row__name small { display:block; margin-top:2px; color:var(--muted); font-size:.8rem; font-weight:400; line-height:1.4; }
-    .topic-row__meta { flex:none; padding:2px 10px; border-radius:999px; background:var(--soft); color:var(--accent); font-size:.82rem; font-weight:700; }
-    .topic-row summary .topic-row__meta::after { content:" ▾"; }
-    .topic-row[open] summary .topic-row__meta::after { content:" ▴"; }
-    .topic-row summary:focus-visible, .topic-row--link:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
-    .topic-row__desc { margin:0 4px 6px; color:var(--muted); font-size:.88rem; }
-    .topic-row ul { margin:0 0 12px; }
-    ul { list-style:none; padding:0; margin:10px 0 0; display:grid; gap:6px; }
-    li a { display:flex; align-items:center; min-height:44px; padding:8px 12px; border:1px solid var(--line); border-radius:10px; color:var(--ink); text-decoration:none; overflow-wrap:anywhere; }
-    li a:hover, li a:focus-visible { border-color:var(--accent); background:var(--soft); }
-    .faq-item { background:#fff; border:1px solid var(--line); border-radius:10px; padding:0 12px; }
-    .faq-item + .faq-item { margin-top:8px; }
-    .faq-item summary { min-height:44px; padding:10px 0; font-weight:600; cursor:pointer; }
-    .faq-item p { margin:0 0 12px; }
+    .wrap [id] { scroll-margin-top:76px; }
+    summary:focus-visible { outline:2px solid var(--brand); outline-offset:-2px; }
+    .topic-index { margin-top:16px; background:#fff; border:1px solid #d5e7e8; border-radius:12px; }
+    .topic-index summary, .faq-item summary {
+      display:flex; align-items:center; justify-content:space-between; gap:8px;
+      min-height:44px; padding:10px 14px; cursor:pointer; list-style:none; line-height:1.4;
+    }
+    summary::-webkit-details-marker { display:none; }
+    .topic-index summary { color:var(--brand); font-size:.88rem; font-weight:700; }
+    .topic-index summary::after { content:"展開 ▾"; color:var(--muted); white-space:nowrap; font-size:.8rem; font-weight:500; }
+    .topic-index[open] summary::after { content:"收合 ▴"; }
+    .topic-index ul { display:flex; flex-wrap:wrap; gap:6px; padding:10px 14px 14px; margin:0; border-top:1px solid var(--line); list-style:none; }
+    .topic-index a {
+      display:inline-flex; align-items:center; min-height:36px; padding:5px 11px; border:1px solid var(--line);
+      border-radius:999px; background:#f9fbfb; color:var(--ink); text-decoration:none; font-size:.86rem; font-weight:600;
+    }
+    .topic-index a:hover, .topic-index a:focus-visible { border-color:var(--brand); background:#eaf6f6; }
+
+    .topic-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); align-items:start; gap:12px; }
+    @media (min-width:640px) {
+      .topic-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+    }
+    .topic-tile { background:#fff; border:1px solid var(--line); border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,.045); }
+    .topic-tile:hover, .topic-tile:focus-within, .topic-tile:target { border-color:var(--accent); }
+    .topic-tile summary, .topic-tile--link {
+      display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px;
+      min-height:162px; padding:12px 8px; border-radius:12px; text-align:center;
+      cursor:pointer; list-style:none; color:var(--ink); text-decoration:none;
+    }
+    .topic-tile summary img, .topic-emoji { width:48px; height:48px; border-radius:10px; background:var(--soft); }
+    .topic-tile summary img { object-fit:cover; object-position:top; }
+    .topic-emoji { display:grid; place-items:center; font-size:1.6rem; }
+    .topic-tile__name { font-size:1.02rem; font-weight:700; line-height:1.3; text-wrap:balance; }
+    .topic-tile__meta { color:var(--accent); font-size:.8rem; font-weight:700; }
+    .topic-tile summary .topic-tile__meta::after { content:" ▾"; }
+    .topic-tile[open] summary .topic-tile__meta::after { content:" ▴"; }
+    .topic-tile__desc { color:var(--muted); font-size:.8rem; line-height:1.4; }
+    .topic-tile ul { display:grid; gap:6px; list-style:none; padding:8px; margin:0; border-top:1px solid var(--line); }
+    .topic-tile li a {
+      display:flex; align-items:center; min-height:44px; padding:7px 8px; border:1px solid var(--line);
+      border-radius:8px; color:var(--ink); text-decoration:none; font-size:.88rem; overflow-wrap:anywhere;
+    }
+    .topic-tile li a:hover, .topic-tile li a:focus-visible { border-color:var(--accent); background:var(--soft); }
+
+    .faq-list { border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+    .faq-item + .faq-item { border-top:1px solid var(--line); }
+    .faq-item summary { align-items:baseline; color:var(--ink); font-size:.92rem; font-weight:600; }
+    .faq-item summary:hover, .faq-item summary:focus-visible { background:var(--soft); color:var(--accent); }
+    .faq-q-text { display:flex; align-items:baseline; gap:7px; }
+    .faq-q-text::before { content:"Q"; color:var(--accent); font-size:.76rem; font-weight:800; }
+    .faq-item summary::after { content:"▾"; flex:none; color:var(--muted); font-size:.85rem; }
+    .faq-item[open] summary::after { transform:rotate(180deg); }
+    .faq-answer { padding:10px 14px 12px; border-top:1px solid var(--line); background:var(--soft); font-size:.88rem; }
+    .faq-answer p { margin:0; }
+    .faq-card-link { font-weight:700; overflow-wrap:anywhere; }
     .faq-note { margin:12px 2px 0; color:var(--muted); font-size:.82rem; line-height:1.55; }
     .extension-note { margin:-4px 0 6px; color:var(--muted); font-size:.88rem; }
     /* shared-footer-styles:start */
@@ -215,168 +249,267 @@
       <h1>媽媽專屬</h1>
       <p class="lead">餵母乳、懷孕能吃什麼藥？手乾裂、長斑、產後不適怎麼照顧？藥師把媽媽常問的問題整理在這裡，點主題展開看圖卡。</p>
     </div>
+    <details class="topic-index">
+      <summary>依主題快速點選</summary>
+      <ul>
+        <li><a href="#breastfeeding">哺乳期間小毛病</a></li>
+        <li><a href="#pregnancy">懷孕期間小毛病</a></li>
+        <li><a href="#weight">孕期體重增加計算器</a></li>
+        <li><a href="#hands">富貴手</a></li>
+        <li><a href="#skin">妊娠紋和色素沉澱</a></li>
+        <li><a href="#hemorrhoids">痔瘡與產後不適</a></li>
+        <li><a href="#vaginal">陰道用藥</a></li>
+        <li><a href="#cycle">經期・排卵・預產期計算器</a></li>
+        <li><a href="#contraception">避孕</a></li>
+        <li><a href="#test">驗孕</a></li>
+        <li><a href="#faq">媽媽常見問題</a></li>
+        <li><a href="#baby">寶寶照護</a></li>
+      </ul>
+    </details>
     <section class="topic-group" style="--accent:#207467;--soft:#effaf7">
       <h2>懷孕與哺乳</h2>
-        <details class="topic-row" id="breastfeeding">
-          <summary><img src="../img/breastfeeding_minor_engorgement.webp" width="768" height="1024" alt="" loading="lazy" decoding="async"><span class="topic-row__name">哺乳期間小毛病</span><span class="topic-row__meta">9 張</span></summary>
-          <p class="topic-row__desc">餵母乳時頭痛、感冒、塞奶，哪些藥可以用、要不要停餵。</p>
+      <div class="topic-grid">
+        <details class="topic-tile" id="breastfeeding">
+          <summary>
+            <img src="../img/breastfeeding_minor_engorgement.webp" width="768" height="1024" alt="" loading="lazy" decoding="async">
+            <span class="topic-tile__name">哺乳期間小毛病</span>
+            <span class="topic-tile__meta">9 張</span>
+            <span class="topic-tile__desc">餵母乳時頭痛、感冒、塞奶，哪些藥可以用、要不要停餵。</span>
+          </summary>
           <ul>
-              <li><a href="../cards/breastfeeding_minor_fever_pain.html">哺乳期間頭痛、發燒可以吃什麼？</a></li>
-              <li><a href="../cards/breastfeeding_minor_rhinitis.html">哺乳期間鼻塞、流鼻水可以用什麼？</a></li>
-              <li><a href="../cards/breastfeeding_minor_engorgement.html">哺乳期間乳房脹痛、塞奶怎麼辦？</a></li>
-              <li><a href="../cards/breastfeeding_minor_cough.html">哺乳期間咳嗽可以吃什麼？</a></li>
-              <li><a href="../cards/breastfeeding_minor_constipation.html">哺乳期間便祕可以用什麼？</a></li>
-              <li><a href="../cards/breastfeeding_minor_diarrhea.html">哺乳期間拉肚子，可以吃止瀉藥嗎？</a></li>
-              <li><a href="../cards/breastfeeding_minor_reflux.html">哺乳期間胃酸逆流、胃不舒服可以吃什麼？</a></li>
-              <li><a href="../cards/breastfeeding_minor_itch.html">哺乳期間皮膚癢，可以擦藥或吃藥嗎？</a></li>
-              <li><a href="../cards/breastfeeding_minor_insomnia.html">哺乳期間睡不好，可以怎麼做？</a></li>
+            <li><a href="../cards/breastfeeding_minor_fever_pain.html">哺乳期間頭痛、發燒可以吃什麼？</a></li>
+            <li><a href="../cards/breastfeeding_minor_rhinitis.html">哺乳期間鼻塞、流鼻水可以用什麼？</a></li>
+            <li><a href="../cards/breastfeeding_minor_engorgement.html">哺乳期間乳房脹痛、塞奶怎麼辦？</a></li>
+            <li><a href="../cards/breastfeeding_minor_cough.html">哺乳期間咳嗽可以吃什麼？</a></li>
+            <li><a href="../cards/breastfeeding_minor_constipation.html">哺乳期間便祕可以用什麼？</a></li>
+            <li><a href="../cards/breastfeeding_minor_diarrhea.html">哺乳期間拉肚子，可以吃止瀉藥嗎？</a></li>
+            <li><a href="../cards/breastfeeding_minor_reflux.html">哺乳期間胃酸逆流、胃不舒服可以吃什麼？</a></li>
+            <li><a href="../cards/breastfeeding_minor_itch.html">哺乳期間皮膚癢，可以擦藥或吃藥嗎？</a></li>
+            <li><a href="../cards/breastfeeding_minor_insomnia.html">哺乳期間睡不好，可以怎麼做？</a></li>
           </ul>
         </details>
-        <details class="topic-row" id="pregnancy">
-          <summary><img src="../img/pregnancy_minor_fever_pain.webp" width="941" height="1672" alt="" loading="lazy" decoding="async"><span class="topic-row__name">懷孕期間小毛病</span><span class="topic-row__meta">8 張</span></summary>
-          <p class="topic-row__desc">孕吐、頭痛、感冒、便祕，懷孕時能用什麼藥。</p>
+        <details class="topic-tile" id="pregnancy">
+          <summary>
+            <img src="../img/pregnancy_minor_fever_pain.webp" width="941" height="1672" alt="" loading="lazy" decoding="async">
+            <span class="topic-tile__name">懷孕期間小毛病</span>
+            <span class="topic-tile__meta">8 張</span>
+            <span class="topic-tile__desc">孕吐、頭痛、感冒、便祕，懷孕時能用什麼藥。</span>
+          </summary>
           <ul>
-              <li><a href="../cards/pregnancy_minor_fever_pain.html">懷孕頭痛、發燒可以吃什麼？</a></li>
-              <li><a href="../cards/pregnancy_minor_nausea.html">懷孕一直想吐可以吃什麼？</a></li>
-              <li><a href="../cards/pregnancy_minor_rhinitis.html">懷孕鼻塞流鼻水可以用什麼？</a></li>
-              <li><a href="../cards/pregnancy_minor_cough.html">懷孕期間咳嗽可以吃什麼？</a></li>
-              <li><a href="../cards/pregnancy_minor_constipation.html">懷孕期間便秘可以用什麼？</a></li>
-              <li><a href="../cards/pregnancy_minor_diarrhea.html">懷孕拉肚子先別急著吃止瀉藥</a></li>
-              <li><a href="../cards/pregnancy_minor_itch.html">懷孕期間皮膚癢可以用什麼？</a></li>
-              <li><a href="../cards/pregnancy_minor_insomnia.html">懷孕期間睡不好可以怎麼做？</a></li>
+            <li><a href="../cards/pregnancy_minor_fever_pain.html">懷孕頭痛、發燒可以吃什麼？</a></li>
+            <li><a href="../cards/pregnancy_minor_nausea.html">懷孕一直想吐可以吃什麼？</a></li>
+            <li><a href="../cards/pregnancy_minor_rhinitis.html">懷孕鼻塞流鼻水可以用什麼？</a></li>
+            <li><a href="../cards/pregnancy_minor_cough.html">懷孕期間咳嗽可以吃什麼？</a></li>
+            <li><a href="../cards/pregnancy_minor_constipation.html">懷孕期間便秘可以用什麼？</a></li>
+            <li><a href="../cards/pregnancy_minor_diarrhea.html">懷孕拉肚子先別急著吃止瀉藥</a></li>
+            <li><a href="../cards/pregnancy_minor_itch.html">懷孕期間皮膚癢可以用什麼？</a></li>
+            <li><a href="../cards/pregnancy_minor_insomnia.html">懷孕期間睡不好可以怎麼做？</a></li>
           </ul>
         </details>
-        <a class="topic-row topic-row--link" id="weight" href="../pregnancy-weight-calculator.html"><span class="topic-emoji" aria-hidden="true">🤰</span><span class="topic-row__name">孕期體重增加計算器<small>依孕前 BMI 看體重增加是否在建議範圍</small></span><span class="topic-row__meta">計算器 ›</span></a>
+        <a class="topic-tile topic-tile--link" id="weight" href="../pregnancy-weight-calculator.html">
+          <span class="topic-emoji" aria-hidden="true">🤰</span>
+          <span class="topic-tile__name">孕期體重增加計算器</span>
+          <span class="topic-tile__desc">依孕前 BMI 看體重增加是否在建議範圍</span>
+          <span class="topic-tile__meta">計算器 ›</span>
+        </a>
+      </div>
     </section>
     <section class="topic-group" style="--accent:#007b83;--soft:#effafa">
       <h2>媽媽的身體照護</h2>
-        <details class="topic-row" id="hands">
-          <summary><img src="../img/hand_eczema_symptoms.webp" width="1086" height="1448" alt="" loading="lazy" decoding="async"><span class="topic-row__name">富貴手</span><span class="topic-row__meta">4 張</span></summary>
-          <p class="topic-row__desc">洗奶瓶、做家事，手乾裂脫皮怎麼照顧。</p>
+      <div class="topic-grid">
+        <details class="topic-tile" id="hands">
+          <summary>
+            <img src="../img/hand_eczema_symptoms.webp" width="1086" height="1448" alt="" loading="lazy" decoding="async">
+            <span class="topic-tile__name">富貴手</span>
+            <span class="topic-tile__meta">4 張</span>
+            <span class="topic-tile__desc">洗奶瓶、做家事，手乾裂脫皮怎麼照顧。</span>
+          </summary>
           <ul>
-              <li><a href="../cards/hand_eczema_symptoms.html">富貴手是什麼？手部乾裂、脫皮與濕疹症狀</a></li>
-              <li><a href="../cards/hand_eczema_handwashing_gloves.html">富貴手如何洗手、做家事？雙手防護四重點</a></li>
-              <li><a href="../cards/hand_eczema_moisturizers.html">富貴手護手霜怎麼選？保濕成分與擦法</a></li>
-              <li><a href="../cards/hand_eczema_treatment.html">富貴手需要擦藥嗎？類固醇用法與就醫時機</a></li>
+            <li><a href="../cards/hand_eczema_symptoms.html">富貴手是什麼？手部乾裂、脫皮與濕疹症狀</a></li>
+            <li><a href="../cards/hand_eczema_handwashing_gloves.html">富貴手如何洗手、做家事？雙手防護四重點</a></li>
+            <li><a href="../cards/hand_eczema_moisturizers.html">富貴手護手霜怎麼選？保濕成分與擦法</a></li>
+            <li><a href="../cards/hand_eczema_treatment.html">富貴手需要擦藥嗎？類固醇用法與就醫時機</a></li>
           </ul>
         </details>
-        <details class="topic-row" id="skin">
-          <summary><img src="../img/facial_spots_types_melasma_acne_marks.webp" width="941" height="1672" alt="" loading="lazy" decoding="async"><span class="topic-row__name">妊娠紋和色素沉澱</span><span class="topic-row__meta">3 張</span></summary>
-          <p class="topic-row__desc">妊娠紋、肝斑與產後色素沉澱怎麼照護。</p>
+        <details class="topic-tile" id="skin">
+          <summary>
+            <img src="../img/facial_spots_types_melasma_acne_marks.webp" width="941" height="1672" alt="" loading="lazy" decoding="async">
+            <span class="topic-tile__name">妊娠紋和色素沉澱</span>
+            <span class="topic-tile__meta">3 張</span>
+            <span class="topic-tile__desc">妊娠紋、肝斑與產後色素沉澱怎麼照護。</span>
+          </summary>
           <ul>
-              <li><a href="../cards/stretch_marks.html">妊娠紋、肥胖紋，怎麼照護？</a></li>
-              <li><a href="../cards/facial_spots_types_melasma_acne_marks.html">臉上的斑點有哪些種類？肝斑與痘印色素沉澱</a></li>
-              <li><a href="../cards/facial_spots_sun_protection.html">想淡斑，防曬不能少：SPF、補擦與遮陽重點</a></li>
+            <li><a href="../cards/stretch_marks.html">妊娠紋、肥胖紋，怎麼照護？</a></li>
+            <li><a href="../cards/facial_spots_types_melasma_acne_marks.html">臉上的斑點有哪些種類？肝斑與痘印色素沉澱</a></li>
+            <li><a href="../cards/facial_spots_sun_protection.html">想淡斑，防曬不能少：SPF、補擦與遮陽重點</a></li>
           </ul>
         </details>
-        <details class="topic-row" id="hemorrhoids">
-          <summary><img src="../img/hemorr_sitbath_1.png" width="1792" height="2400" alt="" loading="lazy" decoding="async"><span class="topic-row__name">痔瘡與產後不適</span><span class="topic-row__meta">3 張</span></summary>
-          <p class="topic-row__desc">痔瘡怎麼坐浴、痔瘡軟膏怎麼用。</p>
+        <details class="topic-tile" id="hemorrhoids">
+          <summary>
+            <img src="../img/hemorr_sitbath_1.png" width="1792" height="2400" alt="" loading="lazy" decoding="async">
+            <span class="topic-tile__name">痔瘡與產後不適</span>
+            <span class="topic-tile__meta">3 張</span>
+            <span class="topic-tile__desc">痔瘡怎麼坐浴、痔瘡軟膏怎麼用。</span>
+          </summary>
           <ul>
-              <li><a href="../cards/hemorr_sitbath_1.html">痔瘡坐浴：準備溫水、坐浴與擦乾</a></li>
-              <li><a href="../cards/hemorr_sitbath_2.html">溫水坐浴：掌握水溫、時間與清潔</a></li>
-              <li><a href="../cards/hem_oint_1.html">痔瘡軟膏（注入管）怎麼用？步驟教學</a></li>
+            <li><a href="../cards/hemorr_sitbath_1.html">痔瘡坐浴：準備溫水、坐浴與擦乾</a></li>
+            <li><a href="../cards/hemorr_sitbath_2.html">溫水坐浴：掌握水溫、時間與清潔</a></li>
+            <li><a href="../cards/hem_oint_1.html">痔瘡軟膏（注入管）怎麼用？步驟教學</a></li>
           </ul>
         </details>
-        <details class="topic-row" id="vaginal">
-          <summary><img src="../img/vag_1.png" width="1696" height="2528" alt="" loading="lazy" decoding="async"><span class="topic-row__name">陰道用藥</span><span class="topic-row__meta">3 張</span></summary>
-          <p class="topic-row__desc">陰道塞劑、陰道軟膏的正確用法與注意事項。</p>
+        <details class="topic-tile" id="vaginal">
+          <summary>
+            <img src="../img/vag_1.png" width="1696" height="2528" alt="" loading="lazy" decoding="async">
+            <span class="topic-tile__name">陰道用藥</span>
+            <span class="topic-tile__meta">3 張</span>
+            <span class="topic-tile__desc">陰道塞劑、陰道軟膏的正確用法與注意事項。</span>
+          </summary>
           <ul>
-              <li><a href="../cards/vag_1.html">陰道塞劑怎麼用？步驟教學</a></li>
-              <li><a href="../cards/vag_oint_1.html">陰道軟膏怎麼用？步驟教學</a></li>
-              <li><a href="../cards/vag_oint_6.html">陰道軟膏療程：經期與使用禁忌</a></li>
+            <li><a href="../cards/vag_1.html">陰道塞劑怎麼用？步驟教學</a></li>
+            <li><a href="../cards/vag_oint_1.html">陰道軟膏怎麼用？步驟教學</a></li>
+            <li><a href="../cards/vag_oint_6.html">陰道軟膏療程：經期與使用禁忌</a></li>
           </ul>
         </details>
+      </div>
     </section>
     <section class="topic-group" style="--accent:#a64529;--soft:#fff5f0">
       <h2>經期、避孕與驗孕</h2>
-        <a class="topic-row topic-row--link" id="cycle" href="../menstrual-calculator.html"><span class="topic-emoji" aria-hidden="true">🌷</span><span class="topic-row__name">經期・排卵・預產期計算器<small>推算下次月經、排卵日與預產期</small></span><span class="topic-row__meta">計算器 ›</span></a>
-        <details class="topic-row" id="contraception">
-          <summary><img src="../img/contraceptive_pills_how_to_take.webp" width="941" height="1672" alt="" loading="lazy" decoding="async"><span class="topic-row__name">避孕</span><span class="topic-row__meta">6 張</span></summary>
-          <p class="topic-row__desc">事前、事後避孕藥怎麼吃，保險套怎麼用。</p>
+      <div class="topic-grid">
+        <a class="topic-tile topic-tile--link" id="cycle" href="../menstrual-calculator.html">
+          <span class="topic-emoji" aria-hidden="true">🌷</span>
+          <span class="topic-tile__name">經期・排卵・預產期計算器</span>
+          <span class="topic-tile__desc">推算下次月經、排卵日與預產期</span>
+          <span class="topic-tile__meta">計算器 ›</span>
+        </a>
+        <details class="topic-tile" id="contraception">
+          <summary>
+            <img src="../img/contraceptive_pills_how_to_take.webp" width="941" height="1672" alt="" loading="lazy" decoding="async">
+            <span class="topic-tile__name">避孕</span>
+            <span class="topic-tile__meta">6 張</span>
+            <span class="topic-tile__desc">事前、事後避孕藥怎麼吃，保險套怎麼用。</span>
+          </summary>
           <ul>
-              <li><a href="../cards/contraceptive_pills_how_to_take.html">事前避孕藥怎麼吃？</a></li>
-              <li><a href="../cards/contraceptive_pills_missed_dose.html">忘記吃避孕藥怎麼辦？</a></li>
-              <li><a href="../cards/emergency_contraceptive_pills_how_to_take.html">事後避孕藥怎麼吃？</a></li>
-              <li><a href="../cards/emergency_contraceptive_pills_notice.html">吃完事後避孕藥要注意什麼？</a></li>
-              <li><a href="../cards/condom_check_before_use.html">保險套怎麼正確使用？</a></li>
-              <li><a href="../cards/condom_common_mistakes.html">保險套常見使用錯誤</a></li>
+            <li><a href="../cards/contraceptive_pills_how_to_take.html">事前避孕藥怎麼吃？</a></li>
+            <li><a href="../cards/contraceptive_pills_missed_dose.html">忘記吃避孕藥怎麼辦？</a></li>
+            <li><a href="../cards/emergency_contraceptive_pills_how_to_take.html">事後避孕藥怎麼吃？</a></li>
+            <li><a href="../cards/emergency_contraceptive_pills_notice.html">吃完事後避孕藥要注意什麼？</a></li>
+            <li><a href="../cards/condom_check_before_use.html">保險套怎麼正確使用？</a></li>
+            <li><a href="../cards/condom_common_mistakes.html">保險套常見使用錯誤</a></li>
           </ul>
         </details>
-        <details class="topic-row" id="test">
-          <summary><img src="../img/pregnancy_test_timing.webp" width="941" height="1672" alt="" loading="lazy" decoding="async"><span class="topic-row__name">驗孕</span><span class="topic-row__meta">5 張</span></summary>
-          <p class="topic-row__desc">驗孕筆什麼時候驗、怎麼驗、怎麼看結果。</p>
+        <details class="topic-tile" id="test">
+          <summary>
+            <img src="../img/pregnancy_test_timing.webp" width="941" height="1672" alt="" loading="lazy" decoding="async">
+            <span class="topic-tile__name">驗孕</span>
+            <span class="topic-tile__meta">5 張</span>
+            <span class="topic-tile__desc">驗孕筆什麼時候驗、怎麼驗、怎麼看結果。</span>
+          </summary>
           <ul>
-              <li><a href="../cards/pregnancy_test_timing.html">驗孕筆什麼時候驗最準？</a></li>
-              <li><a href="../cards/pregnancy_test_steps_1_2.html">驗孕筆正確使用第 1、2 步</a></li>
-              <li><a href="../cards/pregnancy_test_steps_3_4.html">驗孕筆正確使用第 3、4 步</a></li>
-              <li><a href="../cards/pregnancy_test_result_reading.html">驗孕筆如何判讀結果？</a></li>
-              <li><a href="../cards/pregnancy_test_faq.html">驗孕筆常見問題 Q&amp;A</a></li>
+            <li><a href="../cards/pregnancy_test_timing.html">驗孕筆什麼時候驗最準？</a></li>
+            <li><a href="../cards/pregnancy_test_steps_1_2.html">驗孕筆正確使用第 1、2 步</a></li>
+            <li><a href="../cards/pregnancy_test_steps_3_4.html">驗孕筆正確使用第 3、4 步</a></li>
+            <li><a href="../cards/pregnancy_test_result_reading.html">驗孕筆如何判讀結果？</a></li>
+            <li><a href="../cards/pregnancy_test_faq.html">驗孕筆常見問題 Q&amp;A</a></li>
           </ul>
         </details>
+      </div>
     </section>
     <section class="topic-group faq-section" aria-labelledby="faq" style="--accent:#8a5a14;--soft:#fdf7ec">
       <h2 id="faq">媽媽常見問題</h2>
+      <div class="faq-list">
         <details class="faq-item">
-          <summary>餵母乳可以吃普拿疼嗎？要停餵嗎？</summary>
-          <p>可以。Acetaminophen（普拿疼）與 Ibuprofen（布洛芬）都是哺乳期常用的退燒止痛藥，一般劑量多數情況不需要停餵，可在餵奶後服藥。注意綜合感冒藥常含 Acetaminophen，避免重複吃。 <a href="../cards/breastfeeding_minor_fever_pain.html">看圖卡：哺乳期間頭痛、發燒可以吃什麼？</a></p>
+          <summary><span class="faq-q-text">餵母乳可以吃普拿疼嗎？要停餵嗎？</span></summary>
+          <div class="faq-answer">
+            <p>可以。Acetaminophen（普拿疼）與 Ibuprofen（布洛芬）都是哺乳期常用的退燒止痛藥，一般劑量多數情況不需要停餵，可在餵奶後服藥。注意綜合感冒藥常含 Acetaminophen，避免重複吃。 <a class="faq-card-link" href="../cards/breastfeeding_minor_fever_pain.html">看圖卡：哺乳期間頭痛、發燒可以吃什麼？</a></p>
+          </div>
         </details>
         <details class="faq-item">
-          <summary>哺乳期間感冒，可以吃綜合感冒藥嗎？</summary>
-          <p>不建議自行吃。許多綜合感冒藥含偽麻黃鹼、甲基麻黃鹼（可能讓奶量變少）或容易嗜睡的抗組織胺，最好請藥師依症狀挑單一成分。 <a href="../cards/breastfeeding_minor_rhinitis.html">看圖卡：哺乳期間鼻塞、流鼻水可以用什麼？</a></p>
+          <summary><span class="faq-q-text">哺乳期間感冒，可以吃綜合感冒藥嗎？</span></summary>
+          <div class="faq-answer">
+            <p>不建議自行吃。許多綜合感冒藥含偽麻黃鹼、甲基麻黃鹼（可能讓奶量變少）或容易嗜睡的抗組織胺，最好請藥師依症狀挑單一成分。 <a class="faq-card-link" href="../cards/breastfeeding_minor_rhinitis.html">看圖卡：哺乳期間鼻塞、流鼻水可以用什麼？</a></p>
+          </div>
         </details>
         <details class="faq-item">
-          <summary>塞奶要冷敷還是熱敷？</summary>
-          <p>建議冷敷。餵奶後用毛巾包冰敷袋冷敷可減輕腫脹與疼痛，長時間熱敷可能讓發炎更明顯；不要用力按摩或一直擠奶。乳房紅腫熱痛合併發燒，要就醫。 <a href="../cards/breastfeeding_minor_engorgement.html">看圖卡：哺乳期間乳房脹痛、塞奶怎麼辦？</a></p>
+          <summary><span class="faq-q-text">塞奶要冷敷還是熱敷？</span></summary>
+          <div class="faq-answer">
+            <p>建議冷敷。餵奶後用毛巾包冰敷袋冷敷可減輕腫脹與疼痛，長時間熱敷可能讓發炎更明顯；不要用力按摩或一直擠奶。乳房紅腫熱痛合併發燒，要就醫。 <a class="faq-card-link" href="../cards/breastfeeding_minor_engorgement.html">看圖卡：哺乳期間乳房脹痛、塞奶怎麼辦？</a></p>
+          </div>
         </details>
         <details class="faq-item">
-          <summary>懷孕頭痛可以吃什麼止痛藥？</summary>
-          <p>可優先考慮 Acetaminophen，以最低有效劑量、最短時間使用。NSAID 類止痛藥（例如布洛芬），尤其懷孕 20 週後，不應自行使用。劇烈頭痛、視力異常或血壓升高要就醫。 <a href="../cards/pregnancy_minor_fever_pain.html">看圖卡：懷孕頭痛、發燒可以吃什麼？</a></p>
+          <summary><span class="faq-q-text">懷孕頭痛可以吃什麼止痛藥？</span></summary>
+          <div class="faq-answer">
+            <p>可優先考慮 Acetaminophen，以最低有效劑量、最短時間使用。NSAID 類止痛藥（例如布洛芬），尤其懷孕 20 週後，不應自行使用。劇烈頭痛、視力異常或血壓升高要就醫。 <a class="faq-card-link" href="../cards/pregnancy_minor_fever_pain.html">看圖卡：懷孕頭痛、發燒可以吃什麼？</a></p>
+          </div>
         </details>
         <details class="faq-item">
-          <summary>做家事手一直乾裂脫皮，是富貴手嗎？</summary>
-          <p>富貴手通常是手部濕疹的俗稱，反覆碰水、洗碗、接觸清潔劑都可能誘發。洗手後立即擦護手霜、做家事戴手套是基本照護。單手脫皮或合併香港腳，可能是黴菌感染，應給醫師評估。 <a href="../cards/hand_eczema_symptoms.html">看圖卡：富貴手是什麼？</a></p>
+          <summary><span class="faq-q-text">做家事手一直乾裂脫皮，是富貴手嗎？</span></summary>
+          <div class="faq-answer">
+            <p>富貴手通常是手部濕疹的俗稱，反覆碰水、洗碗、接觸清潔劑都可能誘發。洗手後立即擦護手霜、做家事戴手套是基本照護。單手脫皮或合併香港腳，可能是黴菌感染，應給醫師評估。 <a class="faq-card-link" href="../cards/hand_eczema_symptoms.html">看圖卡：富貴手是什麼？</a></p>
+          </div>
         </details>
         <details class="faq-item">
-          <summary>臉上出現對稱的大片褐色斑，是肝斑嗎？</summary>
-          <p>肝斑常見於雙頰、額頭與上唇，通常左右對稱，日曬與荷爾蒙變化都可能參與形成，而且容易反覆。持續防曬是基本功；斑點快速改變或出血，應看皮膚科。 <a href="../cards/facial_spots_types_melasma_acne_marks.html">看圖卡：肝斑與痘印色素沉澱</a></p>
+          <summary><span class="faq-q-text">臉上出現對稱的大片褐色斑，是肝斑嗎？</span></summary>
+          <div class="faq-answer">
+            <p>肝斑常見於雙頰、額頭與上唇，通常左右對稱，日曬與荷爾蒙變化都可能參與形成，而且容易反覆。持續防曬是基本功；斑點快速改變或出血，應看皮膚科。 <a class="faq-card-link" href="../cards/facial_spots_types_melasma_acne_marks.html">看圖卡：肝斑與痘印色素沉澱</a></p>
+          </div>
         </details>
         <details class="faq-item">
-          <summary>忘記吃避孕藥怎麼辦？</summary>
-          <p>一般複方口服避孕藥延誤未滿 48 小時，儘快補服該顆，下一顆照原時間吃；達 48 小時（連續漏兩顆以上）的處理不同，可能需要加用保險套 7 天。不確定時請問藥師。 <a href="../cards/contraceptive_pills_missed_dose.html">看圖卡：忘記吃避孕藥怎麼辦？</a></p>
+          <summary><span class="faq-q-text">忘記吃避孕藥怎麼辦？</span></summary>
+          <div class="faq-answer">
+            <p>一般複方口服避孕藥延誤未滿 48 小時，儘快補服該顆，下一顆照原時間吃；達 48 小時（連續漏兩顆以上）的處理不同，可能需要加用保險套 7 天。不確定時請問藥師。 <a class="faq-card-link" href="../cards/contraceptive_pills_missed_dose.html">看圖卡：忘記吃避孕藥怎麼辦？</a></p>
+          </div>
         </details>
         <details class="faq-item">
-          <summary>驗孕筆什麼時候驗最準？</summary>
-          <p>月經預計來潮後再驗準確度較高；週期不規則，可在性行為後約 2～3 週檢測。太早驗可能因 hCG 濃度不足出現偽陰性。 <a href="../cards/pregnancy_test_timing.html">看圖卡：驗孕筆什麼時候驗最準？</a></p>
+          <summary><span class="faq-q-text">驗孕筆什麼時候驗最準？</span></summary>
+          <div class="faq-answer">
+            <p>月經預計來潮後再驗準確度較高；週期不規則，可在性行為後約 2～3 週檢測。太早驗可能因 hCG 濃度不足出現偽陰性。 <a class="faq-card-link" href="../cards/pregnancy_test_timing.html">看圖卡：驗孕筆什麼時候驗最準？</a></p>
+          </div>
         </details>
+      </div>
       <p class="faq-note">以上答案整理自各題連結的圖卡，詳細說明與參考資料請見圖卡頁。更新日期：<time datetime="2026-11-13">2026-11-13</time></p>
     </section>
     <section class="topic-group" style="--accent:#7450a2;--soft:#f8f3fc">
       <h2>延伸閱讀</h2>
       <p class="extension-note">本頁以媽媽自己為主；寶寶的照護整理在這裡供延伸閱讀。</p>
-        <details class="topic-row" id="baby">
-          <summary><img src="../img/baby_nasal_aspirator_1.webp" width="941" height="1672" alt="" loading="lazy" decoding="async"><span class="topic-row__name">寶寶照護</span><span class="topic-row__meta">8 項</span></summary>
-          <p class="topic-row__desc">寶寶發燒、鼻塞、拉肚子與生長發育。</p>
+      <div class="topic-grid">
+        <details class="topic-tile" id="baby">
+          <summary>
+            <img src="../img/baby_nasal_aspirator_1.webp" width="941" height="1672" alt="" loading="lazy" decoding="async">
+            <span class="topic-tile__name">寶寶照護</span>
+            <span class="topic-tile__meta">8 項</span>
+            <span class="topic-tile__desc">寶寶發燒、鼻塞、拉肚子與生長發育。</span>
+          </summary>
           <ul>
-              <li><a href="pediatric-medicine.html">兒科用藥總整理：餵藥照護、常用藥水、預防與成長</a></li>
-              <li><a href="../cards/notice_ped_fever_reducer.html">小兒發燒注意事項</a></li>
-              <li><a href="../cards/baby_nasal_aspirator_1.html">寶寶鼻塞怎麼辦？吸鼻器可以幫忙</a></li>
-              <li><a href="../cards/diarrhea_care_5.html">寶寶拉肚子奶要停嗎？母乳、配方奶與副食品照顧</a></li>
-              <li><a href="../cards/diarrhea_care_6.html">嬰兒腹瀉何時就醫？尿布、喝奶與脫水警訊</a></li>
-              <li><a href="../cards/Prevent_Enterovirus.html">預防腸病毒：洗手、消毒與生病時的處理</a></li>
-              <li><a href="../cards/burn_first_aid_01.html">燙傷急救：先沖水、移除飾品與衣物</a></li>
-              <li><a href="../growth-calculator.html">兒童身高體重百分位計算器</a></li>
+            <li><a href="pediatric-medicine.html">兒科用藥總整理：餵藥照護、常用藥水、預防與成長</a></li>
+            <li><a href="../cards/notice_ped_fever_reducer.html">小兒發燒注意事項</a></li>
+            <li><a href="../cards/baby_nasal_aspirator_1.html">寶寶鼻塞怎麼辦？吸鼻器可以幫忙</a></li>
+            <li><a href="../cards/diarrhea_care_5.html">寶寶拉肚子奶要停嗎？母乳、配方奶與副食品照顧</a></li>
+            <li><a href="../cards/diarrhea_care_6.html">嬰兒腹瀉何時就醫？尿布、喝奶與脫水警訊</a></li>
+            <li><a href="../cards/Prevent_Enterovirus.html">預防腸病毒：洗手、消毒與生病時的處理</a></li>
+            <li><a href="../cards/burn_first_aid_01.html">燙傷急救：先沖水、移除飾品與衣物</a></li>
+            <li><a href="../growth-calculator.html">兒童身高體重百分位計算器</a></li>
           </ul>
         </details>
+      </div>
     </section>
   </main>
   <script>
     (function () {
       var KEY = 'pteduimgReturnState';
-      function allDetails() { return Array.prototype.slice.call(document.querySelectorAll('main details')); }
+      function allDetails() { return document.querySelectorAll('.topic-grid > details, .faq-list > details'); }
+      function openTopic(hash) {
+        var tile = document.getElementById(hash.slice(1));
+        if (tile && tile.matches('details.topic-tile')) tile.open = true;
+      }
+      openTopic(location.hash);
+      window.addEventListener('hashchange', function () { openTopic(location.hash); });
       document.querySelector('main').addEventListener('click', function (e) {
         var a = e.target.closest('a[href]');
         if (!a) return;
+        if (a.closest('.topic-index')) {
+          openTopic(a.hash);
+          return;
+        }
         try {
           var open = [];
           allDetails().forEach(function (d, i) { if (d.open) open.push(i); });
