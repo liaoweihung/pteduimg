@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-27T00:20:44+08:00",
-  "baseline": "d35801121eae378ff6b6c47b8f78218abb1b267e",
-  "scope": "網站來源快照；版本 d3580112",
+  "generatedAt": "2026-11-28T12:02:11+08:00",
+  "baseline": "1436b5010ad7a56a434abb0791f0e9e1fd20e692",
+  "scope": "網站來源快照；版本 1436b501",
   "counts": {
-    "cards": 496,
-    "series": 105,
-    "allSeries": 109,
+    "cards": 499,
+    "series": 106,
+    "allSeries": 110,
     "hidden": 4,
     "retired": 14,
     "areas": 17,
@@ -1127,6 +1127,16 @@
       "id": "ped_abx",
       "title": "兒科抗生素與抗黴菌藥水",
       "count": 5,
+      "hidden": false,
+      "areas": [],
+      "departments": [
+        "pediatrics"
+      ]
+    },
+    {
+      "id": "flu_oseltamivir",
+      "title": "克流感（Oseltamivir）怎麼吃、怎麼泡",
+      "count": 3,
       "hidden": false,
       "areas": [],
       "departments": [
@@ -3471,29 +3481,29 @@
   ],
   "statusCounts": {
     "text_status": {
-      "machine_pass": 388,
+      "machine_pass": 391,
       "missing": 108
     },
     "reference_status": {
       "missing": 187,
-      "machine_pass": 309
+      "machine_pass": 312
     },
     "date_status": {
       "missing": 186,
-      "machine_pass": 289,
+      "machine_pass": 292,
       "partial": 21
     },
     "footer_status": {
       "missing": 200,
-      "machine_pass": 296
+      "machine_pass": 299
     },
     "jsonld_status": {
-      "machine_pass": 496
+      "machine_pass": 499
     }
   },
   "sync": {
-    "pages": 500,
-    "fields": 1031,
+    "pages": 503,
+    "fields": 1034,
     "differences": [
       {
         "page": "01_can_i_bring_medicine",
@@ -5255,6 +5265,24 @@
         "page": "facial_spots_when_to_see_dermatologist",
         "fields": [
           "source_sha256",
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "flu_oseltamivir_01",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "flu_oseltamivir_02",
+        "fields": [
+          "rules_sha256"
+        ]
+      },
+      {
+        "page": "flu_oseltamivir_03",
+        "fields": [
           "rules_sha256"
         ]
       },
