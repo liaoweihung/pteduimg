@@ -1,6 +1,6 @@
 # 圖卡文字網頁整合報告
 
-- 成功加入文字頁數：388
+- 成功加入文字頁數：391
 - 失敗頁數：0
 
 | cardId | title | URL | title 完成 | meta description 完成 | h1 完成 | alt 完成 | HTML text 完成 | 錯誤 |
@@ -393,3 +393,6 @@
 | pediatric_cold_syrup | 舒安敏／喜驅敏內服液怎麼喝？與勝克敏濃度差一半別喝錯！兒童劑量與注意事項 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_levocetirizine.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | pediatric_cold_syrup | 利達敏寧／宜敏靜／敏福糖漿怎麼喝？體重 30 公斤分界、不嗜睡與停藥檢驗重點 | https://liaoweihung.github.io/pteduimg/cards/ped_cold_loratadine.html | 是 | 是 | 是 | 是 | 是 | 無 |
 | pediatric_gi_syrup | 兒童止吐藥水 Domperidone 怎麼喝？吐必止、平吐寧、胃利空的劑量原則與警訊 | https://liaoweihung.github.io/pteduimg/cards/ped_gi_domperidone.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| flu_oseltamivir | 成人得流感，克流感怎麼吃？ | https://liaoweihung.github.io/pteduimg/cards/flu_oseltamivir_01.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| flu_oseltamivir | 孩子得流感，克流感吃多少？ | https://liaoweihung.github.io/pteduimg/cards/flu_oseltamivir_02.html | 是 | 是 | 是 | 是 | 是 | 無 |
+| flu_oseltamivir | 克流感居家泡製：整瓶配至 50 mL、每次喝 5 mL | https://liaoweihung.github.io/pteduimg/cards/flu_oseltamivir_03.html | 是 | 是 | 是 | 是 | 是 | 無 |

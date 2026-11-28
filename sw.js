@@ -1,5 +1,5 @@
 // ?湔???唾?嚗撥餈恍??唳??
-const CACHE_NAME = 'pwa-cache-v858483ec01bd1d07c81949da';
+const CACHE_NAME = 'pwa-cache-v8b68c1d4866213da501983b2';
 const RUNTIME_CACHE = 'pwa-runtime-v1';
 
 // ?? ?ㄐ敺?ASSETS ?寞?鈭?urlsToCache嚗見 Python 蝞∪振?敺嚗?
@@ -311,6 +311,9 @@ const urlsToCache = [
   "./img/facial_spots_types_melasma_acne_marks.webp",
   "./img/facial_spots_types_sun_freckles.webp",
   "./img/facial_spots_when_to_see_dermatologist.webp",
+  "./img/flu_oseltamivir_01.webp",
+  "./img/flu_oseltamivir_02.webp",
+  "./img/flu_oseltamivir_03.webp",
   "./img/fungal_nail.webp",
   "./img/girlBMI.webp",
   "./img/girl_height2.webp",
@@ -1059,6 +1062,9 @@ const urlsToCache = [
   "./cards/ped_abx_03.html",
   "./cards/ped_abx_04.html",
   "./cards/ped_abx_05.html",
+  "./cards/flu_oseltamivir_01.html",
+  "./cards/flu_oseltamivir_02.html",
+  "./cards/flu_oseltamivir_03.html",
   "./cards/acne.html",
   "./cards/comedo_dailycare.html",
   "./cards/acne_dailycare_2.html",

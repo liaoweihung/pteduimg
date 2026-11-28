@@ -4675,5 +4675,58 @@
       "img/ped_abx_04.webp",
       "img/ped_abx_05.webp"
     ]
+  },
+  "flu_oseltamivir": {
+    "title": "克流感（Oseltamivir）怎麼吃、怎麼泡",
+    "category": "pharmacist_product",
+    "departments": [
+      "pediatrics"
+    ],
+    "order": 17.3,
+    "hidden": false,
+    "icon": "🤒",
+    "tags": [
+      "克流感",
+      "Tamiflu",
+      "Oseltamivir",
+      "流感",
+      "A型流感",
+      "B型流感",
+      "抗病毒藥",
+      "流感藥",
+      "易剋冒",
+      "Eraflu",
+      "安克流",
+      "流感苾靈",
+      "祛風靈",
+      "服可癒",
+      "致流剋",
+      "速剋流",
+      "克流感怎麼吃",
+      "克流感吃幾天",
+      "克流感兒童劑量",
+      "克流感體重劑量",
+      "克流感怎麼泡",
+      "克流感泡法",
+      "克流感 50 mL",
+      "克流感副作用",
+      "克流感忘記吃",
+      "克流感吐了"
+    ],
+    "texts": [
+      "成人克流感怎麼吃",
+      "兒童克流感劑量",
+      "克流感居家泡製"
+    ],
+    "showFooter": true,
+    "topic_hub": {
+      "url": "topics/pediatric-medicine.html",
+      "label": "兒科用藥總整理"
+    },
+    "steps": [
+      "img/flu_oseltamivir_01.webp",
+      "img/flu_oseltamivir_02.webp",
+      "img/flu_oseltamivir_03.webp"
+    ]
   }
 }

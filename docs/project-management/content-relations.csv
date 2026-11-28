@@ -590,3 +590,6 @@ REL-86d4693272cd584f,series:pediatric_cold_syrup,has_card,page:ped_cold_triproli
 REL-ee984eaaa9846a23,series:pediatric_cold_syrup,has_card,page:ped_cold_loratadine,source_observed,series_membership,cards.json,CR-2026-123
 REL-c5a6679a4a698a15,series:pediatric_cold_syrup,has_card,page:ped_cold_butamirate,source_observed,series_membership,cards.json,CR-2026-123
 REL-a37909a216963ba1,series:pediatric_gi_syrup,has_card,page:ped_gi_domperidone,source_observed,series_membership,cards.json,CR-2026-123
+REL-b9b984b1cef2c916,series:flu_oseltamivir,has_card,page:flu_oseltamivir_01,source_observed,series_membership,cards.json,CR-2026-129
+REL-d3f72a28829c2226,series:flu_oseltamivir,has_card,page:flu_oseltamivir_02,source_observed,series_membership,cards.json,CR-2026-129
+REL-2318616066e80a3a,series:flu_oseltamivir,has_card,page:flu_oseltamivir_03,source_observed,series_membership,cards.json,CR-2026-129
